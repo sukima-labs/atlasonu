@@ -47,6 +47,9 @@ const URL = process.env.ATLAS_URL || 'file://' + path.resolve(__dirname, '..', '
     await page.fill('#pQ', 'India'); await page.getByRole('button', { name: 'Buscar' }).first().click(); await page.waitForTimeout(500);
     const box = await page.locator('#pOut .detail h2').boundingBox();
     ok(vp.name + ': al buscar India su ficha queda a la vista (sin tener que desplazarse a ciegas)', box && box.y < (vp.height * 0.9) && /Adhesión 10 abr 1979/.test(await page.textContent('#pOut')) && /Firmó 14 oct 1997/.test(await page.textContent('#pOut')));
+    await page.fill('#pQ', 'India'); await page.getByRole('button', { name: 'Buscar' }).first().click(); await page.waitForFunction(() => /CCPR\/C\/IND\/CO\/4/.test(document.getElementById('pDocs').textContent), null, { timeout: 8000 }).catch(() => {});
+    const dd = await page.textContent('#pDocs');
+    ok(vp.name + ': ficha de India carga bajo demanda sus observaciones finales, EPU y misiones', /CCPR\/C\/IND\/CO\/4/.test(dd) && /A\/HRC\/WG\.6\/41\/IND\/1/.test(dd) && /A\/HRC\/34\/51\/Add\.1/.test(dd));
     await page.fill('#pQ', 'siria'); await page.waitForTimeout(250);
     ok(vp.name + ': buscar «siria» muestra mandato y comisión', /Siria/.test(await page.textContent('#pBody')) && /S-17\/1/.test(await page.textContent('#pBody')) && (await page.locator('#pBody tr').count()) === 1);
     await page.fill('#pQ', ''); await page.selectOption('#pSel', 'COL'); await page.waitForTimeout(250);
