@@ -36,6 +36,16 @@ t('búsqueda guiada con alternativas',()=>{els.guiadaSel.value='tortura|detencio
 t('mecanismos conexos: 25 verificados',()=>{assert.equal(run('MEC.length'),25);assert.equal(run('MEC.filter(m=>m.estado==="VERIFICADO").length'),25);assert.ok(els.mecBody.innerHTML.includes('CERD')&&els.mecBody.innerHTML.includes('A/RES/2106(XX)'))});
 t('panel de calidad',()=>assert.ok(els.calidad.innerHTML.includes('401 de 421')));
 t('filtro de verificación',()=>{els.q.value='';els.verif.value='reservas';run('filterMandates()');const n=run('filtered.length');assert.ok(n>0&&n<57);els.verif.value='';run('filterMandates()')});
+const smart=q=>{els.quick.value=q;run('smartRun()');return els.smartOut.innerHTML};
+t('búsqueda inteligente: sinónimo ES («desaparecidos»)',()=>{const r=smart('desaparecidos');assert.ok(r.includes('Desapariciones Forzadas')&&r.includes('E/CN.4/RES/20(XXXVI)'))});
+t('búsqueda inteligente: erratas («tortrua»)',()=>{const r=smart('tortrua');assert.ok(r.includes('Quisiste decir')&&r.includes('tortura')&&r.includes('Relator Especial sobre la tortura'))});
+t('búsqueda inteligente: «comida» → derecho a la alimentación',()=>assert.ok(smart('comida').includes('alimentaci')));
+t('búsqueda inteligente: «niños migrantes» → CRC y CMW',()=>{const r=smart('niños migrantes');assert.ok(r.includes('CRC')&&r.includes('CMW'))});
+t('búsqueda inteligente: país por sinónimo («bielorrusia»)',()=>assert.ok(smart('bielorrusia').includes('Belar')));
+t('búsqueda inteligente: símbolo sin duplicados',()=>{const r=smart('A/HRC/RES/54/26');assert.equal((r.match(/Ver texto y ruta/g)||[]).length,1)});
+t('búsqueda inteligente: sigla corta no da falsos positivos («cat» ≠ «education»)',()=>{const r=smart('cat');assert.ok(!r.includes('right to education'))});
+t('búsqueda inteligente: sin resultados orienta',()=>assert.ok(smart('zzzxq').includes('No hay coincidencias')));
+t('explorador usa la búsqueda inteligente',()=>{els.q.value='niños';run('filterMandates()');assert.ok(els.mandBody.innerHTML.toLowerCase().includes('niñ')||els.mandBody.innerHTML.toLowerCase().includes('children'))});
 t('ficha de mandato',()=>{run('details(0)');assert.ok(els.cardsResults.innerHTML.includes('Cadena de actos jurídicos'))});
 t('exportCSV',()=>run('exportCSV()'));
 t('autoría y repositorio',()=>assert.ok(html.includes('sukima-labs/onu-arqueologia-documental')&&html.includes('Sukima-Labs')));
