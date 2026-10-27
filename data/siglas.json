@@ -1,0 +1,1723 @@
+{
+ "nota": "Elaboración propia a partir de los textos y sitios oficiales de las Naciones Unidas. Las abreviaturas en español marcadas como alias son de uso académico o corriente y no siempre oficiales. Para citar, use el nombre completo oficial.",
+ "entradas": [
+  {
+   "id": "achpr-sistema-regional",
+   "sigla": "ACHPR",
+   "alias": [
+    "CADHP"
+   ],
+   "en": "African Commission on Human and Peoples' Rights",
+   "es": "Comisión Africana de Derechos Humanos y de los Pueblos",
+   "tipo": "Sistema regional",
+   "que": "Órgano de la Unión Africana que protege los derechos humanos en África; su tribunal es la Corte Africana."
+  },
+  {
+   "id": "actio-popularis-concepto",
+   "sigla": "Actio popularis",
+   "alias": [
+    "Acción popular"
+   ],
+   "en": "Actio popularis",
+   "es": "Acción popular",
+   "tipo": "Concepto",
+   "que": "Queja presentada «por interés general» sin ser víctima; no se admite ante los comités.",
+   "ir": "T:IV-4"
+  },
+  {
+   "id": "add-documento",
+   "sigla": "Add.",
+   "alias": [
+    "Adición"
+   ],
+   "en": "Addendum",
+   "es": "Adición",
+   "tipo": "Documento",
+   "que": "Parte complementaria de un documento; en los relatores suele ser el informe de una visita a un país.",
+   "ir": "P:A/HRC/34/51/Add.1"
+  },
+  {
+   "id": "al-procedimiento",
+   "sigla": "AL",
+   "alias": [
+    "Carta de alegaciones"
+   ],
+   "en": "Allegation Letter",
+   "es": "Carta de alegaciones",
+   "tipo": "Procedimiento",
+   "que": "Comunicación de un relator a un Estado sobre una violación ya ocurrida o en curso.",
+   "ir": "S:pe"
+  },
+  {
+   "id": "au-sistema-regional",
+   "sigla": "AU",
+   "alias": [
+    "UA"
+   ],
+   "en": "African Union",
+   "es": "Unión Africana",
+   "tipo": "Sistema regional",
+   "que": "Organización regional africana (55 Estados miembros); su sistema de derechos humanos es independiente del de la ONU."
+  },
+  {
+   "id": "c3-organo-de-la-onu",
+   "sigla": "C3",
+   "alias": [
+    "Tercera Comisión"
+   ],
+   "en": "Third Committee",
+   "es": "Tercera Comisión (Social, Humanitaria y Cultural)",
+   "tipo": "Órgano de la ONU",
+   "que": "Comisión de la Asamblea General que debate los derechos humanos cada otoño.",
+   "ir": "S:tercera"
+  },
+  {
+   "id": "cat-comite",
+   "sigla": "CAT",
+   "alias": [
+    "CCT (comité)"
+   ],
+   "en": "Committee against Torture",
+   "es": "Comité contra la Tortura",
+   "tipo": "Comité",
+   "que": "Comité de 10 expertos que vigila la Convención contra la Tortura. Examina informes de los Estados, recibe quejas individuales (si el Estado aceptó) y puede investigar de oficio.",
+   "ir": "T:IV-9"
+  },
+  {
+   "id": "cat-tratado",
+   "sigla": "CAT",
+   "alias": [
+    "CCT"
+   ],
+   "en": "Convention against Torture and Other Cruel, Inhuman or Degrading Treatment or Punishment",
+   "es": "Convención contra la Tortura y Otros Tratos o Penas Crueles, Inhumanos o Degradantes",
+   "tipo": "Tratado",
+   "que": "Tratado de 1984 contra la tortura. Su comité lleva la misma sigla: CAT es a la vez la Convención y el comité que la vigila.",
+   "ir": "T:IV-9"
+  },
+  {
+   "id": "ccd-documento",
+   "sigla": "CCD",
+   "alias": [
+    "DBC"
+   ],
+   "en": "Common Core Document",
+   "es": "Documento básico común",
+   "tipo": "Documento",
+   "que": "Información general sobre el Estado que se anexa a todos sus informes a los comités."
+  },
+  {
+   "id": "ccpr-comite",
+   "sigla": "CCPR",
+   "alias": [],
+   "en": "Human Rights Committee",
+   "es": "Comité de Derechos Humanos",
+   "tipo": "Comité",
+   "que": "Comité de 18 expertos que vigila el PIDCP. No es el Consejo de Derechos Humanos (HRC/CDH): el Comité lo forman expertos independientes; el Consejo, 47 Estados.",
+   "ir": "T:IV-4"
+  },
+  {
+   "id": "ced-comite",
+   "sigla": "CED",
+   "alias": [],
+   "en": "Committee on Enforced Disappearances",
+   "es": "Comité contra la Desaparición Forzada",
+   "tipo": "Comité",
+   "que": "Comité de 10 expertos que vigila la Convención contra las desapariciones forzadas.",
+   "ir": "T:IV-16"
+  },
+  {
+   "id": "cedaw-comite",
+   "sigla": "CEDAW",
+   "alias": [
+    "Comité de la CEDAW"
+   ],
+   "en": "Committee on the Elimination of Discrimination against Women",
+   "es": "Comité para la Eliminación de la Discriminación contra la Mujer",
+   "tipo": "Comité",
+   "que": "Comité de 23 expertos que vigila la Convención de la CEDAW. Sus textos interpretativos se llaman recomendaciones generales. No es ONU Mujeres ni la Comisión de la Condición Jurídica y Social de la Mujer.",
+   "ir": "T:IV-8"
+  },
+  {
+   "id": "cedaw-tratado",
+   "sigla": "CEDAW",
+   "alias": [
+    "CCDM"
+   ],
+   "en": "Convention on the Elimination of All Forms of Discrimination against Women",
+   "es": "Convención sobre la Eliminación de Todas las Formas de Discriminación contra la Mujer",
+   "tipo": "Tratado",
+   "que": "Tratado de 1979 contra la discriminación de la mujer. Su comité tiene la misma sigla: CEDAW es a la vez el tratado y el comité que lo vigila. No confundir con ONU Mujeres.",
+   "ir": "T:IV-8"
+  },
+  {
+   "id": "cerd-comite",
+   "sigla": "CERD",
+   "alias": [],
+   "en": "Committee on the Elimination of Racial Discrimination",
+   "es": "Comité para la Eliminación de la Discriminación Racial",
+   "tipo": "Comité",
+   "que": "Comité de 18 expertos que vigila la Convención contra la discriminación racial. Tiene un procedimiento propio de alerta temprana y acción urgente.",
+   "ir": "T:IV-2"
+  },
+  {
+   "id": "cescr-comite",
+   "sigla": "CESCR",
+   "alias": [
+    "CDESC"
+   ],
+   "en": "Committee on Economic, Social and Cultural Rights",
+   "es": "Comité de Derechos Económicos, Sociales y Culturales",
+   "tipo": "Comité",
+   "que": "Comité de 18 expertos que vigila el PIDESC.",
+   "ir": "T:IV-3"
+  },
+  {
+   "id": "chr-organo-de-la-onu",
+   "sigla": "CHR",
+   "alias": [
+    "CDH (Comisión)",
+    "Comisión de Derechos Humanos"
+   ],
+   "en": "Commission on Human Rights",
+   "es": "Comisión de Derechos Humanos",
+   "tipo": "Órgano de la ONU",
+   "que": "Antecesora del Consejo (1946–2006), dependía del ECOSOC. Sus resoluciones son E/CN.4/RES/…",
+   "ir": "S:cdh"
+  },
+  {
+   "id": "cmw-comite",
+   "sigla": "CMW",
+   "alias": [],
+   "en": "Committee on Migrant Workers",
+   "es": "Comité de Protección de los Derechos de Todos los Trabajadores Migratorios y de sus Familiares",
+   "tipo": "Comité",
+   "que": "Comité de 14 expertos que vigila la Convención sobre trabajadores migratorios.",
+   "ir": "T:IV-13"
+  },
+  {
+   "id": "co-documento",
+   "sigla": "CO",
+   "alias": [
+    "OF",
+    "Concluding Observations",
+    "Observaciones finales"
+   ],
+   "en": "Concluding Observations",
+   "es": "Observaciones finales",
+   "tipo": "Documento",
+   "que": "Conclusiones y recomendaciones que un comité dirige a un Estado tras examinar su informe. El símbolo contiene «/CO/», por ejemplo CCPR/C/IND/CO/4.",
+   "ir": "P:CCPR/C/IND/CO/4"
+  },
+  {
+   "id": "coe-sistema-regional",
+   "sigla": "CoE",
+   "alias": [
+    "CdE"
+   ],
+   "en": "Council of Europe",
+   "es": "Consejo de Europa",
+   "tipo": "Sistema regional",
+   "que": "Organización europea de derechos humanos, distinta de la UE."
+  },
+  {
+   "id": "coi-mecanismo",
+   "sigla": "COI",
+   "alias": [
+    "CoI",
+    "CI"
+   ],
+   "en": "Commission of Inquiry",
+   "es": "Comisión de Investigación",
+   "tipo": "Mecanismo",
+   "que": "Órgano creado por el Consejo para investigar una situación concreta (Siria, Ucrania, Israel/TPO…).",
+   "ir": "S:pe"
+  },
+  {
+   "id": "convencion-de-1951-tratado",
+   "sigla": "Convención de 1951",
+   "alias": [
+    "CSR51",
+    "Refugee Convention",
+    "Convención sobre refugiados"
+   ],
+   "en": "Convention relating to the Status of Refugees (1951)",
+   "es": "Convención sobre el Estatuto de los Refugiados (1951)",
+   "tipo": "Tratado",
+   "que": "Define quién es refugiado y el principio de no devolución. La supervisa el ACNUR, no un comité de expertos.",
+   "ir": "E:ACNUR"
+  },
+  {
+   "id": "corr-documento",
+   "sigla": "Corr.",
+   "alias": [
+    "Corrigendum"
+   ],
+   "en": "Corrigendum",
+   "es": "Corrección de erratas",
+   "tipo": "Documento",
+   "que": "Corrección de erratas de un documento ya publicado; se añade al símbolo (por ejemplo /Corr.1)."
+  },
+  {
+   "id": "cpr-concepto",
+   "sigla": "CPR",
+   "alias": [
+    "DCP",
+    "Derechos civiles y políticos"
+   ],
+   "en": "Civil and Political Rights",
+   "es": "Derechos Civiles y Políticos",
+   "tipo": "Concepto",
+   "que": "Vida, libertad, juicio justo, expresión, reunión. Los vigila el CCPR.",
+   "ir": "T:IV-4"
+  },
+  {
+   "id": "crc-comite",
+   "sigla": "CRC",
+   "alias": [
+    "Comité de los Derechos del Niño"
+   ],
+   "en": "Committee on the Rights of the Child",
+   "es": "Comité de los Derechos del Niño",
+   "tipo": "Comité",
+   "que": "Comité de 18 expertos que vigila la Convención sobre los Derechos del Niño y sus protocolos. No es UNICEF.",
+   "ir": "T:IV-11"
+  },
+  {
+   "id": "crc-tratado",
+   "sigla": "CRC",
+   "alias": [
+    "CDN"
+   ],
+   "en": "Convention on the Rights of the Child",
+   "es": "Convención sobre los Derechos del Niño",
+   "tipo": "Tratado",
+   "que": "Tratado de 1989 sobre los derechos de las personas menores de 18 años; el más ratificado del mundo. Su comité, también llamado CRC, lo vigila.",
+   "ir": "T:IV-11"
+  },
+  {
+   "id": "crp-documento",
+   "sigla": "CRP",
+   "alias": [
+    "DS"
+   ],
+   "en": "Conference Room Paper",
+   "es": "Documento de sesión",
+   "tipo": "Documento",
+   "que": "Documento de trabajo presentado en una sesión, a menudo sin traducir."
+  },
+  {
+   "id": "crpd-comite",
+   "sigla": "CRPD",
+   "alias": [
+    "Comité de la CDPD"
+   ],
+   "en": "Committee on the Rights of Persons with Disabilities",
+   "es": "Comité sobre los Derechos de las Personas con Discapacidad",
+   "tipo": "Comité",
+   "que": "Comité de 18 expertos que vigila la Convención sobre los Derechos de las Personas con Discapacidad.",
+   "ir": "T:IV-15"
+  },
+  {
+   "id": "crpd-tratado",
+   "sigla": "CRPD",
+   "alias": [
+    "CDPD"
+   ],
+   "en": "Convention on the Rights of Persons with Disabilities",
+   "es": "Convención sobre los Derechos de las Personas con Discapacidad",
+   "tipo": "Tratado",
+   "que": "Tratado de 2006 sobre las personas con discapacidad. Su comité, también llamado CRPD, lo vigila.",
+   "ir": "T:IV-15"
+  },
+  {
+   "id": "csw-organo-de-la-onu",
+   "sigla": "CSW",
+   "alias": [
+    "CCJSM",
+    "CSW"
+   ],
+   "en": "Commission on the Status of Women",
+   "es": "Comisión de la Condición Jurídica y Social de la Mujer",
+   "tipo": "Órgano de la ONU",
+   "que": "Comisión del ECOSOC (1946); ONU Mujeres le presta la secretaría. No es el comité de la CEDAW.",
+   "ir": "E:CSW"
+  },
+  {
+   "id": "dec-documento",
+   "sigla": "DEC",
+   "alias": [
+    "Decisión"
+   ],
+   "en": "Decision",
+   "es": "Decisión",
+   "tipo": "Documento",
+   "que": "Acto de un órgano de la ONU que no es una resolución; en el Consejo, A/HRC/DEC/…",
+   "ir": "P:A/HRC/DEC/54/101"
+  },
+  {
+   "id": "dl-documento",
+   "sigla": "DL",
+   "alias": [
+    "BDL",
+    "Biblioteca Digital"
+   ],
+   "en": "UN Digital Library",
+   "es": "Biblioteca Digital de las Naciones Unidas",
+   "tipo": "Documento",
+   "que": "Catálogo oficial de documentos y resoluciones; fuente del tablero para verificar símbolos."
+  },
+  {
+   "id": "dprk-pais-o-territorio",
+   "sigla": "DPRK",
+   "alias": [
+    "RPDC"
+   ],
+   "en": "Democratic People's Republic of Korea",
+   "es": "República Popular Democrática de Corea",
+   "tipo": "País o territorio",
+   "que": "Tiene un relator especial por país y una comisión de investigación anterior.",
+   "ir": "M:corea|korea"
+  },
+  {
+   "id": "drc-pais-o-territorio",
+   "sigla": "DRC",
+   "alias": [
+    "RDC"
+   ],
+   "en": "Democratic Republic of the Congo",
+   "es": "República Democrática del Congo",
+   "tipo": "País o territorio",
+   "que": "Aparece en documentos de la ONU como RDC."
+  },
+  {
+   "id": "eclac-entidad",
+   "sigla": "ECLAC",
+   "alias": [
+    "CEPAL"
+   ],
+   "en": "Economic Commission for Latin America and the Caribbean",
+   "es": "Comisión Económica para América Latina y el Caribe",
+   "tipo": "Entidad",
+   "que": "Comisión regional del ECOSOC para América Latina y el Caribe, con sede en Santiago de Chile.",
+   "ir": "E:CEPAL"
+  },
+  {
+   "id": "ecosoc-organo-de-la-onu",
+   "sigla": "ECOSOC",
+   "alias": [],
+   "en": "Economic and Social Council",
+   "es": "Consejo Económico y Social",
+   "tipo": "Órgano de la ONU",
+   "que": "54 miembros; coordina lo económico y social; creó la antigua Comisión de Derechos Humanos y las resoluciones 1235 y 1503.",
+   "ir": "S:ecosoc"
+  },
+  {
+   "id": "ecthr-sistema-regional",
+   "sigla": "ECtHR",
+   "alias": [
+    "TEDH"
+   ],
+   "en": "European Court of Human Rights",
+   "es": "Tribunal Europeo de Derechos Humanos",
+   "tipo": "Sistema regional",
+   "que": "Tribunal del Consejo de Europa; aplica el Convenio Europeo de Derechos Humanos."
+  },
+  {
+   "id": "emrip-mecanismo",
+   "sigla": "EMRIP",
+   "alias": [
+    "MEDPI"
+   ],
+   "en": "Expert Mechanism on the Rights of Indigenous Peoples",
+   "es": "Mecanismo de Expertos sobre los Derechos de los Pueblos Indígenas",
+   "tipo": "Mecanismo",
+   "que": "Asesora al Consejo de Derechos Humanos en materia indígena. Distinto del Foro Permanente (UNPFII).",
+   "ir": "M:indigena|indigenous"
+  },
+  {
+   "id": "escr-concepto",
+   "sigla": "ESCR",
+   "alias": [
+    "DESC"
+   ],
+   "en": "Economic, Social and Cultural Rights",
+   "es": "Derechos Económicos, Sociales y Culturales",
+   "tipo": "Concepto",
+   "que": "Trabajo, salud, educación, vivienda, alimentación, cultura. Los vigila el CESCR.",
+   "ir": "T:IV-3"
+  },
+  {
+   "id": "eu-sistema-regional",
+   "sigla": "EU",
+   "alias": [
+    "UE"
+   ],
+   "en": "European Union",
+   "es": "Unión Europea",
+   "tipo": "Sistema regional",
+   "que": "Organización regional; algunos tratados de la ONU admiten su adhesión."
+  },
+  {
+   "id": "fao-entidad",
+   "sigla": "FAO",
+   "alias": [],
+   "en": "Food and Agriculture Organization",
+   "es": "Organización de las Naciones Unidas para la Alimentación y la Agricultura",
+   "tipo": "Entidad",
+   "que": "Organismo especializado: alimentación y agricultura.",
+   "ir": "E:FAO"
+  },
+  {
+   "id": "ffm-mecanismo",
+   "sigla": "FFM",
+   "alias": [
+    "MDH"
+   ],
+   "en": "Fact-Finding Mission",
+   "es": "Misión de Determinación de los Hechos",
+   "tipo": "Mecanismo",
+   "que": "Misión creada por el Consejo para establecer hechos en un país (Myanmar, Venezuela).",
+   "ir": "S:pe"
+  },
+  {
+   "id": "fgm-concepto",
+   "sigla": "FGM",
+   "alias": [
+    "MGF"
+   ],
+   "en": "Female genital mutilation",
+   "es": "Mutilación genital femenina",
+   "tipo": "Concepto",
+   "que": "Práctica tratada por la CEDAW, la CRC y varios relatores; su eliminación figura en los ODS.",
+   "ir": "T:IV-8"
+  },
+  {
+   "id": "gbv-concepto",
+   "sigla": "GBV",
+   "alias": [
+    "VBG"
+   ],
+   "en": "Gender-based violence",
+   "es": "Violencia de género",
+   "tipo": "Concepto",
+   "que": "Violencia dirigida contra una persona por su género.",
+   "ir": "M:violencia contra|violence against"
+  },
+  {
+   "id": "gc-documento",
+   "sigla": "GC",
+   "alias": [
+    "OG",
+    "General Comment",
+    "Comentario general"
+   ],
+   "en": "General Comment",
+   "es": "Observación general",
+   "tipo": "Documento",
+   "que": "Interpretación autorizada de un artículo o tema del tratado por su comité (por ejemplo, la Observación general 36 del CCPR sobre el derecho a la vida).",
+   "ir": "S:tratados"
+  },
+  {
+   "id": "genocide-convention-tratado",
+   "sigla": "Genocide Convention",
+   "alias": [
+    "CPPCG",
+    "Convención sobre el Genocidio"
+   ],
+   "en": "Convention on the Prevention and Punishment of the Crime of Genocide",
+   "es": "Convención para la Prevención y la Sanción del Delito de Genocidio",
+   "tipo": "Tratado",
+   "que": "Tratado de 1948. No tiene un comité propio; sus controversias van a la Corte Internacional de Justicia."
+  },
+  {
+   "id": "gr-documento",
+   "sigla": "GR",
+   "alias": [
+    "RG",
+    "General Recommendation"
+   ],
+   "en": "General Recommendation",
+   "es": "Recomendación general",
+   "tipo": "Documento",
+   "que": "Nombre que usan CEDAW y CERD para sus observaciones generales.",
+   "ir": "S:tratados"
+  },
+  {
+   "id": "hc-organo-de-la-onu",
+   "sigla": "HC",
+   "alias": [
+    "AC",
+    "Alto Comisionado"
+   ],
+   "en": "High Commissioner for Human Rights",
+   "es": "Alto Comisionado para los Derechos Humanos",
+   "tipo": "Órgano de la ONU",
+   "que": "Funcionario de la Secretaría que dirige el ACNUDH y habla en nombre de la ONU en derechos humanos.",
+   "ir": "E:ACNUDH"
+  },
+  {
+   "id": "hr-concepto",
+   "sigla": "HR",
+   "alias": [
+    "DDHH"
+   ],
+   "en": "Human Rights",
+   "es": "Derechos Humanos",
+   "tipo": "Concepto",
+   "que": "Derechos de toda persona por el hecho de serlo."
+  },
+  {
+   "id": "hrc-organo-de-la-onu",
+   "sigla": "HRC",
+   "alias": [
+    "CDH",
+    "CoDH"
+   ],
+   "en": "Human Rights Council",
+   "es": "Consejo de Derechos Humanos",
+   "tipo": "Órgano de la ONU",
+   "que": "47 Estados; órgano subsidiario de la Asamblea General desde 2006. Resoluciones A/HRC/RES/… No confundir con el Comité de Derechos Humanos (CCPR).",
+   "ir": "S:cdh"
+  },
+  {
+   "id": "hrcttee-comite",
+   "sigla": "HRCttee",
+   "alias": [
+    "CDH (Comité)"
+   ],
+   "en": "Human Rights Committee",
+   "es": "Comité de Derechos Humanos",
+   "tipo": "Comité",
+   "que": "Otra forma de nombrar al CCPR, para distinguirlo del Human Rights Council (HRC).",
+   "ir": "T:IV-4"
+  },
+  {
+   "id": "hrd-concepto",
+   "sigla": "HRD",
+   "alias": [
+    "DDH",
+    "Defensores"
+   ],
+   "en": "Human Rights Defender",
+   "es": "Defensor o defensora de derechos humanos",
+   "tipo": "Concepto",
+   "que": "Las personas que defienden derechos humanos tienen un relator especial propio y protecciones específicas.",
+   "ir": "M:defensor|defender"
+  },
+  {
+   "id": "iachr-sistema-regional",
+   "sigla": "IACHR",
+   "alias": [
+    "CIDH"
+   ],
+   "en": "Inter-American Commission on Human Rights",
+   "es": "Comisión Interamericana de Derechos Humanos",
+   "tipo": "Sistema regional",
+   "que": "Órgano de la OEA que recibe peticiones sobre derechos humanos en las Américas."
+  },
+  {
+   "id": "iacthr-sistema-regional",
+   "sigla": "IACtHR",
+   "alias": [
+    "Corte IDH"
+   ],
+   "en": "Inter-American Court of Human Rights",
+   "es": "Corte Interamericana de Derechos Humanos",
+   "tipo": "Sistema regional",
+   "que": "Tribunal del sistema interamericano; aplica la Convención Americana."
+  },
+  {
+   "id": "iaea-entidad",
+   "sigla": "IAEA",
+   "alias": [
+    "OIEA"
+   ],
+   "en": "International Atomic Energy Agency",
+   "es": "Organismo Internacional de Energía Atómica",
+   "tipo": "Entidad",
+   "que": "Organismo relacionado con la ONU para los usos pacíficos de la energía nuclear y las salvaguardias.",
+   "ir": "E:OIEA"
+  },
+  {
+   "id": "icc-entidad",
+   "sigla": "ICC",
+   "alias": [
+    "CPI"
+   ],
+   "en": "International Criminal Court",
+   "es": "Corte Penal Internacional",
+   "tipo": "Entidad",
+   "que": "Tribunal permanente creado por el Estatuto de Roma; no es un órgano de la ONU.",
+   "ir": "E:CPI"
+  },
+  {
+   "id": "iccpr-tratado",
+   "sigla": "ICCPR",
+   "alias": [
+    "PIDCP",
+    "PDCP"
+   ],
+   "en": "International Covenant on Civil and Political Rights",
+   "es": "Pacto Internacional de Derechos Civiles y Políticos",
+   "tipo": "Tratado",
+   "que": "Tratado de 1966 sobre derechos civiles y políticos (vida, libertad, juicio justo, expresión, reunión, religión). Lo vigila el CCPR. Es uno de los dos «Pactos» que desarrollan la Declaración Universal.",
+   "ir": "T:IV-4"
+  },
+  {
+   "id": "icerd-tratado",
+   "sigla": "ICERD",
+   "alias": [
+    "CIEDR",
+    "CEDR",
+    "CERD (convención)"
+   ],
+   "en": "International Convention on the Elimination of All Forms of Racial Discrimination",
+   "es": "Convención Internacional sobre la Eliminación de todas las Formas de Discriminación Racial",
+   "tipo": "Tratado",
+   "que": "Tratado de 1965 contra la discriminación racial. Lo vigila el comité CERD (cuya sigla se usa a menudo también para la Convención).",
+   "ir": "T:IV-2"
+  },
+  {
+   "id": "icescr-tratado",
+   "sigla": "ICESCR",
+   "alias": [
+    "PIDESC",
+    "PDESC"
+   ],
+   "en": "International Covenant on Economic, Social and Cultural Rights",
+   "es": "Pacto Internacional de Derechos Económicos, Sociales y Culturales",
+   "tipo": "Tratado",
+   "que": "Tratado de 1966 sobre trabajo, salud, educación, vivienda, alimentación y cultura. Lo vigila el CESCR. Obliga a avanzar progresivamente «hasta el máximo de los recursos de que disponga» el Estado.",
+   "ir": "T:IV-3"
+  },
+  {
+   "id": "icj-organo-de-la-onu",
+   "sigla": "ICJ",
+   "alias": [
+    "CIJ"
+   ],
+   "en": "International Court of Justice",
+   "es": "Corte Internacional de Justicia",
+   "tipo": "Órgano de la ONU",
+   "que": "Órgano judicial principal de la ONU, en La Haya. Resuelve disputas entre Estados y da opiniones consultivas.",
+   "ir": "S:cij"
+  },
+  {
+   "id": "icl-concepto",
+   "sigla": "ICL",
+   "alias": [
+    "DPI"
+   ],
+   "en": "International Criminal Law",
+   "es": "Derecho Penal Internacional",
+   "tipo": "Concepto",
+   "que": "Normas que castigan crímenes internacionales (genocidio, lesa humanidad, guerra, agresión). Lo aplica la CPI y otros tribunales.",
+   "ir": "E:CPI"
+  },
+  {
+   "id": "icpped-tratado",
+   "sigla": "ICPPED",
+   "alias": [
+    "CDF",
+    "CIPPDF",
+    "CPED"
+   ],
+   "en": "International Convention for the Protection of All Persons from Enforced Disappearance",
+   "es": "Convención Internacional para la Protección de Todas las Personas contra las Desapariciones Forzadas",
+   "tipo": "Tratado",
+   "que": "Tratado de 2006 contra las desapariciones forzadas. Su comité es el CED.",
+   "ir": "T:IV-16"
+  },
+  {
+   "id": "icrmw-tratado",
+   "sigla": "ICRMW",
+   "alias": [
+    "CTM",
+    "ICMW"
+   ],
+   "en": "International Convention on the Protection of the Rights of All Migrant Workers and Members of Their Families",
+   "es": "Convención Internacional sobre la Protección de los Derechos de Todos los Trabajadores Migratorios y de sus Familiares",
+   "tipo": "Tratado",
+   "que": "Tratado de 1990 sobre los trabajadores migratorios y sus familias. Su comité es el CMW. Tiene pocas ratificaciones, sobre todo de países de origen de migrantes.",
+   "ir": "T:IV-13"
+  },
+  {
+   "id": "idp-concepto",
+   "sigla": "IDP",
+   "alias": [
+    "PDI",
+    "Desplazados internos"
+   ],
+   "en": "Internally Displaced Persons",
+   "es": "Personas desplazadas internas",
+   "tipo": "Concepto",
+   "que": "Personas obligadas a huir sin cruzar una frontera.",
+   "ir": "M:desplazad|displaced"
+  },
+  {
+   "id": "ie-mecanismo",
+   "sigla": "IE",
+   "alias": [
+    "EI",
+    "Experto Independiente"
+   ],
+   "en": "Independent Expert",
+   "es": "Experto Independiente",
+   "tipo": "Mecanismo",
+   "que": "Figura equivalente a un relator con otro nombre.",
+   "ir": "S:pe"
+  },
+  {
+   "id": "ihl-concepto",
+   "sigla": "IHL",
+   "alias": [
+    "DIH"
+   ],
+   "en": "International Humanitarian Law",
+   "es": "Derecho Internacional Humanitario",
+   "tipo": "Concepto",
+   "que": "Normas aplicables en los conflictos armados (Convenios de Ginebra y sus Protocolos). Distinto del derecho de los derechos humanos, que rige siempre."
+  },
+  {
+   "id": "ihrl-concepto",
+   "sigla": "IHRL",
+   "alias": [
+    "DIDH"
+   ],
+   "en": "International Human Rights Law",
+   "es": "Derecho Internacional de los Derechos Humanos",
+   "tipo": "Concepto",
+   "que": "Conjunto de tratados y normas que protegen a las personas frente al Estado, en paz y en guerra."
+  },
+  {
+   "id": "iiim-mecanismo",
+   "sigla": "IIIM",
+   "alias": [],
+   "en": "International, Impartial and Independent Mechanism",
+   "es": "Mecanismo Internacional, Imparcial e Independiente",
+   "tipo": "Mecanismo",
+   "que": "Reúne pruebas de crímenes graves cometidos en Siria desde 2011."
+  },
+  {
+   "id": "ilo-entidad",
+   "sigla": "ILO",
+   "alias": [
+    "OIT"
+   ],
+   "en": "International Labour Organization",
+   "es": "Organización Internacional del Trabajo",
+   "tipo": "Entidad",
+   "que": "Organismo especializado: normas del trabajo.",
+   "ir": "E:OIT"
+  },
+  {
+   "id": "imf-entidad",
+   "sigla": "IMF",
+   "alias": [
+    "FMI"
+   ],
+   "en": "International Monetary Fund",
+   "es": "Fondo Monetario Internacional",
+   "tipo": "Entidad",
+   "que": "Organismo especializado: estabilidad financiera.",
+   "ir": "E:FMI"
+  },
+  {
+   "id": "iom-entidad",
+   "sigla": "IOM",
+   "alias": [
+    "OIM"
+   ],
+   "en": "International Organization for Migration",
+   "es": "Organización Internacional para las Migraciones",
+   "tipo": "Entidad",
+   "que": "Organización relacionada con la ONU desde 2016.",
+   "ir": "E:OIM"
+  },
+  {
+   "id": "jua-procedimiento",
+   "sigla": "JUA",
+   "alias": [
+    "JAL"
+   ],
+   "en": "Joint Urgent Appeal / Joint Allegation Letter",
+   "es": "Llamamiento urgente / carta de alegaciones conjunto",
+   "tipo": "Procedimiento",
+   "que": "Comunicación firmada por varios mandatos a la vez.",
+   "ir": "S:pe"
+  },
+  {
+   "id": "l-documento",
+   "sigla": "L.",
+   "alias": [
+    "Limited"
+   ],
+   "en": "Limited distribution",
+   "es": "Distribución limitada",
+   "tipo": "Documento",
+   "que": "Indicador de un proyecto de resolución. A/HRC/54/L.12 es el proyecto; si se aprueba pasa a A/HRC/RES/54/n.",
+   "ir": "P:A/HRC/54/L.12"
+  },
+  {
+   "id": "lis-pendens-concepto",
+   "sigla": "Lis pendens",
+   "alias": [
+    "Litispendencia"
+   ],
+   "en": "Lis pendens",
+   "es": "Litispendencia",
+   "tipo": "Concepto",
+   "que": "El mismo asunto no puede estar examinándose a la vez en otro procedimiento internacional.",
+   "ir": "T:IV-4"
+  },
+  {
+   "id": "loi-documento",
+   "sigla": "LOI",
+   "alias": [
+    "LdC",
+    "Lista de cuestiones"
+   ],
+   "en": "List of Issues",
+   "es": "Lista de cuestiones",
+   "tipo": "Documento",
+   "que": "Preguntas que el comité envía al Estado sobre su informe.",
+   "ir": "S:tratados"
+  },
+  {
+   "id": "loipr-documento",
+   "sigla": "LOIPR",
+   "alias": [
+    "LdCPI"
+   ],
+   "en": "List of Issues Prior to Reporting",
+   "es": "Lista de cuestiones previa a la presentación del informe",
+   "tipo": "Documento",
+   "que": "Preguntas enviadas antes de que el Estado redacte su informe: es el «procedimiento simplificado».",
+   "ir": "S:tratados"
+  },
+  {
+   "id": "ngo-concepto",
+   "sigla": "NGO",
+   "alias": [
+    "ONG",
+    "CSO",
+    "OSC"
+   ],
+   "en": "Non-governmental organization / Civil society organization",
+   "es": "Organización no gubernamental / Organización de la sociedad civil",
+   "tipo": "Concepto",
+   "que": "Participan con informes sombra, comunicaciones y presencia en las sesiones."
+  },
+  {
+   "id": "nhri-concepto",
+   "sigla": "NHRI",
+   "alias": [
+    "INDH"
+   ],
+   "en": "National Human Rights Institution",
+   "es": "Institución Nacional de Derechos Humanos",
+   "tipo": "Concepto",
+   "que": "Organismo nacional independiente (defensoría, comisión). Puede aportar informes a los comités y al EPU."
+  },
+  {
+   "id": "non-refoulement-concepto",
+   "sigla": "Non-refoulement",
+   "alias": [
+    "No devolución"
+   ],
+   "en": "Non-refoulement",
+   "es": "No devolución",
+   "tipo": "Concepto",
+   "que": "Prohibición de devolver a una persona a un país donde corre riesgo de tortura o persecución.",
+   "ir": "T:IV-9"
+  },
+  {
+   "id": "npm-mecanismo",
+   "sigla": "NPM",
+   "alias": [
+    "MNP"
+   ],
+   "en": "National Preventive Mechanism",
+   "es": "Mecanismo Nacional de Prevención",
+   "tipo": "Mecanismo",
+   "que": "Órgano interno que cada Estado parte del OPCAT debe crear para visitar cualquier lugar de privación de libertad.",
+   "ir": "T:IV-9-b"
+  },
+  {
+   "id": "oas-sistema-regional",
+   "sigla": "OAS",
+   "alias": [
+    "OEA"
+   ],
+   "en": "Organization of American States",
+   "es": "Organización de los Estados Americanos",
+   "tipo": "Sistema regional",
+   "que": "Organización regional americana; no forma parte de la ONU."
+  },
+  {
+   "id": "ocha-entidad",
+   "sigla": "OCHA",
+   "alias": [],
+   "en": "United Nations Office for the Coordination of Humanitarian Affairs",
+   "es": "Oficina de Coordinación de Asuntos Humanitarios",
+   "tipo": "Entidad",
+   "que": "Coordina la respuesta humanitaria de la ONU.",
+   "ir": "E:OCHA"
+  },
+  {
+   "id": "ods-sistema-de-documentos-documento",
+   "sigla": "ODS (sistema de documentos)",
+   "alias": [
+    "ODS",
+    "ODS-DOC"
+   ],
+   "en": "Official Document System of the United Nations (ODS)",
+   "es": "Sistema de archivo de documentos oficiales de las Naciones Unidas",
+   "tipo": "Documento",
+   "que": "Archivo oficial de documentos de la ONU por símbolo (documents.un.org). No confundir con los ODS (objetivos de desarrollo sostenible).",
+   "ir": "S:fuentes"
+  },
+  {
+   "id": "ohchr-organo-de-la-onu",
+   "sigla": "OHCHR",
+   "alias": [
+    "ACNUDH",
+    "OACDH"
+   ],
+   "en": "Office of the United Nations High Commissioner for Human Rights",
+   "es": "Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos",
+   "tipo": "Órgano de la ONU",
+   "que": "Parte de la Secretaría, en Ginebra. Da apoyo al Consejo, a los procedimientos especiales y a los comités de tratados, y mantiene las bases de datos oficiales.",
+   "ir": "E:ACNUDH"
+  },
+  {
+   "id": "op-cedaw-protocolo",
+   "sigla": "OP-CEDAW",
+   "alias": [
+    "OP-CCDM"
+   ],
+   "en": "Optional Protocol to CEDAW",
+   "es": "Protocolo Facultativo de la CEDAW",
+   "tipo": "Protocolo",
+   "que": "Permite comunicaciones individuales e investigaciones de oficio ante el comité de la CEDAW.",
+   "ir": "T:IV-8-b"
+  },
+  {
+   "id": "op-crpd-protocolo",
+   "sigla": "OP-CRPD",
+   "alias": [
+    "PF-CDPD"
+   ],
+   "en": "Optional Protocol to the CRPD",
+   "es": "Protocolo Facultativo de la CDPD",
+   "tipo": "Protocolo",
+   "que": "Permite comunicaciones individuales e investigaciones ante el comité CRPD.",
+   "ir": "T:IV-15-a"
+  },
+  {
+   "id": "op-icescr-protocolo",
+   "sigla": "OP-ICESCR",
+   "alias": [
+    "OP-PIDESC"
+   ],
+   "en": "Optional Protocol to the ICESCR",
+   "es": "Protocolo Facultativo del PIDESC",
+   "tipo": "Protocolo",
+   "que": "Permite comunicaciones individuales e investigaciones ante el CESCR.",
+   "ir": "T:IV-3-a"
+  },
+  {
+   "id": "op1-iccpr-protocolo",
+   "sigla": "OP1-ICCPR",
+   "alias": [
+    "OP-PIDCP",
+    "OP1-PIDCP"
+   ],
+   "en": "First Optional Protocol to the ICCPR",
+   "es": "Primer Protocolo Facultativo del PIDCP",
+   "tipo": "Protocolo",
+   "que": "Permite las comunicaciones (quejas) individuales ante el CCPR contra los Estados que lo ratificaron.",
+   "ir": "T:IV-5"
+  },
+  {
+   "id": "op2-iccpr-protocolo",
+   "sigla": "OP2-ICCPR",
+   "alias": [
+    "OP2-PIDCP"
+   ],
+   "en": "Second Optional Protocol to the ICCPR, aiming at the abolition of the death penalty",
+   "es": "Segundo Protocolo Facultativo del PIDCP, destinado a abolir la pena de muerte",
+   "tipo": "Protocolo",
+   "que": "Compromete a los Estados parte a abolir la pena de muerte.",
+   "ir": "T:IV-12"
+  },
+  {
+   "id": "op3-crc-protocolo",
+   "sigla": "OP3-CRC",
+   "alias": [
+    "OPIC",
+    "OP-CRC-IC"
+   ],
+   "en": "Optional Protocol to the CRC on a communications procedure",
+   "es": "Protocolo Facultativo de la CDN relativo a un procedimiento de comunicaciones",
+   "tipo": "Protocolo",
+   "que": "Permite comunicaciones individuales, investigaciones y quejas entre Estados ante el comité CRC.",
+   "ir": "T:IV-11-d"
+  },
+  {
+   "id": "opac-protocolo",
+   "sigla": "OPAC",
+   "alias": [
+    "OP-CRC-AC"
+   ],
+   "en": "Optional Protocol to the CRC on the involvement of children in armed conflict",
+   "es": "Protocolo Facultativo de la CDN relativo a la participación de niños en los conflictos armados",
+   "tipo": "Protocolo",
+   "que": "Eleva a 18 años la edad de reclutamiento obligatorio y de participación directa en hostilidades.",
+   "ir": "T:IV-11-b"
+  },
+  {
+   "id": "opcat-protocolo",
+   "sigla": "OPCAT",
+   "alias": [
+    "PF-CAT"
+   ],
+   "en": "Optional Protocol to the Convention against Torture",
+   "es": "Protocolo Facultativo de la Convención contra la Tortura",
+   "tipo": "Protocolo",
+   "que": "Crea un sistema de visitas preventivas a lugares de detención: el Subcomité (SPT) y los Mecanismos Nacionales de Prevención (MNP).",
+   "ir": "T:IV-9-b"
+  },
+  {
+   "id": "opsc-protocolo",
+   "sigla": "OPSC",
+   "alias": [
+    "OP-CRC-SC"
+   ],
+   "en": "Optional Protocol to the CRC on the sale of children, child prostitution and child pornography",
+   "es": "Protocolo Facultativo de la CDN relativo a la venta de niños, la prostitución infantil y la utilización de niños en la pornografía",
+   "tipo": "Protocolo",
+   "que": "Obliga a penalizar la venta de niños, la prostitución infantil y la pornografía infantil.",
+   "ir": "T:IV-11-c"
+  },
+  {
+   "id": "opt-pais-o-territorio",
+   "sigla": "OPT",
+   "alias": [
+    "TPO"
+   ],
+   "en": "Occupied Palestinian Territory",
+   "es": "Territorio Palestino Ocupado",
+   "tipo": "País o territorio",
+   "que": "Tiene un relator especial y una comisión de investigación.",
+   "ir": "M:palestin"
+  },
+  {
+   "id": "osce-sistema-regional",
+   "sigla": "OSCE",
+   "alias": [],
+   "en": "Organization for Security and Co-operation in Europe",
+   "es": "Organización para la Seguridad y la Cooperación en Europa",
+   "tipo": "Sistema regional",
+   "que": "Organización regional de seguridad y derechos humanos."
+  },
+  {
+   "id": "prst-documento",
+   "sigla": "PRST",
+   "alias": [
+    "DP"
+   ],
+   "en": "Presidential Statement",
+   "es": "Declaración de la Presidencia",
+   "tipo": "Documento",
+   "que": "Declaración adoptada sin votación en el Consejo de Seguridad o en el Consejo de Derechos Humanos."
+  },
+  {
+   "id": "r2p-concepto",
+   "sigla": "R2P",
+   "alias": [
+    "RdP"
+   ],
+   "en": "Responsibility to Protect",
+   "es": "Responsabilidad de proteger",
+   "tipo": "Concepto",
+   "que": "Principio de 2005: la comunidad internacional puede actuar si un Estado no protege a su población de genocidio y crímenes graves."
+  },
+  {
+   "id": "ratione-loci-concepto",
+   "sigla": "Ratione loci",
+   "alias": [],
+   "en": "Ratione loci",
+   "es": "Competencia por razón del lugar",
+   "tipo": "Concepto",
+   "que": "Jurisdicción del Estado, normalmente su territorio, o control efectivo fuera de él.",
+   "ir": "T:IV-4"
+  },
+  {
+   "id": "ratione-materiae-concepto",
+   "sigla": "Ratione materiae",
+   "alias": [],
+   "en": "Ratione materiae",
+   "es": "Competencia por razón de la materia",
+   "tipo": "Concepto",
+   "que": "La queja debe invocar derechos reconocidos en el tratado.",
+   "ir": "T:IV-4"
+  },
+  {
+   "id": "ratione-personae-concepto",
+   "sigla": "Ratione personae",
+   "alias": [],
+   "en": "Ratione personae",
+   "es": "Competencia por razón de la persona",
+   "tipo": "Concepto",
+   "que": "Quién puede presentar una queja (la víctima o su representante) y contra qué Estado.",
+   "ir": "T:IV-4"
+  },
+  {
+   "id": "ratione-temporis-concepto",
+   "sigla": "Ratione temporis",
+   "alias": [],
+   "en": "Ratione temporis",
+   "es": "Competencia por razón del tiempo",
+   "tipo": "Concepto",
+   "que": "No hay retroactividad: los hechos deben ser posteriores a la entrada en vigor, salvo violaciones continuadas.",
+   "ir": "T:IV-4"
+  },
+  {
+   "id": "res-documento",
+   "sigla": "RES",
+   "alias": [
+    "Resolución"
+   ],
+   "en": "Resolution",
+   "es": "Resolución",
+   "tipo": "Documento",
+   "que": "Acto adoptado por un órgano de la ONU (A/RES, S/RES, E/RES, A/HRC/RES…). No es lo mismo que el informe que la recoge.",
+   "ir": "P:A/HRC/RES/54/6"
+  },
+  {
+   "id": "rev-documento",
+   "sigla": "Rev.",
+   "alias": [
+    "Revisión"
+   ],
+   "en": "Revision",
+   "es": "Revisión",
+   "tipo": "Documento",
+   "que": "Versión revisada de un documento que sustituye a la anterior; se añade al símbolo (por ejemplo /Rev.1)."
+  },
+  {
+   "id": "rs-tratado",
+   "sigla": "RS",
+   "alias": [
+    "ER",
+    "Estatuto de Roma"
+   ],
+   "en": "Rome Statute of the International Criminal Court",
+   "es": "Estatuto de Roma de la Corte Penal Internacional",
+   "tipo": "Tratado",
+   "que": "Tratado de 1998 que creó la Corte Penal Internacional, con sede en La Haya.",
+   "ir": "E:CPI"
+  },
+  {
+   "id": "sdg-concepto",
+   "sigla": "SDG",
+   "alias": [
+    "ODS"
+   ],
+   "en": "Sustainable Development Goals",
+   "es": "Objetivos de Desarrollo Sostenible",
+   "tipo": "Concepto",
+   "que": "17 objetivos de la Agenda 2030. No confundir con el sistema ODS de documentos."
+  },
+  {
+   "id": "shadow-report-documento",
+   "sigla": "Shadow report",
+   "alias": [
+    "Informe sombra"
+   ],
+   "en": "Shadow report / alternative report",
+   "es": "Informe sombra o alternativo",
+   "tipo": "Documento",
+   "que": "Informe de la sociedad civil que contrasta el informe oficial del Estado ante el comité o el EPU.",
+   "ir": "S:tratados"
+  },
+  {
+   "id": "sogi-concepto",
+   "sigla": "SOGI",
+   "alias": [
+    "OSIG"
+   ],
+   "en": "Sexual Orientation and Gender Identity",
+   "es": "Orientación sexual e identidad de género",
+   "tipo": "Concepto",
+   "que": "Tema de un mandato de experto independiente del Consejo.",
+   "ir": "M:orientacion sexual|sexual orientation"
+  },
+  {
+   "id": "sp-mecanismo",
+   "sigla": "SP",
+   "alias": [
+    "PE",
+    "Procedimientos especiales"
+   ],
+   "en": "Special Procedures",
+   "es": "Procedimientos especiales",
+   "tipo": "Mecanismo",
+   "que": "Relatores, expertos y grupos de trabajo del Consejo de Derechos Humanos, temáticos o por país.",
+   "ir": "S:pe"
+  },
+  {
+   "id": "spt-comite",
+   "sigla": "SPT",
+   "alias": [],
+   "en": "Subcommittee on Prevention of Torture",
+   "es": "Subcomité para la Prevención de la Tortura",
+   "tipo": "Comité",
+   "que": "Órgano de 25 expertos creado por el OPCAT, que visita lugares de detención en los Estados parte.",
+   "ir": "T:IV-9-b"
+  },
+  {
+   "id": "sr-mecanismo",
+   "sigla": "SR",
+   "alias": [
+    "RE",
+    "Relator Especial"
+   ],
+   "en": "Special Rapporteur",
+   "es": "Relator Especial",
+   "tipo": "Mecanismo",
+   "que": "Experto independiente con un mandato temático o por país, que investiga, visita países y escribe a los Estados.",
+   "ir": "S:pe"
+  },
+  {
+   "id": "srp-procedimiento",
+   "sigla": "SRP",
+   "alias": [
+    "PSPI"
+   ],
+   "en": "Simplified Reporting Procedure",
+   "es": "Procedimiento simplificado de presentación de informes",
+   "tipo": "Procedimiento",
+   "que": "Alternativa al informe periódico clásico: el Estado responde a una lista de cuestiones enviada de antemano.",
+   "ir": "S:tratados"
+  },
+  {
+   "id": "tb-comite",
+   "sigla": "TB",
+   "alias": [
+    "OT",
+    "UNTBs"
+   ],
+   "en": "Treaty Bodies",
+   "es": "Órganos de tratados",
+   "tipo": "Comité",
+   "que": "Los comités de expertos independientes que vigilan los tratados (nueve más el SPT). Los crea cada tratado, no la Carta.",
+   "ir": "S:tratados"
+  },
+  {
+   "id": "ua-procedimiento",
+   "sigla": "UA",
+   "alias": [
+    "Llamamiento urgente"
+   ],
+   "en": "Urgent Appeal",
+   "es": "Llamamiento urgente",
+   "tipo": "Procedimiento",
+   "que": "Comunicación de un relator a un Estado cuando hay riesgo inminente para la vida o la integridad de alguien.",
+   "ir": "S:pe"
+  },
+  {
+   "id": "udhr-declaracion",
+   "sigla": "UDHR",
+   "alias": [
+    "DUDH"
+   ],
+   "en": "Universal Declaration of Human Rights",
+   "es": "Declaración Universal de Derechos Humanos",
+   "tipo": "Declaración",
+   "que": "Resolución de la Asamblea General de 1948 (217 A (III)): no es un tratado, pero muchos de sus derechos se consideran costumbre internacional. Los dos Pactos de 1966 la desarrollan.",
+   "ir": "P:A/RES/217A(III)"
+  },
+  {
+   "id": "uhri-documento",
+   "sigla": "UHRI",
+   "alias": [
+    "IUDH"
+   ],
+   "en": "Universal Human Rights Index",
+   "es": "Índice Universal de Derechos Humanos",
+   "tipo": "Documento",
+   "que": "Base que reúne recomendaciones de los mecanismos de la ONU por derecho y por país."
+  },
+  {
+   "id": "un-organo-de-la-onu",
+   "sigla": "UN",
+   "alias": [
+    "ONU"
+   ],
+   "en": "United Nations",
+   "es": "Naciones Unidas (Organización de las Naciones Unidas)",
+   "tipo": "Órgano de la ONU",
+   "que": "Organización internacional creada en 1945 por la Carta de San Francisco; 193 Estados miembros.",
+   "ir": "S:ag"
+  },
+  {
+   "id": "un-women-entidad",
+   "sigla": "UN Women",
+   "alias": [
+    "ONU Mujeres"
+   ],
+   "en": "United Nations Entity for Gender Equality and the Empowerment of Women",
+   "es": "Entidad de las Naciones Unidas para la Igualdad de Género y el Empoderamiento de las Mujeres",
+   "tipo": "Entidad",
+   "que": "Creada en 2010. No es el comité de la CEDAW.",
+   "ir": "E:ONUMUJERES"
+  },
+  {
+   "id": "un-habitat-entidad",
+   "sigla": "UN-Habitat",
+   "alias": [
+    "ONU-Hábitat"
+   ],
+   "en": "United Nations Human Settlements Programme",
+   "es": "Programa de las Naciones Unidas para los Asentamientos Humanos",
+   "tipo": "Entidad",
+   "que": "Programa de la ONU para vivienda adecuada y desarrollo urbano sostenible, con sede en Nairobi.",
+   "ir": "E:ONUHABITAT"
+  },
+  {
+   "id": "unaids-entidad",
+   "sigla": "UNAIDS",
+   "alias": [
+    "ONUSIDA"
+   ],
+   "en": "Joint United Nations Programme on HIV/AIDS",
+   "es": "Programa Conjunto de las Naciones Unidas sobre el VIH/Sida",
+   "tipo": "Entidad",
+   "que": "Programa conjunto de varias entidades de la ONU frente al VIH/sida, con enfoque de derechos humanos.",
+   "ir": "E:ONUSIDA"
+  },
+  {
+   "id": "unbis-documento",
+   "sigla": "UNBIS",
+   "alias": [],
+   "en": "United Nations Bibliographic Information System thesaurus",
+   "es": "Tesauro del Sistema Bibliográfico de las Naciones Unidas",
+   "tipo": "Documento",
+   "que": "Vocabulario controlado con que se indexan los documentos (materias como «TORTURE»)."
+  },
+  {
+   "id": "undp-entidad",
+   "sigla": "UNDP",
+   "alias": [
+    "PNUD"
+   ],
+   "en": "United Nations Development Programme",
+   "es": "Programa de las Naciones Unidas para el Desarrollo",
+   "tipo": "Entidad",
+   "que": "Desarrollo, gobernanza y acceso a la justicia.",
+   "ir": "E:PNUD"
+  },
+  {
+   "id": "undrip-declaracion",
+   "sigla": "UNDRIP",
+   "alias": [
+    "DNUDPI"
+   ],
+   "en": "United Nations Declaration on the Rights of Indigenous Peoples",
+   "es": "Declaración de las Naciones Unidas sobre los Derechos de los Pueblos Indígenas",
+   "tipo": "Declaración",
+   "que": "Resolución 61/295 de la Asamblea General (2007). Es una declaración, no un tratado.",
+   "ir": "M:indigena|indigenous"
+  },
+  {
+   "id": "unep-entidad",
+   "sigla": "UNEP",
+   "alias": [
+    "PNUMA"
+   ],
+   "en": "United Nations Environment Programme",
+   "es": "Programa de las Naciones Unidas para el Medio Ambiente",
+   "tipo": "Entidad",
+   "que": "Autoridad ambiental de la ONU; clave en el vínculo entre medio ambiente y derechos humanos.",
+   "ir": "E:PNUMA"
+  },
+  {
+   "id": "unesco-entidad",
+   "sigla": "UNESCO",
+   "alias": [],
+   "en": "United Nations Educational, Scientific and Cultural Organization",
+   "es": "Organización de las Naciones Unidas para la Educación, la Ciencia y la Cultura",
+   "tipo": "Entidad",
+   "que": "Organismo especializado: educación, ciencia, cultura.",
+   "ir": "E:UNESCO"
+  },
+  {
+   "id": "unfpa-entidad",
+   "sigla": "UNFPA",
+   "alias": [],
+   "en": "United Nations Population Fund",
+   "es": "Fondo de Población de las Naciones Unidas",
+   "tipo": "Entidad",
+   "que": "Fondo de la ONU para la salud sexual y reproductiva y contra la violencia de género.",
+   "ir": "E:UNFPA"
+  },
+  {
+   "id": "unga-organo-de-la-onu",
+   "sigla": "UNGA",
+   "alias": [
+    "AGNU",
+    "AG",
+    "GA"
+   ],
+   "en": "United Nations General Assembly",
+   "es": "Asamblea General de las Naciones Unidas",
+   "tipo": "Órgano de la ONU",
+   "que": "Órgano plenario con todos los Estados miembros. Sus resoluciones son A/RES/…",
+   "ir": "S:ag"
+  },
+  {
+   "id": "unhcr-entidad",
+   "sigla": "UNHCR",
+   "alias": [
+    "ACNUR"
+   ],
+   "en": "Office of the United Nations High Commissioner for Refugees",
+   "es": "Alto Comisionado de las Naciones Unidas para los Refugiados",
+   "tipo": "Entidad",
+   "que": "Protege a refugiados, desplazados y apátridas.",
+   "ir": "E:ACNUR"
+  },
+  {
+   "id": "unicef-entidad",
+   "sigla": "UNICEF",
+   "alias": [],
+   "en": "United Nations Children's Fund",
+   "es": "Fondo de las Naciones Unidas para la Infancia",
+   "tipo": "Entidad",
+   "que": "Protege y asiste a la niñez; ligado a la CRC.",
+   "ir": "E:UNICEF"
+  },
+  {
+   "id": "unodc-entidad",
+   "sigla": "UNODC",
+   "alias": [
+    "ONUDD"
+   ],
+   "en": "United Nations Office on Drugs and Crime",
+   "es": "Oficina de las Naciones Unidas contra la Droga y el Delito",
+   "tipo": "Entidad",
+   "que": "Trata de personas, corrupción y justicia penal.",
+   "ir": "E:UNODC"
+  },
+  {
+   "id": "unog-organo-de-la-onu",
+   "sigla": "UNOG",
+   "alias": [],
+   "en": "United Nations Office at Geneva",
+   "es": "Oficina de las Naciones Unidas en Ginebra",
+   "tipo": "Órgano de la ONU",
+   "que": "Sede europea de la ONU; allí sesionan el Consejo y la mayoría de los comités."
+  },
+  {
+   "id": "unpfii-organo-de-la-onu",
+   "sigla": "UNPFII",
+   "alias": [
+    "FPCI"
+   ],
+   "en": "United Nations Permanent Forum on Indigenous Issues",
+   "es": "Foro Permanente para las Cuestiones Indígenas",
+   "tipo": "Órgano de la ONU",
+   "que": "Órgano asesor del ECOSOC sobre derechos, cultura y desarrollo de los pueblos indígenas.",
+   "ir": "E:FPCI"
+  },
+  {
+   "id": "unrwa-entidad",
+   "sigla": "UNRWA",
+   "alias": [
+    "OOPS"
+   ],
+   "en": "United Nations Relief and Works Agency for Palestine Refugees in the Near East",
+   "es": "Organismo de Obras Públicas y Socorro de las Naciones Unidas para los Refugiados de Palestina en el Cercano Oriente",
+   "tipo": "Entidad",
+   "que": "Presta educación, salud y asistencia a los refugiados palestinos en Oriente Medio.",
+   "ir": "E:UNRWA"
+  },
+  {
+   "id": "unsc-organo-de-la-onu",
+   "sigla": "UNSC",
+   "alias": [
+    "CSNU",
+    "CS",
+    "SC"
+   ],
+   "en": "United Nations Security Council",
+   "es": "Consejo de Seguridad de las Naciones Unidas",
+   "tipo": "Órgano de la ONU",
+   "que": "15 miembros; sus decisiones son obligatorias. Resoluciones S/RES/…",
+   "ir": "S:cs"
+  },
+  {
+   "id": "unsg-organo-de-la-onu",
+   "sigla": "UNSG",
+   "alias": [
+    "SGNU",
+    "SG"
+   ],
+   "en": "United Nations Secretary-General",
+   "es": "Secretario General de las Naciones Unidas",
+   "tipo": "Órgano de la ONU",
+   "que": "Jefe de la Secretaría. Presenta informes a la Asamblea y al Consejo de Derechos Humanos.",
+   "ir": "S:sec"
+  },
+  {
+   "id": "untc-documento",
+   "sigla": "UNTC",
+   "alias": [
+    "CTNU"
+   ],
+   "en": "United Nations Treaty Collection",
+   "es": "Colección de Tratados de las Naciones Unidas",
+   "tipo": "Documento",
+   "que": "Base de datos oficial donde se consulta quién ha ratificado cada tratado, con fechas, reservas y declaraciones. De ahí salen las ratificaciones del tablero.",
+   "ir": "S:tratados"
+  },
+  {
+   "id": "upr-mecanismo",
+   "sigla": "UPR",
+   "alias": [
+    "EPU"
+   ],
+   "en": "Universal Periodic Review",
+   "es": "Examen Periódico Universal",
+   "tipo": "Mecanismo",
+   "que": "Cada Estado miembro es examinado por turnos por sus pares; documentos A/HRC/WG.6/…",
+   "ir": "S:epu"
+  },
+  {
+   "id": "vclt-tratado",
+   "sigla": "VCLT",
+   "alias": [
+    "CVDT"
+   ],
+   "en": "Vienna Convention on the Law of Treaties",
+   "es": "Convención de Viena sobre el Derecho de los Tratados",
+   "tipo": "Tratado",
+   "que": "Regula cómo se interpretan, ratifican y formulan reservas a los tratados (1969)."
+  },
+  {
+   "id": "views-documento",
+   "sigla": "Views",
+   "alias": [
+    "Dictámenes",
+    "Dictamen",
+    "CD"
+   ],
+   "en": "Views / Decisions on individual communications",
+   "es": "Dictámenes y decisiones sobre comunicaciones individuales",
+   "tipo": "Documento",
+   "que": "Conclusión de un comité sobre una queja individual. Los símbolos con «/D/» corresponden a estas comunicaciones.",
+   "ir": "S:tratados"
+  },
+  {
+   "id": "wb-entidad",
+   "sigla": "WB",
+   "alias": [
+    "BM",
+    "Banco Mundial"
+   ],
+   "en": "World Bank",
+   "es": "Banco Mundial",
+   "tipo": "Entidad",
+   "que": "Organismo especializado: desarrollo y reducción de la pobreza.",
+   "ir": "E:BM"
+  },
+  {
+   "id": "wfp-entidad",
+   "sigla": "WFP",
+   "alias": [
+    "PMA"
+   ],
+   "en": "World Food Programme",
+   "es": "Programa Mundial de Alimentos",
+   "tipo": "Entidad",
+   "que": "Programa de la ONU de asistencia alimentaria en emergencias, vinculado al derecho a la alimentación.",
+   "ir": "E:PMA"
+  },
+  {
+   "id": "wg-mecanismo",
+   "sigla": "WG",
+   "alias": [
+    "GT",
+    "Grupo de Trabajo"
+   ],
+   "en": "Working Group",
+   "es": "Grupo de Trabajo",
+   "tipo": "Mecanismo",
+   "que": "Mandato ejercido por cinco expertos; por ejemplo, detención arbitraria o desapariciones forzadas.",
+   "ir": "S:pe"
+  },
+  {
+   "id": "wg-6-documento",
+   "sigla": "WG.6",
+   "alias": [
+    "GT.6"
+   ],
+   "en": "Working Group on the Universal Periodic Review (WG.6)",
+   "es": "Grupo de Trabajo sobre el Examen Periódico Universal",
+   "tipo": "Documento",
+   "que": "Código de los documentos del EPU: A/HRC/WG.6/sesión/ISO/1 (informe nacional), /2 (recopilación de la ONU), /3 (resumen de otras partes).",
+   "ir": "P:A/HRC/WG.6/41/IND/1"
+  },
+  {
+   "id": "wgad-mecanismo",
+   "sigla": "WGAD",
+   "alias": [
+    "GTDA"
+   ],
+   "en": "Working Group on Arbitrary Detention",
+   "es": "Grupo de Trabajo sobre la Detención Arbitraria",
+   "tipo": "Mecanismo",
+   "que": "Adopta opiniones sobre casos individuales de detención arbitraria.",
+   "ir": "M:detencion|detention"
+  },
+  {
+   "id": "wgeid-mecanismo",
+   "sigla": "WGEID",
+   "alias": [
+    "GTDFI"
+   ],
+   "en": "Working Group on Enforced or Involuntary Disappearances",
+   "es": "Grupo de Trabajo sobre las Desapariciones Forzadas o Involuntarias",
+   "tipo": "Mecanismo",
+   "que": "Creado en 1980; primer mandato temático global.",
+   "ir": "M:desaparici|disappear"
+  },
+  {
+   "id": "who-entidad",
+   "sigla": "WHO",
+   "alias": [
+    "OMS"
+   ],
+   "en": "World Health Organization",
+   "es": "Organización Mundial de la Salud",
+   "tipo": "Entidad",
+   "que": "Organismo especializado de la ONU para la salud pública internacional.",
+   "ir": "E:OMS"
+  },
+  {
+   "id": "wto-entidad",
+   "sigla": "WTO",
+   "alias": [
+    "OMC"
+   ],
+   "en": "World Trade Organization",
+   "es": "Organización Mundial del Comercio",
+   "tipo": "Entidad",
+   "que": "Organización relacionada con la ONU que fija las reglas del comercio internacional.",
+   "ir": "E:OMC"
+  }
+ ]
+}
