@@ -36,7 +36,7 @@ Abrir `index.html` en cualquier navegador (también sin conexión: los datos van
 | `index.html` | Aplicación |
 | `data/` | `catalogo.json` y `atlas-data.js` (generados), `fuentes/` (descargas oficiales y verificación), `evidencias.json`, Excel del piloto |
 | `scripts/` | Descarga, normalización, verificación y construcción (`actualizar_datos.sh` ejecuta todo) |
-| `tests/` | `smoke.cjs` (103 pruebas de lógica, `invariantes.cjs`: 11) y `browser.cjs` (Chromium real, 119 comprobaciones, escritorio y móvil) |
+| `tests/` | `smoke.cjs` (110 pruebas de lógica, `invariantes.cjs`: 11) y `browser.cjs` (Chromium real, 127 comprobaciones, escritorio y móvil) |
 | `audit/` | Auditoría contra los 13 requisitos, discrepancias respecto a v0.6, inventario, manifiesto de integridad |
 | `docs/` | Traspaso original |
 | `archive/` | Versiones previas sin modificar |
@@ -70,3 +70,11 @@ Cada ficha de país carga, bajo demanda (`data/paises/<ISO>.js`), las observacio
 - **Cómo funciona la ONU** (`sistema`): mapa clicable de los órganos principales, el Consejo de Derechos Humanos y lo que cuelga de él; la **familia de la ONU** (41 entidades: Secretaría, fondos y programas, organismos especializados, comisiones regionales, organizaciones relacionadas) con sus conexiones a comités y mandatos; una guía «¿ante quién reclamo?» y un descifrador de símbolos documentales. Datos de elaboración propia en `data/sistema_onu.json` (declarado como no oficial).
 - **Tratados y comités** (`tratados`): los nueve tratados principales, su comité, los procedimientos de supervisión (informes, comunicaciones individuales, investigaciones, etc., con el artículo de cada uno), los **Estados parte** (de la Colección de Tratados, con enlace a cada ficha de país) y el **texto literal** artículo por artículo cuando la copia oficial tiene texto digital fiable.
 - **Texto literal**: `scripts/fetch_tratados_texto.py` lo toma del anexo de la resolución de la Asamblea General (solo textos digitales, de 1999 en adelante) y, para la CEDAW, de la página de la ONU contrastada palabra a palabra con la copia depositaria (18 erratas evidentes corregidas y listadas). Cada instrumento se valida (numeración 1..N y número de artículos). Los tratados anteriores, cuyo único ejemplar digital es un escaneo con errores de reconocimiento, **no se transcriben**: se enlazan al original.
+
+## Siglas y acrónimos
+
+Diccionario con 145 entradas (`data/siglas.json`, elaboración propia sobre fuentes oficiales): cada sigla se da en **inglés y en español**, con qué es, sinónimos y abreviaturas españolas de uso académico, y un botón al lugar del tablero donde se profundiza. El buscador tolera erratas («cedau»), guiones («OP-CEDAW») y palabras del nombre («examen periódico»), y descifra símbolos documentales. También alimenta la búsqueda inteligente del Panorama.
+
+## Créditos y uso
+
+Los datos oficiales son de las Naciones Unidas y proceden de sus sitios públicos (OHCHR, Biblioteca Digital, Colección de Tratados). Solo se leen metadatos públicos y se citan textos de tratados con su fuente; cada dato enlaza al documento oficial. Proyecto académico, independiente y sin fines de lucro. Lo que es elaboración propia está marcado como tal.
