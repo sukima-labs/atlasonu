@@ -21,6 +21,11 @@ for k in pn.keys() & pa.keys():
         cambios.append({'tipo': 'invitacion', 'texto': f"{pn[k]['es']}: invitación permanente {'cursada' if pn[k]['invitacion']['si'] else 'retirada'}"})
     if pa[k]['visitas']['programadas'] != pn[k]['visitas']['programadas']:
         cambios.append({'tipo': 'visita', 'texto': f"{pn[k]['es']}: visita {'programada' if pn[k]['visitas']['programadas'] else 'ya no figura como programada'}"})
+for k in pn.keys() & pa.keys():
+    da, db = pa[k].get('docs') or {}, pn[k].get('docs') or {}
+    if db.get('co', 0) > da.get('co', 0): cambios.append({'tipo': 'observaciones', 'texto': f"{pn[k]['es']}: {db['co'] - da.get('co', 0)} observación(es) final(es) nueva(s); la última es {(db.get('ultima_co') or {}).get('s', '')}"})
+    if db.get('visitas', 0) > da.get('visitas', 0): cambios.append({'tipo': 'visitas_docs', 'texto': f"{pn[k]['es']}: {db['visitas'] - da.get('visitas', 0)} informe(s) de misión nuevo(s)"})
+    if db.get('epu', 0) > da.get('epu', 0): cambios.append({'tipo': 'epu', 'texto': f"{pn[k]['es']}: {db['epu'] - da.get('epu', 0)} documento(s) nuevo(s) del Examen Periódico Universal"})
 NT = {t['mtdsg']: t['siglas'] for t in new.get('tratados', [])}
 for k in pn.keys() & pa.keys():
     for mt, v in pn[k].get('tratados', {}).items():
