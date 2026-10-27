@@ -9,6 +9,7 @@ const document={getElementById(id){if(!els[id])throw Error('Unknown DOM id '+id)
 const window={scrollTo(){}};const URL={createObjectURL(){return 'blob:fake'},revokeObjectURL(){}};const Blob=function(){};
 const context=vm.createContext({document,window,URL,Blob,console});
 vm.runInContext(fs.readFileSync(path.join(root,'data','atlas-data.js'),'utf8'),context);
+for(const iso of ['IND','COL','IRL','GIN','ESP'])vm.runInContext(fs.readFileSync(path.join(root,'data','paises',iso+'.js'),'utf8'),context);
 vm.runInContext(script,context,{timeout:10000});
 const run=fn=>vm.runInContext(fn,context,{timeout:5000});
 const search=q=>{els.q.value=q;run('filterMandates()');return els.mandBody.innerHTML.toLowerCase()};
@@ -90,6 +91,11 @@ t('tratados para casi todos los países y 18 instrumentos',()=>{assert.equal(run
 t('el campo de tema libre es estático (no se recrea al escribir)',()=>assert.ok(html.includes('<input id="pTema"')&&!/pTemasTabla\.innerHTML=.*<input id="pTema"/.test(script)));
 t('Selección de titulares: «Etapa N» sin número repetido',()=>{const s=els.selectionList.innerHTML;assert.ok(/Etapa 4</.test(s)&&!/Etapa 4: 4/.test(s))});
 t('showPage fuerza el repintado de la zona principal (evita restos de la pantalla anterior)',()=>assert.ok(/showPage\(p\)\{[^]*?void m\.offsetHeight/.test(script)));
+t('India: observaciones finales de los comités (CCPR 2024, CERD 2026) en la ficha',()=>{els.pSel.value='IND';run('renderPaises()');const d=els.pDocs.innerHTML;assert.ok(d.includes('CCPR/C/IND/CO/4')&&d.includes('CERD/C/IND/CO/20-21')&&d.includes('Observaciones finales de los comités'))});
+t('India: EPU por ciclos (ciclo 4 = sesión 41) y documentos base',()=>{const d=els.pDocs.innerHTML;assert.ok(d.includes('Ciclo 4')&&d.includes('A/HRC/WG.6/41/IND/1')&&d.includes('Informe nacional')&&d.includes('Ciclo 3')&&d.includes('Ciclo 2'))});
+t('India: informes de misiones de relatores (vivienda, agua, ejecuciones…)',()=>{const d=els.pDocs.innerHTML;assert.ok(d.includes('A/HRC/34/51/Add.1')&&d.includes('A/HRC/26/38/Add.1'))});
+t('precisión: Irlanda no hereda los informes de Irlanda del Norte/Reino Unido; Guinea no hereda Guinea-Bisáu',()=>{const W=run('window.PAIS_DOCS');assert.ok(W.IRL.visitas.length<=10,'IRL '+W.IRL.visitas.length);assert.equal(W.GIN.visitas.length,0)});
+t('la lista de países muestra los contadores de documentos oficiales',()=>{els.pSel.value='';els.pQ.value='';run('renderPaises()');assert.ok(/\d+ obs\. finales · \d+ informes de visitas/.test(els.pBody.innerHTML))});
 t('ficha de mandato',()=>{run('details(0)');assert.ok(els.cardsResults.innerHTML.includes('Cadena de actos jurídicos'))});
 t('exportCSV',()=>run('exportCSV()'));
 t('autoría y repositorio',()=>assert.ok(html.includes('sukima-labs/onu-arqueologia-documental')&&html.includes('Sukima-Labs')));
