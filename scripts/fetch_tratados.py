@@ -35,7 +35,7 @@ def fetch(t):
     for r in re.findall(r'<tr[^>]*>(.*?)</tr>', h, re.S):
         c = [re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]+>', ' ', x))).strip() for x in re.findall(r'<t[dh][^>]*>(.*?)</t[dh]>', r, re.S)]
         if len(c) != 3 or not c[0] or c[0].strip().lower() in ('participant', 'participants', 'state', 'states'): continue
-        nm = re.sub(r'\s*\d+$', '', c[0]).strip()
+        nm = re.sub(r'(?:\s+\d+\s*,?)+\s*$', '', c[0]).strip()  # notas al pie: «China 12 ,», «Germany 23 , 24 ,»
         f, rt = c[1].strip(), DATE.match(c[2].strip())
         fm = DATE.match(f)
         if (f and not fm) or (c[2].strip() and not rt): continue
