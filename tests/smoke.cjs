@@ -46,7 +46,7 @@ t('búsqueda inteligente: símbolo sin duplicados',()=>{const r=smart('A/HRC/RES
 t('búsqueda inteligente: sigla corta no da falsos positivos («cat» ≠ «education»)',()=>{const r=smart('cat');assert.ok(!r.includes('right to education'))});
 t('búsqueda inteligente: sin resultados orienta',()=>assert.ok(smart('zzzxq').includes('No hay coincidencias')));
 t('explorador usa la búsqueda inteligente',()=>{els.q.value='niños';run('filterMandates()');assert.ok(els.mandBody.innerHTML.toLowerCase().includes('niñ')||els.mandBody.innerHTML.toLowerCase().includes('children'))});
-t('países: 62 listados, 13 con mandato propio',()=>{assert.equal(run('PAISES.length'),62);assert.equal(run('PAISES.filter(p=>p.mandato!==null).length'),13);assert.equal(run('D.filter(r=>r.alcance==="País"&&!r.pais_id).length'),0)});
+t('países: todos los de la fuente (196), 13 con mandato propio',()=>{assert.equal(run('PAISES.length'),196);assert.equal(run('PAISES.filter(p=>p.mandato!==null).length'),13);assert.equal(run('D.filter(r=>r.alcance==="País"&&!r.pais_id).length'),0)});
 t('países: Colombia → titulares de nacionalidad colombiana',()=>{els.pSel.value='COL';run('renderPaises()');assert.ok(els.pBody.innerHTML.includes('Colombia')&&els.pOut.innerHTML.includes('no representan a su Estado'));assert.equal((els.pBody.innerHTML.match(/details\(/g)||[]).length,6)});
 t('países: Camboya → mandato por país',()=>{els.pSel.value='KHM';run('renderPaises()');assert.ok(els.pBody.innerHTML.includes('Camboya'))});
 t('países: Siria → mandato y comisión de investigación',()=>{els.pSel.value='SYR';run('renderPaises()');assert.ok(els.pBody.innerHTML.includes('Siria')&&els.pBody.innerHTML.includes('A/HRC/RES/S-17/1'))});
@@ -67,12 +67,16 @@ t('países: sin mandato por país se dice explícitamente (Colombia)',()=>{els.p
 t('explorador: País+Colombia explica que no hay mandato por país y remite a Países',()=>{els.q.value='';els.modal.value='País';els.pais.value='COL';run('filterMandates()');const c=els.count.innerHTML;assert.ok(c.includes('no tiene mandato por país vigente')&&c.includes('irPais'));els.modal.value='';els.pais.value='';run('filterMandates()')});
 t('procedencia de las fuentes declarada',()=>assert.ok(html.includes('Qué es dato oficial y qué es elaboración propia')&&html.includes('Elaboración propia (no es fuente)')));
 t('plantilla de solicitud y proceso de validación existen',()=>{assert.ok(fs.existsSync(path.join(root,'.github/ISSUE_TEMPLATE/solicitud-verificacion.yml')));assert.ok(fs.existsSync(path.join(root,'docs/PROCESO_DE_VALIDACION.md')))});
-t('5 grupos regionales + «Otro» con fuente oficial',()=>{assert.equal(run('REGS.length'),6);assert.ok(run('DATA.regiones_fuente.url').includes('spcommreports.ohchr.org'));assert.equal(run('PAISES.filter(p=>!p.region).length'),0)});
+t('5 grupos regionales + «Otro» + «Sin grupo», con fuente oficial',()=>{assert.equal(run('REGS.length'),7);assert.ok(run('DATA.regiones_fuente.url').includes('spcommreports.ohchr.org'));assert.equal(run('PAISES.filter(p=>!p.region).length'),0)});
 t('Armenia está en Europa Oriental según la fuente oficial (no Asia-Pacífico)',()=>assert.equal(run('PID.ARM.region'),'EEG'));
-t('chips de región filtran la lista (GRULAC → 10)',()=>{run("setRegion('GRU')");assert.equal((els.pBody.innerHTML.match(/<tr>/g)||[]).length,10);assert.ok(els.pBody.innerHTML.includes('Colombia')&&!els.pBody.innerHTML.includes('España'));run("setRegion('')")});
+t('chips de región filtran la lista (GRULAC → 33)',()=>{run("setRegion('GRU')");assert.equal((els.pBody.innerHTML.match(/<tr>/g)||[]).length,33);assert.ok(els.pBody.innerHTML.includes('Colombia')&&!els.pBody.innerHTML.includes('España'));run("setRegion('')")});
 t('explorador: filtro por grupo regional',()=>{els.q.value='';els.region.value='AFR';run('filterMandates()');const n=run('filtered.length');assert.ok(n>0&&n<57);els.region.value='';run('filterMandates()')});
 t('búsqueda inteligente: «américa latina» → grupo regional',()=>{const r=smart('america latina');assert.ok(r.includes('Grupo regional')&&r.includes('GRULAC'))});
 t('ficha muestra el grupo regional del titular',()=>{const i=run('D.findIndex(r=>r.titulares.some(h=>h.pais_id==="COL"))');run('details('+i+')');assert.ok(els.cardsResults.innerHTML.includes('América Latina y el Caribe'))});
+t('India: invitación permanente (14-sep-2011) y visita programada, en español',()=>{els.pSel.value='IND';run('renderPaises()');const o=els.pOut.innerHTML;assert.ok(o.includes('14 de septiembre de 2011')&&o.includes('Invitación permanente')&&o.includes('Asia y el Pacífico'));els.pSel.value='';run('renderPaises()')});
+t('un país sin mandato ni titular también se encuentra (Nepal)',()=>{els.pQ.value='nepal';run('renderPaises()');assert.ok(els.pBody.innerHTML.includes('Nepal')&&els.pBody.innerHTML.includes('Sin mandato por país vigente'));els.pQ.value='';run('renderPaises()')});
+t('búsqueda inteligente: «India» → tarjeta de país con invitación permanente',()=>assert.ok(smart('India').includes('Invitación permanente')));
+t('regiones: Palestina «Otro» y países completados a mano declarados',()=>{assert.equal(run('PID.PSE.region'),'OTH');assert.ok(run('PAISES.filter(p=>/mano/.test(p.region_origen||"")).length')>=8)});
 t('ficha de mandato',()=>{run('details(0)');assert.ok(els.cardsResults.innerHTML.includes('Cadena de actos jurídicos'))});
 t('exportCSV',()=>run('exportCSV()'));
 t('autoría y repositorio',()=>assert.ok(html.includes('sukima-labs/onu-arqueologia-documental')&&html.includes('Sukima-Labs')));

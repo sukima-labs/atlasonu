@@ -1,0 +1,3159 @@
+{
+ "fuente": "https://spinternet.ohchr.org/ViewCountryVisits.aspx?visitType=all",
+ "fuente_regiones": "https://spcommreports.ohchr.org/Tmsearch/TMDocuments",
+ "consultado": "2026-10-27",
+ "paises": [
+  {
+   "iso3": "AFG",
+   "en": "Afghanistan",
+   "es": "Afganistán",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "15 August 2017",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "ALB",
+   "en": "Albania",
+   "es": "Albania",
+   "region_en": "Eastern European Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "2 December 2009",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "DZA",
+   "en": "Algeria",
+   "es": "Argelia",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "AND",
+   "en": "Andorra",
+   "es": "Andorra",
+   "region_en": "Western European and Others Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "3 November 2010",
+   "visitas": {
+    "realizadas": false,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "AGO",
+   "en": "Angola",
+   "es": "Angola",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "ATG",
+   "en": "Antigua and Barbuda",
+   "es": "Antigua y Barbuda",
+   "region_en": "Latin American and Caribbean Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": false,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "ARG",
+   "en": "Argentina",
+   "es": "Argentina",
+   "region_en": "Latin American and Caribbean Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "3 December 2002",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "ARM",
+   "en": "Armenia",
+   "es": "Armenia",
+   "region_en": "Eastern European Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "1 May 2006",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "AUS",
+   "en": "Australia",
+   "es": "Australia",
+   "region_en": "Western European and Others Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "7 August 2008",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "AUT",
+   "en": "Austria",
+   "es": "Austria",
+   "region_en": "Western European and Others Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "March 2001",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "AZE",
+   "en": "Azerbaijan",
+   "es": "Azerbaiyán",
+   "region_en": "Eastern European Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "15 April 2013",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "BHS",
+   "en": "Bahamas",
+   "es": "Bahamas",
+   "region_en": "Latin American and Caribbean Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "6 June 2013",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "BHR",
+   "en": "Bahrain",
+   "es": "Baréin",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "BGD",
+   "en": "Bangladesh",
+   "es": "Bangladés",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": true,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "BRB",
+   "en": "Barbados",
+   "es": "Barbados",
+   "region_en": "Latin American and Caribbean Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": false,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "BLR",
+   "en": "Belarus",
+   "es": "Bielorrusia",
+   "region_en": "Eastern European Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "BEL",
+   "en": "Belgium",
+   "es": "Bélgica",
+   "region_en": "Western European and Others Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "March 2001",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "BLZ",
+   "en": "Belize",
+   "es": "Belice",
+   "region_en": "Latin American and Caribbean Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "BEN",
+   "en": "Benin",
+   "es": "Benín",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "31 October 2012",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "BTN",
+   "en": "Bhutan",
+   "es": "Bután",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "BOL",
+   "en": "Bolivia",
+   "es": "Bolivia",
+   "region_en": "Latin American and Caribbean Group",
+   "region_origen": "completado a mano (grupos regionales de la ONU)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "10 February 2010",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "BIH",
+   "en": "Bosnia and Herzegovina",
+   "es": "Bosnia y Herzegovina",
+   "region_en": "Eastern European Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "7 May 2010",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": true,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "BWA",
+   "en": "Botswana",
+   "es": "Botsuana",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "2 May 2018",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": true,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "BRA",
+   "en": "Brazil",
+   "es": "Brasil",
+   "region_en": "Latin American and Caribbean Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "10 December 2001",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": true,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "BRN",
+   "en": "Brunei Darussalam",
+   "es": "Brunéi",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": false,
+    "pendientes": false,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "BGR",
+   "en": "Bulgaria",
+   "es": "Bulgaria",
+   "region_en": "Eastern European Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "March 2001",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "BFA",
+   "en": "Burkina Faso",
+   "es": "Burkina Faso",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "BDI",
+   "en": "Burundi",
+   "es": "Burundi",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "6 June 2013",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "CPV",
+   "en": "Cabo Verde",
+   "es": "Cabo Verde",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "26 April 2013",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "KHM",
+   "en": "Cambodia",
+   "es": "Camboya",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "CMR",
+   "en": "Cameroon",
+   "es": "Camerún",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "15 September 2014",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "CAN",
+   "en": "Canada",
+   "es": "Canadá",
+   "region_en": "Western European and Others Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "April 1999",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "CAF",
+   "en": "Central African Republic",
+   "es": "República Centroafricana",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "3 September 2013",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "TCD",
+   "en": "Chad",
+   "es": "Chad",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "1 June 2012",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "CHL",
+   "en": "Chile",
+   "es": "Chile",
+   "region_en": "Latin American and Caribbean Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "12 May 2009",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "CHN",
+   "en": "China",
+   "es": "China",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "COL",
+   "en": "Colombia",
+   "es": "Colombia",
+   "region_en": "Latin American and Caribbean Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "17 March 2003",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": true,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "COM",
+   "en": "Comoros",
+   "es": "Comoras",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "29 January 2019",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "COG",
+   "en": "Congo (Republic of the)",
+   "es": "Congo",
+   "region_en": "African Group",
+   "region_origen": "completado a mano (grupos regionales de la ONU)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": false,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "CRI",
+   "en": "Costa Rica",
+   "es": "Costa Rica",
+   "region_en": "Latin American and Caribbean Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "2002",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "CRO",
+   "en": "Croatia",
+   "es": "Croacia",
+   "region_en": "Eastern European Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "13 March 2003",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "CUB",
+   "en": "Cuba",
+   "es": "Cuba",
+   "region_en": "Latin American and Caribbean Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "CYP",
+   "en": "Cyprus",
+   "es": "Chipre",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "March 2001",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "CZE",
+   "en": "Czech Republic",
+   "es": "Chequia",
+   "region_en": "Eastern European Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "September 2000",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": false,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "CIV",
+   "en": "Côte d'Ivoire",
+   "es": "Côte d’Ivoire",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "PRK",
+   "en": "Democratic People's Republic of Korea",
+   "es": "Corea del Norte",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "COD",
+   "en": "Democratic Republic of the Congo",
+   "es": "República Democrática del Congo",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "DNK",
+   "en": "Denmark",
+   "es": "Dinamarca",
+   "region_en": "Western European and Others Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "March 2001",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "DJI",
+   "en": "Djibouti",
+   "es": "Yibuti",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "DMA",
+   "en": "Dominica",
+   "es": "Dominica",
+   "region_en": "Latin American and Caribbean Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "9 December 2009",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": false,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "DOM",
+   "en": "Dominican Republic",
+   "es": "República Dominicana",
+   "region_en": "Latin American and Caribbean Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "ECU",
+   "en": "Ecuador",
+   "es": "Ecuador",
+   "region_en": "Latin American and Caribbean Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "9 January 2003",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": true,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "EGY",
+   "en": "Egypt",
+   "es": "Egipto",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "SLV",
+   "en": "El Salvador",
+   "es": "El Salvador",
+   "region_en": "Latin American and Caribbean Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "9 February 2010",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "GNQ",
+   "en": "Equatorial Guinea",
+   "es": "Guinea Ecuatorial",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": false,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "ERI",
+   "en": "Eritrea",
+   "es": "Eritrea",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "EST",
+   "en": "Estonia",
+   "es": "Estonia",
+   "region_en": "Eastern European Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "March 2001",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": false,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "SWZ",
+   "en": "Eswatini",
+   "es": "Esuatini",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": false,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "ETH",
+   "en": "Ethiopia",
+   "es": "Etiopía",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "FJI",
+   "en": "Fiji",
+   "es": "Fiyi",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "17 March 2015",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "FIN",
+   "en": "Finland",
+   "es": "Finlandia",
+   "region_en": "Western European and Others Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "March 2001",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "FRA",
+   "en": "France",
+   "es": "Francia",
+   "region_en": "Western European and Others Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "March 2001",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "GAB",
+   "en": "Gabon",
+   "es": "Gabón",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "29 October 2012",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "GMB",
+   "en": "Gambia",
+   "es": "Gambia",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "GEO",
+   "en": "Georgia",
+   "es": "Georgia",
+   "region_en": "Eastern European Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "30 March 2010",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "DEU",
+   "en": "Germany",
+   "es": "Alemania",
+   "region_en": "Western European and Others Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "March 2001",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "GHA",
+   "en": "Ghana",
+   "es": "Ghana",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "21 April 2006",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "GRC",
+   "en": "Greece",
+   "es": "Grecia",
+   "region_en": "Western European and Others Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "March 2001",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": false,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "GRD",
+   "en": "Grenada",
+   "es": "Granada",
+   "region_en": "Latin American and Caribbean Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": false,
+    "pendientes": false,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "GTM",
+   "en": "Guatemala",
+   "es": "Guatemala",
+   "region_en": "Latin American and Caribbean Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "April 2001",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "GIN",
+   "en": "Guinea",
+   "es": "Guinea",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": false,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "GNB",
+   "en": "Guinea-Bissau",
+   "es": "Guinea-Bisáu",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "7 May 2010",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": false,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "GUY",
+   "en": "Guyana",
+   "es": "Guyana",
+   "region_en": "Latin American and Caribbean Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "HTI",
+   "en": "Haiti",
+   "es": "Haití",
+   "region_en": "Latin American and Caribbean Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "VAT",
+   "en": "Holy See",
+   "es": "Ciudad del Vaticano",
+   "region_en": "Other",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": false,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "HND",
+   "en": "Honduras",
+   "es": "Honduras",
+   "region_en": "Latin American and Caribbean Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "12 May 2010",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "HUN",
+   "en": "Hungary",
+   "es": "Hungría",
+   "region_en": "Eastern European Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "March 2001",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "ISL",
+   "en": "Iceland",
+   "es": "Islandia",
+   "region_en": "Western European and Others Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "September 2000",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "IND",
+   "en": "India",
+   "es": "India",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "14 September 2011",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": true,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "IDN",
+   "en": "Indonesia",
+   "es": "Indonesia",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "IRN",
+   "en": "Iran (Islamic Republic of)",
+   "es": "Irán",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "24 July 2002",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "IRQ",
+   "en": "Iraq",
+   "es": "Irak",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "16 February 2010",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "IRL",
+   "en": "Ireland",
+   "es": "Irlanda",
+   "region_en": "Western European and Others Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "March 2001",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "ISR",
+   "en": "Israel",
+   "es": "Israel",
+   "region_en": "Western European and Others Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "ITA",
+   "en": "Italy",
+   "es": "Italia",
+   "region_en": "Western European and Others Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "March 2001",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "JAM",
+   "en": "Jamaica",
+   "es": "Jamaica",
+   "region_en": "Latin American and Caribbean Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "JPN",
+   "en": "Japan",
+   "es": "Japón",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "1 March 2011",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "JOR",
+   "en": "Jordan",
+   "es": "Jordania",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "20 April 2006",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "KAZ",
+   "en": "Kazakhstan",
+   "es": "Kazajistán",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "28 July 2009",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "KEN",
+   "en": "Kenya",
+   "es": "Kenia",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "22 January 2015",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "KIR",
+   "en": "Kiribati",
+   "es": "Kiribati",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": false,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "RKS",
+   "en": "Kosovo (in compliance with UN Security Council resolution 1244)",
+   "es": "Kosovo (conforme a la resolución 1244 del Consejo de Seguridad)",
+   "region_en": null,
+   "region_origen": null,
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": false,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "KWT",
+   "en": "Kuwait",
+   "es": "Kuwait",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "13 September 2010",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": true,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "KGZ",
+   "en": "Kyrgyzstan",
+   "es": "Kirguistán",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "30 December 2020",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "LAO",
+   "en": "Lao People's Democratic Republic",
+   "es": "Laos",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "LVA",
+   "en": "Latvia",
+   "es": "Letonia",
+   "region_en": "Eastern European Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "March 2001",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "LBN",
+   "en": "Lebanon",
+   "es": "Líbano",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "17 March 2011",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "LSO",
+   "en": "Lesotho",
+   "es": "Lesoto",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "21 January 2015",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "LBR",
+   "en": "Liberia",
+   "es": "Liberia",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "25 September 2015",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "LBY",
+   "en": "Libya",
+   "es": "Libia",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "15 March 2012",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "LIE",
+   "en": "Liechtenstein",
+   "es": "Liechtenstein",
+   "region_en": "Western European and Others Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "21 January 2003",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": false,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "LTU",
+   "en": "Lithuania",
+   "es": "Lituania",
+   "region_en": "Eastern European Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "March 2001",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": false,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "LUX",
+   "en": "Luxembourg",
+   "es": "Luxemburgo",
+   "region_en": "Western European and Others Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "March 2001",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": false,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "MDG",
+   "en": "Madagascar",
+   "es": "Madagascar",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "26 August 2011",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "MWI",
+   "en": "Malawi",
+   "es": "Malaui",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "7 September 2015",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "MYS",
+   "en": "Malaysia",
+   "es": "Malasia",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "26 February 2019",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "MDV",
+   "en": "Maldives",
+   "es": "Maldivas",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "2 May 2006",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "MLI",
+   "en": "Mali",
+   "es": "Mali",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": true,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "MLT",
+   "en": "Malta",
+   "es": "Malta",
+   "region_en": "Western European and Others Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "March 2001",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": false,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "MHL",
+   "en": "Marshall Islands",
+   "es": "Islas Marshall",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "4 March 2011",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "MRT",
+   "en": "Mauritania",
+   "es": "Mauritania",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "MUS",
+   "en": "Mauritius",
+   "es": "Mauricio",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "MEX",
+   "en": "Mexico",
+   "es": "México",
+   "region_en": "Latin American and Caribbean Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "March 2001",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "FSM",
+   "en": "Micronesia (Federated States of)",
+   "es": "Micronesia",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "completado a mano (grupos regionales de la ONU)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": false,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "MCO",
+   "en": "Monaco",
+   "es": "Mónaco",
+   "region_en": "Western European and Others Group",
+   "region_origen": "completado a mano (grupos regionales de la ONU)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "22 October 2008",
+   "visitas": {
+    "realizadas": false,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "MNG",
+   "en": "Mongolia",
+   "es": "Mongolia",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "9 April 2004",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": true,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "MNE",
+   "en": "Montenegro",
+   "es": "Montenegro",
+   "region_en": "Eastern European Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "11 October 2005",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "MAR",
+   "en": "Morocco",
+   "es": "Marruecos",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "MOZ",
+   "en": "Mozambique",
+   "es": "Mozambique",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "12 April 2016",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "MMR",
+   "en": "Myanmar",
+   "es": "Myanmar (Birmania)",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": false,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "NAM",
+   "en": "Namibia",
+   "es": "Namibia",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "NRU",
+   "en": "Nauru",
+   "es": "Nauru",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "30 May 2011",
+   "visitas": {
+    "realizadas": false,
+    "pendientes": false,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "NPL",
+   "en": "Nepal",
+   "es": "Nepal",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "NLD",
+   "en": "Netherlands",
+   "es": "Países Bajos",
+   "region_en": "Western European and Others Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "March 2001",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "NZL",
+   "en": "New Zealand",
+   "es": "Nueva Zelanda",
+   "region_en": "Western European and Others Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "3 February 2004",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "NIC",
+   "en": "Nicaragua",
+   "es": "Nicaragua",
+   "region_en": "Latin American and Caribbean Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "26 April 2006",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "NER",
+   "en": "Niger",
+   "es": "Níger",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "21 August 2012",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "NGA",
+   "en": "Nigeria",
+   "es": "Nigeria",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "25 October 2013",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "MKD",
+   "en": "North Macedonia",
+   "es": "Macedonia del Norte",
+   "region_en": "Eastern European Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "13 October 2004",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "NOR",
+   "en": "Norway",
+   "es": "Noruega",
+   "region_en": "Western European and Others Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "26 March 1999",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": true,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "OMN",
+   "en": "Oman",
+   "es": "Omán",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "OTH",
+   "en": "Other",
+   "es": "Otros (entidades no estatales)",
+   "region_en": null,
+   "region_origen": null,
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "PAK",
+   "en": "Pakistan",
+   "es": "Pakistán",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "PLW",
+   "en": "Palau",
+   "es": "Palaos",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "3 May 2011",
+   "visitas": {
+    "realizadas": false,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "PAN",
+   "en": "Panama",
+   "es": "Panamá",
+   "region_en": "Latin American and Caribbean Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "14 March 2011",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "PNG",
+   "en": "Papua New Guinea",
+   "es": "Papúa Nueva Guinea",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "11 May 2011",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "PRY",
+   "en": "Paraguay",
+   "es": "Paraguay",
+   "region_en": "Latin American and Caribbean Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "28 March 2003",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": true,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "PER",
+   "en": "Peru",
+   "es": "Perú",
+   "region_en": "Latin American and Caribbean Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "3 April 2002",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "PHL",
+   "en": "Philippines",
+   "es": "Filipinas",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "POL",
+   "en": "Poland",
+   "es": "Polonia",
+   "region_en": "Eastern European Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "March 2001",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "PRT",
+   "en": "Portugal",
+   "es": "Portugal",
+   "region_en": "Western European and Others Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "March 2001",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "QAT",
+   "en": "Qatar",
+   "es": "Catar",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "1 June 2010",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "KOR",
+   "en": "Republic of Korea",
+   "es": "Corea del Sur",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "3 March 2008",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": true,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "MDA",
+   "en": "Republic of Moldova",
+   "es": "Moldavia",
+   "region_en": "Eastern European Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "2 June 2010",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "ROU",
+   "en": "Romania",
+   "es": "Rumanía",
+   "region_en": "Eastern European Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "March 2001",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "RUS",
+   "en": "Russian Federation",
+   "es": "Rusia",
+   "region_en": "Eastern European Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "RWA",
+   "en": "Rwanda",
+   "es": "Ruanda",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "27 June 2011",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "KNA",
+   "en": "Saint Kitts and Nevis",
+   "es": "San Cristóbal y Nieves",
+   "region_en": "Latin American and Caribbean Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": false,
+    "pendientes": false,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "LCA",
+   "en": "Saint Lucia",
+   "es": "Santa Lucía",
+   "region_en": "Latin American and Caribbean Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "14 March 2016",
+   "visitas": {
+    "realizadas": false,
+    "pendientes": false,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "VCT",
+   "en": "Saint Vincent and the Grenadines",
+   "es": "San Vicente y las Granadinas",
+   "region_en": "Latin American and Caribbean Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": false,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "WSM",
+   "en": "Samoa",
+   "es": "Samoa",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "14 February 2011",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "SMR",
+   "en": "San Marino",
+   "es": "San Marino",
+   "region_en": "Western European and Others Group",
+   "region_origen": "completado a mano (grupos regionales de la ONU)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "3 April 2003",
+   "visitas": {
+    "realizadas": false,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "STP",
+   "en": "Sao Tome and Principe",
+   "es": "Santo Tomé y Príncipe",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "2 February 2011",
+   "visitas": {
+    "realizadas": false,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "SAU",
+   "en": "Saudi Arabia",
+   "es": "Arabia Saudí",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": true,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "SEN",
+   "en": "Senegal",
+   "es": "Senegal",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "SRB",
+   "en": "Serbia",
+   "es": "Serbia",
+   "region_en": "Eastern European Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "11 October 2005",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "SYC",
+   "en": "Seychelles",
+   "es": "Seychelles",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "5 November 2012",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "SLE",
+   "en": "Sierra Leone",
+   "es": "Sierra Leona",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "7 April 2003",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "SGP",
+   "en": "Singapore",
+   "es": "Singapur",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "SVK",
+   "en": "Slovakia",
+   "es": "Eslovaquia",
+   "region_en": "Eastern European Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "March 2001",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "SVN",
+   "en": "Slovenia",
+   "es": "Eslovenia",
+   "region_en": "Eastern European Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "March 2001",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "SLB",
+   "en": "Solomon Islands",
+   "es": "Islas Salomón",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "6 May 2011",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "SOM",
+   "en": "Somalia",
+   "es": "Somalia",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "13 April 2016",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "ZAF",
+   "en": "South Africa",
+   "es": "Sudáfrica",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "17 July 2003",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "SSD",
+   "en": "South Sudan",
+   "es": "Sudán del Sur",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "9 November 2016",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "ESP",
+   "en": "Spain",
+   "es": "España",
+   "region_en": "Western European and Others Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "March 2001",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": true,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "LKA",
+   "en": "Sri Lanka",
+   "es": "Sri Lanka",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "17 December 2015",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "PSE",
+   "en": "State of Palestine",
+   "es": "Territorios Palestinos",
+   "region_en": "Other",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "30 July 2014",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "SDN",
+   "en": "Sudan",
+   "es": "Sudán",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "SUR",
+   "en": "Suriname",
+   "es": "Surinam",
+   "region_en": "Latin American and Caribbean Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "SWE",
+   "en": "Sweden",
+   "es": "Suecia",
+   "region_en": "Western European and Others Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "March 2001",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": true,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "CHE",
+   "en": "Switzerland",
+   "es": "Suiza",
+   "region_en": "Western European and Others Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "1 April 2002",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "SYR",
+   "en": "Syrian Arab Republic",
+   "es": "Siria",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "TJK",
+   "en": "Tajikistan",
+   "es": "Tayikistán",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "THA",
+   "en": "Thailand",
+   "es": "Tailandia",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "4 November 2011",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "TLS",
+   "en": "Timor-Leste",
+   "es": "Timor-Leste",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "9 March 2017",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "TGO",
+   "en": "Togo",
+   "es": "Togo",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "TON",
+   "en": "Tonga",
+   "es": "Tonga",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "completado a mano (grupos regionales de la ONU)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "25 January 2013",
+   "visitas": {
+    "realizadas": false,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "TTO",
+   "en": "Trinidad and Tobago",
+   "es": "Trinidad y Tobago",
+   "region_en": "Latin American and Caribbean Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "TUN",
+   "en": "Tunisia",
+   "es": "Túnez",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "28 February 2011",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "TKM",
+   "en": "Turkmenistan",
+   "es": "Turkmenistán",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "11 May 2018",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "TUV",
+   "en": "Tuvalu",
+   "es": "Tuvalu",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "completado a mano (grupos regionales de la ONU)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "26 April 2013",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "TUR",
+   "en": "Türkiye",
+   "es": "Turquía",
+   "region_en": "Western European and Others Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "March 2001",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "UGA",
+   "en": "Uganda",
+   "es": "Uganda",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "UKR",
+   "en": "Ukraine",
+   "es": "Ucrania",
+   "region_en": "Eastern European Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "23 June 2006",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "ARE",
+   "en": "United Arab Emirates",
+   "es": "Emiratos Árabes Unidos",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "GBR",
+   "en": "United Kingdom of Great Britain and Northern Ireland",
+   "es": "Reino Unido",
+   "region_en": "Western European and Others Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "March 2001",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "TZA",
+   "en": "United Republic of Tanzania",
+   "es": "Tanzania",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "USA",
+   "en": "United States of America",
+   "es": "Estados Unidos",
+   "region_en": "Western European and Others Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "19 October 2021",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "URY",
+   "en": "Uruguay",
+   "es": "Uruguay",
+   "region_en": "Latin American and Caribbean Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "18 March 2005",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "UZB",
+   "en": "Uzbekistan",
+   "es": "Uzbekistán",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "11 May 2018",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "VUT",
+   "en": "Vanuatu",
+   "es": "Vanuatu",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "completado a mano (grupos regionales de la ONU)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "12 May 2009",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "VEN",
+   "en": "Venezuela (Bolivarian Republic of)",
+   "es": "Venezuela",
+   "region_en": "Latin American and Caribbean Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "VNM",
+   "en": "Viet Nam",
+   "es": "Vietnam",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "YEM",
+   "en": "Yemen",
+   "es": "Yemen",
+   "region_en": "Asia-Pacific Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "ZMB",
+   "en": "Zambia",
+   "es": "Zambia",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": true,
+   "fecha_invitacion": "16 July 2008",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  },
+  {
+   "iso3": "ZWE",
+   "en": "Zimbabwe",
+   "es": "Zimbabue",
+   "region_en": "African Group",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion_permanente": false,
+   "fecha_invitacion": "",
+   "visitas": {
+    "realizadas": true,
+    "pendientes": true,
+    "programadas": false,
+    "en_curso": false,
+    "otras": false
+   }
+  }
+ ]
+}
