@@ -67,6 +67,12 @@ t('países: sin mandato por país se dice explícitamente (Colombia)',()=>{els.p
 t('explorador: País+Colombia explica que no hay mandato por país y remite a Países',()=>{els.q.value='';els.modal.value='País';els.pais.value='COL';run('filterMandates()');const c=els.count.innerHTML;assert.ok(c.includes('no tiene mandato por país vigente')&&c.includes('irPais'));els.modal.value='';els.pais.value='';run('filterMandates()')});
 t('procedencia de las fuentes declarada',()=>assert.ok(html.includes('Qué es dato oficial y qué es elaboración propia')&&html.includes('Elaboración propia (no es fuente)')));
 t('plantilla de solicitud y proceso de validación existen',()=>{assert.ok(fs.existsSync(path.join(root,'.github/ISSUE_TEMPLATE/solicitud-verificacion.yml')));assert.ok(fs.existsSync(path.join(root,'docs/PROCESO_DE_VALIDACION.md')))});
+t('5 grupos regionales + «Otro» con fuente oficial',()=>{assert.equal(run('REGS.length'),6);assert.ok(run('DATA.regiones_fuente.url').includes('spcommreports.ohchr.org'));assert.equal(run('PAISES.filter(p=>!p.region).length'),0)});
+t('Armenia está en Europa Oriental según la fuente oficial (no Asia-Pacífico)',()=>assert.equal(run('PID.ARM.region'),'EEG'));
+t('chips de región filtran la lista (GRULAC → 10)',()=>{run("setRegion('GRU')");assert.equal((els.pBody.innerHTML.match(/<tr>/g)||[]).length,10);assert.ok(els.pBody.innerHTML.includes('Colombia')&&!els.pBody.innerHTML.includes('España'));run("setRegion('')")});
+t('explorador: filtro por grupo regional',()=>{els.q.value='';els.region.value='AFR';run('filterMandates()');const n=run('filtered.length');assert.ok(n>0&&n<57);els.region.value='';run('filterMandates()')});
+t('búsqueda inteligente: «américa latina» → grupo regional',()=>{const r=smart('america latina');assert.ok(r.includes('Grupo regional')&&r.includes('GRULAC'))});
+t('ficha muestra el grupo regional del titular',()=>{const i=run('D.findIndex(r=>r.titulares.some(h=>h.pais_id==="COL"))');run('details('+i+')');assert.ok(els.cardsResults.innerHTML.includes('América Latina y el Caribe'))});
 t('ficha de mandato',()=>{run('details(0)');assert.ok(els.cardsResults.innerHTML.includes('Cadena de actos jurídicos'))});
 t('exportCSV',()=>run('exportCSV()'));
 t('autoría y repositorio',()=>assert.ok(html.includes('cataplum1414/onu-arqueologia-documental')&&html.includes('Jeisson Arley Osorio Mesa')));
