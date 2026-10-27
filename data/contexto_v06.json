@@ -1,0 +1,357 @@
+{
+ "trazas": [
+  {
+   "id": "T-001",
+   "tema": "Desapariciones forzadas",
+   "anio": "1980",
+   "clase": "CREACIÓN",
+   "organo": "Comisión de Derechos Humanos",
+   "simbolo": "Resolución 20 (XXXVI)",
+   "nota": "Referencia histórica, localizar texto adoptado; la fuente puede estar incorporada en informe de sesión",
+   "url": "https://digitallibrary.un.org/",
+   "control": "Cotejo primario pendiente"
+  },
+  {
+   "id": "T-002",
+   "tema": "Desapariciones forzadas",
+   "anio": "2014",
+   "clase": "MÉTODOS",
+   "organo": "WGEID",
+   "simbolo": "A/HRC/WGEID/102/2",
+   "nota": "Métodos de trabajo, NO resolución de creación",
+   "url": "https://docs.un.org/A/HRC/WGEID/102/2",
+   "control": "Documento identificado"
+  },
+  {
+   "id": "T-003",
+   "tema": "Desapariciones forzadas",
+   "anio": "2023",
+   "clase": "MÉTODOS REVISADOS",
+   "organo": "WGEID",
+   "simbolo": "A/HRC/WGEID/1",
+   "nota": "Sustituye métodos previos; NO constituye un mandato nuevo",
+   "url": "https://docs.un.org/A/HRC/WGEID/1",
+   "control": "Documento identificado"
+  },
+  {
+   "id": "T-004",
+   "tema": "Tortura",
+   "anio": "1985",
+   "clase": "CREACIÓN",
+   "organo": "Comisión de Derechos Humanos",
+   "simbolo": "1985/33",
+   "nota": "Acto creador, la ficha indexa dentro de serie histórica de Comisión",
+   "url": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "control": "Confirmación en texto primario pendiente"
+  },
+  {
+   "id": "T-005",
+   "tema": "Tortura",
+   "anio": "2002",
+   "clase": "INFORME",
+   "organo": "Relator Especial",
+   "simbolo": "E/CN.4/2003/68",
+   "nota": "Incluye métodos de trabajo; no es acto creador",
+   "url": "https://docs.un.org/E/CN.4/2003/68",
+   "control": "Documento identificado"
+  },
+  {
+   "id": "T-006",
+   "tema": "Detención arbitraria",
+   "anio": "1991",
+   "clase": "CREACIÓN",
+   "organo": "Comisión de Derechos Humanos",
+   "simbolo": "1991/42",
+   "nota": "Referencia original exhibida en índice OHCHR; precisar edición de texto primario",
+   "url": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "control": "Cotejo primario pendiente"
+  },
+  {
+   "id": "T-007",
+   "tema": "Detención arbitraria",
+   "anio": "2017",
+   "clase": "MÉTODOS",
+   "organo": "Grupo de Trabajo",
+   "simbolo": "A/HRC/36/38",
+   "nota": "Métodos de trabajo y reglas del mandato, NO resolución de creación",
+   "url": "https://docs.un.org/A/HRC/36/38",
+   "control": "Documento identificado"
+  },
+  {
+   "id": "T-008",
+   "tema": "Mercenarios",
+   "anio": "2005",
+   "clase": "CREACIÓN",
+   "organo": "Comisión de Derechos Humanos",
+   "simbolo": "2005/2",
+   "nota": "Establecimiento Grupo de Trabajo; localización primaria pendiente",
+   "url": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "control": "Cotejo primario pendiente"
+  },
+  {
+   "id": "T-009",
+   "tema": "Mercenarios",
+   "anio": "vigente",
+   "clase": "MÉTODOS",
+   "organo": "Grupo de Trabajo",
+   "simbolo": "Página oficial OHCHR",
+   "nota": "Descripción operativa y métodos; NO acto normativo originario",
+   "url": "https://www.ohchr.org/es/special-procedures/wg-mercenaries/methods-work-working-group-use-mercenaries",
+   "control": "Página oficial identificada"
+  },
+  {
+   "id": "T-010",
+   "tema": "Consejo de Derechos Humanos",
+   "anio": "2006",
+   "clase": "CREACIÓN INSTITUCIONAL",
+   "organo": "Asamblea General",
+   "simbolo": "A/RES/60/251",
+   "nota": "Asamblea General establece Consejo como órgano subsidiario, no ECOSOC",
+   "url": "https://docs.un.org/A/RES/60/251",
+   "control": "Documento identificado"
+  },
+  {
+   "id": "T-011",
+   "tema": "Selección de titulares",
+   "anio": "2007",
+   "clase": "REGLAS INSTITUCIONALES",
+   "organo": "Consejo de Derechos Humanos",
+   "simbolo": "A/HRC/RES/5/1",
+   "nota": "Establece criterios de selección y marco del Grupo Consultivo",
+   "url": "https://docs.un.org/A/HRC/RES/5/1",
+   "control": "Documento identificado"
+  }
+ ],
+ "alertas": [
+  {
+   "id": "A-01",
+   "simbolo": "E/CN.4/1982/35",
+   "tema": "Ejecuciones extrajudiciales",
+   "problema": "La ficha temática califica la fuente como ECOSOC y cita símbolo de documento sin RES.",
+   "nivel": "ALTA",
+   "accion": "Revisar el acto de creación en Biblioteca Digital ONU; no copiar autoría sin contraste",
+   "url": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en"
+  },
+  {
+   "id": "A-02",
+   "simbolo": "E/CN.4/2002/WP.2",
+   "tema": "Expertos afrodescendientes",
+   "problema": "La ficha oficial muestra un documento de trabajo WP bajo etiqueta de resolución.",
+   "nivel": "ALTA",
+   "accion": "Comprobar resoluciones efectivamente adoptadas antes de citar",
+   "url": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es"
+  },
+  {
+   "id": "A-03",
+   "simbolo": "A/RES/HRC/46/12",
+   "tema": "Albinismo",
+   "problema": "La ficha contiene símbolo inusual y varias entradas duplicadas para 2021.",
+   "nivel": "ALTA",
+   "accion": "Cotejar A/HRC/RES/46/12 en docs.un.org",
+   "url": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es"
+  },
+  {
+   "id": "A-04",
+   "simbolo": "A/HRC/51/L.40",
+   "tema": "Agua y saneamiento",
+   "problema": "Aparece un proyecto L. al lado de la resolución adoptada.",
+   "nivel": "MEDIA",
+   "accion": "Utilizar la versión RES cuando la intención sea citar decisión final",
+   "url": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es"
+  },
+  {
+   "id": "A-05",
+   "simbolo": "E/CN.4/2000/10",
+   "tema": "Derecho a la alimentación",
+   "problema": "Referencia histórica abreviada sin RES; puede confundirse con informe.",
+   "nivel": "MEDIA",
+   "accion": "Comparar ficha y copia primaria del acto",
+   "url": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es"
+  },
+  {
+   "id": "A-06",
+   "simbolo": "Renovaciones 2026",
+   "tema": "Diversos mandatos",
+   "problema": "Las versiones idiomas o cachés pueden reflejar diferentes fechas de renovación.",
+   "nivel": "MEDIA",
+   "accion": "Anotar fecha de consulta y cotejar versión adoptada",
+   "url": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es"
+  },
+  {
+   "id": "A-07",
+   "simbolo": "A/HRC/WGEID/1",
+   "tema": "Desapariciones",
+   "problema": "Métodos de trabajo revisados, no nueva resolución de mandato.",
+   "nivel": "BAJA",
+   "accion": "Separar creación, renovación y métodos en columnas distintas",
+   "url": "https://docs.un.org/A/HRC/WGEID/1"
+  },
+  {
+   "id": "A-08",
+   "simbolo": "Soft law vs tratado",
+   "tema": "Vinculatoriedad",
+   "problema": "No es preciso decir que todas las resoluciones de órganos ONU son siempre no vinculantes.",
+   "nivel": "ALTA",
+   "accion": "Calificar según órgano, competencia, Carta, tipo de decisión y objeto",
+   "url": "https://www.un.org/es/about-us/un-charter"
+  },
+  {
+   "id": "Consultado: 27-10-2026 | Fuente: OHCHR, portal de procedimientos especiales ES/EN + documentos ONU",
+   "simbolo": "",
+   "tema": "",
+   "problema": "",
+   "nivel": "",
+   "accion": "",
+   "url": ""
+  }
+ ],
+ "codigos": [
+  {
+   "simbolo": "A/RES/60/251",
+   "organo": "Asamblea General",
+   "tipo": "Resolución adoptada",
+   "explicacion": "Creación del Consejo de Derechos Humanos en 2006",
+   "riesgo": "No es resolución del Consejo de Derechos Humanos",
+   "url": "https://docs.un.org/A/RES/60/251"
+  },
+  {
+   "simbolo": "A/HRC/RES/5/1",
+   "organo": "Consejo de Derechos Humanos",
+   "tipo": "Resolución adoptada",
+   "explicacion": "Paquete de construcción institucional (2007)",
+   "riesgo": "A/HRC/5/1 SIN RES no identifica el mismo tipo",
+   "url": "https://docs.un.org/A/HRC/RES/5/1"
+  },
+  {
+   "simbolo": "A/HRC/DEC/25/116",
+   "organo": "Consejo de Derechos Humanos",
+   "tipo": "Decisión adoptada",
+   "explicacion": "Ejemplo de decisión, diferente de resolución",
+   "riesgo": "No convertir DEC en RES",
+   "url": "https://docs.un.org/A/HRC/DEC/25/116"
+  },
+  {
+   "simbolo": "A/HRC/51/L.40",
+   "organo": "Consejo de Derechos Humanos",
+   "tipo": "Proyecto de texto",
+   "explicacion": "Ejemplo de proyecto presentado a negociación",
+   "riesgo": "L. no es necesariamente texto final adoptado",
+   "url": "https://docs.un.org/A/HRC/51/L.40"
+  },
+  {
+   "simbolo": "A/HRC/RES/51/19",
+   "organo": "Consejo de Derechos Humanos",
+   "tipo": "Resolución adoptada",
+   "explicacion": "Ejemplo de texto final de mandato de agua y saneamiento",
+   "riesgo": "Comparar con L.40",
+   "url": "https://docs.un.org/A/HRC/RES/51/19"
+  },
+  {
+   "simbolo": "E/CN.4/RES/1985/33",
+   "organo": "Comisión de Derechos Humanos",
+   "tipo": "Resolución histórica",
+   "explicacion": "Creación del mandato del Relator Especial sobre la tortura",
+   "riesgo": "La Comisión dependía de ECOSOC: NO equivale a autoría ECOSOC",
+   "url": "https://ap.ohchr.org/documents/alldocs.aspx?doc_id=9918"
+  },
+  {
+   "simbolo": "E/CN.4/2003/68",
+   "organo": "Comisión de Derechos Humanos",
+   "tipo": "Informe/documento",
+   "explicacion": "Informe del Relator sobre tortura con métodos de trabajo",
+   "riesgo": "No es resolución por no llevar RES",
+   "url": "https://docs.un.org/E/CN.4/2003/68"
+  },
+  {
+   "simbolo": "A/HRC/WGEID/102/2",
+   "organo": "Grupo de Trabajo sobre Desapariciones",
+   "tipo": "Métodos de trabajo",
+   "explicacion": "Versión de 2014",
+   "riesgo": "No es acto de creación ni sentencia",
+   "url": "https://docs.un.org/A/HRC/WGEID/102/2"
+  },
+  {
+   "simbolo": "A/HRC/WGEID/1",
+   "organo": "Grupo de Trabajo sobre Desapariciones",
+   "tipo": "Métodos de trabajo",
+   "explicacion": "Revisión de 2023",
+   "riesgo": "No inferir cronología por el 1 del código",
+   "url": "https://docs.un.org/A/HRC/WGEID/1"
+  },
+  {
+   "simbolo": "A/HRC/36/38",
+   "organo": "Consejo de Derechos Humanos",
+   "tipo": "Informe",
+   "explicacion": "Incluye métodos del Grupo sobre Detención Arbitraria",
+   "riesgo": "No es resolución pese a empezar A/HRC",
+   "url": "https://docs.un.org/A/HRC/36/38"
+  },
+  {
+   "simbolo": "E/RES/####",
+   "organo": "Consejo Económico y Social",
+   "tipo": "Resolución de ECOSOC",
+   "explicacion": "Familia de resoluciones ECOSOC",
+   "riesgo": "Diferente de E/CN.4/RES de Comisión",
+   "url": "https://digitallibrary.un.org/"
+  },
+  {
+   "simbolo": "A/HRC/##/L.##",
+   "organo": "Consejo de Derechos Humanos",
+   "tipo": "Proyecto de resolución",
+   "explicacion": "Texto presentado antes de su adopción",
+   "riesgo": "No atribuir efectos del texto final a un proyecto",
+   "url": "https://docs.un.org/"
+  }
+ ],
+ "seleccion": [
+  {
+   "paso": "1",
+   "actor": "Vacante / Convocatoria",
+   "regla": "OHCHR abre candidaturas",
+   "riesgo": "Identificar mandato, elegibilidad, incompatibilidades",
+   "url": "https://www.ohchr.org/en/hr-bodies/hrc/sp/nominations"
+  },
+  {
+   "paso": "2",
+   "actor": "Presentación de candidaturas",
+   "regla": "Personas candidatas / nominadoras",
+   "riesgo": "Información y trayectoria profesional verificable",
+   "url": "https://www.ohchr.org/en/hr-bodies/hrc/sp/nominations"
+  },
+  {
+   "paso": "3",
+   "actor": "Grupo Consultivo",
+   "regla": "Cinco integrantes, uno por grupo regional; actúan a título personal",
+   "riesgo": "Examinar criterios: pericia, experiencia, independencia, imparcialidad, integridad, objetividad",
+   "url": "https://docs.un.org/A/HRC/RES/5/1"
+  },
+  {
+   "paso": "4",
+   "actor": "Entrevistas y lista de prioridad",
+   "regla": "Grupo Consultivo",
+   "riesgo": "Evaluar candidaturas y remitir recomendaciones motivadas",
+   "url": "https://docs.un.org/A/HRC/RES/5/1"
+  },
+  {
+   "paso": "5",
+   "actor": "Consultas y propuesta",
+   "regla": "Presidencia del Consejo",
+   "riesgo": "Propuesta con consultas institucionales y motivación cuando corresponda",
+   "url": "https://docs.un.org/A/HRC/RES/5/1"
+  },
+  {
+   "paso": "6",
+   "actor": "Nombramiento",
+   "regla": "Consejo de Derechos Humanos",
+   "riesgo": "Designación formal, no la decide el Grupo Consultivo",
+   "url": "https://docs.un.org/A/HRC/RES/5/1"
+  },
+  {
+   "paso": "7",
+   "actor": "Ejercicio del mandato",
+   "regla": "Titular individual o Grupo de Trabajo",
+   "riesgo": "Independencia funcional, comunicaciones, visitas, informes, según mandato",
+   "url": "https://unsdg.un.org/2030-agenda/strengthening-international-human-rights/un-special-procedures"
+  }
+ ]
+}
