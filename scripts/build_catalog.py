@@ -21,7 +21,7 @@ def organo(es, en):
 
 def holders(txt):
     out = []
-    for t, nm, pais in re.findall(r'(Mr\.|Ms\.|Mrs\.|Dr\.|Sr\.|Sra\.|Prof\.|Sr\.|Sra)\s+(.+?)\s*\(([^)]+)\)', txt):
+    for t, nm, pais in re.findall(r'(Mr\.|Ms\.|Mrs\.|Dr\.|Sr\.|Sra\.|Prof\.|Sr\.|Sra)\s+(.+?)\s*\(((?:[^()]|\([^()]*\))*)\)', txt):
         out.append({'tratamiento': t, 'nombre': nm.strip(), 'pais': pais.strip()})
     return out
 
@@ -137,7 +137,28 @@ ev = json.load(open('data/evidencias.json', encoding='utf-8'))
 for k, v in ev.items():
     if k in index: index[k]['evidencia'] = v
 mec = json.load(open('data/fuentes/mecanismos.json', encoding='utf-8')) if os.path.exists('data/fuentes/mecanismos.json') else []
-data = {'version': '0.7', 'mecanismos': mec, 'consultado': fecha,
+PAISES = json.load(open('data/paises.json', encoding='utf-8'))
+def pid(raw):
+    r = re.sub(r'^the ', '', raw.strip().rstrip('.').lower().replace('’', '’'))
+    for p in PAISES:
+        if r in [a.lower() for a in p['alias']]: return p['id']
+    return None
+sin_pais = set()
+for i, r in enumerate(recs):
+    r['pais_id'] = pid(r['nameEN'].split(' in ')[-1]) if r['alcance'] == 'País' else None
+    if r['alcance'] == 'País' and not r['pais_id']: sin_pais.add(r['nameEN'])
+    for h in r['titulares']:
+        h['pais_id'] = pid(h['pais'])
+        if not h['pais_id']: sin_pais.add('titular:' + h['pais'])
+assert not sin_pais, sin_pais
+paises = []
+for p in PAISES:
+    ms = [i for i, r in enumerate(recs) if r['pais_id'] == p['id']]
+    ts = [{'idx': i, 'titular': h['nombre']} for i, r in enumerate(recs) for h in r['titulares'] if h['pais_id'] == p['id']]
+    cm = [i for i, m in enumerate(mec) if any(k in (m['nameEN'] + ' ' + m['nombre']).lower() for k in p.get('mec', []))]
+    if ms or ts or cm: paises.append({**p, 'mandato': ms[0] if ms else None, 'titulares_de': ts, 'comisiones': cm})
+paises.sort(key=lambda p: p['es'].lower())
+data = {'version': '0.7', 'paises': paises, 'mecanismos': mec, 'consultado': fecha,
         'fuentes': ['https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM', 'https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM',
                     'https://digitallibrary.un.org/'],
         'mandatos': recs, 'indice_actos': index,

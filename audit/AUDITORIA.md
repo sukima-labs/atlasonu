@@ -5,7 +5,7 @@ Estados: ✅ cumple · 🟡 parcial · ❌ no implementado.
 | # | Requisito | Estado | Evidencia / brecha |
 |---|---|---|---|
 | 1 | Plataforma web profesional, UX | 🟡 | Responsive sin desbordamiento (390 y 1366 px), búsqueda guiada para novatos, 36 comprobaciones en Chromium. Falta revisión de accesibilidad con lector de pantalla |
-| 2 | Búsqueda simple ES/EN + avanzada | 🟡 | Palabras (ES/EN), símbolos, alternativas, figura, modalidad, origen, años, verificación. Faltan filtros por región y fuente |
+| 2 | Búsqueda simple ES/EN + avanzada | 🟡 | Palabras (ES/EN), símbolos, alternativas, figura, modalidad, origen, años, verificación y **país** (mandato o nacionalidad del titular; sección Países). Faltan filtros por región y fuente |
 | 3 | Catálogo exhaustivo | 🟡 | 57 mandatos vigentes completos + 25 mecanismos conexos (10 órganos de tratados, EPU, 1235/1503, EMRIP, Foro Minorías, ACNUDH, 8 comisiones/misiones). Faltan mandatos extinguidos y el resto de comisiones de investigación |
 | 4 | Arqueología documental activa | ✅/🟡 | Resolución localizada aunque el símbolo esté mal escrito; borrador→resolución; 374 PDF propios validados y 26 resoluciones antiguas ubicadas en su informe de sesión con páginas. Falta leer el texto de todas (solo 20 (XXXVI) leída) |
 | 5 | Distinguir órganos y codificaciones | 🟡 | Cada acto lleva órgano, tipo y aviso (resolución / informe / borrador). Tabla «Códigos ONU» existente |
@@ -15,7 +15,7 @@ Estados: ✅ cumple · 🟡 parcial · ❌ no implementado.
 | 9 | Selección de titulares | 🟡 | Secuencia del proceso; titulares actuales por mandato; sin datos históricos por proceso |
 | 10 | Autoría | ✅ | © y enlace visibles; licencia pendiente del autor |
 | 11 | Excel offline, HTML Pages | 🟡 | HTML sin conexión y Excel v0.7 (6 hojas); flujo `pages.yml` listo; pendiente activar Pages (un clic) |
-| 12 | Pruebas reales | 🟡 | 42 de lógica + 42 en Chromium; auditoría de enlaces (571; 0 rotos; 459 no concluyentes por antirrobot); muestreo de PDF 30/30. Sin auditoría de accesibilidad |
+| 12 | Pruebas reales | 🟡 | 51 de lógica + 52 en Chromium; auditoría de enlaces (571; 0 rotos; 459 no concluyentes por antirrobot); muestreo de PDF 30/30. Sin auditoría de accesibilidad |
 | 13 | Commits y Pages verificado | ✅ | Publicado en https://sukima-labs.github.io/onu-arqueologia-documental/ (27-oct-2026): HTTP 200 en página, datos y Excel; las 42 comprobaciones de Chromium pasan contra la URL pública, sin errores de consola |
 
 ## Qué corrigió esta versión respecto a v0.6
