@@ -4,7 +4,7 @@ Estados: ✅ cumple · 🟡 parcial · ❌ no implementado.
 
 | # | Requisito | Estado | Evidencia / brecha |
 |---|---|---|---|
-| 1 | Plataforma web profesional, UX | 🟡 | Responsive sin desbordamiento (390 y 1366 px), búsqueda guiada para novatos, 153 comprobaciones en Chromium (escritorio y móvil), 115 de lógica y 11 invariantes. Falta revisión de accesibilidad con lector de pantalla |
+| 1 | Plataforma web profesional, UX | 🟡 | Responsive sin desbordamiento (390 y 1366 px), búsqueda guiada para novatos, 162 comprobaciones en Chromium (escritorio y móvil), 120 de lógica y 11 invariantes. Falta revisión de accesibilidad con lector de pantalla |
 | 2 | Búsqueda simple ES/EN + avanzada | 🟡 | Palabras (ES/EN), símbolos, alternativas, figura, modalidad, origen, años, verificación y **país** (mandato o nacionalidad del titular; sección Países). Faltan filtros por región y fuente |
 | 3 | Catálogo exhaustivo | 🟡 | 57 mandatos vigentes completos + 25 mecanismos conexos (10 órganos de tratados, EPU, 1235/1503, EMRIP, Foro Minorías, ACNUDH, 8 comisiones/misiones). Faltan mandatos extinguidos y el resto de comisiones de investigación |
 | 4 | Arqueología documental activa | ✅/🟡 | Resolución localizada aunque el símbolo esté mal escrito; borrador→resolución; 374 PDF propios validados y 26 resoluciones antiguas ubicadas en su informe de sesión con páginas. Falta leer el texto de todas (solo 20 (XXXVI) leída) |

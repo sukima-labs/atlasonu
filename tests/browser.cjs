@@ -142,6 +142,26 @@ const URL = process.env.ATLAS_URL || 'file://' + path.resolve(__dirname, '..', '
     ok('carga normal: aviso oculto y aplicación lista', !(await pg2.isVisible('#aviso-carga')) && (await pg2.evaluate(() => window.__atlasListo === true)));
     await ctx2.close();
   }
+  // Portada e historia
+  {
+    const pg = await browser.newPage({ viewport: { width: 1366, height: 900 } }); await pg.goto(URL); await pg.waitForFunction(() => window.__atlasListo);
+    ok('portada: buscador, ocho caminos y «un día como hoy» a la vista', (await pg.isVisible('#quick')) && (await pg.locator('.tile').count()) === 8 && /en la (historia de la )?ONU/.test(await pg.textContent('#hoyHistoria')));
+    ok('portada: el panel de datos (cifras) está plegado por defecto', !(await pg.evaluate(() => document.querySelector('details.datos').open)));
+    await pg.click('.tile:has-text("Su historia")'); await pg.waitForSelector('.hi-card');
+    ok('historia: se ven las tarjetas de la línea de tiempo y el detalle', (await pg.locator('.hi-card').count()) >= 50 && /Por qué importa/.test(await pg.textContent('#hiDetalle')));
+    await pg.click('.hi-card:has-text("Declaración Universal")');
+    ok('historia: al tocar un hecho se muestra su detalle (DUDH, 10 de diciembre de 1948)', /10 de diciembre de 1948/.test(await pg.textContent('#hiDetalle')) && /217 A/.test(await pg.textContent('#hiDetalle')));
+    await pg.fill('#hiSlider', '1993'); await pg.waitForTimeout(250);
+    ok('historia: el control del año salta al hecho más cercano y muestra mandatos creados ese año', /199[3-4]/.test(await pg.textContent('#hiDetalle')) && /Mandatos vigentes creados en 1993/.test(await pg.textContent('#hiDetalle')));
+    await pg.click('button:has-text("Fundación y descolonización")');
+    ok('historia: el filtro por época oculta lo posterior', (await pg.locator('.hi-card').count()) < 15 && !(await pg.textContent('#hiTrack')).includes('Agenda 2030'));
+    await pg.click('button:has-text("Toda la historia")'); await pg.click('#hiPlay'); await pg.waitForTimeout(6600);
+    ok('historia: el recorrido guiado avanza solo y se puede pausar', /Pausar/.test(await pg.textContent('#hiPlay')) && (await pg.evaluate(() => hiSelI)) !== 0);
+    await pg.click('#hiPlay'); ok('historia: pausar detiene el recorrido', /Recorrido guiado/.test(await pg.textContent('#hiPlay')));
+    await pg.click('.hi-card:has-text("Convención contra la Tortura")'); await pg.click('#hiDetalle button:has-text("Ver en el tablero")');
+    ok('historia → tratado: el botón abre el tratado correspondiente (CAT)', /Comité contra la Tortura/.test(await pg.textContent('#trDetalle')));
+    await pg.close();
+  }
   // Navegación móvil: menú lateral con botón, se cierra al navegar; sin desbordes en ningún tamaño de teléfono/tableta
   for (const [nom, w, h] of [['iPhone SE', 375, 667], ['Android 412', 412, 915], ['tableta 768', 768, 1024]]) {
     const pg = await browser.newPage({ viewport: { width: w, height: h }, hasTouch: true, isMobile: true }); await pg.goto(URL); await pg.waitForFunction(() => window.__atlasListo);
