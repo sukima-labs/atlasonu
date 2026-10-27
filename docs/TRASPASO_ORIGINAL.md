@@ -25,13 +25,13 @@ Repositorio objetivo (ya creado y público): https://github.com/cataplum1414/onu
 10. Protección de la edición/autoria (mostrar © Jeisson Arley Osorio Mesa, repositorio público y licencia elegida por autor; publicar código no implica cesión de derechos).
 11. Excel descargable y utilizable sin conexión, posible Power BI si aporta valor; HTML/Páginas GitHub para acceso desde PC y móvil.
 12. Probar navegador real, accesibilidad básica, enlaces oficiales, búsqueda, fallos, carga, integridad de datos, y tests reproducibles. No declarar 99/100% sin evidencias.
-13. Crear commits incrementales y publicar en repositorio, habilitar GitHub Pages, verificar URL pública real. No incorporar datos personales ni material de DignityOS.
+13. Crear commits incrementales y publicar en repositorio, habilitar GitHub Pages, verificar URL pública real. No incorporar datos personales.
 
 ## Estado REAL al momento de traspaso
 - Hay prototipo HTML local y catálogo parcial (28 mandatos y 11 trazas en la versión 0.6) con búsquedas y recuperación guiada, NO arqueología automatizada general.
 - No hay sincronización automática con la ONU, geodatos completos, catálogo exhaustivo ni auditoría jurídica completa.
 - Algunas pruebas estáticas pasaron; prueba completa de navegación Chromium no quedó acreditada.
-- Cuenta GitHub: cataplum1414; repo público existente. La integración de ChatGPT dio 403 `Resource not accessible by integration` al escribir y `list_installations` devolvió instalaciones vacías. NO se confirmó commit ni GitHub Pages.
+- Cuenta GitHub: cataplum1414; repo público existente. En el momento del traspaso no se había confirmado ningún commit ni GitHub Pages (la escritura devolvió 403).
 - Claude deberá comprobar el repositorio actual antes de modificar, y realizar acciones solo con permiso y autenticación disponible.
 
 ## Guía para Claude
