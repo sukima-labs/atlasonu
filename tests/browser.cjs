@@ -8,6 +8,7 @@ const URL = process.env.ATLAS_URL || 'file://' + path.resolve(__dirname, '..', '
   const ok = (n, c) => { res.checks.push({ n, ok: !!c }); };
   for (const vp of [{ name: 'escritorio', width: 1366, height: 800 }, { name: 'movil', width: 390, height: 844 }]) {
     const page = await browser.newPage({ viewport: vp });
+    if (!process.env.ATLAS_CAPTURAS) { const orig = page.screenshot.bind(page); page.screenshot = (o) => orig({ ...o, path: undefined }); } // las capturas de audit/ solo se regeneran con ATLAS_CAPTURAS=1
     page.on('pageerror', e => res.errors.push(vp.name + ': ' + e.message));
     page.on('console', m => { if (m.type() === 'error') res.errors.push(vp.name + ' console: ' + m.text()); });
     await page.goto(URL);
@@ -53,6 +54,17 @@ const URL = process.env.ATLAS_URL || 'file://' + path.resolve(__dirname, '..', '
     ok(vp.name + ': Cómo funciona la ONU: al pulsar un recuadro aparece su detalle y de quién depende', /Examen Periódico Universal/.test(await page.textContent('#sisDetalle')) && /Depende de/.test(await page.textContent('#sisDetalle')));
     await page.click('#sisT3'); await page.fill('#sisSim', 'CCPR/C/IND/CO/4');
     ok(vp.name + ': Cómo funciona la ONU: el descifrador explica un símbolo', /Observaciones finales/.test(await page.textContent('#sisSimOut')));
+    await page.evaluate(() => showPage('sistema')); await page.click('#sisT4'); await page.click('.org-node:has-text("ONU Mujeres")');
+    ok(vp.name + ': Familia de la ONU: ONU Mujeres aclara que no es el comité de la CEDAW y enlaza con él', /No es el comité de la CEDAW/.test(await page.textContent('#sisDetalle')) && (await page.locator('#sisDetalle button:has-text("CEDAW")').count()) > 0);
+    await page.click('#sisT1'); await page.click('.org-node:has-text("Secretaría")');
+    ok(vp.name + ': Mapa: la Secretaría muestra ACNUDH, OCHA y UNODC', /ACNUDH/.test(await page.textContent('#sisDetalle')) && /UNODC/.test(await page.textContent('#sisDetalle')));
+    await page.evaluate(() => showPage('tratados')); await page.click('#trSel .org-node:has-text("CEDAW")'); await page.click('button:has-text("Texto del tratado")'); await page.waitForSelector('#trTexto .detail');
+    ok(vp.name + ': Tratados: CEDAW art. 1 literal con buscador', /exclusión o restricción basada en el sexo/.test(await page.textContent('#trTexto')));
+    await page.fill('#trBus', 'estereotipadas'); ok(vp.name + ': Tratados: el buscador del texto resalta coincidencias', (await page.locator('#trTexto mark').count()) > 0 || /artículo\(s\) contienen/.test(await page.textContent('#trTexto')));
+    await page.click('button:has-text("Estados parte y ratificaciones")');
+    ok(vp.name + ': Tratados: lista de Estados parte con país clicable', /Son parte/.test(await page.textContent('#trDetalle')) && (await page.locator('#trDetalle button.trat').count()) > 150);
+    await page.locator('#trDetalle button.trat:has-text("India")').first().click(); await page.waitForTimeout(300);
+    ok(vp.name + ': Tratados → ficha del país (India)', /India/.test(await page.textContent('#pOut')));
     await page.evaluate(() => showPage('paises'));
     ok(vp.name + ': ficha de India carga bajo demanda sus observaciones finales, EPU y misiones', /CCPR\/C\/IND\/CO\/4/.test(dd) && /A\/HRC\/WG\.6\/41\/IND\/1/.test(dd) && /A\/HRC\/34\/51\/Add\.1/.test(dd));
     await page.fill('#pQ', 'siria'); await page.waitForTimeout(250);

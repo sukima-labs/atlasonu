@@ -36,7 +36,7 @@ Abrir `index.html` en cualquier navegador (también sin conexión: los datos van
 | `index.html` | Aplicación |
 | `data/` | `catalogo.json` y `atlas-data.js` (generados), `fuentes/` (descargas oficiales y verificación), `evidencias.json`, Excel del piloto |
 | `scripts/` | Descarga, normalización, verificación y construcción (`actualizar_datos.sh` ejecuta todo) |
-| `tests/` | `smoke.cjs` (42 pruebas de lógica) y `browser.cjs` (Chromium real, 36 comprobaciones, escritorio y móvil) |
+| `tests/` | `smoke.cjs` (103 pruebas de lógica, `invariantes.cjs`: 11) y `browser.cjs` (Chromium real, 119 comprobaciones, escritorio y móvil) |
 | `audit/` | Auditoría contra los 13 requisitos, discrepancias respecto a v0.6, inventario, manifiesto de integridad |
 | `docs/` | Traspaso original |
 | `archive/` | Versiones previas sin modificar |
@@ -45,7 +45,7 @@ Abrir `index.html` en cualquier navegador (también sin conexión: los datos van
 ```
 bash scripts/actualizar_datos.sh        # regenera datos (necesita red)
 cd tests && node smoke.cjs               # lógica
-npm i playwright && node tests/browser.cjs   # navegador real
+npm i playwright && node tests/browser.cjs   # navegador real   # con ATLAS_CAPTURAS=1 regenera las capturas de audit/
 ```
 
 ## Si la página no abre
@@ -64,3 +64,9 @@ Solo mandatos **vigentes**: faltan los extinguidos. Las comisiones de investigac
 ## Documentos oficiales por país
 
 Cada ficha de país carga, bajo demanda (`data/paises/<ISO>.js`), las observaciones finales de los comités de tratados, los documentos del Examen Periódico Universal y los informes de misiones de procedimientos especiales, todos obtenidos de la Biblioteca Digital de la ONU con coincidencia exacta de materia (`scripts/fetch_docs_pais.py`) y refrescados a diario. Las comunicaciones individuales de los relatores no son automatizables y se enlazan a la base oficial.
+
+## Cómo funciona la ONU y Tratados y comités
+
+- **Cómo funciona la ONU** (`sistema`): mapa clicable de los órganos principales, el Consejo de Derechos Humanos y lo que cuelga de él; la **familia de la ONU** (41 entidades: Secretaría, fondos y programas, organismos especializados, comisiones regionales, organizaciones relacionadas) con sus conexiones a comités y mandatos; una guía «¿ante quién reclamo?» y un descifrador de símbolos documentales. Datos de elaboración propia en `data/sistema_onu.json` (declarado como no oficial).
+- **Tratados y comités** (`tratados`): los nueve tratados principales, su comité, los procedimientos de supervisión (informes, comunicaciones individuales, investigaciones, etc., con el artículo de cada uno), los **Estados parte** (de la Colección de Tratados, con enlace a cada ficha de país) y el **texto literal** artículo por artículo cuando la copia oficial tiene texto digital fiable.
+- **Texto literal**: `scripts/fetch_tratados_texto.py` lo toma del anexo de la resolución de la Asamblea General (solo textos digitales, de 1999 en adelante) y, para la CEDAW, de la página de la ONU contrastada palabra a palabra con la copia depositaria (18 erratas evidentes corregidas y listadas). Cada instrumento se valida (numeración 1..N y número de artículos). Los tratados anteriores, cuyo único ejemplar digital es un escaneo con errores de reconocimiento, **no se transcriben**: se enlazan al original.

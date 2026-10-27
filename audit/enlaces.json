@@ -3424,5 +3424,455 @@
   "estado": 200,
   "clase": "OK",
   "origen": "fuente oficial"
+ },
+ {
+  "url": "https://www.ohchr.org/es",
+  "estado": 403,
+  "clase": "ANTIRROBOT",
+  "origen": "entidad ACNUDH"
+ },
+ {
+  "url": "https://www.unocha.org/",
+  "estado": 206,
+  "clase": "OK",
+  "origen": "entidad OCHA"
+ },
+ {
+  "url": "https://www.unodc.org/",
+  "estado": 200,
+  "clase": "OK",
+  "origen": "entidad UNODC"
+ },
+ {
+  "url": "https://www.unicef.org/es",
+  "estado": 206,
+  "clase": "OK",
+  "origen": "entidad UNICEF"
+ },
+ {
+  "url": "https://www.undp.org/es",
+  "estado": 403,
+  "clase": "ANTIRROBOT",
+  "origen": "entidad PNUD"
+ },
+ {
+  "url": "https://www.unfpa.org/es",
+  "estado": 206,
+  "clase": "OK",
+  "origen": "entidad UNFPA"
+ },
+ {
+  "url": "https://es.wfp.org/",
+  "estado": 200,
+  "clase": "OK",
+  "origen": "entidad PMA"
+ },
+ {
+  "url": "https://www.unep.org/es",
+  "estado": 200,
+  "clase": "OK",
+  "origen": "entidad PNUMA"
+ },
+ {
+  "url": "https://www.acnur.org/",
+  "estado": 403,
+  "clase": "ANTIRROBOT",
+  "origen": "entidad ACNUR"
+ },
+ {
+  "url": "https://unhabitat.org/es",
+  "estado": 206,
+  "clase": "OK",
+  "origen": "entidad ONUHABITAT"
+ },
+ {
+  "url": "https://www.unrwa.org/",
+  "estado": 403,
+  "clase": "ANTIRROBOT",
+  "origen": "entidad UNRWA"
+ },
+ {
+  "url": "https://www.unaids.org/es",
+  "estado": 206,
+  "clase": "OK",
+  "origen": "entidad ONUSIDA"
+ },
+ {
+  "url": "https://www.unwomen.org/es",
+  "estado": 206,
+  "clase": "OK",
+  "origen": "entidad ONUMUJERES"
+ },
+ {
+  "url": "https://www.ilo.org/es",
+  "estado": 206,
+  "clase": "OK",
+  "origen": "entidad OIT"
+ },
+ {
+  "url": "https://www.fao.org/home/es",
+  "estado": 200,
+  "clase": "OK",
+  "origen": "entidad FAO"
+ },
+ {
+  "url": "https://www.unesco.org/es",
+  "estado": 206,
+  "clase": "OK",
+  "origen": "entidad UNESCO"
+ },
+ {
+  "url": "https://www.who.int/es",
+  "estado": 200,
+  "clase": "OK",
+  "origen": "entidad OMS"
+ },
+ {
+  "url": "https://www.worldbank.org/es/home",
+  "estado": 206,
+  "clase": "OK",
+  "origen": "entidad BM"
+ },
+ {
+  "url": "https://www.imf.org/es/home",
+  "estado": 403,
+  "clase": "ANTIRROBOT",
+  "origen": "entidad FMI"
+ },
+ {
+  "url": "https://www.icao.int/",
+  "estado": 403,
+  "clase": "ANTIRROBOT",
+  "origen": "entidad OACI"
+ },
+ {
+  "url": "https://www.imo.org/",
+  "estado": 200,
+  "clase": "OK",
+  "origen": "entidad OMI"
+ },
+ {
+  "url": "https://www.itu.int/es/",
+  "estado": 200,
+  "clase": "OK",
+  "origen": "entidad UIT"
+ },
+ {
+  "url": "https://www.upu.int/es",
+  "estado": 206,
+  "clase": "OK",
+  "origen": "entidad UPU"
+ },
+ {
+  "url": "https://wmo.int/es",
+  "estado": 206,
+  "clase": "OK",
+  "origen": "entidad OMM"
+ },
+ {
+  "url": "https://www.wipo.int/portal/es/",
+  "estado": 206,
+  "clase": "OK",
+  "origen": "entidad OMPI"
+ },
+ {
+  "url": "https://www.ifad.org/es",
+  "estado": 403,
+  "clase": "ANTIRROBOT",
+  "origen": "entidad FIDA"
+ },
+ {
+  "url": "https://www.unido.org/",
+  "estado": 403,
+  "clase": "ANTIRROBOT",
+  "origen": "entidad ONUDI"
+ },
+ {
+  "url": "https://www.unwto.org/es",
+  "estado": 403,
+  "clase": "ANTIRROBOT",
+  "origen": "entidad ONUTURISMO"
+ },
+ {
+  "url": "https://www.unwomen.org/es/csw",
+  "estado": "RemoteDisconnected",
+  "clase": "ROTO",
+  "origen": "entidad CSW"
+ },
+ {
+  "url": "https://social.desa.un.org/es/issues/indigenous-peoples",
+  "estado": 403,
+  "clase": "ANTIRROBOT",
+  "origen": "entidad FPCI"
+ },
+ {
+  "url": "https://www.uneca.org/",
+  "estado": 200,
+  "clase": "OK",
+  "origen": "entidad CEPA"
+ },
+ {
+  "url": "https://unece.org/",
+  "estado": 403,
+  "clase": "ANTIRROBOT",
+  "origen": "entidad CEPE"
+ },
+ {
+  "url": "https://www.cepal.org/es",
+  "estado": 403,
+  "clase": "ANTIRROBOT",
+  "origen": "entidad CEPAL"
+ },
+ {
+  "url": "https://www.unescap.org/",
+  "estado": 206,
+  "clase": "OK",
+  "origen": "entidad CESPAP"
+ },
+ {
+  "url": "https://www.unescwa.org/",
+  "estado": 403,
+  "clase": "ANTIRROBOT",
+  "origen": "entidad CESPAO"
+ },
+ {
+  "url": "https://www.iom.int/es",
+  "estado": 403,
+  "clase": "ANTIRROBOT",
+  "origen": "entidad OIM"
+ },
+ {
+  "url": "https://www.iaea.org/es",
+  "estado": 403,
+  "clase": "ANTIRROBOT",
+  "origen": "entidad OIEA"
+ },
+ {
+  "url": "https://www.wto.org/indexsp.htm",
+  "estado": 206,
+  "clase": "OK",
+  "origen": "entidad OMC"
+ },
+ {
+  "url": "https://www.opcw.org/es",
+  "estado": 206,
+  "clase": "OK",
+  "origen": "entidad OPAQ"
+ },
+ {
+  "url": "https://www.ctbto.org/es",
+  "estado": 403,
+  "clase": "ANTIRROBOT",
+  "origen": "entidad OTPCE"
+ },
+ {
+  "url": "https://www.icc-cpi.int/",
+  "estado": 200,
+  "clase": "OK",
+  "origen": "entidad CPI"
+ },
+ {
+  "url": "https://www.ohchr.org/es/treaty-bodies/ccpr",
+  "estado": 403,
+  "clase": "ANTIRROBOT",
+  "origen": "comité CCPR"
+ },
+ {
+  "url": "https://www.ohchr.org/es/treaty-bodies/cescr",
+  "estado": 403,
+  "clase": "ANTIRROBOT",
+  "origen": "comité CESCR"
+ },
+ {
+  "url": "https://www.ohchr.org/es/treaty-bodies/cerd",
+  "estado": 403,
+  "clase": "ANTIRROBOT",
+  "origen": "comité CERD"
+ },
+ {
+  "url": "https://www.ohchr.org/es/treaty-bodies/cat",
+  "estado": 403,
+  "clase": "ANTIRROBOT",
+  "origen": "comité CAT"
+ },
+ {
+  "url": "https://www.ohchr.org/es/treaty-bodies/cedaw",
+  "estado": 403,
+  "clase": "ANTIRROBOT",
+  "origen": "comité CEDAW"
+ },
+ {
+  "url": "https://www.ohchr.org/es/treaty-bodies/crc",
+  "estado": 403,
+  "clase": "ANTIRROBOT",
+  "origen": "comité CRC"
+ },
+ {
+  "url": "https://www.ohchr.org/es/treaty-bodies/cmw",
+  "estado": 403,
+  "clase": "ANTIRROBOT",
+  "origen": "comité CMW"
+ },
+ {
+  "url": "https://www.ohchr.org/es/treaty-bodies/crpd",
+  "estado": 403,
+  "clase": "ANTIRROBOT",
+  "origen": "comité CRPD"
+ },
+ {
+  "url": "https://www.ohchr.org/es/treaty-bodies/ced",
+  "estado": 403,
+  "clase": "ANTIRROBOT",
+  "origen": "comité CED"
+ },
+ {
+  "url": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=IV-2&chapter=4&clang=_en",
+  "estado": 200,
+  "clase": "OK",
+  "origen": "tratado CERD"
+ },
+ {
+  "url": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=IV-3&chapter=4&clang=_en",
+  "estado": 200,
+  "clase": "OK",
+  "origen": "tratado PIDESC"
+ },
+ {
+  "url": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=IV-3-a&chapter=4&clang=_en",
+  "estado": 200,
+  "clase": "OK",
+  "origen": "tratado OP-PIDESC"
+ },
+ {
+  "url": "https://documents.un.org/api/symbol/access?s=A/RES/63/117&l=es&t=pdf",
+  "estado": 206,
+  "clase": "OK",
+  "origen": "texto literal OP-PIDESC"
+ },
+ {
+  "url": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=IV-4&chapter=4&clang=_en",
+  "estado": 200,
+  "clase": "OK",
+  "origen": "tratado PIDCP"
+ },
+ {
+  "url": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=IV-5&chapter=4&clang=_en",
+  "estado": 200,
+  "clase": "OK",
+  "origen": "tratado OP1-PIDCP"
+ },
+ {
+  "url": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=IV-12&chapter=4&clang=_en",
+  "estado": 200,
+  "clase": "OK",
+  "origen": "tratado OP2-PIDCP"
+ },
+ {
+  "url": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=IV-8&chapter=4&clang=_en",
+  "estado": 200,
+  "clase": "OK",
+  "origen": "tratado CEDAW"
+ },
+ {
+  "url": "https://www.un.org/womenwatch/daw/cedaw/text/sconvention.htm",
+  "estado": 206,
+  "clase": "OK",
+  "origen": "texto literal CEDAW"
+ },
+ {
+  "url": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=IV-8-b&chapter=4&clang=_en",
+  "estado": 200,
+  "clase": "OK",
+  "origen": "tratado OP-CEDAW"
+ },
+ {
+  "url": "https://documents.un.org/api/symbol/access?s=A/RES/54/4&l=es&t=pdf",
+  "estado": 206,
+  "clase": "OK",
+  "origen": "texto literal OP-CEDAW"
+ },
+ {
+  "url": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=IV-9&chapter=4&clang=_en",
+  "estado": 200,
+  "clase": "OK",
+  "origen": "tratado CAT"
+ },
+ {
+  "url": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=IV-9-b&chapter=4&clang=_en",
+  "estado": 200,
+  "clase": "OK",
+  "origen": "tratado OPCAT"
+ },
+ {
+  "url": "https://documents.un.org/api/symbol/access?s=A/RES/57/199&l=es&t=pdf",
+  "estado": 206,
+  "clase": "OK",
+  "origen": "texto literal OPCAT"
+ },
+ {
+  "url": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=IV-11&chapter=4&clang=_en",
+  "estado": 200,
+  "clase": "OK",
+  "origen": "tratado CRC"
+ },
+ {
+  "url": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=IV-11-b&chapter=4&clang=_en",
+  "estado": 200,
+  "clase": "OK",
+  "origen": "tratado OP-CRC-AC"
+ },
+ {
+  "url": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=IV-11-c&chapter=4&clang=_en",
+  "estado": 200,
+  "clase": "OK",
+  "origen": "tratado OP-CRC-SC"
+ },
+ {
+  "url": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=IV-11-d&chapter=4&clang=_en",
+  "estado": 200,
+  "clase": "OK",
+  "origen": "tratado OP3-CRC"
+ },
+ {
+  "url": "https://documents.un.org/api/symbol/access?s=A/RES/66/138&l=es&t=pdf",
+  "estado": 206,
+  "clase": "OK",
+  "origen": "texto literal OP3-CRC"
+ },
+ {
+  "url": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=IV-13&chapter=4&clang=_en",
+  "estado": 200,
+  "clase": "OK",
+  "origen": "tratado ICRMW"
+ },
+ {
+  "url": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=IV-15&chapter=4&clang=_en",
+  "estado": 200,
+  "clase": "OK",
+  "origen": "tratado CRPD"
+ },
+ {
+  "url": "https://documents.un.org/api/symbol/access?s=A/RES/61/106&l=es&t=pdf",
+  "estado": 206,
+  "clase": "OK",
+  "origen": "texto literal CRPD"
+ },
+ {
+  "url": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=IV-15-a&chapter=4&clang=_en",
+  "estado": 200,
+  "clase": "OK",
+  "origen": "tratado OP-CRPD"
+ },
+ {
+  "url": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=IV-16&chapter=4&clang=_en",
+  "estado": 200,
+  "clase": "OK",
+  "origen": "tratado CED"
+ },
+ {
+  "url": "https://documents.un.org/api/symbol/access?s=A/RES/61/177&l=es&t=pdf",
+  "estado": 206,
+  "clase": "OK",
+  "origen": "texto literal CED"
  }
 ]
