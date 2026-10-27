@@ -8,6 +8,7 @@ const URL = process.env.ATLAS_URL || 'file://' + path.resolve(__dirname, '..', '
   const ok = (n, c) => { res.checks.push({ n, ok: !!c }); };
   for (const vp of [{ name: 'escritorio', width: 1366, height: 800 }, { name: 'movil', width: 390, height: 844 }]) {
     const page = await browser.newPage({ viewport: vp });
+    if (!process.env.ATLAS_CAPTURAS) { const orig = page.screenshot.bind(page); page.screenshot = (o) => orig({ ...o, path: undefined }); } // las capturas de audit/ solo se regeneran con ATLAS_CAPTURAS=1
     page.on('pageerror', e => res.errors.push(vp.name + ': ' + e.message));
     page.on('console', m => { if (m.type() === 'error') res.errors.push(vp.name + ' console: ' + m.text()); });
     await page.goto(URL);

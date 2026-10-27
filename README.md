@@ -36,7 +36,7 @@ Abrir `index.html` en cualquier navegador (también sin conexión: los datos van
 | `index.html` | Aplicación |
 | `data/` | `catalogo.json` y `atlas-data.js` (generados), `fuentes/` (descargas oficiales y verificación), `evidencias.json`, Excel del piloto |
 | `scripts/` | Descarga, normalización, verificación y construcción (`actualizar_datos.sh` ejecuta todo) |
-| `tests/` | `smoke.cjs` (42 pruebas de lógica) y `browser.cjs` (Chromium real, 36 comprobaciones, escritorio y móvil) |
+| `tests/` | `smoke.cjs` (93 pruebas de lógica, `invariantes.cjs`: 11) y `browser.cjs` (Chromium real, 107 comprobaciones, escritorio y móvil) |
 | `audit/` | Auditoría contra los 13 requisitos, discrepancias respecto a v0.6, inventario, manifiesto de integridad |
 | `docs/` | Traspaso original |
 | `archive/` | Versiones previas sin modificar |
@@ -45,7 +45,7 @@ Abrir `index.html` en cualquier navegador (también sin conexión: los datos van
 ```
 bash scripts/actualizar_datos.sh        # regenera datos (necesita red)
 cd tests && node smoke.cjs               # lógica
-npm i playwright && node tests/browser.cjs   # navegador real
+npm i playwright && node tests/browser.cjs   # navegador real   # con ATLAS_CAPTURAS=1 regenera las capturas de audit/
 ```
 
 ## Si la página no abre
