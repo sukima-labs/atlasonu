@@ -1,0 +1,1131 @@
+[
+ {
+  "categoria": "Órgano de tratado",
+  "siglas": "CERD",
+  "nombre": "Comité para la Eliminación de la Discriminación Racial",
+  "nameEN": "Committee on the Elimination of Racial Discrimination",
+  "simbolo_semilla": "A/RES/2106(XX)",
+  "acto": "Adopción de la Convención ICERD (AG)",
+  "adopcion": 1965,
+  "entrada_vigor": 1969,
+  "miembros": 18,
+  "estado": "VERIFICADO",
+  "simbolo": "A/RES/2106(XX)",
+  "titulo_oficial": "International Convention on the Elimination of All Forms of Racial Discrimination",
+  "adoptada": "1966",
+  "registro": "https://digitallibrary.un.org/record/203552",
+  "coincidencia_titulo": 1.0,
+  "texto": {
+   "estado": "TEXTO_DIRECTO",
+   "fuentes": [
+    {
+     "tipo": "registro",
+     "lengua": "es",
+     "url": "https://digitallibrary.un.org/record/203552/files/A_RES_2106%28XX%29-FR.pdf",
+     "validado": null
+    }
+   ],
+   "descartadas_por_no_coincidir": [],
+   "informe_sesion": [
+    {
+     "simbolo": "A/6181",
+     "paginas": "47–52",
+     "registro": "https://digitallibrary.un.org/record/712630",
+     "pdf": {
+      "en": "https://digitallibrary.un.org/record/712630/files/A_6181-FR.pdf"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "categoria": "Órgano de tratado",
+  "siglas": "CCPR",
+  "nombre": "Comité de Derechos Humanos",
+  "nameEN": "Human Rights Committee",
+  "simbolo_semilla": "A/RES/2200(XXI)",
+  "acto": "Adopción del PIDCP y del PIDESC (AG)",
+  "adopcion": 1966,
+  "entrada_vigor": 1976,
+  "miembros": 18,
+  "estado": "VERIFICADO",
+  "simbolo": "A/RES/2200(XXI)",
+  "titulo_oficial": "International Covenant on Economic, Social and Cultural Rights, International Covenant on Civil and Political Rights and Optional Protocol to the International Covenant on Civil and Political Rights",
+  "adoptada": "1967",
+  "registro": "https://digitallibrary.un.org/record/203277",
+  "coincidencia_titulo": 1.0,
+  "texto": {
+   "estado": "TEXTO_DIRECTO",
+   "fuentes": [
+    {
+     "tipo": "registro",
+     "lengua": "en",
+     "url": "http://digitallibrary.un.org/record/203277/files/A_RES_2200%28XXI%29-EN.pdf",
+     "validado": null
+    },
+    {
+     "tipo": "registro",
+     "lengua": "es",
+     "url": "http://digitallibrary.un.org/record/203277/files/A_RES_2200%28XXI%29-ES.pdf",
+     "validado": null
+    },
+    {
+     "tipo": "registro",
+     "lengua": "fr",
+     "url": "http://digitallibrary.un.org/record/203277/files/A_RES_2200%28XXI%29-FR.pdf",
+     "validado": null
+    }
+   ],
+   "descartadas_por_no_coincidir": [],
+   "informe_sesion": [
+    {
+     "simbolo": "A/6546",
+     "paginas": "49–60",
+     "registro": "https://digitallibrary.un.org/record/1289920",
+     "pdf": {
+      "中文": "https://digitallibrary.un.org/record/1289920/files/A_6546-ZH.pdf",
+      "en": "https://digitallibrary.un.org/record/1289920/files/A_6546-EN.pdf",
+      "fr": "https://digitallibrary.un.org/record/1289920/files/A_6546-FR.pdf",
+      "Русский": "https://digitallibrary.un.org/record/1289920/files/A_6546-RU.pdf"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "categoria": "Órgano de tratado",
+  "siglas": "CESCR",
+  "nombre": "Comité de Derechos Económicos, Sociales y Culturales",
+  "nameEN": "Committee on Economic, Social and Cultural Rights",
+  "simbolo_semilla": "E/RES/1985/17",
+  "acto": "Creación del Comité por el ECOSOC (el PIDESC no lo crea)",
+  "adopcion": 1966,
+  "entrada_vigor": 1976,
+  "miembros": 18,
+  "estado": "VERIFICADO",
+  "simbolo": "E/RES/1985/17",
+  "titulo_oficial": "Review of the composition, organization and administrative arrangements of the Sessional Working Group of Governmental Experts on the Implementation of the International Covenant on Economic, Social and Cultural Rights",
+  "adoptada": "1985-05-28",
+  "registro": "https://digitallibrary.un.org/record/100079",
+  "coincidencia_titulo": 1.0,
+  "texto": {
+   "estado": "TEXTO_DIRECTO",
+   "fuentes": [
+    {
+     "tipo": "registro",
+     "lengua": "en",
+     "url": "https://digitallibrary.un.org/record/100079/files/E_RES_1985_17-EN.pdf",
+     "validado": null
+    },
+    {
+     "tipo": "ods",
+     "lengua": "es",
+     "url": "https://documents.un.org/api/symbol/access?s=E/RES/1985/17&l=es&t=pdf",
+     "validado": null
+    }
+   ],
+   "descartadas_por_no_coincidir": [],
+   "informe_sesion": []
+  }
+ },
+ {
+  "categoria": "Órgano de tratado",
+  "siglas": "CEDAW",
+  "nombre": "Comité para la Eliminación de la Discriminación contra la Mujer",
+  "nameEN": "Committee on the Elimination of Discrimination against Women",
+  "simbolo_semilla": "A/RES/34/180",
+  "acto": "Adopción de la Convención CEDAW (AG)",
+  "adopcion": 1979,
+  "entrada_vigor": 1981,
+  "miembros": 23,
+  "estado": "VERIFICADO",
+  "simbolo": "A/RES/34/180",
+  "titulo_oficial": "Convention on the Elimination of All Forms of Discrimination against Women",
+  "adoptada": "1979-12-18",
+  "registro": "https://digitallibrary.un.org/record/10649",
+  "coincidencia_titulo": 1.0,
+  "texto": {
+   "estado": "TEXTO_DIRECTO",
+   "fuentes": [
+    {
+     "tipo": "registro",
+     "lengua": "en",
+     "url": "https://digitallibrary.un.org/record/10649/files/A_RES_34_180-EN.pdf",
+     "validado": null
+    },
+    {
+     "tipo": "registro",
+     "lengua": "fr",
+     "url": "https://digitallibrary.un.org/record/10649/files/A_RES_34_180-FR.pdf",
+     "validado": null
+    },
+    {
+     "tipo": "registro",
+     "lengua": "es",
+     "url": "https://digitallibrary.un.org/record/10649/files/A_RES_34_180-ES.pdf",
+     "validado": null
+    }
+   ],
+   "descartadas_por_no_coincidir": [],
+   "informe_sesion": []
+  }
+ },
+ {
+  "categoria": "Órgano de tratado",
+  "siglas": "CAT",
+  "nombre": "Comité contra la Tortura",
+  "nameEN": "Committee against Torture",
+  "simbolo_semilla": "A/RES/39/46",
+  "acto": "Adopción de la Convención CAT (AG)",
+  "adopcion": 1984,
+  "entrada_vigor": 1987,
+  "miembros": 10,
+  "estado": "VERIFICADO",
+  "simbolo": "A/RES/39/46",
+  "titulo_oficial": "Convention against Torture and Other Cruel, Inhuman or Degrading Treatment or Punishment",
+  "adoptada": "1984-12-10",
+  "registro": "https://digitallibrary.un.org/record/74216",
+  "coincidencia_titulo": 1.0,
+  "texto": {
+   "estado": "TEXTO_DIRECTO",
+   "fuentes": [
+    {
+     "tipo": "registro",
+     "lengua": "en",
+     "url": "http://digitallibrary.un.org/record/74216/files/A_RES_39_46-EN.pdf",
+     "validado": null
+    },
+    {
+     "tipo": "registro",
+     "lengua": "es",
+     "url": "http://digitallibrary.un.org/record/74216/files/A_RES_39_46-ES.pdf",
+     "validado": null
+    },
+    {
+     "tipo": "registro",
+     "lengua": "fr",
+     "url": "http://digitallibrary.un.org/record/74216/files/A_RES_39_46-FR.pdf",
+     "validado": null
+    }
+   ],
+   "descartadas_por_no_coincidir": [],
+   "informe_sesion": []
+  }
+ },
+ {
+  "categoria": "Órgano de tratado",
+  "siglas": "SPT",
+  "nombre": "Subcomité para la Prevención de la Tortura",
+  "nameEN": "Subcommittee on Prevention of Torture",
+  "simbolo_semilla": "A/RES/57/199",
+  "acto": "Adopción del Protocolo Facultativo OPCAT (AG)",
+  "adopcion": 2002,
+  "entrada_vigor": 2006,
+  "miembros": 25,
+  "estado": "VERIFICADO",
+  "simbolo": "A/RES/57/199",
+  "titulo_oficial": "Optional Protocol to the Convention against Torture and Other Cruel, Inhuman or Degrading Treatment or Punishment",
+  "adoptada": "2002-12-18",
+  "registro": "https://digitallibrary.un.org/record/481982",
+  "coincidencia_titulo": 1.0,
+  "texto": {
+   "estado": "TEXTO_DIRECTO",
+   "fuentes": [
+    {
+     "tipo": "registro",
+     "lengua": "en",
+     "url": "https://digitallibrary.un.org/record/481982/files/A_RES_57_199-EN.pdf",
+     "validado": null
+    },
+    {
+     "tipo": "registro",
+     "lengua": "es",
+     "url": "https://digitallibrary.un.org/record/481982/files/A_RES_57_199-ES.pdf",
+     "validado": null
+    },
+    {
+     "tipo": "registro",
+     "lengua": "fr",
+     "url": "https://digitallibrary.un.org/record/481982/files/A_RES_57_199-FR.pdf",
+     "validado": null
+    }
+   ],
+   "descartadas_por_no_coincidir": [],
+   "informe_sesion": [
+    {
+     "simbolo": "A/57/556/Add.1",
+     "paginas": "",
+     "registro": "https://digitallibrary.un.org/record/480611",
+     "pdf": {
+      "العربية": "https://digitallibrary.un.org/record/480611/files/A_57_556_Add.1-AR.pdf",
+      "en": "https://digitallibrary.un.org/record/480611/files/A_57_556_Add.1-EN.pdf",
+      "es": "https://digitallibrary.un.org/record/480611/files/A_57_556_Add.1-ES.pdf",
+      "fr": "https://digitallibrary.un.org/record/480611/files/A_57_556_Add.1-FR.pdf",
+      "Русский": "https://digitallibrary.un.org/record/480611/files/A_57_556_Add.1-RU.pdf",
+      "中文": "https://digitallibrary.un.org/record/480611/files/A_57_556_Add.1-ZH.pdf"
+     }
+    },
+    {
+     "simbolo": "A/57/PV.77",
+     "paginas": "",
+     "registro": "https://digitallibrary.un.org/record/481855",
+     "pdf": {
+      "العربية": "https://digitallibrary.un.org/record/481855/files/A_57_PV.77-AR.pdf",
+      "en": "https://digitallibrary.un.org/record/481855/files/A_57_PV.77-EN.pdf",
+      "es": "https://digitallibrary.un.org/record/481855/files/A_57_PV.77-ES.pdf",
+      "fr": "https://digitallibrary.un.org/record/481855/files/A_57_PV.77-FR.pdf",
+      "Русский": "https://digitallibrary.un.org/record/481855/files/A_57_PV.77-RU.pdf",
+      "中文": "https://digitallibrary.un.org/record/481855/files/A_57_PV.77-ZH.pdf"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "categoria": "Órgano de tratado",
+  "siglas": "CRC",
+  "nombre": "Comité de los Derechos del Niño",
+  "nameEN": "Committee on the Rights of the Child",
+  "simbolo_semilla": "A/RES/44/25",
+  "acto": "Adopción de la Convención sobre los Derechos del Niño (AG)",
+  "adopcion": 1989,
+  "entrada_vigor": 1990,
+  "miembros": 18,
+  "estado": "VERIFICADO",
+  "simbolo": "A/RES/44/25",
+  "titulo_oficial": "Convention on the Rights of the Child",
+  "adoptada": "1989-11-20",
+  "registro": "https://digitallibrary.un.org/record/80135",
+  "coincidencia_titulo": 1.0,
+  "texto": {
+   "estado": "TEXTO_DIRECTO",
+   "fuentes": [
+    {
+     "tipo": "registro",
+     "lengua": "en",
+     "url": "http://digitallibrary.un.org/record/80135/files/A_RES_44_25-EN.pdf",
+     "validado": null
+    },
+    {
+     "tipo": "registro",
+     "lengua": "es",
+     "url": "http://digitallibrary.un.org/record/80135/files/A_RES_44_25-ES.pdf",
+     "validado": null
+    },
+    {
+     "tipo": "registro",
+     "lengua": "fr",
+     "url": "http://digitallibrary.un.org/record/80135/files/A_RES_44_25-FR.pdf",
+     "validado": null
+    }
+   ],
+   "descartadas_por_no_coincidir": [],
+   "informe_sesion": [
+    {
+     "simbolo": "A/44/PV.61",
+     "paginas": "166–173",
+     "registro": "https://digitallibrary.un.org/record/81454",
+     "pdf": {
+      "العربية": "https://digitallibrary.un.org/record/81454/files/A_44_PV.61-EN.pdf",
+      "Español": "https://digitallibrary.un.org/record/81454/files/A_44_PV.61-FR.pdf",
+      "Русский": "https://digitallibrary.un.org/record/81454/files/A_44_PV.61-ZH.pdf"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "categoria": "Órgano de tratado",
+  "siglas": "CMW",
+  "nombre": "Comité de Trabajadores Migratorios",
+  "nameEN": "Committee on Migrant Workers",
+  "simbolo_semilla": "A/RES/45/158",
+  "acto": "Adopción de la Convención ICRMW (AG)",
+  "adopcion": 1990,
+  "entrada_vigor": 2003,
+  "miembros": 14,
+  "estado": "VERIFICADO",
+  "simbolo": "A/RES/45/158",
+  "titulo_oficial": "International Convention on the Protection of the Rights of all Migrant Workers and Members of Their Families",
+  "adoptada": "1990-12-18",
+  "registro": "https://digitallibrary.un.org/record/105636",
+  "coincidencia_titulo": 1.0,
+  "texto": {
+   "estado": "TEXTO_DIRECTO",
+   "fuentes": [
+    {
+     "tipo": "registro",
+     "lengua": "en",
+     "url": "http://digitallibrary.un.org/record/105636/files/A_RES_45_158-EN.pdf",
+     "validado": null
+    },
+    {
+     "tipo": "registro",
+     "lengua": "es",
+     "url": "http://digitallibrary.un.org/record/105636/files/A_RES_45_158-ES.pdf",
+     "validado": null
+    },
+    {
+     "tipo": "registro",
+     "lengua": "fr",
+     "url": "http://digitallibrary.un.org/record/105636/files/A_RES_45_158-FR.pdf",
+     "validado": null
+    }
+   ],
+   "descartadas_por_no_coincidir": [],
+   "informe_sesion": [
+    {
+     "simbolo": "A/45/PV.69",
+     "paginas": "261–273",
+     "registro": "https://digitallibrary.un.org/record/107781",
+     "pdf": {
+      "العربية": "https://digitallibrary.un.org/record/107781/files/A_45_PV-69-AR.pdf",
+      "en": "https://digitallibrary.un.org/record/107781/files/A_45_PV-69-EN.pdf",
+      "es": "https://digitallibrary.un.org/record/107781/files/A_45_PV-69-ES.pdf",
+      "fr": "https://digitallibrary.un.org/record/107781/files/A_45_PV-69-FR.pdf",
+      "中文": "https://digitallibrary.un.org/record/107781/files/A_45_PV-69-ZH.pdf"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "categoria": "Órgano de tratado",
+  "siglas": "CRPD",
+  "nombre": "Comité sobre los Derechos de las Personas con Discapacidad",
+  "nameEN": "Committee on the Rights of Persons with Disabilities",
+  "simbolo_semilla": "A/RES/61/106",
+  "acto": "Adopción de la Convención CRPD (AG)",
+  "adopcion": 2006,
+  "entrada_vigor": 2008,
+  "miembros": 18,
+  "estado": "VERIFICADO",
+  "simbolo": "A/RES/61/106",
+  "titulo_oficial": "Convention on the Rights of Persons with Disabilities",
+  "adoptada": "2006-12-13",
+  "registro": "https://digitallibrary.un.org/record/588742",
+  "coincidencia_titulo": 1.0,
+  "texto": {
+   "estado": "TEXTO_DIRECTO",
+   "fuentes": [
+    {
+     "tipo": "registro",
+     "lengua": "en",
+     "url": "https://digitallibrary.un.org/record/588742/files/A_RES_61_106-ES.pdf",
+     "validado": null
+    },
+    {
+     "tipo": "registro",
+     "lengua": "fr",
+     "url": "https://digitallibrary.un.org/record/588742/files/A_RES_61_106-RU.pdf",
+     "validado": null
+    },
+    {
+     "tipo": "ods",
+     "lengua": "es",
+     "url": "https://documents.un.org/api/symbol/access?s=A/RES/61/106&l=es&t=pdf",
+     "validado": true
+    }
+   ],
+   "descartadas_por_no_coincidir": [],
+   "informe_sesion": [
+    {
+     "simbolo": "A/61/611",
+     "paginas": "",
+     "registro": "https://digitallibrary.un.org/record/588433",
+     "pdf": {
+      "العربية": "https://digitallibrary.un.org/record/588433/files/A_61_611-EN.pdf",
+      "Español": "https://digitallibrary.un.org/record/588433/files/A_61_611-FR.pdf",
+      "Русский": "https://digitallibrary.un.org/record/588433/files/A_61_611-ZH.pdf"
+     }
+    },
+    {
+     "simbolo": "A/61/PV.76",
+     "paginas": "",
+     "registro": "https://digitallibrary.un.org/record/588737",
+     "pdf": {
+      "العربية": "https://digitallibrary.un.org/record/588737/files/A_61_PV.76-EN.pdf",
+      "Español": "https://digitallibrary.un.org/record/588737/files/A_61_PV.76-FR.pdf",
+      "Русский": "https://digitallibrary.un.org/record/588737/files/A_61_PV.76-ZH.pdf"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "categoria": "Órgano de tratado",
+  "siglas": "CED",
+  "nombre": "Comité contra la Desaparición Forzada",
+  "nameEN": "Committee on Enforced Disappearances",
+  "simbolo_semilla": "A/RES/61/177",
+  "acto": "Adopción de la Convención CED (AG)",
+  "adopcion": 2006,
+  "entrada_vigor": 2010,
+  "miembros": 10,
+  "estado": "VERIFICADO",
+  "simbolo": "A/RES/61/177",
+  "titulo_oficial": "International Convention for the Protection of All Persons from Enforced Disappearance",
+  "adoptada": "2006-12-20",
+  "registro": "https://digitallibrary.un.org/record/589467",
+  "coincidencia_titulo": 1.0,
+  "texto": {
+   "estado": "TEXTO_DIRECTO",
+   "fuentes": [
+    {
+     "tipo": "registro",
+     "lengua": "en",
+     "url": "https://digitallibrary.un.org/record/589467/files/A_RES_61_177-ES.pdf",
+     "validado": null
+    },
+    {
+     "tipo": "registro",
+     "lengua": "fr",
+     "url": "https://digitallibrary.un.org/record/589467/files/A_RES_61_177-RU.pdf",
+     "validado": null
+    },
+    {
+     "tipo": "ods",
+     "lengua": "es",
+     "url": "https://documents.un.org/api/symbol/access?s=A/RES/61/177&l=es&t=pdf",
+     "validado": true
+    }
+   ],
+   "descartadas_por_no_coincidir": [],
+   "informe_sesion": [
+    {
+     "simbolo": "A/61/448",
+     "paginas": "",
+     "registro": "https://digitallibrary.un.org/record/588759",
+     "pdf": {
+      "العربية": "https://digitallibrary.un.org/record/588759/files/A_61_448-EN.pdf",
+      "Español": "https://digitallibrary.un.org/record/588759/files/A_61_448-FR.pdf",
+      "Русский": "https://digitallibrary.un.org/record/588759/files/A_61_448-ZH.pdf"
+     }
+    },
+    {
+     "simbolo": "A/61/PV.82",
+     "paginas": "",
+     "registro": "https://digitallibrary.un.org/record/589364",
+     "pdf": {
+      "العربية": "https://digitallibrary.un.org/record/589364/files/A_61_PV.82-AR.pdf",
+      "en": "https://digitallibrary.un.org/record/589364/files/A_61_PV.82-EN.pdf",
+      "Español": "https://digitallibrary.un.org/record/589364/files/A_61_PV.82-ES.pdf",
+      "Français": "https://digitallibrary.un.org/record/589364/files/A_61_PV.82-FR.pdf",
+      "Русский": "https://digitallibrary.un.org/record/589364/files/A_61_PV.82-RU.pdf",
+      "中文": "https://digitallibrary.un.org/record/589364/files/A_61_PV.82-ZH.pdf"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "categoria": "Mecanismo conexo del Consejo de Derechos Humanos",
+  "siglas": "EPU",
+  "nombre": "Examen Periódico Universal",
+  "nameEN": "Universal Periodic Review",
+  "simbolo_semilla": "A/RES/60/251",
+  "acto": "Creación del Consejo de DDHH y mandato del EPU (AG)",
+  "adopcion": null,
+  "entrada_vigor": null,
+  "miembros": null,
+  "estado": "VERIFICADO",
+  "simbolo": "A/RES/60/251",
+  "titulo_oficial": "Human Rights Council",
+  "adoptada": "2006-03-15",
+  "registro": "https://digitallibrary.un.org/record/571575",
+  "coincidencia_titulo": 1.0,
+  "texto": {
+   "estado": "TEXTO_DIRECTO",
+   "fuentes": [
+    {
+     "tipo": "registro",
+     "lengua": "en",
+     "url": "https://digitallibrary.un.org/record/571575/files/A_RES_60_251-EN.pdf",
+     "validado": null
+    },
+    {
+     "tipo": "registro",
+     "lengua": "es",
+     "url": "https://digitallibrary.un.org/record/571575/files/A_RES_60_251-ES.pdf",
+     "validado": null
+    },
+    {
+     "tipo": "registro",
+     "lengua": "fr",
+     "url": "https://digitallibrary.un.org/record/571575/files/A_RES_60_251-FR.pdf",
+     "validado": null
+    }
+   ],
+   "descartadas_por_no_coincidir": [],
+   "informe_sesion": [
+    {
+     "simbolo": "A/60/PV.72",
+     "paginas": "",
+     "registro": "https://digitallibrary.un.org/record/570396",
+     "pdf": {
+      "العربية": "https://digitallibrary.un.org/record/570396/files/A_60_PV.72-AR.pdf",
+      "en": "https://digitallibrary.un.org/record/570396/files/A_60_PV.72-EN.pdf",
+      "Español": "https://digitallibrary.un.org/record/570396/files/A_60_PV.72-ES.pdf",
+      "Français": "https://digitallibrary.un.org/record/570396/files/A_60_PV.72-FR.pdf",
+      "Русский": "https://digitallibrary.un.org/record/570396/files/A_60_PV.72-RU.pdf",
+      "中文": "https://digitallibrary.un.org/record/570396/files/A_60_PV.72-ZH.pdf"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "categoria": "Mecanismo conexo del Consejo de Derechos Humanos",
+  "siglas": "EPU / Denuncia",
+  "nombre": "Construcción institucional: EPU, procedimientos especiales, Comité Asesor y procedimiento de denuncia",
+  "nameEN": "Institution-building of the Human Rights Council",
+  "simbolo_semilla": "A/HRC/RES/5/1",
+  "acto": "Paquete de construcción institucional (CDH)",
+  "adopcion": null,
+  "entrada_vigor": null,
+  "miembros": null,
+  "estado": "VERIFICADO",
+  "simbolo": "A/HRC/RES/5/1",
+  "titulo_oficial": "Institution-building of the United Nations Human Rights Council",
+  "adoptada": "2007-06-18",
+  "registro": "https://digitallibrary.un.org/record/603041",
+  "coincidencia_titulo": 1.0,
+  "texto": {
+   "estado": "TEXTO_EN_INFORME",
+   "fuentes": [],
+   "descartadas_por_no_coincidir": [],
+   "informe_sesion": [
+    {
+     "simbolo": "A/HRC/5/21",
+     "paginas": "4–37",
+     "registro": "https://digitallibrary.un.org/record/610953",
+     "pdf": {
+      "العربية": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-AR.pdf",
+      "en": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-EN.pdf",
+      "Español": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-ES.pdf",
+      "Français": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-FR.pdf",
+      "Русский": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-RU.pdf",
+      "中文": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-ZH.pdf"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "categoria": "Mecanismo conexo del Consejo de Derechos Humanos",
+  "siglas": "EMRIP",
+  "nombre": "Mecanismo de Expertos sobre los Derechos de los Pueblos Indígenas",
+  "nameEN": "Expert Mechanism on the Rights of Indigenous Peoples",
+  "simbolo_semilla": "A/HRC/RES/6/36",
+  "acto": "Creación del Mecanismo (CDH)",
+  "adopcion": null,
+  "entrada_vigor": null,
+  "miembros": 5,
+  "estado": "VERIFICADO",
+  "simbolo": "A/HRC/RES/6/36",
+  "titulo_oficial": "Expert mechanism on the rights of indigenous peoples",
+  "adoptada": "2007-12-14",
+  "registro": "https://digitallibrary.un.org/record/615964",
+  "coincidencia_titulo": 1.0,
+  "texto": {
+   "estado": "TEXTO_DIRECTO",
+   "fuentes": [
+    {
+     "tipo": "ohchr",
+     "lengua": "en",
+     "url": "https://ap.ohchr.org/documents/E/HRC/resolutions/A_HRC_RES_6_36.pdf",
+     "formato": "pdf",
+     "validado": true
+    }
+   ],
+   "descartadas_por_no_coincidir": [],
+   "informe_sesion": [
+    {
+     "simbolo": "A/HRC/6/22",
+     "paginas": "74–76",
+     "registro": "https://digitallibrary.un.org/record/626770",
+     "pdf": {
+      "العربية": "https://digitallibrary.un.org/record/626770/files/A_HRC_6_22-AR.pdf",
+      "en": "https://digitallibrary.un.org/record/626770/files/A_HRC_6_22-EN.pdf",
+      "Español": "https://digitallibrary.un.org/record/626770/files/A_HRC_6_22-ES.pdf",
+      "Français": "https://digitallibrary.un.org/record/626770/files/A_HRC_6_22-FR.pdf",
+      "Русский": "https://digitallibrary.un.org/record/626770/files/A_HRC_6_22-RU.pdf",
+      "中文": "https://digitallibrary.un.org/record/626770/files/A_HRC_6_22-ZH.pdf"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "categoria": "Mecanismo conexo del Consejo de Derechos Humanos",
+  "siglas": "Foro Minorías",
+  "nombre": "Foro sobre Cuestiones de las Minorías",
+  "nameEN": "Forum on Minority Issues",
+  "simbolo_semilla": "A/HRC/RES/6/15",
+  "acto": "Creación del Foro (CDH)",
+  "adopcion": null,
+  "entrada_vigor": null,
+  "miembros": null,
+  "estado": "VERIFICADO",
+  "simbolo": "A/HRC/RES/6/15",
+  "titulo_oficial": "Forum on Minority Issues",
+  "adoptada": "2007-09-28",
+  "registro": "https://digitallibrary.un.org/record/609534",
+  "coincidencia_titulo": 1.0,
+  "texto": {
+   "estado": "TEXTO_DIRECTO",
+   "fuentes": [
+    {
+     "tipo": "ohchr",
+     "lengua": "en",
+     "url": "https://ap.ohchr.org/documents/E/HRC/resolutions/A_HRC_RES_6_15.pdf",
+     "formato": "pdf",
+     "validado": true
+    }
+   ],
+   "descartadas_por_no_coincidir": [],
+   "informe_sesion": [
+    {
+     "simbolo": "A/HRC/6/22",
+     "paginas": "34–37",
+     "registro": "https://digitallibrary.un.org/record/626770",
+     "pdf": {
+      "العربية": "https://digitallibrary.un.org/record/626770/files/A_HRC_6_22-AR.pdf",
+      "en": "https://digitallibrary.un.org/record/626770/files/A_HRC_6_22-EN.pdf",
+      "Español": "https://digitallibrary.un.org/record/626770/files/A_HRC_6_22-ES.pdf",
+      "Français": "https://digitallibrary.un.org/record/626770/files/A_HRC_6_22-FR.pdf",
+      "Русский": "https://digitallibrary.un.org/record/626770/files/A_HRC_6_22-RU.pdf",
+      "中文": "https://digitallibrary.un.org/record/626770/files/A_HRC_6_22-ZH.pdf"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "categoria": "Procedimiento confidencial (histórico)",
+  "siglas": "1503",
+  "nombre": "Procedimiento confidencial «1503»",
+  "nameEN": "Confidential procedure 1503",
+  "simbolo_semilla": "E/RES/1503(XLVIII)",
+  "acto": "Creación del procedimiento (ECOSOC, 1970)",
+  "adopcion": null,
+  "entrada_vigor": null,
+  "miembros": null,
+  "estado": "VERIFICADO",
+  "simbolo": "E/RES/1503(XLVIII)",
+  "titulo_oficial": "Procedure for dealing with communications relating to violations of human rights and fundamental freedoms",
+  "adoptada": "1970",
+  "registro": "https://digitallibrary.un.org/record/214705",
+  "coincidencia_titulo": 1.0,
+  "texto": {
+   "estado": "TEXTO_DIRECTO",
+   "fuentes": [
+    {
+     "tipo": "registro",
+     "lengua": "en",
+     "url": "https://digitallibrary.un.org/record/214705/files/E_RES_1503%28XLVIII%29-ES.pdf",
+     "validado": null
+    }
+   ],
+   "descartadas_por_no_coincidir": [],
+   "informe_sesion": []
+  }
+ },
+ {
+  "categoria": "Procedimiento público (histórico)",
+  "siglas": "1235",
+  "nombre": "Procedimiento público «1235»",
+  "nameEN": "Public procedure 1235",
+  "simbolo_semilla": "E/RES/1235(XLII)",
+  "acto": "Autorización a examinar violaciones graves (ECOSOC, 1967)",
+  "adopcion": null,
+  "entrada_vigor": null,
+  "miembros": null,
+  "estado": "VERIFICADO",
+  "simbolo": "E/RES/1235(XLII)",
+  "titulo_oficial": "Question of the violation of human rights and fundamental freedoms, including policies of racial discrimination and segregation and of apartheid, in all countries, with particular reference to colonial and other dependent countries and territories",
+  "adoptada": "1967",
+  "registro": "https://digitallibrary.un.org/record/214657",
+  "coincidencia_titulo": 1.0,
+  "texto": {
+   "estado": "TEXTO_DIRECTO",
+   "fuentes": [
+    {
+     "tipo": "registro",
+     "lengua": "en",
+     "url": "https://digitallibrary.un.org/record/214657/files/E_RES_1235%28XLII%29-ES.pdf",
+     "validado": null
+    }
+   ],
+   "descartadas_por_no_coincidir": [],
+   "informe_sesion": []
+  }
+ },
+ {
+  "categoria": "Oficina",
+  "siglas": "ACNUDH",
+  "nombre": "Alto Comisionado para los Derechos Humanos",
+  "nameEN": "High Commissioner for Human Rights",
+  "simbolo_semilla": "A/RES/48/141",
+  "acto": "Creación del cargo (AG)",
+  "adopcion": null,
+  "entrada_vigor": null,
+  "miembros": null,
+  "estado": "VERIFICADO",
+  "simbolo": "A/RES/48/141",
+  "titulo_oficial": "High Commissioner for the promotion and protection of all human rights",
+  "adoptada": "1993-12-20",
+  "registro": "https://digitallibrary.un.org/record/180226",
+  "coincidencia_titulo": 1.0,
+  "texto": {
+   "estado": "TEXTO_DIRECTO",
+   "fuentes": [
+    {
+     "tipo": "registro",
+     "lengua": "en",
+     "url": "https://digitallibrary.un.org/record/180226/files/A_RES_48_141-EN.pdf",
+     "validado": null
+    },
+    {
+     "tipo": "ods",
+     "lengua": "es",
+     "url": "https://documents.un.org/api/symbol/access?s=A/RES/48/141&l=es&t=pdf",
+     "validado": true
+    }
+   ],
+   "descartadas_por_no_coincidir": [],
+   "informe_sesion": [
+    {
+     "simbolo": "A/48/PV.85",
+     "paginas": "",
+     "registro": "https://digitallibrary.un.org/record/186502",
+     "pdf": {
+      "العربية": "https://digitallibrary.un.org/record/186502/files/A_48_PV.85-AR.pdf",
+      "en": "https://digitallibrary.un.org/record/186502/files/A_48_PV.85-EN.pdf",
+      "es": "https://digitallibrary.un.org/record/186502/files/A_48_PV.85-ES.pdf",
+      "fr": "https://digitallibrary.un.org/record/186502/files/A_48_PV.85-FR.pdf",
+      "Русский": "https://digitallibrary.un.org/record/186502/files/A_48_PV.85-RU.pdf",
+      "中文": "https://digitallibrary.un.org/record/186502/files/A_48_PV.85-ZH.pdf"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "categoria": "Comisión de investigación / misión de determinación de hechos",
+  "siglas": "COI Siria",
+  "nombre": "Comisión Internacional Independiente de Investigación sobre Siria",
+  "nameEN": "Independent International Commission of Inquiry on Syria",
+  "simbolo_semilla": "A/HRC/RES/S-17/1",
+  "acto": "Creación (CDH, sesión especial)",
+  "adopcion": null,
+  "entrada_vigor": null,
+  "miembros": null,
+  "estado": "VERIFICADO",
+  "simbolo": "A/HRC/RES/S-17/1",
+  "titulo_oficial": "Situation of human rights in the Syrian Arab Republic",
+  "adoptada": "2011-08-23",
+  "registro": "https://digitallibrary.un.org/record/714674",
+  "coincidencia_titulo": 1.0,
+  "texto": {
+   "estado": "SIN_COPIA_LOCALIZADA",
+   "fuentes": [],
+   "descartadas_por_no_coincidir": [],
+   "informe_sesion": []
+  }
+ },
+ {
+  "categoria": "Comisión de investigación / misión de determinación de hechos",
+  "siglas": "COI Libia",
+  "nombre": "Comisión Internacional de Investigación sobre Libia (2011)",
+  "nameEN": "International Commission of Inquiry on Libya",
+  "simbolo_semilla": "A/HRC/RES/S-15/1",
+  "acto": "Creación (CDH, sesión especial)",
+  "adopcion": null,
+  "entrada_vigor": null,
+  "miembros": null,
+  "estado": "VERIFICADO",
+  "simbolo": "A/HRC/RES/S-15/1",
+  "titulo_oficial": "Situation of human rights in the Libyan Arab Jamahiriya",
+  "adoptada": "2011-02-25",
+  "registro": "https://digitallibrary.un.org/record/699846",
+  "coincidencia_titulo": 1.0,
+  "texto": {
+   "estado": "TEXTO_DIRECTO",
+   "fuentes": [
+    {
+     "tipo": "registro",
+     "lengua": "en",
+     "url": "https://digitallibrary.un.org/record/699846/files/A_HRC_RES_S-15_1-EN.pdf",
+     "validado": null
+    },
+    {
+     "tipo": "registro",
+     "lengua": "es",
+     "url": "https://digitallibrary.un.org/record/699846/files/A_HRC_RES_S-15_1-ES.pdf",
+     "validado": null
+    },
+    {
+     "tipo": "registro",
+     "lengua": "fr",
+     "url": "https://digitallibrary.un.org/record/699846/files/A_HRC_RES_S-15_1-FR.pdf",
+     "validado": null
+    }
+   ],
+   "descartadas_por_no_coincidir": [],
+   "informe_sesion": []
+  }
+ },
+ {
+  "categoria": "Comisión de investigación / misión de determinación de hechos",
+  "siglas": "COI RPDC",
+  "nombre": "Comisión de Investigación sobre la República Popular Democrática de Corea",
+  "nameEN": "Commission of Inquiry on the DPRK",
+  "simbolo_semilla": "A/HRC/RES/22/13",
+  "acto": "Creación (CDH)",
+  "adopcion": null,
+  "entrada_vigor": null,
+  "miembros": null,
+  "estado": "VERIFICADO",
+  "simbolo": "A/HRC/RES/22/13",
+  "titulo_oficial": "Situation of human rights in the Democratic People's Repubilc of Korea",
+  "adoptada": "2013-03-21",
+  "registro": "https://digitallibrary.un.org/record/747771",
+  "coincidencia_titulo": 1.0,
+  "texto": {
+   "estado": "TEXTO_DIRECTO",
+   "fuentes": [
+    {
+     "tipo": "registro",
+     "lengua": "es",
+     "url": "https://digitallibrary.un.org/record/747771/files/A_HRC_RES_22_13-ES.pdf",
+     "validado": null
+    },
+    {
+     "tipo": "registro",
+     "lengua": "fr",
+     "url": "https://digitallibrary.un.org/record/747771/files/A_HRC_RES_22_13-FR.pdf",
+     "validado": null
+    },
+    {
+     "tipo": "ods",
+     "lengua": "en",
+     "url": "https://documents.un.org/api/symbol/access?s=A/HRC/RES/22/13&l=en&t=pdf",
+     "validado": true
+    }
+   ],
+   "descartadas_por_no_coincidir": [],
+   "informe_sesion": []
+  }
+ },
+ {
+  "categoria": "Comisión de investigación / misión de determinación de hechos",
+  "siglas": "COI Burundi",
+  "nombre": "Comisión de Investigación sobre Burundi",
+  "nameEN": "Commission of Inquiry on Burundi",
+  "simbolo_semilla": "A/HRC/RES/33/24",
+  "acto": "Creación (CDH)",
+  "adopcion": null,
+  "entrada_vigor": null,
+  "miembros": null,
+  "estado": "VERIFICADO",
+  "simbolo": "A/HRC/RES/33/24",
+  "titulo_oficial": "Situation of human rights in Burundi",
+  "adoptada": "2016-09-30",
+  "registro": "https://digitallibrary.un.org/record/850714",
+  "coincidencia_titulo": 1.0,
+  "texto": {
+   "estado": "TEXTO_DIRECTO",
+   "fuentes": [
+    {
+     "tipo": "registro",
+     "lengua": "en",
+     "url": "https://digitallibrary.un.org/record/850714/files/A_HRC_RES_33_24-EN.pdf",
+     "validado": null
+    },
+    {
+     "tipo": "registro",
+     "lengua": "es",
+     "url": "https://digitallibrary.un.org/record/850714/files/A_HRC_RES_33_24-ES.pdf",
+     "validado": null
+    },
+    {
+     "tipo": "registro",
+     "lengua": "fr",
+     "url": "https://digitallibrary.un.org/record/850714/files/A_HRC_RES_33_24-FR.pdf",
+     "validado": null
+    }
+   ],
+   "descartadas_por_no_coincidir": [],
+   "informe_sesion": []
+  }
+ },
+ {
+  "categoria": "Comisión de investigación / misión de determinación de hechos",
+  "siglas": "MDH Myanmar",
+  "nombre": "Misión Internacional Independiente de Determinación de los Hechos sobre Myanmar",
+  "nameEN": "Independent International Fact-Finding Mission on Myanmar",
+  "simbolo_semilla": "A/HRC/RES/34/22",
+  "acto": "Creación (CDH)",
+  "adopcion": null,
+  "entrada_vigor": null,
+  "miembros": null,
+  "estado": "VERIFICADO",
+  "simbolo": "A/HRC/RES/34/22",
+  "titulo_oficial": "Situation of human rights in Myanmar",
+  "adoptada": "2017-03-24",
+  "registro": "https://digitallibrary.un.org/record/1289619",
+  "coincidencia_titulo": 1.0,
+  "texto": {
+   "estado": "TEXTO_DIRECTO",
+   "fuentes": [
+    {
+     "tipo": "registro",
+     "lengua": "en",
+     "url": "https://digitallibrary.un.org/record/1289619/files/A_HRC_RES_34_22-EN.pdf",
+     "validado": null
+    },
+    {
+     "tipo": "registro",
+     "lengua": "es",
+     "url": "https://digitallibrary.un.org/record/1289619/files/A_HRC_RES_34_22-ES.pdf",
+     "validado": null
+    },
+    {
+     "tipo": "registro",
+     "lengua": "fr",
+     "url": "https://digitallibrary.un.org/record/1289619/files/A_HRC_RES_34_22-FR.pdf",
+     "validado": null
+    }
+   ],
+   "descartadas_por_no_coincidir": [],
+   "informe_sesion": []
+  }
+ },
+ {
+  "categoria": "Comisión de investigación / misión de determinación de hechos",
+  "siglas": "MDH Venezuela",
+  "nombre": "Misión Internacional Independiente de Determinación de los Hechos sobre Venezuela",
+  "nameEN": "Independent International Fact-Finding Mission on Venezuela",
+  "simbolo_semilla": "A/HRC/RES/42/25",
+  "acto": "Creación (CDH)",
+  "adopcion": null,
+  "entrada_vigor": null,
+  "miembros": null,
+  "estado": "VERIFICADO",
+  "simbolo": "A/HRC/RES/42/25",
+  "titulo_oficial": "Situation of human rights in the Bolivarian Republic of Venezuela",
+  "adoptada": "2019-09-27",
+  "registro": "https://digitallibrary.un.org/record/3840226",
+  "coincidencia_titulo": 1.0,
+  "texto": {
+   "estado": "TEXTO_DIRECTO",
+   "fuentes": [
+    {
+     "tipo": "registro",
+     "lengua": "en",
+     "url": "https://digitallibrary.un.org/record/3840226/files/A_HRC_RES_42_25-EN.pdf",
+     "validado": null
+    },
+    {
+     "tipo": "registro",
+     "lengua": "es",
+     "url": "https://digitallibrary.un.org/record/3840226/files/A_HRC_RES_42_25-ES.pdf",
+     "validado": null
+    },
+    {
+     "tipo": "registro",
+     "lengua": "fr",
+     "url": "https://digitallibrary.un.org/record/3840226/files/A_HRC_RES_42_25-FR.pdf",
+     "validado": null
+    }
+   ],
+   "descartadas_por_no_coincidir": [],
+   "informe_sesion": []
+  }
+ },
+ {
+  "categoria": "Comisión de investigación / misión de determinación de hechos",
+  "siglas": "COI Israel/TPO",
+  "nombre": "Comisión de Investigación sobre el Territorio Palestino Ocupado, incluida Jerusalén Oriental, e Israel",
+  "nameEN": "Commission of Inquiry on the Occupied Palestinian Territory and Israel",
+  "simbolo_semilla": "A/HRC/RES/S-30/1",
+  "acto": "Creación (CDH, sesión especial)",
+  "adopcion": null,
+  "entrada_vigor": null,
+  "miembros": null,
+  "estado": "VERIFICADO",
+  "simbolo": "A/HRC/RES/S-30/1",
+  "titulo_oficial": "Ensuring respect for international human rights law and international humanitarian law in the Occupied Palestinian Territory, including East Jerusalem, and in Israel",
+  "adoptada": "2021-05-27",
+  "registro": "https://digitallibrary.un.org/record/3928090",
+  "coincidencia_titulo": 1.0,
+  "texto": {
+   "estado": "TEXTO_DIRECTO",
+   "fuentes": [
+    {
+     "tipo": "registro",
+     "lengua": "en",
+     "url": "https://digitallibrary.un.org/record/3928090/files/A_HRC_RES_S-30_1-EN.pdf",
+     "validado": null
+    },
+    {
+     "tipo": "registro",
+     "lengua": "es",
+     "url": "https://digitallibrary.un.org/record/3928090/files/A_HRC_RES_S-30_1-ES.pdf",
+     "validado": null
+    },
+    {
+     "tipo": "registro",
+     "lengua": "fr",
+     "url": "https://digitallibrary.un.org/record/3928090/files/A_HRC_RES_S-30_1-FR.pdf",
+     "validado": null
+    }
+   ],
+   "descartadas_por_no_coincidir": [],
+   "informe_sesion": []
+  }
+ },
+ {
+  "categoria": "Comisión de investigación / misión de determinación de hechos",
+  "siglas": "COI Ucrania",
+  "nombre": "Comisión de Investigación sobre Ucrania",
+  "nameEN": "Commission of Inquiry on Ukraine",
+  "simbolo_semilla": "A/HRC/RES/49/1",
+  "acto": "Creación (CDH, sesión especial)",
+  "adopcion": null,
+  "entrada_vigor": null,
+  "miembros": null,
+  "estado": "VERIFICADO",
+  "simbolo": "A/HRC/RES/49/1",
+  "titulo_oficial": "Situation of human rights in Ukraine stemming from the Russian aggression",
+  "adoptada": "2022-03-04",
+  "registro": "https://digitallibrary.un.org/record/3963815",
+  "coincidencia_titulo": 1.0,
+  "texto": {
+   "estado": "TEXTO_DIRECTO",
+   "fuentes": [
+    {
+     "tipo": "registro",
+     "lengua": "en",
+     "url": "https://digitallibrary.un.org/record/3963815/files/A_HRC_RES_49_1-EN.pdf",
+     "validado": null
+    },
+    {
+     "tipo": "registro",
+     "lengua": "es",
+     "url": "https://digitallibrary.un.org/record/3963815/files/A_HRC_RES_49_1-ES.pdf",
+     "validado": null
+    },
+    {
+     "tipo": "registro",
+     "lengua": "fr",
+     "url": "https://digitallibrary.un.org/record/3963815/files/A_HRC_RES_49_1-FR.pdf",
+     "validado": null
+    }
+   ],
+   "descartadas_por_no_coincidir": [],
+   "informe_sesion": []
+  }
+ }
+]
