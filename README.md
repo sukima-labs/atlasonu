@@ -36,7 +36,7 @@ Abrir `index.html` en cualquier navegador (también sin conexión: los datos van
 | `index.html` | Aplicación |
 | `data/` | `catalogo.json` y `atlas-data.js` (generados), `fuentes/` (descargas oficiales y verificación), `evidencias.json`, Excel del piloto |
 | `scripts/` | Descarga, normalización, verificación y construcción (`actualizar_datos.sh` ejecuta todo) |
-| `tests/` | `smoke.cjs` (115 pruebas de lógica, `invariantes.cjs`: 11) y `browser.cjs` (Chromium real, 153 comprobaciones, escritorio y móvil) |
+| `tests/` | `smoke.cjs` (120 pruebas de lógica, `invariantes.cjs`: 11) y `browser.cjs` (Chromium real, 162 comprobaciones, escritorio y móvil) |
 | `audit/` | Auditoría contra los 13 requisitos, discrepancias respecto a v0.6, inventario, manifiesto de integridad |
 | `docs/` | Traspaso original |
 | `archive/` | Versiones previas sin modificar |
@@ -82,3 +82,8 @@ Los datos oficiales son de las Naciones Unidas y proceden de sus sitios público
 ## Licencia
 
 Código: **MIT** (`LICENSE`). Contenido propio (siglas, cuadros, explicaciones, documentación): **CC BY 4.0** (`LICENSE-CONTENIDO.md`). Los documentos, símbolos, títulos, textos de tratados y datos de ratificación son de las Naciones Unidas y no se relicencian. El análisis de por qué esta combinación está en `docs/LICENCIA.md`. Cómo citar: `CITATION.cff`.
+
+## Portada y línea de tiempo
+
+- **Portada:** pensada para quien llega sin saber por dónde empezar. Un buscador grande («escribe como hablas»), ocho caminos («Empieza por aquí»), una nota que explica dónde está el menú (en el celular, las tres líneas «☰ Menú»), un hecho de la historia de la ONU «un día como hoy», la búsqueda guiada y las novedades de las fuentes. Las cifras del catálogo (mandatos, calidad documental, últimas resoluciones) pasaron a un panel plegable «para investigadores».
+- **Su historia** (`data/historia.json`, elaboración propia con resolución citada en cada hecho): 56 hechos de 1945 a 2025 en una línea de tiempo interactiva, con filtros por época y tema, buscador, control de año, **recorrido guiado** por los 26 hitos (★) y enlaces al tratado, entidad o mandatos relacionados; cada hecho muestra además qué mandatos vigentes del catálogo se crearon ese año.
