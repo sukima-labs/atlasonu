@@ -46,6 +46,15 @@ t('búsqueda inteligente: símbolo sin duplicados',()=>{const r=smart('A/HRC/RES
 t('búsqueda inteligente: sigla corta no da falsos positivos («cat» ≠ «education»)',()=>{const r=smart('cat');assert.ok(!r.includes('right to education'))});
 t('búsqueda inteligente: sin resultados orienta',()=>assert.ok(smart('zzzxq').includes('No hay coincidencias')));
 t('explorador usa la búsqueda inteligente',()=>{els.q.value='niños';run('filterMandates()');assert.ok(els.mandBody.innerHTML.toLowerCase().includes('niñ')||els.mandBody.innerHTML.toLowerCase().includes('children'))});
+t('países: 62 listados, 13 con mandato propio',()=>{assert.equal(run('PAISES.length'),62);assert.equal(run('PAISES.filter(p=>p.mandato!==null).length'),13);assert.equal(run('D.filter(r=>r.alcance==="País"&&!r.pais_id).length'),0)});
+t('países: Colombia → titulares de nacionalidad colombiana',()=>{els.pSel.value='COL';run('renderPaises()');assert.ok(els.pBody.innerHTML.includes('Colombia')&&els.pOut.innerHTML.includes('no representan a su Estado'));assert.equal((els.pBody.innerHTML.match(/details\(/g)||[]).length,6)});
+t('países: Camboya → mandato por país',()=>{els.pSel.value='KHM';run('renderPaises()');assert.ok(els.pBody.innerHTML.includes('Camboya'))});
+t('países: Siria → mandato y comisión de investigación',()=>{els.pSel.value='SYR';run('renderPaises()');assert.ok(els.pBody.innerHTML.includes('Siria')&&els.pBody.innerHTML.includes('A/HRC/RES/S-17/1'))});
+t('países: buscador por texto («venez»)',()=>{els.pSel.value='';els.pQ.value='venez';run('renderPaises()');assert.ok(els.pBody.innerHTML.includes('Venezuela')&&els.pBody.innerHTML.includes('A/HRC/RES/42/25'))});
+t('países: país inexistente orienta sin inventar',()=>{els.pQ.value='atlantida';run('renderPaises()');assert.ok(els.pBody.innerHTML.includes('no figura'));els.pQ.value='';run('renderPaises()')});
+t('explorador: filtro por país (Belarús) y por nacionalidad (Colombia)',()=>{els.q.value='';els.pais.value='BLR';run('filterMandates()');assert.equal(run('filtered.length'),1);els.pais.value='COL';run('filterMandates()');assert.equal(run('filtered.length'),6);els.pais.value='';run('filterMandates()')});
+t('búsqueda inteligente: país en español («Camboya»)',()=>{const r=smart('Camboya');assert.ok(r.includes('País: Camboya')&&r.includes('Cambodia'))});
+t('búsqueda inteligente: «Colombia» muestra tarjeta de país',()=>assert.ok(smart('Colombia').includes('6 titular')));
 t('ficha de mandato',()=>{run('details(0)');assert.ok(els.cardsResults.innerHTML.includes('Cadena de actos jurídicos'))});
 t('exportCSV',()=>run('exportCSV()'));
 t('autoría y repositorio',()=>assert.ok(html.includes('sukima-labs/onu-arqueologia-documental')&&html.includes('Sukima-Labs')));
