@@ -1,0 +1,798 @@
+[
+ {
+  "id": "AFG",
+  "es": "Afganistán",
+  "en": "Afghanistan",
+  "alias": [
+   "afghanistan"
+  ],
+  "claves": [
+   "afganistan",
+   "afghanistan"
+  ],
+  "mec": []
+ },
+ {
+  "id": "ARG",
+  "es": "Argentina",
+  "en": "Argentina",
+  "alias": [
+   "argentina"
+  ],
+  "claves": [
+   "argentina"
+  ],
+  "mec": []
+ },
+ {
+  "id": "ARM",
+  "es": "Armenia",
+  "en": "Armenia",
+  "alias": [
+   "armenia"
+  ],
+  "claves": [
+   "armenia"
+  ],
+  "mec": []
+ },
+ {
+  "id": "AUS",
+  "es": "Australia",
+  "en": "Australia",
+  "alias": [
+   "australia"
+  ],
+  "claves": [
+   "australia"
+  ],
+  "mec": []
+ },
+ {
+  "id": "BLR",
+  "es": "Belarús",
+  "en": "Belarus",
+  "alias": [
+   "belarus"
+  ],
+  "claves": [
+   "belarus",
+   "bielorrusia"
+  ],
+  "mec": []
+ },
+ {
+  "id": "BRA",
+  "es": "Brasil",
+  "en": "Brazil",
+  "alias": [
+   "brazil"
+  ],
+  "claves": [
+   "brasil",
+   "brazil"
+  ],
+  "mec": []
+ },
+ {
+  "id": "BGR",
+  "es": "Bulgaria",
+  "en": "Bulgaria",
+  "alias": [
+   "bulgaria"
+  ],
+  "claves": [
+   "bulgaria"
+  ],
+  "mec": []
+ },
+ {
+  "id": "BDI",
+  "es": "Burundi",
+  "en": "Burundi",
+  "alias": [
+   "burundi"
+  ],
+  "claves": [
+   "burundi"
+  ],
+  "mec": [
+   "burundi"
+  ]
+ },
+ {
+  "id": "KHM",
+  "es": "Camboya",
+  "en": "Cambodia",
+  "alias": [
+   "cambodia"
+  ],
+  "claves": [
+   "camboya",
+   "cambodia"
+  ],
+  "mec": []
+ },
+ {
+  "id": "CAN",
+  "es": "Canadá",
+  "en": "Canada",
+  "alias": [
+   "canada"
+  ],
+  "claves": [
+   "canada"
+  ],
+  "mec": []
+ },
+ {
+  "id": "CAF",
+  "es": "República Centroafricana",
+  "en": "Central African Republic",
+  "alias": [
+   "central african republic"
+  ],
+  "claves": [
+   "centroafricana",
+   "centroafricano"
+  ],
+  "mec": []
+ },
+ {
+  "id": "CHL",
+  "es": "Chile",
+  "en": "Chile",
+  "alias": [
+   "chile"
+  ],
+  "claves": [
+   "chile"
+  ],
+  "mec": []
+ },
+ {
+  "id": "CHN",
+  "es": "China",
+  "en": "China",
+  "alias": [
+   "china"
+  ],
+  "claves": [
+   "china"
+  ],
+  "mec": []
+ },
+ {
+  "id": "COL",
+  "es": "Colombia",
+  "en": "Colombia",
+  "alias": [
+   "colombia"
+  ],
+  "claves": [
+   "colombia"
+  ],
+  "mec": []
+ },
+ {
+  "id": "COD",
+  "es": "República Democrática del Congo",
+  "en": "Democratic Republic of the Congo",
+  "alias": [
+   "democratic republic of the congo"
+  ],
+  "claves": [
+   "congo"
+  ],
+  "mec": []
+ },
+ {
+  "id": "PRK",
+  "es": "República Popular Democrática de Corea",
+  "en": "Democratic People’s Republic of Korea",
+  "alias": [
+   "democratic people’s republic of korea",
+   "democratic people's republic of korea"
+  ],
+  "claves": [
+   "rpdc"
+  ],
+  "mec": [
+   "dprk"
+  ]
+ },
+ {
+  "id": "ECU",
+  "es": "Ecuador",
+  "en": "Ecuador",
+  "alias": [
+   "ecuador"
+  ],
+  "claves": [
+   "ecuador"
+  ],
+  "mec": []
+ },
+ {
+  "id": "EGY",
+  "es": "Egipto",
+  "en": "Egypt",
+  "alias": [
+   "egypt"
+  ],
+  "claves": [
+   "egipto",
+   "egypt"
+  ],
+  "mec": []
+ },
+ {
+  "id": "ERI",
+  "es": "Eritrea",
+  "en": "Eritrea",
+  "alias": [
+   "eritrea"
+  ],
+  "claves": [
+   "eritrea"
+  ],
+  "mec": []
+ },
+ {
+  "id": "SVN",
+  "es": "Eslovenia",
+  "en": "Slovenia",
+  "alias": [
+   "slovenia"
+  ],
+  "claves": [
+   "eslovenia",
+   "slovenia"
+  ],
+  "mec": []
+ },
+ {
+  "id": "ESP",
+  "es": "España",
+  "en": "Spain",
+  "alias": [
+   "spain"
+  ],
+  "claves": [
+   "espana",
+   "spain"
+  ],
+  "mec": []
+ },
+ {
+  "id": "USA",
+  "es": "Estados Unidos de América",
+  "en": "United States of America",
+  "alias": [
+   "united states of america"
+  ],
+  "claves": [
+   "eeuu",
+   "usa"
+  ],
+  "mec": []
+ },
+ {
+  "id": "RUS",
+  "es": "Federación de Rusia",
+  "en": "Russian Federation",
+  "alias": [
+   "russian federation"
+  ],
+  "claves": [
+   "rusia",
+   "russia",
+   "russian"
+  ],
+  "mec": []
+ },
+ {
+  "id": "PHL",
+  "es": "Filipinas",
+  "en": "Philippines",
+  "alias": [
+   "philippines"
+  ],
+  "claves": [
+   "filipinas",
+   "philippines"
+  ],
+  "mec": []
+ },
+ {
+  "id": "FRA",
+  "es": "Francia",
+  "en": "France",
+  "alias": [
+   "france"
+  ],
+  "claves": [
+   "francia",
+   "france"
+  ],
+  "mec": []
+ },
+ {
+  "id": "GRC",
+  "es": "Grecia",
+  "en": "Greece",
+  "alias": [
+   "greece"
+  ],
+  "claves": [
+   "grecia",
+   "greece"
+  ],
+  "mec": []
+ },
+ {
+  "id": "GNB",
+  "es": "Guinea-Bisáu",
+  "en": "Guinea-Bissau",
+  "alias": [
+   "guinea-bissau"
+  ],
+  "claves": [
+   "bisau",
+   "bissau"
+  ],
+  "mec": []
+ },
+ {
+  "id": "GUY",
+  "es": "Guyana",
+  "en": "Guyana",
+  "alias": [
+   "guyana"
+  ],
+  "claves": [
+   "guyana"
+  ],
+  "mec": []
+ },
+ {
+  "id": "HUN",
+  "es": "Hungría",
+  "en": "Hungary",
+  "alias": [
+   "hungary"
+  ],
+  "claves": [
+   "hungria",
+   "hungary"
+  ],
+  "mec": []
+ },
+ {
+  "id": "IND",
+  "es": "India",
+  "en": "India",
+  "alias": [
+   "india"
+  ],
+  "claves": [
+   "india"
+  ],
+  "mec": []
+ },
+ {
+  "id": "IRQ",
+  "es": "Iraq",
+  "en": "Iraq",
+  "alias": [
+   "iraq"
+  ],
+  "claves": [
+   "iraq",
+   "irak"
+  ],
+  "mec": []
+ },
+ {
+  "id": "IRN",
+  "es": "Irán (República Islámica del)",
+  "en": "Iran (Islamic Republic of)",
+  "alias": [
+   "iran (islamic republic of)",
+   "islamic republic of iran",
+   "iran (islamic republic of"
+  ],
+  "claves": [
+   "iran"
+  ],
+  "mec": []
+ },
+ {
+  "id": "ITA",
+  "es": "Italia",
+  "en": "Italy",
+  "alias": [
+   "italy"
+  ],
+  "claves": [
+   "italia",
+   "italy"
+  ],
+  "mec": []
+ },
+ {
+  "id": "JPN",
+  "es": "Japón",
+  "en": "Japan",
+  "alias": [
+   "japan"
+  ],
+  "claves": [
+   "japon",
+   "japan"
+  ],
+  "mec": []
+ },
+ {
+  "id": "JOR",
+  "es": "Jordania",
+  "en": "Jordan",
+  "alias": [
+   "jordan"
+  ],
+  "claves": [
+   "jordania",
+   "jordan"
+  ],
+  "mec": []
+ },
+ {
+  "id": "KEN",
+  "es": "Kenya",
+  "en": "Kenya",
+  "alias": [
+   "kenya"
+  ],
+  "claves": [
+   "kenya"
+  ],
+  "mec": []
+ },
+ {
+  "id": "LVA",
+  "es": "Letonia",
+  "en": "Latvia",
+  "alias": [
+   "latvia"
+  ],
+  "claves": [
+   "letonia",
+   "latvia"
+  ],
+  "mec": []
+ },
+ {
+  "id": "LTU",
+  "es": "Lituania",
+  "en": "Lithuania",
+  "alias": [
+   "lithuania"
+  ],
+  "claves": [
+   "lituania",
+   "lithuania"
+  ],
+  "mec": []
+ },
+ {
+  "id": "MLI",
+  "es": "Malí",
+  "en": "Mali",
+  "alias": [
+   "mali"
+  ],
+  "claves": [
+   "mali"
+  ],
+  "mec": []
+ },
+ {
+  "id": "MEX",
+  "es": "México",
+  "en": "Mexico",
+  "alias": [
+   "mexico"
+  ],
+  "claves": [
+   "mexico"
+  ],
+  "mec": []
+ },
+ {
+  "id": "MMR",
+  "es": "Myanmar",
+  "en": "Myanmar",
+  "alias": [
+   "myanmar"
+  ],
+  "claves": [
+   "myanmar",
+   "birmania"
+  ],
+  "mec": [
+   "myanmar"
+  ]
+ },
+ {
+  "id": "NZL",
+  "es": "Nueva Zelandia",
+  "en": "New Zealand",
+  "alias": [
+   "new zealand"
+  ],
+  "claves": [
+   "zelandia",
+   "zealand"
+  ],
+  "mec": []
+ },
+ {
+  "id": "NGA",
+  "es": "Nigeria",
+  "en": "Nigeria",
+  "alias": [
+   "nigeria"
+  ],
+  "claves": [
+   "nigeria"
+  ],
+  "mec": []
+ },
+ {
+  "id": "PAK",
+  "es": "Pakistán",
+  "en": "Pakistan",
+  "alias": [
+   "pakistan"
+  ],
+  "claves": [
+   "pakistan"
+  ],
+  "mec": []
+ },
+ {
+  "id": "PSE",
+  "es": "Territorio palestino ocupado desde 1967",
+  "en": "Palestinian territory occupied since 1967",
+  "alias": [
+   "palestinian territory occupied since 1967"
+  ],
+  "claves": [
+   "palestina",
+   "palestino",
+   "palestinian"
+  ],
+  "mec": [
+   "palestinian"
+  ]
+ },
+ {
+  "id": "PER",
+  "es": "Perú",
+  "en": "Peru",
+  "alias": [
+   "peru"
+  ],
+  "claves": [
+   "peru"
+  ],
+  "mec": []
+ },
+ {
+  "id": "POL",
+  "es": "Polonia",
+  "en": "Poland",
+  "alias": [
+   "poland"
+  ],
+  "claves": [
+   "polonia",
+   "poland"
+  ],
+  "mec": []
+ },
+ {
+  "id": "PRT",
+  "es": "Portugal",
+  "en": "Portugal",
+  "alias": [
+   "portugal"
+  ],
+  "claves": [
+   "portugal"
+  ],
+  "mec": []
+ },
+ {
+  "id": "GBR",
+  "es": "Reino Unido",
+  "en": "United Kingdom of Great Britain and Northern Ireland",
+  "alias": [
+   "united kingdom of great britain and northern ireland"
+  ],
+  "claves": [
+   "britain",
+   "britanico"
+  ],
+  "mec": []
+ },
+ {
+  "id": "KOR",
+  "es": "República de Corea",
+  "en": "Republic of Korea",
+  "alias": [
+   "republic of korea"
+  ],
+  "claves": [],
+  "mec": []
+ },
+ {
+  "id": "SRB",
+  "es": "Serbia",
+  "en": "Serbia",
+  "alias": [
+   "serbia"
+  ],
+  "claves": [
+   "serbia"
+  ],
+  "mec": []
+ },
+ {
+  "id": "SYR",
+  "es": "República Árabe Siria",
+  "en": "Syrian Arab Republic",
+  "alias": [
+   "syrian arab republic"
+  ],
+  "claves": [
+   "siria",
+   "syria",
+   "syrian"
+  ],
+  "mec": [
+   "syria"
+  ]
+ },
+ {
+  "id": "ZAF",
+  "es": "Sudáfrica",
+  "en": "South Africa",
+  "alias": [
+   "south africa"
+  ],
+  "claves": [
+   "sudafrica"
+  ],
+  "mec": []
+ },
+ {
+  "id": "SWE",
+  "es": "Suecia",
+  "en": "Sweden",
+  "alias": [
+   "sweden"
+  ],
+  "claves": [
+   "suecia",
+   "sweden"
+  ],
+  "mec": []
+ },
+ {
+  "id": "CHE",
+  "es": "Suiza",
+  "en": "Switzerland",
+  "alias": [
+   "switzerland"
+  ],
+  "claves": [
+   "suiza",
+   "switzerland"
+  ],
+  "mec": []
+ },
+ {
+  "id": "THA",
+  "es": "Tailandia",
+  "en": "Thailand",
+  "alias": [
+   "thailand"
+  ],
+  "claves": [
+   "tailandia",
+   "thailand"
+  ],
+  "mec": []
+ },
+ {
+  "id": "UGA",
+  "es": "Uganda",
+  "en": "Uganda",
+  "alias": [
+   "uganda"
+  ],
+  "claves": [
+   "uganda"
+  ],
+  "mec": []
+ },
+ {
+  "id": "UKR",
+  "es": "Ucrania",
+  "en": "Ukraine",
+  "alias": [
+   "ukraine"
+  ],
+  "claves": [
+   "ucrania",
+   "ukraine"
+  ],
+  "mec": [
+   "ukraine"
+  ]
+ },
+ {
+  "id": "URY",
+  "es": "Uruguay",
+  "en": "Uruguay",
+  "alias": [
+   "uruguay"
+  ],
+  "claves": [
+   "uruguay"
+  ],
+  "mec": []
+ },
+ {
+  "id": "ZMB",
+  "es": "Zambia",
+  "en": "Zambia",
+  "alias": [
+   "zambia"
+  ],
+  "claves": [
+   "zambia"
+  ],
+  "mec": []
+ },
+ {
+  "id": "VEN",
+  "es": "Venezuela (República Bolivariana de)",
+  "en": "Venezuela (Bolivarian Republic of)",
+  "alias": [
+   "venezuela"
+  ],
+  "claves": [
+   "venezuela"
+  ],
+  "mec": [
+   "venezuela"
+  ]
+ },
+ {
+  "id": "LBY",
+  "es": "Libia",
+  "en": "Libya",
+  "alias": [
+   "libya"
+  ],
+  "claves": [
+   "libia",
+   "libya"
+  ],
+  "mec": [
+   "libya"
+  ]
+ }
+]
