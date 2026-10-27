@@ -39,5 +39,11 @@ cd tests && node smoke.cjs               # lógica
 npm i playwright && node tests/browser.cjs   # navegador real
 ```
 
+## Qué hacer si falta algo
+Cuando una búsqueda no da resultado, la plataforma ofrece **Solicitar verificación**: abre un formulario público de GitHub ya rellenado con lo buscado. Nada se añade al catálogo por haberse pedido; solo entra lo que se contrasta con una fuente oficial. Proceso: [`docs/PROCESO_DE_VALIDACION.md`](docs/PROCESO_DE_VALIDACION.md).
+
+## Procedencia de la información
+Ver en la plataforma «Fuentes y alcance → Qué es dato oficial y qué es elaboración propia». Resumen: mandatos, símbolos y titulares vienen de OHCHR; títulos, fechas y PDF, de la Biblioteca Digital ONU; el diccionario de sinónimos, los nombres de países en español y los avisos son elaboración propia y no sustituyen la fuente.
+
 ## Límites (ver `audit/AUDITORIA.md`)
 Solo mandatos **vigentes**: faltan los extinguidos. Las comisiones de investigación listadas son una selección verificada, no el universo. No hay mapas. Las explicaciones en lenguaje claro de cada resolución no están redactadas. «Localizado» significa que existe un registro con ese símbolo exacto; no sustituye leer el texto.

@@ -1,0 +1,26 @@
+name: Solicitud de verificación (búsqueda sin resultado)
+description: Pide que el proyecto busque y verifique algo que ATLAS ONU no tiene.
+title: "[Solicitud] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Este formulario es público.** No incluyas datos personales.
+        Lo que pidas **no se añade al catálogo como dato** hasta que se contraste con una fuente oficial (índice OHCHR y Biblioteca Digital de la ONU). El estado inicial es *pendiente de verificación*.
+  - type: textarea
+    id: busqueda
+    attributes:
+      label: ¿Qué buscabas?
+      description: Palabra, símbolo (p. ej. A/HRC/RES/54/26), país, mandato o documento.
+    validations:
+      required: true
+  - type: input
+    id: donde
+    attributes:
+      label: ¿Dónde lo buscaste?
+      description: Búsqueda inteligente, Países, Recuperar documentos, Explorador…
+  - type: textarea
+    id: fuente
+    attributes:
+      label: Fuente donde viste el dato (opcional)
+      description: Enlace o referencia oficial, si la tienes. Ayuda a verificarlo más rápido.
