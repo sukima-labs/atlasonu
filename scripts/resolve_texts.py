@@ -104,7 +104,7 @@ def main(cat, out):
     with cf.ThreadPoolExecutor(6) as ex:
         futs = {ex.submit(resolve, k, v, cache): k for k, v in idx.items()}
         for f in cf.as_completed(futs): res[futs[f]] = f.result()
-    json.dump(res, open(out, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+    json.dump(res, open(out, 'w', encoding='utf-8'), ensure_ascii=False, indent=1, sort_keys=True)
     from collections import Counter
     print(len(res), 'resoluciones;', Counter(r['estado'] for r in res.values()), '; descartadas:', sum(len(r['descartadas_por_no_coincidir']) for r in res.values()))
 if __name__ == '__main__': main(*sys.argv[1:3])
