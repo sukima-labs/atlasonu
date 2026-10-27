@@ -4,7 +4,7 @@ const root = path.join(__dirname, '..');
 const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
 const script = html.match(/<script>([\s\S]*?)<\/script>/)[1];
 const ids = [...html.matchAll(/id="([^"]+)"/g)].map(x => x[1]);
-const els = Object.fromEntries(ids.map(id => [id, { id, value: '', innerHTML: '', textContent: '', classList: { toggle() {}, add() {} }, addEventListener() {}, dataset: {}, click() {} }]));
+const els = Object.fromEntries(ids.map(id => [id, { id, value: '', innerHTML: '', textContent: '', classList: { toggle() {}, add() {} }, addEventListener() {}, dataset: {}, style: {}, click() {} }]));
 const document = { getElementById(id) { if (!els[id]) throw Error('Unknown DOM id ' + id); return els[id]; }, querySelectorAll() { return []; }, createElement() { return { click() {} }; } };
 const ctx = vm.createContext({ document, window: { scrollTo() {} }, URL: { createObjectURL() { return ''; }, revokeObjectURL() {} }, Blob: function () {}, console, setTimeout, clearTimeout, fetch: undefined });
 vm.runInContext(fs.readFileSync(path.join(root, 'data', 'atlas-data.js'), 'utf8'), ctx);
@@ -19,5 +19,6 @@ t('países, regiones y mecanismos presentes', () => { assert.ok(run('PAISES.leng
 t('todo país con mandato por país existe y es de modalidad País', () => assert.equal(run('PAISES.filter(p=>p.mandato!==null&&D[p.mandato].alcance!=="País").length'), 0));
 t('los renderizados no lanzan errores', () => { run('compute();renderMandates();renderPaises();renderMec();calidad();for(let i=0;i<D.length;i++)details(i)'); });
 t('búsquedas de humo', () => { for (const q of ['tortura', 'desaparecidos', 'India', 'niños migrantes', 'A/HRC/RES/54/26']) { els.quick.value = q; run('smartRun()'); assert.ok(els.smartOut.innerHTML.length > 50, q); } });
+t('fichas de todos los países se generan sin error y casi todos tienen tratados', () => { run('for(const p of PAISES){fichaPaisHtml(p)}'); assert.ok(run('PAISES.filter(p=>Object.keys(p.tratados||{}).length).length') >= 180); assert.equal(run('TRAT.length'), 18); });
 t('estado.json y historial coherentes', () => { const e = JSON.parse(fs.readFileSync(path.join(root, 'data', 'estado.json'), 'utf8')); assert.ok(e.revisado_el && e.contadores.mandatos >= 45); });
 console.log(JSON.stringify({ invariantes: n, ok: true }));
