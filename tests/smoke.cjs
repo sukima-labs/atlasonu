@@ -88,6 +88,8 @@ t('India: tratados reales (CAT solo firmado, PIDCP por adhesión, 6 de 9 básico
 t('ficha de país: lista general oculta y botón Buscar presente',()=>{assert.equal(els.pLista.style.display,'none');assert.ok(html.includes('onclick="buscarPais()">Buscar</button>'));els.pSel.value='';run('renderPaises()');assert.equal(els.pLista.style.display,'')});
 t('tratados para casi todos los países y 18 instrumentos',()=>{assert.equal(run('TRAT.length'),18);assert.ok(run('PAISES.filter(p=>Object.keys(p.tratados||{}).length).length')>=185)});
 t('el campo de tema libre es estático (no se recrea al escribir)',()=>assert.ok(html.includes('<input id="pTema"')&&!/pTemasTabla\.innerHTML=.*<input id="pTema"/.test(script)));
+t('Selección de titulares: «Etapa N» sin número repetido',()=>{const s=els.selectionList.innerHTML;assert.ok(/Etapa 4</.test(s)&&!/Etapa 4: 4/.test(s))});
+t('showPage fuerza el repintado de la zona principal (evita restos de la pantalla anterior)',()=>assert.ok(/showPage\(p\)\{[^]*?void m\.offsetHeight/.test(script)));
 t('ficha de mandato',()=>{run('details(0)');assert.ok(els.cardsResults.innerHTML.includes('Cadena de actos jurídicos'))});
 t('exportCSV',()=>run('exportCSV()'));
 t('autoría y repositorio',()=>assert.ok(html.includes('sukima-labs/onu-arqueologia-documental')&&html.includes('Sukima-Labs')));

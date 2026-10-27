@@ -84,6 +84,9 @@ const URL = process.env.ATLAS_URL || 'file://' + path.resolve(__dirname, '..', '
     const nov = await page.textContent('#novedades');
     ok(vp.name + ': panel de novedades (' + (URL.startsWith('http') ? 'en línea: última revisión' : 'sin conexión: aviso') + ')', URL.startsWith('http') ? /Última revisión/.test(nov) : /sin conexión/.test(nov));
     ok(vp.name + ': últimas resoluciones visibles', (await page.locator('#recientes .listline').count()) === 8);
+    await page.evaluate(() => showPage('paises')); await page.evaluate(() => window.scrollTo(0, 1500));
+    await page.evaluate(() => showPage('seleccion')); await page.waitForTimeout(150);
+    ok(vp.name + ': tras ir de Países (lista larga) a Selección, solo se ve Selección y el scroll vuelve arriba', (await page.evaluate(() => [...document.querySelectorAll('.section')].filter(s => getComputedStyle(s).display !== 'none').map(s => s.id).join())) === 'seleccion' && (await page.evaluate(() => window.scrollY)) === 0 && !/Etapa \d: \d/.test(await page.textContent('#selectionList')));
     await page.evaluate(() => showPage('mecanismos'));
     ok(vp.name + ': otros mecanismos (CERD…CED) visibles', (await page.locator('#mecBody tr').count()) === 25 && /CERD/.test(await page.textContent('#mecBody')));
     await page.evaluate(() => showPage('recuperar'));
