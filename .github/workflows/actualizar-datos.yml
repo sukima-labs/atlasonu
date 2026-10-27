@@ -1,0 +1,20 @@
+name: Actualizar datos oficiales
+on:
+  schedule: [{ cron: '17 5 1 * *' }]   # día 1 de cada mes
+  workflow_dispatch: {}
+permissions: { contents: write, pull-requests: write }
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: bash scripts/actualizar_datos.sh
+      - name: Abrir pull request con los cambios (nunca publica sin revisión)
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: datos/actualizacion
+          title: 'Actualización de datos oficiales'
+          body: 'Regenerado desde OHCHR y la Biblioteca Digital ONU. Revisar audit/ y las alertas antes de fusionar.'
+          commit-message: 'Actualiza catálogo desde fuentes oficiales'

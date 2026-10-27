@@ -23,10 +23,19 @@ const URL = process.env.ATLAS_URL || 'file://' + path.resolve(__dirname, '..', '
     ok(vp.name + ': búsqueda "tortura"', /tortura/i.test(await page.textContent('#mandBody')));
     await page.fill('#q', 'enforced disappearance'); await page.evaluate(() => filterMandates());
     ok(vp.name + ': búsqueda EN con sinónimos', /desaparici/i.test(await page.textContent('#mandBody')));
+    await page.fill('#q', ''); await page.evaluate(() => filterMandates());
+    ok(vp.name + ': 57 mandatos listados', (await page.locator('#mandBody tr').count()) === 57);
+    await page.fill('#q', 'agua'); await page.evaluate(() => filterMandates());
+    await page.locator('#mandBody button', { hasText: 'Ver ficha' }).first().click();
+    ok(vp.name + ': clic en «Ver ficha» abre cronología', /Cadena de actos jurídicos/.test(await page.textContent('#cardsResults')) && /A\/HRC\/RES\/60\/9/.test(await page.textContent('#cardsResults')));
     await page.evaluate(() => showPage('recuperar'));
-    await page.fill('#recoverQuery', 'E/CN.4/RES/20(XXXVI)'); await page.evaluate(() => recoverDocument());
-    ok(vp.name + ': recuperación res. 20 (XXXVI)', (await page.textContent('#recoverResult')).includes('E/1980/13'));
-    if (vp.name === 'escritorio') await page.screenshot({ path: path.resolve(__dirname, '..', 'audit', 'captura_escritorio.png') });
+    await page.getByRole('button', { name: /caso real de 1980/i }).click();
+    const rr = await page.textContent('#recoverResult');
+    ok(vp.name + ': clic «caso real de 1980» → E/1980/13 pp. 180–181', rr.includes('E/1980/13') && rr.includes('180–181'));
+    await page.fill('#recoverQuery', 'A/HRC/51/L.40'); await page.getByRole('button', { name: /Reconstruir ruta/i }).click();
+    ok(vp.name + ': borrador L.40 → A/HRC/RES/51/19', (await page.textContent('#recoverResult')).includes('A/HRC/RES/51/19'));
+    ok(vp.name + ': enlaces externos con rel=noopener', await page.evaluate(() => [...document.querySelectorAll('a[target=_blank]')].every(a => /noopener/.test(a.rel))));
+    if (vp.name === 'escritorio') { await page.evaluate(() => showPage('explorar')); await page.fill('#q', 'agua'); await page.evaluate(() => filterMandates()); await page.locator('#mandBody button').first().click(); await page.waitForTimeout(400); await page.screenshot({ path: path.resolve(__dirname, '..', 'audit', 'captura_escritorio.png') }); }
     else await page.screenshot({ path: path.resolve(__dirname, '..', 'audit', 'captura_movil.png') });
     await page.close();
   }
