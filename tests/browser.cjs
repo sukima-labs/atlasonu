@@ -146,7 +146,9 @@ const URL = process.env.ATLAS_URL || 'file://' + path.resolve(__dirname, '..', '
   for (const [nom, w, h] of [['iPhone SE', 375, 667], ['Android 412', 412, 915], ['tableta 768', 768, 1024]]) {
     const pg = await browser.newPage({ viewport: { width: w, height: h }, hasTouch: true, isMobile: true }); await pg.goto(URL); await pg.waitForFunction(() => window.__atlasListo);
     ok(nom + ': hay barra superior con botón de menú y el menú está cerrado', (await pg.isVisible('#burger')) && !(await pg.isVisible('#side')));
+    ok(nom + ': se ve la pista de las tres líneas y la etiqueta «Menú»', (await pg.isVisible('#menuHint')) && (await pg.isVisible('.burger-t')));
     await pg.tap('#burger'); await pg.waitForTimeout(350);
+    ok(nom + ': al abrir el menú la pista se oculta y no vuelve', !(await pg.isVisible('#menuHint')) && (await pg.evaluate(() => localStorage.getItem('atlas_pista_menu'))) === '1');
     ok(nom + ': el botón abre el menú', (await pg.isVisible('#side')) && (await pg.getAttribute('#burger', 'aria-expanded')) === 'true');
     await pg.tap('.nav button[data-page="tratados"]'); await pg.waitForTimeout(350);
     ok(nom + ': al elegir una pantalla se cierra el menú y se muestra', !(await pg.isVisible('#side')) && (await pg.isVisible('#tratados')));
