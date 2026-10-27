@@ -111,6 +111,7 @@ const URL = process.env.ATLAS_URL || 'file://' + path.resolve(__dirname, '..', '
     await page.fill('#qt', '');
     await page.evaluate(() => showPage('inicio')); await page.waitForTimeout(1200);
     const nov = await page.textContent('#novedades');
+    if (vp.name === 'escritorio') ok('escritorio: no aparece la barra móvil ni el botón de menú', !(await page.isVisible('#burger')) && !(await page.isVisible('#appbar')));
     ok(vp.name + ': panel de novedades (' + (URL.startsWith('http') ? 'en línea: última revisión' : 'sin conexión: aviso') + ')', URL.startsWith('http') ? /Última revisión/.test(nov) : /sin conexión/.test(nov));
     ok(vp.name + ': últimas resoluciones visibles', (await page.locator('#recientes .listline').count()) === 8);
     await page.evaluate(() => showPage('paises')); await page.evaluate(() => window.scrollTo(0, 1500));
@@ -166,6 +167,7 @@ const URL = process.env.ATLAS_URL || 'file://' + path.resolve(__dirname, '..', '
     await pv.route('https://atlas.test/**', r => { let p = new globalThis.URL(r.request().url()).pathname; if (p === '/') p = '/index.html'; const f = path.join(root, decodeURIComponent(p)); if (!f.startsWith(root) || !fs.existsSync(f)) return r.fulfill({ status: 404, body: '' }); r.fulfill({ status: 200, contentType: mime[path.extname(f)] || 'application/octet-stream', body: fs.readFileSync(f) }); });
     await pv.goto('https://atlas.test/'); await pv.waitForFunction(() => window.__atlasListo); await pv.waitForTimeout(1500);
     ok('visitas: la barra muestra el total, el país del visitante (Colombia) y sus visitas', (await pv.textContent('#visTotal')).replace(/\D/g, '') === '1234' && /Colombia/.test(await pv.textContent('#visPais')) && (await pv.textContent('#visPaisN')).replace(/\D/g, '') === '1234');
+    ok('visitas: la barra no se queda pegada al desplazarse (estática arriba)', await pv.evaluate(() => getComputedStyle(document.getElementById('visBar')).position === 'static'));
     ok('visitas: la primera visita suma al total y al país; una recarga inmediata no vuelve a sumar', llamadas.filter(x => x.startsWith('/hit/')).length === 2 && llamadas.some(x => x.endsWith('/pais-CO')));
     const antes = llamadas.filter(x => x.startsWith('/hit/')).length; await pv.reload(); await pv.waitForFunction(() => window.__atlasListo); await pv.waitForTimeout(800);
     ok('visitas: la recarga solo consulta (/get), no suma', llamadas.filter(x => x.startsWith('/hit/')).length === antes && llamadas.some(x => x.startsWith('/get/')));
