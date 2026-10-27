@@ -16,7 +16,7 @@ Estados: ✅ cumple · 🟡 parcial · ❌ no implementado.
 | 10 | Autoría | ✅ | © y enlace visibles; licencia pendiente del autor |
 | 11 | Excel offline, HTML Pages | 🟡 | HTML sin conexión y Excel v0.7 (6 hojas); flujo `pages.yml` listo; pendiente activar Pages (un clic) |
 | 12 | Pruebas reales | 🟡 | 42 de lógica + 42 en Chromium; auditoría de enlaces (571; 0 rotos; 459 no concluyentes por antirrobot); muestreo de PDF 30/30. Sin auditoría de accesibilidad |
-| 13 | Commits y Pages verificado | 🟡 | Commits publicados; URL pública por verificar tras fusionar en `main` y activar Pages |
+| 13 | Commits y Pages verificado | ✅ | Publicado en https://cataplum1414.github.io/onu-arqueologia-documental/ (27-oct-2026): HTTP 200 en página, datos y Excel; las 42 comprobaciones de Chromium pasan contra la URL pública, sin errores de consola |
 
 ## Qué corrigió esta versión respecto a v0.6
 Ver `DISCREPANCIAS_V06.md`: 16 de los 28 mandatos de v0.6 tenían datos desactualizados o erróneos (prórrogas, símbolos de creación). Además:
