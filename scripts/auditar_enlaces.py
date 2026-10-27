@@ -17,6 +17,11 @@ for sec in ('trazas', 'alertas', 'codigos', 'seleccion'):
     for r in d[sec]:
         for key in ('url',): add(r.get(key), f'{sec} {r.get("id") or r.get("simbolo") or r.get("paso")}')
 for u in d['fuentes']: add(u, 'fuente oficial')
+for e in d.get('sistema', {}).get('entidades', []): add(e.get('url'), 'entidad ' + e['id'])
+for c in d.get('sistema', {}).get('comites', []): add('https://www.ohchr.org/es/treaty-bodies/' + c['slug'], 'comité ' + c['id'])
+for t in d['tratados']:
+    add(t.get('url'), 'tratado ' + t['siglas'])
+    if t.get('texto'): add(t['texto']['fuente'], 'texto literal ' + t['siglas'])
 def chk(u):
     req = urllib.request.Request(u, headers={'User-Agent': 'Mozilla/5.0 (ATLAS-ONU link audit)', 'Range': 'bytes=0-2048'})
     try:

@@ -11,6 +11,7 @@ VER=data/fuentes/verificacion_simbolos.json
 python3 -I scripts/fetch_regiones.py "$FP"
 python3 -I scripts/fetch_paises.py "$FP"
 python3 -I scripts/fetch_tratados.py "$FP"
+python3 -I scripts/fetch_tratados_texto.py
 python3 -I scripts/fetch_docs_pais.py
 echo "pausa de 60 s para no saturar la Biblioteca Digital"; sleep 60
 for t in TM CM; do for l in en es; do
