@@ -1,20 +1,32 @@
-name: Actualizar datos oficiales
+name: Revisión diaria de fuentes oficiales
 on:
-  schedule: [{ cron: '17 5 1 * *' }]   # día 1 de cada mes
+  schedule: [{ cron: '17 4 * * *' }]   # todos los días, 04:17 UTC
   workflow_dispatch: {}
-permissions: { contents: write, pull-requests: write }
+permissions: { contents: write, pages: write }
+concurrency: { group: actualizar-datos, cancel-in-progress: false }
 jobs:
-  actualizar:
+  revisar:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with: { node-version: 20 }
-      - run: bash scripts/actualizar_datos.sh
-      - name: Abrir pull request con los cambios (nunca publica sin revisión)
-        uses: peter-evans/create-pull-request@v6
-        with:
-          branch: datos/actualizacion
-          title: 'Actualización de datos oficiales'
-          body: 'Regenerado desde OHCHR y la Biblioteca Digital ONU. Revisar audit/ y las alertas antes de fusionar.'
-          commit-message: 'Actualiza catálogo desde fuentes oficiales'
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
+      - run: pip install -q openpyxl
+      - name: Revisar fuentes, verificar, detectar cambios y validar (aborta si los datos se degradan)
+        run: bash scripts/actualizar_datos.sh
+      - name: Publicar en main (solo lo que cambió en data/)
+        run: |
+          git config user.name "atlas-onu-bot"
+          git config user.email "atlas-onu-bot@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then echo "Nada que publicar"; exit 0; fi
+          if git diff --cached --name-only | grep -qv '^data/estado.json$'; then MSG="Actualización automática: cambios en los datos oficiales ($(date -u +%F))"; else MSG="Revisión diaria de fuentes: sin cambios ($(date -u +%F))"; fi
+          git commit -m "$MSG"
+          git push
+      - name: Pedir a GitHub Pages que reconstruya el sitio
+        env: { GH_TOKEN: '${{ github.token }}' }
+        run: gh api -X POST "repos/${{ github.repository }}/pages/builds" || echo "Pages se reconstruirá con el siguiente cambio"
