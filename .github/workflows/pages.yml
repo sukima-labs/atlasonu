@@ -1,6 +1,6 @@
 name: Publicar en GitHub Pages
+# Alternativa a «Deploy from a branch». Solo manual: úsalo únicamente si en Settings → Pages eliges Source: GitHub Actions.
 on:
-  push: { branches: [main] }
   workflow_dispatch: {}
 permissions: { contents: read, pages: write, id-token: write }
 concurrency: { group: pages, cancel-in-progress: true }
