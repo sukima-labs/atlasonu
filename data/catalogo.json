@@ -15,7 +15,8 @@
    "mec": [],
    "mandato": 44,
    "titulares_de": [],
-   "comisiones": []
+   "comisiones": [],
+   "region": "ASP"
   },
   {
    "id": "ARG",
@@ -35,7 +36,8 @@
      "titular": "Cecilia M. BAILLIET"
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "GRU"
   },
   {
    "id": "ARM",
@@ -55,7 +57,8 @@
      "titular": "Davit HAKOBYAN"
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "EEG"
   },
   {
    "id": "AUS",
@@ -79,7 +82,8 @@
      "titular": "Ben SAUL"
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "WEO"
   },
   {
    "id": "BLR",
@@ -95,7 +99,8 @@
    "mec": [],
    "mandato": 45,
    "titulares_de": [],
-   "comisiones": []
+   "comisiones": [],
+   "region": "EEG"
   },
   {
    "id": "BRA",
@@ -116,7 +121,8 @@
      "titular": "Mariângela BATISTA GALVÃO SIMÃO"
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "GRU"
   },
   {
    "id": "BGR",
@@ -136,7 +142,8 @@
      "titular": "Mariana KATZAROVA"
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "EEG"
   },
   {
    "id": "BDI",
@@ -155,7 +162,8 @@
    "titulares_de": [],
    "comisiones": [
     20
-   ]
+   ],
+   "region": "AFR"
   },
   {
    "id": "KHM",
@@ -171,7 +179,8 @@
    "mec": [],
    "mandato": 47,
    "titulares_de": [],
-   "comisiones": []
+   "comisiones": [],
+   "region": "ASP"
   },
   {
    "id": "CAN",
@@ -191,7 +200,8 @@
      "titular": "Bernard DUHAIME"
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "WEO"
   },
   {
    "id": "CHL",
@@ -211,7 +221,8 @@
      "titular": "Morris TIDBALL-BINZ"
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "GRU"
   },
   {
    "id": "CHN",
@@ -231,7 +242,8 @@
      "titular": "Haina LU"
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "ASP"
   },
   {
    "id": "COL",
@@ -271,7 +283,8 @@
      "titular": "Carlos Arturo DUARTE TORRES"
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "GRU"
   },
   {
    "id": "ECU",
@@ -291,7 +304,8 @@
      "titular": "Miriam ESTRADA-CASTILLO"
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "GRU"
   },
   {
    "id": "EGY",
@@ -316,7 +330,8 @@
      "titular": "Gehad MADI"
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "AFR"
   },
   {
    "id": "ERI",
@@ -331,7 +346,8 @@
    "mec": [],
    "mandato": 50,
    "titulares_de": [],
-   "comisiones": []
+   "comisiones": [],
+   "region": "AFR"
   },
   {
    "id": "SVN",
@@ -352,7 +368,8 @@
      "titular": "Zvezdan PIRTOŠEK"
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "EEG"
   },
   {
    "id": "ESP",
@@ -385,7 +402,8 @@
      "titular": "Pedro ARROJO-AGUDO"
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "WEO"
   },
   {
    "id": "USA",
@@ -418,7 +436,8 @@
      "titular": "Kelley ECKELS-CURRIE"
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "WEO"
   },
   {
    "id": "RUS",
@@ -435,7 +454,8 @@
    "mec": [],
    "mandato": 55,
    "titulares_de": [],
-   "comisiones": []
+   "comisiones": [],
+   "region": "EEG"
   },
   {
    "id": "PHL",
@@ -456,7 +476,8 @@
      "titular": "Phillip BINONDO"
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "ASP"
   },
   {
    "id": "FRA",
@@ -481,7 +502,8 @@
      "titular": "Zaina JALLAD"
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "WEO"
   },
   {
    "id": "GRC",
@@ -506,7 +528,8 @@
      "titular": "George KATROUGALOS"
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "WEO"
   },
   {
    "id": "GNB",
@@ -527,7 +550,8 @@
      "titular": "Aua BALDÉ"
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "AFR"
   },
   {
    "id": "GUY",
@@ -547,7 +571,8 @@
      "titular": "Barbara REYNOLDS"
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "GRU"
   },
   {
    "id": "HUN",
@@ -568,7 +593,8 @@
      "titular": "Miriam EKIUDOKO"
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "EEG"
   },
   {
    "id": "IND",
@@ -600,7 +626,8 @@
      "titular": "Ashwini K.P."
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "ASP"
   },
   {
    "id": "IRQ",
@@ -621,7 +648,8 @@
      "titular": "Mohammed AL-OBAIDI"
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "ASP"
   },
   {
    "id": "IRN",
@@ -643,7 +671,8 @@
      "titular": "Nazila GHANEA"
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "ASP"
   },
   {
    "id": "ITA",
@@ -672,7 +701,8 @@
      "titular": "Francesca ALBANESE"
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "WEO"
   },
   {
    "id": "JPN",
@@ -697,7 +727,8 @@
      "titular": "Mai SATO"
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "ASP"
   },
   {
    "id": "JOR",
@@ -718,7 +749,8 @@
      "titular": "Reem ALSALEM"
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "ASP"
   },
   {
    "id": "KEN",
@@ -738,7 +770,8 @@
      "titular": "Attiya WARIS"
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "AFR"
   },
   {
    "id": "LVA",
@@ -759,7 +792,8 @@
      "titular": "Nils MUIŽNIEKS"
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "EEG"
   },
   {
    "id": "LBY",
@@ -779,7 +813,8 @@
    "titulares_de": [],
    "comisiones": [
     18
-   ]
+   ],
+   "region": "AFR"
   },
   {
    "id": "LTU",
@@ -800,7 +835,8 @@
      "titular": "Lyra JAKULEVIČIENĖ"
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "EEG"
   },
   {
    "id": "MLI",
@@ -815,7 +851,8 @@
    "mec": [],
    "mandato": 52,
    "titulares_de": [],
-   "comisiones": []
+   "comisiones": [],
+   "region": "AFR"
   },
   {
    "id": "MMR",
@@ -835,7 +872,8 @@
    "titulares_de": [],
    "comisiones": [
     21
-   ]
+   ],
+   "region": "ASP"
   },
   {
    "id": "MEX",
@@ -871,7 +909,8 @@
      "titular": "Dorothy ESTRADA-TANCK"
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "GRU"
   },
   {
    "id": "NGA",
@@ -895,7 +934,8 @@
      "titular": "Uche Ewelukwa OFODILE"
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "AFR"
   },
   {
    "id": "NZL",
@@ -924,7 +964,8 @@
      "titular": "Richard BENNETT"
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "WEO"
   },
   {
    "id": "PAK",
@@ -944,7 +985,8 @@
      "titular": "Farida SHAHEED"
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "ASP"
   },
   {
    "id": "PER",
@@ -964,7 +1006,8 @@
      "titular": "Elizabeth SALMÓN"
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "GRU"
   },
   {
    "id": "POL",
@@ -985,7 +1028,8 @@
      "titular": "Grazyna BARANOWSKA"
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "EEG"
   },
   {
    "id": "PRT",
@@ -1005,7 +1049,8 @@
      "titular": "Joana DE DEUS PEREIRA"
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "WEO"
   },
   {
    "id": "GBR",
@@ -1026,7 +1071,8 @@
      "titular": "Koldo CASLA"
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "WEO"
   },
   {
    "id": "CAF",
@@ -1042,7 +1088,8 @@
    "mec": [],
    "mandato": 48,
    "titulares_de": [],
-   "comisiones": []
+   "comisiones": [],
+   "region": "AFR"
   },
   {
    "id": "KOR",
@@ -1060,7 +1107,8 @@
      "titular": "Ethan HEE-SEOK SHIN"
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "ASP"
   },
   {
    "id": "COD",
@@ -1080,7 +1128,8 @@
      "titular": "Albert K. BARUME"
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "AFR"
   },
   {
    "id": "PRK",
@@ -1100,7 +1149,8 @@
    "titulares_de": [],
    "comisiones": [
     19
-   ]
+   ],
+   "region": "ASP"
   },
   {
    "id": "SYR",
@@ -1121,7 +1171,8 @@
    "titulares_de": [],
    "comisiones": [
     17
-   ]
+   ],
+   "region": "ASP"
   },
   {
    "id": "SRB",
@@ -1145,7 +1196,8 @@
      "titular": "Ivana KRSTIĆ"
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "EEG"
   },
   {
    "id": "ZAF",
@@ -1169,7 +1221,8 @@
      "titular": "Graeme REID"
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "AFR"
   },
   {
    "id": "SWE",
@@ -1190,7 +1243,8 @@
      "titular": "Bethanie Margaret CARNEY ALMROTH"
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "WEO"
   },
   {
    "id": "CHE",
@@ -1211,7 +1265,8 @@
      "titular": "Nicolas LEVRAT"
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "WEO"
   },
   {
    "id": "THA",
@@ -1232,7 +1287,8 @@
      "titular": "Pichamon YEOPHANTONG"
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "ASP"
   },
   {
    "id": "PSE",
@@ -1253,7 +1309,8 @@
    "titulares_de": [],
    "comisiones": [
     23
-   ]
+   ],
+   "region": "OTH"
   },
   {
    "id": "UKR",
@@ -1278,7 +1335,8 @@
    ],
    "comisiones": [
     24
-   ]
+   ],
+   "region": "EEG"
   },
   {
    "id": "UGA",
@@ -1302,7 +1360,8 @@
      "titular": "Laura NYIRINKINDI"
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "AFR"
   },
   {
    "id": "URY",
@@ -1322,7 +1381,8 @@
      "titular": "Ana BRIAN NOUGRÈRES"
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "GRU"
   },
   {
    "id": "VEN",
@@ -1341,7 +1401,8 @@
    "titulares_de": [],
    "comisiones": [
     22
-   ]
+   ],
+   "region": "GRU"
   },
   {
    "id": "ZMB",
@@ -1365,9 +1426,52 @@
      "titular": "Mumba MALILA"
     }
    ],
-   "comisiones": []
+   "comisiones": [],
+   "region": "AFR"
   }
  ],
+ "regiones": [
+  {
+   "id": "AFR",
+   "en": "African Group",
+   "es": "Grupo de Estados de África",
+   "corto": "África"
+  },
+  {
+   "id": "ASP",
+   "en": "Asia-Pacific Group",
+   "es": "Grupo de Estados de Asia y el Pacífico",
+   "corto": "Asia-Pacífico"
+  },
+  {
+   "id": "EEG",
+   "en": "Eastern European Group",
+   "es": "Grupo de Estados de Europa Oriental",
+   "corto": "Europa Oriental"
+  },
+  {
+   "id": "GRU",
+   "en": "Latin American and Caribbean Group",
+   "es": "Grupo de Estados de América Latina y el Caribe (GRULAC)",
+   "corto": "América Latina y el Caribe"
+  },
+  {
+   "id": "WEO",
+   "en": "Western European and Others Group",
+   "es": "Grupo de Estados de Europa Occidental y otros Estados (WEOG)",
+   "corto": "Europa Occidental y otros"
+  },
+  {
+   "id": "OTH",
+   "en": "Other",
+   "es": "Otro (no miembro u observador, según la base de OHCHR)",
+   "corto": "Otro"
+  }
+ ],
+ "regiones_fuente": {
+  "url": "https://spcommreports.ohchr.org/Tmsearch/TMDocuments",
+  "consultado": "2026-10-27"
+ },
  "mecanismos": [
   {
    "categoria": "Órgano de tratado",
