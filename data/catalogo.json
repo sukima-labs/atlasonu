@@ -1,5 +1,1373 @@
 {
  "version": "0.7",
+ "paises": [
+  {
+   "id": "AFG",
+   "es": "Afganistán",
+   "en": "Afghanistan",
+   "alias": [
+    "afghanistan"
+   ],
+   "claves": [
+    "afganistan",
+    "afghanistan"
+   ],
+   "mec": [],
+   "mandato": 44,
+   "titulares_de": [],
+   "comisiones": []
+  },
+  {
+   "id": "ARG",
+   "es": "Argentina",
+   "en": "Argentina",
+   "alias": [
+    "argentina"
+   ],
+   "claves": [
+    "argentina"
+   ],
+   "mec": [],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 23,
+     "titular": "Cecilia M. BAILLIET"
+    }
+   ],
+   "comisiones": []
+  },
+  {
+   "id": "ARM",
+   "es": "Armenia",
+   "en": "Armenia",
+   "alias": [
+    "armenia"
+   ],
+   "claves": [
+    "armenia"
+   ],
+   "mec": [],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 28,
+     "titular": "Davit HAKOBYAN"
+    }
+   ],
+   "comisiones": []
+  },
+  {
+   "id": "AUS",
+   "es": "Australia",
+   "en": "Australia",
+   "alias": [
+    "australia"
+   ],
+   "claves": [
+    "australia"
+   ],
+   "mec": [],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 3,
+     "titular": "Robert MCCORQUODALE"
+    },
+    {
+     "idx": 36,
+     "titular": "Ben SAUL"
+    }
+   ],
+   "comisiones": []
+  },
+  {
+   "id": "BLR",
+   "es": "Belarús",
+   "en": "Belarus",
+   "alias": [
+    "belarus"
+   ],
+   "claves": [
+    "belarus",
+    "bielorrusia"
+   ],
+   "mec": [],
+   "mandato": 45,
+   "titulares_de": [],
+   "comisiones": []
+  },
+  {
+   "id": "BRA",
+   "es": "Brasil",
+   "en": "Brazil",
+   "alias": [
+    "brazil"
+   ],
+   "claves": [
+    "brasil",
+    "brazil"
+   ],
+   "mec": [],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 16,
+     "titular": "Mariângela BATISTA GALVÃO SIMÃO"
+    }
+   ],
+   "comisiones": []
+  },
+  {
+   "id": "BGR",
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "alias": [
+    "bulgaria"
+   ],
+   "claves": [
+    "bulgaria"
+   ],
+   "mec": [],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 55,
+     "titular": "Mariana KATZAROVA"
+    }
+   ],
+   "comisiones": []
+  },
+  {
+   "id": "BDI",
+   "es": "Burundi",
+   "en": "Burundi",
+   "alias": [
+    "burundi"
+   ],
+   "claves": [
+    "burundi"
+   ],
+   "mec": [
+    "burundi"
+   ],
+   "mandato": 46,
+   "titulares_de": [],
+   "comisiones": [
+    20
+   ]
+  },
+  {
+   "id": "KHM",
+   "es": "Camboya",
+   "en": "Cambodia",
+   "alias": [
+    "cambodia"
+   ],
+   "claves": [
+    "camboya",
+    "cambodia"
+   ],
+   "mec": [],
+   "mandato": 47,
+   "titulares_de": [],
+   "comisiones": []
+  },
+  {
+   "id": "CAN",
+   "es": "Canadá",
+   "en": "Canada",
+   "alias": [
+    "canada"
+   ],
+   "claves": [
+    "canada"
+   ],
+   "mec": [],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 39,
+     "titular": "Bernard DUHAIME"
+    }
+   ],
+   "comisiones": []
+  },
+  {
+   "id": "CHL",
+   "es": "Chile",
+   "en": "Chile",
+   "alias": [
+    "chile"
+   ],
+   "claves": [
+    "chile"
+   ],
+   "mec": [],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 11,
+     "titular": "Morris TIDBALL-BINZ"
+    }
+   ],
+   "comisiones": []
+  },
+  {
+   "id": "CHN",
+   "es": "China",
+   "en": "China",
+   "alias": [
+    "china"
+   ],
+   "claves": [
+    "china"
+   ],
+   "mec": [],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 43,
+     "titular": "Haina LU"
+    }
+   ],
+   "comisiones": []
+  },
+  {
+   "id": "COL",
+   "es": "Colombia",
+   "en": "Colombia",
+   "alias": [
+    "colombia"
+   ],
+   "claves": [
+    "colombia"
+   ],
+   "mec": [],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 12,
+     "titular": "Sofía MONSALVE SUÁREZ"
+    },
+    {
+     "idx": 15,
+     "titular": "Gina ROMERO"
+    },
+    {
+     "idx": 18,
+     "titular": "Andrea BOLAÑOS VARGAS"
+    },
+    {
+     "idx": 21,
+     "titular": "Paula GAVIRIA"
+    },
+    {
+     "idx": 24,
+     "titular": "Andrés MACIAS TOLOSA"
+    },
+    {
+     "idx": 28,
+     "titular": "Carlos Arturo DUARTE TORRES"
+    }
+   ],
+   "comisiones": []
+  },
+  {
+   "id": "ECU",
+   "es": "Ecuador",
+   "en": "Ecuador",
+   "alias": [
+    "ecuador"
+   ],
+   "claves": [
+    "ecuador"
+   ],
+   "mec": [],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 2,
+     "titular": "Miriam ESTRADA-CASTILLO"
+    }
+   ],
+   "comisiones": []
+  },
+  {
+   "id": "EGY",
+   "es": "Egipto",
+   "en": "Egypt",
+   "alias": [
+    "egypt"
+   ],
+   "claves": [
+    "egipto",
+    "egypt"
+   ],
+   "mec": [],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 7,
+     "titular": "Heba HAGRASS"
+    },
+    {
+     "idx": 25,
+     "titular": "Gehad MADI"
+    }
+   ],
+   "comisiones": []
+  },
+  {
+   "id": "ERI",
+   "es": "Eritrea",
+   "en": "Eritrea",
+   "alias": [
+    "eritrea"
+   ],
+   "claves": [
+    "eritrea"
+   ],
+   "mec": [],
+   "mandato": 50,
+   "titulares_de": [],
+   "comisiones": []
+  },
+  {
+   "id": "SVN",
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "alias": [
+    "slovenia"
+   ],
+   "claves": [
+    "eslovenia",
+    "slovenia"
+   ],
+   "mec": [],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 27,
+     "titular": "Zvezdan PIRTOŠEK"
+    }
+   ],
+   "comisiones": []
+  },
+  {
+   "id": "ESP",
+   "es": "España",
+   "en": "Spain",
+   "alias": [
+    "spain"
+   ],
+   "claves": [
+    "espana",
+    "spain"
+   ],
+   "mec": [],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 0,
+     "titular": "Isabelle MAMADOU"
+    },
+    {
+     "idx": 29,
+     "titular": "Elena Carolina DÍAZ GALÁN"
+    },
+    {
+     "idx": 37,
+     "titular": "Pau PÉREZ SALES"
+    },
+    {
+     "idx": 42,
+     "titular": "Pedro ARROJO-AGUDO"
+    }
+   ],
+   "comisiones": []
+  },
+  {
+   "id": "USA",
+   "es": "Estados Unidos de América",
+   "en": "United States of America",
+   "alias": [
+    "united states of america"
+   ],
+   "claves": [
+    "eeuu",
+    "usa"
+   ],
+   "mec": [],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 19,
+     "titular": "Margaret SATTERTHWAITE"
+    },
+    {
+     "idx": 43,
+     "titular": "Claudia FLORES"
+    },
+    {
+     "idx": 47,
+     "titular": "Thomas ANDREWS"
+    },
+    {
+     "idx": 53,
+     "titular": "Kelley ECKELS-CURRIE"
+    }
+   ],
+   "comisiones": []
+  },
+  {
+   "id": "RUS",
+   "es": "Federación de Rusia",
+   "en": "Russian Federation",
+   "alias": [
+    "russian federation"
+   ],
+   "claves": [
+    "rusia",
+    "russia",
+    "russian"
+   ],
+   "mec": [],
+   "mandato": 55,
+   "titulares_de": [],
+   "comisiones": []
+  },
+  {
+   "id": "PHL",
+   "es": "Filipinas",
+   "en": "Philippines",
+   "alias": [
+    "philippines"
+   ],
+   "claves": [
+    "filipinas",
+    "philippines"
+   ],
+   "mec": [],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 0,
+     "titular": "Phillip BINONDO"
+    }
+   ],
+   "comisiones": []
+  },
+  {
+   "id": "FRA",
+   "es": "Francia",
+   "en": "France",
+   "alias": [
+    "france"
+   ],
+   "claves": [
+    "francia",
+    "france"
+   ],
+   "mec": [],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 28,
+     "titular": "Geneviève SAVIGNY"
+    },
+    {
+     "idx": 40,
+     "titular": "Zaina JALLAD"
+    }
+   ],
+   "comisiones": []
+  },
+  {
+   "id": "GRC",
+   "es": "Grecia",
+   "en": "Greece",
+   "alias": [
+    "greece"
+   ],
+   "claves": [
+    "grecia",
+    "greece"
+   ],
+   "mec": [],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 5,
+     "titular": "Alexandra XANTHAKI"
+    },
+    {
+     "idx": 22,
+     "titular": "George KATROUGALOS"
+    }
+   ],
+   "comisiones": []
+  },
+  {
+   "id": "GNB",
+   "es": "Guinea-Bisáu",
+   "en": "Guinea-Bissau",
+   "alias": [
+    "guinea-bissau"
+   ],
+   "claves": [
+    "bisau",
+    "bissau"
+   ],
+   "mec": [],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 8,
+     "titular": "Aua BALDÉ"
+    }
+   ],
+   "comisiones": []
+  },
+  {
+   "id": "GUY",
+   "es": "Guyana",
+   "en": "Guyana",
+   "alias": [
+    "guyana"
+   ],
+   "claves": [
+    "guyana"
+   ],
+   "mec": [],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 0,
+     "titular": "Barbara REYNOLDS"
+    }
+   ],
+   "comisiones": []
+  },
+  {
+   "id": "HUN",
+   "es": "Hungría",
+   "en": "Hungary",
+   "alias": [
+    "hungary"
+   ],
+   "claves": [
+    "hungria",
+    "hungary"
+   ],
+   "mec": [],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 0,
+     "titular": "Miriam EKIUDOKO"
+    }
+   ],
+   "comisiones": []
+  },
+  {
+   "id": "IND",
+   "es": "India",
+   "en": "India",
+   "alias": [
+    "india"
+   ],
+   "claves": [
+    "india"
+   ],
+   "mec": [],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 6,
+     "titular": "Surya DEVA"
+    },
+    {
+     "idx": 24,
+     "titular": "Ravindran DANIEL JUSTIN"
+    },
+    {
+     "idx": 28,
+     "titular": "Shalmali GUTTAL"
+    },
+    {
+     "idx": 31,
+     "titular": "Ashwini K.P."
+    }
+   ],
+   "comisiones": []
+  },
+  {
+   "id": "IRQ",
+   "es": "Iraq",
+   "en": "Iraq",
+   "alias": [
+    "iraq"
+   ],
+   "claves": [
+    "iraq",
+    "irak"
+   ],
+   "mec": [],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 8,
+     "titular": "Mohammed AL-OBAIDI"
+    }
+   ],
+   "comisiones": []
+  },
+  {
+   "id": "IRN",
+   "es": "Irán (República Islámica del)",
+   "en": "Iran (Islamic Republic of)",
+   "alias": [
+    "iran (islamic republic of)",
+    "islamic republic of iran",
+    "iran (islamic republic of"
+   ],
+   "claves": [
+    "iran"
+   ],
+   "mec": [],
+   "mandato": 51,
+   "titulares_de": [
+    {
+     "idx": 32,
+     "titular": "Nazila GHANEA"
+    }
+   ],
+   "comisiones": []
+  },
+  {
+   "id": "ITA",
+   "es": "Italia",
+   "en": "Italy",
+   "alias": [
+    "italy"
+   ],
+   "claves": [
+    "italia",
+    "italy"
+   ],
+   "mec": [],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 4,
+     "titular": "Elisa MORGERA"
+    },
+    {
+     "idx": 8,
+     "titular": "Gabriella CITRONI"
+    },
+    {
+     "idx": 54,
+     "titular": "Francesca ALBANESE"
+    }
+   ],
+   "comisiones": []
+  },
+  {
+   "id": "JPN",
+   "es": "Japón",
+   "en": "Japan",
+   "alias": [
+    "japan"
+   ],
+   "claves": [
+    "japon",
+    "japan"
+   ],
+   "mec": [],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 33,
+     "titular": "Ai KIHARA-HUNT"
+    },
+    {
+     "idx": 51,
+     "titular": "Mai SATO"
+    }
+   ],
+   "comisiones": []
+  },
+  {
+   "id": "JOR",
+   "es": "Jordania",
+   "en": "Jordan",
+   "alias": [
+    "jordan"
+   ],
+   "claves": [
+    "jordania",
+    "jordan"
+   ],
+   "mec": [],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 41,
+     "titular": "Reem ALSALEM"
+    }
+   ],
+   "comisiones": []
+  },
+  {
+   "id": "KEN",
+   "es": "Kenya",
+   "en": "Kenya",
+   "alias": [
+    "kenya"
+   ],
+   "claves": [
+    "kenya"
+   ],
+   "mec": [],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 13,
+     "titular": "Attiya WARIS"
+    }
+   ],
+   "comisiones": []
+  },
+  {
+   "id": "LVA",
+   "es": "Letonia",
+   "en": "Latvia",
+   "alias": [
+    "latvia"
+   ],
+   "claves": [
+    "letonia",
+    "latvia"
+   ],
+   "mec": [],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 45,
+     "titular": "Nils MUIŽNIEKS"
+    }
+   ],
+   "comisiones": []
+  },
+  {
+   "id": "LBY",
+   "es": "Libia",
+   "en": "Libya",
+   "alias": [
+    "libya"
+   ],
+   "claves": [
+    "libia",
+    "libya"
+   ],
+   "mec": [
+    "libya"
+   ],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [
+    18
+   ]
+  },
+  {
+   "id": "LTU",
+   "es": "Lituania",
+   "en": "Lithuania",
+   "alias": [
+    "lithuania"
+   ],
+   "claves": [
+    "lituania",
+    "lithuania"
+   ],
+   "mec": [],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 3,
+     "titular": "Lyra JAKULEVIČIENĖ"
+    }
+   ],
+   "comisiones": []
+  },
+  {
+   "id": "MLI",
+   "es": "Malí",
+   "en": "Mali",
+   "alias": [
+    "mali"
+   ],
+   "claves": [
+    "mali"
+   ],
+   "mec": [],
+   "mandato": 52,
+   "titulares_de": [],
+   "comisiones": []
+  },
+  {
+   "id": "MMR",
+   "es": "Myanmar",
+   "en": "Myanmar",
+   "alias": [
+    "myanmar"
+   ],
+   "claves": [
+    "myanmar",
+    "birmania"
+   ],
+   "mec": [
+    "myanmar"
+   ],
+   "mandato": 53,
+   "titulares_de": [],
+   "comisiones": [
+    21
+   ]
+  },
+  {
+   "id": "MEX",
+   "es": "México",
+   "en": "Mexico",
+   "alias": [
+    "mexico"
+   ],
+   "claves": [
+    "mexico"
+   ],
+   "mec": [],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 3,
+     "titular": "Fernanda HOPENHAYM"
+    },
+    {
+     "idx": 8,
+     "titular": "Ana Lorena DELGADILLO PEREZ"
+    },
+    {
+     "idx": 10,
+     "titular": "Astrid PUENTES RIAÑO"
+    },
+    {
+     "idx": 14,
+     "titular": "Leopoldo MALDONADO GUTIÉRREZ"
+    },
+    {
+     "idx": 43,
+     "titular": "Dorothy ESTRADA-TANCK"
+    }
+   ],
+   "comisiones": []
+  },
+  {
+   "id": "NGA",
+   "es": "Nigeria",
+   "en": "Nigeria",
+   "alias": [
+    "nigeria"
+   ],
+   "claves": [
+    "nigeria"
+   ],
+   "mec": [],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 3,
+     "titular": "Damilola S. OLAWUYI"
+    },
+    {
+     "idx": 28,
+     "titular": "Uche Ewelukwa OFODILE"
+    }
+   ],
+   "comisiones": []
+  },
+  {
+   "id": "NZL",
+   "es": "Nueva Zelandia",
+   "en": "New Zealand",
+   "alias": [
+    "new zealand"
+   ],
+   "claves": [
+    "zelandia",
+    "zealand"
+   ],
+   "mec": [],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 2,
+     "titular": "Matthew GILLETT"
+    },
+    {
+     "idx": 35,
+     "titular": "Katarina SCHWARZ"
+    },
+    {
+     "idx": 44,
+     "titular": "Richard BENNETT"
+    }
+   ],
+   "comisiones": []
+  },
+  {
+   "id": "PAK",
+   "es": "Pakistán",
+   "en": "Pakistan",
+   "alias": [
+    "pakistan"
+   ],
+   "claves": [
+    "pakistan"
+   ],
+   "mec": [],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 9,
+     "titular": "Farida SHAHEED"
+    }
+   ],
+   "comisiones": []
+  },
+  {
+   "id": "PER",
+   "es": "Perú",
+   "en": "Peru",
+   "alias": [
+    "peru"
+   ],
+   "claves": [
+    "peru"
+   ],
+   "mec": [],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 49,
+     "titular": "Elizabeth SALMÓN"
+    }
+   ],
+   "comisiones": []
+  },
+  {
+   "id": "POL",
+   "es": "Polonia",
+   "en": "Poland",
+   "alias": [
+    "poland"
+   ],
+   "claves": [
+    "polonia",
+    "poland"
+   ],
+   "mec": [],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 8,
+     "titular": "Grazyna BARANOWSKA"
+    }
+   ],
+   "comisiones": []
+  },
+  {
+   "id": "PRT",
+   "es": "Portugal",
+   "en": "Portugal",
+   "alias": [
+    "portugal"
+   ],
+   "claves": [
+    "portugal"
+   ],
+   "mec": [],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 24,
+     "titular": "Joana DE DEUS PEREIRA"
+    }
+   ],
+   "comisiones": []
+  },
+  {
+   "id": "GBR",
+   "es": "Reino Unido",
+   "en": "United Kingdom of Great Britain and Northern Ireland",
+   "alias": [
+    "united kingdom of great britain and northern ireland"
+   ],
+   "claves": [
+    "britain",
+    "britanico"
+   ],
+   "mec": [],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 17,
+     "titular": "Koldo CASLA"
+    }
+   ],
+   "comisiones": []
+  },
+  {
+   "id": "CAF",
+   "es": "República Centroafricana",
+   "en": "Central African Republic",
+   "alias": [
+    "central african republic"
+   ],
+   "claves": [
+    "centroafricana",
+    "centroafricano"
+   ],
+   "mec": [],
+   "mandato": 48,
+   "titulares_de": [],
+   "comisiones": []
+  },
+  {
+   "id": "KOR",
+   "es": "República de Corea",
+   "en": "Republic of Korea",
+   "alias": [
+    "republic of korea"
+   ],
+   "claves": [],
+   "mec": [],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 2,
+     "titular": "Ethan HEE-SEOK SHIN"
+    }
+   ],
+   "comisiones": []
+  },
+  {
+   "id": "COD",
+   "es": "República Democrática del Congo",
+   "en": "Democratic Republic of the Congo",
+   "alias": [
+    "democratic republic of the congo"
+   ],
+   "claves": [
+    "congo"
+   ],
+   "mec": [],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 20,
+     "titular": "Albert K. BARUME"
+    }
+   ],
+   "comisiones": []
+  },
+  {
+   "id": "PRK",
+   "es": "República Popular Democrática de Corea",
+   "en": "Democratic People’s Republic of Korea",
+   "alias": [
+    "democratic people’s republic of korea",
+    "democratic people's republic of korea"
+   ],
+   "claves": [
+    "rpdc"
+   ],
+   "mec": [
+    "dprk"
+   ],
+   "mandato": 49,
+   "titulares_de": [],
+   "comisiones": [
+    19
+   ]
+  },
+  {
+   "id": "SYR",
+   "es": "República Árabe Siria",
+   "en": "Syrian Arab Republic",
+   "alias": [
+    "syrian arab republic"
+   ],
+   "claves": [
+    "siria",
+    "syria",
+    "syrian"
+   ],
+   "mec": [
+    "syria"
+   ],
+   "mandato": 56,
+   "titulares_de": [],
+   "comisiones": [
+    17
+   ]
+  },
+  {
+   "id": "SRB",
+   "es": "Serbia",
+   "en": "Serbia",
+   "alias": [
+    "serbia"
+   ],
+   "claves": [
+    "serbia"
+   ],
+   "mec": [],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 24,
+     "titular": "Jovana JEZDIMIROVIC RANITO"
+    },
+    {
+     "idx": 43,
+     "titular": "Ivana KRSTIĆ"
+    }
+   ],
+   "comisiones": []
+  },
+  {
+   "id": "ZAF",
+   "es": "Sudáfrica",
+   "en": "South Africa",
+   "alias": [
+    "south africa"
+   ],
+   "claves": [
+    "sudafrica"
+   ],
+   "mec": [],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 24,
+     "titular": "Michelle SMALL"
+    },
+    {
+     "idx": 34,
+     "titular": "Graeme REID"
+    }
+   ],
+   "comisiones": []
+  },
+  {
+   "id": "SWE",
+   "es": "Suecia",
+   "en": "Sweden",
+   "alias": [
+    "sweden"
+   ],
+   "claves": [
+    "suecia",
+    "sweden"
+   ],
+   "mec": [],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 38,
+     "titular": "Bethanie Margaret CARNEY ALMROTH"
+    }
+   ],
+   "comisiones": []
+  },
+  {
+   "id": "CHE",
+   "es": "Suiza",
+   "en": "Switzerland",
+   "alias": [
+    "switzerland"
+   ],
+   "claves": [
+    "suiza",
+    "switzerland"
+   ],
+   "mec": [],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 26,
+     "titular": "Nicolas LEVRAT"
+    }
+   ],
+   "comisiones": []
+  },
+  {
+   "id": "THA",
+   "es": "Tailandia",
+   "en": "Thailand",
+   "alias": [
+    "thailand"
+   ],
+   "claves": [
+    "tailandia",
+    "thailand"
+   ],
+   "mec": [],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 3,
+     "titular": "Pichamon YEOPHANTONG"
+    }
+   ],
+   "comisiones": []
+  },
+  {
+   "id": "PSE",
+   "es": "Territorio palestino ocupado desde 1967",
+   "en": "Palestinian territory occupied since 1967",
+   "alias": [
+    "palestinian territory occupied since 1967"
+   ],
+   "claves": [
+    "palestina",
+    "palestino",
+    "palestinian"
+   ],
+   "mec": [
+    "palestinian"
+   ],
+   "mandato": 54,
+   "titulares_de": [],
+   "comisiones": [
+    23
+   ]
+  },
+  {
+   "id": "UKR",
+   "es": "Ucrania",
+   "en": "Ukraine",
+   "alias": [
+    "ukraine"
+   ],
+   "claves": [
+    "ucrania",
+    "ukraine"
+   ],
+   "mec": [
+    "ukraine"
+   ],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 2,
+     "titular": "Ganna YUDKIVSKA"
+    }
+   ],
+   "comisiones": [
+    24
+   ]
+  },
+  {
+   "id": "UGA",
+   "es": "Uganda",
+   "en": "Uganda",
+   "alias": [
+    "uganda"
+   ],
+   "claves": [
+    "uganda"
+   ],
+   "mec": [],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 0,
+     "titular": "Catherine NAMAKULA"
+    },
+    {
+     "idx": 43,
+     "titular": "Laura NYIRINKINDI"
+    }
+   ],
+   "comisiones": []
+  },
+  {
+   "id": "URY",
+   "es": "Uruguay",
+   "en": "Uruguay",
+   "alias": [
+    "uruguay"
+   ],
+   "claves": [
+    "uruguay"
+   ],
+   "mec": [],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 30,
+     "titular": "Ana BRIAN NOUGRÈRES"
+    }
+   ],
+   "comisiones": []
+  },
+  {
+   "id": "VEN",
+   "es": "Venezuela (República Bolivariana de)",
+   "en": "Venezuela (Bolivarian Republic of)",
+   "alias": [
+    "venezuela"
+   ],
+   "claves": [
+    "venezuela"
+   ],
+   "mec": [
+    "venezuela"
+   ],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [
+    22
+   ]
+  },
+  {
+   "id": "ZMB",
+   "es": "Zambia",
+   "en": "Zambia",
+   "alias": [
+    "zambia"
+   ],
+   "claves": [
+    "zambia"
+   ],
+   "mec": [],
+   "mandato": null,
+   "titulares_de": [
+    {
+     "idx": 1,
+     "titular": "Muluka-Anne MITI-DRUMMOND"
+    },
+    {
+     "idx": 2,
+     "titular": "Mumba MALILA"
+    }
+   ],
+   "comisiones": []
+  }
+ ],
  "mecanismos": [
   {
    "categoria": "Órgano de tratado",
@@ -1353,33 +2721,39 @@
     {
      "tratamiento": "Ms.",
      "nombre": "Barbara REYNOLDS",
-     "pais": "Guyana"
+     "pais": "Guyana",
+     "pais_id": "GUY"
     },
     {
      "tratamiento": "Ms.",
      "nombre": "Isabelle MAMADOU",
-     "pais": "Spain"
+     "pais": "Spain",
+     "pais_id": "ESP"
     },
     {
      "tratamiento": "Ms.",
      "nombre": "Catherine NAMAKULA",
-     "pais": "Uganda"
+     "pais": "Uganda",
+     "pais_id": "UGA"
     },
     {
      "tratamiento": "Ms.",
      "nombre": "Miriam EKIUDOKO",
-     "pais": "Hungary"
+     "pais": "Hungary",
+     "pais_id": "HUN"
     },
     {
      "tratamiento": "Mr.",
      "nombre": "Phillip BINONDO",
-     "pais": "Philippines"
+     "pais": "Philippines",
+     "pais_id": "PHL"
     }
    ],
    "titulares_texto": "Ms. Barbara REYNOLDS (Guyana) Ms. Isabelle MAMADOU (Spain) Ms. Catherine NAMAKULA (Uganda) Ms. Miriam EKIUDOKO (Hungary) Mr. Phillip BINONDO (Philippines)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "pais_id": null
   },
   {
    "tema": "albinismo",
@@ -1500,13 +2874,15 @@
     {
      "tratamiento": "Ms.",
      "nombre": "Muluka-Anne MITI-DRUMMOND",
-     "pais": "Zambia"
+     "pais": "Zambia",
+     "pais_id": "ZMB"
     }
    ],
    "titulares_texto": "Ms. Muluka-Anne MITI-DRUMMOND (Zambia)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "pais_id": null
   },
   {
    "tema": "detención Arbitraria",
@@ -1723,33 +3099,39 @@
     {
      "tratamiento": "Mr.",
      "nombre": "Ethan HEE-SEOK SHIN",
-     "pais": "Republic of Korea"
+     "pais": "Republic of Korea",
+     "pais_id": "KOR"
     },
     {
      "tratamiento": "Ms.",
      "nombre": "Ganna YUDKIVSKA",
-     "pais": "Ukraine"
+     "pais": "Ukraine",
+     "pais_id": "UKR"
     },
     {
      "tratamiento": "Ms.",
      "nombre": "Miriam ESTRADA-CASTILLO",
-     "pais": "Ecuador"
+     "pais": "Ecuador",
+     "pais_id": "ECU"
     },
     {
      "tratamiento": "Mr.",
      "nombre": "Matthew GILLETT",
-     "pais": "New Zealand"
+     "pais": "New Zealand",
+     "pais_id": "NZL"
     },
     {
      "tratamiento": "Mr.",
      "nombre": "Mumba MALILA",
-     "pais": "Zambia"
+     "pais": "Zambia",
+     "pais_id": "ZMB"
     }
    ],
    "titulares_texto": "Mr. Ethan HEE-SEOK SHIN (Republic of Korea) Ms. Ganna YUDKIVSKA (Ukraine) Ms. Miriam ESTRADA-CASTILLO (Ecuador) Mr. Matthew GILLETT (New Zealand) Mr. Mumba MALILA (Zambia)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "pais_id": null
   },
   {
    "tema": "empresas",
@@ -1917,33 +3299,39 @@
     {
      "tratamiento": "Mr.",
      "nombre": "Damilola S. OLAWUYI",
-     "pais": "Nigeria"
+     "pais": "Nigeria",
+     "pais_id": "NGA"
     },
     {
      "tratamiento": "Ms.",
      "nombre": "Pichamon YEOPHANTONG",
-     "pais": "Thailand"
+     "pais": "Thailand",
+     "pais_id": "THA"
     },
     {
      "tratamiento": "Ms.",
      "nombre": "Lyra JAKULEVIČIENĖ",
-     "pais": "Lithuania"
+     "pais": "Lithuania",
+     "pais_id": "LTU"
     },
     {
      "tratamiento": "Mr.",
      "nombre": "Robert MCCORQUODALE",
-     "pais": "Australia"
+     "pais": "Australia",
+     "pais_id": "AUS"
     },
     {
      "tratamiento": "Ms.",
      "nombre": "Fernanda HOPENHAYM",
-     "pais": "Mexico"
+     "pais": "Mexico",
+     "pais_id": "MEX"
     }
    ],
    "titulares_texto": "Mr. Damilola S. OLAWUYI (Nigeria) Ms. Pichamon YEOPHANTONG (Thailand) Ms. Lyra JAKULEVIČIENĖ (Lithuania) Mr. Robert MCCORQUODALE (Australia) Ms. Fernanda HOPENHAYM (Mexico)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "pais_id": null
   },
   {
    "tema": "cambio climático",
@@ -2016,13 +3404,15 @@
     {
      "tratamiento": "Ms.",
      "nombre": "Elisa MORGERA",
-     "pais": "Italy"
+     "pais": "Italy",
+     "pais_id": "ITA"
     }
    ],
    "titulares_texto": "Ms. Elisa MORGERA (Italy)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "pais_id": null
   },
   {
    "tema": "derechos culturales",
@@ -2191,13 +3581,15 @@
     {
      "tratamiento": "Ms.",
      "nombre": "Alexandra XANTHAKI",
-     "pais": "Greece"
+     "pais": "Greece",
+     "pais_id": "GRC"
     }
    ],
    "titulares_texto": "Ms. Alexandra XANTHAKI (Greece)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "pais_id": null
   },
   {
    "tema": "desarrollo",
@@ -2316,13 +3708,15 @@
     {
      "tratamiento": "Mr.",
      "nombre": "Surya DEVA",
-     "pais": "India"
+     "pais": "India",
+     "pais_id": "IND"
     }
    ],
    "titulares_texto": "Mr. Surya DEVA (India)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "pais_id": null
   },
   {
    "tema": "discapacidad",
@@ -2465,13 +3859,15 @@
     {
      "tratamiento": "Ms.",
      "nombre": "Heba HAGRASS",
-     "pais": "Egypt"
+     "pais": "Egypt",
+     "pais_id": "EGY"
     }
    ],
    "titulares_texto": "Ms. Heba HAGRASS (Egypt)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "pais_id": null
   },
   {
    "tema": "desapariciones",
@@ -2701,33 +4097,39 @@
     {
      "tratamiento": "Ms.",
      "nombre": "Ana Lorena DELGADILLO PEREZ",
-     "pais": "Mexico"
+     "pais": "Mexico",
+     "pais_id": "MEX"
     },
     {
      "tratamiento": "Ms.",
      "nombre": "Gabriella CITRONI",
-     "pais": "Italy"
+     "pais": "Italy",
+     "pais_id": "ITA"
     },
     {
      "tratamiento": "Ms.",
      "nombre": "Grazyna BARANOWSKA",
-     "pais": "Poland"
+     "pais": "Poland",
+     "pais_id": "POL"
     },
     {
      "tratamiento": "Ms.",
      "nombre": "Aua BALDÉ",
-     "pais": "Guinea-Bissau"
+     "pais": "Guinea-Bissau",
+     "pais_id": "GNB"
     },
     {
      "tratamiento": "Mr.",
      "nombre": "Mohammed AL-OBAIDI",
-     "pais": "Iraq"
+     "pais": "Iraq",
+     "pais_id": "IRQ"
     }
    ],
    "titulares_texto": "Ms. Ana Lorena DELGADILLO PEREZ (Mexico) Ms. Gabriella CITRONI (Italy) Ms. Grazyna BARANOWSKA (Poland) Ms. Aua BALDÉ (Guinea-Bissau) Mr. Mohammed AL-OBAIDI (Iraq)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "pais_id": null
   },
   {
    "tema": "educación",
@@ -2944,13 +4346,15 @@
     {
      "tratamiento": "Ms.",
      "nombre": "Farida SHAHEED",
-     "pais": "Pakistan"
+     "pais": "Pakistan",
+     "pais_id": "PAK"
     }
    ],
    "titulares_texto": "Ms. Farida SHAHEED (Pakistan)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "pais_id": null
   },
   {
    "tema": "medio ambiente",
@@ -3095,13 +4499,15 @@
     {
      "tratamiento": "Ms.",
      "nombre": "Astrid PUENTES RIAÑO",
-     "pais": "Mexico"
+     "pais": "Mexico",
+     "pais_id": "MEX"
     }
    ],
    "titulares_texto": "Ms. Astrid PUENTES RIAÑO (Mexico)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "pais_id": null
   },
   {
    "tema": "ejecuciones",
@@ -3299,13 +4705,15 @@
     {
      "tratamiento": "Mr.",
      "nombre": "Morris TIDBALL-BINZ",
-     "pais": "Chile"
+     "pais": "Chile",
+     "pais_id": "CHL"
     }
    ],
    "titulares_texto": "Mr. Morris TIDBALL-BINZ (Chile)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "pais_id": null
   },
   {
    "tema": "alimentación",
@@ -3496,13 +4904,15 @@
     {
      "tratamiento": "Ms.",
      "nombre": "Sofía MONSALVE SUÁREZ",
-     "pais": "Colombia"
+     "pais": "Colombia",
+     "pais_id": "COL"
     }
    ],
    "titulares_texto": "Ms. Sofía MONSALVE SUÁREZ (Colombia) appointment 31/03/2026, entry on duty 01/05/2026",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "pais_id": null
   },
   {
    "tema": "deuda externa",
@@ -3719,13 +5129,15 @@
     {
      "tratamiento": "Ms.",
      "nombre": "Attiya WARIS",
-     "pais": "Kenya"
+     "pais": "Kenya",
+     "pais_id": "KEN"
     }
    ],
    "titulares_texto": "Ms. Attiya WARIS (Kenya)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "pais_id": null
   },
   {
    "tema": "libertad de opinión y de expresión",
@@ -3943,13 +5355,15 @@
     {
      "tratamiento": "Mr.",
      "nombre": "Leopoldo MALDONADO GUTIÉRREZ",
-     "pais": "Mexico"
+     "pais": "Mexico",
+     "pais_id": "MEX"
     }
    ],
    "titulares_texto": "Mr. Leopoldo MALDONADO GUTIÉRREZ (Mexico)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "pais_id": null
   },
   {
    "tema": "derechos a la libertad de reunión pacífica y de asociación",
@@ -4116,13 +5530,15 @@
     {
      "tratamiento": "Ms.",
      "nombre": "Gina ROMERO",
-     "pais": "Colombia"
+     "pais": "Colombia",
+     "pais_id": "COL"
     }
    ],
    "titulares_texto": "Ms. Gina ROMERO (Colombia)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "pais_id": null
   },
   {
    "tema": "salud",
@@ -4317,13 +5733,15 @@
     {
      "tratamiento": "Ms.",
      "nombre": "Mariângela BATISTA GALVÃO SIMÃO",
-     "pais": "Brazil"
+     "pais": "Brazil",
+     "pais_id": "BRA"
     }
    ],
    "titulares_texto": "Ms. Mariângela BATISTA GALVÃO SIMÃO (Brazil)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "pais_id": null
   },
   {
    "tema": "vivienda",
@@ -4563,13 +5981,15 @@
     {
      "tratamiento": "Mr.",
      "nombre": "Koldo CASLA",
-     "pais": "United Kingdom of Great Britain and Northern Ireland"
+     "pais": "United Kingdom of Great Britain and Northern Ireland",
+     "pais_id": "GBR"
     }
    ],
    "titulares_texto": "Mr. Koldo CASLA (United Kingdom of Great Britain and Northern Ireland)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "pais_id": null
   },
   {
    "tema": "defensores de los derechos humanos",
@@ -4787,13 +6207,15 @@
     {
      "tratamiento": "Ms.",
      "nombre": "Andrea BOLAÑOS VARGAS",
-     "pais": "Colombia"
+     "pais": "Colombia",
+     "pais_id": "COL"
     }
    ],
    "titulares_texto": "Ms. Andrea BOLAÑOS VARGAS (Colombia) 1 May 2026",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "pais_id": null
   },
   {
    "tema": "independencia de los magistrados y abogados",
@@ -5010,13 +6432,15 @@
     {
      "tratamiento": "Ms.",
      "nombre": "Margaret SATTERTHWAITE",
-     "pais": "United States of America"
+     "pais": "United States of America",
+     "pais_id": "USA"
     }
    ],
    "titulares_texto": "Ms. Margaret SATTERTHWAITE (United States of America)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "pais_id": null
   },
   {
    "tema": "pueblos indígenas",
@@ -5209,13 +6633,15 @@
     {
      "tratamiento": "Mr.",
      "nombre": "Albert K. BARUME",
-     "pais": "Democratic Republic of the Congo"
+     "pais": "Democratic Republic of the Congo",
+     "pais_id": "COD"
     }
    ],
    "titulares_texto": "Mr. Albert K. BARUME (Democratic Republic of the Congo)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "pais_id": null
   },
   {
    "tema": "desplazados internos",
@@ -5394,13 +6820,15 @@
     {
      "tratamiento": "Ms.",
      "nombre": "Paula GAVIRIA",
-     "pais": "Colombia"
+     "pais": "Colombia",
+     "pais_id": "COL"
     }
    ],
    "titulares_texto": "Ms. Paula GAVIRIA (Colombia)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "pais_id": null
   },
   {
    "tema": "orden internacional",
@@ -5594,13 +7022,15 @@
     {
      "tratamiento": "Mr.",
      "nombre": "George KATROUGALOS",
-     "pais": "Greece"
+     "pais": "Greece",
+     "pais_id": "GRC"
     }
    ],
    "titulares_texto": "Mr. George KATROUGALOS (Greece) 1 May 2024",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "pais_id": null
   },
   {
    "tema": "solidaridad internacional",
@@ -5818,13 +7248,15 @@
     {
      "tratamiento": "Ms.",
      "nombre": "Cecilia M. BAILLIET",
-     "pais": "Argentina"
+     "pais": "Argentina",
+     "pais_id": "ARG"
     }
    ],
    "titulares_texto": "Ms. Cecilia M. BAILLIET (Argentina)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "pais_id": null
   },
   {
    "tema": "mercenarios",
@@ -6018,33 +7450,39 @@
     {
      "tratamiento": "Ms.",
      "nombre": "Jovana JEZDIMIROVIC RANITO",
-     "pais": "Serbia"
+     "pais": "Serbia",
+     "pais_id": "SRB"
     },
     {
      "tratamiento": "Mr.",
      "nombre": "Andrés MACIAS TOLOSA",
-     "pais": "Colombia"
+     "pais": "Colombia",
+     "pais_id": "COL"
     },
     {
      "tratamiento": "Ms.",
      "nombre": "Michelle SMALL",
-     "pais": "South Africa"
+     "pais": "South Africa",
+     "pais_id": "ZAF"
     },
     {
      "tratamiento": "Ms.",
      "nombre": "Joana DE DEUS PEREIRA",
-     "pais": "Portugal"
+     "pais": "Portugal",
+     "pais_id": "PRT"
     },
     {
      "tratamiento": "Mr.",
      "nombre": "Ravindran DANIEL JUSTIN",
-     "pais": "India"
+     "pais": "India",
+     "pais_id": "IND"
     }
    ],
    "titulares_texto": "Ms. Jovana JEZDIMIROVIC RANITO (Serbia) Mr. Andrés MACIAS TOLOSA (Colombia) Ms. Michelle SMALL (South Africa) Ms. Joana DE DEUS PEREIRA (Portugal) Mr. Ravindran DANIEL JUSTIN (India)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "pais_id": null
   },
   {
    "tema": "migrantes",
@@ -6262,13 +7700,15 @@
     {
      "tratamiento": "Mr.",
      "nombre": "Gehad MADI",
-     "pais": "Egypt"
+     "pais": "Egypt",
+     "pais_id": "EGY"
     }
    ],
    "titulares_texto": "Mr. Gehad MADI (Egypt) 1 November 2023",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "pais_id": null
   },
   {
    "tema": "cuestiones de las minorías",
@@ -6516,13 +7956,15 @@
     {
      "tratamiento": "Mr.",
      "nombre": "Nicolas LEVRAT",
-     "pais": "Switzerland"
+     "pais": "Switzerland",
+     "pais_id": "CHE"
     }
    ],
    "titulares_texto": "Mr. Nicolas LEVRAT (Switzerland)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "pais_id": null
   },
   {
    "tema": "personas de edad",
@@ -6665,13 +8107,15 @@
     {
      "tratamiento": "Mr.",
      "nombre": "Zvezdan PIRTOŠEK",
-     "pais": "Slovenia"
+     "pais": "Slovenia",
+     "pais_id": "SVN"
     }
    ],
    "titulares_texto": "Mr. Zvezdan PIRTOŠEK (Slovenia)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "pais_id": null
   },
   {
    "tema": "campesinos",
@@ -6719,33 +8163,39 @@
     {
      "tratamiento": "Ms.",
      "nombre": "Geneviève SAVIGNY",
-     "pais": "France"
+     "pais": "France",
+     "pais_id": "FRA"
     },
     {
      "tratamiento": "Mr.",
      "nombre": "Carlos Arturo DUARTE TORRES",
-     "pais": "Colombia"
+     "pais": "Colombia",
+     "pais_id": "COL"
     },
     {
      "tratamiento": "Ms.",
      "nombre": "Uche Ewelukwa OFODILE",
-     "pais": "Nigeria"
+     "pais": "Nigeria",
+     "pais_id": "NGA"
     },
     {
      "tratamiento": "Ms.",
      "nombre": "Shalmali GUTTAL",
-     "pais": "India"
+     "pais": "India",
+     "pais_id": "IND"
     },
     {
      "tratamiento": "Mr.",
      "nombre": "Davit HAKOBYAN",
-     "pais": "Armenia"
+     "pais": "Armenia",
+     "pais_id": "ARM"
     }
    ],
    "titulares_texto": "Ms. Geneviève SAVIGNY (France) Mr. Carlos Arturo DUARTE TORRES (Colombia) Ms. Uche Ewelukwa OFODILE (Nigeria) Ms. Shalmali GUTTAL (India) Mr. Davit HAKOBYAN (Armenia)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "pais_id": null
   },
   {
    "tema": "pobreza",
@@ -6941,13 +8391,15 @@
     {
      "tratamiento": "Ms.",
      "nombre": "Elena Carolina DÍAZ GALÁN",
-     "pais": "Spain"
+     "pais": "Spain",
+     "pais_id": "ESP"
     }
    ],
    "titulares_texto": "Ms. Elena Carolina DÍAZ GALÁN (Spain)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "pais_id": null
   },
   {
    "tema": "privacidad",
@@ -7068,13 +8520,15 @@
     {
      "tratamiento": "Ms.",
      "nombre": "Ana BRIAN NOUGRÈRES",
-     "pais": "Uruguay"
+     "pais": "Uruguay",
+     "pais_id": "URY"
     }
    ],
    "titulares_texto": "Ms. Ana BRIAN NOUGRÈRES (Uruguay)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "pais_id": null
   },
   {
    "tema": "racismo",
@@ -7291,13 +8745,15 @@
     {
      "tratamiento": "Ms.",
      "nombre": "Ashwini K.P.",
-     "pais": "India"
+     "pais": "India",
+     "pais_id": "IND"
     }
    ],
    "titulares_texto": "Ms. Ashwini K.P. (India)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "pais_id": null
   },
   {
    "tema": "religión o creencias",
@@ -7515,13 +8971,15 @@
     {
      "tratamiento": "Ms.",
      "nombre": "Nazila GHANEA",
-     "pais": "Iran (Islamic Republic of"
+     "pais": "Iran (Islamic Republic of)",
+     "pais_id": "IRN"
     }
    ],
    "titulares_texto": "Ms. Nazila GHANEA (Iran (Islamic Republic of))",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "pais_id": null
   },
   {
    "tema": "venta de niños",
@@ -7739,13 +9197,15 @@
     {
      "tratamiento": "Ms.",
      "nombre": "Ai KIHARA-HUNT",
-     "pais": "Japan"
+     "pais": "Japan",
+     "pais_id": "JPN"
     }
    ],
    "titulares_texto": "Ms. Ai KIHARA-HUNT (Japan)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "pais_id": null
   },
   {
    "tema": "orientación sexual o identidad de género",
@@ -7865,13 +9325,15 @@
     {
      "tratamiento": "Mr.",
      "nombre": "Graeme REID",
-     "pais": "South Africa"
+     "pais": "South Africa",
+     "pais_id": "ZAF"
     }
    ],
    "titulares_texto": "Mr. Graeme REID (South Africa)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "pais_id": null
   },
   {
    "tema": "esclavitud y trata de personas",
@@ -7917,13 +9379,15 @@
     {
      "tratamiento": "Ms.",
      "nombre": "Katarina SCHWARZ",
-     "pais": "New Zealand"
+     "pais": "New Zealand",
+     "pais_id": "NZL"
     }
    ],
    "titulares_texto": "Ms. Katarina SCHWARZ (New Zealand)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "pais_id": null
   },
   {
    "tema": "terrorismo",
@@ -8116,13 +9580,15 @@
     {
      "tratamiento": "Mr.",
      "nombre": "Ben SAUL",
-     "pais": "Australia"
+     "pais": "Australia",
+     "pais_id": "AUS"
     }
    ],
    "titulares_texto": "Mr. Ben SAUL (Australia)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "pais_id": null
   },
   {
    "tema": "tortura",
@@ -8339,13 +9805,15 @@
     {
      "tratamiento": "Mr.",
      "nombre": "Pau PÉREZ SALES",
-     "pais": "Spain"
+     "pais": "Spain",
+     "pais_id": "ESP"
     }
    ],
    "titulares_texto": "Mr. Pau PÉREZ SALES (Spain)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "pais_id": null
   },
   {
    "tema": "tóxicos y derechos humanos",
@@ -8670,13 +10138,15 @@
     {
      "tratamiento": "Ms.",
      "nombre": "Bethanie Margaret CARNEY ALMROTH",
-     "pais": "Sweden"
+     "pais": "Sweden",
+     "pais_id": "SWE"
     }
    ],
    "titulares_texto": "Ms. Bethanie Margaret CARNEY ALMROTH (Sweden)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "pais_id": null
   },
   {
    "tema": "Justicia transicional",
@@ -8843,13 +10313,15 @@
     {
      "tratamiento": "Mr.",
      "nombre": "Bernard DUHAIME",
-     "pais": "Canada"
+     "pais": "Canada",
+     "pais_id": "CAN"
     }
    ],
    "titulares_texto": "Mr. Bernard DUHAIME (Canada)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "pais_id": null
   },
   {
    "tema": "medidas coercitivas unilaterales",
@@ -9050,13 +10522,15 @@
     {
      "tratamiento": "Ms.",
      "nombre": "Zaina JALLAD",
-     "pais": "France"
+     "pais": "France",
+     "pais_id": "FRA"
     }
    ],
    "titulares_texto": "Ms. Zaina JALLAD (France)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "pais_id": null
   },
   {
    "tema": "violencia contra las mujeres y las niñas",
@@ -9296,13 +10770,15 @@
     {
      "tratamiento": "Ms.",
      "nombre": "Reem ALSALEM",
-     "pais": "Jordan"
+     "pais": "Jordan",
+     "pais_id": "JOR"
     }
    ],
    "titulares_texto": "Ms. Reem ALSALEM (Jordan) 1 August 2021",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "pais_id": null
   },
   {
    "tema": "agua potable y al saneamiento",
@@ -9496,13 +10972,15 @@
     {
      "tratamiento": "Mr.",
      "nombre": "Pedro ARROJO-AGUDO",
-     "pais": "Spain"
+     "pais": "Spain",
+     "pais_id": "ESP"
     }
    ],
    "titulares_texto": "Mr. Pedro ARROJO-AGUDO (Spain)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "pais_id": null
   },
   {
    "tema": "mujeres y niñas",
@@ -9721,33 +11199,39 @@
     {
      "tratamiento": "Ms.",
      "nombre": "Dorothy ESTRADA-TANCK",
-     "pais": "Mexico"
+     "pais": "Mexico",
+     "pais_id": "MEX"
     },
     {
      "tratamiento": "Ms.",
      "nombre": "Claudia FLORES",
-     "pais": "United States of America"
+     "pais": "United States of America",
+     "pais_id": "USA"
     },
     {
      "tratamiento": "Ms.",
      "nombre": "Haina LU",
-     "pais": "China"
+     "pais": "China",
+     "pais_id": "CHN"
     },
     {
      "tratamiento": "Ms.",
      "nombre": "Laura NYIRINKINDI",
-     "pais": "Uganda"
+     "pais": "Uganda",
+     "pais_id": "UGA"
     },
     {
      "tratamiento": "Ms.",
      "nombre": "Ivana KRSTIĆ",
-     "pais": "Serbia"
+     "pais": "Serbia",
+     "pais_id": "SRB"
     }
    ],
    "titulares_texto": "Ms. Dorothy ESTRADA-TANCK (Mexico) Ms. Claudia FLORES (United States of America) Ms. Haina LU (China) Ms. Laura NYIRINKINDI (Uganda) Ms. Ivana KRSTIĆ (Serbia)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
+   "pais_id": null
   },
   {
    "tema": "Afganistán",
@@ -9894,13 +11378,15 @@
     {
      "tratamiento": "Mr.",
      "nombre": "Richard BENNETT",
-     "pais": "New Zealand"
+     "pais": "New Zealand",
+     "pais_id": "NZL"
     }
    ],
    "titulares_texto": "Mr. Richard BENNETT (New Zealand)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM&lang=en",
+   "pais_id": "AFG"
   },
   {
    "tema": "Belarús",
@@ -10237,13 +11723,15 @@
     {
      "tratamiento": "Mr.",
      "nombre": "Nils MUIŽNIEKS",
-     "pais": "Latvia"
+     "pais": "Latvia",
+     "pais_id": "LVA"
     }
    ],
    "titulares_texto": "Mr. Nils MUIŽNIEKS (Latvia) Since 1 November 2024",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM&lang=en",
+   "pais_id": "BLR"
   },
   {
    "tema": "Burundi",
@@ -10365,7 +11853,8 @@
    "titulares_texto": "",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM&lang=en",
+   "pais_id": "BDI"
   },
   {
    "tema": "Camboya",
@@ -10614,13 +12103,15 @@
     {
      "tratamiento": "Mr.",
      "nombre": "Thomas ANDREWS",
-     "pais": "United States of America"
+     "pais": "United States of America",
+     "pais_id": "USA"
     }
    ],
    "titulares_texto": "Mr. Thomas ANDREWS (United States of America)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM&lang=en",
+   "pais_id": "KHM"
   },
   {
    "tema": "República Centroafricana",
@@ -11006,7 +12497,8 @@
    "titulares_texto": "",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM&lang=en",
+   "pais_id": "CAF"
   },
   {
    "tema": "República Popular Democrática de Corea",
@@ -11379,13 +12871,15 @@
     {
      "tratamiento": "Ms.",
      "nombre": "Elizabeth SALMÓN",
-     "pais": "Peru"
+     "pais": "Peru",
+     "pais_id": "PER"
     }
    ],
    "titulares_texto": "Ms. Elizabeth SALMÓN (Peru)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM&lang=en",
+   "pais_id": "PRK"
   },
   {
    "tema": "Eritrea",
@@ -11723,7 +13217,8 @@
    "titulares_texto": "",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM&lang=en",
+   "pais_id": "ERI"
   },
   {
    "tema": "República Islámica del Irán",
@@ -12084,13 +13579,15 @@
     {
      "tratamiento": "Ms.",
      "nombre": "Mai SATO",
-     "pais": "Japan"
+     "pais": "Japan",
+     "pais_id": "JPN"
     }
    ],
    "titulares_texto": "Ms. Mai SATO (Japan)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM&lang=en",
+   "pais_id": "IRN"
   },
   {
    "tema": "Malí",
@@ -12427,7 +13924,8 @@
    "titulares_texto": "",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM&lang=en",
+   "pais_id": "MLI"
   },
   {
    "tema": "Myanmar",
@@ -12747,13 +14245,15 @@
     {
      "tratamiento": "Mr.",
      "nombre": "Kelley ECKELS-CURRIE",
-     "pais": "United States of America"
+     "pais": "United States of America",
+     "pais_id": "USA"
     }
    ],
    "titulares_texto": "Mr. Kelley ECKELS-CURRIE (United States of America)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM&lang=en",
+   "pais_id": "MMR"
   },
   {
    "tema": "Territorios palestinos ocupados desde 1967",
@@ -12800,13 +14300,15 @@
     {
      "tratamiento": "Ms.",
      "nombre": "Francesca ALBANESE",
-     "pais": "Italy"
+     "pais": "Italy",
+     "pais_id": "ITA"
     }
    ],
    "titulares_texto": "Ms. Francesca ALBANESE (Italy)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM&lang=en",
+   "pais_id": "PSE"
   },
   {
    "tema": "Federación de Rusia",
@@ -12927,13 +14429,15 @@
     {
      "tratamiento": "Ms.",
      "nombre": "Mariana KATZAROVA",
-     "pais": "Bulgaria"
+     "pais": "Bulgaria",
+     "pais_id": "BGR"
     }
    ],
    "titulares_texto": "Ms. Mariana KATZAROVA (Bulgaria)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM&lang=en",
+   "pais_id": "RUS"
   },
   {
    "tema": "República Árabe Siria",
@@ -12980,7 +14484,8 @@
    "titulares_texto": "(Other) will start once the mandate of the commission of inquiry ends",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM&lang=es",
-   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM&lang=en"
+   "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM&lang=en",
+   "pais_id": "SYR"
   }
  ],
  "indice_actos": {
