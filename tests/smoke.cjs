@@ -59,6 +59,14 @@ t('país elegido → todos los mandatos temáticos pueden comunicarse con él',(
 t('país + tema («tortura») filtra los mandatos aplicables',()=>{els.pTema.value='tortura';els.pTema.dataset.alt='';run('renderPaises()');const t=els.pTemas.innerHTML;assert.ok(t.includes('sobre la tortura'));assert.ok((t.match(/Temático: puede comunicarse/g)||[]).length<10)});
 t('país con mandato propio aparece primero (Belarús)',()=>{els.pSel.value='BLR';els.pTema.value='';els.pTema.dataset.alt='';run('renderPaises()');const t=els.pTemas.innerHTML;assert.ok(t.indexOf('Mandato por país')>0&&t.indexOf('Mandato por país')<t.indexOf('Temático: puede'));els.pSel.value='';run('renderPaises()')});
 t('búsqueda guiada con país opcional',()=>{els.guiadaSel.value='tortura|detencion|torture|detention';els.guiadaPais.value='KHM';run('guiada()');assert.ok(els.pTemas.innerHTML.includes('Camboya'))});
+t('sin resultados → solicitud de verificación pública y prellenada',()=>{const r=smart('zzzxq');assert.ok(r.includes('issues/new?template=solicitud-verificacion.yml')&&r.includes('busqueda=zzzxq')&&r.includes('formulario <b>público</b>')&&r.includes('no incluyas datos personales'))});
+t('con resultados → enlace discreto de solicitud',()=>assert.ok(smart('tortura').includes('Pedir verificación')));
+t('recuperar símbolo ausente → solicitud con el símbolo',()=>assert.ok(recover('A/HRC/RES/99/99').includes('busqueda=A%2FHRC%2FRES%2F99%2F99')));
+t('países: país inexistente → solicitud',()=>{els.pSel.value='';els.pQ.value='atlantida';run('renderPaises()');assert.ok(els.pOut.innerHTML.includes('issues/new'));els.pQ.value='';run('renderPaises()')});
+t('países: sin mandato por país se dice explícitamente (Colombia)',()=>{els.pSel.value='COL';run('renderPaises()');assert.ok(els.pBody.innerHTML.includes('Sin mandato por país vigente'));els.pSel.value='';run('renderPaises()')});
+t('explorador: País+Colombia explica que no hay mandato por país y remite a Países',()=>{els.q.value='';els.modal.value='País';els.pais.value='COL';run('filterMandates()');const c=els.count.innerHTML;assert.ok(c.includes('no tiene mandato por país vigente')&&c.includes('irPais'));els.modal.value='';els.pais.value='';run('filterMandates()')});
+t('procedencia de las fuentes declarada',()=>assert.ok(html.includes('Qué es dato oficial y qué es elaboración propia')&&html.includes('Elaboración propia (no es fuente)')));
+t('plantilla de solicitud y proceso de validación existen',()=>{assert.ok(fs.existsSync(path.join(root,'.github/ISSUE_TEMPLATE/solicitud-verificacion.yml')));assert.ok(fs.existsSync(path.join(root,'docs/PROCESO_DE_VALIDACION.md')))});
 t('ficha de mandato',()=>{run('details(0)');assert.ok(els.cardsResults.innerHTML.includes('Cadena de actos jurídicos'))});
 t('exportCSV',()=>run('exportCSV()'));
 t('autoría y repositorio',()=>assert.ok(html.includes('sukima-labs/onu-arqueologia-documental')&&html.includes('Sukima-Labs')));
