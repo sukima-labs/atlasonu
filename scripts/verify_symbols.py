@@ -82,6 +82,11 @@ def query(field, sym, tries=6):
             time.sleep(4 * (i + 1)); err = str(e)
     return {'error': err}
 
+class RedError(Exception): pass
+def sinerror(r, k):
+    if isinstance(r, dict) and 'error' in r: raise RedError(k)
+    return r
+
 def verify(orig, por, cache, mtitle=''):
     s = clean(orig, por)
     if not s: return {'original': orig, 'estado': 'SIN_SIMBOLO'}
@@ -91,7 +96,7 @@ def verify(orig, por, cache, mtitle=''):
         if key not in cache:
             cache[key] = query('993__a' if not isinstance(c, str) else '191__a', c if isinstance(c, str) else c[1])
             time.sleep(0.25)
-        r = cache[key]; tried.append(key)
+        r = sinerror(cache[key], key); tried.append(key)
         want = c if isinstance(c, str) else c[1]
         exact = [h for h in r if want in h['simbolos'] or want in h['borradores']] if isinstance(r, list) else []
         if exact:
@@ -100,7 +105,7 @@ def verify(orig, por, cache, mtitle=''):
                 # el campo 993 del borrador remite a la resolución adoptada
                 for rs in [b for b in hit['borradores'] if '/RES/' in b]:
                     if rs not in cache: cache[rs] = query('191__a', rs); time.sleep(0.25)
-                    rr = [h for h in cache[rs] if rs in h['simbolos']] if isinstance(cache[rs], list) else []
+                    rr = [h for h in sinerror(cache[rs], rs) if rs in h['simbolos']] if isinstance(cache[rs], list) else []
                     if rr:
                         rr[0] = dict(rr[0]); rr[0]['borradores'] = sorted(set(rr[0]['borradores'] + [hit['simbolo']]))
                         return {'original': orig, 'limpio': s, 'estado': 'VERIFICADO_NORMALIZADO', 'consultado': rs, 'via_borrador': hit['simbolo'], 'registro': rr[0]}
@@ -116,7 +121,7 @@ def verify(orig, por, cache, mtitle=''):
                     r2 = cache.get(k2)
                     if r2 is None:
                         r2 = cache[k2] = query('191__a', c2 if isinstance(c2, str) else c2[1]); time.sleep(0.25)
-                    h2 = [h for h in r2 if k2 in h['simbolos']] if isinstance(r2, list) else []
+                    sinerror(r2, k2); h2 = [h for h in r2 if k2 in h['simbolos']] if isinstance(r2, list) else []
                     if h2 and overlap(mtitle, h2[0]['titulo']) >= 0.2:
                         return {'original': orig, 'limpio': s, 'estado': 'VERIFICADO_NORMALIZADO', 'consultado': k2, 'coincidencia': overlap(mtitle, h2[0]['titulo']), 'registro': h2[0]}
                 return tried_pending
@@ -153,12 +158,21 @@ def main(tm, cm, out):
         print(len(fallidas), 'consultas fallidas; reintento en serie tras una pausa de 45 s', flush=True); time.sleep(45)
         for kc in fallidas:
             k, r = run(kc); cache[k] = r; time.sleep(1.5)
-    json.dump(cache, open(cache_path, 'w'))
-    errores = [k for k, v in cache.items() if isinstance(v, dict) and 'error' in v]
-    if errores:   # un fallo de red no debe degradar datos ya verificados: se aborta sin publicar nada
-        print('ABORTA: errores de red en', len(errores), 'consultas, p. ej.', errores[:3]); sys.exit(2)
-    res = [dict(mandato=t, acto=a, **verify(s, por, cache, t)) for t, a, s, por in jobs]
-    json.dump({'fuente': DL, 'resultados': res}, open(out, 'w'), ensure_ascii=False, indent=1)
+    json.dump({k: v for k, v in cache.items() if not (isinstance(v, dict) and 'error' in v)}, open(cache_path, 'w'))   # los errores no se guardan: se reintentan la próxima vez
+    prev = {}
+    if os.path.exists(out):
+        try: prev = {(r['mandato'], r['acto']): r for r in json.load(open(out, encoding='utf-8'))['resultados']}
+        except Exception: prev = {}
+    res, retenidos = [], []
+    for t, a, s, por in jobs:
+        try: res.append(dict(mandato=t, acto=a, **verify(s, por, cache, t)))
+        except RedError as e:
+            if (t, a) not in prev: print('ABORTA: error de red en', e, 'y no hay resultado previo de', t, a); sys.exit(2)
+            res.append(prev[(t, a)]); retenidos.append([t, a])   # se conserva lo ya verificado; no se degrada nada
+    if len(retenidos) > max(5, int(0.03 * len(jobs))):
+        print('ABORTA: errores de red en', len(retenidos), 'actos (más del 3 %)'); sys.exit(2)
+    if retenidos: print('Se conservan', len(retenidos), 'resultados anteriores por errores de red:', retenidos[:5], flush=True)
+    json.dump({'fuente': DL, 'resultados': res, 'retenidos': retenidos}, open(out, 'w'), ensure_ascii=False, indent=1)
     from collections import Counter
     print(Counter(r['estado'] for r in res))
 
