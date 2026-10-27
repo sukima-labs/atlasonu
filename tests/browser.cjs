@@ -76,7 +76,7 @@ const URL = process.env.ATLAS_URL || 'file://' + path.resolve(__dirname, '..', '
     await page.evaluate(() => showPage('inicio')); await page.fill('#quick', 'Camboya'); await page.waitForTimeout(500);
     await page.locator('#smartOut button', { hasText: 'Ver país' }).first().click();
     ok(vp.name + ': la búsqueda inteligente lleva a la sección del país', await page.isVisible('#paises') && /Camboya/.test(await page.textContent('#pOut')));
-    for (const id of ['inicio', 'explorar', 'paises', 'arqueologia', 'recuperar', 'mecanismos', 'codificacion', 'seleccion', 'auditoria', 'fuentes']) {
+    for (const id of ['inicio', 'explorar', 'paises', 'sistema', 'arqueologia', 'recuperar', 'mecanismos', 'codificacion', 'seleccion', 'auditoria', 'fuentes']) {
       await page.evaluate(i => showPage(i), id);
       ok(vp.name + ': «Para qué sirve» visible en ' + id, await page.isVisible('#' + id + ' .about') && /Para qué sirve esta pantalla/.test(await page.textContent('#' + id + ' .about')));
     }
