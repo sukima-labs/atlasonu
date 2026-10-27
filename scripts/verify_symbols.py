@@ -149,6 +149,9 @@ def main(tm, cm, out):
     with cf.ThreadPoolExecutor(4) as ex:
         for k, r in ex.map(run, todo): cache[k] = r
     json.dump(cache, open(cache_path, 'w'))
+    errores = [k for k, v in cache.items() if isinstance(v, dict) and 'error' in v]
+    if errores:   # un fallo de red no debe degradar datos ya verificados: se aborta sin publicar nada
+        print('ABORTA: errores de red en', len(errores), 'consultas, p. ej.', errores[:3]); sys.exit(2)
     res = [dict(mandato=t, acto=a, **verify(s, por, cache, t)) for t, a, s, por in jobs]
     json.dump({'fuente': DL, 'resultados': res}, open(out, 'w'), ensure_ascii=False, indent=1)
     from collections import Counter

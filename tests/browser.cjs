@@ -40,9 +40,9 @@ const URL = process.env.ATLAS_URL || 'file://' + path.resolve(__dirname, '..', '
     await page.locator('#smartOut button', { hasText: 'Ver texto y ruta' }).first().click();
     ok(vp.name + ': desde el resultado se abre la recuperación del texto', await page.isVisible('#recuperar') && /LOCALIZADO/.test(await page.textContent('#recoverResult')));
     await page.getByRole('button', { name: /Países/ }).first().click();
-    ok(vp.name + ': sección Países visible con 62 filas', await page.isVisible('#paises') && (await page.locator('#pBody tr').count()) === 62);
+    ok(vp.name + ': sección Países visible con 196 filas', await page.isVisible('#paises') && (await page.locator('#pBody tr').count()) === 196);
     await page.getByRole('button', { name: /^América Latina y el Caribe \(\d+\)/ }).click(); await page.waitForTimeout(200);
-    ok(vp.name + ': chip «América Latina y el Caribe» → 10 países', (await page.locator('#pBody tr').count()) === 10 && /Colombia/.test(await page.textContent('#pBody')));
+    ok(vp.name + ': chip «América Latina y el Caribe» → 33 países', (await page.locator('#pBody tr').count()) === 33 && /Colombia/.test(await page.textContent('#pBody')));
     await page.getByRole('button', { name: /^Todos \(\d+\)/ }).click(); await page.waitForTimeout(200);
     await page.fill('#pQ', 'siria'); await page.waitForTimeout(250);
     ok(vp.name + ': buscar «siria» muestra mandato y comisión', /Siria/.test(await page.textContent('#pBody')) && /S-17\/1/.test(await page.textContent('#pBody')) && (await page.locator('#pBody tr').count()) === 1);
@@ -68,6 +68,17 @@ const URL = process.env.ATLAS_URL || 'file://' + path.resolve(__dirname, '..', '
     await page.evaluate(() => showPage('inicio')); await page.fill('#quick', 'Camboya'); await page.waitForTimeout(500);
     await page.locator('#smartOut button', { hasText: 'Ver país' }).first().click();
     ok(vp.name + ': la búsqueda inteligente lleva a la sección del país', await page.isVisible('#paises') && /Camboya/.test(await page.textContent('#pOut')));
+    for (const id of ['inicio', 'explorar', 'paises', 'arqueologia', 'recuperar', 'mecanismos', 'codificacion', 'seleccion', 'auditoria', 'fuentes']) {
+      await page.evaluate(i => showPage(i), id);
+      ok(vp.name + ': «Para qué sirve» visible en ' + id, await page.isVisible('#' + id + ' .about') && /Sirve para/.test(await page.textContent('#' + id + ' .about')));
+    }
+    await page.evaluate(() => showPage('arqueologia')); await page.fill('#qt', 'agua'); await page.waitForTimeout(250);
+    ok(vp.name + ': Arqueología lista actos reales del agua (A/HRC/RES/60/9)', /A\/HRC\/RES\/60\/9/.test(await page.textContent('#traceBody')));
+    await page.fill('#qt', '');
+    await page.evaluate(() => showPage('inicio')); await page.waitForTimeout(1200);
+    const nov = await page.textContent('#novedades');
+    ok(vp.name + ': panel de novedades (' + (URL.startsWith('http') ? 'en línea: última revisión' : 'sin conexión: aviso') + ')', URL.startsWith('http') ? /Última revisión/.test(nov) : /sin conexión/.test(nov));
+    ok(vp.name + ': últimas resoluciones visibles', (await page.locator('#recientes .listline').count()) === 8);
     await page.evaluate(() => showPage('mecanismos'));
     ok(vp.name + ': otros mecanismos (CERD…CED) visibles', (await page.locator('#mecBody tr').count()) === 25 && /CERD/.test(await page.textContent('#mecBody')));
     await page.evaluate(() => showPage('recuperar'));
