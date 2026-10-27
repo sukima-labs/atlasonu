@@ -10,6 +10,7 @@ Plataforma académica independiente para investigar los procedimientos especiale
 - **421 actos jurídicos** (creación, prórrogas) contrastados uno a uno con la Biblioteca Digital de la ONU: 401 localizados, 20 con reservas explicadas.
 - **Ruta al texto de las 400 resoluciones localizadas:** 374 con PDF propio (comprobado leyendo su primera página; muestreo del registro 30/30) y 26 antiguas reproducidas en un informe de sesión, con páginas (p. ej. `E/CN.4/RES/1985/33` → `E/1985/22`, pp. 71–72).
 - **25 mecanismos conexos** verificados: los 10 órganos de tratados (datos de la diapositiva del curso de la UAH), EPU, procedimientos 1235 y 1503, EMRIP, Foro de Minorías, ACNUDH y 8 comisiones de investigación / misiones.
+- **Búsqueda inteligente** en la portada: entiende sinónimos ES/EN («desaparecidos», «comida», «niños migrantes»), corrige erratas («tortrua») y muestra, mientras escribes, mandatos, resoluciones y mecanismos relacionados con acceso directo a la ficha o al texto.
 - **Búsqueda guiada** para quien no conoce la ONU, filtro de verificación, Excel descargable (`data/atlas-onu-catalogo-v07.xlsx`).
 - **Arqueología documental real:** una resolución se localiza aunque el símbolo esté mal escrito (`A/HRC/54/26`, `E/CN.4/1991/42`, `20 (XXXVI)`), un borrador `L.` se traduce a la resolución adoptada y la ficha enlaza el registro y los PDF en español e inglés.
 - **Distingue resolución, informe y borrador.** Si un símbolo existe pero es un informe, lo dice. Si una equivalencia es inferida, lo dice.
@@ -25,7 +26,7 @@ Abrir `index.html` en cualquier navegador (también sin conexión: los datos van
 | `index.html` | Aplicación |
 | `data/` | `catalogo.json` y `atlas-data.js` (generados), `fuentes/` (descargas oficiales y verificación), `evidencias.json`, Excel del piloto |
 | `scripts/` | Descarga, normalización, verificación y construcción (`actualizar_datos.sh` ejecuta todo) |
-| `tests/` | `smoke.cjs` (33 pruebas de lógica) y `browser.cjs` (Chromium real, 36 comprobaciones, escritorio y móvil) |
+| `tests/` | `smoke.cjs` (42 pruebas de lógica) y `browser.cjs` (Chromium real, 36 comprobaciones, escritorio y móvil) |
 | `audit/` | Auditoría contra los 13 requisitos, discrepancias respecto a v0.6, inventario, manifiesto de integridad |
 | `docs/` | Traspaso original |
 | `archive/` | Versiones previas sin modificar |
