@@ -38,6 +38,7 @@ sheet('Textos', ['Símbolo', 'Título', 'Adoptada', 'Estado del texto', 'PDF esp
 sheet('Mecanismos', ['Categoría', 'Siglas', 'Nombre', 'Name', 'Símbolo', 'Qué es el acto', 'Adopción', 'Entrada en vigor', 'Miembros', 'Estado', 'Registro'],
  [[m['categoria'], m['siglas'], m['nombre'], m['nameEN'], m.get('simbolo', m['simbolo_semilla']), m['acto'], m['adopcion'], m['entrada_vigor'], m['miembros'], m['estado'], m.get('registro', '')] for m in d['mecanismos']], [34, 14, 60, 60, 22, 50, 10, 12, 10, 14, 40])
 sheet('Alertas', ['ID', 'Nivel', 'Referencia', 'Tema', 'Problema', 'Acción'], [[a['id'], a.get('nivel', ''), a.get('simbolo', ''), a.get('tema', ''), a.get('problema', ''), a.get('accion', '')] for a in d['alertas']], [8, 8, 28, 60, 100, 60])
-sheet('Países', ['País', 'Country', 'Mandato sobre el país', 'Comisiones / misiones', 'Titulares de este país (mandato)'],
- [[p['es'], p['en'], d['mandatos'][p['mandato']]['nameEN'] if p['mandato'] is not None else '', '; '.join(d['mecanismos'][i]['nameEN'] for i in p['comisiones']), '; '.join(t['titular'] + ' — ' + d['mandatos'][t['idx']]['nameEN'] for t in p['titulares_de'])] for p in d['paises']], [38, 38, 60, 60, 120])
+RG = {r['id']: r['corto'] for r in d['regiones']}
+sheet('Países', ['País', 'Grupo regional', 'Country', 'Mandato sobre el país', 'Comisiones / misiones', 'Titulares de este país (mandato)'],
+ [[p['es'], RG[p['region']], p['en'], d['mandatos'][p['mandato']]['nameEN'] if p['mandato'] is not None else '', '; '.join(d['mecanismos'][i]['nameEN'] for i in p['comisiones']), '; '.join(t['titular'] + ' — ' + d['mandatos'][t['idx']]['nameEN'] for t in p['titulares_de'])] for p in d['paises']], [38, 30, 38, 60, 60, 120])
 wb.save('data/atlas-onu-catalogo-v07.xlsx'); print('xlsx ok', [ws.title + ':' + str(ws.max_row - 1) for ws in wb.worksheets[1:]])
