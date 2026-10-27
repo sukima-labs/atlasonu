@@ -1,11 +1,15 @@
 # Auditoría de enlaces externos (2026-10-27)
 
-Total: 571 · OK 112 · anti-robot (no concluyente) 459 · rotos 0
+Total: 646 · OK 161 · anti-robot (no concluyente) 484 · rotos 1
 
 Los PDF del registro de la Biblioteca Digital no se auditan aquí: se validaron leyendo su contenido (ver `muestreo_pdfs_registro.json` y `scripts/resolve_texts.py`).
 
 
-## ANTIRROBOT (459)
+## ROTO (1)
+
+- `RemoteDisconnected` https://www.unwomen.org/es/csw — entidad CSW
+
+## ANTIRROBOT (484)
 
 - `202` https://digitallibrary.un.org/record/461037 — alertas V-001
 - `202` https://digitallibrary.un.org/record/495575 — alertas V-002
@@ -18,6 +22,31 @@ Los PDF del registro de la Biblioteca Digital no se auditan aquí: se validaron 
 - `202` https://digitallibrary.un.org/record/3824711 — alertas V-052
 - `202` https://digitallibrary.un.org/record/3824706 — alertas V-055
 - `202` https://digitallibrary.un.org/record/1305990 — alertas V-064
+- `403` https://www.ohchr.org/es/treaty-bodies/cat — comité CAT
+- `403` https://www.ohchr.org/es/treaty-bodies/ccpr — comité CCPR
+- `403` https://www.ohchr.org/es/treaty-bodies/ced — comité CED
+- `403` https://www.ohchr.org/es/treaty-bodies/cedaw — comité CEDAW
+- `403` https://www.ohchr.org/es/treaty-bodies/cerd — comité CERD
+- `403` https://www.ohchr.org/es/treaty-bodies/cescr — comité CESCR
+- `403` https://www.ohchr.org/es/treaty-bodies/cmw — comité CMW
+- `403` https://www.ohchr.org/es/treaty-bodies/crc — comité CRC
+- `403` https://www.ohchr.org/es/treaty-bodies/crpd — comité CRPD
+- `403` https://www.ohchr.org/es — entidad ACNUDH
+- `403` https://www.acnur.org/ — entidad ACNUR
+- `403` https://www.cepal.org/es — entidad CEPAL
+- `403` https://unece.org/ — entidad CEPE
+- `403` https://www.unescwa.org/ — entidad CESPAO
+- `403` https://www.ifad.org/es — entidad FIDA
+- `403` https://www.imf.org/es/home — entidad FMI
+- `403` https://social.desa.un.org/es/issues/indigenous-peoples — entidad FPCI
+- `403` https://www.icao.int/ — entidad OACI
+- `403` https://www.iaea.org/es — entidad OIEA
+- `403` https://www.iom.int/es — entidad OIM
+- `403` https://www.unido.org/ — entidad ONUDI
+- `403` https://www.unwto.org/es — entidad ONUTURISMO
+- `403` https://www.ctbto.org/es — entidad OTPCE
+- `403` https://www.undp.org/es — entidad PNUD
+- `403` https://www.unrwa.org/ — entidad UNRWA
 - `202` https://digitallibrary.un.org/record/680972 — informe A/HRC/10/29
 - `202` https://digitallibrary.un.org/record/626770 — informe A/HRC/6/22
 - `202` https://digitallibrary.un.org/record/636374 — informe A/HRC/7/78
@@ -42,28 +71,3 @@ Los PDF del registro de la Biblioteca Digital no se auditan aquí: se validaron 
 - `202` https://digitallibrary.un.org/record/214657 — mecanismo 1235
 - `202` https://digitallibrary.un.org/record/214705 — mecanismo 1503
 - `202` https://digitallibrary.un.org/record/180226 — mecanismo ACNUDH
-- `202` https://digitallibrary.un.org/record/74216 — mecanismo CAT
-- `202` https://digitallibrary.un.org/record/203277 — mecanismo CCPR
-- `202` https://digitallibrary.un.org/record/589467 — mecanismo CED
-- `202` https://digitallibrary.un.org/record/10649 — mecanismo CEDAW
-- `202` https://digitallibrary.un.org/record/203552 — mecanismo CERD
-- `202` https://digitallibrary.un.org/record/100079 — mecanismo CESCR
-- `202` https://digitallibrary.un.org/record/105636 — mecanismo CMW
-- `202` https://digitallibrary.un.org/record/850714 — mecanismo COI Burundi
-- `202` https://digitallibrary.un.org/record/3928090 — mecanismo COI Israel/TPO
-- `202` https://digitallibrary.un.org/record/699846 — mecanismo COI Libia
-- `202` https://digitallibrary.un.org/record/714674 — mecanismo COI Siria
-- `202` https://digitallibrary.un.org/record/3963815 — mecanismo COI Ucrania
-- `202` https://digitallibrary.un.org/record/80135 — mecanismo CRC
-- `202` https://digitallibrary.un.org/record/588742 — mecanismo CRPD
-- `202` https://digitallibrary.un.org/record/615964 — mecanismo EMRIP
-- `202` https://digitallibrary.un.org/record/571575 — mecanismo EPU
-- `202` https://digitallibrary.un.org/record/603041 — mecanismo EPU / Denuncia
-- `202` https://digitallibrary.un.org/record/609534 — mecanismo Foro Minorías
-- `202` https://digitallibrary.un.org/record/3840226 — mecanismo MDH Venezuela
-- `202` https://digitallibrary.un.org/record/481982 — mecanismo SPT
-- `202` https://digitallibrary.un.org/record/762217 — registro A/HRC/DEC/24/115
-- `202` https://digitallibrary.un.org/record/769433 — registro A/HRC/DEC/25/116
-- `202` https://digitallibrary.un.org/record/3857022 — registro A/HRC/DEC/43/115
-- `202` https://digitallibrary.un.org/record/655933 — registro A/HRC/RES/10/23
-- `202` https://digitallibrary.un.org/record/680724 — registro A/HRC/RES/13/4

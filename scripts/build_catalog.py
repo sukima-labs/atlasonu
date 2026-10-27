@@ -173,7 +173,14 @@ for iso, o in OHP.items():
                    'invitacion': {'si': o['invitacion_permanente'], 'fecha': o['fecha_invitacion']}, 'tratados': TR['paises'].get(iso, {}), 'docs': DP.get(iso, {'co': 0, 'epu': 0, 'visitas': 0, 'ultima_co': None}), 'visitas': {k: o['visitas'][k] for k in ('realizadas', 'programadas')}})
 regiones = [{'id': v[0], 'en': k or 'None', 'es': v[1], 'corto': v[2]} for k, v in REGDEF.items()]
 paises.sort(key=lambda p: p['es'].lower())
-data = {'version': '0.7', 'paises': paises, 'regiones': regiones, 'regiones_fuente': {'url': REG['fuente'], 'consultado': REG['consultado']}, 'paises_fuente': {'url': OH['fuente'], 'consultado': OH['consultado']}, 'tratados': [{k: v for k, v in t.items()} for t in TR['tratados']], 'tratados_fuente': {'url': TR['fuente'], 'consultado': TR['consultado']}, 'mecanismos': mec, 'consultado': fecha,
+SIS = json.load(open('data/sistema_onu.json', encoding='utf-8'))
+TXT = json.load(open('data/fuentes/tratados_texto.json', encoding='utf-8')) if os.path.exists('data/fuentes/tratados_texto.json') else {}
+os.makedirs('data/tratados', exist_ok=True)
+for mt, v in TXT.items():
+    open(f'data/tratados/{mt}.js', 'w', encoding='utf-8').write(f"window.TRAT_TXT=window.TRAT_TXT||{{}};window.TRAT_TXT['{mt}']=" + json.dumps(v, ensure_ascii=False, separators=(',', ':'), sort_keys=True) + ';\n')
+for t in TR['tratados']:
+    if t['mtdsg'] in TXT: t['texto'] = {'calidad': TXT[t['mtdsg']]['calidad'], 'articulos': len(TXT[t['mtdsg']]['articulos']), 'fuente': TXT[t['mtdsg']]['fuente']}
+data = {'version': '0.7', 'sistema': SIS, 'paises': paises, 'regiones': regiones, 'regiones_fuente': {'url': REG['fuente'], 'consultado': REG['consultado']}, 'paises_fuente': {'url': OH['fuente'], 'consultado': OH['consultado']}, 'tratados': [{k: v for k, v in t.items()} for t in TR['tratados']], 'tratados_fuente': {'url': TR['fuente'], 'consultado': TR['consultado']}, 'mecanismos': mec, 'consultado': fecha,
         'fuentes': ['https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM', 'https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM',
                     'https://digitallibrary.un.org/'],
         'mandatos': recs, 'indice_actos': index,
