@@ -28,6 +28,11 @@ const URL = process.env.ATLAS_URL || 'file://' + path.resolve(__dirname, '..', '
     await page.fill('#q', 'agua'); await page.evaluate(() => filterMandates());
     await page.locator('#mandBody button', { hasText: 'Ver ficha' }).first().click();
     ok(vp.name + ': clic en «Ver ficha» abre cronología', /Cadena de actos jurídicos/.test(await page.textContent('#cardsResults')) && /A\/HRC\/RES\/60\/9/.test(await page.textContent('#cardsResults')));
+    await page.evaluate(() => showPage('inicio'));
+    await page.selectOption('#guiadaSel', { index: 1 }); await page.getByRole('button', { name: 'Ver mandatos' }).click();
+    ok(vp.name + ': búsqueda guiada lleva a mandatos de tortura/detención', await page.isVisible('#explorar') && /tortura|detenci/i.test(await page.textContent('#mandBody')));
+    await page.evaluate(() => showPage('mecanismos'));
+    ok(vp.name + ': otros mecanismos (CERD…CED) visibles', (await page.locator('#mecBody tr').count()) === 25 && /CERD/.test(await page.textContent('#mecBody')));
     await page.evaluate(() => showPage('recuperar'));
     await page.getByRole('button', { name: /caso real de 1980/i }).click();
     const rr = await page.textContent('#recoverResult');
