@@ -162,6 +162,17 @@ const URL = process.env.ATLAS_URL || 'file://' + path.resolve(__dirname, '..', '
     ok('historia → tratado: el botón abre el tratado correspondiente (CAT)', /Comité contra la Tortura/.test(await pg.textContent('#trDetalle')));
     await pg.close();
   }
+  // Exactitud de números y sugerencias
+  {
+    const pg = await browser.newPage({ viewport: { width: 1366, height: 900 } }); await pg.goto(URL); await pg.waitForFunction(() => window.__atlasListo);
+    await pg.evaluate(() => showPage('auditoria'));
+    ok('exactitud: el panel muestra cuántos números son exactos y cuáles se corrigieron, con los dos números', /Números exactos/.test(await pg.textContent('#numAudit')) && /A\/HRC\/36\/L\.16/.test(await pg.textContent('#numAudit')) && /A\/HRC\/RES\/36\/23/.test(await pg.textContent('#numAudit')));
+    await pg.click('#numAudit button:has-text("Por mandato")');
+    ok('exactitud: la vista por mandato lista los mandatos con dudas', (await pg.locator('#numAudit tbody tr').count()) >= 30);
+    await pg.evaluate(() => showPage('recuperar')); await pg.fill('#recoverQuery', 'A/HRC/RES/36/24'); await pg.evaluate(() => recoverDocument());
+    ok('recuperar: un número equivocado propone el parecido con su título', /¿Quisiste decir…\?/.test(await pg.textContent('#recoverResult')) && /A\/HRC\/RES\/36\/23/.test(await pg.textContent('#recoverResult')));
+    await pg.close();
+  }
   // Navegación móvil: menú lateral con botón, se cierra al navegar; sin desbordes en ningún tamaño de teléfono/tableta
   for (const [nom, w, h] of [['iPhone SE', 375, 667], ['Android 412', 412, 915], ['tableta 768', 768, 1024]]) {
     const pg = await browser.newPage({ viewport: { width: w, height: h }, hasTouch: true, isMobile: true }); await pg.goto(URL); await pg.waitForFunction(() => window.__atlasListo);

@@ -6,7 +6,7 @@ Plataforma académica independiente para investigar los procedimientos especiale
 **Aviso:** iniciativa académica independiente. No es un producto oficial de Naciones Unidas ni de la Universidad de Alcalá.
 
 ## Se actualiza sola
-Cada día (04:17 UTC) un flujo de GitHub Actions (`.github/workflows/actualizar-datos.yml`) vuelve a consultar las fuentes oficiales —índice de mandatos y visitas de OHCHR, y Biblioteca Digital de la ONU—, verifica de nuevo cada símbolo, detecta qué cambió y, **solo si los datos no se degradan**, lo publica. La plataforma muestra la fecha de la última revisión, las novedades detectadas y avisa si hay datos más recientes que los de la copia abierta.
+Dos veces al día (12:17 y 00:17 hora de España en invierno; 13:17 y 01:17 en verano) un flujo de GitHub Actions (`.github/workflows/actualizar-datos.yml`) vuelve a consultar las fuentes oficiales —índice de mandatos y visitas de OHCHR, y Biblioteca Digital de la ONU—, verifica de nuevo cada símbolo, detecta qué cambió y, **solo si los datos no se degradan**, lo publica. La plataforma muestra la fecha de la última revisión, las novedades detectadas y avisa si hay datos más recientes que los de la copia abierta.
 - **Salvaguardas:** un fallo de red aborta sin publicar; si caen los actos localizados, los textos o los mandatos, no se publica (`scripts/validar_datos.py`); las pruebas de invariantes deben pasar (`tests/invariantes.cjs`).
 - **Sin ruido:** si no cambió nada, solo se actualiza `data/estado.json` (sello de última revisión).
 - **A mano:** `bash scripts/actualizar_datos.sh`.
@@ -36,7 +36,7 @@ Abrir `index.html` en cualquier navegador (también sin conexión: los datos van
 | `index.html` | Aplicación |
 | `data/` | `catalogo.json` y `atlas-data.js` (generados), `fuentes/` (descargas oficiales y verificación), `evidencias.json`, Excel del piloto |
 | `scripts/` | Descarga, normalización, verificación y construcción (`actualizar_datos.sh` ejecuta todo) |
-| `tests/` | `smoke.cjs` (120 pruebas de lógica, `invariantes.cjs`: 11) y `browser.cjs` (Chromium real, 162 comprobaciones, escritorio y móvil) |
+| `tests/` | `smoke.cjs` (123 pruebas de lógica, `invariantes.cjs`: 11) y `browser.cjs` (Chromium real, 165 comprobaciones, escritorio y móvil) |
 | `audit/` | Auditoría contra los 13 requisitos, discrepancias respecto a v0.6, inventario, manifiesto de integridad |
 | `docs/` | Traspaso original |
 | `archive/` | Versiones previas sin modificar |
@@ -87,3 +87,11 @@ Código: **MIT** (`LICENSE`). Contenido propio (siglas, cuadros, explicaciones, 
 
 - **Portada:** pensada para quien llega sin saber por dónde empezar. Un buscador grande («escribe como hablas»), ocho caminos («Empieza por aquí»), una nota que explica dónde está el menú (en el celular, las tres líneas «☰ Menú»), un hecho de la historia de la ONU «un día como hoy», la búsqueda guiada y las novedades de las fuentes. Las cifras del catálogo (mandatos, calidad documental, últimas resoluciones) pasaron a un panel plegable «para investigadores».
 - **Su historia** (`data/historia.json`, elaboración propia con resolución citada en cada hecho): 56 hechos de 1945 a 2025 en una línea de tiempo interactiva, con filtros por época y tema, buscador, control de año, **recorrido guiado** por los 26 hitos (★) y enlaces al tratado, entidad o mandatos relacionados; cada hecho muestra además qué mandatos vigentes del catálogo se crearon ese año.
+
+## Exactitud de los números
+
+En «Alertas de verificación» hay un panel **«Exactitud de los números de cada mandato»**: de los 421 actos, cuántos tienen un número exacto (338), cuántos fueron corregidos porque el índice de OHCHR citaba otro número (63) y cuántos hay que confirmar a mano (20); por acto y por mandato, con el número del índice y el verificado lado a lado, y exportable a CSV. «Recuperar documentos» sugiere los números más parecidos (con su título) cuando se teclea uno equivocado.
+
+## Mini PC (opcional, como respaldo)
+
+`docs/MINI_PC.md` explica cómo hacer que un mini PC Linux repita la revisión a las 12:40 y 00:40 (`scripts/mini_pc/`), como respaldo del flujo de GitHub Actions.
