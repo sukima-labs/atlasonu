@@ -2,7 +2,7 @@
 const fs=require('fs'),vm=require('vm'),assert=require('assert'),path=require('path');
 const root=path.join(__dirname,'..');
 const html=fs.readFileSync(path.join(root,'index.html'),'utf8');
-const script=html.match(/<script>([\s\S]*?)<\/script>/)[1];
+const script=[...html.matchAll(/<script>([\s\S]*?)<\/script>/g)].map(m=>m[1]).find(x=>x.includes('const DATA=window.ATLAS_DATA'));assert.ok(script,'no se encontró el script principal');
 const ids=[...html.matchAll(/id="([^"]+)"/g)].map(x=>x[1]);
 const els=Object.fromEntries(ids.map(id=>[id,{id,value:'',innerHTML:'',textContent:'',classList:{toggle(){},add(){}},addEventListener(){},dataset:{},style:{},click(){}}]));
 const document={getElementById(id){if(!els[id])throw Error('Unknown DOM id '+id);return els[id]},querySelectorAll(){return []},createElement(){return {click(){},set href(x){},set download(x){}}}};
