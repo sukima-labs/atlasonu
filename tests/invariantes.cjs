@@ -20,5 +20,14 @@ t('todo país con mandato por país existe y es de modalidad País', () => asser
 t('los renderizados no lanzan errores', () => { run('compute();renderMandates();renderPaises();renderMec();calidad();for(let i=0;i<D.length;i++)details(i)'); });
 t('búsquedas de humo', () => { for (const q of ['tortura', 'desaparecidos', 'India', 'niños migrantes', 'A/HRC/RES/54/26']) { els.quick.value = q; run('smartRun()'); assert.ok(els.smartOut.innerHTML.length > 50, q); } });
 t('fichas de todos los países se generan sin error y casi todos tienen tratados', () => { run('for(const p of PAISES){fichaPaisHtml(p)}'); assert.ok(run('PAISES.filter(p=>Object.keys(p.tratados||{}).length).length') >= 180); assert.equal(run('TRAT.length'), 18); });
+t('documentos por país: un archivo por país y NINGÚN símbolo pertenece a otro país', () => {
+  const dir = path.join(root, 'data', 'paises'), files = fs.readdirSync(dir).filter(f => f.endsWith('.js')); assert.ok(files.length >= 185, 'archivos ' + files.length);
+  let nco = 0, nepu = 0;
+  for (const f of files) { const iso = f.replace('.js', ''); const W = {}; vm.runInNewContext(fs.readFileSync(path.join(dir, f), 'utf8'), { window: W }); const d = W.PAIS_DOCS[iso]; assert.ok(d, iso);
+    for (const x of d.co) { assert.ok(x.s.includes('/' + iso + '/'), 'CO ajena en ' + iso + ': ' + x.s); nco++; }
+    for (const x of d.epu) { assert.ok(x.s.includes('/' + iso + '/'), 'EPU ajeno en ' + iso + ': ' + x.s); nepu++; }
+    const sims = d.visitas.map(x => x.s); assert.equal(new Set(sims).size, sims.length, 'visitas duplicadas en ' + iso); }
+  assert.ok(nco > 1500 && nepu > 1500, nco + ' ' + nepu);
+  const resumen = run('PAISES.reduce((s,p)=>s+((p.docs||{}).co||0),0)'); assert.equal(resumen, nco, 'resumen del catálogo = archivos'); });
 t('estado.json y historial coherentes', () => { const e = JSON.parse(fs.readFileSync(path.join(root, 'data', 'estado.json'), 'utf8')); assert.ok(e.revisado_el && e.contadores.mandatos >= 45); });
 console.log(JSON.stringify({ invariantes: n, ok: true }));

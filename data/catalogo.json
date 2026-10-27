@@ -75,6 +75,15 @@
      "parte": "17 Apr 2018"
     }
    },
+   "docs": {
+    "co": 6,
+    "epu": 14,
+    "ultima_co": {
+     "d": "2025-07-10",
+     "s": "CEDAW/C/AFG/CO/4"
+    },
+    "visitas": 15
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -181,6 +190,15 @@
      "parte": "1 Oct 2003"
     }
    },
+   "docs": {
+    "co": 17,
+    "epu": 14,
+    "ultima_co": {
+     "d": "2025-12-23",
+     "s": "CAT/C/ALB/CO/3"
+    },
+    "visitas": 16
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -266,6 +284,15 @@
      "forma": "ratificación",
      "parte": "4 Dec 2008"
     }
+   },
+   "docs": {
+    "co": 17,
+    "epu": 14,
+    "ultima_co": {
+     "d": "2023-12-21",
+     "s": "CERD/C/DEU/CO/23-26"
+    },
+    "visitas": 20
    },
    "visitas": {
     "realizadas": true,
@@ -357,6 +384,15 @@
      "forma": "ratificación",
      "parte": "22 Sep 2006"
     }
+   },
+   "docs": {
+    "co": 8,
+    "epu": 14,
+    "ultima_co": {
+     "d": "2026-03-27",
+     "s": "CCPR/C/AND/CO/1"
+    },
+    "visitas": 0
    },
    "visitas": {
     "realizadas": false,
@@ -459,6 +495,15 @@
      "parte": ""
     }
    },
+   "docs": {
+    "co": 9,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2023-04-12",
+     "s": "CRPD/C/AGO/CO/1"
+    },
+    "visitas": 7
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -530,6 +575,15 @@
      "parte": "19 Jul 1993"
     }
    },
+   "docs": {
+    "co": 4,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2019-03-14",
+     "s": "CEDAW/C/ATG/CO/4-7"
+    },
+    "visitas": 0
+   },
    "visitas": {
     "realizadas": false,
     "programadas": false
@@ -590,6 +644,15 @@
      "forma": "a",
      "parte": "23 Sep 1997"
     }
+   },
+   "docs": {
+    "co": 9,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2024-12-24",
+     "s": "CERD/C/SAU/CO/10-11"
+    },
+    "visitas": 9
    },
    "visitas": {
     "realizadas": true,
@@ -676,6 +739,15 @@
      "forma": "ratificación",
      "parte": "12 Sep 1989"
     }
+   },
+   "docs": {
+    "co": 11,
+    "epu": 14,
+    "ultima_co": {
+     "d": "2019-06-27",
+     "s": "CRPD/C/DZA/CO/1"
+    },
+    "visitas": 16
    },
    "visitas": {
     "realizadas": true,
@@ -795,6 +867,15 @@
      "parte": "15 Nov 2004"
     }
    },
+   "docs": {
+    "co": 20,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2026-02-25",
+     "s": "CEDAW/C/ARG/CO/8"
+    },
+    "visitas": 28
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -913,6 +994,15 @@
      "parte": "14 Sep 2006"
     }
    },
+   "docs": {
+    "co": 17,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2025-06-05",
+     "s": "CAT/C/ARM/CO/5"
+    },
+    "visitas": 8
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -1015,6 +1105,15 @@
      "parte": "21 Dec 2017"
     }
    },
+   "docs": {
+    "co": 16,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2026-03-23",
+     "s": "E/C.12/AUS/CO/6"
+    },
+    "visitas": 26
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -1115,6 +1214,15 @@
      "forma": "ratificación",
      "parte": "4 Dec 2012"
     }
+   },
+   "docs": {
+    "co": 18,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2024-06-12",
+     "s": "CAT/C/AUT/CO/7"
+    },
+    "visitas": 6
    },
    "visitas": {
     "realizadas": true,
@@ -1222,6 +1330,15 @@
      "parte": "28 Jan 2009"
     }
    },
+   "docs": {
+    "co": 23,
+    "epu": 14,
+    "ultima_co": {
+     "d": "2024-06-05",
+     "s": "CAT/C/AZE/CO/5"
+    },
+    "visitas": 24
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -1287,6 +1404,15 @@
      "forma": "ratificación",
      "parte": "31 May 2018"
     }
+   },
+   "docs": {
+    "co": 2,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2018-11-14",
+     "s": "CEDAW/C/BHS/CO/6"
+    },
+    "visitas": 6
    },
    "visitas": {
     "realizadas": true,
@@ -1379,6 +1505,15 @@
      "parte": "17 Jul 2025"
     }
    },
+   "docs": {
+    "co": 9,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2022-10-11",
+     "s": "CRPD/C/BGD/CO/1"
+    },
+    "visitas": 16
+   },
    "visitas": {
     "realizadas": true,
     "programadas": true
@@ -1434,6 +1569,15 @@
      "forma": "ratificación",
      "parte": "16 Oct 1980"
     }
+   },
+   "docs": {
+    "co": 4,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2017-07-24",
+     "s": "CEDAW/C/BRB/CO/5-8"
+    },
+    "visitas": 0
    },
    "visitas": {
     "realizadas": false,
@@ -1500,6 +1644,15 @@
      "forma": "a",
      "parte": "6 Mar 1998"
     }
+   },
+   "docs": {
+    "co": 12,
+    "epu": 15,
+    "ultima_co": {
+     "d": "2026-01-19",
+     "s": "CAT/C/BHR/CO/4"
+    },
+    "visitas": 2
    },
    "visitas": {
     "realizadas": true,
@@ -1574,6 +1727,15 @@
      "forma": "ratificación",
      "parte": "13 Mar 1987"
     }
+   },
+   "docs": {
+    "co": 14,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2025-02-27",
+     "s": "CEDAW/C/BLR/CO/9"
+    },
+    "visitas": 5
    },
    "visitas": {
     "realizadas": true,
@@ -1660,6 +1822,15 @@
      "forma": "a",
      "parte": "4 Sep 2015"
     }
+   },
+   "docs": {
+    "co": 5,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2025-02-27",
+     "s": "CEDAW/C/BLZ/CO/5-9"
+    },
+    "visitas": 2
    },
    "visitas": {
     "realizadas": true,
@@ -1772,6 +1943,15 @@
      "parte": "20 Sep 2006"
     }
    },
+   "docs": {
+    "co": 14,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2025-10-30",
+     "s": "CED/C/BEN/CO/1"
+    },
+    "visitas": 3
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -1882,6 +2062,15 @@
      "forma": "ratificación",
      "parte": "23 May 2006"
     }
+   },
+   "docs": {
+    "co": 18,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2024-01-04",
+     "s": "CERD/C/BOL/CO/21-24"
+    },
+    "visitas": 9
    },
    "visitas": {
     "realizadas": true,
@@ -1994,6 +2183,15 @@
      "parte": "24 Oct 2008"
     }
    },
+   "docs": {
+    "co": 23,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2024-09-18",
+     "s": "CERD/C/BIH/CO/14-15"
+    },
+    "visitas": 18
+   },
    "visitas": {
     "realizadas": true,
     "programadas": true
@@ -2059,6 +2257,15 @@
      "forma": "ratificación",
      "parte": "8 Sep 2000"
     }
+   },
+   "docs": {
+    "co": 8,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2025-07-10",
+     "s": "CEDAW/C/BWA/CO/5"
+    },
+    "visitas": 16
    },
    "visitas": {
     "realizadas": true,
@@ -2169,6 +2376,15 @@
      "parte": "12 Jan 2007"
     }
    },
+   "docs": {
+    "co": 13,
+    "epu": 14,
+    "ultima_co": {
+     "d": "2025-07-25",
+     "s": "CRC/C/BRA/CO/5-7"
+    },
+    "visitas": 50
+   },
    "visitas": {
     "realizadas": true,
     "programadas": true
@@ -2219,6 +2435,15 @@
      "forma": "",
      "parte": ""
     }
+   },
+   "docs": {
+    "co": 2,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2016-02-24",
+     "s": "CRC/C/BRN/CO/2-3"
+    },
+    "visitas": 1
    },
    "visitas": {
     "realizadas": false,
@@ -2322,6 +2547,15 @@
      "forma": "ratificación",
      "parte": "1 Jun 2011"
     }
+   },
+   "docs": {
+    "co": 15,
+    "epu": 16,
+    "ultima_co": {
+     "d": "2024-03-15",
+     "s": "CRC/C/BGR/CO/6-7"
+    },
+    "visitas": 4
    },
    "visitas": {
     "realizadas": true,
@@ -2429,6 +2663,15 @@
      "parte": "7 Jul 2010"
     }
    },
+   "docs": {
+    "co": 15,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2026-05-21",
+     "s": "CERD/C/BFA/CO/20-24"
+    },
+    "visitas": 3
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -2519,6 +2762,15 @@
      "parte": "18 Oct 2013"
     }
    },
+   "docs": {
+    "co": 10,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2025-12-18",
+     "s": "CERD/C/BDI/CO/11-19"
+    },
+    "visitas": 5
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -2569,6 +2821,15 @@
      "forma": "ratificación",
      "parte": "31 Aug 1981"
     }
+   },
+   "docs": {
+    "co": 6,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2024-06-21",
+     "s": "CRC/C/BTN/CO/6-7"
+    },
+    "visitas": 3
    },
    "visitas": {
     "realizadas": true,
@@ -2676,6 +2937,15 @@
      "parte": ""
     }
    },
+   "docs": {
+    "co": 19,
+    "epu": 14,
+    "ultima_co": {
+     "d": "2024-09-30",
+     "s": "CRPD/C/BEL/CO/2-3"
+    },
+    "visitas": 10
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -2782,6 +3052,15 @@
      "parte": "1 Apr 2016"
     }
    },
+   "docs": {
+    "co": 9,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2022-06-02",
+     "s": "CMW/C/CPV/CO/1-3"
+    },
+    "visitas": 2
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -2865,6 +3144,15 @@
      "forma": "ratificación",
      "parte": "30 Mar 2007"
     }
+   },
+   "docs": {
+    "co": 13,
+    "epu": 15,
+    "ultima_co": {
+     "d": "2024-03-25",
+     "s": "CED/C/KHM/CO/1"
+    },
+    "visitas": 4
    },
    "visitas": {
     "realizadas": true,
@@ -2962,6 +3250,15 @@
      "parte": ""
     }
    },
+   "docs": {
+    "co": 14,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2024-12-10",
+     "s": "CAT/C/CMR/CO/6"
+    },
+    "visitas": 7
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -3055,6 +3352,15 @@
      "parte": "24 Jun 1987"
     }
    },
+   "docs": {
+    "co": 17,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2026-04-02",
+     "s": "CCPR/C/CAN/CO/7"
+    },
+    "visitas": 25
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -3125,6 +3431,15 @@
      "forma": "a",
      "parte": "11 Jan 2000"
     }
+   },
+   "docs": {
+    "co": 15,
+    "epu": 15,
+    "ultima_co": {
+     "d": "2026-10-01",
+     "s": "CRPD/C/QAT/CO/2-4"
+    },
+    "visitas": 13
    },
    "visitas": {
     "realizadas": true,
@@ -3221,6 +3536,15 @@
      "forma": "",
      "parte": ""
     }
+   },
+   "docs": {
+    "co": 12,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2026-03-30",
+     "s": "CCPR/C/TCD/CO/3"
+    },
+    "visitas": 5
    },
    "visitas": {
     "realizadas": true,
@@ -3322,6 +3646,15 @@
      "forma": "ratificación",
      "parte": "10 Jul 2006"
     }
+   },
+   "docs": {
+    "co": 18,
+    "epu": 15,
+    "ultima_co": {
+     "d": "2026-02-25",
+     "s": "CEDAW/C/CZE/CO/7"
+    },
+    "visitas": 1
    },
    "visitas": {
     "realizadas": true,
@@ -3441,6 +3774,15 @@
      "parte": "12 Dec 2008"
     }
    },
+   "docs": {
+    "co": 20,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2025-10-13",
+     "s": "E/C.12/CHL/CO/5"
+    },
+    "visitas": 43
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -3478,6 +3820,15 @@
      "forma": "ratificación",
      "parte": "1 Aug 2008"
     }
+   },
+   "docs": {
+    "co": 12,
+    "epu": 15,
+    "ultima_co": {
+     "d": "2023-05-31",
+     "s": "CEDAW/C/CHN/CO/9"
+    },
+    "visitas": 18
    },
    "visitas": {
     "realizadas": true,
@@ -3585,6 +3936,15 @@
      "parte": "29 Apr 2009"
     }
    },
+   "docs": {
+    "co": 16,
+    "epu": 14,
+    "ultima_co": {
+     "d": "2026-05-28",
+     "s": "CERD/C/CYP/CO/25"
+    },
+    "visitas": 9
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -3630,6 +3990,15 @@
      "forma": "a",
      "parte": "26 Jun 2002"
     }
+   },
+   "docs": {
+    "co": 3,
+    "epu": 0,
+    "ultima_co": {
+     "d": "2016-01-11",
+     "s": "CERD/C/VAT/CO/16-23"
+    },
+    "visitas": 0
    },
    "visitas": {
     "realizadas": true,
@@ -3754,6 +4123,15 @@
      "parte": "10 Nov 2025"
     }
    },
+   "docs": {
+    "co": 23,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2026-02-27",
+     "s": "CRC/C/COL/CO/6-7"
+    },
+    "visitas": 50
+   },
    "visitas": {
     "realizadas": true,
     "programadas": true
@@ -3824,6 +4202,15 @@
      "forma": "ratificación",
      "parte": "25 May 2017"
     }
+   },
+   "docs": {
+    "co": 1,
+    "epu": 11,
+    "ultima_co": {
+     "d": "2012-11-08",
+     "s": "CEDAW/C/COM/CO/1-4"
+    },
+    "visitas": 2
    },
    "visitas": {
     "realizadas": true,
@@ -3925,6 +4312,15 @@
      "forma": "ratificación",
      "parte": "26 Apr 2024"
     }
+   },
+   "docs": {
+    "co": 10,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2025-02-27",
+     "s": "CEDAW/C/COG/CO/8"
+    },
+    "visitas": 5
    },
    "visitas": {
     "realizadas": true,
@@ -4032,6 +4428,15 @@
      "parte": "1 Dec 2005"
     }
    },
+   "docs": {
+    "co": 15,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2024-04-23",
+     "s": "CRPD/C/CRI/CO/2-3"
+    },
+    "visitas": 10
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -4133,6 +4538,12 @@
      "parte": "25 Apr 2005"
     }
    },
+   "docs": {
+    "co": 0,
+    "epu": 0,
+    "ultima_co": null,
+    "visitas": 9
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -4208,6 +4619,15 @@
      "forma": "ratificación",
      "parte": "17 May 1995"
     }
+   },
+   "docs": {
+    "co": 12,
+    "epu": 15,
+    "ultima_co": {
+     "d": "2026-05-12",
+     "s": "CERD/C/CUB/CO/22-26"
+    },
+    "visitas": 9
    },
    "visitas": {
     "realizadas": true,
@@ -4320,6 +4740,15 @@
      "parte": "1 Mar 2023"
     }
    },
+   "docs": {
+    "co": 5,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2024-08-09",
+     "s": "CAT/C/CIV/CO/1"
+    },
+    "visitas": 0
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -4421,6 +4850,15 @@
      "parte": "25 Jun 2004"
     }
    },
+   "docs": {
+    "co": 17,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2024-10-08",
+     "s": "CRPD/C/DNK/CO/2-3"
+    },
+    "visitas": 12
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -4496,6 +4934,12 @@
      "forma": "a",
      "parte": "5 Dec 2024"
     }
+   },
+   "docs": {
+    "co": 0,
+    "epu": 12,
+    "ultima_co": null,
+    "visitas": 1
    },
    "visitas": {
     "realizadas": true,
@@ -4615,6 +5059,15 @@
      "parte": "20 Jul 2010"
     }
    },
+   "docs": {
+    "co": 26,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2026-06-30",
+     "s": "CMW/C/ECU/CO/4"
+    },
+    "visitas": 25
+   },
    "visitas": {
     "realizadas": true,
     "programadas": true
@@ -4697,6 +5150,15 @@
      "forma": "a",
      "parte": "25 Jun 1986"
     }
+   },
+   "docs": {
+    "co": 10,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2025-01-15",
+     "s": "CMW/C/EGY/CO/2-4"
+    },
+    "visitas": 10
    },
    "visitas": {
     "realizadas": true,
@@ -4799,6 +5261,15 @@
      "parte": "17 Jun 1996"
     }
    },
+   "docs": {
+    "co": 21,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2026-02-25",
+     "s": "CEDAW/C/SLV/CO/10"
+    },
+    "visitas": 23
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -4854,6 +5325,15 @@
      "forma": "a",
      "parte": "19 Jul 2012"
     }
+   },
+   "docs": {
+    "co": 8,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2022-08-22",
+     "s": "CAT/C/ARE/CO/1"
+    },
+    "visitas": 9
    },
    "visitas": {
     "realizadas": true,
@@ -4922,6 +5402,15 @@
      "forma": "a",
      "parte": "25 Sep 2014"
     }
+   },
+   "docs": {
+    "co": 7,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2025-03-05",
+     "s": "CRC/C/ERI/CO/5-6"
+    },
+    "visitas": 1
    },
    "visitas": {
     "realizadas": true,
@@ -5028,6 +5517,15 @@
      "forma": "ratificación",
      "parte": "19 Sep 2023"
     }
+   },
+   "docs": {
+    "co": 20,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2026-04-08",
+     "s": "CCPR/C/SVK/CO/5"
+    },
+    "visitas": 1
    },
    "visitas": {
     "realizadas": true,
@@ -5142,6 +5640,15 @@
      "forma": "a",
      "parte": "23 Jan 2007"
     }
+   },
+   "docs": {
+    "co": 13,
+    "epu": 14,
+    "ultima_co": {
+     "d": "2026-06-02",
+     "s": "CERD/C/SVN/CO/12-14"
+    },
+    "visitas": 7
    },
    "visitas": {
     "realizadas": true,
@@ -5269,6 +5776,15 @@
      "parte": "4 Apr 2006"
     }
    },
+   "docs": {
+    "co": 20,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2026-02-23",
+     "s": "CRC/C/ESP/CO/7"
+    },
+    "visitas": 29
+   },
    "visitas": {
     "realizadas": true,
     "programadas": true
@@ -5354,6 +5870,15 @@
      "forma": "ratificación",
      "parte": "21 Oct 1994"
     }
+   },
+   "docs": {
+    "co": 8,
+    "epu": 14,
+    "ultima_co": {
+     "d": "2023-12-07",
+     "s": "CCPR/C/USA/CO/5"
+    },
+    "visitas": 41
    },
    "visitas": {
     "realizadas": true,
@@ -5456,6 +5981,15 @@
      "parte": "18 Dec 2006"
     }
    },
+   "docs": {
+    "co": 16,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2024-06-18",
+     "s": "CRC/C/EST/CO/5-7"
+    },
+    "visitas": 1
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -5532,6 +6066,15 @@
      "parte": "26 Mar 2004"
     }
    },
+   "docs": {
+    "co": 4,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2021-10-22",
+     "s": "CRC/C/SWZ/CO/2-4"
+    },
+    "visitas": 1
+   },
    "visitas": {
     "realizadas": false,
     "programadas": false
@@ -5597,6 +6140,15 @@
      "forma": "a",
      "parte": "14 Mar 1994"
     }
+   },
+   "docs": {
+    "co": 13,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2026-03-09",
+     "s": "CRC/C/ETH/CO/6-7"
+    },
+    "visitas": 8
    },
    "visitas": {
     "realizadas": true,
@@ -5677,6 +6229,15 @@
      "forma": "ratificación",
      "parte": "3 Mar 1987"
     }
+   },
+   "docs": {
+    "co": 19,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2025-10-23",
+     "s": "E/C.12/RUS/CO/7"
+    },
+    "visitas": 16
    },
    "visitas": {
     "realizadas": true,
@@ -5776,6 +6337,15 @@
      "forma": "a",
      "parte": "17 Apr 2012"
     }
+   },
+   "docs": {
+    "co": 17,
+    "epu": 15,
+    "ultima_co": {
+     "d": "2025-03-25",
+     "s": "E/C.12/PHL/CO/7"
+    },
+    "visitas": 24
    },
    "visitas": {
     "realizadas": true,
@@ -5883,6 +6453,15 @@
      "parte": "8 Oct 2014"
     }
    },
+   "docs": {
+    "co": 17,
+    "epu": 17,
+    "ultima_co": {
+     "d": "2026-09-18",
+     "s": "CERD/C/FIN/CO/24-26"
+    },
+    "visitas": 7
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -5963,6 +6542,15 @@
      "forma": "ratificación",
      "parte": "14 Mar 2016"
     }
+   },
+   "docs": {
+    "co": 6,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2025-07-10",
+     "s": "CEDAW/C/FJI/CO/6"
+    },
+    "visitas": 10
    },
    "visitas": {
     "realizadas": true,
@@ -6082,6 +6670,15 @@
      "parte": "11 Nov 2008"
     }
    },
+   "docs": {
+    "co": 22,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2025-05-22",
+     "s": "CAT/C/FRA/CO/8"
+    },
+    "visitas": 15
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -6188,6 +6785,15 @@
      "parte": "22 Sep 2010"
     }
    },
+   "docs": {
+    "co": 9,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2026-06-11",
+     "s": "CAT/C/GAB/CO/2"
+    },
+    "visitas": 1
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -6278,6 +6884,15 @@
      "forma": "ratificación",
      "parte": "28 Sep 2018"
     }
+   },
+   "docs": {
+    "co": 10,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2026-06-30",
+     "s": "CMW/C/GMB/CO/1"
+    },
+    "visitas": 8
    },
    "visitas": {
     "realizadas": true,
@@ -6374,6 +6989,15 @@
      "forma": "a",
      "parte": "9 Aug 2005"
     }
+   },
+   "docs": {
+    "co": 15,
+    "epu": 14,
+    "ultima_co": {
+     "d": "2026-03-25",
+     "s": "E/C.12/GEO/CO/3"
+    },
+    "visitas": 33
    },
    "visitas": {
     "realizadas": true,
@@ -6481,6 +7105,15 @@
      "parte": "23 Sep 2016"
     }
    },
+   "docs": {
+    "co": 10,
+    "epu": 14,
+    "ultima_co": {
+     "d": "2026-06-25",
+     "s": "CMW/C/GHA/CO/2"
+    },
+    "visitas": 12
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -6551,6 +7184,15 @@
      "forma": "a",
      "parte": "26 Sep 2019"
     }
+   },
+   "docs": {
+    "co": 3,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2012-03-23",
+     "s": "CEDAW/C/GRD/CO/1-5"
+    },
+    "visitas": 0
    },
    "visitas": {
     "realizadas": false,
@@ -6660,6 +7302,15 @@
      "parte": "11 Feb 2014"
     }
    },
+   "docs": {
+    "co": 15,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2024-12-24",
+     "s": "CERD/C/GRC/CO/23-24"
+    },
+    "visitas": 18
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -6761,6 +7412,15 @@
      "parte": "9 Jun 2008"
     }
    },
+   "docs": {
+    "co": 20,
+    "epu": 14,
+    "ultima_co": {
+     "d": "2025-12-23",
+     "s": "CERD/C/GTM/CO/18-20"
+    },
+    "visitas": 30
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -6847,6 +7507,15 @@
      "parte": ""
     }
    },
+   "docs": {
+    "co": 8,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2020-03-30",
+     "s": "E/C.12/GIN/CO/1"
+    },
+    "visitas": 0
+   },
    "visitas": {
     "realizadas": false,
     "programadas": false
@@ -6917,6 +7586,15 @@
      "forma": "a",
      "parte": "8 Oct 2002"
     }
+   },
+   "docs": {
+    "co": 3,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2019-08-22",
+     "s": "CCPR/C/GNQ/CO/1"
+    },
+    "visitas": 8
    },
    "visitas": {
     "realizadas": true,
@@ -7037,6 +7715,15 @@
      "parte": ""
     }
    },
+   "docs": {
+    "co": 3,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2025-09-01",
+     "s": "CCPR/C/GNB/CO/1"
+    },
+    "visitas": 4
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -7120,6 +7807,15 @@
      "parte": "19 May 1988"
     }
    },
+   "docs": {
+    "co": 9,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2024-05-03",
+     "s": "CCPR/C/GUY/CO/3"
+    },
+    "visitas": 3
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -7200,6 +7896,15 @@
      "forma": "",
      "parte": ""
     }
+   },
+   "docs": {
+    "co": 6,
+    "epu": 9,
+    "ultima_co": {
+     "d": "2025-07-29",
+     "s": "CCPR/C/HTI/CO/2"
+    },
+    "visitas": 6
    },
    "visitas": {
     "realizadas": true,
@@ -7302,6 +8007,15 @@
      "parte": "23 May 2006"
     }
    },
+   "docs": {
+    "co": 18,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2026-09-15",
+     "s": "CERD/C/HND/CO/9-11"
+    },
+    "visitas": 38
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -7401,6 +8115,15 @@
      "parte": "12 Jan 2012"
     }
    },
+   "docs": {
+    "co": 13,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2023-03-02",
+     "s": "CEDAW/C/HUN/CO/9"
+    },
+    "visitas": 19
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -7491,6 +8214,15 @@
      "parte": ""
     }
    },
+   "docs": {
+    "co": 8,
+    "epu": 15,
+    "ultima_co": {
+     "d": "2026-09-25",
+     "s": "CERD/C/IND/CO/20-21"
+    },
+    "visitas": 20
+   },
    "visitas": {
     "realizadas": true,
     "programadas": true
@@ -7572,6 +8304,15 @@
      "parte": "28 Oct 1998"
     }
    },
+   "docs": {
+    "co": 12,
+    "epu": 15,
+    "ultima_co": {
+     "d": "2026-01-20",
+     "s": "CMW/C/IDN/CO/2"
+    },
+    "visitas": 16
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -7650,6 +8391,15 @@
      "forma": "a",
      "parte": "7 Jul 2011"
     }
+   },
+   "docs": {
+    "co": 16,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2026-02-25",
+     "s": "CEDAW/C/IRQ/CO/8"
+    },
+    "visitas": 16
    },
    "visitas": {
     "realizadas": true,
@@ -7757,6 +8507,15 @@
      "parte": ""
     }
    },
+   "docs": {
+    "co": 16,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2025-07-10",
+     "s": "CEDAW/C/IRL/CO/8"
+    },
+    "visitas": 4
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -7819,6 +8578,15 @@
      "forma": "ratificación",
      "parte": "24 Jun 1975"
     }
+   },
+   "docs": {
+    "co": 7,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2024-09-19",
+     "s": "CERD/C/IRN/CO/20-27"
+    },
+    "visitas": 10
    },
    "visitas": {
     "realizadas": true,
@@ -7916,6 +8684,15 @@
      "parte": "20 Feb 2019"
     }
    },
+   "docs": {
+    "co": 13,
+    "epu": 9,
+    "ultima_co": {
+     "d": "2024-11-26",
+     "s": "CCPR/C/ISL/CO/6"
+    },
+    "visitas": 3
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -7986,6 +8763,15 @@
      "forma": "a",
      "parte": "12 Mar 2018"
     }
+   },
+   "docs": {
+    "co": 4,
+    "epu": 14,
+    "ultima_co": {
+     "d": "2026-05-06",
+     "s": "CRPD/C/MHL/CO/1"
+    },
+    "visitas": 3
    },
    "visitas": {
     "realizadas": true,
@@ -8058,6 +8844,15 @@
      "parte": "6 May 2002"
     }
    },
+   "docs": {
+    "co": 3,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2025-07-10",
+     "s": "CEDAW/C/SLB/CO/4-5"
+    },
+    "visitas": 2
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -8123,6 +8918,15 @@
      "forma": "ratificación",
      "parte": "3 Oct 1991"
     }
+   },
+   "docs": {
+    "co": 17,
+    "epu": 17,
+    "ultima_co": {
+     "d": "2025-12-22",
+     "s": "CAT/C/ISR/CO/6"
+    },
+    "visitas": 7
    },
    "visitas": {
     "realizadas": true,
@@ -8246,6 +9050,15 @@
      "parte": "3 Apr 2013"
     }
    },
+   "docs": {
+    "co": 18,
+    "epu": 15,
+    "ultima_co": {
+     "d": "2026-06-11",
+     "s": "CAT/C/ITA/CO/7"
+    },
+    "visitas": 28
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -8316,6 +9129,15 @@
      "forma": "ratificación",
      "parte": "19 Oct 1984"
     }
+   },
+   "docs": {
+    "co": 12,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2025-05-15",
+     "s": "CMW/C/JAM/CO/1-2"
+    },
+    "visitas": 4
    },
    "visitas": {
     "realizadas": true,
@@ -8400,6 +9222,15 @@
      "parte": "29 Jun 1999"
     }
    },
+   "docs": {
+    "co": 15,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2024-10-30",
+     "s": "CEDAW/C/JPN/CO/9"
+    },
+    "visitas": 20
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -8478,6 +9309,15 @@
      "forma": "a",
      "parte": "13 Nov 1991"
     }
+   },
+   "docs": {
+    "co": 14,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2024-12-06",
+     "s": "CAT/C/JOR/CO/4"
+    },
+    "visitas": 13
    },
    "visitas": {
     "realizadas": true,
@@ -8585,6 +9425,15 @@
      "parte": "22 Oct 2008"
     }
    },
+   "docs": {
+    "co": 18,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2025-09-03",
+     "s": "CCPR/C/KAZ/CO/3"
+    },
+    "visitas": 20
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -8662,6 +9511,15 @@
      "forma": "a",
      "parte": "21 Feb 1997"
     }
+   },
+   "docs": {
+    "co": 16,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2026-03-27",
+     "s": "E/C.12/KEN/CO/6"
+    },
+    "visitas": 16
    },
    "visitas": {
     "realizadas": true,
@@ -8754,6 +9612,15 @@
      "parte": "29 Dec 2008"
     }
    },
+   "docs": {
+    "co": 16,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2025-06-03",
+     "s": "CERD/C/KGZ/CO/11-12"
+    },
+    "visitas": 20
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -8805,6 +9672,15 @@
      "parte": "22 Jul 2019"
     }
    },
+   "docs": {
+    "co": 5,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2025-09-26",
+     "s": "CRPD/C/KIR/CO/1"
+    },
+    "visitas": 1
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -8825,6 +9701,12 @@
     "fecha": ""
    },
    "tratados": {},
+   "docs": {
+    "co": 0,
+    "epu": 0,
+    "ultima_co": null,
+    "visitas": 0
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -8890,6 +9772,15 @@
      "forma": "a",
      "parte": "8 Mar 1996"
     }
+   },
+   "docs": {
+    "co": 17,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2026-09-22",
+     "s": "CERD/C/KWT/CO/25-26"
+    },
+    "visitas": 8
    },
    "visitas": {
     "realizadas": true,
@@ -8961,6 +9852,15 @@
      "forma": "ratificación",
      "parte": "26 Sep 2012"
     }
+   },
+   "docs": {
+    "co": 10,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2025-10-29",
+     "s": "E/C.12/LAO/CO/1"
+    },
+    "visitas": 10
    },
    "visitas": {
     "realizadas": true,
@@ -9047,6 +9947,15 @@
      "forma": "a",
      "parte": "12 Nov 2001"
     }
+   },
+   "docs": {
+    "co": 6,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2026-05-05",
+     "s": "CRPD/C/LSO/CO/1"
+    },
+    "visitas": 4
    },
    "visitas": {
     "realizadas": true,
@@ -9141,6 +10050,15 @@
      "forma": "a",
      "parte": "10 Dec 2021"
     }
+   },
+   "docs": {
+    "co": 12,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2025-09-03",
+     "s": "CCPR/C/LVA/CO/4"
+    },
+    "visitas": 5
    },
    "visitas": {
     "realizadas": true,
@@ -9238,6 +10156,15 @@
      "parte": "22 Sep 2004"
     }
    },
+   "docs": {
+    "co": 5,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2026-05-06",
+     "s": "CRPD/C/LBR/CO/1"
+    },
+    "visitas": 3
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -9323,6 +10250,15 @@
      "forma": "a",
      "parte": "16 May 1989"
     }
+   },
+   "docs": {
+    "co": 3,
+    "epu": 14,
+    "ultima_co": {
+     "d": "2019-05-08",
+     "s": "CMW/C/LBY/CO/1"
+    },
+    "visitas": 3
    },
    "visitas": {
     "realizadas": true,
@@ -9419,6 +10355,15 @@
      "forma": "ratificación",
      "parte": "3 Nov 2006"
     }
+   },
+   "docs": {
+    "co": 14,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2025-02-27",
+     "s": "CEDAW/C/LIE/CO/5"
+    },
+    "visitas": 2
    },
    "visitas": {
     "realizadas": true,
@@ -9529,6 +10474,15 @@
      "parte": "20 Jan 2014"
     }
    },
+   "docs": {
+    "co": 21,
+    "epu": 10,
+    "ultima_co": {
+     "d": "2026-10-05",
+     "s": "CRPD/C/LTU/CO/2-3"
+    },
+    "visitas": 4
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -9635,6 +10589,15 @@
      "parte": "19 May 2010"
     }
    },
+   "docs": {
+    "co": 14,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2025-02-28",
+     "s": "CEDAW/C/LUX/CO/8"
+    },
+    "visitas": 2
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -9715,6 +10678,15 @@
      "forma": "a",
      "parte": "22 Dec 2008"
     }
+   },
+   "docs": {
+    "co": 11,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2022-03-01",
+     "s": "CEDAW/C/LBN/CO/6"
+    },
+    "visitas": 8
    },
    "visitas": {
     "realizadas": true,
@@ -9816,6 +10788,15 @@
      "forma": "ratificación",
      "parte": "13 Feb 2009"
     }
+   },
+   "docs": {
+    "co": 15,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2025-08-20",
+     "s": "CCPR/C/MKD/CO/4"
+    },
+    "visitas": 7
    },
    "visitas": {
     "realizadas": true,
@@ -9928,6 +10909,15 @@
      "parte": "21 Sep 2017"
     }
    },
+   "docs": {
+    "co": 9,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2022-03-09",
+     "s": "CRC/C/MDG/CO/5-6"
+    },
+    "visitas": 5
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -9973,6 +10963,15 @@
      "forma": "a",
      "parte": "5 Jul 1995"
     }
+   },
+   "docs": {
+    "co": 5,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2026-02-26",
+     "s": "CRC/C/MYS/CO/2-4"
+    },
+    "visitas": 16
    },
    "visitas": {
     "realizadas": true,
@@ -10059,6 +11058,15 @@
      "forma": "a",
      "parte": "11 Jun 1996"
     }
+   },
+   "docs": {
+    "co": 11,
+    "epu": 14,
+    "ultima_co": {
+     "d": "2026-04-14",
+     "s": "CED/C/MWI/CO/1"
+    },
+    "visitas": 2
    },
    "visitas": {
     "realizadas": true,
@@ -10150,6 +11158,15 @@
      "forma": "ratificación",
      "parte": "15 Feb 2006"
     }
+   },
+   "docs": {
+    "co": 12,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2026-03-09",
+     "s": "CRC/C/MDV/CO/6-7"
+    },
+    "visitas": 17
    },
    "visitas": {
     "realizadas": true,
@@ -10251,6 +11268,15 @@
      "forma": "ratificación",
      "parte": "24 Sep 2003"
     }
+   },
+   "docs": {
+    "co": 8,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2025-05-13",
+     "s": "CED/C/MLT/CO/1"
+    },
+    "visitas": 6
    },
    "visitas": {
     "realizadas": true,
@@ -10360,6 +11386,15 @@
      "parte": "12 May 2005"
     }
    },
+   "docs": {
+    "co": 9,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2024-06-11",
+     "s": "CRC/C/MLI/CO/3-5"
+    },
+    "visitas": 0
+   },
    "visitas": {
     "realizadas": true,
     "programadas": true
@@ -10461,6 +11496,15 @@
      "parte": "24 Nov 2014"
     }
    },
+   "docs": {
+    "co": 15,
+    "epu": 14,
+    "ultima_co": {
+     "d": "2024-10-18",
+     "s": "CED/C/MAR/CO/1"
+    },
+    "visitas": 19
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -10552,6 +11596,15 @@
      "parte": "21 Jun 2005"
     }
    },
+   "docs": {
+    "co": 16,
+    "epu": 14,
+    "ultima_co": {
+     "d": "2025-06-04",
+     "s": "CERD/C/MUS/CO/24-25"
+    },
+    "visitas": 9
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -10633,6 +11686,15 @@
      "parte": "3 Oct 2012"
     }
    },
+   "docs": {
+    "co": 16,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2026-01-15",
+     "s": "CMW/C/MRT/CO/2"
+    },
+    "visitas": 14
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -10678,6 +11740,15 @@
      "forma": "a",
      "parte": "1 Sep 2004"
     }
+   },
+   "docs": {
+    "co": 2,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2020-04-03",
+     "s": "CRC/C/FSM/CO/2"
+    },
+    "visitas": 1
    },
    "visitas": {
     "realizadas": true,
@@ -10779,6 +11850,15 @@
      "forma": "ratificación",
      "parte": "24 Jul 2006"
     }
+   },
+   "docs": {
+    "co": 17,
+    "epu": 10,
+    "ultima_co": {
+     "d": "2026-04-02",
+     "s": "CCPR/C/MDA/CO/4"
+    },
+    "visitas": 16
    },
    "visitas": {
     "realizadas": true,
@@ -10886,6 +11966,15 @@
      "parte": "12 Feb 2015"
     }
    },
+   "docs": {
+    "co": 19,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2025-05-06",
+     "s": "CCPR/C/MNG/CO/7"
+    },
+    "visitas": 22
+   },
    "visitas": {
     "realizadas": true,
     "programadas": true
@@ -10992,6 +12081,15 @@
      "parte": "6 Mar 2009"
     }
    },
+   "docs": {
+    "co": 14,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2025-05-07",
+     "s": "CCPR/C/MNE/CO/2"
+    },
+    "visitas": 8
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -11083,6 +12181,15 @@
      "parte": "1 Jul 2014"
     }
    },
+   "docs": {
+    "co": 7,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2019-11-27",
+     "s": "CRC/C/MOZ/CO/3-4"
+    },
+    "visitas": 9
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -11138,6 +12245,15 @@
      "forma": "a",
      "parte": "22 Jul 1997"
     }
+   },
+   "docs": {
+    "co": 4,
+    "epu": 10,
+    "ultima_co": {
+     "d": "2019-10-22",
+     "s": "CRPD/C/MMR/CO/1"
+    },
+    "visitas": 1
    },
    "visitas": {
     "realizadas": true,
@@ -11263,6 +12379,15 @@
      "parte": "11 Apr 2005"
     }
    },
+   "docs": {
+    "co": 25,
+    "epu": 15,
+    "ultima_co": {
+     "d": "2025-07-10",
+     "s": "CEDAW/C/MEX/CO/10"
+    },
+    "visitas": 52
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -11354,6 +12479,15 @@
      "parte": "6 Dec 1991"
     }
    },
+   "docs": {
+    "co": 11,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2025-05-26",
+     "s": "CAT/C/MCO/CO/7"
+    },
+    "visitas": 0
+   },
    "visitas": {
     "realizadas": false,
     "programadas": false
@@ -11440,6 +12574,15 @@
      "parte": "28 Nov 1994"
     }
    },
+   "docs": {
+    "co": 13,
+    "epu": 14,
+    "ultima_co": {
+     "d": "2024-12-10",
+     "s": "CAT/C/NAM/CO/3"
+    },
+    "visitas": 4
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -11510,6 +12653,15 @@
      "forma": "a",
      "parte": "24 Jan 2013"
     }
+   },
+   "docs": {
+    "co": 2,
+    "epu": 14,
+    "ultima_co": {
+     "d": "2017-11-22",
+     "s": "CEDAW/C/NRU/CO/1-2"
+    },
+    "visitas": 2
    },
    "visitas": {
     "realizadas": false,
@@ -11596,6 +12748,15 @@
      "forma": "a",
      "parte": "14 May 1991"
     }
+   },
+   "docs": {
+    "co": 10,
+    "epu": 14,
+    "ultima_co": {
+     "d": "2025-02-28",
+     "s": "CEDAW/C/NPL/CO/7"
+    },
+    "visitas": 24
    },
    "visitas": {
     "realizadas": true,
@@ -11687,6 +12848,15 @@
      "forma": "ratificación",
      "parte": "25 Feb 2009"
     }
+   },
+   "docs": {
+    "co": 13,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2024-04-23",
+     "s": "CRPD/C/NIC/CO/1-3"
+    },
+    "visitas": 3
    },
    "visitas": {
     "realizadas": true,
@@ -11790,6 +12960,15 @@
      "parte": "27 Jul 2009"
     }
    },
+   "docs": {
+    "co": 8,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2023-10-20",
+     "s": "CED/C/NGA/CO/1"
+    },
+    "visitas": 21
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -11880,6 +13059,15 @@
      "forma": "ratificación",
      "parte": "27 Jun 2013"
     }
+   },
+   "docs": {
+    "co": 21,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2025-07-22",
+     "s": "CRC/C/NOR/CO/7"
+    },
+    "visitas": 10
    },
    "visitas": {
     "realizadas": true,
@@ -11988,6 +13176,15 @@
      "parte": "14 Mar 2007"
     }
    },
+   "docs": {
+    "co": 18,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2025-12-19",
+     "s": "CERD/C/NZL/CO/23-24"
+    },
+    "visitas": 9
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -12089,6 +13286,15 @@
      "parte": "7 Nov 2014"
     }
    },
+   "docs": {
+    "co": 14,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2025-05-14",
+     "s": "CMW/C/NER/CO/2"
+    },
+    "visitas": 5
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -12159,6 +13365,15 @@
      "forma": "a",
      "parte": "9 Jun 2020"
     }
+   },
+   "docs": {
+    "co": 9,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2024-02-26",
+     "s": "CEDAW/C/OMN/CO/4"
+    },
+    "visitas": 3
    },
    "visitas": {
     "realizadas": true,
@@ -12233,6 +13448,15 @@
      "parte": "23 Jun 2010"
     }
    },
+   "docs": {
+    "co": 15,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2026-06-15",
+     "s": "CAT/C/PAK/CO/2"
+    },
+    "visitas": 6
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -12303,6 +13527,15 @@
      "forma": "",
      "parte": ""
     }
+   },
+   "docs": {
+    "co": 2,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2025-04-16",
+     "s": "CRPD/C/PLW/CO/1"
+    },
+    "visitas": 0
    },
    "visitas": {
     "realizadas": false,
@@ -12405,6 +13638,15 @@
      "parte": "2 Jun 2011"
     }
    },
+   "docs": {
+    "co": 11,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2023-04-12",
+     "s": "CCPR/C/PAN/CO/4"
+    },
+    "visitas": 8
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -12455,6 +13697,15 @@
      "forma": "a",
      "parte": "12 Jan 1995"
     }
+   },
+   "docs": {
+    "co": 1,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2010-07-30",
+     "s": "CEDAW/C/PNG/CO/3"
+    },
+    "visitas": 7
    },
    "visitas": {
     "realizadas": true,
@@ -12567,6 +13818,15 @@
      "parte": "2 Dec 2005"
     }
    },
+   "docs": {
+    "co": 18,
+    "epu": 14,
+    "ultima_co": {
+     "d": "2024-06-18",
+     "s": "CRC/C/PRY/CO/4-6"
+    },
+    "visitas": 19
+   },
    "visitas": {
     "realizadas": true,
     "programadas": true
@@ -12667,6 +13927,15 @@
      "forma": "ratificación",
      "parte": "28 Sep 2010"
     }
+   },
+   "docs": {
+    "co": 19,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2026-02-27",
+     "s": "CEDAW/C/NLD/CO/7"
+    },
+    "visitas": 0
    },
    "visitas": {
     "realizadas": true,
@@ -12776,6 +14045,15 @@
      "parte": "14 Sep 2006"
     }
    },
+   "docs": {
+    "co": 21,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2025-03-27",
+     "s": "E/C.12/PER/CO/5"
+    },
+    "visitas": 31
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -12879,6 +14157,15 @@
      "forma": "ratificación",
      "parte": "14 Sep 2005"
     }
+   },
+   "docs": {
+    "co": 15,
+    "epu": 14,
+    "ultima_co": {
+     "d": "2024-10-24",
+     "s": "E/C.12/POL/CO/7"
+    },
+    "visitas": 17
    },
    "visitas": {
     "realizadas": true,
@@ -12988,6 +14275,15 @@
      "parte": "15 Jan 2013"
     }
    },
+   "docs": {
+    "co": 17,
+    "epu": 14,
+    "ultima_co": {
+     "d": "2023-05-24",
+     "s": "CERD/C/PRT/CO/18-19"
+    },
+    "visitas": 8
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -13046,6 +14342,15 @@
      "forma": "ratificación",
      "parte": "10 Dec 2003"
     }
+   },
+   "docs": {
+    "co": 17,
+    "epu": 16,
+    "ultima_co": {
+     "d": "2025-03-12",
+     "s": "E/C.12/GBR/CO/7"
+    },
+    "visitas": 33
    },
    "visitas": {
     "realizadas": true,
@@ -13146,6 +14451,15 @@
      "parte": "11 Oct 2016"
     }
    },
+   "docs": {
+    "co": 7,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2025-04-29",
+     "s": "CED/C/CAF/CO/1"
+    },
+    "visitas": 8
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -13236,6 +14550,15 @@
      "forma": "a",
      "parte": "9 Jan 1995"
     }
+   },
+   "docs": {
+    "co": 19,
+    "epu": 14,
+    "ultima_co": {
+     "d": "2025-06-04",
+     "s": "CERD/C/KOR/CO/20-22"
+    },
+    "visitas": 17
    },
    "visitas": {
     "realizadas": true,
@@ -13330,6 +14653,15 @@
      "parte": "23 Sep 2010"
     }
    },
+   "docs": {
+    "co": 11,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2022-03-28",
+     "s": "E/C.12/COD/CO/6"
+    },
+    "visitas": 13
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -13421,6 +14753,15 @@
      "parte": "24 Jan 2012"
     }
    },
+   "docs": {
+    "co": 13,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2025-04-14",
+     "s": "CRPD/C/DOM/CO/2-3"
+    },
+    "visitas": 7
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -13470,6 +14811,15 @@
      "forma": "a",
      "parte": "14 Sep 1981"
     }
+   },
+   "docs": {
+    "co": 5,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2025-10-02",
+     "s": "CRPD/C/PRK/CO/1"
+    },
+    "visitas": 3
    },
    "visitas": {
     "realizadas": true,
@@ -13552,6 +14902,15 @@
      "forma": "a",
      "parte": "19 Aug 2004"
     }
+   },
+   "docs": {
+    "co": 8,
+    "epu": 10,
+    "ultima_co": {
+     "d": "2024-08-21",
+     "s": "CCPR/C/SYR/CO/4"
+    },
+    "visitas": 0
    },
    "visitas": {
     "realizadas": true,
@@ -13643,6 +15002,15 @@
      "forma": "a",
      "parte": "30 Jun 2015"
     }
+   },
+   "docs": {
+    "co": 16,
+    "epu": 14,
+    "ultima_co": {
+     "d": "2025-03-17",
+     "s": "E/C.12/RWA/CO/5"
+    },
+    "visitas": 7
    },
    "visitas": {
     "realizadas": true,
@@ -13745,6 +15113,15 @@
      "parte": "2 Jul 2009"
     }
    },
+   "docs": {
+    "co": 9,
+    "epu": 9,
+    "ultima_co": {
+     "d": "2025-07-28",
+     "s": "CRC/C/ROU/CO/6-7"
+    },
+    "visitas": 18
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -13811,6 +15188,15 @@
      "parte": "28 Mar 2019"
     }
    },
+   "docs": {
+    "co": 6,
+    "epu": 11,
+    "ultima_co": {
+     "d": "2026-04-29",
+     "s": "CRPD/C/WSM/CO/1"
+    },
+    "visitas": 2
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -13866,6 +15252,15 @@
      "forma": "a",
      "parte": "21 Sep 2020"
     }
+   },
+   "docs": {
+    "co": 2,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2025-02-26",
+     "s": "CRC/C/KNA/CO/2"
+    },
+    "visitas": 0
    },
    "visitas": {
     "realizadas": false,
@@ -13963,6 +15358,15 @@
      "parte": "27 Nov 2006"
     }
    },
+   "docs": {
+    "co": 5,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2025-07-10",
+     "s": "CEDAW/C/SMR/CO/1-5"
+    },
+    "visitas": 0
+   },
    "visitas": {
     "realizadas": false,
     "programadas": false
@@ -14049,6 +15453,15 @@
      "parte": "1 Aug 2001"
     }
    },
+   "docs": {
+    "co": 4,
+    "epu": 11,
+    "ultima_co": {
+     "d": "2018-05-17",
+     "s": "CMW/C/VCT/CO/1"
+    },
+    "visitas": 2
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -14114,6 +15527,15 @@
      "forma": "a",
      "parte": "12 Feb 2026"
     }
+   },
+   "docs": {
+    "co": 2,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2014-07-08",
+     "s": "CRC/C/LCA/CO/2-4"
+    },
+    "visitas": 0
    },
    "visitas": {
     "realizadas": false,
@@ -14195,6 +15617,15 @@
      "forma": "ratificación",
      "parte": "10 Jan 2017"
     }
+   },
+   "docs": {
+    "co": 4,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2023-12-21",
+     "s": "CMW/C/STP/CO/1"
+    },
+    "visitas": 0
    },
    "visitas": {
     "realizadas": false,
@@ -14301,6 +15732,15 @@
      "forma": "ratificación",
      "parte": "18 Oct 2006"
     }
+   },
+   "docs": {
+    "co": 16,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2024-07-10",
+     "s": "CMW/C/SEN/CO/4"
+    },
+    "visitas": 7
    },
    "visitas": {
     "realizadas": true,
@@ -14424,6 +15864,15 @@
      "parte": "26 Sep 2006"
     }
    },
+   "docs": {
+    "co": 16,
+    "epu": 14,
+    "ultima_co": {
+     "d": "2026-05-22",
+     "s": "CERD/C/SRB/CO/6-9"
+    },
+    "visitas": 15
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -14525,6 +15974,15 @@
      "parte": "5 May 1992"
     }
    },
+   "docs": {
+    "co": 9,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2025-01-17",
+     "s": "CMW/C/SYC/CO/2"
+    },
+    "visitas": 3
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -14621,6 +16079,15 @@
      "parte": ""
     }
    },
+   "docs": {
+    "co": 6,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2016-11-01",
+     "s": "CRC/C/SLE/CO/3-5"
+    },
+    "visitas": 4
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -14666,6 +16133,15 @@
      "forma": "ratificación",
      "parte": "27 Nov 2017"
     }
+   },
+   "docs": {
+    "co": 8,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2024-06-06",
+     "s": "CEDAW/C/SGP/CO/6"
+    },
+    "visitas": 5
    },
    "visitas": {
     "realizadas": true,
@@ -14727,6 +16203,15 @@
      "forma": "a",
      "parte": "24 Jan 1990"
     }
+   },
+   "docs": {
+    "co": 3,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2024-05-06",
+     "s": "CCPR/C/SOM/CO/1"
+    },
+    "visitas": 8
    },
    "visitas": {
     "realizadas": true,
@@ -14818,6 +16303,15 @@
      "forma": "a",
      "parte": "5 Dec 2017"
     }
+   },
+   "docs": {
+    "co": 16,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2025-11-03",
+     "s": "CED/C/LKA/CO/1"
+    },
+    "visitas": 35
    },
    "visitas": {
     "realizadas": true,
@@ -14926,6 +16420,15 @@
      "parte": "20 Jun 2019"
     }
    },
+   "docs": {
+    "co": 13,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2024-03-11",
+     "s": "CRC/C/ZAF/CO/3-6"
+    },
+    "visitas": 18
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -14996,6 +16499,15 @@
      "forma": "ratificación",
      "parte": "10 Aug 2021"
     }
+   },
+   "docs": {
+    "co": 7,
+    "epu": 11,
+    "ultima_co": {
+     "d": "2018-11-19",
+     "s": "CCPR/C/SDN/CO/5"
+    },
+    "visitas": 9
    },
    "visitas": {
     "realizadas": true,
@@ -15077,6 +16589,15 @@
      "forma": "a",
      "parte": "30 Apr 2015"
     }
+   },
+   "docs": {
+    "co": 2,
+    "epu": 6,
+    "ultima_co": {
+     "d": "2022-10-27",
+     "s": "CRC/C/SSD/CO/1"
+    },
+    "visitas": 4
    },
    "visitas": {
     "realizadas": true,
@@ -15177,6 +16698,15 @@
      "parte": "14 Sep 2005"
     }
    },
+   "docs": {
+    "co": 19,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2025-12-18",
+     "s": "CERD/C/SWE/CO/24-25"
+    },
+    "visitas": 9
+   },
    "visitas": {
     "realizadas": true,
     "programadas": true
@@ -15276,6 +16806,15 @@
      "parte": "24 Sep 2009"
     }
    },
+   "docs": {
+    "co": 17,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2023-12-11",
+     "s": "CAT/C/CHE/CO/8"
+    },
+    "visitas": 6
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -15346,6 +16885,15 @@
      "forma": "a",
      "parte": "16 Nov 2021"
     }
+   },
+   "docs": {
+    "co": 9,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2024-08-28",
+     "s": "CCPR/C/SUR/CO/4"
+    },
+    "visitas": 2
    },
    "visitas": {
     "realizadas": true,
@@ -15441,6 +16989,15 @@
      "parte": "2 Oct 2007"
     }
    },
+   "docs": {
+    "co": 12,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2025-07-10",
+     "s": "CEDAW/C/THA/CO/8"
+    },
+    "visitas": 12
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -15516,6 +17073,15 @@
      "forma": "a",
      "parte": "12 Jan 2006"
     }
+   },
+   "docs": {
+    "co": 7,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2016-03-09",
+     "s": "CEDAW/C/TZA/CO/7-8"
+    },
+    "visitas": 4
    },
    "visitas": {
     "realizadas": true,
@@ -15597,6 +17163,15 @@
      "forma": "a",
      "parte": "11 Jan 1995"
     }
+   },
+   "docs": {
+    "co": 18,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2026-06-12",
+     "s": "CAT/C/TJK/CO/4"
+    },
+    "visitas": 19
    },
    "visitas": {
     "realizadas": true,
@@ -15694,6 +17269,15 @@
      "forma": "a",
      "parte": "29 Dec 2017"
     }
+   },
+   "docs": {
+    "co": 6,
+    "epu": 0,
+    "ultima_co": {
+     "d": "2023-11-01",
+     "s": "E/C.12/PSE/CO/1"
+    },
+    "visitas": 0
    },
    "visitas": {
     "realizadas": true,
@@ -15796,6 +17380,15 @@
      "parte": ""
     }
    },
+   "docs": {
+    "co": 7,
+    "epu": 10,
+    "ultima_co": {
+     "d": "2023-05-31",
+     "s": "CEDAW/C/TLS/CO/4"
+    },
+    "visitas": 10
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -15897,6 +17490,15 @@
      "parte": "20 Jul 2010"
     }
    },
+   "docs": {
+    "co": 13,
+    "epu": 9,
+    "ultima_co": {
+     "d": "2023-10-11",
+     "s": "CRC/C/TGO/CO/5-6"
+    },
+    "visitas": 7
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -15932,6 +17534,15 @@
      "forma": "a",
      "parte": "16 Feb 1972"
     }
+   },
+   "docs": {
+    "co": 1,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2019-07-02",
+     "s": "CRC/C/TON/CO/1"
+    },
+    "visitas": 0
    },
    "visitas": {
     "realizadas": false,
@@ -15983,6 +17594,15 @@
      "forma": "ratificación",
      "parte": "12 Jan 1990"
     }
+   },
+   "docs": {
+    "co": 3,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2023-12-01",
+     "s": "CCPR/C/TTO/CO/5"
+    },
+    "visitas": 1
    },
    "visitas": {
     "realizadas": true,
@@ -16069,6 +17689,15 @@
      "forma": "a",
      "parte": "25 Jun 1999"
     }
+   },
+   "docs": {
+    "co": 20,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2025-06-03",
+     "s": "CAT/C/TKM/CO/3"
+    },
+    "visitas": 1
    },
    "visitas": {
     "realizadas": true,
@@ -16171,6 +17800,15 @@
      "parte": "27 Sep 2011"
     }
    },
+   "docs": {
+    "co": 17,
+    "epu": 14,
+    "ultima_co": {
+     "d": "2024-11-28",
+     "s": "CCPR/C/TUR/CO/2"
+    },
+    "visitas": 0
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -16211,6 +17849,15 @@
      "forma": "a",
      "parte": "25 Mar 2024"
     }
+   },
+   "docs": {
+    "co": 6,
+    "epu": 14,
+    "ultima_co": {
+     "d": "2025-07-10",
+     "s": "CEDAW/C/TUV/CO/5-6"
+    },
+    "visitas": 2
    },
    "visitas": {
     "realizadas": true,
@@ -16307,6 +17954,15 @@
      "forma": "a",
      "parte": "29 Jun 2011"
     }
+   },
+   "docs": {
+    "co": 13,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2025-12-23",
+     "s": "CERD/C/TUN/CO/20-22"
+    },
+    "visitas": 26
    },
    "visitas": {
     "realizadas": true,
@@ -16424,6 +18080,15 @@
      "parte": "19 Sep 2006"
     }
    },
+   "docs": {
+    "co": 21,
+    "epu": 11,
+    "ultima_co": {
+     "d": "2025-06-17",
+     "s": "CAT/C/UKR/CO/7"
+    },
+    "visitas": 21
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -16520,6 +18185,15 @@
      "forma": "a",
      "parte": "3 Nov 1986"
     }
+   },
+   "docs": {
+    "co": 8,
+    "epu": 9,
+    "ultima_co": {
+     "d": "2023-09-11",
+     "s": "CCPR/C/UGA/CO/2"
+    },
+    "visitas": 6
    },
    "visitas": {
     "realizadas": true,
@@ -16639,6 +18313,15 @@
      "parte": "8 Dec 2005"
     }
    },
+   "docs": {
+    "co": 19,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2026-03-13",
+     "s": "E/C.12/URY/CO/6"
+    },
+    "visitas": 12
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -16715,6 +18398,15 @@
      "parte": "28 Sep 1995"
     }
    },
+   "docs": {
+    "co": 21,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2026-06-04",
+     "s": "CERD/C/UZB/CO/13-14"
+    },
+    "visitas": 16
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -16780,6 +18472,15 @@
      "forma": "a",
      "parte": "12 Jul 2011"
     }
+   },
+   "docs": {
+    "co": 4,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2019-05-13",
+     "s": "CRPD/C/VUT/CO/1"
+    },
+    "visitas": 1
    },
    "visitas": {
     "realizadas": true,
@@ -16891,6 +18592,15 @@
      "parte": ""
     }
    },
+   "docs": {
+    "co": 14,
+    "epu": 10,
+    "ultima_co": {
+     "d": "2024-09-18",
+     "s": "CERD/C/VEN/CO/22-24"
+    },
+    "visitas": 9
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -16957,6 +18667,15 @@
      "parte": "5 Feb 2015"
     }
    },
+   "docs": {
+    "co": 12,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2026-02-25",
+     "s": "CEDAW/C/VNM/CO/9"
+    },
+    "visitas": 17
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -17022,6 +18741,15 @@
      "forma": "a",
      "parte": "5 Nov 1991"
     }
+   },
+   "docs": {
+    "co": 9,
+    "epu": 14,
+    "ultima_co": {
+     "d": "2023-03-23",
+     "s": "E/C.12/YEM/CO/3"
+    },
+    "visitas": 4
    },
    "visitas": {
     "realizadas": true,
@@ -17103,6 +18831,15 @@
      "forma": "a",
      "parte": "5 Nov 2002"
     }
+   },
+   "docs": {
+    "co": 9,
+    "epu": 12,
+    "ultima_co": {
+     "d": "2024-02-26",
+     "s": "CEDAW/C/DJI/CO/4-5"
+    },
+    "visitas": 0
    },
    "visitas": {
     "realizadas": true,
@@ -17211,6 +18948,15 @@
      "parte": ""
     }
    },
+   "docs": {
+    "co": 9,
+    "epu": 13,
+    "ultima_co": {
+     "d": "2024-04-29",
+     "s": "CRPD/C/ZMB/CO/1"
+    },
+    "visitas": 9
+   },
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -17281,6 +19027,15 @@
      "forma": "a",
      "parte": "13 May 1991"
     }
+   },
+   "docs": {
+    "co": 6,
+    "epu": 9,
+    "ultima_co": {
+     "d": "2025-10-31",
+     "s": "E/C.12/ZWE/CO/2"
+    },
+    "visitas": 6
    },
    "visitas": {
     "realizadas": true,
