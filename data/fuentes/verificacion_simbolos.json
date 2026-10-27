@@ -23,7 +23,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/461037/files/E_CN.4_2002_WP.2-EN.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/461037"
+    "url": "https://digitallibrary.un.org/record/461037",
+    "sesion_nota": "\"E/CN.4/2002/68 issued under the symbol E/CN.4/2002/WP.2\" (note on microfiche copy). Includes bibliographical references.",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -52,7 +55,10 @@
      "fr": "https://digitallibrary.un.org/record/4025248/files/A_HRC_RES_54_26-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4025248/files/A_HRC_RES_54_26-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4025248"
+    "url": "https://digitallibrary.un.org/record/4025248",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -78,7 +84,14 @@
     ],
     "votacion": "Adopted, 57th meeting",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/495575"
+    "url": "https://digitallibrary.un.org/record/495575",
+    "sesion_nota": "",
+    "ubicacion": [
+     "In: Commission on Human Rights : report on the 59th session, 17 March-24 April 2003. - E/2003/23-E/CN.4/2003/135. - 2003. - p. 119-126. - (ESCOR, 2003, Suppl. no. 3)."
+    ],
+    "padres": [
+     "E/2003/23"
+    ]
    }
   },
   {
@@ -103,7 +116,14 @@
     ],
     "votacion": "Adopted without vote, 22nd meeting",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/639729"
+    "url": "https://digitallibrary.un.org/record/639729",
+    "sesion_nota": "",
+    "ubicacion": [
+     "In: Report of the Human Rights Council on its 9th session. - A/HRC/9/28. - 2 Dec. 2008. - p. 41-44."
+    ],
+    "padres": [
+     "A/HRC/9/28"
+    ]
    }
   },
   {
@@ -131,7 +151,10 @@
      "es": "https://digitallibrary.un.org/record/713965/files/A_HRC_RES_18_28-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/713965/files/A_HRC_RES_18_28-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/713965"
+    "url": "https://digitallibrary.un.org/record/713965",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -159,7 +182,10 @@
      "es": "https://digitallibrary.un.org/record/781312/files/A_HRC_RES_27_25-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/781312/files/A_HRC_RES_27_25-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/781312"
+    "url": "https://digitallibrary.un.org/record/781312",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -188,7 +214,10 @@
      "es": "https://digitallibrary.un.org/record/1310404/files/A_HRC_RES_36_23-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1310404/files/A_HRC_RES_36_23-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1310404"
+    "url": "https://digitallibrary.un.org/record/1310404",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -216,7 +245,10 @@
      "es": "https://digitallibrary.un.org/record/1310404/files/A_HRC_RES_36_23-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1310404/files/A_HRC_RES_36_23-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1310404"
+    "url": "https://digitallibrary.un.org/record/1310404",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -244,7 +276,10 @@
      "es": "https://digitallibrary.un.org/record/3888348/files/A_HRC_RES_45_24-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3888348/files/A_HRC_RES_45_24-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3888348"
+    "url": "https://digitallibrary.un.org/record/3888348",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -272,7 +307,10 @@
      "es": "https://digitallibrary.un.org/record/795265/files/A_HRC_RES_28_6-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/795265/files/A_HRC_RES_28_6-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/795265"
+    "url": "https://digitallibrary.un.org/record/795265",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -301,7 +339,10 @@
      "fr": "https://digitallibrary.un.org/record/4045893/files/A_HRC_RES_55_18-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4045893/files/A_HRC_RES_55_18-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4045893"
+    "url": "https://digitallibrary.un.org/record/4045893",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -329,7 +370,10 @@
      "es": "https://digitallibrary.un.org/record/1628069/files/A_HRC_RES_37_5-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1628069/files/A_HRC_RES_37_5-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1628069"
+    "url": "https://digitallibrary.un.org/record/1628069",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -357,7 +401,10 @@
      "es": "https://digitallibrary.un.org/record/1628069/files/A_HRC_RES_37_5-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1628069/files/A_HRC_RES_37_5-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1628069"
+    "url": "https://digitallibrary.un.org/record/1628069",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -385,7 +432,10 @@
      "es": "https://digitallibrary.un.org/record/3927026/files/A_HRC_RES_46_12-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3927026/files/A_HRC_RES_46_12-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3927026"
+    "url": "https://digitallibrary.un.org/record/3927026",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -413,7 +463,10 @@
      "es": "https://digitallibrary.un.org/record/3927026/files/A_HRC_RES_46_12-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3927026/files/A_HRC_RES_46_12-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3927026"
+    "url": "https://digitallibrary.un.org/record/3927026",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -441,7 +494,10 @@
      "es": "https://digitallibrary.un.org/record/3927026/files/A_HRC_RES_46_12-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3927026/files/A_HRC_RES_46_12-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3927026"
+    "url": "https://digitallibrary.un.org/record/3927026",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -469,7 +525,10 @@
      "es": "https://digitallibrary.un.org/record/3927026/files/A_HRC_RES_46_12-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3927026/files/A_HRC_RES_46_12-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3927026"
+    "url": "https://digitallibrary.un.org/record/3927026",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -497,7 +556,10 @@
      "es": "https://digitallibrary.un.org/record/3927026/files/A_HRC_RES_46_12-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3927026/files/A_HRC_RES_46_12-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3927026"
+    "url": "https://digitallibrary.un.org/record/3927026",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -525,7 +587,10 @@
      "es": "https://digitallibrary.un.org/record/3927026/files/A_HRC_RES_46_12-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3927026/files/A_HRC_RES_46_12-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3927026"
+    "url": "https://digitallibrary.un.org/record/3927026",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -553,7 +618,10 @@
      "es": "https://digitallibrary.un.org/record/3927026/files/A_HRC_RES_46_12-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3927026/files/A_HRC_RES_46_12-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3927026"
+    "url": "https://digitallibrary.un.org/record/3927026",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -581,7 +649,10 @@
      "es": "https://digitallibrary.un.org/record/3927026/files/A_HRC_RES_46_12-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3927026/files/A_HRC_RES_46_12-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3927026"
+    "url": "https://digitallibrary.un.org/record/3927026",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -605,7 +676,14 @@
     ],
     "votacion": "",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/115435"
+    "url": "https://digitallibrary.un.org/record/115435",
+    "sesion_nota": "Adopted at the 52nd meeting, 5 Mar. 1991.",
+    "ubicacion": [
+     "In: Commission on Human Rights : report on the 47th session, 28 January-8 March 1991. - E/1991/22-E/CN.4/1991/91. - 1991. - p. 105-106 . - (ESCOR, 1991, Suppl. no. 2)."
+    ],
+    "padres": [
+     "E/1991/22"
+    ]
    }
   },
   {
@@ -632,7 +710,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4090568/files/A_HRC_RES_60_8-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4090568"
+    "url": "https://digitallibrary.un.org/record/4090568",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -656,7 +737,14 @@
     ],
     "votacion": "",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/239109"
+    "url": "https://digitallibrary.un.org/record/239109",
+    "sesion_nota": "Adopted at the 64th meeting, 15 Apr. 1997.",
+    "ubicacion": [
+     "In: Commission on Human Rights : report on the 53rd session. - E/1997/23-E/CN.4/1997/150. - 1997. - p. 164-167. - (ESCOR, 1997, Suppl. no. 3)."
+    ],
+    "padres": [
+     "E/1997/23"
+    ]
    }
   },
   {
@@ -684,7 +772,10 @@
      "es": "https://digitallibrary.un.org/record/692595/files/A_HRC_RES_15_18-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/692595/files/A_HRC_RES_15_18-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/692595"
+    "url": "https://digitallibrary.un.org/record/692595",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -712,7 +803,10 @@
      "es": "https://digitallibrary.un.org/record/762436/files/A_HRC_RES_24_7-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/762436/files/A_HRC_RES_24_7-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/762436"
+    "url": "https://digitallibrary.un.org/record/762436",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -740,7 +834,10 @@
      "es": "https://digitallibrary.un.org/record/850368/files/A_HRC_RES_33_30-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/850368/files/A_HRC_RES_33_30-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/850368"
+    "url": "https://digitallibrary.un.org/record/850368",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -768,7 +865,10 @@
      "es": "https://digitallibrary.un.org/record/3837127/files/A_HRC_RES_42_22-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3837127/files/A_HRC_RES_42_22-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3837127"
+    "url": "https://digitallibrary.un.org/record/3837127",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -797,7 +897,10 @@
      "fr": "https://digitallibrary.un.org/record/3992427/files/A_HRC_RES_51_8-FR.pdf",
      "es": "https://digitallibrary.un.org/record/3992427/files/A_HRC_RES_51_8-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3992427"
+    "url": "https://digitallibrary.un.org/record/3992427",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -825,7 +928,10 @@
      "es": "https://digitallibrary.un.org/record/706796/files/A_HRC_RES_17_4-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/706796/files/A_HRC_RES_17_4-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/706796"
+    "url": "https://digitallibrary.un.org/record/706796",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -852,7 +958,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4124892/files/A_HRC_RES_62_5-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4124892"
+    "url": "https://digitallibrary.un.org/record/4124892",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -880,7 +989,10 @@
      "es": "https://digitallibrary.un.org/record/775713/files/A_HRC_RES_26_22-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/775713/files/A_HRC_RES_26_22-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/775713"
+    "url": "https://digitallibrary.un.org/record/775713",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -909,7 +1021,10 @@
      "es": "https://digitallibrary.un.org/record/1302319/files/A_HRC_RES_35_7-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1302319/files/A_HRC_RES_35_7-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1302319"
+    "url": "https://digitallibrary.un.org/record/1302319",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -937,7 +1052,10 @@
      "es": "https://digitallibrary.un.org/record/1302319/files/A_HRC_RES_35_7-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1302319/files/A_HRC_RES_35_7-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1302319"
+    "url": "https://digitallibrary.un.org/record/1302319",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -965,7 +1083,10 @@
      "es": "https://digitallibrary.un.org/record/1302319/files/A_HRC_RES_35_7-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1302319/files/A_HRC_RES_35_7-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1302319"
+    "url": "https://digitallibrary.un.org/record/1302319",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -993,7 +1114,10 @@
      "es": "https://digitallibrary.un.org/record/3877198/files/A_HRC_RES_44_15-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3877198/files/A_HRC_RES_44_15-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3877198"
+    "url": "https://digitallibrary.un.org/record/3877198",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -1021,7 +1145,10 @@
      "es": "https://digitallibrary.un.org/record/3877198/files/A_HRC_RES_44_15-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3877198/files/A_HRC_RES_44_15-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3877198"
+    "url": "https://digitallibrary.un.org/record/3877198",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -1050,7 +1177,10 @@
      "fr": "https://digitallibrary.un.org/record/4018954/files/A_HRC_RES_53_3-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4018954/files/A_HRC_RES_53_3-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4018954"
+    "url": "https://digitallibrary.un.org/record/4018954",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -1079,7 +1209,10 @@
      "es": "https://digitallibrary.un.org/record/3945637/files/A_HRC_RES_48_14-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3945637/files/A_HRC_RES_48_14-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3945637"
+    "url": "https://digitallibrary.un.org/record/3945637",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -1108,7 +1241,10 @@
      "fr": "https://digitallibrary.un.org/record/4063949/files/A_HRC_RES_57_31-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4063949/files/A_HRC_RES_57_31-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4063949"
+    "url": "https://digitallibrary.un.org/record/4063949",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -1133,7 +1269,14 @@
     ],
     "votacion": "Adopted without vote, 43rd meeting",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/655933"
+    "url": "https://digitallibrary.un.org/record/655933",
+    "sesion_nota": "",
+    "ubicacion": [
+     "In: Report of the Human Rights Council on its 10th session. - A/HRC/10/29. - 9 Nov. 2009. - p. 56-58."
+    ],
+    "padres": [
+     "A/HRC/10/29"
+    ]
    }
   },
   {
@@ -1162,7 +1305,10 @@
      "fr": "https://digitallibrary.un.org/record/4045552/files/A_HRC_RES_55_5-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4045552/files/A_HRC_RES_55_5-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4045552"
+    "url": "https://digitallibrary.un.org/record/4045552",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -1190,7 +1336,10 @@
      "es": "https://digitallibrary.un.org/record/724658/files/A_HRC_RES_19_6-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/724658/files/A_HRC_RES_19_6-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/724658"
+    "url": "https://digitallibrary.un.org/record/724658",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -1218,7 +1367,10 @@
      "es": "https://digitallibrary.un.org/record/795274/files/A_HRC_RES_28_9-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/795274/files/A_HRC_RES_28_9-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/795274"
+    "url": "https://digitallibrary.un.org/record/795274",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -1246,7 +1398,10 @@
      "es": "https://digitallibrary.un.org/record/1483932/files/A_HRC_RES_37_12-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1483932/files/A_HRC_RES_37_12-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1483932"
+    "url": "https://digitallibrary.un.org/record/1483932",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -1274,7 +1429,10 @@
      "es": "https://digitallibrary.un.org/record/3908099/files/A_HRC_RES_46_9-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3908099/files/A_HRC_RES_46_9-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3908099"
+    "url": "https://digitallibrary.un.org/record/3908099",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -1302,7 +1460,10 @@
      "es": "https://digitallibrary.un.org/record/850274/files/A_HRC_RES_33_14-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/850274/files/A_HRC_RES_33_14-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/850274"
+    "url": "https://digitallibrary.un.org/record/850274",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -1329,7 +1490,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4090567/files/A_HRC_RES_60_7-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4090567"
+    "url": "https://digitallibrary.un.org/record/4090567",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -1357,7 +1521,10 @@
      "es": "https://digitallibrary.un.org/record/3837302/files/A_HRC_RES_42_23-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3837302/files/A_HRC_RES_42_23-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3837302"
+    "url": "https://digitallibrary.un.org/record/3837302",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -1386,7 +1553,10 @@
      "fr": "https://digitallibrary.un.org/record/3992426/files/A_HRC_RES_51_7-FR.pdf",
      "es": "https://digitallibrary.un.org/record/3992426/files/A_HRC_RES_51_7-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3992426"
+    "url": "https://digitallibrary.un.org/record/3992426",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -1415,7 +1585,10 @@
      "fr": "https://digitallibrary.un.org/record/3992426/files/A_HRC_RES_51_7-FR.pdf",
      "es": "https://digitallibrary.un.org/record/3992426/files/A_HRC_RES_51_7-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3992426"
+    "url": "https://digitallibrary.un.org/record/3992426",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -1443,7 +1616,10 @@
      "es": "https://digitallibrary.un.org/record/775582/files/A_HRC_RES_26_20-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/775582/files/A_HRC_RES_26_20-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/775582"
+    "url": "https://digitallibrary.un.org/record/775582",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -1470,7 +1646,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4124894/files/A_HRC_RES_62_7-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4124894"
+    "url": "https://digitallibrary.un.org/record/4124894",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -1498,7 +1677,10 @@
      "es": "https://digitallibrary.un.org/record/1302318/files/A_HRC_RES_35_6-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1302318/files/A_HRC_RES_35_6-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1302318"
+    "url": "https://digitallibrary.un.org/record/1302318",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -1526,7 +1708,10 @@
      "es": "https://digitallibrary.un.org/record/1302318/files/A_HRC_RES_35_6-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1302318/files/A_HRC_RES_35_6-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1302318"
+    "url": "https://digitallibrary.un.org/record/1302318",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -1554,7 +1739,10 @@
      "es": "https://digitallibrary.un.org/record/3878563/files/A_HRC_RES_44_10-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3878563/files/A_HRC_RES_44_10-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3878563"
+    "url": "https://digitallibrary.un.org/record/3878563",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -1583,7 +1771,10 @@
      "fr": "https://digitallibrary.un.org/record/4018950/files/A_HRC_RES_53_14-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4018950/files/A_HRC_RES_53_14-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4018950"
+    "url": "https://digitallibrary.un.org/record/4018950",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -1607,7 +1798,15 @@
     ],
     "votacion": "",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/96859"
+    "url": "https://digitallibrary.un.org/record/96859",
+    "sesion_nota": "Adopted at the 1563rd meeting, 29 Feb. 1980.",
+    "ubicacion": [
+     "In: Commission on Human Rights : report on the 36th session, 4 February-14 March 1980. - E/1980/13-E/CN.4/1408. - 1980. - p. 180-181. - (ESCOR, 1980, Suppl. no. 3).",
+     "In: E/1980/13-E/CN.4/1408 (ESCOR, 1980, Suppl. no. 3). - p. 180-181."
+    ],
+    "padres": [
+     "E/1980/13"
+    ]
    }
   },
   {
@@ -1642,7 +1841,14 @@
     ],
     "votacion": "Adopted without vote, 40th meeting",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/623985"
+    "url": "https://digitallibrary.un.org/record/623985",
+    "sesion_nota": "",
+    "ubicacion": [
+     "In: Report of the Human Rights Council on its 7th session. - A/HRC/7/78. - 14 July 2008. - p. 33-37."
+    ],
+    "padres": [
+     "A/HRC/7/78"
+    ]
    }
   },
   {
@@ -1670,7 +1876,10 @@
      "es": "https://digitallibrary.un.org/record/702115/files/A_HRC_RES_16_16-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/702115/files/A_HRC_RES_16_16-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/702115"
+    "url": "https://digitallibrary.un.org/record/702115",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -1699,7 +1908,12 @@
      "es": "https://digitallibrary.un.org/record/769433/files/A_HRC_DEC_25_116-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/769433/files/A_HRC_DEC_25_116-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/769433"
+    "url": "https://digitallibrary.un.org/record/769433",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": [
+     "A/HRC/PV.53"
+    ]
    }
   },
   {
@@ -1727,7 +1941,10 @@
      "es": "https://digitallibrary.un.org/record/781886/files/A_HRC_RES_27_1-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/781886/files/A_HRC_RES_27_1-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/781886"
+    "url": "https://digitallibrary.un.org/record/781886",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -1755,7 +1972,10 @@
      "es": "https://digitallibrary.un.org/record/1310411/files/A_HRC_RES_36_6-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1310411/files/A_HRC_RES_36_6-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1310411"
+    "url": "https://digitallibrary.un.org/record/1310411",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -1783,7 +2003,10 @@
      "es": "https://digitallibrary.un.org/record/3888386/files/A_HRC_RES_45_3-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3888386/files/A_HRC_RES_45_3-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3888386"
+    "url": "https://digitallibrary.un.org/record/3888386",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -1812,7 +2035,10 @@
      "fr": "https://digitallibrary.un.org/record/4025162/files/A_HRC_RES_54_14-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4025162/files/A_HRC_RES_54_14-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4025162"
+    "url": "https://digitallibrary.un.org/record/4025162",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -1837,7 +2063,14 @@
     ],
     "votacion": "",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/253939"
+    "url": "https://digitallibrary.un.org/record/253939",
+    "sesion_nota": "Adopted at the 51st meeting, 17 Apr. 1998.",
+    "ubicacion": [
+     "In: Commission on Human Rights : report on the 54th session, 16 March-24 April 1998. - E/1998/23-E/CN.4/1998/177. - 1998. - p. 122-126. - (ESCOR, 1998, Suppl. no. 3)."
+    ],
+    "padres": [
+     "E/1998/23"
+    ]
    }
   },
   {
@@ -1864,7 +2097,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4124895/files/A_HRC_RES_62_8-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4124895"
+    "url": "https://digitallibrary.un.org/record/4124895",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -1889,7 +2125,14 @@
     ],
     "votacion": "Adopted without vote, 28th meeting",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/645305"
+    "url": "https://digitallibrary.un.org/record/645305",
+    "sesion_nota": "",
+    "ubicacion": [
+     "In: Report of the Human Rights Council on its 8th session. - A/HRC/8/52. - 1 Sept. 2008. - p. 20-24."
+    ],
+    "padres": [
+     "A/HRC/8/52"
+    ]
    }
   },
   {
@@ -1917,7 +2160,10 @@
      "es": "https://digitallibrary.un.org/record/706680/files/A_HRC_RES_17_3-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/706680/files/A_HRC_RES_17_3-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/706680"
+    "url": "https://digitallibrary.un.org/record/706680",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -1945,7 +2191,10 @@
      "es": "https://digitallibrary.un.org/record/775716/files/A_HRC_RES_26_17-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/775716/files/A_HRC_RES_26_17-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/775716"
+    "url": "https://digitallibrary.un.org/record/775716",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -1973,7 +2222,10 @@
      "es": "https://digitallibrary.un.org/record/1302314/files/A_HRC_RES_35_2-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1302314/files/A_HRC_RES_35_2-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1302314"
+    "url": "https://digitallibrary.un.org/record/1302314",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -2001,7 +2253,10 @@
      "es": "https://digitallibrary.un.org/record/3877941/files/A_HRC_RES_44_3-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3877941/files/A_HRC_RES_44_3-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3877941"
+    "url": "https://digitallibrary.un.org/record/3877941",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -2030,7 +2285,10 @@
      "fr": "https://digitallibrary.un.org/record/4020281/files/A_HRC_RES_53_7-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4020281/files/A_HRC_RES_53_7-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4020281"
+    "url": "https://digitallibrary.un.org/record/4020281",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -2058,7 +2316,10 @@
      "es": "https://digitallibrary.un.org/record/725397/files/A_HRC_RES_19_10-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/725397/files/A_HRC_RES_19_10-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/725397"
+    "url": "https://digitallibrary.un.org/record/725397",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -2087,7 +2348,10 @@
      "fr": "https://digitallibrary.un.org/record/4045692/files/A_HRC_RES_55_2-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4045692/files/A_HRC_RES_55_2-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4045692"
+    "url": "https://digitallibrary.un.org/record/4045692",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -2115,7 +2379,10 @@
      "es": "https://digitallibrary.un.org/record/796463/files/A_HRC_RES_28_11-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/796463/files/A_HRC_RES_28_11-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/796463"
+    "url": "https://digitallibrary.un.org/record/796463",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -2144,7 +2411,10 @@
      "es": "https://digitallibrary.un.org/record/1627326/files/A_HRC_RES_37_8-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1627326/files/A_HRC_RES_37_8-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1627326"
+    "url": "https://digitallibrary.un.org/record/1627326",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -2172,7 +2442,10 @@
      "es": "https://digitallibrary.un.org/record/1627326/files/A_HRC_RES_37_8-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1627326/files/A_HRC_RES_37_8-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1627326"
+    "url": "https://digitallibrary.un.org/record/1627326",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -2200,7 +2473,10 @@
      "es": "https://digitallibrary.un.org/record/3927166/files/A_HRC_RES_46_7-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3927166/files/A_HRC_RES_46_7-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3927166"
+    "url": "https://digitallibrary.un.org/record/3927166",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -2225,7 +2501,12 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/33221/files/E_RES_1982_35-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/33221"
+    "url": "https://digitallibrary.un.org/record/33221",
+    "sesion_nota": "",
+    "ubicacion": [
+     "In: E/1982/INF.7."
+    ],
+    "padres": []
    }
   },
   {
@@ -2252,7 +2533,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4122446/files/A_HRC_RES_62_10-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4122446"
+    "url": "https://digitallibrary.un.org/record/4122446",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -2280,7 +2564,10 @@
      "es": "https://digitallibrary.un.org/record/706236/files/A_HRC_RES_17_5-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/706236/files/A_HRC_RES_17_5-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/706236"
+    "url": "https://digitallibrary.un.org/record/706236",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -2308,7 +2595,10 @@
      "es": "https://digitallibrary.un.org/record/775583/files/A_HRC_RES_26_12-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/775583/files/A_HRC_RES_26_12-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/775583"
+    "url": "https://digitallibrary.un.org/record/775583",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -2336,7 +2626,10 @@
      "es": "https://digitallibrary.un.org/record/1302328/files/A_HRC_RES_35_15-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1302328/files/A_HRC_RES_35_15-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1302328"
+    "url": "https://digitallibrary.un.org/record/1302328",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -2370,7 +2663,10 @@
      "es": "https://digitallibrary.un.org/record/3876271/files/A_HRC_RES_44_5-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3876271/files/A_HRC_RES_44_5-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3876271"
+    "url": "https://digitallibrary.un.org/record/3876271",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -2398,7 +2694,10 @@
      "es": "https://digitallibrary.un.org/record/3876271/files/A_HRC_RES_44_5-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3876271/files/A_HRC_RES_44_5-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3876271"
+    "url": "https://digitallibrary.un.org/record/3876271",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -2427,7 +2726,10 @@
      "fr": "https://digitallibrary.un.org/record/4018952/files/A_HRC_RES_53_4-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4018952/files/A_HRC_RES_53_4-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4018952"
+    "url": "https://digitallibrary.un.org/record/4018952",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -2451,7 +2753,14 @@
     ],
     "votacion": "",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/414236"
+    "url": "https://digitallibrary.un.org/record/414236",
+    "sesion_nota": "Adopted at the 52nd meeting, 17 Apr. 2000.",
+    "ubicacion": [
+     "In: Commission on Human Rights : report on the 56th session, 20 March-28 April 2000. - E/2000/23-E/CN.4/2000/167. - 2000. - p. 76-79. - (ESCOR, 2000, Suppl. no. 3)."
+    ],
+    "padres": [
+     "E/2000/23"
+    ]
    }
   },
   {
@@ -2478,7 +2787,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4081145/files/A_HRC_RES_58_10-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4081145"
+    "url": "https://digitallibrary.un.org/record/4081145",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -2506,7 +2818,10 @@
      "es": "https://digitallibrary.un.org/record/680724/files/A_HRC_RES_13_4-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/680724/files/A_HRC_RES_13_4-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/680724"
+    "url": "https://digitallibrary.un.org/record/680724",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -2533,7 +2848,10 @@
      "es": "https://digitallibrary.un.org/record/747762/files/A_HRC_RES_22_9-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/747762/files/A_HRC_RES_22_9-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/747762"
+    "url": "https://digitallibrary.un.org/record/747762",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -2561,7 +2879,10 @@
      "es": "https://digitallibrary.un.org/record/845617/files/A_HRC_RES_32_8-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/845617/files/A_HRC_RES_32_8-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/845617"
+    "url": "https://digitallibrary.un.org/record/845617",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -2589,7 +2910,10 @@
      "es": "https://digitallibrary.un.org/record/3806789/files/A_HRC_RES_40_7-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3806789/files/A_HRC_RES_40_7-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3806789"
+    "url": "https://digitallibrary.un.org/record/3806789",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -2618,7 +2942,10 @@
      "fr": "https://digitallibrary.un.org/record/3973811/files/A_HRC_RES_49_13-FR.pdf",
      "es": "https://digitallibrary.un.org/record/3973811/files/A_HRC_RES_49_13-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3973811"
+    "url": "https://digitallibrary.un.org/record/3973811",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -2642,7 +2969,14 @@
     ],
     "votacion": "",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/414568"
+    "url": "https://digitallibrary.un.org/record/414568",
+    "sesion_nota": "Adopted at the 67th meeting, 26 Apr. 2000.",
+    "ubicacion": [
+     "In: Commission on Human Rights : report on the 56th session, 20 March-28 April 2000. - E/2000/23-E/CN.4/2000/167. - 2000. - p. 331-335. - (ESCOR, 2000, Suppl. no. 3)."
+    ],
+    "padres": [
+     "E/2000/23"
+    ]
    }
   },
   {
@@ -2669,7 +3003,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4107814/files/A_HRC_RES_61_11-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4107814"
+    "url": "https://digitallibrary.un.org/record/4107814",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -2694,7 +3031,14 @@
     ],
     "votacion": "Adopted 34-13, 39th meeting",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/623972"
+    "url": "https://digitallibrary.un.org/record/623972",
+    "sesion_nota": "",
+    "ubicacion": [
+     "In: Report of the Human Rights Council on its 7th session. - A/HRC/7/78. - 14 July 2008. - p. 13-15."
+    ],
+    "padres": [
+     "A/HRC/7/78"
+    ]
    }
   },
   {
@@ -2722,7 +3066,10 @@
      "es": "https://digitallibrary.un.org/record/701461/files/A_HRC_RES_16_14-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/701461/files/A_HRC_RES_16_14-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/701461"
+    "url": "https://digitallibrary.un.org/record/701461",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -2750,7 +3097,10 @@
      "es": "https://digitallibrary.un.org/record/769006/files/A_HRC_RES_25_16-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/769006/files/A_HRC_RES_25_16-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/769006"
+    "url": "https://digitallibrary.un.org/record/769006",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -2778,7 +3128,10 @@
      "es": "https://digitallibrary.un.org/record/1307650/files/A_HRC_RES_34_3-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1307650/files/A_HRC_RES_34_3-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1307650"
+    "url": "https://digitallibrary.un.org/record/1307650",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -2806,7 +3159,10 @@
      "es": "https://digitallibrary.un.org/record/1307650/files/A_HRC_RES_34_3-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1307650/files/A_HRC_RES_34_3-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1307650"
+    "url": "https://digitallibrary.un.org/record/1307650",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -2834,7 +3190,10 @@
      "es": "https://digitallibrary.un.org/record/3871175/files/A_HRC_RES_43_10-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3871175/files/A_HRC_RES_43_10-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3871175"
+    "url": "https://digitallibrary.un.org/record/3871175",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -2863,7 +3222,10 @@
      "fr": "https://digitallibrary.un.org/record/4011144/files/A_HRC_RES_52_17-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4011144/files/A_HRC_RES_52_17-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4011144"
+    "url": "https://digitallibrary.un.org/record/4011144",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -2887,7 +3249,14 @@
     ],
     "votacion": "",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/170209"
+    "url": "https://digitallibrary.un.org/record/170209",
+    "sesion_nota": "Adopted at the 57th meeting, 5 Mar. 1993.",
+    "ubicacion": [
+     "In: Commission on Human Rights : report on the 49th session, 1 February-12 March 1993. - E/1993/23-E/CN.4/1993/122. - 1993. - p. 154-157. - (ESCOR, 1993, Suppl. no. 3)."
+    ],
+    "padres": [
+     "E/1993/23"
+    ]
    }
   },
   {
@@ -2914,7 +3283,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4109137/files/A_HRC_RES_61_14-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4109137"
+    "url": "https://digitallibrary.un.org/record/4109137",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -2939,7 +3311,14 @@
     ],
     "votacion": "Adopted 32-0-15, 42nd meeting",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/624532"
+    "url": "https://digitallibrary.un.org/record/624532",
+    "sesion_nota": "",
+    "ubicacion": [
+     "In: Report of the Human Rights Council on its 7th session. - A/HRC/7/78. - 14 July 2008. - p. 104-107."
+    ],
+    "padres": [
+     "A/HRC/7/78"
+    ]
    }
   },
   {
@@ -2967,7 +3346,10 @@
      "es": "https://digitallibrary.un.org/record/701208/files/A_HRC_RES_16_4-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/701208/files/A_HRC_RES_16_4-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/701208"
+    "url": "https://digitallibrary.un.org/record/701208",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -2995,7 +3377,10 @@
      "es": "https://digitallibrary.un.org/record/768959/files/A_HRC_RES_25_2-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/768959/files/A_HRC_RES_25_2-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/768959"
+    "url": "https://digitallibrary.un.org/record/768959",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -3023,7 +3408,10 @@
      "es": "https://digitallibrary.un.org/record/1315128/files/A_HRC_RES_34_18-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1315128/files/A_HRC_RES_34_18-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1315128"
+    "url": "https://digitallibrary.un.org/record/1315128",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -3051,7 +3439,10 @@
      "es": "https://digitallibrary.un.org/record/1315128/files/A_HRC_RES_34_18-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1315128/files/A_HRC_RES_34_18-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1315128"
+    "url": "https://digitallibrary.un.org/record/1315128",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -3079,7 +3470,10 @@
      "es": "https://digitallibrary.un.org/record/3874879/files/A_HRC_RES_43_4-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3874879/files/A_HRC_RES_43_4-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3874879"
+    "url": "https://digitallibrary.un.org/record/3874879",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -3108,7 +3502,10 @@
      "fr": "https://digitallibrary.un.org/record/4012702/files/A_HRC_RES_52_9-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4012702/files/A_HRC_RES_52_9-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4012702"
+    "url": "https://digitallibrary.un.org/record/4012702",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -3136,7 +3533,10 @@
      "es": "https://digitallibrary.un.org/record/692666/files/A_HRC_RES_15_21-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/692666/files/A_HRC_RES_15_21-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/692666"
+    "url": "https://digitallibrary.un.org/record/692666",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -3163,7 +3563,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4086729/files/A_HRC_RES_59_4-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4086729"
+    "url": "https://digitallibrary.un.org/record/4086729",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -3191,7 +3594,10 @@
      "es": "https://digitallibrary.un.org/record/762434/files/A_HRC_RES_24_5-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/762434/files/A_HRC_RES_24_5-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/762434"
+    "url": "https://digitallibrary.un.org/record/762434",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -3219,7 +3625,10 @@
      "es": "https://digitallibrary.un.org/record/845566/files/A_HRC_RES_32_32-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/845566/files/A_HRC_RES_32_32-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/845566"
+    "url": "https://digitallibrary.un.org/record/845566",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -3247,7 +3656,10 @@
      "es": "https://digitallibrary.un.org/record/3832138/files/A_HRC_RES_41_12-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3832138/files/A_HRC_RES_41_12-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3832138"
+    "url": "https://digitallibrary.un.org/record/3832138",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -3276,7 +3688,10 @@
      "fr": "https://digitallibrary.un.org/record/3987232/files/A_HRC_RES_50_17-FR.pdf",
      "es": "https://digitallibrary.un.org/record/3987232/files/A_HRC_RES_50_17-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3987232"
+    "url": "https://digitallibrary.un.org/record/3987232",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -3301,7 +3716,14 @@
     ],
     "votacion": "Adopted without vote, 49th meeting",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/464198"
+    "url": "https://digitallibrary.un.org/record/464198",
+    "sesion_nota": "",
+    "ubicacion": [
+     "In: Commission on Human Rights : report on the 58th session, 18 March-26 April 2002. - E/2002/23-E/CN.4/2002/200. - 2002. - p. 144-147. - (ESCOR, 2002, Suppl. no. 3)."
+    ],
+    "padres": [
+     "E/2002/23"
+    ]
    }
   },
   {
@@ -3328,7 +3750,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4090570/files/A_HRC_RES_60_10-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4090570"
+    "url": "https://digitallibrary.un.org/record/4090570",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -3356,7 +3781,10 @@
      "es": "https://digitallibrary.un.org/record/692709/files/A_HRC_RES_15_22-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/692709/files/A_HRC_RES_15_22-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/692709"
+    "url": "https://digitallibrary.un.org/record/692709",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -3384,7 +3812,10 @@
      "es": "https://digitallibrary.un.org/record/762435/files/A_HRC_RES_24_6-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/762435/files/A_HRC_RES_24_6-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/762435"
+    "url": "https://digitallibrary.un.org/record/762435",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -3412,7 +3843,10 @@
      "es": "https://digitallibrary.un.org/record/849534/files/A_HRC_RES_33_9-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/849534/files/A_HRC_RES_33_9-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/849534"
+    "url": "https://digitallibrary.un.org/record/849534",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -3441,7 +3875,10 @@
      "es": "https://digitallibrary.un.org/record/3836332/files/A_HRC_RES_42_16-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3836332/files/A_HRC_RES_42_16-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3836332"
+    "url": "https://digitallibrary.un.org/record/3836332",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -3469,7 +3906,10 @@
      "es": "https://digitallibrary.un.org/record/3836332/files/A_HRC_RES_42_16-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3836332/files/A_HRC_RES_42_16-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3836332"
+    "url": "https://digitallibrary.un.org/record/3836332",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -3499,7 +3939,10 @@
      "fr": "https://digitallibrary.un.org/record/3991829/files/A_HRC_RES_51_21-FR.pdf",
      "es": "https://digitallibrary.un.org/record/3991829/files/A_HRC_RES_51_21-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3991829"
+    "url": "https://digitallibrary.un.org/record/3991829",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -3528,7 +3971,10 @@
      "fr": "https://digitallibrary.un.org/record/3991829/files/A_HRC_RES_51_21-FR.pdf",
      "es": "https://digitallibrary.un.org/record/3991829/files/A_HRC_RES_51_21-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3991829"
+    "url": "https://digitallibrary.un.org/record/3991829",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -3553,7 +3999,14 @@
     ],
     "votacion": "",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/414235"
+    "url": "https://digitallibrary.un.org/record/414235",
+    "sesion_nota": "Adopted at the 52nd meeting, 17 Apr. 2000.",
+    "ubicacion": [
+     "In: Commission on Human Rights : report on the 56th session, 20 March-28 April 2000. - E/2000/23-E/CN.4/2000/167. - 2000. - p. 69-76. - (ESCOR, 2000, Suppl. no. 3)."
+    ],
+    "padres": [
+     "E/2000/23"
+    ]
    }
   },
   {
@@ -3580,7 +4033,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4108198/files/A_HRC_RES_61_16-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4108198"
+    "url": "https://digitallibrary.un.org/record/4108198",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -3605,7 +4061,14 @@
     ],
     "votacion": "Adopted without vote, 33rd meeting",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/615935"
+    "url": "https://digitallibrary.un.org/record/615935",
+    "sesion_nota": "",
+    "ubicacion": [
+     "In: Report of the Human Rights Council on its 6th session. - A/HRC/6/22. - 14 Apr. 2008. - p. 51-54."
+    ],
+    "padres": [
+     "A/HRC/6/22"
+    ]
    }
   },
   {
@@ -3633,7 +4096,10 @@
      "es": "https://digitallibrary.un.org/record/691616/files/A_HRC_RES_15_8-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/691616/files/A_HRC_RES_15_8-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/691616"
+    "url": "https://digitallibrary.un.org/record/691616",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -3658,7 +4124,12 @@
     ],
     "votacion": "Adopted without vote, 34th meeting",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/762217"
+    "url": "https://digitallibrary.un.org/record/762217",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": [
+     "A/HRC/PV.34"
+    ]
    }
   },
   {
@@ -3686,7 +4157,10 @@
      "es": "https://digitallibrary.un.org/record/769007/files/A_HRC_RES_25_17-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/769007/files/A_HRC_RES_25_17-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/769007"
+    "url": "https://digitallibrary.un.org/record/769007",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -3714,7 +4188,10 @@
      "es": "https://digitallibrary.un.org/record/1307665/files/A_HRC_RES_34_9-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1307665/files/A_HRC_RES_34_9-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1307665"
+    "url": "https://digitallibrary.un.org/record/1307665",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -3742,7 +4219,10 @@
      "es": "https://digitallibrary.un.org/record/3875326/files/A_HRC_RES_43_14-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3875326/files/A_HRC_RES_43_14-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3875326"
+    "url": "https://digitallibrary.un.org/record/3875326",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -3771,7 +4251,10 @@
      "fr": "https://digitallibrary.un.org/record/4012873/files/A_HRC_RES_52_10-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4012873/files/A_HRC_RES_52_10-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4012873"
+    "url": "https://digitallibrary.un.org/record/4012873",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -3795,7 +4278,14 @@
     ],
     "votacion": "",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/414455"
+    "url": "https://digitallibrary.un.org/record/414455",
+    "sesion_nota": "Adopted at the 65th meeting, 26 Apr. 2000.",
+    "ubicacion": [
+     "In: Commission on Human Rights : report on the 56th session, 20 March-28 April 2000. - E/2000/23-E/CN.4/2000/167. - 2000. - p. 271-273. - (ESCOR, 2000, Suppl. no. 3)."
+    ],
+    "padres": [
+     "E/2000/23"
+    ]
    }
   },
   {
@@ -3822,7 +4312,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4108056/files/A_HRC_RES_61_22-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4108056"
+    "url": "https://digitallibrary.un.org/record/4108056",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -3847,7 +4340,14 @@
     ],
     "votacion": "Adopted without vote, 40th meeting",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/623980"
+    "url": "https://digitallibrary.un.org/record/623980",
+    "sesion_nota": "",
+    "ubicacion": [
+     "In: Report of the Human Rights Council on its 7th session. - A/HRC/7/78. - 14 July 2008. - p. 23-25."
+    ],
+    "padres": [
+     "A/HRC/7/78"
+    ]
    }
   },
   {
@@ -3875,7 +4375,10 @@
      "es": "https://digitallibrary.un.org/record/701210/files/A_HRC_RES_16_5-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/701210/files/A_HRC_RES_16_5-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/701210"
+    "url": "https://digitallibrary.un.org/record/701210",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -3903,7 +4406,10 @@
      "es": "https://digitallibrary.un.org/record/768970/files/A_HRC_RES_25_18-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/768970/files/A_HRC_RES_25_18-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/768970"
+    "url": "https://digitallibrary.un.org/record/768970",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -3931,7 +4437,10 @@
      "es": "https://digitallibrary.un.org/record/1290080/files/A_HRC_RES_34_5-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1290080/files/A_HRC_RES_34_5-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1290080"
+    "url": "https://digitallibrary.un.org/record/1290080",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -3960,7 +4469,10 @@
      "es": "https://digitallibrary.un.org/record/3874886/files/A_HRC_RES_43_16-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3874886/files/A_HRC_RES_43_16-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3874886"
+    "url": "https://digitallibrary.un.org/record/3874886",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -3988,7 +4500,10 @@
      "es": "https://digitallibrary.un.org/record/3874886/files/A_HRC_RES_43_16-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3874886/files/A_HRC_RES_43_16-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3874886"
+    "url": "https://digitallibrary.un.org/record/3874886",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -4017,7 +4532,10 @@
      "fr": "https://digitallibrary.un.org/record/4012363/files/A_HRC_RES_52_4-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4012363/files/A_HRC_RES_52_4-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4012363"
+    "url": "https://digitallibrary.un.org/record/4012363",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -4046,7 +4564,10 @@
      "fr": "https://digitallibrary.un.org/record/4012363/files/A_HRC_RES_52_4-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4012363/files/A_HRC_RES_52_4-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4012363"
+    "url": "https://digitallibrary.un.org/record/4012363",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -4070,7 +4591,14 @@
     ],
     "votacion": "",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/184698"
+    "url": "https://digitallibrary.un.org/record/184698",
+    "sesion_nota": "Adopted at the 55th meeting, 4 Mar. 1994.",
+    "ubicacion": [
+     "In: Commission on Human Rights : report on the 50th session, 31 January-11 March 1994. - E/1994/24-E/CN.4/1994/132. - 1994. - p. 135-136. - (ESCOR, 1994, Suppl. no. 4)."
+    ],
+    "padres": [
+     "E/1994/24"
+    ]
    }
   },
   {
@@ -4097,7 +4625,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4122527/files/A_HRC_RES_62_12-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4122527"
+    "url": "https://digitallibrary.un.org/record/4122527",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -4122,7 +4653,14 @@
     ],
     "votacion": "Adopted without vote, 28th meeting",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/645311"
+    "url": "https://digitallibrary.un.org/record/645311",
+    "sesion_nota": "",
+    "ubicacion": [
+     "In: Report of the Human Rights Council on its 8th session. - A/HRC/8/52. - 1 Sept. 2008. - p. 28-30."
+    ],
+    "padres": [
+     "A/HRC/8/52"
+    ]
    }
   },
   {
@@ -4150,7 +4688,10 @@
      "es": "https://digitallibrary.un.org/record/706679/files/A_HRC_RES_17_2-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/706679/files/A_HRC_RES_17_2-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/706679"
+    "url": "https://digitallibrary.un.org/record/706679",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -4178,7 +4719,10 @@
      "es": "https://digitallibrary.un.org/record/775324/files/A_HRC_RES_26_7-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/775324/files/A_HRC_RES_26_7-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/775324"
+    "url": "https://digitallibrary.un.org/record/775324",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -4206,7 +4750,10 @@
      "es": "https://digitallibrary.un.org/record/1302323/files/A_HRC_RES_35_11-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1302323/files/A_HRC_RES_35_11-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1302323"
+    "url": "https://digitallibrary.un.org/record/1302323",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -4234,7 +4781,10 @@
      "es": "https://digitallibrary.un.org/record/3877488/files/A_HRC_RES_44_8-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3877488/files/A_HRC_RES_44_8-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3877488"
+    "url": "https://digitallibrary.un.org/record/3877488",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -4262,7 +4812,10 @@
      "es": "https://digitallibrary.un.org/record/3877488/files/A_HRC_RES_44_8-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3877488/files/A_HRC_RES_44_8-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3877488"
+    "url": "https://digitallibrary.un.org/record/3877488",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -4291,7 +4844,10 @@
      "fr": "https://digitallibrary.un.org/record/4018948/files/A_HRC_RES_53_12-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4018948/files/A_HRC_RES_53_12-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4018948"
+    "url": "https://digitallibrary.un.org/record/4018948",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -4315,7 +4871,14 @@
     ],
     "votacion": "Adopted without vote, 76th meeting",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/440089"
+    "url": "https://digitallibrary.un.org/record/440089",
+    "sesion_nota": "",
+    "ubicacion": [
+     "In: Commission on Human Rights : report on the 57th session, 19 March-27 April 2001. - E/2001/23-E/CN.4/2001/167. - 2001. - p. 249-252. - (ESCOR, 2001, Suppl. no. 3)."
+    ],
+    "padres": [
+     "E/2001/23"
+    ]
    }
   },
   {
@@ -4342,7 +4905,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4090543/files/A_HRC_RES_60_4-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4090543"
+    "url": "https://digitallibrary.un.org/record/4090543",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -4370,7 +4936,10 @@
      "es": "https://digitallibrary.un.org/record/692515/files/A_HRC_RES_15_14-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/692515/files/A_HRC_RES_15_14-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/692515"
+    "url": "https://digitallibrary.un.org/record/692515",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -4398,7 +4967,10 @@
      "es": "https://digitallibrary.un.org/record/762438/files/A_HRC_RES_24_9-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/762438/files/A_HRC_RES_24_9-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/762438"
+    "url": "https://digitallibrary.un.org/record/762438",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -4426,7 +4998,10 @@
      "es": "https://digitallibrary.un.org/record/850270/files/A_HRC_RES_33_12-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/850270/files/A_HRC_RES_33_12-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/850270"
+    "url": "https://digitallibrary.un.org/record/850270",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -4454,7 +5029,10 @@
      "es": "https://digitallibrary.un.org/record/3836333/files/A_HRC_RES_42_20-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3836333/files/A_HRC_RES_42_20-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3836333"
+    "url": "https://digitallibrary.un.org/record/3836333",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -4484,7 +5062,10 @@
      "fr": "https://digitallibrary.un.org/record/3991858/files/A_HRC_RES_51_16-FR.pdf",
      "es": "https://digitallibrary.un.org/record/3991858/files/A_HRC_RES_51_16-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3991858"
+    "url": "https://digitallibrary.un.org/record/3991858",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -4513,7 +5094,10 @@
      "fr": "https://digitallibrary.un.org/record/3991858/files/A_HRC_RES_51_16-FR.pdf",
      "es": "https://digitallibrary.un.org/record/3991858/files/A_HRC_RES_51_16-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3991858"
+    "url": "https://digitallibrary.un.org/record/3991858",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -4538,7 +5122,14 @@
     ],
     "votacion": "Adopted without vote, 56th meeting",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/521988"
+    "url": "https://digitallibrary.un.org/record/521988",
+    "sesion_nota": "",
+    "ubicacion": [
+     "In: Commission on Human Rights : report on the 60th session, 15 March-23 April 2004. - E/2004/23-E/CN.4/2004/127. - 2004. - p. 205-210. - (ESCOR, 2004, Suppl. no. 3)."
+    ],
+    "padres": [
+     "E/2004/23"
+    ]
    }
   },
   {
@@ -4565,7 +5156,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4087002/files/A_HRC_RES_59_12-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4087002"
+    "url": "https://digitallibrary.un.org/record/4087002",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -4593,7 +5187,10 @@
      "es": "https://digitallibrary.un.org/record/691463/files/A_HRC_RES_14_6-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/691463/files/A_HRC_RES_14_6-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/691463"
+    "url": "https://digitallibrary.un.org/record/691463",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -4621,7 +5218,10 @@
      "es": "https://digitallibrary.un.org/record/752300/files/A_HRC_RES_23_8-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/752300/files/A_HRC_RES_23_8-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/752300"
+    "url": "https://digitallibrary.un.org/record/752300",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -4649,7 +5249,10 @@
      "es": "https://digitallibrary.un.org/record/845725/files/A_HRC_RES_32_11-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/845725/files/A_HRC_RES_32_11-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/845725"
+    "url": "https://digitallibrary.un.org/record/845725",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -4677,7 +5280,10 @@
      "es": "https://digitallibrary.un.org/record/845725/files/A_HRC_RES_32_11-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/845725/files/A_HRC_RES_32_11-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/845725"
+    "url": "https://digitallibrary.un.org/record/845725",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -4713,7 +5319,10 @@
      "fr": "https://digitallibrary.un.org/record/3985282/files/A_HRC_RES_50_6-FR.pdf",
      "es": "https://digitallibrary.un.org/record/3985282/files/A_HRC_RES_50_6-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3985282"
+    "url": "https://digitallibrary.un.org/record/3985282",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -4742,7 +5351,10 @@
      "fr": "https://digitallibrary.un.org/record/3985282/files/A_HRC_RES_50_6-FR.pdf",
      "es": "https://digitallibrary.un.org/record/3985282/files/A_HRC_RES_50_6-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3985282"
+    "url": "https://digitallibrary.un.org/record/3985282",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -4771,7 +5383,10 @@
      "fr": "https://digitallibrary.un.org/record/3985282/files/A_HRC_RES_50_6-FR.pdf",
      "es": "https://digitallibrary.un.org/record/3985282/files/A_HRC_RES_50_6-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3985282"
+    "url": "https://digitallibrary.un.org/record/3985282",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -4799,7 +5414,10 @@
      "es": "https://digitallibrary.un.org/record/713613/files/A_HRC_RES_18_6-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/713613/files/A_HRC_RES_18_6-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/713613"
+    "url": "https://digitallibrary.un.org/record/713613",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -4828,7 +5446,10 @@
      "fr": "https://digitallibrary.un.org/record/4063838/files/A_HRC_RES_57_7-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4063838/files/A_HRC_RES_57_7-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4063838"
+    "url": "https://digitallibrary.un.org/record/4063838",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -4856,7 +5477,10 @@
      "es": "https://digitallibrary.un.org/record/781310/files/A_HRC_RES_27_9-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/781310/files/A_HRC_RES_27_9-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/781310"
+    "url": "https://digitallibrary.un.org/record/781310",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -4884,7 +5508,10 @@
      "es": "https://digitallibrary.un.org/record/1310410/files/A_HRC_RES_36_4-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1310410/files/A_HRC_RES_36_4-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1310410"
+    "url": "https://digitallibrary.un.org/record/1310410",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -4912,7 +5539,10 @@
      "es": "https://digitallibrary.un.org/record/3886617/files/A_HRC_RES_45_4-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3886617/files/A_HRC_RES_45_4-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3886617"
+    "url": "https://digitallibrary.un.org/record/3886617",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -4941,7 +5571,10 @@
      "fr": "https://digitallibrary.un.org/record/3991807/files/A_HRC_RES_51_11-FR.pdf",
      "es": "https://digitallibrary.un.org/record/3991807/files/A_HRC_RES_51_11-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3991807"
+    "url": "https://digitallibrary.un.org/record/3991807",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -4970,7 +5603,10 @@
      "fr": "https://digitallibrary.un.org/record/4025101/files/A_HRC_RES_54_4-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4025101/files/A_HRC_RES_54_4-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4025101"
+    "url": "https://digitallibrary.un.org/record/4025101",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -4995,7 +5631,14 @@
     ],
     "votacion": "Adopted, 58th meeting",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/547118"
+    "url": "https://digitallibrary.un.org/record/547118",
+    "sesion_nota": "",
+    "ubicacion": [
+     "In: Commission on Human Rights : report on the 61st session, 14 March-22 April 2005. - E/2005/23-E/CN.4/2005/135. - 2005. - p. 224-227. - (ESCOR, 2005, Suppl. no. 3)."
+    ],
+    "padres": [
+     "E/2005/23"
+    ]
    }
   },
   {
@@ -5022,7 +5665,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4124865/files/A_HRC_RES_62_16-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4124865"
+    "url": "https://digitallibrary.un.org/record/4124865",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -5047,7 +5693,14 @@
     ],
     "votacion": "Adopted 34-13, 39th meeting",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/623973"
+    "url": "https://digitallibrary.un.org/record/623973",
+    "sesion_nota": "",
+    "ubicacion": [
+     "In: Report of the Human Rights Council on its 7th session. - A/HRC/7/78. - 14 July 2008. - p. 15-17."
+    ],
+    "padres": [
+     "A/HRC/7/78"
+    ]
    }
   },
   {
@@ -5075,7 +5728,10 @@
      "es": "https://digitallibrary.un.org/record/706754/files/A_HRC_RES_17_6-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/706754/files/A_HRC_RES_17_6-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/706754"
+    "url": "https://digitallibrary.un.org/record/706754",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -5103,7 +5759,10 @@
      "es": "https://digitallibrary.un.org/record/775585/files/A_HRC_RES_26_6-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/775585/files/A_HRC_RES_26_6-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/775585"
+    "url": "https://digitallibrary.un.org/record/775585",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -5131,7 +5790,10 @@
      "es": "https://digitallibrary.un.org/record/1302315/files/A_HRC_RES_35_3-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1302315/files/A_HRC_RES_35_3-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1302315"
+    "url": "https://digitallibrary.un.org/record/1302315",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -5159,7 +5821,10 @@
      "es": "https://digitallibrary.un.org/record/3878625/files/A_HRC_RES_44_11-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3878625/files/A_HRC_RES_44_11-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3878625"
+    "url": "https://digitallibrary.un.org/record/3878625",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -5188,7 +5853,10 @@
      "fr": "https://digitallibrary.un.org/record/4020220/files/A_HRC_RES_53_5-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4020220/files/A_HRC_RES_53_5-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4020220"
+    "url": "https://digitallibrary.un.org/record/4020220",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -5213,7 +5881,14 @@
     ],
     "votacion": "Adopted, 38th meeting",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/545427"
+    "url": "https://digitallibrary.un.org/record/545427",
+    "sesion_nota": "",
+    "ubicacion": [
+     "In: Commission on Human Rights : report on the 61st session, 14 March-22 April 2005. - E/2005/23-E/CN.4/2005/135. - 2005. - p. 17-21. - (ESCOR, 2005, Suppl. no. 3)."
+    ],
+    "padres": [
+     "E/2005/23"
+    ]
    }
   },
   {
@@ -5240,7 +5915,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4090544/files/A_HRC_RES_60_5-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4090544"
+    "url": "https://digitallibrary.un.org/record/4090544",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -5268,7 +5946,10 @@
      "es": "https://digitallibrary.un.org/record/692711/files/A_HRC_RES_15_12-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/692711/files/A_HRC_RES_15_12-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/692711"
+    "url": "https://digitallibrary.un.org/record/692711",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -5296,7 +5977,10 @@
      "es": "https://digitallibrary.un.org/record/762459/files/A_HRC_RES_24_13-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/762459/files/A_HRC_RES_24_13-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/762459"
+    "url": "https://digitallibrary.un.org/record/762459",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -5324,7 +6008,10 @@
      "es": "https://digitallibrary.un.org/record/849538/files/A_HRC_RES_33_4-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/849538/files/A_HRC_RES_33_4-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/849538"
+    "url": "https://digitallibrary.un.org/record/849538",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -5352,7 +6039,10 @@
      "es": "https://digitallibrary.un.org/record/3837295/files/A_HRC_RES_42_9-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3837295/files/A_HRC_RES_42_9-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3837295"
+    "url": "https://digitallibrary.un.org/record/3837295",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -5382,7 +6072,10 @@
      "fr": "https://digitallibrary.un.org/record/3991809/files/A_HRC_RES_51_13-FR.pdf",
      "es": "https://digitallibrary.un.org/record/3991809/files/A_HRC_RES_51_13-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3991809"
+    "url": "https://digitallibrary.un.org/record/3991809",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -5411,7 +6104,10 @@
      "fr": "https://digitallibrary.un.org/record/3991809/files/A_HRC_RES_51_13-FR.pdf",
      "es": "https://digitallibrary.un.org/record/3991809/files/A_HRC_RES_51_13-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3991809"
+    "url": "https://digitallibrary.un.org/record/3991809",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -5435,7 +6131,14 @@
     ],
     "votacion": "",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/1493093"
+    "url": "https://digitallibrary.un.org/record/1493093",
+    "sesion_nota": "Adopted at the 56th meeting, 27 Apr. 1999.",
+    "ubicacion": [
+     "In: Commission on Human Rights : report on the 55th session, 22 March-30 April 1999. - E/1999/23-E/CN.4/1999/167. - 1999. - p. 161-164. - (ESCOR, 1999, Suppl. no. 3)."
+    ],
+    "padres": [
+     "E/1999/23"
+    ]
    }
   },
   {
@@ -5462,7 +6165,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4108553/files/A_HRC_RES_61_17-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4108553"
+    "url": "https://digitallibrary.un.org/record/4108553",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -5487,7 +6193,14 @@
     ],
     "votacion": "Adopted without vote, 28th meeting",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/645318"
+    "url": "https://digitallibrary.un.org/record/645318",
+    "sesion_nota": "",
+    "ubicacion": [
+     "In: Report of the Human Rights Council on its 8th session. - A/HRC/8/52. - 1 Sept. 2008. - p. 40-42."
+    ],
+    "padres": [
+     "A/HRC/8/52"
+    ]
    }
   },
   {
@@ -5515,7 +6228,10 @@
      "es": "https://digitallibrary.un.org/record/706787/files/A_HRC_RES_17_12-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/706787/files/A_HRC_RES_17_12-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/706787"
+    "url": "https://digitallibrary.un.org/record/706787",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -5543,7 +6259,10 @@
      "es": "https://digitallibrary.un.org/record/775581/files/A_HRC_RES_26_19-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/775581/files/A_HRC_RES_26_19-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/775581"
+    "url": "https://digitallibrary.un.org/record/775581",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -5571,7 +6290,10 @@
      "es": "https://digitallibrary.un.org/record/1289018/files/A_HRC_RES_34_21-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1289018/files/A_HRC_RES_34_21-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1289018"
+    "url": "https://digitallibrary.un.org/record/1289018",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -5599,7 +6321,10 @@
      "es": "https://digitallibrary.un.org/record/1289018/files/A_HRC_RES_34_21-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1289018/files/A_HRC_RES_34_21-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1289018"
+    "url": "https://digitallibrary.un.org/record/1289018",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -5628,7 +6353,10 @@
      "es": "https://digitallibrary.un.org/record/3874880/files/A_HRC_RES_43_6-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3874880/files/A_HRC_RES_43_6-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3874880"
+    "url": "https://digitallibrary.un.org/record/3874880",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -5656,7 +6384,10 @@
      "es": "https://digitallibrary.un.org/record/3874880/files/A_HRC_RES_43_6-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3874880/files/A_HRC_RES_43_6-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3874880"
+    "url": "https://digitallibrary.un.org/record/3874880",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -5685,7 +6416,10 @@
      "fr": "https://digitallibrary.un.org/record/4012101/files/A_HRC_RES_52_20-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4012101/files/A_HRC_RES_52_20-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4012101"
+    "url": "https://digitallibrary.un.org/record/4012101",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -5711,7 +6445,15 @@
     ],
     "votacion": "Adopted without vote, 60th meeting",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/547275"
+    "url": "https://digitallibrary.un.org/record/547275",
+    "sesion_nota": "",
+    "ubicacion": [
+     "In: Commission on Human Rights : report on the 61st session, 14 March-22 April 2005. - E/2005/23-E/CN.4/2005/135. - 2005. - p. 304-306. - (ESCOR, 2005, Suppl. no. 3)."
+    ],
+    "padres": [
+     "E/2005/23",
+     "E/2005/23"
+    ]
    }
   },
   {
@@ -5738,7 +6480,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4109225/files/A_HRC_RES_61_15-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4109225"
+    "url": "https://digitallibrary.un.org/record/4109225",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -5763,7 +6508,14 @@
     ],
     "votacion": "Adopted without vote, 39th meeting",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/623974"
+    "url": "https://digitallibrary.un.org/record/623974",
+    "sesion_nota": "",
+    "ubicacion": [
+     "In: Report of the Human Rights Council on its 7th session. - A/HRC/7/78. - 14 July 2008. - p. 18-19."
+    ],
+    "padres": [
+     "A/HRC/7/78"
+    ]
    }
   },
   {
@@ -5788,7 +6540,14 @@
     ],
     "votacion": "Adopted without vote, 39th meeting",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/623974"
+    "url": "https://digitallibrary.un.org/record/623974",
+    "sesion_nota": "",
+    "ubicacion": [
+     "In: Report of the Human Rights Council on its 7th session. - A/HRC/7/78. - 14 July 2008. - p. 18-19."
+    ],
+    "padres": [
+     "A/HRC/7/78"
+    ]
    }
   },
   {
@@ -5816,7 +6575,10 @@
      "es": "https://digitallibrary.un.org/record/701947/files/A_HRC_RES_16_6-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/701947/files/A_HRC_RES_16_6-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/701947"
+    "url": "https://digitallibrary.un.org/record/701947",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -5844,7 +6606,10 @@
      "es": "https://digitallibrary.un.org/record/701947/files/A_HRC_RES_16_6-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/701947/files/A_HRC_RES_16_6-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/701947"
+    "url": "https://digitallibrary.un.org/record/701947",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -5872,7 +6637,10 @@
      "es": "https://digitallibrary.un.org/record/768962/files/A_HRC_RES_25_5-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/768962/files/A_HRC_RES_25_5-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/768962"
+    "url": "https://digitallibrary.un.org/record/768962",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -5901,7 +6669,10 @@
      "es": "https://digitallibrary.un.org/record/1290081/files/A_HRC_RES_34_6-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1290081/files/A_HRC_RES_34_6-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1290081"
+    "url": "https://digitallibrary.un.org/record/1290081",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -5929,7 +6700,10 @@
      "es": "https://digitallibrary.un.org/record/1290081/files/A_HRC_RES_34_6-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1290081/files/A_HRC_RES_34_6-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1290081"
+    "url": "https://digitallibrary.un.org/record/1290081",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -5957,7 +6731,10 @@
      "es": "https://digitallibrary.un.org/record/1290081/files/A_HRC_RES_34_6-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1290081/files/A_HRC_RES_34_6-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1290081"
+    "url": "https://digitallibrary.un.org/record/1290081",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -5985,7 +6762,12 @@
      "es": "http://digitallibrary.un.org/record/3857022/files/A_HRC_DEC_43_115-ES.pdf",
      "fr": "http://digitallibrary.un.org/record/3857022/files/A_HRC_DEC_43_115-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3857022"
+    "url": "https://digitallibrary.un.org/record/3857022",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": [
+     "A/HRC/43/PV.34"
+    ]
    }
   },
   {
@@ -6014,7 +6796,10 @@
      "es": "https://digitallibrary.un.org/record/3876050/files/A_HRC_RES_43_8-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3876050/files/A_HRC_RES_43_8-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3876050"
+    "url": "https://digitallibrary.un.org/record/3876050",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -6042,7 +6827,10 @@
      "es": "https://digitallibrary.un.org/record/3876050/files/A_HRC_RES_43_8-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3876050/files/A_HRC_RES_43_8-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3876050"
+    "url": "https://digitallibrary.un.org/record/3876050",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -6071,7 +6859,10 @@
      "fr": "https://digitallibrary.un.org/record/4010051/files/A_HRC_RES_52_5-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4010051/files/A_HRC_RES_52_5-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4010051"
+    "url": "https://digitallibrary.un.org/record/4010051",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -6099,7 +6890,10 @@
      "es": "https://digitallibrary.un.org/record/762466/files/A_HRC_RES_24_20-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/762466/files/A_HRC_RES_24_20-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/762466"
+    "url": "https://digitallibrary.un.org/record/762466",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -6126,7 +6920,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4090571/files/A_HRC_RES_60_11-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4090571"
+    "url": "https://digitallibrary.un.org/record/4090571",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -6154,7 +6951,10 @@
      "es": "https://digitallibrary.un.org/record/849882/files/A_HRC_RES_33_5-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/849882/files/A_HRC_RES_33_5-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/849882"
+    "url": "https://digitallibrary.un.org/record/849882",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -6182,7 +6982,10 @@
      "es": "https://digitallibrary.un.org/record/3836330/files/A_HRC_RES_42_12-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3836330/files/A_HRC_RES_42_12-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3836330"
+    "url": "https://digitallibrary.un.org/record/3836330",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -6211,7 +7014,10 @@
      "fr": "https://digitallibrary.un.org/record/3992234/files/A_HRC_RES_51_4-FR.pdf",
      "es": "https://digitallibrary.un.org/record/3992234/files/A_HRC_RES_51_4-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3992234"
+    "url": "https://digitallibrary.un.org/record/3992234",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -6240,7 +7046,10 @@
      "fr": "https://digitallibrary.un.org/record/4025108/files/A_HRC_RES_54_9-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4025108/files/A_HRC_RES_54_9-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4025108"
+    "url": "https://digitallibrary.un.org/record/4025108",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -6271,7 +7080,15 @@
     ],
     "votacion": "",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/253454"
+    "url": "https://digitallibrary.un.org/record/253454",
+    "sesion_nota": "Adopted at the 51st meeting, 17 Apr. 1998.",
+    "ubicacion": [
+     "In: Commission on Human Rights : report on the 54th session, 16 March-24 April 1998. - E/1998/23-E/CN.4/1998/177. - 1998. - p. 94-97. - (ESCOR, 1998, Suppl. no. 3)."
+    ],
+    "padres": [
+     "E/1998/23",
+     "E/1998/23"
+    ]
    }
   },
   {
@@ -6298,7 +7115,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4124875/files/A_HRC_RES_62_28-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4124875"
+    "url": "https://digitallibrary.un.org/record/4124875",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -6326,7 +7146,10 @@
      "es": "https://digitallibrary.un.org/record/707576/files/A_HRC_RES_17_13-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/707576/files/A_HRC_RES_17_13-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/707576"
+    "url": "https://digitallibrary.un.org/record/707576",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -6354,7 +7177,10 @@
      "es": "https://digitallibrary.un.org/record/775683/files/A_HRC_RES_26_3-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/775683/files/A_HRC_RES_26_3-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/775683"
+    "url": "https://digitallibrary.un.org/record/775683",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -6383,7 +7209,10 @@
      "es": "https://digitallibrary.un.org/record/1302335/files/A_HRC_RES_35_19-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1302335/files/A_HRC_RES_35_19-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1302335"
+    "url": "https://digitallibrary.un.org/record/1302335",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -6411,7 +7240,10 @@
      "es": "https://digitallibrary.un.org/record/1302335/files/A_HRC_RES_35_19-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1302335/files/A_HRC_RES_35_19-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1302335"
+    "url": "https://digitallibrary.un.org/record/1302335",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -6439,7 +7271,10 @@
      "es": "https://digitallibrary.un.org/record/3875674/files/A_HRC_RES_44_13-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3875674/files/A_HRC_RES_44_13-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3875674"
+    "url": "https://digitallibrary.un.org/record/3875674",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -6469,7 +7304,10 @@
      "fr": "https://digitallibrary.un.org/record/4019653/files/A_HRC_RES_53_10-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4019653/files/A_HRC_RES_53_10-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4019653"
+    "url": "https://digitallibrary.un.org/record/4019653",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -6499,7 +7337,10 @@
      "fr": "https://digitallibrary.un.org/record/4019653/files/A_HRC_RES_53_10-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4019653/files/A_HRC_RES_53_10-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4019653"
+    "url": "https://digitallibrary.un.org/record/4019653",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -6528,7 +7369,10 @@
      "fr": "https://digitallibrary.un.org/record/4019653/files/A_HRC_RES_53_10-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4019653/files/A_HRC_RES_53_10-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4019653"
+    "url": "https://digitallibrary.un.org/record/4019653",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -6556,7 +7400,10 @@
      "es": "https://digitallibrary.un.org/record/795309/files/A_HRC_RES_28_16-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/795309/files/A_HRC_RES_28_16-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/795309"
+    "url": "https://digitallibrary.un.org/record/795309",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -6585,7 +7432,10 @@
      "fr": "https://digitallibrary.un.org/record/4045553/files/A_HRC_RES_55_3-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4045553/files/A_HRC_RES_55_3-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4045553"
+    "url": "https://digitallibrary.un.org/record/4045553",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -6613,7 +7463,10 @@
      "es": "https://digitallibrary.un.org/record/1484920/files/A_HRC_RES_37_2-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1484920/files/A_HRC_RES_37_2-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1484920"
+    "url": "https://digitallibrary.un.org/record/1484920",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -6641,7 +7494,10 @@
      "es": "https://digitallibrary.un.org/record/3927144/files/A_HRC_RES_46_16-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3927144/files/A_HRC_RES_46_16-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3927144"
+    "url": "https://digitallibrary.un.org/record/3927144",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -6669,7 +7525,10 @@
      "es": "https://digitallibrary.un.org/record/3927144/files/A_HRC_RES_46_16-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3927144/files/A_HRC_RES_46_16-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3927144"
+    "url": "https://digitallibrary.un.org/record/3927144",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -6693,7 +7552,14 @@
     ],
     "votacion": "",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/170099"
+    "url": "https://digitallibrary.un.org/record/170099",
+    "sesion_nota": "Adopted at the 48th meeting, 2 Mar. 1993.",
+    "ubicacion": [
+     "In: Commission on Human Rights : report on the 49th session, 1 February-12 March 1993. - E/1993/23-E/CN.4/1993/122. - 1993. - p. 102-104. - (ESCOR, 1993, Suppl. no. 3)."
+    ],
+    "padres": [
+     "E/1993/23"
+    ]
    }
   },
   {
@@ -6720,7 +7586,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4109497/files/A_HRC_RES_61_35-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4109497"
+    "url": "https://digitallibrary.un.org/record/4109497",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -6745,7 +7614,14 @@
     ],
     "votacion": "Adopted without vote, 42nd meeting",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/624512"
+    "url": "https://digitallibrary.un.org/record/624512",
+    "sesion_nota": "",
+    "ubicacion": [
+     "In: Report of the Human Rights Council on its 7th session. - A/HRC/7/78. - 14 July 2008. - p. 98-101."
+    ],
+    "padres": [
+     "A/HRC/7/78"
+    ]
    }
   },
   {
@@ -6773,7 +7649,10 @@
      "es": "https://digitallibrary.un.org/record/701437/files/A_HRC_RES_16_33-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/701437/files/A_HRC_RES_16_33-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/701437"
+    "url": "https://digitallibrary.un.org/record/701437",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -6801,7 +7680,10 @@
      "es": "https://digitallibrary.un.org/record/769191/files/A_HRC_RES_25_32-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/769191/files/A_HRC_RES_25_32-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/769191"
+    "url": "https://digitallibrary.un.org/record/769191",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -6829,7 +7711,10 @@
      "es": "https://digitallibrary.un.org/record/1289030/files/A_HRC_RES_34_35-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1289030/files/A_HRC_RES_34_35-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1289030"
+    "url": "https://digitallibrary.un.org/record/1289030",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -6857,7 +7742,10 @@
      "es": "https://digitallibrary.un.org/record/3875328/files/A_HRC_RES_43_36-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3875328/files/A_HRC_RES_43_36-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3875328"
+    "url": "https://digitallibrary.un.org/record/3875328",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -6885,7 +7773,10 @@
      "es": "https://digitallibrary.un.org/record/3875328/files/A_HRC_RES_43_36-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3875328/files/A_HRC_RES_43_36-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3875328"
+    "url": "https://digitallibrary.un.org/record/3875328",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -6913,7 +7804,10 @@
      "es": "https://digitallibrary.un.org/record/3875328/files/A_HRC_RES_43_36-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3875328/files/A_HRC_RES_43_36-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3875328"
+    "url": "https://digitallibrary.un.org/record/3875328",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -6942,7 +7836,10 @@
      "fr": "https://digitallibrary.un.org/record/4010335/files/A_HRC_RES_52_36-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4010335/files/A_HRC_RES_52_36-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4010335"
+    "url": "https://digitallibrary.un.org/record/4010335",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -6966,7 +7863,15 @@
     ],
     "votacion": "",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/121480"
+    "url": "https://digitallibrary.un.org/record/121480",
+    "sesion_nota": "Adopted at the 50th meeting, 10 Mar. 1986.",
+    "ubicacion": [
+     "In: Commission on Human Rights : report on the 42nd session, 3 February-14 March 1986. - E/1986/22-E/CN.4/1986/65. - 1986. - p. 66-67. - (ESCOR, 1986, Suppl. no. 2).",
+     "In: E/1986/22-E/CN.4/1986/65 (ESCOR, 1986, Suppl. no. 2). - p. 66-67."
+    ],
+    "padres": [
+     "E/1986/22"
+    ]
    }
   },
   {
@@ -6993,7 +7898,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4080274/files/A_HRC_RES_58_5-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4080274"
+    "url": "https://digitallibrary.un.org/record/4080274",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -7018,7 +7926,14 @@
     ],
     "votacion": "Adopted 29-0-18, 34th meeting",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/615965"
+    "url": "https://digitallibrary.un.org/record/615965",
+    "sesion_nota": "",
+    "ubicacion": [
+     "In: Report of the Human Rights Council on its 6th session. - A/HRC/6/22. - 14 Apr. 2008. - p. 76-81."
+    ],
+    "padres": [
+     "A/HRC/6/22"
+    ]
    }
   },
   {
@@ -7046,7 +7961,10 @@
      "es": "https://digitallibrary.un.org/record/691569/files/A_HRC_RES_14_11-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/691569/files/A_HRC_RES_14_11-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/691569"
+    "url": "https://digitallibrary.un.org/record/691569",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -7074,7 +7992,10 @@
      "es": "https://digitallibrary.un.org/record/747765/files/A_HRC_RES_22_20-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/747765/files/A_HRC_RES_22_20-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/747765"
+    "url": "https://digitallibrary.un.org/record/747765",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -7102,7 +8023,10 @@
      "es": "https://digitallibrary.un.org/record/837263/files/A_HRC_RES_31_16-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/837263/files/A_HRC_RES_31_16-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/837263"
+    "url": "https://digitallibrary.un.org/record/837263",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -7130,7 +8054,10 @@
      "es": "https://digitallibrary.un.org/record/3804640/files/A_HRC_RES_40_10-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3804640/files/A_HRC_RES_40_10-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3804640"
+    "url": "https://digitallibrary.un.org/record/3804640",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -7159,7 +8086,10 @@
      "fr": "https://digitallibrary.un.org/record/3974061/files/A_HRC_RES_49_5-FR.pdf",
      "es": "https://digitallibrary.un.org/record/3974061/files/A_HRC_RES_49_5-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3974061"
+    "url": "https://digitallibrary.un.org/record/3974061",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -7183,7 +8113,14 @@
     ],
     "votacion": "",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/225629"
+    "url": "https://digitallibrary.un.org/record/225629",
+    "sesion_nota": "Adopted at the 53rd meeting, 7 Mar. 1990.",
+    "ubicacion": [
+     "In: Commission on Human Rights : report on the 46th session, 29 January-9 March 1990. - E/1990/22-E/CN.4/1990/94. - 1990. - p. 145-146. - (ESCOR, 1990, Suppl. no. 2)."
+    ],
+    "padres": [
+     "E/1990/22"
+    ]
    }
   },
   {
@@ -7210,7 +8147,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4109250/files/A_HRC_RES_61_8-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4109250"
+    "url": "https://digitallibrary.un.org/record/4109250",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -7235,7 +8175,14 @@
     ],
     "votacion": "Adopted without vote, 40th meeting",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/623988"
+    "url": "https://digitallibrary.un.org/record/623988",
+    "sesion_nota": "",
+    "ubicacion": [
+     "In: Report of the Human Rights Council on its 7th session. - A/HRC/7/78. - 14 July 2008. - p. 37-39."
+    ],
+    "padres": [
+     "A/HRC/7/78"
+    ]
    }
   },
   {
@@ -7263,7 +8210,10 @@
      "es": "https://digitallibrary.un.org/record/701305/files/A_HRC_RES_16_12-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/701305/files/A_HRC_RES_16_12-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/701305"
+    "url": "https://digitallibrary.un.org/record/701305",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -7291,7 +8241,10 @@
      "es": "https://digitallibrary.un.org/record/769868/files/A_HRC_RES_25_6-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/769868/files/A_HRC_RES_25_6-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/769868"
+    "url": "https://digitallibrary.un.org/record/769868",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -7319,7 +8272,10 @@
      "es": "https://digitallibrary.un.org/record/1288947/files/A_HRC_RES_34_16-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1288947/files/A_HRC_RES_34_16-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1288947"
+    "url": "https://digitallibrary.un.org/record/1288947",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -7348,7 +8304,10 @@
      "es": "https://digitallibrary.un.org/record/3876065/files/A_HRC_RES_43_22-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3876065/files/A_HRC_RES_43_22-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3876065"
+    "url": "https://digitallibrary.un.org/record/3876065",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -7376,7 +8335,10 @@
      "es": "https://digitallibrary.un.org/record/3876065/files/A_HRC_RES_43_22-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3876065/files/A_HRC_RES_43_22-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3876065"
+    "url": "https://digitallibrary.un.org/record/3876065",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -7405,7 +8367,10 @@
      "fr": "https://digitallibrary.un.org/record/4011013/files/A_HRC_RES_52_26-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4011013/files/A_HRC_RES_52_26-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4011013"
+    "url": "https://digitallibrary.un.org/record/4011013",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -7433,7 +8398,10 @@
      "es": "https://digitallibrary.un.org/record/845552/files/A_HRC_RES_32_2-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/845552/files/A_HRC_RES_32_2-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/845552"
+    "url": "https://digitallibrary.un.org/record/845552",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -7460,7 +8428,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4086642/files/A_HRC_RES_59_5-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4086642"
+    "url": "https://digitallibrary.un.org/record/4086642",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -7488,7 +8459,10 @@
      "es": "https://digitallibrary.un.org/record/3832139/files/A_HRC_RES_41_18-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3832139/files/A_HRC_RES_41_18-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3832139"
+    "url": "https://digitallibrary.un.org/record/3832139",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -7518,7 +8492,10 @@
      "fr": "https://digitallibrary.un.org/record/3985109/files/A_HRC_RES_50_10-FR.pdf",
      "es": "https://digitallibrary.un.org/record/3985109/files/A_HRC_RES_50_10-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3985109"
+    "url": "https://digitallibrary.un.org/record/3985109",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -7547,7 +8524,10 @@
      "fr": "https://digitallibrary.un.org/record/3985109/files/A_HRC_RES_50_10-FR.pdf",
      "es": "https://digitallibrary.un.org/record/3985109/files/A_HRC_RES_50_10-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3985109"
+    "url": "https://digitallibrary.un.org/record/3985109",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -7574,7 +8554,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4090770/files/A_HRC_RES_60_25-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4090770"
+    "url": "https://digitallibrary.un.org/record/4090770",
+    "sesion_nota": "Reissued for technical reasons on 17 Oct. 2025.",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -7606,7 +8589,14 @@
     ],
     "votacion": "Adopted without vote, 60th meeting",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/547276"
+    "url": "https://digitallibrary.un.org/record/547276",
+    "sesion_nota": "",
+    "ubicacion": [
+     "In: Commission on Human Rights : report on the 61st session, 14 March-22 April 2005. - E/2005/23-E/CN.4/2005/135. - 2005. - p. 307-310. - (ESCOR, 2005, Suppl. no. 3)."
+    ],
+    "padres": [
+     "E/2005/23"
+    ]
    }
   },
   {
@@ -7633,7 +8623,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4081878/files/A_HRC_RES_58_14-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4081878"
+    "url": "https://digitallibrary.un.org/record/4081878",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -7661,7 +8654,10 @@
      "es": "https://digitallibrary.un.org/record/692518/files/A_HRC_RES_15_15-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/692518/files/A_HRC_RES_15_15-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/692518"
+    "url": "https://digitallibrary.un.org/record/692518",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -7689,7 +8685,10 @@
      "es": "https://digitallibrary.un.org/record/747760/files/A_HRC_RES_22_8-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/747760/files/A_HRC_RES_22_8-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/747760"
+    "url": "https://digitallibrary.un.org/record/747760",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -7717,7 +8716,10 @@
      "es": "https://digitallibrary.un.org/record/836558/files/A_HRC_RES_31_3-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/836558/files/A_HRC_RES_31_3-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/836558"
+    "url": "https://digitallibrary.un.org/record/836558",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -7745,7 +8747,10 @@
      "es": "https://digitallibrary.un.org/record/3808624/files/A_HRC_RES_40_16-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3808624/files/A_HRC_RES_40_16-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3808624"
+    "url": "https://digitallibrary.un.org/record/3808624",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -7774,7 +8779,10 @@
      "fr": "https://digitallibrary.un.org/record/3971995/files/A_HRC_RES_49_10-FR.pdf",
      "es": "https://digitallibrary.un.org/record/3971995/files/A_HRC_RES_49_10-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3971995"
+    "url": "https://digitallibrary.un.org/record/3971995",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -7798,7 +8806,15 @@
     ],
     "votacion": "",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/85587"
+    "url": "https://digitallibrary.un.org/record/85587",
+    "sesion_nota": "Adopted at the 55th meeting, 13 Mar. 1985.",
+    "ubicacion": [
+     "In: Commission on Human Rights : report on the 41st session, 4 February-15 March 1985. - E/1985/22-E/CN.4/1985/66. - 1985. - p. 71-72. - (ESCOR, 1985, Suppl. no. 2).",
+     "In: E/1985/22-E/CN.4/1985/66 (ESCOR, 1985, Suppl. no. 2). - p. 71-72."
+    ],
+    "padres": [
+     "E/1985/22"
+    ]
    }
   },
   {
@@ -7825,7 +8841,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4110301/files/A_HRC_RES_61_10-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4110301"
+    "url": "https://digitallibrary.un.org/record/4110301",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -7850,7 +8869,14 @@
     ],
     "votacion": "Adopted without vote, 28th meeting",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/645316"
+    "url": "https://digitallibrary.un.org/record/645316",
+    "sesion_nota": "",
+    "ubicacion": [
+     "In: Report of the Human Rights Council on its 8th session. - A/HRC/8/52. - 1 Sept. 2008. - p. 32-36."
+    ],
+    "padres": [
+     "A/HRC/8/52"
+    ]
    }
   },
   {
@@ -7878,7 +8904,10 @@
      "es": "https://digitallibrary.un.org/record/701331/files/A_HRC_RES_16_23-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/701331/files/A_HRC_RES_16_23-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/701331"
+    "url": "https://digitallibrary.un.org/record/701331",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -7906,7 +8935,10 @@
      "es": "https://digitallibrary.un.org/record/768969/files/A_HRC_RES_25_13-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/768969/files/A_HRC_RES_25_13-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/768969"
+    "url": "https://digitallibrary.un.org/record/768969",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -7934,7 +8966,10 @@
      "es": "https://digitallibrary.un.org/record/1313148/files/A_HRC_RES_34_19-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1313148/files/A_HRC_RES_34_19-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1313148"
+    "url": "https://digitallibrary.un.org/record/1313148",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -7962,7 +8997,10 @@
      "es": "https://digitallibrary.un.org/record/3874887/files/A_HRC_RES_43_20-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3874887/files/A_HRC_RES_43_20-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3874887"
+    "url": "https://digitallibrary.un.org/record/3874887",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -7991,7 +9029,10 @@
      "fr": "https://digitallibrary.un.org/record/4010779/files/A_HRC_RES_52_7-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4010779/files/A_HRC_RES_52_7-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4010779"
+    "url": "https://digitallibrary.un.org/record/4010779",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -8016,7 +9057,14 @@
     ],
     "votacion": "",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/173803"
+    "url": "https://digitallibrary.un.org/record/173803",
+    "sesion_nota": "Adopted at the 61st meeting, 8 Mar. 1995.",
+    "ubicacion": [
+     "In: Commission on Human Rights : report on the 51st session, 30 January-10 March 1995. - E/1995/23-E/CN.4/1995/176. - 1995. - p. 241-244. - (ESCOR, 1995, Suppl. no. 3)."
+    ],
+    "padres": [
+     "E/1995/23"
+    ]
    }
   },
   {
@@ -8043,7 +9091,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4130490/files/A_HRC_RES_63_16-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4130490"
+    "url": "https://digitallibrary.un.org/record/4130490",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -8068,7 +9119,14 @@
     ],
     "votacion": "",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/253017"
+    "url": "https://digitallibrary.un.org/record/253017",
+    "sesion_nota": "Adopted at the 38th meeting, 9 Apr. 1998.",
+    "ubicacion": [
+     "In: Commission on Human Rights : report on the 54th session, 16 March-24 April 1998. - E/1998/23-E/CN.4/1998/177. - 1998. - p. 64-67. - (ESCOR, 1998, Suppl. no. 3)."
+    ],
+    "padres": [
+     "E/1998/23"
+    ]
    }
   },
   {
@@ -8093,7 +9151,14 @@
     ],
     "votacion": "Adopted, 71st meeting",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/439987"
+    "url": "https://digitallibrary.un.org/record/439987",
+    "sesion_nota": "",
+    "ubicacion": [
+     "In: Commission on Human Rights : report on the 57th session, 19 March-27 April 2001. - E/2001/23-E/CN.4/2001/167. - 2001. - p. 175-179. - (ESCOR, 2001, Suppl. no. 3)."
+    ],
+    "padres": [
+     "E/2001/23"
+    ]
    }
   },
   {
@@ -8119,7 +9184,14 @@
     ],
     "votacion": "Adopted, 51st meeting",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/521871"
+    "url": "https://digitallibrary.un.org/record/521871",
+    "sesion_nota": "",
+    "ubicacion": [
+     "In: Commission on Human Rights : report on the 60th session, 15 March-23 April 2004. - E/2004/23-E/CN.4/2004/127. - 2004. - p. 57-60. - (ESCOR, 2004, Suppl. no. 3).."
+    ],
+    "padres": [
+     "E/2004/23"
+    ]
    }
   },
   {
@@ -8144,7 +9216,14 @@
     ],
     "votacion": "Adopted without vote, 22nd meeting",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/639702"
+    "url": "https://digitallibrary.un.org/record/639702",
+    "sesion_nota": "",
+    "ubicacion": [
+     "In: Report of the Human Rights Council on its 9th session. - A/HRC/9/28. - 2 Dec. 2008. - p. 7-9."
+    ],
+    "padres": [
+     "A/HRC/9/28"
+    ]
    }
   },
   {
@@ -8172,7 +9251,10 @@
      "es": "https://digitallibrary.un.org/record/713589/files/A_HRC_RES_18_11-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/713589/files/A_HRC_RES_18_11-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/713589"
+    "url": "https://digitallibrary.un.org/record/713589",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -8200,7 +9282,10 @@
      "es": "https://digitallibrary.un.org/record/737095/files/A_HRC_RES_21_17-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/737095/files/A_HRC_RES_21_17-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/737095"
+    "url": "https://digitallibrary.un.org/record/737095",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -8228,7 +9313,10 @@
      "es": "https://digitallibrary.un.org/record/781311/files/A_HRC_RES_27_23-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/781311/files/A_HRC_RES_27_23-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/781311"
+    "url": "https://digitallibrary.un.org/record/781311",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -8262,7 +9350,10 @@
      "es": "https://digitallibrary.un.org/record/1306963/files/A_HRC_RES_36_15-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1306963/files/A_HRC_RES_36_15-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1306963"
+    "url": "https://digitallibrary.un.org/record/1306963",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -8290,7 +9381,10 @@
      "es": "https://digitallibrary.un.org/record/3888055/files/A_HRC_RES_45_17-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3888055/files/A_HRC_RES_45_17-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3888055"
+    "url": "https://digitallibrary.un.org/record/3888055",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -8319,7 +9413,10 @@
      "fr": "https://digitallibrary.un.org/record/4025109/files/A_HRC_RES_54_10-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4025109/files/A_HRC_RES_54_10-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4025109"
+    "url": "https://digitallibrary.un.org/record/4025109",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -8347,7 +9444,10 @@
      "es": "https://digitallibrary.un.org/record/713605/files/A_HRC_RES_18_7-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/713605/files/A_HRC_RES_18_7-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/713605"
+    "url": "https://digitallibrary.un.org/record/713605",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -8374,7 +9474,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4130539/files/A_HRC_RES_63_7-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4130539"
+    "url": "https://digitallibrary.un.org/record/4130539",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -8402,7 +9505,10 @@
      "es": "https://digitallibrary.un.org/record/781309/files/A_HRC_RES_27_3-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/781309/files/A_HRC_RES_27_3-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/781309"
+    "url": "https://digitallibrary.un.org/record/781309",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -8430,7 +9536,10 @@
      "es": "https://digitallibrary.un.org/record/1308028/files/A_HRC_RES_36_7-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1308028/files/A_HRC_RES_36_7-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1308028"
+    "url": "https://digitallibrary.un.org/record/1308028",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -8458,7 +9567,10 @@
      "es": "https://digitallibrary.un.org/record/3888060/files/A_HRC_RES_45_10-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3888060/files/A_HRC_RES_45_10-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3888060"
+    "url": "https://digitallibrary.un.org/record/3888060",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -8487,7 +9599,10 @@
      "fr": "https://digitallibrary.un.org/record/4025107/files/A_HRC_RES_54_8-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4025107/files/A_HRC_RES_54_8-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4025107"
+    "url": "https://digitallibrary.un.org/record/4025107",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -8515,7 +9630,10 @@
      "es": "https://digitallibrary.un.org/record/781801/files/A_HRC_RES_27_21-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/781801/files/A_HRC_RES_27_21-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/781801"
+    "url": "https://digitallibrary.un.org/record/781801",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -8542,7 +9660,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4130488/files/A_HRC_RES_63_4-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4130488"
+    "url": "https://digitallibrary.un.org/record/4130488",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -8580,7 +9701,10 @@
      "es": "https://digitallibrary.un.org/record/1310412/files/A_HRC_RES_36_10-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1310412/files/A_HRC_RES_36_10-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1310412"
+    "url": "https://digitallibrary.un.org/record/1310412",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -8608,7 +9732,10 @@
      "es": "https://digitallibrary.un.org/record/1310412/files/A_HRC_RES_36_10-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1310412/files/A_HRC_RES_36_10-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1310412"
+    "url": "https://digitallibrary.un.org/record/1310412",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -8636,7 +9763,10 @@
      "es": "https://digitallibrary.un.org/record/3888389/files/A_HRC_RES_45_5-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3888389/files/A_HRC_RES_45_5-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3888389"
+    "url": "https://digitallibrary.un.org/record/3888389",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -8665,7 +9795,10 @@
      "fr": "https://digitallibrary.un.org/record/3975397/files/A_HRC_RES_49_6-FR.pdf",
      "es": "https://digitallibrary.un.org/record/3975397/files/A_HRC_RES_49_6-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3975397"
+    "url": "https://digitallibrary.un.org/record/3975397",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -8694,7 +9827,10 @@
      "fr": "https://digitallibrary.un.org/record/4013137/files/A_HRC_RES_52_13-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4013137/files/A_HRC_RES_52_13-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4013137"
+    "url": "https://digitallibrary.un.org/record/4013137",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -8723,7 +9859,10 @@
      "fr": "https://digitallibrary.un.org/record/4025163/files/A_HRC_RES_54_15-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4025163/files/A_HRC_RES_54_15-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4025163"
+    "url": "https://digitallibrary.un.org/record/4025163",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -8747,7 +9886,14 @@
     ],
     "votacion": "",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/226487"
+    "url": "https://digitallibrary.un.org/record/226487",
+    "sesion_nota": "Adopted at the 56th meeting, 4 Mar. 1994.",
+    "ubicacion": [
+     "In: Commission on Human Rights : report on the 50th session, 31 January-11 March 1994. - E/1994/24-E/CN.4/1994/132. - 1994. - p. 140-145. - (ESCOR, 1994, Suppl. no. 4)."
+    ],
+    "padres": [
+     "E/1994/24"
+    ]
    }
   },
   {
@@ -8774,7 +9920,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4087074/files/A_HRC_RES_59_20-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4087074"
+    "url": "https://digitallibrary.un.org/record/4087074",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -8799,7 +9948,14 @@
     ],
     "votacion": "Adopted without vote, 41st meeting",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/624107"
+    "url": "https://digitallibrary.un.org/record/624107",
+    "sesion_nota": "",
+    "ubicacion": [
+     "In: Report of the Human Rights Council on its 7th session. - A/HRC/7/78. - 14 July 2008. - p. 67-70."
+    ],
+    "padres": [
+     "A/HRC/7/78"
+    ]
    }
   },
   {
@@ -8827,7 +9983,10 @@
      "es": "https://digitallibrary.un.org/record/702002/files/A_HRC_RES_16_7-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/702002/files/A_HRC_RES_16_7-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/702002"
+    "url": "https://digitallibrary.un.org/record/702002",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -8855,7 +10014,10 @@
      "es": "https://digitallibrary.un.org/record/751976/files/A_HRC_RES_23_25-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/751976/files/A_HRC_RES_23_25-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/751976"
+    "url": "https://digitallibrary.un.org/record/751976",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -8883,7 +10045,10 @@
      "es": "https://digitallibrary.un.org/record/845741/files/A_HRC_RES_32_19-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/845741/files/A_HRC_RES_32_19-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/845741"
+    "url": "https://digitallibrary.un.org/record/845741",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -8909,7 +10074,10 @@
      "fr": "https://digitallibrary.un.org/record/3824711/files/A_HRC_41_L.5-FR.pdf",
      "es": "https://digitallibrary.un.org/record/3824711/files/A_HRC_41_L.5-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3824711"
+    "url": "https://digitallibrary.un.org/record/3824711",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -8937,7 +10105,10 @@
      "es": "https://digitallibrary.un.org/record/3832161/files/A_HRC_RES_41_17-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3832161/files/A_HRC_RES_41_17-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3832161"
+    "url": "https://digitallibrary.un.org/record/3832161",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -8966,7 +10137,10 @@
      "fr": "https://digitallibrary.un.org/record/3986780/files/A_HRC_RES_50_7-FR.pdf",
      "es": "https://digitallibrary.un.org/record/3986780/files/A_HRC_RES_50_7-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3986780"
+    "url": "https://digitallibrary.un.org/record/3986780",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -8991,7 +10165,14 @@
     ],
     "votacion": "Adopted without vote, 41st meeting",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/624098"
+    "url": "https://digitallibrary.un.org/record/624098",
+    "sesion_nota": "",
+    "ubicacion": [
+     "In: Report of the Human Rights Council on its 7th session. - A/HRC/7/78. - 14 July 2008. - p. 63-65."
+    ],
+    "padres": [
+     "A/HRC/7/78"
+    ]
    }
   },
   {
@@ -9019,7 +10200,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4090569/files/A_HRC_RES_60_9-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4090569"
+    "url": "https://digitallibrary.un.org/record/4090569",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -9047,7 +10231,10 @@
      "es": "https://digitallibrary.un.org/record/700976/files/A_HRC_RES_16_2-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/700976/files/A_HRC_RES_16_2-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/700976"
+    "url": "https://digitallibrary.un.org/record/700976",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -9075,7 +10262,10 @@
      "es": "https://digitallibrary.un.org/record/762464/files/A_HRC_RES_24_18-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/762464/files/A_HRC_RES_24_18-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/762464"
+    "url": "https://digitallibrary.un.org/record/762464",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -9103,7 +10293,10 @@
      "es": "https://digitallibrary.un.org/record/850266/files/A_HRC_RES_33_10-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/850266/files/A_HRC_RES_33_10-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/850266"
+    "url": "https://digitallibrary.un.org/record/850266",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -9131,7 +10324,10 @@
      "es": "https://digitallibrary.un.org/record/3836329/files/A_HRC_RES_42_5-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3836329/files/A_HRC_RES_42_5-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3836329"
+    "url": "https://digitallibrary.un.org/record/3836329",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -9161,7 +10357,10 @@
      "fr": "https://digitallibrary.un.org/record/3992110/files/A_HRC_RES_51_19-FR.pdf",
      "es": "https://digitallibrary.un.org/record/3992110/files/A_HRC_RES_51_19-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3992110"
+    "url": "https://digitallibrary.un.org/record/3992110",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -9190,7 +10389,10 @@
      "fr": "https://digitallibrary.un.org/record/3992110/files/A_HRC_RES_51_19-FR.pdf",
      "es": "https://digitallibrary.un.org/record/3992110/files/A_HRC_RES_51_19-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3992110"
+    "url": "https://digitallibrary.un.org/record/3992110",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -9218,7 +10420,10 @@
      "es": "https://digitallibrary.un.org/record/692055/files/A_HRC_RES_15_23-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/692055/files/A_HRC_RES_15_23-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/692055"
+    "url": "https://digitallibrary.un.org/record/692055",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -9245,7 +10450,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4086722/files/A_HRC_RES_59_14-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4086722"
+    "url": "https://digitallibrary.un.org/record/4086722",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -9273,7 +10481,10 @@
      "es": "https://digitallibrary.un.org/record/752286/files/A_HRC_RES_23_7-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/752286/files/A_HRC_RES_23_7-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/752286"
+    "url": "https://digitallibrary.un.org/record/752286",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -9301,7 +10512,10 @@
      "es": "https://digitallibrary.un.org/record/845674/files/A_HRC_RES_32_4-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/845674/files/A_HRC_RES_32_4-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/845674"
+    "url": "https://digitallibrary.un.org/record/845674",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -9335,7 +10549,10 @@
      "es": "https://digitallibrary.un.org/record/3830991/files/A_HRC_RES_41_6-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3830991/files/A_HRC_RES_41_6-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3830991"
+    "url": "https://digitallibrary.un.org/record/3830991",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -9363,7 +10580,10 @@
      "es": "https://digitallibrary.un.org/record/3830991/files/A_HRC_RES_41_6-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3830991/files/A_HRC_RES_41_6-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3830991"
+    "url": "https://digitallibrary.un.org/record/3830991",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -9385,7 +10605,10 @@
     "borradores": [],
     "votacion": "",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/3824706"
+    "url": "https://digitallibrary.un.org/record/3824706",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -9414,7 +10637,10 @@
      "fr": "https://digitallibrary.un.org/record/3986780/files/A_HRC_RES_50_7-FR.pdf",
      "es": "https://digitallibrary.un.org/record/3986780/files/A_HRC_RES_50_7-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3986780"
+    "url": "https://digitallibrary.un.org/record/3986780",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -9443,7 +10669,10 @@
      "fr": "https://digitallibrary.un.org/record/3985685/files/A_HRC_RES_50_18-FR.pdf",
      "es": "https://digitallibrary.un.org/record/3985685/files/A_HRC_RES_50_18-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3985685"
+    "url": "https://digitallibrary.un.org/record/3985685",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -9472,7 +10701,10 @@
      "es": "https://digitallibrary.un.org/record/3945487/files/A_HRC_RES_48_1-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3945487/files/A_HRC_RES_48_1-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3945487"
+    "url": "https://digitallibrary.un.org/record/3945487",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -9499,7 +10731,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4090564/files/A_HRC_RES_60_2-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4090564"
+    "url": "https://digitallibrary.un.org/record/4090564",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -9528,7 +10763,10 @@
      "fr": "https://digitallibrary.un.org/record/3991828/files/A_HRC_RES_51_20-FR.pdf",
      "es": "https://digitallibrary.un.org/record/3991828/files/A_HRC_RES_51_20-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3991828"
+    "url": "https://digitallibrary.un.org/record/3991828",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -9557,7 +10795,10 @@
      "fr": "https://digitallibrary.un.org/record/4025098/files/A_HRC_RES_54_1-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4025098/files/A_HRC_RES_54_1-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4025098"
+    "url": "https://digitallibrary.un.org/record/4025098",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -9587,7 +10828,10 @@
      "fr": "https://digitallibrary.un.org/record/4063945/files/A_HRC_RES_57_3-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4063945/files/A_HRC_RES_57_3-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4063945"
+    "url": "https://digitallibrary.un.org/record/4063945",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -9615,7 +10859,10 @@
      "es": "https://digitallibrary.un.org/record/731444/files/A_HRC_RES_20_13-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/731444/files/A_HRC_RES_20_13-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/731444"
+    "url": "https://digitallibrary.un.org/record/731444",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -9642,7 +10889,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4111603/files/A_HRC_RES_61_26-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4111603"
+    "url": "https://digitallibrary.un.org/record/4111603",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -9670,7 +10920,10 @@
      "es": "https://digitallibrary.un.org/record/752289/files/A_HRC_RES_23_15-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/752289/files/A_HRC_RES_23_15-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/752289"
+    "url": "https://digitallibrary.un.org/record/752289",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -9698,7 +10951,10 @@
      "es": "https://digitallibrary.un.org/record/776111/files/A_HRC_RES_26_25-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/776111/files/A_HRC_RES_26_25-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/776111"
+    "url": "https://digitallibrary.un.org/record/776111",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -9726,7 +10982,10 @@
      "es": "https://digitallibrary.un.org/record/1303024/files/A_HRC_RES_35_27-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1303024/files/A_HRC_RES_35_27-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1303024"
+    "url": "https://digitallibrary.un.org/record/1303024",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -9754,7 +11013,10 @@
      "es": "https://digitallibrary.un.org/record/1639593/files/A_HRC_RES_38_14-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1639593/files/A_HRC_RES_38_14-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1639593"
+    "url": "https://digitallibrary.un.org/record/1639593",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -9782,7 +11044,10 @@
      "es": "https://digitallibrary.un.org/record/3832146/files/A_HRC_RES_41_22-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3832146/files/A_HRC_RES_41_22-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3832146"
+    "url": "https://digitallibrary.un.org/record/3832146",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -9810,7 +11075,10 @@
      "es": "https://digitallibrary.un.org/record/3876052/files/A_HRC_RES_44_19-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3876052/files/A_HRC_RES_44_19-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3876052"
+    "url": "https://digitallibrary.un.org/record/3876052",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -9838,7 +11106,10 @@
      "es": "https://digitallibrary.un.org/record/3936672/files/A_HRC_RES_47_19-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3936672/files/A_HRC_RES_47_19-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3936672"
+    "url": "https://digitallibrary.un.org/record/3936672",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -9867,7 +11138,10 @@
      "fr": "https://digitallibrary.un.org/record/3987227/files/A_HRC_RES_50_20-FR.pdf",
      "es": "https://digitallibrary.un.org/record/3987227/files/A_HRC_RES_50_20-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3987227"
+    "url": "https://digitallibrary.un.org/record/3987227",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -9896,7 +11170,10 @@
      "fr": "https://digitallibrary.un.org/record/4020064/files/A_HRC_RES_53_19-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4020064/files/A_HRC_RES_53_19-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4020064"
+    "url": "https://digitallibrary.un.org/record/4020064",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -9925,7 +11202,10 @@
      "fr": "https://digitallibrary.un.org/record/4045895/files/A_HRC_RES_55_27-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4045895/files/A_HRC_RES_55_27-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4045895"
+    "url": "https://digitallibrary.un.org/record/4045895",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -9952,7 +11232,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4081122/files/A_HRC_RES_58_19-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4081122"
+    "url": "https://digitallibrary.un.org/record/4081122",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -9981,7 +11264,10 @@
      "es": "https://digitallibrary.un.org/record/3945639/files/A_HRC_RES_48_16-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3945639/files/A_HRC_RES_48_16-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3945639"
+    "url": "https://digitallibrary.un.org/record/3945639",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -10008,7 +11294,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4090707/files/A_HRC_RES_60_15-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4090707"
+    "url": "https://digitallibrary.un.org/record/4090707",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -10037,7 +11326,10 @@
      "fr": "https://digitallibrary.un.org/record/3992227/files/A_HRC_RES_51_28-FR.pdf",
      "es": "https://digitallibrary.un.org/record/3992227/files/A_HRC_RES_51_28-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3992227"
+    "url": "https://digitallibrary.un.org/record/3992227",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -10067,7 +11359,10 @@
      "fr": "https://digitallibrary.un.org/record/4063933/files/A_HRC_RES_57_22-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4063933/files/A_HRC_RES_57_22-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4063933"
+    "url": "https://digitallibrary.un.org/record/4063933",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -10097,7 +11392,10 @@
      "fr": "https://digitallibrary.un.org/record/4063933/files/A_HRC_RES_57_22-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4063933/files/A_HRC_RES_57_22-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4063933"
+    "url": "https://digitallibrary.un.org/record/4063933",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -10121,7 +11419,14 @@
     ],
     "votacion": "",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/170251"
+    "url": "https://digitallibrary.un.org/record/170251",
+    "sesion_nota": "Adopted at the 29th meeting, 19 Feb. 1993.",
+    "ubicacion": [
+     "In: Commission on Human Rights : report on the 49th session, 1 February-12 March 1993. - E/1993/23-E/CN.4/1993/122. - 1993. - p. 50-52. - (ESCOR, 1993, Suppl. no. 3)."
+    ],
+    "padres": [
+     "E/1993/23"
+    ]
    }
   },
   {
@@ -10148,7 +11453,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4090855/files/A_HRC_RES_60_33-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4090855"
+    "url": "https://digitallibrary.un.org/record/4090855",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -10176,7 +11484,10 @@
      "es": "https://digitallibrary.un.org/record/713602/files/A_HRC_RES_18_25-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/713602/files/A_HRC_RES_18_25-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/713602"
+    "url": "https://digitallibrary.un.org/record/713602",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -10204,7 +11515,10 @@
      "es": "https://digitallibrary.un.org/record/765592/files/A_HRC_RES_24_29-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/765592/files/A_HRC_RES_24_29-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/765592"
+    "url": "https://digitallibrary.un.org/record/765592",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -10232,7 +11546,10 @@
      "es": "https://digitallibrary.un.org/record/812275/files/A_HRC_RES_30_23-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/812275/files/A_HRC_RES_30_23-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/812275"
+    "url": "https://digitallibrary.un.org/record/812275",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -10260,7 +11577,10 @@
      "es": "https://digitallibrary.un.org/record/1310401/files/A_HRC_RES_36_32-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1310401/files/A_HRC_RES_36_32-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1310401"
+    "url": "https://digitallibrary.un.org/record/1310401",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -10288,7 +11608,10 @@
      "es": "https://digitallibrary.un.org/record/3841168/files/A_HRC_RES_42_37-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3841168/files/A_HRC_RES_42_37-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3841168"
+    "url": "https://digitallibrary.un.org/record/3841168",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -10327,7 +11650,10 @@
      "es": "https://digitallibrary.un.org/record/3945891/files/A_HRC_RES_48_23-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3945891/files/A_HRC_RES_48_23-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3945891"
+    "url": "https://digitallibrary.un.org/record/3945891",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -10356,7 +11682,10 @@
      "fr": "https://digitallibrary.un.org/record/4025266/files/A_HRC_RES_54_36-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4025266/files/A_HRC_RES_54_36-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4025266"
+    "url": "https://digitallibrary.un.org/record/4025266",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -10384,7 +11713,10 @@
      "es": "https://digitallibrary.un.org/record/765683/files/A_HRC_RES_24_34-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/765683/files/A_HRC_RES_24_34-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/765683"
+    "url": "https://digitallibrary.un.org/record/765683",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -10411,7 +11743,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4090882/files/A_HRC_RES_60_34-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4090882"
+    "url": "https://digitallibrary.un.org/record/4090882",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -10440,7 +11775,10 @@
      "es": "https://digitallibrary.un.org/record/781352/files/A_HRC_RES_27_28-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/781352/files/A_HRC_RES_27_28-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/781352"
+    "url": "https://digitallibrary.un.org/record/781352",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -10468,7 +11806,10 @@
      "es": "https://digitallibrary.un.org/record/781352/files/A_HRC_RES_27_28-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/781352/files/A_HRC_RES_27_28-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/781352"
+    "url": "https://digitallibrary.un.org/record/781352",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -10496,7 +11837,10 @@
      "es": "https://digitallibrary.un.org/record/766471/files/A_HRC_RES_S-20_1-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/766471/files/A_HRC_RES_S-20_1-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/766471"
+    "url": "https://digitallibrary.un.org/record/766471",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -10525,7 +11869,10 @@
      "es": "https://digitallibrary.un.org/record/812269/files/A_HRC_RES_30_19-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/812269/files/A_HRC_RES_30_19-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/812269"
+    "url": "https://digitallibrary.un.org/record/812269",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -10554,7 +11901,10 @@
      "es": "https://digitallibrary.un.org/record/850718/files/A_HRC_RES_33_27-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/850718/files/A_HRC_RES_33_27-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/850718"
+    "url": "https://digitallibrary.un.org/record/850718",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -10576,7 +11926,10 @@
     "borradores": [],
     "votacion": "",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/1305990"
+    "url": "https://digitallibrary.un.org/record/1305990",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -10604,7 +11957,10 @@
      "es": "https://digitallibrary.un.org/record/1310399/files/A_HRC_RES_36_25-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1310399/files/A_HRC_RES_36_25-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1310399"
+    "url": "https://digitallibrary.un.org/record/1310399",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -10632,7 +11988,10 @@
      "es": "https://digitallibrary.un.org/record/1310399/files/A_HRC_RES_36_25-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1310399/files/A_HRC_RES_36_25-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1310399"
+    "url": "https://digitallibrary.un.org/record/1310399",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -10661,7 +12020,10 @@
      "es": "https://digitallibrary.un.org/record/1650757/files/A_HRC_RES_39_19-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1650757/files/A_HRC_RES_39_19-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1650757"
+    "url": "https://digitallibrary.un.org/record/1650757",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -10689,7 +12051,10 @@
      "es": "https://digitallibrary.un.org/record/1650757/files/A_HRC_RES_39_19-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1650757/files/A_HRC_RES_39_19-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1650757"
+    "url": "https://digitallibrary.un.org/record/1650757",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -10717,7 +12082,10 @@
      "es": "https://digitallibrary.un.org/record/3841167/files/A_HRC_RES_42_36-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3841167/files/A_HRC_RES_42_36-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3841167"
+    "url": "https://digitallibrary.un.org/record/3841167",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -10746,7 +12114,10 @@
      "es": "https://digitallibrary.un.org/record/3888656/files/A_HRC_RES_45_35-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3888656/files/A_HRC_RES_45_35-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3888656"
+    "url": "https://digitallibrary.un.org/record/3888656",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -10774,7 +12145,10 @@
      "es": "https://digitallibrary.un.org/record/3888656/files/A_HRC_RES_45_35-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3888656/files/A_HRC_RES_45_35-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3888656"
+    "url": "https://digitallibrary.un.org/record/3888656",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -10803,7 +12177,10 @@
      "es": "https://digitallibrary.un.org/record/3945817/files/A_HRC_RES_48_19-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3945817/files/A_HRC_RES_48_19-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3945817"
+    "url": "https://digitallibrary.un.org/record/3945817",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -10832,7 +12209,10 @@
      "fr": "https://digitallibrary.un.org/record/3992547/files/A_HRC_RES_51_37-FR.pdf",
      "es": "https://digitallibrary.un.org/record/3992547/files/A_HRC_RES_51_37-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3992547"
+    "url": "https://digitallibrary.un.org/record/3992547",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -10861,7 +12241,10 @@
      "fr": "https://digitallibrary.un.org/record/4025253/files/A_HRC_RES_54_31-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4025253/files/A_HRC_RES_54_31-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4025253"
+    "url": "https://digitallibrary.un.org/record/4025253",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -10890,7 +12273,10 @@
      "fr": "https://digitallibrary.un.org/record/4063912/files/A_HRC_RES_57_35-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4063912/files/A_HRC_RES_57_35-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4063912"
+    "url": "https://digitallibrary.un.org/record/4063912",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -10915,7 +12301,14 @@
     ],
     "votacion": "Adopted, 50th meeting",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/521879"
+    "url": "https://digitallibrary.un.org/record/521879",
+    "sesion_nota": "",
+    "ubicacion": [
+     "In: Commission on Human Rights : report on the 60th session, 15 March-23 April 2004. - E/2004/23-E/CN.4/2004/127. - 2004. - p. 47-51. - (ESCOR, 2004, Suppl. no. 3)."
+    ],
+    "padres": [
+     "E/2004/23"
+    ]
    }
   },
   {
@@ -10942,7 +12335,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4111627/files/A_HRC_RES_61_27-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4111627"
+    "url": "https://digitallibrary.un.org/record/4111627",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -10969,7 +12365,10 @@
      "es": "https://digitallibrary.un.org/record/747771/files/A_HRC_RES_22_13-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/747771/files/A_HRC_RES_22_13-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/747771"
+    "url": "https://digitallibrary.un.org/record/747771",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -10997,7 +12396,10 @@
      "es": "https://digitallibrary.un.org/record/769162/files/A_HRC_RES_25_25-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/769162/files/A_HRC_RES_25_25-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/769162"
+    "url": "https://digitallibrary.un.org/record/769162",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -11025,7 +12427,10 @@
      "es": "https://digitallibrary.un.org/record/795370/files/A_HRC_RES_28_22-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/795370/files/A_HRC_RES_28_22-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/795370"
+    "url": "https://digitallibrary.un.org/record/795370",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -11054,7 +12459,10 @@
      "es": "https://digitallibrary.un.org/record/837958/files/A_HRC_RES_31_18-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/837958/files/A_HRC_RES_31_18-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/837958"
+    "url": "https://digitallibrary.un.org/record/837958",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -11082,7 +12490,10 @@
      "es": "https://digitallibrary.un.org/record/1289842/files/A_HRC_RES_34_24-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1289842/files/A_HRC_RES_34_24-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1289842"
+    "url": "https://digitallibrary.un.org/record/1289842",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -11110,7 +12521,10 @@
      "es": "https://digitallibrary.un.org/record/1485433/files/A_HRC_RES_37_28-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1485433/files/A_HRC_RES_37_28-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1485433"
+    "url": "https://digitallibrary.un.org/record/1485433",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -11139,7 +12553,10 @@
      "es": "https://digitallibrary.un.org/record/3809566/files/A_HRC_RES_40_20-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3809566/files/A_HRC_RES_40_20-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3809566"
+    "url": "https://digitallibrary.un.org/record/3809566",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -11167,7 +12584,10 @@
      "es": "https://digitallibrary.un.org/record/3809566/files/A_HRC_RES_40_20-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3809566/files/A_HRC_RES_40_20-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3809566"
+    "url": "https://digitallibrary.un.org/record/3809566",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -11195,7 +12615,10 @@
      "es": "https://digitallibrary.un.org/record/3871623/files/A_HRC_RES_43_25-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3871623/files/A_HRC_RES_43_25-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3871623"
+    "url": "https://digitallibrary.un.org/record/3871623",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -11223,7 +12646,10 @@
      "es": "https://digitallibrary.un.org/record/3926275/files/A_HRC_RES_46_17-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3926275/files/A_HRC_RES_46_17-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3926275"
+    "url": "https://digitallibrary.un.org/record/3926275",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -11251,7 +12677,10 @@
      "es": "https://digitallibrary.un.org/record/3926275/files/A_HRC_RES_46_17-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3926275/files/A_HRC_RES_46_17-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3926275"
+    "url": "https://digitallibrary.un.org/record/3926275",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -11280,7 +12709,10 @@
      "fr": "https://digitallibrary.un.org/record/3971657/files/A_HRC_RES_49_22-FR.pdf",
      "es": "https://digitallibrary.un.org/record/3971657/files/A_HRC_RES_49_22-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3971657"
+    "url": "https://digitallibrary.un.org/record/3971657",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -11309,7 +12741,10 @@
      "fr": "https://digitallibrary.un.org/record/4010264/files/A_HRC_RES_52_28-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4010264/files/A_HRC_RES_52_28-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4010264"
+    "url": "https://digitallibrary.un.org/record/4010264",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -11338,7 +12773,10 @@
      "fr": "https://digitallibrary.un.org/record/4010264/files/A_HRC_RES_52_28-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4010264/files/A_HRC_RES_52_28-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4010264"
+    "url": "https://digitallibrary.un.org/record/4010264",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -11367,7 +12805,10 @@
      "fr": "https://digitallibrary.un.org/record/4010264/files/A_HRC_RES_52_28-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4010264/files/A_HRC_RES_52_28-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4010264"
+    "url": "https://digitallibrary.un.org/record/4010264",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -11396,7 +12837,10 @@
      "fr": "https://digitallibrary.un.org/record/4010264/files/A_HRC_RES_52_28-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4010264/files/A_HRC_RES_52_28-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4010264"
+    "url": "https://digitallibrary.un.org/record/4010264",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -11425,7 +12869,10 @@
      "fr": "https://digitallibrary.un.org/record/4010264/files/A_HRC_RES_52_28-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4010264/files/A_HRC_RES_52_28-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4010264"
+    "url": "https://digitallibrary.un.org/record/4010264",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -11454,7 +12901,10 @@
      "fr": "https://digitallibrary.un.org/record/4045737/files/A_HRC_RES_55_21-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4045737/files/A_HRC_RES_55_21-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4045737"
+    "url": "https://digitallibrary.un.org/record/4045737",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -11493,7 +12943,10 @@
      "es": "https://digitallibrary.un.org/record/731443/files/A_HRC_RES_20_20-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/731443/files/A_HRC_RES_20_20-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/731443"
+    "url": "https://digitallibrary.un.org/record/731443",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -11520,7 +12973,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4122445/files/A_HRC_RES_62_2-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4122445"
+    "url": "https://digitallibrary.un.org/record/4122445",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -11548,7 +13004,10 @@
      "es": "https://digitallibrary.un.org/record/752100/files/A_HRC_RES_23_21-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/752100/files/A_HRC_RES_23_21-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/752100"
+    "url": "https://digitallibrary.un.org/record/752100",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -11576,7 +13035,10 @@
      "es": "https://digitallibrary.un.org/record/775249/files/A_HRC_RES_26_24-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/775249/files/A_HRC_RES_26_24-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/775249"
+    "url": "https://digitallibrary.un.org/record/775249",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -11604,7 +13066,10 @@
      "es": "https://digitallibrary.un.org/record/846195/files/A_HRC_RES_32_24-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/846195/files/A_HRC_RES_32_24-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/846195"
+    "url": "https://digitallibrary.un.org/record/846195",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -11632,7 +13097,10 @@
      "es": "https://digitallibrary.un.org/record/1303025/files/A_HRC_RES_35_35-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1303025/files/A_HRC_RES_35_35-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1303025"
+    "url": "https://digitallibrary.un.org/record/1303025",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -11660,7 +13128,10 @@
      "es": "https://digitallibrary.un.org/record/1303025/files/A_HRC_RES_35_35-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1303025/files/A_HRC_RES_35_35-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1303025"
+    "url": "https://digitallibrary.un.org/record/1303025",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -11688,7 +13159,10 @@
      "es": "https://digitallibrary.un.org/record/3830984/files/A_HRC_RES_41_1-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3830984/files/A_HRC_RES_41_1-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3830984"
+    "url": "https://digitallibrary.un.org/record/3830984",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -11716,7 +13190,10 @@
      "es": "https://digitallibrary.un.org/record/3877968/files/A_HRC_RES_44_1-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3877968/files/A_HRC_RES_44_1-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3877968"
+    "url": "https://digitallibrary.un.org/record/3877968",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -11744,7 +13221,10 @@
      "es": "https://digitallibrary.un.org/record/3937484/files/A_HRC_RES_47_2-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3937484/files/A_HRC_RES_47_2-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3937484"
+    "url": "https://digitallibrary.un.org/record/3937484",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -11774,7 +13254,10 @@
      "fr": "https://digitallibrary.un.org/record/3985528/files/A_HRC_RES_50_2-FR.pdf",
      "es": "https://digitallibrary.un.org/record/3985528/files/A_HRC_RES_50_2-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3985528"
+    "url": "https://digitallibrary.un.org/record/3985528",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -11804,7 +13287,10 @@
      "fr": "https://digitallibrary.un.org/record/3985528/files/A_HRC_RES_50_2-FR.pdf",
      "es": "https://digitallibrary.un.org/record/3985528/files/A_HRC_RES_50_2-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3985528"
+    "url": "https://digitallibrary.un.org/record/3985528",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -11833,7 +13319,10 @@
      "fr": "https://digitallibrary.un.org/record/3985528/files/A_HRC_RES_50_2-FR.pdf",
      "es": "https://digitallibrary.un.org/record/3985528/files/A_HRC_RES_50_2-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3985528"
+    "url": "https://digitallibrary.un.org/record/3985528",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -11862,7 +13351,10 @@
      "fr": "https://digitallibrary.un.org/record/4020071/files/A_HRC_RES_53_2-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4020071/files/A_HRC_RES_53_2-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4020071"
+    "url": "https://digitallibrary.un.org/record/4020071",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -11892,7 +13384,10 @@
      "fr": "https://digitallibrary.un.org/record/4059825/files/A_HRC_RES_56_17-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4059825/files/A_HRC_RES_56_17-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4059825"
+    "url": "https://digitallibrary.un.org/record/4059825",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -11921,7 +13416,10 @@
      "fr": "https://digitallibrary.un.org/record/4059825/files/A_HRC_RES_56_17-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4059825/files/A_HRC_RES_56_17-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4059825"
+    "url": "https://digitallibrary.un.org/record/4059825",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -11948,7 +13446,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4086727/files/A_HRC_RES_59_1-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4086727"
+    "url": "https://digitallibrary.un.org/record/4086727",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -11976,7 +13477,10 @@
      "es": "https://digitallibrary.un.org/record/701383/files/A_HRC_RES_16_9-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/701383/files/A_HRC_RES_16_9-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/701383"
+    "url": "https://digitallibrary.un.org/record/701383",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -12003,7 +13507,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4103600/files/A_HRC_RES_S-39_1-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4103600"
+    "url": "https://digitallibrary.un.org/record/4103600",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -12031,7 +13538,10 @@
      "es": "https://digitallibrary.un.org/record/747773/files/A_HRC_RES_22_23-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/747773/files/A_HRC_RES_22_23-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/747773"
+    "url": "https://digitallibrary.un.org/record/747773",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -12059,7 +13569,10 @@
      "es": "https://digitallibrary.un.org/record/769158/files/A_HRC_RES_25_24-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/769158/files/A_HRC_RES_25_24-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/769158"
+    "url": "https://digitallibrary.un.org/record/769158",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -12087,7 +13600,10 @@
      "es": "https://digitallibrary.un.org/record/795368/files/A_HRC_RES_28_21-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/795368/files/A_HRC_RES_28_21-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/795368"
+    "url": "https://digitallibrary.un.org/record/795368",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -12115,7 +13631,10 @@
      "es": "https://digitallibrary.un.org/record/1313186/files/A_HRC_RES_34_23-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1313186/files/A_HRC_RES_34_23-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1313186"
+    "url": "https://digitallibrary.un.org/record/1313186",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -12143,7 +13662,10 @@
      "es": "https://digitallibrary.un.org/record/1313186/files/A_HRC_RES_34_23-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1313186/files/A_HRC_RES_34_23-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1313186"
+    "url": "https://digitallibrary.un.org/record/1313186",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -12171,7 +13693,10 @@
      "es": "https://digitallibrary.un.org/record/1486778/files/A_HRC_RES_37_30-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1486778/files/A_HRC_RES_37_30-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1486778"
+    "url": "https://digitallibrary.un.org/record/1486778",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -12199,7 +13724,10 @@
      "es": "https://digitallibrary.un.org/record/3808845/files/A_HRC_RES_40_18-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3808845/files/A_HRC_RES_40_18-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3808845"
+    "url": "https://digitallibrary.un.org/record/3808845",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -12227,7 +13755,10 @@
      "es": "https://digitallibrary.un.org/record/3875816/files/A_HRC_RES_43_24-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3875816/files/A_HRC_RES_43_24-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3875816"
+    "url": "https://digitallibrary.un.org/record/3875816",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -12255,7 +13786,10 @@
      "es": "https://digitallibrary.un.org/record/3927138/files/A_HRC_RES_46_18-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3927138/files/A_HRC_RES_46_18-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3927138"
+    "url": "https://digitallibrary.un.org/record/3927138",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -12284,7 +13818,10 @@
      "fr": "https://digitallibrary.un.org/record/3971658/files/A_HRC_RES_49_24-FR.pdf",
      "es": "https://digitallibrary.un.org/record/3971658/files/A_HRC_RES_49_24-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3971658"
+    "url": "https://digitallibrary.un.org/record/3971658",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -12314,7 +13851,10 @@
      "fr": "https://digitallibrary.un.org/record/4012839/files/A_HRC_RES_52_27-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4012839/files/A_HRC_RES_52_27-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4012839"
+    "url": "https://digitallibrary.un.org/record/4012839",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -12343,7 +13883,10 @@
      "fr": "https://digitallibrary.un.org/record/4045555/files/A_HRC_RES_55_19-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4045555/files/A_HRC_RES_55_19-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4045555"
+    "url": "https://digitallibrary.un.org/record/4045555",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -12370,7 +13913,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4081948/files/A_HRC_RES_58_21-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4081948"
+    "url": "https://digitallibrary.un.org/record/4081948",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -12397,7 +13943,10 @@
      "es": "https://digitallibrary.un.org/record/747802/files/A_HRC_RES_22_18-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/747802/files/A_HRC_RES_22_18-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/747802"
+    "url": "https://digitallibrary.un.org/record/747802",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -12424,7 +13973,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4112878/files/A_HRC_RES_61_37-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4112878"
+    "url": "https://digitallibrary.un.org/record/4112878",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -12452,7 +14004,10 @@
      "es": "https://digitallibrary.un.org/record/769187/files/A_HRC_RES_25_36-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/769187/files/A_HRC_RES_25_36-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/769187"
+    "url": "https://digitallibrary.un.org/record/769187",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -12480,7 +14035,10 @@
      "es": "https://digitallibrary.un.org/record/795386/files/A_HRC_RES_28_31-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/795386/files/A_HRC_RES_28_31-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/795386"
+    "url": "https://digitallibrary.un.org/record/795386",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -12508,7 +14066,10 @@
      "es": "https://digitallibrary.un.org/record/1289623/files/A_HRC_RES_34_39-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1289623/files/A_HRC_RES_34_39-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1289623"
+    "url": "https://digitallibrary.un.org/record/1289623",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -12536,7 +14097,10 @@
      "es": "https://digitallibrary.un.org/record/1484922/files/A_HRC_RES_37_39-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1484922/files/A_HRC_RES_37_39-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1484922"
+    "url": "https://digitallibrary.un.org/record/1484922",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -12565,7 +14129,10 @@
      "es": "https://digitallibrary.un.org/record/3809702/files/A_HRC_RES_40_26-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3809702/files/A_HRC_RES_40_26-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3809702"
+    "url": "https://digitallibrary.un.org/record/3809702",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -12593,7 +14160,10 @@
      "es": "https://digitallibrary.un.org/record/3809702/files/A_HRC_RES_40_26-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3809702/files/A_HRC_RES_40_26-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3809702"
+    "url": "https://digitallibrary.un.org/record/3809702",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -12622,7 +14192,10 @@
      "es": "https://digitallibrary.un.org/record/3876047/files/A_HRC_RES_43_38-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3876047/files/A_HRC_RES_43_38-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3876047"
+    "url": "https://digitallibrary.un.org/record/3876047",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -12650,7 +14223,10 @@
      "es": "https://digitallibrary.un.org/record/3921210/files/A_HRC_RES_46_28-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3921210/files/A_HRC_RES_46_28-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3921210"
+    "url": "https://digitallibrary.un.org/record/3921210",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -12679,7 +14255,10 @@
      "fr": "https://digitallibrary.un.org/record/3971642/files/A_HRC_RES_49_34-FR.pdf",
      "es": "https://digitallibrary.un.org/record/3971642/files/A_HRC_RES_49_34-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3971642"
+    "url": "https://digitallibrary.un.org/record/3971642",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -12708,7 +14287,10 @@
      "fr": "https://digitallibrary.un.org/record/4012340/files/A_HRC_RES_52_42-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4012340/files/A_HRC_RES_52_42-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4012340"
+    "url": "https://digitallibrary.un.org/record/4012340",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -12737,7 +14319,10 @@
      "fr": "https://digitallibrary.un.org/record/4045731/files/A_HRC_RES_55_25-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4045731/files/A_HRC_RES_55_25-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4045731"
+    "url": "https://digitallibrary.un.org/record/4045731",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -12764,7 +14349,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4082004/files/A_HRC_RES_58_30-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4082004"
+    "url": "https://digitallibrary.un.org/record/4082004",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -12791,7 +14379,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4082004/files/A_HRC_RES_58_30-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4082004"
+    "url": "https://digitallibrary.un.org/record/4082004",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -12815,7 +14406,14 @@
     ],
     "votacion": "",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/145182"
+    "url": "https://digitallibrary.un.org/record/145182",
+    "sesion_nota": "Adopted at the 52nd meeting, 3 Mar. 1992.",
+    "ubicacion": [
+     "In: Commission on Human Rights : report on the 48th session, 27 January-6 March 1992. - E/1992/22-E/CN.4/1992/84. - 1992. - p. 136-138. - (ESCOR, 1992, Suppl. no. 2)."
+    ],
+    "padres": [
+     "E/1992/22"
+    ]
    }
   },
   {
@@ -12842,7 +14440,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4112869/files/A_HRC_RES_61_30-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4112869"
+    "url": "https://digitallibrary.un.org/record/4112869",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -12870,7 +14471,10 @@
      "es": "https://digitallibrary.un.org/record/747770/files/A_HRC_RES_22_14-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/747770/files/A_HRC_RES_22_14-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/747770"
+    "url": "https://digitallibrary.un.org/record/747770",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -12898,7 +14502,10 @@
      "es": "https://digitallibrary.un.org/record/769165/files/A_HRC_RES_25_26-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/769165/files/A_HRC_RES_25_26-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/769165"
+    "url": "https://digitallibrary.un.org/record/769165",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -12926,7 +14533,10 @@
      "es": "https://digitallibrary.un.org/record/795371/files/A_HRC_RES_28_23-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/795371/files/A_HRC_RES_28_23-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/795371"
+    "url": "https://digitallibrary.un.org/record/795371",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -12954,7 +14564,10 @@
      "es": "https://digitallibrary.un.org/record/1289619/files/A_HRC_RES_34_22-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1289619/files/A_HRC_RES_34_22-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1289619"
+    "url": "https://digitallibrary.un.org/record/1289619",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -12982,7 +14595,10 @@
      "es": "https://digitallibrary.un.org/record/1485543/files/A_HRC_RES_37_32-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/1485543/files/A_HRC_RES_37_32-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/1485543"
+    "url": "https://digitallibrary.un.org/record/1485543",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -13016,7 +14632,10 @@
      "es": "https://digitallibrary.un.org/record/3875125/files/A_HRC_RES_43_26-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3875125/files/A_HRC_RES_43_26-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3875125"
+    "url": "https://digitallibrary.un.org/record/3875125",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -13044,7 +14663,10 @@
      "es": "https://digitallibrary.un.org/record/3924454/files/A_HRC_RES_46_21-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3924454/files/A_HRC_RES_46_21-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3924454"
+    "url": "https://digitallibrary.un.org/record/3924454",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -13072,7 +14694,10 @@
      "es": "https://digitallibrary.un.org/record/3924454/files/A_HRC_RES_46_21-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/3924454/files/A_HRC_RES_46_21-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3924454"
+    "url": "https://digitallibrary.un.org/record/3924454",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -13101,7 +14726,10 @@
      "fr": "https://digitallibrary.un.org/record/3969739/files/A_HRC_RES_49_23-FR.pdf",
      "es": "https://digitallibrary.un.org/record/3969739/files/A_HRC_RES_49_23-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3969739"
+    "url": "https://digitallibrary.un.org/record/3969739",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -13130,7 +14758,10 @@
      "fr": "https://digitallibrary.un.org/record/4047932/files/A_HRC_RES_55_20-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4047932/files/A_HRC_RES_55_20-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4047932"
+    "url": "https://digitallibrary.un.org/record/4047932",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -13157,7 +14788,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4082030/files/A_HRC_RES_58_20-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4082030"
+    "url": "https://digitallibrary.un.org/record/4082030",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -13181,7 +14815,14 @@
     ],
     "votacion": "",
     "pdf": {},
-    "url": "https://digitallibrary.un.org/record/169229"
+    "url": "https://digitallibrary.un.org/record/169229",
+    "sesion_nota": "Adopted at the 29th meeting, 19 Feb. 1993.",
+    "ubicacion": [
+     "In: Commission on Human Rights : report on the 49th session, 1 February-12 March 1993. - E/1993/23-E/CN.4/1993/122. - 1993. - p. 42-44. - (ESCOR, 1993, Suppl. no. 3)."
+    ],
+    "padres": [
+     "E/1993/23"
+    ]
    }
   },
   {
@@ -13216,7 +14857,10 @@
      "fr": "https://digitallibrary.un.org/record/3991831/files/A_HRC_RES_51_25-FR.pdf",
      "es": "https://digitallibrary.un.org/record/3991831/files/A_HRC_RES_51_25-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/3991831"
+    "url": "https://digitallibrary.un.org/record/3991831",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -13243,7 +14887,10 @@
     "pdf": {
      "en": "https://digitallibrary.un.org/record/4090717/files/A_HRC_RES_60_21-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4090717"
+    "url": "https://digitallibrary.un.org/record/4090717",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -13272,7 +14919,10 @@
      "fr": "https://digitallibrary.un.org/record/4025245/files/A_HRC_RES_54_23-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4025245/files/A_HRC_RES_54_23-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4025245"
+    "url": "https://digitallibrary.un.org/record/4025245",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -13301,7 +14951,10 @@
      "fr": "https://digitallibrary.un.org/record/4063836/files/A_HRC_RES_57_20-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4063836/files/A_HRC_RES_57_20-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4063836"
+    "url": "https://digitallibrary.un.org/record/4063836",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -13330,7 +14983,10 @@
      "fr": "https://digitallibrary.un.org/record/4063836/files/A_HRC_RES_57_20-FR.pdf",
      "es": "https://digitallibrary.un.org/record/4063836/files/A_HRC_RES_57_20-ES.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4063836"
+    "url": "https://digitallibrary.un.org/record/4063836",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {
@@ -13358,7 +15014,10 @@
      "es": "https://digitallibrary.un.org/record/719514/files/A_HRC_RES_S-18_1-ES.pdf",
      "fr": "https://digitallibrary.un.org/record/719514/files/A_HRC_RES_S-18_1-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/719514"
+    "url": "https://digitallibrary.un.org/record/719514",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
    }
   },
   {

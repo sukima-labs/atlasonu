@@ -29,7 +29,7 @@ def acto_from(r, rol, anio, por_en, por_es, sym_src):
     a = {'rol': rol, 'anio': anio, 'organo': organo(por_es, por_en), 'simbolo_fuente': sym_src, 'estado': r['estado']}
     if r.get('registro'):
         h = r['registro']
-        a.update({'simbolo': h['simbolo'], 'titulo_oficial': h['titulo'], 'adoptada': h['adoptada'] or h['fecha'],
+        a.update({'simbolo': h['simbolo'], 'titulo_oficial': h['titulo'], 'adoptada': h['adoptada'] or h['fecha'], 'sesion_nota': h.get('sesion_nota',''), 'ubicacion': h.get('ubicacion',[]), 'padres': h.get('padres',[]),
                   'borradores': h['borradores'], 'votacion': h['votacion'], 'registro': h['url'], 'pdf': h['pdf'],
                   'via_borrador': r['consultado'].startswith('D:') or (r['limpio'] != h['simbolo'] and r['limpio'] in h['borradores'])})
         if r['estado'] == 'VERIFICADO_NORMALIZADO' or a['via_borrador']:
@@ -105,7 +105,7 @@ for kind in ('TM', 'CM'):
         for a in actos:
             if a['estado'] in ('VERIFICADO', 'VERIFICADO_NORMALIZADO'):
                 e = index.setdefault(a['simbolo'], {'simbolo': a['simbolo'], 'titulo': a['titulo_oficial'], 'adoptada': a['adoptada'],
-                    'borradores': a['borradores'], 'votacion': a['votacion'], 'registro': a['registro'], 'pdf': a['pdf'], 'mandatos': []})
+                    'borradores': a['borradores'], 'votacion': a['votacion'], 'registro': a['registro'], 'pdf': a['pdf'], 'sesion_nota': a.get('sesion_nota',''), 'ubicacion': a.get('ubicacion',[]), 'padres': a.get('padres',[]), 'mandatos': []})
                 if me['titulo'] not in e['mandatos']: e['mandatos'].append(me['titulo'])
                 for b in a['borradores']: index.setdefault('~' + b, {'ref': a['simbolo']})
 
@@ -129,6 +129,10 @@ for r in recs:
 alertas.sort(key=lambda x: {'ALTA': 0, 'MEDIA': 1, 'BAJA': 2}[x['nivel']])
 alertas += [a for a in ctx['alertas'] if a['id'] == 'A-08']
 ctx['alertas'] = alertas
+import os
+if os.path.exists('data/fuentes/textos.json'):
+    for k, v in json.load(open('data/fuentes/textos.json', encoding='utf-8')).items():
+        if k in index: index[k]['texto'] = v
 ev = json.load(open('data/evidencias.json', encoding='utf-8'))
 for k, v in ev.items():
     if k in index: index[k]['evidencia'] = v

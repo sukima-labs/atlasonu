@@ -27,6 +27,9 @@ t('símbolo sin RES → resolución',()=>assert.ok(recover('A/HRC/54/26').includ
 t('ECOSOC, no Comisión (ejecuciones)',()=>{const r=recover('E/CN.4/1982/35');assert.ok(r.includes('E/RES/1982/35')&&r.includes('Consejo Económico y Social'))});
 t('Comisión: E/CN.4/1991/42 → E/CN.4/RES/1991/42',()=>assert.ok(recover('E/CN.4/1991/42').includes('E/CN.4/RES/1991/42')));
 t('PDF en español enlazado',()=>assert.ok(recover('A/HRC/RES/54/26').includes('-ES.pdf')));
+t('resolución antigua sin PDF → informe de sesión con páginas',()=>{const r=recover('E/CN.4/RES/1985/33');assert.ok(r.includes('E/1985/22')&&r.includes('71–72'),'1985/33')});
+t('resolución HRC temprana con PDF validado',()=>assert.ok(recover('A/HRC/RES/7/22').includes('ap.ohchr.org')));
+t('todo símbolo del índice tiene ruta al texto',()=>assert.equal(run('Object.values(ACTOS).filter(x=>x.simbolo&&(!x.texto||!(x.texto.fuentes.length||x.texto.informe_sesion.length))).length'),0));
 t('no inventa: símbolo ausente',()=>{const r=recover('A/HRC/RES/99/99');assert.ok(r.includes('No está en el índice local')&&!r.includes('LOCALIZADO EN EL ÍNDICE'))});
 t('búsqueda por palabras en español',()=>assert.ok(recover('desaparecidos').includes('A/HRC/RES/')));
 t('ficha de mandato',()=>{run('details(0)');assert.ok(els.cardsResults.innerHTML.includes('Cadena de actos jurídicos'))});

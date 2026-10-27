@@ -67,7 +67,9 @@ def parse(xml):
         res.append({'id': rid, 'simbolo': (f('191', 'a') or [''])[0], 'simbolos': f('191', 'a'),
                     'titulo': ' '.join(f('245', 'a')[:1]).rstrip(' /:.'), 'fecha': (f('269', 'a') or [''])[0],
                     'adoptada': (f('992', 'a') or [''])[0], 'borradores': f('993', 'a'), 'votacion': (f('996', 'a') or [''])[0],
-                    'pdf': pdfs, 'url': f'https://digitallibrary.un.org/record/{rid}'})
+                    'pdf': pdfs, 'url': f'https://digitallibrary.un.org/record/{rid}',
+                    'sesion_nota': ' '.join(f('500', 'a')), 'ubicacion': f('580', 'a') + f('593', 'a'),
+                    'padres': [x for x in f('993', 'a') if not re.search(r'/L\.\d|/SR\.|/RES/', x)]})
     return res
 
 def query(field, sym, tries=3):
