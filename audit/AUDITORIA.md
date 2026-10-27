@@ -15,7 +15,7 @@ Estados: ✅ cumple · 🟡 parcial · ❌ no implementado.
 | 9 | Selección de titulares | 🟡 | Secuencia del proceso; titulares actuales por mandato; sin datos históricos por proceso |
 | 10 | Autoría | ✅ | © y enlace visibles; licencia pendiente del autor |
 | 11 | Excel offline, HTML Pages | 🟡 | HTML sin conexión y Excel v0.7 (6 hojas); flujo `pages.yml` listo; pendiente activar Pages (un clic) |
-| 12 | Pruebas reales | 🟡 | 79 de lógica + 90 en Chromium; auditoría de enlaces (571; 0 rotos; 459 no concluyentes por antirrobot); muestreo de PDF 30/30. Sin auditoría de accesibilidad |
+| 12 | Pruebas reales | 🟡 | 83 de lógica + 94 en Chromium; auditoría de enlaces (571; 0 rotos; 459 no concluyentes por antirrobot); muestreo de PDF 30/30. Sin auditoría de accesibilidad |
 | 13 | Commits y Pages verificado | ✅ | Publicado en https://cataplum1414.github.io/onu-arqueologia-documental/ (27-oct-2026): HTTP 200 en página, datos y Excel; las 42 comprobaciones de Chromium pasan contra la URL pública, sin errores de consola |
 
 ## Qué corrigió esta versión respecto a v0.6
