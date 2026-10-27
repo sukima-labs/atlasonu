@@ -72,14 +72,14 @@ def parse(xml):
                     'padres': [x for x in f('993', 'a') if not re.search(r'/L\.\d|/SR\.|/RES/', x)]})
     return res
 
-def query(field, sym, tries=3):
+def query(field, sym, tries=6):
     url = DL + urllib.parse.quote(f'{field}:"{sym}"')
     for i in range(tries):
         try:
             with urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': 'ATLAS-ONU-verifier/1.0 (academic)'}), timeout=40) as r:
                 return parse(r.read().decode('utf-8', 'ignore'))
         except Exception as e:
-            time.sleep(1.5 * (i + 1)); err = str(e)
+            time.sleep(4 * (i + 1)); err = str(e)
     return {'error': err}
 
 def verify(orig, por, cache, mtitle=''):
