@@ -2,7 +2,7 @@
 
 Plataforma académica independiente para investigar los procedimientos especiales de la ONU y recuperar sus documentos originales **con verificación contra la fuente oficial**.
 
-**Autor y titular:** Jeisson Arley Osorio Mesa · © 2026. Todos los derechos reservados; publicar el código no concede una licencia abierta (pendiente de decisión del autor).
+**Autor:** Jeisson Arley Osorio Mesa, estudiante del Máster en Protección Internacional de los Derechos Humanos (Universidad de Alcalá, España) · © 2026. **Licencias:** código bajo [MIT](LICENSE); contenido propio bajo [CC BY 4.0](LICENSE-CONTENIDO.md); los datos y textos de la ONU no se relicencian (ver [análisis](docs/LICENCIA.md)).
 **Aviso:** iniciativa académica independiente. No es un producto oficial de Naciones Unidas ni de la Universidad de Alcalá.
 
 ## Se actualiza sola
@@ -36,7 +36,7 @@ Abrir `index.html` en cualquier navegador (también sin conexión: los datos van
 | `index.html` | Aplicación |
 | `data/` | `catalogo.json` y `atlas-data.js` (generados), `fuentes/` (descargas oficiales y verificación), `evidencias.json`, Excel del piloto |
 | `scripts/` | Descarga, normalización, verificación y construcción (`actualizar_datos.sh` ejecuta todo) |
-| `tests/` | `smoke.cjs` (112 pruebas de lógica, `invariantes.cjs`: 11) y `browser.cjs` (Chromium real, 145 comprobaciones, escritorio y móvil) |
+| `tests/` | `smoke.cjs` (114 pruebas de lógica, `invariantes.cjs`: 11) y `browser.cjs` (Chromium real, 147 comprobaciones, escritorio y móvil) |
 | `audit/` | Auditoría contra los 13 requisitos, discrepancias respecto a v0.6, inventario, manifiesto de integridad |
 | `docs/` | Traspaso original |
 | `archive/` | Versiones previas sin modificar |
@@ -78,3 +78,7 @@ Diccionario con 145 entradas (`data/siglas.json`, elaboración propia sobre fuen
 ## Créditos y uso
 
 Los datos oficiales son de las Naciones Unidas y proceden de sus sitios públicos (OHCHR, Biblioteca Digital, Colección de Tratados). Solo se leen metadatos públicos y se citan textos de tratados con su fuente; cada dato enlaza al documento oficial. Proyecto académico, independiente y sin fines de lucro. Lo que es elaboración propia está marcado como tal.
+
+## Licencia
+
+Código: **MIT** (`LICENSE`). Contenido propio (siglas, cuadros, explicaciones, documentación): **CC BY 4.0** (`LICENSE-CONTENIDO.md`). Los documentos, símbolos, títulos, textos de tratados y datos de ratificación son de las Naciones Unidas y no se relicencian. El análisis de por qué esta combinación está en `docs/LICENCIA.md`. Cómo citar: `CITATION.cff`.
