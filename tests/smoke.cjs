@@ -55,6 +55,10 @@ t('países: país inexistente orienta sin inventar',()=>{els.pQ.value='atlantida
 t('explorador: filtro por país (Belarús) y por nacionalidad (Colombia)',()=>{els.q.value='';els.pais.value='BLR';run('filterMandates()');assert.equal(run('filtered.length'),1);els.pais.value='COL';run('filterMandates()');assert.equal(run('filtered.length'),6);els.pais.value='';run('filterMandates()')});
 t('búsqueda inteligente: país en español («Camboya»)',()=>{const r=smart('Camboya');assert.ok(r.includes('País: Camboya')&&r.includes('Cambodia'))});
 t('búsqueda inteligente: «Colombia» muestra tarjeta de país',()=>assert.ok(smart('Colombia').includes('6 titular')));
+t('país elegido → todos los mandatos temáticos pueden comunicarse con él',()=>{els.pSel.value='COL';els.pQ.value='';els.pTema.value='';els.pTema.dataset.alt='';run('renderPaises()');const t=els.pTemas.innerHTML;assert.ok(t.includes('cualquier Estado')&&t.includes('hayan o no ratificado')&&t.includes('spcommreports.ohchr.org'));assert.equal((t.match(/Temático: puede comunicarse/g)||[]).length,44)});
+t('país + tema («tortura») filtra los mandatos aplicables',()=>{els.pTema.value='tortura';els.pTema.dataset.alt='';run('renderPaises()');const t=els.pTemas.innerHTML;assert.ok(t.includes('sobre la tortura'));assert.ok((t.match(/Temático: puede comunicarse/g)||[]).length<10)});
+t('país con mandato propio aparece primero (Belarús)',()=>{els.pSel.value='BLR';els.pTema.value='';els.pTema.dataset.alt='';run('renderPaises()');const t=els.pTemas.innerHTML;assert.ok(t.indexOf('Mandato por país')>0&&t.indexOf('Mandato por país')<t.indexOf('Temático: puede'));els.pSel.value='';run('renderPaises()')});
+t('búsqueda guiada con país opcional',()=>{els.guiadaSel.value='tortura|detencion|torture|detention';els.guiadaPais.value='KHM';run('guiada()');assert.ok(els.pTemas.innerHTML.includes('Camboya'))});
 t('ficha de mandato',()=>{run('details(0)');assert.ok(els.cardsResults.innerHTML.includes('Cadena de actos jurídicos'))});
 t('exportCSV',()=>run('exportCSV()'));
 t('autoría y repositorio',()=>assert.ok(html.includes('sukima-labs/onu-arqueologia-documental')&&html.includes('Sukima-Labs')));
