@@ -18,7 +18,7 @@ Plataforma académica independiente para investigar los procedimientos especiale
 
 ## Abrir
 Abrir `index.html` en cualquier navegador (también sin conexión: los datos van en `data/atlas-data.js`).
-**Web pública:** https://sukima-labs.github.io/onu-arqueologia-documental/ (se publica con el flujo `pages.yml` al fusionar en `main`; requiere Settings → Pages → Source: *GitHub Actions*).
+**Web pública:** https://sukima-labs.github.io/onu-arqueologia-documental/ (Settings → Pages → *Build and deployment* → Source: **Deploy from a branch** → Branch: `main`, carpeta `/ (root)` → Save; tarda ~1 minuto).
 
 ## Estructura
 | Ruta | Contenido |
