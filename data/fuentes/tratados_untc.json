@@ -2232,6 +2232,16 @@
    }
   },
   "CHN": {
+   "IV-11": {
+    "firma": "29 Aug 1990",
+    "forma": "ratificación",
+    "parte": "2 Mar 1992"
+   },
+   "IV-11-b": {
+    "firma": "15 Mar 2001",
+    "forma": "ratificación",
+    "parte": "20 Feb 2008"
+   },
    "IV-11-c": {
     "firma": "6 Sep 2000",
     "forma": "ratificación",
@@ -2241,6 +2251,31 @@
     "firma": "30 Mar 2007",
     "forma": "ratificación",
     "parte": "1 Aug 2008"
+   },
+   "IV-2": {
+    "firma": "",
+    "forma": "a",
+    "parte": "29 Dec 1981"
+   },
+   "IV-3": {
+    "firma": "27 Oct 1997",
+    "forma": "ratificación",
+    "parte": "27 Mar 2001"
+   },
+   "IV-4": {
+    "firma": "5 Oct 1998",
+    "forma": "",
+    "parte": ""
+   },
+   "IV-8": {
+    "firma": "17 Jul 1980",
+    "forma": "ratificación",
+    "parte": "4 Nov 1980"
+   },
+   "IV-9": {
+    "firma": "12 Dec 1986",
+    "forma": "ratificación",
+    "parte": "4 Oct 1988"
    }
   },
   "CIV": {
@@ -3218,20 +3253,40 @@
     "forma": "ratificación",
     "parte": "16 May 1969"
    },
+   "IV-3": {
+    "firma": "9 Oct 1968",
+    "forma": "ratificación",
+    "parte": "17 Dec 1973"
+   },
    "IV-3-a": {
     "firma": "",
     "forma": "a",
     "parte": "20 Apr 2023"
+   },
+   "IV-4": {
+    "firma": "9 Oct 1968",
+    "forma": "ratificación",
+    "parte": "17 Dec 1973"
    },
    "IV-5": {
     "firma": "",
     "forma": "a",
     "parte": "25 Aug 1993"
    },
+   "IV-8": {
+    "firma": "17 Jul 1980",
+    "forma": "ratificación",
+    "parte": "10 Jul 1985"
+   },
    "IV-8-b": {
     "firma": "10 Dec 1999",
     "forma": "ratificación",
     "parte": "15 Jan 2002"
+   },
+   "IV-9": {
+    "firma": "13 Oct 1986",
+    "forma": "ratificación",
+    "parte": "1 Oct 1990"
    },
    "IV-9-b": {
     "firma": "20 Sep 2006",
@@ -4337,6 +4392,21 @@
    }
   },
   "GBR": {
+   "IV-11": {
+    "firma": "19 Apr 1990",
+    "forma": "ratificación",
+    "parte": "16 Dec 1991"
+   },
+   "IV-11-b": {
+    "firma": "7 Sep 2000",
+    "forma": "ratificación",
+    "parte": "24 Jun 2003"
+   },
+   "IV-11-c": {
+    "firma": "7 Sep 2000",
+    "forma": "ratificación",
+    "parte": "20 Feb 2009"
+   },
    "IV-12": {
     "firma": "31 Mar 1999",
     "forma": "ratificación",
@@ -4352,15 +4422,35 @@
     "forma": "ratificación",
     "parte": "7 Aug 2009"
    },
+   "IV-2": {
+    "firma": "11 Oct 1966",
+    "forma": "ratificación",
+    "parte": "7 Mar 1969"
+   },
+   "IV-3": {
+    "firma": "16 Sep 1968",
+    "forma": "ratificación",
+    "parte": "20 May 1976"
+   },
    "IV-4": {
     "firma": "16 Sep 1968",
     "forma": "ratificación",
     "parte": "20 May 1976"
    },
+   "IV-8": {
+    "firma": "22 Jul 1981",
+    "forma": "ratificación",
+    "parte": "7 Apr 1986"
+   },
    "IV-8-b": {
     "firma": "",
     "forma": "a",
     "parte": "17 Dec 2004"
+   },
+   "IV-9": {
+    "firma": "15 Mar 1985",
+    "forma": "ratificación",
+    "parte": "8 Dec 1988"
    },
    "IV-9-b": {
     "firma": "26 Jun 2003",
@@ -6208,10 +6298,25 @@
     "forma": "ratificación",
     "parte": "28 Nov 1983"
    },
+   "IV-3": {
+    "firma": "17 Oct 1980",
+    "forma": "a",
+    "parte": "26 May 1992"
+   },
+   "IV-4": {
+    "firma": "17 Oct 1980",
+    "forma": "a",
+    "parte": "26 May 1992"
+   },
    "IV-5": {
     "firma": "27 Sep 2004",
     "forma": "",
     "parte": ""
+   },
+   "IV-8": {
+    "firma": "17 Oct 1980",
+    "forma": "a",
+    "parte": "15 Oct 1992"
    },
    "IV-8-b": {
     "firma": "11 Nov 2001",
@@ -7548,6 +7653,11 @@
     "forma": "a",
     "parte": "19 Sep 2006"
    },
+   "IV-8": {
+    "firma": "",
+    "forma": "a",
+    "parte": "1 Jul 1993"
+   },
    "IV-8-b": {
     "firma": "",
     "forma": "a",
@@ -7699,6 +7809,11 @@
    }
   },
   "MKD": {
+   "IV-11": {
+    "firma": "",
+    "forma": "d",
+    "parte": "2 Dec 1993"
+   },
    "IV-11-b": {
     "firma": "17 Jul 2001",
     "forma": "ratificación",
@@ -7986,6 +8101,11 @@
     "firma": "",
     "forma": "d",
     "parte": "23 Oct 2006"
+   },
+   "IV-11-b": {
+    "firma": "",
+    "forma": "d",
+    "parte": "2 May 2007"
    },
    "IV-11-c": {
     "firma": "",
@@ -9077,6 +9197,11 @@
     "forma": "a",
     "parte": "26 May 1989"
    },
+   "IV-8": {
+    "firma": "17 Jul 1980",
+    "forma": "ratificación",
+    "parte": "10 Jan 1985"
+   },
    "IV-8-b": {
     "firma": "7 Sep 2000",
     "forma": "ratificación",
@@ -9614,6 +9739,11 @@
     "firma": "",
     "forma": "a",
     "parte": "14 Sep 1981"
+   },
+   "IV-8": {
+    "firma": "",
+    "forma": "a",
+    "parte": "27 Feb 2001"
    }
   },
   "PRT": {
@@ -9681,6 +9811,11 @@
     "firma": "1 Aug 1978",
     "forma": "ratificación",
     "parte": "3 May 1983"
+   },
+   "IV-8": {
+    "firma": "24 Apr 1980",
+    "forma": "ratificación",
+    "parte": "30 Jul 1980"
    },
    "IV-8-b": {
     "firma": "16 Feb 2000",
@@ -10331,6 +10466,11 @@
     "firma": "19 Oct 2015",
     "forma": "ratificación",
     "parte": "27 Nov 2017"
+   },
+   "IV-8": {
+    "firma": "",
+    "forma": "a",
+    "parte": "5 Oct 1995"
    }
   },
   "SLB": {
@@ -11160,6 +11300,11 @@
     "firma": "29 Sep 1967",
     "forma": "ratificación",
     "parte": "6 Dec 1971"
+   },
+   "IV-8": {
+    "firma": "7 Mar 1980",
+    "forma": "ratificación",
+    "parte": "2 Jul 1980"
    },
    "IV-8-b": {
     "firma": "10 Dec 1999",
@@ -12794,6 +12939,11 @@
     "firma": "11 Apr 2007",
     "forma": "ratificación",
     "parte": "26 Mar 2009"
+   },
+   "IV-2": {
+    "firma": "",
+    "forma": "a",
+    "parte": "18 Oct 1972"
    },
    "IV-3": {
     "firma": "",
