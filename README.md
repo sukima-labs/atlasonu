@@ -5,6 +5,13 @@ Plataforma académica independiente para investigar los procedimientos especiale
 **Autor y titular:** Jeisson Arley Osorio Mesa · © 2026. Todos los derechos reservados; publicar el código no concede una licencia abierta (pendiente de decisión del autor).
 **Aviso:** iniciativa académica independiente. No es un producto oficial de Naciones Unidas ni de la Universidad de Alcalá.
 
+## Se actualiza sola
+Cada día (04:17 UTC) un flujo de GitHub Actions (`.github/workflows/actualizar-datos.yml`) vuelve a consultar las fuentes oficiales —índice de mandatos y visitas de OHCHR, y Biblioteca Digital de la ONU—, verifica de nuevo cada símbolo, detecta qué cambió y, **solo si los datos no se degradan**, lo publica. La plataforma muestra la fecha de la última revisión, las novedades detectadas y avisa si hay datos más recientes que los de la copia abierta.
+- **Salvaguardas:** un fallo de red aborta sin publicar; si caen los actos localizados, los textos o los mandatos, no se publica (`scripts/validar_datos.py`); las pruebas de invariantes deben pasar (`tests/invariantes.cjs`).
+- **Sin ruido:** si no cambió nada, solo se actualiza `data/estado.json` (sello de última revisión).
+- **A mano:** `bash scripts/actualizar_datos.sh`.
+- **Límite:** el navegador no puede consultar la ONU en directo (las fuentes no lo permiten); por eso la actualización la hace GitHub y la página la lee.
+
 ## Qué hace la versión 0.7
 - **57 mandatos vigentes** (44 temáticos y 13 por país) tomados del índice oficial de OHCHR, con titulares actuales.
 - **421 actos jurídicos** (creación, prórrogas) contrastados uno a uno con la Biblioteca Digital de la ONU: 401 localizados, 20 con reservas explicadas.
