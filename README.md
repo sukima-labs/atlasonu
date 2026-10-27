@@ -59,3 +59,8 @@ Ver en la plataforma «Fuentes y alcance → Qué es dato oficial y qué es elab
 
 ## Límites (ver `audit/AUDITORIA.md`)
 Solo mandatos **vigentes**: faltan los extinguidos. Las comisiones de investigación listadas son una selección verificada, no el universo. No hay mapas. Las explicaciones en lenguaje claro de cada resolución no están redactadas. «Localizado» significa que existe un registro con ese símbolo exacto; no sustituye leer el texto.
+
+
+## Documentos oficiales por país
+
+Cada ficha de país carga, bajo demanda (`data/paises/<ISO>.js`), las observaciones finales de los comités de tratados, los documentos del Examen Periódico Universal y los informes de misiones de procedimientos especiales, todos obtenidos de la Biblioteca Digital de la ONU con coincidencia exacta de materia (`scripts/fetch_docs_pais.py`) y refrescados a diario. Las comunicaciones individuales de los relatores no son automatizables y se enlazan a la base oficial.
