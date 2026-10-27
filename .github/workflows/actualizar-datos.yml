@@ -28,6 +28,7 @@ jobs:
           if git diff --cached --quiet; then echo "Nada que publicar"; exit 0; fi
           if git diff --cached --name-only | grep -qv '^data/estado.json$'; then MSG="Actualización automática: cambios en los datos oficiales ($(date -u +%F))"; else MSG="Revisión diaria de fuentes: sin cambios ($(date -u +%F))"; fi
           git commit -m "$MSG"
+          git pull --rebase origin main
           git push
       - name: Pedir a GitHub Pages que reconstruya el sitio
         env: { GH_TOKEN: '${{ github.token }}' }
