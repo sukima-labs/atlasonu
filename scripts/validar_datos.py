@@ -14,6 +14,10 @@ if not 45 <= cb['mandatos'] <= 90: fallos.append(f"mandatos fuera de rango: {cb[
 if cb['paises'] < 185: fallos.append(f"países < 185: {cb['paises']}")
 if cb['paises_con_tratados'] < 180: fallos.append(f"países con tratados < 180: {cb['paises_con_tratados']}")
 if cb['paises_con_docs'] < 170: fallos.append(f"países con documentos < 170: {cb['paises_con_docs']}")
+for t in b['tratados']:   # un nombre de país mal leído (p. ej. con nota al pie) haría perder ratificaciones
+    n = sum(1 for p in b['paises'] if (p.get('tratados') or {}).get(t['mtdsg']))
+    if t['participantes'] - n > 4: fallos.append(f"{t['siglas']}: {n} países emparejados de {t['participantes']} participantes")
+if sum(1 for t in b['tratados'] if t.get('texto')) < 8: fallos.append('tratados con texto literal < 8')
 if ca.get('docs_co') and cb['docs_co'] < ca['docs_co'] * 0.95: fallos.append(f"observaciones finales caen de {ca['docs_co']} a {cb['docs_co']}")
 if cb['mecanismos'] < 20: fallos.append(f"mecanismos < 20: {cb['mecanismos']}")
 for k in ('mandatos', 'actos', 'localizados', 'texto_directo', 'con_ruta', 'titulares'):

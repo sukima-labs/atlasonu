@@ -148,6 +148,11 @@ def main(tm, cm, out):
         return k, query('993__a' if not isinstance(c, str) else '191__a', c if isinstance(c, str) else c[1])
     with cf.ThreadPoolExecutor(4) as ex:
         for k, r in ex.map(run, todo): cache[k] = r
+    fallidas = [(k, uniq[k]) for k, v in cache.items() if isinstance(v, dict) and 'error' in v and k in uniq]
+    if fallidas:   # segunda pasada: en serie y tras una pausa, por si la Biblioteca Digital limitó el ritmo
+        print(len(fallidas), 'consultas fallidas; reintento en serie tras una pausa de 45 s', flush=True); time.sleep(45)
+        for kc in fallidas:
+            k, r = run(kc); cache[k] = r; time.sleep(1.5)
     json.dump(cache, open(cache_path, 'w'))
     errores = [k for k, v in cache.items() if isinstance(v, dict) and 'error' in v]
     if errores:   # un fallo de red no debe degradar datos ya verificados: se aborta sin publicar nada
