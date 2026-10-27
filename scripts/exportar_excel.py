@@ -17,7 +17,7 @@ def sheet(name, head, rows, widths=None, first=False):
 leeme = [['ATLAS ONU — catálogo v0.7'], ['Autor y titular: Jeisson Arley Osorio Mesa · © 2026. Iniciativa académica independiente; no es un producto oficial de la ONU ni de la Universidad de Alcalá.'],
  [f"Datos del {d['consultado']}. Fuentes: índice oficial de mandatos de OHCHR (spinternet.ohchr.org) y Biblioteca Digital de la ONU (digitallibrary.un.org)."],
  ['«Localizado» significa que existe un registro con ese símbolo exacto en la Biblioteca Digital; no sustituye leer el texto. Una resolución no es el informe que la reproduce.'],
- ['Hojas: Mandatos · Actos (cadena de creación y prórrogas con estado de verificación) · Titulares · Textos (ruta al texto de cada resolución) · Mecanismos · Alertas.'],
+ ['Hojas: Mandatos · Países · Actos (cadena de creación y prórrogas con estado de verificación) · Titulares · Textos (ruta al texto de cada resolución) · Mecanismos · Alertas.'],
  ['Cubre solo mandatos vigentes. Faltan mandatos extinguidos y mapas.']]
 ws = wb.active; ws.title = 'LEEME'
 for r in leeme: ws.append(r)
@@ -38,4 +38,6 @@ sheet('Textos', ['Símbolo', 'Título', 'Adoptada', 'Estado del texto', 'PDF esp
 sheet('Mecanismos', ['Categoría', 'Siglas', 'Nombre', 'Name', 'Símbolo', 'Qué es el acto', 'Adopción', 'Entrada en vigor', 'Miembros', 'Estado', 'Registro'],
  [[m['categoria'], m['siglas'], m['nombre'], m['nameEN'], m.get('simbolo', m['simbolo_semilla']), m['acto'], m['adopcion'], m['entrada_vigor'], m['miembros'], m['estado'], m.get('registro', '')] for m in d['mecanismos']], [34, 14, 60, 60, 22, 50, 10, 12, 10, 14, 40])
 sheet('Alertas', ['ID', 'Nivel', 'Referencia', 'Tema', 'Problema', 'Acción'], [[a['id'], a.get('nivel', ''), a.get('simbolo', ''), a.get('tema', ''), a.get('problema', ''), a.get('accion', '')] for a in d['alertas']], [8, 8, 28, 60, 100, 60])
+sheet('Países', ['País', 'Country', 'Mandato sobre el país', 'Comisiones / misiones', 'Titulares de este país (mandato)'],
+ [[p['es'], p['en'], d['mandatos'][p['mandato']]['nameEN'] if p['mandato'] is not None else '', '; '.join(d['mecanismos'][i]['nameEN'] for i in p['comisiones']), '; '.join(t['titular'] + ' — ' + d['mandatos'][t['idx']]['nameEN'] for t in p['titulares_de'])] for p in d['paises']], [38, 38, 60, 60, 120])
 wb.save('data/atlas-onu-catalogo-v07.xlsx'); print('xlsx ok', [ws.title + ':' + str(ws.max_row - 1) for ws in wb.worksheets[1:]])
