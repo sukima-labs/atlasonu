@@ -2,3 +2,7 @@
 Thumbs.db
 *.tmp
 ~$*
+
+*.cache
+__pycache__/
+*.pyc
