@@ -53,6 +53,12 @@ const URL = process.env.ATLAS_URL || 'file://' + path.resolve(__dirname, '..', '
     await page.evaluate(() => showPage('inicio')); await page.selectOption('#guiadaSel', { index: 4 }); await page.selectOption('#guiadaPais', 'COL'); await page.getByRole('button', { name: 'Ver mandatos' }).click(); await page.waitForTimeout(300);
     ok(vp.name + ': búsqueda guiada con país (Colombia + agua/alimentación…) abre Países con mandatos aplicables', await page.isVisible('#paises') && /Colombia/.test(await page.textContent('#pTemas')) && (await page.locator('#pTemas tbody tr').count()) > 0);
     if (vp.name === 'escritorio') { await page.evaluate(() => document.getElementById('pTemas').scrollIntoView()); await page.screenshot({ path: path.resolve(__dirname, '..', 'audit', 'captura_pais_temas.png') }); }
+    await page.evaluate(() => showPage('explorar')); await page.selectOption('#modal', 'País'); await page.selectOption('#pais', 'COL'); await page.waitForTimeout(250);
+    ok(vp.name + ': Explorador País+Colombia explica la ausencia (no una pantalla en blanco)', /no tiene mandato por país vigente/.test(await page.textContent('#count')) && /Países/.test(await page.textContent('#count')));
+    await page.evaluate(() => clearFilters());
+    await page.evaluate(() => showPage('inicio')); await page.fill('#quick', 'xqzvbn'); await page.waitForTimeout(500);
+    const href = await page.locator('#smartOut a', { hasText: 'Solicitar verificación' }).getAttribute('href');
+    ok(vp.name + ': búsqueda sin resultado ofrece solicitud prellenada en GitHub', /issues\/new\?template=solicitud-verificacion\.yml/.test(href) && /busqueda=xqzvbn/.test(href));
     await page.evaluate(() => showPage('explorar')); await page.selectOption('#pais', 'BLR'); await page.waitForTimeout(250);
     ok(vp.name + ': filtro de país en el explorador (Belarús → 1 mandato)', (await page.locator('#mandBody tr').count()) === 1);
     await page.evaluate(() => clearFilters());
