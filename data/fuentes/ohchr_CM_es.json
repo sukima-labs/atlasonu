@@ -1,0 +1,798 @@
+{
+ "fuente": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM&lang=es",
+ "consultado": "2026-10-27",
+ "n": 13,
+ "mandatos": [
+  {
+   "tipo": "País",
+   "titulo": "Relator Especial sobre la situación de los derechos humanos en el Afganistán",
+   "etiqueta": "Afganistán",
+   "creado_anio": "2021",
+   "creado_por": "Resolución del Consejo de Derechos Humanos",
+   "creado_simbolo": "A/HRC/RES/48/1",
+   "prorrogado_anio": "2025",
+   "prorrogado_por": "Resolución del Consejo de Derechos Humanos",
+   "prorrogado_simbolo": "A/HRC/RES/60/2",
+   "titulares_texto": "Mr. Richard BENNETT (New Zealand)",
+   "observaciones": "",
+   "prorrogas_intermedias": [
+    {
+     "anio": "2022",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/51/20"
+    },
+    {
+     "anio": "2023",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/54/1"
+    },
+    {
+     "anio": "2024",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/57/L.24"
+    }
+   ],
+   "idioma": "es"
+  },
+  {
+   "tipo": "País",
+   "titulo": "Relator Especial sobre la situación de los derechos humanos en Belarús",
+   "etiqueta": "Belarús",
+   "creado_anio": "2012",
+   "creado_por": "Resolución del Consejo de Derechos Humanos",
+   "creado_simbolo": "A/HRC/RES/20/13 (for 1 year)",
+   "prorrogado_anio": "2026",
+   "prorrogado_por": "Resolución del Consejo de Derechos Humanos",
+   "prorrogado_simbolo": "A/HRC/RES/61/26",
+   "titulares_texto": "Mr. Nils MUIŽNIEKS (Latvia) Since 1 November 2024",
+   "observaciones": "",
+   "prorrogas_intermedias": [
+    {
+     "anio": "2013",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/23/15"
+    },
+    {
+     "anio": "2014",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/26/25 (for 1 year)"
+    },
+    {
+     "anio": "2017",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/35/27"
+    },
+    {
+     "anio": "2018",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/38/14"
+    },
+    {
+     "anio": "2019",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/41/22"
+    },
+    {
+     "anio": "2020",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/44/19"
+    },
+    {
+     "anio": "2021",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/47/19"
+    },
+    {
+     "anio": "2022",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/50/20"
+    },
+    {
+     "anio": "2023",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/53/19"
+    },
+    {
+     "anio": "2024",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/55/27"
+    },
+    {
+     "anio": "2025",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/58/19"
+    }
+   ],
+   "idioma": "es"
+  },
+  {
+   "tipo": "País",
+   "titulo": "Relator/Relatora Especial sobre la situación de los derechos humanos en Burundi",
+   "etiqueta": "Burundi",
+   "creado_anio": "2021",
+   "creado_por": "Resolución del Consejo de Derechos Humanos",
+   "creado_simbolo": "A/HRC/RES/48/16",
+   "prorrogado_anio": "2025",
+   "prorrogado_por": "Resolución del Consejo de Derechos Humanos",
+   "prorrogado_simbolo": "A/HRC/RES/60/15",
+   "titulares_texto": "",
+   "observaciones": "",
+   "prorrogas_intermedias": [
+    {
+     "anio": "2022",
+     "por": "",
+     "simbolo": "A/HRC/RES/51/28"
+    },
+    {
+     "anio": "2024",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/57/L.12"
+    },
+    {
+     "anio": "2024",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/57/L.12"
+    }
+   ],
+   "idioma": "es"
+  },
+  {
+   "tipo": "País",
+   "titulo": "Relator Especial sobre la situación de los derechos humanos en Camboya",
+   "etiqueta": "Camboya",
+   "creado_anio": "1993",
+   "creado_por": "Resolución de la Comisión de Derechos Humanos",
+   "creado_simbolo": "E/CN.4/1993/6",
+   "prorrogado_anio": "2025",
+   "prorrogado_por": "Resolución del Consejo de Derechos Humanos",
+   "prorrogado_simbolo": "A/HRC/RES/60/33",
+   "titulares_texto": "Mr. Thomas ANDREWS (United States of America)",
+   "observaciones": "",
+   "prorrogas_intermedias": [
+    {
+     "anio": "2011",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/18/25 (for 2 years)"
+    },
+    {
+     "anio": "2013",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/24/29 (for 2 years)"
+    },
+    {
+     "anio": "2015",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/30/23"
+    },
+    {
+     "anio": "2017",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/36/32"
+    },
+    {
+     "anio": "2019",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/42/37"
+    },
+    {
+     "anio": "2021",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/48/"
+    },
+    {
+     "anio": "2021",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/48/23"
+    },
+    {
+     "anio": "2023",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/54/36"
+    }
+   ],
+   "idioma": "es"
+  },
+  {
+   "tipo": "País",
+   "titulo": "Relator Especial sobre la situación de los derechos humanos en Eritrea",
+   "etiqueta": "Eritrea",
+   "creado_anio": "2012",
+   "creado_por": "Resolución del Consejo de Derechos Humanos",
+   "creado_simbolo": "A/HRC/RES/20/20",
+   "prorrogado_anio": "2026",
+   "prorrogado_por": "Resolución del Consejo de Derechos Humanos",
+   "prorrogado_simbolo": "A/HRC/RES/62/2 A/HRC/RES/62/2",
+   "titulares_texto": "",
+   "observaciones": "",
+   "prorrogas_intermedias": [
+    {
+     "anio": "2013",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/23/21"
+    },
+    {
+     "anio": "2014",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/26/24 (for 1 year)"
+    },
+    {
+     "anio": "2016",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/32/24 for 1 year"
+    },
+    {
+     "anio": "2017",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/35/35"
+    },
+    {
+     "anio": "2017",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/35/35"
+    },
+    {
+     "anio": "2019",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/41/1"
+    },
+    {
+     "anio": "2020",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/44/1"
+    },
+    {
+     "anio": "2021",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/47/2"
+    },
+    {
+     "anio": "2022",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/50/L.19"
+    },
+    {
+     "anio": "2022",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/50/L.19"
+    },
+    {
+     "anio": "2022",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/50/2"
+    },
+    {
+     "anio": "2023",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/53/2"
+    },
+    {
+     "anio": "2024",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/56/L.16"
+    },
+    {
+     "anio": "2024",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/56/17"
+    },
+    {
+     "anio": "2025",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/59/1"
+    }
+   ],
+   "idioma": "es"
+  },
+  {
+   "tipo": "País",
+   "titulo": "Relator Especial sobre la situación de los derechos humanos en la Federación de Rusia",
+   "etiqueta": "Federación de Rusia",
+   "creado_anio": "2022",
+   "creado_por": "Resolución del Consejo de Derechos Humanos",
+   "creado_simbolo": "A/HRC/RES/51/25",
+   "prorrogado_anio": "2025",
+   "prorrogado_por": "Resolución del Consejo de Derechos Humanos",
+   "prorrogado_simbolo": "A/HRC/RES/60/21",
+   "titulares_texto": "Ms. Mariana KATZAROVA (Bulgaria)",
+   "observaciones": "",
+   "prorrogas_intermedias": [
+    {
+     "anio": "2023",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/54/23"
+    },
+    {
+     "anio": "2024",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/57/20"
+    },
+    {
+     "anio": "2024",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/57/20"
+    }
+   ],
+   "idioma": "es"
+  },
+  {
+   "tipo": "País",
+   "titulo": "Experto independiente sobre la situación de los derechos humanos en Malí",
+   "etiqueta": "Malí",
+   "creado_anio": "2013",
+   "creado_por": "Resolución del Consejo de Derechos Humanos",
+   "creado_simbolo": "A/HRC/RES/22/18 (for one year)",
+   "prorrogado_anio": "2026",
+   "prorrogado_por": "Resolución del Consejo de Derechos Humanos",
+   "prorrogado_simbolo": "A/HRC/RES/61/37",
+   "titulares_texto": "",
+   "observaciones": "",
+   "prorrogas_intermedias": [
+    {
+     "anio": "2014",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/25/36 (for 1 year)"
+    },
+    {
+     "anio": "2015",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/28/31 for 1 year"
+    },
+    {
+     "anio": "2017",
+     "por": "Decisión del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/34/39"
+    },
+    {
+     "anio": "2018",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/37/39"
+    },
+    {
+     "anio": "2019",
+     "por": "",
+     "simbolo": "A/HRC/40/L.2"
+    },
+    {
+     "anio": "2019",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/40/26"
+    },
+    {
+     "anio": "2020",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/43/L.13"
+    },
+    {
+     "anio": "2021",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/46/28"
+    },
+    {
+     "anio": "2022",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/49/34"
+    },
+    {
+     "anio": "2023",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/52/42"
+    },
+    {
+     "anio": "2024",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/55/25"
+    },
+    {
+     "anio": "2025",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/58/30"
+    },
+    {
+     "anio": "2025",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/58/30"
+    }
+   ],
+   "idioma": "es"
+  },
+  {
+   "tipo": "País",
+   "titulo": "Relator Especial sobre la situación de los derechos humanos en Myanmar",
+   "etiqueta": "Myanmar",
+   "creado_anio": "1992",
+   "creado_por": "Resolución de la Comisión de Derechos Humanos",
+   "creado_simbolo": "E/CN.4/1992/58",
+   "prorrogado_anio": "2026",
+   "prorrogado_por": "Resolución del Consejo de Derechos Humanos",
+   "prorrogado_simbolo": "A/HRC/RES/61/30",
+   "titulares_texto": "Mr. Kelley ECKELS-CURRIE (United States of America)",
+   "observaciones": "",
+   "prorrogas_intermedias": [
+    {
+     "anio": "2013",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/22/14 (for 1 year)"
+    },
+    {
+     "anio": "2014",
+     "por": "",
+     "simbolo": "A/HRC/RES/25/26 (for 1 year)"
+    },
+    {
+     "anio": "2015",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/28/23 for 1 year"
+    },
+    {
+     "anio": "2017",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/34/22"
+    },
+    {
+     "anio": "2018",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/37/32"
+    },
+    {
+     "anio": "2019",
+     "por": "Resolución de la Comisión de Derechos Humanos a/hrc/res/40/29",
+     "simbolo": ""
+    },
+    {
+     "anio": "2020",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/43/26"
+    },
+    {
+     "anio": "2021",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/46/21"
+    },
+    {
+     "anio": "2021",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/46/21"
+    },
+    {
+     "anio": "2022",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/49/23"
+    },
+    {
+     "anio": "2024",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/55/20"
+    },
+    {
+     "anio": "2025",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/58/20"
+    }
+   ],
+   "idioma": "es"
+  },
+  {
+   "tipo": "País",
+   "titulo": "Relator especial sobre la situación de los derechos humanos en la República Árabe Siria",
+   "etiqueta": "República Árabe Siria",
+   "creado_anio": "2011",
+   "creado_por": "Resolución del período extraordinario de sesiones del Consejo de Derechos Humanos",
+   "creado_simbolo": "A/HRC/RES/S-18/1",
+   "prorrogado_anio": "",
+   "prorrogado_por": "",
+   "prorrogado_simbolo": "",
+   "titulares_texto": "(Other) will start once the mandate of the commission of inquiry ends",
+   "observaciones": "",
+   "prorrogas_intermedias": [],
+   "idioma": "es"
+  },
+  {
+   "tipo": "País",
+   "titulo": "Experto independiento sobre la situación de los derechos humanos en la República Centroafricana",
+   "etiqueta": "República Centroafricana",
+   "creado_anio": "2013",
+   "creado_por": "Resolución del Consejo de Derechos Humanos",
+   "creado_simbolo": "A/HRC/RES/24/34 (for one year)",
+   "prorrogado_anio": "2025",
+   "prorrogado_por": "Resolución del Consejo de Derechos Humanos",
+   "prorrogado_simbolo": "A/HRC/RES/60/34",
+   "titulares_texto": "",
+   "observaciones": "",
+   "prorrogas_intermedias": [
+    {
+     "anio": "2014",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/27/L.31"
+    },
+    {
+     "anio": "2014",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/27/28 (for 1 year)"
+    },
+    {
+     "anio": "2014",
+     "por": "Resolución del período extraordinario de sesiones del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/S-20/1"
+    },
+    {
+     "anio": "2015",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/30/L.6"
+    },
+    {
+     "anio": "2016",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/33/L.16"
+    },
+    {
+     "anio": "2017",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/36/L.18/Rev.1"
+    },
+    {
+     "anio": "2017",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/36/25"
+    },
+    {
+     "anio": "2017",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/36/25"
+    },
+    {
+     "anio": "2018",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/39/L.9"
+    },
+    {
+     "anio": "2018",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/39/19"
+    },
+    {
+     "anio": "2019",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/42/36"
+    },
+    {
+     "anio": "2020",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/45/L.54"
+    },
+    {
+     "anio": "2020",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/45/35"
+    },
+    {
+     "anio": "2021",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/48/19"
+    },
+    {
+     "anio": "2022",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/51/37"
+    },
+    {
+     "anio": "2023",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/54/31"
+    },
+    {
+     "anio": "2024",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/57/35"
+    }
+   ],
+   "idioma": "es"
+  },
+  {
+   "tipo": "País",
+   "titulo": "Relatora Especial sobre la situación de los derechos humanos en la República Islámica del Irán",
+   "etiqueta": "República Islámica del Irán",
+   "creado_anio": "2011",
+   "creado_por": "Resolución del Consejo de Derechos Humanos",
+   "creado_simbolo": "A/HRC/RES/16/9",
+   "prorrogado_anio": "2026",
+   "prorrogado_por": "Resolución del período extraordinario de sesiones del Consejo de Derechos Humanos",
+   "prorrogado_simbolo": "A/HRC/S-39/L.1",
+   "titulares_texto": "Ms. Mai SATO (Japan)",
+   "observaciones": "",
+   "prorrogas_intermedias": [
+    {
+     "anio": "2013",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/22/23 (for 1 year)"
+    },
+    {
+     "anio": "2014",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/25/24 (for 1 year)"
+    },
+    {
+     "anio": "2015",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/28/21 for 1 year"
+    },
+    {
+     "anio": "2017",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/34/23"
+    },
+    {
+     "anio": "2017",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/34/23"
+    },
+    {
+     "anio": "2018",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/37/30"
+    },
+    {
+     "anio": "2019",
+     "por": "",
+     "simbolo": "A/HRC/RES/40/18"
+    },
+    {
+     "anio": "2020",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/43/24"
+    },
+    {
+     "anio": "2021",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/46/18"
+    },
+    {
+     "anio": "2022",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/49/24"
+    },
+    {
+     "anio": "2023",
+     "por": "Resolución del período extraordinario de sesiones del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/52/L.3"
+    },
+    {
+     "anio": "2024",
+     "por": "Resolución del período extraordinario de sesiones del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/55/19"
+    },
+    {
+     "anio": "2025",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/58/21"
+    }
+   ],
+   "idioma": "es"
+  },
+  {
+   "tipo": "País",
+   "titulo": "Relator Especial sobre la situación de los derechos humanos en la República Popular Democrática de Corea",
+   "etiqueta": "República Popular Democrática de Corea",
+   "creado_anio": "2004",
+   "creado_por": "Resolución de la Comisión de Derechos Humanos",
+   "creado_simbolo": "E/CN.4/2004/13",
+   "prorrogado_anio": "2026",
+   "prorrogado_por": "Resolución del Consejo de Derechos Humanos",
+   "prorrogado_simbolo": "A/HRC/RES/61/27",
+   "titulares_texto": "Ms. Elizabeth SALMÓN (Peru)",
+   "observaciones": "",
+   "prorrogas_intermedias": [
+    {
+     "anio": "2013",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/22/13 (for 1 year)"
+    },
+    {
+     "anio": "2014",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/25/25 (for 1 year)"
+    },
+    {
+     "anio": "2015",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/28/22 for 1 year"
+    },
+    {
+     "anio": "2016",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/31/L.25"
+    },
+    {
+     "anio": "2017",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/34/24"
+    },
+    {
+     "anio": "2018",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/37/28"
+    },
+    {
+     "anio": "2019",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/40/L.18"
+    },
+    {
+     "anio": "2019",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/40/20"
+    },
+    {
+     "anio": "2020",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/43/25"
+    },
+    {
+     "anio": "2021",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/46/17"
+    },
+    {
+     "anio": "2021",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/46/17"
+    },
+    {
+     "anio": "2022",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/49/22"
+    },
+    {
+     "anio": "2023",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/52/28"
+    },
+    {
+     "anio": "2023",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/52/28"
+    },
+    {
+     "anio": "2023",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/52/28"
+    },
+    {
+     "anio": "2023",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/52/28"
+    },
+    {
+     "anio": "2023",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/52/28"
+    },
+    {
+     "anio": "2024",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/55/21"
+    },
+    {
+     "anio": "2025",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/58/617"
+    }
+   ],
+   "idioma": "es"
+  },
+  {
+   "tipo": "País",
+   "titulo": "Relator Especial sobre la situación de los derechos humanos en los territorios palestinos ocupados desde 1967",
+   "etiqueta": "Territorios palestinos ocupados desde 1967",
+   "creado_anio": "1993",
+   "creado_por": "Resolución de la Comisión de Derechos Humanos",
+   "creado_simbolo": "E/CN.4/RES/1993/2 \"Until the end of the occupation\"",
+   "prorrogado_anio": "",
+   "prorrogado_por": "",
+   "prorrogado_simbolo": "",
+   "titulares_texto": "Ms. Francesca ALBANESE (Italy)",
+   "observaciones": "",
+   "prorrogas_intermedias": [],
+   "idioma": "es"
+  }
+ ]
+}
