@@ -97,6 +97,18 @@ const URL = process.env.ATLAS_URL || 'file://' + path.resolve(__dirname, '..', '
     else await page.screenshot({ path: path.resolve(__dirname, '..', 'audit', 'captura_movil.png') });
     await page.close();
   }
+  {
+    // Escenario: la descarga de datos falla → debe verse un aviso útil, no una pantalla en blanco
+    const ctx2 = await browser.newContext(); const pg = await ctx2.newPage();
+    await pg.route(/atlas-data\.js/, r => r.abort());
+    await pg.goto(URL); await pg.waitForTimeout(500);
+    ok('fallo de datos: se muestra el aviso con instrucciones al instante', await pg.isVisible('#aviso-carga') && /Ctrl \+ F5/.test(await pg.textContent('#aviso-carga')) && /ZIP del repositorio/.test(await pg.textContent('#aviso-carga')));
+    ok('fallo de datos: el detalle técnico indica qué falló', /no se pudo descargar|Sin datos/.test(await pg.textContent('#aviso-detalle') + (await pg.evaluate(() => String(window.__datosFallo)))));
+    // Escenario normal: el aviso no estorba y la app queda marcada como lista
+    const pg2 = await ctx2.newPage(); await pg2.goto(URL); await pg2.waitForTimeout(500);
+    ok('carga normal: aviso oculto y aplicación lista', !(await pg2.isVisible('#aviso-carga')) && (await pg2.evaluate(() => window.__atlasListo === true)));
+    await ctx2.close();
+  }
   await browser.close();
   const failed = res.checks.filter(c => !c.ok);
   console.log(JSON.stringify({ ...res, passed: res.checks.length - failed.length, failed: failed.length }, null, 1));
