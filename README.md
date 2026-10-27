@@ -48,6 +48,9 @@ cd tests && node smoke.cjs               # lógica
 npm i playwright && node tests/browser.cjs   # navegador real
 ```
 
+## Si la página no abre
+Si falla la descarga de datos o el navegador no es compatible, la página muestra un aviso con instrucciones (recarga sin caché, ventana privada, otra red, copia sin conexión) en lugar de quedarse en blanco. Los datos se cargan con un parámetro de versión que cambia cada 5 minutos para evitar que el navegador mezcle una página antigua con datos nuevos.
+
 ## Qué hacer si falta algo
 Cuando una búsqueda no da resultado, la plataforma ofrece **Solicitar verificación**: abre un formulario público de GitHub ya rellenado con lo buscado. Nada se añade al catálogo por haberse pedido; solo entra lo que se contrasta con una fuente oficial. Proceso: [`docs/PROCESO_DE_VALIDACION.md`](docs/PROCESO_DE_VALIDACION.md).
 
