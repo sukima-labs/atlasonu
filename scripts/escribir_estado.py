@@ -11,7 +11,7 @@ est = {'revisado_el': ahora, 'datos_del': d['consultado'], 'hubo_cambios_en_esta
        'ultimo_cambio_el': (ahora if hubo else prev.get('ultimo_cambio_el', ahora)), 'huella': d.get('huella', ''),
        'contadores': {'mandatos': len(d['mandatos']), 'actos': len(acts), 'localizados': sum(1 for x in acts if x['estado'] in ('VERIFICADO', 'VERIFICADO_NORMALIZADO')), 'paises': len(d['paises']), 'mecanismos': len(d['mecanismos'])},
        'fuentes': [{'nombre': 'Índice de mandatos de OHCHR', 'url': d['fuentes'][0]}, {'nombre': 'Biblioteca Digital de la ONU', 'url': 'https://digitallibrary.un.org/'},
-                   {'nombre': 'Base de visitas de OHCHR', 'url': d['paises_fuente']['url']}, {'nombre': 'Base de comunicaciones de OHCHR (grupos regionales)', 'url': d['regiones_fuente']['url']}],
+                   {'nombre': 'Colección de Tratados de la ONU (ratificaciones)', 'url': d['tratados_fuente']['url']}, {'nombre': 'Base de visitas de OHCHR', 'url': d['paises_fuente']['url']}, {'nombre': 'Base de comunicaciones de OHCHR (grupos regionales)', 'url': d['regiones_fuente']['url']}],
        'ultimos_cambios': [{'fecha': h['fecha'], 'n': len(h['cambios']), 'ejemplos': [c['texto'] for c in h['cambios'][:3]]} for h in hist[:8]]}
 json.dump(est, open('data/estado.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 print('estado:', est['revisado_el'], 'cambios' if hubo else 'sin cambios')
