@@ -32,6 +32,10 @@ t('resolución HRC temprana con PDF validado',()=>assert.ok(recover('A/HRC/RES/7
 t('todo símbolo del índice tiene ruta al texto',()=>assert.equal(run('Object.values(ACTOS).filter(x=>x.simbolo&&(!x.texto||!(x.texto.fuentes.length||x.texto.informe_sesion.length))).length'),0));
 t('no inventa: símbolo ausente',()=>{const r=recover('A/HRC/RES/99/99');assert.ok(r.includes('No está en el índice local')&&!r.includes('LOCALIZADO EN EL ÍNDICE'))});
 t('búsqueda por palabras en español',()=>assert.ok(recover('desaparecidos').includes('A/HRC/RES/')));
+t('búsqueda guiada con alternativas',()=>{els.guiadaSel.value='tortura|detencion';run('guiada()');const r=els.mandBody.innerHTML.toLowerCase();assert.ok(r.includes('tortura')&&r.includes('detenci'))});
+t('mecanismos conexos: 25 verificados',()=>{assert.equal(run('MEC.length'),25);assert.equal(run('MEC.filter(m=>m.estado==="VERIFICADO").length'),25);assert.ok(els.mecBody.innerHTML.includes('CERD')&&els.mecBody.innerHTML.includes('A/RES/2106(XX)'))});
+t('panel de calidad',()=>assert.ok(els.calidad.innerHTML.includes('401 de 421')));
+t('filtro de verificación',()=>{els.q.value='';els.verif.value='reservas';run('filterMandates()');const n=run('filtered.length');assert.ok(n>0&&n<57);els.verif.value='';run('filterMandates()')});
 t('ficha de mandato',()=>{run('details(0)');assert.ok(els.cardsResults.innerHTML.includes('Cadena de actos jurídicos'))});
 t('exportCSV',()=>run('exportCSV()'));
 t('autoría y repositorio',()=>assert.ok(html.includes('sukima-labs/onu-arqueologia-documental')&&html.includes('Sukima-Labs')));
