@@ -5,30 +5,164 @@
    "id": "AFG",
    "es": "Afganistán",
    "en": "Afghanistan",
-   "alias": [
-    "afghanistan"
-   ],
    "claves": [
     "afganistan",
     "afghanistan"
    ],
-   "mec": [],
    "mandato": 44,
    "titulares_de": [],
    "comisiones": [],
-   "region": "ASP"
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "15 August 2017"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "ALB",
+   "es": "Albania",
+   "en": "Albania",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "EEG",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "2 December 2009"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "DEU",
+   "es": "Alemania",
+   "en": "Germany",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "WEO",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "March 2001"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "AND",
+   "es": "Andorra",
+   "en": "Andorra",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "WEO",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "3 November 2010"
+   },
+   "visitas": {
+    "realizadas": false,
+    "programadas": false
+   }
+  },
+  {
+   "id": "AGO",
+   "es": "Angola",
+   "en": "Angola",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "ATG",
+   "es": "Antigua y Barbuda",
+   "en": "Antigua and Barbuda",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "GRU",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": false,
+    "programadas": false
+   }
+  },
+  {
+   "id": "SAU",
+   "es": "Arabia Saudí",
+   "en": "Saudi Arabia",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": true
+   }
+  },
+  {
+   "id": "DZA",
+   "es": "Argelia",
+   "en": "Algeria",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "ARG",
    "es": "Argentina",
    "en": "Argentina",
-   "alias": [
-    "argentina"
-   ],
    "claves": [
     "argentina"
    ],
-   "mec": [],
    "mandato": null,
    "titulares_de": [
     {
@@ -37,19 +171,24 @@
     }
    ],
    "comisiones": [],
-   "region": "GRU"
+   "region": "GRU",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "3 December 2002"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "ARM",
    "es": "Armenia",
    "en": "Armenia",
-   "alias": [
-    "armenia"
-   ],
    "claves": [
     "armenia"
    ],
-   "mec": [],
    "mandato": null,
    "titulares_de": [
     {
@@ -58,19 +197,24 @@
     }
    ],
    "comisiones": [],
-   "region": "EEG"
+   "region": "EEG",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "1 May 2006"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "AUS",
    "es": "Australia",
    "en": "Australia",
-   "alias": [
-    "australia"
-   ],
    "claves": [
     "australia"
    ],
-   "mec": [],
    "mandato": null,
    "titulares_de": [
     {
@@ -83,37 +227,256 @@
     }
    ],
    "comisiones": [],
-   "region": "WEO"
+   "region": "WEO",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "7 August 2008"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "AUT",
+   "es": "Austria",
+   "en": "Austria",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "WEO",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "March 2001"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "AZE",
+   "es": "Azerbaiyán",
+   "en": "Azerbaijan",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "EEG",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "15 April 2013"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "BHS",
+   "es": "Bahamas",
+   "en": "Bahamas",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "GRU",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "6 June 2013"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "BGD",
+   "es": "Bangladés",
+   "en": "Bangladesh",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": true
+   }
+  },
+  {
+   "id": "BRB",
+   "es": "Barbados",
+   "en": "Barbados",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "GRU",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": false,
+    "programadas": false
+   }
+  },
+  {
+   "id": "BHR",
+   "es": "Baréin",
+   "en": "Bahrain",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "BLR",
    "es": "Belarús",
    "en": "Belarus",
-   "alias": [
-    "belarus"
-   ],
    "claves": [
     "belarus",
     "bielorrusia"
    ],
-   "mec": [],
    "mandato": 45,
    "titulares_de": [],
    "comisiones": [],
-   "region": "EEG"
+   "region": "EEG",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "BLZ",
+   "es": "Belice",
+   "en": "Belize",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "GRU",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "BEN",
+   "es": "Benín",
+   "en": "Benin",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "31 October 2012"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "BOL",
+   "es": "Bolivia",
+   "en": "Bolivia",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "GRU",
+   "region_origen": "completado a mano (grupos regionales de la ONU)",
+   "invitacion": {
+    "si": true,
+    "fecha": "10 February 2010"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "BIH",
+   "es": "Bosnia y Herzegovina",
+   "en": "Bosnia and Herzegovina",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "EEG",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "7 May 2010"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": true
+   }
+  },
+  {
+   "id": "BWA",
+   "es": "Botsuana",
+   "en": "Botswana",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "2 May 2018"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": true
+   }
   },
   {
    "id": "BRA",
    "es": "Brasil",
    "en": "Brazil",
-   "alias": [
-    "brazil"
-   ],
    "claves": [
     "brasil",
     "brazil"
    ],
-   "mec": [],
    "mandato": null,
    "titulares_de": [
     {
@@ -122,19 +485,43 @@
     }
    ],
    "comisiones": [],
-   "region": "GRU"
+   "region": "GRU",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "10 December 2001"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": true
+   }
+  },
+  {
+   "id": "BRN",
+   "es": "Brunéi",
+   "en": "Brunei Darussalam",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": false,
+    "programadas": false
+   }
   },
   {
    "id": "BGR",
    "es": "Bulgaria",
    "en": "Bulgaria",
-   "alias": [
-    "bulgaria"
-   ],
    "claves": [
     "bulgaria"
    ],
-   "mec": [],
    "mandato": null,
    "titulares_de": [
     {
@@ -143,19 +530,41 @@
     }
    ],
    "comisiones": [],
-   "region": "EEG"
+   "region": "EEG",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "March 2001"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "BFA",
+   "es": "Burkina Faso",
+   "en": "Burkina Faso",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "BDI",
    "es": "Burundi",
    "en": "Burundi",
-   "alias": [
-    "burundi"
-   ],
    "claves": [
-    "burundi"
-   ],
-   "mec": [
     "burundi"
    ],
    "mandato": 46,
@@ -163,36 +572,122 @@
    "comisiones": [
     20
    ],
-   "region": "AFR"
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "6 June 2013"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "BTN",
+   "es": "Bután",
+   "en": "Bhutan",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "BEL",
+   "es": "Bélgica",
+   "en": "Belgium",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "WEO",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "March 2001"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "CPV",
+   "es": "Cabo Verde",
+   "en": "Cabo Verde",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "26 April 2013"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "KHM",
    "es": "Camboya",
    "en": "Cambodia",
-   "alias": [
-    "cambodia"
-   ],
    "claves": [
     "camboya",
     "cambodia"
    ],
-   "mec": [],
    "mandato": 47,
    "titulares_de": [],
    "comisiones": [],
-   "region": "ASP"
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "CMR",
+   "es": "Camerún",
+   "en": "Cameroon",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "15 September 2014"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "CAN",
    "es": "Canadá",
    "en": "Canada",
-   "alias": [
-    "canada"
-   ],
    "claves": [
     "canada"
    ],
-   "mec": [],
    "mandato": null,
    "titulares_de": [
     {
@@ -201,19 +696,81 @@
     }
    ],
    "comisiones": [],
-   "region": "WEO"
+   "region": "WEO",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "April 1999"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "QAT",
+   "es": "Catar",
+   "en": "Qatar",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "1 June 2010"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "TCD",
+   "es": "Chad",
+   "en": "Chad",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "1 June 2012"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "CZE",
+   "es": "Chequia",
+   "en": "Czech Republic",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "EEG",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "September 2000"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "CHL",
    "es": "Chile",
    "en": "Chile",
-   "alias": [
-    "chile"
-   ],
    "claves": [
     "chile"
    ],
-   "mec": [],
    "mandato": null,
    "titulares_de": [
     {
@@ -222,19 +779,24 @@
     }
    ],
    "comisiones": [],
-   "region": "GRU"
+   "region": "GRU",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "12 May 2009"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "CHN",
    "es": "China",
    "en": "China",
-   "alias": [
-    "china"
-   ],
    "claves": [
     "china"
    ],
-   "mec": [],
    "mandato": null,
    "titulares_de": [
     {
@@ -243,19 +805,62 @@
     }
    ],
    "comisiones": [],
-   "region": "ASP"
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "CYP",
+   "es": "Chipre",
+   "en": "Cyprus",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "March 2001"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "VAT",
+   "es": "Ciudad del Vaticano",
+   "en": "Holy See",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "OTH",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "COL",
    "es": "Colombia",
    "en": "Colombia",
-   "alias": [
-    "colombia"
-   ],
    "claves": [
     "colombia"
    ],
-   "mec": [],
    "mandato": null,
    "titulares_de": [
     {
@@ -284,19 +889,176 @@
     }
    ],
    "comisiones": [],
-   "region": "GRU"
+   "region": "GRU",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "17 March 2003"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": true
+   }
+  },
+  {
+   "id": "COM",
+   "es": "Comoras",
+   "en": "Comoros",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "29 January 2019"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "COG",
+   "es": "Congo",
+   "en": "Congo (Republic of the)",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "AFR",
+   "region_origen": "completado a mano (grupos regionales de la ONU)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "CRI",
+   "es": "Costa Rica",
+   "en": "Costa Rica",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "GRU",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "2002"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "CRO",
+   "es": "Croacia",
+   "en": "Croatia",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "EEG",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "13 March 2003"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "CUB",
+   "es": "Cuba",
+   "en": "Cuba",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "GRU",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "CIV",
+   "es": "Côte d’Ivoire",
+   "en": "Côte d'Ivoire",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "DNK",
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "WEO",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "March 2001"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "DMA",
+   "es": "Dominica",
+   "en": "Dominica",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "GRU",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "9 December 2009"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "ECU",
    "es": "Ecuador",
    "en": "Ecuador",
-   "alias": [
-    "ecuador"
-   ],
    "claves": [
     "ecuador"
    ],
-   "mec": [],
    "mandato": null,
    "titulares_de": [
     {
@@ -305,20 +1067,25 @@
     }
    ],
    "comisiones": [],
-   "region": "GRU"
+   "region": "GRU",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "9 January 2003"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": true
+   }
   },
   {
    "id": "EGY",
    "es": "Egipto",
    "en": "Egypt",
-   "alias": [
-    "egypt"
-   ],
    "claves": [
     "egipto",
     "egypt"
    ],
-   "mec": [],
    "mandato": null,
    "titulares_de": [
     {
@@ -331,36 +1098,103 @@
     }
    ],
    "comisiones": [],
-   "region": "AFR"
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "SLV",
+   "es": "El Salvador",
+   "en": "El Salvador",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "GRU",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "9 February 2010"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "ARE",
+   "es": "Emiratos Árabes Unidos",
+   "en": "United Arab Emirates",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "ERI",
    "es": "Eritrea",
    "en": "Eritrea",
-   "alias": [
-    "eritrea"
-   ],
    "claves": [
     "eritrea"
    ],
-   "mec": [],
    "mandato": 50,
    "titulares_de": [],
    "comisiones": [],
-   "region": "AFR"
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "SVK",
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "EEG",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "March 2001"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "SVN",
    "es": "Eslovenia",
    "en": "Slovenia",
-   "alias": [
-    "slovenia"
-   ],
    "claves": [
     "eslovenia",
     "slovenia"
    ],
-   "mec": [],
    "mandato": null,
    "titulares_de": [
     {
@@ -369,20 +1203,25 @@
     }
    ],
    "comisiones": [],
-   "region": "EEG"
+   "region": "EEG",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "March 2001"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "ESP",
    "es": "España",
    "en": "Spain",
-   "alias": [
-    "spain"
-   ],
    "claves": [
     "espana",
     "spain"
    ],
-   "mec": [],
    "mandato": null,
    "titulares_de": [
     {
@@ -403,20 +1242,25 @@
     }
    ],
    "comisiones": [],
-   "region": "WEO"
+   "region": "WEO",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "March 2001"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": true
+   }
   },
   {
    "id": "USA",
    "es": "Estados Unidos de América",
    "en": "United States of America",
-   "alias": [
-    "united states of america"
-   ],
    "claves": [
     "eeuu",
     "usa"
    ],
-   "mec": [],
    "mandato": null,
    "titulares_de": [
     {
@@ -437,38 +1281,105 @@
     }
    ],
    "comisiones": [],
-   "region": "WEO"
+   "region": "WEO",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "19 October 2021"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "EST",
+   "es": "Estonia",
+   "en": "Estonia",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "EEG",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "March 2001"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "SWZ",
+   "es": "Esuatini",
+   "en": "Eswatini",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": false,
+    "programadas": false
+   }
+  },
+  {
+   "id": "ETH",
+   "es": "Etiopía",
+   "en": "Ethiopia",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "RUS",
    "es": "Federación de Rusia",
    "en": "Russian Federation",
-   "alias": [
-    "russian federation"
-   ],
    "claves": [
     "rusia",
     "russia",
     "russian"
    ],
-   "mec": [],
    "mandato": 55,
    "titulares_de": [],
    "comisiones": [],
-   "region": "EEG"
+   "region": "EEG",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "PHL",
    "es": "Filipinas",
    "en": "Philippines",
-   "alias": [
-    "philippines"
-   ],
    "claves": [
     "filipinas",
     "philippines"
    ],
-   "mec": [],
    "mandato": null,
    "titulares_de": [
     {
@@ -477,20 +1388,63 @@
     }
    ],
    "comisiones": [],
-   "region": "ASP"
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "FIN",
+   "es": "Finlandia",
+   "en": "Finland",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "WEO",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "March 2001"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "FJI",
+   "es": "Fiyi",
+   "en": "Fiji",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "17 March 2015"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "FRA",
    "es": "Francia",
    "en": "France",
-   "alias": [
-    "france"
-   ],
    "claves": [
     "francia",
     "france"
    ],
-   "mec": [],
    "mandato": null,
    "titulares_de": [
     {
@@ -503,20 +1457,120 @@
     }
    ],
    "comisiones": [],
-   "region": "WEO"
+   "region": "WEO",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "March 2001"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "GAB",
+   "es": "Gabón",
+   "en": "Gabon",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "29 October 2012"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "GMB",
+   "es": "Gambia",
+   "en": "Gambia",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "GEO",
+   "es": "Georgia",
+   "en": "Georgia",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "EEG",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "30 March 2010"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "GHA",
+   "es": "Ghana",
+   "en": "Ghana",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "21 April 2006"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "GRD",
+   "es": "Granada",
+   "en": "Grenada",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "GRU",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": false,
+    "programadas": false
+   }
   },
   {
    "id": "GRC",
    "es": "Grecia",
    "en": "Greece",
-   "alias": [
-    "greece"
-   ],
    "claves": [
     "grecia",
     "greece"
    ],
-   "mec": [],
    "mandato": null,
    "titulares_de": [
     {
@@ -529,20 +1583,82 @@
     }
    ],
    "comisiones": [],
-   "region": "WEO"
+   "region": "WEO",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "March 2001"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "GTM",
+   "es": "Guatemala",
+   "en": "Guatemala",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "GRU",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "April 2001"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "GIN",
+   "es": "Guinea",
+   "en": "Guinea",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": false,
+    "programadas": false
+   }
+  },
+  {
+   "id": "GNQ",
+   "es": "Guinea Ecuatorial",
+   "en": "Equatorial Guinea",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "GNB",
    "es": "Guinea-Bisáu",
    "en": "Guinea-Bissau",
-   "alias": [
-    "guinea-bissau"
-   ],
    "claves": [
     "bisau",
     "bissau"
    ],
-   "mec": [],
    "mandato": null,
    "titulares_de": [
     {
@@ -551,19 +1667,24 @@
     }
    ],
    "comisiones": [],
-   "region": "AFR"
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "7 May 2010"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "GUY",
    "es": "Guyana",
    "en": "Guyana",
-   "alias": [
-    "guyana"
-   ],
    "claves": [
     "guyana"
    ],
-   "mec": [],
    "mandato": null,
    "titulares_de": [
     {
@@ -572,20 +1693,63 @@
     }
    ],
    "comisiones": [],
-   "region": "GRU"
+   "region": "GRU",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "HTI",
+   "es": "Haití",
+   "en": "Haiti",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "GRU",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "HND",
+   "es": "Honduras",
+   "en": "Honduras",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "GRU",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "12 May 2010"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "HUN",
    "es": "Hungría",
    "en": "Hungary",
-   "alias": [
-    "hungary"
-   ],
    "claves": [
     "hungria",
     "hungary"
    ],
-   "mec": [],
    "mandato": null,
    "titulares_de": [
     {
@@ -594,19 +1758,24 @@
     }
    ],
    "comisiones": [],
-   "region": "EEG"
+   "region": "EEG",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "March 2001"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "IND",
    "es": "India",
    "en": "India",
-   "alias": [
-    "india"
-   ],
    "claves": [
     "india"
    ],
-   "mec": [],
    "mandato": null,
    "titulares_de": [
     {
@@ -627,20 +1796,44 @@
     }
    ],
    "comisiones": [],
-   "region": "ASP"
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "14 September 2011"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": true
+   }
+  },
+  {
+   "id": "IDN",
+   "es": "Indonesia",
+   "en": "Indonesia",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "IRQ",
    "es": "Iraq",
    "en": "Iraq",
-   "alias": [
-    "iraq"
-   ],
    "claves": [
     "iraq",
     "irak"
    ],
-   "mec": [],
    "mandato": null,
    "titulares_de": [
     {
@@ -649,21 +1842,43 @@
     }
    ],
    "comisiones": [],
-   "region": "ASP"
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "16 February 2010"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "IRL",
+   "es": "Irlanda",
+   "en": "Ireland",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "WEO",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "March 2001"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "IRN",
    "es": "Irán (República Islámica del)",
    "en": "Iran (Islamic Republic of)",
-   "alias": [
-    "iran (islamic republic of)",
-    "islamic republic of iran",
-    "iran (islamic republic of"
-   ],
    "claves": [
     "iran"
    ],
-   "mec": [],
    "mandato": 51,
    "titulares_de": [
     {
@@ -672,20 +1887,101 @@
     }
    ],
    "comisiones": [],
-   "region": "ASP"
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "24 July 2002"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "ISL",
+   "es": "Islandia",
+   "en": "Iceland",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "WEO",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "September 2000"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "MHL",
+   "es": "Islas Marshall",
+   "en": "Marshall Islands",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "4 March 2011"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "SLB",
+   "es": "Islas Salomón",
+   "en": "Solomon Islands",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "6 May 2011"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "ISR",
+   "es": "Israel",
+   "en": "Israel",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "WEO",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "ITA",
    "es": "Italia",
    "en": "Italy",
-   "alias": [
-    "italy"
-   ],
    "claves": [
     "italia",
     "italy"
    ],
-   "mec": [],
    "mandato": null,
    "titulares_de": [
     {
@@ -702,20 +1998,44 @@
     }
    ],
    "comisiones": [],
-   "region": "WEO"
+   "region": "WEO",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "March 2001"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "JAM",
+   "es": "Jamaica",
+   "en": "Jamaica",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "GRU",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "JPN",
    "es": "Japón",
    "en": "Japan",
-   "alias": [
-    "japan"
-   ],
    "claves": [
     "japon",
     "japan"
    ],
-   "mec": [],
    "mandato": null,
    "titulares_de": [
     {
@@ -728,20 +2048,25 @@
     }
    ],
    "comisiones": [],
-   "region": "ASP"
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "1 March 2011"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "JOR",
    "es": "Jordania",
    "en": "Jordan",
-   "alias": [
-    "jordan"
-   ],
    "claves": [
     "jordania",
     "jordan"
    ],
-   "mec": [],
    "mandato": null,
    "titulares_de": [
     {
@@ -750,19 +2075,43 @@
     }
    ],
    "comisiones": [],
-   "region": "ASP"
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "20 April 2006"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "KAZ",
+   "es": "Kazajistán",
+   "en": "Kazakhstan",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "28 July 2009"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "KEN",
    "es": "Kenya",
    "en": "Kenya",
-   "alias": [
-    "kenya"
-   ],
    "claves": [
     "kenya"
    ],
-   "mec": [],
    "mandato": null,
    "titulares_de": [
     {
@@ -771,20 +2120,139 @@
     }
    ],
    "comisiones": [],
-   "region": "AFR"
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "22 January 2015"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "KGZ",
+   "es": "Kirguistán",
+   "en": "Kyrgyzstan",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "30 December 2020"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "KIR",
+   "es": "Kiribati",
+   "en": "Kiribati",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "RKS",
+   "es": "Kosovo (conforme a la resolución 1244 del Consejo de Seguridad)",
+   "en": "Kosovo (in compliance with UN Security Council resolution 1244)",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "NAA",
+   "region_origen": null,
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "KWT",
+   "es": "Kuwait",
+   "en": "Kuwait",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "13 September 2010"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": true
+   }
+  },
+  {
+   "id": "LAO",
+   "es": "Laos",
+   "en": "Lao People's Democratic Republic",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "LSO",
+   "es": "Lesoto",
+   "en": "Lesotho",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "21 January 2015"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "LVA",
    "es": "Letonia",
    "en": "Latvia",
-   "alias": [
-    "latvia"
-   ],
    "claves": [
     "letonia",
     "latvia"
    ],
-   "mec": [],
    "mandato": null,
    "titulares_de": [
     {
@@ -793,20 +2261,42 @@
     }
    ],
    "comisiones": [],
-   "region": "EEG"
+   "region": "EEG",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "March 2001"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "LBR",
+   "es": "Liberia",
+   "en": "Liberia",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "25 September 2015"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "LBY",
    "es": "Libia",
    "en": "Libya",
-   "alias": [
-    "libya"
-   ],
    "claves": [
     "libia",
-    "libya"
-   ],
-   "mec": [
     "libya"
    ],
    "mandato": null,
@@ -814,20 +2304,44 @@
    "comisiones": [
     18
    ],
-   "region": "AFR"
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "15 March 2012"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "LIE",
+   "es": "Liechtenstein",
+   "en": "Liechtenstein",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "WEO",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "21 January 2003"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "LTU",
    "es": "Lituania",
    "en": "Lithuania",
-   "alias": [
-    "lithuania"
-   ],
    "claves": [
     "lituania",
     "lithuania"
    ],
-   "mec": [],
    "mandato": null,
    "titulares_de": [
     {
@@ -836,56 +2350,373 @@
     }
    ],
    "comisiones": [],
-   "region": "EEG"
+   "region": "EEG",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "March 2001"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "LUX",
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "WEO",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "March 2001"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "LBN",
+   "es": "Líbano",
+   "en": "Lebanon",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "17 March 2011"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "MKD",
+   "es": "Macedonia del Norte",
+   "en": "North Macedonia",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "EEG",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "13 October 2004"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "MDG",
+   "es": "Madagascar",
+   "en": "Madagascar",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "26 August 2011"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "MYS",
+   "es": "Malasia",
+   "en": "Malaysia",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "26 February 2019"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "MWI",
+   "es": "Malaui",
+   "en": "Malawi",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "7 September 2015"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "MDV",
+   "es": "Maldivas",
+   "en": "Maldives",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "2 May 2006"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "MLT",
+   "es": "Malta",
+   "en": "Malta",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "WEO",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "March 2001"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "MLI",
    "es": "Malí",
    "en": "Mali",
-   "alias": [
-    "mali"
-   ],
    "claves": [
     "mali"
    ],
-   "mec": [],
    "mandato": 52,
    "titulares_de": [],
    "comisiones": [],
-   "region": "AFR"
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": true
+   }
+  },
+  {
+   "id": "MAR",
+   "es": "Marruecos",
+   "en": "Morocco",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "MUS",
+   "es": "Mauricio",
+   "en": "Mauritius",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "MRT",
+   "es": "Mauritania",
+   "en": "Mauritania",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "FSM",
+   "es": "Micronesia",
+   "en": "Micronesia (Federated States of)",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "ASP",
+   "region_origen": "completado a mano (grupos regionales de la ONU)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "MDA",
+   "es": "Moldavia",
+   "en": "Republic of Moldova",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "EEG",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "2 June 2010"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "MNG",
+   "es": "Mongolia",
+   "en": "Mongolia",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "9 April 2004"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": true
+   }
+  },
+  {
+   "id": "MNE",
+   "es": "Montenegro",
+   "en": "Montenegro",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "EEG",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "11 October 2005"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "MOZ",
+   "es": "Mozambique",
+   "en": "Mozambique",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "12 April 2016"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "MMR",
    "es": "Myanmar",
    "en": "Myanmar",
-   "alias": [
-    "myanmar"
-   ],
    "claves": [
     "myanmar",
     "birmania"
-   ],
-   "mec": [
-    "myanmar"
    ],
    "mandato": 53,
    "titulares_de": [],
    "comisiones": [
     21
    ],
-   "region": "ASP"
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "MEX",
    "es": "México",
    "en": "Mexico",
-   "alias": [
-    "mexico"
-   ],
    "claves": [
     "mexico"
    ],
-   "mec": [],
    "mandato": null,
    "titulares_de": [
     {
@@ -910,19 +2741,119 @@
     }
    ],
    "comisiones": [],
-   "region": "GRU"
+   "region": "GRU",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "March 2001"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "MCO",
+   "es": "Mónaco",
+   "en": "Monaco",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "WEO",
+   "region_origen": "completado a mano (grupos regionales de la ONU)",
+   "invitacion": {
+    "si": true,
+    "fecha": "22 October 2008"
+   },
+   "visitas": {
+    "realizadas": false,
+    "programadas": false
+   }
+  },
+  {
+   "id": "NAM",
+   "es": "Namibia",
+   "en": "Namibia",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "NRU",
+   "es": "Nauru",
+   "en": "Nauru",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "30 May 2011"
+   },
+   "visitas": {
+    "realizadas": false,
+    "programadas": false
+   }
+  },
+  {
+   "id": "NPL",
+   "es": "Nepal",
+   "en": "Nepal",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "NIC",
+   "es": "Nicaragua",
+   "en": "Nicaragua",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "GRU",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "26 April 2006"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "NGA",
    "es": "Nigeria",
    "en": "Nigeria",
-   "alias": [
-    "nigeria"
-   ],
    "claves": [
     "nigeria"
    ],
-   "mec": [],
    "mandato": null,
    "titulares_de": [
     {
@@ -935,20 +2866,44 @@
     }
    ],
    "comisiones": [],
-   "region": "AFR"
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "25 October 2013"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "NOR",
+   "es": "Noruega",
+   "en": "Norway",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "WEO",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "26 March 1999"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": true
+   }
   },
   {
    "id": "NZL",
    "es": "Nueva Zelandia",
    "en": "New Zealand",
-   "alias": [
-    "new zealand"
-   ],
    "claves": [
     "zelandia",
     "zealand"
    ],
-   "mec": [],
    "mandato": null,
    "titulares_de": [
     {
@@ -965,19 +2920,62 @@
     }
    ],
    "comisiones": [],
-   "region": "WEO"
+   "region": "WEO",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "3 February 2004"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "NER",
+   "es": "Níger",
+   "en": "Niger",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "21 August 2012"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "OMN",
+   "es": "Omán",
+   "en": "Oman",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "PAK",
    "es": "Pakistán",
    "en": "Pakistan",
-   "alias": [
-    "pakistan"
-   ],
    "claves": [
     "pakistan"
    ],
-   "mec": [],
    "mandato": null,
    "titulares_de": [
     {
@@ -986,19 +2984,119 @@
     }
    ],
    "comisiones": [],
-   "region": "ASP"
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "PLW",
+   "es": "Palaos",
+   "en": "Palau",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "3 May 2011"
+   },
+   "visitas": {
+    "realizadas": false,
+    "programadas": false
+   }
+  },
+  {
+   "id": "PAN",
+   "es": "Panamá",
+   "en": "Panama",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "GRU",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "14 March 2011"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "PNG",
+   "es": "Papúa Nueva Guinea",
+   "en": "Papua New Guinea",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "11 May 2011"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "PRY",
+   "es": "Paraguay",
+   "en": "Paraguay",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "GRU",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "28 March 2003"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": true
+   }
+  },
+  {
+   "id": "NLD",
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "WEO",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "March 2001"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "PER",
    "es": "Perú",
    "en": "Peru",
-   "alias": [
-    "peru"
-   ],
    "claves": [
     "peru"
    ],
-   "mec": [],
    "mandato": null,
    "titulares_de": [
     {
@@ -1007,20 +3105,25 @@
     }
    ],
    "comisiones": [],
-   "region": "GRU"
+   "region": "GRU",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "3 April 2002"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "POL",
    "es": "Polonia",
    "en": "Poland",
-   "alias": [
-    "poland"
-   ],
    "claves": [
     "polonia",
     "poland"
    ],
-   "mec": [],
    "mandato": null,
    "titulares_de": [
     {
@@ -1029,19 +3132,24 @@
     }
    ],
    "comisiones": [],
-   "region": "EEG"
+   "region": "EEG",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "March 2001"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "PRT",
    "es": "Portugal",
    "en": "Portugal",
-   "alias": [
-    "portugal"
-   ],
    "claves": [
     "portugal"
    ],
-   "mec": [],
    "mandato": null,
    "titulares_de": [
     {
@@ -1050,20 +3158,25 @@
     }
    ],
    "comisiones": [],
-   "region": "WEO"
+   "region": "WEO",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "March 2001"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "GBR",
    "es": "Reino Unido",
    "en": "United Kingdom of Great Britain and Northern Ireland",
-   "alias": [
-    "united kingdom of great britain and northern ireland"
-   ],
    "claves": [
     "britain",
     "britanico"
    ],
-   "mec": [],
    "mandato": null,
    "titulares_de": [
     {
@@ -1072,34 +3185,44 @@
     }
    ],
    "comisiones": [],
-   "region": "WEO"
+   "region": "WEO",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "March 2001"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "CAF",
    "es": "República Centroafricana",
    "en": "Central African Republic",
-   "alias": [
-    "central african republic"
-   ],
    "claves": [
     "centroafricana",
     "centroafricano"
    ],
-   "mec": [],
    "mandato": 48,
    "titulares_de": [],
    "comisiones": [],
-   "region": "AFR"
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "3 September 2013"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "KOR",
    "es": "República de Corea",
    "en": "Republic of Korea",
-   "alias": [
-    "republic of korea"
-   ],
    "claves": [],
-   "mec": [],
    "mandato": null,
    "titulares_de": [
     {
@@ -1108,19 +3231,24 @@
     }
    ],
    "comisiones": [],
-   "region": "ASP"
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "3 March 2008"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": true
+   }
   },
   {
    "id": "COD",
    "es": "República Democrática del Congo",
    "en": "Democratic Republic of the Congo",
-   "alias": [
-    "democratic republic of the congo"
-   ],
    "claves": [
     "congo"
    ],
-   "mec": [],
    "mandato": null,
    "titulares_de": [
     {
@@ -1129,62 +3257,262 @@
     }
    ],
    "comisiones": [],
-   "region": "AFR"
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "DOM",
+   "es": "República Dominicana",
+   "en": "Dominican Republic",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "GRU",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "PRK",
    "es": "República Popular Democrática de Corea",
    "en": "Democratic People’s Republic of Korea",
-   "alias": [
-    "democratic people’s republic of korea",
-    "democratic people's republic of korea"
-   ],
    "claves": [
     "rpdc"
-   ],
-   "mec": [
-    "dprk"
    ],
    "mandato": 49,
    "titulares_de": [],
    "comisiones": [
     19
    ],
-   "region": "ASP"
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "SYR",
    "es": "República Árabe Siria",
    "en": "Syrian Arab Republic",
-   "alias": [
-    "syrian arab republic"
-   ],
    "claves": [
     "siria",
     "syria",
     "syrian"
-   ],
-   "mec": [
-    "syria"
    ],
    "mandato": 56,
    "titulares_de": [],
    "comisiones": [
     17
    ],
-   "region": "ASP"
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "RWA",
+   "es": "Ruanda",
+   "en": "Rwanda",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "27 June 2011"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "ROU",
+   "es": "Rumanía",
+   "en": "Romania",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "EEG",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "March 2001"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "WSM",
+   "es": "Samoa",
+   "en": "Samoa",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "14 February 2011"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "KNA",
+   "es": "San Cristóbal y Nieves",
+   "en": "Saint Kitts and Nevis",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "GRU",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": false,
+    "programadas": false
+   }
+  },
+  {
+   "id": "SMR",
+   "es": "San Marino",
+   "en": "San Marino",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "WEO",
+   "region_origen": "completado a mano (grupos regionales de la ONU)",
+   "invitacion": {
+    "si": true,
+    "fecha": "3 April 2003"
+   },
+   "visitas": {
+    "realizadas": false,
+    "programadas": false
+   }
+  },
+  {
+   "id": "VCT",
+   "es": "San Vicente y las Granadinas",
+   "en": "Saint Vincent and the Grenadines",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "GRU",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "LCA",
+   "es": "Santa Lucía",
+   "en": "Saint Lucia",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "GRU",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "14 March 2016"
+   },
+   "visitas": {
+    "realizadas": false,
+    "programadas": false
+   }
+  },
+  {
+   "id": "STP",
+   "es": "Santo Tomé y Príncipe",
+   "en": "Sao Tome and Principe",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "2 February 2011"
+   },
+   "visitas": {
+    "realizadas": false,
+    "programadas": false
+   }
+  },
+  {
+   "id": "SEN",
+   "es": "Senegal",
+   "en": "Senegal",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "SRB",
    "es": "Serbia",
    "en": "Serbia",
-   "alias": [
-    "serbia"
-   ],
    "claves": [
     "serbia"
    ],
-   "mec": [],
    "mandato": null,
    "titulares_de": [
     {
@@ -1197,19 +3525,119 @@
     }
    ],
    "comisiones": [],
-   "region": "EEG"
+   "region": "EEG",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "11 October 2005"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "SYC",
+   "es": "Seychelles",
+   "en": "Seychelles",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "5 November 2012"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "SLE",
+   "es": "Sierra Leona",
+   "en": "Sierra Leone",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "7 April 2003"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "SGP",
+   "es": "Singapur",
+   "en": "Singapore",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "SOM",
+   "es": "Somalia",
+   "en": "Somalia",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "13 April 2016"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "LKA",
+   "es": "Sri Lanka",
+   "en": "Sri Lanka",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "17 December 2015"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "ZAF",
    "es": "Sudáfrica",
    "en": "South Africa",
-   "alias": [
-    "south africa"
-   ],
    "claves": [
     "sudafrica"
    ],
-   "mec": [],
    "mandato": null,
    "titulares_de": [
     {
@@ -1222,20 +3650,63 @@
     }
    ],
    "comisiones": [],
-   "region": "AFR"
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "17 July 2003"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "SDN",
+   "es": "Sudán",
+   "en": "Sudan",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "SSD",
+   "es": "Sudán del Sur",
+   "en": "South Sudan",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "9 November 2016"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "SWE",
    "es": "Suecia",
    "en": "Sweden",
-   "alias": [
-    "sweden"
-   ],
    "claves": [
     "suecia",
     "sweden"
    ],
-   "mec": [],
    "mandato": null,
    "titulares_de": [
     {
@@ -1244,20 +3715,25 @@
     }
    ],
    "comisiones": [],
-   "region": "WEO"
+   "region": "WEO",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "March 2001"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": true
+   }
   },
   {
    "id": "CHE",
    "es": "Suiza",
    "en": "Switzerland",
-   "alias": [
-    "switzerland"
-   ],
    "claves": [
     "suiza",
     "switzerland"
    ],
-   "mec": [],
    "mandato": null,
    "titulares_de": [
     {
@@ -1266,20 +3742,44 @@
     }
    ],
    "comisiones": [],
-   "region": "WEO"
+   "region": "WEO",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "1 April 2002"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "SUR",
+   "es": "Surinam",
+   "en": "Suriname",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "GRU",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "THA",
    "es": "Tailandia",
    "en": "Thailand",
-   "alias": [
-    "thailand"
-   ],
    "claves": [
     "tailandia",
     "thailand"
    ],
-   "mec": [],
    "mandato": null,
    "titulares_de": [
     {
@@ -1288,21 +3788,62 @@
     }
    ],
    "comisiones": [],
-   "region": "ASP"
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "4 November 2011"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "TZA",
+   "es": "Tanzania",
+   "en": "United Republic of Tanzania",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "TJK",
+   "es": "Tayikistán",
+   "en": "Tajikistan",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "PSE",
    "es": "Territorio palestino ocupado desde 1967",
    "en": "Palestinian territory occupied since 1967",
-   "alias": [
-    "palestinian territory occupied since 1967"
-   ],
    "claves": [
     "palestina",
     "palestino",
-    "palestinian"
-   ],
-   "mec": [
     "palestinian"
    ],
    "mandato": 54,
@@ -1310,20 +3851,175 @@
    "comisiones": [
     23
    ],
-   "region": "OTH"
+   "region": "OTH",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "30 July 2014"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "TLS",
+   "es": "Timor-Leste",
+   "en": "Timor-Leste",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "9 March 2017"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "TGO",
+   "es": "Togo",
+   "en": "Togo",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "TON",
+   "es": "Tonga",
+   "en": "Tonga",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "ASP",
+   "region_origen": "completado a mano (grupos regionales de la ONU)",
+   "invitacion": {
+    "si": true,
+    "fecha": "25 January 2013"
+   },
+   "visitas": {
+    "realizadas": false,
+    "programadas": false
+   }
+  },
+  {
+   "id": "TTO",
+   "es": "Trinidad y Tobago",
+   "en": "Trinidad and Tobago",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "GRU",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "TKM",
+   "es": "Turkmenistán",
+   "en": "Turkmenistan",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "11 May 2018"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "TUR",
+   "es": "Turquía",
+   "en": "Türkiye",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "WEO",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "March 2001"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "TUV",
+   "es": "Tuvalu",
+   "en": "Tuvalu",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "ASP",
+   "region_origen": "completado a mano (grupos regionales de la ONU)",
+   "invitacion": {
+    "si": true,
+    "fecha": "26 April 2013"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "TUN",
+   "es": "Túnez",
+   "en": "Tunisia",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "28 February 2011"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "UKR",
    "es": "Ucrania",
    "en": "Ukraine",
-   "alias": [
-    "ukraine"
-   ],
    "claves": [
     "ucrania",
-    "ukraine"
-   ],
-   "mec": [
     "ukraine"
    ],
    "mandato": null,
@@ -1336,19 +4032,24 @@
    "comisiones": [
     24
    ],
-   "region": "EEG"
+   "region": "EEG",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "23 June 2006"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "UGA",
    "es": "Uganda",
    "en": "Uganda",
-   "alias": [
-    "uganda"
-   ],
    "claves": [
     "uganda"
    ],
-   "mec": [],
    "mandato": null,
    "titulares_de": [
     {
@@ -1361,19 +4062,24 @@
     }
    ],
    "comisiones": [],
-   "region": "AFR"
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "URY",
    "es": "Uruguay",
    "en": "Uruguay",
-   "alias": [
-    "uruguay"
-   ],
    "claves": [
     "uruguay"
    ],
-   "mec": [],
    "mandato": null,
    "titulares_de": [
     {
@@ -1382,19 +4088,60 @@
     }
    ],
    "comisiones": [],
-   "region": "GRU"
+   "region": "GRU",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "18 March 2005"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "UZB",
+   "es": "Uzbekistán",
+   "en": "Uzbekistan",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "11 May 2018"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "VUT",
+   "es": "Vanuatu",
+   "en": "Vanuatu",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "ASP",
+   "region_origen": "completado a mano (grupos regionales de la ONU)",
+   "invitacion": {
+    "si": true,
+    "fecha": "12 May 2009"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "VEN",
    "es": "Venezuela (República Bolivariana de)",
    "en": "Venezuela (Bolivarian Republic of)",
-   "alias": [
-    "venezuela"
-   ],
    "claves": [
-    "venezuela"
-   ],
-   "mec": [
     "venezuela"
    ],
    "mandato": null,
@@ -1402,19 +4149,81 @@
    "comisiones": [
     22
    ],
-   "region": "GRU"
+   "region": "GRU",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "VNM",
+   "es": "Vietnam",
+   "en": "Viet Nam",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "YEM",
+   "es": "Yemen",
+   "en": "Yemen",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "ASP",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "DJI",
+   "es": "Yibuti",
+   "en": "Djibouti",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   },
   {
    "id": "ZMB",
    "es": "Zambia",
    "en": "Zambia",
-   "alias": [
-    "zambia"
-   ],
    "claves": [
     "zambia"
    ],
-   "mec": [],
    "mandato": null,
    "titulares_de": [
     {
@@ -1427,7 +4236,35 @@
     }
    ],
    "comisiones": [],
-   "region": "AFR"
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": true,
+    "fecha": "16 July 2008"
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
+  },
+  {
+   "id": "ZWE",
+   "es": "Zimbabue",
+   "en": "Zimbabwe",
+   "claves": [],
+   "mandato": null,
+   "titulares_de": [],
+   "comisiones": [],
+   "region": "AFR",
+   "region_origen": "oficial (base de comunicaciones de OHCHR)",
+   "invitacion": {
+    "si": false,
+    "fecha": ""
+   },
+   "visitas": {
+    "realizadas": true,
+    "programadas": false
+   }
   }
  ],
  "regiones": [
@@ -1466,10 +4303,20 @@
    "en": "Other",
    "es": "Otro (no miembro u observador, según la base de OHCHR)",
    "corto": "Otro"
+  },
+  {
+   "id": "NAA",
+   "en": "None",
+   "es": "Sin grupo regional asignado en la fuente",
+   "corto": "Sin grupo"
   }
  ],
  "regiones_fuente": {
   "url": "https://spcommreports.ohchr.org/Tmsearch/TMDocuments",
+  "consultado": "2026-10-27"
+ },
+ "paises_fuente": {
+  "url": "https://spinternet.ohchr.org/ViewCountryVisits.aspx?visitType=all",
   "consultado": "2026-10-27"
  },
  "mecanismos": [
