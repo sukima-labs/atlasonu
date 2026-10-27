@@ -136,7 +136,8 @@ if os.path.exists('data/fuentes/textos.json'):
 ev = json.load(open('data/evidencias.json', encoding='utf-8'))
 for k, v in ev.items():
     if k in index: index[k]['evidencia'] = v
-data = {'version': '0.7', 'consultado': fecha,
+mec = json.load(open('data/fuentes/mecanismos.json', encoding='utf-8')) if os.path.exists('data/fuentes/mecanismos.json') else []
+data = {'version': '0.7', 'mecanismos': mec, 'consultado': fecha,
         'fuentes': ['https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM', 'https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM',
                     'https://digitallibrary.un.org/'],
         'mandatos': recs, 'indice_actos': index,
