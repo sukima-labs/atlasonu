@@ -40,6 +40,7 @@ const URL = process.env.ATLAS_URL || 'file://' + path.resolve(__dirname, '..', '
     await page.evaluate(() => showPage('inicio')); await page.fill('#quick', 'comida');  await page.waitForTimeout(500);
     await page.locator('#smartOut button', { hasText: 'Ver texto y ruta' }).first().click();
     ok(vp.name + ': desde el resultado se abre la recuperación del texto', await page.isVisible('#recuperar') && /LOCALIZADO/.test(await page.textContent('#recoverResult')));
+    if (await page.isVisible('#burger')) { await page.click('#burger'); await page.waitForTimeout(350); }
     await page.getByRole('button', { name: /Países/ }).first().click();
     ok(vp.name + ': sección Países visible con 196 filas', await page.isVisible('#paises') && (await page.locator('#pBody tr').count()) === 196);
     await page.getByRole('button', { name: /^América Latina y el Caribe \(\d+\)/ }).click(); await page.waitForTimeout(200);
@@ -139,6 +140,37 @@ const URL = process.env.ATLAS_URL || 'file://' + path.resolve(__dirname, '..', '
     const pg2 = await ctx2.newPage(); await pg2.goto(URL); await pg2.waitForTimeout(500);
     ok('carga normal: aviso oculto y aplicación lista', !(await pg2.isVisible('#aviso-carga')) && (await pg2.evaluate(() => window.__atlasListo === true)));
     await ctx2.close();
+  }
+  // Navegación móvil: menú lateral con botón, se cierra al navegar; sin desbordes en ningún tamaño de teléfono/tableta
+  for (const [nom, w, h] of [['iPhone SE', 375, 667], ['Android 412', 412, 915], ['tableta 768', 768, 1024]]) {
+    const pg = await browser.newPage({ viewport: { width: w, height: h }, hasTouch: true, isMobile: true }); await pg.goto(URL); await pg.waitForFunction(() => window.__atlasListo);
+    ok(nom + ': hay barra superior con botón de menú y el menú está cerrado', (await pg.isVisible('#burger')) && !(await pg.isVisible('#side')));
+    await pg.tap('#burger'); await pg.waitForTimeout(350);
+    ok(nom + ': el botón abre el menú', (await pg.isVisible('#side')) && (await pg.getAttribute('#burger', 'aria-expanded')) === 'true');
+    await pg.tap('.nav button[data-page="tratados"]'); await pg.waitForTimeout(350);
+    ok(nom + ': al elegir una pantalla se cierra el menú y se muestra', !(await pg.isVisible('#side')) && (await pg.isVisible('#tratados')));
+    const malos = []; for (const id of ['inicio', 'explorar', 'sistema', 'paises', 'tratados', 'siglas', 'arqueologia', 'recuperar', 'mecanismos', 'codificacion', 'seleccion', 'auditoria', 'fuentes']) { await pg.evaluate(x => showPage(x), id); const d = await pg.evaluate(() => [document.documentElement.scrollWidth, innerWidth]); if (d[0] > d[1] + 1) malos.push(id); }
+    ok(nom + ': ninguna pantalla se desborda en horizontal ' + malos.join(','), malos.length === 0);
+    const peq = await pg.evaluate(() => [...document.querySelectorAll('input.field')].filter(e => e.offsetParent && parseFloat(getComputedStyle(e).fontSize) < 16).length);
+    ok(nom + ': los campos de texto usan 16 px (iOS no hace zoom al escribir)', peq === 0);
+    await pg.close();
+  }
+  // Contador de visitas: servido como https falso, con el servicio simulado y sin la marca de automatización
+  {
+    const fs = require('fs'), root = path.resolve(__dirname, '..');
+    const mime = { '.html': 'text/html', '.js': 'application/javascript', '.json': 'application/json' };
+    const ctx = await browser.newContext({ timezoneId: 'America/Bogota', locale: 'es-CO' }); const pv = await ctx.newPage();
+    await pv.addInitScript(() => Object.defineProperty(navigator, 'webdriver', { get: () => false }));
+    const llamadas = [];
+    await pv.route('https://abacus.jasoncameron.dev/**', r => { llamadas.push(new globalThis.URL(r.request().url()).pathname); r.fulfill({ status: 200, contentType: 'application/json', headers: { 'access-control-allow-origin': '*' }, body: JSON.stringify({ value: 1234 }) }); });
+    await pv.route('https://atlas.test/**', r => { let p = new globalThis.URL(r.request().url()).pathname; if (p === '/') p = '/index.html'; const f = path.join(root, decodeURIComponent(p)); if (!f.startsWith(root) || !fs.existsSync(f)) return r.fulfill({ status: 404, body: '' }); r.fulfill({ status: 200, contentType: mime[path.extname(f)] || 'application/octet-stream', body: fs.readFileSync(f) }); });
+    await pv.goto('https://atlas.test/'); await pv.waitForFunction(() => window.__atlasListo); await pv.waitForTimeout(1500);
+    ok('visitas: la barra muestra el total, el país del visitante (Colombia) y sus visitas', (await pv.textContent('#visTotal')).replace(/\D/g, '') === '1234' && /Colombia/.test(await pv.textContent('#visPais')) && (await pv.textContent('#visPaisN')).replace(/\D/g, '') === '1234');
+    ok('visitas: la primera visita suma al total y al país; una recarga inmediata no vuelve a sumar', llamadas.filter(x => x.startsWith('/hit/')).length === 2 && llamadas.some(x => x.endsWith('/pais-CO')));
+    const antes = llamadas.filter(x => x.startsWith('/hit/')).length; await pv.reload(); await pv.waitForFunction(() => window.__atlasListo); await pv.waitForTimeout(800);
+    ok('visitas: la recarga solo consulta (/get), no suma', llamadas.filter(x => x.startsWith('/hit/')).length === antes && llamadas.some(x => x.startsWith('/get/')));
+    await pv.screenshot({ path: '/tmp/claude-0/visitas.png', clip: { x: 0, y: 0, width: 1280, height: 120 } }).catch(() => {});
+    await ctx.close();
   }
   await browser.close();
   const failed = res.checks.filter(c => !c.ok);
