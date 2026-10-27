@@ -18,7 +18,7 @@ Plataforma académica independiente para investigar los procedimientos especiale
 
 ## Abrir
 Abrir `index.html` en cualquier navegador (también sin conexión: los datos van en `data/atlas-data.js`).
-**Web pública:** https://cataplum1414.github.io/onu-arqueologia-documental/ (Settings → Pages → *Build and deployment* → Source: **Deploy from a branch** → Branch: `main`, carpeta `/ (root)` → Save; tarda ~1 minuto).
+**Web pública (activa):** https://cataplum1414.github.io/onu-arqueologia-documental/ (Settings → Pages → *Build and deployment* → Source: **Deploy from a branch** → Branch: `main`, carpeta `/ (root)` → Save; tarda ~1 minuto).
 
 ## Estructura
 | Ruta | Contenido |
