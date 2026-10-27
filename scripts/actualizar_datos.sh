@@ -12,6 +12,7 @@ python3 -I scripts/fetch_regiones.py "$FP"
 python3 -I scripts/fetch_paises.py "$FP"
 python3 -I scripts/fetch_tratados.py "$FP"
 python3 -I scripts/fetch_docs_pais.py
+echo "pausa de 60 s para no saturar la Biblioteca Digital"; sleep 60
 for t in TM CM; do for l in en es; do
   curl -fsS -m 90 -L "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=$t&lang=$l" -o "$TMP/spin_${t}_$l.html"
   python3 -I scripts/parse_ohchr_mandates.py "$TMP/spin_${t}_$l.html" $t $l "data/fuentes/ohchr_${t}_$l.json" "$FP"
