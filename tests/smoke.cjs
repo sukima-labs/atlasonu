@@ -77,6 +77,12 @@ t('India: invitación permanente (14-sep-2011) y visita programada, en español'
 t('un país sin mandato ni titular también se encuentra (Nepal)',()=>{els.pQ.value='nepal';run('renderPaises()');assert.ok(els.pBody.innerHTML.includes('Nepal')&&els.pBody.innerHTML.includes('Sin mandato por país vigente'));els.pQ.value='';run('renderPaises()')});
 t('búsqueda inteligente: «India» → tarjeta de país con invitación permanente',()=>assert.ok(smart('India').includes('Invitación permanente')));
 t('regiones: Palestina «Otro» y países completados a mano declarados',()=>{assert.equal(run('PID.PSE.region'),'OTH');assert.ok(run('PAISES.filter(p=>/mano/.test(p.region_origen||"")).length')>=8)});
+t('cada pantalla explica para qué sirve (10 bloques)',()=>{assert.equal((html.match(/<details class="about" open>/g)||[]).length,10);for(const s of ['inicio','explorar','paises','arqueologia','recuperar','mecanismos','codificacion','seleccion','auditoria','fuentes'])assert.ok(new RegExp('<section id="'+s+'"[^]*?Para qué sirve esta pantalla').test(html),s)});
+t('Arqueología conectada a todos los actos (no a 11 filas fijas)',()=>{els.qt.value='';els.tclass.value='';run('filterTraces()');assert.ok(els.traceCount.textContent.includes('421 de 421'));assert.ok(els.traceBody.innerHTML.includes('Nota del proyecto'))});
+t('Arqueología: filtro «con reservas» y búsqueda por mandato',()=>{els.tclass.value='reservas';run('filterTraces()');assert.ok(els.traceCount.textContent.includes('20 de 421'));els.tclass.value='';els.qt.value='tortura';run('filterTraces()');assert.ok(els.traceBody.innerHTML.toLowerCase().includes('tortura'));els.qt.value='';run('filterTraces()')});
+t('últimas resoluciones ordenadas por fecha de adopción',()=>{const f=els.recientes.innerHTML.match(/Adoptada: (\d{4}-\d{2}-\d{2})/g).map(x=>x.slice(10));assert.ok(f.length===8&&f.every((x,i)=>i===0||f[i-1]>=x))});
+t('panel de novedades se declara diario y automático',()=>assert.ok(els.novedades.innerHTML.includes('automáticamente cada día')));
+t('fecha de los datos visible en las pantallas',()=>assert.ok(html.includes('class="fechaDatos"')));
 t('ficha de mandato',()=>{run('details(0)');assert.ok(els.cardsResults.innerHTML.includes('Cadena de actos jurídicos'))});
 t('exportCSV',()=>run('exportCSV()'));
 t('autoría y repositorio',()=>assert.ok(html.includes('cataplum1414/onu-arqueologia-documental')&&html.includes('Jeisson Arley Osorio Mesa')));

@@ -10,12 +10,12 @@ Estados: ✅ cumple · 🟡 parcial · ❌ no implementado.
 | 4 | Arqueología documental activa | ✅/🟡 | Resolución localizada aunque el símbolo esté mal escrito; borrador→resolución; 374 PDF propios validados y 26 resoluciones antiguas ubicadas en su informe de sesión con páginas. Falta leer el texto de todas (solo 20 (XXXVI) leída) |
 | 5 | Distinguir órganos y codificaciones | 🟡 | Cada acto lleva órgano, tipo y aviso (resolución / informe / borrador). Tabla «Códigos ONU» existente |
 | 6 | Resoluciones, lenguaje claro, efectos jurídicos | ❌ | Sin texto explicado de las resoluciones |
-| 7 | Sincronización con fuentes oficiales | 🟡 | `actualizar_datos.sh` + flujo mensual que abre un PR. El navegador no consulta la ONU en vivo (CORS); la ruta alternativa es el flujo programado |
+| 7 | Sincronización con fuentes oficiales | ✅/🟡 | Revisión diaria automática en GitHub Actions con detección de cambios, salvaguardas y aviso en la página. El navegador no puede consultar la ONU en directo (las fuentes no envían CORS); la alternativa es la revisión programada. Pendiente de comprobar la primera ejecución programada |
 | 8 | Estadísticas y mapas | 🟡 | KPIs y gráfico por tipo de figura; sin mapas |
 | 9 | Selección de titulares | 🟡 | Secuencia del proceso; titulares actuales por mandato; sin datos históricos por proceso |
 | 10 | Autoría | ✅ | © y enlace visibles; licencia pendiente del autor |
 | 11 | Excel offline, HTML Pages | 🟡 | HTML sin conexión y Excel v0.7 (6 hojas); flujo `pages.yml` listo; pendiente activar Pages (un clic) |
-| 12 | Pruebas reales | 🟡 | 69 de lógica + 64 en Chromium; auditoría de enlaces (571; 0 rotos; 459 no concluyentes por antirrobot); muestreo de PDF 30/30. Sin auditoría de accesibilidad |
+| 12 | Pruebas reales | 🟡 | 79 de lógica + 90 en Chromium; auditoría de enlaces (571; 0 rotos; 459 no concluyentes por antirrobot); muestreo de PDF 30/30. Sin auditoría de accesibilidad |
 | 13 | Commits y Pages verificado | ✅ | Publicado en https://cataplum1414.github.io/onu-arqueologia-documental/ (27-oct-2026): HTTP 200 en página, datos y Excel; las 42 comprobaciones de Chromium pasan contra la URL pública, sin errores de consola |
 
 ## Qué corrigió esta versión respecto a v0.6
