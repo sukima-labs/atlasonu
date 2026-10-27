@@ -9,6 +9,8 @@ for t in TM CM; do for l in en es; do
 done; done
 python3 -I scripts/verify_symbols.py data/fuentes/ohchr_TM_en.json data/fuentes/ohchr_CM_en.json data/fuentes/verificacion_simbolos.json
 python3 -I scripts/build_catalog.py data/fuentes/verificacion_simbolos.json "$FECHA"
+python3 -I scripts/build_mecanismos.py
 python3 -I scripts/resolve_texts.py data/catalogo.json data/fuentes/textos.json
 python3 -I scripts/build_catalog.py data/fuentes/verificacion_simbolos.json "$FECHA"
+python3 -I scripts/exportar_excel.py
 (cd tests && node smoke.cjs)
