@@ -21,6 +21,11 @@ for k in pn.keys() & pa.keys():
         cambios.append({'tipo': 'invitacion', 'texto': f"{pn[k]['es']}: invitación permanente {'cursada' if pn[k]['invitacion']['si'] else 'retirada'}"})
     if pa[k]['visitas']['programadas'] != pn[k]['visitas']['programadas']:
         cambios.append({'tipo': 'visita', 'texto': f"{pn[k]['es']}: visita {'programada' if pn[k]['visitas']['programadas'] else 'ya no figura como programada'}"})
+NT = {t['mtdsg']: t['siglas'] for t in new.get('tratados', [])}
+for k in pn.keys() & pa.keys():
+    for mt, v in pn[k].get('tratados', {}).items():
+        if v.get('parte') and not pa[k].get('tratados', {}).get(mt, {}).get('parte'):
+            cambios.append({'tipo': 'tratado', 'texto': f"{pn[k]['es']}: ahora es parte en {NT.get(mt, mt)} ({v['parte']})"})
 ia, i2 = prev['indice_actos'], new['indice_actos']
 nuevas = [k for k in i2 if not k.startswith('~') and k not in ia]
 if nuevas: cambios.append({'tipo': 'resoluciones', 'texto': f"{len(nuevas)} resolución(es) nueva(s) localizada(s): {', '.join(sorted(nuevas)[:6])}{'…' if len(nuevas) > 6 else ''}"})
