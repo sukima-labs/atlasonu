@@ -151,24 +151,27 @@ for i, r in enumerate(recs):
         h['pais_id'] = pid(h['pais'])
         if not h['pais_id']: sin_pais.add('titular:' + h['pais'])
 assert not sin_pais, sin_pais
-paises = []
-for p in PAISES:
-    ms = [i for i, r in enumerate(recs) if r['pais_id'] == p['id']]
-    ts = [{'idx': i, 'titular': h['nombre']} for i, r in enumerate(recs) for h in r['titulares'] if h['pais_id'] == p['id']]
-    cm = [i for i, m in enumerate(mec) if any(k in (m['nameEN'] + ' ' + m['nombre']).lower() for k in p.get('mec', []))]
-    if ms or ts or cm: paises.append({**p, 'mandato': ms[0] if ms else None, 'titulares_de': ts, 'comisiones': cm})
 REG = json.load(open('data/fuentes/regiones_ohchr.json', encoding='utf-8'))
 REGDEF = {'African Group': ('AFR', 'Grupo de Estados de África', 'África'), 'Asia-Pacific Group': ('ASP', 'Grupo de Estados de Asia y el Pacífico', 'Asia-Pacífico'),
           'Eastern European Group': ('EEG', 'Grupo de Estados de Europa Oriental', 'Europa Oriental'), 'Latin American and Caribbean Group': ('GRU', 'Grupo de Estados de América Latina y el Caribe (GRULAC)', 'América Latina y el Caribe'),
-          'Western European and Others Group': ('WEO', 'Grupo de Estados de Europa Occidental y otros Estados (WEOG)', 'Europa Occidental y otros'), 'Other': ('OTH', 'Otro (no miembro u observador, según la base de OHCHR)', 'Otro')}
-OVR = {'Democratic People’s Republic of Korea': "Democratic People's Republic of Korea", 'Palestinian territory occupied since 1967': 'State of Palestine'}
-for p in paises:
-    nm = OVR.get(p['en'], p['en'])
-    assert nm in REG['paises'], ('sin grupo regional', p['en'])
-    p['region'] = REGDEF[REG['paises'][nm]][0]
-regiones = [{'id': v[0], 'en': k, 'es': v[1], 'corto': v[2]} for k, v in REGDEF.items()]
+          'Western European and Others Group': ('WEO', 'Grupo de Estados de Europa Occidental y otros Estados (WEOG)', 'Europa Occidental y otros'), 'Other': ('OTH', 'Otro (no miembro u observador, según la base de OHCHR)', 'Otro'),
+          None: ('NAA', 'Sin grupo regional asignado en la fuente', 'Sin grupo')}
+OH = json.load(open('data/fuentes/paises_ohchr.json', encoding='utf-8'))
+OHP = {o['iso3']: o for o in OH['paises'] if o['iso3'] != 'OTH'}
+assert all(p['id'] in OHP for p in PAISES), [p['id'] for p in PAISES if p['id'] not in OHP]
+CUR = {p['id']: p for p in PAISES}
+paises = []
+for iso, o in OHP.items():
+    c = CUR.get(iso, {})
+    ms = [i for i, r in enumerate(recs) if r['pais_id'] == iso]
+    ts = [{'idx': i, 'titular': h['nombre']} for i, r in enumerate(recs) for h in r['titulares'] if h['pais_id'] == iso]
+    cm = [i for i, m in enumerate(mec) if any(k in (m['nameEN'] + ' ' + m['nombre']).lower() for k in c.get('mec', []))]
+    paises.append({'id': iso, 'es': c.get('es', o['es']), 'en': c.get('en', o['en']), 'claves': c.get('claves', []), 'mandato': ms[0] if ms else None, 'titulares_de': ts, 'comisiones': cm,
+                   'region': REGDEF[o['region_en']][0], 'region_origen': o['region_origen'],
+                   'invitacion': {'si': o['invitacion_permanente'], 'fecha': o['fecha_invitacion']}, 'visitas': {k: o['visitas'][k] for k in ('realizadas', 'programadas')}})
+regiones = [{'id': v[0], 'en': k or 'None', 'es': v[1], 'corto': v[2]} for k, v in REGDEF.items()]
 paises.sort(key=lambda p: p['es'].lower())
-data = {'version': '0.7', 'paises': paises, 'regiones': regiones, 'regiones_fuente': {'url': REG['fuente'], 'consultado': REG['consultado']}, 'mecanismos': mec, 'consultado': fecha,
+data = {'version': '0.7', 'paises': paises, 'regiones': regiones, 'regiones_fuente': {'url': REG['fuente'], 'consultado': REG['consultado']}, 'paises_fuente': {'url': OH['fuente'], 'consultado': OH['consultado']}, 'mecanismos': mec, 'consultado': fecha,
         'fuentes': ['https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM', 'https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM',
                     'https://digitallibrary.un.org/'],
         'mandatos': recs, 'indice_actos': index,

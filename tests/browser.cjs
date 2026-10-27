@@ -40,9 +40,9 @@ const URL = process.env.ATLAS_URL || 'file://' + path.resolve(__dirname, '..', '
     await page.locator('#smartOut button', { hasText: 'Ver texto y ruta' }).first().click();
     ok(vp.name + ': desde el resultado se abre la recuperación del texto', await page.isVisible('#recuperar') && /LOCALIZADO/.test(await page.textContent('#recoverResult')));
     await page.getByRole('button', { name: /Países/ }).first().click();
-    ok(vp.name + ': sección Países visible con 62 filas', await page.isVisible('#paises') && (await page.locator('#pBody tr').count()) === 62);
+    ok(vp.name + ': sección Países visible con 196 filas', await page.isVisible('#paises') && (await page.locator('#pBody tr').count()) === 196);
     await page.getByRole('button', { name: /^América Latina y el Caribe \(\d+\)/ }).click(); await page.waitForTimeout(200);
-    ok(vp.name + ': chip «América Latina y el Caribe» → 10 países', (await page.locator('#pBody tr').count()) === 10 && /Colombia/.test(await page.textContent('#pBody')));
+    ok(vp.name + ': chip «América Latina y el Caribe» → 33 países', (await page.locator('#pBody tr').count()) === 33 && /Colombia/.test(await page.textContent('#pBody')));
     await page.getByRole('button', { name: /^Todos \(\d+\)/ }).click(); await page.waitForTimeout(200);
     await page.fill('#pQ', 'siria'); await page.waitForTimeout(250);
     ok(vp.name + ': buscar «siria» muestra mandato y comisión', /Siria/.test(await page.textContent('#pBody')) && /S-17\/1/.test(await page.textContent('#pBody')) && (await page.locator('#pBody tr').count()) === 1);
