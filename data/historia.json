@@ -1,0 +1,554 @@
+{
+ "nota": "Elaboración propia a partir de la Carta de la ONU, las resoluciones citadas y los sitios oficiales de las Naciones Unidas. Las fechas con solo año o mes indican que el día exacto no se consigna aquí. Para citar, use el documento oficial.",
+ "temas": {
+  "fundacion": "Fundación e instituciones",
+  "normas": "Declaraciones y tratados",
+  "mecanismos": "Mecanismos de protección",
+  "paz": "Paz, justicia y seguridad",
+  "desarrollo": "Desarrollo y agenda global"
+ },
+ "eras": [
+  {
+   "id": "e1",
+   "n": "Fundación y descolonización",
+   "d": 1945,
+   "h": 1959
+  },
+  {
+   "id": "e2",
+   "n": "Las grandes normas",
+   "d": 1960,
+   "h": 1979
+  },
+  {
+   "id": "e3",
+   "n": "Nacen los mecanismos",
+   "d": 1980,
+   "h": 1992
+  },
+  {
+   "id": "e4",
+   "n": "Viena y la justicia internacional",
+   "d": 1993,
+   "h": 2005
+  },
+  {
+   "id": "e5",
+   "n": "El Consejo y el EPU",
+   "d": 2006,
+   "h": 2014
+  },
+  {
+   "id": "e6",
+   "n": "Agenda 2030 y nuevos desafíos",
+   "d": 2015,
+   "h": 2026
+  }
+ ],
+ "eventos": [
+  {
+   "f": "1945-06-26",
+   "tema": "fundacion",
+   "hito": true,
+   "t": "Se firma la Carta de las Naciones Unidas",
+   "x": "En San Francisco, 50 Estados firman la Carta que crea la organización (Polonia la firma poco después). Establece seis órganos principales y entre sus propósitos «el respeto a los derechos humanos».",
+   "p": "Es el «acta de nacimiento» de la ONU y la base jurídica de todo lo demás: de la Carta salen los mecanismos «basados en la Carta».",
+   "ir": "S:ag"
+  },
+  {
+   "f": "1945-10-24",
+   "tema": "fundacion",
+   "hito": true,
+   "t": "La Carta entra en vigor: nace la ONU",
+   "x": "Con la ratificación de los cinco miembros permanentes del Consejo de Seguridad y de la mayoría de los demás signatarios, la Carta entra en vigor. Hoy se celebra el Día de las Naciones Unidas.",
+   "p": "Desde esta fecha existe la organización. La Asamblea General y el Consejo de Seguridad se constituyen en los meses siguientes.",
+   "ir": "S:ag"
+  },
+  {
+   "f": "1946-01-10",
+   "tema": "fundacion",
+   "hito": false,
+   "t": "Primera sesión de la Asamblea General",
+   "x": "Se reúne en Londres la primera Asamblea General, con 51 Estados miembros fundadores.",
+   "p": "Empieza el trabajo del foro plenario donde se aprobarán la mayoría de las declaraciones y tratados de derechos humanos.",
+   "ir": "S:ag"
+  },
+  {
+   "f": "1946-02-16",
+   "tema": "mecanismos",
+   "hito": true,
+   "t": "El ECOSOC crea la Comisión de Derechos Humanos",
+   "x": "El Consejo Económico y Social establece la Comisión de Derechos Humanos (resolución 5 (I)). Su primera tarea será redactar una carta internacional de derechos.",
+   "p": "Es el antecedente directo del Consejo de Derechos Humanos y de los procedimientos especiales. Funcionó hasta 2006.",
+   "ir": "S:cdh"
+  },
+  {
+   "f": "1946-12-11",
+   "tema": "desarrollo",
+   "hito": false,
+   "t": "Nace UNICEF",
+   "x": "La Asamblea General crea el Fondo de las Naciones Unidas para la Infancia para asistir a niños y niñas tras la guerra.",
+   "p": "Es la primera de las grandes entidades de asistencia; hoy es el socio natural de la Convención sobre los Derechos del Niño.",
+   "ir": "E:UNICEF"
+  },
+  {
+   "f": "1948-04-07",
+   "tema": "desarrollo",
+   "hito": false,
+   "t": "Entra en vigor la Constitución de la OMS",
+   "x": "La Organización Mundial de la Salud comienza a existir como organismo especializado (se celebra el Día Mundial de la Salud).",
+   "p": "Su Constitución afirma que gozar del grado máximo de salud es un derecho fundamental, antecedente del derecho a la salud.",
+   "ir": "E:OMS"
+  },
+  {
+   "f": "1948-12-09",
+   "tema": "normas",
+   "hito": true,
+   "t": "Se adopta la Convención contra el Genocidio",
+   "x": "La Asamblea General aprueba la Convención para la Prevención y la Sanción del Delito de Genocidio (resolución 260 A (III)).",
+   "p": "Es el primer tratado de derechos humanos de la ONU. No tiene comité propio: sus controversias van a la Corte Internacional de Justicia.",
+   "ir": "S:cij"
+  },
+  {
+   "f": "1948-12-10",
+   "tema": "normas",
+   "hito": true,
+   "t": "Se proclama la Declaración Universal de Derechos Humanos",
+   "x": "En París, la Asamblea General adopta la Declaración (resolución 217 A (III)) con 48 votos a favor, ninguno en contra y 8 abstenciones. El 10 de diciembre es el Día de los Derechos Humanos.",
+   "p": "Fija por primera vez los derechos de toda persona. No es un tratado, pero es la base de los Pactos y gran parte de su contenido se considera derecho consuetudinario.",
+   "ir": "P:A/RES/217A(III)"
+  },
+  {
+   "f": "1949-12-08",
+   "tema": "desarrollo",
+   "hito": false,
+   "t": "Se crea la UNRWA",
+   "x": "La Asamblea General crea el organismo para asistir a los refugiados de Palestina (resolución 302 (IV)).",
+   "p": "Es una de las operaciones de asistencia más largas de la ONU.",
+   "ir": "E:UNRWA"
+  },
+  {
+   "f": "1950-12-14",
+   "tema": "desarrollo",
+   "hito": false,
+   "t": "Se crea el ACNUR",
+   "x": "La Asamblea General establece la Oficina del Alto Comisionado de las Naciones Unidas para los Refugiados (resolución 428 (V)).",
+   "p": "Protege a refugiados y apátridas y vela por la Convención de 1951.",
+   "ir": "E:ACNUR"
+  },
+  {
+   "f": "1951-07-28",
+   "tema": "normas",
+   "hito": false,
+   "t": "Convención sobre el Estatuto de los Refugiados",
+   "x": "Se adopta en Ginebra la Convención de 1951 que define quién es refugiado y consagra el principio de no devolución.",
+   "p": "Es la base del derecho internacional de los refugiados; no tiene comité de expertos propio.",
+   "ir": "E:ACNUR"
+  },
+  {
+   "f": "1955-12-14",
+   "tema": "mecanismos",
+   "hito": false,
+   "t": "La ONU se abre a nuevos miembros",
+   "x": "El 14 de diciembre de 1955 ingresan 16 Estados de una vez, el mayor grupo hasta entonces, tras años de bloqueo en la Guerra Fría.",
+   "p": "Anticipa el cambio de composición de la ONU, que con la descolonización pasa de 51 a más de 190 miembros.",
+   "ir": "S:ag"
+  },
+  {
+   "f": "1960-12-14",
+   "tema": "paz",
+   "hito": true,
+   "t": "Declaración sobre la descolonización",
+   "x": "La Asamblea General aprueba la Declaración sobre la concesión de la independencia a los países y pueblos coloniales (resolución 1514 (XV)).",
+   "p": "Acelera la descolonización: en pocos años ingresan decenas de nuevos Estados y cambia el equilibrio de la Asamblea.",
+   "ir": "S:ag"
+  },
+  {
+   "f": "1965-12-21",
+   "tema": "normas",
+   "hito": true,
+   "t": "Se adopta la Convención contra la discriminación racial",
+   "x": "La Asamblea General adopta la Convención sobre la Eliminación de Todas las Formas de Discriminación Racial (resolución 2106 A (XX)); se abre a la firma en marzo de 1966.",
+   "p": "Primer tratado «básico» con comité propio, el CERD. Responde a la lucha contra el apartheid y el colonialismo.",
+   "ir": "T:IV-2"
+  },
+  {
+   "f": "1966-12-16",
+   "tema": "normas",
+   "hito": true,
+   "t": "Se adoptan los dos Pactos de 1966",
+   "x": "La Asamblea General adopta el Pacto Internacional de Derechos Civiles y Políticos, el de Derechos Económicos, Sociales y Culturales y el primer Protocolo Facultativo (resolución 2200 A (XXI)).",
+   "p": "Convierten la Declaración Universal en obligaciones jurídicas vinculantes, separando derechos civiles y políticos de los económicos, sociales y culturales.",
+   "ir": "T:IV-4"
+  },
+  {
+   "f": "1967-06-06",
+   "tema": "mecanismos",
+   "hito": true,
+   "t": "Resolución 1235 del ECOSOC",
+   "x": "El ECOSOC autoriza a la Comisión de Derechos Humanos a examinar violaciones «notorias y sistemáticas», empezando por el apartheid y el África meridional.",
+   "p": "Rompe la doctrina de «no competencia»: por primera vez la ONU examina violaciones en países concretos. Es el origen de los procedimientos especiales por país.",
+   "ir": "S:ecosoc"
+  },
+  {
+   "f": "1968-05-13",
+   "tema": "normas",
+   "hito": false,
+   "t": "Proclamación de Teherán",
+   "x": "La primera Conferencia Internacional de Derechos Humanos proclama que los derechos son indivisibles e interdependientes.",
+   "p": "Es el antecedente de la Conferencia de Viena de 1993, donde se reafirma esa idea.",
+   "ir": "S:cdh"
+  },
+  {
+   "f": "1970-05-27",
+   "tema": "mecanismos",
+   "hito": true,
+   "t": "Resolución 1503 del ECOSOC",
+   "x": "Crea un procedimiento confidencial para examinar quejas que revelen un cuadro persistente de violaciones graves.",
+   "p": "Es el antecedente del actual procedimiento de denuncia del Consejo de Derechos Humanos.",
+   "ir": "S:denuncia"
+  },
+  {
+   "f": "1975-02-27",
+   "tema": "mecanismos",
+   "hito": false,
+   "t": "Grupo de Trabajo sobre Chile",
+   "x": "Tras el golpe de 1973, la Comisión de Derechos Humanos crea un grupo de trabajo ad hoc para investigar la situación de derechos humanos en Chile.",
+   "p": "Sienta el precedente de los mandatos por país: un órgano político puede examinar un asunto interno de un Estado.",
+   "ir": "S:pe"
+  },
+  {
+   "f": "1976-01-03",
+   "tema": "normas",
+   "hito": false,
+   "t": "Entra en vigor el PIDESC",
+   "x": "El Pacto de Derechos Económicos, Sociales y Culturales entra en vigor tres meses después de la 35.ª ratificación.",
+   "p": "Nace la obligación de cumplimiento progresivo «hasta el máximo de los recursos de que disponga» el Estado.",
+   "ir": "T:IV-3"
+  },
+  {
+   "f": "1976-03-23",
+   "tema": "normas",
+   "hito": false,
+   "t": "Entra en vigor el PIDCP",
+   "x": "El Pacto de Derechos Civiles y Políticos y su primer Protocolo Facultativo entran en vigor; el Comité de Derechos Humanos se reúne por primera vez en 1977.",
+   "p": "Comienzan los informes periódicos y las quejas individuales ante un comité de tratado.",
+   "ir": "T:IV-4"
+  },
+  {
+   "f": "1979-12-18",
+   "tema": "normas",
+   "hito": true,
+   "t": "Se adopta la CEDAW",
+   "x": "La Asamblea General adopta la Convención sobre la Eliminación de Todas las Formas de Discriminación contra la Mujer (resolución 34/180).",
+   "p": "Es la «carta internacional de los derechos de la mujer». Entra en vigor el 3 de septiembre de 1981.",
+   "ir": "T:IV-8"
+  },
+  {
+   "f": "1980",
+   "tema": "mecanismos",
+   "hito": true,
+   "t": "Primer mandato temático: desapariciones forzadas",
+   "x": "La Comisión de Derechos Humanos crea el Grupo de Trabajo sobre Desapariciones Forzadas o Involuntarias (E/CN.4/RES/20 (XXXVI)).",
+   "p": "Inventa los mandatos temáticos: en lugar de señalar a un país, estudia un fenómeno en todo el mundo. Argentina había bloqueado una investigación por país.",
+   "ir": "M:desaparici|disappear"
+  },
+  {
+   "f": "1981-09-03",
+   "tema": "normas",
+   "hito": false,
+   "t": "Entra en vigor la CEDAW",
+   "x": "La Convención sobre la discriminación contra la mujer entra en vigor y se constituye su comité.",
+   "p": "En pocas décadas supera los 185 Estados parte.",
+   "ir": "T:IV-8"
+  },
+  {
+   "f": "1982",
+   "tema": "mecanismos",
+   "hito": false,
+   "t": "Relator sobre ejecuciones sumarias o arbitrarias",
+   "x": "Se crea el mandato de relator especial sobre ejecuciones sumarias o arbitrarias (E/RES/1982/35).",
+   "p": "Es uno de los mandatos temáticos más antiguos que siguen vigentes.",
+   "ir": "M:ejecucion|execution"
+  },
+  {
+   "f": "1984-12-10",
+   "tema": "normas",
+   "hito": true,
+   "t": "Se adopta la Convención contra la Tortura",
+   "x": "La Asamblea General adopta la CAT (resolución 39/46), exactamente 36 años después de la Declaración Universal.",
+   "p": "Obliga a los Estados a prevenir y castigar la tortura; entra en vigor el 26 de junio de 1987.",
+   "ir": "T:IV-9"
+  },
+  {
+   "f": "1985",
+   "tema": "mecanismos",
+   "hito": false,
+   "t": "Relator especial sobre la tortura",
+   "x": "Se crea el mandato de relator especial sobre la tortura y otros tratos o penas crueles, inhumanos o degradantes.",
+   "p": "Un mismo fenómeno queda vigilado por un tratado (CAT) y por un relator, que pueden actuar aunque el Estado no sea parte.",
+   "ir": "M:tortura|torture"
+  },
+  {
+   "f": "1986-12-04",
+   "tema": "normas",
+   "hito": false,
+   "t": "Declaración sobre el Derecho al Desarrollo",
+   "x": "La Asamblea General aprueba la Declaración sobre el Derecho al Desarrollo (resolución 41/128).",
+   "p": "Reconoce el desarrollo como derecho humano; tiene un mandato propio en el Consejo.",
+   "ir": "M:desarrollo|development"
+  },
+  {
+   "f": "1989-11-20",
+   "tema": "normas",
+   "hito": true,
+   "t": "Se adopta la Convención sobre los Derechos del Niño",
+   "x": "La Asamblea General adopta la CDN (resolución 44/25); entra en vigor el 2 de septiembre de 1990.",
+   "p": "Es el tratado más ratificado de la historia: casi todos los Estados son parte.",
+   "ir": "T:IV-11"
+  },
+  {
+   "f": "1990-12-18",
+   "tema": "normas",
+   "hito": false,
+   "t": "Convención sobre trabajadores migratorios",
+   "x": "La Asamblea General adopta la Convención Internacional sobre los trabajadores migratorios y sus familiares (resolución 45/158).",
+   "p": "Es el tratado básico con menos ratificaciones: muchos Estados de destino no la han firmado.",
+   "ir": "T:IV-13"
+  },
+  {
+   "f": "1993-06-25",
+   "tema": "normas",
+   "hito": true,
+   "t": "Conferencia Mundial de Viena",
+   "x": "La Conferencia Mundial de Derechos Humanos aprueba la Declaración y Programa de Acción de Viena: los derechos son universales, indivisibles, interdependientes e interrelacionados.",
+   "p": "Impulsa la creación del Alto Comisionado y fortalece los mecanismos de protección.",
+   "ir": "E:ACNUDH"
+  },
+  {
+   "f": "1993-12-20",
+   "tema": "fundacion",
+   "hito": true,
+   "t": "Se crea el Alto Comisionado para los Derechos Humanos",
+   "x": "La Asamblea General crea el cargo y la Oficina del Alto Comisionado (resolución 48/141), con sede en Ginebra.",
+   "p": "Da a los derechos humanos una oficina permanente dentro de la Secretaría, que apoya a todos los mecanismos.",
+   "ir": "E:ACNUDH"
+  },
+  {
+   "f": "1994-11-01",
+   "tema": "fundacion",
+   "hito": false,
+   "t": "El Consejo de Administración Fiduciaria suspende su actividad",
+   "x": "Con la independencia de Palaos, último territorio en fideicomiso, el órgano suspende sus operaciones.",
+   "p": "Es el único de los seis órganos principales que ya no funciona.",
+   "ir": "S:fid"
+  },
+  {
+   "f": "1998-07-17",
+   "tema": "paz",
+   "hito": true,
+   "t": "Se adopta el Estatuto de Roma",
+   "x": "Una conferencia diplomática en Roma adopta el tratado que crea la Corte Penal Internacional.",
+   "p": "Crea un tribunal permanente para el genocidio, los crímenes de lesa humanidad, de guerra y de agresión. Entra en vigor el 1 de julio de 2002.",
+   "ir": "E:CPI"
+  },
+  {
+   "f": "2000-05-25",
+   "tema": "normas",
+   "hito": false,
+   "t": "Protocolos facultativos de la CDN",
+   "x": "Se adoptan los protocolos sobre niños en conflictos armados y sobre venta de niños, prostitución y pornografía infantil.",
+   "p": "Amplían la protección de la niñez en dos campos específicos.",
+   "ir": "T:IV-11-b"
+  },
+  {
+   "f": "2000-07-28",
+   "tema": "mecanismos",
+   "hito": false,
+   "t": "Foro Permanente para las Cuestiones Indígenas",
+   "x": "El ECOSOC crea el Foro Permanente para las Cuestiones Indígenas (se constituye en 2002).",
+   "p": "Da a los pueblos indígenas un espacio propio dentro de la ONU.",
+   "ir": "E:FPCI"
+  },
+  {
+   "f": "2000-09-08",
+   "tema": "desarrollo",
+   "hito": true,
+   "t": "Declaración del Milenio",
+   "x": "Los jefes de Estado adoptan la Declaración del Milenio (resolución 55/2), de la que salen los Objetivos de Desarrollo del Milenio para 2015.",
+   "p": "Primer gran marco global de metas de desarrollo; precede a la Agenda 2030.",
+   "ir": "E:PNUD"
+  },
+  {
+   "f": "2002-12-18",
+   "tema": "normas",
+   "hito": false,
+   "t": "Protocolo Facultativo de la Convención contra la Tortura",
+   "x": "Se adopta el OPCAT, que crea un sistema de visitas preventivas a los lugares de detención.",
+   "p": "Introduce la prevención: el Subcomité (SPT) y los Mecanismos Nacionales de Prevención.",
+   "ir": "T:IV-9-b"
+  },
+  {
+   "f": "2005-09-16",
+   "tema": "paz",
+   "hito": false,
+   "t": "Responsabilidad de proteger",
+   "x": "La Cumbre Mundial 2005 reconoce la responsabilidad de proteger a las poblaciones del genocidio, los crímenes de guerra, la depuración étnica y los crímenes de lesa humanidad.",
+   "p": "Reformula el debate sobre la intervención y la soberanía.",
+   "ir": "S:cs"
+  },
+  {
+   "f": "2006-03-15",
+   "tema": "fundacion",
+   "hito": true,
+   "t": "La Asamblea crea el Consejo de Derechos Humanos",
+   "x": "La resolución 60/251 sustituye a la Comisión de Derechos Humanos por el Consejo, con 47 miembros, y crea el Examen Periódico Universal.",
+   "p": "Responde a la crisis de credibilidad de la Comisión. El Consejo hereda sus mecanismos y empieza a trabajar el 19 de junio de 2006.",
+   "ir": "S:cdh"
+  },
+  {
+   "f": "2006-12-13",
+   "tema": "normas",
+   "hito": true,
+   "t": "Se adopta la CDPD",
+   "x": "La Asamblea General adopta la Convención sobre los Derechos de las Personas con Discapacidad (resolución 61/106) y su Protocolo Facultativo.",
+   "p": "Es el primer gran tratado de derechos humanos del siglo XXI, con participación activa de las personas con discapacidad.",
+   "ir": "T:IV-15"
+  },
+  {
+   "f": "2006-12-20",
+   "tema": "normas",
+   "hito": false,
+   "t": "Se adopta la Convención contra las Desapariciones Forzadas",
+   "x": "La Asamblea General adopta la CED (resolución 61/177); entra en vigor el 23 de diciembre de 2010.",
+   "p": "Reconoce el derecho de las víctimas a la verdad y crea un comité con acciones urgentes.",
+   "ir": "T:IV-16"
+  },
+  {
+   "f": "2007-06-18",
+   "tema": "mecanismos",
+   "hito": true,
+   "t": "Construcción institucional del Consejo",
+   "x": "La resolución 5/1 del Consejo establece cómo funciona el EPU, el procedimiento de denuncia, los procedimientos especiales y el Comité Asesor.",
+   "p": "Es el «reglamento» del Consejo de Derechos Humanos.",
+   "ir": "S:cdh"
+  },
+  {
+   "f": "2007-09-13",
+   "tema": "normas",
+   "hito": false,
+   "t": "Declaración sobre los Pueblos Indígenas",
+   "x": "La Asamblea General adopta la Declaración de las Naciones Unidas sobre los Derechos de los Pueblos Indígenas (resolución 61/295).",
+   "p": "Fija un estándar mínimo de derechos de los pueblos indígenas.",
+   "ir": "M:indigena|indigenous"
+  },
+  {
+   "f": "2008-04-07",
+   "tema": "mecanismos",
+   "hito": true,
+   "t": "Primer Examen Periódico Universal",
+   "x": "Comienza el primer ciclo del EPU: todos los Estados miembros pasan por turnos ante sus pares.",
+   "p": "Es el único mecanismo que examina a todos los Estados por igual, incluidas las grandes potencias.",
+   "ir": "S:epu"
+  },
+  {
+   "f": "2008-12-10",
+   "tema": "normas",
+   "hito": false,
+   "t": "Protocolo Facultativo del PIDESC",
+   "x": "Se adopta el protocolo que permite quejas individuales sobre derechos económicos, sociales y culturales.",
+   "p": "Completa el sistema: ya se puede reclamar por vivienda, salud o educación ante el comité, igual que por derechos civiles.",
+   "ir": "T:IV-3-a"
+  },
+  {
+   "f": "2010-07-02",
+   "tema": "desarrollo",
+   "hito": true,
+   "t": "Se crea ONU Mujeres",
+   "x": "La Asamblea General fusiona cuatro entidades en ONU Mujeres (resolución 64/289).",
+   "p": "Concentra la acción de la ONU por la igualdad de género. No es el comité de la CEDAW.",
+   "ir": "E:ONUMUJERES"
+  },
+  {
+   "f": "2010-07-28",
+   "tema": "normas",
+   "hito": true,
+   "t": "El agua y el saneamiento, derechos humanos",
+   "x": "La Asamblea General reconoce el derecho humano al agua potable y al saneamiento (resolución 64/292).",
+   "p": "Abre la vía a considerar derechos nuevos y da base a un mandato de relator.",
+   "ir": "M:agua|water"
+  },
+  {
+   "f": "2011-12-19",
+   "tema": "normas",
+   "hito": false,
+   "t": "Protocolo de comunicaciones de la CDN",
+   "x": "Se adopta el tercer protocolo de la Convención sobre los Derechos del Niño: permite quejas individuales.",
+   "p": "La niñez también puede reclamar ante su comité.",
+   "ir": "T:IV-11-d"
+  },
+  {
+   "f": "2015-09-25",
+   "tema": "desarrollo",
+   "hito": true,
+   "t": "Agenda 2030 y los ODS",
+   "x": "La Asamblea General adopta «Transformar nuestro mundo: la Agenda 2030» (resolución 70/1) con 17 Objetivos de Desarrollo Sostenible.",
+   "p": "Marco mundial de desarrollo vinculado a los derechos humanos.",
+   "ir": "E:PNUD"
+  },
+  {
+   "f": "2016-09-19",
+   "tema": "fundacion",
+   "hito": false,
+   "t": "La OIM se vincula a la ONU",
+   "x": "La Organización Internacional para las Migraciones pasa a ser organización relacionada con la ONU.",
+   "p": "Refuerza la coordinación en migración.",
+   "ir": "E:OIM"
+  },
+  {
+   "f": "2018-12",
+   "tema": "desarrollo",
+   "hito": false,
+   "t": "Pactos Mundiales sobre Migración y sobre Refugiados",
+   "x": "La Asamblea General respalda el Pacto Mundial para una Migración Segura, Ordenada y Regular y el Pacto Mundial sobre los Refugiados.",
+   "p": "Marcos no vinculantes para la cooperación en migración y asilo.",
+   "ir": "E:ACNUR"
+  },
+  {
+   "f": "2022-07-28",
+   "tema": "normas",
+   "hito": true,
+   "t": "Derecho a un medio ambiente sano",
+   "x": "La Asamblea General reconoce el derecho humano a un medio ambiente limpio, saludable y sostenible (resolución 76/300).",
+   "p": "Refuerza los litigios climáticos ante comités y tribunales.",
+   "ir": "M:medio ambiente|environment"
+  },
+  {
+   "f": "2024-09-22",
+   "tema": "fundacion",
+   "hito": false,
+   "t": "Pacto para el Futuro",
+   "x": "La Asamblea General adopta el Pacto para el Futuro, que pide reformar la gobernanza mundial.",
+   "p": "Orienta el debate sobre la reforma de la ONU.",
+   "ir": "S:ag"
+  },
+  {
+   "f": "2025-03",
+   "tema": "fundacion",
+   "hito": false,
+   "t": "Iniciativa UN80",
+   "x": "El Secretario General lanza la iniciativa UN80 de reforma y ahorro ante la crisis de liquidez de la organización.",
+   "p": "La financiación de los derechos humanos depende sobre todo de contribuciones voluntarias; los recortes retrasan informes y sesiones.",
+   "ir": "S:sec"
+  },
+  {
+   "f": "2025-10-24",
+   "tema": "fundacion",
+   "hito": false,
+   "t": "80.º aniversario de la ONU",
+   "x": "La organización cumple ochenta años.",
+   "p": "Es un momento de balance sobre el sistema multilateral.",
+   "ir": "S:ag"
+  }
+ ]
+}
