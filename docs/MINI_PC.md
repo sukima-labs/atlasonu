@@ -1,16 +1,16 @@
 # Revisión automática desde un mini PC (opcional)
 
-## ¿Hace falta?
+## Papel del mini PC
 
-**No es imprescindible.** La página es estática y ya se actualiza sola: un flujo gratuito de GitHub Actions revisa las fuentes oficiales **a mediodía y a medianoche (hora de España)**, valida los datos y publica solo si todo está bien. No hay servidor que mantener.
+El mini PC es el **ejecutor principal** de la actualización: a las **12:00 y 00:00 (hora local, España)** revisa las fuentes oficiales de la ONU, valida los datos y publica en `main` solo si todo está bien. Sale por tu conexión doméstica, así que la Biblioteca Digital de la ONU no lo limita como a los servidores de GitHub.
 
-El mini PC sirve como **respaldo**: si GitHub se retrasa o la Biblioteca Digital de la ONU limita las consultas desde los servidores de GitHub, el mini PC (que sale por tu conexión doméstica) repite la revisión 23 minutos después. Si ya la hizo GitHub, el mini PC ve que no hay nada nuevo y no publica.
+El flujo de GitHub Actions (12:17 y 00:17 UTC) queda como **respaldo**: si el mini PC estaba apagado o falló, repite la revisión; si el mini PC ya publicó, GitHub ve que no hay nada nuevo.
 
-> Un «backend» propio (un servidor con API) no aporta nada aquí y añadiría riesgos de seguridad: lo que hace falta es una **tarea programada**, que es lo que se instala.
+> Hoy el mini PC solo ejecuta la **tarea programada**; el sitio sigue siendo estático en GitHub Pages. Si el proyecto llega a tener una API propia, se decide y documenta aparte.
 
 ## Requisitos
 
-- Mini PC con Linux (Debian/Ubuntu o similar) con `systemd`, encendido y con internet a las 12:40 y 00:40. Desactiva la suspensión.
+- Mini PC con Linux (Debian/Ubuntu o similar) con `systemd`, encendido y con internet a las 12:00 y 00:00. Desactiva la suspensión.
 - Hora correcta: `timedatectl` debe mostrar tu zona (por ejemplo `Europe/Madrid`).
 - Programas: `git python3 nodejs poppler-utils util-linux` y `openpyxl` de Python.
 
