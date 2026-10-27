@@ -15,7 +15,7 @@ Estados: ✅ cumple · 🟡 parcial · ❌ no implementado.
 | 9 | Selección de titulares | 🟡 | Secuencia del proceso; titulares actuales por mandato; sin datos históricos por proceso |
 | 10 | Autoría | ✅ | © y enlace visibles; licencia pendiente del autor |
 | 11 | Excel offline, HTML Pages | 🟡 | HTML sin conexión y Excel v0.7 (6 hojas); flujo `pages.yml` listo; pendiente activar Pages (un clic) |
-| 12 | Pruebas reales | 🟡 | 33 de lógica + 36 en Chromium; auditoría de enlaces (571; 0 rotos; 459 no concluyentes por antirrobot); muestreo de PDF 30/30. Sin auditoría de accesibilidad |
+| 12 | Pruebas reales | 🟡 | 42 de lógica + 42 en Chromium; auditoría de enlaces (571; 0 rotos; 459 no concluyentes por antirrobot); muestreo de PDF 30/30. Sin auditoría de accesibilidad |
 | 13 | Commits y Pages verificado | 🟡 | Commits publicados; URL pública por verificar tras fusionar en `main` y activar Pages |
 
 ## Qué corrigió esta versión respecto a v0.6
