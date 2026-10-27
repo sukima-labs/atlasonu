@@ -1,0 +1,23 @@
+// Pruebas que NO dependen de cifras exactas: sirven para validar cada actualización diaria automática de datos.
+const fs = require('fs'), vm = require('vm'), assert = require('assert'), path = require('path');
+const root = path.join(__dirname, '..');
+const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
+const script = html.match(/<script>([\s\S]*?)<\/script>/)[1];
+const ids = [...html.matchAll(/id="([^"]+)"/g)].map(x => x[1]);
+const els = Object.fromEntries(ids.map(id => [id, { id, value: '', innerHTML: '', textContent: '', classList: { toggle() {}, add() {} }, addEventListener() {}, dataset: {}, click() {} }]));
+const document = { getElementById(id) { if (!els[id]) throw Error('Unknown DOM id ' + id); return els[id]; }, querySelectorAll() { return []; }, createElement() { return { click() {} }; } };
+const ctx = vm.createContext({ document, window: { scrollTo() {} }, URL: { createObjectURL() { return ''; }, revokeObjectURL() {} }, Blob: function () {}, console, setTimeout, clearTimeout, fetch: undefined });
+vm.runInContext(fs.readFileSync(path.join(root, 'data', 'atlas-data.js'), 'utf8'), ctx);
+vm.runInContext(script, ctx, { timeout: 20000 });
+const run = f => vm.runInContext(f, ctx, { timeout: 10000 });
+let n = 0; const t = (name, fn) => { try { fn(); n++; } catch (e) { console.error('FALLA:', name, '→', e.message); process.exit(1); } };
+t('mandatos en rango', () => { const k = run('D.length'); assert.ok(k >= 45 && k <= 90, k); });
+t('todo mandato tiene acto de creación o aviso, nombre y año', () => assert.equal(run('D.filter(x=>!x.nombre||!x.nameEN||!(x.anio>1900)||!x.actos.length).length'), 0));
+t('todo acto localizado tiene registro', () => assert.equal(run('D.flatMap(x=>x.actos).filter(a=>/^VERIFICADO/.test(a.estado)&&!a.registro).length'), 0));
+t('≥95 % de las resoluciones tienen ruta al texto', () => { const a = run('Object.values(ACTOS).filter(x=>x.simbolo).length'), b = run('Object.values(ACTOS).filter(x=>x.simbolo&&x.texto&&(x.texto.fuentes.length||x.texto.informe_sesion.length)).length'); assert.ok(b / a >= 0.95, b + '/' + a); });
+t('países, regiones y mecanismos presentes', () => { assert.ok(run('PAISES.length') >= 185); assert.equal(run('PAISES.filter(p=>!p.region||!RID[p.region]).length'), 0); assert.ok(run('MEC.length') >= 20); });
+t('todo país con mandato por país existe y es de modalidad País', () => assert.equal(run('PAISES.filter(p=>p.mandato!==null&&D[p.mandato].alcance!=="País").length'), 0));
+t('los renderizados no lanzan errores', () => { run('compute();renderMandates();renderPaises();renderMec();calidad();for(let i=0;i<D.length;i++)details(i)'); });
+t('búsquedas de humo', () => { for (const q of ['tortura', 'desaparecidos', 'India', 'niños migrantes', 'A/HRC/RES/54/26']) { els.quick.value = q; run('smartRun()'); assert.ok(els.smartOut.innerHTML.length > 50, q); } });
+t('estado.json y historial coherentes', () => { const e = JSON.parse(fs.readFileSync(path.join(root, 'data', 'estado.json'), 'utf8')); assert.ok(e.revisado_el && e.contadores.mandatos >= 45); });
+console.log(JSON.stringify({ invariantes: n, ok: true }));

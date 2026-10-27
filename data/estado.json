@@ -1,0 +1,33 @@
+{
+ "revisado_el": "2026-10-27T17:58:05+00:00",
+ "datos_del": "2026-10-27",
+ "hubo_cambios_en_esta_revision": false,
+ "ultimo_cambio_el": "2026-10-27T17:56:01+00:00",
+ "huella": "",
+ "contadores": {
+  "mandatos": 57,
+  "actos": 421,
+  "localizados": 401,
+  "paises": 196,
+  "mecanismos": 25
+ },
+ "fuentes": [
+  {
+   "nombre": "Índice de mandatos de OHCHR",
+   "url": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM"
+  },
+  {
+   "nombre": "Biblioteca Digital de la ONU",
+   "url": "https://digitallibrary.un.org/"
+  },
+  {
+   "nombre": "Base de visitas de OHCHR",
+   "url": "https://spinternet.ohchr.org/ViewCountryVisits.aspx?visitType=all"
+  },
+  {
+   "nombre": "Base de comunicaciones de OHCHR (grupos regionales)",
+   "url": "https://spcommreports.ohchr.org/Tmsearch/TMDocuments"
+  }
+ ],
+ "ultimos_cambios": []
+}
