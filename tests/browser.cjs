@@ -193,6 +193,17 @@ const URL = process.env.ATLAS_URL || 'file://' + path.resolve(__dirname, '..', '
     await pg.tap('#burger'); await pg.waitForTimeout(350);
     ok(nom + ': al abrir el menú la pista se oculta y no vuelve', !(await pg.isVisible('#menuHint')) && (await pg.evaluate(() => localStorage.getItem('atlas_pista_menu'))) === '1');
     ok(nom + ': el botón abre el menú', (await pg.isVisible('#side')) && (await pg.getAttribute('#burger', 'aria-expanded')) === 'true');
+    // T28: con el menú abierto, deslizar el dedo mueve el menú (hasta su último elemento) y no la página de atrás; al cerrar, la página vuelve a donde estaba
+    { const cdp = await pg.context().newCDPSession(pg);
+      const desliza = async (x, y0, y1) => { await cdp.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x, y: y0 }] }); for (let i = 1; i <= 12; i++) { await cdp.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ x, y: y0 + (y1 - y0) * i / 12 }] }); await pg.waitForTimeout(16); } await cdp.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] }); await pg.waitForTimeout(300); };
+      await pg.evaluate(() => { menu(false); scrollTo({ top: 120, behavior: 'instant' }); }); await pg.waitForTimeout(150);
+      await pg.evaluate(() => menu(true)); await pg.waitForTimeout(350);
+      for (let i = 0; i < 4; i++) await desliza(Math.min(150, w / 3), h - 80, 80);
+      const e = await pg.evaluate(() => { const s = document.getElementById('side'); return { fin: s.scrollTop + s.clientHeight >= s.scrollHeight - 2, fondo: Math.round(scrollY), fijo: getComputedStyle(document.body).position }; });
+      ok(nom + ': el menú abierto se desliza hasta el final y el fondo no se mueve', e.fin && e.fondo === 0 && e.fijo === 'fixed');
+      await pg.evaluate(() => menu(false)); await pg.waitForTimeout(250);
+      ok(nom + ': al cerrar el menú la página vuelve a su posición', (await pg.evaluate(() => Math.round(scrollY))) === 120);
+      await pg.evaluate(() => { scrollTo({ top: 0, behavior: 'instant' }); menu(true); }); await pg.waitForTimeout(350); }
     await pg.tap('.nav button[data-page="tratados"]'); await pg.waitForTimeout(350);
     ok(nom + ': al elegir una pantalla se cierra el menú y se muestra', !(await pg.isVisible('#side')) && (await pg.isVisible('#tratados')));
     const malos = []; for (const id of ['inicio', 'explorar', 'sistema', 'paises', 'tratados', 'siglas', 'arqueologia', 'recuperar', 'mecanismos', 'codificacion', 'seleccion', 'auditoria', 'fuentes']) { await pg.evaluate(x => showPage(x), id); const d = await pg.evaluate(() => [document.documentElement.scrollWidth, innerWidth]); if (d[0] > d[1] + 1) malos.push(id); }
