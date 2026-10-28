@@ -41,6 +41,10 @@
     {
      "t": "Apartado de DIGNITYOS",
      "x": "Presentación general del proyecto, todavía sin lanzar y sin datos reales."
+    },
+    {
+     "t": "Contador de visitas propio",
+     "x": "La barra superior cuenta las visitas con un contador del propio proyecto: guarda solo el total y la cifra por país, sin IP ni cookies y sin servicios de terceros. Si el servicio está apagado, muestra «—» y la página sigue igual."
     }
    ]
   },
@@ -71,11 +75,6 @@
    "titulo": "Pendiente",
    "intro": "En la cola de trabajo, por orden aproximado. Una tarea cada vez.",
    "items": [
-    {
-     "t": "Contador de visitas propio",
-     "x": "Sustituir el contador externo por uno que no se lleve datos de nadie.",
-     "tag": "prioridad alta"
-    },
     {
      "t": "Revisión de uso de todas las pantallas",
      "x": "Sobre todo en el celular: tablas que pasan a tarjetas, buscador a mano, botones más grandes, contraste y accesibilidad."
