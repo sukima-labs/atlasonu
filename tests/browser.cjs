@@ -43,7 +43,10 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     await page.fill('#q', 'enforced disappearance'); await page.evaluate(() => filterMandates());
     ok(vp.name + ': búsqueda EN con sinónimos', /desaparici/i.test(await page.textContent('#mandBody')));
     await page.fill('#q', ''); await page.evaluate(() => filterMandates());
-    ok(vp.name + ': 57 mandatos listados', (await page.locator('#mandBody tr').count()) === 57);
+    ok(vp.name + ': 20 mandatos y «Mostrar más»', (await page.locator('#mandBody tr:not(.mas)').count()) === 20 && (await page.locator('#mandBody tr.mas button').count()) === 1);
+    await page.locator('#mandBody tr.mas button').click();
+    await page.locator('#mandBody tr.mas button').click();
+    ok(vp.name + ': 57 mandatos tras mostrar más', (await page.locator('#mandBody tr:not(.mas)').count()) === 57);
     await page.fill('#q', 'agua'); await page.evaluate(() => filterMandates());
     await page.locator('#mandBody button', { hasText: 'Ver ficha' }).first().click();
     ok(vp.name + ': clic en «Ver ficha» abre cronología', /Cadena de actos jurídicos/.test(await page.textContent('#cardsResults')) && /A\/HRC\/RES\/60\/9/.test(await page.textContent('#cardsResults')));
