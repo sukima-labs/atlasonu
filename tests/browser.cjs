@@ -2,6 +2,7 @@
 const { chromium } = require('playwright');
 const path = require('path'), assert = require('assert');
 const URL = process.env.ATLAS_URL || 'file://' + path.resolve(__dirname, '..', 'index.html');
+const esperaReposo = async page => { let a = -1; for (let i = 0; i < 40; i++) { await page.waitForTimeout(150); const y = await page.evaluate(() => scrollY); if (y === a) return; a = y; } }; // espera a que acabe el desplazamiento suave
 (async () => {
   const browser = await chromium.launch();
   // Las pruebas no deben salir a internet: la búsqueda en vivo (servicio del mini PC) se simula siempre vacía.
@@ -68,10 +69,10 @@ const URL = process.env.ATLAS_URL || 'file://' + path.resolve(__dirname, '..', '
     await page.fill('#pQ', 'India'); await page.getByRole('button', { name: 'Buscar' }).first().click(); await page.waitForFunction(() => /CCPR\/C\/IND\/CO\/4/.test(document.getElementById('pDocs').textContent), null, { timeout: 8000 }).catch(() => {});
     const dd = await page.textContent('#pDocs');
     ok(vp.name + ': la ficha tiene el menú «Qué quieres ver» con 8 saltos', (await page.locator('#pNav button').count()) === 8);
-    await page.locator('#pNav button', { hasText: 'EPU' }).click(); await page.waitForTimeout(900);
+    await page.locator('#pNav button', { hasText: 'EPU' }).click(); await esperaReposo(page);
     const epuY = await page.evaluate(() => document.getElementById('ps-epu').getBoundingClientRect().top);
     ok(vp.name + ': «EPU» lleva a su bloque', epuY >= -5 && epuY < vp.height * 0.5);
-    ok(vp.name + ': con la ficha abajo aparece «↑ Qué quieres ver» y vuelve al menú', await page.isVisible('#pTop') && (await page.click('#pTop'), await page.waitForTimeout(900), await page.evaluate(() => Math.abs(document.getElementById('pNav').getBoundingClientRect().top) < 90)));
+    ok(vp.name + ': con la ficha abajo aparece «↑ Qué quieres ver» y vuelve al menú', await page.isVisible('#pTop') && (await page.click('#pTop'), await esperaReposo(page), await page.evaluate(() => Math.abs(document.getElementById('pNav').getBoundingClientRect().top) < 90)));
     ok(vp.name + ': el menú de la ficha no desborda horizontalmente', await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1));
     await page.evaluate(() => showPage('sistema')); await page.click('.org-node:has-text("Examen Periódico")');
     ok(vp.name + ': Cómo funciona la ONU: al pulsar un recuadro aparece su detalle y de quién depende', /Examen Periódico Universal/.test(await page.textContent('#sisDetalle')) && /Depende de/.test(await page.textContent('#sisDetalle')));
