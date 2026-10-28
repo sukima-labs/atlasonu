@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh pr merge:*)",
+      "Bash(gh pr create:*)",
+      "Bash(gh pr checks:*)",
+      "Bash(gh pr view:*)",
+      "Bash(gh pr list:*)",
+      "Bash(git push origin:*)",
+      "Bash(git push -u origin:*)"
+    ],
+    "deny": [
+      "Bash(git push --force:*)",
+      "Bash(git push -f:*)",
+      "Bash(git push origin main --force:*)",
+      "Bash(rm -rf:*)",
+      "Bash(gh repo delete:*)",
+      "Bash(sudo:*)",
+      "Bash(tailscale funnel:*)"
+    ]
+  }
+}

@@ -3,6 +3,7 @@
 # Solo reescribe los datos si el contenido cambió; si los datos se degradan o falla la red, ABORTA sin publicar nada.
 set -euo pipefail
 cd "$(dirname "$0")/.."
+INICIO=$(date +%s)
 HOY=$(date -u +%F)
 PREV=$(mktemp); cp data/catalogo.json "$PREV"
 FP=$(python3 -I -c "import json;print(json.load(open('data/catalogo.json',encoding='utf-8'))['consultado'])")
@@ -13,7 +14,8 @@ python3 -I scripts/fetch_paises.py "$FP"
 python3 -I scripts/fetch_tratados.py "$FP"
 python3 -I scripts/fetch_tratados_texto.py
 python3 -I scripts/fetch_docs_pais.py
-python3 -I scripts/fetch_documentos_marco.py || echo "Documentos marco: no se pudieron actualizar; se conservan los anteriores."
+MARCO=ok
+python3 -I scripts/fetch_documentos_marco.py || { MARCO=conservado; echo "Documentos marco: no se pudieron actualizar; se conservan los anteriores."; }
 echo "pausa de 60 s para no saturar la Biblioteca Digital"; sleep 60
 for t in TM CM; do for l in en es; do
   curl -fsS -m 90 -L "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=$t&lang=$l" -o "$TMP/spin_${t}_$l.html"
@@ -32,7 +34,9 @@ if [ "$CAMBIO" = 1 ]; then
   python3 -I scripts/detectar_cambios.py "$PREV" data/catalogo.json "$HOY"
   python3 -I scripts/exportar_excel.py
 fi
-python3 -I scripts/fetch_noticias.py || echo "Noticias: no se pudieron actualizar; se conservan las anteriores."
+NOTICIAS=ok
+python3 -I scripts/fetch_noticias.py || { NOTICIAS=conservado; echo "Noticias: no se pudieron actualizar; se conservan las anteriores."; }
 python3 -I scripts/escribir_estado.py data/catalogo.json "$CAMBIO"
 node tests/invariantes.cjs
+python3 -I scripts/registrar_revision.py "$INICIO" "$CAMBIO" "$MARCO" "$NOTICIAS"
 echo "Revisión terminada. Cambios en los datos: $CAMBIO"
