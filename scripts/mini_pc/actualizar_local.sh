@@ -19,7 +19,7 @@ git config user.name  "atlas-onu-minipc"
 git config user.email "atlas-onu-minipc@users.noreply.github.com"
 git add data
 if git diff --cached --quiet; then echo "Nada que publicar."; exit 0; fi
-if git diff --cached --name-only | grep -qvE '^data/(estado.json|noticias.js|revisiones.json)$'; then
+if git diff --cached --name-only | grep -qvE '^data/(estado.json|noticias.js|noticias_archivo.json|revisiones.json)$'; then
   MSG="Actualización automática (mini PC): cambios en los datos oficiales ($(date -u +%F))"
 else
   MSG="Revisión de fuentes (mini PC): sin cambios ($(date -u +%F))"

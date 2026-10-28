@@ -1,5 +1,6 @@
 window.NOTICIAS={
  "fuente": "Noticias ONU (news.un.org)",
+ "actualizado": "2026-10-28T02:35:33Z",
  "temas": {
   "todas": [
    {
@@ -7,140 +8,160 @@ window.NOTICIAS={
     "fecha": "2026-10-27",
     "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542112",
     "resumen": "Un debate cargado de alta tensión diplomática se abrió este martes para dirimir una vez más la cuestión del bloqueo económico que el país norteamericano impuso a Cuba en 1960. Mañana miércoles, 28 de octubre, se celebrará la votación.",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/27-10-2015-Unsplash-Havana-Cuba-01.jpg/image560x340cropped.jpg"
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/27-10-2015-Unsplash-Havana-Cuba-01.jpg/image560x340cropped.jpg",
+    "destacada": false
    },
    {
     "titulo": "Emisiones, Ucrania, ébola, trabajo doméstico… Las noticias del martes",
     "fecha": "2026-10-27",
     "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542110",
     "resumen": "Los niveles récord de dióxido de carbono nos afectarán durante siglos. Ucrania: Los bombardeos amenazan con dejar a la población otro invierno sin calefacción. La OMS inicia un ensayo para comprobar si las vacunas protegen contra el ébola. El 83% de los…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/10/27-10-2026-Adobe-Stock-air-pollution.jpg/image560x340cropped.jpg"
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/10/27-10-2026-Adobe-Stock-air-pollution.jpg/image560x340cropped.jpg",
+    "destacada": false
    },
    {
     "titulo": "Los niveles récord de dióxido de carbono nos afectarán durante siglos",
     "fecha": "2026-10-27",
     "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542109",
     "resumen": "Las concentraciones de CO2 alcanzaron en 2025 un récord de 426,8 partes por millón, el 153 % del nivel preindustrial, y los niveles de metano y óxido nitroso también marcaron máximos históricos. Cada parte por millón adicional importa porque atrapa calor…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/10/27-10-2026-Adobe-Stock-air-pollution.jpg/image560x340cropped.jpg"
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/10/27-10-2026-Adobe-Stock-air-pollution.jpg/image560x340cropped.jpg",
+    "destacada": false
    },
    {
     "titulo": "Cisjordania: una comisión de investigación de la ONU acusa a Israel de “exterminio”",
     "fecha": "2026-10-26",
     "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542108",
     "resumen": "Un año después de concluir que se estaba cometiendo un genocidio en Gaza, una comisión independiente de investigación de la ONU acusa a Israel de cometer crímenes de lesa humanidad, incluido el exterminio, contra la población palestina de Cisjordania. Su…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/10-12-2025-UNICEF-Gaza-01.jpg/image560x340cropped.jpg"
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/10-12-2025-UNICEF-Gaza-01.jpg/image560x340cropped.jpg",
+    "destacada": false
    },
    {
     "titulo": "Palestina, Ucrania, niños en conflictos, Ébola… Las noticias del lunes",
     "fecha": "2026-10-26",
     "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542106",
     "resumen": "Una Comisión acusa a Israel de crímenes de guerra en los territorios palestinos ocupados, en un contexto de genocidio continuado en Gaza. Acusan a Rusia de crímenes de guerra por sus ataques a la energía en Ucrania. Denuncian récord de violaciones graves…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/09/11-09-2026_UNICEF_West_Bank.jpg/image560x340cropped.jpg"
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/09/11-09-2026_UNICEF_West_Bank.jpg/image560x340cropped.jpg",
+    "destacada": false
    },
    {
     "titulo": "Niños en conflictos: 30 años de promesas y un número récord de violaciones",
     "fecha": "2026-10-26",
     "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542105",
     "resumen": "En 2025 se registraron 38.558 violaciones graves, un récord desde la creación del mandato en 1996, y por primera vez las fuerzas gubernamentales son las principales responsables. UNICEF alerta de que más del 70 % de los niños muertos o mutilados lo fueron…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/08/13-08-2026-UNICEF-Gaza-03.jpg/image560x340cropped.jpg"
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/08/13-08-2026-UNICEF-Gaza-03.jpg/image560x340cropped.jpg",
+    "destacada": true
    },
    {
     "titulo": "Una Comisión acusa a Rusia de crímenes de guerra por sus ataques a la energía en Ucrania",
     "fecha": "2026-10-26",
     "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542104",
     "resumen": "La Comisión de la ONU advierte de que \"el próximo invierno será más difícil de soportar\" debido a los ataques rusos a la energía. La investigación también documenta la imposición de la llamada educación patriótica y el entrenamiento militar a los niños…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/10/19-10-2026-UNOCHA-Ukraine-06.jpg/image560x340cropped.jpg"
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/10/19-10-2026-UNOCHA-Ukraine-06.jpg/image560x340cropped.jpg",
+    "destacada": true
    },
    {
     "titulo": "Ébola: responsables de la ONU condenan el asesinato de una enfermera en la República Democrática del Congo",
     "fecha": "2026-10-26",
     "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542103",
     "resumen": "Una enfermera que respondía a una alerta de ébola fue asesinada y otro trabajador sanitario resultó gravemente herido. \"Condeno enérgicamente este ataque y pido una investigación exhaustiva\", declara el coordinador de la ONU para el ébola, Julien Harneis,…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/06/19-06-2026-WHO-DR-Congo-ebola-02.jpg/image560x340cropped.jpg"
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/06/19-06-2026-WHO-DR-Congo-ebola-02.jpg/image560x340cropped.jpg",
+    "destacada": false
    },
    {
     "titulo": "Construyendo Futuros: el reto de llevar la educación a las fronteras de Venezuela",
     "fecha": "2026-10-24",
     "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542101",
     "resumen": "La ONG, nacida del sueño de una adolescente de 17 años, cuenta hoy con más de 150 profesionales y ha impactado a más de 450.000 personas en el país. Su directora general, Jennifer Belisario, explica en una entrevista los retos de operar en zonas remotas, la…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/10/23-10-2026_OCHA_Venezuela_NGO_1.jpg/image560x340cropped.jpg"
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/10/23-10-2026_OCHA_Venezuela_NGO_1.jpg/image560x340cropped.jpg",
+    "destacada": false
    },
    {
     "titulo": "Sudán: los ataques con drones matan al menos a 306 personas en tres semanas",
     "fecha": "2026-10-23",
     "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542100",
     "resumen": "Los ataques han alcanzado viviendas, mercados, hospitales y centros de acogida, objetivos tanto de las fuerzas gubernamentales y de las RSF. \"El creciente uso de drones, que ya representa la mayoría de las muertes civiles, está cobrando un precio horrible\",…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/14-05-2026-UNOCHA-Sudan-03.jpg/image560x340cropped.jpg"
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/14-05-2026-UNOCHA-Sudan-03.jpg/image560x340cropped.jpg",
+    "destacada": false
    },
    {
     "titulo": "Cisjordania, Sudán, ébola, inteligencia artificial… Las noticias del viernes",
     "fecha": "2026-10-23",
     "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542098",
     "resumen": "ONU Derechos Humanos denuncia que el cierre total de Cisjordania agravará la situación de los palestinos. Sudán: las mujeres siguen sufriendo las consecuencias de la violencia en El Fasher. El brote de ébola en RD Congo supera los 9700 casos. Un comité…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/08/19-08-2026-UNICEF-West-Bank-01.jpg/image560x340cropped.jpg"
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/08/19-08-2026-UNICEF-West-Bank-01.jpg/image560x340cropped.jpg",
+    "destacada": true
    },
    {
     "titulo": "Yemen: crece la preocupación por la ciudad de Taiz mientras la ayuda no puede entrar",
     "fecha": "2026-10-23",
     "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542097",
     "resumen": "La ciudad yemení de Taiz lleva 20 días cercada, con más de 800.000 personas desconectadas de la asistencia y el precio del agua triplicado, mientras los combates impiden entrar y salir. La producción de agua ha caído a la mitad y más de 52.000 niños sufren…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/10/16-10-2026-WFP-Yemen-02.jpg/image560x340cropped.jpg"
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/10/16-10-2026-WFP-Yemen-02.jpg/image560x340cropped.jpg",
+    "destacada": false
    },
    {
     "titulo": "Coste de la vida, crecimiento en América Latina, el Niño, Corte Penal Internacional… Las noticias del jueves",
     "fecha": "2026-10-22",
     "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542094",
     "resumen": "\"Aten cabos\" entre las protestas callejeras y la agitación global, pide Guterres. La CEPAL rebaja al 2,0 % el crecimiento de América Latina en 2026 por las tensiones geopolíticas. El Niño agrava la sequía y el hambre en Centroamérica. La Corte Penal…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/10/22-10-2026-Adobe-Stock-France-protest.jpg/image560x340cropped.jpg"
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/10/22-10-2026-Adobe-Stock-France-protest.jpg/image560x340cropped.jpg",
+    "destacada": false
    },
    {
     "titulo": "Los equipos de respuesta al ébola, bajo presión mientras el brote se expande",
     "fecha": "2026-10-22",
     "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542095",
     "resumen": "El brote de ébola en la República Democrática del Congo alcanza una octava provincia, Nord Ubangi, y suma 9552 infecciones confirmadas y más de 4600 muertes, con casi seis de cada diez fallecimientos fuera de los centros de salud. Nigeria confirma su primer…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/08/26-08-2026-UNOCHA-DR-Congo-ebola-01.jpg/image560x340cropped.jpg"
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/08/26-08-2026-UNOCHA-DR-Congo-ebola-01.jpg/image560x340cropped.jpg",
+    "destacada": false
    },
    {
     "titulo": "La CEPAL rebaja al 2,0 % el crecimiento de América Latina en 2026 por las tensiones geopolíticas",
     "fecha": "2026-10-22",
     "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542093",
     "resumen": "Además, la menor creación de empleo limita los ingresos y el consumo, y dificulta reducir la informalidad. advierte el organismo, que ve un panorama desigual: América del Sur crecerá un 2,1 % y el Caribe un 7,4 %, pero sin Guyana se quedaría en un 1,2 %.",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/02-12-25-Unsplash-cell-phone.jpg/image560x340cropped.jpg"
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/02-12-25-Unsplash-cell-phone.jpg/image560x340cropped.jpg",
+    "destacada": false
    },
    {
     "titulo": "\"Unan los puntos\" entre las protestas callejeras y la agitación global, pide Guterres",
     "fecha": "2026-10-22",
     "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542092",
     "resumen": "La desigualdad es el combustible de las protestas y de la guerra. \"En todas partes aumentan las presiones por el precio de los alimentos, el combustible y otros básicos. Los tipos de interés han subido, para las personas y los países. Y para los jóvenes, la…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/10/22-10-2026-Adobe-Stock-protesters.jpg/image560x340cropped.jpg"
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/10/22-10-2026-Adobe-Stock-protesters.jpg/image560x340cropped.jpg",
+    "destacada": false
    },
    {
     "titulo": "Las agencias de la ONU piden ayuda para proteger a los más vulnerables de un El Niño sin precedentes",
     "fecha": "2026-10-21",
     "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542091",
     "resumen": "El Pacífico tropical podría alcanzar los 3,8 °C por encima de la media entre noviembre y enero, un nivel fuera de los registros. Unos 50 millones de personas podrían enfrentar más hambre, y la ONU ha liberado más de 50 millones de dólares para 11 países en…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/10/06-10-2026-WFP-Honduras-drought-02.jpg/image560x340cropped.jpg"
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/10/06-10-2026-WFP-Honduras-drought-02.jpg/image560x340cropped.jpg",
+    "destacada": false
    },
    {
     "titulo": "Cambio climático, El Niño, ébola, migrantes… Las noticias del miércoles",
     "fecha": "2026-10-21",
     "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542089",
     "resumen": "El mundo debe reducir las emisiones un 18% antes de 2030. El Niño amenaza con agravar el hambre de 50 millones de personas. Nigeria confirma un caso importado de ébola y vigila a 44 contactos. El tráfico de migrantes por mar hacia Europa generó hasta 509…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/09/03-09-2026-Climate-Visuals-Poland.jpg/image560x340cropped.jpg"
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/09/03-09-2026-Climate-Visuals-Poland.jpg/image560x340cropped.jpg",
+    "destacada": false
    },
    {
     "titulo": "Sudán: se reanudan los esfuerzos de paz para poner fin a la \"guerra de drones\" que alimenta la crisis humanitaria",
     "fecha": "2026-10-21",
     "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542088",
     "resumen": "Casi 34 millones de personas necesitan ayuda humanitaria en Sudán y ocho millones de niños están fuera de la escuela, mientras las conversaciones de paz se reanudan en Ginebra sin la presencia del Gobierno sudanés ni de las RSF. \"La guerra en Sudán se ha…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/10/21_10_26_UNOG_Sudan_meeting_1.jpg/image560x340cropped.jpg"
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/10/21_10_26_UNOG_Sudan_meeting_1.jpg/image560x340cropped.jpg",
+    "destacada": false
    },
    {
     "titulo": "Es necesario recortar las emisiones un 18 % en cuatro años para limitar el pico de temperatura a 1,7 grados",
     "fecha": "2026-10-21",
     "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542087",
     "resumen": "El mundo superará el umbral de 1,5 °C fijado en el Acuerdo de París, pero el pico de calentamiento podría limitarse a 1,7-1,8 °C si las emisiones caen un 18 % para 2030, un 45 % para 2035 y un 69 % cinco años después. Las emisiones globales se estancaron en…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/08/12-08-2026-UNDP_Morocco_Electric_Bus.jpg/image560x340cropped.jpg"
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/08/12-08-2026-UNDP_Morocco_Electric_Bus.jpg/image560x340cropped.jpg",
+    "destacada": false
    }
   ],
   "derechos": [
