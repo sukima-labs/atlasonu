@@ -11,7 +11,13 @@ cuerpo=$'Cambio de la tarea en curso.\n\n🤖 Generated with [Claude Code](https
 reintenta git push -q -u origin "$rama" || exit 1
 gh pr view "$rama" --json number >/dev/null 2>&1 || reintenta gh pr create --title "$titulo" --body "$cuerpo" || exit 1
 sleep 8
-reintenta gh pr checks "$rama" --watch --fail-fast >/dev/null || { echo "El CI falló: no se fusiona."; exit 1; }
+for n in $(seq 1 90); do
+  est=$(gh pr checks "$rama" 2>/dev/null) || { sleep 10; continue; }   # sin red: se vuelve a intentar
+  echo "$est" | grep -qE '\sfail' && { echo "El CI falló: no se fusiona."; exit 1; }
+  echo "$est" | grep -qE '\s(pending|queued|in_progress)' || { [ -n "$est" ] && break; }
+  sleep 10
+done
+[ "${n:-0}" -ge 90 ] && { echo "El CI no terminó a tiempo."; exit 1; }
 reintenta gh pr merge "$rama" --merge --delete-branch || exit 1
 git checkout -q main && reintenta git pull -q
 git branch -D "$rama" -q 2>/dev/null
