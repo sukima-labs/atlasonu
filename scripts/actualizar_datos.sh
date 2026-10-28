@@ -31,6 +31,7 @@ if [ "$CAMBIO" = 1 ]; then
   python3 -I scripts/detectar_cambios.py "$PREV" data/catalogo.json "$HOY"
   python3 -I scripts/exportar_excel.py
 fi
+python3 -I scripts/fetch_noticias.py || echo "Noticias: no se pudieron actualizar; se conservan las anteriores."
 python3 -I scripts/escribir_estado.py data/catalogo.json "$CAMBIO"
 node tests/invariantes.cjs
 echo "Revisión terminada. Cambios en los datos: $CAMBIO"
