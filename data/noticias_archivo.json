@@ -1,6 +1,6 @@
 {
 "fuente": "Noticias ONU (news.un.org)",
-"actualizado": "2026-10-28T02:35:33Z",
+"actualizado": "2026-10-28T17:21:23Z",
 "total": 52,
 "notas": [
 {
@@ -9,8 +9,8 @@
 "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542112",
 "resumen": "Un debate cargado de alta tensión diplomática se abrió este martes para dirimir una vez más la cuestión del bloqueo económico que el país norteamericano impuso a Cuba en 1960. Mañana miércoles, 28 de octubre, se celebrará la votación.",
 "visto": "2026-10-28",
-"derechos": false,
-"americas": false
+"derechos": true,
+"americas": true
 },
 {
 "titulo": "Emisiones, Ucrania, ébola, trabajo doméstico… Las noticias del martes",
