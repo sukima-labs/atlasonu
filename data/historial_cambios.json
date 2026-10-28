@@ -1,1 +1,15 @@
-[]
+[
+ {
+  "fecha": "2026-10-28",
+  "cambios": [
+   {
+    "tipo": "visita",
+    "texto": "Australia: visita programada"
+   },
+   {
+    "tipo": "texto",
+    "texto": "A/RES/60/251: ya hay PDF propio (antes: PDF_PROPIO)"
+   }
+  ]
+ }
+]
