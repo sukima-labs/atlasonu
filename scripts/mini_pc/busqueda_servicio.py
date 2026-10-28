@@ -100,6 +100,9 @@ class H(BaseHTTPRequestHandler):
         self.send_response(204)
         self._cors()
         self.send_header("Access-Control-Allow-Methods", "GET")
+        # Chrome exige este permiso si el visitante resuelve el servicio a una IP privada (p. ej. con Tailscale activo)
+        if self.headers.get("Access-Control-Request-Private-Network") == "true":
+            self.send_header("Access-Control-Allow-Private-Network", "true")
         self.end_headers()
 
     def do_GET(self):
