@@ -3406,6 +3406,10 @@
      {
       "t": "Enlace a las recomendaciones del EPU",
       "x": "En la sección EPU de cada ficha, un enlace a la base de UPR Info (organización independiente) donde se ven las recomendaciones aceptadas y las que el Estado solo «tomó nota». ATLAS no copia esos datos."
+     },
+     {
+      "t": "Grupos de trabajo intergubernamentales",
+      "x": "En «Otros mecanismos» hay 8 grupos de trabajo con su resolución creadora comprobada en la Biblioteca Digital: EPU, comunicaciones y situaciones (denuncias), derecho al desarrollo, empresas transnacionales, campesinos, empresas militares y de seguridad privadas, y envejecimiento. Los 7 grupos de procedimientos especiales ya salen en «Explorar mandatos»."
      }
     ]
    },
@@ -3506,8 +3510,8 @@
       "tag": "prioridad baja"
      },
      {
-      "t": "Grupos de trabajo",
-      "x": "Inventario de los grupos de trabajo del sistema de derechos humanos (de procedimientos especiales, intergubernamentales del Consejo, del EPU y de la Asamblea) con su mandato, composición y fuente."
+      "t": "Grupos de trabajo: lo que falta",
+      "x": "Ya están los grupos intergubernamentales del Consejo y de la Asamblea, el del EPU y los del procedimiento de denuncia. Faltan los grupos de los comités de tratados, otros grupos históricos y, para cada uno, su composición detallada."
      },
      {
       "t": "Comunicaciones de detención arbitraria y desapariciones forzadas",
@@ -6286,7 +6290,7 @@
    "mandato": 46,
    "titulares_de": [],
    "comisiones": [
-    20
+    28
    ],
    "region": "AFR",
    "region_origen": "oficial (base de comunicaciones de OHCHR)",
@@ -13907,7 +13911,7 @@
    "mandato": null,
    "titulares_de": [],
    "comisiones": [
-    18
+    26
    ],
    "region": "AFR",
    "region_origen": "oficial (base de comunicaciones de OHCHR)",
@@ -15967,7 +15971,7 @@
    "mandato": 53,
    "titulares_de": [],
    "comisiones": [
-    21
+    29
    ],
    "region": "ASP",
    "region_origen": "oficial (base de comunicaciones de OHCHR)",
@@ -18609,7 +18613,7 @@
    "mandato": 49,
    "titulares_de": [],
    "comisiones": [
-    19
+    27
    ],
    "region": "ASP",
    "region_origen": "oficial (base de comunicaciones de OHCHR)",
@@ -18676,7 +18680,7 @@
    "mandato": 56,
    "titulares_de": [],
    "comisiones": [
-    17
+    25
    ],
    "region": "ASP",
    "region_origen": "oficial (base de comunicaciones de OHCHR)",
@@ -21063,7 +21067,7 @@
    "mandato": 54,
    "titulares_de": [],
    "comisiones": [
-    23
+    31
    ],
    "region": "OTH",
    "region_origen": "oficial (base de comunicaciones de OHCHR)",
@@ -21867,7 +21871,7 @@
     }
    ],
    "comisiones": [
-    24
+    32
    ],
    "region": "EEG",
    "region_origen": "oficial (base de comunicaciones de OHCHR)",
@@ -22384,7 +22388,7 @@
    "mandato": null,
    "titulares_de": [],
    "comisiones": [
-    22
+    30
    ],
    "region": "GRU",
    "region_origen": "oficial (base de comunicaciones de OHCHR)",
@@ -23953,6 +23957,321 @@
        "Français": "https://digitallibrary.un.org/record/626770/files/A_HRC_6_22-FR.pdf",
        "Русский": "https://digitallibrary.un.org/record/626770/files/A_HRC_6_22-RU.pdf",
        "中文": "https://digitallibrary.un.org/record/626770/files/A_HRC_6_22-ZH.pdf"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "categoria": "Grupo de trabajo intergubernamental",
+   "siglas": "GT EPU",
+   "nombre": "Grupo de Trabajo sobre el Examen Periódico Universal",
+   "nameEN": "Working Group on the Universal Periodic Review",
+   "simbolo_semilla": "A/HRC/RES/5/1",
+   "acto": "Modalidades del EPU: lo forman los 47 miembros del Consejo (CDH, cap. I)",
+   "adopcion": null,
+   "entrada_vigor": null,
+   "miembros": 47,
+   "estado": "VERIFICADO",
+   "simbolo": "A/HRC/RES/5/1",
+   "titulo_oficial": "Institution-building of the United Nations Human Rights Council",
+   "adoptada": "2007-06-18",
+   "registro": "https://digitallibrary.un.org/record/603041",
+   "coincidencia_titulo": 1.0,
+   "texto": {
+    "estado": "TEXTO_EN_INFORME",
+    "fuentes": [],
+    "descartadas_por_no_coincidir": [],
+    "informe_sesion": [
+     {
+      "simbolo": "A/HRC/5/21",
+      "paginas": "4–37",
+      "registro": "https://digitallibrary.un.org/record/610953",
+      "pdf": {
+       "العربية": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-AR.pdf",
+       "en": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-EN.pdf",
+       "Español": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-ES.pdf",
+       "Français": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-FR.pdf",
+       "Русский": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-RU.pdf",
+       "中文": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-ZH.pdf"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "categoria": "Grupo de trabajo intergubernamental",
+   "siglas": "GT Comunicaciones",
+   "nombre": "Grupo de Trabajo sobre las Comunicaciones (procedimiento de denuncia)",
+   "nameEN": "Working Group on Communications",
+   "simbolo_semilla": "A/HRC/RES/5/1",
+   "acto": "Procedimiento de denuncia: examina las comunicaciones recibidas (CDH, cap. IV)",
+   "adopcion": null,
+   "entrada_vigor": null,
+   "miembros": 5,
+   "estado": "VERIFICADO",
+   "simbolo": "A/HRC/RES/5/1",
+   "titulo_oficial": "Institution-building of the United Nations Human Rights Council",
+   "adoptada": "2007-06-18",
+   "registro": "https://digitallibrary.un.org/record/603041",
+   "coincidencia_titulo": 1.0,
+   "texto": {
+    "estado": "SIN_COPIA_LOCALIZADA",
+    "fuentes": [],
+    "descartadas_por_no_coincidir": [],
+    "informe_sesion": []
+   }
+  },
+  {
+   "categoria": "Grupo de trabajo intergubernamental",
+   "siglas": "GT Situaciones",
+   "nombre": "Grupo de Trabajo sobre las Situaciones (procedimiento de denuncia)",
+   "nameEN": "Working Group on Situations",
+   "simbolo_semilla": "A/HRC/RES/5/1",
+   "acto": "Procedimiento de denuncia: señala al Consejo patrones de violaciones graves (CDH, cap. IV)",
+   "adopcion": null,
+   "entrada_vigor": null,
+   "miembros": 5,
+   "estado": "VERIFICADO",
+   "simbolo": "A/HRC/RES/5/1",
+   "titulo_oficial": "Institution-building of the United Nations Human Rights Council",
+   "adoptada": "2007-06-18",
+   "registro": "https://digitallibrary.un.org/record/603041",
+   "coincidencia_titulo": 1.0,
+   "texto": {
+    "estado": "SIN_COPIA_LOCALIZADA",
+    "fuentes": [],
+    "descartadas_por_no_coincidir": [],
+    "informe_sesion": []
+   }
+  },
+  {
+   "categoria": "Grupo de trabajo intergubernamental",
+   "siglas": "GT Derecho al desarrollo",
+   "nombre": "Grupo de Trabajo de composición abierta sobre el derecho al desarrollo",
+   "nameEN": "Open-ended Working Group on the Right to Development",
+   "simbolo_semilla": "E/CN.4/RES/1998/72",
+   "acto": "Creación del Grupo de Trabajo (Comisión de Derechos Humanos)",
+   "adopcion": null,
+   "entrada_vigor": null,
+   "miembros": null,
+   "estado": "VERIFICADO",
+   "simbolo": "E/CN.4/RES/1998/72",
+   "titulo_oficial": "The right to development",
+   "adoptada": "1998",
+   "registro": "https://digitallibrary.un.org/record/255516",
+   "coincidencia_titulo": 1.0,
+   "texto": {
+    "estado": "TEXTO_EN_INFORME",
+    "fuentes": [],
+    "descartadas_por_no_coincidir": [],
+    "informe_sesion": [
+     {
+      "simbolo": "E/1998/23",
+      "paginas": "229–234",
+      "registro": "https://digitallibrary.un.org/record/263224",
+      "pdf": {
+       "العربية": "https://digitallibrary.un.org/record/263224/files/E_1998_23--E_CN.4_1998_177-AR.pdf",
+       "中文": "https://digitallibrary.un.org/record/263224/files/E_1998_23--E_CN.4_1998_177-ZH.pdf",
+       "en": "https://digitallibrary.un.org/record/263224/files/E_1998_23--E_CN.4_1998_177-EN.pdf",
+       "fr": "https://digitallibrary.un.org/record/263224/files/E_1998_23--E_CN.4_1998_177-FR.pdf",
+       "Русский": "https://digitallibrary.un.org/record/263224/files/E_1998_23--E_CN.4_1998_177-RU.pdf",
+       "es": "https://digitallibrary.un.org/record/263224/files/E_1998_23--E_CN.4_1998_177-ES.pdf"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "categoria": "Grupo de trabajo intergubernamental",
+   "siglas": "GTIG Empresas",
+   "nombre": "Grupo de Trabajo intergubernamental de composición abierta sobre las empresas transnacionales y otras empresas con respecto a los derechos humanos",
+   "nameEN": "Open-ended Intergovernmental Working Group on Transnational Corporations and Other Business Enterprises",
+   "simbolo_semilla": "A/HRC/RES/26/9",
+   "acto": "Creación del Grupo para elaborar un instrumento vinculante (CDH)",
+   "adopcion": null,
+   "entrada_vigor": null,
+   "miembros": null,
+   "estado": "VERIFICADO",
+   "simbolo": "A/HRC/RES/26/9",
+   "titulo_oficial": "Elaboration of an international legally binding instrument on transnational corporations and other business enterprises with respect to human rights",
+   "adoptada": "2014-06-26",
+   "registro": "https://digitallibrary.un.org/record/775715",
+   "coincidencia_titulo": 1.0,
+   "texto": {
+    "estado": "TEXTO_DIRECTO",
+    "fuentes": [
+     {
+      "tipo": "registro",
+      "lengua": "en",
+      "url": "https://digitallibrary.un.org/record/775715/files/A_HRC_RES_26_9-EN.pdf",
+      "validado": null
+     },
+     {
+      "tipo": "registro",
+      "lengua": "es",
+      "url": "https://digitallibrary.un.org/record/775715/files/A_HRC_RES_26_9-ES.pdf",
+      "validado": null
+     },
+     {
+      "tipo": "registro",
+      "lengua": "fr",
+      "url": "https://digitallibrary.un.org/record/775715/files/A_HRC_RES_26_9-FR.pdf",
+      "validado": null
+     }
+    ],
+    "descartadas_por_no_coincidir": [],
+    "informe_sesion": []
+   }
+  },
+  {
+   "categoria": "Grupo de trabajo intergubernamental",
+   "siglas": "GTIG Campesinos",
+   "nombre": "Grupo de Trabajo intergubernamental de composición abierta sobre los derechos de los campesinos y de otras personas que trabajan en las zonas rurales",
+   "nameEN": "Open-ended Intergovernmental Working Group on the rights of peasants and other people working in rural areas",
+   "simbolo_semilla": "A/HRC/RES/21/19",
+   "acto": "Creación del Grupo para negociar una declaración (CDH)",
+   "adopcion": null,
+   "entrada_vigor": null,
+   "miembros": null,
+   "estado": "VERIFICADO",
+   "simbolo": "A/HRC/RES/21/19",
+   "titulo_oficial": "Promotion and protection of the human rights of peasants and other people working in rural areas",
+   "adoptada": "2012-09-27",
+   "registro": "https://digitallibrary.un.org/record/736819",
+   "coincidencia_titulo": 1.0,
+   "texto": {
+    "estado": "TEXTO_DIRECTO",
+    "fuentes": [
+     {
+      "tipo": "registro",
+      "lengua": "en",
+      "url": "https://digitallibrary.un.org/record/736819/files/A_HRC_RES_21_19-EN.pdf",
+      "validado": null
+     },
+     {
+      "tipo": "registro",
+      "lengua": "es",
+      "url": "https://digitallibrary.un.org/record/736819/files/A_HRC_RES_21_19-ES.pdf",
+      "validado": null
+     },
+     {
+      "tipo": "registro",
+      "lengua": "fr",
+      "url": "https://digitallibrary.un.org/record/736819/files/A_HRC_RES_21_19-FR.pdf",
+      "validado": null
+     }
+    ],
+    "descartadas_por_no_coincidir": [],
+    "informe_sesion": []
+   }
+  },
+  {
+   "categoria": "Grupo de trabajo intergubernamental",
+   "siglas": "GTIG Empresas de seguridad",
+   "nombre": "Grupo de Trabajo intergubernamental de composición abierta sobre las empresas militares y de seguridad privadas",
+   "nameEN": "Open-ended Intergovernmental Working Group on Private Military and Security Companies",
+   "simbolo_semilla": "A/HRC/RES/15/26",
+   "acto": "Creación del Grupo para estudiar un marco regulatorio (CDH)",
+   "adopcion": null,
+   "entrada_vigor": null,
+   "miembros": null,
+   "estado": "VERIFICADO",
+   "simbolo": "A/HRC/RES/15/26",
+   "titulo_oficial": "Open-Ended Intergovernmental Working Group to Consider the Possibility of Elaborating an International Regulatory Framework on the Regulation, Monitoring and Oversight of the Activities of Private Military and Security Companies",
+   "adoptada": "2010-10-01",
+   "registro": "https://digitallibrary.un.org/record/693077",
+   "coincidencia_titulo": 1.0,
+   "texto": {
+    "estado": "TEXTO_DIRECTO",
+    "fuentes": [
+     {
+      "tipo": "registro",
+      "lengua": "en",
+      "url": "https://digitallibrary.un.org/record/693077/files/A_HRC_RES_15_26-EN.pdf",
+      "validado": null
+     },
+     {
+      "tipo": "registro",
+      "lengua": "es",
+      "url": "https://digitallibrary.un.org/record/693077/files/A_HRC_RES_15_26-ES.pdf",
+      "validado": null
+     },
+     {
+      "tipo": "registro",
+      "lengua": "fr",
+      "url": "https://digitallibrary.un.org/record/693077/files/A_HRC_RES_15_26-FR.pdf",
+      "validado": null
+     }
+    ],
+    "descartadas_por_no_coincidir": [],
+    "informe_sesion": []
+   }
+  },
+  {
+   "categoria": "Grupo de trabajo intergubernamental",
+   "siglas": "GTCA Envejecimiento",
+   "nombre": "Grupo de Trabajo de composición abierta sobre el envejecimiento (Asamblea General)",
+   "nameEN": "Open-ended Working Group on Ageing",
+   "simbolo_semilla": "A/RES/65/182",
+   "acto": "Creación del Grupo de Trabajo (AG)",
+   "adopcion": null,
+   "entrada_vigor": null,
+   "miembros": null,
+   "estado": "VERIFICADO",
+   "simbolo": "A/RES/65/182",
+   "titulo_oficial": "Follow-up to the 2nd World Assembly on Ageing",
+   "adoptada": "2010-12-21",
+   "registro": "https://digitallibrary.un.org/record/697916",
+   "coincidencia_titulo": 1.0,
+   "texto": {
+    "estado": "TEXTO_DIRECTO",
+    "fuentes": [
+     {
+      "tipo": "registro",
+      "lengua": "en",
+      "url": "https://digitallibrary.un.org/record/697916/files/A_RES_65_182-EN.pdf",
+      "validado": null
+     },
+     {
+      "tipo": "registro",
+      "lengua": "es",
+      "url": "https://digitallibrary.un.org/record/697916/files/A_RES_65_182-ES.pdf",
+      "validado": null
+     },
+     {
+      "tipo": "registro",
+      "lengua": "fr",
+      "url": "https://digitallibrary.un.org/record/697916/files/A_RES_65_182-FR.pdf",
+      "validado": null
+     }
+    ],
+    "descartadas_por_no_coincidir": [],
+    "informe_sesion": [
+     {
+      "simbolo": "A/65/448",
+      "paginas": "",
+      "registro": "https://digitallibrary.un.org/record/695115",
+      "pdf": {
+       "العربية": "https://digitallibrary.un.org/record/695115/files/A_65_448-AR.pdf",
+       "en": "https://digitallibrary.un.org/record/695115/files/A_65_448-EN.pdf",
+       "es": "https://digitallibrary.un.org/record/695115/files/A_65_448-ES.pdf",
+       "fr": "https://digitallibrary.un.org/record/695115/files/A_65_448-FR.pdf",
+       "Русский": "https://digitallibrary.un.org/record/695115/files/A_65_448-RU.pdf",
+       "中文": "https://digitallibrary.un.org/record/695115/files/A_65_448-ZH.pdf"
+      }
+     },
+     {
+      "simbolo": "A/65/PV.71",
+      "paginas": "",
+      "registro": "https://digitallibrary.un.org/record/703243",
+      "pdf": {
+       "العربية": "https://digitallibrary.un.org/record/703243/files/A_65_PV.71-AR.pdf",
+       "en": "https://digitallibrary.un.org/record/703243/files/A_65_PV.71-EN.pdf",
+       "es": "https://digitallibrary.un.org/record/703243/files/A_65_PV.71-ES.pdf",
+       "fr": "https://digitallibrary.un.org/record/703243/files/A_65_PV.71-FR.pdf",
+       "Русский": "https://digitallibrary.un.org/record/703243/files/A_65_PV.71-RU.pdf",
+       "中文": "https://digitallibrary.un.org/record/703243/files/A_65_PV.71-ZH.pdf"
       }
      }
     ]
