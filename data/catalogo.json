@@ -3390,6 +3390,10 @@
      {
       "t": "Contador de visitas propio",
       "x": "La barra superior cuenta las visitas con un contador del propio proyecto: guarda solo el total y la cifra por país, sin IP ni cookies y sin servicios de terceros. Si el servicio está apagado, muestra «—» y la página sigue igual. Si el servicio no responde, la visita se vuelve a intentar en la siguiente carga."
+     },
+     {
+      "t": "Evaluación global de la herramienta",
+      "x": "Un informe con los huecos que tiene hoy la plataforma, con la evidencia de cada uno y la tarea que lo cubre. Está en el repositorio, en «docs»."
      }
     ]
    },
@@ -3431,6 +3435,18 @@
      {
       "t": "Mandatos y documentos extinguidos",
       "x": "Hoy solo están los vigentes (44 temáticos y 13 por país). Faltan los que ya terminaron."
+     },
+     {
+      "t": "Accesibilidad básica",
+      "x": "Enlace para saltar al contenido, foco visible, etiquetas para lector de pantalla y contraste medido."
+     },
+     {
+      "t": "Jurisprudencia de los comités",
+      "x": "Observaciones generales y dictámenes de los órganos de tratados, con enlace al original."
+     },
+     {
+      "t": "Recomendaciones del EPU por país",
+      "x": "Hoy solo se cuenta cuántos documentos hay; faltan las recomendaciones aceptadas y las que el Estado solo «tomó nota»."
      },
      {
       "t": "Comisiones de investigación",
