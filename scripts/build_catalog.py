@@ -172,6 +172,7 @@ REGDEF = {'African Group': ('AFR', 'Grupo de Estados de África', 'África'), 'A
           None: ('NAA', 'Sin grupo regional asignado en la fuente', 'Sin grupo')}
 OH = json.load(open('data/fuentes/paises_ohchr.json', encoding='utf-8'))
 OHP = {o['iso3']: o for o in OH['paises'] if o['iso3'] != 'OTH'}
+UPR = json.load(open('data/fuentes/upr_info_paises.json', encoding='utf-8'))['slugs']
 TR = json.load(open('data/fuentes/tratados_untc.json', encoding='utf-8'))
 DP = json.load(open('data/fuentes/docs_paises.json', encoding='utf-8'))['paises'] if os.path.exists('data/fuentes/docs_paises.json') else {}
 assert all(p['id'] in OHP for p in PAISES), [p['id'] for p in PAISES if p['id'] not in OHP]
@@ -184,7 +185,7 @@ for iso, o in OHP.items():
     cm = [i for i, m in enumerate(mec) if any(k in (m['nameEN'] + ' ' + m['nombre']).lower() for k in c.get('mec', []))]
     paises.append({'id': iso, 'es': c.get('es', o['es']), 'en': c.get('en', o['en']), 'claves': c.get('claves', []), 'mandato': ms[0] if ms else None, 'titulares_de': ts, 'comisiones': cm,
                    'region': REGDEF[o['region_en']][0], 'region_origen': o['region_origen'],
-                   'invitacion': {'si': o['invitacion_permanente'], 'fecha': o['fecha_invitacion']}, 'tratados': TR['paises'].get(iso, {}), 'docs': DP.get(iso, {'co': 0, 'epu': 0, 'visitas': 0, 'ultima_co': None}), 'visitas': {k: o['visitas'][k] for k in ('realizadas', 'programadas')}})
+                   'invitacion': {'si': o['invitacion_permanente'], 'fecha': o['fecha_invitacion']}, 'tratados': TR['paises'].get(iso, {}), 'docs': DP.get(iso, {'co': 0, 'epu': 0, 'visitas': 0, 'ultima_co': None}), 'upr': UPR.get(iso), 'visitas': {k: o['visitas'][k] for k in ('realizadas', 'programadas')}})
 regiones = [{'id': v[0], 'en': k or 'None', 'es': v[1], 'corto': v[2]} for k, v in REGDEF.items()]
 paises.sort(key=lambda p: p['es'].lower())
 SIS = json.load(open('data/sistema_onu.json', encoding='utf-8'))
