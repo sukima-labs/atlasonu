@@ -18,7 +18,7 @@ html{scroll-padding-top:calc(68px + env(safe-area-inset-top))}body{padding-top:c
 .appbrand{font-size:19px;font-weight:800;letter-spacing:-.8px;color:#fdfaf5}.appbrand b{color:#daaa63}
 
 .layout{display:block}
-.side{position:fixed;top:0;bottom:0;left:0;width:min(86vw,330px);height:100vh;height:100dvh;z-index:80;transform:translateX(-104%);visibility:hidden;transition:transform .26s cubic-bezier(.2,.8,.2,1),visibility 0s .26s;padding:calc(20px + env(safe-area-inset-top)) 14px calc(24px + env(safe-area-inset-bottom)) max(14px,env(safe-area-inset-left));overflow-y:auto;overscroll-behavior:contain;border-right:1px solid #403931;box-shadow:12px 0 40px rgba(0,0,0,.45)}
+.side{position:fixed;top:0;bottom:0;left:0;width:min(86vw,330px);z-index:80;transform:translateX(-104%);visibility:hidden;transition:transform .26s cubic-bezier(.2,.8,.2,1),visibility 0s .26s;padding:calc(20px + env(safe-area-inset-top)) 14px calc(110px + env(safe-area-inset-bottom)) max(14px,env(safe-area-inset-left));overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;border-right:1px solid #403931;box-shadow:12px 0 40px rgba(0,0,0,.45)}
 body.menu-open .side{transform:none;visibility:visible;transition:transform .26s cubic-bezier(.2,.8,.2,1)}
 .scrim{display:block;position:fixed;inset:0;z-index:70;background:rgba(10,9,7,.62);opacity:0;pointer-events:none;transition:opacity .22s}body.menu-open .scrim{opacity:1;pointer-events:auto}body.menu-open{overflow:hidden}
 .nav{display:block}.nav button{width:100%;min-height:48px;font-size:16px;margin-bottom:4px}.subbrand{margin-bottom:22px}
