@@ -2687,7 +2687,7 @@
   ]
  },
  "historia": {
-  "nota": "Elaboración propia a partir de la Carta de la ONU, las resoluciones citadas y los sitios oficiales de las Naciones Unidas. Las fechas con solo año o mes indican que el día exacto no se consigna aquí. Para citar, use el documento oficial.",
+  "nota": "Elaboración propia a partir de la Carta de la ONU, las resoluciones citadas y los sitios oficiales de las Naciones Unidas. Las fechas con solo año o mes indican que el día exacto no se consigna aquí. Para citar, use el documento oficial. Los hechos anteriores a 1945 son contexto histórico general y se resumen aquí sin pretender agotar el tema: para citar, use la fuente primaria (p. ej. los archivos de la Sociedad de las Naciones conservados por la ONU en Ginebra).",
   "temas": {
    "fundacion": "Fundación e instituciones",
    "normas": "Declaraciones y tratados",
@@ -2696,6 +2696,12 @@
    "desarrollo": "Desarrollo y agenda global"
   },
   "eras": [
+   {
+    "id": "e0",
+    "n": "Antes de la ONU",
+    "d": 1864,
+    "h": 1944
+   },
    {
     "id": "e1",
     "n": "Fundación y descolonización",
@@ -2734,6 +2740,103 @@
    }
   ],
   "eventos": [
+   {
+    "f": "1864-08-22",
+    "tema": "normas",
+    "hito": false,
+    "t": "Primer Convenio de Ginebra",
+    "x": "Doce Estados firman en Ginebra el Convenio para mejorar la suerte de los militares heridos de los ejércitos en campaña, impulsado por el movimiento de la Cruz Roja.",
+    "p": "Es la primera gran norma internacional para proteger a personas en la guerra: el origen del derecho internacional humanitario, mucho antes de la ONU."
+   },
+   {
+    "f": "1899-07-29",
+    "tema": "paz",
+    "hito": false,
+    "t": "Primera Conferencia de La Haya: solución pacífica de controversias",
+    "x": "Termina la Conferencia de la Paz de La Haya, que adopta el Convenio para el arreglo pacífico de los conflictos internacionales y crea la Corte Permanente de Arbitraje.",
+    "p": "Es el primer intento amplio de que los Estados resuelvan sus disputas ante un tribunal y no por la guerra: antecedente de la Corte Internacional de Justicia."
+   },
+   {
+    "f": "1919-04-11",
+    "tema": "fundacion",
+    "hito": false,
+    "t": "Se crea la Organización Internacional del Trabajo (OIT)",
+    "x": "La Conferencia de Paz de París adopta la constitución de la OIT, que reúne a gobiernos, empleadores y trabajadores. Hoy es un organismo especializado de la ONU.",
+    "p": "Une paz y derechos laborales: es la organización de la época anterior a la ONU que sigue viva dentro del sistema."
+   },
+   {
+    "f": "1920-01-10",
+    "tema": "fundacion",
+    "hito": true,
+    "t": "Entra en vigor el Pacto de la Sociedad de las Naciones",
+    "x": "Con el Tratado de Versalles entra en vigor el Pacto que crea la Sociedad de las Naciones, con sede en Ginebra. Su primera Asamblea se reúne el 15 de noviembre de 1920.",
+    "p": "Es el primer intento de una organización mundial permanente para mantener la paz. Fracasó en evitar la Segunda Guerra Mundial, y de sus lecciones salió la ONU."
+   },
+   {
+    "f": "1922-02-15",
+    "tema": "paz",
+    "hito": false,
+    "t": "La Corte Permanente de Justicia Internacional abre su primera sesión",
+    "x": "La Corte, prevista en el Pacto de la Sociedad de las Naciones, se reúne por primera vez en el Palacio de la Paz de La Haya.",
+    "p": "Es el antecesor directo de la Corte Internacional de Justicia, que la reemplazó en 1946.",
+    "ir": "S:cij"
+   },
+   {
+    "f": "1924-09-26",
+    "tema": "normas",
+    "hito": false,
+    "t": "Declaración de Ginebra sobre los Derechos del Niño",
+    "x": "La Asamblea de la Sociedad de las Naciones aprueba esta declaración de cinco puntos, redactada por la organización Save the Children.",
+    "p": "Es el primer texto internacional sobre derechos del niño: el punto de partida que lleva a la Declaración de 1959 y a la Convención de 1989."
+   },
+   {
+    "f": "1926-09-25",
+    "tema": "normas",
+    "hito": false,
+    "t": "Convención sobre la Esclavitud",
+    "x": "La Sociedad de las Naciones adopta la Convención que obliga a los Estados a prevenir y suprimir la trata de esclavos y a acabar con la esclavitud.",
+    "p": "Es el primer tratado universal contra la esclavitud, que la ONU retomó y amplió después de 1945."
+   },
+   {
+    "f": "1928-08-27",
+    "tema": "paz",
+    "hito": false,
+    "t": "Pacto Briand-Kellogg: la guerra como instrumento de política nacional queda proscrita",
+    "x": "En París, quince Estados firman el pacto por el que renuncian a la guerra como medio de política nacional; después se adhieren decenas más.",
+    "p": "Es un antecedente de la prohibición del uso de la fuerza que la Carta de la ONU recoge en su artículo 2.4."
+   },
+   {
+    "f": "1941-08-14",
+    "tema": "fundacion",
+    "hito": false,
+    "t": "Carta del Atlántico",
+    "x": "Roosevelt y Churchill firman una declaración de principios para el mundo de posguerra: autodeterminación, cooperación económica y un sistema de seguridad permanente.",
+    "p": "Sus principios inspiran la construcción de la ONU durante la guerra."
+   },
+   {
+    "f": "1942-01-01",
+    "tema": "fundacion",
+    "hito": true,
+    "t": "Declaración de las Naciones Unidas",
+    "x": "Veintiséis Estados aliados firman en Washington la Declaración en la que, por primera vez, se usa el nombre «Naciones Unidas».",
+    "p": "Da nombre a la organización que se funda tres años después. El nombre fue propuesto por el presidente Roosevelt."
+   },
+   {
+    "f": "1944-07-22",
+    "tema": "desarrollo",
+    "hito": false,
+    "t": "Conferencia de Bretton Woods",
+    "x": "Termina la conferencia en la que 44 países acuerdan el Fondo Monetario Internacional y el Banco Mundial, que luego pasan a ser organismos especializados de la ONU.",
+    "p": "Prepara el orden económico de la posguerra, parte del mismo proyecto de la ONU."
+   },
+   {
+    "f": "1944-08-21",
+    "tema": "fundacion",
+    "hito": false,
+    "t": "Conferencia de Dumbarton Oaks",
+    "x": "Estados Unidos, el Reino Unido, la Unión Soviética y China empiezan a negociar en Washington las propuestas para crear una organización mundial; terminan el 7 de octubre.",
+    "p": "Son las propuestas que se convierten, tras la conferencia de San Francisco, en la Carta de las Naciones Unidas."
+   },
    {
     "f": "1945-06-26",
     "tema": "fundacion",
