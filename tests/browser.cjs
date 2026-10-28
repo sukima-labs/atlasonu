@@ -4,6 +4,12 @@ const path = require('path'), assert = require('assert');
 const URL = process.env.ATLAS_URL || 'file://' + path.resolve(__dirname, '..', 'index.html');
 (async () => {
   const browser = await chromium.launch();
+  // Las pruebas no deben salir a internet: la búsqueda en vivo (servicio del mini PC) se simula siempre vacía.
+  const sinBusquedaReal = r => r.fulfill({ status: 200, contentType: 'application/json', headers: { 'access-control-allow-origin': '*' }, body: JSON.stringify({ consulta: '', total: 0, resultados: [] }) });
+  const BUSQ = /dignityos\.tailaa1f76\.ts\.net/;
+  const _newPage = browser.newPage.bind(browser), _newContext = browser.newContext.bind(browser);
+  browser.newPage = async o => { const p = await _newPage(o); await p.route(BUSQ, sinBusquedaReal); return p; };
+  browser.newContext = async o => { const c = await _newContext(o); await c.route(BUSQ, sinBusquedaReal); return c; };
   const res = { url: URL, checks: [], errors: [] };
   const ok = (n, c) => { res.checks.push({ n, ok: !!c }); };
   for (const vp of [{ name: 'escritorio', width: 1366, height: 800 }, { name: 'movil', width: 390, height: 844 }]) {
