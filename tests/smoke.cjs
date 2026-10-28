@@ -35,7 +35,7 @@ t('todo símbolo del índice tiene ruta al texto',()=>assert.equal(run('Object.v
 t('no inventa: símbolo ausente',()=>{const r=recover('A/HRC/RES/99/99');assert.ok(r.includes('No está en el índice local')&&!r.includes('LOCALIZADO EN EL ÍNDICE'))});
 t('búsqueda por palabras en español',()=>assert.ok(recover('desaparecidos').includes('A/HRC/RES/')));
 t('búsqueda guiada con alternativas',()=>{els.guiadaSel.value='tortura';els.guiadaPais.value='';run('guiada()');const r=els.mandBody.innerHTML.toLowerCase();assert.ok(r.includes('tortura')&&r.includes('detenci'))});
-t('mecanismos conexos: 25 verificados',()=>{assert.equal(run('MEC.length'),25);assert.equal(run('MEC.filter(m=>m.estado==="VERIFICADO").length'),25);assert.ok(els.mecBody.innerHTML.includes('CERD')&&els.mecBody.innerHTML.includes('A/RES/2106(XX)'))});
+t('mecanismos conexos: 33 verificados',()=>{assert.equal(run('MEC.length'),33);assert.equal(run('MEC.filter(m=>m.estado==="VERIFICADO").length'),33);assert.ok(els.mecBody.innerHTML.includes('CERD')&&els.mecBody.innerHTML.includes('A/RES/2106(XX)'))});
 t('panel de calidad',()=>assert.ok(els.calidad.innerHTML.includes('401 de 421')));
 t('filtro de verificación',()=>{els.q.value='';els.verif.value='reservas';run('filterMandates()');const n=run('filtered.length');assert.ok(n>0&&n<57);els.verif.value='';run('filterMandates()')});
 const smart=q=>{els.quick.value=q;run('smartRun()');return els.smartOut.innerHTML};
