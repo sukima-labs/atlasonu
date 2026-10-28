@@ -36,6 +36,8 @@ if [ "$CAMBIO" = 1 ]; then
   python3 -I scripts/detectar_cambios.py "$PREV" data/catalogo.json "$HOY"
   python3 -I scripts/exportar_excel.py
 fi
+JURISPRUDENCIA=ok
+python3 -I scripts/fetch_jurisprudencia.py || { JURISPRUDENCIA=conservado; echo "Jurisprudencia: no se pudo actualizar; se conserva la anterior."; }
 NOTICIAS=ok
 python3 -I scripts/fetch_noticias.py || { NOTICIAS=conservado; echo "Noticias: no se pudieron actualizar; se conservan las anteriores."; }
 python3 -I scripts/escribir_estado.py data/catalogo.json "$CAMBIO"

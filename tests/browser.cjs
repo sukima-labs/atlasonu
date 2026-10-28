@@ -84,6 +84,8 @@ const URL = process.env.ATLAS_URL || 'file://' + path.resolve(__dirname, '..', '
     await page.evaluate(() => showPage('tratados')); await page.click('#trSel .org-node:has-text("CEDAW")'); await page.click('button:has-text("Texto del tratado")'); await page.waitForSelector('#trTexto .detail');
     ok(vp.name + ': Tratados: CEDAW art. 1 literal con buscador', /exclusión o restricción basada en el sexo/.test(await page.textContent('#trTexto')));
     await page.fill('#trBus', 'estereotipadas'); ok(vp.name + ': Tratados: el buscador del texto resalta coincidencias', (await page.locator('#trTexto mark').count()) > 0 || /artículo\(s\) contienen/.test(await page.textContent('#trTexto')));
+    await page.click('button:has-text("Observaciones generales")'); await page.waitForSelector('#trJur table');
+    ok(vp.name + ': Tratados: CEDAW lista recomendaciones generales con enlace oficial y aviso de cobertura parcial', (await page.locator('#trJur tbody tr').count()) >= 10 && (await page.locator('#trJur a[href^="https://digitallibrary.un.org/record/"]').count()) >= 10 && /Cobertura parcial/.test(await page.textContent('#trJur')));
     await page.click('button:has-text("Estados parte y ratificaciones")');
     ok(vp.name + ': Tratados: lista de Estados parte con país clicable', /Son parte/.test(await page.textContent('#trDetalle')) && (await page.locator('#trDetalle button.trat').count()) > 150);
     await page.locator('#trDetalle button.trat:has-text("India")').first().click(); await page.waitForTimeout(300);
