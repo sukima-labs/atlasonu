@@ -1,0 +1,170 @@
+{
+ "actualizado": "2026-10-28",
+ "bloques": [
+  {
+   "id": "disponible",
+   "titulo": "Ya disponible",
+   "intro": "Lo que ya funciona hoy.",
+   "items": [
+    {
+     "t": "Registro de cada revisión",
+     "x": "En «Novedades» ves cuándo se revisaron las fuentes oficiales, qué se miró, cuánto tardó y qué resultó. Cada ejecución queda guardada."
+    },
+    {
+     "t": "Noticias con archivo",
+     "x": "Titulares de Noticias ONU, con etiqueta «Derechos humanos» en los más relevantes, fecha de la última actualización y un archivo que conserva las noticias anteriores."
+    },
+    {
+     "t": "Documentos marco de los procedimientos especiales",
+     "x": "Código de conducta, resoluciones 5/1 y 60/251, que dan base a los mandatos."
+    },
+    {
+     "t": "Fichas de país con menú de secciones",
+     "x": "Arriba de cada ficha, «Qué quieres ver» salta a tratados, mandatos, comunicaciones, observaciones finales, EPU y visitas, con botón para volver arriba. El buscador encuentra los documentos de un país al escribir su nombre."
+    },
+    {
+     "t": "Cifras de comunicaciones de los relatores",
+     "x": "Por país y periodo, sacadas de los informes conjuntos y comprobadas contra el total de cada informe. El texto de cada comunicación sigue solo en la base original, que no permite descargarlo."
+    },
+    {
+     "t": "Historia antes de 1945",
+     "x": "La línea de tiempo empieza en 1864 con {previos} hechos de antes de la ONU y llega a {hechos} hechos en total."
+    },
+    {
+     "t": "Búsqueda en vivo",
+     "x": "Si el catálogo no encuentra algo, se consulta la Biblioteca Digital ONU y se muestran los documentos con su PDF. Son resultados sin verificar por el proyecto."
+    },
+    {
+     "t": "Autoría protegida y código abierto",
+     "x": "El código usa la licencia AGPL-3.0: sigue abierto, pero toda versión debe mostrar la autoría de Sukima-Labs y el enlace al proyecto original, también si le ponen una capa encima."
+    },
+    {
+     "t": "Apartado de DIGNITYOS",
+     "x": "Presentación general del proyecto, todavía sin lanzar y sin datos reales."
+    }
+   ]
+  },
+  {
+   "id": "evaluacion",
+   "titulo": "En evaluación",
+   "intro": "Hecho, a la espera de confirmarlo en un celular real.",
+   "items": [
+    {
+     "t": "Menú del celular",
+     "x": "El menú baja hasta su último elemento, se desliza con el dedo sin mover la página de atrás y, con zoom, se puede ver entero. El zoom de dos dedos funciona también con el menú abierto.",
+     "tag": "en evaluación"
+    },
+    {
+     "t": "Comunicaciones de los relatores",
+     "x": "Se muestran las cifras por país, pero cada comunicación individual y su respuesta solo se pueden consultar en la base original. Se busca una vía permitida para enlazarlas.",
+     "tag": "parcial"
+    },
+    {
+     "t": "Búsqueda en vivo desde el celular",
+     "x": "Con ciertas redes privadas, Chrome puede pedir un permiso y la consulta no responde. Falta confirmarlo.",
+     "tag": "en evaluación"
+    }
+   ]
+  },
+  {
+   "id": "pendiente",
+   "titulo": "Pendiente",
+   "intro": "En la cola de trabajo, por orden aproximado. Una tarea cada vez.",
+   "items": [
+    {
+     "t": "Contador de visitas propio",
+     "x": "Sustituir el contador externo por uno que no se lleve datos de nadie.",
+     "tag": "prioridad alta"
+    },
+    {
+     "t": "Revisión de uso de todas las pantallas",
+     "x": "Sobre todo en el celular: tablas que pasan a tarjetas, buscador a mano, botones más grandes, contraste y accesibilidad."
+    },
+    {
+     "t": "Cruzar el catálogo con las fuentes oficiales",
+     "x": "Listar con evidencia lo que falta: mandatos, tratados, comités, comisiones y siglas."
+    },
+    {
+     "t": "Mandatos y documentos extinguidos",
+     "x": "Hoy solo están los vigentes (44 temáticos y 13 por país). Faltan los que ya terminaron."
+    },
+    {
+     "t": "Comisiones de investigación",
+     "x": "Las que aparecen son una selección verificada, no todas las que ha habido."
+    },
+    {
+     "t": "Documentos básicos comunes de cada Estado",
+     "x": "Investigar y, si hay fuente oficial, indexarlos por país."
+    },
+    {
+     "t": "Cómo funciona la ONU, más a fondo",
+     "x": "Órganos, votaciones, presupuesto, elecciones y reformas."
+    },
+    {
+     "t": "Siglas y acrónimos",
+     "x": "El diccionario tiene {siglas} entradas: es una selección útil, no todas las de la ONU."
+    },
+    {
+     "t": "Historia: más hechos",
+     "x": "Faltan, por ejemplo, la descolonización por país, las conferencias mundiales y los hechos regionales."
+    },
+    {
+     "t": "Explicaciones en lenguaje claro de cada resolución",
+     "x": "Hasta ahora solo una resolución está explicada así, tras leer su texto."
+    },
+    {
+     "t": "Mapas y mapas de calor",
+     "x": "Un mapa mundial con capas (ratificaciones, observaciones, conflictos…) y clic que lleve a la ficha del país. Con herramientas libres y alojadas en el propio proyecto."
+    },
+    {
+     "t": "El reto académico",
+     "x": "Una página sobre qué documentos de la ONU están mal catalogados y que ATLAS sí encuentra."
+    },
+    {
+     "t": "Español, francés e inglés",
+     "x": "Selector de idioma con textos propios, sin servicios de traducción externos."
+    },
+    {
+     "t": "Inclusión y más idiomas",
+     "x": "Lector de pantalla, lectura fácil, conexión lenta y, después, árabe, chino y ruso."
+    },
+    {
+     "t": "Vista para niños y niñas",
+     "x": "Una versión con lenguaje sencillo, ilustraciones y juegos para que niñas y niños conozcan sus derechos y la ONU."
+    },
+    {
+     "t": "Logo de DIGNITYOS y portada del repositorio",
+     "x": "Logo provisional en el menú y la ficha del repositorio en GitHub ordenada.",
+     "tag": "prioridad baja"
+    }
+   ]
+  },
+  {
+   "id": "ideas",
+   "titulo": "Ideas que están entrando",
+   "intro": "Sin compromiso ni fecha: es el orden en que tendría sentido ampliar el proyecto.",
+   "items": [
+    {
+     "t": "Otros órganos de la ONU",
+     "x": "Consejo de Seguridad (resoluciones, sanciones, misiones de paz), Asamblea General y sus comisiones, ECOSOC, Corte Internacional de Justicia.",
+     "tag": "propuesto"
+    },
+    {
+     "t": "Agencias y programas",
+     "x": "OMS, UNESCO, ACNUR, UNICEF y otras.",
+     "tag": "propuesto"
+    },
+    {
+     "t": "Desarrollo sostenible",
+     "x": "Los ODS y la Agenda 2030.",
+     "tag": "propuesto"
+    },
+    {
+     "t": "Datos del sistema",
+     "x": "Tratados depositados, presupuesto y cuotas por país, votaciones y calendario de días internacionales.",
+     "tag": "propuesto"
+    }
+   ]
+  }
+ ]
+}
