@@ -5846,6 +5846,46 @@
   ],
   "informe_sesion": []
  },
+ "A/HRC/RES/5/1": {
+  "descartadas_por_no_coincidir": [],
+  "estado": "TEXTO_EN_INFORME",
+  "fuentes": [],
+  "informe_sesion": [
+   {
+    "paginas": "",
+    "pdf": {
+     "Español": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-ES.pdf",
+     "Français": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-FR.pdf",
+     "en": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-EN.pdf",
+     "Русский": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-RU.pdf",
+     "العربية": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-AR.pdf",
+     "中文": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-ZH.pdf"
+    },
+    "registro": "https://digitallibrary.un.org/record/610953",
+    "simbolo": "A/HRC/5/21"
+   }
+  ]
+ },
+ "A/HRC/RES/5/2": {
+  "descartadas_por_no_coincidir": [],
+  "estado": "TEXTO_EN_INFORME",
+  "fuentes": [],
+  "informe_sesion": [
+   {
+    "paginas": "",
+    "pdf": {
+     "Español": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-ES.pdf",
+     "Français": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-FR.pdf",
+     "en": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-EN.pdf",
+     "Русский": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-RU.pdf",
+     "العربية": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-AR.pdf",
+     "中文": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-ZH.pdf"
+    },
+    "registro": "https://digitallibrary.un.org/record/610953",
+    "simbolo": "A/HRC/5/21"
+   }
+  ]
+ },
  "A/HRC/RES/50/10": {
   "descartadas_por_no_coincidir": [],
   "estado": "TEXTO_DIRECTO",
@@ -9065,6 +9105,55 @@
     "tipo": "ods",
     "url": "https://documents.un.org/api/symbol/access?s=A/HRC/RES/S-39/1&l=es&t=pdf",
     "validado": true
+   }
+  ],
+  "informe_sesion": []
+ },
+ "A/RES/60/251": {
+  "descartadas_por_no_coincidir": [],
+  "estado": "TEXTO_DIRECTO",
+  "fuentes": [
+   {
+    "lengua": "ar",
+    "tipo": "registro",
+    "url": "https://digitallibrary.un.org/record/571575/files/A_RES_60_251-AR.pdf",
+    "validado": null
+   },
+   {
+    "lengua": "de",
+    "tipo": "registro",
+    "url": "https://digitallibrary.un.org/record/571575/files/A_RES_60_251-DE.pdf",
+    "validado": null
+   },
+   {
+    "lengua": "en",
+    "tipo": "registro",
+    "url": "https://digitallibrary.un.org/record/571575/files/A_RES_60_251-EN.pdf",
+    "validado": null
+   },
+   {
+    "lengua": "es",
+    "tipo": "registro",
+    "url": "https://digitallibrary.un.org/record/571575/files/A_RES_60_251-ES.pdf",
+    "validado": null
+   },
+   {
+    "lengua": "fr",
+    "tipo": "registro",
+    "url": "https://digitallibrary.un.org/record/571575/files/A_RES_60_251-FR.pdf",
+    "validado": null
+   },
+   {
+    "lengua": "ru",
+    "tipo": "registro",
+    "url": "https://digitallibrary.un.org/record/571575/files/A_RES_60_251-RU.pdf",
+    "validado": null
+   },
+   {
+    "lengua": "zh",
+    "tipo": "registro",
+    "url": "https://digitallibrary.un.org/record/571575/files/A_RES_60_251-ZH.pdf",
+    "validado": null
    }
   ],
   "informe_sesion": []

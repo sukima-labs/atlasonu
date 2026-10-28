@@ -1,6 +1,6 @@
 window.NOTICIAS={
  "fuente": "Noticias ONU (news.un.org)",
- "actualizado": "2026-10-28T02:35:33Z",
+ "actualizado": "2026-10-28T17:21:23Z",
  "temas": {
   "todas": [
    {
@@ -9,14 +9,14 @@ window.NOTICIAS={
     "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542112",
     "resumen": "Un debate cargado de alta tensión diplomática se abrió este martes para dirimir una vez más la cuestión del bloqueo económico que el país norteamericano impuso a Cuba en 1960. Mañana miércoles, 28 de octubre, se celebrará la votación.",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/27-10-2015-Unsplash-Havana-Cuba-01.jpg/image560x340cropped.jpg",
-    "destacada": false
+    "destacada": true
    },
    {
     "titulo": "Emisiones, Ucrania, ébola, trabajo doméstico… Las noticias del martes",
     "fecha": "2026-10-27",
     "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542110",
     "resumen": "Los niveles récord de dióxido de carbono nos afectarán durante siglos. Ucrania: Los bombardeos amenazan con dejar a la población otro invierno sin calefacción. La OMS inicia un ensayo para comprobar si las vacunas protegen contra el ébola. El 83% de los…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/10/27-10-2026-Adobe-Stock-air-pollution.jpg/image560x340cropped.jpg",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/21-03-2022_UNSPLASH_Pollution.jpg/image560x340cropped.jpg",
     "destacada": false
    },
    {
@@ -166,6 +166,13 @@ window.NOTICIAS={
   ],
   "derechos": [
    {
+    "titulo": "El embargo de Estados Unidos a Cuba vuelve a la ONU (que ya lo ha rechazado 33 veces)",
+    "fecha": "2026-10-27",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542112",
+    "resumen": "Un debate cargado de alta tensión diplomática se abrió este martes para dirimir una vez más la cuestión del bloqueo económico que el país norteamericano impuso a Cuba en 1960. Mañana miércoles, 28 de octubre, se celebrará la votación.",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/27-10-2015-Unsplash-Havana-Cuba-01.jpg/image560x340cropped.jpg"
+   },
+   {
     "titulo": "Niños en conflictos: 30 años de promesas y un número récord de violaciones",
     "fecha": "2026-10-26",
     "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542105",
@@ -297,16 +304,16 @@ window.NOTICIAS={
     "enlace": "https://news.un.org/feed/view/es/story/2026/09/1541941",
     "resumen": "Las desigualdades heredadas del colonialismo siguen condicionando las oportunidades de millones de personas. Frente a ellas, el derecho al desarrollo plantea una idea central: todas las personas y los pueblos deben poder participar, contribuir y beneficiarse…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/08/31-08-2026-UNICEF-Sudan-01.jpg/image560x340cropped.jpg"
-   },
-   {
-    "titulo": "IA: los niños deben ser escuchados antes de que se tomen decisiones",
-    "fecha": "2026-09-22",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/09/1541944",
-    "resumen": "Más de 1000 niños de 49 países han pedido a los líderes mundiales que se les escuche antes de tomar decisiones sobre la IA, mientras UNICEF advierte de que al menos 1,2 millones de menores en 11 países vieron su imagen transformada en contenidos sexuales…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/06-01-2025-UNICEF-India.jpg/image560x340cropped.jpg"
    }
   ],
   "americas": [
+   {
+    "titulo": "El embargo de Estados Unidos a Cuba vuelve a la ONU (que ya lo ha rechazado 33 veces)",
+    "fecha": "2026-10-27",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542112",
+    "resumen": "Un debate cargado de alta tensión diplomática se abrió este martes para dirimir una vez más la cuestión del bloqueo económico que el país norteamericano impuso a Cuba en 1960. Mañana miércoles, 28 de octubre, se celebrará la votación.",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/27-10-2015-Unsplash-Havana-Cuba-01.jpg/image560x340cropped.jpg"
+   },
    {
     "titulo": "Construyendo Futuros: el reto de llevar la educación a las fronteras de Venezuela",
     "fecha": "2026-10-24",
@@ -439,13 +446,6 @@ window.NOTICIAS={
     "enlace": "https://news.un.org/feed/view/es/story/2026/09/1541989",
     "resumen": "Costa Rica defendió este lunes el multilateralismo como una herramienta necesaria para responder a los conflictos, el crimen organizado, la crisis climática y las brechas de desarrollo, y pidió una ONU más ágil, eficiente y capaz de ofrecer resultados…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/09/28-09-2026-UN-Photo-UNGA81-Costa-Rica.jpg/image560x340cropped.jpg"
-   },
-   {
-    "titulo": "Colombia: La justicia transicional bajo el Acuerdo De Paz debe seguir contando con financiación y apoyo",
-    "fecha": "2026-09-28",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/09/1541987",
-    "resumen": "A diez años de la firma del Acuerdo de Paz, el Alto Comisionado de la ONU para los Derechos Humanos pidió garantizar recursos suficientes y continuidad a los mecanismos de justicia transicional de Colombia, incluida la Jurisdicción Especial para la Paz.…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/09/28-09-26_ColombiaVictims_UNVerificationMission.jpg/image560x340cropped.jpg"
    }
   ]
  }
