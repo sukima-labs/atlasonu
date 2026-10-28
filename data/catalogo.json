@@ -3369,7 +3369,7 @@
      },
      {
       "t": "Cifras de comunicaciones de los relatores",
-      "x": "Por país y periodo, sacadas de los informes conjuntos y comprobadas contra el total de cada informe. El texto de cada comunicación sigue solo en la base original, que no permite descargarlo."
+      "x": "Por país y periodo, sacadas de los informes conjuntos y comprobadas contra el total de cada informe. El texto de cada comunicación sigue solo en la base original, que no permite descargarlo. También salen en el buscador al escribir un país y se actualizan con cada revisión."
      },
      {
       "t": "Historia antes de 1945",
@@ -3389,7 +3389,7 @@
      },
      {
       "t": "Contador de visitas propio",
-      "x": "La barra superior cuenta las visitas con un contador del propio proyecto: guarda solo el total y la cifra por país, sin IP ni cookies y sin servicios de terceros. Si el servicio está apagado, muestra «—» y la página sigue igual."
+      "x": "La barra superior cuenta las visitas con un contador del propio proyecto: guarda solo el total y la cifra por país, sin IP ni cookies y sin servicios de terceros. Si el servicio está apagado, muestra «—» y la página sigue igual. Si el servicio no responde, la visita se vuelve a intentar en la siguiente carga."
      }
     ]
    },
@@ -24150,7 +24150,7 @@
    }
   }
  ],
- "consultado": "None",
+ "consultado": "2026-10-27",
  "fuentes": [
   "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM",
   "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM",
@@ -25532,7 +25532,7 @@
    "renovacion_anio": "2026",
    "metodos": "",
    "revision": "Acto de creación localizado con símbolo corregido (ver nota)",
-   "nota": "La fuente OHCHR cita «E/CN.4/RES/1980/20/(XXXVI)»; el documento oficial es «E/CN.4/RES/20(XXXVI)» (equivalencia inferida por símbolo y título; no se ha leído el texto). «A/HRC/RES/63/34» no tiene registro exacto en la Biblioteca Digital ONU a None; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
+   "nota": "La fuente OHCHR cita «E/CN.4/RES/1980/20/(XXXVI)»; el documento oficial es «E/CN.4/RES/20(XXXVI)» (equivalencia inferida por símbolo y título; no se ha leído el texto). «A/HRC/RES/63/34» no tiene registro exacto en la Biblioteca Digital ONU a 2026-10-27; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
    "actos": [
     {
      "rol": "creación",
@@ -25739,7 +25739,7 @@
      "organo": "Consejo de Derechos Humanos",
      "simbolo_fuente": "A/HRC/RES/63/34",
      "estado": "NO_ENCONTRADO",
-     "aviso": "«A/HRC/RES/63/34» no tiene registro exacto en la Biblioteca Digital ONU a None; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión."
+     "aviso": "«A/HRC/RES/63/34» no tiene registro exacto en la Biblioteca Digital ONU a 2026-10-27; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión."
     }
    ],
    "actos_verificados": 8,
@@ -31986,7 +31986,7 @@
    "renovacion_anio": "2026",
    "metodos": "",
    "revision": "Acto de creación localizado en la Biblioteca Digital ONU",
-   "nota": "«A/HRC/RES/3610» no tiene registro exacto en la Biblioteca Digital ONU a None; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
+   "nota": "«A/HRC/RES/3610» no tiene registro exacto en la Biblioteca Digital ONU a 2026-10-27; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
    "actos": [
     {
      "rol": "creación",
@@ -32018,7 +32018,7 @@
      "organo": "Consejo de Derechos Humanos",
      "simbolo_fuente": "A/HRC/RES/3610",
      "estado": "NO_ENCONTRADO",
-     "aviso": "«A/HRC/RES/3610» no tiene registro exacto en la Biblioteca Digital ONU a None; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión."
+     "aviso": "«A/HRC/RES/3610» no tiene registro exacto en la Biblioteca Digital ONU a 2026-10-27; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión."
     },
     {
      "rol": "prórroga intermedia",
@@ -33519,7 +33519,7 @@
    "renovacion_anio": "2025",
    "metodos": "",
    "revision": "Acto de creación localizado con símbolo corregido (ver nota)",
-   "nota": "La fuente OHCHR cita «E/CN.4/1993/6»; el documento oficial es «E/CN.4/RES/1993/6» (equivalencia inferida por símbolo y título; no se ha leído el texto). «A/HRC/RES/48/» no tiene registro exacto en la Biblioteca Digital ONU a None; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
+   "nota": "La fuente OHCHR cita «E/CN.4/1993/6»; el documento oficial es «E/CN.4/RES/1993/6» (equivalencia inferida por símbolo y título; no se ha leído el texto). «A/HRC/RES/48/» no tiene registro exacto en la Biblioteca Digital ONU a 2026-10-27; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
    "actos": [
     {
      "rol": "creación",
@@ -33672,7 +33672,7 @@
      "organo": "Consejo de Derechos Humanos",
      "simbolo_fuente": "A/HRC/RES/48/",
      "estado": "NO_ENCONTRADO",
-     "aviso": "«A/HRC/RES/48/» no tiene registro exacto en la Biblioteca Digital ONU a None; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión."
+     "aviso": "«A/HRC/RES/48/» no tiene registro exacto en la Biblioteca Digital ONU a 2026-10-27; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión."
     },
     {
      "rol": "prórroga intermedia",
@@ -34163,7 +34163,7 @@
    "renovacion_anio": "2026",
    "metodos": "",
    "revision": "Acto de creación localizado con símbolo corregido (ver nota)",
-   "nota": "La fuente OHCHR cita «E/CN.4/2004/13»; el documento oficial es «E/CN.4/RES/2004/13» (equivalencia inferida por símbolo y título; no se ha leído el texto). La fuente OHCHR cita «A/HRC/31/L.25»; el documento oficial es «A/HRC/RES/31/18» (equivalencia inferida por símbolo y título; no se ha leído el texto). La fuente OHCHR cita «A/HRC/40/L.18»; el documento oficial es «A/HRC/RES/40/20» (equivalencia inferida por símbolo y título; no se ha leído el texto). La fuente OHCHR cita «A/HRC/43/25»; el documento oficial es «A/HRC/RES/43/25» (equivalencia inferida por símbolo y título; no se ha leído el texto). «A/HRC/58/617» no tiene registro exacto en la Biblioteca Digital ONU a None; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
+   "nota": "La fuente OHCHR cita «E/CN.4/2004/13»; el documento oficial es «E/CN.4/RES/2004/13» (equivalencia inferida por símbolo y título; no se ha leído el texto). La fuente OHCHR cita «A/HRC/31/L.25»; el documento oficial es «A/HRC/RES/31/18» (equivalencia inferida por símbolo y título; no se ha leído el texto). La fuente OHCHR cita «A/HRC/40/L.18»; el documento oficial es «A/HRC/RES/40/20» (equivalencia inferida por símbolo y título; no se ha leído el texto). La fuente OHCHR cita «A/HRC/43/25»; el documento oficial es «A/HRC/RES/43/25» (equivalencia inferida por símbolo y título; no se ha leído el texto). «A/HRC/58/617» no tiene registro exacto en la Biblioteca Digital ONU a 2026-10-27; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
    "actos": [
     {
      "rol": "creación",
@@ -34490,7 +34490,7 @@
      "organo": "Consejo de Derechos Humanos",
      "simbolo_fuente": "A/HRC/58/617",
      "estado": "NO_ENCONTRADO",
-     "aviso": "«A/HRC/58/617» no tiene registro exacto en la Biblioteca Digital ONU a None; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión."
+     "aviso": "«A/HRC/58/617» no tiene registro exacto en la Biblioteca Digital ONU a 2026-10-27; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión."
     },
     {
      "rol": "prórroga vigente",
@@ -56054,7 +56054,7 @@
    "id": "V-009",
    "simbolo": "A/HRC/RES/63/34",
    "tema": "Grupo de Trabajo sobre las Desapariciones Forzadas o Involuntarias (2026, prórroga vigente)",
-   "problema": "«A/HRC/RES/63/34» no tiene registro exacto en la Biblioteca Digital ONU a None; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
+   "problema": "«A/HRC/RES/63/34» no tiene registro exacto en la Biblioteca Digital ONU a 2026-10-27; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
    "nivel": "ALTA",
    "accion": "Reintentar más adelante o buscar en el informe de sesión.",
    "url": "https://digitallibrary.un.org/"
@@ -56117,7 +56117,7 @@
    "id": "V-050",
    "simbolo": "A/HRC/RES/3610",
    "tema": "Relatora Especial sobre las repercusiones negativas de las medidas coercitivas unilaterales en el disfrute de los derechos humanos (2017, prórroga intermedia)",
-   "problema": "«A/HRC/RES/3610» no tiene registro exacto en la Biblioteca Digital ONU a None; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
+   "problema": "«A/HRC/RES/3610» no tiene registro exacto en la Biblioteca Digital ONU a 2026-10-27; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
    "nivel": "ALTA",
    "accion": "Reintentar más adelante o buscar en el informe de sesión.",
    "url": "https://digitallibrary.un.org/"
@@ -56144,7 +56144,7 @@
    "id": "V-060",
    "simbolo": "A/HRC/RES/48/",
    "tema": "Relator Especial sobre la situación de los derechos humanos en Camboya (2021, prórroga intermedia)",
-   "problema": "«A/HRC/RES/48/» no tiene registro exacto en la Biblioteca Digital ONU a None; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
+   "problema": "«A/HRC/RES/48/» no tiene registro exacto en la Biblioteca Digital ONU a 2026-10-27; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
    "nivel": "ALTA",
    "accion": "Reintentar más adelante o buscar en el informe de sesión.",
    "url": "https://digitallibrary.un.org/"
@@ -56162,7 +56162,7 @@
    "id": "V-071",
    "simbolo": "A/HRC/58/617",
    "tema": "Relator Especial sobre la situación de los derechos humanos en la República Popular Democrática de Corea (2025, prórroga intermedia)",
-   "problema": "«A/HRC/58/617» no tiene registro exacto en la Biblioteca Digital ONU a None; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
+   "problema": "«A/HRC/58/617» no tiene registro exacto en la Biblioteca Digital ONU a 2026-10-27; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
    "nivel": "ALTA",
    "accion": "Reintentar más adelante o buscar en el informe de sesión.",
    "url": "https://digitallibrary.un.org/"
