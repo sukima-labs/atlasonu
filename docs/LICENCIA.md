@@ -49,7 +49,7 @@ Por eso **una sola licencia para todo sería un error**: una licencia de softwar
 ## Qué no cubre ninguna licencia
 
 - El nombre, el emblema y los logotipos de la ONU y de la Universidad de Alcalá: no se usan ni se licencian, y el proyecto declara que **no es oficial**.
-- Datos personales: la plataforma no recoge IP ni datos propios; el contador de visitas es un servicio externo anónimo.
+- Datos personales: la plataforma no recoge IP ni datos propios; el contador de visitas es propio (`scripts/mini_pc/busqueda_servicio.py`) y guarda solo dos números agregados: total y por país, sin IP.
 
 ## Cómo cambiarla más adelante
 
