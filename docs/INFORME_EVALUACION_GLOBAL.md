@@ -3,7 +3,7 @@
 Auditoría con las cifras reales del repositorio (catálogo, datos, `index.html`, pruebas). Las pruebas pasan: 132 de lógica y 12 invariantes. No se inventa nada: cada hueco indica su evidencia y la tarea que lo cubre.
 
 ## Qué hay hoy
-57 mandatos (421 actos, 401 localizados) · 25 mecanismos conexos · 196 fichas de país · 18 tratados (texto literal de 8) · 145 siglas · 68 hechos de historia (los anteriores a 1945 aún sin contrastar con fuente primaria) · 41 entidades del sistema · 862 entradas en el índice de actos · 79 alertas de verificación.
+57 mandatos (421 actos, 401 localizados) · 33 mecanismos conexos · 196 fichas de país · 18 tratados (texto literal de 8) · 145 siglas · 68 hechos de historia (los anteriores a 1945 aún sin contrastar con fuente primaria) · 41 entidades del sistema · 862 entradas en el índice de actos · 79 alertas de verificación.
 
 ## Huecos por área (más grave primero)
 
