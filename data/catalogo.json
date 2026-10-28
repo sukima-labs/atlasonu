@@ -3402,6 +3402,10 @@
      {
       "t": "Observaciones generales de los comités",
       "x": "En cada comité de tratados hay una pestaña con sus observaciones o recomendaciones generales (80 documentos en total) con símbolo oficial, título, fecha y enlace al original. Las más antiguas, con numeración anterior, aún no están y se avisa en pantalla."
+     },
+     {
+      "t": "Enlace a las recomendaciones del EPU",
+      "x": "En la sección EPU de cada ficha, un enlace a la base de UPR Info (organización independiente) donde se ven las recomendaciones aceptadas y las que el Estado solo «tomó nota». ATLAS no copia esos datos."
      }
     ]
    },
@@ -3450,7 +3454,7 @@
      },
      {
       "t": "Recomendaciones del EPU por país",
-      "x": "Hoy solo se cuenta cuántos documentos hay; faltan las recomendaciones aceptadas y las que el Estado solo «tomó nota»."
+      "x": "Hoy se enlaza a UPR Info, pero no se muestran dentro de ATLAS. Para traerlas hace falta el permiso de UPR Info o leerlas de los informes oficiales del Grupo de Trabajo del EPU."
      },
      {
       "t": "Comisiones de investigación",
@@ -3539,6 +3543,10 @@
       "t": "Datos del sistema",
       "x": "Tratados depositados, presupuesto y cuotas por país, votaciones y calendario de días internacionales.",
       "tag": "propuesto"
+     },
+     {
+      "t": "Etiquetas en los documentos",
+      "x": "Que cada documento muestre etiquetas (tipo y tema) para entender de un vistazo de qué va, sin abrirlo."
      }
     ]
    }
@@ -3628,6 +3636,7 @@
     },
     "visitas": 15
    },
+   "upr": "afghanistan",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -3743,6 +3752,7 @@
     },
     "visitas": 16
    },
+   "upr": "albania",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -3858,6 +3868,7 @@
     },
     "visitas": 20
    },
+   "upr": "germany",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -3958,6 +3969,7 @@
     },
     "visitas": 0
    },
+   "upr": "andorra",
    "visitas": {
     "realizadas": false,
     "programadas": false
@@ -4068,6 +4080,7 @@
     },
     "visitas": 7
    },
+   "upr": "angola",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -4148,6 +4161,7 @@
     },
     "visitas": 0
    },
+   "upr": "antigua-and-barbuda",
    "visitas": {
     "realizadas": false,
     "programadas": false
@@ -4218,6 +4232,7 @@
     },
     "visitas": 9
    },
+   "upr": "saudi-arabia",
    "visitas": {
     "realizadas": true,
     "programadas": true
@@ -4313,6 +4328,7 @@
     },
     "visitas": 16
    },
+   "upr": "algeria",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -4440,6 +4456,7 @@
     },
     "visitas": 28
    },
+   "upr": "argentina",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -4567,6 +4584,7 @@
     },
     "visitas": 8
    },
+   "upr": "armenia",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -4678,6 +4696,7 @@
     },
     "visitas": 26
    },
+   "upr": "australia",
    "visitas": {
     "realizadas": true,
     "programadas": true
@@ -4788,6 +4807,7 @@
     },
     "visitas": 6
    },
+   "upr": "austria",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -4903,6 +4923,7 @@
     },
     "visitas": 24
    },
+   "upr": "azerbaijan",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -4978,6 +4999,7 @@
     },
     "visitas": 6
    },
+   "upr": "bahamas",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -5078,6 +5100,7 @@
     },
     "visitas": 16
    },
+   "upr": "bangladesh",
    "visitas": {
     "realizadas": true,
     "programadas": true
@@ -5143,6 +5166,7 @@
     },
     "visitas": 0
    },
+   "upr": "barbados",
    "visitas": {
     "realizadas": false,
     "programadas": false
@@ -5218,6 +5242,7 @@
     },
     "visitas": 2
    },
+   "upr": "bahrain",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -5301,6 +5326,7 @@
     },
     "visitas": 5
    },
+   "upr": "belarus",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -5396,6 +5422,7 @@
     },
     "visitas": 2
    },
+   "upr": "belize",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -5516,6 +5543,7 @@
     },
     "visitas": 3
    },
+   "upr": "benin",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -5636,6 +5664,7 @@
     },
     "visitas": 9
    },
+   "upr": "bolivia-plurinational-state",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -5756,6 +5785,7 @@
     },
     "visitas": 18
    },
+   "upr": "bosnia-and-herzegovina",
    "visitas": {
     "realizadas": true,
     "programadas": true
@@ -5831,6 +5861,7 @@
     },
     "visitas": 16
    },
+   "upr": "botswana",
    "visitas": {
     "realizadas": true,
     "programadas": true
@@ -5949,6 +5980,7 @@
     },
     "visitas": 50
    },
+   "upr": "brazil",
    "visitas": {
     "realizadas": true,
     "programadas": true
@@ -6009,6 +6041,7 @@
     },
     "visitas": 1
    },
+   "upr": "brunei-darussalam",
    "visitas": {
     "realizadas": false,
     "programadas": false
@@ -6121,6 +6154,7 @@
     },
     "visitas": 4
    },
+   "upr": "bulgaria",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -6236,6 +6270,7 @@
     },
     "visitas": 3
    },
+   "upr": "burkina-faso",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -6335,6 +6370,7 @@
     },
     "visitas": 5
    },
+   "upr": "burundi",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -6395,6 +6431,7 @@
     },
     "visitas": 3
    },
+   "upr": "bhutan",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -6510,6 +6547,7 @@
     },
     "visitas": 10
    },
+   "upr": "belgium",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -6625,6 +6663,7 @@
     },
     "visitas": 2
    },
+   "upr": "cabo-verde",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -6733,6 +6772,7 @@
     },
     "visitas": 4
    },
+   "upr": "cambodia",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -6838,6 +6878,7 @@
     },
     "visitas": 7
    },
+   "upr": "cameroon",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -6940,6 +6981,7 @@
     },
     "visitas": 25
    },
+   "upr": "canada",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -7020,6 +7062,7 @@
     },
     "visitas": 13
    },
+   "upr": "qatar",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -7125,6 +7168,7 @@
     },
     "visitas": 5
    },
+   "upr": "chad",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -7235,6 +7279,7 @@
     },
     "visitas": 1
    },
+   "upr": "czechia",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -7362,6 +7407,7 @@
     },
     "visitas": 43
    },
+   "upr": "chile",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -7444,6 +7490,7 @@
     },
     "visitas": 18
    },
+   "upr": "china",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -7559,6 +7606,7 @@
     },
     "visitas": 9
    },
+   "upr": "cyprus",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -7614,6 +7662,7 @@
     },
     "visitas": 0
    },
+   "upr": null,
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -7746,6 +7795,7 @@
     },
     "visitas": 50
    },
+   "upr": "colombia",
    "visitas": {
     "realizadas": true,
     "programadas": true
@@ -7826,6 +7876,7 @@
     },
     "visitas": 2
    },
+   "upr": "comoros",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -7936,6 +7987,7 @@
     },
     "visitas": 5
    },
+   "upr": "congo",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -8051,6 +8103,7 @@
     },
     "visitas": 10
    },
+   "upr": "costa-rica",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -8158,6 +8211,7 @@
     "ultima_co": null,
     "visitas": 9
    },
+   "upr": "croatia",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -8243,6 +8297,7 @@
     },
     "visitas": 9
    },
+   "upr": "cuba",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -8363,6 +8418,7 @@
     },
     "visitas": 0
    },
+   "upr": "cote-divoire",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -8473,6 +8529,7 @@
     },
     "visitas": 12
    },
+   "upr": "denmark",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -8555,6 +8612,7 @@
     "ultima_co": null,
     "visitas": 1
    },
+   "upr": "dominica",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -8682,6 +8740,7 @@
     },
     "visitas": 25
    },
+   "upr": "ecuador",
    "visitas": {
     "realizadas": true,
     "programadas": true
@@ -8774,6 +8833,7 @@
     },
     "visitas": 10
    },
+   "upr": "egypt",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -8884,6 +8944,7 @@
     },
     "visitas": 23
    },
+   "upr": "el-salvador",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -8949,6 +9010,7 @@
     },
     "visitas": 9
    },
+   "upr": "united-arab-emirates",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -9026,6 +9088,7 @@
     },
     "visitas": 1
    },
+   "upr": "eritrea",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -9141,6 +9204,7 @@
     },
     "visitas": 1
    },
+   "upr": "slovakia",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -9264,6 +9328,7 @@
     },
     "visitas": 7
    },
+   "upr": "slovenia",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -9399,6 +9464,7 @@
     },
     "visitas": 29
    },
+   "upr": "spain",
    "visitas": {
     "realizadas": true,
     "programadas": true
@@ -9494,6 +9560,7 @@
     },
     "visitas": 41
    },
+   "upr": "united-states-america",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -9604,6 +9671,7 @@
     },
     "visitas": 1
    },
+   "upr": "estonia",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -9689,6 +9757,7 @@
     },
     "visitas": 1
    },
+   "upr": "eswatini",
    "visitas": {
     "realizadas": false,
     "programadas": false
@@ -9764,6 +9833,7 @@
     },
     "visitas": 8
    },
+   "upr": "ethiopia",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -9853,6 +9923,7 @@
     },
     "visitas": 16
    },
+   "upr": "russian-federation",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -9961,6 +10032,7 @@
     },
     "visitas": 24
    },
+   "upr": "philippines",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -10076,6 +10148,7 @@
     },
     "visitas": 7
    },
+   "upr": "finland",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -10166,6 +10239,7 @@
     },
     "visitas": 10
    },
+   "upr": "fiji",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -10293,6 +10367,7 @@
     },
     "visitas": 15
    },
+   "upr": "france",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -10408,6 +10483,7 @@
     },
     "visitas": 1
    },
+   "upr": "gabon",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -10508,6 +10584,7 @@
     },
     "visitas": 8
    },
+   "upr": "gambia-republic",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -10613,6 +10690,7 @@
     },
     "visitas": 33
    },
+   "upr": "georgia",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -10728,6 +10806,7 @@
     },
     "visitas": 12
    },
+   "upr": "ghana",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -10808,6 +10887,7 @@
     },
     "visitas": 0
    },
+   "upr": "grenada",
    "visitas": {
     "realizadas": false,
     "programadas": false
@@ -10925,6 +11005,7 @@
     },
     "visitas": 18
    },
+   "upr": "greece",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -11035,6 +11116,7 @@
     },
     "visitas": 30
    },
+   "upr": "guatemala",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -11130,6 +11212,7 @@
     },
     "visitas": 0
    },
+   "upr": "guinea",
    "visitas": {
     "realizadas": false,
     "programadas": false
@@ -11210,6 +11293,7 @@
     },
     "visitas": 8
    },
+   "upr": "equatorial-guinea",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -11338,6 +11422,7 @@
     },
     "visitas": 4
    },
+   "upr": "guinea-bissau",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -11430,6 +11515,7 @@
     },
     "visitas": 3
    },
+   "upr": "guyana",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -11520,6 +11606,7 @@
     },
     "visitas": 6
    },
+   "upr": "haiti",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -11630,6 +11717,7 @@
     },
     "visitas": 38
    },
+   "upr": "honduras",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -11738,6 +11826,7 @@
     },
     "visitas": 19
    },
+   "upr": "hungary",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -11837,6 +11926,7 @@
     },
     "visitas": 20
    },
+   "upr": "india",
    "visitas": {
     "realizadas": true,
     "programadas": true
@@ -11927,6 +12017,7 @@
     },
     "visitas": 16
    },
+   "upr": "indonesia",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -12015,6 +12106,7 @@
     },
     "visitas": 16
    },
+   "upr": "iraq",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -12130,6 +12222,7 @@
     },
     "visitas": 4
    },
+   "upr": "ireland",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -12202,6 +12295,7 @@
     },
     "visitas": 10
    },
+   "upr": "iran-islamic-republic",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -12307,6 +12401,7 @@
     },
     "visitas": 3
    },
+   "upr": "iceland",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -12387,6 +12482,7 @@
     },
     "visitas": 3
    },
+   "upr": "marshall-islands",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -12467,6 +12563,7 @@
     },
     "visitas": 2
    },
+   "upr": "solomon-islands",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -12542,6 +12639,7 @@
     },
     "visitas": 7
    },
+   "upr": "israel",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -12673,6 +12771,7 @@
     },
     "visitas": 28
    },
+   "upr": "italy",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -12753,6 +12852,7 @@
     },
     "visitas": 4
    },
+   "upr": "jamaica",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -12845,6 +12945,7 @@
     },
     "visitas": 20
    },
+   "upr": "japan",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -12933,6 +13034,7 @@
     },
     "visitas": 13
    },
+   "upr": "jordan",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -13048,6 +13150,7 @@
     },
     "visitas": 20
    },
+   "upr": "kazakhstan",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -13135,6 +13238,7 @@
     },
     "visitas": 16
    },
+   "upr": "kenya",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -13235,6 +13339,7 @@
     },
     "visitas": 20
    },
+   "upr": "kyrgyzstan",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -13295,6 +13400,7 @@
     },
     "visitas": 1
    },
+   "upr": "kiribati",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -13321,6 +13427,7 @@
     "ultima_co": null,
     "visitas": 0
    },
+   "upr": null,
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -13396,6 +13503,7 @@
     },
     "visitas": 8
    },
+   "upr": "kuwait",
    "visitas": {
     "realizadas": true,
     "programadas": true
@@ -13476,6 +13584,7 @@
     },
     "visitas": 10
    },
+   "upr": "lao-peoples-democratic-republic",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -13571,6 +13680,7 @@
     },
     "visitas": 4
    },
+   "upr": "lesotho",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -13674,6 +13784,7 @@
     },
     "visitas": 5
    },
+   "upr": "latvia",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -13779,6 +13890,7 @@
     },
     "visitas": 3
    },
+   "upr": "liberia",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -13874,6 +13986,7 @@
     },
     "visitas": 3
    },
+   "upr": "libya",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -13979,6 +14092,7 @@
     },
     "visitas": 2
    },
+   "upr": "liechtenstein",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -14097,6 +14211,7 @@
     },
     "visitas": 4
    },
+   "upr": "lithuania",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -14212,6 +14327,7 @@
     },
     "visitas": 2
    },
+   "upr": "luxembourg",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -14302,6 +14418,7 @@
     },
     "visitas": 8
    },
+   "upr": "lebanon",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -14417,6 +14534,7 @@
     },
     "visitas": 7
    },
+   "upr": "north-macedonia",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -14537,6 +14655,7 @@
     },
     "visitas": 5
    },
+   "upr": "madagascar",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -14592,6 +14711,7 @@
     },
     "visitas": 16
    },
+   "upr": "malaysia",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -14687,6 +14807,7 @@
     },
     "visitas": 2
    },
+   "upr": "malawi",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -14792,6 +14913,7 @@
     },
     "visitas": 17
    },
+   "upr": "maldives",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -14902,6 +15024,7 @@
     },
     "visitas": 6
    },
+   "upr": "malta",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -15019,6 +15142,7 @@
     },
     "visitas": 0
    },
+   "upr": "mali",
    "visitas": {
     "realizadas": true,
     "programadas": true
@@ -15129,6 +15253,7 @@
     },
     "visitas": 19
    },
+   "upr": "morocco",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -15229,6 +15354,7 @@
     },
     "visitas": 9
    },
+   "upr": "mauritius",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -15319,6 +15445,7 @@
     },
     "visitas": 14
    },
+   "upr": "mauritania",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -15374,6 +15501,7 @@
     },
     "visitas": 1
    },
+   "upr": "micronesia-federated-states",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -15484,6 +15612,7 @@
     },
     "visitas": 16
    },
+   "upr": "moldova-republic",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -15599,6 +15728,7 @@
     },
     "visitas": 22
    },
+   "upr": "mongolia",
    "visitas": {
     "realizadas": true,
     "programadas": true
@@ -15719,6 +15849,7 @@
     },
     "visitas": 8
    },
+   "upr": "montenegro",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -15819,6 +15950,7 @@
     },
     "visitas": 9
    },
+   "upr": "mozambique",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -15884,6 +16016,7 @@
     },
     "visitas": 1
    },
+   "upr": "myanmar",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -16017,6 +16150,7 @@
     },
     "visitas": 52
    },
+   "upr": "mexico",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -16117,6 +16251,7 @@
     },
     "visitas": 0
    },
+   "upr": "monaco",
    "visitas": {
     "realizadas": false,
     "programadas": false
@@ -16212,6 +16347,7 @@
     },
     "visitas": 4
    },
+   "upr": "namibia",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -16292,6 +16428,7 @@
     },
     "visitas": 2
    },
+   "upr": "nauru",
    "visitas": {
     "realizadas": false,
     "programadas": false
@@ -16387,6 +16524,7 @@
     },
     "visitas": 24
    },
+   "upr": "nepal",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -16487,6 +16625,7 @@
     },
     "visitas": 3
    },
+   "upr": "nicaragua",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -16598,6 +16737,7 @@
     },
     "visitas": 21
    },
+   "upr": "nigeria",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -16698,6 +16838,7 @@
     },
     "visitas": 10
    },
+   "upr": "norway",
    "visitas": {
     "realizadas": true,
     "programadas": true
@@ -16819,6 +16960,7 @@
     },
     "visitas": 9
    },
+   "upr": "new-zealand",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -16929,6 +17071,7 @@
     },
     "visitas": 5
    },
+   "upr": "niger",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -17009,6 +17152,7 @@
     },
     "visitas": 3
    },
+   "upr": "oman",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -17091,6 +17235,7 @@
     },
     "visitas": 6
    },
+   "upr": "pakistan",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -17171,6 +17316,7 @@
     },
     "visitas": 0
    },
+   "upr": "palau",
    "visitas": {
     "realizadas": false,
     "programadas": false
@@ -17281,6 +17427,7 @@
     },
     "visitas": 8
    },
+   "upr": "panama",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -17341,6 +17488,7 @@
     },
     "visitas": 7
    },
+   "upr": "papua-new-guinea",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -17461,6 +17609,7 @@
     },
     "visitas": 19
    },
+   "upr": "paraguay",
    "visitas": {
     "realizadas": true,
     "programadas": true
@@ -17571,6 +17720,7 @@
     },
     "visitas": 0
    },
+   "upr": "netherlands-kingdom",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -17688,6 +17838,7 @@
     },
     "visitas": 31
    },
+   "upr": "peru",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -17801,6 +17952,7 @@
     },
     "visitas": 17
    },
+   "upr": "poland",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -17923,6 +18075,7 @@
     },
     "visitas": 8
    },
+   "upr": "portugal",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -18026,6 +18179,7 @@
     },
     "visitas": 33
    },
+   "upr": "united-kingdom",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -18134,6 +18288,7 @@
     },
     "visitas": 8
    },
+   "upr": "central-african-republic",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -18234,6 +18389,7 @@
     },
     "visitas": 17
    },
+   "upr": "korea-republic",
    "visitas": {
     "realizadas": true,
     "programadas": true
@@ -18336,6 +18492,7 @@
     },
     "visitas": 13
    },
+   "upr": "congo-democratic-republic",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -18436,6 +18593,7 @@
     },
     "visitas": 7
    },
+   "upr": "dominican-republic",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -18500,6 +18658,7 @@
     },
     "visitas": 3
    },
+   "upr": "korea-democratic-peoples-republic",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -18591,6 +18750,7 @@
     },
     "visitas": 0
    },
+   "upr": "syrian-arab-republic",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -18691,6 +18851,7 @@
     },
     "visitas": 7
    },
+   "upr": "rwanda",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -18801,6 +18962,7 @@
     },
     "visitas": 18
    },
+   "upr": "romania",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -18876,6 +19038,7 @@
     },
     "visitas": 2
    },
+   "upr": "samoa",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -18941,6 +19104,7 @@
     },
     "visitas": 0
    },
+   "upr": "saint-kitts-and-nevis",
    "visitas": {
     "realizadas": false,
     "programadas": false
@@ -19046,6 +19210,7 @@
     },
     "visitas": 0
    },
+   "upr": "san-marino",
    "visitas": {
     "realizadas": false,
     "programadas": false
@@ -19141,6 +19306,7 @@
     },
     "visitas": 2
    },
+   "upr": "saint-vincent-and-grenadines",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -19216,6 +19382,7 @@
     },
     "visitas": 0
    },
+   "upr": "saint-lucia",
    "visitas": {
     "realizadas": false,
     "programadas": false
@@ -19306,6 +19473,7 @@
     },
     "visitas": 0
    },
+   "upr": "sao-tome-and-principe",
    "visitas": {
     "realizadas": false,
     "programadas": false
@@ -19421,6 +19589,7 @@
     },
     "visitas": 7
    },
+   "upr": "senegal",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -19552,6 +19721,7 @@
     },
     "visitas": 15
    },
+   "upr": "serbia",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -19662,6 +19832,7 @@
     },
     "visitas": 3
    },
+   "upr": "seychelles",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -19767,6 +19938,7 @@
     },
     "visitas": 4
    },
+   "upr": "sierra-leone",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -19827,6 +19999,7 @@
     },
     "visitas": 5
    },
+   "upr": "singapore",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -19897,6 +20070,7 @@
     },
     "visitas": 8
    },
+   "upr": "somalia",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -19997,6 +20171,7 @@
     },
     "visitas": 35
    },
+   "upr": "sri-lanka",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -20113,6 +20288,7 @@
     },
     "visitas": 18
    },
+   "upr": "south-africa",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -20193,6 +20369,7 @@
     },
     "visitas": 9
    },
+   "upr": "sudan",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -20283,6 +20460,7 @@
     },
     "visitas": 4
    },
+   "upr": "south-sudan",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -20396,6 +20574,7 @@
     },
     "visitas": 9
    },
+   "upr": "sweden",
    "visitas": {
     "realizadas": true,
     "programadas": true
@@ -20504,6 +20683,7 @@
     },
     "visitas": 6
    },
+   "upr": "switzerland",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -20584,6 +20764,7 @@
     },
     "visitas": 2
    },
+   "upr": "suriname",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -20687,6 +20868,7 @@
     },
     "visitas": 12
    },
+   "upr": "thailand",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -20772,6 +20954,7 @@
     },
     "visitas": 4
    },
+   "upr": "tanzania-united-republic",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -20862,6 +21045,7 @@
     },
     "visitas": 19
    },
+   "upr": "tajikistan",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -20968,6 +21152,7 @@
     },
     "visitas": 0
    },
+   "upr": null,
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -21078,6 +21263,7 @@
     },
     "visitas": 10
    },
+   "upr": "timor-leste",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -21188,6 +21374,7 @@
     },
     "visitas": 7
    },
+   "upr": "togo",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -21233,6 +21420,7 @@
     },
     "visitas": 0
    },
+   "upr": "tonga",
    "visitas": {
     "realizadas": false,
     "programadas": false
@@ -21293,6 +21481,7 @@
     },
     "visitas": 1
    },
+   "upr": "trinidad-and-tobago",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -21388,6 +21577,7 @@
     },
     "visitas": 1
    },
+   "upr": "turkmenistan",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -21498,6 +21688,7 @@
     },
     "visitas": 0
    },
+   "upr": "turkiye",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -21548,6 +21739,7 @@
     },
     "visitas": 2
    },
+   "upr": "tuvalu",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -21653,6 +21845,7 @@
     },
     "visitas": 26
    },
+   "upr": "tunisia",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -21778,6 +21971,7 @@
     },
     "visitas": 21
    },
+   "upr": "ukraine",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -21884,6 +22078,7 @@
     },
     "visitas": 6
    },
+   "upr": "uganda",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -22011,6 +22206,7 @@
     },
     "visitas": 12
    },
+   "upr": "uruguay",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -22096,6 +22292,7 @@
     },
     "visitas": 16
    },
+   "upr": "uzbekistan",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -22171,6 +22368,7 @@
     },
     "visitas": 1
    },
+   "upr": "vanuatu",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -22290,6 +22488,7 @@
     },
     "visitas": 9
    },
+   "upr": "venezuela-bolivarian-republic",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -22365,6 +22564,7 @@
     },
     "visitas": 17
    },
+   "upr": "viet-nam",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -22445,6 +22645,7 @@
     },
     "visitas": 4
    },
+   "upr": "yemen",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -22535,6 +22736,7 @@
     },
     "visitas": 0
    },
+   "upr": "djibouti",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -22651,6 +22853,7 @@
     },
     "visitas": 9
    },
+   "upr": "zambia",
    "visitas": {
     "realizadas": true,
     "programadas": false
@@ -22731,6 +22934,7 @@
     },
     "visitas": 6
    },
+   "upr": "zimbabwe",
    "visitas": {
     "realizadas": true,
     "programadas": false
