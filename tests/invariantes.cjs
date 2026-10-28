@@ -30,4 +30,5 @@ t('documentos por país: un archivo por país y NINGÚN símbolo pertenece a otr
   assert.ok(nco > 1500 && nepu > 1500, nco + ' ' + nepu);
   const resumen = run('PAISES.reduce((s,p)=>s+((p.docs||{}).co||0),0)'); assert.equal(resumen, nco, 'resumen del catálogo = archivos'); });
 t('estado.json y historial coherentes', () => { const e = JSON.parse(fs.readFileSync(path.join(root, 'data', 'estado.json'), 'utf8')); assert.ok(e.revisado_el && e.contadores.mandatos >= 45); });
+t('registro de revisiones', () => { const r = JSON.parse(fs.readFileSync(path.join(root, 'data', 'revisiones.json'), 'utf8')); assert.ok(Array.isArray(r) && r.length >= 1 && r.length <= 100); for (const x of r) assert.ok(x.inicio && x.quien && x.resultado && Array.isArray(x.revisado)); });
 console.log(JSON.stringify({ invariantes: n, ok: true }));

@@ -6,3 +6,12 @@ Thumbs.db
 *.cache
 __pycache__/
 *.pyc
+
+# Secretos y configuración local: nunca al repositorio público
+.env
+.env.*
+*.pem
+*.key
+id_rsa*
+*token*.txt
+.claude/settings.local.json
