@@ -57,6 +57,10 @@
         {
           "t": "Observaciones generales de los comités",
           "x": "En cada comité de tratados hay una pestaña con sus observaciones o recomendaciones generales (80 documentos en total) con símbolo oficial, título, fecha y enlace al original. Las más antiguas, con numeración anterior, aún no están y se avisa en pantalla."
+        },
+        {
+          "t": "Enlace a las recomendaciones del EPU",
+          "x": "En la sección EPU de cada ficha, un enlace a la base de UPR Info (organización independiente) donde se ven las recomendaciones aceptadas y las que el Estado solo «tomó nota». ATLAS no copia esos datos."
         }
       ]
     },
@@ -105,7 +109,7 @@
         },
         {
           "t": "Recomendaciones del EPU por país",
-          "x": "Hoy solo se cuenta cuántos documentos hay; faltan las recomendaciones aceptadas y las que el Estado solo «tomó nota»."
+          "x": "Hoy se enlaza a UPR Info, pero no se muestran dentro de ATLAS. Para traerlas hace falta el permiso de UPR Info o leerlas de los informes oficiales del Grupo de Trabajo del EPU."
         },
         {
           "t": "Comisiones de investigación",
@@ -194,6 +198,10 @@
           "t": "Datos del sistema",
           "x": "Tratados depositados, presupuesto y cuotas por país, votaciones y calendario de días internacionales.",
           "tag": "propuesto"
+        },
+        {
+          "t": "Etiquetas en los documentos",
+          "x": "Que cada documento muestre etiquetas (tipo y tema) para entender de un vistazo de qué va, sin abrirlo."
         }
       ]
     }
