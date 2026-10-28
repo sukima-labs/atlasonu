@@ -1,0 +1,4965 @@
+{
+ "fuente": "Informes conjuntos de comunicaciones de los procedimientos especiales (Biblioteca Digital de la ONU)",
+ "nota": "Solo cifras por país; el texto de cada comunicación está en spcommreports.ohchr.org (no se consulta: robots.txt).",
+ "informes": [
+  {
+   "simbolo": "A/HRC/43/77",
+   "registro": "3862816",
+   "url": "https://digitallibrary.un.org/record/3862816",
+   "periodo": "1 June to 30 November 2019",
+   "paises_declarados": 116,
+   "paises": {
+    "AFG": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "DZA": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "ATG": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "ARG": {
+     "enviadas": 4,
+     "con_respuesta": 4,
+     "respuestas_de_fondo": 6,
+     "acuses": 0
+    },
+    "ARM": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "AUS": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "AZE": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 1
+    },
+    "BHS": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "BHR": {
+     "enviadas": 3,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "BGD": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "BRB": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "BLR": {
+     "enviadas": 3,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "BEL": {
+     "enviadas": 4,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "BLZ": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "BOL": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "BRA": {
+     "enviadas": 8,
+     "con_respuesta": 5,
+     "respuestas_de_fondo": 5,
+     "acuses": 0
+    },
+    "BGR": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "BFA": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 1
+    },
+    "KHM": {
+     "enviadas": 3,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "CMR": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "CAN": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "CHL": {
+     "enviadas": 3,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "CHN": {
+     "enviadas": 11,
+     "con_respuesta": 7,
+     "respuestas_de_fondo": 7,
+     "acuses": 0
+    },
+    "COL": {
+     "enviadas": 6,
+     "con_respuesta": 5,
+     "respuestas_de_fondo": 9,
+     "acuses": 0
+    },
+    "CRI": {
+     "enviadas": 3,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "CUB": {
+     "enviadas": 5,
+     "con_respuesta": 4,
+     "respuestas_de_fondo": 5,
+     "acuses": 0
+    },
+    "CYP": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "COD": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "DNK": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "DJI": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "DMA": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "DOM": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "ECU": {
+     "enviadas": 6,
+     "con_respuesta": 4,
+     "respuestas_de_fondo": 4,
+     "acuses": 0
+    },
+    "EGY": {
+     "enviadas": 6,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "SLV": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "GNQ": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "ETH": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "FRA": {
+     "enviadas": 3,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "GAB": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "GEO": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "DEU": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "GRC": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "GRD": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "GTM": {
+     "enviadas": 4,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "GUY": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "HTI": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "HND": {
+     "enviadas": 3,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 4,
+     "acuses": 0
+    },
+    "IND": {
+     "enviadas": 7,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "IDN": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "IRN": {
+     "enviadas": 9,
+     "con_respuesta": 4,
+     "respuestas_de_fondo": 4,
+     "acuses": 0
+    },
+    "IRQ": {
+     "enviadas": 3,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "IRL": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "ISR": {
+     "enviadas": 6,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "ITA": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "JAM": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "JPN": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "JOR": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "KAZ": {
+     "enviadas": 3,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "KWT": {
+     "enviadas": 3,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 3,
+     "acuses": 1
+    },
+    "LAO": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "LVA": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "LBN": {
+     "enviadas": 3,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "LUX": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "MWI": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "MYS": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "MDV": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 1
+    },
+    "MEX": {
+     "enviadas": 6,
+     "con_respuesta": 4,
+     "respuestas_de_fondo": 4,
+     "acuses": 0
+    },
+    "MAR": {
+     "enviadas": 4,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 4,
+     "acuses": 0
+    },
+    "MMR": {
+     "enviadas": 10,
+     "con_respuesta": 6,
+     "respuestas_de_fondo": 9,
+     "acuses": 0
+    },
+    "NPL": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "NLD": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "NIC": {
+     "enviadas": 4,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "NGA": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "MKD": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "PAK": {
+     "enviadas": 4,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "PAN": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "PRY": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "PER": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "PHL": {
+     "enviadas": 3,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 1
+    },
+    "QAT": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 1
+    },
+    "KOR": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "RUS": {
+     "enviadas": 4,
+     "con_respuesta": 4,
+     "respuestas_de_fondo": 4,
+     "acuses": 1
+    },
+    "KNA": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "LCA": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "VCT": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "SAU": {
+     "enviadas": 6,
+     "con_respuesta": 4,
+     "respuestas_de_fondo": 4,
+     "acuses": 2
+    },
+    "SRB": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "SGP": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "SVK": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "SLB": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "ESP": {
+     "enviadas": 4,
+     "con_respuesta": 4,
+     "respuestas_de_fondo": 4,
+     "acuses": 0
+    },
+    "LKA": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "PSE": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "SDN": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "SUR": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "SWE": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "CHE": {
+     "enviadas": 3,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "SYR": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "THA": {
+     "enviadas": 3,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 1
+    },
+    "TLS": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "TGO": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "TTO": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "TUN": {
+     "enviadas": 3,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "TUR": {
+     "enviadas": 4,
+     "con_respuesta": 4,
+     "respuestas_de_fondo": 5,
+     "acuses": 0
+    },
+    "TKM": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "UGA": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "ARE": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "GBR": {
+     "enviadas": 4,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "TZA": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "USA": {
+     "enviadas": 9,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "URY": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "UZB": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "VEN": {
+     "enviadas": 3,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "VNM": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "ZWE": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 1
+    }
+   }
+  },
+  {
+   "simbolo": "A/HRC/44/59",
+   "registro": "3872167",
+   "url": "https://digitallibrary.un.org/record/3872167",
+   "periodo": "1 February to 30 April 2020",
+   "paises_declarados": 53,
+   "paises": {
+    "AFG": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "ARG": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "AUS": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "BHR": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "BGD": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "BLR": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "BOL": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "BIH": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "BRA": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "BDI": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "CHL": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "CHN": {
+     "enviadas": 5,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "COL": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "CIV": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "CRO": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "PRK": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "EGY": {
+     "enviadas": 6,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 3
+    },
+    "FRA": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "GAB": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 1
+    },
+    "GTM": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "HTI": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "HND": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "IND": {
+     "enviadas": 4,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "IRN": {
+     "enviadas": 3,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "IRQ": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "ISR": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "LBY": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "MLT": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 1
+    },
+    "MEX": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "NLD": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "NIC": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "NGA": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "PAK": {
+     "enviadas": 3,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 1
+    },
+    "PER": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "PHL": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "KOR": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "RUS": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "SAU": {
+     "enviadas": 4,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "SSD": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "ESP": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "LKA": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "THA": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "TUN": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "TUR": {
+     "enviadas": 4,
+     "con_respuesta": 4,
+     "respuestas_de_fondo": 4,
+     "acuses": 0
+    },
+    "UKR": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "ARE": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "TZA": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "USA": {
+     "enviadas": 4,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "UZB": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "VEN": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "VNM": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "YEM": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    }
+   }
+  },
+  {
+   "simbolo": "A/HRC/45/3",
+   "registro": "3880604",
+   "url": "https://digitallibrary.un.org/record/3880604",
+   "periodo": "1 May to 31 July 2020",
+   "paises_declarados": 74,
+   "paises": {
+    "ALB": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "DZA": {
+     "enviadas": 3,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "BHR": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "BGD": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "BLR": {
+     "enviadas": 4,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "BEL": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "BOL": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "BGR": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "KHM": {
+     "enviadas": 3,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 4,
+     "acuses": 0
+    },
+    "CMR": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "CAN": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 2
+    },
+    "CHL": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "CHN": {
+     "enviadas": 7,
+     "con_respuesta": 6,
+     "respuestas_de_fondo": 6,
+     "acuses": 0
+    },
+    "COL": {
+     "enviadas": 3,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "CRI": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "CUB": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "EGY": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 1
+    },
+    "SLV": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "ETH": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "FJI": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "FRA": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "DEU": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "GRC": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "GTM": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "HTI": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "HUN": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "IND": {
+     "enviadas": 5,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "IRN": {
+     "enviadas": 9,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "IRQ": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "IRL": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "ISR": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "ITA": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "JPN": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "JOR": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "KAZ": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "KEN": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "KGZ": {
+     "enviadas": 3,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "LAO": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 1
+    },
+    "MDG": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "MWI": {
+     "enviadas": 3,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "MYS": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "MDV": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "MRT": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "MEX": {
+     "enviadas": 5,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "MNE": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "MMR": {
+     "enviadas": 5,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "NPL": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "NIC": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "NER": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "NGA": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "PAK": {
+     "enviadas": 4,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "PER": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "PHL": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 1
+    },
+    "QAT": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "KOR": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "ROU": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 1
+    },
+    "WSM": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "SAU": {
+     "enviadas": 3,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "SRB": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "SGP": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "ESP": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "LKA": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "CHE": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "THA": {
+     "enviadas": 3,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "TUN": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "TUR": {
+     "enviadas": 5,
+     "con_respuesta": 5,
+     "respuestas_de_fondo": 5,
+     "acuses": 1
+    },
+    "UGA": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "GBR": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "USA": {
+     "enviadas": 7,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "URY": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "VEN": {
+     "enviadas": 5,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "VNM": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "ZMB": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    }
+   }
+  },
+  {
+   "simbolo": "A/HRC/46/3",
+   "registro": "3901267",
+   "url": "https://digitallibrary.un.org/record/3901267",
+   "periodo": "1 August to 31 January 2021",
+   "paises_declarados": 111,
+   "paises": {
+    "AFG": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "DZA": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 1
+    },
+    "AGO": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "ARG": {
+     "enviadas": 3,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "AUS": {
+     "enviadas": 3,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "AZE": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "BHR": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "BGD": {
+     "enviadas": 4,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "BLR": {
+     "enviadas": 4,
+     "con_respuesta": 4,
+     "respuestas_de_fondo": 4,
+     "acuses": 0
+    },
+    "BOL": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 2
+    },
+    "BIH": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "BRA": {
+     "enviadas": 9,
+     "con_respuesta": 5,
+     "respuestas_de_fondo": 5,
+     "acuses": 0
+    },
+    "BGR": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "BFA": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 2
+    },
+    "BDI": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "KHM": {
+     "enviadas": 4,
+     "con_respuesta": 4,
+     "respuestas_de_fondo": 4,
+     "acuses": 0
+    },
+    "CMR": {
+     "enviadas": 3,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 5,
+     "acuses": 0
+    },
+    "CAN": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "TCD": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 1
+    },
+    "CHL": {
+     "enviadas": 3,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "CHN": {
+     "enviadas": 7,
+     "con_respuesta": 6,
+     "respuestas_de_fondo": 6,
+     "acuses": 0
+    },
+    "COL": {
+     "enviadas": 7,
+     "con_respuesta": 6,
+     "respuestas_de_fondo": 7,
+     "acuses": 1
+    },
+    "COM": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "CRI": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "CIV": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 1
+    },
+    "CRO": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "PRK": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "COD": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "DNK": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "DJI": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "ECU": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 1
+    },
+    "EGY": {
+     "enviadas": 10,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 3,
+     "acuses": 1
+    },
+    "SLV": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 2,
+     "acuses": 2
+    },
+    "ETH": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "FRA": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "GHA": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "GTM": {
+     "enviadas": 6,
+     "con_respuesta": 4,
+     "respuestas_de_fondo": 4,
+     "acuses": 3
+    },
+    "GIN": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "GNB": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "GUY": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "HTI": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "HND": {
+     "enviadas": 3,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "IND": {
+     "enviadas": 7,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "IDN": {
+     "enviadas": 4,
+     "con_respuesta": 4,
+     "respuestas_de_fondo": 4,
+     "acuses": 0
+    },
+    "IRN": {
+     "enviadas": 15,
+     "con_respuesta": 10,
+     "respuestas_de_fondo": 11,
+     "acuses": 0
+    },
+    "IRQ": {
+     "enviadas": 7,
+     "con_respuesta": 5,
+     "respuestas_de_fondo": 6,
+     "acuses": 0
+    },
+    "ISR": {
+     "enviadas": 7,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 1
+    },
+    "ITA": {
+     "enviadas": 5,
+     "con_respuesta": 5,
+     "respuestas_de_fondo": 5,
+     "acuses": 0
+    },
+    "JOR": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "KEN": {
+     "enviadas": 3,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "RKS": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "KWT": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 2,
+     "acuses": 1
+    },
+    "LAO": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "LBN": {
+     "enviadas": 3,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 4,
+     "acuses": 0
+    },
+    "LBY": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "MDG": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "MLI": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "MLT": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "MRT": {
+     "enviadas": 4,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "MEX": {
+     "enviadas": 8,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "MNG": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "MNE": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "MAR": {
+     "enviadas": 4,
+     "con_respuesta": 4,
+     "respuestas_de_fondo": 4,
+     "acuses": 0
+    },
+    "MMR": {
+     "enviadas": 11,
+     "con_respuesta": 4,
+     "respuestas_de_fondo": 4,
+     "acuses": 0
+    },
+    "NPL": {
+     "enviadas": 3,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "NLD": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "NIC": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "NGA": {
+     "enviadas": 4,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "PAK": {
+     "enviadas": 5,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "PAN": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "PNG": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "PRY": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 2,
+     "acuses": 1
+    },
+    "PER": {
+     "enviadas": 7,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "PHL": {
+     "enviadas": 4,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 1
+    },
+    "PRT": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "QAT": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 1
+    },
+    "KOR": {
+     "enviadas": 3,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "ROU": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "RUS": {
+     "enviadas": 8,
+     "con_respuesta": 8,
+     "respuestas_de_fondo": 10,
+     "acuses": 0
+    },
+    "RWA": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "SAU": {
+     "enviadas": 5,
+     "con_respuesta": 5,
+     "respuestas_de_fondo": 5,
+     "acuses": 2
+    },
+    "SEN": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "SRB": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "SGP": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "SOM": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "ZAF": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 1
+    },
+    "SSD": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "ESP": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 2
+    },
+    "LKA": {
+     "enviadas": 5,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "PSE": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "SDN": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "SWE": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 1
+    },
+    "CHE": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "SYR": {
+     "enviadas": 3,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "TJK": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "THA": {
+     "enviadas": 3,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 3,
+     "acuses": 2
+    },
+    "TTO": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "TUR": {
+     "enviadas": 15,
+     "con_respuesta": 14,
+     "respuestas_de_fondo": 14,
+     "acuses": 2
+    },
+    "TKM": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "UKR": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "ARE": {
+     "enviadas": 5,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "GBR": {
+     "enviadas": 6,
+     "con_respuesta": 5,
+     "respuestas_de_fondo": 5,
+     "acuses": 0
+    },
+    "TZA": {
+     "enviadas": 4,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "USA": {
+     "enviadas": 16,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 1
+    },
+    "URY": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "UZB": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "VEN": {
+     "enviadas": 3,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "VNM": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 1
+    },
+    "YEM": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "ZWE": {
+     "enviadas": 4,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 3,
+     "acuses": 1
+    }
+   }
+  },
+  {
+   "simbolo": "A/HRC/47/3",
+   "registro": "3929191",
+   "url": "https://digitallibrary.un.org/record/3929191",
+   "periodo": "1 February to 30 April 2021",
+   "paises_declarados": 98,
+   "paises": {
+    "AFG": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "ALB": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "DZA": {
+     "enviadas": 4,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 4,
+     "acuses": 1
+    },
+    "AND": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "ARG": {
+     "enviadas": 3,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "ARM": {
+     "enviadas": 3,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "AUS": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "AUT": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 1
+    },
+    "AZE": {
+     "enviadas": 3,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "BGD": {
+     "enviadas": 3,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "BLR": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "BEL": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "BOL": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "BIH": {
+     "enviadas": 3,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "BRA": {
+     "enviadas": 3,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "KHM": {
+     "enviadas": 4,
+     "con_respuesta": 4,
+     "respuestas_de_fondo": 6,
+     "acuses": 0
+    },
+    "CMR": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "CAN": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "CHL": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "CHN": {
+     "enviadas": 3,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "COL": {
+     "enviadas": 6,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 4,
+     "acuses": 0
+    },
+    "CUB": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "DNK": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "ECU": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "EGY": {
+     "enviadas": 5,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "ERI": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "EST": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "FIN": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "FRA": {
+     "enviadas": 3,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "GEO": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "DEU": {
+     "enviadas": 4,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "GTM": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "GIN": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 1
+    },
+    "HTI": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "HND": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "HUN": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "IND": {
+     "enviadas": 5,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "IDN": {
+     "enviadas": 4,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "IRN": {
+     "enviadas": 11,
+     "con_respuesta": 6,
+     "respuestas_de_fondo": 7,
+     "acuses": 3
+    },
+    "IRQ": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "IRL": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 1
+    },
+    "ISR": {
+     "enviadas": 5,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 2
+    },
+    "JPN": {
+     "enviadas": 3,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 3,
+     "acuses": 1
+    },
+    "KAZ": {
+     "enviadas": 3,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 3,
+     "acuses": 2
+    },
+    "KWT": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 1
+    },
+    "KGZ": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "LAO": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "LBN": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "LBY": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "MYS": {
+     "enviadas": 3,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 2
+    },
+    "MDV": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "MLT": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "MUS": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 1
+    },
+    "MEX": {
+     "enviadas": 5,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 1
+    },
+    "MAR": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 5,
+     "acuses": 0
+    },
+    "MMR": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "NLD": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "NIC": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "NGA": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 1
+    },
+    "MKD": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "NOR": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "PAK": {
+     "enviadas": 5,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "PAN": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "PER": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "PHL": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "POL": {
+     "enviadas": 4,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "PRT": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "KOR": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "ROU": {
+     "enviadas": 3,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "RUS": {
+     "enviadas": 6,
+     "con_respuesta": 4,
+     "respuestas_de_fondo": 5,
+     "acuses": 0
+    },
+    "SAU": {
+     "enviadas": 7,
+     "con_respuesta": 4,
+     "respuestas_de_fondo": 4,
+     "acuses": 1
+    },
+    "SEN": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "SRB": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "SOM": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "ZAF": {
+     "enviadas": 3,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 1
+    },
+    "ESP": {
+     "enviadas": 3,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 1
+    },
+    "LKA": {
+     "enviadas": 3,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "PSE": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "SDN": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "SWE": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "CHE": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "TJK": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "THA": {
+     "enviadas": 3,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 3
+    },
+    "TTO": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "TUN": {
+     "enviadas": 4,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 2
+    },
+    "TUR": {
+     "enviadas": 5,
+     "con_respuesta": 5,
+     "respuestas_de_fondo": 5,
+     "acuses": 0
+    },
+    "TKM": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "UGA": {
+     "enviadas": 3,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "UKR": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "ARE": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "GBR": {
+     "enviadas": 3,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 3,
+     "acuses": 1
+    },
+    "TZA": {
+     "enviadas": 3,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "USA": {
+     "enviadas": 16,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "UZB": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "VEN": {
+     "enviadas": 3,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "VNM": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 1
+    },
+    "YEM": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    }
+   }
+  },
+  {
+   "simbolo": "A/HRC/49/3",
+   "registro": "3964570",
+   "url": "https://digitallibrary.un.org/record/3964570",
+   "periodo": "1 June to 30 November 2021",
+   "paises_declarados": 109,
+   "paises": {
+    "AFG": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "DZA": {
+     "enviadas": 7,
+     "con_respuesta": 7,
+     "respuestas_de_fondo": 8,
+     "acuses": 2
+    },
+    "AGO": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "ATG": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "ARG": {
+     "enviadas": 3,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "ARM": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "AUS": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "AUT": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 1
+    },
+    "AZE": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "BHS": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 1
+    },
+    "BHR": {
+     "enviadas": 3,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "BGD": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "BLR": {
+     "enviadas": 4,
+     "con_respuesta": 4,
+     "respuestas_de_fondo": 5,
+     "acuses": 0
+    },
+    "BEL": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "BOL": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "BWA": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "BRA": {
+     "enviadas": 8,
+     "con_respuesta": 7,
+     "respuestas_de_fondo": 9,
+     "acuses": 0
+    },
+    "BGR": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "BDI": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "CPV": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "KHM": {
+     "enviadas": 4,
+     "con_respuesta": 4,
+     "respuestas_de_fondo": 5,
+     "acuses": 0
+    },
+    "CAN": {
+     "enviadas": 5,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "CAF": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "CHL": {
+     "enviadas": 5,
+     "con_respuesta": 4,
+     "respuestas_de_fondo": 4,
+     "acuses": 1
+    },
+    "CHN": {
+     "enviadas": 8,
+     "con_respuesta": 6,
+     "respuestas_de_fondo": 6,
+     "acuses": 0
+    },
+    "COL": {
+     "enviadas": 4,
+     "con_respuesta": 4,
+     "respuestas_de_fondo": 4,
+     "acuses": 2
+    },
+    "COG": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "CUB": {
+     "enviadas": 5,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 1
+    },
+    "CYP": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "PRK": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "COD": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "DNK": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "ECU": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "EGY": {
+     "enviadas": 12,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 1
+    },
+    "SLV": {
+     "enviadas": 6,
+     "con_respuesta": 4,
+     "respuestas_de_fondo": 5,
+     "acuses": 0
+    },
+    "ERI": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "SWZ": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "ETH": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "FRA": {
+     "enviadas": 7,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "DEU": {
+     "enviadas": 3,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 1
+    },
+    "GHA": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "GRC": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "GTM": {
+     "enviadas": 6,
+     "con_respuesta": 5,
+     "respuestas_de_fondo": 5,
+     "acuses": 1
+    },
+    "GIN": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 1
+    },
+    "HTI": {
+     "enviadas": 3,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "HND": {
+     "enviadas": 3,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "IND": {
+     "enviadas": 11,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "IDN": {
+     "enviadas": 4,
+     "con_respuesta": 4,
+     "respuestas_de_fondo": 5,
+     "acuses": 0
+    },
+    "IRN": {
+     "enviadas": 15,
+     "con_respuesta": 10,
+     "respuestas_de_fondo": 10,
+     "acuses": 1
+    },
+    "IRQ": {
+     "enviadas": 3,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "IRL": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "ISR": {
+     "enviadas": 6,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 1
+    },
+    "ITA": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "JPN": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "JOR": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "KAZ": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "KEN": {
+     "enviadas": 5,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "KGZ": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "LBN": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "LBR": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "LBY": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "LTU": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "MYS": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 1
+    },
+    "MEX": {
+     "enviadas": 13,
+     "con_respuesta": 4,
+     "respuestas_de_fondo": 4,
+     "acuses": 2
+    },
+    "MAR": {
+     "enviadas": 4,
+     "con_respuesta": 4,
+     "respuestas_de_fondo": 4,
+     "acuses": 0
+    },
+    "NAM": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "NPL": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "NIC": {
+     "enviadas": 3,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "NER": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "NGA": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 1
+    },
+    "PAK": {
+     "enviadas": 7,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "PRY": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "PER": {
+     "enviadas": 3,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "PHL": {
+     "enviadas": 3,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "POL": {
+     "enviadas": 3,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "QAT": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "KOR": {
+     "enviadas": 3,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "ROU": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "RUS": {
+     "enviadas": 7,
+     "con_respuesta": 7,
+     "respuestas_de_fondo": 8,
+     "acuses": 0
+    },
+    "RWA": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "WSM": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "SAU": {
+     "enviadas": 7,
+     "con_respuesta": 6,
+     "respuestas_de_fondo": 6,
+     "acuses": 2
+    },
+    "SGP": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "ZAF": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "SSD": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "ESP": {
+     "enviadas": 3,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "LKA": {
+     "enviadas": 4,
+     "con_respuesta": 4,
+     "respuestas_de_fondo": 5,
+     "acuses": 0
+    },
+    "PSE": {
+     "enviadas": 3,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "SDN": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "SWE": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "CHE": {
+     "enviadas": 3,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "TJK": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "THA": {
+     "enviadas": 3,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 3
+    },
+    "TGO": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "TUN": {
+     "enviadas": 3,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 1
+    },
+    "TUR": {
+     "enviadas": 3,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "TKM": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "UGA": {
+     "enviadas": 3,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "UKR": {
+     "enviadas": 4,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "ARE": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "GBR": {
+     "enviadas": 4,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "USA": {
+     "enviadas": 7,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "URY": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "UZB": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "VEN": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "VNM": {
+     "enviadas": 4,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 3
+    },
+    "ZMB": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "ZWE": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 2
+    }
+   }
+  },
+  {
+   "simbolo": "A/HRC/50/3",
+   "registro": "3974911",
+   "url": "https://digitallibrary.un.org/record/3974911",
+   "periodo": "1 February to 30 April 2022",
+   "paises_declarados": 85,
+   "paises": {
+    "DZA": {
+     "enviadas": 5,
+     "con_respuesta": 4,
+     "respuestas_de_fondo": 5,
+     "acuses": 1
+    },
+    "AUS": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "AUT": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 1
+    },
+    "BHR": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "BGD": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "BLR": {
+     "enviadas": 3,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "BEN": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "BRA": {
+     "enviadas": 4,
+     "con_respuesta": 4,
+     "respuestas_de_fondo": 5,
+     "acuses": 0
+    },
+    "BFA": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "BDI": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "KHM": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "CMR": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "CAF": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "TCD": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "CHL": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "CHN": {
+     "enviadas": 5,
+     "con_respuesta": 4,
+     "respuestas_de_fondo": 4,
+     "acuses": 0
+    },
+    "COL": {
+     "enviadas": 3,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "CUB": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "COD": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "DJI": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "DOM": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 1
+    },
+    "ECU": {
+     "enviadas": 4,
+     "con_respuesta": 4,
+     "respuestas_de_fondo": 4,
+     "acuses": 0
+    },
+    "ETH": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "FRA": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "GAB": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "DEU": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "GTM": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "GIN": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "HND": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "IND": {
+     "enviadas": 6,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "IDN": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "IRN": {
+     "enviadas": 7,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "IRQ": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "ISR": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "JPN": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "KAZ": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "KGZ": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "LBR": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "LBY": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "MDG": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 2
+    },
+    "MYS": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "MLI": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "MEX": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "MAR": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "NPL": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "NLD": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "NZL": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 1
+    },
+    "NER": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "NOR": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "PAK": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "PAN": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "PER": {
+     "enviadas": 3,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "PHL": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 1
+    },
+    "POL": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "QAT": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "ROU": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "RUS": {
+     "enviadas": 3,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "RWA": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "SAU": {
+     "enviadas": 3,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "SEN": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "SRB": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "SGP": {
+     "enviadas": 3,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "ZAF": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "ESP": {
+     "enviadas": 3,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "LKA": {
+     "enviadas": 3,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 2,
+     "acuses": 1
+    },
+    "SDN": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "SWE": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "TJK": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "THA": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 1
+    },
+    "TLS": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "TGO": {
+     "enviadas": 3,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 1
+    },
+    "TTO": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "TUN": {
+     "enviadas": 3,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "TUR": {
+     "enviadas": 3,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "UGA": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "UKR": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "ARE": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "GBR": {
+     "enviadas": 4,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "TZA": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "USA": {
+     "enviadas": 3,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "VEN": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "VNM": {
+     "enviadas": 3,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 3
+    },
+    "ZWE": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    }
+   }
+  },
+  {
+   "simbolo": "A/HRC/51/3",
+   "registro": "3986775",
+   "url": "https://digitallibrary.un.org/record/3986775",
+   "periodo": "1 May to 31 July 2022",
+   "paises_declarados": 88,
+   "paises": {
+    "DZA": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "ARG": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "AUT": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "BGD": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "BLR": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "BWA": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "BRA": {
+     "enviadas": 4,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "BGR": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "CPV": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "KHM": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "CMR": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "TCD": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "COL": {
+     "enviadas": 5,
+     "con_respuesta": 5,
+     "respuestas_de_fondo": 5,
+     "acuses": 1
+    },
+    "COM": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "COG": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "CRI": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 1
+    },
+    "CUB": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "COD": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "EGY": {
+     "enviadas": 3,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "SLV": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "GNQ": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "ERI": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "SWZ": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "ETH": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "FIN": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "FRA": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "GMB": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "GEO": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "DEU": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 1
+    },
+    "GHA": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "GRC": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "GTM": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "GNB": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "HTI": {
+     "enviadas": 3,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "HND": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "IND": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "IDN": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "IRN": {
+     "enviadas": 8,
+     "con_respuesta": 7,
+     "respuestas_de_fondo": 7,
+     "acuses": 0
+    },
+    "IRQ": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "IRL": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "ISR": {
+     "enviadas": 9,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "ITA": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "KAZ": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "KEN": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "LSO": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "LBR": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "LBY": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "LTU": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "MWI": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 1
+    },
+    "MRT": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "MUS": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "MEX": {
+     "enviadas": 5,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "NAM": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "NPL": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "NLD": {
+     "enviadas": 3,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "NIC": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "NGA": {
+     "enviadas": 3,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 1
+    },
+    "PAK": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "PRY": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "PER": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "POL": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "RUS": {
+     "enviadas": 5,
+     "con_respuesta": 4,
+     "respuestas_de_fondo": 4,
+     "acuses": 0
+    },
+    "STP": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "SAU": {
+     "enviadas": 3,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 1
+    },
+    "SRB": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "SYC": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "SLE": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "SGP": {
+     "enviadas": 3,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "SOM": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "ESP": {
+     "enviadas": 3,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "LKA": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "PSE": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "CHE": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "SYR": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "TJK": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "TUN": {
+     "enviadas": 3,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "TUR": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "UGA": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "UKR": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "GBR": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "TZA": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "USA": {
+     "enviadas": 4,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "UZB": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "VEN": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "VNM": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "YEM": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "ZMB": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    }
+   }
+  },
+  {
+   "simbolo": "A/HRC/52/3",
+   "registro": "4003531",
+   "url": "https://digitallibrary.un.org/record/4003531",
+   "periodo": "1 June to 30 November 2022",
+   "paises_declarados": 89,
+   "paises": {
+    "DZA": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "ARG": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 2
+    },
+    "AUS": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "AZE": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "BHR": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "BGD": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "BLR": {
+     "enviadas": 4,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "BOL": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "BRA": {
+     "enviadas": 4,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "KHM": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "CAN": {
+     "enviadas": 3,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 1
+    },
+    "TCD": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 2,
+     "acuses": 1
+    },
+    "CHN": {
+     "enviadas": 4,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "COL": {
+     "enviadas": 4,
+     "con_respuesta": 4,
+     "respuestas_de_fondo": 4,
+     "acuses": 0
+    },
+    "COM": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "CRI": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "CRO": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 1
+    },
+    "COD": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "DNK": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "ECU": {
+     "enviadas": 3,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "EGY": {
+     "enviadas": 8,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "SLV": {
+     "enviadas": 3,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "SWZ": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "FRA": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "GMB": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "GRC": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "GTM": {
+     "enviadas": 4,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "GIN": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "GUY": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "HND": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "IND": {
+     "enviadas": 7,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 1
+    },
+    "IDN": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "IRN": {
+     "enviadas": 15,
+     "con_respuesta": 8,
+     "respuestas_de_fondo": 8,
+     "acuses": 0
+    },
+    "IRQ": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "IRL": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "ISR": {
+     "enviadas": 8,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "ITA": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "JPN": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "JOR": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "KIR": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "KGZ": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "LAO": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "LVA": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "LBN": {
+     "enviadas": 3,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "LBY": {
+     "enviadas": 3,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "MDG": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "MWI": {
+     "enviadas": 3,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 1
+    },
+    "MYS": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 1
+    },
+    "MDV": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "MEX": {
+     "enviadas": 7,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "MNG": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "MAR": {
+     "enviadas": 2,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "MOZ": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "MMR": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "NPL": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "NIC": {
+     "enviadas": 4,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "NGA": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "PAK": {
+     "enviadas": 5,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "PER": {
+     "enviadas": 3,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "PHL": {
+     "enviadas": 3,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "KOR": {
+     "enviadas": 3,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "RUS": {
+     "enviadas": 9,
+     "con_respuesta": 7,
+     "respuestas_de_fondo": 7,
+     "acuses": 0
+    },
+    "SAU": {
+     "enviadas": 5,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 3,
+     "acuses": 1
+    },
+    "SEN": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 1
+    },
+    "SRB": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "SLE": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "SGP": {
+     "enviadas": 6,
+     "con_respuesta": 4,
+     "respuestas_de_fondo": 4,
+     "acuses": 0
+    },
+    "SOM": {
+     "enviadas": 3,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "ZAF": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "ESP": {
+     "enviadas": 4,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 5,
+     "acuses": 0
+    },
+    "LKA": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "PSE": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "SDN": {
+     "enviadas": 5,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "SWE": {
+     "enviadas": 3,
+     "con_respuesta": 3,
+     "respuestas_de_fondo": 3,
+     "acuses": 0
+    },
+    "CHE": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "SYR": {
+     "enviadas": 1,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 0
+    },
+    "TJK": {
+     "enviadas": 3,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "THA": {
+     "enviadas": 2,
+     "con_respuesta": 1,
+     "respuestas_de_fondo": 1,
+     "acuses": 2
+    },
+    "TUN": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "TUR": {
+     "enviadas": 6,
+     "con_respuesta": 5,
+     "respuestas_de_fondo": 5,
+     "acuses": 0
+    },
+    "UGA": {
+     "enviadas": 2,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "UKR": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "GBR": {
+     "enviadas": 9,
+     "con_respuesta": 2,
+     "respuestas_de_fondo": 2,
+     "acuses": 0
+    },
+    "TZA": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "USA": {
+     "enviadas": 14,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 2
+    },
+    "UZB": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "VEN": {
+     "enviadas": 1,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    },
+    "VNM": {
+     "enviadas": 3,
+     "con_respuesta": 0,
+     "respuestas_de_fondo": 0,
+     "acuses": 0
+    }
+   }
+  }
+ ]
+}
