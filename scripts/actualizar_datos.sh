@@ -16,6 +16,8 @@ python3 -I scripts/fetch_tratados_texto.py
 python3 -I scripts/fetch_docs_pais.py
 MARCO=ok
 python3 -I scripts/fetch_documentos_marco.py || { MARCO=conservado; echo "Documentos marco: no se pudieron actualizar; se conservan los anteriores."; }
+COMUNICACIONES=ok
+python3 -I scripts/fetch_comunicaciones_cifras.py || { COMUNICACIONES=conservado; echo "Cifras de comunicaciones: no se pudieron actualizar; se conservan las anteriores."; }
 echo "pausa de 60 s para no saturar la Biblioteca Digital"; sleep 60
 for t in TM CM; do for l in en es; do
   curl -fsS -m 90 -L "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=$t&lang=$l" -o "$TMP/spin_${t}_$l.html"
