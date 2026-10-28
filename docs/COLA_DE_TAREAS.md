@@ -25,3 +25,4 @@ Al empezar: leer `docs/CONTEXTO_PARA_NUEVAS_SESIONES.md` y esta cola. Las reglas
 | T10 | Otros órganos de la ONU: Consejo de Seguridad, Asamblea General, ECOSOC, CIJ, agencias, ODS | pendiente |
 | T11 | Mapas | pendiente |
 | T12 | Confirmar la búsqueda en vivo desde el celular y, si no responde, valorar otra vía | pendiente |
+| T13 | **El reto académico: catalogación cruzada.** Página pública «El reto» (¿se puede catalogar bien lo que el sistema de la ONU cataloga mal?) con el método, una lista de documentos mal catalogados que ATLAS sí encuentra (con enlace al registro y qué estaba mal: borrador por resolución, informe por resolución, símbolo distinto, etc.) y un marcador de casos resueltos y abiertos que se actualiza con la revisión. Sin nombres de personas: es un reto académico, no una apuesta con nombre (regla de privacidad) | pendiente |
