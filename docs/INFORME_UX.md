@@ -43,3 +43,7 @@ Medido con Chromium a 390 × 844 px sobre las 17 pantallas del menú. Ninguna se
 
 ## Pendiente de confirmar en el celular real
 Medido con navegador de escritorio emulando 390 px; falta confirmarlo en un Android real (ver T12 y T28).
+
+## Avance
+- **Paso 1 hecho (28-10-2026):** en pantallas de hasta 650 px las seis tablas pasan a tarjetas (`etiquetarTablas()` copia la cabecera en cada celda; el CSS las muestra como «etiqueta: valor»). Ninguna tabla se desplaza ya de lado (366 px en 366). Efecto secundario: las pantallas son más largas (Países 51 → 93, Arqueología 41 → 88, Explorar 22 → 43, Auditoría 47 → 105), así que el **paso 4 (paginar y «↑ Arriba» global) sube a siguiente prioridad**.
+- Para repetir la medición: `node tests/auditar_ux.cjs` o la skill `revisar-ux`.
