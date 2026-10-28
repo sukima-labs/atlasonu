@@ -94,6 +94,13 @@ const URL = process.env.ATLAS_URL || 'file://' + path.resolve(__dirname, '..', '
     ok(vp.name + ': Siglas: «cat» da inglés y español', /Committee against Torture/.test(await page.textContent('#sigOut')) && /Comité contra la Tortura/.test(await page.textContent('#sigOut')));
     await page.fill('#sigQ', 'cedaw'); await page.locator('#sigOut button:has-text("Ver tratado y comité")').first().click();
     ok(vp.name + ': Siglas → tratado: CEDAW abre el módulo de tratados', /Comité para la Eliminación de la Discriminación contra la Mujer/.test(await page.textContent('#trDetalle')));
+    await page.evaluate(() => { localStorage.removeItem('atlas_epu'); showPage('epu'); });
+    await page.selectOption('#epuMio', 'IND'); await page.selectOption('#epuOtro', 'CZE'); await page.waitForSelector('#epuDocs table');
+    ok(vp.name + ': Prepara tu EPU: muestra los documentos del ciclo más reciente de los dos países con enlace', (await page.locator('#epuDocs h4').count()) === 2 && (await page.locator('#epuDocs a[href^="https://"]').count()) >= 2);
+    await page.fill('#epub-ap', 'palabra '.repeat(130)); ok(vp.name + ': Prepara tu EPU: estima el tiempo del guion (130 palabras ≈ 1 min)', /1 min 00 s/.test(await page.textContent('#epuTotal')));
+    await page.reload(); await page.evaluate(() => showPage('epu')); ok(vp.name + ': Prepara tu EPU: las notas se conservan en el navegador', (await page.inputValue('#epuMio')) === 'IND' && /palabra/.test(await page.inputValue('#epub-ap')));
+    ok(vp.name + ': Prepara tu EPU: no hay desbordamiento horizontal', await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1));
+    await page.evaluate(() => localStorage.removeItem('atlas_epu'));
     await page.evaluate(() => showPage('siglas')); await page.fill('#sigQ', 'A/HRC/RES/54/6');
     ok(vp.name + ': Siglas: un símbolo documental se descifra', /Este parece un símbolo/.test(await page.textContent('#sigOut')));
     await page.evaluate(() => showPage('fuentes'));
@@ -222,7 +229,7 @@ const URL = process.env.ATLAS_URL || 'file://' + path.resolve(__dirname, '..', '
       await pg.evaluate(() => { scrollTo({ top: 0, behavior: 'instant' }); menu(true); }); await pg.waitForTimeout(350); }
     await pg.tap('.nav button[data-page="tratados"]'); await pg.waitForTimeout(350);
     ok(nom + ': al elegir una pantalla se cierra el menú y se muestra', !(await pg.isVisible('#side')) && (await pg.isVisible('#tratados')));
-    const malos = []; for (const id of ['inicio', 'explorar', 'sistema', 'paises', 'tratados', 'siglas', 'arqueologia', 'recuperar', 'mecanismos', 'codificacion', 'seleccion', 'auditoria', 'fuentes']) { await pg.evaluate(x => showPage(x), id); const d = await pg.evaluate(() => [document.documentElement.scrollWidth, innerWidth]); if (d[0] > d[1] + 1) malos.push(id); }
+    const malos = []; for (const id of ['inicio', 'explorar', 'sistema', 'paises', 'tratados', 'epu', 'siglas', 'arqueologia', 'recuperar', 'mecanismos', 'codificacion', 'seleccion', 'auditoria', 'fuentes']) { await pg.evaluate(x => showPage(x), id); const d = await pg.evaluate(() => [document.documentElement.scrollWidth, innerWidth]); if (d[0] > d[1] + 1) malos.push(id); }
     ok(nom + ': ninguna pantalla se desborda en horizontal ' + malos.join(','), malos.length === 0);
     const peq = await pg.evaluate(() => [...document.querySelectorAll('input.field')].filter(e => e.offsetParent && parseFloat(getComputedStyle(e).fontSize) < 16).length);
     ok(nom + ': los campos de texto usan 16 px (iOS no hace zoom al escribir)', peq === 0);

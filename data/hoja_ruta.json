@@ -53,6 +53,14 @@
         {
           "t": "Accesibilidad básica",
           "x": "Enlace «Saltar al contenido» para quien navega con teclado, foco visible en todos los controles, el menú indica la pantalla actual, las tablas tienen cabeceras bien marcadas y se respeta el ajuste de «reducir movimiento». Queda por probar con lector de pantalla."
+        },
+        {
+          "t": "Observaciones generales de los comités",
+          "x": "En cada comité de tratados hay una pestaña con sus observaciones o recomendaciones generales (80 documentos en total) con símbolo oficial, título, fecha y enlace al original. Las más antiguas, con numeración anterior, aún no están y se avisa en pantalla."
+        },
+        {
+          "t": "Prepara tu EPU",
+          "x": "Una pantalla para cualquier estudiante: eliges tu país y el país al que preguntas y te guía en cinco pasos (lo básico del Examen Periódico Universal, los documentos del ciclo más reciente, un guion de 4 minutos con cronómetro, una pregunta y una recomendación, y la cuestión sobre la que presionar como ONG). Lo que escribes se queda en tu navegador."
         }
       ]
     },
@@ -96,8 +104,8 @@
           "x": "Hoy solo están los vigentes (44 temáticos y 13 por país). Faltan los que ya terminaron."
         },
         {
-          "t": "Jurisprudencia de los comités",
-          "x": "Observaciones generales y dictámenes de los órganos de tratados, con enlace al original."
+          "t": "Jurisprudencia de los comités: lo que falta",
+          "x": "Faltan las observaciones generales anteriores, sus títulos en español y los dictámenes sobre comunicaciones individuales, que hoy solo se enlazan a la base de OHCHR."
         },
         {
           "t": "Recomendaciones del EPU por país",
@@ -151,6 +159,10 @@
           "t": "Logo de DIGNITYOS y portada del repositorio",
           "x": "Logo provisional en el menú y la ficha del repositorio en GitHub ordenada.",
           "tag": "prioridad baja"
+        },
+        {
+          "t": "Grupos de trabajo",
+          "x": "Inventario de los grupos de trabajo del sistema de derechos humanos (de procedimientos especiales, intergubernamentales del Consejo, del EPU y de la Asamblea) con su mandato, composición y fuente."
         }
       ]
     },
