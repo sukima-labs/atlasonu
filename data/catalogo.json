@@ -55611,6 +55611,132 @@
   },
   "~A/HRC/S-18/L.1": {
    "ref": "A/HRC/RES/S-18/1"
+  },
+  "A/RES/60/251": {
+   "simbolo": "A/RES/60/251",
+   "titulo": "Human Rights Council resolution",
+   "nombre_es": "Creación del Consejo de Derechos Humanos",
+   "claves": "consejo de derechos humanos creacion asamblea general",
+   "marco": true,
+   "adoptada": "2006-04-03",
+   "borradores": [
+    "A/60/L.48"
+   ],
+   "votacion": "",
+   "registro": "https://digitallibrary.un.org/record/571575",
+   "pdf": {
+    "ar": "https://digitallibrary.un.org/record/571575/files/A_RES_60_251-AR.pdf",
+    "de": "https://digitallibrary.un.org/record/571575/files/A_RES_60_251-DE.pdf",
+    "en": "https://digitallibrary.un.org/record/571575/files/A_RES_60_251-EN.pdf",
+    "es": "https://digitallibrary.un.org/record/571575/files/A_RES_60_251-ES.pdf",
+    "fr": "https://digitallibrary.un.org/record/571575/files/A_RES_60_251-FR.pdf",
+    "ru": "https://digitallibrary.un.org/record/571575/files/A_RES_60_251-RU.pdf",
+    "zh": "https://digitallibrary.un.org/record/571575/files/A_RES_60_251-ZH.pdf"
+   },
+   "sesion_nota": "",
+   "ubicacion": [],
+   "padres": [],
+   "mandatos": [
+    "Todos los procedimientos especiales (marco común)"
+   ],
+   "texto": {
+    "estado": "PDF_PROPIO",
+    "fuentes": [
+     {
+      "lengua": "en",
+      "url": "https://digitallibrary.un.org/record/571575/files/A_RES_60_251-EN.pdf"
+     },
+     {
+      "lengua": "es",
+      "url": "https://digitallibrary.un.org/record/571575/files/A_RES_60_251-ES.pdf"
+     },
+     {
+      "lengua": "fr",
+      "url": "https://digitallibrary.un.org/record/571575/files/A_RES_60_251-FR.pdf"
+     }
+    ]
+   }
+  },
+  "~A/60/L.48": {
+   "ref": "A/RES/60/251"
+  },
+  "A/HRC/RES/5/1": {
+   "simbolo": "A/HRC/RES/5/1",
+   "titulo": "Institution-building of the United Nations Human Rights Council",
+   "nombre_es": "Construcción institucional del Consejo (procedimientos especiales, EPU, comité asesor)",
+   "claves": "construccion institucional institution building procedimientos especiales epu",
+   "marco": true,
+   "adoptada": "2007-08-07",
+   "borradores": [
+    "A/HRC/5/L.2"
+   ],
+   "votacion": "",
+   "registro": "https://digitallibrary.un.org/record/603041",
+   "pdf": {},
+   "sesion_nota": "",
+   "ubicacion": [],
+   "padres": [
+    "A/HRC/5/21"
+   ],
+   "mandatos": [
+    "Todos los procedimientos especiales (marco común)"
+   ],
+   "texto": {
+    "estado": "TEXTO_EN_INFORME",
+    "fuentes": [],
+    "informe_sesion": [
+     {
+      "simbolo": "A/HRC/5/21",
+      "paginas": "",
+      "pdf": {
+       "en": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-EN.pdf",
+       "es": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-ES.pdf"
+      }
+     }
+    ]
+   }
+  },
+  "~A/HRC/5/L.2": {
+   "ref": "A/HRC/RES/5/1"
+  },
+  "A/HRC/RES/5/2": {
+   "simbolo": "A/HRC/RES/5/2",
+   "titulo": "Code of Conduct for Special Procedures Mandate-holders of the Human Rights Council",
+   "nombre_es": "Código de conducta de los titulares de mandatos",
+   "claves": "codigo de conducta code of conduct titulares relatores independencia imparcialidad",
+   "marco": true,
+   "adoptada": "2007-08-07",
+   "borradores": [
+    "A/HRC/5/L.3/Rev.1"
+   ],
+   "votacion": "",
+   "registro": "https://digitallibrary.un.org/record/603044",
+   "pdf": {},
+   "sesion_nota": "",
+   "ubicacion": [],
+   "padres": [
+    "A/HRC/5/21"
+   ],
+   "mandatos": [
+    "Todos los procedimientos especiales (marco común)"
+   ],
+   "texto": {
+    "estado": "TEXTO_EN_INFORME",
+    "fuentes": [],
+    "informe_sesion": [
+     {
+      "simbolo": "A/HRC/5/21",
+      "paginas": "",
+      "pdf": {
+       "en": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-EN.pdf",
+       "es": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-ES.pdf"
+      }
+     }
+    ]
+   }
+  },
+  "~A/HRC/5/L.3/Rev.1": {
+   "ref": "A/HRC/RES/5/2"
   }
  },
  "trazas": [

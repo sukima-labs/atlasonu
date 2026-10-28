@@ -1,0 +1,83 @@
+{
+ "fuente": "Biblioteca Digital ONU (consulta por símbolo exacto)",
+ "documentos": {
+  "A/RES/60/251": {
+   "simbolo": "A/RES/60/251",
+   "nombre": "Creación del Consejo de Derechos Humanos",
+   "claves": "consejo de derechos humanos creacion asamblea general",
+   "titulo": "Human Rights Council resolution",
+   "titulo_es": "Human Rights Council resolution",
+   "adoptada": "2006-04-03",
+   "votacion": "",
+   "registro": "https://digitallibrary.un.org/record/571575",
+   "pdf": {
+    "ar": "https://digitallibrary.un.org/record/571575/files/A_RES_60_251-AR.pdf",
+    "de": "https://digitallibrary.un.org/record/571575/files/A_RES_60_251-DE.pdf",
+    "en": "https://digitallibrary.un.org/record/571575/files/A_RES_60_251-EN.pdf",
+    "es": "https://digitallibrary.un.org/record/571575/files/A_RES_60_251-ES.pdf",
+    "fr": "https://digitallibrary.un.org/record/571575/files/A_RES_60_251-FR.pdf",
+    "ru": "https://digitallibrary.un.org/record/571575/files/A_RES_60_251-RU.pdf",
+    "zh": "https://digitallibrary.un.org/record/571575/files/A_RES_60_251-ZH.pdf"
+   },
+   "borradores": [
+    "A/60/L.48",
+    "A/60/PV.72"
+   ],
+   "informe_sesion": null
+  },
+  "A/HRC/RES/5/1": {
+   "simbolo": "A/HRC/RES/5/1",
+   "nombre": "Construcción institucional del Consejo (procedimientos especiales, EPU, comité asesor)",
+   "claves": "construccion institucional institution building procedimientos especiales epu",
+   "titulo": "Institution-building of the United Nations Human Rights Council",
+   "titulo_es": "Institution-building of the United Nations Human Rights Council",
+   "adoptada": "2007-08-07",
+   "votacion": "",
+   "registro": "https://digitallibrary.un.org/record/603041",
+   "pdf": {},
+   "borradores": [
+    "A/HRC/5/L.2",
+    "A/HRC/5/21"
+   ],
+   "informe_sesion": {
+    "simbolo": "A/HRC/5/21",
+    "registro": "https://digitallibrary.un.org/record/610953",
+    "pdf": {
+     "ar": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-AR.pdf",
+     "en": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-EN.pdf",
+     "es": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-ES.pdf",
+     "fr": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-FR.pdf",
+     "ru": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-RU.pdf",
+     "zh": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-ZH.pdf"
+    }
+   }
+  },
+  "A/HRC/RES/5/2": {
+   "simbolo": "A/HRC/RES/5/2",
+   "nombre": "Código de conducta de los titulares de mandatos",
+   "claves": "codigo de conducta code of conduct titulares relatores independencia imparcialidad",
+   "titulo": "Code of Conduct for Special Procedures Mandate-holders of the Human Rights Council",
+   "titulo_es": "Code of Conduct for Special Procedures Mandate-holders of the Human Rights Council",
+   "adoptada": "2007-08-07",
+   "votacion": "",
+   "registro": "https://digitallibrary.un.org/record/603044",
+   "pdf": {},
+   "borradores": [
+    "A/HRC/5/L.3/Rev.1",
+    "A/HRC/5/21"
+   ],
+   "informe_sesion": {
+    "simbolo": "A/HRC/5/21",
+    "registro": "https://digitallibrary.un.org/record/610953",
+    "pdf": {
+     "ar": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-AR.pdf",
+     "en": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-EN.pdf",
+     "es": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-ES.pdf",
+     "fr": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-FR.pdf",
+     "ru": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-RU.pdf",
+     "zh": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-ZH.pdf"
+    }
+   }
+  }
+ }
+}
