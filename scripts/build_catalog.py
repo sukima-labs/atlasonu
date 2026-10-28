@@ -130,6 +130,20 @@ alertas.sort(key=lambda x: {'ALTA': 0, 'MEDIA': 1, 'BAJA': 2}[x['nivel']])
 alertas += [a for a in ctx['alertas'] if a['id'] == 'A-08']
 ctx['alertas'] = alertas
 import os
+# Documentos marco comunes a todos los procedimientos especiales (p. ej. el Código de conducta): no salen de ningún mandato concreto
+if os.path.exists('data/fuentes/documentos_marco.json'):
+    for sim, d in json.load(open('data/fuentes/documentos_marco.json', encoding='utf-8'))['documentos'].items():
+        inf = d.get('informe_sesion')
+        e = {'simbolo': sim, 'titulo': d['titulo'], 'nombre_es': d['nombre'], 'claves': d['claves'], 'marco': True, 'adoptada': d['adoptada'],
+             'borradores': [b for b in d['borradores'] if '/L.' in b], 'votacion': d.get('votacion', ''), 'registro': d['registro'], 'pdf': d['pdf'],
+             'sesion_nota': '', 'ubicacion': [], 'padres': [inf['simbolo']] if inf else [],
+             'mandatos': ['Todos los procedimientos especiales (marco común)']}
+        if d['pdf']:
+            e['texto'] = {'estado': 'PDF_PROPIO', 'fuentes': [{'lengua': l, 'url': u} for l, u in d['pdf'].items() if l in ('es', 'en', 'fr')]}
+        elif inf:
+            e['texto'] = {'estado': 'TEXTO_EN_INFORME', 'fuentes': [], 'informe_sesion': [{'simbolo': inf['simbolo'], 'paginas': '', 'pdf': {l: u for l, u in inf['pdf'].items() if l in ('es', 'en')}}]}
+        index[sim] = e
+        for b in e['borradores']: index.setdefault('~' + b, {'ref': sim})
 if os.path.exists('data/fuentes/textos.json'):
     for k, v in json.load(open('data/fuentes/textos.json', encoding='utf-8')).items():
         if k in index: index[k]['texto'] = v
