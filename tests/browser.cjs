@@ -25,6 +25,16 @@ const URL = process.env.ATLAS_URL || 'file://' + path.resolve(__dirname, '..', '
       await page.evaluate(i => showPage(i), id);
       ok(vp.name + ': sección ' + id + ' visible', await page.isVisible('#' + id));
     }
+    // Accesibilidad básica (T34)
+    await page.goto(URL);
+    await page.keyboard.press('Tab');
+    ok(vp.name + ': «Saltar al contenido» es lo primero que recibe el foco', await page.evaluate(() => document.activeElement.classList.contains('skip')));
+    await page.keyboard.press('Enter');
+    ok(vp.name + ': «Saltar al contenido» lleva el foco al contenido', await page.evaluate(() => document.activeElement.id === 'contenido'));
+    await page.evaluate(() => showPage('tratados'));
+    ok(vp.name + ': el menú marca la pantalla actual (aria-current)', await page.evaluate(() => { const c = document.querySelectorAll('.nav button[aria-current]'); return c.length === 1 && c[0].dataset.page === 'tratados'; }));
+    ok(vp.name + ': todas las cabeceras de tabla llevan scope', await page.evaluate(() => [...document.querySelectorAll('th')].every(t => t.hasAttribute('scope'))));
+    ok(vp.name + ': ningún role=tablist sin pestañas', await page.evaluate(() => !document.querySelector('[role=tablist]')));
     await page.evaluate(() => showPage('explorar'));
     await page.fill('#q', 'tortura'); await page.evaluate(() => filterMandates());
     ok(vp.name + ': búsqueda "tortura"', /tortura/i.test(await page.textContent('#mandBody')));
