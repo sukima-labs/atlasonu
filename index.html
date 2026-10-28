@@ -351,8 +351,8 @@ async function vget(sumar,c){try{const r=await fetch(BUSQUEDA_API+(sumar?'/visit
 function vcuenta(el,n){if(n==null){el.textContent='—';return}let red=false;try{red=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches}catch(e){}if(red||!window.requestAnimationFrame){el.textContent=n.toLocaleString('es');return}const t0=performance.now(),d=900;(function f(t){const k=Math.min(1,(t-t0)/d),e=1-Math.pow(1-k,3);el.textContent=Math.round(n*e).toLocaleString('es');if(k<1)requestAnimationFrame(f)})(t0)}
 function visitaPermitida(){try{if(location.protocol!=='https:'||/[?&]sinvisita/.test(location.search)||navigator.webdriver)return false}catch(e){return false}return true}
 async function visitas(){const c=paisVisita(),b=$('visBar');if(!b)return;$('visFlag').textContent=banderaDe(c);$('visPais').textContent=c?nombrePais(c):'tu país';
-let cuenta=false;if(visitaPermitida()){let u=0;try{u=Number(localStorage.getItem('atlas_visita')||0)}catch(e){}if(!u||Date.now()-u>12*3600*1000)cuenta=true}
-let j=await vget(cuenta,c);if(cuenta){if(j)try{localStorage.setItem('atlas_visita',String(Date.now()))}catch(e){}else j=await vget(false,c)}   // solo se marca como contada si el servicio respondió; si falló, se reintenta en la próxima carga   // sin contar (pruebas, ?sinvisita, copia local) solo se lee; si el servicio no responde, se muestra «—»
+let cuenta=false;if(visitaPermitida()){let u=0;try{u=Number(localStorage.getItem('atlas_visita2')||0)}catch(e){}if(!u||Date.now()-u>12*3600*1000)cuenta=true}
+let j=await vget(cuenta,c);if(cuenta){if(j)try{localStorage.setItem('atlas_visita2',String(Date.now()))}catch(e){}else j=await vget(false,c)}   // solo se marca como contada si el servicio respondió; si falló, se reintenta en la próxima carga   // sin contar (pruebas, ?sinvisita, copia local) solo se lee; si el servicio no responde, se muestra «—»
 const t=j?j.total:null,p=j?j.pais:null;
 vcuenta($('visTotal'),t);vcuenta($('visPaisN'),p);b.classList.add('lista')}
 const HIS=DATA.historia||{},HEV=(HIS.eventos||[]).map((e,i)=>({...e,i,y:Number(e.f.slice(0,4))})),HTEMAS=HIS.temas||{},HERAS=HIS.eras||[];
