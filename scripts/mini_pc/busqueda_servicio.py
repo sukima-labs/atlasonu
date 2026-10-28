@@ -4,8 +4,11 @@
 El navegador no puede leer la Biblioteca Digital ONU (no envía CORS), así que la página pregunta
 aquí cuando el catálogo no encuentra nada. Escucha solo en 127.0.0.1; se publica con Tailscale Funnel.
   GET /buscar?q=<texto>[&ln=es|en]  ->  {"consulta":..., "total":N, "resultados":[{recid,simbolo,titulo,fecha,url,archivos:[{idioma,url}]}]}
+  GET /visitas?pais=XX              ->  {"total":N, "pais":M}              (solo lee)
+  GET /visita?pais=XX               ->  igual, pero suma una visita        (solo si el Origin es la página)
+El contador guarda únicamente dos números agregados (total y por código de país): ni IP, ni cookies, ni identificadores.
 Sin dependencias: solo biblioteca estándar. Caché en memoria y límite de consultas para no saturar a la ONU."""
-import json, os, re, time, threading, urllib.parse, urllib.request
+import json, os, re, tempfile, time, threading, urllib.parse, urllib.request
 import xml.etree.ElementTree as ET
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
@@ -17,8 +20,40 @@ MAX_CACHE = 500
 MAX_POR_MIN = 20     # consultas nuevas a la ONU por minuto (todas las visitas juntas)
 UA = "ATLAS-ONU/1.0 (+https://github.com/cataplum1414/onu-arqueologia-documental)"
 
+VISITAS_ARCHIVO = os.environ.get("ATLAS_VISITAS_ARCHIVO", os.path.expanduser("~/.local/share/atlas-onu/visitas.json"))
+MAX_VISITAS_POR_MIN = 120   # tope global de visitas sumadas por minuto (frena abusos sin identificar a nadie)
+
 NS = "{http://www.loc.gov/MARC21/slim}"
 _cache, _veces, _lock = {}, [], threading.Lock()
+_vis_lock, _vis_veces = threading.Lock(), []
+
+
+def _leer_visitas():
+    try:
+        with open(VISITAS_ARCHIVO, encoding="utf-8") as f:
+            d = json.load(f)
+        return {"total": int(d.get("total", 0)), "paises": {k: int(v) for k, v in d.get("paises", {}).items()}}
+    except (OSError, ValueError, AttributeError):
+        return {"total": 0, "paises": {}}
+
+
+def visitas(pais, sumar):
+    """Devuelve {"total", "pais"}; si sumar, incrementa ambos y guarda de forma atómica."""
+    pais = pais if re.fullmatch(r"[A-Z]{2}", pais or "") else "XX"
+    with _vis_lock:
+        d = _leer_visitas()
+        ahora = time.time()
+        _vis_veces[:] = [t for t in _vis_veces if ahora - t < 60]
+        if sumar and len(_vis_veces) < MAX_VISITAS_POR_MIN:
+            _vis_veces.append(ahora)
+            d["total"] += 1
+            d["paises"][pais] = d["paises"].get(pais, 0) + 1
+            os.makedirs(os.path.dirname(VISITAS_ARCHIVO), exist_ok=True)
+            fd, tmp = tempfile.mkstemp(dir=os.path.dirname(VISITAS_ARCHIVO))
+            with os.fdopen(fd, "w", encoding="utf-8") as f:
+                json.dump(d, f)
+            os.replace(tmp, VISITAS_ARCHIVO)
+        return {"total": d["total"], "pais": d["paises"].get(pais, 0)}
 
 
 def consultar(q, ln):
@@ -86,11 +121,11 @@ class H(BaseHTTPRequestHandler):
             self.send_header("Access-Control-Allow-Origin", o)
             self.send_header("Vary", "Origin")
 
-    def _json(self, cod, obj):
+    def _json(self, cod, obj, cache="public, max-age=600"):
         cuerpo = json.dumps(obj, ensure_ascii=False).encode()
         self.send_response(cod)
         self.send_header("Content-Type", "application/json; charset=utf-8")
-        self.send_header("Cache-Control", "public, max-age=600")
+        self.send_header("Cache-Control", cache)
         self._cors()
         self.send_header("Content-Length", str(len(cuerpo)))
         self.end_headers()
@@ -109,6 +144,11 @@ class H(BaseHTTPRequestHandler):
         u = urllib.parse.urlparse(self.path)
         if u.path == "/salud":
             return self._json(200, {"ok": True})
+        if u.path in ("/visita", "/visitas"):
+            pais = (urllib.parse.parse_qs(u.query).get("pais") or [""])[0].upper()
+            # solo suma si la petición viene de la página (el navegador envía Origin); abrir la URL a mano no suma
+            sumar = u.path == "/visita" and self.headers.get("Origin", "") in ORIGENES
+            return self._json(200, visitas(pais, sumar), cache="no-store")
         if u.path != "/buscar":
             return self._json(404, {"error": "no existe"})
         p = urllib.parse.parse_qs(u.query)
