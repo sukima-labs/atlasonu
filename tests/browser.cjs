@@ -99,6 +99,15 @@ const URL = process.env.ATLAS_URL || 'file://' + path.resolve(__dirname, '..', '
     await page.selectOption('#epuMio', 'IND'); await page.selectOption('#epuOtro', 'CZE'); await page.waitForSelector('#epuDocs table');
     ok(vp.name + ': Prepara tu EPU: muestra los documentos del ciclo más reciente de los dos países con enlace', (await page.locator('#epuDocs h4').count()) === 2 && (await page.locator('#epuDocs a[href^="https://"]').count()) >= 2);
     await page.fill('#epub-ap', 'palabra '.repeat(130)); ok(vp.name + ': Prepara tu EPU: estima el tiempo del guion (130 palabras ≈ 1 min)', /1 min 00 s/.test(await page.textContent('#epuTotal')));
+    await page.check('#epuC2 input[data-c="2.0"]');
+    ok(vp.name + ': Prepara tu EPU: marca de tarea y progreso', /1 de \d+ tareas/.test(await page.textContent('#epuProg')));
+    const [dl] = await Promise.all([page.waitForEvent('download'), page.click('button:has-text("Descargar informe (.docx)")')]);
+    const buf = require('fs').readFileSync(await dl.path()), txt = buf.toString('utf8');
+    ok(vp.name + ': Prepara tu EPU: el .docx es un zip de Word con tus notas, la casilla marcada y enlaces oficiales', dl.suggestedFilename() === 'prepara-tu-epu.docx' && buf.slice(0, 2).toString() === 'PK' && /word\/document\.xml/.test(txt) && /India/.test(txt) && /Chequia/.test(txt) && /☑ Localicé/.test(txt) && /palabra palabra/.test(txt) && /https:\/\/digitallibrary\.un\.org|https:\/\/docs\.un\.org|https:\/\/undocs\.org/.test(txt));
+    require('fs').writeFileSync(process.env.EPU_DOCX || '/dev/null', buf);
+    await page.click('#epuAtajos button:has-text("Comunicaciones de los relatores")'); await page.waitForTimeout(600);
+    ok(vp.name + ': Prepara tu EPU: el atajo abre la ficha del país (India) y se puede volver con «atrás»', (await page.isVisible('#paises')) && (await page.inputValue('#pSel')) === 'IND');
+    await page.goBack(); await page.waitForTimeout(300); ok(vp.name + ': Prepara tu EPU: «atrás» vuelve a la pantalla', await page.isVisible('#epu'));
     await page.reload(); await page.evaluate(() => showPage('epu')); ok(vp.name + ': Prepara tu EPU: las notas se conservan en el navegador', (await page.inputValue('#epuMio')) === 'IND' && /palabra/.test(await page.inputValue('#epub-ap')));
     ok(vp.name + ': Prepara tu EPU: no hay desbordamiento horizontal', await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1));
     await page.evaluate(() => localStorage.removeItem('atlas_epu'));
