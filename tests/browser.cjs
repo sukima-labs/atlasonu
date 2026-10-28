@@ -3,6 +3,7 @@ const { chromium } = require('playwright');
 const path = require('path'), assert = require('assert');
 const URL = process.env.ATLAS_URL || 'file://' + path.resolve(__dirname, '..', 'index.html');
 const esperaReposo = async page => { let a = -1; for (let i = 0; i < 40; i++) { await page.waitForTimeout(150); const y = await page.evaluate(() => scrollY); if (y === a) return; a = y; } }; // espera a que acabe el desplazamiento suave
+const todosLosPaises = async page => { while (await page.locator('#pBody .mas button').count()) await page.locator('#pBody .mas button').click(); }; // pulsa «Mostrar más» hasta ver la lista entera
 (async () => {
   const browser = await chromium.launch();
   // Las pruebas no deben salir a internet: la búsqueda en vivo (servicio del mini PC) se simula siempre vacía.
@@ -59,9 +60,9 @@ const esperaReposo = async page => { let a = -1; for (let i = 0; i < 40; i++) { 
     ok(vp.name + ': desde el resultado se abre la recuperación del texto', await page.isVisible('#recuperar') && /LOCALIZADO/.test(await page.textContent('#recoverResult')));
     if (await page.isVisible('#burger')) { await page.click('#burger'); await page.waitForTimeout(350); }
     await page.getByRole('button', { name: /Países/ }).first().click();
-    ok(vp.name + ': sección Países visible con 196 filas', await page.isVisible('#paises') && (await page.locator('#pBody tr').count()) === 196);
+    ok(vp.name + ': sección Países visible con 196 filas', await page.isVisible('#paises') && (await page.locator('#pBody tr').count()) === 21 && /quedan 176/.test(await page.textContent('#pBody')) && (await todosLosPaises(page), (await page.locator('#pBody tr').count()) === 196));
     await page.getByRole('button', { name: /^América Latina y el Caribe \(\d+\)/ }).click(); await page.waitForTimeout(200);
-    ok(vp.name + ': chip «América Latina y el Caribe» → 33 países', (await page.locator('#pBody tr').count()) === 33 && /Colombia/.test(await page.textContent('#pBody')));
+    ok(vp.name + ': chip «América Latina y el Caribe» → 33 países', (await todosLosPaises(page), (await page.locator('#pBody tr').count()) === 33) && /Colombia/.test(await page.textContent('#pBody')));
     await page.getByRole('button', { name: /^Todos \(\d+\)/ }).click(); await page.waitForTimeout(200);
     await page.fill('#pQ', 'India'); await page.getByRole('button', { name: 'Buscar' }).first().click(); await page.waitForTimeout(500);
     const box = await page.locator('#pOut .detail h2').boundingBox();

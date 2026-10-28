@@ -47,3 +47,4 @@ Medido con navegador de escritorio emulando 390 px; falta confirmarlo en un Andr
 ## Avance
 - **Paso 1 hecho (28-10-2026):** en pantallas de hasta 650 px las seis tablas pasan a tarjetas (`etiquetarTablas()` copia la cabecera en cada celda; el CSS las muestra como «etiqueta: valor»). Ninguna tabla se desplaza ya de lado (366 px en 366). Efecto secundario: las pantallas son más largas (Países 51 → 93, Arqueología 41 → 88, Explorar 22 → 43, Auditoría 47 → 105), así que el **paso 4 (paginar y «↑ Arriba» global) sube a siguiente prioridad**.
 - Para repetir la medición: `node tests/auditar_ux.cjs` o la skill `revisar-ux`.
+- **Paso 4 hecho a medias (28-10-2026):** la lista de Países muestra 20 y «Mostrar 20 más (quedan N)»: pasa de 93 a 11 pantallas de alto; botón global «↑ Arriba» (abajo a la izquierda) en todas las pantallas tras 1,5 pantallas de desplazamiento. **Falta paginar Auditoría, Arqueología y Explorar.**
