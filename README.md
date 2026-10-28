@@ -94,4 +94,4 @@ En «Alertas de verificación» hay un panel **«Exactitud de los números de ca
 
 ## Mini PC (opcional, como respaldo)
 
-`docs/MINI_PC.md` explica cómo hacer que un mini PC Linux repita la revisión a las 12:40 y 00:40 (`scripts/mini_pc/`), como respaldo del flujo de GitHub Actions.
+`docs/MINI_PC.md` explica cómo hacer que un mini PC Linux repita la revisión a las 12:00 y 00:00 (`scripts/mini_pc/`) como ejecutor principal, con el flujo de GitHub Actions como respaldo.

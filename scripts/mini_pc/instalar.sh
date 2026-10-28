@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Instala en el mini PC (Linux con systemd) la revisión automática de ATLAS ONU a las 12:40 y 00:40 (hora local).
+# Instala en el mini PC (Linux con systemd) la revisión automática de ATLAS ONU a las 12:00 y 00:00 (hora local); es la revisión principal y GitHub Actions queda como respaldo.
 # Uso:  bash scripts/mini_pc/instalar.sh        (desde el clon dedicado, p. ej. ~/atlas-onu)
 set -euo pipefail
 DIR="$(cd "$(dirname "$0")/../.." && pwd)"
@@ -27,10 +27,10 @@ TimeoutStartSec=45min
 EOF
 cat > "$U/atlas-onu.timer" <<'EOF'
 [Unit]
-Description=ATLAS ONU: revisión a las 12:40 y a las 00:40
+Description=ATLAS ONU: revisión a las 12:00 y a las 00:00
 [Timer]
-OnCalendar=*-*-* 00:40:00
-OnCalendar=*-*-* 12:40:00
+OnCalendar=*-*-* 00:00:00
+OnCalendar=*-*-* 12:00:00
 Persistent=true
 RandomizedDelaySec=120
 [Install]
