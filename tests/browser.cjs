@@ -95,6 +95,7 @@ const URL = process.env.ATLAS_URL || 'file://' + path.resolve(__dirname, '..', '
     await page.fill('#sigQ', 'cedaw'); await page.locator('#sigOut button:has-text("Ver tratado y comité")').first().click();
     ok(vp.name + ': Siglas → tratado: CEDAW abre el módulo de tratados', /Comité para la Eliminación de la Discriminación contra la Mujer/.test(await page.textContent('#trDetalle')));
     await page.evaluate(() => { localStorage.removeItem('atlas_epu'); showPage('epu'); });
+    ok(vp.name + ': Prepara tu EPU: «República Checa» se encuentra en la lista (apunta a Chequia)', await page.evaluate(() => [...document.querySelectorAll('#epuOtro option')].some(o => /^República Checa/.test(o.textContent) && o.value === 'CZE')));
     await page.selectOption('#epuMio', 'IND'); await page.selectOption('#epuOtro', 'CZE'); await page.waitForSelector('#epuDocs table');
     ok(vp.name + ': Prepara tu EPU: muestra los documentos del ciclo más reciente de los dos países con enlace', (await page.locator('#epuDocs h4').count()) === 2 && (await page.locator('#epuDocs a[href^="https://"]').count()) >= 2);
     await page.fill('#epub-ap', 'palabra '.repeat(130)); ok(vp.name + ': Prepara tu EPU: estima el tiempo del guion (130 palabras ≈ 1 min)', /1 min 00 s/.test(await page.textContent('#epuTotal')));
