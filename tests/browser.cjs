@@ -142,7 +142,7 @@ const URL = process.env.ATLAS_URL || 'file://' + path.resolve(__dirname, '..', '
     await page.evaluate(() => showPage('seleccion')); await page.waitForTimeout(150);
     ok(vp.name + ': tras ir de Países (lista larga) a Selección, solo se ve Selección y el scroll vuelve arriba', (await page.evaluate(() => [...document.querySelectorAll('.section')].filter(s => getComputedStyle(s).display !== 'none').map(s => s.id).join())) === 'seleccion' && (await page.evaluate(() => window.scrollY)) === 0 && !/Etapa \d: \d/.test(await page.textContent('#selectionList')));
     await page.evaluate(() => showPage('mecanismos'));
-    ok(vp.name + ': otros mecanismos (CERD…CED) visibles', (await page.locator('#mecBody tr').count()) === 25 && /CERD/.test(await page.textContent('#mecBody')));
+    ok(vp.name + ': otros mecanismos (CERD…CED) visibles', (await page.locator('#mecBody tr').count()) === 33 && /CERD/.test(await page.textContent('#mecBody')));
     await page.evaluate(() => showPage('recuperar'));
     await page.getByRole('button', { name: /caso real de 1980/i }).click();
     const rr = await page.textContent('#recoverResult');
