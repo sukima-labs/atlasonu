@@ -28,7 +28,7 @@ Ver `docs/COLA_DE_TAREAS.md`: una tarea por sesión, commit y push al terminar, 
 3. **Las salvaguardas abortan sin publicar** si falla la red o los datos se degradan (`validar_datos.py`, pruebas de invariantes). No se saltan.
 4. **No eludir bloqueos de bots** (por ejemplo, OHCHR bloquea clientes automáticos): no se simula un navegador; se enlaza al original.
 5. **Privacidad:** no incluir en el repositorio grabaciones, transcripciones ni resúmenes de clases, ni datos personales de docentes u otras personas.
-6. **Licencias:** código MIT, contenido propio CC BY 4.0, datos de la ONU sin relicenciar (`docs/LICENCIA.md`).
+6. **Licencias:** código AGPL-3.0 con autoría visible obligatoria (`NOTICE.md`), contenido propio CC BY 4.0, datos de la ONU sin relicenciar (`docs/LICENCIA.md`).
 7. **Pruebas antes de publicar**, y las cifras del README y de `audit/AUDITORIA.md` se mantienen al día.
 
 ## Estado
