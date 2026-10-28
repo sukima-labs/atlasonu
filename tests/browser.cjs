@@ -201,6 +201,10 @@ const URL = process.env.ATLAS_URL || 'file://' + path.resolve(__dirname, '..', '
       for (let i = 0; i < 4; i++) await desliza(Math.min(150, w / 3), h - 80, 80);
       const e = await pg.evaluate(() => { const s = document.getElementById('side'); return { fin: s.scrollTop + s.clientHeight >= s.scrollHeight - 2, fondo: Math.round(scrollY), fijo: getComputedStyle(document.body).position }; });
       ok(nom + ': el menú abierto se desliza hasta el final y el fondo no se mueve', e.fin && e.fondo === 0 && e.fijo === 'fixed');
+      await pg.evaluate(() => { document.getElementById('side').scrollTop = 0; }); await desliza(w - 20, h - 80, 160);
+      ok(nom + ': arrastrar desde fuera del menú (el velo) también mueve el menú', (await pg.evaluate(() => document.getElementById('side').scrollTop)) > 100);
+      await pg.evaluate(() => { document.getElementById('side').scrollTop = 0; }); await desliza(Math.min(120, w / 4), h - 120, 120);
+      ok(nom + ': arrastrar sobre los botones del menú lo mueve', (await pg.evaluate(() => document.getElementById('side').scrollTop)) > 100);
       await pg.evaluate(() => menu(false)); await pg.waitForTimeout(250);
       ok(nom + ': al cerrar el menú la página vuelve a su posición', (await pg.evaluate(() => Math.round(scrollY))) === 120);
       await pg.evaluate(() => { scrollTo({ top: 0, behavior: 'instant' }); menu(true); }); await pg.waitForTimeout(350); }
