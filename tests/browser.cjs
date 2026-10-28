@@ -223,14 +223,14 @@ const URL = process.env.ATLAS_URL || 'file://' + path.resolve(__dirname, '..', '
     const ctx = await browser.newContext({ timezoneId: 'America/Bogota', locale: 'es-CO' }); const pv = await ctx.newPage();
     await pv.addInitScript(() => Object.defineProperty(navigator, 'webdriver', { get: () => false }));
     const llamadas = [];
-    await pv.route('https://abacus.jasoncameron.dev/**', r => { llamadas.push(new globalThis.URL(r.request().url()).pathname); r.fulfill({ status: 200, contentType: 'application/json', headers: { 'access-control-allow-origin': '*' }, body: JSON.stringify({ value: 1234 }) }); });
+    await pv.route('https://dignityos.tailaa1f76.ts.net:10000/**', r => { const u = new globalThis.URL(r.request().url()); llamadas.push(u.pathname + u.search); r.fulfill({ status: 200, contentType: 'application/json', headers: { 'access-control-allow-origin': '*' }, body: JSON.stringify({ total: 1234, pais: 1234 }) }); });
     await pv.route('https://atlas.test/**', r => { let p = new globalThis.URL(r.request().url()).pathname; if (p === '/') p = '/index.html'; const f = path.join(root, decodeURIComponent(p)); if (!f.startsWith(root) || !fs.existsSync(f)) return r.fulfill({ status: 404, body: '' }); r.fulfill({ status: 200, contentType: mime[path.extname(f)] || 'application/octet-stream', body: fs.readFileSync(f) }); });
     await pv.goto('https://atlas.test/'); await pv.waitForFunction(() => window.__atlasListo); await pv.waitForTimeout(1500);
     ok('visitas: la barra muestra el total, el país del visitante (Colombia) y sus visitas', (await pv.textContent('#visTotal')).replace(/\D/g, '') === '1234' && /Colombia/.test(await pv.textContent('#visPais')) && (await pv.textContent('#visPaisN')).replace(/\D/g, '') === '1234');
     ok('visitas: la barra no se queda pegada al desplazarse (estática arriba)', await pv.evaluate(() => getComputedStyle(document.getElementById('visBar')).position === 'static'));
-    ok('visitas: la primera visita suma al total y al país; una recarga inmediata no vuelve a sumar', llamadas.filter(x => x.startsWith('/hit/')).length === 2 && llamadas.some(x => x.endsWith('/pais-CO')));
-    const antes = llamadas.filter(x => x.startsWith('/hit/')).length; await pv.reload(); await pv.waitForFunction(() => window.__atlasListo); await pv.waitForTimeout(800);
-    ok('visitas: la recarga solo consulta (/get), no suma', llamadas.filter(x => x.startsWith('/hit/')).length === antes && llamadas.some(x => x.startsWith('/get/')));
+    ok('visitas: la primera visita suma al total y al país; una recarga inmediata no vuelve a sumar', llamadas.filter(x => x.startsWith('/visita?')).length === 1 && llamadas.some(x => x === '/visita?pais=CO'));
+    const antes = llamadas.filter(x => x.startsWith('/visita?')).length; await pv.reload(); await pv.waitForFunction(() => window.__atlasListo); await pv.waitForTimeout(800);
+    ok('visitas: la recarga solo consulta (/visitas), no suma', llamadas.filter(x => x.startsWith('/visita?')).length === antes && llamadas.some(x => x.startsWith('/visitas?')));
     await pv.screenshot({ path: '/tmp/claude-0/visitas.png', clip: { x: 0, y: 0, width: 1280, height: 120 } }).catch(() => {});
     await ctx.close();
   }
