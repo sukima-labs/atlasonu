@@ -2,7 +2,7 @@
 
 Plataforma académica independiente para investigar los procedimientos especiales de la ONU y recuperar sus documentos originales **con verificación contra la fuente oficial**.
 
-**Autor:** Jeisson Arley Osorio Mesa, estudiante del Máster en Protección Internacional de los Derechos Humanos (Universidad de Alcalá, España) · © 2026. **Licencias:** código bajo [MIT](LICENSE); contenido propio bajo [CC BY 4.0](LICENSE-CONTENIDO.md); los datos y textos de la ONU no se relicencian (ver [análisis](docs/LICENCIA.md)).
+**Autor:** Jeisson Arley Osorio Mesa, estudiante del Máster en Protección Internacional de los Derechos Humanos (Universidad de Alcalá, España) · © 2026. **Licencias:** código bajo [AGPL-3.0](LICENSE) con autoría obligatoria ([NOTICE](NOTICE.md)); contenido propio bajo [CC BY 4.0](LICENSE-CONTENIDO.md); los datos y textos de la ONU no se relicencian (ver [análisis](docs/LICENCIA.md)).
 **Aviso:** iniciativa académica independiente. No es un producto oficial de Naciones Unidas ni de la Universidad de Alcalá.
 
 ## Se actualiza sola
@@ -81,7 +81,7 @@ Los datos oficiales son de las Naciones Unidas y proceden de sus sitios público
 
 ## Licencia
 
-Código: **MIT** (`LICENSE`). Contenido propio (siglas, cuadros, explicaciones, documentación): **CC BY 4.0** (`LICENSE-CONTENIDO.md`). Los documentos, símbolos, títulos, textos de tratados y datos de ratificación son de las Naciones Unidas y no se relicencian. El análisis de por qué esta combinación está en `docs/LICENCIA.md`. Cómo citar: `CITATION.cff`.
+Código: **AGPL-3.0** (`LICENSE`), con autoría visible obligatoria (`NOTICE.md`). Contenido propio (siglas, cuadros, explicaciones, documentación): **CC BY 4.0** (`LICENSE-CONTENIDO.md`). Los documentos, símbolos, títulos, textos de tratados y datos de ratificación son de las Naciones Unidas y no se relicencian. El análisis de por qué esta combinación está en `docs/LICENCIA.md`. Cómo citar: `CITATION.cff`.
 
 ## Portada y línea de tiempo
 
