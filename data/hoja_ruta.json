@@ -24,7 +24,7 @@
     },
     {
      "t": "Cifras de comunicaciones de los relatores",
-     "x": "Por país y periodo, sacadas de los informes conjuntos y comprobadas contra el total de cada informe. El texto de cada comunicación sigue solo en la base original, que no permite descargarlo."
+     "x": "Por país y periodo, sacadas de los informes conjuntos y comprobadas contra el total de cada informe. El texto de cada comunicación sigue solo en la base original, que no permite descargarlo. También salen en el buscador al escribir un país y se actualizan con cada revisión."
     },
     {
      "t": "Historia antes de 1945",
@@ -44,7 +44,7 @@
     },
     {
      "t": "Contador de visitas propio",
-     "x": "La barra superior cuenta las visitas con un contador del propio proyecto: guarda solo el total y la cifra por país, sin IP ni cookies y sin servicios de terceros. Si el servicio está apagado, muestra «—» y la página sigue igual."
+     "x": "La barra superior cuenta las visitas con un contador del propio proyecto: guarda solo el total y la cifra por país, sin IP ni cookies y sin servicios de terceros. Si el servicio está apagado, muestra «—» y la página sigue igual. Si el servicio no responde, la visita se vuelve a intentar en la siguiente carga."
     }
    ]
   },
