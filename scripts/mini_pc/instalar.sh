@@ -36,8 +36,18 @@ RandomizedDelaySec=120
 [Install]
 WantedBy=timers.target
 EOF
+cat > "$U/atlas-busqueda.service" <<EOF
+[Unit]
+Description=ATLAS ONU: servicio de búsqueda en vivo (solo 127.0.0.1)
+[Service]
+ExecStart=/usr/bin/python3 -I $DIR/scripts/mini_pc/busqueda_servicio.py
+Restart=always
+RestartSec=5
+[Install]
+WantedBy=default.target
+EOF
 systemctl --user daemon-reload
-systemctl --user enable --now atlas-onu.timer
+systemctl --user enable --now atlas-onu.timer atlas-busqueda.service
 echo "Temporizador instalado. Próximas ejecuciones:"; systemctl --user list-timers atlas-onu.timer --no-pager || true
 echo "Para que corra aunque nadie haya iniciado sesión:  sudo loginctl enable-linger $USER"
 echo "Prueba ahora mismo:  systemctl --user start atlas-onu.service  (y mira: journalctl --user -u atlas-onu.service -f)"
