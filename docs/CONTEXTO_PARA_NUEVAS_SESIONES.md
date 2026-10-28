@@ -35,7 +35,7 @@ Ver `docs/COLA_DE_TAREAS.md`: una tarea por sesión, commit y push al terminar, 
 Pantallas: Panorama (portada), Explorar mandatos, Cómo funciona la ONU (mapa, familia de 41 entidades, ¿ante quién reclamo?, descifrador de símbolos), Su historia (línea de tiempo), Países (196 fichas con documentos oficiales), Tratados y comités (texto literal de 8 instrumentos), Siglas y acrónimos (145), Arqueología, Recuperar documentos, Otros mecanismos, Códigos, Selección de titulares, Alertas de verificación (con panel de exactitud de números), Fuentes y alcance.
 
 ## Pendiente (por orden de interés)
-1. Índice de jurisprudencia: observaciones generales y dictámenes de los comités.
+1. Jurisprudencia: ya están las observaciones/recomendaciones generales con símbolo `…/GC/n` (T35); faltan las anteriores (HRI/GEN/1/Rev.), títulos en español y los dictámenes.
 2. Recomendaciones del EPU por país (aceptadas / «tomó nota»).
 3. ODS cruzados con tratados; sistemas regionales; Consejo de Seguridad y derechos humanos; financiación; composición del Consejo de Derechos Humanos.
 4. Fragmentos literales de resoluciones con página; mandatos extinguidos.
