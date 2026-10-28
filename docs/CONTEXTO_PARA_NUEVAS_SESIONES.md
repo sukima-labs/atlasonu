@@ -19,6 +19,9 @@ Sitio estático: `index.html` + `data/atlas-data.js` (generado) + archivos difer
 | Contenido propio (CC BY 4.0) | `data/siglas.json`, `data/sistema_onu.json`, `data/historia.json` |
 | Textos literales de tratados | `scripts/fetch_tratados_texto.py` → `data/fuentes/tratados_texto.json` |
 
+## Método y tareas pendientes
+Ver `docs/COLA_DE_TAREAS.md`: una tarea por sesión, commit y push al terminar, y `/clear` antes de la siguiente.
+
 ## Reglas que no se rompen
 1. **No inventar datos.** Una ruta sugerida no es un documento recuperado; una resolución no es el informe que la contiene; lo inferido se etiqueta.
 2. **Todo lo oficial es de la ONU** y se atribuye y enlaza. Lo de elaboración propia se marca como tal.
