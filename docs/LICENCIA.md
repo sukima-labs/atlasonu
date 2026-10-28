@@ -24,9 +24,9 @@ Por eso **una sola licencia para todo sería un error**: una licencia de softwar
 
 | Licencia | Para | Obliga a | Encaja |
 |---|---|---|---|
-| **MIT** | Código | Mantener el aviso de copyright | **Sí, para el código**: simple, la más conocida, sin trabas |
+| MIT | Código | Mantener el aviso de copyright | Fue la elegida al principio; permite cerrar el código derivado, por eso se sustituyó |
 | Apache-2.0 | Código | Aviso, NOTICE y cambios; da licencia de patentes | Innecesaria: no hay patentes y añade burocracia |
-| GPL / AGPL | Código | Publicar con la misma licencia lo derivado (AGPL también si se ofrece en red) | No: frena a ONG y universidades que quieran reutilizar y no hay una razón de peso para forzarlo |
+| GPL / **AGPL** | Código | Publicar con la misma licencia lo derivado (AGPL también si se ofrece en red) y permite exigir autoría visible | **Sí, desde el 28-10-2026**: sigue siendo abierta (ONG y universidades pueden usarla) y evita que alguien la cierre o la reempaquete sin crédito |
 | **CC BY 4.0** | Contenido | Dar crédito e indicar cambios | **Sí, para el contenido propio**: reutilizable y deja constancia de autoría |
 | CC BY-SA 4.0 | Contenido | Crédito y compartir igual | Alternativa válida si quieres que todo derivado siga abierto, pero complica integrarlo en otros materiales |
 | CC0 / Unlicense | Todo | Nada | No: renuncia al crédito, que es lo que más importa en lo académico |
@@ -34,7 +34,7 @@ Por eso **una sola licencia para todo sería un error**: una licencia de softwar
 
 ## Decisión aplicada
 
-- **Código → MIT** (`LICENSE`).
+- **Código → AGPL-3.0** (`LICENSE`) con **autoría visible obligatoria** (`NOTICE.md`, términos adicionales de la sección 7). *Cambio del 28-10-2026: hasta entonces era MIT; lo ya obtenido bajo MIT sigue siendo MIT. Motivo: el fundador quiere código abierto pero que nadie lo cierre ni quite su autoría.*
 - **Contenido propio → CC BY 4.0** (`LICENSE-CONTENIDO.md`).
 - **Contenido de la ONU → fuera de la licencia**, con aviso explícito, atribución y enlace a cada fuente.
 - Se añade `CITATION.cff` para que GitHub muestre «Cite this repository».
