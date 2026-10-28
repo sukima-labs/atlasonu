@@ -44,5 +44,5 @@ Pantallas: Panorama (portada), Explorar mandatos, Cómo funciona la ONU (mapa, f
 
 ## Cosas a vigilar
 - La Biblioteca Digital de la ONU limita el ritmo de consultas: el verificador reintenta, y si fallan pocas consultas conserva lo ya verificado (aborta si pasan del 3 %).
-- El contador de visitas usa un servicio externo gratuito (`abacus.jasoncameron.dev`); no cuenta en pruebas, en copias locales ni con `?sinvisita`.
+- El contador de visitas es propio: lo sirve `atlas-busqueda.service` del mini PC (`/visita` suma, `/visitas` lee) y guarda solo total y cifra por país en `~/.local/share/atlas-onu/visitas.json` (sin IP ni cookies); no cuenta en pruebas, en copias locales ni con `?sinvisita`.
 - Las capturas de `audit/` solo se regeneran con `ATLAS_CAPTURAS=1 node tests/browser.cjs`.
