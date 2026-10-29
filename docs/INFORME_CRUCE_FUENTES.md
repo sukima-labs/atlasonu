@@ -20,7 +20,7 @@ Salen de lo que ya sabe el proyecto, no de una fuente consultada hoy (OHCHR devu
 | Mandatos extinguidos | los de la antigua Comisión de Derechos Humanos y los que el Consejo cerró | T5 |
 | Mecanismos de investigación | mecanismos independientes de investigación (Siria, Myanmar) | T6 |
 | Foros | foros anuales del Consejo (minorías ya está; faltan los otros) | T38 |
-| Siglas | 145 frente a las que usan los documentos | T7 |
+| Siglas | 241 (eran 145) frente a las que usan los documentos | T7 |
 
 ## Qué no se pudo cruzar
 - **Siglas, historia y sistema de la ONU** son contenido propio: no hay lista oficial única con la que compararlas.
