@@ -1,5 +1,42 @@
 [
  {
+  "fecha": "2026-10-29",
+  "cambios": [
+   {
+    "tipo": "observaciones",
+    "texto": "Timor-Leste: 1 observación(es) final(es) nueva(s); la última es CRC/C/TLS/CO/4"
+   },
+   {
+    "tipo": "observaciones",
+    "texto": "Eslovenia: 1 observación(es) final(es) nueva(s); la última es CRC/C/SVN/CO/5-6"
+   },
+   {
+    "tipo": "observaciones",
+    "texto": "Tayikistán: 1 observación(es) final(es) nueva(s); la última es CRC/C/TJK/CO/6-7"
+   },
+   {
+    "tipo": "observaciones",
+    "texto": "Tanzania: 1 observación(es) final(es) nueva(s); la última es CRC/C/TZA/CO/6"
+   },
+   {
+    "tipo": "visitas_docs",
+    "texto": "Surinam: 1 informe(s) de misión nuevo(s)"
+   },
+   {
+    "tipo": "observaciones",
+    "texto": "Lesoto: 1 observación(es) final(es) nueva(s); la última es CRC/C/LSO/CO/3-7"
+   },
+   {
+    "tipo": "observaciones",
+    "texto": "Uganda: 1 observación(es) final(es) nueva(s); la última es CRC/C/UGA/CO/3-5"
+   },
+   {
+    "tipo": "observaciones",
+    "texto": "Kazajistán: 1 observación(es) final(es) nueva(s); la última es CRC/C/KAZ/CO/5-6"
+   }
+  ]
+ },
+ {
   "fecha": "2026-10-28",
   "cambios": [
    {
