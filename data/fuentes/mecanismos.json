@@ -755,10 +755,24 @@
   "registro": "https://digitallibrary.un.org/record/603041",
   "coincidencia_titulo": 1.0,
   "texto": {
-   "estado": "SIN_COPIA_LOCALIZADA",
+   "estado": "TEXTO_EN_INFORME",
    "fuentes": [],
    "descartadas_por_no_coincidir": [],
-   "informe_sesion": []
+   "informe_sesion": [
+    {
+     "simbolo": "A/HRC/5/21",
+     "paginas": "4–37",
+     "registro": "https://digitallibrary.un.org/record/610953",
+     "pdf": {
+      "العربية": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-AR.pdf",
+      "en": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-EN.pdf",
+      "Español": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-ES.pdf",
+      "Français": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-FR.pdf",
+      "Русский": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-RU.pdf",
+      "中文": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-ZH.pdf"
+     }
+    }
+   ]
   }
  },
  {
@@ -778,10 +792,24 @@
   "registro": "https://digitallibrary.un.org/record/603041",
   "coincidencia_titulo": 1.0,
   "texto": {
-   "estado": "SIN_COPIA_LOCALIZADA",
+   "estado": "TEXTO_EN_INFORME",
    "fuentes": [],
    "descartadas_por_no_coincidir": [],
-   "informe_sesion": []
+   "informe_sesion": [
+    {
+     "simbolo": "A/HRC/5/21",
+     "paginas": "4–37",
+     "registro": "https://digitallibrary.un.org/record/610953",
+     "pdf": {
+      "العربية": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-AR.pdf",
+      "en": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-EN.pdf",
+      "Español": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-ES.pdf",
+      "Français": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-FR.pdf",
+      "Русский": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-RU.pdf",
+      "中文": "https://digitallibrary.un.org/record/610953/files/A_HRC_5_21-ZH.pdf"
+     }
+    }
+   ]
   }
  },
  {
@@ -802,7 +830,15 @@
   "coincidencia_titulo": 1.0,
   "texto": {
    "estado": "TEXTO_EN_INFORME",
-   "fuentes": [],
+   "fuentes": [
+    {
+     "tipo": "ohchr",
+     "lengua": "en",
+     "url": "https://ap.ohchr.org/documents/E/CHR/resolutions/E-CN_4-RES-1998-72.doc",
+     "formato": "doc",
+     "validado": null
+    }
+   ],
    "descartadas_por_no_coincidir": [],
    "informe_sesion": [
     {
