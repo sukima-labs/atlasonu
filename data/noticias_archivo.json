@@ -1,8 +1,26 @@
 {
 "fuente": "Noticias ONU (news.un.org)",
-"actualizado": "2026-10-28T17:21:23Z",
-"total": 52,
+"actualizado": "2026-10-29T02:39:12Z",
+"total": 54,
 "notas": [
+{
+"titulo": "Cuba, muertes por calor, Venezuela, Nicaragua… Las noticias del miércoles",
+"fecha": "2026-10-28",
+"enlace": "https://news.un.org/feed/view/es/story/2026/10/1542114",
+"resumen": "La Asamblea General pide el fin del embargo a Cuba (y ya van 34 veces). Un informe respaldado por la OMS denuncia 710.000 muertes por calor en 2023. Expertos piden a Venezuela levantar los bloqueos a internet y respetar la libertad de expresión. Expertos…",
+"visto": "2026-10-29",
+"derechos": true,
+"americas": false
+},
+{
+"titulo": "La ONU vuelve a rechazar el embargo de Estados Unidos a Cuba",
+"fecha": "2026-10-28",
+"enlace": "https://news.un.org/feed/view/es/story/2026/10/1542113",
+"resumen": "Con esta son 34 ocasiones desde 1992 que la Asamblea General, el órgano más representativo de la diplomacia internacional, rechaza la medida unilateral. La resolución reitera la exigencia internacional de levantar el bloqueo económico, comercial y financiero…",
+"visto": "2026-10-29",
+"derechos": true,
+"americas": false
+},
 {
 "titulo": "El embargo de Estados Unidos a Cuba vuelve a la ONU (que ya lo ha rechazado 33 veces)",
 "fecha": "2026-10-27",

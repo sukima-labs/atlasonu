@@ -1,15 +1,15 @@
 {
- "revisado_el": "2026-10-28T17:21:23+00:00",
- "datos_del": "2026-10-28",
+ "revisado_el": "2026-10-29T02:39:12+00:00",
+ "datos_del": "2026-10-29",
  "hubo_cambios_en_esta_revision": true,
- "ultimo_cambio_el": "2026-10-28T17:21:23+00:00",
+ "ultimo_cambio_el": "2026-10-29T02:39:12+00:00",
  "huella": "",
  "contadores": {
   "mandatos": 57,
   "actos": 421,
   "localizados": 401,
   "paises": 196,
-  "mecanismos": 25
+  "mecanismos": 33
  },
  "fuentes": [
   {
