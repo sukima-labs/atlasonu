@@ -961,7 +961,128 @@
     "mandatos": "desaparici|ejecucion|execution",
     "url": "https://www.icc-cpi.int/"
    }
-  ]
+  ],
+  "decisiones": {
+   "nota": "Elaboración propia a partir de la Carta, el Estatuto de la Corte y las resoluciones citadas. Resume las reglas; para citar, use el texto oficial.",
+   "votos": [
+    {
+     "id": "ag",
+     "n": "Asamblea General",
+     "regla": "Un Estado, un voto. Las «cuestiones importantes» (paz y seguridad, elección de miembros de los demás órganos, admisión, suspensión y expulsión de miembros, presupuesto) se deciden por mayoría de dos tercios de los presentes y votantes; el resto, por mayoría simple. Muchas resoluciones se adoptan por consenso, sin votación.",
+     "base": "Carta, art. 18.",
+     "efecto": "Sus resoluciones son recomendaciones: no obligan por sí mismas (arts. 10–14). Un Estado con atrasos en sus cuotas por dos años completos pierde el voto (art. 19), salvo que la Asamblea aprecie causas ajenas a su voluntad.",
+     "url": "https://www.un.org/es/about-us/un-charter"
+    },
+    {
+     "id": "cs",
+     "n": "Consejo de Seguridad",
+     "regla": "Cada miembro tiene un voto. Las cuestiones de procedimiento necesitan 9 votos afirmativos de 15. Las demás necesitan 9 votos, incluidos los de los cinco miembros permanentes: si uno vota en contra, la propuesta se bloquea (el «veto»). Una abstención no es veto. En controversias del Capítulo VI, la parte interesada no vota.",
+     "base": "Carta, art. 27.",
+     "efecto": "Es el único órgano cuyas decisiones obligan a todos los Estados (art. 25). Desde la resolución 76/262 (2022), la Asamblea se reúne en un plazo de 10 días hábiles tras un veto para debatirlo.",
+     "url": "https://docs.un.org/es/A/RES/76/262"
+    },
+    {
+     "id": "ecosoc",
+     "n": "ECOSOC",
+     "regla": "Un voto por miembro (54); las decisiones se toman por mayoría de los miembros presentes y votantes.",
+     "base": "Carta, art. 67.",
+     "efecto": "Hace recomendaciones y coordina; no obliga a los Estados.",
+     "url": "https://www.un.org/es/about-us/un-charter"
+    },
+    {
+     "id": "cdh",
+     "n": "Consejo de Derechos Humanos",
+     "regla": "47 miembros, un voto cada uno; las decisiones se toman por mayoría simple de los presentes y votantes. Cualquier Estado observador puede hablar y negociar, pero no votar.",
+     "base": "Resolución 60/251 de la Asamblea y resolución 5/1 del Consejo.",
+     "efecto": "Sus resoluciones son políticas, no obligatorias; crean mandatos, piden informes y señalan situaciones. La Asamblea puede suspender a un miembro por dos tercios en caso de violaciones graves y sistemáticas.",
+     "url": "https://docs.un.org/es/A/RES/60/251"
+    },
+    {
+     "id": "cij",
+     "n": "Corte Internacional de Justicia",
+     "regla": "Decide por mayoría de los jueces presentes; el presidente desempata. Sus sentencias solo obligan a las partes del caso y no admiten apelación.",
+     "base": "Estatuto de la Corte, arts. 55 y 59–60.",
+     "efecto": "Las opiniones consultivas no son obligatorias, pero tienen gran peso jurídico.",
+     "url": "https://www.icj-cij.org/statute"
+    }
+   ],
+   "elecciones": [
+    {
+     "id": "cdh",
+     "n": "Miembros del Consejo de Derechos Humanos",
+     "quien": "La Asamblea General, por voto secreto y mayoría absoluta de sus miembros (97 de 193).",
+     "mandato": "3 años; no pueden ser reelegidos de inmediato tras dos mandatos consecutivos.",
+     "reparto": "13 África, 13 Asia-Pacífico, 8 América Latina y Caribe, 7 Europa Occidental y otros, 6 Europa Oriental.",
+     "base": "Resolución 60/251, párr. 7 y 8.",
+     "url": "https://docs.un.org/es/A/RES/60/251"
+    },
+    {
+     "id": "cs",
+     "n": "Miembros no permanentes del Consejo de Seguridad",
+     "quien": "La Asamblea General, por dos tercios de los presentes y votantes.",
+     "mandato": "2 años, sin reelección inmediata. Se renueva la mitad cada año.",
+     "reparto": "3 África, 2 Asia-Pacífico, 2 América Latina y Caribe, 2 Europa Occidental y otros, 1 Europa Oriental.",
+     "base": "Carta, art. 23.",
+     "url": "https://www.un.org/es/about-us/un-charter"
+    },
+    {
+     "id": "ecosoc",
+     "n": "Miembros del ECOSOC",
+     "quien": "La Asamblea General, por dos tercios.",
+     "mandato": "3 años, reelegibles. Se renuevan 18 cada año.",
+     "reparto": "54 miembros repartidos por grupos regionales.",
+     "base": "Carta, art. 61.",
+     "url": "https://www.un.org/es/about-us/un-charter"
+    },
+    {
+     "id": "sg",
+     "n": "Secretario General",
+     "quien": "La Asamblea General, a recomendación del Consejo de Seguridad: el veto de un miembro permanente puede bloquear a un candidato.",
+     "mandato": "5 años, renovable. El segundo mandato del actual titular termina el 31 de diciembre de 2026.",
+     "reparto": "Por costumbre, la región se va turnando.",
+     "base": "Carta, art. 97.",
+     "url": "https://www.un.org/es/about-us/un-charter"
+    },
+    {
+     "id": "cij",
+     "n": "Jueces de la CIJ",
+     "quien": "La Asamblea y el Consejo de Seguridad, por separado: se necesita mayoría absoluta en ambos. Aquí el veto no se aplica.",
+     "mandato": "15 jueces, 9 años, reelegibles; un tercio se renueva cada tres años. No puede haber dos de la misma nacionalidad.",
+     "reparto": "Debe representar las grandes formas de civilización y los principales sistemas jurídicos.",
+     "base": "Estatuto de la Corte, arts. 3–12.",
+     "url": "https://www.icj-cij.org/statute"
+    },
+    {
+     "id": "tratados",
+     "n": "Expertos de los comités de tratados",
+     "quien": "Los Estados partes de cada tratado, en su reunión, a partir de candidaturas de los propios Estados. No los elige ningún órgano de la ONU.",
+     "mandato": "Normalmente 4 años, reelegibles.",
+     "reparto": "Se busca reparto geográfico, equilibrio de género y diversidad jurídica.",
+     "base": "El artículo del propio tratado que crea cada comité.",
+     "url": "https://www.ohchr.org/es/treaty-bodies"
+    },
+    {
+     "id": "pe",
+     "n": "Titulares de procedimientos especiales",
+     "quien": "El presidente del Consejo de Derechos Humanos propone, tras una lista del Grupo Consultivo (cinco miembros, uno por región), y el Consejo aprueba el nombramiento.",
+     "mandato": "Hasta 6 años en total (dos períodos de 3). Actúan a título personal y sin cobrar.",
+     "reparto": "Se busca equilibrio regional y de género.",
+     "base": "Resolución 5/1 del Consejo, arts. 39–53.",
+     "url": "https://www.ohchr.org/es/special-procedures-human-rights-council"
+    },
+    {
+     "id": "ca",
+     "n": "Comité Asesor del Consejo",
+     "quien": "El Consejo de Derechos Humanos, por voto secreto, a propuesta de los Estados.",
+     "mandato": "18 expertos, 3 años, reelegibles una vez.",
+     "reparto": "5 África, 5 Asia-Pacífico, 3 América Latina y Caribe, 3 Europa Occidental y otros, 2 Europa Oriental.",
+     "base": "Resolución 5/1 del Consejo, arts. 65–73.",
+     "url": "https://www.ohchr.org/es/hr-bodies/hrc/advisory-committee/advisory-committee-index"
+    }
+   ],
+   "grupos": "Las elecciones se reparten por cinco grupos regionales: África, Asia-Pacífico, Europa Oriental, América Latina y Caribe, y Europa Occidental y otros.",
+   "admision": "Para admitir a un Estado miembro, el Consejo de Seguridad lo recomienda (con posible veto) y la Asamblea lo aprueba por dos tercios (Carta, art. 4)."
+  }
  },
  "siglas": {
   "nota": "Elaboración propia a partir de los textos y sitios oficiales de las Naciones Unidas. Las abreviaturas en español marcadas como alias son de uso académico o corriente y no siempre oficiales. Para citar, use el nombre completo oficial.",
@@ -4288,6 +4409,10 @@
     "intro": "Lo que ya funciona hoy.",
     "items": [
      {
+      "t": "Cómo se decide y quién elige a quién",
+      "x": "En «Cómo funciona la ONU», la pestaña «Cómo se decide y se elige» explica cómo se vota en la Asamblea, el Consejo de Seguridad (con el veto), el ECOSOC, el Consejo de Derechos Humanos y la Corte, y quién elige a sus miembros, relatores, expertos de comités y Secretario General, con la base jurídica y el enlace oficial de cada regla."
+     },
+     {
       "t": "Registro de cada revisión",
       "x": "En «Novedades» ves cuándo se revisaron las fuentes oficiales, qué se miró, cuánto tardó y qué resultó. Cada ejecución queda guardada."
      },
@@ -4349,7 +4474,7 @@
      },
      {
       "t": "Cruce con las fuentes oficiales",
-      "x": "Los 57 mandatos, los 196 países, los 18 tratados y los 10 comités coinciden con las listas oficiales; el informe indica lo que falta (extinguidos, comisiones de investigación y siglas)."
+      "x": "Los 57 mandatos, los 196 países, los 18 tratados y los 10 comités coinciden con las listas oficiales; el informe indica lo que falta (extinguidos y comisiones de investigación; las siglas se ampliaron el 29-10-2026)."
      }
     ]
    },
@@ -4406,7 +4531,7 @@
      },
      {
       "t": "Cómo funciona la ONU, más a fondo",
-      "x": "Órganos, votaciones, presupuesto, elecciones y reformas."
+      "x": "Presupuesto y financiación, ciclo de trabajo del Consejo de Derechos Humanos y reformas. Ya están las votaciones y las elecciones."
      },
      {
       "t": "Siglas y acrónimos",
