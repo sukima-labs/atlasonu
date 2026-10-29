@@ -7,6 +7,10 @@
    "intro": "Lo que ya funciona hoy.",
    "items": [
     {
+     "t": "Cómo se decide y quién elige a quién",
+     "x": "En «Cómo funciona la ONU», la pestaña «Cómo se decide y se elige» explica cómo se vota en la Asamblea, el Consejo de Seguridad (con el veto), el ECOSOC, el Consejo de Derechos Humanos y la Corte, y quién elige a sus miembros, relatores, expertos de comités y Secretario General, con la base jurídica y el enlace oficial de cada regla."
+    },
+    {
      "t": "Registro de cada revisión",
      "x": "En «Novedades» ves cuándo se revisaron las fuentes oficiales, qué se miró, cuánto tardó y qué resultó. Cada ejecución queda guardada."
     },
@@ -125,7 +129,7 @@
     },
     {
      "t": "Cómo funciona la ONU, más a fondo",
-     "x": "Órganos, votaciones, presupuesto, elecciones y reformas."
+     "x": "Presupuesto y financiación, ciclo de trabajo del Consejo de Derechos Humanos y reformas. Ya están las votaciones y las elecciones."
     },
     {
      "t": "Siglas y acrónimos",
