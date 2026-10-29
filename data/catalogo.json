@@ -1081,7 +1081,45 @@
     }
    ],
    "grupos": "Las elecciones se reparten por cinco grupos regionales: África, Asia-Pacífico, Europa Oriental, América Latina y Caribe, y Europa Occidental y otros.",
-   "admision": "Para admitir a un Estado miembro, el Consejo de Seguridad lo recomienda (con posible veto) y la Asamblea lo aprueba por dos tercios (Carta, art. 4)."
+   "admision": "Para admitir a un Estado miembro, el Consejo de Seguridad lo recomienda (con posible veto) y la Asamblea lo aprueba por dos tercios (Carta, art. 4).",
+   "financiacion": {
+    "nota": "Elaboración propia a partir de la Carta y las resoluciones citadas. No incluye cifras de dinero porque cambian cada año: consúltelas en las fuentes oficiales.",
+    "intro": "La ONU tiene tres bolsillos distintos, cada uno con sus reglas: el presupuesto ordinario, el de mantenimiento de la paz y las contribuciones voluntarias.",
+    "fuentes": [
+     {
+      "id": "ordinario",
+      "n": "Presupuesto ordinario",
+      "que": "Paga la Secretaría y sus oficinas (incluida la de derechos humanos en su parte regular), las comisiones regionales y los órganos políticos.",
+      "quien": "Los Estados miembros pagan cuotas obligatorias. La Asamblea General lo aprueba por dos tercios, tras el examen técnico de la Comisión Consultiva en Asuntos Administrativos y de Presupuesto (CCAAP) y la Quinta Comisión.",
+      "base": "Carta, arts. 17 y 18; resolución 72/266 (presupuesto anual en lugar de bienal).",
+      "url": "https://www.un.org/es/about-us/un-charter"
+     },
+     {
+      "id": "paz",
+      "n": "Operaciones de mantenimiento de la paz",
+      "que": "Cada misión tiene su propio presupuesto, de julio a junio, separado del ordinario.",
+      "quien": "La Asamblea lo aprueba en la Quinta Comisión. Las cuotas siguen la escala ordinaria, con un recargo para los cinco miembros permanentes del Consejo de Seguridad, que lo crea, y un descuento para los países de menores ingresos.",
+      "base": "Resolución 55/235 de la Asamblea.",
+      "url": "https://docs.un.org/es/A/RES/55/235"
+     },
+     {
+      "id": "voluntarias",
+      "n": "Contribuciones voluntarias",
+      "que": "Financian la mayor parte de los fondos y programas (UNICEF, ACNUR, PNUD…) y buena parte del trabajo de la oficina de derechos humanos: los relatores, el Fondo contra la Tortura y otras actividades.",
+      "quien": "Los Estados, organizaciones y particulares donan lo que deciden. No hay cuota ni obligación de pagar.",
+      "base": "Cada fondo o programa tiene su propia base; la oficina de derechos humanos publica sus informes de financiación.",
+      "url": "https://www.ohchr.org/es/about-us/funding-and-budget"
+     }
+    ],
+    "cuotas": {
+     "regla": "La escala de cuotas se basa en la capacidad de pago, medida sobre la renta nacional, ajustada por deuda y renta per cápita. La fija la Asamblea cada tres años, a propuesta del Comité de Contribuciones.",
+     "limites": "Ningún Estado paga más del 22 % del presupuesto ordinario y ningún país menos adelantado, más del 0,01 %. La cuota mínima es del 0,001 %.",
+     "base": "Resolución 73/271 y las resoluciones trienales de escala; Carta, art. 17.2.",
+     "url": "https://www.un.org/en/ga/contributions/scale.shtml"
+    },
+    "impago": "Quien debe cuotas por el equivalente a dos años completos pierde el voto en la Asamblea, salvo que esta aprecie que la causa escapa a su voluntad (Carta, art. 19). Es un mecanismo de presión sobre quien no paga; no impide la membresía.",
+    "relacion": "Quien paga más no manda más: en la Asamblea, un Estado un voto. Pero el dinero da influencia, y por eso los retrasos de los grandes contribuyentes provocan crisis de liquidez que obligan a recortar o aplazar actividades."
+   }
   }
  },
  "siglas": {
@@ -4531,7 +4569,7 @@
      },
      {
       "t": "Cómo funciona la ONU, más a fondo",
-      "x": "Presupuesto y financiación, ciclo de trabajo del Consejo de Derechos Humanos y reformas. Ya están las votaciones y las elecciones."
+      "x": "Ciclo de trabajo del Consejo de Derechos Humanos, relaciones entre órganos y reformas. Ya están las votaciones, las elecciones y la financiación."
      },
      {
       "t": "Siglas y acrónimos",
