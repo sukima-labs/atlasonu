@@ -1,8 +1,48 @@
 window.NOTICIAS={
  "fuente": "Noticias ONU (news.un.org)",
- "actualizado": "2026-10-29T17:38:12Z",
+ "actualizado": "2026-10-29T23:13:54Z",
  "temas": {
   "todas": [
+   {
+    "titulo": "La naturaleza está resurgiendo, pero la financiación para restaurarla debe cuadruplicarse",
+    "fecha": "2026-10-29",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542123",
+    "resumen": "No todo es destrucción. Unos 252 millones de hectáreas en 149 países —una superficie del tamaño de Kazajistán— están en restauración, y se han creado más de un millón de empleos verdes, pero la financiación anual debe cuadruplicarse, de 64.000 a 296.000…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/10/29-10-2026_UNEP_Brazil.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
+   {
+    "titulo": "Trabajo de cuidados, seguridad marítima, restauración de la naturaleza, contaminación… Las noticias del jueves",
+    "fecha": "2026-10-29",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542122",
+    "resumen": "Crece la demanda de cuidados de larga duración en América, al tiempo que la población envejece. Las nuevas tecnologías plantean oportunidades y riesgos para la seguridad marítima, advierte la ONU. La naturaleza se recupera, pero la financiación para…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/14-3-2024_Older%20People.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
+   {
+    "titulo": "En el mar, la IA trastoca las reglas de la guerra",
+    "fecha": "2026-10-29",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542121",
+    "resumen": "\"El arma decisiva de la próxima década no será un misil hipersónico, será el algoritmo\", advierte el periodista Fareed Zakaria ante el Consejo de Seguridad. El diagnóstico supera con creces los desafíos militares. Más del 90 % del comercio mundial de…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/10/29-10-2026_Adobe-_Shipping-lane.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
+   {
+    "titulo": "Haití: la inseguridad alimentaria en camino de alcanzar niveles récord",
+    "fecha": "2026-10-29",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542120",
+    "resumen": "Haití se enfrenta a una inseguridad alimentaria récord: 6,35 millones de personas en situación de crisis o emergencia entre marzo y junio de 2027, medio millón más que en el mismo período del año anterior, y casi dos millones en nivel de \"urgencia\". La ONU…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/27-09-2024-WFP-Haiti-02.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
+   {
+    "titulo": "Crece la demanda de cuidados de larga duración en América, al tiempo que la población envejece",
+    "fecha": "2026-10-29",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542119",
+    "resumen": "Para 2050, 306 millones de personas en las Américas tendrán 60 años o más, pero solo 15 de los 35 Estados cuentan con un sistema formal y públicamente financiado de cuidados de larga duración, pese a que el 88 % de los países ha incluido el tema en su…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/15-12-2025-UNHCR-Poland-Ukraine.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
    {
     "titulo": "Al océano le cuesta cada vez más protegernos del CO₂",
     "fecha": "2026-10-28",
@@ -122,46 +162,6 @@ window.NOTICIAS={
     "resumen": "ONU Derechos Humanos denuncia que el cierre total de Cisjordania agravará la situación de los palestinos. Sudán: las mujeres siguen sufriendo las consecuencias de la violencia en El Fasher. El brote de ébola en RD Congo supera los 9700 casos. Un comité…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/08/19-08-2026-UNICEF-West-Bank-01.jpg/image560x340cropped.jpg",
     "destacada": true
-   },
-   {
-    "titulo": "Yemen: crece la preocupación por la ciudad de Taiz mientras la ayuda no puede entrar",
-    "fecha": "2026-10-23",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542097",
-    "resumen": "La ciudad yemení de Taiz lleva 20 días cercada, con más de 800.000 personas desconectadas de la asistencia y el precio del agua triplicado, mientras los combates impiden entrar y salir. La producción de agua ha caído a la mitad y más de 52.000 niños sufren…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/10/16-10-2026-WFP-Yemen-02.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "Coste de la vida, crecimiento en América Latina, el Niño, Corte Penal Internacional… Las noticias del jueves",
-    "fecha": "2026-10-22",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542094",
-    "resumen": "\"Aten cabos\" entre las protestas callejeras y la agitación global, pide Guterres. La CEPAL rebaja al 2,0 % el crecimiento de América Latina en 2026 por las tensiones geopolíticas. El Niño agrava la sequía y el hambre en Centroamérica. La Corte Penal…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/10/22-10-2026-Adobe-Stock-France-protest.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "Los equipos de respuesta al ébola, bajo presión mientras el brote se expande",
-    "fecha": "2026-10-22",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542095",
-    "resumen": "El brote de ébola en la República Democrática del Congo alcanza una octava provincia, Nord Ubangi, y suma 9552 infecciones confirmadas y más de 4600 muertes, con casi seis de cada diez fallecimientos fuera de los centros de salud. Nigeria confirma su primer…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/08/26-08-2026-UNOCHA-DR-Congo-ebola-01.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "La CEPAL rebaja al 2,0 % el crecimiento de América Latina en 2026 por las tensiones geopolíticas",
-    "fecha": "2026-10-22",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542093",
-    "resumen": "Además, la menor creación de empleo limita los ingresos y el consumo, y dificulta reducir la informalidad. advierte el organismo, que ve un panorama desigual: América del Sur crecerá un 2,1 % y el Caribe un 7,4 %, pero sin Guyana se quedaría en un 1,2 %.",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/02-12-25-Unsplash-cell-phone.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "\"Unan los puntos\" entre las protestas callejeras y la agitación global, pide Guterres",
-    "fecha": "2026-10-22",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542092",
-    "resumen": "La desigualdad es el combustible de las protestas y de la guerra. \"En todas partes aumentan las presiones por el precio de los alimentos, el combustible y otros básicos. Los tipos de interés han subido, para las personas y los países. Y para los jóvenes, la…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/10/22-10-2026-Adobe-Stock-protesters.jpg/image560x340cropped.jpg",
-    "destacada": false
    }
   ],
   "derechos": [
@@ -308,6 +308,20 @@ window.NOTICIAS={
   ],
   "americas": [
    {
+    "titulo": "Haití: la inseguridad alimentaria en camino de alcanzar niveles récord",
+    "fecha": "2026-10-29",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542120",
+    "resumen": "Haití se enfrenta a una inseguridad alimentaria récord: 6,35 millones de personas en situación de crisis o emergencia entre marzo y junio de 2027, medio millón más que en el mismo período del año anterior, y casi dos millones en nivel de \"urgencia\". La ONU…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/27-09-2024-WFP-Haiti-02.jpg/image560x340cropped.jpg"
+   },
+   {
+    "titulo": "Crece la demanda de cuidados de larga duración en América, al tiempo que la población envejece",
+    "fecha": "2026-10-29",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542119",
+    "resumen": "Para 2050, 306 millones de personas en las Américas tendrán 60 años o más, pero solo 15 de los 35 Estados cuentan con un sistema formal y públicamente financiado de cuidados de larga duración, pese a que el 88 % de los países ha incluido el tema en su…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/15-12-2025-UNHCR-Poland-Ukraine.jpg/image560x340cropped.jpg"
+   },
+   {
     "titulo": "El embargo de Estados Unidos a Cuba vuelve a la ONU (que ya lo ha rechazado 33 veces)",
     "fecha": "2026-10-27",
     "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542112",
@@ -432,20 +446,6 @@ window.NOTICIAS={
     "enlace": "https://news.un.org/feed/view/es/story/2026/09/1541997",
     "resumen": "Las mujeres que buscan a familiares y otras personas desaparecidas en México están expuestas a desapariciones, asesinatos y ataques, en un contexto de impunidad casi total, advierten expertos independientes. Los especialistas recordaron que la búsqueda es…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/28-07-2023-CEE-Mexico-disappearances-01.jpg/image560x340cropped.jpg"
-   },
-   {
-    "titulo": "Haití: las puertas de la atención sanitaria siguen abiertas a las afueras de Puerto Príncipe",
-    "fecha": "2026-09-30",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/09/1541995",
-    "resumen": "Con el apoyo del Fondo Humanitario para Haití, gestionado por la ONU, las organizaciones humanitarias, incluida la Asociación de Voluntarios en Servicio Internacional (AVSI) y sus socios, siguen respondiendo a las crecientes necesidades.",
-    "imagen": ""
-   },
-   {
-    "titulo": "Costa Rica: ningún Estado puede enfrentar solo los desafíos globales",
-    "fecha": "2026-09-28",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/09/1541989",
-    "resumen": "Costa Rica defendió este lunes el multilateralismo como una herramienta necesaria para responder a los conflictos, el crimen organizado, la crisis climática y las brechas de desarrollo, y pidió una ONU más ágil, eficiente y capaz de ofrecer resultados…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/09/28-09-2026-UN-Photo-UNGA81-Costa-Rica.jpg/image560x340cropped.jpg"
    }
   ]
  }
