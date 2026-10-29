@@ -1,8 +1,53 @@
 {
 "fuente": "Noticias ONU (news.un.org)",
-"actualizado": "2026-10-29T17:38:12Z",
-"total": 56,
+"actualizado": "2026-10-29T23:13:54Z",
+"total": 61,
 "notas": [
+{
+"titulo": "La naturaleza está resurgiendo, pero la financiación para restaurarla debe cuadruplicarse",
+"fecha": "2026-10-29",
+"enlace": "https://news.un.org/feed/view/es/story/2026/10/1542123",
+"resumen": "No todo es destrucción. Unos 252 millones de hectáreas en 149 países —una superficie del tamaño de Kazajistán— están en restauración, y se han creado más de un millón de empleos verdes, pero la financiación anual debe cuadruplicarse, de 64.000 a 296.000…",
+"visto": "2026-10-29",
+"derechos": false,
+"americas": false
+},
+{
+"titulo": "Trabajo de cuidados, seguridad marítima, restauración de la naturaleza, contaminación… Las noticias del jueves",
+"fecha": "2026-10-29",
+"enlace": "https://news.un.org/feed/view/es/story/2026/10/1542122",
+"resumen": "Crece la demanda de cuidados de larga duración en América, al tiempo que la población envejece. Las nuevas tecnologías plantean oportunidades y riesgos para la seguridad marítima, advierte la ONU. La naturaleza se recupera, pero la financiación para…",
+"visto": "2026-10-29",
+"derechos": false,
+"americas": false
+},
+{
+"titulo": "En el mar, la IA trastoca las reglas de la guerra",
+"fecha": "2026-10-29",
+"enlace": "https://news.un.org/feed/view/es/story/2026/10/1542121",
+"resumen": "\"El arma decisiva de la próxima década no será un misil hipersónico, será el algoritmo\", advierte el periodista Fareed Zakaria ante el Consejo de Seguridad. El diagnóstico supera con creces los desafíos militares. Más del 90 % del comercio mundial de…",
+"visto": "2026-10-29",
+"derechos": false,
+"americas": false
+},
+{
+"titulo": "Haití: la inseguridad alimentaria en camino de alcanzar niveles récord",
+"fecha": "2026-10-29",
+"enlace": "https://news.un.org/feed/view/es/story/2026/10/1542120",
+"resumen": "Haití se enfrenta a una inseguridad alimentaria récord: 6,35 millones de personas en situación de crisis o emergencia entre marzo y junio de 2027, medio millón más que en el mismo período del año anterior, y casi dos millones en nivel de \"urgencia\". La ONU…",
+"visto": "2026-10-29",
+"derechos": false,
+"americas": true
+},
+{
+"titulo": "Crece la demanda de cuidados de larga duración en América, al tiempo que la población envejece",
+"fecha": "2026-10-29",
+"enlace": "https://news.un.org/feed/view/es/story/2026/10/1542119",
+"resumen": "Para 2050, 306 millones de personas en las Américas tendrán 60 años o más, pero solo 15 de los 35 Estados cuentan con un sistema formal y públicamente financiado de cuidados de larga duración, pese a que el 88 % de los países ha incluido el tema en su…",
+"visto": "2026-10-29",
+"derechos": false,
+"americas": true
+},
 {
 "titulo": "Al océano le cuesta cada vez más protegernos del CO₂",
 "fecha": "2026-10-28",
