@@ -1,8 +1,24 @@
 window.NOTICIAS={
  "fuente": "Noticias ONU (news.un.org)",
- "actualizado": "2026-10-29T02:39:12Z",
+ "actualizado": "2026-10-29T11:14:54Z",
  "temas": {
   "todas": [
+   {
+    "titulo": "Al océano le cuesta cada vez más protegernos del CO₂",
+    "fecha": "2026-10-28",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542117",
+    "resumen": "El aumento de las temperaturas, junto con las alteraciones de la química, la circulación y los ecosistemas marinos, reduce la capacidad del océano para absorber y almacenar carbono. El resultado: una mayor parte del CO₂ permanece en la atmósfera, lo que…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/08/07-08-2026-Unsplash-Vanuatu.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
+   {
+    "titulo": "Cambio climático: En 2023, el calor mató a 700.000 personas",
+    "fecha": "2026-10-28",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542116",
+    "resumen": "La falta de coraje para afrontar la crisis climática sigue dañando y matando a personas en todos los países, con un récord estimado de 710.000 muertes globales por calor en 2023, advirtió este miércoles un informe con colaboración de la ONU. Por primera vez,…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/10/28-10-2026-extremeheat-AdobeStockjpg/image560x340cropped.jpg",
+    "destacada": false
+   },
    {
     "titulo": "Cuba, muertes por calor, Venezuela, Nicaragua… Las noticias del miércoles",
     "fecha": "2026-10-28",
@@ -145,22 +161,6 @@ window.NOTICIAS={
     "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542092",
     "resumen": "La desigualdad es el combustible de las protestas y de la guerra. \"En todas partes aumentan las presiones por el precio de los alimentos, el combustible y otros básicos. Los tipos de interés han subido, para las personas y los países. Y para los jóvenes, la…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/10/22-10-2026-Adobe-Stock-protesters.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "Las agencias de la ONU piden ayuda para proteger a los más vulnerables de un El Niño sin precedentes",
-    "fecha": "2026-10-21",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542091",
-    "resumen": "El Pacífico tropical podría alcanzar los 3,8 °C por encima de la media entre noviembre y enero, un nivel fuera de los registros. Unos 50 millones de personas podrían enfrentar más hambre, y la ONU ha liberado más de 50 millones de dólares para 11 países en…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/10/06-10-2026-WFP-Honduras-drought-02.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "Cambio climático, El Niño, ébola, migrantes… Las noticias del miércoles",
-    "fecha": "2026-10-21",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542089",
-    "resumen": "El mundo debe reducir las emisiones un 18% antes de 2030. El Niño amenaza con agravar el hambre de 50 millones de personas. Nigeria confirma un caso importado de ébola y vigila a 44 contactos. El tráfico de migrantes por mar hacia Europa generó hasta 509…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/09/03-09-2026-Climate-Visuals-Poland.jpg/image560x340cropped.jpg",
     "destacada": false
    }
   ],
