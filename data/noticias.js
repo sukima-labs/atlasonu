@@ -1,8 +1,24 @@
 window.NOTICIAS={
  "fuente": "Noticias ONU (news.un.org)",
- "actualizado": "2026-10-28T17:21:23Z",
+ "actualizado": "2026-10-29T02:39:12Z",
  "temas": {
   "todas": [
+   {
+    "titulo": "Cuba, muertes por calor, Venezuela, Nicaragua… Las noticias del miércoles",
+    "fecha": "2026-10-28",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542114",
+    "resumen": "La Asamblea General pide el fin del embargo a Cuba (y ya van 34 veces). Un informe respaldado por la OMS denuncia 710.000 muertes por calor en 2023. Expertos piden a Venezuela levantar los bloqueos a internet y respetar la libertad de expresión. Expertos…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/27-10-2015-Unsplash-Havana-Cuba-01.jpg/image560x340cropped.jpg",
+    "destacada": true
+   },
+   {
+    "titulo": "La ONU vuelve a rechazar el embargo de Estados Unidos a Cuba",
+    "fecha": "2026-10-28",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542113",
+    "resumen": "Con esta son 34 ocasiones desde 1992 que la Asamblea General, el órgano más representativo de la diplomacia internacional, rechaza la medida unilateral. La resolución reitera la exigencia internacional de levantar el bloqueo económico, comercial y financiero…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Graphics%20Library/2026/10/28-10-2026_cuba_voting.jpg/image560x340cropped.jpg",
+    "destacada": true
+   },
    {
     "titulo": "El embargo de Estados Unidos a Cuba vuelve a la ONU (que ya lo ha rechazado 33 veces)",
     "fecha": "2026-10-27",
@@ -146,25 +162,23 @@ window.NOTICIAS={
     "resumen": "El mundo debe reducir las emisiones un 18% antes de 2030. El Niño amenaza con agravar el hambre de 50 millones de personas. Nigeria confirma un caso importado de ébola y vigila a 44 contactos. El tráfico de migrantes por mar hacia Europa generó hasta 509…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/09/03-09-2026-Climate-Visuals-Poland.jpg/image560x340cropped.jpg",
     "destacada": false
-   },
-   {
-    "titulo": "Sudán: se reanudan los esfuerzos de paz para poner fin a la \"guerra de drones\" que alimenta la crisis humanitaria",
-    "fecha": "2026-10-21",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542088",
-    "resumen": "Casi 34 millones de personas necesitan ayuda humanitaria en Sudán y ocho millones de niños están fuera de la escuela, mientras las conversaciones de paz se reanudan en Ginebra sin la presencia del Gobierno sudanés ni de las RSF. \"La guerra en Sudán se ha…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/10/21_10_26_UNOG_Sudan_meeting_1.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "Es necesario recortar las emisiones un 18 % en cuatro años para limitar el pico de temperatura a 1,7 grados",
-    "fecha": "2026-10-21",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542087",
-    "resumen": "El mundo superará el umbral de 1,5 °C fijado en el Acuerdo de París, pero el pico de calentamiento podría limitarse a 1,7-1,8 °C si las emisiones caen un 18 % para 2030, un 45 % para 2035 y un 69 % cinco años después. Las emisiones globales se estancaron en…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/08/12-08-2026-UNDP_Morocco_Electric_Bus.jpg/image560x340cropped.jpg",
-    "destacada": false
    }
   ],
   "derechos": [
+   {
+    "titulo": "Cuba, muertes por calor, Venezuela, Nicaragua… Las noticias del miércoles",
+    "fecha": "2026-10-28",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542114",
+    "resumen": "La Asamblea General pide el fin del embargo a Cuba (y ya van 34 veces). Un informe respaldado por la OMS denuncia 710.000 muertes por calor en 2023. Expertos piden a Venezuela levantar los bloqueos a internet y respetar la libertad de expresión. Expertos…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/27-10-2015-Unsplash-Havana-Cuba-01.jpg/image560x340cropped.jpg"
+   },
+   {
+    "titulo": "La ONU vuelve a rechazar el embargo de Estados Unidos a Cuba",
+    "fecha": "2026-10-28",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542113",
+    "resumen": "Con esta son 34 ocasiones desde 1992 que la Asamblea General, el órgano más representativo de la diplomacia internacional, rechaza la medida unilateral. La resolución reitera la exigencia internacional de levantar el bloqueo económico, comercial y financiero…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Graphics%20Library/2026/10/28-10-2026_cuba_voting.jpg/image560x340cropped.jpg"
+   },
    {
     "titulo": "El embargo de Estados Unidos a Cuba vuelve a la ONU (que ya lo ha rechazado 33 veces)",
     "fecha": "2026-10-27",
@@ -290,20 +304,6 @@ window.NOTICIAS={
     "enlace": "https://news.un.org/feed/view/es/story/2026/09/1541963",
     "resumen": "La ofensiva contra los grupos armados y el narcotráfico, el posible regreso de las fumigaciones aéreas y las nuevas unidades de seguridad urbana pueden profundizar el perfilamiento racial, el uso desproporcionado de la fuerza y la criminalización de los…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/240524_Women_Colombia1.jpg/image560x340cropped.jpg"
-   },
-   {
-    "titulo": "España: Sánchez defiende la ONU de los egoístas, ignorantes y crueles que quieren acabar con ella",
-    "fecha": "2026-09-23",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/09/1541960",
-    "resumen": "Sánchez propone reformar el Consejo de Seguridad para acabar con el derecho de veto, reforzar la Corte Penal Internacional, reconstruir la arquitectura de desarme nuclear y regular a los tecno-oligarcas, además de poner a una mujer latinoamericana al frente…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/09/23-09-2026-UNGA81_Spain.jpg/image560x340cropped.jpg"
-   },
-   {
-    "titulo": "Derecho al desarrollo: 40 años después, la ONU busca renovar un compromiso con la equidad",
-    "fecha": "2026-09-23",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/09/1541941",
-    "resumen": "Las desigualdades heredadas del colonialismo siguen condicionando las oportunidades de millones de personas. Frente a ellas, el derecho al desarrollo plantea una idea central: todas las personas y los pueblos deben poder participar, contribuir y beneficiarse…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/08/31-08-2026-UNICEF-Sudan-01.jpg/image560x340cropped.jpg"
    }
   ],
   "americas": [
