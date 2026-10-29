@@ -2,6 +2,42 @@
  "nota": "Elaboración propia a partir de los textos y sitios oficiales de las Naciones Unidas. Las abreviaturas en español marcadas como alias son de uso académico o corriente y no siempre oficiales. Para citar, use el nombre completo oficial.",
  "entradas": [
   {
+   "id": "a-hrc-documento",
+   "sigla": "A/HRC",
+   "alias": [],
+   "en": "Human Rights Council document series",
+   "es": "Serie de documentos del Consejo de Derechos Humanos",
+   "tipo": "Documento",
+   "que": "Prefijo de los símbolos del Consejo (resoluciones A/HRC/RES/…, informes A/HRC/…)."
+  },
+  {
+   "id": "a-res-documento",
+   "sigla": "A/RES",
+   "alias": [],
+   "en": "General Assembly resolution series",
+   "es": "Serie de resoluciones de la Asamblea General",
+   "tipo": "Documento",
+   "que": "Prefijo de las resoluciones de la Asamblea General, p. ej. A/RES/217 A (III)."
+  },
+  {
+   "id": "acabq-organo-de-la-onu",
+   "sigla": "ACABQ",
+   "alias": [],
+   "en": "Advisory Committee on Administrative and Budgetary Questions",
+   "es": "Comisión Consultiva en Asuntos Administrativos y de Presupuesto",
+   "tipo": "Órgano de la ONU",
+   "que": "Órgano de la Asamblea General que examina el presupuesto y revisa las implicaciones financieras de las resoluciones."
+  },
+  {
+   "id": "acerwc-sistema-regional",
+   "sigla": "ACERWC",
+   "alias": [],
+   "en": "African Committee of Experts on the Rights and Welfare of the Child",
+   "es": "Comité Africano de Expertos sobre los Derechos y el Bienestar del Niño",
+   "tipo": "Sistema regional",
+   "que": "Órgano de la Carta Africana sobre los Derechos y el Bienestar del Niño."
+  },
+  {
    "id": "achpr-sistema-regional",
    "sigla": "ACHPR",
    "alias": [
@@ -11,6 +47,15 @@
    "es": "Comisión Africana de Derechos Humanos y de los Pueblos",
    "tipo": "Sistema regional",
    "que": "Órgano de la Unión Africana que protege los derechos humanos en África; su tribunal es la Corte Africana."
+  },
+  {
+   "id": "acthpr-sistema-regional",
+   "sigla": "ACtHPR",
+   "alias": [],
+   "en": "African Court on Human and Peoples' Rights",
+   "es": "Corte Africana de Derechos Humanos y de los Pueblos",
+   "tipo": "Sistema regional",
+   "que": "Tribunal regional de la Unión Africana; complementa a la Comisión Africana."
   },
   {
    "id": "actio-popularis-concepto",
@@ -37,6 +82,15 @@
    "ir": "P:A/HRC/34/51/Add.1"
   },
   {
+   "id": "aichr-sistema-regional",
+   "sigla": "AICHR",
+   "alias": [],
+   "en": "ASEAN Intergovernmental Commission on Human Rights",
+   "es": "Comisión Intergubernamental de Derechos Humanos de la ASEAN",
+   "tipo": "Sistema regional",
+   "que": "Órgano de derechos humanos de la Asociación de Naciones del Asia Sudoriental."
+  },
+  {
    "id": "al-procedimiento",
    "sigla": "AL",
    "alias": [
@@ -47,6 +101,15 @@
    "tipo": "Procedimiento",
    "que": "Comunicación de un relator a un Estado sobre una violación ya ocurrida o en curso.",
    "ir": "S:pe"
+  },
+  {
+   "id": "asean-sistema-regional",
+   "sigla": "ASEAN",
+   "alias": [],
+   "en": "Association of Southeast Asian Nations",
+   "es": "Asociación de Naciones del Asia Sudoriental",
+   "tipo": "Sistema regional",
+   "que": "Organización regional del Sudeste Asiático."
   },
   {
    "id": "au-sistema-regional",
@@ -60,6 +123,15 @@
    "que": "Organización regional africana (55 Estados miembros); su sistema de derechos humanos es independiente del de la ONU."
   },
   {
+   "id": "bpfa-declaracion",
+   "sigla": "BPfA",
+   "alias": [],
+   "en": "Beijing Declaration and Platform for Action",
+   "es": "Declaración y Plataforma de Acción de Beijing",
+   "tipo": "Declaración",
+   "que": "Adoptadas en la Cuarta Conferencia Mundial sobre la Mujer (1995)."
+  },
+  {
    "id": "c3-organo-de-la-onu",
    "sigla": "C3",
    "alias": [
@@ -70,6 +142,28 @@
    "tipo": "Órgano de la ONU",
    "que": "Comisión de la Asamblea General que debate los derechos humanos cada otoño.",
    "ir": "S:tercera"
+  },
+  {
+   "id": "caac-concepto",
+   "sigla": "CAAC",
+   "alias": [
+    "NCA"
+   ],
+   "en": "Children and armed conflict",
+   "es": "Los niños y los conflictos armados",
+   "tipo": "Concepto",
+   "que": "Agenda del Consejo de Seguridad y mandato de una Representante Especial del Secretario General."
+  },
+  {
+   "id": "car-pais-o-territorio",
+   "sigla": "CAR",
+   "alias": [
+    "RCA"
+   ],
+   "en": "Central African Republic",
+   "es": "República Centroafricana",
+   "tipo": "País o territorio",
+   "que": "Estado miembro de África central; sigla habitual en informes de derechos humanos."
   },
   {
    "id": "cat-comite",
@@ -115,6 +209,24 @@
    "tipo": "Comité",
    "que": "Comité de 18 expertos que vigila el PIDCP. No es el Consejo de Derechos Humanos (HRC/CDH): el Comité lo forman expertos independientes; el Consejo, 47 Estados.",
    "ir": "T:IV-4"
+  },
+  {
+   "id": "ccpr-c-documento",
+   "sigla": "CCPR/C",
+   "alias": [],
+   "en": "Human Rights Committee document series",
+   "es": "Serie de documentos del Comité de Derechos Humanos",
+   "tipo": "Documento",
+   "que": "Prefijo de los documentos del Comité de Derechos Humanos (observaciones generales, dictámenes…)."
+  },
+  {
+   "id": "ccw-tratado",
+   "sigla": "CCW",
+   "alias": [],
+   "en": "Convention on Certain Conventional Weapons",
+   "es": "Convención sobre Ciertas Armas Convencionales",
+   "tipo": "Tratado",
+   "que": "Prohíbe o restringe armas que causan daños excesivos o indiscriminados."
   },
   {
    "id": "ced-comite",
@@ -259,6 +371,15 @@
    "que": "Corrección de erratas de un documento ya publicado; se añade al símbolo (por ejemplo /Corr.1)."
   },
   {
+   "id": "cp-procedimiento",
+   "sigla": "CP",
+   "alias": [],
+   "en": "Complaint procedure of the Human Rights Council",
+   "es": "Procedimiento de denuncia del Consejo de Derechos Humanos",
+   "tipo": "Procedimiento",
+   "que": "Procedimiento confidencial para denuncias de violaciones graves y fidedignas; sucedió al procedimiento 1503."
+  },
+  {
    "id": "cpr-concepto",
    "sigla": "CPR",
    "alias": [
@@ -270,6 +391,15 @@
    "tipo": "Concepto",
    "que": "Vida, libertad, juicio justo, expresión, reunión. Los vigila el CCPR.",
    "ir": "T:IV-4"
+  },
+  {
+   "id": "cpt-sistema-regional",
+   "sigla": "CPT",
+   "alias": [],
+   "en": "European Committee for the Prevention of Torture",
+   "es": "Comité Europeo para la Prevención de la Tortura",
+   "tipo": "Sistema regional",
+   "que": "Órgano del Consejo de Europa que visita lugares de privación de libertad."
   },
   {
    "id": "crc-comite",
@@ -331,6 +461,26 @@
    "ir": "T:IV-15"
   },
   {
+   "id": "crsv-concepto",
+   "sigla": "CRSV",
+   "alias": [],
+   "en": "Conflict-related sexual violence",
+   "es": "Violencia sexual relacionada con los conflictos",
+   "tipo": "Concepto",
+   "que": "Tema del mandato de la Representante Especial del Secretario General y de resoluciones del Consejo de Seguridad."
+  },
+  {
+   "id": "cso-concepto",
+   "sigla": "CSO",
+   "alias": [
+    "OSC"
+   ],
+   "en": "Civil society organization",
+   "es": "Organización de la sociedad civil",
+   "tipo": "Concepto",
+   "que": "Término amplio para ONG, movimientos y asociaciones de personas ciudadanas."
+  },
+  {
    "id": "csw-organo-de-la-onu",
    "sigla": "CSW",
    "alias": [
@@ -342,6 +492,15 @@
    "tipo": "Órgano de la ONU",
    "que": "Comisión del ECOSOC (1946); ONU Mujeres le presta la secretaría. No es el comité de la CEDAW.",
    "ir": "E:CSW"
+  },
+  {
+   "id": "ddr-concepto",
+   "sigla": "DDR",
+   "alias": [],
+   "en": "Disarmament, demobilization and reintegration",
+   "es": "Desarme, desmovilización y reintegración",
+   "tipo": "Concepto",
+   "que": "Proceso de pasar de combatientes a vida civil tras un conflicto."
   },
   {
    "id": "dec-documento",
@@ -368,6 +527,24 @@
    "que": "Catálogo oficial de documentos y resoluciones; fuente del tablero para verificar símbolos."
   },
   {
+   "id": "dpo-entidad",
+   "sigla": "DPO",
+   "alias": [],
+   "en": "Department of Peace Operations",
+   "es": "Departamento de Operaciones de Paz",
+   "tipo": "Entidad",
+   "que": "Departamento de la Secretaría que dirige las operaciones de mantenimiento de la paz."
+  },
+  {
+   "id": "dppa-entidad",
+   "sigla": "DPPA",
+   "alias": [],
+   "en": "Department of Political and Peacebuilding Affairs",
+   "es": "Departamento de Asuntos Políticos y de Consolidación de la Paz",
+   "tipo": "Entidad",
+   "que": "Departamento de la Secretaría para prevención de conflictos, mediación y misiones políticas."
+  },
+  {
    "id": "dprk-pais-o-territorio",
    "sigla": "DPRK",
    "alias": [
@@ -391,6 +568,33 @@
    "que": "Aparece en documentos de la ONU como RDC."
   },
   {
+   "id": "e-c-12-documento",
+   "sigla": "E/C.12",
+   "alias": [],
+   "en": "Committee on Economic, Social and Cultural Rights document series",
+   "es": "Serie de documentos del Comité de Derechos Económicos, Sociales y Culturales",
+   "tipo": "Documento",
+   "que": "Prefijo de los documentos del CESCR."
+  },
+  {
+   "id": "e-cn-4-documento",
+   "sigla": "E/CN.4",
+   "alias": [],
+   "en": "Commission on Human Rights document series",
+   "es": "Serie de documentos de la Comisión de Derechos Humanos",
+   "tipo": "Documento",
+   "que": "Prefijo de los símbolos de la antigua Comisión (hasta 2006), p. ej. E/CN.4/RES/2004/34."
+  },
+  {
+   "id": "eccc-entidad",
+   "sigla": "ECCC",
+   "alias": [],
+   "en": "Extraordinary Chambers in the Courts of Cambodia",
+   "es": "Salas Extraordinarias de los Tribunales de Camboya",
+   "tipo": "Entidad",
+   "que": "Tribunal mixto para los crímenes de los Jemeres Rojos."
+  },
+  {
    "id": "eclac-entidad",
    "sigla": "ECLAC",
    "alias": [
@@ -411,6 +615,26 @@
    "tipo": "Órgano de la ONU",
    "que": "54 miembros; coordina lo económico y social; creó la antigua Comisión de Derechos Humanos y las resoluciones 1235 y 1503.",
    "ir": "S:ecosoc"
+  },
+  {
+   "id": "ecowas-sistema-regional",
+   "sigla": "ECOWAS",
+   "alias": [
+    "CEDEAO"
+   ],
+   "en": "Economic Community of West African States",
+   "es": "Comunidad Económica de los Estados de África Occidental",
+   "tipo": "Sistema regional",
+   "que": "Organización regional africana con tribunal propio."
+  },
+  {
+   "id": "ecsr-sistema-regional",
+   "sigla": "ECSR",
+   "alias": [],
+   "en": "European Committee of Social Rights",
+   "es": "Comité Europeo de Derechos Sociales",
+   "tipo": "Sistema regional",
+   "que": "Órgano de la Carta Social Europea."
   },
   {
    "id": "ecthr-sistema-regional",
@@ -493,6 +717,33 @@
    "ir": "T:IV-8"
   },
   {
+   "id": "forb-concepto",
+   "sigla": "FoRB",
+   "alias": [],
+   "en": "Freedom of religion or belief",
+   "es": "Libertad de religión o de creencias",
+   "tipo": "Concepto",
+   "que": "Derecho protegido por el artículo 18 del PIDCP y por un mandato de relator especial."
+  },
+  {
+   "id": "fry-pais-o-territorio",
+   "sigla": "FRY",
+   "alias": [],
+   "en": "Federal Republic of Yugoslavia",
+   "es": "República Federativa de Yugoslavia",
+   "tipo": "País o territorio",
+   "que": "Denominación (1992-2003) de Serbia y Montenegro en documentos de la época."
+  },
+  {
+   "id": "ganhri-sistema-regional",
+   "sigla": "GANHRI",
+   "alias": [],
+   "en": "Global Alliance of National Human Rights Institutions",
+   "es": "Alianza Global de Instituciones Nacionales de Derechos Humanos",
+   "tipo": "Sistema regional",
+   "que": "Red mundial de instituciones nacionales; su Subcomité de Acreditación evalúa su conformidad con los Principios de París."
+  },
+  {
    "id": "gbv-concepto",
    "sigla": "GBV",
    "alias": [
@@ -544,6 +795,15 @@
    "ir": "S:tratados"
   },
   {
+   "id": "grevio-sistema-regional",
+   "sigla": "GREVIO",
+   "alias": [],
+   "en": "Group of Experts on Action against Violence against Women and Domestic Violence",
+   "es": "Grupo de Expertos en la Lucha contra la Violencia contra las Mujeres y la Violencia Doméstica",
+   "tipo": "Sistema regional",
+   "que": "Vigila el Convenio de Estambul del Consejo de Europa."
+  },
+  {
    "id": "hc-organo-de-la-onu",
    "sigla": "HC",
    "alias": [
@@ -568,6 +828,17 @@
    "que": "Derechos de toda persona por el hecho de serlo."
   },
   {
+   "id": "hrba-concepto",
+   "sigla": "HRBA",
+   "alias": [
+    "EBDH"
+   ],
+   "en": "Human rights-based approach",
+   "es": "Enfoque basado en los derechos humanos",
+   "tipo": "Concepto",
+   "que": "Forma de diseñar políticas y programas con las normas de derechos humanos como marco."
+  },
+  {
    "id": "hrc-organo-de-la-onu",
    "sigla": "HRC",
    "alias": [
@@ -579,6 +850,15 @@
    "tipo": "Órgano de la ONU",
    "que": "47 Estados; órgano subsidiario de la Asamblea General desde 2006. Resoluciones A/HRC/RES/… No confundir con el Comité de Derechos Humanos (CCPR).",
    "ir": "S:cdh"
+  },
+  {
+   "id": "hrc-ac-mecanismo",
+   "sigla": "HRC-AC",
+   "alias": [],
+   "en": "Human Rights Council Advisory Committee",
+   "es": "Comité Asesor del Consejo de Derechos Humanos",
+   "tipo": "Mecanismo",
+   "que": "18 personas expertas que asesoran al Consejo; sucedió a la Subcomisión de Promoción y Protección de los Derechos Humanos."
   },
   {
    "id": "hrcttee-comite",
@@ -604,6 +884,33 @@
    "tipo": "Concepto",
    "que": "Las personas que defienden derechos humanos tienen un relator especial propio y protecciones específicas.",
    "ir": "M:defensor|defender"
+  },
+  {
+   "id": "hrdd-concepto",
+   "sigla": "HRDD",
+   "alias": [],
+   "en": "Human rights due diligence",
+   "es": "Debida diligencia en derechos humanos",
+   "tipo": "Concepto",
+   "que": "Proceso de las empresas para identificar y prevenir impactos en derechos humanos."
+  },
+  {
+   "id": "hri-core-documento",
+   "sigla": "HRI/CORE",
+   "alias": [],
+   "en": "Common core documents series",
+   "es": "Serie de documentos básicos comunes",
+   "tipo": "Documento",
+   "que": "Prefijo de los documentos básicos comunes que presenta cada Estado a los órganos de tratados."
+  },
+  {
+   "id": "hri-gen-documento",
+   "sigla": "HRI/GEN",
+   "alias": [],
+   "en": "Compilation of general comments series",
+   "es": "Serie de recopilaciones de observaciones generales",
+   "tipo": "Documento",
+   "que": "Prefijo de las recopilaciones de observaciones generales de los órganos de tratados."
   },
   {
    "id": "iachr-sistema-regional",
@@ -638,6 +945,17 @@
    "tipo": "Entidad",
    "que": "Organismo relacionado con la ONU para los usos pacíficos de la energía nuclear y las salvaguardias.",
    "ir": "E:OIEA"
+  },
+  {
+   "id": "icao-entidad",
+   "sigla": "ICAO",
+   "alias": [
+    "OACI"
+   ],
+   "en": "International Civil Aviation Organization",
+   "es": "Organización de Aviación Civil Internacional",
+   "tipo": "Entidad",
+   "que": "Organismo especializado en normas de aviación civil."
   },
   {
    "id": "icc-entidad",
@@ -730,6 +1048,17 @@
    "ir": "T:IV-16"
   },
   {
+   "id": "icrc-entidad",
+   "sigla": "ICRC",
+   "alias": [
+    "CICR"
+   ],
+   "en": "International Committee of the Red Cross",
+   "es": "Comité Internacional de la Cruz Roja",
+   "tipo": "Entidad",
+   "que": "Organización imparcial con mandato en derecho internacional humanitario (no es órgano de la ONU)."
+  },
+  {
    "id": "icrmw-tratado",
    "sigla": "ICRMW",
    "alias": [
@@ -741,6 +1070,28 @@
    "tipo": "Tratado",
    "que": "Tratado de 1990 sobre los trabajadores migratorios y sus familias. Su comité es el CMW. Tiene pocas ratificaciones, sobre todo de países de origen de migrantes.",
    "ir": "T:IV-13"
+  },
+  {
+   "id": "ictr-entidad",
+   "sigla": "ICTR",
+   "alias": [
+    "TPIR"
+   ],
+   "en": "International Criminal Tribunal for Rwanda",
+   "es": "Tribunal Penal Internacional para Rwanda",
+   "tipo": "Entidad",
+   "que": "Creado por el Consejo de Seguridad en 1994; cerró en 2015."
+  },
+  {
+   "id": "icty-entidad",
+   "sigla": "ICTY",
+   "alias": [
+    "TPIY"
+   ],
+   "en": "International Criminal Tribunal for the former Yugoslavia",
+   "es": "Tribunal Penal Internacional para la ex Yugoslavia",
+   "tipo": "Entidad",
+   "que": "Creado por el Consejo de Seguridad en 1993; cerró en 2017."
   },
   {
    "id": "idp-concepto",
@@ -767,6 +1118,28 @@
    "tipo": "Mecanismo",
    "que": "Figura equivalente a un relator con otro nombre.",
    "ir": "S:pe"
+  },
+  {
+   "id": "ifad-entidad",
+   "sigla": "IFAD",
+   "alias": [
+    "FIDA"
+   ],
+   "en": "International Fund for Agricultural Development",
+   "es": "Fondo Internacional de Desarrollo Agrícola",
+   "tipo": "Entidad",
+   "que": "Organismo especializado que financia el desarrollo rural y la agricultura de pequeña escala."
+  },
+  {
+   "id": "ifrc-entidad",
+   "sigla": "IFRC",
+   "alias": [
+    "FICR"
+   ],
+   "en": "International Federation of Red Cross and Red Crescent Societies",
+   "es": "Federación Internacional de Sociedades de la Cruz Roja y de la Media Luna Roja",
+   "tipo": "Entidad",
+   "que": "Red de sociedades nacionales (no es órgano de la ONU)."
   },
   {
    "id": "ihl-concepto",
@@ -824,6 +1197,26 @@
    "ir": "E:FMI"
   },
   {
+   "id": "imo-entidad",
+   "sigla": "IMO",
+   "alias": [
+    "OMI"
+   ],
+   "en": "International Maritime Organization",
+   "es": "Organización Marítima Internacional",
+   "tipo": "Entidad",
+   "que": "Organismo especializado en seguridad marítima y prevención de la contaminación por buques."
+  },
+  {
+   "id": "inf-documento",
+   "sigla": "INF",
+   "alias": [],
+   "en": "Information document",
+   "es": "Documento de información",
+   "tipo": "Documento",
+   "que": "Documento de información (p. ej. A/HRC/…/INF/1)."
+  },
+  {
    "id": "iom-entidad",
    "sigla": "IOM",
    "alias": [
@@ -834,6 +1227,39 @@
    "tipo": "Entidad",
    "que": "Organización relacionada con la ONU desde 2016.",
    "ir": "E:OIM"
+  },
+  {
+   "id": "irmct-entidad",
+   "sigla": "IRMCT",
+   "alias": [
+    "MTPI"
+   ],
+   "en": "International Residual Mechanism for Criminal Tribunals",
+   "es": "Mecanismo Residual Internacional de los Tribunales Penales",
+   "tipo": "Entidad",
+   "que": "Continúa las funciones del TPIY y del TPIR."
+  },
+  {
+   "id": "itlos-entidad",
+   "sigla": "ITLOS",
+   "alias": [
+    "TIDM"
+   ],
+   "en": "International Tribunal for the Law of the Sea",
+   "es": "Tribunal Internacional del Derecho del Mar",
+   "tipo": "Entidad",
+   "que": "Tribunal de la Convención de las Naciones Unidas sobre el Derecho del Mar."
+  },
+  {
+   "id": "itu-entidad",
+   "sigla": "ITU",
+   "alias": [
+    "UIT"
+   ],
+   "en": "International Telecommunication Union",
+   "es": "Unión Internacional de Telecomunicaciones",
+   "tipo": "Entidad",
+   "que": "Organismo especializado en telecomunicaciones y tecnologías de la información."
   },
   {
    "id": "jua-procedimiento",
@@ -860,6 +1286,26 @@
    "ir": "P:A/HRC/54/L.12"
   },
   {
+   "id": "las-sistema-regional",
+   "sigla": "LAS",
+   "alias": [
+    "LEA"
+   ],
+   "en": "League of Arab States",
+   "es": "Liga de los Estados Árabes",
+   "tipo": "Sistema regional",
+   "que": "Organización regional que adoptó la Carta Árabe de Derechos Humanos."
+  },
+  {
+   "id": "lgbti-concepto",
+   "sigla": "LGBTI",
+   "alias": [],
+   "en": "Lesbian, gay, bisexual, trans and intersex",
+   "es": "Lesbianas, gais, bisexuales, trans e intersex",
+   "tipo": "Concepto",
+   "que": "Sigla de uso corriente; en la ONU se habla también de orientación sexual e identidad de género (SOGI)."
+  },
+  {
    "id": "lis-pendens-concepto",
    "sigla": "Lis pendens",
    "alias": [
@@ -870,6 +1316,15 @@
    "tipo": "Concepto",
    "que": "El mismo asunto no puede estar examinándose a la vez en otro procedimiento internacional.",
    "ir": "T:IV-4"
+  },
+  {
+   "id": "lnob-concepto",
+   "sigla": "LNOB",
+   "alias": [],
+   "en": "Leave no one behind",
+   "es": "No dejar a nadie atrás",
+   "tipo": "Concepto",
+   "que": "Principio central de la Agenda 2030."
   },
   {
    "id": "loi-documento",
@@ -895,6 +1350,17 @@
    "tipo": "Documento",
    "que": "Preguntas enviadas antes de que el Estado redacte su informe: es el «procedimiento simplificado».",
    "ir": "S:tratados"
+  },
+  {
+   "id": "nap-concepto",
+   "sigla": "NAP",
+   "alias": [
+    "PAN"
+   ],
+   "en": "National action plan",
+   "es": "Plan de acción nacional",
+   "tipo": "Concepto",
+   "que": "Plan de un Estado para aplicar un compromiso (p. ej. empresas y derechos humanos o mujeres, paz y seguridad)."
   },
   {
    "id": "ngo-concepto",
@@ -990,6 +1456,17 @@
    "tipo": "Órgano de la ONU",
    "que": "Parte de la Secretaría, en Ginebra. Da apoyo al Consejo, a los procedimientos especiales y a los comités de tratados, y mantiene las bases de datos oficiales.",
    "ir": "E:ACNUDH"
+  },
+  {
+   "id": "oic-sistema-regional",
+   "sigla": "OIC",
+   "alias": [
+    "OCI"
+   ],
+   "en": "Organisation of Islamic Cooperation",
+   "es": "Organización de Cooperación Islámica",
+   "tipo": "Sistema regional",
+   "que": "Organización intergubernamental con delegaciones ante la ONU."
   },
   {
    "id": "op-cedaw-protocolo",
@@ -1123,6 +1600,37 @@
    "que": "Organización regional de seguridad y derechos humanos."
   },
   {
+   "id": "pbc-organo-de-la-onu",
+   "sigla": "PBC",
+   "alias": [
+    "CCP"
+   ],
+   "en": "Peacebuilding Commission",
+   "es": "Comisión de Consolidación de la Paz",
+   "tipo": "Órgano de la ONU",
+   "que": "Órgano asesor de la Asamblea General y del Consejo de Seguridad sobre consolidación de la paz."
+  },
+  {
+   "id": "pca-entidad",
+   "sigla": "PCA",
+   "alias": [
+    "CPA"
+   ],
+   "en": "Permanent Court of Arbitration",
+   "es": "Corte Permanente de Arbitraje",
+   "tipo": "Entidad",
+   "que": "Institución de La Haya para el arbitraje internacional; no es órgano de la ONU."
+  },
+  {
+   "id": "poc-concepto",
+   "sigla": "PoC",
+   "alias": [],
+   "en": "Protection of civilians",
+   "es": "Protección de civiles",
+   "tipo": "Concepto",
+   "que": "Agenda del Consejo de Seguridad y obligación del derecho internacional humanitario."
+  },
+  {
    "id": "prst-documento",
    "sigla": "PRST",
    "alias": [
@@ -1132,6 +1640,17 @@
    "es": "Declaración de la Presidencia",
    "tipo": "Documento",
    "que": "Declaración adoptada sin votación en el Consejo de Seguridad o en el Consejo de Derechos Humanos."
+  },
+  {
+   "id": "pv-documento",
+   "sigla": "PV",
+   "alias": [
+    "A/PV"
+   ],
+   "en": "Verbatim record (procès-verbal)",
+   "es": "Acta literal (procès-verbal)",
+   "tipo": "Documento",
+   "que": "Registro textual de las sesiones plenarias, p. ej. A/PV.183."
   },
   {
    "id": "r2p-concepto",
@@ -1185,6 +1704,17 @@
    "ir": "T:IV-4"
   },
   {
+   "id": "rc-mecanismo",
+   "sigla": "RC",
+   "alias": [
+    "CR"
+   ],
+   "en": "Resident Coordinator",
+   "es": "Coordinador o Coordinadora Residente",
+   "tipo": "Mecanismo",
+   "que": "Quien dirige el equipo de la ONU en un país."
+  },
+  {
    "id": "res-documento",
    "sigla": "RES",
    "alias": [
@@ -1208,6 +1738,15 @@
    "que": "Versión revisada de un documento que sustituye a la anterior; se añade al símbolo (por ejemplo /Rev.1)."
   },
   {
+   "id": "rok-pais-o-territorio",
+   "sigla": "ROK",
+   "alias": [],
+   "en": "Republic of Korea",
+   "es": "República de Corea",
+   "tipo": "País o territorio",
+   "que": "Corea del Sur; no confundir con DPRK."
+  },
+  {
    "id": "rs-tratado",
    "sigla": "RS",
    "alias": [
@@ -1221,6 +1760,53 @@
    "ir": "E:CPI"
   },
   {
+   "id": "rtd-concepto",
+   "sigla": "RTD",
+   "alias": [
+    "DaD"
+   ],
+   "en": "Right to development",
+   "es": "Derecho al desarrollo",
+   "tipo": "Concepto",
+   "que": "Reconocido en la Declaración sobre el Derecho al Desarrollo (A/RES/41/128)."
+  },
+  {
+   "id": "s-res-documento",
+   "sigla": "S/RES",
+   "alias": [],
+   "en": "Security Council resolution series",
+   "es": "Serie de resoluciones del Consejo de Seguridad",
+   "tipo": "Documento",
+   "que": "Prefijo de las resoluciones del Consejo de Seguridad, p. ej. S/RES/1325 (2000)."
+  },
+  {
+   "id": "sca-procedimiento",
+   "sigla": "SCA",
+   "alias": [],
+   "en": "GANHRI Sub-Committee on Accreditation",
+   "es": "Subcomité de Acreditación de la GANHRI",
+   "tipo": "Procedimiento",
+   "que": "Evalúa si una institución nacional cumple los Principios de París (categorías A, B)."
+  },
+  {
+   "id": "scpphr-mecanismo",
+   "sigla": "SCPPHR",
+   "alias": [],
+   "en": "Sub-Commission on the Promotion and Protection of Human Rights",
+   "es": "Subcomisión de Promoción y Protección de los Derechos Humanos",
+   "tipo": "Mecanismo",
+   "que": "Órgano de personas expertas de la antigua Comisión de Derechos Humanos; disuelto en 2006."
+  },
+  {
+   "id": "scsl-entidad",
+   "sigla": "SCSL",
+   "alias": [],
+   "en": "Special Court for Sierra Leone",
+   "es": "Tribunal Especial para Sierra Leona",
+   "tipo": "Entidad",
+   "que": "Tribunal mixto creado por la ONU y Sierra Leona (2002-2013)."
+  },
+  {
    "id": "sdg-concepto",
    "sigla": "SDG",
    "alias": [
@@ -1230,6 +1816,17 @@
    "es": "Objetivos de Desarrollo Sostenible",
    "tipo": "Concepto",
    "que": "17 objetivos de la Agenda 2030. No confundir con el sistema ODS de documentos."
+  },
+  {
+   "id": "sgbv-concepto",
+   "sigla": "SGBV",
+   "alias": [
+    "VSG"
+   ],
+   "en": "Sexual and gender-based violence",
+   "es": "Violencia sexual y de género",
+   "tipo": "Concepto",
+   "que": "Violencia ejercida por razón de sexo o género, incluida la violencia sexual."
   },
   {
    "id": "shadow-report-documento",
@@ -1304,6 +1901,26 @@
    "ir": "S:tratados"
   },
   {
+   "id": "srsg-mecanismo",
+   "sigla": "SRSG",
+   "alias": [
+    "RESG"
+   ],
+   "en": "Special Representative of the Secretary-General",
+   "es": "Representante Especial del Secretario General",
+   "tipo": "Mecanismo",
+   "que": "Cargo de alto nivel designado por el Secretario General para un tema (p. ej. niños y conflictos armados) o una misión."
+  },
+  {
+   "id": "st-documento",
+   "sigla": "ST/",
+   "alias": [],
+   "en": "Secretariat document series",
+   "es": "Serie de documentos de la Secretaría",
+   "tipo": "Documento",
+   "que": "Prefijo de circulares, boletines y publicaciones de la Secretaría."
+  },
+  {
    "id": "tb-comite",
    "sigla": "TB",
    "alias": [
@@ -1317,6 +1934,17 @@
    "ir": "S:tratados"
   },
   {
+   "id": "tj-concepto",
+   "sigla": "TJ",
+   "alias": [
+    "JT"
+   ],
+   "en": "Transitional justice",
+   "es": "Justicia de transición",
+   "tipo": "Concepto",
+   "que": "Verdad, justicia, reparación y garantías de no repetición tras violaciones masivas."
+  },
+  {
    "id": "ua-procedimiento",
    "sigla": "UA",
    "alias": [
@@ -1327,6 +1955,17 @@
    "tipo": "Procedimiento",
    "que": "Comunicación de un relator a un Estado cuando hay riesgo inminente para la vida o la integridad de alguien.",
    "ir": "S:pe"
+  },
+  {
+   "id": "uae-pais-o-territorio",
+   "sigla": "UAE",
+   "alias": [
+    "EAU"
+   ],
+   "en": "United Arab Emirates",
+   "es": "Emiratos Árabes Unidos",
+   "tipo": "País o territorio",
+   "que": "Estado miembro desde 1971."
   },
   {
    "id": "udhr-declaracion",
@@ -1350,6 +1989,17 @@
    "es": "Índice Universal de Derechos Humanos",
    "tipo": "Documento",
    "que": "Base que reúne recomendaciones de los mecanismos de la ONU por derecho y por país."
+  },
+  {
+   "id": "uk-pais-o-territorio",
+   "sigla": "UK",
+   "alias": [
+    "RU"
+   ],
+   "en": "United Kingdom of Great Britain and Northern Ireland",
+   "es": "Reino Unido de Gran Bretaña e Irlanda del Norte",
+   "tipo": "País o territorio",
+   "que": "Miembro permanente del Consejo de Seguridad."
   },
   {
    "id": "un-organo-de-la-onu",
@@ -1400,6 +2050,15 @@
    "ir": "E:ONUSIDA"
   },
   {
+   "id": "unama-entidad",
+   "sigla": "UNAMA",
+   "alias": [],
+   "en": "United Nations Assistance Mission in Afghanistan",
+   "es": "Misión de Asistencia de las Naciones Unidas en el Afganistán",
+   "tipo": "Entidad",
+   "que": "Misión política especial en Afganistán, con mandato también de derechos humanos."
+  },
+  {
    "id": "unbis-documento",
    "sigla": "UNBIS",
    "alias": [],
@@ -1407,6 +2066,53 @@
    "es": "Tesauro del Sistema Bibliográfico de las Naciones Unidas",
    "tipo": "Documento",
    "que": "Vocabulario controlado con que se indexan los documentos (materias como «TORTURE»)."
+  },
+  {
+   "id": "uncac-tratado",
+   "sigla": "UNCAC",
+   "alias": [],
+   "en": "United Nations Convention against Corruption",
+   "es": "Convención de las Naciones Unidas contra la Corrupción",
+   "tipo": "Tratado",
+   "que": "Adoptada en 2003; entró en vigor en 2005."
+  },
+  {
+   "id": "unclos-tratado",
+   "sigla": "UNCLOS",
+   "alias": [
+    "CONVEMAR"
+   ],
+   "en": "United Nations Convention on the Law of the Sea",
+   "es": "Convención de las Naciones Unidas sobre el Derecho del Mar",
+   "tipo": "Tratado",
+   "que": "Adoptada en 1982; entró en vigor en 1994."
+  },
+  {
+   "id": "unct-mecanismo",
+   "sigla": "UNCT",
+   "alias": [],
+   "en": "United Nations country team",
+   "es": "Equipo de las Naciones Unidas en el país",
+   "tipo": "Mecanismo",
+   "que": "Conjunto de entidades de la ONU presentes en un país."
+  },
+  {
+   "id": "unctad-entidad",
+   "sigla": "UNCTAD",
+   "alias": [],
+   "en": "United Nations Conference on Trade and Development",
+   "es": "Conferencia de las Naciones Unidas sobre Comercio y Desarrollo",
+   "tipo": "Entidad",
+   "que": "Órgano de la Asamblea General que trata comercio, inversión y desarrollo."
+  },
+  {
+   "id": "undesa-entidad",
+   "sigla": "UNDESA",
+   "alias": [],
+   "en": "United Nations Department of Economic and Social Affairs",
+   "es": "Departamento de Asuntos Económicos y Sociales de las Naciones Unidas",
+   "tipo": "Entidad",
+   "que": "Secretaría de apoyo a ECOSOC, al desarrollo sostenible y al Foro Permanente para las Cuestiones Indígenas."
   },
   {
    "id": "undp-entidad",
@@ -1431,6 +2137,15 @@
    "tipo": "Declaración",
    "que": "Resolución 61/295 de la Asamblea General (2007). Es una declaración, no un tratado.",
    "ir": "M:indigena|indigenous"
+  },
+  {
+   "id": "undrr-entidad",
+   "sigla": "UNDRR",
+   "alias": [],
+   "en": "United Nations Office for Disaster Risk Reduction",
+   "es": "Oficina de las Naciones Unidas para la Reducción del Riesgo de Desastres",
+   "tipo": "Entidad",
+   "que": "Coordina la reducción del riesgo de desastres y el Marco de Sendai."
   },
   {
    "id": "unep-entidad",
@@ -1479,6 +2194,15 @@
    "ir": "S:ag"
   },
   {
+   "id": "ungps-declaracion",
+   "sigla": "UNGPs",
+   "alias": [],
+   "en": "Guiding Principles on Business and Human Rights",
+   "es": "Principios Rectores sobre las empresas y los derechos humanos",
+   "tipo": "Declaración",
+   "que": "Aprobados por el Consejo en la resolución 17/4 (2011); tres pilares: proteger, respetar y remediar."
+  },
+  {
    "id": "unhcr-entidad",
    "sigla": "UNHCR",
    "alias": [
@@ -1499,6 +2223,44 @@
    "tipo": "Entidad",
    "que": "Protege y asiste a la niñez; ligado a la CRC.",
    "ir": "E:UNICEF"
+  },
+  {
+   "id": "unido-entidad",
+   "sigla": "UNIDO",
+   "alias": [
+    "ONUDI"
+   ],
+   "en": "United Nations Industrial Development Organization",
+   "es": "Organización de las Naciones Unidas para el Desarrollo Industrial",
+   "tipo": "Entidad",
+   "que": "Organismo especializado que promueve el desarrollo industrial sostenible."
+  },
+  {
+   "id": "unitar-entidad",
+   "sigla": "UNITAR",
+   "alias": [],
+   "en": "United Nations Institute for Training and Research",
+   "es": "Instituto de las Naciones Unidas para Formación Profesional e Investigaciones",
+   "tipo": "Entidad",
+   "que": "Capacitación e investigación para el sistema y los Estados."
+  },
+  {
+   "id": "unmas-entidad",
+   "sigla": "UNMAS",
+   "alias": [],
+   "en": "United Nations Mine Action Service",
+   "es": "Servicio de las Naciones Unidas de Actividades relativas a las Minas",
+   "tipo": "Entidad",
+   "que": "Coordina la acción contra minas y restos explosivos de guerra."
+  },
+  {
+   "id": "unoda-entidad",
+   "sigla": "UNODA",
+   "alias": [],
+   "en": "United Nations Office for Disarmament Affairs",
+   "es": "Oficina de Asuntos de Desarme de las Naciones Unidas",
+   "tipo": "Entidad",
+   "que": "Apoya los foros y tratados de desarme y control de armamentos."
   },
   {
    "id": "unodc-entidad",
@@ -1522,6 +2284,24 @@
    "que": "Sede europea de la ONU; allí sesionan el Consejo y la mayoría de los comités."
   },
   {
+   "id": "unoosa-entidad",
+   "sigla": "UNOOSA",
+   "alias": [],
+   "en": "United Nations Office for Outer Space Affairs",
+   "es": "Oficina de Asuntos del Espacio Ultraterrestre de las Naciones Unidas",
+   "tipo": "Entidad",
+   "que": "Secretaría de la Comisión sobre la Utilización del Espacio Ultraterrestre con Fines Pacíficos."
+  },
+  {
+   "id": "unops-entidad",
+   "sigla": "UNOPS",
+   "alias": [],
+   "en": "United Nations Office for Project Services",
+   "es": "Oficina de las Naciones Unidas de Servicios para Proyectos",
+   "tipo": "Entidad",
+   "que": "Presta servicios de ejecución de proyectos, adquisiciones e infraestructura al sistema."
+  },
+  {
    "id": "unpfii-organo-de-la-onu",
    "sigla": "UNPFII",
    "alias": [
@@ -1532,6 +2312,15 @@
    "tipo": "Órgano de la ONU",
    "que": "Órgano asesor del ECOSOC sobre derechos, cultura y desarrollo de los pueblos indígenas.",
    "ir": "E:FPCI"
+  },
+  {
+   "id": "unric-entidad",
+   "sigla": "UNRIC",
+   "alias": [],
+   "en": "United Nations Regional Information Centre",
+   "es": "Centro Regional de Información de las Naciones Unidas",
+   "tipo": "Entidad",
+   "que": "Centros regionales de información pública de la ONU."
   },
   {
    "id": "unrwa-entidad",
@@ -1560,6 +2349,15 @@
    "ir": "S:cs"
   },
   {
+   "id": "unsdcf-concepto",
+   "sigla": "UNSDCF",
+   "alias": [],
+   "en": "United Nations Sustainable Development Cooperation Framework",
+   "es": "Marco de Cooperación de las Naciones Unidas para el Desarrollo Sostenible",
+   "tipo": "Concepto",
+   "que": "Marco de trabajo conjunto del sistema de la ONU en cada país."
+  },
+  {
    "id": "unsg-organo-de-la-onu",
    "sigla": "UNSG",
    "alias": [
@@ -1585,6 +2383,35 @@
    "ir": "S:tratados"
   },
   {
+   "id": "untoc-tratado",
+   "sigla": "UNTOC",
+   "alias": [],
+   "en": "United Nations Convention against Transnational Organized Crime",
+   "es": "Convención de las Naciones Unidas contra la Delincuencia Organizada Transnacional",
+   "tipo": "Tratado",
+   "que": "Adoptada en 2000; el Protocolo de Palermo sobre trata la complementa."
+  },
+  {
+   "id": "unu-entidad",
+   "sigla": "UNU",
+   "alias": [],
+   "en": "United Nations University",
+   "es": "Universidad de las Naciones Unidas",
+   "tipo": "Entidad",
+   "que": "Red académica de investigación y posgrado creada por la Asamblea General."
+  },
+  {
+   "id": "unwto-entidad",
+   "sigla": "UNWTO",
+   "alias": [
+    "OMT"
+   ],
+   "en": "World Tourism Organization",
+   "es": "Organización Mundial del Turismo",
+   "tipo": "Entidad",
+   "que": "Organismo especializado en turismo (hoy sigla oficial UN Tourism)."
+  },
+  {
    "id": "upr-mecanismo",
    "sigla": "UPR",
    "alias": [
@@ -1597,6 +2424,26 @@
    "ir": "S:epu"
   },
   {
+   "id": "upu-entidad",
+   "sigla": "UPU",
+   "alias": [],
+   "en": "Universal Postal Union",
+   "es": "Unión Postal Universal",
+   "tipo": "Entidad",
+   "que": "Organismo especializado que coordina los servicios postales mundiales."
+  },
+  {
+   "id": "ussr-pais-o-territorio",
+   "sigla": "USSR",
+   "alias": [
+    "URSS"
+   ],
+   "en": "Union of Soviet Socialist Republics",
+   "es": "Unión de Repúblicas Socialistas Soviéticas",
+   "tipo": "País o territorio",
+   "que": "Estado extinguido en 1991; aparece en documentos antiguos."
+  },
+  {
    "id": "vclt-tratado",
    "sigla": "VCLT",
    "alias": [
@@ -1606,6 +2453,17 @@
    "es": "Convención de Viena sobre el Derecho de los Tratados",
    "tipo": "Tratado",
    "que": "Regula cómo se interpretan, ratifican y formulan reservas a los tratados (1969)."
+  },
+  {
+   "id": "vdpa-declaracion",
+   "sigla": "VDPA",
+   "alias": [
+    "DPAV"
+   ],
+   "en": "Vienna Declaration and Programme of Action",
+   "es": "Declaración y Programa de Acción de Viena",
+   "tipo": "Declaración",
+   "que": "Adoptados en la Conferencia Mundial de Derechos Humanos de 1993 (A/CONF.157/23)."
   },
   {
    "id": "views-documento",
@@ -1684,6 +2542,24 @@
    "ir": "M:detencion|detention"
   },
   {
+   "id": "wgbhr-mecanismo",
+   "sigla": "WGBHR",
+   "alias": [],
+   "en": "Working Group on Business and Human Rights",
+   "es": "Grupo de Trabajo sobre las empresas y los derechos humanos",
+   "tipo": "Mecanismo",
+   "que": "Procedimiento especial temático que promueve los Principios Rectores sobre las empresas y los derechos humanos."
+  },
+  {
+   "id": "wgdawg-mecanismo",
+   "sigla": "WGDAWG",
+   "alias": [],
+   "en": "Working Group on Discrimination against Women and Girls",
+   "es": "Grupo de Trabajo sobre la Discriminación contra la Mujer y la Niña",
+   "tipo": "Mecanismo",
+   "que": "Procedimiento especial temático del Consejo de Derechos Humanos."
+  },
+  {
    "id": "wgeid-mecanismo",
    "sigla": "WGEID",
    "alias": [
@@ -1696,6 +2572,24 @@
    "ir": "M:desaparici|disappear"
   },
   {
+   "id": "wgepad-mecanismo",
+   "sigla": "WGEPAD",
+   "alias": [],
+   "en": "Working Group of Experts on People of African Descent",
+   "es": "Grupo de Trabajo de Expertos sobre los Afrodescendientes",
+   "tipo": "Mecanismo",
+   "que": "Procedimiento especial temático sobre racismo y discriminación contra personas afrodescendientes."
+  },
+  {
+   "id": "wgip-mecanismo",
+   "sigla": "WGIP",
+   "alias": [],
+   "en": "Working Group on Indigenous Populations",
+   "es": "Grupo de Trabajo sobre Poblaciones Indígenas",
+   "tipo": "Mecanismo",
+   "que": "Grupo de la Subcomisión (1982-2006) donde se redactó la Declaración sobre los derechos de los pueblos indígenas."
+  },
+  {
    "id": "who-entidad",
    "sigla": "WHO",
    "alias": [
@@ -1706,6 +2600,48 @@
    "tipo": "Entidad",
    "que": "Organismo especializado de la ONU para la salud pública internacional.",
    "ir": "E:OMS"
+  },
+  {
+   "id": "wipo-entidad",
+   "sigla": "WIPO",
+   "alias": [
+    "OMPI"
+   ],
+   "en": "World Intellectual Property Organization",
+   "es": "Organización Mundial de la Propiedad Intelectual",
+   "tipo": "Entidad",
+   "que": "Organismo especializado en propiedad intelectual."
+  },
+  {
+   "id": "wmo-entidad",
+   "sigla": "WMO",
+   "alias": [
+    "OMM"
+   ],
+   "en": "World Meteorological Organization",
+   "es": "Organización Meteorológica Mundial",
+   "tipo": "Entidad",
+   "que": "Organismo especializado en meteorología, clima e hidrología."
+  },
+  {
+   "id": "wp-documento",
+   "sigla": "WP",
+   "alias": [],
+   "en": "Working paper",
+   "es": "Documento de trabajo",
+   "tipo": "Documento",
+   "que": "Documento de trabajo de un órgano; suele llevar el sufijo WP.n."
+  },
+  {
+   "id": "wps-concepto",
+   "sigla": "WPS",
+   "alias": [
+    "MPS"
+   ],
+   "en": "Women, Peace and Security",
+   "es": "Mujeres, paz y seguridad",
+   "tipo": "Concepto",
+   "que": "Agenda iniciada por la resolución 1325 (2000) del Consejo de Seguridad."
   },
   {
    "id": "wto-entidad",
