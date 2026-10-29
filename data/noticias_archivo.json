@@ -1,8 +1,26 @@
 {
 "fuente": "Noticias ONU (news.un.org)",
-"actualizado": "2026-10-29T02:39:12Z",
-"total": 54,
+"actualizado": "2026-10-29T11:14:54Z",
+"total": 56,
 "notas": [
+{
+"titulo": "Al océano le cuesta cada vez más protegernos del CO₂",
+"fecha": "2026-10-28",
+"enlace": "https://news.un.org/feed/view/es/story/2026/10/1542117",
+"resumen": "El aumento de las temperaturas, junto con las alteraciones de la química, la circulación y los ecosistemas marinos, reduce la capacidad del océano para absorber y almacenar carbono. El resultado: una mayor parte del CO₂ permanece en la atmósfera, lo que…",
+"visto": "2026-10-29",
+"derechos": false,
+"americas": false
+},
+{
+"titulo": "Cambio climático: En 2023, el calor mató a 700.000 personas",
+"fecha": "2026-10-28",
+"enlace": "https://news.un.org/feed/view/es/story/2026/10/1542116",
+"resumen": "La falta de coraje para afrontar la crisis climática sigue dañando y matando a personas en todos los países, con un récord estimado de 710.000 muertes globales por calor en 2023, advirtió este miércoles un informe con colaboración de la ONU. Por primera vez,…",
+"visto": "2026-10-29",
+"derechos": false,
+"americas": false
+},
 {
 "titulo": "Cuba, muertes por calor, Venezuela, Nicaragua… Las noticias del miércoles",
 "fecha": "2026-10-28",
