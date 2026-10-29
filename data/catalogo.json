@@ -1119,6 +1119,109 @@
     },
     "impago": "Quien debe cuotas por el equivalente a dos años completos pierde el voto en la Asamblea, salvo que esta aprecie que la causa escapa a su voluntad (Carta, art. 19). Es un mecanismo de presión sobre quien no paga; no impide la membresía.",
     "relacion": "Quien paga más no manda más: en la Asamblea, un Estado un voto. Pero el dinero da influencia, y por eso los retrasos de los grandes contribuyentes provocan crisis de liquidez que obligan a recortar o aplazar actividades."
+   },
+   "ciclo_cdh": {
+    "nota": "Elaboración propia a partir de las resoluciones 60/251 de la Asamblea y 5/1 del Consejo. Las fechas de cada periodo de sesiones cambian cada año: consulte el calendario oficial.",
+    "intro": "El Consejo de Derechos Humanos trabaja todo el año, no solo cuando se reúne. Este es su ritmo y lo que sale de cada pieza.",
+    "pasos": [
+     {
+      "t": "Tres periodos de sesiones al año",
+      "x": "Se reúne en Ginebra al menos tres veces al año (marzo-abril, junio-julio y septiembre-octubre), con un mínimo de diez semanas en total. Al final de cada periodo vota sus resoluciones y decisiones.",
+      "base": "Resolución 60/251, párr. 10.",
+      "url": "https://docs.un.org/es/A/RES/60/251"
+     },
+     {
+      "t": "Sesiones especiales",
+      "x": "Pueden convocarse fuera del calendario ante una crisis de derechos humanos si lo pide un tercio de los miembros del Consejo.",
+      "base": "Resolución 60/251, párr. 10.",
+      "url": "https://docs.un.org/es/A/RES/60/251"
+     },
+     {
+      "t": "Mesa del Consejo",
+      "x": "Cada año elige una presidencia y cuatro vicepresidencias, una persona por cada grupo regional. La presidencia rota entre los grupos.",
+      "base": "Resolución 5/1 del Consejo.",
+      "url": "https://docs.un.org/es/A/HRC/RES/5/1"
+     },
+     {
+      "t": "Examen Periódico Universal (EPU)",
+      "x": "Cada Estado miembro de la ONU es examinado por sus pares, en un ciclo de unos cuatro años y medio. El Estado recibe recomendaciones y decide si las acepta o solo «toma nota».",
+      "base": "Resolución 60/251, párr. 5 e); resolución 5/1.",
+      "url": "https://docs.un.org/es/A/HRC/RES/5/1"
+     },
+     {
+      "t": "Procedimientos especiales",
+      "x": "El Consejo crea los mandatos (relatores, expertos y grupos de trabajo) y suele renovarlos cada tres años. Quien los ejerce lo hace a título personal, sin sueldo, y no puede pasar de seis años en el mismo mandato.",
+      "base": "Resolución 5/1.",
+      "url": "https://docs.un.org/es/A/HRC/RES/5/1"
+     },
+     {
+      "t": "Procedimiento de denuncia",
+      "x": "Permite a personas y organizaciones comunicar violaciones graves y sistemáticas. Es confidencial y lo examinan dos grupos de trabajo; no sustituye a los comités de tratados.",
+      "base": "Resolución 5/1.",
+      "url": "https://docs.un.org/es/A/HRC/RES/5/1"
+     },
+     {
+      "t": "Comité Asesor",
+      "x": "Dieciocho personas expertas que hacen estudios y dan asesoramiento temático cuando el Consejo se lo pide. Es el «grupo de reflexión» del Consejo.",
+      "base": "Resolución 5/1.",
+      "url": "https://docs.un.org/es/A/HRC/RES/5/1"
+     }
+    ]
+   },
+   "relaciones": {
+    "nota": "Elaboración propia a partir de la Carta, el Estatuto de la Corte y las resoluciones citadas. Resume los vínculos más importantes; no los agota.",
+    "intro": "Los órganos no trabajan por separado: se eligen, se informan y se limitan unos a otros.",
+    "vinculos": [
+     {
+      "id": "ag-cdh",
+      "n": "Asamblea General y Consejo de Derechos Humanos",
+      "x": "El Consejo es un órgano subsidiario de la Asamblea: ella lo creó en 2006, elige a sus miembros, recibe su informe anual y puede suspender a un miembro por dos tercios. Sustituyó a la antigua Comisión de Derechos Humanos, que dependía del ECOSOC.",
+      "base": "Resolución 60/251, párr. 1, 2, 7 y 8.",
+      "url": "https://docs.un.org/es/A/RES/60/251"
+     },
+     {
+      "id": "ag-cs",
+      "n": "Asamblea General y Consejo de Seguridad",
+      "x": "La Asamblea no puede recomendar sobre una controversia que el Consejo esté tratando, salvo que este se lo pida. El Consejo le presenta un informe anual. Si el veto lo bloquea, la Asamblea puede reunirse y debatirlo (resolución 76/262).",
+      "base": "Carta, arts. 12 y 24; resolución 76/262.",
+      "url": "https://docs.un.org/es/A/RES/76/262"
+     },
+     {
+      "id": "ag-ecosoc",
+      "n": "Asamblea General y ECOSOC",
+      "x": "El ECOSOC actúa bajo la autoridad de la Asamblea, que elige a sus 54 miembros. Puede hacer estudios y recomendaciones sobre derechos humanos y crear comisiones, pero sus recomendaciones no obligan.",
+      "base": "Carta, arts. 60, 62 y 68.",
+      "url": "https://www.un.org/es/about-us/un-charter"
+     },
+     {
+      "id": "cs-cij",
+      "n": "Consejo de Seguridad y Corte Internacional de Justicia",
+      "x": "La Asamblea y el Consejo eligen a los jueces de la Corte a la vez, y cada uno exige mayoría absoluta. Si un Estado no cumple una sentencia, la otra parte puede acudir al Consejo, que puede recomendar o decidir medidas para hacerla efectiva.",
+      "base": "Estatuto de la Corte, arts. 8–12; Carta, art. 94.",
+      "url": "https://www.icj-cij.org/statute"
+     },
+     {
+      "id": "consultas",
+      "n": "Quién puede pedir una opinión a la Corte",
+      "x": "La Asamblea y el Consejo de Seguridad pueden pedir opiniones consultivas sobre cualquier cuestión jurídica. Otros órganos y organismos especializados solo pueden hacerlo si la Asamblea los autoriza y sobre asuntos de su competencia.",
+      "base": "Carta, art. 96.",
+      "url": "https://www.un.org/es/about-us/un-charter"
+     },
+     {
+      "id": "sec",
+      "n": "Secretaría y los demás órganos",
+      "x": "El Secretario General lo nombra la Asamblea a recomendación del Consejo de Seguridad (con posible veto), dirige la Secretaría, presenta un informe anual y puede llamar la atención del Consejo sobre cualquier asunto que amenace la paz. La Oficina de Derechos Humanos (ACNUDH) forma parte de la Secretaría y sirve al Consejo de Derechos Humanos.",
+      "base": "Carta, arts. 97–99; resolución 48/141.",
+      "url": "https://docs.un.org/es/A/RES/48/141"
+     },
+     {
+      "id": "tratados",
+      "n": "Comités de tratados",
+      "x": "No son órganos de la ONU: los crean los tratados y sus integrantes son personas expertas independientes elegidas por los Estados parte. La Secretaría les presta apoyo. Informan a la Asamblea (el Comité de Derechos Humanos, a través del ECOSOC).",
+      "base": "Pacto Internacional de Derechos Civiles y Políticos, arts. 28 y 45.",
+      "url": "https://www.ohchr.org/es/instruments-mechanisms/instruments/international-covenant-civil-and-political-rights"
+     }
+    ]
    }
   }
  },
@@ -4569,7 +4672,7 @@
      },
      {
       "t": "Cómo funciona la ONU, más a fondo",
-      "x": "Ciclo de trabajo del Consejo de Derechos Humanos, relaciones entre órganos y reformas. Ya están las votaciones, las elecciones y la financiación."
+      "x": "Reformas de la ONU. Ya están las votaciones, las elecciones, la financiación, el ciclo del Consejo de Derechos Humanos y las relaciones entre órganos."
      },
      {
       "t": "Siglas y acrónimos",
