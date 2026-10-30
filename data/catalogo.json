@@ -1222,6 +1222,60 @@
       "url": "https://www.ohchr.org/es/instruments-mechanisms/instruments/international-covenant-civil-and-political-rights"
      }
     ]
+   },
+   "reformas": {
+    "nota": "Elaboración propia a partir de la Carta y las resoluciones citadas. Las reformas en curso cambian: consulte la fuente oficial antes de citar.",
+    "intro": "La ONU cambia por dos vías: reformando la Carta, que es difícil, o creando y ajustando órganos por resolución, que es lo habitual.",
+    "pasos": [
+     {
+      "t": "Cómo se reforma la Carta",
+      "x": "Una enmienda necesita dos tercios de la Asamblea General y después la ratificación de dos tercios de los Estados miembros, incluidos los cinco permanentes del Consejo de Seguridad. Por eso cualquiera de ellos puede bloquear un cambio.",
+      "base": "Carta, art. 108.",
+      "url": "https://www.un.org/es/about-us/un-charter"
+     },
+     {
+      "t": "La conferencia de revisión",
+      "x": "La Carta prevé una conferencia general para revisarla, convocada por dos tercios de la Asamblea y nueve miembros del Consejo. Hasta hoy no se ha convocado. Lo que salga de ella también exige la ratificación del art. 108.",
+      "base": "Carta, art. 109.",
+      "url": "https://www.un.org/es/about-us/un-charter"
+     },
+     {
+      "t": "Las pocas enmiendas que ha habido",
+      "x": "Tres cambios, todos sobre tamaño y votos de los órganos: el Consejo de Seguridad pasó de 11 a 15 miembros (en vigor en 1965), el ECOSOC de 18 a 27 (1965) y luego a 54 (1973), y se elevó el número de votos exigidos para convocar la conferencia de revisión (1968). Los miembros permanentes y el veto no se han tocado.",
+      "base": "Carta, arts. 23, 27, 61 y 109, según el texto vigente.",
+      "url": "https://www.un.org/es/about-us/un-charter"
+     },
+     {
+      "t": "Cambios sin tocar la Carta",
+      "x": "La mayoría de las reformas se hacen por resolución de la Asamblea: la «Unión Pro Paz» (1950), la Comisión de Consolidación de la Paz (2005), el Consejo de Derechos Humanos en lugar de la Comisión (2006) y ONU Mujeres (2010). Por eso pueden hacerse con mayoría de la Asamblea, sin ratificaciones.",
+      "base": "Resoluciones 377 A (V), 60/180, 60/251 y 64/289.",
+      "url": "https://docs.un.org/es/A/RES/60/251"
+     },
+     {
+      "t": "Reforma del Consejo de Seguridad",
+      "x": "Se discute desde 1993 en la Asamblea y desde 2008 en negociaciones intergubernamentales, sobre cinco temas: categorías de miembros, veto, representación regional, tamaño y métodos de trabajo, y relación con la Asamblea. No hay acuerdo; cualquier cambio de composición exigiría una enmienda de la Carta.",
+      "base": "Resolución 48/26; decisión 62/557.",
+      "url": "https://docs.un.org/es/A/RES/48/26"
+     },
+     {
+      "t": "Revisión del Consejo de Derechos Humanos",
+      "x": "La resolución que lo creó mandó revisar su estatuto a los cinco años. La Asamblea lo hizo en 2011 y mantuvo su estructura, con ajustes en los métodos de trabajo y en el EPU.",
+      "base": "Resoluciones 60/251, párr. 16, y 65/281.",
+      "url": "https://docs.un.org/es/A/RES/65/281"
+     },
+     {
+      "t": "Fortalecer los órganos de tratados",
+      "x": "Un proceso de la Asamblea para reforzar los comités de tratados: más recursos, más reuniones, apoyo de la Secretaría y mejor trabajo con los Estados, sin cambiar los tratados.",
+      "base": "Resolución 68/268.",
+      "url": "https://docs.un.org/es/A/RES/68/268"
+     },
+     {
+      "t": "El Pacto para el Futuro",
+      "x": "La Cumbre del Futuro (septiembre de 2024) adoptó un pacto con compromisos para reformar la gobernanza mundial, incluido el Consejo de Seguridad, y para mejorar la acción de la ONU en paz, desarrollo y derechos humanos. Es una declaración política: no cambia la Carta.",
+      "base": "Resolución 79/1.",
+      "url": "https://docs.un.org/es/A/RES/79/1"
+     }
+    ]
    }
   }
  },
@@ -4672,7 +4726,7 @@
      },
      {
       "t": "Cómo funciona la ONU, más a fondo",
-      "x": "Reformas de la ONU. Ya están las votaciones, las elecciones, la financiación, el ciclo del Consejo de Derechos Humanos y las relaciones entre órganos."
+      "x": "Ya están las votaciones, las elecciones, la financiación, el ciclo del Consejo de Derechos Humanos, las relaciones entre órganos y las reformas. Falta describir con más detalle los órganos restantes (T10)."
      },
      {
       "t": "Siglas y acrónimos",
