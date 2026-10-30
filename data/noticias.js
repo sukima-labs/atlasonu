@@ -1,8 +1,16 @@
 window.NOTICIAS={
  "fuente": "Noticias ONU (news.un.org)",
- "actualizado": "2026-10-30T02:48:49Z",
+ "actualizado": "2026-10-30T17:14:18Z",
  "temas": {
   "todas": [
+   {
+    "titulo": "Gaza: la expansión de las posiciones israelíes reaviva los temores de una \"limpieza étnica",
+    "fecha": "2026-10-30",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542126",
+    "resumen": "Israel pretende ampliar su despliegue militar al 70 % del territorio de Gaza, mientras empuja a los palestinos hacia zonas cada vez más pequeñas y ataca campamentos de desplazados, denuncia ONU Derechos Humanos.",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/16-01-2025-UNRWA-Gaza-22.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
    {
     "titulo": "La naturaleza está resurgiendo, pero la financiación para restaurarla debe cuadruplicarse",
     "fecha": "2026-10-29",
@@ -154,14 +162,6 @@ window.NOTICIAS={
     "resumen": "Los ataques han alcanzado viviendas, mercados, hospitales y centros de acogida, objetivos tanto de las fuerzas gubernamentales y de las RSF. \"El creciente uso de drones, que ya representa la mayoría de las muertes civiles, está cobrando un precio horrible\",…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/14-05-2026-UNOCHA-Sudan-03.jpg/image560x340cropped.jpg",
     "destacada": false
-   },
-   {
-    "titulo": "Cisjordania, Sudán, ébola, inteligencia artificial… Las noticias del viernes",
-    "fecha": "2026-10-23",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542098",
-    "resumen": "ONU Derechos Humanos denuncia que el cierre total de Cisjordania agravará la situación de los palestinos. Sudán: las mujeres siguen sufriendo las consecuencias de la violencia en El Fasher. El brote de ébola en RD Congo supera los 9700 casos. Un comité…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/08/19-08-2026-UNICEF-West-Bank-01.jpg/image560x340cropped.jpg",
-    "destacada": true
    }
   ],
   "derechos": [
