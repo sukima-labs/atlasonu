@@ -11,6 +11,10 @@
      "x": "En la ficha de cada país hay un gráfico con su posición en las votaciones de la Asamblea General entre 1946 y 2025 (cerca de las democracias occidentales o cerca de la mayoría de países en desarrollo), con su banda de incertidumbre. Son datos académicos de dominio público (Bailey, Strezhnev y Voeten, Harvard Dataverse), una estimación estadística y no un dato oficial de la ONU. Faltan los países que esa fuente no recoge (Palestina, Kosovo, Santa Sede)."
     },
     {
+     "t": "Los ODS y los derechos humanos",
+     "x": "En «Cómo funciona la ONU», pestaña «Cómo se decide y se elige», los 17 Objetivos de Desarrollo Sostenible, cada uno con los derechos, comités y mandatos de ATLAS a los que conduce. Los órganos principales y las agencias ya estaban."
+    },
+    {
      "t": "Cómo se decide y quién elige a quién",
      "x": "En «Cómo funciona la ONU», la pestaña «Cómo se decide y se elige» explica cómo se vota en la Asamblea, el Consejo de Seguridad (con el veto), el ECOSOC, el Consejo de Derechos Humanos y la Corte, y quién elige a sus miembros, relatores, expertos de comités y Secretario General, con la base jurídica y el enlace oficial de cada regla."
     },
@@ -191,21 +195,6 @@
    "titulo": "Ideas que están entrando",
    "intro": "Sin compromiso ni fecha: es el orden en que tendría sentido ampliar el proyecto.",
    "items": [
-    {
-     "t": "Otros órganos de la ONU",
-     "x": "Consejo de Seguridad (resoluciones, sanciones, misiones de paz), Asamblea General y sus comisiones, ECOSOC, Corte Internacional de Justicia.",
-     "tag": "propuesto"
-    },
-    {
-     "t": "Agencias y programas",
-     "x": "OMS, UNESCO, ACNUR, UNICEF y otras.",
-     "tag": "propuesto"
-    },
-    {
-     "t": "Desarrollo sostenible",
-     "x": "Los ODS y la Agenda 2030.",
-     "tag": "propuesto"
-    },
     {
      "t": "Datos del sistema",
      "x": "Tratados depositados, presupuesto y cuotas por país, votaciones y calendario de días internacionales.",
