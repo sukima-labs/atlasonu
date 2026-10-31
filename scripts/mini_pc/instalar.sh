@@ -46,8 +46,26 @@ RestartSec=5
 [Install]
 WantedBy=default.target
 EOF
+cat > "$U/atlas-respaldo.service" <<EOF
+[Unit]
+Description=ATLAS ONU: copia de seguridad cifrada
+[Service]
+Type=oneshot
+Environment=ATLAS_DIR=$DIR
+ExecStart=/usr/bin/env bash $DIR/scripts/mini_pc/respaldo.sh
+Nice=10
+EOF
+cat > "$U/atlas-respaldo.timer" <<'EOF'
+[Unit]
+Description=ATLAS ONU: copia cifrada cada domingo a las 03:00
+[Timer]
+OnCalendar=Sun *-*-* 03:00:00
+Persistent=true
+[Install]
+WantedBy=timers.target
+EOF
 systemctl --user daemon-reload
-systemctl --user enable --now atlas-onu.timer atlas-busqueda.service
+systemctl --user enable --now atlas-onu.timer atlas-busqueda.service atlas-respaldo.timer
 echo "Temporizador instalado. Próximas ejecuciones:"; systemctl --user list-timers atlas-onu.timer --no-pager || true
 echo "Para que corra aunque nadie haya iniciado sesión:  sudo loginctl enable-linger $USER"
 echo "Prueba ahora mismo:  systemctl --user start atlas-onu.service  (y mira: journalctl --user -u atlas-onu.service -f)"
