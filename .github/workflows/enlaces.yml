@@ -1,0 +1,20 @@
+name: Auditoría semanal de enlaces
+on:
+  schedule:
+    - cron: '30 6 * * 1'   # lunes 06:30 UTC
+  workflow_dispatch:
+jobs:
+  enlaces:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - name: Auditar enlaces externos
+        run: python3 -I scripts/auditar_enlaces.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: auditoria-enlaces
+          path: audit/ENLACES.md
+          retention-days: 90
