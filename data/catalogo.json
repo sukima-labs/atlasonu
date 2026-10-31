@@ -5282,6 +5282,10 @@
      {
       "t": "Etiquetas en los documentos",
       "x": "Cada documento de la cadena de actos de un mandato y cada resultado de «Recuperar documentos» muestra su tipo (resolución, borrador, informe, decisión…, deducido del símbolo) y el tema del mandato; tocar el tema abre los mandatos de ese tema. Falta extenderlas a los documentos de comités y de países."
+     },
+     {
+      "t": "Citar y descargar las fichas",
+      "x": "En la ficha de cada mandato y de cada país hay una cita en formato APA 7 (con la fecha de consulta) y un botón para descargar la ficha en Word (.docx). Son elaboración propia a partir de datos oficiales."
      }
     ]
    },
@@ -5411,7 +5415,7 @@
      },
      {
       "t": "Para estudiantes y datos abiertos",
-      "x": "Descargar fichas en PDF o Word, citarlas en formato académico, bajar los datos en JSON y CSV, un aviso tipo RSS de qué cambió, comparar dos países y ver la línea de tiempo de cada uno."
+      "x": "Bajar los datos en JSON y CSV, un aviso tipo RSS de qué cambió, comparar dos países y ver la línea de tiempo de cada uno."
      }
     ]
    }

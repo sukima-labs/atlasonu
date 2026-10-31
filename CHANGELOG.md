@@ -8,6 +8,7 @@ Versión actual. Cambios desde la auditoría de seguridad y mantenimiento (ver `
 - **Mantenimiento:** scripts de prototipo retirados de `scripts/`, `archive/` sacado del repositorio (copia fuera), campo `huella` quitado, enlaces a la web pública antigua quitados (T46, PR 99).
 - **Auditoría y documentación al día:** `audit/AUDITORIA.md`, `docs/INFORME_EVALUACION_GLOBAL.md` y `docs/OPERACION.md` (T47).
 - **Skill `trabajar-cola`** para el modo continuo de la cola (PR 100).
+- **Fichas citables:** cita APA 7 y descarga en Word (`.docx`) en la ficha de cada mandato y de cada país (T59).
 
 ## Anteriores
 - Versiones previas a 0.7 están en el historial de git.
