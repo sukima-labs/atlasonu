@@ -42,7 +42,6 @@ Abrir `index.html` en cualquier navegador (también sin conexión: los datos van
 | `tests/` | `smoke.cjs` (123 pruebas de lógica, `invariantes.cjs`: 11) y `browser.cjs` (Chromium real, 165 comprobaciones, escritorio y móvil) |
 | `audit/` | Auditoría contra los 13 requisitos, discrepancias respecto a v0.6, inventario, manifiesto de integridad |
 | `docs/` | Traspaso original |
-| `archive/` | Versiones previas sin modificar |
 
 ## Reproducir
 ```

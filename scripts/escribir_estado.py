@@ -8,7 +8,7 @@ prev = json.load(open('data/estado.json', encoding='utf-8')) if os.path.exists('
 hist = json.load(open('data/historial_cambios.json', encoding='utf-8')) if os.path.exists('data/historial_cambios.json') else []
 acts = [x for m in d['mandatos'] for x in m['actos']]
 est = {'revisado_el': ahora, 'datos_del': d['consultado'], 'hubo_cambios_en_esta_revision': hubo,
-       'ultimo_cambio_el': (ahora if hubo else prev.get('ultimo_cambio_el', ahora)), 'huella': d.get('huella', ''),
+       'ultimo_cambio_el': (ahora if hubo else prev.get('ultimo_cambio_el', ahora)),
        'contadores': {'mandatos': len(d['mandatos']), 'actos': len(acts), 'localizados': sum(1 for x in acts if x['estado'] in ('VERIFICADO', 'VERIFICADO_NORMALIZADO')), 'paises': len(d['paises']), 'mecanismos': len(d['mecanismos'])},
        'fuentes': [{'nombre': 'Índice de mandatos de OHCHR', 'url': d['fuentes'][0]}, {'nombre': 'Biblioteca Digital de la ONU', 'url': 'https://digitallibrary.un.org/'},
                    {'nombre': 'Colección de Tratados de la ONU (ratificaciones)', 'url': d['tratados_fuente']['url']}, {'nombre': 'Base de visitas de OHCHR', 'url': d['paises_fuente']['url']}, {'nombre': 'Base de comunicaciones de OHCHR (grupos regionales)', 'url': d['regiones_fuente']['url']}],
