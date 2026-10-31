@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>ATLAS ONU: qué cambió en las fuentes oficiales</title>
+  <subtitle>Cambios detectados en el índice de mandatos de OHCHR y en la Biblioteca Digital de la ONU. Catálogo no oficial.</subtitle>
+  <id>tag:atlas-onu,2026:cambios</id>
+  <updated>2026-10-31T00:00:00Z</updated>
+  <rights>Código AGPL-3.0; datos de las fuentes oficiales de la ONU. Autoría visible obligatoria.</rights>
+  <entry>
+    <title>2026-10-31: 5 cambio(s)</title>
+    <id>tag:atlas-onu,2026-10-31:cambios</id>
+    <updated>2026-10-31T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;Experto Independiente sobre la protección contra la violencia y la discriminación por motivos de orientación sexual o identidad de género: titulares Graeme REID → sin titular&lt;/li&gt;&lt;li&gt;Grupo de Trabajo sobre la utilización de mercenarios como medio de violar los derechos humanos y obstaculizar el ejercicio del derecho de los pueblos a la libre determinación: titulares Andrés MACIAS TOLOSA, Joana DE DEUS PEREIRA, Jovana JEZDIMIROVIC RANITO, Michelle SMALL, Ravindran DANIEL JUSTIN → Andrés MACIAS TOLOSA, Joana DE DEUS PEREIRA, Jovana JEZDIMIROVIC RANITO, Michelle SMALL&lt;/li&gt;&lt;li&gt;Relator Especial sobre los derechos humanos al agua potable y el saneamiento: titulares Pedro ARROJO-AGUDO → sin titular&lt;/li&gt;&lt;li&gt;Grupo de Trabajo sobre la Detención Arbitraria: titulares Ethan HEE-SEOK SHIN, Ganna YUDKIVSKA, Matthew GILLETT, Miriam ESTRADA-CASTILLO, Mumba MALILA → Ethan HEE-SEOK SHIN, Ganna YUDKIVSKA, Matthew GILLETT&lt;/li&gt;&lt;li&gt;Grupo de Trabajo sobre las Desapariciones Forzadas o Involuntarias: titulares Ana Lorena DELGADILLO PEREZ, Aua BALDÉ, Gabriella CITRONI, Grazyna BARANOWSKA, Mohammed AL-OBAIDI → Ana Lorena DELGADILLO PEREZ, Gabriella CITRONI, Grazyna BARANOWSKA, Mohammed AL-OBAIDI&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>2026-10-30: 1 cambio(s)</title>
+    <id>tag:atlas-onu,2026-10-30:cambios</id>
+    <updated>2026-10-30T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;1 resolución(es) nueva(s) localizada(s): A/HRC/RES/63/34&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>2026-10-29: 8 cambio(s)</title>
+    <id>tag:atlas-onu,2026-10-29:cambios</id>
+    <updated>2026-10-29T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;Timor-Leste: 1 observación(es) final(es) nueva(s); la última es CRC/C/TLS/CO/4&lt;/li&gt;&lt;li&gt;Eslovenia: 1 observación(es) final(es) nueva(s); la última es CRC/C/SVN/CO/5-6&lt;/li&gt;&lt;li&gt;Tayikistán: 1 observación(es) final(es) nueva(s); la última es CRC/C/TJK/CO/6-7&lt;/li&gt;&lt;li&gt;Tanzania: 1 observación(es) final(es) nueva(s); la última es CRC/C/TZA/CO/6&lt;/li&gt;&lt;li&gt;Surinam: 1 informe(s) de misión nuevo(s)&lt;/li&gt;&lt;li&gt;Lesoto: 1 observación(es) final(es) nueva(s); la última es CRC/C/LSO/CO/3-7&lt;/li&gt;&lt;li&gt;Uganda: 1 observación(es) final(es) nueva(s); la última es CRC/C/UGA/CO/3-5&lt;/li&gt;&lt;li&gt;Kazajistán: 1 observación(es) final(es) nueva(s); la última es CRC/C/KAZ/CO/5-6&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>2026-10-28: 2 cambio(s)</title>
+    <id>tag:atlas-onu,2026-10-28:cambios</id>
+    <updated>2026-10-28T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;Australia: visita programada&lt;/li&gt;&lt;li&gt;A/RES/60/251: ya hay PDF propio (antes: PDF_PROPIO)&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
+</feed>
