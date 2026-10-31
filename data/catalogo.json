@@ -4001,12 +4001,28 @@
     "p": "Es la primera gran norma internacional para proteger a personas en la guerra: el origen del derecho internacional humanitario, mucho antes de la ONU."
    },
    {
+    "f": "1868-12-11",
+    "tema": "normas",
+    "hito": false,
+    "t": "Declaración de San Petersburgo",
+    "x": "Varios Estados acuerdan renunciar al uso en guerra de proyectiles explosivos de menos de 400 gramos.",
+    "p": "Es una de las primeras normas que limita los medios de combate por razones humanitarias."
+   },
+   {
     "f": "1899-07-29",
     "tema": "paz",
     "hito": false,
     "t": "Primera Conferencia de La Haya: solución pacífica de controversias",
     "x": "Termina la Conferencia de la Paz de La Haya, que adopta el Convenio para el arreglo pacífico de los conflictos internacionales y crea la Corte Permanente de Arbitraje.",
     "p": "Es el primer intento amplio de que los Estados resuelvan sus disputas ante un tribunal y no por la guerra: antecedente de la Corte Internacional de Justicia."
+   },
+   {
+    "f": "1907-10-18",
+    "tema": "paz",
+    "hito": false,
+    "t": "Segunda Conferencia de La Haya",
+    "x": "Se adoptan trece convenios sobre solución pacífica de controversias y leyes de la guerra.",
+    "p": "Completa el sistema de La Haya de 1899 y fija normas de la guerra que siguen citándose hoy."
    },
    {
     "f": "1919-04-11",
@@ -4056,6 +4072,30 @@
     "t": "Pacto Briand-Kellogg: la guerra como instrumento de política nacional queda proscrita",
     "x": "En París, quince Estados firman el pacto por el que renuncian a la guerra como medio de política nacional; después se adhieren decenas más.",
     "p": "Es un antecedente de la prohibición del uso de la fuerza que la Carta de la ONU recoge en su artículo 2.4."
+   },
+   {
+    "f": "1929-07-27",
+    "tema": "normas",
+    "hito": false,
+    "t": "Convenios de Ginebra de 1929",
+    "x": "Se adopta el Convenio relativo al trato de los prisioneros de guerra y se actualiza el de heridos y enfermos.",
+    "p": "Son el antecedente directo de los Convenios de Ginebra de 1949."
+   },
+   {
+    "f": "1930-06-28",
+    "tema": "normas",
+    "hito": false,
+    "t": "Convenio sobre el trabajo forzoso (n.º 29 de la OIT)",
+    "x": "La Conferencia de la OIT adopta el convenio que obliga a suprimir el trabajo forzoso.",
+    "p": "Es una de las primeras normas internacionales de derechos humanos con mecanismo de control."
+   },
+   {
+    "f": "1933-12-26",
+    "tema": "paz",
+    "hito": false,
+    "t": "Convención de Montevideo sobre derechos y deberes de los Estados",
+    "x": "Los Estados americanos fijan los elementos del Estado y la igualdad jurídica entre ellos.",
+    "p": "Su definición de Estado sigue siendo la referencia en el derecho internacional."
    },
    {
     "f": "1941-08-14",
@@ -4135,6 +4175,14 @@
     "ir": "E:UNICEF"
    },
    {
+    "f": "1947-08-15",
+    "tema": "paz",
+    "hito": false,
+    "t": "Independencia de la India y de Pakistán",
+    "x": "Termina el dominio británico en el subcontinente; Pakistán ingresa en la ONU el 30 de septiembre de 1947.",
+    "p": "Abre la primera gran ola de descolonización en Asia."
+   },
+   {
     "f": "1948-04-07",
     "tema": "desarrollo",
     "hito": false,
@@ -4142,6 +4190,14 @@
     "x": "La Organización Mundial de la Salud comienza a existir como organismo especializado (se celebra el Día Mundial de la Salud).",
     "p": "Su Constitución afirma que gozar del grado máximo de salud es un derecho fundamental, antecedente del derecho a la salud.",
     "ir": "E:OMS"
+   },
+   {
+    "f": "1948-04-30",
+    "tema": "normas",
+    "hito": false,
+    "t": "Declaración Americana de los Derechos y Deberes del Hombre",
+    "x": "Se aprueba en Bogotá, meses antes de la Declaración Universal, junto con la Carta de la OEA.",
+    "p": "Es el primer texto internacional general de derechos humanos y base del sistema interamericano."
    },
    {
     "f": "1948-12-09",
@@ -4171,6 +4227,23 @@
     "ir": "E:UNRWA"
    },
    {
+    "f": "1949-12-27",
+    "tema": "paz",
+    "hito": false,
+    "t": "Independencia de Indonesia",
+    "x": "Los Países Bajos transfieren la soberanía tras la mediación de la ONU; Indonesia ingresa en 1950.",
+    "p": "Fue uno de los primeros conflictos coloniales que trató el Consejo de Seguridad.",
+    "ir": "S:cs"
+   },
+   {
+    "f": "1950-11-04",
+    "tema": "normas",
+    "hito": false,
+    "t": "Convenio Europeo de Derechos Humanos",
+    "x": "Se firma en Roma, en el marco del Consejo de Europa; entra en vigor en 1953.",
+    "p": "Crea el primer sistema regional con un tribunal al que pueden acudir las personas."
+   },
+   {
     "f": "1950-12-14",
     "tema": "desarrollo",
     "hito": false,
@@ -4198,12 +4271,90 @@
     "ir": "S:ag"
    },
    {
+    "f": "1957-03-06",
+    "tema": "paz",
+    "hito": false,
+    "t": "Ghana, primera independencia del África subsahariana",
+    "x": "Ghana se independiza del Reino Unido e ingresa en la ONU el 8 de marzo de 1957.",
+    "p": "Inicia la descolonización africana, que cambió la composición de la Asamblea General.",
+    "ir": "S:ag"
+   },
+   {
+    "f": "1958-10-02",
+    "tema": "paz",
+    "hito": false,
+    "t": "Independencia de Guinea",
+    "x": "Guinea se independiza de Francia e ingresa en la ONU en diciembre de 1958.",
+    "p": "Fue la primera colonia francesa del África subsahariana en hacerlo."
+   },
+   {
+    "f": "1959",
+    "tema": "mecanismos",
+    "hito": false,
+    "t": "Se crea la Comisión Interamericana de Derechos Humanos",
+    "x": "La OEA decide crear la Comisión, que empieza a trabajar en 1960.",
+    "p": "Es el órgano más antiguo de protección regional en América."
+   },
+   {
+    "f": "1960",
+    "tema": "paz",
+    "hito": true,
+    "t": "El «Año de África»: 17 Estados ingresan en la ONU",
+    "x": "En 1960 ingresan 17 nuevos miembros, 16 de ellos africanos (y Chipre).",
+    "p": "Cambia el equilibrio de votos en la Asamblea y refuerza el impulso descolonizador.",
+    "ir": "S:ag"
+   },
+   {
     "f": "1960-12-14",
     "tema": "paz",
     "hito": true,
     "t": "Declaración sobre la descolonización",
     "x": "La Asamblea General aprueba la Declaración sobre la concesión de la independencia a los países y pueblos coloniales (resolución 1514 (XV)).",
     "p": "Acelera la descolonización: en pocos años ingresan decenas de nuevos Estados y cambia el equilibrio de la Asamblea.",
+    "ir": "S:ag"
+   },
+   {
+    "f": "1960-12-15",
+    "tema": "paz",
+    "hito": false,
+    "t": "Resolución 1541 (XV): territorios no autónomos",
+    "x": "La Asamblea fija los principios para saber cuándo un territorio ha alcanzado la libre determinación.",
+    "p": "Define las tres vías: independencia, libre asociación e integración.",
+    "ir": "S:fid"
+   },
+   {
+    "f": "1961-11-27",
+    "tema": "paz",
+    "hito": false,
+    "t": "Comité Especial de Descolonización («Comité de los 24»)",
+    "x": "La resolución 1654 (XVI) crea el comité que vigila la aplicación de la Declaración de 1960.",
+    "p": "Sigue examinando cada año los territorios no autónomos de la lista de la ONU.",
+    "ir": "S:ag"
+   },
+   {
+    "f": "1962-07-05",
+    "tema": "paz",
+    "hito": false,
+    "t": "Independencia de Argelia",
+    "x": "Argelia se independiza de Francia tras una guerra de ocho años; ingresa en la ONU el 8 de octubre de 1962.",
+    "p": "Es uno de los casos de descolonización más violentos tratados en la ONU."
+   },
+   {
+    "f": "1962-11-06",
+    "tema": "paz",
+    "hito": false,
+    "t": "La Asamblea condena el apartheid",
+    "x": "La resolución 1761 (XVII) condena la política de Sudáfrica y crea el Comité Especial contra el Apartheid.",
+    "p": "Marca el inicio del aislamiento internacional del régimen sudafricano.",
+    "ir": "S:ag"
+   },
+   {
+    "f": "1962-12-14",
+    "tema": "desarrollo",
+    "hito": false,
+    "t": "Soberanía permanente sobre los recursos naturales",
+    "x": "La resolución 1803 (XVII) reconoce el derecho de los pueblos y naciones sobre sus riquezas naturales.",
+    "p": "Es base del derecho a la libre determinación económica y del derecho al desarrollo.",
     "ir": "S:ag"
    },
    {
@@ -4214,6 +4365,15 @@
     "x": "La Asamblea General adopta la Convención sobre la Eliminación de Todas las Formas de Discriminación Racial (resolución 2106 A (XX)); se abre a la firma en marzo de 1966.",
     "p": "Primer tratado «básico» con comité propio, el CERD. Responde a la lucha contra el apartheid y el colonialismo.",
     "ir": "T:IV-2"
+   },
+   {
+    "f": "1966-10-27",
+    "tema": "paz",
+    "hito": false,
+    "t": "Fin del mandato de Sudáfrica sobre Namibia",
+    "x": "La resolución 2145 (XXI) pone fin al mandato sobre el África Sudoccidental.",
+    "p": "La ONU asume la responsabilidad directa del territorio hasta su independencia.",
+    "ir": "S:ag"
    },
    {
     "f": "1966-12-16",
@@ -4243,6 +4403,14 @@
     "ir": "S:cdh"
    },
    {
+    "f": "1969-11-22",
+    "tema": "normas",
+    "hito": false,
+    "t": "Convención Americana sobre Derechos Humanos",
+    "x": "Se adopta en San José de Costa Rica (Pacto de San José); entra en vigor el 18 de julio de 1978.",
+    "p": "Crea la Corte Interamericana y fija los derechos que protege el sistema regional americano."
+   },
+   {
     "f": "1970-05-27",
     "tema": "mecanismos",
     "hito": true,
@@ -4252,6 +4420,32 @@
     "ir": "S:denuncia"
    },
    {
+    "f": "1971-10-25",
+    "tema": "fundacion",
+    "hito": false,
+    "t": "Resolución 2758 (XXVI): representación de China",
+    "x": "La Asamblea decide que los representantes de la República Popular China son los únicos legítimos de China en la ONU.",
+    "p": "Es un hito en la cuestión de la representación y de la universalidad de la organización.",
+    "ir": "S:ag"
+   },
+   {
+    "f": "1972-06-05",
+    "tema": "desarrollo",
+    "hito": false,
+    "t": "Conferencia de Estocolmo sobre el Medio Humano",
+    "x": "Es la primera gran conferencia de la ONU sobre medio ambiente.",
+    "p": "Se crea el Programa de las Naciones Unidas para el Medio Ambiente y se reconoce el vínculo entre medio ambiente y derechos."
+   },
+   {
+    "f": "1973-11-30",
+    "tema": "normas",
+    "hito": false,
+    "t": "Convención contra el apartheid",
+    "x": "La resolución 3068 (XXVIII) abre a firma la Convención internacional sobre la represión y el castigo del crimen de apartheid.",
+    "p": "Califica el apartheid como crimen de lesa humanidad.",
+    "ir": "S:ag"
+   },
+   {
     "f": "1975-02-27",
     "tema": "mecanismos",
     "hito": false,
@@ -4259,6 +4453,23 @@
     "x": "Tras el golpe de 1973, la Comisión de Derechos Humanos crea un grupo de trabajo ad hoc para investigar la situación de derechos humanos en Chile.",
     "p": "Sienta el precedente de los mandatos por país: un órgano político puede examinar un asunto interno de un Estado.",
     "ir": "S:pe"
+   },
+   {
+    "f": "1975-06-19",
+    "tema": "desarrollo",
+    "hito": false,
+    "t": "Primera Conferencia Mundial sobre la Mujer (Ciudad de México)",
+    "x": "Abre el Decenio de las Naciones Unidas para la Mujer (1976–1985).",
+    "p": "Prepara el camino de la CEDAW, adoptada en 1979.",
+    "ir": "E:ONUMUJERES"
+   },
+   {
+    "f": "1975-08-01",
+    "tema": "paz",
+    "hito": false,
+    "t": "Acta Final de Helsinki",
+    "x": "Treinta y cinco Estados de Europa y América del Norte firman el acta de la Conferencia sobre la Seguridad y la Cooperación en Europa.",
+    "p": "Incluye un compromiso de respetar los derechos humanos y dio origen a la OSCE."
    },
    {
     "f": "1976-01-03",
@@ -4279,6 +4490,23 @@
     "ir": "T:IV-4"
    },
    {
+    "f": "1978-09-12",
+    "tema": "desarrollo",
+    "hito": false,
+    "t": "Declaración de Alma-Ata sobre atención primaria de salud",
+    "x": "La conferencia de la OMS y UNICEF proclama la salud como derecho humano fundamental.",
+    "p": "Es la base de la estrategia de «salud para todos».",
+    "ir": "E:OMS"
+   },
+   {
+    "f": "1979-09-03",
+    "tema": "mecanismos",
+    "hito": false,
+    "t": "Se instala la Corte Interamericana de Derechos Humanos",
+    "x": "La Corte comienza sus funciones en San José, Costa Rica.",
+    "p": "Sus sentencias y opiniones consultivas son una fuente clave del derecho internacional de los derechos humanos."
+   },
+   {
     "f": "1979-12-18",
     "tema": "normas",
     "hito": true,
@@ -4295,6 +4523,22 @@
     "x": "La Comisión de Derechos Humanos crea el Grupo de Trabajo sobre Desapariciones Forzadas o Involuntarias (E/CN.4/RES/20 (XXXVI)).",
     "p": "Inventa los mandatos temáticos: en lugar de señalar a un país, estudia un fenómeno en todo el mundo. Argentina había bloqueado una investigación por país.",
     "ir": "M:desaparici|disappear"
+   },
+   {
+    "f": "1980-04-18",
+    "tema": "paz",
+    "hito": false,
+    "t": "Independencia de Zimbabue",
+    "x": "Zimbabue accede a la independencia del Reino Unido e ingresa en la ONU ese año.",
+    "p": "Cierra uno de los últimos conflictos coloniales en África austral."
+   },
+   {
+    "f": "1981-06-27",
+    "tema": "normas",
+    "hito": false,
+    "t": "Carta Africana de Derechos Humanos y de los Pueblos",
+    "x": "Se adopta en Nairobi (Carta de Banjul); entra en vigor el 21 de octubre de 1986.",
+    "p": "Reconoce también derechos de los pueblos y deberes de las personas."
    },
    {
     "f": "1981-09-03",
@@ -4351,6 +4595,23 @@
     "ir": "T:IV-11"
    },
    {
+    "f": "1990-03-05",
+    "tema": "desarrollo",
+    "hito": false,
+    "t": "Conferencia Mundial sobre Educación para Todos (Jomtien)",
+    "x": "Se aprueba una declaración para garantizar la educación básica.",
+    "p": "Impulsó el compromiso internacional con el derecho a la educación."
+   },
+   {
+    "f": "1990-03-21",
+    "tema": "paz",
+    "hito": true,
+    "t": "Independencia de Namibia",
+    "x": "Namibia se independiza de Sudáfrica tras un proceso supervisado por la ONU.",
+    "p": "Fue la primera gran operación de transición política de la ONU en África.",
+    "ir": "S:cs"
+   },
+   {
     "f": "1990-12-18",
     "tema": "normas",
     "hito": false,
@@ -4358,6 +4619,32 @@
     "x": "La Asamblea General adopta la Convención Internacional sobre los trabajadores migratorios y sus familiares (resolución 45/158).",
     "p": "Es el tratado básico con menos ratificaciones: muchos Estados de destino no la han firmado.",
     "ir": "T:IV-13"
+   },
+   {
+    "f": "1991-09-17",
+    "tema": "fundacion",
+    "hito": false,
+    "t": "Ingresan las dos Coreas y los Estados bálticos",
+    "x": "Corea del Norte, Corea del Sur, Estonia, Letonia, Lituania, Islas Marshall y Micronesia pasan a ser miembros.",
+    "p": "Refleja el final de la Guerra Fría y el aumento del número de miembros.",
+    "ir": "S:ag"
+   },
+   {
+    "f": "1992-06-03",
+    "tema": "desarrollo",
+    "hito": true,
+    "t": "Cumbre de la Tierra de Río de Janeiro",
+    "x": "Se adoptan el Programa 21 y la Convención Marco sobre el Cambio Climático.",
+    "p": "Instala el concepto de desarrollo sostenible en la agenda de la ONU."
+   },
+   {
+    "f": "1992-12-18",
+    "tema": "normas",
+    "hito": false,
+    "t": "Declaraciones sobre desapariciones forzadas y minorías",
+    "x": "La resolución 47/133 proclama la Declaración sobre desapariciones forzadas y la 47/135, la de minorías.",
+    "p": "Son textos de referencia de dos mandatos del sistema.",
+    "ir": "M:desaparici|disappear"
    },
    {
     "f": "1993-06-25",
@@ -4378,6 +4665,22 @@
     "ir": "E:ACNUDH"
    },
    {
+    "f": "1994-04-27",
+    "tema": "paz",
+    "hito": true,
+    "t": "Primeras elecciones multirraciales en Sudáfrica",
+    "x": "Termina oficialmente el apartheid con las primeras elecciones por sufragio universal.",
+    "p": "Culmina décadas de presión de la ONU; el país vuelve a la Asamblea General en 1994."
+   },
+   {
+    "f": "1994-09-05",
+    "tema": "desarrollo",
+    "hito": false,
+    "t": "Conferencia sobre Población y Desarrollo (El Cairo)",
+    "x": "El programa de acción pone los derechos y la salud reproductiva en el centro de las políticas de población.",
+    "p": "Es una referencia de los derechos sexuales y reproductivos."
+   },
+   {
     "f": "1994-11-01",
     "tema": "fundacion",
     "hito": false,
@@ -4385,6 +4688,31 @@
     "x": "Con la independencia de Palaos, último territorio en fideicomiso, el órgano suspende sus operaciones.",
     "p": "Es el único de los seis órganos principales que ya no funciona.",
     "ir": "S:fid"
+   },
+   {
+    "f": "1995-03-06",
+    "tema": "desarrollo",
+    "hito": false,
+    "t": "Cumbre Mundial sobre Desarrollo Social (Copenhague)",
+    "x": "Los Estados se comprometen a erradicar la pobreza y a promover el empleo y la inclusión social.",
+    "p": "Vincula el desarrollo social con los derechos humanos."
+   },
+   {
+    "f": "1995-09-04",
+    "tema": "normas",
+    "hito": true,
+    "t": "Cuarta Conferencia Mundial sobre la Mujer (Beijing)",
+    "x": "Se adopta la Declaración y Plataforma de Acción de Beijing.",
+    "p": "Sigue siendo la hoja de ruta mundial de la igualdad de género.",
+    "ir": "E:ONUMUJERES"
+   },
+   {
+    "f": "1996-06-03",
+    "tema": "desarrollo",
+    "hito": false,
+    "t": "Hábitat II (Estambul)",
+    "x": "La conferencia reconoce el derecho a una vivienda adecuada en su programa.",
+    "p": "Es base de la labor del mandato sobre vivienda adecuada."
    },
    {
     "f": "1998-07-17",
@@ -4423,6 +4751,31 @@
     "ir": "E:PNUD"
    },
    {
+    "f": "2001-08-31",
+    "tema": "normas",
+    "hito": true,
+    "t": "Conferencia Mundial contra el Racismo (Durban)",
+    "x": "Se adoptan la Declaración y el Programa de Acción de Durban.",
+    "p": "Es el marco internacional de la lucha contra el racismo y la xenofobia."
+   },
+   {
+    "f": "2002-04-08",
+    "tema": "desarrollo",
+    "hito": false,
+    "t": "Segunda Asamblea Mundial sobre el Envejecimiento (Madrid)",
+    "x": "Se adopta el Plan de Acción Internacional de Madrid sobre el Envejecimiento.",
+    "p": "Sigue siendo la referencia de las políticas sobre personas mayores."
+   },
+   {
+    "f": "2002-05-20",
+    "tema": "paz",
+    "hito": false,
+    "t": "Independencia de Timor-Oriental",
+    "x": "Tras una administración de la ONU, el país se independiza; ingresa en la ONU el 27 de septiembre de 2002.",
+    "p": "Fue el primer caso en que la ONU administró un territorio hasta su independencia.",
+    "ir": "S:cs"
+   },
+   {
     "f": "2002-12-18",
     "tema": "normas",
     "hito": false,
@@ -4430,6 +4783,14 @@
     "x": "Se adopta el OPCAT, que crea un sistema de visitas preventivas a los lugares de detención.",
     "p": "Introduce la prevención: el Subcomité (SPT) y los Mecanismos Nacionales de Prevención.",
     "ir": "T:IV-9-b"
+   },
+   {
+    "f": "2004-05-22",
+    "tema": "normas",
+    "hito": false,
+    "t": "Carta Árabe de Derechos Humanos (versión revisada)",
+    "x": "La Liga de los Estados Árabes adopta en Túnez la versión actualizada; entra en vigor en 2008.",
+    "p": "Es el texto de referencia del sistema regional árabe."
    },
    {
     "f": "2005-09-16",
@@ -4522,6 +4883,15 @@
     "ir": "M:agua|water"
    },
    {
+    "f": "2011-07-14",
+    "tema": "paz",
+    "hito": false,
+    "t": "Sudán del Sur ingresa en la ONU",
+    "x": "Sudán del Sur pasa a ser el miembro número 193.",
+    "p": "Es el miembro más reciente de la organización.",
+    "ir": "S:ag"
+   },
+   {
     "f": "2011-12-19",
     "tema": "normas",
     "hito": false,
@@ -4529,6 +4899,22 @@
     "x": "Se adopta el tercer protocolo de la Convención sobre los Derechos del Niño: permite quejas individuales.",
     "p": "La niñez también puede reclamar ante su comité.",
     "ir": "T:IV-11-d"
+   },
+   {
+    "f": "2012-06-20",
+    "tema": "desarrollo",
+    "hito": false,
+    "t": "Conferencia Río+20",
+    "x": "Se acuerda iniciar el proceso que llevó a los Objetivos de Desarrollo Sostenible.",
+    "p": "Fue el origen directo de la Agenda 2030."
+   },
+   {
+    "f": "2012-11-18",
+    "tema": "normas",
+    "hito": false,
+    "t": "Declaración de Derechos Humanos de la ASEAN",
+    "x": "Los Estados de la ASEAN la adoptan en Phnom Penh.",
+    "p": "Es el primer texto de derechos humanos de ese ámbito regional, sin tribunal propio."
    },
    {
     "f": "2015-09-25",
@@ -4540,6 +4926,14 @@
     "ir": "E:PNUD"
    },
    {
+    "f": "2015-12-12",
+    "tema": "desarrollo",
+    "hito": true,
+    "t": "Acuerdo de París sobre el cambio climático",
+    "x": "Casi todos los Estados acuerdan limitar el aumento de la temperatura mundial.",
+    "p": "Es el marco actual de la acción climática, con vínculos con los derechos humanos."
+   },
+   {
     "f": "2016-09-19",
     "tema": "fundacion",
     "hito": false,
@@ -4547,6 +4941,14 @@
     "x": "La Organización Internacional para las Migraciones pasa a ser organización relacionada con la ONU.",
     "p": "Refuerza la coordinación en migración.",
     "ir": "E:OIM"
+   },
+   {
+    "f": "2016-10-17",
+    "tema": "desarrollo",
+    "hito": false,
+    "t": "Hábitat III (Quito)",
+    "x": "Se adopta la Nueva Agenda Urbana.",
+    "p": "Fija los compromisos sobre ciudades y vivienda para las próximas décadas."
    },
    {
     "f": "2018-12",
@@ -4629,7 +5031,7 @@
      },
      {
       "t": "Historia antes de 1945",
-      "x": "La línea de tiempo empieza en 1864 con {previos} hechos de antes de la ONU y llega a {hechos} hechos en total."
+      "x": "La línea de tiempo empieza en 1864 con {previos} hechos de antes de la ONU y llega a {hechos} hechos en total, con la descolonización y el ingreso de nuevos miembros, las conferencias mundiales y los sistemas regionales de derechos humanos."
      },
      {
       "t": "Búsqueda en vivo",
@@ -4734,7 +5136,7 @@
      },
      {
       "t": "Historia: más hechos",
-      "x": "Faltan, por ejemplo, la descolonización por país, las conferencias mundiales y los hechos regionales."
+      "x": "Falta contrastar con la fuente original los hechos de antes de 1945 y seguir completando la descolonización país por país."
      },
      {
       "t": "Explicaciones en lenguaje claro de cada resolución",
