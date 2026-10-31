@@ -15,3 +15,6 @@ __pycache__/
 id_rsa*
 *token*.txt
 .claude/settings.local.json
+
+# Dependencias locales de las pruebas de navegador (npm i --no-save playwright)
+node_modules/

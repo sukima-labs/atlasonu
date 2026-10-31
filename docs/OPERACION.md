@@ -15,4 +15,14 @@ Hay dos automatizaciones que actualizan `data/` en `main`. Este documento dice c
 ## Riesgo conocido
 Si ambos encuentran cambios a la vez, el segundo `push` puede fallar o rebasar sobre el primero. El mini PC no reintenta, así que sus cambios se recogerán en la siguiente ejecución. Se vigila en T54.
 
+## Pruebas de navegador en el mini PC
+Playwright no va en `package.json` (el repositorio no tiene dependencias). Se instala sin guardarlo en el proyecto y se fija a la misma versión que el CI (`.github/workflows/pruebas.yml`):
+
+```
+npm i --no-save playwright@1.64.1 && npx playwright install chromium
+node tests/browser.cjs > <carpeta de salida>/browser.txt 2>&1
+```
+
+`node_modules/` está en `.gitignore`. Comprobado el 31-10-2026: 199 comprobaciones, 0 fallos (T64).
+
 Relacionado: `docs/COLA_DE_TAREAS.md`, `scripts/mini_pc/instalar.sh`.
