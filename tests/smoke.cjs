@@ -7,7 +7,7 @@ const ids=[...html.matchAll(/id="([^"]+)"/g)].map(x=>x[1]);
 const els=Object.fromEntries(ids.map(id=>[id,{id,value:'',innerHTML:'',textContent:'',classList:{toggle(){},add(){}},addEventListener(){},dataset:{},style:{},click(){}}]));
 const document={getElementById(id){if(!els[id])throw Error('Unknown DOM id '+id);return els[id]},querySelectorAll(){return []},createElement(){return {click(){},set href(x){},set download(x){}}}};
 const window={scrollTo(){}};const URL={createObjectURL(){return 'blob:fake'},revokeObjectURL(){}};const Blob=function(){};
-const context=vm.createContext({document,window,URL,Blob,console});
+const context=vm.createContext({document,window,URL,Blob,console,setTimeout:()=>0});
 vm.runInContext(fs.readFileSync(path.join(root,'data','atlas-data.js'),'utf8'),context);
 for(const iso of ['IND','COL','IRL','GIN','ESP'])vm.runInContext(fs.readFileSync(path.join(root,'data','paises',iso+'.js'),'utf8'),context);
 vm.runInContext(script,context,{timeout:10000});
@@ -141,6 +141,7 @@ t('la lista de países muestra los contadores de documentos oficiales',()=>{els.
 t('ficha de mandato',()=>{run('details(0)');assert.ok(els.cardsResults.innerHTML.includes('Cadena de actos jurídicos'))});
 t('noticias: nota destacada lleva etiqueta de derechos humanos y el archivo no tiene duplicados',()=>{const h=run(`noticiaHtml({titulo:'A',fecha:'2026-10-27',enlace:'https://news.un.org/es/story/1',destacada:true})`);assert.ok(h.includes('Derechos humanos'));const A=JSON.parse(require('fs').readFileSync(path.join(root,'data','noticias_archivo.json'),'utf8'));assert.ok(A.actualizado&&A.notas.length===A.total&&new Set(A.notas.map(n=>n.enlace)).size===A.notas.length&&A.notas.every(n=>n.enlace.startsWith('https://news.un.org/')))});
 t('exportCSV',()=>run('exportCSV()'));
+t('T59/T60: cita APA en mandato y país; CSV de todos los mandatos y JSON de países',()=>{assert.ok(run("fichaBloques('m',0).map(b=>b.t).join(' ')").includes('Cita APA: Sukima-Labs ('));assert.ok(run("fichaBloques('p','ESP').map(b=>b.t).join(' ')").includes('Tratados de derechos humanos'));assert.equal(run('csvMandatos(D).split("\\r\\n").length'),run('D.length+1'));assert.ok(run('JSON.parse(JSON.stringify({paises:PAISES})).paises.length')>0);run('pintarDescargas()');assert.ok(els.dVersion.textContent.includes('Versión'))});
 t('autoría y repositorio',()=>assert.ok(html.includes('sukima-labs/onu-arqueologia-documental')&&html.includes('Sukima-Labs')));
 t('integridad de datos: símbolo localizado ⇒ registro',()=>assert.equal(run('D.flatMap(x=>x.actos).filter(a=>/^VERIFICADO/.test(a.estado)&&!a.registro).length'),0));
 t('integridad: ningún DOCUMENTO_NO_RESOLUCION cuenta como localizado',()=>assert.equal(run('D.flatMap(x=>x.actos).filter(a=>a.estado==="DOCUMENTO_NO_RESOLUCION").length'),run('D.reduce((s,x)=>s+x.actos_total-x.actos_verificados,0)')-run('D.flatMap(x=>x.actos).filter(a=>a.estado!=="DOCUMENTO_NO_RESOLUCION"&&!/^VERIFICADO/.test(a.estado)).length')));
