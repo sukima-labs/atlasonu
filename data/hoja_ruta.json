@@ -93,6 +93,10 @@
     {
      "t": "Citar y descargar las fichas",
      "x": "En la ficha de cada mandato y de cada país hay una cita en formato APA 7 (con la fecha de consulta) y un botón para descargar la ficha en Word (.docx). Son elaboración propia a partir de datos oficiales."
+    },
+    {
+     "t": "Página de descargas",
+     "x": "En el menú «Descargas» hay una pantalla con la licencia de cada parte, el CSV de los mandatos y el JSON de los países (se generan en tu navegador), y los archivos JSON y Atom del repositorio."
     }
    ]
   },
@@ -222,7 +226,7 @@
     },
     {
      "t": "Para estudiantes y datos abiertos",
-     "x": "Bajar los datos en JSON y CSV, un aviso tipo RSS de qué cambió, comparar dos países y ver la línea de tiempo de cada uno."
+     "x": "Comparar dos países y ver la línea de tiempo de cada uno."
     }
    ]
   }
