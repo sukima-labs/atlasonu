@@ -1,8 +1,8 @@
 {
- "revisado_el": "2026-10-30T17:14:18+00:00",
- "datos_del": "2026-10-30",
+ "revisado_el": "2026-10-31T02:36:07+00:00",
+ "datos_del": "2026-10-31",
  "hubo_cambios_en_esta_revision": true,
- "ultimo_cambio_el": "2026-10-30T17:14:18+00:00",
+ "ultimo_cambio_el": "2026-10-31T02:36:07+00:00",
  "huella": "",
  "contadores": {
   "mandatos": 57,
@@ -34,6 +34,15 @@
   }
  ],
  "ultimos_cambios": [
+  {
+   "fecha": "2026-10-31",
+   "n": 5,
+   "ejemplos": [
+    "Experto Independiente sobre la protección contra la violencia y la discriminación por motivos de orientación sexual o identidad de género: titulares Graeme REID → sin titular",
+    "Grupo de Trabajo sobre la utilización de mercenarios como medio de violar los derechos humanos y obstaculizar el ejercicio del derecho de los pueblos a la libre determinación: titulares Andrés MACIAS TOLOSA, Joana DE DEUS PEREIRA, Jovana JEZDIMIROVIC RANITO, Michelle SMALL, Ravindran DANIEL JUSTIN → Andrés MACIAS TOLOSA, Joana DE DEUS PEREIRA, Jovana JEZDIMIROVIC RANITO, Michelle SMALL",
+    "Relator Especial sobre los derechos humanos al agua potable y el saneamiento: titulares Pedro ARROJO-AGUDO → sin titular"
+   ]
+  },
   {
    "fecha": "2026-10-30",
    "n": 1,
