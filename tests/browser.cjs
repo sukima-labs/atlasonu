@@ -183,7 +183,7 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     await pg.fill('#hiSlider', '1993'); await pg.waitForTimeout(250);
     ok('historia: el control del año salta al hecho más cercano y muestra mandatos creados ese año', /199[3-4]/.test(await pg.textContent('#hiDetalle')) && /Mandatos vigentes creados en 1993/.test(await pg.textContent('#hiDetalle')));
     await pg.click('button:has-text("Fundación y descolonización")');
-    ok('historia: el filtro por época oculta lo posterior', (await pg.locator('.hi-card').count()) < 15 && !(await pg.textContent('#hiTrack')).includes('Agenda 2030'));
+    ok('historia: el filtro por época oculta lo posterior', (await pg.locator('.hi-card').count()) < 30 && !(await pg.textContent('#hiTrack')).includes('Agenda 2030'));
     await pg.click('button:has-text("Toda la historia")'); await pg.click('#hiPlay'); await pg.waitForTimeout(6600);
     ok('historia: el recorrido guiado avanza solo y se puede pausar', /Pausar/.test(await pg.textContent('#hiPlay')) && (await pg.evaluate(() => hiSelI)) !== 0);
     await pg.click('#hiPlay'); ok('historia: pausar detiene el recorrido', /Recorrido guiado/.test(await pg.textContent('#hiPlay')));

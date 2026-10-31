@@ -32,7 +32,7 @@
     },
     {
      "t": "Historia antes de 1945",
-     "x": "La línea de tiempo empieza en 1864 con {previos} hechos de antes de la ONU y llega a {hechos} hechos en total."
+     "x": "La línea de tiempo empieza en 1864 con {previos} hechos de antes de la ONU y llega a {hechos} hechos en total, con la descolonización y el ingreso de nuevos miembros, las conferencias mundiales y los sistemas regionales de derechos humanos."
     },
     {
      "t": "Búsqueda en vivo",
@@ -137,7 +137,7 @@
     },
     {
      "t": "Historia: más hechos",
-     "x": "Faltan, por ejemplo, la descolonización por país, las conferencias mundiales y los hechos regionales."
+     "x": "Falta contrastar con la fuente original los hechos de antes de 1945 y seguir completando la descolonización país por país."
     },
     {
      "t": "Explicaciones en lenguaje claro de cada resolución",
