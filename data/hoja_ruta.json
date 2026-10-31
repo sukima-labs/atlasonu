@@ -128,6 +128,18 @@
    "intro": "En la cola de trabajo, por orden aproximado. Una tarea cada vez.",
    "items": [
     {
+     "t": "Comparador de dos países",
+     "x": "En la pantalla Países, comparar dos países lado a lado: votaciones, tratados, comunicaciones y mandatos."
+    },
+    {
+     "t": "Línea de tiempo por país",
+     "x": "La historia de cada país en orden de fechas, con sus tratados, visitas y actos principales."
+    },
+    {
+     "t": "Glosario de siglas al tocar",
+     "x": "Al tocar una sigla en el texto de la plataforma aparece su significado, sin salir de la página."
+    },
+    {
      "t": "Revisión de uso de todas las pantallas",
      "x": "Sobre todo en el celular: tablas que pasan a tarjetas, buscador a mano, botones más grandes, contraste y accesibilidad. Ya está hecho el informe con lo medido en las 17 pantallas; falta aplicarlo, las tablas anchas ya pasan a tarjetas en el celular; Países, Mandatos, Arqueología y Auditoría ya se muestran de 20 en 20 y hay botón para volver arriba; siguen los botones más grandes y la letra mínima."
     },
@@ -223,10 +235,6 @@
      "t": "Datos del sistema",
      "x": "Tratados depositados, presupuesto y cuotas por país, votaciones y calendario de días internacionales.",
      "tag": "propuesto"
-    },
-    {
-     "t": "Para estudiantes y datos abiertos",
-     "x": "Comparar dos países y ver la línea de tiempo de cada uno."
     }
    ]
   }
