@@ -9,6 +9,7 @@ Versión actual. Cambios desde la auditoría de seguridad y mantenimiento (ver `
 - **Auditoría y documentación al día:** `audit/AUDITORIA.md`, `docs/INFORME_EVALUACION_GLOBAL.md` y `docs/OPERACION.md` (T47).
 - **Skill `trabajar-cola`** para el modo continuo de la cola (PR 100).
 - **Fichas citables:** cita APA 7 y descarga en Word (`.docx`) en la ficha de cada mandato y de cada país (T59).
+- **Descargas:** pantalla «Descargas» con licencia, CSV de mandatos, JSON de países y archivos del repositorio (T60).
 
 ## Anteriores
 - Versiones previas a 0.7 están en el historial de git.
