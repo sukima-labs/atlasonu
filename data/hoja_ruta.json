@@ -164,10 +164,6 @@
      "x": "Un mapa mundial con capas (ratificaciones, observaciones, conflictos…) y clic que lleve a la ficha del país. Con herramientas libres y alojadas en el propio proyecto."
     },
     {
-     "t": "El reto académico",
-     "x": "Una página sobre qué documentos de la ONU están mal catalogados y que ATLAS sí encuentra."
-    },
-    {
      "t": "Español, francés e inglés",
      "x": "Selector de idioma con textos propios, sin servicios de traducción externos."
     },
@@ -195,6 +191,18 @@
     {
      "t": "Relatores y relatoras",
      "x": "Una sección propia en el menú, con cada persona y su mandato, sus informes, visitas y comunicaciones, indexado por temas y conectado con países, tratados, resoluciones y noticias."
+    },
+    {
+     "t": "Orden, copias de seguridad y velocidad",
+     "x": "Tareas internas: limpiar ramas y archivos antiguos, tener copias de seguridad, poner la documentación al día y hacer que la página cargue más rápido en celulares modestos."
+    },
+    {
+     "t": "Revisión de expertos y exactitud de los datos",
+     "x": "Que personas expertas revisen traducciones, textos en lenguaje claro y contenido para la infancia, y comprobar cada cierto tiempo, por muestreo, que los datos coinciden con la fuente."
+    },
+    {
+     "t": "El reto académico",
+     "x": "Una página sobre qué documentos de la ONU están mal catalogados y que ATLAS sí encuentra. Va al final de todo, sin fecha."
     }
    ]
   },
@@ -207,6 +215,10 @@
      "t": "Datos del sistema",
      "x": "Tratados depositados, presupuesto y cuotas por país, votaciones y calendario de días internacionales.",
      "tag": "propuesto"
+    },
+    {
+     "t": "Para estudiantes y datos abiertos",
+     "x": "Descargar fichas en PDF o Word, citarlas en formato académico, bajar los datos en JSON y CSV, un aviso tipo RSS de qué cambió, comparar dos países y ver la línea de tiempo de cada uno."
     }
    ]
   }
