@@ -5274,6 +5274,10 @@
      {
       "t": "Cruce con las fuentes oficiales",
       "x": "Los 57 mandatos, los 196 países, los 18 tratados y los 10 comités coinciden con las listas oficiales; el informe indica lo que falta (extinguidos y comisiones de investigación; las siglas se ampliaron el 29-10-2026)."
+     },
+     {
+      "t": "Portada del repositorio ordenada",
+      "x": "Descripción y temas en GitHub, guía para contribuir, etiquetas de issues y un README breve en cada carpeta."
      }
     ]
    },
@@ -5365,8 +5369,8 @@
       "x": "Una versión con lenguaje sencillo, ilustraciones y juegos para que niñas y niños conozcan sus derechos y la ONU."
      },
      {
-      "t": "Logo de DIGNITYOS y portada del repositorio",
-      "x": "Logo provisional en el menú y la ficha del repositorio en GitHub ordenada.",
+      "t": "Logo de DIGNITYOS",
+      "x": "Logo provisional en el menú y en el apartado de DIGNITYOS.",
       "tag": "prioridad baja"
      },
      {
