@@ -1,11 +1,15 @@
 {
- "actualizado": "2026-10-28",
+ "actualizado": "2026-10-31",
  "bloques": [
   {
    "id": "disponible",
    "titulo": "Ya disponible",
    "intro": "Lo que ya funciona hoy.",
    "items": [
+    {
+     "t": "Cómo vota cada país en la Asamblea General",
+     "x": "En la ficha de cada país hay un gráfico con su posición en las votaciones de la Asamblea General entre 1946 y 2025 (cerca de las democracias occidentales o cerca de la mayoría de países en desarrollo), con su banda de incertidumbre. Son datos académicos de dominio público (Bailey, Strezhnev y Voeten, Harvard Dataverse), una estimación estadística y no un dato oficial de la ONU. Faltan los países que esa fuente no recoge (Palestina, Kosovo, Santa Sede)."
+    },
     {
      "t": "Cómo se decide y quién elige a quién",
      "x": "En «Cómo funciona la ONU», la pestaña «Cómo se decide y se elige» explica cómo se vota en la Asamblea, el Consejo de Seguridad (con el veto), el ECOSOC, el Consejo de Derechos Humanos y la Corte, y quién elige a sus miembros, relatores, expertos de comités y Secretario General, con la base jurídica y el enlace oficial de cada regla."
