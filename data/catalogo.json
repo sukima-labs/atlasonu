@@ -5278,6 +5278,10 @@
      {
       "t": "Portada del repositorio ordenada",
       "x": "Descripción y temas en GitHub, guía para contribuir, etiquetas de issues y un README breve en cada carpeta."
+     },
+     {
+      "t": "Etiquetas en los documentos",
+      "x": "Cada documento de la cadena de actos de un mandato y cada resultado de «Recuperar documentos» muestra su tipo (resolución, borrador, informe, decisión…, deducido del símbolo) y el tema del mandato; tocar el tema abre los mandatos de ese tema. Falta extenderlas a los documentos de comités y de países."
      }
     ]
    },
@@ -5396,10 +5400,6 @@
       "t": "Datos del sistema",
       "x": "Tratados depositados, presupuesto y cuotas por país, votaciones y calendario de días internacionales.",
       "tag": "propuesto"
-     },
-     {
-      "t": "Etiquetas en los documentos",
-      "x": "Que cada documento muestre etiquetas (tipo y tema) para entender de un vistazo de qué va, sin abrirlo."
      }
     ]
    }
