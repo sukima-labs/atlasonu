@@ -3,7 +3,7 @@
 Auditoría con las cifras reales del repositorio (catálogo, datos, `index.html`, pruebas). Las pruebas pasan: 132 de lógica y 12 invariantes. No se inventa nada: cada hueco indica su evidencia y la tarea que lo cubre.
 
 ## Qué hay hoy
-57 mandatos (421 actos, 401 localizados) · 33 mecanismos conexos · 196 fichas de país · 18 tratados (texto literal de 8) · 145 siglas · 68 hechos de historia (los anteriores a 1945 aún sin contrastar con fuente primaria) · 41 entidades del sistema · 862 entradas en el índice de actos · 79 alertas de verificación.
+57 mandatos (421 actos, 401 localizados) · 33 mecanismos conexos · 196 fichas de país · 18 tratados (texto literal de 8) · 241 siglas · 116 hechos de historia (los anteriores a 1945 aún sin contrastar con fuente primaria) · 41 entidades del sistema · 862 entradas en el índice de actos · 79 alertas de verificación.
 
 ## Huecos por área (más grave primero)
 
@@ -19,7 +19,7 @@ Auditoría con las cifras reales del repositorio (catálogo, datos, `index.html`
 | 8 | **Sin mapas** (ni de calor) | requisito 8 de la auditoría | T11, T24 |
 | 9 | **Idiomas**: solo español; datos oficiales en inglés | `<html lang="es">`, sin selector | T26, T27 |
 | 10 | **Buscador**: faltan filtros por región y por fuente | requisito 2 de la auditoría | T15 |
-| 11 | **Siglas (145) e historia (68)** cortas frente a lo que cubre la ONU | `data/siglas.json`, `data/historia.json` | T7, T8 |
+| 11 | **Siglas (241) e historia (116)** cortas frente a lo que cubre la ONU | `data/siglas.json`, `data/historia.json` | T7, T8 |
 | 12 | **Búsqueda en vivo sin confirmar desde un celular real**; varias correcciones de menú (T14, T17, T19, T28) también esperan confirmación en celular real | cola de tareas | T12 |
 | 13 | **Registro de revisiones casi vacío**: `data/revisiones.json` tiene 1 entrada (la inicial); la primera ejecución real tras T2 aún no aparece | `data/revisiones.json` | vigilar (T34) |
 
