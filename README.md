@@ -2,6 +2,9 @@
 
 Plataforma académica independiente para investigar los procedimientos especiales de la ONU y recuperar sus documentos originales **con verificación contra la fuente oficial**.
 
+**Para quién:** estudiantes, investigadoras e investigadores y organizaciones que necesitan encontrar y citar documentos del sistema de derechos humanos de la ONU (mandatos, tratados y comités, países, historia, siglas) sin perderse en su catalogación.
+**Cómo contribuir:** ver [CONTRIBUTING.md](CONTRIBUTING.md). **Sitio:** se abre en local con `index.html`; la web pública está despublicada mientras el repositorio es privado.
+
 **Autor:** Sukima-Labs, estudiante del Máster en Protección Internacional de los Derechos Humanos (Universidad de Alcalá, España) · © 2026. **Licencias:** código bajo [AGPL-3.0](LICENSE) con autoría obligatoria ([NOTICE](NOTICE.md)); contenido propio bajo [CC BY 4.0](LICENSE-CONTENIDO.md); los datos y textos de la ONU no se relicencian (ver [análisis](docs/LICENCIA.md)).
 **Aviso:** iniciativa académica independiente. No es un producto oficial de Naciones Unidas ni de la Universidad de Alcalá.
 
@@ -28,7 +31,7 @@ Dos veces al día (12:17 y 00:17 hora de España en invierno; 13:17 y 01:17 en v
 
 ## Abrir
 Abrir `index.html` en cualquier navegador (también sin conexión: los datos van en `data/atlas-data.js`).
-**Web pública (activa):** https://sukima-labs.github.io/onu-arqueologia-documental/ (Settings → Pages → *Build and deployment* → Source: **Deploy from a branch** → Branch: `main`, carpeta `/ (root)` → Save; tarda ~1 minuto).
+**Web pública (despublicada desde el 28-10-2026, mientras el repositorio sea privado):** https://sukima-labs.github.io/onu-arqueologia-documental/ (para volver a publicarla: Settings → Pages → *Build and deployment* → Source: **Deploy from a branch** → Branch: `main`, carpeta `/ (root)` → Save; tarda ~1 minuto).
 
 ## Estructura
 | Ruta | Contenido |
