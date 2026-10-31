@@ -41,6 +41,7 @@ python3 -I scripts/fetch_jurisprudencia.py || { JURISPRUDENCIA=conservado; echo 
 NOTICIAS=ok
 python3 -I scripts/fetch_noticias.py || { NOTICIAS=conservado; echo "Noticias: no se pudieron actualizar; se conservan las anteriores."; }
 python3 -I scripts/escribir_estado.py data/catalogo.json "$CAMBIO"
+python3 -I scripts/generar_feed_cambios.py
 node tests/invariantes.cjs
 python3 -I scripts/registrar_revision.py "$INICIO" "$CAMBIO" "$MARCO" "$NOTICIAS"
 echo "Revisión terminada. Cambios en los datos: $CAMBIO"
