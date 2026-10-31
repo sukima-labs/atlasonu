@@ -4,7 +4,7 @@ Estados: ✅ cumple · 🟡 parcial · ❌ no implementado.
 
 | # | Requisito | Estado | Evidencia / brecha |
 |---|---|---|---|
-| 1 | Plataforma web profesional, UX | 🟡 | Responsive sin desbordamiento (390 y 1366 px), búsqueda guiada para novatos, 165 comprobaciones en Chromium (escritorio y móvil, según el README; no se han vuelto a ejecutar desde el mini PC porque falta Playwright), 132 de lógica y 12 invariantes (ejecutadas el 31-10-2026). Falta revisión de accesibilidad con lector de pantalla |
+| 1 | Plataforma web profesional, UX | 🟡 | Responsive sin desbordamiento (390 y 1366 px), búsqueda guiada para novatos, 199 comprobaciones en Chromium (escritorio, tableta y móvil; ejecutadas en el mini PC el 31-10-2026 con Playwright 1.64.1, 0 fallos), 132 de lógica y 12 invariantes. Falta revisión de accesibilidad con lector de pantalla |
 | 2 | Búsqueda simple ES/EN + avanzada | 🟡 | Palabras (ES/EN), símbolos, alternativas, figura, modalidad, origen, años, verificación y **país** (mandato o nacionalidad del titular; sección Países). Faltan filtros por región y fuente |
 | 3 | Catálogo exhaustivo | 🟡 | 57 mandatos vigentes completos + 33 mecanismos conexos (10 órganos de tratados, EPU, 1235/1503, EMRIP, Foro Minorías, ACNUDH, 8 grupos de trabajo intergubernamentales, 8 comisiones/misiones). Faltan mandatos extinguidos y el resto de comisiones de investigación |
 | 4 | Arqueología documental activa | ✅/🟡 | Resolución localizada aunque el símbolo esté mal escrito; borrador→resolución; 374 PDF propios validados y 26 resoluciones antiguas ubicadas en su informe de sesión con páginas. Falta leer el texto de todas (solo 20 (XXXVI) leída) |
@@ -15,7 +15,7 @@ Estados: ✅ cumple · 🟡 parcial · ❌ no implementado.
 | 9 | Selección de titulares | 🟡 | Secuencia del proceso; titulares actuales por mandato; sin datos históricos por proceso |
 | 10 | Autoría | ✅ | © y enlace visibles; licencia AGPL-3.0 (archivo `LICENSE`) |
 | 11 | Excel offline, HTML Pages | 🟡 | HTML sin conexión y Excel v0.7 (6 hojas); flujo `pages.yml` listo; Pages desactivado a propósito desde el 28-10-2026 (repositorio privado) |
-| 12 | Pruebas reales | 🟡 | 132 de lógica, 12 invariantes y 165 en Chromium (último dato registrado, ver fila 1); auditoría de enlaces (571; 0 rotos; 459 no concluyentes por antirrobot); muestreo de PDF 30/30. Sin auditoría de accesibilidad |
+| 12 | Pruebas reales | 🟡 | 132 de lógica, 12 invariantes y 199 en Chromium (ver fila 1); auditoría de enlaces (571; 0 rotos; 459 no concluyentes por antirrobot); muestreo de PDF 30/30. Sin auditoría de accesibilidad |
 | 13 | Commits y Pages verificado | 🟡 | Se verificó la URL pública el 27-oct-2026 (HTTP 200 en página, datos y Excel). Desde el 28-10-2026 el repositorio es privado y Pages está despublicado: la URL pública da 404 |
 
 ## Qué corrigió esta versión respecto a v0.6
