@@ -1276,6 +1276,200 @@
       "url": "https://docs.un.org/es/A/RES/79/1"
      }
     ]
+   },
+   "ods": {
+    "nota": "Elaboración propia a partir de la Agenda 2030 (resolución 70/1 de la Asamblea General) y de los tratados y mandatos citados. Es una guía de lectura, no una lista oficial de correspondencias: el Instituto Danés de Derechos Humanos y la ACNUDH publican guías más detalladas. Los vínculos no son exhaustivos.",
+    "intro": "Los 17 Objetivos de Desarrollo Sostenible (Agenda 2030, aprobada en 2015) no son un tratado, pero la mayoría se apoya en derechos que sí lo son. Aquí se ve a qué derechos, comités y mandatos de ATLAS conduce cada objetivo.",
+    "base": "Resolución 70/1 de la Asamblea General, «Transformar nuestro mundo: la Agenda 2030 para el Desarrollo Sostenible» (A/RES/70/1).",
+    "url": "https://sdgs.un.org/es/goals",
+    "objetivos": [
+     {
+      "n": 1,
+      "nombre": "Fin de la pobreza",
+      "derechos": "Derecho a un nivel de vida adecuado (PIDESC, art. 11) y a la seguridad social (art. 9). Hay un Relator Especial sobre la extrema pobreza y los derechos humanos.",
+      "comites": [
+       "CESCR",
+       "CRC"
+      ],
+      "mandatos": "pobreza|poverty",
+      "url": "https://sdgs.un.org/es/goals/goal1"
+     },
+     {
+      "n": 2,
+      "nombre": "Hambre cero",
+      "derechos": "Derecho a la alimentación (PIDESC, art. 11). Hay un Relator Especial sobre el derecho a la alimentación.",
+      "comites": [
+       "CESCR",
+       "CRC"
+      ],
+      "mandatos": "alimenta|food",
+      "url": "https://sdgs.un.org/es/goals/goal2"
+     },
+     {
+      "n": 3,
+      "nombre": "Salud y bienestar",
+      "derechos": "Derecho al más alto nivel posible de salud física y mental (PIDESC, art. 12). Hay un Relator Especial sobre el derecho a la salud.",
+      "comites": [
+       "CESCR",
+       "CRC",
+       "CRPD"
+      ],
+      "mandatos": "salud|health",
+      "url": "https://sdgs.un.org/es/goals/goal3"
+     },
+     {
+      "n": 4,
+      "nombre": "Educación de calidad",
+      "derechos": "Derecho a la educación (PIDESC, arts. 13 y 14; Convención sobre los Derechos del Niño, arts. 28 y 29). Hay un Relator Especial sobre el derecho a la educación.",
+      "comites": [
+       "CESCR",
+       "CRC",
+       "CRPD"
+      ],
+      "mandatos": "educaci|education",
+      "url": "https://sdgs.un.org/es/goals/goal4"
+     },
+     {
+      "n": 5,
+      "nombre": "Igualdad de género",
+      "derechos": "Igualdad y no discriminación de las mujeres: Convención sobre la eliminación de la discriminación contra la mujer (CEDAW). Hay un Grupo de Trabajo sobre la discriminación contra las mujeres y las niñas.",
+      "comites": [
+       "CEDAW"
+      ],
+      "mandatos": "mujer|women|género|gender",
+      "url": "https://sdgs.un.org/es/goals/goal5"
+     },
+     {
+      "n": 6,
+      "nombre": "Agua limpia y saneamiento",
+      "derechos": "Derechos humanos al agua potable y al saneamiento (resolución 64/292 de la Asamblea General). Hay un Relator Especial sobre el tema.",
+      "comites": [
+       "CESCR"
+      ],
+      "mandatos": "agua|water|saneamiento|sanitation",
+      "url": "https://sdgs.un.org/es/goals/goal6"
+     },
+     {
+      "n": 7,
+      "nombre": "Energía asequible y no contaminante",
+      "derechos": "No es un derecho autónomo en los tratados; se conecta con el nivel de vida adecuado, la salud y el medio ambiente sano.",
+      "comites": [
+       "CESCR"
+      ],
+      "mandatos": "medio ambiente|environment",
+      "url": "https://sdgs.un.org/es/goals/goal7"
+     },
+     {
+      "n": 8,
+      "nombre": "Trabajo decente y crecimiento económico",
+      "derechos": "Derecho al trabajo y a condiciones justas (PIDESC, arts. 6 a 8), prohibición del trabajo forzoso y de la esclavitud, y derechos de los trabajadores migratorios. Hay un Relator Especial sobre las formas contemporáneas de esclavitud.",
+      "comites": [
+       "CESCR",
+       "CMW"
+      ],
+      "mandatos": "esclavitud|slavery|trabajo|labour|migrante|migrant",
+      "url": "https://sdgs.un.org/es/goals/goal8"
+     },
+     {
+      "n": 9,
+      "nombre": "Industria, innovación e infraestructura",
+      "derechos": "Se conecta con el derecho a participar en el progreso científico y a beneficiarse de él (PIDESC, art. 15) y con la accesibilidad de las personas con discapacidad (CRPD, art. 9).",
+      "comites": [
+       "CESCR",
+       "CRPD"
+      ],
+      "mandatos": "cultural|discapacidad|disabilit",
+      "url": "https://sdgs.un.org/es/goals/goal9"
+     },
+     {
+      "n": 10,
+      "nombre": "Reducción de las desigualdades",
+      "derechos": "Igualdad y no discriminación: la Convención contra la discriminación racial (CERD), la de personas con discapacidad (CRPD) y la de trabajadores migratorios (CMW). Hay mandatos sobre racismo, minorías, migrantes y pueblos indígenas.",
+      "comites": [
+       "CERD",
+       "CRPD",
+       "CMW",
+       "CEDAW"
+      ],
+      "mandatos": "racis|discrimina|minori|indigen|indígena|migrante|migrant",
+      "url": "https://sdgs.un.org/es/goals/goal10"
+     },
+     {
+      "n": 11,
+      "nombre": "Ciudades y comunidades sostenibles",
+      "derechos": "Derecho a una vivienda adecuada (PIDESC, art. 11). Hay un Relator Especial sobre el derecho a una vivienda adecuada.",
+      "comites": [
+       "CESCR"
+      ],
+      "mandatos": "vivienda|housing",
+      "url": "https://sdgs.un.org/es/goals/goal11"
+     },
+     {
+      "n": 12,
+      "nombre": "Producción y consumo responsables",
+      "derechos": "Se conecta con las empresas y los derechos humanos (Principios Rectores de 2011, resolución 17/4 del Consejo) y con los desechos tóxicos. Hay un Grupo de Trabajo sobre empresas y derechos humanos.",
+      "comites": [
+       "CESCR"
+      ],
+      "mandatos": "empresas|business|tóxic|toxic",
+      "url": "https://sdgs.un.org/es/goals/goal12"
+     },
+     {
+      "n": 13,
+      "nombre": "Acción por el clima",
+      "derechos": "Derecho a un medio ambiente limpio, saludable y sostenible, reconocido por la Asamblea General (resolución 76/300, 2022). Hay un Relator Especial sobre derechos humanos y cambio climático.",
+      "comites": [
+       "CESCR",
+       "CRC"
+      ],
+      "mandatos": "clima|climate|medio ambiente|environment",
+      "url": "https://sdgs.un.org/es/goals/goal13"
+     },
+     {
+      "n": 14,
+      "nombre": "Vida submarina",
+      "derechos": "No es un derecho humano autónomo; se conecta con el medio ambiente sano, la alimentación y los medios de vida de las comunidades costeras.",
+      "comites": [
+       "CESCR"
+      ],
+      "mandatos": "medio ambiente|environment|alimenta|food",
+      "url": "https://sdgs.un.org/es/goals/goal14"
+     },
+     {
+      "n": 15,
+      "nombre": "Vida de ecosistemas terrestres",
+      "derechos": "Medio ambiente sano, derechos de los pueblos indígenas sobre sus tierras y recursos, y defensores ambientales. Hay un Relator Especial sobre derechos humanos y medio ambiente.",
+      "comites": [
+       "CESCR",
+       "CERD"
+      ],
+      "mandatos": "medio ambiente|environment|indigen|indígena",
+      "url": "https://sdgs.un.org/es/goals/goal15"
+     },
+     {
+      "n": 16,
+      "nombre": "Paz, justicia e instituciones sólidas",
+      "derechos": "Acceso a la justicia, juicio imparcial, prohibición de la tortura y de las desapariciones forzadas (CCPR, CAT, CED), y protección de la infancia contra la violencia (CRC). Es el objetivo más ligado a los procedimientos especiales.",
+      "comites": [
+       "CCPR",
+       "CAT",
+       "CED",
+       "CRC"
+      ],
+      "mandatos": "tortura|torture|desaparici|ejecucion|execution|independencia|independence|expresión|expression",
+      "url": "https://sdgs.un.org/es/goals/goal16"
+     },
+     {
+      "n": 17,
+      "nombre": "Alianzas para lograr los objetivos",
+      "derechos": "Cooperación internacional y asistencia (PIDESC, art. 2.1). Se conecta con el derecho al desarrollo, que tiene un Relator Especial y un mecanismo de expertos.",
+      "comites": [
+       "CESCR"
+      ],
+      "mandatos": "desarrollo|development|deuda|debt|solidaridad|solidarity",
+      "url": "https://sdgs.un.org/es/goals/goal17"
+     }
+    ]
    }
   }
  },
@@ -5010,6 +5204,10 @@
       "x": "En la ficha de cada país hay un gráfico con su posición en las votaciones de la Asamblea General entre 1946 y 2025 (cerca de las democracias occidentales o cerca de la mayoría de países en desarrollo), con su banda de incertidumbre. Son datos académicos de dominio público (Bailey, Strezhnev y Voeten, Harvard Dataverse), una estimación estadística y no un dato oficial de la ONU. Faltan los países que esa fuente no recoge (Palestina, Kosovo, Santa Sede)."
      },
      {
+      "t": "Los ODS y los derechos humanos",
+      "x": "En «Cómo funciona la ONU», pestaña «Cómo se decide y se elige», los 17 Objetivos de Desarrollo Sostenible, cada uno con los derechos, comités y mandatos de ATLAS a los que conduce. Los órganos principales y las agencias ya estaban."
+     },
+     {
       "t": "Cómo se decide y quién elige a quién",
       "x": "En «Cómo funciona la ONU», la pestaña «Cómo se decide y se elige» explica cómo se vota en la Asamblea, el Consejo de Seguridad (con el veto), el ECOSOC, el Consejo de Derechos Humanos y la Corte, y quién elige a sus miembros, relatores, expertos de comités y Secretario General, con la base jurídica y el enlace oficial de cada regla."
      },
@@ -5190,21 +5388,6 @@
     "titulo": "Ideas que están entrando",
     "intro": "Sin compromiso ni fecha: es el orden en que tendría sentido ampliar el proyecto.",
     "items": [
-     {
-      "t": "Otros órganos de la ONU",
-      "x": "Consejo de Seguridad (resoluciones, sanciones, misiones de paz), Asamblea General y sus comisiones, ECOSOC, Corte Internacional de Justicia.",
-      "tag": "propuesto"
-     },
-     {
-      "t": "Agencias y programas",
-      "x": "OMS, UNESCO, ACNUR, UNICEF y otras.",
-      "tag": "propuesto"
-     },
-     {
-      "t": "Desarrollo sostenible",
-      "x": "Los ODS y la Agenda 2030.",
-      "tag": "propuesto"
-     },
      {
       "t": "Datos del sistema",
       "x": "Tratados depositados, presupuesto y cuotas por país, votaciones y calendario de días internacionales.",
@@ -26377,7 +26560,7 @@
    }
   }
  ],
- "consultado": "2026-10-31",
+ "consultado": "x",
  "fuentes": [
   "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM",
   "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM",
@@ -34197,7 +34380,7 @@
    "renovacion_anio": "2026",
    "metodos": "",
    "revision": "Acto de creación localizado en la Biblioteca Digital ONU",
-   "nota": "«A/HRC/RES/3610» no tiene registro exacto en la Biblioteca Digital ONU a 2026-10-31; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
+   "nota": "«A/HRC/RES/3610» no tiene registro exacto en la Biblioteca Digital ONU a x; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
    "actos": [
     {
      "rol": "creación",
@@ -34229,7 +34412,7 @@
      "organo": "Consejo de Derechos Humanos",
      "simbolo_fuente": "A/HRC/RES/3610",
      "estado": "NO_ENCONTRADO",
-     "aviso": "«A/HRC/RES/3610» no tiene registro exacto en la Biblioteca Digital ONU a 2026-10-31; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión."
+     "aviso": "«A/HRC/RES/3610» no tiene registro exacto en la Biblioteca Digital ONU a x; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión."
     },
     {
      "rol": "prórroga intermedia",
@@ -35723,7 +35906,7 @@
    "renovacion_anio": "2025",
    "metodos": "",
    "revision": "Acto de creación localizado con símbolo corregido (ver nota)",
-   "nota": "La fuente OHCHR cita «E/CN.4/1993/6»; el documento oficial es «E/CN.4/RES/1993/6» (equivalencia inferida por símbolo y título; no se ha leído el texto). «A/HRC/RES/48/» no tiene registro exacto en la Biblioteca Digital ONU a 2026-10-31; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
+   "nota": "La fuente OHCHR cita «E/CN.4/1993/6»; el documento oficial es «E/CN.4/RES/1993/6» (equivalencia inferida por símbolo y título; no se ha leído el texto). «A/HRC/RES/48/» no tiene registro exacto en la Biblioteca Digital ONU a x; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
    "actos": [
     {
      "rol": "creación",
@@ -35876,7 +36059,7 @@
      "organo": "Consejo de Derechos Humanos",
      "simbolo_fuente": "A/HRC/RES/48/",
      "estado": "NO_ENCONTRADO",
-     "aviso": "«A/HRC/RES/48/» no tiene registro exacto en la Biblioteca Digital ONU a 2026-10-31; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión."
+     "aviso": "«A/HRC/RES/48/» no tiene registro exacto en la Biblioteca Digital ONU a x; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión."
     },
     {
      "rol": "prórroga intermedia",
@@ -36367,7 +36550,7 @@
    "renovacion_anio": "2026",
    "metodos": "",
    "revision": "Acto de creación localizado con símbolo corregido (ver nota)",
-   "nota": "La fuente OHCHR cita «E/CN.4/2004/13»; el documento oficial es «E/CN.4/RES/2004/13» (equivalencia inferida por símbolo y título; no se ha leído el texto). La fuente OHCHR cita «A/HRC/31/L.25»; el documento oficial es «A/HRC/RES/31/18» (equivalencia inferida por símbolo y título; no se ha leído el texto). La fuente OHCHR cita «A/HRC/40/L.18»; el documento oficial es «A/HRC/RES/40/20» (equivalencia inferida por símbolo y título; no se ha leído el texto). La fuente OHCHR cita «A/HRC/43/25»; el documento oficial es «A/HRC/RES/43/25» (equivalencia inferida por símbolo y título; no se ha leído el texto). «A/HRC/58/617» no tiene registro exacto en la Biblioteca Digital ONU a 2026-10-31; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
+   "nota": "La fuente OHCHR cita «E/CN.4/2004/13»; el documento oficial es «E/CN.4/RES/2004/13» (equivalencia inferida por símbolo y título; no se ha leído el texto). La fuente OHCHR cita «A/HRC/31/L.25»; el documento oficial es «A/HRC/RES/31/18» (equivalencia inferida por símbolo y título; no se ha leído el texto). La fuente OHCHR cita «A/HRC/40/L.18»; el documento oficial es «A/HRC/RES/40/20» (equivalencia inferida por símbolo y título; no se ha leído el texto). La fuente OHCHR cita «A/HRC/43/25»; el documento oficial es «A/HRC/RES/43/25» (equivalencia inferida por símbolo y título; no se ha leído el texto). «A/HRC/58/617» no tiene registro exacto en la Biblioteca Digital ONU a x; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
    "actos": [
     {
      "rol": "creación",
@@ -36694,7 +36877,7 @@
      "organo": "Consejo de Derechos Humanos",
      "simbolo_fuente": "A/HRC/58/617",
      "estado": "NO_ENCONTRADO",
-     "aviso": "«A/HRC/58/617» no tiene registro exacto en la Biblioteca Digital ONU a 2026-10-31; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión."
+     "aviso": "«A/HRC/58/617» no tiene registro exacto en la Biblioteca Digital ONU a x; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión."
     },
     {
      "rol": "prórroga vigente",
@@ -58401,7 +58584,7 @@
    "id": "V-049",
    "simbolo": "A/HRC/RES/3610",
    "tema": "Relatora Especial sobre las repercusiones negativas de las medidas coercitivas unilaterales en el disfrute de los derechos humanos (2017, prórroga intermedia)",
-   "problema": "«A/HRC/RES/3610» no tiene registro exacto en la Biblioteca Digital ONU a 2026-10-31; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
+   "problema": "«A/HRC/RES/3610» no tiene registro exacto en la Biblioteca Digital ONU a x; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
    "nivel": "ALTA",
    "accion": "Reintentar más adelante o buscar en el informe de sesión.",
    "url": "https://digitallibrary.un.org/"
@@ -58428,7 +58611,7 @@
    "id": "V-059",
    "simbolo": "A/HRC/RES/48/",
    "tema": "Relator Especial sobre la situación de los derechos humanos en Camboya (2021, prórroga intermedia)",
-   "problema": "«A/HRC/RES/48/» no tiene registro exacto en la Biblioteca Digital ONU a 2026-10-31; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
+   "problema": "«A/HRC/RES/48/» no tiene registro exacto en la Biblioteca Digital ONU a x; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
    "nivel": "ALTA",
    "accion": "Reintentar más adelante o buscar en el informe de sesión.",
    "url": "https://digitallibrary.un.org/"
@@ -58446,7 +58629,7 @@
    "id": "V-070",
    "simbolo": "A/HRC/58/617",
    "tema": "Relator Especial sobre la situación de los derechos humanos en la República Popular Democrática de Corea (2025, prórroga intermedia)",
-   "problema": "«A/HRC/58/617» no tiene registro exacto en la Biblioteca Digital ONU a 2026-10-31; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
+   "problema": "«A/HRC/58/617» no tiene registro exacto en la Biblioteca Digital ONU a x; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
    "nivel": "ALTA",
    "accion": "Reintentar más adelante o buscar en el informe de sesión.",
    "url": "https://digitallibrary.un.org/"
