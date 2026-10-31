@@ -1,15 +1,23 @@
 window.NOTICIAS={
  "fuente": "Noticias ONU (news.un.org)",
- "actualizado": "2026-10-30T17:14:18Z",
+ "actualizado": "2026-10-31T02:36:07Z",
  "temas": {
   "todas": [
+   {
+    "titulo": "Gaza, Colombia, VIH, refugiados… Las noticias del viernes",
+    "fecha": "2026-10-30",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542127",
+    "resumen": "Gaza: la expansión de las posiciones israelíes aumenta el temor a una limpieza étnica. El Consejo de Seguridad prorroga un año más la misión de verificación de la ONU en Colombia. Barbados elimina la transmisión del VIH de madre a hijo. Ucrania, Siria,…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/10/15-10-2026_UNNews_Gaza_Winter_Preparation_06.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
    {
     "titulo": "Gaza: la expansión de las posiciones israelíes reaviva los temores de una \"limpieza étnica",
     "fecha": "2026-10-30",
     "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542126",
     "resumen": "Israel pretende ampliar su despliegue militar al 70 % del territorio de Gaza, mientras empuja a los palestinos hacia zonas cada vez más pequeñas y ataca campamentos de desplazados, denuncia ONU Derechos Humanos.",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/16-01-2025-UNRWA-Gaza-22.jpg/image560x340cropped.jpg",
-    "destacada": false
+    "destacada": true
    },
    {
     "titulo": "La naturaleza está resurgiendo, pero la financiación para restaurarla debe cuadruplicarse",
@@ -154,17 +162,16 @@ window.NOTICIAS={
     "resumen": "La ONG, nacida del sueño de una adolescente de 17 años, cuenta hoy con más de 150 profesionales y ha impactado a más de 450.000 personas en el país. Su directora general, Jennifer Belisario, explica en una entrevista los retos de operar en zonas remotas, la…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/10/23-10-2026_OCHA_Venezuela_NGO_1.jpg/image560x340cropped.jpg",
     "destacada": false
-   },
-   {
-    "titulo": "Sudán: los ataques con drones matan al menos a 306 personas en tres semanas",
-    "fecha": "2026-10-23",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542100",
-    "resumen": "Los ataques han alcanzado viviendas, mercados, hospitales y centros de acogida, objetivos tanto de las fuerzas gubernamentales y de las RSF. \"El creciente uso de drones, que ya representa la mayoría de las muertes civiles, está cobrando un precio horrible\",…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/14-05-2026-UNOCHA-Sudan-03.jpg/image560x340cropped.jpg",
-    "destacada": false
    }
   ],
   "derechos": [
+   {
+    "titulo": "Gaza: la expansión de las posiciones israelíes reaviva los temores de una \"limpieza étnica",
+    "fecha": "2026-10-30",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542126",
+    "resumen": "Israel pretende ampliar su despliegue militar al 70 % del territorio de Gaza, mientras empuja a los palestinos hacia zonas cada vez más pequeñas y ataca campamentos de desplazados, denuncia ONU Derechos Humanos.",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/16-01-2025-UNRWA-Gaza-22.jpg/image560x340cropped.jpg"
+   },
    {
     "titulo": "Cuba, muertes por calor, Venezuela, Nicaragua… Las noticias del miércoles",
     "fecha": "2026-10-28",
@@ -297,13 +304,6 @@ window.NOTICIAS={
     "enlace": "https://news.un.org/feed/view/es/story/2026/09/1541983",
     "resumen": "Expertos independientes de derechos humanos advierten que los acuerdos utilizados por Estados Unidos para trasladar migrantes y solicitantes de asilo a terceros países pueden exponerlos a tortura, persecución y otras graves violaciones. Según los expertos,…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/01-02-2024_UNICEF_Mexico_detention.jpg/image560x340cropped.jpg"
-   },
-   {
-    "titulo": "Las nuevas políticas de seguridad de Colombia no deben profundizar la discriminación racial, advierten expertos",
-    "fecha": "2026-09-24",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/09/1541963",
-    "resumen": "La ofensiva contra los grupos armados y el narcotráfico, el posible regreso de las fumigaciones aéreas y las nuevas unidades de seguridad urbana pueden profundizar el perfilamiento racial, el uso desproporcionado de la fuerza y la criminalización de los…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/240524_Women_Colombia1.jpg/image560x340cropped.jpg"
    }
   ],
   "americas": [

@@ -1,15 +1,24 @@
 {
 "fuente": "Noticias ONU (news.un.org)",
-"actualizado": "2026-10-30T17:14:18Z",
-"total": 62,
+"actualizado": "2026-10-31T02:36:07Z",
+"total": 63,
 "notas": [
+{
+"titulo": "Gaza, Colombia, VIH, refugiados… Las noticias del viernes",
+"fecha": "2026-10-30",
+"enlace": "https://news.un.org/feed/view/es/story/2026/10/1542127",
+"resumen": "Gaza: la expansión de las posiciones israelíes aumenta el temor a una limpieza étnica. El Consejo de Seguridad prorroga un año más la misión de verificación de la ONU en Colombia. Barbados elimina la transmisión del VIH de madre a hijo. Ucrania, Siria,…",
+"visto": "2026-10-31",
+"derechos": false,
+"americas": false
+},
 {
 "titulo": "Gaza: la expansión de las posiciones israelíes reaviva los temores de una \"limpieza étnica",
 "fecha": "2026-10-30",
 "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542126",
 "resumen": "Israel pretende ampliar su despliegue militar al 70 % del territorio de Gaza, mientras empuja a los palestinos hacia zonas cada vez más pequeñas y ataca campamentos de desplazados, denuncia ONU Derechos Humanos.",
 "visto": "2026-10-30",
-"derechos": false,
+"derechos": true,
 "americas": false
 },
 {
