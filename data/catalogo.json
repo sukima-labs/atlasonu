@@ -9886,12 +9886,7 @@
     "ecuador"
    ],
    "mandato": null,
-   "titulares_de": [
-    {
-     "idx": 2,
-     "titular": "Miriam ESTRADA-CASTILLO"
-    }
-   ],
+   "titulares_de": [],
    "comisiones": [],
    "region": "GRU",
    "region_origen": "oficial (base de comunicaciones de OHCHR)",
@@ -10615,10 +10610,6 @@
     {
      "idx": 37,
      "titular": "Pau PÉREZ SALES"
-    },
-    {
-     "idx": 42,
-     "titular": "Pedro ARROJO-AGUDO"
     }
    ],
    "comisiones": [],
@@ -12568,12 +12559,7 @@
     "bissau"
    ],
    "mandato": null,
-   "titulares_de": [
-    {
-     "idx": 8,
-     "titular": "Aua BALDÉ"
-    }
-   ],
+   "titulares_de": [],
    "comisiones": [],
    "region": "AFR",
    "region_origen": "oficial (base de comunicaciones de OHCHR)",
@@ -13104,10 +13090,6 @@
     {
      "idx": 6,
      "titular": "Surya DEVA"
-    },
-    {
-     "idx": 24,
-     "titular": "Ravindran DANIEL JUSTIN"
     },
     {
      "idx": 28,
@@ -21449,10 +21431,6 @@
     {
      "idx": 24,
      "titular": "Michelle SMALL"
-    },
-    {
-     "idx": 34,
-     "titular": "Graeme REID"
     }
    ],
    "comisiones": [],
@@ -24014,10 +23992,6 @@
     {
      "idx": 1,
      "titular": "Muluka-Anne MITI-DRUMMOND"
-    },
-    {
-     "idx": 2,
-     "titular": "Mumba MALILA"
     }
    ],
    "comisiones": [],
@@ -24247,11 +24221,11 @@
  ],
  "regiones_fuente": {
   "url": "https://spcommreports.ohchr.org/Tmsearch/TMDocuments",
-  "consultado": "2026-10-30"
+  "consultado": "2026-10-31"
  },
  "paises_fuente": {
   "url": "https://spinternet.ohchr.org/ViewCountryVisits.aspx?visitType=all",
-  "consultado": "2026-10-30"
+  "consultado": "2026-10-31"
  },
  "tratados": [
   {
@@ -24513,7 +24487,7 @@
  ],
  "tratados_fuente": {
   "url": "https://treaties.un.org/Pages/Treaties.aspx?id=4&subid=A&clang=_en",
-  "consultado": "2026-10-30"
+  "consultado": "2026-10-31"
  },
  "mecanismos": [
   {
@@ -25997,7 +25971,7 @@
    }
   }
  ],
- "consultado": "2026-10-30",
+ "consultado": "2026-10-31",
  "fuentes": [
   "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM",
   "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM",
@@ -26607,25 +26581,13 @@
      "pais_id": "UKR"
     },
     {
-     "tratamiento": "Ms.",
-     "nombre": "Miriam ESTRADA-CASTILLO",
-     "pais": "Ecuador",
-     "pais_id": "ECU"
-    },
-    {
      "tratamiento": "Mr.",
      "nombre": "Matthew GILLETT",
      "pais": "New Zealand",
      "pais_id": "NZL"
-    },
-    {
-     "tratamiento": "Mr.",
-     "nombre": "Mumba MALILA",
-     "pais": "Zambia",
-     "pais_id": "ZMB"
     }
    ],
-   "titulares_texto": "Mr. Ethan HEE-SEOK SHIN (Republic of Korea) Ms. Ganna YUDKIVSKA (Ukraine) Ms. Miriam ESTRADA-CASTILLO (Ecuador) Mr. Matthew GILLETT (New Zealand) Mr. Mumba MALILA (Zambia)",
+   "titulares_texto": "Mr. Ethan HEE-SEOK SHIN (Republic of Korea) Ms. Ganna YUDKIVSKA (Ukraine) Mr. Matthew GILLETT (New Zealand)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
    "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
@@ -27626,19 +27588,13 @@
      "pais_id": "POL"
     },
     {
-     "tratamiento": "Ms.",
-     "nombre": "Aua BALDÉ",
-     "pais": "Guinea-Bissau",
-     "pais_id": "GNB"
-    },
-    {
      "tratamiento": "Mr.",
      "nombre": "Mohammed AL-OBAIDI",
      "pais": "Iraq",
      "pais_id": "IRQ"
     }
    ],
-   "titulares_texto": "Ms. Ana Lorena DELGADILLO PEREZ (Mexico) Ms. Gabriella CITRONI (Italy) Ms. Grazyna BARANOWSKA (Poland) Ms. Aua BALDÉ (Guinea-Bissau) Mr. Mohammed AL-OBAIDI (Iraq)",
+   "titulares_texto": "Ms. Ana Lorena DELGADILLO PEREZ (Mexico) Ms. Gabriella CITRONI (Italy) Ms. Grazyna BARANOWSKA (Poland) Mr. Mohammed AL-OBAIDI (Iraq)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
    "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
@@ -30983,15 +30939,9 @@
      "nombre": "Joana DE DEUS PEREIRA",
      "pais": "Portugal",
      "pais_id": "PRT"
-    },
-    {
-     "tratamiento": "Mr.",
-     "nombre": "Ravindran DANIEL JUSTIN",
-     "pais": "India",
-     "pais_id": "IND"
     }
    ],
-   "titulares_texto": "Ms. Jovana JEZDIMIROVIC RANITO (Serbia) Mr. Andrés MACIAS TOLOSA (Colombia) Ms. Michelle SMALL (South Africa) Ms. Joana DE DEUS PEREIRA (Portugal) Mr. Ravindran DANIEL JUSTIN (India)",
+   "titulares_texto": "Ms. Jovana JEZDIMIROVIC RANITO (Serbia) Mr. Andrés MACIAS TOLOSA (Colombia) Ms. Michelle SMALL (South Africa) Ms. Joana DE DEUS PEREIRA (Portugal)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
    "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
@@ -32834,15 +32784,8 @@
    ],
    "actos_verificados": 4,
    "actos_total": 4,
-   "titulares": [
-    {
-     "tratamiento": "Mr.",
-     "nombre": "Graeme REID",
-     "pais": "South Africa",
-     "pais_id": "ZAF"
-    }
-   ],
-   "titulares_texto": "Mr. Graeme REID (South Africa)",
+   "titulares": [],
+   "titulares_texto": "",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
    "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
@@ -33848,7 +33791,7 @@
    "renovacion_anio": "2026",
    "metodos": "",
    "revision": "Acto de creación localizado en la Biblioteca Digital ONU",
-   "nota": "«A/HRC/RES/3610» no tiene registro exacto en la Biblioteca Digital ONU a 2026-10-30; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
+   "nota": "«A/HRC/RES/3610» no tiene registro exacto en la Biblioteca Digital ONU a 2026-10-31; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
    "actos": [
     {
      "rol": "creación",
@@ -33880,7 +33823,7 @@
      "organo": "Consejo de Derechos Humanos",
      "simbolo_fuente": "A/HRC/RES/3610",
      "estado": "NO_ENCONTRADO",
-     "aviso": "«A/HRC/RES/3610» no tiene registro exacto en la Biblioteca Digital ONU a 2026-10-30; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión."
+     "aviso": "«A/HRC/RES/3610» no tiene registro exacto en la Biblioteca Digital ONU a 2026-10-31; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión."
     },
     {
      "rol": "prórroga intermedia",
@@ -34481,15 +34424,8 @@
    ],
    "actos_verificados": 7,
    "actos_total": 7,
-   "titulares": [
-    {
-     "tratamiento": "Mr.",
-     "nombre": "Pedro ARROJO-AGUDO",
-     "pais": "Spain",
-     "pais_id": "ESP"
-    }
-   ],
-   "titulares_texto": "Mr. Pedro ARROJO-AGUDO (Spain)",
+   "titulares": [],
+   "titulares_texto": "",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
    "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=en",
@@ -35381,7 +35317,7 @@
    "renovacion_anio": "2025",
    "metodos": "",
    "revision": "Acto de creación localizado con símbolo corregido (ver nota)",
-   "nota": "La fuente OHCHR cita «E/CN.4/1993/6»; el documento oficial es «E/CN.4/RES/1993/6» (equivalencia inferida por símbolo y título; no se ha leído el texto). «A/HRC/RES/48/» no tiene registro exacto en la Biblioteca Digital ONU a 2026-10-30; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
+   "nota": "La fuente OHCHR cita «E/CN.4/1993/6»; el documento oficial es «E/CN.4/RES/1993/6» (equivalencia inferida por símbolo y título; no se ha leído el texto). «A/HRC/RES/48/» no tiene registro exacto en la Biblioteca Digital ONU a 2026-10-31; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
    "actos": [
     {
      "rol": "creación",
@@ -35534,7 +35470,7 @@
      "organo": "Consejo de Derechos Humanos",
      "simbolo_fuente": "A/HRC/RES/48/",
      "estado": "NO_ENCONTRADO",
-     "aviso": "«A/HRC/RES/48/» no tiene registro exacto en la Biblioteca Digital ONU a 2026-10-30; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión."
+     "aviso": "«A/HRC/RES/48/» no tiene registro exacto en la Biblioteca Digital ONU a 2026-10-31; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión."
     },
     {
      "rol": "prórroga intermedia",
@@ -36025,7 +35961,7 @@
    "renovacion_anio": "2026",
    "metodos": "",
    "revision": "Acto de creación localizado con símbolo corregido (ver nota)",
-   "nota": "La fuente OHCHR cita «E/CN.4/2004/13»; el documento oficial es «E/CN.4/RES/2004/13» (equivalencia inferida por símbolo y título; no se ha leído el texto). La fuente OHCHR cita «A/HRC/31/L.25»; el documento oficial es «A/HRC/RES/31/18» (equivalencia inferida por símbolo y título; no se ha leído el texto). La fuente OHCHR cita «A/HRC/40/L.18»; el documento oficial es «A/HRC/RES/40/20» (equivalencia inferida por símbolo y título; no se ha leído el texto). La fuente OHCHR cita «A/HRC/43/25»; el documento oficial es «A/HRC/RES/43/25» (equivalencia inferida por símbolo y título; no se ha leído el texto). «A/HRC/58/617» no tiene registro exacto en la Biblioteca Digital ONU a 2026-10-30; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
+   "nota": "La fuente OHCHR cita «E/CN.4/2004/13»; el documento oficial es «E/CN.4/RES/2004/13» (equivalencia inferida por símbolo y título; no se ha leído el texto). La fuente OHCHR cita «A/HRC/31/L.25»; el documento oficial es «A/HRC/RES/31/18» (equivalencia inferida por símbolo y título; no se ha leído el texto). La fuente OHCHR cita «A/HRC/40/L.18»; el documento oficial es «A/HRC/RES/40/20» (equivalencia inferida por símbolo y título; no se ha leído el texto). La fuente OHCHR cita «A/HRC/43/25»; el documento oficial es «A/HRC/RES/43/25» (equivalencia inferida por símbolo y título; no se ha leído el texto). «A/HRC/58/617» no tiene registro exacto en la Biblioteca Digital ONU a 2026-10-31; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
    "actos": [
     {
      "rol": "creación",
@@ -36352,7 +36288,7 @@
      "organo": "Consejo de Derechos Humanos",
      "simbolo_fuente": "A/HRC/58/617",
      "estado": "NO_ENCONTRADO",
-     "aviso": "«A/HRC/58/617» no tiene registro exacto en la Biblioteca Digital ONU a 2026-10-30; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión."
+     "aviso": "«A/HRC/58/617» no tiene registro exacto en la Biblioteca Digital ONU a 2026-10-31; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión."
     },
     {
      "rol": "prórroga vigente",
@@ -58059,7 +57995,7 @@
    "id": "V-049",
    "simbolo": "A/HRC/RES/3610",
    "tema": "Relatora Especial sobre las repercusiones negativas de las medidas coercitivas unilaterales en el disfrute de los derechos humanos (2017, prórroga intermedia)",
-   "problema": "«A/HRC/RES/3610» no tiene registro exacto en la Biblioteca Digital ONU a 2026-10-30; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
+   "problema": "«A/HRC/RES/3610» no tiene registro exacto en la Biblioteca Digital ONU a 2026-10-31; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
    "nivel": "ALTA",
    "accion": "Reintentar más adelante o buscar en el informe de sesión.",
    "url": "https://digitallibrary.un.org/"
@@ -58086,7 +58022,7 @@
    "id": "V-059",
    "simbolo": "A/HRC/RES/48/",
    "tema": "Relator Especial sobre la situación de los derechos humanos en Camboya (2021, prórroga intermedia)",
-   "problema": "«A/HRC/RES/48/» no tiene registro exacto en la Biblioteca Digital ONU a 2026-10-30; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
+   "problema": "«A/HRC/RES/48/» no tiene registro exacto en la Biblioteca Digital ONU a 2026-10-31; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
    "nivel": "ALTA",
    "accion": "Reintentar más adelante o buscar en el informe de sesión.",
    "url": "https://digitallibrary.un.org/"
@@ -58104,7 +58040,7 @@
    "id": "V-070",
    "simbolo": "A/HRC/58/617",
    "tema": "Relator Especial sobre la situación de los derechos humanos en la República Popular Democrática de Corea (2025, prórroga intermedia)",
-   "problema": "«A/HRC/58/617» no tiene registro exacto en la Biblioteca Digital ONU a 2026-10-30; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
+   "problema": "«A/HRC/58/617» no tiene registro exacto en la Biblioteca Digital ONU a 2026-10-31; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
    "nivel": "ALTA",
    "accion": "Reintentar más adelante o buscar en el informe de sesión.",
    "url": "https://digitallibrary.un.org/"
