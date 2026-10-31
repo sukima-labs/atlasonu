@@ -1,8 +1,16 @@
 window.NOTICIAS={
  "fuente": "Noticias ONU (news.un.org)",
- "actualizado": "2026-10-31T16:18:02Z",
+ "actualizado": "2026-10-31T23:09:10Z",
  "temas": {
   "todas": [
+   {
+    "titulo": "Cambio climático: Nueva York se protege elevando un parque para contener la subida del nivel del mar",
+    "fecha": "2026-10-31",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542118",
+    "resumen": "Catorce años después del huracán Sandy, Nueva York eleva hasta tres metros el East River Park y construye muros y compuertas ocultas para proteger a más de 110.000 residentes, con una inversión de 2000 millones de dólares. La ONU advierte de que 770 millones…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/10/08-10-2026-NYC-Gov-East-River-02.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
    {
     "titulo": "Gaza, Colombia, VIH, refugiados… Las noticias del viernes",
     "fecha": "2026-10-30",
@@ -12,7 +20,7 @@ window.NOTICIAS={
     "destacada": false
    },
    {
-    "titulo": "Gaza: la expansión de las posiciones israelíes reaviva los temores de una \"limpieza étnica",
+    "titulo": "Gaza: la expansión de las posiciones israelíes reaviva los temores de una \"limpieza étnica\"",
     "fecha": "2026-10-30",
     "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542126",
     "resumen": "Israel pretende ampliar su despliegue militar al 70 % del territorio de Gaza, mientras empuja a los palestinos hacia zonas cada vez más pequeñas y ataca campamentos de desplazados, denuncia ONU Derechos Humanos.",
@@ -154,19 +162,11 @@ window.NOTICIAS={
     "resumen": "Una enfermera que respondía a una alerta de ébola fue asesinada y otro trabajador sanitario resultó gravemente herido. \"Condeno enérgicamente este ataque y pido una investigación exhaustiva\", declara el coordinador de la ONU para el ébola, Julien Harneis,…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/06/19-06-2026-WHO-DR-Congo-ebola-02.jpg/image560x340cropped.jpg",
     "destacada": false
-   },
-   {
-    "titulo": "Construyendo Futuros: el reto de llevar la educación a las fronteras de Venezuela",
-    "fecha": "2026-10-24",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542101",
-    "resumen": "La ONG, nacida del sueño de una adolescente de 17 años, cuenta hoy con más de 150 profesionales y ha impactado a más de 450.000 personas en el país. Su directora general, Jennifer Belisario, explica en una entrevista los retos de operar en zonas remotas, la…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/10/23-10-2026_OCHA_Venezuela_NGO_1.jpg/image560x340cropped.jpg",
-    "destacada": false
    }
   ],
   "derechos": [
    {
-    "titulo": "Gaza: la expansión de las posiciones israelíes reaviva los temores de una \"limpieza étnica",
+    "titulo": "Gaza: la expansión de las posiciones israelíes reaviva los temores de una \"limpieza étnica\"",
     "fecha": "2026-10-30",
     "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542126",
     "resumen": "Israel pretende ampliar su despliegue militar al 70 % del territorio de Gaza, mientras empuja a los palestinos hacia zonas cada vez más pequeñas y ataca campamentos de desplazados, denuncia ONU Derechos Humanos.",
