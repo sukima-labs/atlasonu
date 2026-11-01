@@ -3,8 +3,14 @@
   <title>ATLAS ONU: qué cambió en las fuentes oficiales</title>
   <subtitle>Cambios detectados en el índice de mandatos de OHCHR y en la Biblioteca Digital de la ONU. Catálogo no oficial.</subtitle>
   <id>tag:atlas-onu,2026:cambios</id>
-  <updated>2026-10-31T00:00:00Z</updated>
+  <updated>2026-11-01T00:00:00Z</updated>
   <rights>Código AGPL-3.0; datos de las fuentes oficiales de la ONU. Autoría visible obligatoria.</rights>
+  <entry>
+    <title>2026-11-01: 1 cambio(s)</title>
+    <id>tag:atlas-onu,2026-11-01:cambios</id>
+    <updated>2026-11-01T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;1 resolución(es) nueva(s) localizada(s): A/HRC/RES/63/34&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
   <entry>
     <title>2026-10-31: 2 cambio(s)</title>
     <id>tag:atlas-onu,2026-10-31:cambios</id>
