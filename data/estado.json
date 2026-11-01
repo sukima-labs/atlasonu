@@ -1,12 +1,12 @@
 {
- "revisado_el": "2026-10-31T23:09:11+00:00",
- "datos_del": "2026-10-31",
+ "revisado_el": "2026-11-01T02:22:26+00:00",
+ "datos_del": "2026-11-01",
  "hubo_cambios_en_esta_revision": true,
- "ultimo_cambio_el": "2026-10-31T23:09:11+00:00",
+ "ultimo_cambio_el": "2026-11-01T02:22:26+00:00",
  "contadores": {
   "mandatos": 57,
   "actos": 421,
-  "localizados": 401,
+  "localizados": 402,
   "paises": 196,
   "mecanismos": 33
  },
@@ -33,6 +33,13 @@
   }
  ],
  "ultimos_cambios": [
+  {
+   "fecha": "2026-11-01",
+   "n": 1,
+   "ejemplos": [
+    "1 resolución(es) nueva(s) localizada(s): A/HRC/RES/63/34"
+   ]
+  },
   {
    "fecha": "2026-10-31",
    "n": 2,
