@@ -1,6 +1,6 @@
 {
 "fuente": "Noticias ONU (news.un.org)",
-"actualizado": "2026-11-02T11:08:39Z",
+"actualizado": "2026-11-02T20:55:39Z",
 "total": 68,
 "notas": [
 {
@@ -37,7 +37,7 @@
 "resumen": "En Buenos Aires, jóvenes debatieron sobre entornos digitales en el marco de la iniciativa Círculos de la Paz de Naciones Unidas. Desinformación, el impacto de las redes sociales en la salud mental y crecer en la era de la inteligencia artificial fueron los…",
 "visto": "2026-11-02",
 "derechos": false,
-"americas": false
+"americas": true
 },
 {
 "titulo": "Cambio climático: Nueva York se protege elevando un parque para contener la subida del nivel del mar",

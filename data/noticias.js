@@ -1,6 +1,6 @@
 window.NOTICIAS={
  "fuente": "Noticias ONU (news.un.org)",
- "actualizado": "2026-11-02T11:08:39Z",
+ "actualizado": "2026-11-02T20:55:39Z",
  "temas": {
   "todas": [
    {
@@ -308,6 +308,13 @@ window.NOTICIAS={
   ],
   "americas": [
    {
+    "titulo": "Desconectarse para conectar: la juventud argentina debate los retos de la era digital",
+    "fecha": "2026-11-01",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542125",
+    "resumen": "En Buenos Aires, jóvenes debatieron sobre entornos digitales en el marco de la iniciativa Círculos de la Paz de Naciones Unidas. Desinformación, el impacto de las redes sociales en la salud mental y crecer en la era de la inteligencia artificial fueron los…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/10/29-10-2026_UN_Argentina_1.jpg/image560x340cropped.jpg"
+   },
+   {
     "titulo": "Haití: la inseguridad alimentaria en camino de alcanzar niveles récord",
     "fecha": "2026-10-29",
     "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542120",
@@ -439,13 +446,6 @@ window.NOTICIAS={
     "enlace": "https://news.un.org/feed/view/es/story/2026/09/1541999",
     "resumen": "La inteligencia artificial generativa, las plataformas digitales y el llamado “crimen como servicio” están reduciendo las barreras para que las redes criminales amplíen sus operaciones y alcancen a víctimas en todo el mundo. Un nuevo informe de la ONU señala…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/12-06-2024-UNODC-Philippines-5-LG.jpg/image560x340cropped.jpg"
-   },
-   {
-    "titulo": "México: Las mujeres que buscan a personas desaparecidas enfrentan violencia extrema",
-    "fecha": "2026-09-30",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/09/1541997",
-    "resumen": "Las mujeres que buscan a familiares y otras personas desaparecidas en México están expuestas a desapariciones, asesinatos y ataques, en un contexto de impunidad casi total, advierten expertos independientes. Los especialistas recordaron que la búsqueda es…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/28-07-2023-CEE-Mexico-disappearances-01.jpg/image560x340cropped.jpg"
    }
   ]
  }
