@@ -1,8 +1,40 @@
 window.NOTICIAS={
  "fuente": "Noticias ONU (news.un.org)",
- "actualizado": "2026-11-02T02:38:49Z",
+ "actualizado": "2026-11-02T11:08:39Z",
  "temas": {
   "todas": [
+   {
+    "titulo": "COP17: Los países acuerdan una hoja de ruta para acelerar la protección de la biodiversidad",
+    "fecha": "2026-11-01",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542131",
+    "resumen": "La cumbre de biodiversidad de la ONU concluyó en Armenia con una hoja de ruta para acelerar el cumplimiento de los objetivos mundiales de protección de la naturaleza antes de 2030. Los países anunciaron cerca de 2000 millones de dólares en nueva financiación…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/10/17-10-26-ONUNews_Fungi01.png/image560x340cropped.jpg",
+    "destacada": false
+   },
+   {
+    "titulo": "Desconectarse para conectar: la juventud argentina debate los retos de la era digital",
+    "fecha": "2026-11-01",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542125",
+    "resumen": "En Buenos Aires, jóvenes debatieron sobre entornos digitales en el marco de la iniciativa Círculos de la Paz de Naciones Unidas. Desinformación, el impacto de las redes sociales en la salud mental y crecer en la era de la inteligencia artificial fueron los…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/10/29-10-2026_UN_Argentina_1.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
+   {
+    "titulo": "La IA está cambiando cómo pensamos: ¿Nos daremos cuenta a tiempo?",
+    "fecha": "2026-11-01",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542129",
+    "resumen": "Es muy tentador ahorrarle al cerebro el pensar del todo\". Solo entre el cinco y el diez por ciento de los trabajadores usa la IA para liberar capacidad mental; la mayoría externaliza también el análisis y la decisión. \"Mantén tu cerebro en el juego\", pide un…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/06/29-06-2026-AdobeStock_AI_01.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
+   {
+    "titulo": "Sáhara Occidental: La ONU reafirma su compromiso con una solución pacífica tras el fin de la misión de paz MINURSO",
+    "fecha": "2026-11-01",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542130",
+    "resumen": "La misión de paz de Naciones Unidas en el Sáhara Occidental concluyó sus operaciones después de que el Consejo de Seguridad no lograra un acuerdo para renovar su mandato. El Secretario General reafirmó el derecho del pueblo saharaui a la libre determinación,…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/assets/2018/12/06-12-2018-MINURSO-NICA440800.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
    {
     "titulo": "Cambio climático: Nueva York se protege elevando un parque para contener la subida del nivel del mar",
     "fecha": "2026-10-31",
@@ -129,38 +161,6 @@ window.NOTICIAS={
     "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542108",
     "resumen": "Un año después de concluir que se estaba cometiendo un genocidio en Gaza, una comisión independiente de investigación de la ONU acusa a Israel de cometer crímenes de lesa humanidad, incluido el exterminio, contra la población palestina de Cisjordania. Su…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/10-12-2025-UNICEF-Gaza-01.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "Palestina, Ucrania, niños en conflictos, Ébola… Las noticias del lunes",
-    "fecha": "2026-10-26",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542106",
-    "resumen": "Una Comisión acusa a Israel de crímenes de guerra en los territorios palestinos ocupados, en un contexto de genocidio continuado en Gaza. Acusan a Rusia de crímenes de guerra por sus ataques a la energía en Ucrania. Denuncian récord de violaciones graves…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/09/11-09-2026_UNICEF_West_Bank.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "Niños en conflictos: 30 años de promesas y un número récord de violaciones",
-    "fecha": "2026-10-26",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542105",
-    "resumen": "En 2025 se registraron 38.558 violaciones graves, un récord desde la creación del mandato en 1996, y por primera vez las fuerzas gubernamentales son las principales responsables. UNICEF alerta de que más del 70 % de los niños muertos o mutilados lo fueron…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/08/13-08-2026-UNICEF-Gaza-03.jpg/image560x340cropped.jpg",
-    "destacada": true
-   },
-   {
-    "titulo": "Una Comisión acusa a Rusia de crímenes de guerra por sus ataques a la energía en Ucrania",
-    "fecha": "2026-10-26",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542104",
-    "resumen": "La Comisión de la ONU advierte de que \"el próximo invierno será más difícil de soportar\" debido a los ataques rusos a la energía. La investigación también documenta la imposición de la llamada educación patriótica y el entrenamiento militar a los niños…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/10/19-10-2026-UNOCHA-Ukraine-06.jpg/image560x340cropped.jpg",
-    "destacada": true
-   },
-   {
-    "titulo": "Ébola: responsables de la ONU condenan el asesinato de una enfermera en la República Democrática del Congo",
-    "fecha": "2026-10-26",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542103",
-    "resumen": "Una enfermera que respondía a una alerta de ébola fue asesinada y otro trabajador sanitario resultó gravemente herido. \"Condeno enérgicamente este ataque y pido una investigación exhaustiva\", declara el coordinador de la ONU para el ébola, Julien Harneis,…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/06/19-06-2026-WHO-DR-Congo-ebola-02.jpg/image560x340cropped.jpg",
     "destacada": false
    }
   ],
