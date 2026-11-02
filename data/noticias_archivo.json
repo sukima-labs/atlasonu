@@ -1,8 +1,44 @@
 {
 "fuente": "Noticias ONU (news.un.org)",
-"actualizado": "2026-11-02T02:38:49Z",
-"total": 64,
+"actualizado": "2026-11-02T11:08:39Z",
+"total": 68,
 "notas": [
+{
+"titulo": "COP17: Los países acuerdan una hoja de ruta para acelerar la protección de la biodiversidad",
+"fecha": "2026-11-01",
+"enlace": "https://news.un.org/feed/view/es/story/2026/11/1542131",
+"resumen": "La cumbre de biodiversidad de la ONU concluyó en Armenia con una hoja de ruta para acelerar el cumplimiento de los objetivos mundiales de protección de la naturaleza antes de 2030. Los países anunciaron cerca de 2000 millones de dólares en nueva financiación…",
+"visto": "2026-11-02",
+"derechos": false,
+"americas": false
+},
+{
+"titulo": "Sáhara Occidental: La ONU reafirma su compromiso con una solución pacífica tras el fin de la misión de paz MINURSO",
+"fecha": "2026-11-01",
+"enlace": "https://news.un.org/feed/view/es/story/2026/11/1542130",
+"resumen": "La misión de paz de Naciones Unidas en el Sáhara Occidental concluyó sus operaciones después de que el Consejo de Seguridad no lograra un acuerdo para renovar su mandato. El Secretario General reafirmó el derecho del pueblo saharaui a la libre determinación,…",
+"visto": "2026-11-02",
+"derechos": false,
+"americas": false
+},
+{
+"titulo": "La IA está cambiando cómo pensamos: ¿Nos daremos cuenta a tiempo?",
+"fecha": "2026-11-01",
+"enlace": "https://news.un.org/feed/view/es/story/2026/11/1542129",
+"resumen": "Es muy tentador ahorrarle al cerebro el pensar del todo\". Solo entre el cinco y el diez por ciento de los trabajadores usa la IA para liberar capacidad mental; la mayoría externaliza también el análisis y la decisión. \"Mantén tu cerebro en el juego\", pide un…",
+"visto": "2026-11-02",
+"derechos": false,
+"americas": false
+},
+{
+"titulo": "Desconectarse para conectar: la juventud argentina debate los retos de la era digital",
+"fecha": "2026-11-01",
+"enlace": "https://news.un.org/feed/view/es/story/2026/11/1542125",
+"resumen": "En Buenos Aires, jóvenes debatieron sobre entornos digitales en el marco de la iniciativa Círculos de la Paz de Naciones Unidas. Desinformación, el impacto de las redes sociales en la salud mental y crecer en la era de la inteligencia artificial fueron los…",
+"visto": "2026-11-02",
+"derechos": false,
+"americas": false
+},
 {
 "titulo": "Cambio climático: Nueva York se protege elevando un parque para contener la subida del nivel del mar",
 "fecha": "2026-10-31",
