@@ -1,8 +1,16 @@
 window.NOTICIAS={
  "fuente": "Noticias ONU (news.un.org)",
- "actualizado": "2026-11-03T18:37:21Z",
+ "actualizado": "2026-11-03T23:09:25Z",
  "temas": {
   "todas": [
+   {
+    "titulo": "Ébola, brecha de género, brecha digital… las noticias del martes",
+    "fecha": "2026-11-03",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542136",
+    "resumen": "Con más de 10.000 casos confirmados y las 5000 muertes, la respuesta al brote de ébola en la República Democrática del Congo sigue yendo por detrás de la transmisión. Las mujeres solo ocupan el 30 % de los puestos directivos en el mundo. El 76 % de la…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/10/23-10-2026-WHO-DRC-ebola.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
    {
     "titulo": "Seis de cada siete asesinatos de periodistas quedan impunes",
     "fecha": "2026-11-02",
@@ -154,14 +162,6 @@ window.NOTICIAS={
     "resumen": "Un debate cargado de alta tensión diplomática se abrió este martes para dirimir una vez más la cuestión del bloqueo económico que el país norteamericano impuso a Cuba en 1960. Mañana miércoles, 28 de octubre, se celebrará la votación.",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/27-10-2015-Unsplash-Havana-Cuba-01.jpg/image560x340cropped.jpg",
     "destacada": true
-   },
-   {
-    "titulo": "Emisiones, Ucrania, ébola, trabajo doméstico… Las noticias del martes",
-    "fecha": "2026-10-27",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542110",
-    "resumen": "Los niveles récord de dióxido de carbono nos afectarán durante siglos. Ucrania: Los bombardeos amenazan con dejar a la población otro invierno sin calefacción. La OMS inicia un ensayo para comprobar si las vacunas protegen contra el ébola. El 83% de los…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/21-03-2022_UNSPLASH_Pollution.jpg/image560x340cropped.jpg",
-    "destacada": false
    }
   ],
   "derechos": [
