@@ -1,12 +1,12 @@
 {
- "revisado_el": "2026-11-03T04:04:53+00:00",
+ "revisado_el": "2026-11-03T11:09:21+00:00",
  "datos_del": "2026-11-03",
  "hubo_cambios_en_esta_revision": true,
- "ultimo_cambio_el": "2026-11-03T04:04:53+00:00",
+ "ultimo_cambio_el": "2026-11-03T11:09:21+00:00",
  "contadores": {
   "mandatos": 57,
   "actos": 421,
-  "localizados": 402,
+  "localizados": 401,
   "paises": 196,
   "mecanismos": 33
  },
