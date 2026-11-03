@@ -1,8 +1,26 @@
 {
 "fuente": "Noticias ONU (news.un.org)",
-"actualizado": "2026-11-03T04:04:53Z",
-"total": 68,
+"actualizado": "2026-11-03T11:09:21Z",
+"total": 70,
 "notas": [
+{
+"titulo": "Seis de cada siete asesinatos de periodistas quedan impunes",
+"fecha": "2026-11-02",
+"enlace": "https://news.un.org/feed/view/es/story/2026/11/1542134",
+"resumen": "Los territorios palestinos ocupados por Israel registraron el mayor número de asesinatos en el bienio 2024-2025, con 62 muertes, dentro de la región de los Estados Árabes, que sumó 97 casos, seguida de América Latina y el Caribe (37), Asia y el Pacífico…",
+"visto": "2026-11-03",
+"derechos": false,
+"americas": false
+},
+{
+"titulo": "Periodistas asesinados, desinformación sobre migrantes, Ucrania, Sáhara Occidental… las noticias del lunes",
+"fecha": "2026-11-02",
+"enlace": "https://news.un.org/feed/view/es/story/2026/11/1542133",
+"resumen": "En 2024-2025, fueron asesinados 189 periodistas. La desinformación amplificada por la inteligencia artificial está convirtiendo a los migrantes en \"objetivos\" de odio y violencia. Más de 400 evacuados de Oleshky, en Ucrania, tras un breve alto el fuego,…",
+"visto": "2026-11-03",
+"derechos": false,
+"americas": false
+},
 {
 "titulo": "COP17: Los países acuerdan una hoja de ruta para acelerar la protección de la biodiversidad",
 "fecha": "2026-11-01",
