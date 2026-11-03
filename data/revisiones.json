@@ -1,5 +1,29 @@
 [
  {
+  "inicio": "2026-11-03T23:02:11+00:00",
+  "fin": "2026-11-03T23:09:26+00:00",
+  "duracion_s": 435,
+  "quien": "Mini PC (atlas-onu-minipc)",
+  "revisado": [
+   "Índice de mandatos de OHCHR",
+   "Biblioteca Digital de la ONU (símbolos)",
+   "Colección de Tratados (ratificaciones)",
+   "Visitas y comunicaciones de OHCHR (países y regiones)",
+   "Textos literales de tratados",
+   "Documentos oficiales por país"
+  ],
+  "documentos_marco": "conservado",
+  "noticias": "ok",
+  "resultado": "cambios en los datos",
+  "contadores": {
+   "mandatos": 57,
+   "actos": 421,
+   "localizados": 401,
+   "paises": 196,
+   "mecanismos": 33
+  }
+ },
+ {
   "inicio": "2026-11-03T18:27:49+00:00",
   "fin": "2026-11-03T18:37:22+00:00",
   "duracion_s": 573,
