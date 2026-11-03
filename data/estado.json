@@ -1,12 +1,12 @@
 {
- "revisado_el": "2026-11-02T23:08:27+00:00",
- "datos_del": "2026-11-02",
+ "revisado_el": "2026-11-03T04:04:53+00:00",
+ "datos_del": "2026-11-03",
  "hubo_cambios_en_esta_revision": true,
- "ultimo_cambio_el": "2026-11-02T23:08:27+00:00",
+ "ultimo_cambio_el": "2026-11-03T04:04:53+00:00",
  "contadores": {
   "mandatos": 57,
   "actos": 421,
-  "localizados": 401,
+  "localizados": 402,
   "paises": 196,
   "mecanismos": 33
  },
@@ -33,6 +33,13 @@
   }
  ],
  "ultimos_cambios": [
+  {
+   "fecha": "2026-11-03",
+   "n": 1,
+   "ejemplos": [
+    "1 resolución(es) nueva(s) localizada(s): A/HRC/RES/63/34"
+   ]
+  },
   {
    "fecha": "2026-11-02",
    "n": 1,
@@ -83,15 +90,6 @@
    "n": 1,
    "ejemplos": [
     "1 resolución(es) nueva(s) localizada(s): A/HRC/RES/63/34"
-   ]
-  },
-  {
-   "fecha": "2026-10-29",
-   "n": 8,
-   "ejemplos": [
-    "Timor-Leste: 1 observación(es) final(es) nueva(s); la última es CRC/C/TLS/CO/4",
-    "Eslovenia: 1 observación(es) final(es) nueva(s); la última es CRC/C/SVN/CO/5-6",
-    "Tayikistán: 1 observación(es) final(es) nueva(s); la última es CRC/C/TJK/CO/6-7"
    ]
   }
  ]

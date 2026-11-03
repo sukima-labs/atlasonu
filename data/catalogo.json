@@ -24834,11 +24834,11 @@
  ],
  "regiones_fuente": {
   "url": "https://spcommreports.ohchr.org/Tmsearch/TMDocuments",
-  "consultado": "2026-11-02"
+  "consultado": "2026-11-03"
  },
  "paises_fuente": {
   "url": "https://spinternet.ohchr.org/ViewCountryVisits.aspx?visitType=all",
-  "consultado": "2026-11-02"
+  "consultado": "2026-11-03"
  },
  "tratados": [
   {
@@ -25100,7 +25100,7 @@
  ],
  "tratados_fuente": {
   "url": "https://treaties.un.org/Pages/Treaties.aspx?id=4&subid=A&clang=_en",
-  "consultado": "2026-11-02"
+  "consultado": "2026-11-03"
  },
  "mecanismos": [
   {
@@ -26584,7 +26584,7 @@
    }
   }
  ],
- "consultado": "2026-11-02",
+ "consultado": "2026-11-03",
  "fuentes": [
   "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM",
   "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM",
@@ -27954,7 +27954,7 @@
    "renovacion_anio": "2026",
    "metodos": "",
    "revision": "Acto de creación localizado con símbolo corregido (ver nota)",
-   "nota": "La fuente OHCHR cita «E/CN.4/RES/1980/20/(XXXVI)»; el documento oficial es «E/CN.4/RES/20(XXXVI)» (equivalencia inferida por símbolo y título; no se ha leído el texto). «A/HRC/RES/63/34» no tiene registro exacto en la Biblioteca Digital ONU a 2026-11-02; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
+   "nota": "La fuente OHCHR cita «E/CN.4/RES/1980/20/(XXXVI)»; el documento oficial es «E/CN.4/RES/20(XXXVI)» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
    "actos": [
     {
      "rol": "creación",
@@ -28160,11 +28160,26 @@
      "anio": "2026",
      "organo": "Consejo de Derechos Humanos",
      "simbolo_fuente": "A/HRC/RES/63/34",
-     "estado": "NO_ENCONTRADO",
-     "aviso": "«A/HRC/RES/63/34» no tiene registro exacto en la Biblioteca Digital ONU a 2026-11-02; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión."
+     "estado": "VERIFICADO",
+     "simbolo": "A/HRC/RES/63/34",
+     "titulo_oficial": "Enforced or involuntary disappearances",
+     "adoptada": "2026-10-07",
+     "sesion_nota": "",
+     "ubicacion": [],
+     "padres": [],
+     "borradores": [
+      "A/HRC/63/L.5",
+      "A/HRC/63/SR.43"
+     ],
+     "votacion": "Adopted without vote, 43rd meeting",
+     "registro": "https://digitallibrary.un.org/record/4131534",
+     "pdf": {
+      "en": "https://digitallibrary.un.org/record/4131534/files/A_HRC_RES_63_34-FR.pdf"
+     },
+     "via_borrador": false
     }
    ],
-   "actos_verificados": 8,
+   "actos_verificados": 9,
    "actos_total": 9,
    "titulares": [
     {
@@ -34383,7 +34398,7 @@
    "renovacion_anio": "2026",
    "metodos": "",
    "revision": "Acto de creación localizado en la Biblioteca Digital ONU",
-   "nota": "«A/HRC/RES/3610» no tiene registro exacto en la Biblioteca Digital ONU a 2026-11-02; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
+   "nota": "«A/HRC/RES/3610» no tiene registro exacto en la Biblioteca Digital ONU a 2026-11-03; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
    "actos": [
     {
      "rol": "creación",
@@ -34415,7 +34430,7 @@
      "organo": "Consejo de Derechos Humanos",
      "simbolo_fuente": "A/HRC/RES/3610",
      "estado": "NO_ENCONTRADO",
-     "aviso": "«A/HRC/RES/3610» no tiene registro exacto en la Biblioteca Digital ONU a 2026-11-02; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión."
+     "aviso": "«A/HRC/RES/3610» no tiene registro exacto en la Biblioteca Digital ONU a 2026-11-03; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión."
     },
     {
      "rol": "prórroga intermedia",
@@ -35903,7 +35918,7 @@
    "renovacion_anio": "2025",
    "metodos": "",
    "revision": "Acto de creación localizado con símbolo corregido (ver nota)",
-   "nota": "La fuente OHCHR cita «E/CN.4/1993/6»; el documento oficial es «E/CN.4/RES/1993/6» (equivalencia inferida por símbolo y título; no se ha leído el texto). «A/HRC/RES/48/» no tiene registro exacto en la Biblioteca Digital ONU a 2026-11-02; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
+   "nota": "La fuente OHCHR cita «E/CN.4/1993/6»; el documento oficial es «E/CN.4/RES/1993/6» (equivalencia inferida por símbolo y título; no se ha leído el texto). «A/HRC/RES/48/» no tiene registro exacto en la Biblioteca Digital ONU a 2026-11-03; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
    "actos": [
     {
      "rol": "creación",
@@ -36056,7 +36071,7 @@
      "organo": "Consejo de Derechos Humanos",
      "simbolo_fuente": "A/HRC/RES/48/",
      "estado": "NO_ENCONTRADO",
-     "aviso": "«A/HRC/RES/48/» no tiene registro exacto en la Biblioteca Digital ONU a 2026-11-02; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión."
+     "aviso": "«A/HRC/RES/48/» no tiene registro exacto en la Biblioteca Digital ONU a 2026-11-03; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión."
     },
     {
      "rol": "prórroga intermedia",
@@ -36547,7 +36562,7 @@
    "renovacion_anio": "2026",
    "metodos": "",
    "revision": "Acto de creación localizado con símbolo corregido (ver nota)",
-   "nota": "La fuente OHCHR cita «E/CN.4/2004/13»; el documento oficial es «E/CN.4/RES/2004/13» (equivalencia inferida por símbolo y título; no se ha leído el texto). La fuente OHCHR cita «A/HRC/31/L.25»; el documento oficial es «A/HRC/RES/31/18» (equivalencia inferida por símbolo y título; no se ha leído el texto). La fuente OHCHR cita «A/HRC/40/L.18»; el documento oficial es «A/HRC/RES/40/20» (equivalencia inferida por símbolo y título; no se ha leído el texto). La fuente OHCHR cita «A/HRC/43/25»; el documento oficial es «A/HRC/RES/43/25» (equivalencia inferida por símbolo y título; no se ha leído el texto). «A/HRC/58/617» no tiene registro exacto en la Biblioteca Digital ONU a 2026-11-02; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
+   "nota": "La fuente OHCHR cita «E/CN.4/2004/13»; el documento oficial es «E/CN.4/RES/2004/13» (equivalencia inferida por símbolo y título; no se ha leído el texto). La fuente OHCHR cita «A/HRC/31/L.25»; el documento oficial es «A/HRC/RES/31/18» (equivalencia inferida por símbolo y título; no se ha leído el texto). La fuente OHCHR cita «A/HRC/40/L.18»; el documento oficial es «A/HRC/RES/40/20» (equivalencia inferida por símbolo y título; no se ha leído el texto). La fuente OHCHR cita «A/HRC/43/25»; el documento oficial es «A/HRC/RES/43/25» (equivalencia inferida por símbolo y título; no se ha leído el texto). «A/HRC/58/617» no tiene registro exacto en la Biblioteca Digital ONU a 2026-11-03; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
    "actos": [
     {
      "rol": "creación",
@@ -36874,7 +36889,7 @@
      "organo": "Consejo de Derechos Humanos",
      "simbolo_fuente": "A/HRC/58/617",
      "estado": "NO_ENCONTRADO",
-     "aviso": "«A/HRC/58/617» no tiene registro exacto en la Biblioteca Digital ONU a 2026-11-02; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión."
+     "aviso": "«A/HRC/58/617» no tiene registro exacto en la Biblioteca Digital ONU a 2026-11-03; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión."
     },
     {
      "rol": "prórroga vigente",
@@ -40968,6 +40983,51 @@
   },
   "~A/HRC/54/SR.46": {
    "ref": "A/HRC/RES/54/14"
+  },
+  "A/HRC/RES/63/34": {
+   "simbolo": "A/HRC/RES/63/34",
+   "titulo": "Enforced or involuntary disappearances",
+   "adoptada": "2026-10-07",
+   "borradores": [
+    "A/HRC/63/L.5",
+    "A/HRC/63/SR.43"
+   ],
+   "votacion": "Adopted without vote, 43rd meeting",
+   "registro": "https://digitallibrary.un.org/record/4131534",
+   "pdf": {
+    "en": "https://digitallibrary.un.org/record/4131534/files/A_HRC_RES_63_34-FR.pdf"
+   },
+   "sesion_nota": "",
+   "ubicacion": [],
+   "padres": [],
+   "mandatos": [
+    "Working Group on Enforced or Involuntary Disappearances"
+   ],
+   "texto": {
+    "descartadas_por_no_coincidir": [],
+    "estado": "TEXTO_DIRECTO",
+    "fuentes": [
+     {
+      "lengua": "en",
+      "tipo": "registro",
+      "url": "https://digitallibrary.un.org/record/4131534/files/A_HRC_RES_63_34-FR.pdf",
+      "validado": null
+     },
+     {
+      "lengua": "es",
+      "tipo": "ods",
+      "url": "https://documents.un.org/api/symbol/access?s=A/HRC/RES/63/34&l=es&t=pdf",
+      "validado": true
+     }
+    ],
+    "informe_sesion": []
+   }
+  },
+  "~A/HRC/63/L.5": {
+   "ref": "A/HRC/RES/63/34"
+  },
+  "~A/HRC/63/SR.43": {
+   "ref": "A/HRC/RES/63/34"
   },
   "A/HRC/RES/8/4": {
    "simbolo": "A/HRC/RES/8/4",
@@ -58480,15 +58540,6 @@
   },
   {
    "id": "V-009",
-   "simbolo": "A/HRC/RES/63/34",
-   "tema": "Grupo de Trabajo sobre las Desapariciones Forzadas o Involuntarias (2026, prórroga vigente)",
-   "problema": "«A/HRC/RES/63/34» no tiene registro exacto en la Biblioteca Digital ONU a 2026-11-02; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
-   "nivel": "ALTA",
-   "accion": "Reintentar más adelante o buscar en el informe de sesión.",
-   "url": "https://digitallibrary.un.org/"
-  },
-  {
-   "id": "V-010",
    "simbolo": "E/CN.4/1998/33",
    "tema": "Relatora Especial sobre el derecho a la educación (1998, creación)",
    "problema": "«E/CN.4/RES/1998/33» existe, pero el título del registro («Question of the realization in all countries of the economic, social and cultural rights contained in the Universal Declaration of Human Rights and in the International Covenant on Economic, Social and Cultural Rights, and study of special problems which the developing countries face in their efforts to achieve these human rights») no menciona el mandato; en resoluciones antiguas suele ser el punto del orden del día. Cotejar el texto antes de citar.",
@@ -58497,7 +58548,7 @@
    "url": "https://digitallibrary.un.org/record/253939"
   },
   {
-   "id": "V-020",
+   "id": "V-019",
    "simbolo": "E/CN.4/2000/9",
    "tema": "Relator Especial sobre una vivienda adecuada como elemento integrante del derecho a un nivel de vida adecuado (2000, creación)",
    "problema": "«E/CN.4/RES/2000/9» existe, pero el título del registro («Question of the realization in all countries of the economic, social and cultural rights contained in the Universal Declaration of Human Rights and in the International Covenant on Economic, Social and Cultural Rights, and study of special problems which the developing countries face in their efforts to achieve these human rights») no menciona el mandato; en resoluciones antiguas suele ser el punto del orden del día. Cotejar el texto antes de citar.",
@@ -58506,7 +58557,7 @@
    "url": "https://digitallibrary.un.org/record/414235"
   },
   {
-   "id": "V-046",
+   "id": "V-045",
    "simbolo": "E/CN.4/1995/81",
    "tema": "Relatora Especial sobre las implicaciones para los derechos humanos de la gestión y eliminación ecológicamente racionales de las sustancias y los desechos peligrosos (1995, creación)",
    "problema": "«E/CN.4/RES/1995/81» existe, pero el título del registro («Adverse effects of the illicit movement and dumping of toxic and dangerous products and wastes on the enjoyment of human rights») no menciona el mandato; en resoluciones antiguas suele ser el punto del orden del día. Cotejar el texto antes de citar.",
@@ -58515,7 +58566,7 @@
    "url": "https://digitallibrary.un.org/record/173803"
   },
   {
-   "id": "V-047",
+   "id": "V-046",
    "simbolo": "E/CN.4/1998/12",
    "tema": "Relatora Especial sobre las implicaciones para los derechos humanos de la gestión y eliminación ecológicamente racionales de las sustancias y los desechos peligrosos (1998, prórroga intermedia)",
    "problema": "«E/CN.4/RES/1998/12» existe, pero el título del registro («Adverse effects of the illicit movement and dumping of toxic and dangerous products and wastes on the enjoyment of human rights») no menciona el mandato; en resoluciones antiguas suele ser el punto del orden del día. Cotejar el texto antes de citar.",
@@ -58524,7 +58575,7 @@
    "url": "https://digitallibrary.un.org/record/253017"
   },
   {
-   "id": "V-048",
+   "id": "V-047",
    "simbolo": "E/CN.4/2001/35",
    "tema": "Relatora Especial sobre las implicaciones para los derechos humanos de la gestión y eliminación ecológicamente racionales de las sustancias y los desechos peligrosos (2001, prórroga intermedia)",
    "problema": "«E/CN.4/RES/2001/35» existe, pero el título del registro («Adverse effects of the illicit movement and dumping of toxic and dangerous products and wastes on the enjoyment of human rights») no menciona el mandato; en resoluciones antiguas suele ser el punto del orden del día. Cotejar el texto antes de citar.",
@@ -58533,7 +58584,7 @@
    "url": "https://digitallibrary.un.org/record/439987"
   },
   {
-   "id": "V-049",
+   "id": "V-048",
    "simbolo": "E/CN.4/2004/17",
    "tema": "Relatora Especial sobre las implicaciones para los derechos humanos de la gestión y eliminación ecológicamente racionales de las sustancias y los desechos peligrosos (2004, prórroga intermedia)",
    "problema": "«E/CN.4/RES/2004/17» existe, pero el título del registro («Adverse effects of the illicit movement and dumping of toxic and dangerous products and wastes on the enjoyment of human rights») no menciona el mandato; en resoluciones antiguas suele ser el punto del orden del día. Cotejar el texto antes de citar.",
@@ -58542,16 +58593,16 @@
    "url": "https://digitallibrary.un.org/record/521871"
   },
   {
-   "id": "V-050",
+   "id": "V-049",
    "simbolo": "A/HRC/RES/3610",
    "tema": "Relatora Especial sobre las repercusiones negativas de las medidas coercitivas unilaterales en el disfrute de los derechos humanos (2017, prórroga intermedia)",
-   "problema": "«A/HRC/RES/3610» no tiene registro exacto en la Biblioteca Digital ONU a 2026-11-02; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
+   "problema": "«A/HRC/RES/3610» no tiene registro exacto en la Biblioteca Digital ONU a 2026-11-03; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
    "nivel": "ALTA",
    "accion": "Reintentar más adelante o buscar en el informe de sesión.",
    "url": "https://digitallibrary.un.org/"
   },
   {
-   "id": "V-052",
+   "id": "V-051",
    "simbolo": "A/HRC/41/L.5",
    "tema": "Relatora Especial sobre la violencia contra las mujeres y las niñas, sus causas y consecuencias (2019, prórroga intermedia)",
    "problema": "«A/HRC/41/L.5» es un borrador (L.); la Biblioteca Digital no lo vincula a la resolución adoptada.",
@@ -58560,7 +58611,7 @@
    "url": "https://digitallibrary.un.org/record/3824711"
   },
   {
-   "id": "V-055",
+   "id": "V-054",
    "simbolo": "A/HRC/41/L.6/Rev.1",
    "tema": "Grupo de Trabajo sobre la discriminación contra las mujeres y las niñas (2019, prórroga intermedia)",
    "problema": "«A/HRC/41/L.6/Rev.1» es un borrador (L.); la Biblioteca Digital no lo vincula a la resolución adoptada.",
@@ -58569,16 +58620,16 @@
    "url": "https://digitallibrary.un.org/record/3824706"
   },
   {
-   "id": "V-060",
+   "id": "V-059",
    "simbolo": "A/HRC/RES/48/",
    "tema": "Relator Especial sobre la situación de los derechos humanos en Camboya (2021, prórroga intermedia)",
-   "problema": "«A/HRC/RES/48/» no tiene registro exacto en la Biblioteca Digital ONU a 2026-11-02; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
+   "problema": "«A/HRC/RES/48/» no tiene registro exacto en la Biblioteca Digital ONU a 2026-11-03; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
    "nivel": "ALTA",
    "accion": "Reintentar más adelante o buscar en el informe de sesión.",
    "url": "https://digitallibrary.un.org/"
   },
   {
-   "id": "V-064",
+   "id": "V-063",
    "simbolo": "A/HRC/36/L.18/Rev.1",
    "tema": "Experto independiento sobre la situación de los derechos humanos en la República Centroafricana (2017, prórroga intermedia)",
    "problema": "«A/HRC/36/L.18/Rev.1» es un borrador (L.); la Biblioteca Digital no lo vincula a la resolución adoptada.",
@@ -58587,10 +58638,10 @@
    "url": "https://digitallibrary.un.org/record/1305990"
   },
   {
-   "id": "V-071",
+   "id": "V-070",
    "simbolo": "A/HRC/58/617",
    "tema": "Relator Especial sobre la situación de los derechos humanos en la República Popular Democrática de Corea (2025, prórroga intermedia)",
-   "problema": "«A/HRC/58/617» no tiene registro exacto en la Biblioteca Digital ONU a 2026-11-02; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
+   "problema": "«A/HRC/58/617» no tiene registro exacto en la Biblioteca Digital ONU a 2026-11-03; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
    "nivel": "ALTA",
    "accion": "Reintentar más adelante o buscar en el informe de sesión.",
    "url": "https://digitallibrary.un.org/"
@@ -58632,7 +58683,7 @@
    "url": "https://digitallibrary.un.org/record/96859"
   },
   {
-   "id": "V-012",
+   "id": "V-011",
    "simbolo": "E/CN.4/1982/35",
    "tema": "Relator Especial sobre ejecuciones extrajudiciales, sumarias o arbitrarias (1982, creación)",
    "problema": "La fuente OHCHR cita «E/CN.4/1982/35»; el documento oficial es «E/RES/1982/35» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -58641,7 +58692,7 @@
    "url": "https://digitallibrary.un.org/record/33221"
   },
   {
-   "id": "V-013",
+   "id": "V-012",
    "simbolo": "E/CN.4/2000/10",
    "tema": "Relator Especial sobre el derecho a la alimentación (2000, creación)",
    "problema": "La fuente OHCHR cita «E/CN.4/2000/10»; el documento oficial es «E/CN.4/RES/2000/10» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -58650,7 +58701,7 @@
    "url": "https://digitallibrary.un.org/record/414236"
   },
   {
-   "id": "V-014",
+   "id": "V-013",
    "simbolo": "A/HRC/RES/2000/82",
    "tema": "Experta independiente sobre las consecuencias de la deuda externa y las obligaciones financieras internacionales conexas de los Estados para el pleno goce de todos los derechos humanos, sobre todo los derechos económicos, sociales y culturales (2000, creación)",
    "problema": "La fuente OHCHR cita «A/HRC/RES/2000/82»; el documento oficial es «E/CN.4/RES/2000/82» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -58659,7 +58710,7 @@
    "url": "https://digitallibrary.un.org/record/414568"
   },
   {
-   "id": "V-015",
+   "id": "V-014",
    "simbolo": "E/CN.4/1993/45",
    "tema": "Relatora Especial sobre la promoción y protección del derecho a la libertad de opinión y de expresión (1993, creación)",
    "problema": "La fuente OHCHR cita «E/CN.4/1993/45»; el documento oficial es «E/CN.4/RES/1993/45» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -58668,7 +58719,7 @@
    "url": "https://digitallibrary.un.org/record/170209"
   },
   {
-   "id": "V-016",
+   "id": "V-015",
    "simbolo": "A/HRC/34/18",
    "tema": "Relatora Especial sobre la promoción y protección del derecho a la libertad de opinión y de expresión (2017, prórroga intermedia)",
    "problema": "La fuente OHCHR cita «A/HRC/34/18»; el documento oficial es «A/HRC/RES/34/18» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -58677,7 +58728,7 @@
    "url": "https://digitallibrary.un.org/record/1315128"
   },
   {
-   "id": "V-017",
+   "id": "V-016",
    "simbolo": "E/CN.4/2002/31",
    "tema": "Relatora Especial sobre el derecho de toda persona al disfrute del más alto nivel posible de salud física y mental (2002, creación)",
    "problema": "La fuente OHCHR cita «E/CN.4/2002/31»; el documento oficial es «E/CN.4/RES/2002/31» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -58686,7 +58737,7 @@
    "url": "https://digitallibrary.un.org/record/464198"
   },
   {
-   "id": "V-021",
+   "id": "V-020",
    "simbolo": "E/CN.4/2000/61",
    "tema": "Relatora Especial sobre la situación de los defensores de derechos humanos (2000, creación)",
    "problema": "La fuente OHCHR cita «E/CN.4/2000/61»; el documento oficial es «E/CN.4/RES/2000/61» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -58695,7 +58746,7 @@
    "url": "https://digitallibrary.un.org/record/414455"
   },
   {
-   "id": "V-023",
+   "id": "V-022",
    "simbolo": "E/CN.4/1994/41",
    "tema": "Relatora Especial sobre la independencia de los magistrados y abogados (1994, creación)",
    "problema": "La fuente OHCHR cita «E/CN.4/1994/41»; el documento oficial es «E/CN.4/RES/1994/41» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -58704,7 +58755,7 @@
    "url": "https://digitallibrary.un.org/record/184698"
   },
   {
-   "id": "V-024",
+   "id": "V-023",
    "simbolo": "E/CN.4/2001/57",
    "tema": "Relator Especial sobre los derechos de los Pueblos Indígenas (2001, creación)",
    "problema": "La fuente OHCHR cita «E/CN.4/2001/57»; el documento oficial es «E/CN.4/RES/2001/57» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -58713,7 +58764,7 @@
    "url": "https://digitallibrary.un.org/record/440089"
   },
   {
-   "id": "V-026",
+   "id": "V-025",
    "simbolo": "E/CN.4/2004/55",
    "tema": "Relatora Especial sobre los derechos humanos de los desplazados internos (2004, creación)",
    "problema": "La fuente OHCHR cita «E/CN.4/2004/55»; el documento oficial es «E/CN.4/RES/2004/55» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -58722,7 +58773,7 @@
    "url": "https://digitallibrary.un.org/record/521988"
   },
   {
-   "id": "V-027",
+   "id": "V-026",
    "simbolo": "A/HRC/32/11",
    "tema": "Relatora Especial sobre los derechos humanos de los desplazados internos (2016, prórroga intermedia)",
    "problema": "La fuente OHCHR cita «A/HRC/32/11»; el documento oficial es «A/HRC/RES/32/11» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -58731,7 +58782,7 @@
    "url": "https://digitallibrary.un.org/record/845725"
   },
   {
-   "id": "V-029",
+   "id": "V-028",
    "simbolo": "E/CN.4/2005/55",
    "tema": "Experta independiente sobre los derechos humanos y la solidaridad internacional (2005, creación)",
    "problema": "La fuente OHCHR cita «E/CN.4/2005/55»; el documento oficial es «E/CN.4/RES/2005/55» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -58740,7 +58791,7 @@
    "url": "https://digitallibrary.un.org/record/547118"
   },
   {
-   "id": "V-030",
+   "id": "V-029",
    "simbolo": "E/CN.4/2005/2",
    "tema": "Grupo de Trabajo sobre la utilización de mercenarios como medio de violar los derechos humanos y obstaculizar el ejercicio del derecho de los pueblos a la libre determinación (2005, creación)",
    "problema": "La fuente OHCHR cita «E/CN.4/2005/2»; el documento oficial es «E/CN.4/RES/2005/2» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -58749,7 +58800,7 @@
    "url": "https://digitallibrary.un.org/record/545427"
   },
   {
-   "id": "V-032",
+   "id": "V-031",
    "simbolo": "E/CN.4/1999/44",
    "tema": "Relator Especial sobre los derechos humanos de los migrantes (1999, creación)",
    "problema": "La fuente OHCHR cita «E/CN.4/1999/44»; el documento oficial es «E/CN.4/RES/1999/44» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -58758,7 +58809,7 @@
    "url": "https://digitallibrary.un.org/record/1493093"
   },
   {
-   "id": "V-034",
+   "id": "V-033",
    "simbolo": "E/CN.4/2005/79",
    "tema": "Relator Especial sobre cuestiones de las minorías (2005, creación)",
    "problema": "La fuente OHCHR cita «E/CN.4/2005/79»; el documento oficial es «E/CN.4/RES/2005/79» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -58767,7 +58818,7 @@
    "url": "https://digitallibrary.un.org/record/547275"
   },
   {
-   "id": "V-037",
+   "id": "V-036",
    "simbolo": "E/CN.4/1998/25",
    "tema": "Relatora Especial sobre la extrema pobreza y los derechos humanos (1998, creación)",
    "problema": "La fuente OHCHR cita «E/CN.4/1998/25»; el documento oficial es «E/CN.4/RES/1998/25» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -58776,7 +58827,7 @@
    "url": "https://digitallibrary.un.org/record/253454"
   },
   {
-   "id": "V-040",
+   "id": "V-039",
    "simbolo": "A/HRC/46/16",
    "tema": "Relator Especial sobre el derecho a la privacidad (2021, prórroga intermedia)",
    "problema": "La fuente OHCHR cita «A/HRC/46/16»; el documento oficial es «A/HRC/RES/46/16» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -58785,7 +58836,7 @@
    "url": "https://digitallibrary.un.org/record/3927144"
   },
   {
-   "id": "V-041",
+   "id": "V-040",
    "simbolo": "E/CN.4/1993/20",
    "tema": "Relatora Especial sobre las formas contemporáneas de racismo, discriminación racial, xenofobia y formas conexas de intolerancia (1993, creación)",
    "problema": "La fuente OHCHR cita «E/CN.4/1993/20»; el documento oficial es «E/CN.4/RES/1993/20» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -58794,7 +58845,7 @@
    "url": "https://digitallibrary.un.org/record/170099"
   },
   {
-   "id": "V-042",
+   "id": "V-041",
    "simbolo": "E/CN.4/1986/20",
    "tema": "Relator Especial sobre la libertad de religión o de creencias (1986, creación)",
    "problema": "La fuente OHCHR cita «E/CN.4/1986/20»; el documento oficial es «E/CN.4/RES/1986/20» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -58803,7 +58854,7 @@
    "url": "https://digitallibrary.un.org/record/121480"
   },
   {
-   "id": "V-043",
+   "id": "V-042",
    "simbolo": "E/CN.4/1990/68",
    "tema": "Relatora Especial sobre la venta, la explotación sexual y el abuso sexual de niños (1990, creación)",
    "problema": "La fuente OHCHR cita «E/CN.4/1990/68»; el documento oficial es «E/CN.4/RES/1990/68» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -58812,7 +58863,7 @@
    "url": "https://digitallibrary.un.org/record/225629"
   },
   {
-   "id": "V-051",
+   "id": "V-050",
    "simbolo": "E/CN.4/1994/45",
    "tema": "Relatora Especial sobre la violencia contra las mujeres y las niñas, sus causas y consecuencias (1994, creación)",
    "problema": "La fuente OHCHR cita «E/CN.4/1994/45»; el documento oficial es «E/CN.4/RES/1994/45» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -58821,7 +58872,7 @@
    "url": "https://digitallibrary.un.org/record/226487"
   },
   {
-   "id": "V-057",
+   "id": "V-056",
    "simbolo": "A/HRC/47/19",
    "tema": "Relator Especial sobre la situación de los derechos humanos en Belarús (2021, prórroga intermedia)",
    "problema": "La fuente OHCHR cita «A/HRC/47/19»; el documento oficial es «A/HRC/RES/47/19» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -58830,7 +58881,7 @@
    "url": "https://digitallibrary.un.org/record/3936672"
   },
   {
-   "id": "V-059",
+   "id": "V-058",
    "simbolo": "E/CN.4/1993/6",
    "tema": "Relator Especial sobre la situación de los derechos humanos en Camboya (1993, creación)",
    "problema": "La fuente OHCHR cita «E/CN.4/1993/6»; el documento oficial es «E/CN.4/RES/1993/6» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -58839,7 +58890,7 @@
    "url": "https://digitallibrary.un.org/record/170251"
   },
   {
-   "id": "V-067",
+   "id": "V-066",
    "simbolo": "E/CN.4/2004/13",
    "tema": "Relator Especial sobre la situación de los derechos humanos en la República Popular Democrática de Corea (2004, creación)",
    "problema": "La fuente OHCHR cita «E/CN.4/2004/13»; el documento oficial es «E/CN.4/RES/2004/13» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -58848,7 +58899,7 @@
    "url": "https://digitallibrary.un.org/record/521879"
   },
   {
-   "id": "V-070",
+   "id": "V-069",
    "simbolo": "A/HRC/43/25",
    "tema": "Relator Especial sobre la situación de los derechos humanos en la República Popular Democrática de Corea (2020, prórroga intermedia)",
    "problema": "La fuente OHCHR cita «A/HRC/43/25»; el documento oficial es «A/HRC/RES/43/25» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -58857,7 +58908,7 @@
    "url": "https://digitallibrary.un.org/record/3871623"
   },
   {
-   "id": "V-078",
+   "id": "V-077",
    "simbolo": "E/CN.4/1992/58",
    "tema": "Relator Especial sobre la situación de los derechos humanos en Myanmar (1992, creación)",
    "problema": "La fuente OHCHR cita «E/CN.4/1992/58»; el documento oficial es «E/CN.4/RES/1992/58» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -58884,7 +58935,7 @@
    "url": "https://digitallibrary.un.org/record/1302319"
   },
   {
-   "id": "V-011",
+   "id": "V-010",
    "simbolo": "A/HRC/37/L.19",
    "tema": "Relatora Especial sobre el derecho humano a un medio ambiente limpio, sano y sostenible (2018, prórroga intermedia)",
    "problema": "La fuente OHCHR cita «A/HRC/37/L.19»; el documento oficial es «A/HRC/RES/37/8» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -58893,7 +58944,7 @@
    "url": "https://digitallibrary.un.org/record/1627326"
   },
   {
-   "id": "V-018",
+   "id": "V-017",
    "simbolo": "A/HRC/42/L.19 Draft Resolution HRC42 A/HRC/42/L.19",
    "tema": "Relatora Especial sobre el derecho de toda persona al disfrute del más alto nivel posible de salud física y mental (2019, prórroga intermedia)",
    "problema": "La fuente OHCHR cita «A/HRC/42/L.19 Draft Resolution HRC42 A/HRC/42/L.19»; el documento oficial es «A/HRC/RES/42/16» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -58902,7 +58953,7 @@
    "url": "https://digitallibrary.un.org/record/3836332"
   },
   {
-   "id": "V-019",
+   "id": "V-018",
    "simbolo": "A/HRC/51/L.5",
    "tema": "Relatora Especial sobre el derecho de toda persona al disfrute del más alto nivel posible de salud física y mental (2022, prórroga intermedia)",
    "problema": "La fuente OHCHR cita «A/HRC/51/L.5»; el documento oficial es «A/HRC/RES/51/21» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -58911,7 +58962,7 @@
    "url": "https://digitallibrary.un.org/record/3991829"
   },
   {
-   "id": "V-022",
+   "id": "V-021",
    "simbolo": "A/HRC/43/L.5",
    "tema": "Relatora Especial sobre la situación de los defensores de derechos humanos (2020, prórroga intermedia)",
    "problema": "La fuente OHCHR cita «A/HRC/43/L.5»; el documento oficial es «A/HRC/RES/43/16» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -58920,7 +58971,7 @@
    "url": "https://digitallibrary.un.org/record/3874886"
   },
   {
-   "id": "V-025",
+   "id": "V-024",
    "simbolo": "A/HRC/51/L.31",
    "tema": "Relator Especial sobre los derechos de los Pueblos Indígenas (2022, prórroga intermedia)",
    "problema": "La fuente OHCHR cita «A/HRC/51/L.31»; el documento oficial es «A/HRC/RES/51/16» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -58929,7 +58980,7 @@
    "url": "https://digitallibrary.un.org/record/3991858"
   },
   {
-   "id": "V-028",
+   "id": "V-027",
    "simbolo": "A/HRC/50/L.4",
    "tema": "Relatora Especial sobre los derechos humanos de los desplazados internos (2022, prórroga intermedia)",
    "problema": "La fuente OHCHR cita «A/HRC/50/L.4»; el documento oficial es «A/HRC/RES/50/6» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -58938,7 +58989,7 @@
    "url": "https://digitallibrary.un.org/record/3985282"
   },
   {
-   "id": "V-031",
+   "id": "V-030",
    "simbolo": "A/HRC/51/L.22",
    "tema": "Grupo de Trabajo sobre la utilización de mercenarios como medio de violar los derechos humanos y obstaculizar el ejercicio del derecho de los pueblos a la libre determinación (2022, prórroga intermedia)",
    "problema": "La fuente OHCHR cita «A/HRC/51/L.22»; el documento oficial es «A/HRC/RES/51/13» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -58947,7 +58998,7 @@
    "url": "https://digitallibrary.un.org/record/3991809"
   },
   {
-   "id": "V-033",
+   "id": "V-032",
    "simbolo": "A/HRC/43/L.4",
    "tema": "Relator Especial sobre los derechos humanos de los migrantes (2020, prórroga intermedia)",
    "problema": "La fuente OHCHR cita «A/HRC/43/L.4»; el documento oficial es «A/HRC/RES/43/6» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -58956,7 +59007,7 @@
    "url": "https://digitallibrary.un.org/record/3874880"
   },
   {
-   "id": "V-035",
+   "id": "V-034",
    "simbolo": "A/HRC/34/L.6",
    "tema": "Relator Especial sobre cuestiones de las minorías (2017, prórroga intermedia)",
    "problema": "La fuente OHCHR cita «A/HRC/34/L.6»; el documento oficial es «A/HRC/RES/34/6» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -58965,7 +59016,7 @@
    "url": "https://digitallibrary.un.org/record/1290081"
   },
   {
-   "id": "V-036",
+   "id": "V-035",
    "simbolo": "A/HRC/43/L.9",
    "tema": "Relator Especial sobre cuestiones de las minorías (2020, prórroga intermedia)",
    "problema": "La fuente OHCHR cita «A/HRC/43/L.9»; el documento oficial es «A/HRC/RES/43/8» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -58974,7 +59025,7 @@
    "url": "https://digitallibrary.un.org/record/3876050"
   },
   {
-   "id": "V-038",
+   "id": "V-037",
    "simbolo": "A/HRC/35/L.31",
    "tema": "Relatora Especial sobre la extrema pobreza y los derechos humanos (2017, prórroga intermedia)",
    "problema": "La fuente OHCHR cita «A/HRC/35/L.31»; el documento oficial es «A/HRC/RES/35/19» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -58983,7 +59034,7 @@
    "url": "https://digitallibrary.un.org/record/1302335"
   },
   {
-   "id": "V-039",
+   "id": "V-038",
    "simbolo": "A/HRC/53/L.15",
    "tema": "Relatora Especial sobre la extrema pobreza y los derechos humanos (2023, prórroga intermedia)",
    "problema": "La fuente OHCHR cita «A/HRC/53/L.15»; el documento oficial es «A/HRC/RES/53/10» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -58992,7 +59043,7 @@
    "url": "https://digitallibrary.un.org/record/4019653"
   },
   {
-   "id": "V-044",
+   "id": "V-043",
    "simbolo": "A/HRC/43/L.32",
    "tema": "Relatora Especial sobre la venta, la explotación sexual y el abuso sexual de niños (2020, prórroga intermedia)",
    "problema": "La fuente OHCHR cita «A/HRC/43/L.32»; el documento oficial es «A/HRC/RES/43/22» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -59001,7 +59052,7 @@
    "url": "https://digitallibrary.un.org/record/3876065"
   },
   {
-   "id": "V-045",
+   "id": "V-044",
    "simbolo": "A/HRC/50/L.2",
    "tema": "Experto Independiente sobre la protección contra la violencia y la discriminación por motivos de orientación sexual o identidad de género (2022, prórroga intermedia)",
    "problema": "La fuente OHCHR cita «A/HRC/50/L.2»; el documento oficial es «A/HRC/RES/50/10» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -59010,7 +59061,7 @@
    "url": "https://digitallibrary.un.org/record/3985109"
   },
   {
-   "id": "V-053",
+   "id": "V-052",
    "simbolo": "A/HRC/51/L.40",
    "tema": "Relator Especial sobre los derechos humanos al agua potable y el saneamiento (2022, prórroga intermedia)",
    "problema": "La fuente OHCHR cita «A/HRC/51/L.40»; el documento oficial es «A/HRC/RES/51/19» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -59019,7 +59070,7 @@
    "url": "https://digitallibrary.un.org/record/3992110"
   },
   {
-   "id": "V-054",
+   "id": "V-053",
    "simbolo": "A/HRC/60/L.10",
    "tema": "Relator Especial sobre los derechos humanos al agua potable y el saneamiento (2025, prórroga vigente)",
    "problema": "La fuente OHCHR cita «A/HRC/60/L.10»; el documento oficial es «A/HRC/RES/60/9» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -59028,7 +59079,7 @@
    "url": "https://digitallibrary.un.org/record/4090569"
   },
   {
-   "id": "V-056",
+   "id": "V-055",
    "simbolo": "A/HRC/57/L.24",
    "tema": "Relator Especial sobre la situación de los derechos humanos en el Afganistán (2024, prórroga intermedia)",
    "problema": "La fuente OHCHR cita «A/HRC/57/L.24»; el documento oficial es «A/HRC/RES/57/3» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -59037,7 +59088,7 @@
    "url": "https://digitallibrary.un.org/record/4063945"
   },
   {
-   "id": "V-058",
+   "id": "V-057",
    "simbolo": "A/HRC/57/L.12",
    "tema": "Relator/Relatora Especial sobre la situación de los derechos humanos en Burundi (2024, prórroga intermedia)",
    "problema": "La fuente OHCHR cita «A/HRC/57/L.12»; el documento oficial es «A/HRC/RES/57/22» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -59046,7 +59097,7 @@
    "url": "https://digitallibrary.un.org/record/4063933"
   },
   {
-   "id": "V-061",
+   "id": "V-060",
    "simbolo": "A/HRC/27/L.31",
    "tema": "Experto independiento sobre la situación de los derechos humanos en la República Centroafricana (2014, prórroga intermedia)",
    "problema": "La fuente OHCHR cita «A/HRC/27/L.31»; el documento oficial es «A/HRC/RES/27/28» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -59055,7 +59106,7 @@
    "url": "https://digitallibrary.un.org/record/781352"
   },
   {
-   "id": "V-062",
+   "id": "V-061",
    "simbolo": "A/HRC/30/L.6",
    "tema": "Experto independiento sobre la situación de los derechos humanos en la República Centroafricana (2015, prórroga intermedia)",
    "problema": "La fuente OHCHR cita «A/HRC/30/L.6»; el documento oficial es «A/HRC/RES/30/19» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -59064,7 +59115,7 @@
    "url": "https://digitallibrary.un.org/record/812269"
   },
   {
-   "id": "V-063",
+   "id": "V-062",
    "simbolo": "A/HRC/33/L.16",
    "tema": "Experto independiento sobre la situación de los derechos humanos en la República Centroafricana (2016, prórroga intermedia)",
    "problema": "La fuente OHCHR cita «A/HRC/33/L.16»; el documento oficial es «A/HRC/RES/33/27» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -59073,7 +59124,7 @@
    "url": "https://digitallibrary.un.org/record/850718"
   },
   {
-   "id": "V-065",
+   "id": "V-064",
    "simbolo": "A/HRC/39/L.9",
    "tema": "Experto independiento sobre la situación de los derechos humanos en la República Centroafricana (2018, prórroga intermedia)",
    "problema": "La fuente OHCHR cita «A/HRC/39/L.9»; el documento oficial es «A/HRC/RES/39/19» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -59082,7 +59133,7 @@
    "url": "https://digitallibrary.un.org/record/1650757"
   },
   {
-   "id": "V-066",
+   "id": "V-065",
    "simbolo": "A/HRC/45/L.54",
    "tema": "Experto independiento sobre la situación de los derechos humanos en la República Centroafricana (2020, prórroga intermedia)",
    "problema": "La fuente OHCHR cita «A/HRC/45/L.54»; el documento oficial es «A/HRC/RES/45/35» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -59091,7 +59142,7 @@
    "url": "https://digitallibrary.un.org/record/3888656"
   },
   {
-   "id": "V-068",
+   "id": "V-067",
    "simbolo": "A/HRC/31/L.25",
    "tema": "Relator Especial sobre la situación de los derechos humanos en la República Popular Democrática de Corea (2016, prórroga intermedia)",
    "problema": "La fuente OHCHR cita «A/HRC/31/L.25»; el documento oficial es «A/HRC/RES/31/18» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -59100,7 +59151,7 @@
    "url": "https://digitallibrary.un.org/record/837958"
   },
   {
-   "id": "V-069",
+   "id": "V-068",
    "simbolo": "A/HRC/40/L.18",
    "tema": "Relator Especial sobre la situación de los derechos humanos en la República Popular Democrática de Corea (2019, prórroga intermedia)",
    "problema": "La fuente OHCHR cita «A/HRC/40/L.18»; el documento oficial es «A/HRC/RES/40/20» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -59109,7 +59160,7 @@
    "url": "https://digitallibrary.un.org/record/3809566"
   },
   {
-   "id": "V-072",
+   "id": "V-071",
    "simbolo": "A/HRC/50/L.19",
    "tema": "Relator Especial sobre la situación de los derechos humanos en Eritrea (2022, prórroga intermedia)",
    "problema": "La fuente OHCHR cita «A/HRC/50/L.19»; el documento oficial es «A/HRC/RES/50/2» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -59118,7 +59169,7 @@
    "url": "https://digitallibrary.un.org/record/3985528"
   },
   {
-   "id": "V-073",
+   "id": "V-072",
    "simbolo": "A/HRC/56/L.16",
    "tema": "Relator Especial sobre la situación de los derechos humanos en Eritrea (2024, prórroga intermedia)",
    "problema": "La fuente OHCHR cita «A/HRC/56/L.16»; el documento oficial es «A/HRC/RES/56/17» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -59127,7 +59178,7 @@
    "url": "https://digitallibrary.un.org/record/4059825"
   },
   {
-   "id": "V-074",
+   "id": "V-073",
    "simbolo": "A/HRC/52/L.3",
    "tema": "Relatora Especial sobre la situación de los derechos humanos en la República Islámica del Irán (2023, prórroga intermedia)",
    "problema": "La fuente OHCHR cita «A/HRC/52/L.3»; el documento oficial es «A/HRC/RES/52/27» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -59136,7 +59187,7 @@
    "url": "https://digitallibrary.un.org/record/4012839"
   },
   {
-   "id": "V-075",
+   "id": "V-074",
    "simbolo": "A/HRC/S-39/L.1",
    "tema": "Relatora Especial sobre la situación de los derechos humanos en la República Islámica del Irán (2026, prórroga vigente)",
    "problema": "La fuente OHCHR cita «A/HRC/S-39/L.1»; el documento oficial es «A/HRC/RES/S-39/1» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -59145,7 +59196,7 @@
    "url": "https://digitallibrary.un.org/record/4103600"
   },
   {
-   "id": "V-076",
+   "id": "V-075",
    "simbolo": "A/HRC/40/L.2",
    "tema": "Experto independiente sobre la situación de los derechos humanos en Malí (2019, prórroga intermedia)",
    "problema": "La fuente OHCHR cita «A/HRC/40/L.2»; el documento oficial es «A/HRC/RES/40/26» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -59154,7 +59205,7 @@
    "url": "https://digitallibrary.un.org/record/3809702"
   },
   {
-   "id": "V-077",
+   "id": "V-076",
    "simbolo": "A/HRC/43/L.13",
    "tema": "Experto independiente sobre la situación de los derechos humanos en Malí (2020, prórroga intermedia)",
    "problema": "La fuente OHCHR cita «A/HRC/43/L.13»; el documento oficial es «A/HRC/RES/43/38» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
