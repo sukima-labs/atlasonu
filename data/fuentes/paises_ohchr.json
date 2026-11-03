@@ -558,7 +558,7 @@
    "visitas": {
     "realizadas": true,
     "pendientes": true,
-    "programadas": false,
+    "programadas": true,
     "en_curso": false,
     "otras": false
    }
@@ -1486,7 +1486,7 @@
    "visitas": {
     "realizadas": true,
     "pendientes": true,
-    "programadas": true,
+    "programadas": false,
     "en_curso": false,
     "otras": false
    }

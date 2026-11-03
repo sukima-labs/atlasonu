@@ -8554,6 +8554,25 @@
   ],
   "informe_sesion": []
  },
+ "A/HRC/RES/63/34": {
+  "descartadas_por_no_coincidir": [],
+  "estado": "TEXTO_DIRECTO",
+  "fuentes": [
+   {
+    "lengua": "en",
+    "tipo": "registro",
+    "url": "https://digitallibrary.un.org/record/4131534/files/A_HRC_RES_63_34-FR.pdf",
+    "validado": null
+   },
+   {
+    "lengua": "es",
+    "tipo": "ods",
+    "url": "https://documents.un.org/api/symbol/access?s=A/HRC/RES/63/34&l=es&t=pdf",
+    "validado": true
+   }
+  ],
+  "informe_sesion": []
+ },
  "A/HRC/RES/63/4": {
   "descartadas_por_no_coincidir": [],
   "estado": "TEXTO_DIRECTO",
