@@ -1,12 +1,12 @@
 {
- "revisado_el": "2026-11-03T11:09:21+00:00",
+ "revisado_el": "2026-11-03T18:37:22+00:00",
  "datos_del": "2026-11-03",
  "hubo_cambios_en_esta_revision": true,
- "ultimo_cambio_el": "2026-11-03T11:09:21+00:00",
+ "ultimo_cambio_el": "2026-11-03T18:37:22+00:00",
  "contadores": {
   "mandatos": 57,
   "actos": 421,
-  "localizados": 401,
+  "localizados": 402,
   "paises": 196,
   "mecanismos": 33
  },
@@ -33,6 +33,15 @@
   }
  ],
  "ultimos_cambios": [
+  {
+   "fecha": "2026-11-03",
+   "n": 3,
+   "ejemplos": [
+    "Chile: visita programada",
+    "Kuwait: visita ya no figura como programada",
+    "1 resolución(es) nueva(s) localizada(s): A/HRC/RES/63/34"
+   ]
+  },
   {
    "fecha": "2026-11-03",
    "n": 1,
@@ -83,13 +92,6 @@
     "Experto Independiente sobre la protección contra la violencia y la discriminación por motivos de orientación sexual o identidad de género: titulares Graeme REID → sin titular",
     "Grupo de Trabajo sobre la utilización de mercenarios como medio de violar los derechos humanos y obstaculizar el ejercicio del derecho de los pueblos a la libre determinación: titulares Andrés MACIAS TOLOSA, Joana DE DEUS PEREIRA, Jovana JEZDIMIROVIC RANITO, Michelle SMALL, Ravindran DANIEL JUSTIN → Andrés MACIAS TOLOSA, Joana DE DEUS PEREIRA, Jovana JEZDIMIROVIC RANITO, Michelle SMALL",
     "Relator Especial sobre los derechos humanos al agua potable y el saneamiento: titulares Pedro ARROJO-AGUDO → sin titular"
-   ]
-  },
-  {
-   "fecha": "2026-10-30",
-   "n": 1,
-   "ejemplos": [
-    "1 resolución(es) nueva(s) localizada(s): A/HRC/RES/63/34"
    ]
   }
  ]
