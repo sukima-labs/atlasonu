@@ -1,8 +1,24 @@
 window.NOTICIAS={
  "fuente": "Noticias ONU (news.un.org)",
- "actualizado": "2026-11-03T04:04:53Z",
+ "actualizado": "2026-11-03T11:09:21Z",
  "temas": {
   "todas": [
+   {
+    "titulo": "Seis de cada siete asesinatos de periodistas quedan impunes",
+    "fecha": "2026-11-02",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542134",
+    "resumen": "Los territorios palestinos ocupados por Israel registraron el mayor número de asesinatos en el bienio 2024-2025, con 62 muertes, dentro de la región de los Estados Árabes, que sumó 97 casos, seguida de América Latina y el Caribe (37), Asia y el Pacífico…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/10/29-10-2026-Adobe-Stock-journalist.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
+   {
+    "titulo": "Periodistas asesinados, desinformación sobre migrantes, Ucrania, Sáhara Occidental… las noticias del lunes",
+    "fecha": "2026-11-02",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542133",
+    "resumen": "En 2024-2025, fueron asesinados 189 periodistas. La desinformación amplificada por la inteligencia artificial está convirtiendo a los migrantes en \"objetivos\" de odio y violencia. Más de 400 evacuados de Oleshky, en Ucrania, tras un breve alto el fuego,…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/16-04-2026-UN-News-Haiti-01.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
    {
     "titulo": "COP17: Los países acuerdan una hoja de ruta para acelerar la protección de la biodiversidad",
     "fecha": "2026-11-01",
@@ -12,19 +28,19 @@ window.NOTICIAS={
     "destacada": false
    },
    {
-    "titulo": "Desconectarse para conectar: la juventud argentina debate los retos de la era digital",
-    "fecha": "2026-11-01",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542125",
-    "resumen": "En Buenos Aires, jóvenes debatieron sobre entornos digitales en el marco de la iniciativa Círculos de la Paz de Naciones Unidas. Desinformación, el impacto de las redes sociales en la salud mental y crecer en la era de la inteligencia artificial fueron los…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/10/29-10-2026_UN_Argentina_1.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
     "titulo": "La IA está cambiando cómo pensamos: ¿Nos daremos cuenta a tiempo?",
     "fecha": "2026-11-01",
     "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542129",
     "resumen": "Es muy tentador ahorrarle al cerebro el pensar del todo\". Solo entre el cinco y el diez por ciento de los trabajadores usa la IA para liberar capacidad mental; la mayoría externaliza también el análisis y la decisión. \"Mantén tu cerebro en el juego\", pide un…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/06/29-06-2026-AdobeStock_AI_01.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
+   {
+    "titulo": "Desconectarse para conectar: la juventud argentina debate los retos de la era digital",
+    "fecha": "2026-11-01",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542125",
+    "resumen": "En Buenos Aires, jóvenes debatieron sobre entornos digitales en el marco de la iniciativa Círculos de la Paz de Naciones Unidas. Desinformación, el impacto de las redes sociales en la salud mental y crecer en la era de la inteligencia artificial fueron los…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/10/29-10-2026_UN_Argentina_1.jpg/image560x340cropped.jpg",
     "destacada": false
    },
    {
@@ -145,22 +161,6 @@ window.NOTICIAS={
     "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542110",
     "resumen": "Los niveles récord de dióxido de carbono nos afectarán durante siglos. Ucrania: Los bombardeos amenazan con dejar a la población otro invierno sin calefacción. La OMS inicia un ensayo para comprobar si las vacunas protegen contra el ébola. El 83% de los…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/21-03-2022_UNSPLASH_Pollution.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "Los niveles récord de dióxido de carbono nos afectarán durante siglos",
-    "fecha": "2026-10-27",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542109",
-    "resumen": "Las concentraciones de CO2 alcanzaron en 2025 un récord de 426,8 partes por millón, el 153 % del nivel preindustrial, y los niveles de metano y óxido nitroso también marcaron máximos históricos. Cada parte por millón adicional importa porque atrapa calor…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/10/27-10-2026-Adobe-Stock-air-pollution.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "Cisjordania: una comisión de investigación de la ONU acusa a Israel de “exterminio”",
-    "fecha": "2026-10-26",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542108",
-    "resumen": "Un año después de concluir que se estaba cometiendo un genocidio en Gaza, una comisión independiente de investigación de la ONU acusa a Israel de cometer crímenes de lesa humanidad, incluido el exterminio, contra la población palestina de Cisjordania. Su…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/10-12-2025-UNICEF-Gaza-01.jpg/image560x340cropped.jpg",
     "destacada": false
    }
   ],
