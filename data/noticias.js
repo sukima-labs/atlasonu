@@ -1,8 +1,24 @@
 window.NOTICIAS={
  "fuente": "Noticias ONU (news.un.org)",
- "actualizado": "2026-11-04T03:10:11Z",
+ "actualizado": "2026-11-04T11:08:40Z",
  "temas": {
   "todas": [
+   {
+    "titulo": "La igualdad de género beneficia a las empresas: ¿por qué algunas dan marcha atrás?",
+    "fecha": "2026-11-03",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542138",
+    "resumen": "La igualdad de género y la diversidad no son solo cuestiones sociales: también constituyen un activo económico para las empresas. Si bien las mujeres acceden cada vez más a puestos de alta responsabilidad, este progreso sigue siendo frágil y requiere nuevos…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/03-11-2026-Adobe-Stock-gender-based.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
+   {
+    "titulo": "Haití: la ONU, entre los llamados al diálogo de las pandillas y la ofensiva militar de El Salvador",
+    "fecha": "2026-11-03",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542137",
+    "resumen": "Un jefe de la pandilla 400 Mawozo, buscado por el FBI con una recompensa de un millón de dólares, ha pedido a la ONU que medie para abrir un diálogo y afirma haber \"izado la bandera blanca\", mientras El Salvador despliega más de 2000 soldados al margen de la…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/01-10-2025-UNOCHA-Haiti-05.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
    {
     "titulo": "Ébola, brecha de género, brecha digital… las noticias del martes",
     "fecha": "2026-11-03",
@@ -144,22 +160,6 @@ window.NOTICIAS={
     "fecha": "2026-10-28",
     "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542114",
     "resumen": "La Asamblea General pide el fin del embargo a Cuba (y ya van 34 veces). Un informe respaldado por la OMS denuncia 710.000 muertes por calor en 2023. Expertos piden a Venezuela levantar los bloqueos a internet y respetar la libertad de expresión. Expertos…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/27-10-2015-Unsplash-Havana-Cuba-01.jpg/image560x340cropped.jpg",
-    "destacada": true
-   },
-   {
-    "titulo": "La ONU vuelve a rechazar el embargo de Estados Unidos a Cuba",
-    "fecha": "2026-10-28",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542113",
-    "resumen": "Con esta son 34 ocasiones desde 1992 que la Asamblea General, el órgano más representativo de la diplomacia internacional, rechaza la medida unilateral. La resolución reitera la exigencia internacional de levantar el bloqueo económico, comercial y financiero…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Graphics%20Library/2026/10/28-10-2026_cuba_voting.jpg/image560x340cropped.jpg",
-    "destacada": true
-   },
-   {
-    "titulo": "El embargo de Estados Unidos a Cuba vuelve a la ONU (que ya lo ha rechazado 33 veces)",
-    "fecha": "2026-10-27",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542112",
-    "resumen": "Un debate cargado de alta tensión diplomática se abrió este martes para dirimir una vez más la cuestión del bloqueo económico que el país norteamericano impuso a Cuba en 1960. Mañana miércoles, 28 de octubre, se celebrará la votación.",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/27-10-2015-Unsplash-Havana-Cuba-01.jpg/image560x340cropped.jpg",
     "destacada": true
    }
