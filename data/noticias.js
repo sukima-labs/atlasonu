@@ -1,22 +1,22 @@
 window.NOTICIAS={
  "fuente": "Noticias ONU (news.un.org)",
- "actualizado": "2026-11-04T11:08:40Z",
+ "actualizado": "2026-11-04T18:46:57Z",
  "temas": {
   "todas": [
+   {
+    "titulo": "El mundo no está preparado para la adaptación climática: la financiación se queda muy corta",
+    "fecha": "2026-11-04",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542139",
+    "resumen": "Los países en desarrollo necesitarán unos 305.000 millones de dólares anuales para 2035 para adaptarse al cambio climático, pero la financiación pública internacional solo alcanzó entre 28.200 y 31.700 millones en 2024 y, aunque se triplique, cubrirá como…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/11/03-11-2026-WMO-Bangladesh.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
    {
     "titulo": "La igualdad de género beneficia a las empresas: ¿por qué algunas dan marcha atrás?",
     "fecha": "2026-11-03",
     "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542138",
     "resumen": "La igualdad de género y la diversidad no son solo cuestiones sociales: también constituyen un activo económico para las empresas. Si bien las mujeres acceden cada vez más a puestos de alta responsabilidad, este progreso sigue siendo frágil y requiere nuevos…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/03-11-2026-Adobe-Stock-gender-based.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "Haití: la ONU, entre los llamados al diálogo de las pandillas y la ofensiva militar de El Salvador",
-    "fecha": "2026-11-03",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542137",
-    "resumen": "Un jefe de la pandilla 400 Mawozo, buscado por el FBI con una recompensa de un millón de dólares, ha pedido a la ONU que medie para abrir un diálogo y afirma haber \"izado la bandera blanca\", mientras El Salvador despliega más de 2000 soldados al margen de la…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/01-10-2025-UNOCHA-Haiti-05.jpg/image560x340cropped.jpg",
     "destacada": false
    },
    {

@@ -1814,10 +1814,30 @@
    "acto": "prorrogado",
    "original": "A/HRC/RES/63/34",
    "limpio": "A/HRC/RES/63/34",
-   "estado": "NO_ENCONTRADO",
-   "probados": [
-    "A/HRC/RES/63/34"
-   ]
+   "estado": "VERIFICADO",
+   "consultado": "A/HRC/RES/63/34",
+   "registro": {
+    "id": "4131534",
+    "simbolo": "A/HRC/RES/63/34",
+    "simbolos": [
+     "A/HRC/RES/63/34"
+    ],
+    "titulo": "Enforced or involuntary disappearances",
+    "fecha": "2026-10-09",
+    "adoptada": "2026-10-07",
+    "borradores": [
+     "A/HRC/63/L.5",
+     "A/HRC/63/SR.43"
+    ],
+    "votacion": "Adopted without vote, 43rd meeting",
+    "pdf": {
+     "en": "https://digitallibrary.un.org/record/4131534/files/A_HRC_RES_63_34-FR.pdf"
+    },
+    "url": "https://digitallibrary.un.org/record/4131534",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
+   }
   },
   {
    "mandato": "Working Group on Enforced or Involuntary Disappearances",
@@ -10178,11 +10198,10 @@
   {
    "mandato": "Special Rapporteur on the human rights to safe drinking water and sanitation",
    "acto": "prorrogado",
-   "original": "A/HRC/60/L.10",
-   "limpio": "A/HRC/60/L.10",
-   "estado": "VERIFICADO_NORMALIZADO",
+   "original": "A/HRC/RES/60/9",
+   "limpio": "A/HRC/RES/60/9",
+   "estado": "VERIFICADO",
    "consultado": "A/HRC/RES/60/9",
-   "via_borrador": "A/HRC/60/L.10",
    "registro": {
     "id": "4090569",
     "simbolo": "A/HRC/RES/60/9",
