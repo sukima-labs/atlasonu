@@ -1,12 +1,12 @@
 {
- "revisado_el": "2026-11-04T11:08:40+00:00",
+ "revisado_el": "2026-11-04T18:46:57+00:00",
  "datos_del": "2026-11-04",
  "hubo_cambios_en_esta_revision": true,
- "ultimo_cambio_el": "2026-11-04T11:08:40+00:00",
+ "ultimo_cambio_el": "2026-11-04T18:46:57+00:00",
  "contadores": {
   "mandatos": 57,
   "actos": 421,
-  "localizados": 401,
+  "localizados": 402,
   "paises": 196,
   "mecanismos": 33
  },
@@ -33,6 +33,14 @@
   }
  ],
  "ultimos_cambios": [
+  {
+   "fecha": "2026-11-04",
+   "n": 2,
+   "ejemplos": [
+    "Relator Especial sobre los derechos humanos al agua potable y el saneamiento: titulares sin titular → Juliet WILLETTS",
+    "1 resolución(es) nueva(s) localizada(s): A/HRC/RES/63/34"
+   ]
+  },
   {
    "fecha": "2026-11-04",
    "n": 1,
@@ -82,14 +90,6 @@
    "n": 1,
    "ejemplos": [
     "1 resolución(es) nueva(s) localizada(s): A/HRC/RES/63/34"
-   ]
-  },
-  {
-   "fecha": "2026-10-31",
-   "n": 2,
-   "ejemplos": [
-    "Grupo de Trabajo sobre la discriminación contra las mujeres y las niñas: titulares Claudia FLORES, Dorothy ESTRADA-TANCK, Haina LU, Ivana KRSTIĆ, Laura NYIRINKINDI → Claudia FLORES, Haina LU, Ivana KRSTIĆ, Laura NYIRINKINDI",
-    "Grupo de Trabajo sobre la utilización de mercenarios como medio de violar los derechos humanos y obstaculizar el ejercicio del derecho de los pueblos a la libre determinación: titulares Andrés MACIAS TOLOSA, Joana DE DEUS PEREIRA, Jovana JEZDIMIROVIC RANITO, Michelle SMALL → Andrés MACIAS TOLOSA, Joana DE DEUS PEREIRA, Michelle SMALL"
    ]
   }
  ]
