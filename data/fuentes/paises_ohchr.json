@@ -1,7 +1,7 @@
 {
  "fuente": "https://spinternet.ohchr.org/ViewCountryVisits.aspx?visitType=all",
  "fuente_regiones": "https://spcommreports.ohchr.org/Tmsearch/TMDocuments",
- "consultado": "2026-11-04",
+ "consultado": "2026-11-05",
  "paises": [
   {
    "iso3": "AFG",
@@ -2462,7 +2462,7 @@
    "visitas": {
     "realizadas": true,
     "pendientes": true,
-    "programadas": true,
+    "programadas": false,
     "en_curso": false,
     "otras": false
    }

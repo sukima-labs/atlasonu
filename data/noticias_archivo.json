@@ -1,8 +1,26 @@
 {
 "fuente": "Noticias ONU (news.un.org)",
-"actualizado": "2026-11-05T11:09:38Z",
-"total": 76,
+"actualizado": "2026-11-05T23:08:46Z",
+"total": 78,
 "notas": [
+{
+"titulo": "Agua, Cumbre Iberoamericana y violencia sexual en el Reino Unido: las noticias del jueves",
+"fecha": "2026-11-05",
+"enlace": "https://news.un.org/feed/view/es/story/2026/11/1542145",
+"resumen": "Los ataques contra los sistemas de agua en las guerras se han triplicado en cinco años y dejan a millones de personas sin acceso a agua potable, según UNICEF. La Cumbre Iberoamericana arranca en Madrid con la recomendación de la CEPAL a América Latina de…",
+"visto": "2026-11-05",
+"derechos": false,
+"americas": false
+},
+{
+"titulo": "COP31: ¿Qué está en juego este año en la cumbre climática de la ONU?",
+"fecha": "2026-11-05",
+"enlace": "https://news.un.org/feed/view/es/story/2026/11/1542143",
+"resumen": "Las energías renovables avanzan a un ritmo sin precedentes, pero gran parte del mundo sigue sin tener los recursos necesarios para aprovecharlas. La financiación y el cumplimiento de los compromisos climáticos estarán en el centro de una cumbre que deberá…",
+"visto": "2026-11-05",
+"derechos": false,
+"americas": false
+},
 {
 "titulo": "Un 25% de los adolescentes no hace suficiente ejercicio",
 "fecha": "2026-11-04",
