@@ -1,8 +1,24 @@
 window.NOTICIAS={
  "fuente": "Noticias ONU (news.un.org)",
- "actualizado": "2026-11-05T11:09:38Z",
+ "actualizado": "2026-11-05T23:08:46Z",
  "temas": {
   "todas": [
+   {
+    "titulo": "Agua, Cumbre Iberoamericana y violencia sexual en el Reino Unido: las noticias del jueves",
+    "fecha": "2026-11-05",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542145",
+    "resumen": "Los ataques contra los sistemas de agua en las guerras se han triplicado en cinco años y dejan a millones de personas sin acceso a agua potable, según UNICEF. La Cumbre Iberoamericana arranca en Madrid con la recomendación de la CEPAL a América Latina de…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/11/05-11-2026-UNICEF-Yemen.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
+   {
+    "titulo": "COP31: ¿Qué está en juego este año en la cumbre climática de la ONU?",
+    "fecha": "2026-11-05",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542143",
+    "resumen": "Las energías renovables avanzan a un ritmo sin precedentes, pero gran parte del mundo sigue sin tener los recursos necesarios para aprovecharlas. La financiación y el cumplimiento de los compromisos climáticos estarán en el centro de una cumbre que deberá…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/11/03-11-2026-UNICEF-Bangladesh-02.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
    {
     "titulo": "Un 25% de los adolescentes no hace suficiente ejercicio",
     "fecha": "2026-11-04",
@@ -145,22 +161,6 @@ window.NOTICIAS={
     "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542120",
     "resumen": "Haití se enfrenta a una inseguridad alimentaria récord: 6,35 millones de personas en situación de crisis o emergencia entre marzo y junio de 2027, medio millón más que en el mismo período del año anterior, y casi dos millones en nivel de \"urgencia\". La ONU…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/27-09-2024-WFP-Haiti-02.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "Crece la demanda de cuidados de larga duración en América, al tiempo que la población envejece",
-    "fecha": "2026-10-29",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542119",
-    "resumen": "Para 2050, 306 millones de personas en las Américas tendrán 60 años o más, pero solo 15 de los 35 Estados cuentan con un sistema formal y públicamente financiado de cuidados de larga duración, pese a que el 88 % de los países ha incluido el tema en su…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/15-12-2025-UNHCR-Poland-Ukraine.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "Al océano le cuesta cada vez más protegernos del CO₂",
-    "fecha": "2026-10-28",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542117",
-    "resumen": "El aumento de las temperaturas, junto con las alteraciones de la química, la circulación y los ecosistemas marinos, reduce la capacidad del océano para absorber y almacenar carbono. El resultado: una mayor parte del CO₂ permanece en la atmósfera, lo que…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/08/07-08-2026-Unsplash-Vanuatu.jpg/image560x340cropped.jpg",
     "destacada": false
    }
   ],
