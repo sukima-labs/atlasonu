@@ -1,8 +1,26 @@
 {
 "fuente": "Noticias ONU (news.un.org)",
-"actualizado": "2026-11-04T23:13:18Z",
-"total": 74,
+"actualizado": "2026-11-05T11:09:38Z",
+"total": 76,
 "notas": [
+{
+"titulo": "Un 25% de los adolescentes no hace suficiente ejercicio",
+"fecha": "2026-11-04",
+"enlace": "https://news.un.org/feed/view/es/story/2026/11/1542142",
+"resumen": "Uno de cada cuatro adolescentes, unos 240 millones, no realiza 60 minutos de actividad física ningún día de la semana, y las niñas se quedan más atrás: el 28 % no tiene ningún día activo, frente al 22 % de los niños. Durante 15 años, el mundo no ha logrado…",
+"visto": "2026-11-05",
+"derechos": false,
+"americas": false
+},
+{
+"titulo": "Clima y salud, clima y adaptación, el precio del petróleo… las noticias del miércoles",
+"fecha": "2026-11-04",
+"enlace": "https://news.un.org/feed/view/es/story/2026/11/1542141",
+"resumen": "El mundo \"no está preparado\" para adaptarse al cambio climático: los países en desarrollo necesitarán 305.000 millones de dólares anuales para 2035, pero la financiación pública internacional solo alcanzó entre 28.200 y 31.700 millones en 2024. La OMS…",
+"visto": "2026-11-05",
+"derechos": false,
+"americas": false
+},
 {
 "titulo": "El mundo no está preparado para la adaptación climática: la financiación se queda muy corta",
 "fecha": "2026-11-04",

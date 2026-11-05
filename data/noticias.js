@@ -1,8 +1,24 @@
 window.NOTICIAS={
  "fuente": "Noticias ONU (news.un.org)",
- "actualizado": "2026-11-04T23:13:18Z",
+ "actualizado": "2026-11-05T11:09:38Z",
  "temas": {
   "todas": [
+   {
+    "titulo": "Un 25% de los adolescentes no hace suficiente ejercicio",
+    "fecha": "2026-11-04",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542142",
+    "resumen": "Uno de cada cuatro adolescentes, unos 240 millones, no realiza 60 minutos de actividad física ningún día de la semana, y las niñas se quedan más atrás: el 28 % no tiene ningún día activo, frente al 22 % de los niños. Durante 15 años, el mundo no ha logrado…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/07-05-2025-IOM-Yemen-football-02.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
+   {
+    "titulo": "Clima y salud, clima y adaptación, el precio del petróleo… las noticias del miércoles",
+    "fecha": "2026-11-04",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542141",
+    "resumen": "El mundo \"no está preparado\" para adaptarse al cambio climático: los países en desarrollo necesitarán 305.000 millones de dólares anuales para 2035, pero la financiación pública internacional solo alcanzó entre 28.200 y 31.700 millones en 2024. La OMS…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/10/06-10-2026_UNICEF_Vietnam_El_Nino_Children.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
    {
     "titulo": "El mundo no está preparado para la adaptación climática: la financiación se queda muy corta",
     "fecha": "2026-11-04",
@@ -146,22 +162,6 @@ window.NOTICIAS={
     "resumen": "El aumento de las temperaturas, junto con las alteraciones de la química, la circulación y los ecosistemas marinos, reduce la capacidad del océano para absorber y almacenar carbono. El resultado: una mayor parte del CO₂ permanece en la atmósfera, lo que…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/08/07-08-2026-Unsplash-Vanuatu.jpg/image560x340cropped.jpg",
     "destacada": false
-   },
-   {
-    "titulo": "Cambio climático: En 2023, el calor mató a 700.000 personas",
-    "fecha": "2026-10-28",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542116",
-    "resumen": "La falta de coraje para afrontar la crisis climática sigue dañando y matando a personas en todos los países, con un récord estimado de 710.000 muertes globales por calor en 2023, advirtió este miércoles un informe con colaboración de la ONU. Por primera vez,…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/10/28-10-2026-extremeheat-AdobeStockjpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "Cuba, muertes por calor, Venezuela, Nicaragua… Las noticias del miércoles",
-    "fecha": "2026-10-28",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542114",
-    "resumen": "La Asamblea General pide el fin del embargo a Cuba (y ya van 34 veces). Un informe respaldado por la OMS denuncia 710.000 muertes por calor en 2023. Expertos piden a Venezuela levantar los bloqueos a internet y respetar la libertad de expresión. Expertos…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/27-10-2015-Unsplash-Havana-Cuba-01.jpg/image560x340cropped.jpg",
-    "destacada": true
    }
   ],
   "derechos": [
