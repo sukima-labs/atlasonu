@@ -62,6 +62,18 @@
   "mec": []
  },
  {
+  "id": "BEN",
+  "es": "Benín",
+  "en": "Benin",
+  "alias": [
+   "benin"
+  ],
+  "claves": [
+   "benin"
+  ],
+  "mec": []
+ },
+ {
   "id": "BRA",
   "es": "Brasil",
   "en": "Brazil",
