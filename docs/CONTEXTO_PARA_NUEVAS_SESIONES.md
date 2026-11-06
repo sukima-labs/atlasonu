@@ -3,7 +3,7 @@
 Lee esto primero si abres una sesión de Claude Code (por ejemplo, en el mini PC) sobre este repositorio.
 
 ## Qué es
-**ATLAS ONU – Arqueología documental**: plataforma académica, independiente y sin fines de lucro, sobre el sistema de derechos humanos de la ONU (mandatos de procedimientos especiales, tratados y comités, países, historia, siglas). Autor: Jeisson Arley Osorio Mesa, estudiante del Máster en Protección Internacional de los Derechos Humanos (Universidad de Alcalá). No es oficial de la ONU ni de la universidad.
+**ATLAS ONU – Arqueología documental**: plataforma independiente y sin fines de lucro, sobre el sistema de derechos humanos de la ONU (mandatos de procedimientos especiales, tratados y comités, países, historia, siglas). Autoría: Sukima-Labs (es lo único que debe figurar como autor). No es oficial de la ONU.
 
 - **Estado desde el 06-11-2026: el repositorio es público** y la web vuelve a estar en GitHub Pages (https://sukima-labs.github.io/onu-arqueologia-documental/). La búsqueda en vivo corre en `sk-atlas` y la actualización de datos en GitHub Actions; en el mini PC solo se desarrolla. Reglas de infraestructura: `CLAUDE.md` en la raíz.
 - Repositorio: `sukima-labs/onu-arqueologia-documental`. Flujo habitual: rama de trabajo → PR → fusión en `main`.

@@ -14,7 +14,7 @@ def sheet(name, head, rows, widths=None, first=False):
     for i, w in enumerate(widths or [], 1): ws.column_dimensions[get_column_letter(i)].width = w
     ws.freeze_panes = 'A2'; ws.auto_filter.ref = ws.dimensions
     return ws
-leeme = [['ATLAS ONU — catálogo v0.7'], ['Autor y titular: Jeisson Arley Osorio Mesa · © 2026. Iniciativa académica independiente; no es un producto oficial de la ONU ni de la Universidad de Alcalá.'],
+leeme = [['ATLAS ONU — catálogo v0.7'], ['Autoría: Sukima-Labs · © 2026. Iniciativa independiente; no es un producto oficial de la ONU.'],
  [f"Datos del {d['consultado']}. Fuentes: índice oficial de mandatos de OHCHR (spinternet.ohchr.org) y Biblioteca Digital de la ONU (digitallibrary.un.org)."],
  ['«Localizado» significa que existe un registro con ese símbolo exacto en la Biblioteca Digital; no sustituye leer el texto. Una resolución no es el informe que la reproduce.'],
  ['Hojas: Mandatos · Países · Actos (cadena de creación y prórrogas con estado de verificación) · Titulares · Textos (ruta al texto de cada resolución) · Mecanismos · Alertas.'],

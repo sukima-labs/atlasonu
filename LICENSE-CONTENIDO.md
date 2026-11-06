@@ -18,7 +18,7 @@ comerciales, **siempre que des crédito** y indiques si hiciste cambios.
 
 ## Cómo citarlo
 
-> Osorio Mesa, J. A. (2026). *ATLAS ONU – Arqueología documental de Naciones Unidas*.
+> Sukima-Labs (2026). *ATLAS ONU – Arqueología documental de Naciones Unidas*.
 > https://github.com/sukima-labs/onu-arqueologia-documental · CC BY 4.0
 
 ## Qué NO cubre (no es mío y no lo relicencio)

@@ -1,8 +1,8 @@
 # ENTREGA INTEGRAL PARA CLAUDE — ATLAS ONU
 
 Fecha: 27 de octubre de 2026.
-Autor y titular del proyecto: Jeisson Arley Osorio Mesa.
-Repositorio objetivo (ya creado y público): https://github.com/cataplum1414/onu-arqueologia-documental
+Autoría del proyecto: Sukima-Labs.
+Repositorio objetivo (ya creado y público): https://github.com/sukima-labs/onu-arqueologia-documental
 
 ## Qué incluye
 - La versión HTML más reciente: 01_PROYECTO_Y_VERSIONES/ATLAS_ONU_publicacion/index.html
@@ -22,7 +22,7 @@ Repositorio objetivo (ya creado y público): https://github.com/cataplum1414/onu
 7. Sincronización con fuentes oficiales de ONU al abrir/reconectar, o recarga programada compatible con seguridad de navegadores; caché y marcas de fecha; ruta de actualización alternativa si no hay API/CORS o permiso.
 8. Estadísticas, mapas geográficos con fuentes precisas, gráficos, comparaciones, cobertura, calidad y advertencias sobre denominadores y fechas.
 9. Selección de relatores y expertos, cinco miembros grupo consultivo, preselección, entrevistas, recomendación, Presidencia y nombramiento.
-10. Protección de la edición/autoria (mostrar © Jeisson Arley Osorio Mesa, repositorio público y licencia elegida por autor; publicar código no implica cesión de derechos).
+10. Protección de la edición/autoria (mostrar © Sukima-Labs, repositorio público y licencia elegida por autor; publicar código no implica cesión de derechos).
 11. Excel descargable y utilizable sin conexión, posible Power BI si aporta valor; HTML/Páginas GitHub para acceso desde PC y móvil.
 12. Probar navegador real, accesibilidad básica, enlaces oficiales, búsqueda, fallos, carga, integridad de datos, y tests reproducibles. No declarar 99/100% sin evidencias.
 13. Crear commits incrementales y publicar en repositorio, habilitar GitHub Pages, verificar URL pública real. No incorporar datos personales.
@@ -31,7 +31,7 @@ Repositorio objetivo (ya creado y público): https://github.com/cataplum1414/onu
 - Hay prototipo HTML local y catálogo parcial (28 mandatos y 11 trazas en la versión 0.6) con búsquedas y recuperación guiada, NO arqueología automatizada general.
 - No hay sincronización automática con la ONU, geodatos completos, catálogo exhaustivo ni auditoría jurídica completa.
 - Algunas pruebas estáticas pasaron; prueba completa de navegación Chromium no quedó acreditada.
-- Cuenta GitHub: cataplum1414; repo público existente. En el momento del traspaso no se había confirmado ningún commit ni GitHub Pages (la escritura devolvió 403).
+- Cuenta GitHub: la del fundador; repo público existente. En el momento del traspaso no se había confirmado ningún commit ni GitHub Pages (la escritura devolvió 403).
 - Claude deberá comprobar el repositorio actual antes de modificar, y realizar acciones solo con permiso y autenticación disponible.
 
 ## Guía para Claude
