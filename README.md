@@ -3,7 +3,7 @@
 Plataforma académica independiente para investigar los procedimientos especiales de la ONU y recuperar sus documentos originales **con verificación contra la fuente oficial**.
 
 **Para quién:** estudiantes, investigadoras e investigadores y organizaciones que necesitan encontrar y citar documentos del sistema de derechos humanos de la ONU (mandatos, tratados y comités, países, historia, siglas) sin perderse en su catalogación.
-**Cómo contribuir:** ver [CONTRIBUTING.md](CONTRIBUTING.md). **Sitio:** se abre en local con `index.html`; la web pública está despublicada mientras el repositorio es privado.
+**Cómo contribuir:** ver [CONTRIBUTING.md](CONTRIBUTING.md). **Sitio:** https://sukima-labs.github.io/onu-arqueologia-documental/ (también se abre en local con `index.html`).
 
 **Autor:** Jeisson Arley Osorio Mesa, estudiante del Máster en Protección Internacional de los Derechos Humanos (Universidad de Alcalá, España) · © 2026. **Licencias:** código bajo [AGPL-3.0](LICENSE) con autoría obligatoria ([NOTICE](NOTICE.md)); contenido propio bajo [CC BY 4.0](LICENSE-CONTENIDO.md); los datos y textos de la ONU no se relicencian (ver [análisis](docs/LICENCIA.md)).
 **Aviso:** iniciativa académica independiente. No es un producto oficial de Naciones Unidas ni de la Universidad de Alcalá.
@@ -17,7 +17,7 @@ Dos veces al día (12:17 y 00:17 hora de España en invierno; 13:17 y 01:17 en v
 
 ## Qué hace la versión 0.7
 - **57 mandatos vigentes** (44 temáticos y 13 por país) tomados del índice oficial de OHCHR, con titulares actuales.
-- **421 actos jurídicos** (creación, prórrogas) contrastados uno a uno con la Biblioteca Digital de la ONU: 401 localizados, 20 con reservas explicadas.
+- **421 actos jurídicos** (creación, prórrogas) contrastados uno a uno con la Biblioteca Digital de la ONU: 402 localizados, 19 con reservas explicadas.
 - **Ruta al texto de las 400 resoluciones localizadas:** 374 con PDF propio (comprobado leyendo su primera página; muestreo del registro 30/30) y 26 antiguas reproducidas en un informe de sesión, con páginas (p. ej. `E/CN.4/RES/1985/33` → `E/1985/22`, pp. 71–72).
 - **33 mecanismos conexos** verificados: los 10 órganos de tratados (datos de la diapositiva del curso de la UAH), EPU, procedimientos 1235 y 1503, EMRIP, Foro de Minorías, ACNUDH, 8 grupos de trabajo intergubernamentales y 8 comisiones de investigación / misiones.
 - **Búsqueda inteligente** en la portada: entiende sinónimos ES/EN («desaparecidos», «comida», «niños migrantes»), corrige erratas («tortrua») y muestra, mientras escribes, mandatos, resoluciones y mecanismos relacionados con acceso directo a la ficha o al texto.
@@ -31,7 +31,7 @@ Dos veces al día (12:17 y 00:17 hora de España en invierno; 13:17 y 01:17 en v
 
 ## Abrir
 Abrir `index.html` en cualquier navegador (también sin conexión: los datos van en `data/atlas-data.js`).
-**Web pública (despublicada desde el 28-10-2026, mientras el repositorio sea privado):** https://sukima-labs.github.io/onu-arqueologia-documental/ (para volver a publicarla: Settings → Pages → *Build and deployment* → Source: **Deploy from a branch** → Branch: `main`, carpeta `/ (root)` → Save; tarda ~1 minuto).
+**Web pública:** https://sukima-labs.github.io/onu-arqueologia-documental/ (si alguna vez se despublica, para volver a publicarla: Settings → Pages → *Build and deployment* → Source: **Deploy from a branch** → Branch: `main`, carpeta `/ (root)` → Save; tarda ~1 minuto).
 
 ## Estructura
 | Ruta | Contenido |
@@ -94,6 +94,6 @@ Código: **AGPL-3.0** (`LICENSE`), con autoría visible obligatoria (`NOTICE.md`
 
 En «Alertas de verificación» hay un panel **«Exactitud de los números de cada mandato»**: de los 421 actos, cuántos tienen un número exacto (338), cuántos fueron corregidos porque el índice de OHCHR citaba otro número (63) y cuántos hay que confirmar a mano (20); por acto y por mandato, con el número del índice y el verificado lado a lado, y exportable a CSV. «Recuperar documentos» sugiere los números más parecidos (con su título) cuando se teclea uno equivocado.
 
-## Mini PC (opcional, como respaldo)
+## Búsqueda en vivo y mini PC
 
-`docs/MINI_PC.md` explica cómo hacer que un mini PC Linux repita la revisión a las 12:00 y 00:00 (`scripts/mini_pc/`) como ejecutor principal, con el flujo de GitHub Actions como respaldo.
+La búsqueda en vivo (`scripts/mini_pc/busqueda_servicio.py`) corre en `sk-atlas`, el servidor de sukima-labs, publicada en https://sk-atlas.pig-mimosa.ts.net. La revisión diaria corre en GitHub Actions. El mini PC se retiró el 06-11-2026; `docs/MINI_PC.md` queda como historia.
