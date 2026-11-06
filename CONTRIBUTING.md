@@ -14,4 +14,7 @@ Toda ayuda es bienvenida: correcciones, fuentes oficiales que falten, errores de
 3. Pasa las pruebas: `node tests/smoke.cjs`, `node tests/invariantes.cjs` y `node tests/browser.cjs` (Playwright).
 4. Comprueba la pantalla a 390 px de ancho (celular) y en escritorio.
 
+## Licencia de tu aportación
+Al abrir un *pull request* aceptas que tu aportación se publique bajo la licencia del repositorio (AGPL-3.0-only para el código, CC BY 4.0 para el contenido propio) y concedes al titular del proyecto, y a quien le suceda en sus derechos, una licencia perpetua, mundial, no exclusiva y gratuita para usarla, modificarla, distribuirla, sublicenciarla y relicenciarla, también con otros términos. Firma cada commit con `git commit -s` para certificar el [Developer Certificate of Origin](https://developercertificate.org/): que la escribiste tú o tienes derecho a aportarla con esta licencia.
+
 El trabajo pendiente está en [docs/COLA_DE_TAREAS.md](docs/COLA_DE_TAREAS.md).
