@@ -3,7 +3,7 @@ import zipfile,hashlib,subprocess,json,re
 root=Path('/mnt/data/ATLAS_ONU_publicacion')
 readme='''# ATLAS ONU · Arqueología documental de procedimientos especiales
 
-**Autor y dirección académica:** Sukima-Labs (2026).
+**Autoría:** Sukima-Labs (2026).
 
 Proyecto educativo independiente, sin respaldo ni aval oficial de Naciones Unidas ni de la Universidad de Alcalá.
 

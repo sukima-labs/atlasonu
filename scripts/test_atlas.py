@@ -16,7 +16,7 @@ print('BROWSER SMOKE: NOT COMPLETED (headless Chromium timed out)')
 root=Path('/mnt/data/ATLAS_ONU_publicacion')
 (root/'README.md').write_text('''# ATLAS ONU — Arqueología documental
 
-**Autor:** Sukima-Labs · 2026. Proyecto académico independiente.
+**Autoría:** Sukima-Labs · 2026. Proyecto independiente.
 
 ## Abrir
 
