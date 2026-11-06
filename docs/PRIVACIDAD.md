@@ -5,7 +5,7 @@ Criterios del proyecto (31-10-2026). Cambiarlos exige una tarea en la cola y una
 ## Qué datos existen hoy
 | Dato | Dónde | Quién lo ve | Personal |
 |---|---|---|---|
-| Contador de visitas: dos números agregados (total y por país) | mini PC (`busqueda_servicio.py`) | el autor | no: ni IP, ni cookies, ni identificadores |
+| Contador de visitas: dos números agregados (total y por país) | `sk-atlas`, el servidor de sukima-labs (`busqueda_servicio.py`) | el autor | no: ni IP, ni cookies, ni identificadores |
 | País de visita | se deduce en el navegador (zona horaria o idioma) y no se envía con identidad | nadie fuera del navegador | no |
 | Búsquedas en vivo | el servicio las recibe para consultar la Biblioteca Digital | el servicio, sin registro | en principio no; no se guardan |
 | Datos de personas de los mandatos | solo funciones públicas: titulares, nacionalidad y actos oficiales | público | sí, pero son información pública de la función |
