@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Servicio de búsqueda en vivo de ATLAS ONU (corre en el mini PC).
+"""Servicio de búsqueda en vivo de ATLAS ONU (corre en sk-atlas, el servidor de sukima-labs).
 
 El navegador no puede leer la Biblioteca Digital ONU (no envía CORS), así que la página pregunta
 aquí cuando el catálogo no encuentra nada. Escucha solo en 127.0.0.1; se publica con Tailscale Funnel.
