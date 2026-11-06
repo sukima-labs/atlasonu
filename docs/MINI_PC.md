@@ -1,5 +1,11 @@
 # Revisión automática desde un mini PC (opcional)
 
+> **Retirado el 06-11-2026 (decisión de los socios).** El proyecto ya no necesita el mini PC: la revisión de
+> fuentes corre en GitHub Actions (el repositorio es público, así que no gasta cupo) y la búsqueda en vivo
+> (`scripts/mini_pc/busqueda_servicio.py`) corre en el servidor de sukima-labs, en `sk-atlas`, publicada en
+> `https://sk-atlas.pig-mimosa.ts.net`. En el mini PC se desarrolla (clon, ramas y pruebas), pero no corre
+> ningún servicio ni temporizador del proyecto. Lo de abajo queda como historia.
+
 ## Papel del mini PC
 
 El mini PC es el **ejecutor principal** de la actualización: a las **12:00 y 00:00 (hora local, España)** revisa las fuentes oficiales de la ONU, valida los datos y publica en `main` solo si todo está bien. Sale por tu conexión doméstica, así que la Biblioteca Digital de la ONU no lo limita como a los servidores de GitHub.

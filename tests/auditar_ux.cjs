@@ -3,7 +3,7 @@ const { chromium } = require('playwright');
 const path=require('path').resolve(__dirname,'..','index.html');
 (async()=>{
  const b=await chromium.launch(); const p=await b.newPage({viewport:{width:390,height:844}});
- await p.route(/dignityos\.tailaa1f76/,r=>r.fulfill({status:200,contentType:'application/json',headers:{'access-control-allow-origin':'*'},body:'{"resultados":[]}'}));
+ await p.route(/sk-atlas\.pig-mimosa/,r=>r.fulfill({status:200,contentType:'application/json',headers:{'access-control-allow-origin':'*'},body:'{"resultados":[]}'}));
  await p.goto('file://'+path);
  const pages=await p.evaluate(()=>[...document.querySelectorAll('.nav button[data-page]')].map(x=>x.dataset.page));
  for(const id of pages){
