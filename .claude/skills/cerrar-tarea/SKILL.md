@@ -17,5 +17,5 @@ description: Cierre de cada tarea de ATLAS ONU antes de pedir /clear. Sincroniza
    Cada cifra del texto (siglas, hechos de historia, mandatos…) debe coincidir con la real.
 3. **Reservas del fundador:** no publicar lo que pidió mantener en reserva (por ejemplo, el origen académico de DIGNITYOS y el detalle de cómo funciona). Dudas, preguntar.
 4. **Pruebas:** `cd tests && node smoke.cjs`, `node tests/invariantes.cjs` y `node tests/browser.cjs`. Revisar la pantalla a 390 px y en escritorio.
-5. **Subir:** rama → commit → PR → fusión con el CI en verde. Dejar la carpeta limpia (el mini PC hace `reset --hard origin/main`).
+5. **Subir:** rama → commit → PR → fusión con el CI en verde. Dejar la carpeta limpia.
 6. **Cerrar:** resumen corto y pedir `/clear`.

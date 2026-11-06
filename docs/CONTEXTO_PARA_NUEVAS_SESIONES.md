@@ -1,6 +1,6 @@
 # Contexto para retomar el proyecto en una sesión nueva
 
-Lee esto primero si abres una sesión de Claude Code (por ejemplo, en el mini PC) sobre este repositorio.
+Lee esto primero si abres una sesión de Claude Code sobre este repositorio, en cualquier clon (también en el mini PC, donde solo se desarrolla: allí no corre nada de ATLAS desde el 06-11-2026).
 
 ## Qué es
 **ATLAS ONU – Arqueología documental**: plataforma independiente y sin fines de lucro, sobre el sistema de derechos humanos de la ONU (mandatos de procedimientos especiales, tratados y comités, países, historia, siglas). Autoría: Sukima-Labs (es lo único que debe figurar como autor). No es oficial de la ONU.
@@ -13,7 +13,7 @@ Sitio estático: `index.html` + `data/atlas-data.js` (generado) + archivos difer
 
 | Qué | Dónde |
 |---|---|
-| Actualización completa de datos | `bash scripts/actualizar_datos.sh` (GitHub Actions a las 12:17 y 00:17 hora de España en invierno; opcional en el mini PC, `docs/MINI_PC.md`) |
+| Actualización completa de datos | `bash scripts/actualizar_datos.sh` (solo en GitHub Actions, a las 12:17 y 00:17 hora de España en invierno; el temporizador del mini PC se retiró el 06-11-2026) |
 | Reconstruir el catálogo | `python3 -I scripts/build_catalog.py data/fuentes/verificacion_simbolos.json <fecha>` |
 | Pruebas | `node tests/smoke.cjs` · `node tests/invariantes.cjs` · `node tests/browser.cjs` (Playwright; `ATLAS_URL=<https>` para probar la web publicada) |
 | Contenido propio (CC BY 4.0) | `data/siglas.json`, `data/sistema_onu.json`, `data/historia.json` |
@@ -44,5 +44,5 @@ Pantallas: Panorama (portada), Explorar mandatos, Cómo funciona la ONU (mapa, f
 
 ## Cosas a vigilar
 - La Biblioteca Digital de la ONU limita el ritmo de consultas: el verificador reintenta, y si fallan pocas consultas conserva lo ya verificado (aborta si pasan del 3 %).
-- El contador de visitas es propio: lo sirve `atlas-busqueda.service` del mini PC (`/visita` suma, `/visitas` lee) y guarda solo total y cifra por país en `~/.local/share/atlas-onu/visitas.json` (sin IP ni cookies); no cuenta en pruebas, en copias locales ni con `?sinvisita`.
+- El contador de visitas es propio: lo sirve `atlas-busqueda.service` en `sk-atlas`, el servidor de sukima-labs (`/visita` suma, `/visitas` lee), y guarda solo total y cifra por país en `/var/lib/atlas/visitas.json` (sin IP ni cookies); no cuenta en pruebas, en copias locales ni con `?sinvisita`.
 - Las capturas de `audit/` solo se regeneran con `ATLAS_CAPTURAS=1 node tests/browser.cjs`.
