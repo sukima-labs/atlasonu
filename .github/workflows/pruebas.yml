@@ -1,5 +1,7 @@
 name: Pruebas
-on: [push, pull_request]
+on:
+  push: { branches: [main] }   # en las demás ramas ya corre por su PR; así un force-push no lanza decenas de ejecuciones
+  pull_request: {}
 jobs:
   pruebas:
     runs-on: ubuntu-24.04
