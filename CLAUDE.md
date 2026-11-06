@@ -1,0 +1,34 @@
+# ATLAS ONU — reglas para cualquier Claude que trabaje en este repositorio
+
+Este fichero lo carga Claude Code en cualquier clon: en el mini PC de Jeisson, en el servidor de sukima-labs o
+donde sea. Antes de empezar, lee también `docs/CONTEXTO_PARA_NUEVAS_SESIONES.md`.
+
+## Infraestructura: aquí NO se crea (06-11-2026)
+
+**Hubo una mudanza.** Desde el 06-11-2026 ATLAS ya no corre en el mini PC (`dignityos`):
+- la **búsqueda en vivo** corre en el servidor de sukima-labs, en el contenedor `sk-atlas` (servicio
+  `atlas-busqueda`, publicado en `https://sk-atlas.pig-mimosa.ts.net`);
+- la **actualización de datos** corre en GitHub Actions;
+- la **web** está en GitHub Pages: https://sukima-labs.github.io/onu-arqueologia-documental/
+
+**Infraestructura** es todo lo que se queda corriendo o se expone: servicios y temporizadores de systemd
+(también los de usuario), cron, servidores o puertos abiertos, túneles o Funnel, DNS, la configuración de
+Tailscale, Cloudflare o Supabase, runners de CI, copias de seguridad y secretos. **La lleva `maquina`, el Claude
+del servidor, a través de Patricio.**
+
+Un Claude que trabaja en un clon **desarrolla**: código, datos, pruebas, documentación y PR. **No crea, no instala
+y no cambia infraestructura**, tampoco «para probar». Si algo necesita infraestructura:
+1. abre un issue con la etiqueta `infra`, explicando qué hace falta y por qué;
+2. pídele a Jeisson que avise a Patricio.
+
+**Si estás en el mini PC** y ves activos servicios o temporizadores viejos de ATLAS (`atlas-onu.service`,
+`atlas-onu.timer`, `atlas-respaldo.timer` o una búsqueda local), díselo a Jeisson: se desactivan con
+`systemctl --user disable --now <nombre>`. No montes nada que los sustituya: su trabajo ya se hace en otro sitio.
+
+`scripts/mini_pc/` y `docs/MINI_PC.md` son historia, con una excepción: `scripts/mini_pc/busqueda_servicio.py` es
+lo que corre hoy en `sk-atlas`. No lo muevas ni le cambies el nombre sin hablarlo antes con Patricio.
+
+## Lo demás
+- Todo cambio va por PR. Los commits salen con la cuenta de la persona, y Claude nunca figura como contribuidor:
+  ni `Co-Authored-By` ni nada parecido.
+- El repositorio es público: ni secretos, ni datos personales, ni el correo de nadie.
