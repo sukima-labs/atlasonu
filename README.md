@@ -5,7 +5,7 @@ Plataforma académica independiente para investigar los procedimientos especiale
 **Para quién:** estudiantes, investigadoras e investigadores y organizaciones que necesitan encontrar y citar documentos del sistema de derechos humanos de la ONU (mandatos, tratados y comités, países, historia, siglas) sin perderse en su catalogación.
 **Cómo contribuir:** ver [CONTRIBUTING.md](CONTRIBUTING.md). **Sitio:** https://sukima-labs.github.io/onu-arqueologia-documental/ (también se abre en local con `index.html`).
 
-**Autor:** Sukima-Labs, estudiante del Máster en Protección Internacional de los Derechos Humanos (Universidad de Alcalá, España) · © 2026. **Licencias:** código bajo [AGPL-3.0](LICENSE) con autoría obligatoria ([NOTICE](NOTICE.md)); contenido propio bajo [CC BY 4.0](LICENSE-CONTENIDO.md); los datos y textos de la ONU no se relicencian (ver [análisis](docs/LICENCIA.md)).
+**Autoría:** Sukima-Labs · © 2026. **Licencias:** código bajo [AGPL-3.0](LICENSE) con autoría obligatoria ([NOTICE](NOTICE.md)); contenido propio bajo [CC BY 4.0](LICENSE-CONTENIDO.md); los datos y textos de la ONU no se relicencian (ver [análisis](docs/LICENCIA.md)).
 **Aviso:** iniciativa académica independiente. No es un producto oficial de Naciones Unidas ni de la Universidad de Alcalá.
 
 ## Se actualiza sola

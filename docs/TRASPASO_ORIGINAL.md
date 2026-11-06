@@ -1,7 +1,7 @@
 # ENTREGA INTEGRAL PARA CLAUDE — ATLAS ONU
 
 Fecha: 27 de octubre de 2026.
-Autor y titular del proyecto: Sukima-Labs.
+Autoría del proyecto: Sukima-Labs.
 Repositorio objetivo (ya creado y público): https://github.com/sukima-labs/onu-arqueologia-documental
 
 ## Qué incluye
@@ -31,7 +31,7 @@ Repositorio objetivo (ya creado y público): https://github.com/sukima-labs/onu-
 - Hay prototipo HTML local y catálogo parcial (28 mandatos y 11 trazas en la versión 0.6) con búsquedas y recuperación guiada, NO arqueología automatizada general.
 - No hay sincronización automática con la ONU, geodatos completos, catálogo exhaustivo ni auditoría jurídica completa.
 - Algunas pruebas estáticas pasaron; prueba completa de navegación Chromium no quedó acreditada.
-- Cuenta GitHub: sukima-labs; repo público existente. En el momento del traspaso no se había confirmado ningún commit ni GitHub Pages (la escritura devolvió 403).
+- Cuenta GitHub: la del fundador; repo público existente. En el momento del traspaso no se había confirmado ningún commit ni GitHub Pages (la escritura devolvió 403).
 - Claude deberá comprobar el repositorio actual antes de modificar, y realizar acciones solo con permiso y autenticación disponible.
 
 ## Guía para Claude

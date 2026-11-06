@@ -1,6 +1,6 @@
 # ATLAS ONU — reglas para cualquier Claude que trabaje en este repositorio
 
-Este fichero lo carga Claude Code en cualquier clon: en el mini PC de el fundador, en el servidor de sukima-labs o
+Este fichero lo carga Claude Code en cualquier clon: en el mini PC del fundador, en el servidor de sukima-labs o
 donde sea. Antes de empezar, lee también `docs/CONTEXTO_PARA_NUEVAS_SESIONES.md`.
 
 ## Infraestructura: aquí NO se crea (06-11-2026)
@@ -19,10 +19,10 @@ del servidor, a través de Patricio.**
 Un Claude que trabaja en un clon **desarrolla**: código, datos, pruebas, documentación y PR. **No crea, no instala
 y no cambia infraestructura**, tampoco «para probar». Si algo necesita infraestructura:
 1. abre un issue con la etiqueta `infra`, explicando qué hace falta y por qué;
-2. pídele a el fundador que avise a Patricio.
+2. pídele al fundador que avise a Patricio.
 
 **Si estás en el mini PC** y ves activos servicios o temporizadores viejos de ATLAS (`atlas-onu.service`,
-`atlas-onu.timer`, `atlas-respaldo.timer` o una búsqueda local), díselo a el fundador: se desactivan con
+`atlas-onu.timer`, `atlas-respaldo.timer` o una búsqueda local), díselo al fundador: se desactivan con
 `systemctl --user disable --now <nombre>`. No montes nada que los sustituya: su trabajo ya se hace en otro sitio.
 
 `scripts/mini_pc/` y `docs/MINI_PC.md` son historia, con una excepción: `scripts/mini_pc/busqueda_servicio.py` es
@@ -32,3 +32,4 @@ lo que corre hoy en `sk-atlas`. No lo muevas ni le cambies el nombre sin hablarl
 - Todo cambio va por PR. Los commits salen con la cuenta de la persona, y Claude nunca figura como contribuidor:
   ni `Co-Authored-By` ni nada parecido.
 - El repositorio es público: ni secretos, ni datos personales, ni el correo de nadie.
+- **Autoría: solo Sukima-Labs** (06-11-2026). Ningún nombre de persona figura como autor de ATLAS ONU: ni en la web, ni en `NOTICE.md`, `CITATION.cff`, README, datos ni documentos. Las pruebas lo comprueban.
