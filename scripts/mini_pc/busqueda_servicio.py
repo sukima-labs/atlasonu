@@ -13,12 +13,12 @@ import xml.etree.ElementTree as ET
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 PUERTO = int(os.environ.get("ATLAS_BUSQUEDA_PUERTO", "8787"))
-ORIGENES = {"https://cataplum1414.github.io"}
+ORIGENES = {"https://sukima-labs.github.io"}
 FUENTE = "https://digitallibrary.un.org/search"
 TTL = 3600           # segundos que se reutiliza una respuesta
 MAX_CACHE = 500
 MAX_POR_MIN = 20     # consultas nuevas a la ONU por minuto (todas las visitas juntas)
-UA = "ATLAS-ONU/1.0 (+https://github.com/cataplum1414/onu-arqueologia-documental)"
+UA = "ATLAS-ONU/1.0 (+https://github.com/sukima-labs/onu-arqueologia-documental)"
 
 VISITAS_ARCHIVO = os.environ.get("ATLAS_VISITAS_ARCHIVO", os.path.expanduser("~/.local/share/atlas-onu/visitas.json"))
 MAX_VISITAS_POR_MIN = 120   # tope global de visitas sumadas por minuto (frena abusos sin identificar a nadie)

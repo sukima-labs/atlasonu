@@ -31,7 +31,7 @@ Dos veces al día (12:17 y 00:17 hora de España en invierno; 13:17 y 01:17 en v
 
 ## Abrir
 Abrir `index.html` en cualquier navegador (también sin conexión: los datos van en `data/atlas-data.js`).
-**Web pública (despublicada desde el 28-10-2026, mientras el repositorio sea privado):** https://cataplum1414.github.io/onu-arqueologia-documental/ (para volver a publicarla: Settings → Pages → *Build and deployment* → Source: **Deploy from a branch** → Branch: `main`, carpeta `/ (root)` → Save; tarda ~1 minuto).
+**Web pública (despublicada desde el 28-10-2026, mientras el repositorio sea privado):** https://sukima-labs.github.io/onu-arqueologia-documental/ (para volver a publicarla: Settings → Pages → *Build and deployment* → Source: **Deploy from a branch** → Branch: `main`, carpeta `/ (root)` → Save; tarda ~1 minuto).
 
 ## Estructura
 | Ruta | Contenido |

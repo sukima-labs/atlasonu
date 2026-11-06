@@ -19,7 +19,7 @@ git clone repositorio.bundle ~/Documentos/atlas-onu
 mkdir -p ~/.local/share/atlas-onu && cp -a extra/visitas/. ~/.local/share/atlas-onu/
 cp -a extra/atlas-epu-privado ~/atlas-epu-privado
 ```
-Después, apunta el clon al remoto (`git remote set-url origin https://github.com/cataplum1414/onu-arqueologia-documental.git`) y reinstala servicios y temporizadores: `bash scripts/mini_pc/instalar.sh` y `sudo loginctl enable-linger "$USER"` (detalles en `docs/MINI_PC.md`; el token de GitHub se crea de nuevo, no se copia).
+Después, apunta el clon al remoto (`git remote set-url origin https://github.com/sukima-labs/onu-arqueologia-documental.git`) y reinstala servicios y temporizadores: `bash scripts/mini_pc/instalar.sh` y `sudo loginctl enable-linger "$USER"` (detalles en `docs/MINI_PC.md`; el token de GitHub se crea de nuevo, no se copia).
 
 ## Funnel (búsqueda y contador desde fuera)
 Solo lo puede activar el fundador: `tailscale funnel --https=10000 http://127.0.0.1:8787`. Para apagarlo: `tailscale funnel --https=10000 off`. DIGNITYOS usa 443 y 8443: no tocarlos. Se decide en T44 si sigue expuesto.

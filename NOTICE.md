@@ -1,7 +1,7 @@
 # Aviso de autoría y términos adicionales (AGPL-3.0, sección 7)
 
 **ATLAS ONU – Arqueología documental** · © 2026 Jeisson Arley Osorio Mesa
-Proyecto original: <https://cataplum1414.github.io/onu-arqueologia-documental/> · Código fuente: <https://github.com/cataplum1414/onu-arqueologia-documental>
+Proyecto original: <https://sukima-labs.github.io/onu-arqueologia-documental/> · Código fuente: <https://github.com/sukima-labs/onu-arqueologia-documental>
 
 El código se publica bajo la **GNU Affero General Public License v3.0** (`LICENSE`). Conforme a su sección 7, se añaden estos términos, que rigen toda copia, versión modificada o servicio basado en este código:
 

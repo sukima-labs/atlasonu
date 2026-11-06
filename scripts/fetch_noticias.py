@@ -13,7 +13,7 @@ TEMAS = {
     "derechos": BASE + "topic/human-rights/feed/rss.xml",
     "americas": BASE + "region/americas/feed/rss.xml",
 }
-UA = "ATLAS-ONU/1.0 (+https://github.com/cataplum1414/onu-arqueologia-documental)"
+UA = "ATLAS-ONU/1.0 (+https://github.com/sukima-labs/onu-arqueologia-documental)"
 MAX = 20
 
 

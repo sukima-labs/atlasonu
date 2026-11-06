@@ -7,7 +7,7 @@ import gzip, json, re, sys, urllib.parse, urllib.request
 import xml.etree.ElementTree as ET
 
 NS = "{http://www.loc.gov/MARC21/slim}"
-UA = "ATLAS-ONU/1.0 (+https://github.com/cataplum1414/onu-arqueologia-documental)"
+UA = "ATLAS-ONU/1.0 (+https://github.com/sukima-labs/onu-arqueologia-documental)"
 # símbolo -> (nombre corto, palabras clave en español para la búsqueda, informe de sesión donde está el texto adoptado)
 MARCO = {
     "A/RES/60/251": ("Creación del Consejo de Derechos Humanos", "consejo de derechos humanos creacion asamblea general", None),
