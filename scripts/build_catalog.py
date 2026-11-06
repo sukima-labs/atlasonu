@@ -152,11 +152,14 @@ for k, v in ev.items():
     if k in index: index[k]['evidencia'] = v
 mec = json.load(open('data/fuentes/mecanismos.json', encoding='utf-8')) if os.path.exists('data/fuentes/mecanismos.json') else []
 PAISES = json.load(open('data/paises.json', encoding='utf-8'))
+OHCHR_EN = {o['en'].lower(): o['iso3'] for o in json.load(open('data/fuentes/paises_ohchr.json', encoding='utf-8'))['paises'] if o['iso3'] != 'OTH'}
 def pid(raw):
     r = re.sub(r'^the ', '', raw.strip().rstrip('.').lower().replace('’', '’'))
     for p in PAISES:
         if r in [a.lower() for a in p['alias']]: return p['id']
-    return None
+    # Un titular de un país que aún no está en data/paises.json (p. ej. Benín, 06-11-2026) no debe parar la revisión diaria:
+    # se acepta el nombre inglés exacto de la lista oficial de OHCHR. Los nombres mal cortados siguen sin casar y la aserción los para.
+    return OHCHR_EN.get(r)
 sin_pais = set()
 for i, r in enumerate(recs):
     r['pais_id'] = pid(r['nameEN'].split(' in ')[-1]) if r['alcance'] == 'País' else None
