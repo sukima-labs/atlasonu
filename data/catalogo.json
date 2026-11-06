@@ -7317,7 +7317,9 @@
    "id": "BEN",
    "es": "Benín",
    "en": "Benin",
-   "claves": [],
+   "claves": [
+    "benin"
+   ],
    "mandato": null,
    "titulares_de": [],
    "comisiones": [],
