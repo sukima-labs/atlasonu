@@ -16,8 +16,10 @@ donde sea. Antes de empezar, lee también `docs/CONTEXTO_PARA_NUEVAS_SESIONES.md
 Tailscale, Cloudflare o Supabase, runners de CI, copias de seguridad y secretos. **La lleva `maquina`, el Claude
 del servidor, a través de Patricio.**
 
-Un Claude que trabaja en un clon **desarrolla**: código, datos, pruebas, documentación y PR. **No crea, no instala
-y no cambia infraestructura**, tampoco «para probar». Si algo necesita infraestructura:
+Un Claude que trabaja en un clon (en el mini PC o en cualquier otro sitio) **trabaja solo con su clon de git y con
+GitHub**: ramas, commits, PR e issues. Ahí desarrolla código, datos, pruebas y documentación. Nada más: ni
+servicios, ni servidores ni puertos, ni cambios en Tailscale, Cloudflare o Supabase, ni secretos. **No crea, no
+instala y no cambia infraestructura**, tampoco «para probar». Si algo necesita infraestructura:
 1. abre un issue con la etiqueta `infra`, explicando qué hace falta y por qué;
 2. pídele al fundador que avise a Patricio.
 
