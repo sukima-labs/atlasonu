@@ -4,7 +4,7 @@ Solo rutas permitidas por robots.txt (/record/<id>/files/…), 5 s entre descarg
 spcommreports.ohchr.org, que prohíbe el acceso automatizado (no se consulta). Requiere pdftotext (poppler).
 Salida: data/fuentes/comunicaciones_cifras.json. Uso: fetch_comunicaciones_cifras.py"""
 import re, sys, json, time, subprocess, tempfile, os, urllib.request
-UA = {'User-Agent': 'ATLAS-ONU/1.0 (proyecto academico sin fines de lucro; +https://github.com/cataplum1414/onu-arqueologia-documental)'}
+UA = {'User-Agent': 'ATLAS-ONU/1.0 (proyecto academico sin fines de lucro; +https://github.com/sukima-labs/onu-arqueologia-documental)'}
 ALIAS = {'türkiye': 'TUR', 'turkey': 'TUR', 'viet nam': 'VNM', 'czechia': 'CZE', "côte d'ivoire": 'CIV', "cote d'ivoire": 'CIV', 'republic of korea': 'KOR',
          'state of palestine': 'PSE', 'palestine': 'PSE', 'russian federation': 'RUS', 'united states of america': 'USA', 'iran (islamic republic of)': 'IRN',
          'united kingdom of great britain and northern ireland': 'GBR', 'venezuela (bolivarian republic of)': 'VEN', 'bolivia (plurinational state of)': 'BOL',

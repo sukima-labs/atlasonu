@@ -5,8 +5,8 @@ Lee esto primero si abres una sesión de Claude Code (por ejemplo, en el mini PC
 ## Qué es
 **ATLAS ONU – Arqueología documental**: plataforma académica, independiente y sin fines de lucro, sobre el sistema de derechos humanos de la ONU (mandatos de procedimientos especiales, tratados y comités, países, historia, siglas). Autor: Jeisson Arley Osorio Mesa, estudiante del Máster en Protección Internacional de los Derechos Humanos (Universidad de Alcalá). No es oficial de la ONU ni de la universidad.
 
-- **Estado desde el 28-10-2026: el repositorio es privado y la web de GitHub Pages está despublicada** (decisión del fundador; Pages en privado exige plan de pago). Se ve en local (`index.html` en esta carpeta). Antes estuvo en https://cataplum1414.github.io/onu-arqueologia-documental/ (Pages, rama `main`); para volver a publicar hay que poner el repositorio en público. Proyecto **en pausa** por decisión del fundador; al retomar, seguir por la cola (T36, T38, T39, T40).
-- Repositorio: `cataplum1414/onu-arqueologia-documental`. Flujo habitual: rama de trabajo → PR → fusión en `main`.
+- **Estado desde el 28-10-2026: el repositorio es privado y la web de GitHub Pages está despublicada** (decisión del fundador; Pages en privado exige plan de pago). Se ve en local (`index.html` en esta carpeta). Antes estuvo en https://sukima-labs.github.io/onu-arqueologia-documental/ (Pages, rama `main`); para volver a publicar hay que poner el repositorio en público. Proyecto **en pausa** por decisión del fundador; al retomar, seguir por la cola (T36, T38, T39, T40).
+- Repositorio: `sukima-labs/onu-arqueologia-documental`. Flujo habitual: rama de trabajo → PR → fusión en `main`.
 
 ## Cómo está hecho
 Sitio estático: `index.html` + `data/atlas-data.js` (generado) + archivos diferidos `data/paises/<ISO>.js` y `data/tratados/<id>.js`. Datos oficiales con Python (`scripts/`), pruebas con Node y Playwright.

@@ -20,4 +20,4 @@ Quedo atento a su respuesta. Muchas gracias por su trabajo.
 
 Jeisson Arley Osorio Mesa
 jeissonosorio10@gmail.com
-Repositorio: https://github.com/cataplum1414/onu-arqueologia-documental (hoy privado; público si responden afirmativamente y se republica el sitio)
+Repositorio: https://github.com/sukima-labs/onu-arqueologia-documental (hoy privado; público si responden afirmativamente y se republica el sitio)
