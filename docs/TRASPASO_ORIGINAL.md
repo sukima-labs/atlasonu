@@ -2,7 +2,7 @@
 
 Fecha: 27 de octubre de 2026.
 Autoría del proyecto: Sukima-Labs.
-Repositorio objetivo (ya creado y público): https://github.com/cataplum1414/onu-arqueologia-documental
+Repositorio objetivo (ya creado y público): https://github.com/sukima-labs/onu-arqueologia-documental
 
 ## Qué incluye
 - La versión HTML más reciente: 01_PROYECTO_Y_VERSIONES/ATLAS_ONU_publicacion/index.html
@@ -31,7 +31,7 @@ Repositorio objetivo (ya creado y público): https://github.com/cataplum1414/onu
 - Hay prototipo HTML local y catálogo parcial (28 mandatos y 11 trazas en la versión 0.6) con búsquedas y recuperación guiada, NO arqueología automatizada general.
 - No hay sincronización automática con la ONU, geodatos completos, catálogo exhaustivo ni auditoría jurídica completa.
 - Algunas pruebas estáticas pasaron; prueba completa de navegación Chromium no quedó acreditada.
-- Cuenta GitHub: cataplum1414; repo público existente. En el momento del traspaso no se había confirmado ningún commit ni GitHub Pages (la escritura devolvió 403).
+- Cuenta GitHub: la del fundador; repo público existente. En el momento del traspaso no se había confirmado ningún commit ni GitHub Pages (la escritura devolvió 403).
 - Claude deberá comprobar el repositorio actual antes de modificar, y realizar acciones solo con permiso y autenticación disponible.
 
 ## Guía para Claude
