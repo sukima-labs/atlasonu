@@ -18,5 +18,10 @@
       "Bash(sudo:*)",
       "Bash(tailscale funnel:*)"
     ]
-  }
+  },
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  },
+  "includeCoAuthoredBy": false
 }
