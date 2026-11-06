@@ -12,8 +12,8 @@
 Al empezar: leer `docs/CONTEXTO_PARA_NUEVAS_SESIONES.md` y esta cola. Las reglas de ese archivo no se rompen (no inventar datos, atribuir a la ONU, pruebas antes de publicar).
 
 ## Estado del entorno (28-10-2026)
-- Sitio: https://cataplum1414.github.io/onu-arqueologia-documental/ — GitHub Pages publica desde `main` (antes estaba mal apuntado a otra rama).
-- El mini PC ejecuta la revisión a las 12:00 y 00:00 (`atlas-onu.timer`) y el servicio de búsqueda en vivo (`atlas-busqueda.service`, puerto 8787), publicado con Tailscale Funnel en `https://dignityos.tailaa1f76.ts.net:10000`. DIGNITYOS usa 443 y 8443 solo en la red privada: no tocarlos. Apagar la exposición: `tailscale funnel --https=10000 off`.
+- Sitio: https://sukima-labs.github.io/onu-arqueologia-documental/ — GitHub Pages publica desde `main` (antes estaba mal apuntado a otra rama).
+- Desde el 06-11-2026 el mini PC no ejecuta nada del proyecto: la revisión diaria corre en GitHub Actions y la búsqueda en vivo en `sk-atlas` (`https://sk-atlas.pig-mimosa.ts.net`). Ver `docs/MINI_PC.md`.
 - Búsqueda en vivo: desde un equipo con Tailscale activo Chrome puede pedir un permiso de red local y la consulta no responde; la página corta la espera a los 10 s. Pendiente de confirmar en el celular del fundador con Tailscale apagado.
 - Acceso al mini PC (28-10-2026): auditoría hecha; sin señales de intrusión. Falta que el fundador ejecute `sudo bash ~/endurecer_minipc.sh` (solo llave en SSH, sin contraseña ni root) y valorar cortafuegos.
 
