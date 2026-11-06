@@ -3,7 +3,7 @@ import zipfile,hashlib,subprocess,json,re
 root=Path('/mnt/data/ATLAS_ONU_publicacion')
 readme='''# ATLAS ONU · Arqueología documental de procedimientos especiales
 
-**Autor y dirección académica:** Jeisson Arley Osorio Mesa (2026).
+**Autoría:** Sukima-Labs (2026).
 
 Proyecto educativo independiente, sin respaldo ni aval oficial de Naciones Unidas ni de la Universidad de Alcalá.
 
@@ -42,7 +42,7 @@ Ejecutar `node tests/smoke.cjs` tras descargar el proyecto. La prueba cubre carg
 
 ## Autoría y reutilización
 
-© 2026 Jeisson Arley Osorio Mesa. Todos los derechos reservados. La distribución pública por GitHub no otorga automáticamente permisos de reutilización más allá de los concedidos por la ley. Los documentos de Naciones Unidas mantienen sus condiciones de uso correspondientes.
+© 2026 Sukima-Labs. Todos los derechos reservados. La distribución pública por GitHub no otorga automáticamente permisos de reutilización más allá de los concedidos por la ley. Los documentos de Naciones Unidas mantienen sus condiciones de uso correspondientes.
 '''
 (root/'README.md').write_text(readme,encoding='utf-8')
 run=subprocess.run(['node',str(root/'tests'/'smoke.cjs')],capture_output=True,text=True)

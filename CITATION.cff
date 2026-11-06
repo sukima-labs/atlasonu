@@ -3,9 +3,7 @@ message: "Si usas esta plataforma o sus datos en un trabajo, cítala así."
 title: "ATLAS ONU – Arqueología documental de Naciones Unidas"
 type: software
 authors:
-  - family-names: "Osorio Mesa"
-    given-names: "Jeisson Arley"
-    affiliation: "Estudiante del Máster en Protección Internacional de los Derechos Humanos, Universidad de Alcalá (España)"
+  - name: "Sukima-Labs"
 date-released: "2026-10-27"
 repository-code: "https://github.com/sukima-labs/onu-arqueologia-documental"
 url: "https://sukima-labs.github.io/onu-arqueologia-documental/"

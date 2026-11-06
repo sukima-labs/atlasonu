@@ -16,7 +16,7 @@ print('BROWSER SMOKE: NOT COMPLETED (headless Chromium timed out)')
 root=Path('/mnt/data/ATLAS_ONU_publicacion')
 (root/'README.md').write_text('''# ATLAS ONU — Arqueología documental
 
-**Autor:** Jeisson Arley Osorio Mesa · 2026. Proyecto académico independiente.
+**Autoría:** Sukima-Labs · 2026. Proyecto independiente.
 
 ## Abrir
 
@@ -47,7 +47,7 @@ El módulo de recuperación sugiere varias rutas oficiales, pero **una ruta no e
 
 ## Autoría
 
-© 2026 Jeisson Arley Osorio Mesa. Todos los derechos reservados. La publicación pública por sí misma no constituye licencia abierta. Este trabajo no representa ni está avalado por la ONU o la Universidad de Alcalá.
+© 2026 Sukima-Labs. Todos los derechos reservados. La publicación pública por sí misma no constituye licencia abierta. Este trabajo no representa ni está avalado por la ONU o la Universidad de Alcalá.
 ''')
 (root/'tests').mkdir(exist_ok=True)
 (root/'tests'/'RESULTADOS.md').write_text('''# Pruebas de la versión local

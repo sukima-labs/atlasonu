@@ -1,7 +1,7 @@
 # ENTREGA INTEGRAL PARA CLAUDE — ATLAS ONU
 
 Fecha: 27 de octubre de 2026.
-Autor y titular del proyecto: Jeisson Arley Osorio Mesa.
+Autoría del proyecto: Sukima-Labs.
 Repositorio objetivo (ya creado y público): https://github.com/cataplum1414/onu-arqueologia-documental
 
 ## Qué incluye
@@ -22,7 +22,7 @@ Repositorio objetivo (ya creado y público): https://github.com/cataplum1414/onu
 7. Sincronización con fuentes oficiales de ONU al abrir/reconectar, o recarga programada compatible con seguridad de navegadores; caché y marcas de fecha; ruta de actualización alternativa si no hay API/CORS o permiso.
 8. Estadísticas, mapas geográficos con fuentes precisas, gráficos, comparaciones, cobertura, calidad y advertencias sobre denominadores y fechas.
 9. Selección de relatores y expertos, cinco miembros grupo consultivo, preselección, entrevistas, recomendación, Presidencia y nombramiento.
-10. Protección de la edición/autoria (mostrar © Jeisson Arley Osorio Mesa, repositorio público y licencia elegida por autor; publicar código no implica cesión de derechos).
+10. Protección de la edición/autoria (mostrar © Sukima-Labs, repositorio público y licencia elegida por autor; publicar código no implica cesión de derechos).
 11. Excel descargable y utilizable sin conexión, posible Power BI si aporta valor; HTML/Páginas GitHub para acceso desde PC y móvil.
 12. Probar navegador real, accesibilidad básica, enlaces oficiales, búsqueda, fallos, carga, integridad de datos, y tests reproducibles. No declarar 99/100% sin evidencias.
 13. Crear commits incrementales y publicar en repositorio, habilitar GitHub Pages, verificar URL pública real. No incorporar datos personales.
