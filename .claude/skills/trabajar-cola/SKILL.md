@@ -20,7 +20,7 @@ Autorización permanente del fundador (31-10-2026): decidir por tu cuenta lo nec
    - `browser.cjs` solo si Playwright está instalado (`node -e "require('playwright')"`). Si no, dilo en el cierre y añade una tarea a la cola para instalarlo.
 5. **Cola:** marca la tarea **hecha** con fecha y una línea. Recalcula «Siguiente tarea» a partir del orden decidido; no la escribas a mano.
 6. **Cambios visibles:** si cambia lo que se ve o la versión, actualizar `data/hoja_ruta.json` (ver `cerrar-tarea`) y `CHANGELOG.md`.
-7. **Commit y subida:** commit con identidad `Sukima-Labs <>` y las líneas de atribución de la sesión; `git push -u`; `gh pr create`. Esperar el CI con `gh pr checks <n> --watch --interval 20 > <scratchpad>/ci.txt` (no uses `sleep`: está bloqueado).
+7. **Commit y subida:** commit con identidad `sukima-labs <atlas@sukima-labs.invalid>` (la cuenta y su correo noreply de GitHub: el historial es público y no debe llevar su nombre ni su correo) y las líneas de atribución de la sesión; `git push -u`; `gh pr create`. Esperar el CI con `gh pr checks <n> --watch --interval 20 > <scratchpad>/ci.txt` (no uses `sleep`: está bloqueado).
 8. **Fusionar:** si el CI está en verde, `gh pr merge <n> --squash` **en una llamada sola**, sin encadenarlo con otros comandos (si el clasificador lo bloquea, toda la cadena se pierde). Nunca borres ramas en el mismo comando.
 9. Volver al paso 1.
 
