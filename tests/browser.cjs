@@ -8,7 +8,7 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
   const browser = await chromium.launch();
   // Las pruebas no deben salir a internet: la búsqueda en vivo (servicio del mini PC) se simula siempre vacía.
   const sinBusquedaReal = r => r.fulfill({ status: 200, contentType: 'application/json', headers: { 'access-control-allow-origin': '*' }, body: JSON.stringify({ consulta: '', total: 0, resultados: [] }) });
-  const BUSQ = /dignityos\.tailaa1f76\.ts\.net/;
+  const BUSQ = /sk-atlas\.pig-mimosa\.ts\.net/;
   const _newPage = browser.newPage.bind(browser), _newContext = browser.newContext.bind(browser);
   browser.newPage = async o => { const p = await _newPage(o); await p.route(BUSQ, sinBusquedaReal); return p; };
   browser.newContext = async o => { const c = await _newContext(o); await c.route(BUSQ, sinBusquedaReal); return c; };
@@ -240,7 +240,7 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     const ctx = await browser.newContext({ timezoneId: 'America/Bogota', locale: 'es-CO' }); const pv = await ctx.newPage();
     await pv.addInitScript(() => Object.defineProperty(navigator, 'webdriver', { get: () => false }));
     const llamadas = [];
-    await pv.route('https://dignityos.tailaa1f76.ts.net:10000/**', r => { const u = new globalThis.URL(r.request().url()); llamadas.push(u.pathname + u.search); r.fulfill({ status: 200, contentType: 'application/json', headers: { 'access-control-allow-origin': '*' }, body: JSON.stringify({ total: 1234, pais: 1234 }) }); });
+    await pv.route('https://sk-atlas.pig-mimosa.ts.net/**', r => { const u = new globalThis.URL(r.request().url()); llamadas.push(u.pathname + u.search); r.fulfill({ status: 200, contentType: 'application/json', headers: { 'access-control-allow-origin': '*' }, body: JSON.stringify({ total: 1234, pais: 1234 }) }); });
     await pv.route('https://atlas.test/**', r => { let p = new globalThis.URL(r.request().url()).pathname; if (p === '/') p = '/index.html'; const f = path.join(root, decodeURIComponent(p)); if (!f.startsWith(root) || !fs.existsSync(f)) return r.fulfill({ status: 404, body: '' }); r.fulfill({ status: 200, contentType: mime[path.extname(f)] || 'application/octet-stream', body: fs.readFileSync(f) }); });
     await pv.goto('https://atlas.test/'); await pv.waitForFunction(() => window.__atlasListo); await pv.waitForTimeout(1500);
     ok('visitas: la barra muestra el total, el país del visitante (Colombia) y sus visitas', (await pv.textContent('#visTotal')).replace(/\D/g, '') === '1234' && /Colombia/.test(await pv.textContent('#visPais')) && (await pv.textContent('#visPaisN')).replace(/\D/g, '') === '1234');
