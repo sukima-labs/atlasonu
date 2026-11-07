@@ -11741,28 +11741,28 @@
   {
    "mandato": "Independent Expert on the situation of human rights in Central African Republic",
    "acto": "prorrogado",
-   "original": "A/HRC/RES/60/34",
-   "limpio": "A/HRC/RES/60/34",
+   "original": "A/HRC/RES/63/32",
+   "limpio": "A/HRC/RES/63/32",
    "estado": "VERIFICADO",
-   "consultado": "A/HRC/RES/60/34",
+   "consultado": "A/HRC/RES/63/32",
    "registro": {
-    "id": "4090882",
-    "simbolo": "A/HRC/RES/60/34",
+    "id": "4131682",
+    "simbolo": "A/HRC/RES/63/32",
     "simbolos": [
-     "A/HRC/RES/60/34"
+     "A/HRC/RES/63/32"
     ],
     "titulo": "Technical assistance and capacity-building in the field of human rights in the Central African Republic",
-    "fecha": "2025-10-09",
-    "adoptada": "2025-10-08",
+    "fecha": "2026-10-08",
+    "adoptada": "2026-10-07",
     "borradores": [
-     "A/HRC/60/L.33/Rev.1",
-     "A/HRC/60/SR.46"
+     "A/HRC/63/L.31",
+     "A/HRC/63/SR.43"
     ],
-    "votacion": "Adopted without vote, 46th meeting",
+    "votacion": "Adopted without vote, 43rd meeting",
     "pdf": {
-     "en": "https://digitallibrary.un.org/record/4090882/files/A_HRC_RES_60_34-FR.pdf"
+     "en": "https://digitallibrary.un.org/record/4131682/files/A_HRC_RES_63_32-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4090882",
+    "url": "https://digitallibrary.un.org/record/4131682",
     "sesion_nota": "",
     "ubicacion": [],
     "padres": []
@@ -12293,6 +12293,36 @@
      "es": "https://digitallibrary.un.org/record/4063912/files/A_HRC_RES_57_35-ES.pdf"
     },
     "url": "https://digitallibrary.un.org/record/4063912",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
+   }
+  },
+  {
+   "mandato": "Independent Expert on the situation of human rights in Central African Republic",
+   "acto": "intermedia:2025",
+   "original": "A/HRC/RES/60/34",
+   "limpio": "A/HRC/RES/60/34",
+   "estado": "VERIFICADO",
+   "consultado": "A/HRC/RES/60/34",
+   "registro": {
+    "id": "4090882",
+    "simbolo": "A/HRC/RES/60/34",
+    "simbolos": [
+     "A/HRC/RES/60/34"
+    ],
+    "titulo": "Technical assistance and capacity-building in the field of human rights in the Central African Republic",
+    "fecha": "2025-10-09",
+    "adoptada": "2025-10-08",
+    "borradores": [
+     "A/HRC/60/L.33/Rev.1",
+     "A/HRC/60/SR.46"
+    ],
+    "votacion": "Adopted without vote, 46th meeting",
+    "pdf": {
+     "en": "https://digitallibrary.un.org/record/4090882/files/A_HRC_RES_60_34-FR.pdf"
+    },
+    "url": "https://digitallibrary.un.org/record/4090882",
     "sesion_nota": "",
     "ubicacion": [],
     "padres": []

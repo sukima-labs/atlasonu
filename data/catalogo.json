@@ -7321,7 +7321,12 @@
     "benin"
    ],
    "mandato": null,
-   "titulares_de": [],
+   "titulares_de": [
+    {
+     "idx": 48,
+     "titular": "Aristide NONONSI"
+    }
+   ],
    "comisiones": [],
    "region": "AFR",
    "region_origen": "oficial (base de comunicaciones de OHCHR)",
@@ -24840,11 +24845,11 @@
  ],
  "regiones_fuente": {
   "url": "https://spcommreports.ohchr.org/Tmsearch/TMDocuments",
-  "consultado": "2026-11-06"
+  "consultado": "2026-11-07"
  },
  "paises_fuente": {
   "url": "https://spinternet.ohchr.org/ViewCountryVisits.aspx?visitType=all",
-  "consultado": "2026-11-06"
+  "consultado": "2026-11-07"
  },
  "tratados": [
   {
@@ -25106,7 +25111,7 @@
  ],
  "tratados_fuente": {
   "url": "https://treaties.un.org/Pages/Treaties.aspx?id=4&subid=A&clang=_en",
-  "consultado": "2026-11-06"
+  "consultado": "2026-11-07"
  },
  "mecanismos": [
   {
@@ -26590,7 +26595,7 @@
    }
   }
  ],
- "consultado": "2026-11-06",
+ "consultado": "2026-11-07",
  "fuentes": [
   "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM",
   "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM",
@@ -34404,7 +34409,7 @@
    "renovacion_anio": "2026",
    "metodos": "",
    "revision": "Acto de creación localizado en la Biblioteca Digital ONU",
-   "nota": "«A/HRC/RES/3610» no tiene registro exacto en la Biblioteca Digital ONU a 2026-11-06; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
+   "nota": "«A/HRC/RES/3610» no tiene registro exacto en la Biblioteca Digital ONU a 2026-11-07; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
    "actos": [
     {
      "rol": "creación",
@@ -34436,7 +34441,7 @@
      "organo": "Consejo de Derechos Humanos",
      "simbolo_fuente": "A/HRC/RES/3610",
      "estado": "NO_ENCONTRADO",
-     "aviso": "«A/HRC/RES/3610» no tiene registro exacto en la Biblioteca Digital ONU a 2026-11-06; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión."
+     "aviso": "«A/HRC/RES/3610» no tiene registro exacto en la Biblioteca Digital ONU a 2026-11-07; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión."
     },
     {
      "rol": "prórroga intermedia",
@@ -35930,7 +35935,7 @@
    "renovacion_anio": "2025",
    "metodos": "",
    "revision": "Acto de creación localizado con símbolo corregido (ver nota)",
-   "nota": "La fuente OHCHR cita «E/CN.4/1993/6»; el documento oficial es «E/CN.4/RES/1993/6» (equivalencia inferida por símbolo y título; no se ha leído el texto). «A/HRC/RES/48/» no tiene registro exacto en la Biblioteca Digital ONU a 2026-11-06; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
+   "nota": "La fuente OHCHR cita «E/CN.4/1993/6»; el documento oficial es «E/CN.4/RES/1993/6» (equivalencia inferida por símbolo y título; no se ha leído el texto). «A/HRC/RES/48/» no tiene registro exacto en la Biblioteca Digital ONU a 2026-11-07; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
    "actos": [
     {
      "rol": "creación",
@@ -36083,7 +36088,7 @@
      "organo": "Consejo de Derechos Humanos",
      "simbolo_fuente": "A/HRC/RES/48/",
      "estado": "NO_ENCONTRADO",
-     "aviso": "«A/HRC/RES/48/» no tiene registro exacto en la Biblioteca Digital ONU a 2026-11-06; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión."
+     "aviso": "«A/HRC/RES/48/» no tiene registro exacto en la Biblioteca Digital ONU a 2026-11-07; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión."
     },
     {
      "rol": "prórroga intermedia",
@@ -36183,8 +36188,8 @@
    "anio": 2013,
    "organo": "Consejo de Derechos Humanos",
    "creacion": "A/HRC/RES/24/34",
-   "renovacion": "A/HRC/RES/60/34",
-   "renovacion_anio": "2025",
+   "renovacion": "A/HRC/RES/63/32",
+   "renovacion_anio": "2026",
    "metodos": "",
    "revision": "Acto de creación localizado en la Biblioteca Digital ONU",
    "nota": "La fuente OHCHR cita «A/HRC/27/L.31»; el documento oficial es «A/HRC/RES/27/28» (equivalencia inferida por símbolo y título; no se ha leído el texto). La fuente OHCHR cita «A/HRC/30/L.6»; el documento oficial es «A/HRC/RES/30/19» (equivalencia inferida por símbolo y título; no se ha leído el texto). La fuente OHCHR cita «A/HRC/33/L.16»; el documento oficial es «A/HRC/RES/33/27» (equivalencia inferida por símbolo y título; no se ha leído el texto). «A/HRC/36/L.18/Rev.1» es un borrador (L.); la Biblioteca Digital no lo vincula a la resolución adoptada. La fuente OHCHR cita «A/HRC/39/L.9»; el documento oficial es «A/HRC/RES/39/19» (equivalencia inferida por símbolo y título; no se ha leído el texto). La fuente OHCHR cita «A/HRC/45/L.54»; el documento oficial es «A/HRC/RES/45/35» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -36530,7 +36535,7 @@
      "via_borrador": false
     },
     {
-     "rol": "prórroga vigente",
+     "rol": "prórroga intermedia",
      "anio": "2025",
      "organo": "Consejo de Derechos Humanos",
      "simbolo_fuente": "A/HRC/RES/60/34",
@@ -36551,12 +36556,42 @@
       "en": "https://digitallibrary.un.org/record/4090882/files/A_HRC_RES_60_34-FR.pdf"
      },
      "via_borrador": false
+    },
+    {
+     "rol": "prórroga vigente",
+     "anio": "2026",
+     "organo": "Consejo de Derechos Humanos",
+     "simbolo_fuente": "A/HRC/RES/63/32",
+     "estado": "VERIFICADO",
+     "simbolo": "A/HRC/RES/63/32",
+     "titulo_oficial": "Technical assistance and capacity-building in the field of human rights in the Central African Republic",
+     "adoptada": "2026-10-07",
+     "sesion_nota": "",
+     "ubicacion": [],
+     "padres": [],
+     "borradores": [
+      "A/HRC/63/L.31",
+      "A/HRC/63/SR.43"
+     ],
+     "votacion": "Adopted without vote, 43rd meeting",
+     "registro": "https://digitallibrary.un.org/record/4131682",
+     "pdf": {
+      "en": "https://digitallibrary.un.org/record/4131682/files/A_HRC_RES_63_32-FR.pdf"
+     },
+     "via_borrador": false
     }
    ],
-   "actos_verificados": 14,
-   "actos_total": 15,
-   "titulares": [],
-   "titulares_texto": "",
+   "actos_verificados": 15,
+   "actos_total": 16,
+   "titulares": [
+    {
+     "tratamiento": "Mr.",
+     "nombre": "Aristide NONONSI",
+     "pais": "Benin",
+     "pais_id": "BEN"
+    }
+   ],
+   "titulares_texto": "Mr. Aristide NONONSI (Benin) 8 Oct. 2025 - 8 Oct. 2026",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM&lang=es",
    "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM&lang=en",
@@ -36574,7 +36609,7 @@
    "renovacion_anio": "2026",
    "metodos": "",
    "revision": "Acto de creación localizado con símbolo corregido (ver nota)",
-   "nota": "La fuente OHCHR cita «E/CN.4/2004/13»; el documento oficial es «E/CN.4/RES/2004/13» (equivalencia inferida por símbolo y título; no se ha leído el texto). La fuente OHCHR cita «A/HRC/31/L.25»; el documento oficial es «A/HRC/RES/31/18» (equivalencia inferida por símbolo y título; no se ha leído el texto). La fuente OHCHR cita «A/HRC/40/L.18»; el documento oficial es «A/HRC/RES/40/20» (equivalencia inferida por símbolo y título; no se ha leído el texto). La fuente OHCHR cita «A/HRC/43/25»; el documento oficial es «A/HRC/RES/43/25» (equivalencia inferida por símbolo y título; no se ha leído el texto). «A/HRC/58/617» no tiene registro exacto en la Biblioteca Digital ONU a 2026-11-06; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
+   "nota": "La fuente OHCHR cita «E/CN.4/2004/13»; el documento oficial es «E/CN.4/RES/2004/13» (equivalencia inferida por símbolo y título; no se ha leído el texto). La fuente OHCHR cita «A/HRC/31/L.25»; el documento oficial es «A/HRC/RES/31/18» (equivalencia inferida por símbolo y título; no se ha leído el texto). La fuente OHCHR cita «A/HRC/40/L.18»; el documento oficial es «A/HRC/RES/40/20» (equivalencia inferida por símbolo y título; no se ha leído el texto). La fuente OHCHR cita «A/HRC/43/25»; el documento oficial es «A/HRC/RES/43/25» (equivalencia inferida por símbolo y título; no se ha leído el texto). «A/HRC/58/617» no tiene registro exacto en la Biblioteca Digital ONU a 2026-11-07; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
    "actos": [
     {
      "rol": "creación",
@@ -36901,7 +36936,7 @@
      "organo": "Consejo de Derechos Humanos",
      "simbolo_fuente": "A/HRC/58/617",
      "estado": "NO_ENCONTRADO",
-     "aviso": "«A/HRC/58/617» no tiene registro exacto en la Biblioteca Digital ONU a 2026-11-06; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión."
+     "aviso": "«A/HRC/58/617» no tiene registro exacto en la Biblioteca Digital ONU a 2026-11-07; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión."
     },
     {
      "rol": "prórroga vigente",
@@ -54740,6 +54775,48 @@
   "~A/HRC/60/SR.46": {
    "ref": "A/HRC/RES/60/34"
   },
+  "A/HRC/RES/63/32": {
+   "simbolo": "A/HRC/RES/63/32",
+   "titulo": "Technical assistance and capacity-building in the field of human rights in the Central African Republic",
+   "adoptada": "2026-10-07",
+   "borradores": [
+    "A/HRC/63/L.31",
+    "A/HRC/63/SR.43"
+   ],
+   "votacion": "Adopted without vote, 43rd meeting",
+   "registro": "https://digitallibrary.un.org/record/4131682",
+   "pdf": {
+    "en": "https://digitallibrary.un.org/record/4131682/files/A_HRC_RES_63_32-FR.pdf"
+   },
+   "sesion_nota": "",
+   "ubicacion": [],
+   "padres": [],
+   "mandatos": [
+    "Independent Expert on the situation of human rights in Central African Republic"
+   ],
+   "texto": {
+    "descartadas_por_no_coincidir": [],
+    "estado": "TEXTO_DIRECTO",
+    "fuentes": [
+     {
+      "lengua": "en",
+      "tipo": "registro",
+      "url": "https://digitallibrary.un.org/record/4131682/files/A_HRC_RES_63_32-FR.pdf",
+      "validado": null
+     },
+     {
+      "lengua": "es",
+      "tipo": "ods",
+      "url": "https://documents.un.org/api/symbol/access?s=A/HRC/RES/63/32&l=es&t=pdf",
+      "validado": true
+     }
+    ],
+    "informe_sesion": []
+   }
+  },
+  "~A/HRC/63/L.31": {
+   "ref": "A/HRC/RES/63/32"
+  },
   "E/CN.4/RES/2004/13": {
    "simbolo": "E/CN.4/RES/2004/13",
    "titulo": "Situation of human rights in the Democratic People's Republic of Korea",
@@ -58608,7 +58685,7 @@
    "id": "V-049",
    "simbolo": "A/HRC/RES/3610",
    "tema": "Relatora Especial sobre las repercusiones negativas de las medidas coercitivas unilaterales en el disfrute de los derechos humanos (2017, prórroga intermedia)",
-   "problema": "«A/HRC/RES/3610» no tiene registro exacto en la Biblioteca Digital ONU a 2026-11-06; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
+   "problema": "«A/HRC/RES/3610» no tiene registro exacto en la Biblioteca Digital ONU a 2026-11-07; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
    "nivel": "ALTA",
    "accion": "Reintentar más adelante o buscar en el informe de sesión.",
    "url": "https://digitallibrary.un.org/"
@@ -58635,7 +58712,7 @@
    "id": "V-058",
    "simbolo": "A/HRC/RES/48/",
    "tema": "Relator Especial sobre la situación de los derechos humanos en Camboya (2021, prórroga intermedia)",
-   "problema": "«A/HRC/RES/48/» no tiene registro exacto en la Biblioteca Digital ONU a 2026-11-06; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
+   "problema": "«A/HRC/RES/48/» no tiene registro exacto en la Biblioteca Digital ONU a 2026-11-07; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
    "nivel": "ALTA",
    "accion": "Reintentar más adelante o buscar en el informe de sesión.",
    "url": "https://digitallibrary.un.org/"
@@ -58653,7 +58730,7 @@
    "id": "V-069",
    "simbolo": "A/HRC/58/617",
    "tema": "Relator Especial sobre la situación de los derechos humanos en la República Popular Democrática de Corea (2025, prórroga intermedia)",
-   "problema": "«A/HRC/58/617» no tiene registro exacto en la Biblioteca Digital ONU a 2026-11-06; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
+   "problema": "«A/HRC/58/617» no tiene registro exacto en la Biblioteca Digital ONU a 2026-11-07; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión.",
    "nivel": "ALTA",
    "accion": "Reintentar más adelante o buscar en el informe de sesión.",
    "url": "https://digitallibrary.un.org/"

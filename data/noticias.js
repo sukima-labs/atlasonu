@@ -1,8 +1,32 @@
 window.NOTICIAS={
  "fuente": "Noticias ONU (news.un.org)",
- "actualizado": "2026-11-06T03:35:58Z",
+ "actualizado": "2026-11-07T02:56:22Z",
  "temas": {
   "todas": [
+   {
+    "titulo": "Frente a la desinformación, hay que reconquistar la confianza en la ciencia",
+    "fecha": "2026-11-06",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542150",
+    "resumen": "La agencia de la saludo lanza el movimiento \"Juntos por la ciencia y la salud\", después de que la encuesta global más amplia hasta la fecha, con 140.000 personas en 140 países, revele que, aunque más del 70 % sigue creyendo en la ciencia, la confianza ha…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/31-03-2021_UNICEF-400295_COVAX_India.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
+   {
+    "titulo": "COP31, Sudán, Ucrania y precios de los alimentos… las noticias del viernes",
+    "fecha": "2026-11-06",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542149",
+    "resumen": "La Conferencia sobre el Clima, la COP31, arranca la próxima semana en Turquía con una advertencia: las ciudades necesitan 4,5 billones de dólares al año para adaptarse al clima, pero solo reciben una quinta parte. Baja el precio de los alimentos, pero el…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/09/03-09-2026-Climate-Visuals-Poland-01.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
+   {
+    "titulo": "En el Ártico y a la deriva, una expedición científica lanza un llamado a los líderes mundiales: Escuchen a la ciencia",
+    "fecha": "2026-11-06",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542147",
+    "resumen": "Atrapados voluntariamente en el hielo del Ártico, un grupo de científicos observa cómo se transforma una de las regiones más frágiles del planeta. Mientras el hielo retrocede y los petroleros ganan terreno, sus hallazgos llegan hasta el Secretario General de…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/11/05-11-2026-Tara-Polar-Station-02.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
    {
     "titulo": "Agua, Cumbre Iberoamericana y violencia sexual en el Reino Unido: las noticias del jueves",
     "fecha": "2026-11-05",
@@ -137,30 +161,6 @@ window.NOTICIAS={
     "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542123",
     "resumen": "No todo es destrucción. Unos 252 millones de hectáreas en 149 países —una superficie del tamaño de Kazajistán— están en restauración, y se han creado más de un millón de empleos verdes, pero la financiación anual debe cuadruplicarse, de 64.000 a 296.000…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/10/29-10-2026_UNEP_Brazil.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "Trabajo de cuidados, seguridad marítima, restauración de la naturaleza, contaminación… Las noticias del jueves",
-    "fecha": "2026-10-29",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542122",
-    "resumen": "Crece la demanda de cuidados de larga duración en América, al tiempo que la población envejece. Las nuevas tecnologías plantean oportunidades y riesgos para la seguridad marítima, advierte la ONU. La naturaleza se recupera, pero la financiación para…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/14-3-2024_Older%20People.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "En el mar, la IA trastoca las reglas de la guerra",
-    "fecha": "2026-10-29",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542121",
-    "resumen": "\"El arma decisiva de la próxima década no será un misil hipersónico, será el algoritmo\", advierte el periodista Fareed Zakaria ante el Consejo de Seguridad. El diagnóstico supera con creces los desafíos militares. Más del 90 % del comercio mundial de…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/10/29-10-2026_Adobe-_Shipping-lane.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "Haití: la inseguridad alimentaria en camino de alcanzar niveles récord",
-    "fecha": "2026-10-29",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542120",
-    "resumen": "Haití se enfrenta a una inseguridad alimentaria récord: 6,35 millones de personas en situación de crisis o emergencia entre marzo y junio de 2027, medio millón más que en el mismo período del año anterior, y casi dos millones en nivel de \"urgencia\". La ONU…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/27-09-2024-WFP-Haiti-02.jpg/image560x340cropped.jpg",
     "destacada": false
    }
   ],

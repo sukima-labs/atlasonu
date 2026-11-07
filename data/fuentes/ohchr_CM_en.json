@@ -1,6 +1,6 @@
 {
  "fuente": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM&lang=en",
- "consultado": "2026-11-06",
+ "consultado": "2026-11-07",
  "n": 13,
  "mandatos": [
   {
@@ -199,10 +199,10 @@
    "creado_anio": "2013",
    "creado_por": "HRC resolution",
    "creado_simbolo": "A/HRC/RES/24/34 (for one year)",
-   "prorrogado_anio": "2025",
+   "prorrogado_anio": "2026",
    "prorrogado_por": "HRC resolution",
-   "prorrogado_simbolo": "A/HRC/RES/60/34",
-   "titulares_texto": "",
+   "prorrogado_simbolo": "A/HRC/RES/63/32",
+   "titulares_texto": "Mr. Aristide NONONSI (Benin) 8 Oct. 2025 - 8 Oct. 2026",
    "observaciones": "",
    "prorrogas_intermedias": [
     {
@@ -289,6 +289,11 @@
      "anio": "2024",
      "por": "HRC resolution",
      "simbolo": "A/HRC/RES/57/35"
+    },
+    {
+     "anio": "2025",
+     "por": "HRC resolution",
+     "simbolo": "A/HRC/RES/60/34"
     }
    ],
    "idioma": "en"
