@@ -101,6 +101,10 @@
     {
      "t": "Comparador de dos países",
      "x": "En la pantalla Países, «Comparar dos países» pone dos fichas lado a lado: grupo regional, invitación permanente, mandato propio, comisiones, visitas, tratados ratificados uno a uno, vías de comunicaciones individuales y cuántas observaciones finales, documentos del EPU e informes de visita tiene cada uno. Un botón deja solo lo que cambia. Desde cada ficha se abre con «Comparar con otro país»."
+    },
+    {
+     "t": "Línea de tiempo por país",
+     "x": "Cada ficha de país tiene «Línea de tiempo»: firmas y ratificaciones de cada tratado, invitación permanente, creación de su mandato o comisión, observaciones finales de los comités, exámenes del EPU e informes de visita, por años y con enlace al original. Se filtra por tipo y se puede ordenar del más antiguo al más reciente. Solo entra lo que tiene fecha registrada."
     }
    ]
   },
@@ -131,10 +135,6 @@
    "titulo": "Pendiente",
    "intro": "En la cola de trabajo, por orden aproximado. Una tarea cada vez.",
    "items": [
-    {
-     "t": "Línea de tiempo por país",
-     "x": "La historia de cada país en orden de fechas, con sus tratados, visitas y actos principales."
-    },
     {
      "t": "Glosario de siglas al tocar",
      "x": "Al tocar una sigla en el texto de la plataforma aparece su significado, sin salir de la página."
