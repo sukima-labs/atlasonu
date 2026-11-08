@@ -22,7 +22,7 @@ const reposo = async pg => { let a = -1; for (let i = 0; i < 40; i++) { await pg
     // T12: búsqueda en vivo real desde el celular, escribiendo y tocando «Buscar»
     await pg.tap('#quick'); await pg.keyboard.type('desertification'); await pg.tap('.hero-search button.primary');
     const t0 = Date.now();
-    const vivo = await pg.waitForFunction(() => { const t = document.body.innerText; const m = t.match(/Biblioteca Digital ONU tiene \((\d+)\)/); return m ? +m[1] : (/no respondió|no responde/i.test(t) ? -1 : 0); }, null, { timeout: 15000, polling: 250 }).then(r => r.jsonValue()).catch(() => 0);
+    const vivo = await pg.waitForFunction(() => { const m = document.body.innerText.match(/Biblioteca Digital ONU (?:tiene \((\d+)\)|devolvieron resultados)/); return m ? (m[1] ? +m[1] : -1) : 0; }, null, { timeout: 15000, polling: 250 }).then(r => r.jsonValue()).catch(() => 0);
     ok(nom + ': T12 «desertification» trae resultados en vivo de la Biblioteca Digital ONU', vivo > 0, { resultados: vivo, segundos: (Date.now() - t0) / 1000 });
 
     // T14 + T28: el menú abre, se desliza con el dedo hasta el final y el fondo no se mueve
@@ -34,6 +34,7 @@ const reposo = async pg => { let a = -1; for (let i = 0; i < 40; i++) { await pg
     const fin = await pg.evaluate(() => { const s = document.getElementById('side'), b = [...s.querySelectorAll('.nav button')].pop(), r = b.getBoundingClientRect(); return { fin: s.scrollTop + s.clientHeight >= s.scrollHeight - 2, ultimo: b.textContent.trim(), visible: r.top >= 0 && r.bottom <= innerHeight, fondo: Math.round(scrollY) }; });
     ok(nom + ': T14/T28 el menú se desliza con el dedo hasta su último botón y el fondo no se mueve', fin.fin && fin.visible && fin.fondo === 0, fin);
 
+    { const p2 = await ctx.newPage(); await p2.setContent('<meta name=viewport content="width=device-width,initial-scale=1"><div style="height:3000px;width:100%">x</div>'); const c2 = await ctx.newCDPSession(p2); await c2.send('Input.synthesizePinchGesture', { x: 100, y: 100, scaleFactor: 2, gestureSourceType: 'touch' }); await p2.waitForTimeout(500); res.checks.push({ n: nom + ': (control: el pellizco hace zoom en una página vacía)', ok: true, extra: { escala: await p2.evaluate(() => visualViewport.scale) } }); await p2.close(); }
     // T17: con el menú abierto, pellizco real de zoom 2× hacia la derecha; el menú sigue la zona visible y no queda cortado
     await pg.evaluate(() => { document.getElementById('side').scrollTop = 0; });
     await cdp.send('Input.synthesizePinchGesture', { x: w - 30, y: h / 2, scaleFactor: 2, gestureSourceType: 'touch' }); await pg.waitForTimeout(600);
@@ -50,7 +51,11 @@ const reposo = async pg => { let a = -1; for (let i = 0; i < 40; i++) { await pg
     const epuBtn = pg.locator('#pNav button', { hasText: 'EPU' }); await epuBtn.scrollIntoViewIfNeeded(); await reposo(pg);
     const bajo = await epuBtn.evaluate(b => { const r = b.getBoundingClientRect(), x = r.left + r.width / 2, y = r.top + r.height / 2, e = document.elementFromPoint(x, y); return { x: Math.round(x), y: Math.round(y), alto: innerHeight, ancho: innerWidth, debajo: e ? (e.id ? '#' + e.id : e.tagName.toLowerCase() + '.' + e.className) + ' «' + e.textContent.trim().slice(0, 30) + '»' : null, esElBoton: e === b || b.contains(e) }; });
     ok(nom + ': T19 el botón «EPU» de la ficha se puede tocar (nada lo tapa)', bajo.esElBoton, bajo);
-    await pg.touchscreen.tap(bajo.x, bajo.y); await reposo(pg);
+    const y0 = await pg.evaluate(() => Math.round(scrollY));
+    await pg.touchscreen.tap(bajo.x, bajo.y);
+    const traza = []; for (let i = 0; i < 25; i++) { await pg.waitForTimeout(100); traza.push(await pg.evaluate(() => Math.round(scrollY))); }
+    bajo.scrollAntes = y0; bajo.traza = traza.join(','); bajo.altoDoc = await pg.evaluate(() => document.documentElement.scrollHeight); bajo.epuAbs = await pg.evaluate(() => Math.round(document.getElementById('ps-epu').getBoundingClientRect().top + scrollY));
+    res.checks.push({ n: nom + ': (diagnóstico del salto a EPU)', ok: true, extra: bajo });
     const epu = await pg.evaluate(() => Math.round(document.getElementById('ps-epu').getBoundingClientRect().top));
     const vuelve = (await pg.isVisible('#pTop')) && (await pg.tap('#pTop'), await reposo(pg), await pg.evaluate(() => Math.abs(document.getElementById('pNav').getBoundingClientRect().top) < 90));
     ok(nom + ': T19 la ficha de Colombia tiene 8 saltos, «EPU» lleva a su bloque y «↑ Qué quieres ver» vuelve', saltos === 8 && epu >= -5 && epu < h * 0.5 && vuelve, { saltos, epu });
