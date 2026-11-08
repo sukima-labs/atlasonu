@@ -39,7 +39,7 @@ Abrir `index.html` en cualquier navegador (también sin conexión: los datos van
 | `index.html` | Aplicación |
 | `data/` | `catalogo.json` y `atlas-data.js` (generados), `fuentes/` (descargas oficiales y verificación), `evidencias.json`, Excel del piloto |
 | `scripts/` | Descarga, normalización, verificación y construcción (`actualizar_datos.sh` ejecuta todo) |
-| `tests/` | `smoke.cjs` (135 pruebas de lógica, `invariantes.cjs`: 12) y `browser.cjs` (Chromium real, 165 comprobaciones, escritorio y móvil) |
+| `tests/` | `smoke.cjs` (135 pruebas de lógica, `invariantes.cjs`: 12) y `browser.cjs` (Chromium real, 214 comprobaciones, escritorio y móvil desde 320 px); `movil_real.cjs` emula tres teléfonos contra la web publicada y la búsqueda real (Actions → «Celular», cada lunes) |
 | `audit/` | Auditoría contra los 13 requisitos, discrepancias respecto a v0.6, inventario, manifiesto de integridad |
 | `docs/` | Traspaso original |
 
@@ -48,6 +48,7 @@ Abrir `index.html` en cualquier navegador (también sin conexión: los datos van
 bash scripts/actualizar_datos.sh        # regenera datos (necesita red)
 cd tests && node smoke.cjs               # lógica
 npm i playwright && node tests/browser.cjs   # navegador real   # con ATLAS_CAPTURAS=1 regenera las capturas de audit/
+node tests/movil_real.cjs                    # celular emulado contra la web publicada (necesita internet)
 ```
 
 ## Si la página no abre
