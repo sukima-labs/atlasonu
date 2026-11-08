@@ -32,9 +32,12 @@ def registros(xml):
         f = lambda tag, c: [re.sub(r'\s+', ' ', x).strip() for x in re.findall(r'<datafield tag="' + tag + r'"[^>]*>.*?<subfield code="' + c + r'">(.*?)</subfield>', r, re.S)]
         sims = f('191', 'a'); rid = re.search(r'<controlfield tag="001">(\d+)', r)
         pdf = {}
-        for y, u in re.findall(r'<datafield tag="856"[^>]*>.*?<subfield code="y">(.*?)</subfield>.*?<subfield code="u">(.*?)</subfield>', r, re.S):
-            if y == 'English': pdf['en'] = u
-            elif y == 'Español': pdf['es'] = u
+        # Cada campo 856 por separado: con un único patrón, un 856 sin «y» emparejaba la lengua del siguiente con su URL
+        # y salían como «inglés» PDF en francés o chino. Además, el nombre del fichero tiene que ser de esa lengua.
+        for campo in re.findall(r'<datafield tag="856"[^>]*>(.*?)</datafield>', r, re.S):
+            y = re.search(r'<subfield code="y">(.*?)</subfield>', campo); u = re.search(r'<subfield code="u">(.*?)</subfield>', campo)
+            ln = {'English': 'en', 'Español': 'es'}.get(y.group(1) if y else '')
+            if ln and u and re.search(r'-' + ln.upper() + r'\.pdf$', u.group(1), re.I): pdf[ln] = u.group(1)
         out.append({'s': sims[0] if sims else '', 'ss': sims, 'sub': [x.upper() for x in f('650', 'a')], 't': ' '.join(f('245', 'a')[:1] + f('245', 'b')[:1]).strip(' /:'), 'd': (f('269', 'a') or [''])[0],
                     'r': rid.group(1) if rid else '', **({'es': pdf['es']} if 'es' in pdf else {}), **({'en': pdf['en']} if 'en' in pdf else {})})
     return out
