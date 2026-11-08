@@ -1,11 +1,14 @@
 # Texto completo de las resoluciones
 
-La búsqueda de la portada busca también **dentro** de las resoluciones, no solo en su ficha. Devuelve el párrafo
+La búsqueda de la portada busca también **dentro** de los documentos, no solo en su ficha: las resoluciones y,
+por país, las observaciones finales de los comités, los documentos del EPU y los informes de visita de los relatores. Devuelve el párrafo
 donde aparece lo buscado, resaltado, con el símbolo, la lengua y el enlace al PDF oficial.
 
 ## Cómo funciona
 1. `scripts/texto_completo.py descargar`: toma las rutas al texto ya verificadas (`data/fuentes/textos.json`, estado
-   `TEXTO_DIRECTO`) y descarga el PDF oficial en español y en inglés. Prefiere la Biblioteca Digital
+   `TEXTO_DIRECTO`) y los documentos de cada país (`data/paises/<ISO>.js`), y descarga el PDF oficial en español y
+   en inglés. Primero las resoluciones y después los documentos de país, de los más recientes a los más antiguos
+   (hoy, unos 4.500 documentos y 7.900 PDF; la primera descarga tarda unas 11 horas). Prefiere la Biblioteca Digital
    (`digitallibrary.un.org`) y, si no hay, `documents.un.org`. Respeta el `Crawl-Delay: 5` de su `robots.txt` (5 s entre descargas)
    y no vuelve a bajar lo que ya tiene.
 2. `extraer`: saca el texto con `pdftotext` (poppler, software libre).
@@ -28,8 +31,7 @@ lo que prueba la CI. La web marca con «por significado» los párrafos que no c
 
 ## Dónde vive
 Nada de esto va al repositorio. PDF, textos e índice están en `ATLAS_TEXTOS_DIR`, por defecto
-`~/.local/share/atlas-onu/textos` del usuario que corre el servicio. Las 377 resoluciones con PDF propio ocupan unos
-40 MB.
+`~/.local/share/atlas-onu/textos` del usuario que corre el servicio. Con todo descargado ocupa unos pocos GB.
 
 ## Límites
 - Las 28 resoluciones que solo están reproducidas dentro de un informe de sesión aún no entran, porque hay que

@@ -44,13 +44,50 @@ def fuentes_por_lengua(entrada):
     return out
 
 
+PAISES_DIR = os.path.join(RAIZ, "data", "paises")
+TIPOS_PAIS = {"co": "Observaciones finales", "epu": "Examen Periódico Universal", "visitas": "Informe de visita"}
+
+
+def _docs_pais():
+    """Documentos por país (data/paises/<ISO>.js): observaciones finales, EPU e informes de visita."""
+    out = []
+    for f in sorted(os.listdir(PAISES_DIR)) if os.path.isdir(PAISES_DIR) else []:
+        if not f.endswith(".js"):
+            continue
+        s = open(os.path.join(PAISES_DIR, f), encoding="utf-8").read()
+        try:
+            d = json.loads(s[s.index("]=") + 2:].rstrip().rstrip(";"))
+        except ValueError:
+            continue
+        for cat, tipo in TIPOS_PAIS.items():
+            for x in d.get(cat, []):
+                urls = fuentes_por_lengua({"fuentes": [{"lengua": ln, "url": x[ln]} for ln in LENGUAS if x.get(ln)]})
+                if x.get("s") and urls:
+                    out.append((x["s"], {"tipo": tipo, "titulo": x.get("t", ""), "pais": f[:-3], "fecha": x.get("d", ""),
+                                         "urls": urls}))
+    return out
+
+
+def catalogo():
+    """{símbolo: {tipo, titulo, pais, fecha, urls{lengua: url}}}: resoluciones primero, luego lo más reciente."""
+    cat = {}
+    try:
+        with open(TEXTOS_JSON, encoding="utf-8") as f:
+            d = json.load(f)
+    except OSError:
+        d = {}
+    for s in sorted(d):
+        urls = fuentes_por_lengua(d[s])
+        if d[s].get("estado") == "TEXTO_DIRECTO" and urls:
+            cat[s] = {"tipo": "Resolución", "titulo": "", "pais": "", "fecha": "", "urls": urls}
+    for s, v in sorted(_docs_pais(), key=lambda x: x[1]["fecha"], reverse=True):
+        cat.setdefault(s, v)
+    return cat
+
+
 def pendientes(limite=None):
-    with open(TEXTOS_JSON, encoding="utf-8") as f:
-        d = json.load(f)
-    sims = sorted(s for s, v in d.items() if v.get("estado") == "TEXTO_DIRECTO")
-    if limite:
-        sims = sims[:limite]
-    return [(s, fuentes_por_lengua(d[s])) for s in sims]
+    items = list(CATALOGO.items())
+    return [(s, v["urls"]) for s, v in (items[:limite] if limite else items)]
 
 
 def descargar(limite=None):
@@ -123,7 +160,8 @@ ESQUEMA = """
 CREATE VIRTUAL TABLE parrafos USING fts5(
   simbolo UNINDEXED, lengua UNINDEXED, n UNINDEXED, texto,
   tokenize = "unicode61 remove_diacritics 2");
-CREATE TABLE documentos (simbolo TEXT, lengua TEXT, n_parrafos INTEGER, url TEXT, PRIMARY KEY (simbolo, lengua));
+CREATE TABLE documentos (simbolo TEXT, lengua TEXT, n_parrafos INTEGER, url TEXT,
+  tipo TEXT, titulo TEXT, pais TEXT, fecha TEXT, PRIMARY KEY (simbolo, lengua));
 CREATE TABLE vectores (id INTEGER PRIMARY KEY, v BLOB);   -- id = rowid del párrafo; vacía si no hay modelo
 """
 
@@ -151,7 +189,10 @@ def indexar(limite=None, d=None):
             continue
         con.executemany("INSERT INTO parrafos VALUES (?,?,?,?)",
                         [(sim, m.group(2), i, p) for i, p in enumerate(ps, 1)])
-        con.execute("INSERT OR REPLACE INTO documentos VALUES (?,?,?,?)", (sim, m.group(2), len(ps), url))
+        meta = CATALOGO.get(sim, {})
+        con.execute("INSERT OR REPLACE INTO documentos VALUES (?,?,?,?,?,?,?,?)",
+                    (sim, m.group(2), len(ps), url, meta.get("tipo", ""), meta.get("titulo", ""), meta.get("pais", ""),
+                     meta.get("fecha", "")))
         docs += 1
     con.execute("INSERT INTO parrafos(parrafos) VALUES ('optimize')")
     con.commit()
@@ -161,17 +202,9 @@ def indexar(limite=None, d=None):
     print(f"índice: {docs} documentos")
 
 
-def _cargar():
-    try:
-        with open(TEXTOS_JSON, encoding="utf-8") as f:
-            d = json.load(f)
-    except OSError:
-        return {}, {}
-    return ({slug(s): s for s in d},
-            {(s, ln): u for s, v in d.items() for ln, u in fuentes_por_lengua(v).items()})
-
-
-SIMBOLOS, URLS = _cargar()
+CATALOGO = catalogo()
+SIMBOLOS = {slug(s): s for s in CATALOGO}
+URLS = {(s, ln): u for s, v in CATALOGO.items() for ln, u in v["urls"].items()}
 INI, FIN = "\x02", "\x03"   # marcas del fragmento resaltado (no aparecen en los textos de la ONU)
 
 
@@ -184,20 +217,25 @@ def consulta_fts(q):
     return " ".join(terminos)
 
 
+def _meta(m):
+    return dict(zip(("tipo", "titulo", "pais", "fecha"), (x or "" for x in m)))
+
+
 def buscar(con, q, ln=None, limite=10, por_doc=2):
     """Párrafos que contienen la consulta, los mejores primero, como mucho `por_doc` por documento y lengua."""
     fts = consulta_fts(q)
     if not fts:
         return []
-    sql = ("SELECT parrafos.simbolo, parrafos.lengua, parrafos.n, snippet(parrafos, 3, ?, ?, ' … ', 40), d.url "
+    sql = ("SELECT parrafos.simbolo, parrafos.lengua, parrafos.n, snippet(parrafos, 3, ?, ?, ' … ', 40), d.url, "
+           "d.tipo, d.titulo, d.pais, d.fecha "
            "FROM parrafos LEFT JOIN documentos d ON d.simbolo = parrafos.simbolo AND d.lengua = parrafos.lengua "
            "WHERE parrafos MATCH ?" + (" AND parrafos.lengua = ?" if ln else "") + " ORDER BY bm25(parrafos) LIMIT 200")
     out, cuenta = [], {}
-    for s, l, n, t, u in con.execute(sql, [INI, FIN, fts] + ([ln] if ln else [])):
+    for s, l, n, t, u, *meta in con.execute(sql, [INI, FIN, fts] + ([ln] if ln else [])):
         if cuenta.get((s, l), 0) >= por_doc:
             continue
         cuenta[(s, l)] = cuenta.get((s, l), 0) + 1
-        out.append({"simbolo": s, "lengua": l, "parrafo": n, "fragmento": t, "url": u or ""})
+        out.append({"simbolo": s, "lengua": l, "parrafo": n, "fragmento": t, "url": u or "", **_meta(meta)})
         if len(out) >= limite:
             break
     return out
@@ -264,7 +302,7 @@ def _matriz(con, clave):
     if _vecs.get("clave") != clave:
         filas = con.execute("SELECT id, v FROM vectores ORDER BY id").fetchall()
         _vecs.update(clave=clave, ids=np.array([i for i, _ in filas], dtype=np.int64),
-                     m=np.frombuffer(b"".join(v for _, v in filas), dtype=np.float32).reshape(len(filas), -1)
+                     m=np.frombuffer(b"".join(v for _, v in filas), dtype=np.float32).reshape(len(filas), -1).astype(np.float16)
                      if filas else np.zeros((0, 384), np.float32))
     return _vecs["ids"], _vecs["m"]
 
@@ -283,21 +321,22 @@ def buscar_hibrido(con, q, ln=None, limite=10, por_doc=2, clave=None):
                " ORDER BY bm25(parrafos) LIMIT 100")
         for r, (pid,) in enumerate(con.execute(sql, [fts] + ([ln] if ln else []))):
             rr[pid] = rr.get(pid, 0) + 1 / (60 + r)
-    sim = m @ _emb([q])[0]
+    sim = (m @ _emb([q])[0].astype(np.float16)).astype(np.float32)
     for r, j in enumerate(np.argsort(-sim)[:100]):
         if sim[j] >= UMBRAL:
             rr[int(ids[j])] = rr.get(int(ids[j]), 0) + 1 / (60 + r)
     out, cuenta = [], {}
     for pid in sorted(rr, key=rr.get, reverse=True):
         fila = con.execute(
-            "SELECT p.simbolo, p.lengua, p.n, p.texto, d.url FROM parrafos p LEFT JOIN documentos d "
+            "SELECT p.simbolo, p.lengua, p.n, p.texto, d.url, d.tipo, d.titulo, d.pais, d.fecha "
+            "FROM parrafos p LEFT JOIN documentos d "
             "ON d.simbolo = p.simbolo AND d.lengua = p.lengua WHERE p.rowid = ?", (pid,)).fetchone()
-        s, l, n, t, u = fila
+        s, l, n, t, u, *meta = fila
         if (ln and l != ln) or cuenta.get((s, l), 0) >= por_doc:
             continue
         cuenta[(s, l)] = cuenta.get((s, l), 0) + 1
         out.append({"simbolo": s, "lengua": l, "parrafo": n, "fragmento": _resaltar(t, q), "url": u or "",
-                    "por_significado": not _contiene(t, q)})
+                    "por_significado": not _contiene(t, q), **_meta(meta)})
         if len(out) >= limite:
             break
     return out
