@@ -108,6 +108,13 @@ class Pruebas(unittest.TestCase):
         r = tc.buscar_hibrido(con, "country visits", ln="es", clave=1)
         self.assertTrue(r and all(x["lengua"] == "es" for x in r))
 
+    def test_catalogo_incluye_paises_y_descarta_lengua_equivocada(self):
+        tipos = {v["tipo"] for v in tc.CATALOGO.values()}
+        self.assertTrue({"Resolución", "Observaciones finales", "Examen Periódico Universal", "Informe de visita"} <= tipos)
+        self.assertTrue(all(u.lower().endswith(f"-{ln}.pdf") for (_, ln), u in tc.URLS.items()))
+        # en los datos, el «inglés» de CEDAW/C/AFG/CO/4 es el PDF en francés: no entra
+        self.assertNotIn(("CEDAW/C/AFG/CO/4", "en"), tc.URLS)
+
     def test_sin_indice_da_503(self):
         viejo = tc.DIR
         tc.DIR = tempfile.mkdtemp()
