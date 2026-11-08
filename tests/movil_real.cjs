@@ -9,7 +9,7 @@ const res = { url: URL, checks: [], errors: [] };
 const ok = (n, c, extra) => { res.checks.push({ n, ok: !!c, ...(extra ? { extra } : {}) }); };
 const reposo = async pg => { let a = -1; for (let i = 0; i < 40; i++) { await pg.waitForTimeout(150); const y = await pg.evaluate(() => scrollY); if (y === a) return; a = y; } };
 (async () => {
-  const browser = await chromium.launch();
+  const browser = await chromium.launch({ channel: 'chromium' }); // Chromium completo: el «headless shell» no hace caso al pellizco de zoom
   for (const nom of ['Pixel 7', 'Galaxy S9+', 'iPhone 13']) {
     const ctx = await browser.newContext({ ...devices[nom], locale: 'es-CO', timezoneId: 'America/Bogota' });
     const pg = await ctx.newPage();
@@ -17,7 +17,9 @@ const reposo = async pg => { let a = -1; for (let i = 0; i < 40; i++) { await pg
     pg.on('pageerror', e => res.errors.push(nom + ': ' + e.message));
     const { width: w, height: h } = devices[nom].viewport;
     await pg.goto(URL); await pg.waitForFunction(() => window.__atlasListo);
-    ok(nom + ': carga sin desbordar en horizontal', await pg.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+    const ancho = async () => pg.evaluate(() => { const fuera = []; const W = document.documentElement.clientWidth; document.querySelectorAll('body *').forEach(e => { const r = e.getBoundingClientRect(); if (r.width && r.right > screen.width + 0.5 && !e.closest('.tablewrap,[style*="overflow"]') && e.offsetParent) fuera.push((e.id ? '#' + e.id : e.tagName.toLowerCase() + '.' + String(e.className).trim().replace(/ +/g, '.')) + ' (' + Math.round(r.left) + '→' + Math.round(r.right) + ') «' + e.textContent.trim().slice(0, 25) + '»'); }); return { pantalla: screen.width, pagina: innerWidth, fuera: fuera.slice(0, 8) }; });
+    const a0 = await ancho();
+    ok(nom + ': la página mide lo mismo que la pantalla (el móvil no la encoge)', a0.pagina === a0.pantalla && a0.fuera.length === 0, a0);
 
     // T12: búsqueda en vivo real desde el celular, escribiendo y tocando «Buscar»
     await pg.tap('#quick'); await pg.keyboard.type('desertification'); await pg.tap('.hero-search button.primary');
@@ -59,7 +61,8 @@ const reposo = async pg => { let a = -1; for (let i = 0; i < 40; i++) { await pg
     const epu = await pg.evaluate(() => Math.round(document.getElementById('ps-epu').getBoundingClientRect().top));
     const vuelve = (await pg.isVisible('#pTop')) && (await pg.tap('#pTop'), await reposo(pg), await pg.evaluate(() => Math.abs(document.getElementById('pNav').getBoundingClientRect().top) < 90));
     ok(nom + ': T19 la ficha de Colombia tiene 8 saltos, «EPU» lleva a su bloque y «↑ Qué quieres ver» vuelve', saltos === 8 && epu >= -5 && epu < h * 0.5 && vuelve, { saltos, epu });
-    ok(nom + ': la ficha no desborda en horizontal', await pg.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+    const a1 = await ancho();
+    ok(nom + ': con la ficha abierta la página sigue midiendo lo que la pantalla', a1.pagina === a1.pantalla && a1.fuera.length === 0, a1);
     } catch (e) { ok(nom + ': la prueba llegó al final', false, e.message.split('\n')[0]); }
     await ctx.close();
   }
