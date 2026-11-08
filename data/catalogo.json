@@ -5298,6 +5298,10 @@
      {
       "t": "Línea de tiempo por país",
       "x": "Cada ficha de país tiene «Línea de tiempo»: firmas y ratificaciones de cada tratado, invitación permanente, creación de su mandato o comisión, observaciones finales de los comités, exámenes del EPU e informes de visita, por años y con enlace al original. Se filtra por tipo y se puede ordenar del más antiguo al más reciente. Solo entra lo que tiene fecha registrada."
+     },
+     {
+      "t": "Glosario de siglas al tocar",
+      "x": "En el texto de la plataforma, las siglas conocidas (EPU, CEDAW, ACNUDH, PIDCP…) aparecen subrayadas con puntos. Al tocarlas se abre una tarjeta con la forma completa en español y en inglés, qué es y a dónde ir, sin salir de la página. Si una sigla tiene dos sentidos (CAT: la Convención y el Comité), salen los dos."
      }
     ]
    },
@@ -5328,10 +5332,6 @@
     "titulo": "Pendiente",
     "intro": "En la cola de trabajo, por orden aproximado. Una tarea cada vez.",
     "items": [
-     {
-      "t": "Glosario de siglas al tocar",
-      "x": "Al tocar una sigla en el texto de la plataforma aparece su significado, sin salir de la página."
-     },
      {
       "t": "Revisión de uso de todas las pantallas",
       "x": "Sobre todo en el celular: tablas que pasan a tarjetas, buscador a mano, botones más grandes, contraste y accesibilidad. Ya está hecho el informe con lo medido en las 17 pantallas; falta aplicarlo, las tablas anchas ya pasan a tarjetas en el celular; Países, Mandatos, Arqueología y Auditoría ya se muestran de 20 en 20 y hay botón para volver arriba; siguen los botones más grandes y la letra mínima."

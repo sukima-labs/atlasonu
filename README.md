@@ -39,7 +39,7 @@ Abrir `index.html` en cualquier navegador (también sin conexión: los datos van
 | `index.html` | Aplicación |
 | `data/` | `catalogo.json` y `atlas-data.js` (generados), `fuentes/` (descargas oficiales y verificación), `evidencias.json`, Excel del piloto |
 | `scripts/` | Descarga, normalización, verificación y construcción (`actualizar_datos.sh` ejecuta todo) |
-| `tests/` | `smoke.cjs` (135 pruebas de lógica, `invariantes.cjs`: 12) y `browser.cjs` (Chromium real, 232 comprobaciones, escritorio y móvil desde 320 px); `movil_real.cjs` emula tres teléfonos contra la web publicada y la búsqueda real (Actions → «Celular», cada lunes) |
+| `tests/` | `smoke.cjs` (137 pruebas de lógica, `invariantes.cjs`: 12) y `browser.cjs` (Chromium real, 240 comprobaciones, escritorio y móvil desde 320 px); `movil_real.cjs` emula tres teléfonos contra la web publicada y la búsqueda real (Actions → «Celular», cada lunes) |
 | `audit/` | Auditoría contra los 13 requisitos, discrepancias respecto a v0.6, inventario, manifiesto de integridad |
 | `docs/` | Traspaso original |
 
