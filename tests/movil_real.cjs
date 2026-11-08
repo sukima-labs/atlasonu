@@ -13,6 +13,7 @@ const reposo = async pg => { let a = -1; for (let i = 0; i < 40; i++) { await pg
   for (const nom of ['Pixel 7', 'Galaxy S9+', 'iPhone 13']) {
     const ctx = await browser.newContext({ ...devices[nom], locale: 'es-CO', timezoneId: 'America/Bogota' });
     const pg = await ctx.newPage();
+    try {
     pg.on('pageerror', e => res.errors.push(nom + ': ' + e.message));
     const { width: w, height: h } = devices[nom].viewport;
     await pg.goto(URL); await pg.waitForFunction(() => window.__atlasListo);
@@ -45,11 +46,16 @@ const reposo = async pg => { let a = -1; for (let i = 0; i < 40; i++) { await pg
     // T19: ficha de país con «Qué quieres ver», saltos con el dedo y «↑ Qué quieres ver»
     await pg.tap('#pQ'); await pg.keyboard.type('Colombia'); await pg.getByRole('button', { name: 'Buscar' }).first().tap(); await pg.waitForTimeout(800);
     const saltos = await pg.locator('#pNav button').count();
-    await pg.locator('#pNav button', { hasText: 'EPU' }).tap(); await reposo(pg);
+    // Toque con el dedo en el centro del botón, como en un teléfono (sin forzar): se anota qué hay debajo del dedo
+    const epuBtn = pg.locator('#pNav button', { hasText: 'EPU' }); await epuBtn.scrollIntoViewIfNeeded(); await reposo(pg);
+    const bajo = await epuBtn.evaluate(b => { const r = b.getBoundingClientRect(), x = r.left + r.width / 2, y = r.top + r.height / 2, e = document.elementFromPoint(x, y); return { x: Math.round(x), y: Math.round(y), alto: innerHeight, ancho: innerWidth, debajo: e ? (e.id ? '#' + e.id : e.tagName.toLowerCase() + '.' + e.className) + ' «' + e.textContent.trim().slice(0, 30) + '»' : null, esElBoton: e === b || b.contains(e) }; });
+    ok(nom + ': T19 el botón «EPU» de la ficha se puede tocar (nada lo tapa)', bajo.esElBoton, bajo);
+    await pg.touchscreen.tap(bajo.x, bajo.y); await reposo(pg);
     const epu = await pg.evaluate(() => Math.round(document.getElementById('ps-epu').getBoundingClientRect().top));
     const vuelve = (await pg.isVisible('#pTop')) && (await pg.tap('#pTop'), await reposo(pg), await pg.evaluate(() => Math.abs(document.getElementById('pNav').getBoundingClientRect().top) < 90));
     ok(nom + ': T19 la ficha de Colombia tiene 8 saltos, «EPU» lleva a su bloque y «↑ Qué quieres ver» vuelve', saltos === 8 && epu >= -5 && epu < h * 0.5 && vuelve, { saltos, epu });
     ok(nom + ': la ficha no desborda en horizontal', await pg.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+    } catch (e) { ok(nom + ': la prueba llegó al final', false, e.message.split('\n')[0]); }
     await ctx.close();
   }
   await browser.close();
