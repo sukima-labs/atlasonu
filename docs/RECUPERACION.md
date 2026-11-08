@@ -30,7 +30,7 @@ cp -a extra/atlas-epu-privado ~/atlas-epu-privado
 Después, apunta el clon al remoto (`git remote set-url origin https://github.com/sukima-labs/atlasonu.git`) y reinstala servicios y temporizadores: `bash scripts/mini_pc/instalar.sh` y `sudo loginctl enable-linger "$USER"` (detalles en `docs/MINI_PC.md`; el token de GitHub se crea de nuevo, no se copia).
 
 ## Funnel (búsqueda y contador desde fuera)
-Desde el 06-11-2026 la búsqueda y el contador corren en `sk-atlas` (servicio `atlas-busqueda`, `127.0.0.1:8787`), publicados con Funnel en `https://sk-atlas.pig-mimosa.ts.net` (puerto 443). Solo lo cambian los socios: `tailscale funnel --bg http://127.0.0.1:8787` para activarlo y `tailscale funnel --https=443 off` para apagarlo. Se decide en T44 si sigue expuesto.
+Desde el 06-11-2026 la búsqueda y el contador corren en `sk-atlas` (servicio `atlas-busqueda`, `127.0.0.1:8787`), publicados con Funnel en `https://sk-atlas.pig-mimosa.ts.net` (puerto 443). Solo lo cambian los socios: `tailscale funnel --bg http://127.0.0.1:8787` para activarlo y `tailscale funnel --https=443 off` para apagarlo. Decisión de los socios (T44, 08-11-2026): sigue expuesto.
 
 ## Antes: probar que la copia sirve
 `age -d -i respaldo-privada.txt <archivo> | tar -tf -` debe listar `repositorio.bundle` y `extra/`. Hecho el 31-10-2026.

@@ -45,7 +45,7 @@ Los Claude que trabajan en clones (incluido el del mini PC) **solo tocan git y G
 - Que el token de cualquier cosa que uses caduque y se pueda revocar.
 
 ## 7. Decisiones abiertas que te afectan
-- **T44:** si el Funnel sigue expuesto o no (ver `docs/RECUPERACION.md`, apartado Funnel). Lo deciden los socios.
+- **T44:** decidido el 08-11-2026: el Funnel sigue expuesto (ver #138 y `docs/RECUPERACION.md`, apartado Funnel).
 - Copia del contador fuera de casa: ya cubierta por la copia cifrada; confirma que la restauración se ha probado.
 
 ## 8. Dónde está cada cosa
