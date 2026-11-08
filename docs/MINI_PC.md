@@ -26,10 +26,10 @@ sudo apt install -y git python3 python3-openpyxl nodejs poppler-utils util-linux
 
 ## Pasos
 
-1. **Crea un token de GitHub solo para este repositorio** (GitHub → Settings → Developer settings → Fine-grained tokens → *Generate new token*): repositorio `sukima-labs/onu-arqueologia-documental`, permiso **Contents: Read and write**, caducidad de 90 días. Cópialo; no lo compartas ni lo subas al repositorio.
+1. **Crea un token de GitHub solo para este repositorio** (GitHub → Settings → Developer settings → Fine-grained tokens → *Generate new token*): repositorio `sukima-labs/atlasonu`, permiso **Contents: Read and write**, caducidad de 90 días. Cópialo; no lo compartas ni lo subas al repositorio.
 2. **Clona en una carpeta dedicada** (no edites nada ahí a mano, porque cada revisión la deja idéntica a lo publicado):
    ```bash
-   git clone https://TU_USUARIO:TU_TOKEN@github.com/sukima-labs/onu-arqueologia-documental.git ~/atlas-onu
+   git clone https://TU_USUARIO:TU_TOKEN@github.com/sukima-labs/atlasonu.git ~/atlas-onu
    ```
 3. **Instala el temporizador:**
    ```bash

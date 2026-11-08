@@ -1,7 +1,7 @@
 # Copias de seguridad y recuperación (T45)
 
 ## Hoy (desde el 06-11-2026)
-- **El código y los datos** están en GitHub (`sukima-labs/onu-arqueologia-documental`, público). Cualquier clon es una copia completa.
+- **El código y los datos** están en GitHub (`sukima-labs/atlasonu`, público). Cualquier clon es una copia completa.
 - **El servidor `sk-atlas`**, donde corren la búsqueda en vivo y el contador de visitas, entra cada noche a las 02:00 en la copia de todos los servidores de sukima-labs. La copia se guarda primero en el servidor de copias y después, cifrada, fuera de casa. El contador (`/var/lib/atlas/visitas.json`) va dentro de esa copia.
 - **Restaurar:** se recupera `sk-atlas` entero desde la copia de esa noche. Lo hace la administración de los servidores de sukima-labs, y el contador de visitas vuelve con él. No hace falta nada más.
 - El temporizador semanal del mini PC (`atlas-respaldo.timer`) no se trasladó: ya no hace falta.
@@ -27,7 +27,7 @@ git clone repositorio.bundle ~/Documentos/atlas-onu
 mkdir -p ~/.local/share/atlas-onu && cp -a extra/visitas/. ~/.local/share/atlas-onu/
 cp -a extra/atlas-epu-privado ~/atlas-epu-privado
 ```
-Después, apunta el clon al remoto (`git remote set-url origin https://github.com/sukima-labs/onu-arqueologia-documental.git`) y reinstala servicios y temporizadores: `bash scripts/mini_pc/instalar.sh` y `sudo loginctl enable-linger "$USER"` (detalles en `docs/MINI_PC.md`; el token de GitHub se crea de nuevo, no se copia).
+Después, apunta el clon al remoto (`git remote set-url origin https://github.com/sukima-labs/atlasonu.git`) y reinstala servicios y temporizadores: `bash scripts/mini_pc/instalar.sh` y `sudo loginctl enable-linger "$USER"` (detalles en `docs/MINI_PC.md`; el token de GitHub se crea de nuevo, no se copia).
 
 ## Funnel (búsqueda y contador desde fuera)
 Desde el 06-11-2026 la búsqueda y el contador corren en `sk-atlas` (servicio `atlas-busqueda`, `127.0.0.1:8787`), publicados con Funnel en `https://sk-atlas.pig-mimosa.ts.net` (puerto 443). Solo lo cambian los socios: `tailscale funnel --bg http://127.0.0.1:8787` para activarlo y `tailscale funnel --https=443 off` para apagarlo. Se decide en T44 si sigue expuesto.

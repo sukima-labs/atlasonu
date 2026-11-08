@@ -6,7 +6,7 @@ assert 'data-page="recuperar"' in s
 assert 'E/1980/13' in s
 assert '1980' in s
 assert 'PENDIENTE' in s
-assert 'https://github.com/sukima-labs/onu-arqueologia-documental' in s
+assert 'https://github.com/sukima-labs/atlasonu' in s
 assert len(re.findall(r'<section id="[^\"]+"',s))>=7
 assert 'function filterMandates' in s and 'function recoverDocument' in s
 print('STATIC PASS: required functional structures')

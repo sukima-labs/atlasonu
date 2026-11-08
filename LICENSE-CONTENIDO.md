@@ -19,7 +19,7 @@ comerciales, **siempre que des crédito** y indiques si hiciste cambios.
 ## Cómo citarlo
 
 > Sukima-Labs (2026). *ATLAS ONU – Arqueología documental de Naciones Unidas*.
-> https://github.com/sukima-labs/onu-arqueologia-documental · CC BY 4.0
+> https://github.com/sukima-labs/atlasonu · CC BY 4.0
 
 ## Qué NO cubre (no es mío y no lo relicencio)
 
