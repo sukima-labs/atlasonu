@@ -85,7 +85,8 @@ def extraer(limite=None):
             pdf = os.path.join(DIR, "pdf", f"{slug(sim)}-{ln}.pdf")
             txt = os.path.join(DIR, "txt", f"{slug(sim)}-{ln}.txt")
             if os.path.exists(pdf) and not os.path.exists(txt):
-                subprocess.run(["pdftotext", "-enc", "UTF-8", pdf, txt], check=False, timeout=120)
+                subprocess.run(["pdftotext", "-enc", "UTF-8", pdf, txt], check=False, timeout=120,
+                               stderr=subprocess.DEVNULL)
                 hechos += 1
     print(f"extracción: {hechos} textos")
 
@@ -121,6 +122,7 @@ CREATE VIRTUAL TABLE parrafos USING fts5(
   simbolo UNINDEXED, lengua UNINDEXED, n UNINDEXED, texto,
   tokenize = "unicode61 remove_diacritics 2");
 CREATE TABLE documentos (simbolo TEXT, lengua TEXT, n_parrafos INTEGER, url TEXT, PRIMARY KEY (simbolo, lengua));
+CREATE TABLE vectores (id INTEGER PRIMARY KEY, v BLOB);   -- id = rowid del párrafo; vacía si no hay modelo
 """
 
 
@@ -149,6 +151,7 @@ def indexar(limite=None, d=None):
         docs += 1
     con.execute("INSERT INTO parrafos(parrafos) VALUES ('optimize')")
     con.commit()
+    vectorizar(con, d)
     con.close()
     os.replace(tmp, ruta_db(d))
     print(f"índice: {docs} documentos")
@@ -196,6 +199,143 @@ def buscar(con, q, ln=None, limite=10, por_doc=2):
     return out
 
 
+# ---------------------------------------------------------------------------------------------------------------
+# Búsqueda por significado (fase 2). Opcional: si no están fastembed y numpy (entorno /opt/atlas-venv), todo sigue
+# funcionando solo con palabras. Modelo libre (Apache-2.0), en local, en CPU: no se envía nada a terceros.
+MODELO = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+MODELOS_DIR = os.environ.get("ATLAS_MODELOS_DIR", os.path.expanduser("~/modelos"))
+try:
+    import warnings
+    warnings.filterwarnings("ignore", message=".*mean pooling.*")
+    import numpy as np
+    from fastembed import TextEmbedding
+except ImportError:            # sin entorno semántico
+    np = TextEmbedding = None
+UMBRAL = 0.5   # coseno mínimo para que un párrafo entre solo por significado
+_modelo, _vecs, _mlock = None, {}, __import__("threading").Lock()
+
+
+def semantica_disponible():
+    return TextEmbedding is not None and os.path.isdir(MODELOS_DIR)
+
+
+def _emb(textos):
+    global _modelo
+    with _mlock:
+        if _modelo is None:
+            _modelo = TextEmbedding(MODELO, cache_dir=MODELOS_DIR, local_files_only=True, threads=os.cpu_count())
+    m = np.array(list(_modelo.embed(textos, batch_size=32)), dtype=np.float32)
+    return m / np.maximum(np.linalg.norm(m, axis=1, keepdims=True), 1e-9)
+
+
+def vectorizar(con, d):
+    """Guarda el vector de cada párrafo dentro del mismo índice. Reutiliza los ya calculados (caché por texto)."""
+    if not semantica_disponible():
+        print("semántica: sin modelo, solo palabras")
+        return
+    import hashlib
+    cache = sqlite3.connect(os.path.join(d, "vectores_cache.sqlite"))
+    cache.execute("CREATE TABLE IF NOT EXISTS c (h TEXT PRIMARY KEY, v BLOB)")
+    filas = con.execute("SELECT rowid, texto FROM parrafos").fetchall()
+    hs = [hashlib.sha1((MODELO + t).encode()).hexdigest() for _, t in filas]
+    tengo = {}
+    for i in range(0, len(hs), 500):
+        lote = hs[i:i + 500]
+        tengo.update(cache.execute(f"SELECT h, v FROM c WHERE h IN ({','.join('?' * len(lote))})", lote).fetchall())
+    faltan = [(i, filas[i][1]) for i, h in enumerate(hs) if h not in tengo]
+    for k in range(0, len(faltan), 256):
+        lote = faltan[k:k + 256]
+        for (i, _), v in zip(lote, _emb([t for _, t in lote])):
+            tengo[hs[i]] = v.tobytes()
+            cache.execute("INSERT OR REPLACE INTO c VALUES (?,?)", (hs[i], tengo[hs[i]]))
+        cache.commit()
+    con.executemany("INSERT INTO vectores VALUES (?,?)", [(filas[i][0], tengo[h]) for i, h in enumerate(hs)])
+    con.commit()
+    cache.close()
+    print(f"semántica: {len(filas)} párrafos ({len(faltan)} nuevos)")
+
+
+def _matriz(con, clave):
+    """Vectores del índice en memoria; se recargan cuando el índice cambia (clave = mtime del fichero)."""
+    if _vecs.get("clave") != clave:
+        filas = con.execute("SELECT id, v FROM vectores ORDER BY id").fetchall()
+        _vecs.update(clave=clave, ids=np.array([i for i, _ in filas], dtype=np.int64),
+                     m=np.frombuffer(b"".join(v for _, v in filas), dtype=np.float32).reshape(len(filas), -1)
+                     if filas else np.zeros((0, 384), np.float32))
+    return _vecs["ids"], _vecs["m"]
+
+
+def buscar_hibrido(con, q, ln=None, limite=10, por_doc=2, clave=None):
+    """Palabras (BM25) + significado (coseno), mezclados por rango recíproco. Sin modelo, igual que buscar()."""
+    if not semantica_disponible():
+        return buscar(con, q, ln, limite, por_doc)
+    ids, m = _matriz(con, clave)
+    if not len(ids):
+        return buscar(con, q, ln, limite, por_doc)
+    rr = {}
+    fts = consulta_fts(q)
+    if fts:
+        sql = ("SELECT rowid FROM parrafos WHERE parrafos MATCH ?" + (" AND lengua = ?" if ln else "") +
+               " ORDER BY bm25(parrafos) LIMIT 100")
+        for r, (pid,) in enumerate(con.execute(sql, [fts] + ([ln] if ln else []))):
+            rr[pid] = rr.get(pid, 0) + 1 / (60 + r)
+    sim = m @ _emb([q])[0]
+    for r, j in enumerate(np.argsort(-sim)[:100]):
+        if sim[j] >= UMBRAL:
+            rr[int(ids[j])] = rr.get(int(ids[j]), 0) + 1 / (60 + r)
+    out, cuenta = [], {}
+    for pid in sorted(rr, key=rr.get, reverse=True):
+        fila = con.execute(
+            "SELECT p.simbolo, p.lengua, p.n, p.texto, d.url FROM parrafos p LEFT JOIN documentos d "
+            "ON d.simbolo = p.simbolo AND d.lengua = p.lengua WHERE p.rowid = ?", (pid,)).fetchone()
+        s, l, n, t, u = fila
+        if (ln and l != ln) or cuenta.get((s, l), 0) >= por_doc:
+            continue
+        cuenta[(s, l)] = cuenta.get((s, l), 0) + 1
+        out.append({"simbolo": s, "lengua": l, "parrafo": n, "fragmento": _resaltar(t, q), "url": u or "",
+                    "por_significado": not _contiene(t, q)})
+        if len(out) >= limite:
+            break
+    return out
+
+
+def _sin_tildes(x):
+    import unicodedata
+    return "".join(c for c in unicodedata.normalize("NFD", x.lower()) if unicodedata.category(c) != "Mn")
+
+
+VACIAS = set("""de del la las el los un una unos unas y o u e a al en con sin por para que se su sus lo le les como
+mas pero sobre entre the of and or to in on for with by an as at from is are be its this that""".split())
+
+
+def palabras(q):
+    """Palabras con contenido de la consulta (sin tildes, sin artículos ni preposiciones)."""
+    return [w for w in (_sin_tildes(x) for x in re.findall(r"\w{3,}", q)) if w not in VACIAS]
+
+
+def _contiene(t, q):
+    tt = _sin_tildes(t)
+    return any(re.search(r"\b" + re.escape(w), tt) for w in palabras(q))
+
+
+def _resaltar(t, q, ancho=320):
+    """Recorta el párrafo alrededor de la primera palabra buscada y la marca; si no aparece, el principio."""
+    tt, ps = _sin_tildes(t), palabras(q)
+    pos = min([m.start() for m in (re.search(r"\b" + re.escape(w), tt) for w in ps) if m] or [0])
+    ini = max(0, pos - ancho // 3)
+    frag = ("… " if ini else "") + t[ini:ini + ancho] + (" …" if ini + ancho < len(t) else "")
+    for w in sorted(set(ps), key=len, reverse=True):
+        fs = _sin_tildes(frag)   # misma longitud que frag: las tildes se quitan carácter a carácter
+        if len(fs) != len(frag):
+            break
+        out, k = [], 0
+        for mt in re.finditer(r"\b" + re.escape(w) + (r"\w*" if len(w) >= 5 else r"\b"), fs):
+            out += [frag[k:mt.start()], INI, frag[mt.start():mt.end()], FIN]
+            k = mt.end()
+        frag = "".join(out) + frag[k:]
+    return frag
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("accion", choices=["descargar", "extraer", "indexar", "todo", "buscar"])
@@ -211,7 +351,7 @@ def main():
         indexar(a.limite)
     if a.accion == "buscar":
         con = sqlite3.connect(f"file:{ruta_db()}?mode=ro", uri=True)
-        for r in buscar(con, a.consulta or "", a.ln):
+        for r in buscar_hibrido(con, a.consulta or "", a.ln, clave=os.path.getmtime(ruta_db())):
             print(f"{r['simbolo']} [{r['lengua']}] §{r['parrafo']}: " + r["fragmento"].replace(INI, "«").replace(FIN, "»"))
 
 

@@ -85,6 +85,29 @@ class Pruebas(unittest.TestCase):
             cod, _ = self.get("/texto?q=" + urllib.request.quote(q + " x"))
             self.assertIn(cod, (200, 400))
 
+    def test_resaltar_ignora_palabras_vacias(self):
+        t = "Pide la detención de los responsables y la protección de los periodistas."
+        f = tc._resaltar(t, "protección de periodistas")
+        self.assertIn("\x02protección\x03", f)
+        self.assertIn("\x02periodistas\x03", f)
+        self.assertNotIn("\x02de", f)
+        self.assertEqual(tc.palabras("la protección de los niños"), ["proteccion", "ninos"])
+
+    def test_hibrido_sin_modelo_es_igual_que_palabras(self):
+        import sqlite3
+        con = sqlite3.connect(tc.ruta_db())
+        if tc.semantica_disponible():
+            self.skipTest("hay modelo: se prueba en test_hibrido_cruza_idiomas")
+        self.assertEqual(tc.buscar_hibrido(con, "visitas"), tc.buscar(con, "visitas"))
+
+    def test_hibrido_cruza_idiomas(self):
+        if not tc.semantica_disponible():
+            self.skipTest("sin fastembed/modelo (la CI no lo tiene)")
+        import sqlite3
+        con = sqlite3.connect(tc.ruta_db())
+        r = tc.buscar_hibrido(con, "country visits", ln="es", clave=1)
+        self.assertTrue(r and all(x["lengua"] == "es" for x in r))
+
     def test_sin_indice_da_503(self):
         viejo = tc.DIR
         tc.DIR = tempfile.mkdtemp()

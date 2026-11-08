@@ -4,9 +4,10 @@
 El navegador no puede leer la Biblioteca Digital ONU (no envía CORS), así que la página pregunta
 aquí cuando el catálogo no encuentra nada. Escucha solo en 127.0.0.1; se publica con Tailscale Funnel.
   GET /buscar?q=<texto>[&ln=es|en]  ->  {"consulta":..., "total":N, "resultados":[{recid,simbolo,titulo,fecha,url,archivos:[{idioma,url}]}]}
-  GET /texto?q=<texto>[&ln=es|en]   ->  {"consulta":..., "total":N, "documentos":D, "resultados":[{simbolo,lengua,parrafo,fragmento,url}]}
+  GET /texto?q=<texto>[&ln=es|en]   ->  {"consulta":..., "total":N, "documentos":D, "resultados":[{simbolo,lengua,parrafo,fragmento,url,por_significado}]}
                                        párrafos del texto completo de las resoluciones (índice de scripts/texto_completo.py;
-                                       el fragmento marca lo encontrado entre \x02 y \x03). 503 si aún no hay índice.
+                                       el fragmento marca lo encontrado entre \x02 y \x03). Con /opt/atlas-venv (fastembed) mezcla
+                                       palabras y significado; sin él, solo palabras. 503 si aún no hay índice.
   GET /visitas?pais=XX              ->  {"total":N, "pais":M}              (solo lee)
   GET /visita?pais=XX               ->  igual, pero suma una visita        (solo si el Origin es la página)
 El contador guarda únicamente dos números agregados (total y por código de país): ni IP, ni cookies, ni identificadores.
@@ -125,11 +126,12 @@ def buscar_texto(q, ln):
         return None
     con = sqlite3.connect(f"file:{db}?mode=ro", uri=True)
     try:
-        res = texto_completo.buscar(con, q, ln)
+        res = texto_completo.buscar_hibrido(con, q, ln, clave=os.path.getmtime(db))
         docs = con.execute("SELECT COUNT(DISTINCT simbolo) FROM documentos").fetchone()[0]
     finally:
         con.close()
-    return {"consulta": q, "total": len(res), "documentos": docs, "resultados": res}
+    return {"consulta": q, "total": len(res), "documentos": docs, "semantica": texto_completo.semantica_disponible(),
+            "resultados": res}
 
 
 class H(BaseHTTPRequestHandler):

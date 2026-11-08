@@ -17,13 +17,21 @@ donde aparece lo buscado, resaltado, con el símbolo, la lengua y el enlace al P
 
 `python3 scripts/texto_completo.py todo` hace los tres pasos; `buscar "…"` prueba una consulta desde la terminal.
 
+## Búsqueda por significado
+Si el servicio corre con `/opt/atlas-venv` (fastembed y numpy) y el modelo está en `~/modelos`
+(`ATLAS_MODELOS_DIR`), cada párrafo se guarda también como vector dentro del mismo índice. La búsqueda mezcla
+palabras (BM25) y significado (coseno ≥ 0,5) por rango recíproco: «visitas sin previo aviso» encuentra «To conduct
+country visits», en inglés. El modelo es `paraphrase-multilingual-MiniLM-L12-v2` (Apache-2.0), corre en local
+en el procesador y no envía nada a terceros. Los vectores ya calculados se guardan en `vectores_cache.sqlite`, así
+que reindexar solo calcula los párrafos nuevos. Sin ese entorno, todo funciona igual pero solo con palabras: eso es
+lo que prueba la CI. La web marca con «por significado» los párrafos que no contienen las palabras buscadas.
+
 ## Dónde vive
 Nada de esto va al repositorio. PDF, textos e índice están en `ATLAS_TEXTOS_DIR`, por defecto
 `~/.local/share/atlas-onu/textos` del usuario que corre el servicio. Las 377 resoluciones con PDF propio ocupan unos
 40 MB.
 
 ## Límites
-- Busca **palabras**, no ideas: «visita» no encuentra «visitas». La búsqueda por significado es el paso siguiente.
 - Las 28 resoluciones que solo están reproducidas dentro de un informe de sesión aún no entran, porque hay que
   recortar sus páginas del informe.
 - El texto sale del PDF tal cual: si el PDF es un escaneo sin capa de texto, ese documento no aparece.
