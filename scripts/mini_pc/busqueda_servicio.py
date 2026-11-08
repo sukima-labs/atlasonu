@@ -4,11 +4,14 @@
 El navegador no puede leer la Biblioteca Digital ONU (no envía CORS), así que la página pregunta
 aquí cuando el catálogo no encuentra nada. Escucha solo en 127.0.0.1; se publica con Tailscale Funnel.
   GET /buscar?q=<texto>[&ln=es|en]  ->  {"consulta":..., "total":N, "resultados":[{recid,simbolo,titulo,fecha,url,archivos:[{idioma,url}]}]}
+  GET /texto?q=<texto>[&ln=es|en]   ->  {"consulta":..., "total":N, "documentos":D, "resultados":[{simbolo,lengua,parrafo,fragmento,url}]}
+                                       párrafos del texto completo de las resoluciones (índice de scripts/texto_completo.py;
+                                       el fragmento marca lo encontrado entre \x02 y \x03). 503 si aún no hay índice.
   GET /visitas?pais=XX              ->  {"total":N, "pais":M}              (solo lee)
   GET /visita?pais=XX               ->  igual, pero suma una visita        (solo si el Origin es la página)
 El contador guarda únicamente dos números agregados (total y por código de país): ni IP, ni cookies, ni identificadores.
 Sin dependencias: solo biblioteca estándar. Caché en memoria y límite de consultas para no saturar a la ONU."""
-import json, os, re, tempfile, time, threading, urllib.parse, urllib.request
+import json, os, re, sqlite3, sys, tempfile, time, threading, urllib.parse, urllib.request
 import xml.etree.ElementTree as ET
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
@@ -22,6 +25,9 @@ UA = "ATLAS-ONU/1.0 (+https://github.com/sukima-labs/atlasonu)"
 
 VISITAS_ARCHIVO = os.environ.get("ATLAS_VISITAS_ARCHIVO", os.path.expanduser("~/.local/share/atlas-onu/visitas.json"))
 MAX_VISITAS_POR_MIN = 120   # tope global de visitas sumadas por minuto (frena abusos sin identificar a nadie)
+
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+import texto_completo  # noqa: E402  (scripts/texto_completo.py)
 
 NS = "{http://www.loc.gov/MARC21/slim}"
 _cache, _veces, _lock = {}, [], threading.Lock()
@@ -112,6 +118,20 @@ def normalizar(rec):
     }
 
 
+def buscar_texto(q, ln):
+    """Consulta el índice local (solo lectura); no toca la red. Devuelve None si aún no hay índice."""
+    db = texto_completo.ruta_db()
+    if not os.path.exists(db):
+        return None
+    con = sqlite3.connect(f"file:{db}?mode=ro", uri=True)
+    try:
+        res = texto_completo.buscar(con, q, ln)
+        docs = con.execute("SELECT COUNT(DISTINCT simbolo) FROM documentos").fetchone()[0]
+    finally:
+        con.close()
+    return {"consulta": q, "total": len(res), "documentos": docs, "resultados": res}
+
+
 class H(BaseHTTPRequestHandler):
     server_version = "AtlasBusqueda"
 
@@ -149,13 +169,20 @@ class H(BaseHTTPRequestHandler):
             # solo suma si la petición viene de la página (el navegador envía Origin); abrir la URL a mano no suma
             sumar = u.path == "/visita" and self.headers.get("Origin", "") in ORIGENES
             return self._json(200, visitas(pais, sumar), cache="no-store")
-        if u.path != "/buscar":
+        if u.path not in ("/buscar", "/texto"):
             return self._json(404, {"error": "no existe"})
         p = urllib.parse.parse_qs(u.query)
         q = re.sub(r"\s+", " ", (p.get("q") or [""])[0]).strip()
         ln = "es" if (p.get("ln") or ["es"])[0] == "es" else "en"
         if len(q) < 2 or len(q) > 120:
             return self._json(400, {"error": "consulta inválida"})
+        if u.path == "/texto":
+            ln_t = (p.get("ln") or [""])[0]
+            try:
+                r = buscar_texto(q, ln_t if ln_t in ("es", "en") else None)
+            except sqlite3.Error:
+                return self._json(400, {"error": "consulta inválida"})
+            return self._json(503, {"error": "índice en preparación"}, cache="no-store") if r is None else self._json(200, r)
         try:
             self._json(200, consultar(q, ln))
         except RuntimeError:

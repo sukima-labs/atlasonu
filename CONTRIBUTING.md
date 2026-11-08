@@ -11,7 +11,7 @@ Toda ayuda es bienvenida: correcciones, fuentes oficiales que falten, errores de
 ## Cómo proponer un cambio
 1. Abre una *issue* (hay plantilla para solicitar una verificación) o crea una rama y un *pull request*.
 2. Si cambias datos, reconstruye el catálogo: `python3 -I scripts/build_catalog.py data/fuentes/verificacion_simbolos.json <fecha>`.
-3. Pasa las pruebas: `node tests/smoke.cjs`, `node tests/invariantes.cjs` y `node tests/browser.cjs` (Playwright).
+3. Pasa las pruebas: `node tests/smoke.cjs`, `node tests/invariantes.cjs`, `python3 -I tests/texto_completo_test.py` y `node tests/browser.cjs` (Playwright).
 4. Comprueba la pantalla a 390 px de ancho (celular) y en escritorio. Contra la web publicada y la búsqueda real, `node tests/movil_real.cjs` emula tres teléfonos (toques, deslizar el menú, zoom 2×); corre también en Actions → «Celular», a mano y cada lunes.
 
 ## Licencia de tu aportación
