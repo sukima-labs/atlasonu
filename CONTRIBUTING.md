@@ -12,7 +12,7 @@ Toda ayuda es bienvenida: correcciones, fuentes oficiales que falten, errores de
 1. Abre una *issue* (hay plantilla para solicitar una verificación) o crea una rama y un *pull request*.
 2. Si cambias datos, reconstruye el catálogo: `python3 -I scripts/build_catalog.py data/fuentes/verificacion_simbolos.json <fecha>`.
 3. Pasa las pruebas: `node tests/smoke.cjs`, `node tests/invariantes.cjs` y `node tests/browser.cjs` (Playwright).
-4. Comprueba la pantalla a 390 px de ancho (celular) y en escritorio.
+4. Comprueba la pantalla a 390 px de ancho (celular) y en escritorio. Contra la web publicada y la búsqueda real, `node tests/movil_real.cjs` emula tres teléfonos (toques, deslizar el menú, zoom 2×); corre también en Actions → «Celular», a mano y cada lunes.
 
 ## Licencia de tu aportación
 Al abrir un *pull request* aceptas que tu aportación se publique bajo la licencia del repositorio (AGPL-3.0-only para el código, CC BY 4.0 para el contenido propio) y concedes al titular del proyecto, y a quien le suceda en sus derechos, una licencia perpetua, mundial, no exclusiva y gratuita para usarla, modificarla, distribuirla, sublicenciarla y relicenciarla, también con otros términos. Firma cada commit con `git commit -s` para certificar el [Developer Certificate of Origin](https://developercertificate.org/): que la escribiste tú o tienes derecho a aportarla con esta licencia.
