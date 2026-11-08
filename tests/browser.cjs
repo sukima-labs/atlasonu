@@ -300,6 +300,21 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     await pv.screenshot({ path: '/tmp/claude-0/visitas.png', clip: { x: 0, y: 0, width: 1280, height: 120 } }).catch(() => {});
     await ctx.close();
   }
+  // Texto completo: la ruta /texto simulada con un párrafo; se resalta lo encontrado y no se inyecta HTML del fragmento
+  {
+    const ctx = await browser.newContext({ viewport: { width: 390, height: 844 } }); const pt = await ctx.newPage();
+    const pedidas = [];
+    await pt.route(/sk-atlas\.pig-mimosa\.ts\.net/, r => { const u = new globalThis.URL(r.request().url()); pedidas.push(u.pathname); const tx = u.pathname === '/texto'; r.fulfill({ status: 200, contentType: 'application/json', headers: { 'access-control-allow-origin': '*' }, body: JSON.stringify(tx ? { consulta: 'visitas', total: 1, documentos: 377, resultados: [{ simbolo: 'A/HRC/RES/16/16', lengua: 'es', parrafo: 7, fragmento: 'responder a las solicitudes de \u0002visitas\u0003 <img src=x onerror="window.__xss=1"> a los países', url: 'https://digitallibrary.un.org/record/1/files/x.pdf' }, { simbolo: 'A/HRC/RES/15/22', lengua: 'en', parrafo: 9, fragmento: 'To conduct country visits', url: '', por_significado: true }], semantica: true } : { consulta: '', total: 0, resultados: [] }) }); });
+    pt.on('pageerror', e => res.errors.push('texto: ' + e.message));
+    await pt.goto(URL); await pt.waitForFunction(() => window.__atlasListo);
+    await pt.fill('#quick', 'visitas'); await pt.waitForSelector('#textos h3', { timeout: 5000 }).catch(() => {});
+    ok('texto: la búsqueda pide /texto y muestra «Dentro de los textos»', pedidas.includes('/texto') && /Dentro de los textos \(1\)/.test(await pt.textContent('#textos')) && /por significado/.test(await pt.textContent('#textos')) && /tratan de lo mismo/.test(await pt.textContent('#textos')));
+    ok('texto: lo encontrado sale resaltado y el HTML del fragmento no se ejecuta', await pt.evaluate(() => document.querySelector('#textos mark')?.textContent === 'visitas' && !document.querySelector('#textos img') && !window.__xss));
+    ok('texto: el resultado enlaza el PDF oficial y cabe en 390 px', await pt.evaluate(() => !!document.querySelector('#textos a[href$="x.pdf"]') && document.documentElement.scrollWidth <= 390));
+    await pt.fill('#quick', 'vi'); await pt.waitForTimeout(800);
+    ok('texto: con menos de 3 letras no se pide /texto', pedidas.filter(x => x === '/texto').length === 1);
+    await ctx.close();
+  }
   await browser.close();
   const failed = res.checks.filter(c => !c.ok);
   console.log(JSON.stringify({ ...res, passed: res.checks.length - failed.length, failed: failed.length }, null, 1));
