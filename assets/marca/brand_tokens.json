@@ -1,0 +1,14 @@
+{
+  "brand": "Sukima Labs",
+  "tagline_primary": "El espacio donde nacen nuevas posibilidades.",
+  "tagline_secondary": "Donde otros ven un vacío, nosotros vemos posibilidades.",
+  "colors": {
+    "grafito": "#10131C",
+    "cian": "#14C6D4",
+    "violeta": "#7148F5",
+    "marfil": "#F5F4F0",
+    "blanco": "#FFFFFF",
+    "negro": "#000000"
+  },
+  "logo": "01_LOGO/SVG/isotipo_color.svg"
+}
