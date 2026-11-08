@@ -5,7 +5,7 @@ type: software
 authors:
   - name: "Sukima-Labs"
 date-released: "2026-10-27"
-repository-code: "https://github.com/sukima-labs/onu-arqueologia-documental"
-url: "https://sukima-labs.github.io/onu-arqueologia-documental/"
+repository-code: "https://github.com/sukima-labs/atlasonu"
+url: "https://sukima-labs.github.io/atlasonu/"
 license: AGPL-3.0-only
 keywords: ["derechos humanos", "Naciones Unidas", "procedimientos especiales", "órganos de tratados", "arqueología documental"]

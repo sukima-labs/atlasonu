@@ -5,8 +5,8 @@ Lee esto primero si abres una sesión de Claude Code sobre este repositorio, en 
 ## Qué es
 **ATLAS ONU – Arqueología documental**: plataforma independiente y sin fines de lucro, sobre el sistema de derechos humanos de la ONU (mandatos de procedimientos especiales, tratados y comités, países, historia, siglas). Autoría: Sukima-Labs (es lo único que debe figurar como autor). No es oficial de la ONU.
 
-- **Estado desde el 06-11-2026: el repositorio es público** y la web vuelve a estar en GitHub Pages (https://sukima-labs.github.io/onu-arqueologia-documental/). La búsqueda en vivo corre en `sk-atlas` y la actualización de datos en GitHub Actions; en el mini PC solo se desarrolla. Reglas de infraestructura: `CLAUDE.md` en la raíz.
-- Repositorio: `sukima-labs/onu-arqueologia-documental`. Flujo habitual: rama de trabajo → PR → fusión en `main`.
+- **Estado desde el 06-11-2026: el repositorio es público** y la web vuelve a estar en GitHub Pages (https://sukima-labs.github.io/atlasonu/). La búsqueda en vivo corre en `sk-atlas` y la actualización de datos en GitHub Actions; en el mini PC solo se desarrolla. Reglas de infraestructura: `CLAUDE.md` en la raíz.
+- Repositorio: `sukima-labs/atlasonu` (se llamaba `onu-arqueologia-documental` hasta el 08-11-2026; GitHub redirige el nombre viejo y la web vieja reenvía a la nueva desde la portada `sukima-labs.github.io`). Flujo habitual: rama de trabajo → PR → fusión en `main`.
 
 ## Cómo está hecho
 Sitio estático: `index.html` + `data/atlas-data.js` (generado) + archivos diferidos `data/paises/<ISO>.js` y `data/tratados/<id>.js`. Datos oficiales con Python (`scripts/`), pruebas con Node y Playwright.

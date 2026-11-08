@@ -8,7 +8,7 @@ import gzip, json, re, sys, time, urllib.parse, urllib.request
 import xml.etree.ElementTree as ET
 
 NS = "{http://www.loc.gov/MARC21/slim}"
-UA = "ATLAS-ONU/1.0 (proyecto academico sin fines de lucro; +https://github.com/sukima-labs/onu-arqueologia-documental)"
+UA = "ATLAS-ONU/1.0 (proyecto academico sin fines de lucro; +https://github.com/sukima-labs/atlasonu)"
 COMITES = {"CCPR": "CCPR/C/GC", "CESCR": "E/C.12/GC", "CERD": "CERD/C/GC", "CAT": "CAT/C/GC", "CEDAW": "CEDAW/C/GC",
            "CRC": "CRC/C/GC", "CMW": "CMW/C/GC", "CRPD": "CRPD/C/GC", "CED": "CED/C/GC"}
 SIMB = re.compile(r"^(?P<pre>.+)/(?P<n>\d+)$")

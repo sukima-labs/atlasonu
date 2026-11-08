@@ -6,7 +6,7 @@ Escala: valores altos = cerca de EE. UU. y las democracias occidentales; bajos =
 Si la descarga falla o cambia el formato, sale con 1 y NO toca los archivos anteriores."""
 import csv, io, json, os, sys, urllib.request
 
-UA = {"User-Agent": "ATLAS-ONU/1.0 (+https://github.com/sukima-labs/onu-arqueologia-documental)"}
+UA = {"User-Agent": "ATLAS-ONU/1.0 (+https://github.com/sukima-labs/atlasonu)"}
 DOI = "doi:10.7910/DVN/LEJUQZ"
 BASE = "https://dataverse.harvard.edu/api/"
 

@@ -2,7 +2,7 @@
 
 Fecha: 27 de octubre de 2026.
 Autoría del proyecto: Sukima-Labs.
-Repositorio objetivo (ya creado y público): https://github.com/sukima-labs/onu-arqueologia-documental
+Repositorio objetivo (ya creado y público): https://github.com/sukima-labs/atlasonu
 
 ## Qué incluye
 - La versión HTML más reciente: 01_PROYECTO_Y_VERSIONES/ATLAS_ONU_publicacion/index.html

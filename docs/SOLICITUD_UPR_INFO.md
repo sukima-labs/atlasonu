@@ -19,4 +19,4 @@ Nos comprometemos a: no usarlas con fines comerciales, no alterar su contenido n
 Quedamos atentos a su respuesta. Muchas gracias por su trabajo.
 
 Sukima-Labs
-Repositorio: https://github.com/sukima-labs/onu-arqueologia-documental (hoy privado; público si responden afirmativamente y se republica el sitio)
+Repositorio: https://github.com/sukima-labs/atlasonu (hoy privado; público si responden afirmativamente y se republica el sitio)
