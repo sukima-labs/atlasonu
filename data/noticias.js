@@ -1,8 +1,16 @@
 window.NOTICIAS={
  "fuente": "Noticias ONU (news.un.org)",
- "actualizado": "2026-11-08T02:38:48Z",
+ "actualizado": "2026-11-08T16:54:55Z",
  "temas": {
   "todas": [
+   {
+    "titulo": "La joven ingeniera nuclear que salió de la periferia de Brasil para conquistar el mundo",
+    "fecha": "2026-11-07",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542146",
+    "resumen": "Pero para llegar a trabajar en el Organismo Internacional de la Energía Atómica tuvo que superar el racismo, la discriminación social y jornadas de más de 12 horas para estudiar Ingeniería. \"Nuestros héroes están en la vida cotidiana. Solo hay que reconocer…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/10/30-10-2026-Dandara-IAEA.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
    {
     "titulo": "Frente a la desinformación, hay que reconquistar la confianza en la ciencia",
     "fecha": "2026-11-06",
@@ -154,14 +162,6 @@ window.NOTICIAS={
     "resumen": "Israel pretende ampliar su despliegue militar al 70 % del territorio de Gaza, mientras empuja a los palestinos hacia zonas cada vez más pequeñas y ataca campamentos de desplazados, denuncia ONU Derechos Humanos.",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/16-01-2025-UNRWA-Gaza-22.jpg/image560x340cropped.jpg",
     "destacada": true
-   },
-   {
-    "titulo": "La naturaleza está resurgiendo, pero la financiación para restaurarla debe cuadruplicarse",
-    "fecha": "2026-10-29",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542123",
-    "resumen": "No todo es destrucción. Unos 252 millones de hectáreas en 149 países —una superficie del tamaño de Kazajistán— están en restauración, y se han creado más de un millón de empleos verdes, pero la financiación anual debe cuadruplicarse, de 64.000 a 296.000…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/10/29-10-2026_UNEP_Brazil.jpg/image560x340cropped.jpg",
-    "destacada": false
    }
   ],
   "derechos": [
