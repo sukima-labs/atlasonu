@@ -10,6 +10,7 @@ sys.path.insert(0, os.path.join(RAIZ, "scripts"))
 sys.path.insert(0, os.path.join(RAIZ, "scripts", "mini_pc"))
 import texto_completo as tc  # noqa: E402
 import busqueda_servicio as bs  # noqa: E402
+import preguntar as pg  # noqa: E402
 
 ES = """Naciones Unidas A/HRC/RES/16/16
 GE.11-12345
@@ -114,6 +115,50 @@ class Pruebas(unittest.TestCase):
         self.assertTrue(all(u.lower().endswith(f"-{ln}.pdf") for (_, ln), u in tc.URLS.items()))
         # en los datos, el «inglés» de CEDAW/C/AFG/CO/4 es el PDF en francés: no entra
         self.assertNotIn(("CEDAW/C/AFG/CO/4", "en"), tc.URLS)
+
+    def test_limpiar_citas(self):
+        t, usadas = pg.limpiar_citas("Sí [2] y también [1][2], pero no [7] ni [0].", 3)
+        self.assertEqual(usadas, [2, 1])
+        self.assertNotIn("[7]", t)
+        self.assertNotIn("[0]", t)
+
+    def test_preguntar_usa_solo_parrafos_y_descarta_sin_citas(self):
+        import sqlite3
+        con = sqlite3.connect(tc.ruta_db())
+        enviado = {}
+        orig = pg._llamar
+        try:
+            def falso(m):
+                enviado["m"] = m
+                return "Deben responder a las solicitudes de visitas [1] y otra cosa [42]."
+            pg._llamar = falso
+            r = pg.responder(con, "¿qué se pide sobre las visitas a los países?")
+            self.assertEqual(r["citas"], [1])
+            self.assertNotIn("[42]", r["respuesta"])
+            self.assertEqual(len({p["simbolo"] for p in r["parrafos"]}), len(r["parrafos"]))  # uno por documento
+            self.assertIn("[1] A/HRC/RES/", enviado["m"][1]["content"])
+            self.assertNotIn("\x02", enviado["m"][1]["content"])
+            pg._llamar = lambda m: "No lo sé."
+            pg._cache.clear()
+            r = pg.responder(con, "¿qué se pide sobre las visitas a los países?")
+            self.assertEqual((r["respuesta"], r["motivo"]), ("", "sin_citas"))
+        finally:
+            pg._llamar = orig
+            pg._cache.clear()
+
+    def test_ruta_preguntar_exige_origen_y_clave(self):
+        cod, _ = self.get("/preguntar?q=" + urllib.request.quote("¿qué se pide sobre visitas?"))
+        self.assertEqual(cod, 403)
+        req = urllib.request.Request(self.base + "/preguntar?q=" + urllib.request.quote("¿qué se pide sobre visitas?"),
+                                     headers={"Origin": "https://sukima-labs.github.io"})
+        clave = os.environ.pop("OPENCODE_GO_API_KEY", None)
+        try:
+            with self.assertRaises(urllib.error.HTTPError) as e:
+                urllib.request.urlopen(req, timeout=5)
+            self.assertEqual(e.exception.code, 503)
+        finally:
+            if clave:
+                os.environ["OPENCODE_GO_API_KEY"] = clave
 
     def test_sin_indice_da_503(self):
         viejo = tc.DIR
