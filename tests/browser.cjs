@@ -72,12 +72,23 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     ok(vp.name + ': al buscar India su ficha queda a la vista (sin tener que desplazarse a ciegas)', box && box.y < (vp.height * 0.9) && /Adhesión 10 abr 1979/.test(await page.textContent('#pOut')) && /Firmó 14 oct 1997/.test(await page.textContent('#pOut')));
     await page.fill('#pQ', 'India'); await page.getByRole('button', { name: 'Buscar' }).first().click(); await page.waitForFunction(() => /CCPR\/C\/IND\/CO\/4/.test(document.getElementById('pDocs').textContent), null, { timeout: 8000 }).catch(() => {});
     const dd = await page.textContent('#pDocs');
-    ok(vp.name + ': la ficha tiene el menú «Qué quieres ver» con 8 saltos y el botón de comparar', (await page.locator('#pNav button[onclick^="irSeccion"]').count()) === 8 && (await page.locator('#pNav button[onclick^="compararCon"]').count()) === 1);
+    ok(vp.name + ': la ficha tiene el menú «Qué quieres ver» con 9 saltos y el botón de comparar', (await page.locator('#pNav button[onclick^="irSeccion"]').count()) === 9 && (await page.locator('#pNav button[onclick^="compararCon"]').count()) === 1);
     await page.locator('#pNav button', { hasText: 'EPU' }).click(); await esperaReposo(page);
     const epuY = await page.evaluate(() => document.getElementById('ps-epu').getBoundingClientRect().top);
     ok(vp.name + ': «EPU» lleva a su bloque', epuY >= -5 && epuY < vp.height * 0.5);
     ok(vp.name + ': con la ficha abajo aparece «↑ Qué quieres ver» y vuelve al menú', await page.isVisible('#pTop') && (await page.click('#pTop'), await esperaReposo(page), await page.evaluate(() => Math.abs(document.getElementById('pNav').getBoundingClientRect().top) < 90)));
     ok(vp.name + ': el menú de la ficha no desborda horizontalmente', await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1));
+    // T62: línea de tiempo de India (tratados, comités, EPU, visitas), con filtros y orden
+    await page.locator('#pNav button', { hasText: 'Línea de tiempo' }).click(); await esperaReposo(page);
+    const lnY = await page.evaluate(() => document.getElementById('ps-linea').getBoundingClientRect().top), lnAnios = await page.locator('#pLinea .tl li.tl-y').allTextContents(), lnN = await page.locator('#pLinea .tl li.tl-e').count();
+    ok(vp.name + ': «Línea de tiempo» lleva a su bloque: años del más reciente al más antiguo y con los documentos ya cargados', lnY >= -5 && lnY < vp.height * 0.5 && lnN > 0 && lnAnios.length > 1 && lnAnios[0] >= lnAnios[lnAnios.length - 1] && (await page.locator('#pLinea .tl-comite').count()) > 0 && /Fuentes:/.test(await page.textContent('#pLinea')));
+    if (await page.locator('#pLinea .mas button').count()) { await page.click('#pLinea .mas button'); await page.waitForTimeout(150); ok(vp.name + ': «Ver más» en la línea de tiempo añade hechos', (await page.locator('#pLinea .tl li.tl-e').count()) > lnN); }
+    await page.locator('#pLinea button', { hasText: /^Tratados \(\d+\)/ }).click(); await page.waitForTimeout(150);
+    const lnTr = await page.locator('#pLinea .tl li.tl-e').count();
+    ok(vp.name + ': filtro «Tratados» de la línea de tiempo: solo firmas y ratificaciones, y queda pulsado', lnTr > 0 && lnTr === (await page.locator('#pLinea .tl li.tl-tratado').count()) && (await page.getAttribute('#pLinea button[aria-pressed="true"]', 'onclick')) === "setLn('tratado')" && /Adhesión: pasa a ser parte en PIDCP/.test(await page.textContent('#pLinea')));
+    await page.click('#lnOrden'); await page.waitForTimeout(150);
+    ok(vp.name + ': «Más antiguos primero» empieza en 1967 (firma de la CERD) y la línea no desborda', (await page.locator('#pLinea .tl li.tl-y').first().textContent()) === '1967' && /Firma: CERD/.test(await page.locator('#pLinea .tl li.tl-e').first().textContent()) && await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1));
+    await page.click('#lnOrden'); await page.locator('#pLinea button', { hasText: /^Todo \(\d+\)/ }).click();
     await page.evaluate(() => showPage('sistema')); await page.click('.org-node:has-text("Examen Periódico")');
     ok(vp.name + ': Cómo funciona la ONU: al pulsar un recuadro aparece su detalle y de quién depende', /Examen Periódico Universal/.test(await page.textContent('#sisDetalle')) && /Depende de/.test(await page.textContent('#sisDetalle')));
     await page.click('#sisT3'); await page.fill('#sisSim', 'CCPR/C/IND/CO/4');
