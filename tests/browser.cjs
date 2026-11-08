@@ -311,7 +311,12 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     ok('texto: la búsqueda pide /texto y muestra «Dentro de los textos»', pedidas.includes('/texto') && /Dentro de los textos \(1\)/.test(await pt.textContent('#textos')) && /por significado/.test(await pt.textContent('#textos')) && /tratan de lo mismo/.test(await pt.textContent('#textos')));
     ok('texto: lo encontrado sale resaltado y el HTML del fragmento no se ejecuta', await pt.evaluate(() => document.querySelector('#textos mark')?.textContent === 'visitas' && !document.querySelector('#textos img') && !window.__xss));
     ok('texto: el resultado enlaza el PDF oficial y cabe en 390 px', await pt.evaluate(() => !!document.querySelector('#textos a[href$="x.pdf"]') && document.documentElement.scrollWidth <= 390));
-    ok('texto: un documento de país muestra tipo, país y título y lleva a la ficha del país', await pt.evaluate(() => /Observaciones finales · Colombia/.test(document.getElementById('textos').textContent) && /quinto informe periódico/.test(document.getElementById('textos').textContent) && [...document.querySelectorAll('#textos button')].some(b => /Ver país/.test(b.textContent) && /irPais\('COL'\)/.test(b.getAttribute('onclick')))));
+    { const t = await pt.textContent('#textos'), bs = await pt.evaluate(() => [...document.querySelectorAll('#textos button')].map(b => b.textContent + '|' + b.getAttribute('onclick')));
+      ok('texto: un documento de país muestra tipo y país', /Observaciones finales · Colombia/.test(t));
+      ok('texto: un documento de país muestra su título', /quinto informe periódico/.test(t));
+      ok('texto: un documento de país lleva a la ficha del país', bs.some(b => /Ver país\|irPais\('COL'\)/.test(b))); }
+    await pt.evaluate(() => smartRun()); await pt.waitForTimeout(100);
+    ok('texto: si la búsqueda se redibuja con la misma consulta, los párrafos se conservan sin volver a pedirlos', /Dentro de los textos/.test(await pt.textContent('#textos')) && pedidas.filter(x => x === '/texto').length === 1);
     await pt.fill('#quick', 'qué dicen sobre las visitas'); await pt.waitForSelector('.preg button', { timeout: 5000 }).catch(() => {});
     ok('preguntar: el botón aparece con aviso de que la pregunta va a un servicio externo, y nada se envía sin pulsarlo', /servicio de IA externo/.test(await pt.textContent('#textos')) && !pedidas.includes('/preguntar'));
     await pt.click('.preg button'); await pt.waitForSelector('#pregOut .ia', { timeout: 5000 }).catch(() => {});
