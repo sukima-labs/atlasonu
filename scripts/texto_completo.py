@@ -90,7 +90,8 @@ def pendientes(limite=None):
     return [(s, v["urls"]) for s, v in (items[:limite] if limite else items)]
 
 
-def descargar(limite=None):
+def descargar(limite=None, cada=0, al_avanzar=None):
+    """Baja lo que falta. Con `cada`, llama a `al_avanzar()` cada tantos PDF nuevos (para ir indexando)."""
     os.makedirs(os.path.join(DIR, "pdf"), exist_ok=True)
     nuevos = fallos = 0
     for sim, urls in pendientes(limite):
@@ -109,6 +110,8 @@ def descargar(limite=None):
                     f.write(datos)
                 os.replace(tmp, dest)
                 nuevos += 1
+                if cada and al_avanzar and nuevos % cada == 0:
+                    al_avanzar()
             except Exception as e:
                 fallos += 1
                 print(f"  fallo {sim} [{ln}]: {e}", file=sys.stderr)
@@ -393,8 +396,10 @@ def main():
     ap.add_argument("--limite", type=int)
     ap.add_argument("--ln", choices=LENGUAS)
     a = ap.parse_args()
-    if a.accion in ("descargar", "todo"):
+    if a.accion == "descargar":
         descargar(a.limite)
+    if a.accion == "todo":   # la primera descarga dura horas: se va indexando cada 300 PDF nuevos
+        descargar(a.limite, cada=300, al_avanzar=lambda: (extraer(a.limite), indexar(a.limite)))
     if a.accion in ("extraer", "todo"):
         extraer(a.limite)
     if a.accion in ("indexar", "todo"):
