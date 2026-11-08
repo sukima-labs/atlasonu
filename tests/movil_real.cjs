@@ -50,7 +50,7 @@ const reposo = async pg => { let a = -1; for (let i = 0; i < 40; i++) { await pg
 
     // T19: ficha de país con «Qué quieres ver», saltos con el dedo y «↑ Qué quieres ver»
     await pg.tap('#pQ'); await pg.keyboard.type('Colombia'); await pg.getByRole('button', { name: 'Buscar' }).first().tap(); await pg.waitForTimeout(800);
-    const saltos = await pg.locator('#pNav button').count();
+    const saltos = await pg.locator('#pNav button[onclick^="irSeccion"]').count();
     // Toque con el dedo en el centro del botón, como en un teléfono (sin forzar): se anota qué hay debajo del dedo
     const epuBtn = pg.locator('#pNav button', { hasText: 'EPU' }); await epuBtn.scrollIntoViewIfNeeded(); await reposo(pg);
     const bajo = await epuBtn.evaluate(b => { const r = b.getBoundingClientRect(), x = r.left + r.width / 2, y = r.top + r.height / 2, e = document.elementFromPoint(x, y); return { x: Math.round(x), y: Math.round(y), alto: innerHeight, ancho: innerWidth, debajo: e ? (e.id ? '#' + e.id : e.tagName.toLowerCase() + '.' + e.className) + ' «' + e.textContent.trim().slice(0, 30) + '»' : null, esElBoton: e === b || b.contains(e) }; });
@@ -65,6 +65,13 @@ const reposo = async pg => { let a = -1; for (let i = 0; i < 40; i++) { await pg
     ok(nom + ': T19 la ficha de Colombia tiene 8 saltos, «EPU» lleva a su bloque y «↑ Qué quieres ver» vuelve', saltos === 8 && epu >= -5 && epu < h * 0.5 && vuelve, { saltos, epu });
     const a1 = await ancho();
     ok(nom + ': con la ficha abierta la página sigue midiendo lo que la pantalla', a1.pagina === a1.pantalla && a1.fuera.length === 0, a1);
+    // T61: comparador tocado con el dedo desde la ficha de Colombia
+    const cmpBtn = pg.locator('#pNav button[onclick^="compararCon"]'); await cmpBtn.scrollIntoViewIfNeeded(); await reposo(pg); await cmpBtn.tap(); await reposo(pg);
+    await pg.selectOption('#cmpB', 'ESP'); await pg.waitForTimeout(300);
+    await pg.locator('#cmpDif').scrollIntoViewIfNeeded(); await pg.tap('#cmpDif'); await pg.waitForTimeout(300);
+    const cmp = await pg.evaluate(() => ({ abierto: document.getElementById('pComp').open, a: document.getElementById('cmpA').value, filas: document.querySelectorAll('#cmpOut tbody tr').length, dif: document.querySelectorAll('#cmpOut tbody tr.cmp-dif').length, etiquetas: document.querySelectorAll('#cmpOut td[data-label="España"]').length, pulsado: document.getElementById('cmpDif').getAttribute('aria-pressed') }));
+    const a2 = await ancho();
+    ok(nom + ': T61 «Comparar con otro país» con el dedo: Colombia frente a España, solo lo que cambia, en tarjetas y sin desbordar', cmp.abierto && cmp.a === 'COL' && cmp.filas > 0 && cmp.filas === cmp.dif && cmp.etiquetas === cmp.filas && cmp.pulsado === 'true' && a2.pagina === a2.pantalla && a2.fuera.length === 0, { ...cmp, ...a2 });
     } catch (e) { ok(nom + ': la prueba llegó al final', false, e.message.split('\n')[0]); }
     await ctx.close();
   }
