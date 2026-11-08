@@ -11,5 +11,8 @@ Versión actual. Cambios desde la auditoría de seguridad y mantenimiento (ver `
 - **Fichas citables:** cita APA 7 y descarga en Word (`.docx`) en la ficha de cada mandato y de cada país (T59).
 - **Descargas:** pantalla «Descargas» con licencia, CSV de mandatos, JSON de países y archivos del repositorio (T60).
 
+## Sin versión aún · desde el 08-11-2026
+- **Comparador de dos países** en la pantalla Países: 28 aspectos lado a lado y «Solo lo que cambia» (T61).
+
 ## Anteriores
 - Versiones previas a 0.7 están en el historial de git.
