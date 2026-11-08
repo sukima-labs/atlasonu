@@ -72,7 +72,7 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     ok(vp.name + ': al buscar India su ficha queda a la vista (sin tener que desplazarse a ciegas)', box && box.y < (vp.height * 0.9) && /Adhesión 10 abr 1979/.test(await page.textContent('#pOut')) && /Firmó 14 oct 1997/.test(await page.textContent('#pOut')));
     await page.fill('#pQ', 'India'); await page.getByRole('button', { name: 'Buscar' }).first().click(); await page.waitForFunction(() => /CCPR\/C\/IND\/CO\/4/.test(document.getElementById('pDocs').textContent), null, { timeout: 8000 }).catch(() => {});
     const dd = await page.textContent('#pDocs');
-    ok(vp.name + ': la ficha tiene el menú «Qué quieres ver» con 8 saltos', (await page.locator('#pNav button').count()) === 8);
+    ok(vp.name + ': la ficha tiene el menú «Qué quieres ver» con 8 saltos y el botón de comparar', (await page.locator('#pNav button[onclick^="irSeccion"]').count()) === 8 && (await page.locator('#pNav button[onclick^="compararCon"]').count()) === 1);
     await page.locator('#pNav button', { hasText: 'EPU' }).click(); await esperaReposo(page);
     const epuY = await page.evaluate(() => document.getElementById('ps-epu').getBoundingClientRect().top);
     ok(vp.name + ': «EPU» lleva a su bloque', epuY >= -5 && epuY < vp.height * 0.5);
