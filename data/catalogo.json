@@ -5192,7 +5192,7 @@
   ]
  },
  "hojaruta": {
-  "actualizado": "2026-10-31",
+  "actualizado": "2026-11-08",
   "bloques": [
    {
     "id": "disponible",
@@ -5290,6 +5290,10 @@
      {
       "t": "Página de descargas",
       "x": "En el menú «Descargas» hay una pantalla con la licencia de cada parte, el CSV de los mandatos y el JSON de los países (se generan en tu navegador), y los archivos JSON y Atom del repositorio."
+     },
+     {
+      "t": "Comparador de dos países",
+      "x": "En la pantalla Países, «Comparar dos países» pone dos fichas lado a lado: grupo regional, invitación permanente, mandato propio, comisiones, visitas, tratados ratificados uno a uno, vías de comunicaciones individuales y cuántas observaciones finales, documentos del EPU e informes de visita tiene cada uno. Un botón deja solo lo que cambia. Desde cada ficha se abre con «Comparar con otro país»."
      }
     ]
    },
@@ -5320,10 +5324,6 @@
     "titulo": "Pendiente",
     "intro": "En la cola de trabajo, por orden aproximado. Una tarea cada vez.",
     "items": [
-     {
-      "t": "Comparador de dos países",
-      "x": "En la pantalla Países, comparar dos países lado a lado: votaciones, tratados, comunicaciones y mandatos."
-     },
      {
       "t": "Línea de tiempo por país",
       "x": "La historia de cada país en orden de fechas, con sus tratados, visitas y actos principales."

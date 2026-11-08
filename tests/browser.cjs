@@ -116,6 +116,19 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     ok(vp.name + ': escribir un tema libre mantiene el foco del campo y filtra', (await page.evaluate(() => document.activeElement.id)) === 'pTema' && /agua/i.test(await page.textContent('#pTemasTabla')));
     await page.fill('#pTema', ''); await page.getByRole('button', { name: /^Todos \(44\)/ }).click(); await page.waitForTimeout(200);
     ok(vp.name + ': sin tema → los 44 mandatos temáticos aplicables', (await page.locator('#pTemasTabla tbody tr').count()) === 44);
+    // T61: comparador de dos países (desde la ficha de Colombia)
+    await page.getByRole('button', { name: '⇄ Comparar con otro país' }).click(); await page.waitForTimeout(400);
+    ok(vp.name + ': «Comparar con otro país» abre el comparador con Colombia y el foco en el segundo país', await page.evaluate(() => $('pComp').open && $('cmpA').value === 'COL' && document.activeElement.id === 'cmpB') && /Elige dos países/.test(await page.textContent('#cmpOut')));
+    await page.selectOption('#cmpB', 'ESP'); await page.waitForTimeout(250);
+    const cmpN = await page.locator('#cmpOut tbody tr').count(), cmpT = await page.textContent('#cmpOut');
+    ok(vp.name + ': Colombia frente a España: tabla con los 18 tratados y los datos de ficha, cabeceras con los dos nombres', cmpN === 28 && /Colombia/.test(await page.textContent('#cmpOut thead')) && /España/.test(await page.textContent('#cmpOut thead')) && /CEDAW/.test(cmpT) && /Invitación permanente/.test(cmpT) && /Fuentes:/.test(cmpT));
+    const nDif = await page.locator('#cmpOut tbody tr.cmp-dif').count();
+    await page.click('#cmpDif'); await page.waitForTimeout(200);
+    ok(vp.name + ': «Solo lo que cambia» deja solo las filas distintas y lo marca pulsado', nDif > 0 && nDif < cmpN && (await page.locator('#cmpOut tbody tr').count()) === nDif && (await page.getAttribute('#cmpDif', 'aria-pressed')) === 'true' && new RegExp(nDif + ' de 28 aspectos cambian').test(await page.textContent('#cmpOut')));
+    ok(vp.name + ': el comparador no desborda la pantalla y en celular cada fila es una tarjeta con etiquetas', await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1) && (vp.name !== 'movil' || (await page.locator('#cmpOut td[data-label="España"]').count()) === nDif));
+    await page.click('#cmpDif'); await page.selectOption('#cmpB', 'COL'); await page.waitForTimeout(150);
+    ok(vp.name + ': elegir el mismo país dos veces pide dos distintos', /dos países distintos/.test(await page.textContent('#cmpOut')));
+    await page.evaluate(() => { $('pComp').open = false; });
     await page.evaluate(() => showPage('inicio')); await page.selectOption('#guiadaSel', { index: 4 }); await page.selectOption('#guiadaPais', 'COL'); await page.getByRole('button', { name: 'Ver mandatos' }).click(); await page.waitForTimeout(300);
     ok(vp.name + ': búsqueda guiada con país (Colombia + agua/alimentación…) abre Países con mandatos aplicables', await page.isVisible('#paises') && /Colombia/.test(await page.textContent('#pOut')) && (await page.locator('#pTemasTabla tbody tr').count()) > 0);
     if (vp.name === 'escritorio') { await page.evaluate(() => document.getElementById('pOut').scrollIntoView()); await page.screenshot({ path: path.resolve(__dirname, '..', 'audit', 'captura_pais_temas.png') }); }
