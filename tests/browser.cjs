@@ -89,6 +89,17 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     await page.click('#lnOrden'); await page.waitForTimeout(150);
     ok(vp.name + ': «Más antiguos primero» empieza en 1967 (firma de la CERD) y la línea no desborda', (await page.locator('#pLinea .tl li.tl-y').first().textContent()) === '1967' && /Firma: CERD/.test(await page.locator('#pLinea .tl li.tl-e').first().textContent()) && await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1));
     await page.click('#lnOrden'); await page.locator('#pLinea button', { hasText: /^Todo \(\d+\)/ }).click();
+    // T63: glosario de siglas al tocar (en la ficha de India, sin salir de la página)
+    await page.waitForTimeout(250);
+    ok(vp.name + ': las siglas del texto de la ficha quedan marcadas y las de botones y enlaces no', (await page.locator('#pDocs abbr.sg[data-k="EPU"]').count()) > 0 && (await page.locator('#pNav abbr.sg, #pDocs a abbr.sg, #paises button abbr.sg').count()) === 0);
+    const sgA = page.locator('#pDocs abbr.sg[data-k="EPU"]').first(); await sgA.scrollIntoViewIfNeeded(); await sgA.click(); await page.waitForTimeout(150);
+    const sgBox = await page.locator('#sgPop').boundingBox();
+    ok(vp.name + ': tocar «EPU» abre su significado junto a la sigla, dentro de la pantalla', await page.isVisible('#sgPop') && /Examen Peri[oó]dico Universal/.test(await page.textContent('#sgPop')) && /Universal Periodic Review/.test(await page.textContent('#sgPop')) && sgBox && sgBox.x >= 0 && sgBox.x + sgBox.width <= vp.width + 1 && sgBox.y >= 0 && sgBox.y + sgBox.height <= vp.height + 1 && await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+    await page.keyboard.press('Escape'); await page.waitForTimeout(100);
+    ok(vp.name + ': Escape cierra la tarjeta de la sigla', !(await page.isVisible('#sgPop')));
+    await sgA.click(); await page.waitForTimeout(100); await page.click('#sgPop button:has-text("Ver en «Siglas»")'); await page.waitForTimeout(300);
+    ok(vp.name + ': «Ver en Siglas» abre el diccionario con la sigla buscada', await page.isVisible('#siglas') && (await page.inputValue('#sigQ')) === 'EPU' && !(await page.isVisible('#sgPop')) && (await page.locator('#siglas abbr.sg').count()) === 0);
+    await page.evaluate(() => showPage('paises'));
     await page.evaluate(() => showPage('sistema')); await page.click('.org-node:has-text("Examen Periódico")');
     ok(vp.name + ': Cómo funciona la ONU: al pulsar un recuadro aparece su detalle y de quién depende', /Examen Periódico Universal/.test(await page.textContent('#sisDetalle')) && /Depende de/.test(await page.textContent('#sisDetalle')));
     await page.click('#sisT3'); await page.fill('#sisSim', 'CCPR/C/IND/CO/4');

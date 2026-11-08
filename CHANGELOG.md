@@ -14,6 +14,7 @@ Versión actual. Cambios desde la auditoría de seguridad y mantenimiento (ver `
 ## Sin versión aún · desde el 08-11-2026
 - **Comparador de dos países** en la pantalla Países: 28 aspectos lado a lado y «Solo lo que cambia» (T61).
 - **Línea de tiempo por país** en cada ficha: tratados, invitación, mandato o comisiones, observaciones finales, EPU y visitas por años, con filtros y orden (T62).
+- **Glosario de siglas al tocar:** las siglas del texto salen subrayadas y al tocarlas muestran su significado en español e inglés (T63).
 
 ## Anteriores
 - Versiones previas a 0.7 están en el historial de git.
