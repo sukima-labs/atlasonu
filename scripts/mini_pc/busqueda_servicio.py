@@ -8,6 +8,9 @@ aquí cuando el catálogo no encuentra nada. Escucha solo en 127.0.0.1; se publi
                                        párrafos del texto completo de las resoluciones (índice de scripts/texto_completo.py;
                                        el fragmento marca lo encontrado entre \x02 y \x03). Con /opt/atlas-venv (fastembed) mezcla
                                        palabras y significado; sin él, solo palabras. 503 si aún no hay índice.
+  GET /preguntar?q=<pregunta>       ->  {"respuesta","citas":[n…],"parrafos":[…],"modelo","motivo"}: respuesta con citas
+                                       redactada por IA (OpenCode Go) SOLO con párrafos del índice. Solo si el Origin es
+                                       la página; 503 sin clave o sin índice; 429 si se pasa el límite global.
   GET /visitas?pais=XX              ->  {"total":N, "pais":M}              (solo lee)
   GET /visita?pais=XX               ->  igual, pero suma una visita        (solo si el Origin es la página)
 El contador guarda únicamente dos números agregados (total y por código de país): ni IP, ni cookies, ni identificadores.
@@ -29,6 +32,7 @@ MAX_VISITAS_POR_MIN = 120   # tope global de visitas sumadas por minuto (frena a
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import texto_completo  # noqa: E402  (scripts/texto_completo.py)
+import preguntar  # noqa: E402  (scripts/preguntar.py)
 
 NS = "{http://www.loc.gov/MARC21/slim}"
 _cache, _veces, _lock = {}, [], threading.Lock()
@@ -134,6 +138,17 @@ def buscar_texto(q, ln):
             "resultados": res}
 
 
+def preguntar_docs(q):
+    db = texto_completo.ruta_db()
+    if not os.path.exists(db) or not preguntar.disponible():
+        return None
+    con = sqlite3.connect(f"file:{db}?mode=ro", uri=True)
+    try:
+        return preguntar.responder(con, q, clave=os.path.getmtime(db))
+    finally:
+        con.close()
+
+
 class H(BaseHTTPRequestHandler):
     server_version = "AtlasBusqueda"
 
@@ -171,6 +186,21 @@ class H(BaseHTTPRequestHandler):
             # solo suma si la petición viene de la página (el navegador envía Origin); abrir la URL a mano no suma
             sumar = u.path == "/visita" and self.headers.get("Origin", "") in ORIGENES
             return self._json(200, visitas(pais, sumar), cache="no-store")
+        if u.path == "/preguntar":
+            q = re.sub(r"\s+", " ", (urllib.parse.parse_qs(u.query).get("q") or [""])[0]).strip()
+            if self.headers.get("Origin", "") not in ORIGENES and not os.environ.get("ATLAS_PREGUNTAR_SIN_ORIGEN"):
+                return self._json(403, {"error": "solo desde la página"}, cache="no-store")
+            if len(q) < 8 or len(q) > 300:
+                return self._json(400, {"error": "pregunta inválida"}, cache="no-store")
+            try:
+                r = preguntar_docs(q)
+            except RuntimeError:
+                return self._json(429, {"error": "demasiadas preguntas; inténtalo en un minuto"}, cache="no-store")
+            except Exception:
+                return self._json(502, {"error": "el servicio de IA no respondió"}, cache="no-store")
+            if r is None:
+                return self._json(503, {"error": "no disponible"}, cache="no-store")
+            return self._json(200, r, cache="no-store")
         if u.path not in ("/buscar", "/texto"):
             return self._json(404, {"error": "no existe"})
         p = urllib.parse.parse_qs(u.query)

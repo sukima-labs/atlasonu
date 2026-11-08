@@ -41,3 +41,17 @@ Nada de esto va al repositorio. PDF, textos e índice están en `ATLAS_TEXTOS_DI
 ## Pruebas
 `python3 -I tests/texto_completo_test.py` (troceo, consultas raras, índice y la ruta `/texto`, sin red) y el bloque
 «texto:» de `tests/browser.cjs` (resaltado, sin inyección de HTML, 390 px).
+
+## Preguntar a los documentos (IA con citas)
+Debajo de «Dentro de los textos» hay un botón **Preguntar a los documentos** (cuando lo escrito tiene al menos 8
+letras). Al pulsarlo, `scripts/preguntar.py` toma los 8 párrafos más pertinentes (uno por documento) y le pide a un
+modelo de OpenCode Go (`glm-5.3-flash`, cambiable con `ATLAS_MODELO_IA`) que responda **solo** con ellos y que cite
+cada afirmación con `[n]`. Después se comprueba la respuesta: se quitan las citas a párrafos que no se le dieron y, si
+no queda ninguna válida, no se muestra respuesta, solo los párrafos. Si los párrafos no bastan, el modelo lo dice.
+
+- **Qué sale del servidor:** la pregunta y párrafos públicos de la ONU. Ni IP, ni cookies, ni identificadores. La web
+  solo pregunta cuando la persona pulsa el botón, y antes le dice que la pregunta va a un servicio de IA externo.
+- **Límites:** 10 preguntas nuevas por minuto en total; las repetidas salen de una caché de una hora. Solo se atiende
+  si la petición viene de la página (`Origin`).
+- **Clave:** `OPENCODE_GO_API_KEY`, fuera del repositorio (en el servidor, `/etc/atlas/opencode.env`). Sin clave,
+  `/preguntar` contesta 503 y la web dice que ahora no se puede preguntar.

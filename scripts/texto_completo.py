@@ -208,11 +208,15 @@ URLS = {(s, ln): u for s, v in CATALOGO.items() for ln, u in v["urls"].items()}
 INI, FIN = "\x02", "\x03"   # marcas del fragmento resaltado (no aparecen en los textos de la ONU)
 
 
-def consulta_fts(q):
-    """Convierte lo que escribe una persona en una consulta FTS5 segura: palabras sueltas, frases entre comillas."""
+def consulta_fts(q, o=False):
+    """Convierte lo que escribe una persona en una consulta FTS5 segura: palabras sueltas, frases entre comillas.
+    Con o=True, cualquiera de las palabras con contenido (para preguntas largas)."""
     frases = re.findall(r'"([^"]+)"', q)
     resto = re.sub(r'"[^"]*"', " ", q)
     terminos = [f'"{f.strip()}"' for f in frases if f.strip()]
+    if o:
+        terminos += [f'"{w}"' for w in palabras(resto)]
+        return " OR ".join(terminos)
     terminos += [f'"{w}"' for w in re.findall(r"\w+", resto) if len(w) > 1]
     return " ".join(terminos)
 
@@ -221,9 +225,10 @@ def _meta(m):
     return dict(zip(("tipo", "titulo", "pais", "fecha"), (x or "" for x in m)))
 
 
-def buscar(con, q, ln=None, limite=10, por_doc=2):
-    """Párrafos que contienen la consulta, los mejores primero, como mucho `por_doc` por documento y lengua."""
-    fts = consulta_fts(q)
+def buscar(con, q, ln=None, limite=10, por_doc=2, o=False):
+    """Párrafos que contienen la consulta, los mejores primero, como mucho `por_doc` por documento y lengua.
+    Si ningún párrafo tiene todas las palabras, se reintenta con cualquiera de ellas."""
+    fts = consulta_fts(q, o)
     if not fts:
         return []
     sql = ("SELECT parrafos.simbolo, parrafos.lengua, parrafos.n, snippet(parrafos, 3, ?, ?, ' … ', 40), d.url, "
@@ -238,6 +243,8 @@ def buscar(con, q, ln=None, limite=10, por_doc=2):
         out.append({"simbolo": s, "lengua": l, "parrafo": n, "fragmento": t, "url": u or "", **_meta(meta)})
         if len(out) >= limite:
             break
+    if not out and not o and len(palabras(q)) > 1:
+        return buscar(con, q, ln, limite, por_doc, o=True)
     return out
 
 
@@ -315,7 +322,7 @@ def buscar_hibrido(con, q, ln=None, limite=10, por_doc=2, clave=None):
     if not len(ids):
         return buscar(con, q, ln, limite, por_doc)
     rr = {}
-    fts = consulta_fts(q)
+    fts = consulta_fts(q, o=len(palabras(q)) > 1)
     if fts:
         sql = ("SELECT rowid FROM parrafos WHERE parrafos MATCH ?" + (" AND lengua = ?" if ln else "") +
                " ORDER BY bm25(parrafos) LIMIT 100")
