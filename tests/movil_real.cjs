@@ -36,13 +36,15 @@ const reposo = async pg => { let a = -1; for (let i = 0; i < 40; i++) { await pg
     const fin = await pg.evaluate(() => { const s = document.getElementById('side'), b = [...s.querySelectorAll('.nav button')].pop(), r = b.getBoundingClientRect(); return { fin: s.scrollTop + s.clientHeight >= s.scrollHeight - 2, ultimo: b.textContent.trim(), visible: r.top >= 0 && r.bottom <= innerHeight, fondo: Math.round(scrollY) }; });
     ok(nom + ': T14/T28 el menú se desliza con el dedo hasta su último botón y el fondo no se mueve', fin.fin && fin.visible && fin.fondo === 0, fin);
 
-    { const p2 = await ctx.newPage(); await p2.setContent('<meta name=viewport content="width=device-width,initial-scale=1"><div style="height:3000px;width:100%">x</div>'); const c2 = await ctx.newCDPSession(p2); await c2.send('Input.synthesizePinchGesture', { x: 100, y: 100, scaleFactor: 2, gestureSourceType: 'touch' }); await p2.waitForTimeout(500); const e1 = await p2.evaluate(() => visualViewport.scale); await c2.send('Emulation.setPageScaleFactor', { pageScaleFactor: 2 }); await p2.waitForTimeout(300); const e2 = await p2.evaluate(() => visualViewport.scale); await c2.send('Input.synthesizeScrollGesture', { x: 100, y: 100, xDistance: -150, yDistance: 0, gestureSourceType: 'touch' }); await p2.waitForTimeout(300); res.checks.push({ n: nom + ': (control: zoom en una página vacía)', ok: true, extra: { pellizco: e1, escalaCDP: e2, despuesDeArrastrar: await p2.evaluate(() => ({ s: visualViewport.scale, izq: visualViewport.offsetLeft })) } }); await p2.close(); }
     // T17: con el menú abierto, pellizco real de zoom 2× hacia la derecha; el menú sigue la zona visible y no queda cortado
     await pg.evaluate(() => { document.getElementById('side').scrollTop = 0; });
-    await cdp.send('Input.synthesizePinchGesture', { x: w - 30, y: h / 2, scaleFactor: 2, gestureSourceType: 'touch' }); await pg.waitForTimeout(600);
+    // Zoom 2× y la zona visible movida a la derecha, como quien amplía con dos dedos y arrastra. El navegador sin pantalla de la CI
+    // no hace caso al pellizco sintético, así que el zoom se fija con CDP y la zona visible se mueve con la rueda horizontal.
+    await cdp.send('Input.synthesizePinchGesture', { x: w - 30, y: h / 2, scaleFactor: 2, gestureSourceType: 'touch' }); await pg.waitForTimeout(400);
+    if (await pg.evaluate(() => visualViewport.scale < 1.5)) { await cdp.send('Emulation.setPageScaleFactor', { pageScaleFactor: 2 }); await pg.waitForTimeout(300); await cdp.send('Input.dispatchMouseEvent', { type: 'mouseWheel', x: w - 20, y: h / 2, deltaX: w, deltaY: 0 }); await pg.waitForTimeout(600); }
     const z = await pg.evaluate(() => { const v = visualViewport, s = document.getElementById('side').getBoundingClientRect(); return { escala: +v.scale.toFixed(2), vistaIzq: Math.round(v.offsetLeft), menuIzq: Math.round(s.left), menuArriba: Math.round(s.top), vistaArriba: Math.round(v.offsetTop) }; });
     ok(nom + ': T17 con zoom 2× el menú empieza donde empieza la zona visible (no queda cortado)', z.escala >= 1.5 && z.vistaIzq > 0 && Math.abs(z.menuIzq - z.vistaIzq) <= 2 && Math.abs(z.menuArriba - z.vistaArriba) <= 2, z);
-    await cdp.send('Input.synthesizePinchGesture', { x: w / 2, y: h / 2, scaleFactor: 0.5, gestureSourceType: 'touch' }); await pg.waitForTimeout(500);
+    await cdp.send('Emulation.setPageScaleFactor', { pageScaleFactor: 1 }); await pg.waitForTimeout(400);
     await pg.tap('.nav button[data-page="paises"]'); await pg.waitForTimeout(400);
     ok(nom + ': tocar una opción cierra el menú y abre la pantalla', !(await pg.isVisible('#side')) && (await pg.isVisible('#paises')));
 
