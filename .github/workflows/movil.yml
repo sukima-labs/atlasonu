@@ -1,0 +1,17 @@
+name: Celular (web publicada)
+# Prueba de celular contra la web publicada y la búsqueda en vivo real: tests/movil_real.cjs.
+# No corre en cada PR porque depende de internet: solo en los PR que la cambian. Se lanza a mano (Actions → «Celular» → Run workflow)
+# y cada lunes, para enterarse si la búsqueda deja de contestar desde un teléfono.
+on:
+  workflow_dispatch: {}
+  pull_request: { paths: [tests/movil_real.cjs, .github/workflows/movil.yml] }
+  schedule: [{ cron: '17 7 * * 1' }]
+permissions: { contents: read }
+jobs:
+  movil:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: npm i --no-save playwright@1.64.1 && npx playwright install --with-deps chromium && node tests/movil_real.cjs
