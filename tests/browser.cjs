@@ -313,9 +313,11 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     ok('texto: el resultado enlaza el PDF oficial y cabe en 390 px', await pt.evaluate(() => !!document.querySelector('#textos a[href$="x.pdf"]') && document.documentElement.scrollWidth <= 390));
     await pt.fill('#quick', 'vi'); await pt.waitForTimeout(800);
     { const t = await pt.textContent('#textos'), bs = await pt.evaluate(() => [...document.querySelectorAll('#textos button')].map(b => b.textContent + '|' + b.getAttribute('onclick')));
-      ok('texto: un documento de país muestra tipo y país', /Observaciones finales · Colombia/.test(t) || console.log('DEPURAR textos:', t));
+      ok('texto: un documento de país muestra tipo y país', /Observaciones finales · Colombia/.test(t));
       ok('texto: un documento de país muestra su título', /quinto informe periódico/.test(t));
-      ok('texto: un documento de país lleva a la ficha del país', bs.some(b => /Ver país\|irPais\('COL'\)/.test(b)) || console.log('DEPURAR botones:', bs)); }
+      ok('texto: un documento de país lleva a la ficha del país', bs.some(b => /Ver país\|irPais\('COL'\)/.test(b))); }
+    await pt.evaluate(() => smartRun()); await pt.waitForTimeout(100);
+    ok('texto: si la búsqueda se redibuja con la misma consulta, los párrafos se conservan sin volver a pedirlos', /Dentro de los textos/.test(await pt.textContent('#textos')) && pedidas.filter(x => x === '/texto').length === 1);
     ok('texto: con menos de 3 letras no se pide /texto', pedidas.filter(x => x === '/texto').length === 1);
     await ctx.close();
   }
