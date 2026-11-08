@@ -100,6 +100,17 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     await sgA.click(); await page.waitForTimeout(100); await page.click('#sgPop button:has-text("Ver en «Siglas»")'); await page.waitForTimeout(300);
     ok(vp.name + ': «Ver en Siglas» abre el diccionario con la sigla buscada', await page.isVisible('#siglas') && (await page.inputValue('#sigQ')) === 'EPU' && !(await page.isVisible('#sgPop')) && (await page.locator('#siglas abbr.sg').count()) === 0);
     await page.evaluate(() => showPage('paises'));
+    // T40: Relatores y relatoras
+    await page.evaluate(() => showPage('relatores')); await page.waitForTimeout(250);
+    const rN = await page.locator('#rOut .rel-card').count();
+    ok(vp.name + ': «Relatores y relatoras» muestra una tarjeta por titular, con mandato y nacionalidad, sin desbordar', rN >= 60 && rN === (await page.evaluate(() => REL.length)) && /Nacionalidad:/.test(await page.textContent('#rOut')) && await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+    await page.selectOption('#rCargo', 'gt'); await page.waitForTimeout(150);
+    const rGt = await page.locator('#rOut .rel-card').count(), rGtTag = await page.locator('#rOut .rel-card .tag', { hasText: 'Grupo de trabajo' }).count();
+    ok(vp.name + ': filtro «Grupo de trabajo» deja solo miembros de grupos de trabajo', rGt > 0 && rGt < rN && rGtTag === rGt);
+    await page.selectOption('#rCargo', ''); await page.waitForTimeout(150);
+    await page.locator('#rOut .rel-card').first().getByRole('button', { name: 'Ver el mandato' }).click(); await page.waitForTimeout(300);
+    ok(vp.name + ': desde una tarjeta, «Ver el mandato» abre su ficha en Explorar', await page.isVisible('#explorar'));
+    await page.evaluate(() => showPage('paises'));
     await page.evaluate(() => showPage('sistema')); await page.click('.org-node:has-text("Examen Periódico")');
     ok(vp.name + ': Cómo funciona la ONU: al pulsar un recuadro aparece su detalle y de quién depende', /Examen Periódico Universal/.test(await page.textContent('#sisDetalle')) && /Depende de/.test(await page.textContent('#sisDetalle')));
     await page.click('#sisT3'); await page.fill('#sisSim', 'CCPR/C/IND/CO/4');
