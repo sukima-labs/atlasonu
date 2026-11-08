@@ -109,6 +109,10 @@
     {
      "t": "Glosario de siglas al tocar",
      "x": "En el texto de la plataforma, las siglas conocidas (EPU, CEDAW, ACNUDH, PIDCP…) aparecen subrayadas con puntos. Al tocarlas se abre una tarjeta con la forma completa en español y en inglés, qué es y a dónde ir, sin salir de la página. Si una sigla tiene dos sentidos (CAT: la Convención y el Comité), salen los dos."
+    },
+    {
+     "t": "Relatores y relatoras",
+     "x": "En el menú, «Relatores y relatoras» reúne a las personas que hoy ejercen los mandatos: nombre tal como lo publica la ONU, tipo de mandato, nacionalidad y, cuando consta, desde cuándo. Se busca por nombre, tema o país y se filtra por tipo, alcance, tema y grupo regional. Cada tarjeta lleva a su mandato y a las fichas de país; desde cada ficha de país se llega a las personas de esa nacionalidad. Solo información pública de su función."
     }
    ]
   },
@@ -209,8 +213,8 @@
      "x": "En las fichas de país faltan las opiniones del Grupo de Trabajo sobre la Detención Arbitraria y los casos del Grupo de Trabajo sobre las Desapariciones Forzadas. Se investiga qué se puede indexar con enlace al original."
     },
     {
-     "t": "Relatores y relatoras",
-     "x": "Una sección propia en el menú, con cada persona y su mandato, sus informes, visitas y comunicaciones, indexado por temas y conectado con países, tratados, resoluciones y noticias."
+     "t": "Relatores y relatoras: lo que falta",
+     "x": "Sus informes, visitas y comunicaciones, persona a persona, con enlace al original. Hoy las bases oficiales no permiten consulta automática; se enlazan desde la pantalla."
     },
     {
      "t": "Orden, copias de seguridad y velocidad",
