@@ -203,7 +203,7 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     await pg.close();
   }
   // Navegación móvil: menú lateral con botón, se cierra al navegar; sin desbordes en ningún tamaño de teléfono/tableta
-  for (const [nom, w, h] of [['iPhone SE', 375, 667], ['Android 412', 412, 915], ['tableta 768', 768, 1024]]) {
+  for (const [nom, w, h] of [['Android 320', 320, 658], ['iPhone SE', 375, 667], ['Android 412', 412, 915], ['tableta 768', 768, 1024]]) {
     const pg = await browser.newPage({ viewport: { width: w, height: h }, hasTouch: true, isMobile: true }); await pg.goto(URL); await pg.waitForFunction(() => window.__atlasListo);
     ok(nom + ': hay barra superior con botón de menú y el menú está cerrado', (await pg.isVisible('#burger')) && !(await pg.isVisible('#side')));
     ok(nom + ': se ve la pista de las tres líneas y la etiqueta «Menú»', (await pg.isVisible('#menuHint')) && (await pg.isVisible('.burger-t')));
@@ -231,6 +231,9 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     ok(nom + ': ninguna pantalla se desborda en horizontal ' + malos.join(','), malos.length === 0);
     const peq = await pg.evaluate(() => [...document.querySelectorAll('input.field')].filter(e => e.offsetParent && parseFloat(getComputedStyle(e).fontSize) < 16).length);
     ok(nom + ': los campos de texto usan 16 px (iOS no hace zoom al escribir)', peq === 0);
+    // Si algo es más ancho que la pantalla, el móvil encoge la página entera y los toques caen en otro botón (pasó con «Invitación permanente…» a 320 px)
+    await pg.evaluate(() => showPage('paises')); await pg.fill('#pQ', 'Colombia'); await pg.getByRole('button', { name: 'Buscar' }).first().click(); await pg.waitForTimeout(400);
+    ok(nom + ': con la ficha de Colombia abierta la página mide lo que la pantalla (el móvil no la encoge)', await pg.evaluate(W => innerWidth === W && document.documentElement.scrollWidth <= W, w));
     await pg.close();
   }
   // Contador de visitas: servido como https falso, con el servicio simulado y sin la marca de automatización
