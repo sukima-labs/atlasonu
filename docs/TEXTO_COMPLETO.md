@@ -6,8 +6,8 @@ donde aparece lo buscado, resaltado, con el símbolo, la lengua y el enlace al P
 ## Cómo funciona
 1. `scripts/texto_completo.py descargar`: toma las rutas al texto ya verificadas (`data/fuentes/textos.json`, estado
    `TEXTO_DIRECTO`) y descarga el PDF oficial en español y en inglés. Prefiere la Biblioteca Digital
-   (`digitallibrary.un.org`) y, si no hay, `documents.un.org`. Hace una pausa de 2 s entre descargas para no saturar
-   a la ONU y no vuelve a bajar lo que ya tiene.
+   (`digitallibrary.un.org`) y, si no hay, `documents.un.org`. Respeta el `Crawl-Delay: 5` de su `robots.txt` (5 s entre descargas)
+   y no vuelve a bajar lo que ya tiene.
 2. `extraer`: saca el texto con `pdftotext` (poppler, software libre).
 3. `indexar`: trocea el texto en párrafos (quita cabeceras, números de página y guiones de corte) y lo guarda en un
    índice SQLite FTS5 que no distingue tildes. El índice se rehace entero en un fichero nuevo y se cambia de golpe,

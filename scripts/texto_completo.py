@@ -18,7 +18,7 @@ RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEXTOS_JSON = os.path.join(RAIZ, "data", "fuentes", "textos.json")
 DIR = os.environ.get("ATLAS_TEXTOS_DIR", os.path.expanduser("~/.local/share/atlas-onu/textos"))
 UA = "ATLAS-ONU/1.0 (+https://github.com/sukima-labs/atlasonu)"
-PAUSA = 2.0            # segundos entre descargas: no saturar a la ONU
+PAUSA = 5.0            # segundos entre descargas: el Crawl-Delay del robots.txt de la Biblioteca Digital
 LENGUAS = ("es", "en")
 MIN_PARRAFO = 40       # caracteres; lo más corto suele ser cabecera o número de página
 
@@ -32,12 +32,14 @@ def slug(simbolo):
 
 
 def fuentes_por_lengua(entrada):
-    """{lengua: url} prefiriendo la Biblioteca Digital (registro), luego documents.un.org (ods)."""
-    orden = {"registro": 0, "ods": 1, "ohchr": 2}
+    """{lengua: url} de la Biblioteca Digital, solo si el fichero es de esa lengua (…-ES.pdf / …-EN.pdf).
+    documents.un.org no: su robots.txt prohíbe /api. Lo que no cumple, se queda fuera (no se adivina)."""
     out = {}
-    for f in sorted(entrada.get("fuentes", []), key=lambda f: orden.get(f.get("tipo"), 9)):
+    for f in entrada.get("fuentes", []):
         ln, url = f.get("lengua"), (f.get("url") or "").replace("http://", "https://", 1)
-        if ln in LENGUAS and ln not in out and f.get("validado") is not False and url:
+        if (ln in LENGUAS and ln not in out and f.get("validado") is not False
+                and url.startswith("https://digitallibrary.un.org/record/")
+                and re.search(r"-" + ln.upper() + r"\.pdf$", url, re.I)):
             out[ln] = url
     return out
 
@@ -145,6 +147,8 @@ def indexar(limite=None, d=None):
             ps = parrafos(f.read())
         sim = SIMBOLOS.get(m.group(1), m.group(1))
         url = URLS.get((sim, m.group(2)), "")
+        if URLS and not url:   # ya no es una fuente admisible (p. ej. venía de documents.un.org): fuera
+            continue
         con.executemany("INSERT INTO parrafos VALUES (?,?,?,?)",
                         [(sim, m.group(2), i, p) for i, p in enumerate(ps, 1)])
         con.execute("INSERT OR REPLACE INTO documentos VALUES (?,?,?,?)", (sim, m.group(2), len(ps), url))
