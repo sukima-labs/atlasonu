@@ -18,7 +18,7 @@ donde aparece lo buscado, resaltado, con el símbolo, la lengua y el enlace al P
 4. La búsqueda en vivo (`scripts/mini_pc/busqueda_servicio.py`) contesta `GET /texto?q=…[&ln=es|en]` leyendo ese
    índice; no sale a internet. Si todavía no hay índice, contesta 503 y la página no muestra la sección.
 
-`python3 scripts/texto_completo.py todo` hace los tres pasos; `buscar "…"` prueba una consulta desde la terminal.
+`python3 scripts/texto_completo.py todo` hace los tres pasos y, mientras descarga, reindexa cada 300 PDF nuevos (la primera vez tarda horas y así la búsqueda va creciendo); `buscar "…"` prueba una consulta desde la terminal.
 
 ## Búsqueda por significado
 Si el servicio corre con `/opt/atlas-venv` (fastembed y numpy) y el modelo está en `~/modelos`
