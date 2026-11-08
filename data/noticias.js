@@ -1,6 +1,6 @@
 window.NOTICIAS={
  "fuente": "Noticias ONU (news.un.org)",
- "actualizado": "2026-11-07T16:59:59Z",
+ "actualizado": "2026-11-08T02:38:48Z",
  "temas": {
   "todas": [
    {
@@ -308,6 +308,13 @@ window.NOTICIAS={
   ],
   "americas": [
    {
+    "titulo": "La joven ingeniera nuclear que salió de la periferia de Brasil para conquistar el mundo",
+    "fecha": "2026-11-07",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542146",
+    "resumen": "Pero para llegar a trabajar en el Organismo Internacional de la Energía Atómica tuvo que superar el racismo, la discriminación social y jornadas de más de 12 horas para estudiar Ingeniería. \"Nuestros héroes están en la vida cotidiana. Solo hay que reconocer…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/10/30-10-2026-Dandara-IAEA.jpg/image560x340cropped.jpg"
+   },
+   {
     "titulo": "Desconectarse para conectar: la juventud argentina debate los retos de la era digital",
     "fecha": "2026-11-01",
     "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542125",
@@ -439,13 +446,6 @@ window.NOTICIAS={
     "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542007",
     "resumen": "Desde una pequeña escuela creada en 2021 en San José del Guaviare, en la amazonía colombiana, Angie Tatiana Muñoz ha convertido la robótica en una herramienta para despertar vocaciones, abrir oportunidades a miles de niños y niñas de una de las regiones más…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/10/02-10-2026_ColombiaRobotics_1.JPG/image560x340cropped.jpg"
-   },
-   {
-    "titulo": "La inteligencia artificial facilita la expansión del crimen organizado y el ciberdelito",
-    "fecha": "2026-09-30",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/09/1541999",
-    "resumen": "La inteligencia artificial generativa, las plataformas digitales y el llamado “crimen como servicio” están reduciendo las barreras para que las redes criminales amplíen sus operaciones y alcancen a víctimas en todo el mundo. Un nuevo informe de la ONU señala…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/12-06-2024-UNODC-Philippines-5-LG.jpg/image560x340cropped.jpg"
    }
   ]
  }
