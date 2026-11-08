@@ -20,6 +20,8 @@ jobs:
       - run: pip install -q openpyxl
       - name: Revisar fuentes, verificar, detectar cambios y validar (aborta si los datos se degradan)
         run: bash scripts/actualizar_datos.sh
+      - name: Pruebas de lógica con los datos nuevos (los commits del bot no lanzan «Pruebas»; ver issue 121)
+        run: cd tests && node smoke.cjs
       - name: Publicar en main (solo lo que cambió en data/)
         run: |
           git config user.name "atlas-onu-bot"
