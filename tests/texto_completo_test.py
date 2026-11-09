@@ -113,8 +113,8 @@ class Pruebas(unittest.TestCase):
         tipos = {v["tipo"] for v in tc.CATALOGO.values()}
         self.assertTrue({"Resolución", "Observaciones finales", "Examen Periódico Universal", "Informe de visita"} <= tipos)
         self.assertTrue(all(u.lower().endswith(f"-{ln}.pdf") for (_, ln), u in tc.URLS.items()))
-        # en los datos, el «inglés» de CEDAW/C/AFG/CO/4 es el PDF en francés: no entra
-        self.assertNotIn(("CEDAW/C/AFG/CO/4", "en"), tc.URLS)
+        # el «inglés» de CEDAW/C/AFG/CO/4 era el PDF en francés; corregido (PR #156), ahora entra y es el -EN.pdf
+        self.assertTrue(tc.URLS[("CEDAW/C/AFG/CO/4", "en")].endswith("CEDAW_C_AFG_CO_4-EN.pdf"))
 
     def test_limpiar_citas(self):
         t, usadas = pg.limpiar_citas("Sí [2] y también [1][2], pero no [7] ni [0].", 3)
