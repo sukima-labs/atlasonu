@@ -600,4 +600,4 @@ function abrirSg(a){const b=$('sgPop'),k=a.dataset.k;if(!b||!SGK[k])return;b.inn
 function cerrarSg(foco){const b=$('sgPop');if(!b||b.hidden)return;b.hidden=true;if(sgDe){sgDe.removeAttribute('aria-expanded');if(foco&&sgDe.focus)sgDe.focus({preventScroll:true})}sgDe=null}
 function sgDiccionario(k){cerrarSg();showPage('siglas');$('sigQ').value=k;renderSiglas()}
 if(document.addEventListener){document.addEventListener('click',e=>{const t=e.target,a=t&&t.closest&&t.closest('abbr.sg');if(a){e.preventDefault();if(sgDe===a)cerrarSg();else abrirSg(a);return}if(!(t&&t.closest&&t.closest('#sgPop')))cerrarSg()});document.addEventListener('keydown',e=>{if(e.key==='Escape')cerrarSg(true)});addEventListener('scroll',()=>cerrarSg(),{passive:true})}
-</script></body></html>
+</script><script src="assets/idiomas.js?v=1"></script></body></html>
