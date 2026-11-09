@@ -10,4 +10,6 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: 20 }
       - run: cd tests && node smoke.cjs
+      - run: python3 -I tests/texto_completo_test.py
+      - run: python3 -I scripts/idiomas_textos.py --comprobar   # T26: inglés y francés cubren la interfaz
       - run: npm i --no-save playwright@1.64.1 && npx playwright install --with-deps chromium && node tests/browser.cjs

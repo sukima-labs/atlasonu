@@ -1,0 +1,170 @@
+/* ATLAS ONU · idiomas de la interfaz (T26). Sin servicios externos: diccionarios propios en data/idiomas/<ln>.js.
+   Traduce solo los textos de la interfaz que están en el diccionario, por coincidencia exacta. Los datos oficiales
+   (títulos de documentos, resoluciones, nombres de mandatos que vienen de la ONU) no están en el diccionario, así que
+   se quedan en el idioma en que los publica la ONU: no se traducen ni se inventan.
+   Clave de una «frase» (elemento cuyo contenido es solo texto y etiquetas en línea): su texto con los espacios
+   colapsados y las etiquetas sin atributos, «Pulsa <b>Ver ficha</b> para…». La misma regla la sigue
+   scripts/idiomas_textos.py para comprobar que el diccionario cubre index.html. Al traducir se reutilizan los
+   elementos originales (enlaces, botones con su onclick) en el orden en que aparecen en la traducción.
+   El idioma elegido se guarda en localStorage («atlas_idioma»); cambiarlo recarga la página en la misma pantalla. */
+(function () {
+  'use strict';
+  var IDIOMAS = [['es', 'ES', 'Español'], ['en', 'EN', 'English'], ['fr', 'FR', 'Français']];
+  var EN_LINEA = /^(A|ABBR|B|BR|CITE|CODE|EM|I|KBD|MARK|Q|S|SMALL|SPAN|STRONG|SUB|SUP|U)$/;
+  var SALTAR = /^(SCRIPT|STYLE|SVG|NOSCRIPT|TEMPLATE)$/, SOLO_ATRS = /^(INPUT|TEXTAREA)$/; // de un campo, nunca lo escrito
+  var ATRS = ['placeholder', 'aria-label', 'title', 'alt'];
+  var AVISO = {
+    en: 'Interface translated by ATLAS. Documents and official data keep the language in which the UN publishes them.',
+    fr: 'Interface traduite par ATLAS. Les documents et les données officielles restent dans la langue où l’ONU les publie.'
+  };
+  var guardado = null;
+  try { guardado = localStorage.getItem('atlas_idioma'); } catch (e) {}
+  var ln = /^(en|fr)$/.test(guardado || '') ? guardado : 'es';
+  var dic = null, hechos = new WeakSet(), pendientes = Object.create(null);
+
+  var MESES_ES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+  var MESES = {
+    en: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+    fr: ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre']
+  };
+  var FECHA = new RegExp('\\b(\\d{1,2}) de (' + MESES_ES.join('|') + ') de (\\d{4})\\b', 'gi');
+  var fecha = function (x) { return (ln === 'fr' && x[0] === 1 ? '1er' : x[0]) + ' ' + MESES[ln][x[1]] + ' ' + x[2]; };
+  var colapsa = function (t) { return t.replace(/\s+/g, ' '); };
+  var excluido = function (el) { return SALTAR.test(el.nodeName) || el.getAttribute('translate') === 'no' || el.hasAttribute('data-sin-traducir'); };
+  function soloEnLinea(el) {
+    for (var c = el.firstElementChild; c; c = c.nextElementSibling) if (!EN_LINEA.test(c.nodeName) || !soloEnLinea(c)) return false;
+    return true;
+  }
+  function canon(el) {
+    var out = '';
+    for (var n = el.firstChild; n; n = n.nextSibling) {
+      if (n.nodeType === 3) out += colapsa(n.data);
+      else if (n.nodeType === 1) {
+        var t = n.nodeName.toLowerCase();
+        // <abbr> lo pone el glosario de siglas (T63) después de pintar: no cuenta para la clave.
+        out += t === 'br' ? '<br>' : t === 'abbr' ? canon(n) : '<' + t + '>' + canon(n) + '</' + t + '>';
+      }
+    }
+    return out;
+  }
+  var tieneLetras = function (k) { return /[A-Za-zÀ-ÿ]{2}/.test(k.replace(/<[^>]+>/g, '')); };
+  function busca(k, bloque) { // bloque: si falla no se anota, porque se baja a sus partes
+    k = k.trim();
+    if (!k || !tieneLetras(k)) return null;
+    if (Object.prototype.hasOwnProperty.call(dic, k)) return dic[k];
+    // Fechas escritas («17 de marzo de 2003»): la clave lleva {fecha} y se escriben al modo del idioma elegido.
+    var fechas = [], kf = k.replace(FECHA, function (x, d, m, a) { fechas.push([+d, MESES_ES.indexOf(m.toLowerCase()), a]); return '{fecha}'; });
+    if (fechas.length) {
+      var r = busca(kf, true);
+      if (r != null) { var f = 0; return r.replace(/\{fecha\}/g, function () { return fecha(fechas[f++]); }); }
+      k = kf;
+    }
+    // Frases con cifras que cambian («Mostrando 20 de 196»): la clave lleva {n} y las cifras se pasan en orden.
+    var nums = [], kn = k.replace(/\d+(?:[.,]\d+)*/g, function (x) { nums.push(x); return '{n}'; });
+    if (nums.length && Object.prototype.hasOwnProperty.call(dic, kn)) {
+      var i = 0;
+      return dic[kn].replace(/\{n\}/g, function () { return nums[i++]; });
+    }
+    if (!bloque) pendientes[nums.length ? kn : k] = 1;
+    return null;
+  }
+  function atributos(el) {
+    for (var i = 0; i < ATRS.length; i++) {
+      var v = el.getAttribute(ATRS[i]);
+      if (v) { var t = busca(colapsa(v)); if (t != null) el.setAttribute(ATRS[i], t); }
+    }
+  }
+  // Reconstruye el contenido de «el» con la traducción, reutilizando sus elementos en línea por orden y por etiqueta.
+  function aplica(el, trad) {
+    var reserva = {};
+    el.querySelectorAll('*').forEach(function (d) { if (d.nodeName !== 'ABBR') (reserva[d.nodeName] = reserva[d.nodeName] || []).push(d); });
+    var raiz = document.createDocumentFragment(), pila = [raiz], re = /<(\/?)([a-z]+)>|([^<]+)/g, m;
+    while ((m = re.exec(trad))) {
+      var cima = pila[pila.length - 1];
+      if (m[3] != null) { cima.appendChild(document.createTextNode(m[3])); continue; }
+      var tag = m[2].toUpperCase();
+      if (m[1]) { if (pila.length > 1) pila.pop(); continue; }
+      var e = (reserva[tag] || []).shift() || document.createElement(tag);
+      while (e.firstChild) e.removeChild(e.firstChild);
+      cima.appendChild(e);
+      if (tag !== 'BR') pila.push(e);
+    }
+    var lead = (el.firstChild && el.firstChild.nodeType === 3 && /^\s/.test(el.firstChild.data)) ? ' ' : '';
+    var tail = (el.lastChild && el.lastChild.nodeType === 3 && /\s$/.test(el.lastChild.data)) ? ' ' : '';
+    while (el.firstChild) el.removeChild(el.firstChild);
+    if (lead) el.appendChild(document.createTextNode(lead));
+    el.appendChild(raiz);
+    if (tail) el.appendChild(document.createTextNode(tail));
+  }
+  function texto(n) {
+    var t = busca(colapsa(n.data));
+    if (t == null) return;
+    var d = n.data, i = d.search(/\S/), j = d.search(/\s*$/);
+    var cola = d.slice(j);
+    if (/['’]$/.test(t)) cola = cola.replace(/^\s+/, ''); // «de l'» + «ONU»: en francés sin espacio tras el apóstrofo
+    n.data = d.slice(0, i) + t + cola;
+  }
+  function recorre(el) {
+    if (el.nodeType === 3) { if (el.parentNode && !hechos.has(el.parentNode)) texto(el); return; }
+    if (el.nodeType !== 1 || excluido(el) || hechos.has(el)) return;
+    // Un <option> sin value usa su texto como valor y los filtros lo comparan: se fija el original antes de traducir.
+    if (el.nodeName === 'OPTION' && !el.hasAttribute('value')) el.setAttribute('value', el.value);
+    atributos(el);
+    if (SOLO_ATRS.test(el.nodeName)) return;
+    // Un elemento en línea (span, b…) solo llega aquí si su bloque no estaba entero en el diccionario: se prueba como frase.
+    if (el.firstChild && soloEnLinea(el) && el.nodeName !== 'BR') {
+      el.querySelectorAll('*').forEach(atributos);
+      var t = busca(canon(el), true);
+      if (t != null) { aplica(el, t); hechos.add(el); return; }
+    }
+    for (var n = el.firstChild; n; n = n.nextSibling) recorre(n);
+  }
+  function selector() {
+    var css = document.createElement('style');
+    css.textContent = '.idioma{display:flex;gap:4px;align-items:center;margin:10px 0 4px}.idioma button{min-width:40px;min-height:32px;padding:2px 8px;border:1px solid #6b5a40;border-radius:6px;background:transparent;color:#eacfa6;font:600 12px/1 system-ui,sans-serif;cursor:pointer}.idioma button[aria-pressed=true]{background:#e1bb81;color:#191714;border-color:#e1bb81}.idioma button:focus-visible{outline:2px solid #f6ead7;outline-offset:2px}.appbar .idioma{margin:0 0 0 auto}.idioma-aviso{font-size:11px;line-height:1.4;color:#c6b69b;margin:2px 0 8px}' +
+      // «Ver más» y «Ocultar» de los recuadros «Para qué sirve esta pantalla» son content de CSS, no texto
+      (ln === 'en' ? '.about summary::after{content:"See more"}.about[open] summary::after{content:"Hide"}' : ln === 'fr' ? '.about summary::after{content:"Voir plus"}.about[open] summary::after{content:"Masquer"}' : '');
+    document.head.appendChild(css);
+    var hacer = function () {
+      var g = document.createElement('div');
+      g.className = 'idioma'; g.setAttribute('role', 'group'); g.setAttribute('translate', 'no');
+      g.setAttribute('aria-label', ln === 'en' ? 'Language' : ln === 'fr' ? 'Langue' : 'Idioma');
+      IDIOMAS.forEach(function (x) {
+        var b = document.createElement('button');
+        b.type = 'button'; b.textContent = x[1]; b.lang = x[0]; b.title = x[2]; b.setAttribute('aria-label', x[2]);
+        b.setAttribute('aria-pressed', String(x[0] === ln));
+        b.onclick = function () { cambia(x[0]); };
+        g.appendChild(b);
+      });
+      return g;
+    };
+    var sub = document.querySelector('.side .subbrand');
+    if (sub) {
+      var g = hacer(); sub.parentNode.insertBefore(g, sub.nextSibling);
+      if (AVISO[ln]) { var p = document.createElement('p'); p.className = 'idioma-aviso'; p.setAttribute('translate', 'no'); p.textContent = AVISO[ln]; g.parentNode.insertBefore(p, g.nextSibling); }
+    }
+    var bar = document.querySelector('.appbar');
+    if (bar) bar.appendChild(hacer());
+  }
+  function cambia(nuevo) {
+    if (nuevo === ln) return;
+    try { if (nuevo === 'es') localStorage.removeItem('atlas_idioma'); else localStorage.setItem('atlas_idioma', nuevo); } catch (e) {}
+    location.reload();
+  }
+  function arranca() {
+    document.documentElement.lang = ln;
+    var t = busca(colapsa(document.title));
+    if (t != null) document.title = t;
+    recorre(document.body);
+    new MutationObserver(function (ms) {
+      ms.forEach(function (m) { m.addedNodes.forEach(recorre); });
+    }).observe(document.body, { childList: true, subtree: true });
+  }
+  window.ATLAS_IDIOMA = { actual: ln, cambia: cambia, pendientes: function () { return Object.keys(pendientes); } };
+  selector();
+  if (ln === 'es') return;
+  var s = document.createElement('script');
+  s.src = 'data/idiomas/' + ln + '.js?v=2';
+  s.onload = function () { dic = window['ATLAS_IDIOMA_' + ln]; if (dic) arranca(); };
+  document.head.appendChild(s);
+})();

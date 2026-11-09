@@ -300,6 +300,61 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     await pv.screenshot({ path: '/tmp/claude-0/visitas.png', clip: { x: 0, y: 0, width: 1280, height: 120 } }).catch(() => {});
     await ctx.close();
   }
+  // Texto completo: la ruta /texto simulada con un párrafo; se resalta lo encontrado y no se inyecta HTML del fragmento
+  {
+    const ctx = await browser.newContext({ viewport: { width: 390, height: 844 } }); const pt = await ctx.newPage();
+    const pedidas = [];
+    await pt.route(/sk-atlas\.pig-mimosa\.ts\.net/, r => { const u = new globalThis.URL(r.request().url()); pedidas.push(u.pathname); const tx = u.pathname === '/texto'; if (u.pathname === '/preguntar') return r.fulfill({ status: 200, contentType: 'application/json', headers: { 'access-control-allow-origin': '*' }, body: JSON.stringify({ pregunta: 'x', modelo: 'glm-5.3-flash', respuesta: 'Los Estados deben aceptar las visitas [1] y responder [9].\n- Invitar al relator [1] <img src=x onerror="window.__xss2=1">', citas: [1], motivo: '', parrafos: [{ simbolo: 'A/HRC/RES/16/16', lengua: 'es', parrafo: 7, fragmento: 'visitas', url: 'https://digitallibrary.un.org/record/1/files/x.pdf' }] }) }); r.fulfill({ status: 200, contentType: 'application/json', headers: { 'access-control-allow-origin': '*' }, body: JSON.stringify(tx ? { consulta: 'visitas', total: 1, documentos: 377, resultados: [{ simbolo: 'A/HRC/RES/16/16', lengua: 'es', parrafo: 7, fragmento: 'responder a las solicitudes de \u0002visitas\u0003 <img src=x onerror="window.__xss=1"> a los países', url: 'https://digitallibrary.un.org/record/1/files/x.pdf' }, { simbolo: 'A/HRC/RES/15/22', lengua: 'en', parrafo: 9, fragmento: 'To conduct country visits', url: '', por_significado: true }, { simbolo: 'CAT/C/COL/CO/5', lengua: 'es', parrafo: 12, fragmento: 'El Comité \u0002visitas\u0003', url: '', tipo: 'Observaciones finales', titulo: 'Observaciones finales sobre el quinto informe periódico de Colombia', pais: 'COL', fecha: '2015-05-29' }], semantica: true } : { consulta: '', total: 0, resultados: [] }) }); });
+    pt.on('pageerror', e => res.errors.push('texto: ' + e.message));
+    await pt.goto(URL); await pt.waitForFunction(() => window.__atlasListo);
+    await pt.fill('#quick', 'visitas'); await pt.waitForSelector('#textos h3', { timeout: 5000 }).catch(() => {});
+    ok('texto: la búsqueda pide /texto y muestra «Dentro de los textos»', pedidas.includes('/texto') && /Dentro de los textos \(1\)/.test(await pt.textContent('#textos')) && /por significado/.test(await pt.textContent('#textos')) && /tratan de lo mismo/.test(await pt.textContent('#textos')));
+    ok('texto: lo encontrado sale resaltado y el HTML del fragmento no se ejecuta', await pt.evaluate(() => document.querySelector('#textos mark')?.textContent === 'visitas' && !document.querySelector('#textos img') && !window.__xss));
+    ok('texto: el resultado enlaza el PDF oficial y cabe en 390 px', await pt.evaluate(() => !!document.querySelector('#textos a[href$="x.pdf"]') && document.documentElement.scrollWidth <= 390));
+    { const t = await pt.textContent('#textos'), bs = await pt.evaluate(() => [...document.querySelectorAll('#textos button')].map(b => b.textContent + '|' + b.getAttribute('onclick')));
+      ok('texto: un documento de país muestra tipo y país', /Observaciones finales · Colombia/.test(t));
+      ok('texto: un documento de país muestra su título', /quinto informe periódico/.test(t));
+      ok('texto: un documento de país lleva a la ficha del país', bs.some(b => /Ver país\|irPais\('COL'\)/.test(b))); }
+    await pt.evaluate(() => smartRun()); await pt.waitForTimeout(100);
+    ok('texto: si la búsqueda se redibuja con la misma consulta, los párrafos se conservan sin volver a pedirlos', /Dentro de los textos/.test(await pt.textContent('#textos')) && pedidas.filter(x => x === '/texto').length === 1);
+    await pt.fill('#quick', 'qué dicen sobre las visitas'); await pt.waitForSelector('.preg button', { timeout: 5000 }).catch(() => {});
+    ok('preguntar: el botón aparece con aviso de que la pregunta va a un servicio externo, y nada se envía sin pulsarlo', /servicio de IA externo/.test(await pt.textContent('#textos')) && !pedidas.includes('/preguntar'));
+    await pt.click('.preg button'); await pt.waitForSelector('#pregOut .ia', { timeout: 5000 }).catch(() => {});
+    ok('preguntar: muestra la respuesta con la cita [1] enlazada a su documento y quita la cita inventada [9]', await pt.evaluate(() => { const o = document.getElementById('pregOut'); return !!o.querySelector('a.cita[href="#cita-1"]') && !/\[9\]/.test(o.textContent) && /A\/HRC\/RES\/16\/16/.test(o.querySelector('.citas').textContent) && !!o.querySelector('.ia li'); }));
+    ok('preguntar: el HTML de la respuesta no se ejecuta y cabe en 390 px', await pt.evaluate(() => !document.querySelector('#pregOut img') && !window.__xss2 && document.documentElement.scrollWidth <= 390));
+    await pt.fill('#quick', 'vi'); await pt.waitForTimeout(800);
+    ok('texto: con menos de 3 letras no se pide /texto', pedidas.filter(x => x === '/texto').length === 2);
+    await ctx.close();
+  }
+  { // T26: idiomas de la interfaz (diccionario propio; los datos oficiales no se traducen)
+    const ctx = await browser.newContext({ viewport: { width: 390, height: 844 } }), pi = await ctx.newPage(), errs = [];
+    pi.on('pageerror', e => errs.push(e.message));
+    await pi.goto(URL + '#explorar'); await pi.waitForFunction(() => window.__atlasListo);
+    ok('idiomas: en español no se carga ningún diccionario y hay selector ES/EN/FR', await pi.evaluate(() => !window.ATLAS_IDIOMA_en && !window.ATLAS_IDIOMA_fr && document.querySelectorAll('.appbar .idioma button').length === 3));
+    await pi.click('.appbar .idioma button[lang=en]'); await pi.waitForFunction(() => window.__atlasListo && window.ATLAS_IDIOMA_en);
+    await pi.waitForTimeout(300);
+    const en = await pi.evaluate(() => ({ lang: document.documentElement.lang, nav: document.querySelector('#nav button').textContent, h1: document.querySelector('#explorar h1').textContent, ph: document.getElementById('q').placeholder, vis: document.querySelector('.section.visible')?.id, opt: [...document.querySelectorAll('#modal option')].find(o => o.value === 'Temático')?.textContent, w: document.documentElement.scrollWidth }));
+    ok('idiomas: al elegir English se recarga en la misma pantalla con lang="en"', en.lang === 'en' && en.vis === 'explorar');
+    ok('idiomas: menú, título, placeholder y opciones traducidos', /Overview/.test(en.nav) && en.h1 === 'Mandate explorer' && /^E\.g\. torture/.test(en.ph) && en.opt === 'Thematic');
+    ok('idiomas: en inglés la pantalla cabe en 390 px', en.w <= 390);
+    await pi.selectOption('#modal', 'Temático'); await pi.evaluate(() => filterMandates());
+    ok('idiomas: los filtros siguen funcionando con las opciones traducidas', await pi.evaluate(() => filtered.length > 0 && filtered.every(m => m.alcance === 'Temático')));
+    { // Fase 2: lo que dibuja el JavaScript. Un texto pendiente cuyos trozos están todos escritos en el código de la
+      // página (no en los datos) es interfaz sin traducir: debe estar en data/idiomas/en.js y fr.js.
+      for (const js of ["showPage('inicio')", "showPage('explorar')", "irPais('COL')", "showPage('tratados')", "showPage('relatores')", "showPage('sistema')"]) { await pi.evaluate(js); await pi.waitForTimeout(400); }
+      const fuente = require('fs').readFileSync(path.resolve(__dirname, '..', 'index.html'), 'utf8').match(/<script[^>]*>[\s\S]*?<\/script>/g).join(' ').replace(/&amp;/g, '&').replace(/\s+/g, ' ');
+      const sinTraducir = (await pi.evaluate(() => ATLAS_IDIOMA.pendientes())).filter(k => { const t = k.split(/<[^>]+>|\{n\}|\{fecha\}/).map(x => x.replace(/[\s↗→←·…]+$/, '').trim()).filter(x => /[A-Za-zÀ-ÿ]{2}/.test(x)); return t.length && t.some(x => x.length >= 4) && t.every(x => fuente.includes(x)) && !/^(<a>)?[A-Z]+(\/[A-Z0-9.{}n()XVI]+)+( ↗)?(<\/a>)?$/.test(k); }); // los símbolos de documentos no se traducen
+      const enteros = sinTraducir;
+      if (enteros.length) console.error('idiomas: sin traducir', JSON.stringify(enteros));
+      ok('idiomas: en inglés no queda texto de interfaz sin traducir en Panorama, Mandatos, una ficha de país, Tratados, Relatores y Cómo funciona', enteros.length === 0);
+    }
+    await pi.click('.appbar .idioma button[lang=fr]'); await pi.waitForFunction(() => window.__atlasListo && window.ATLAS_IDIOMA_fr); await pi.waitForTimeout(300);
+    ok('idiomas: Français se recuerda y traduce', await pi.evaluate(() => document.documentElement.lang === 'fr' && localStorage.getItem('atlas_idioma') === 'fr' && /Explorer les mandats/.test(document.getElementById('nav').textContent)));
+    await pi.click('.appbar .idioma button[lang=es]'); await pi.waitForFunction(() => window.__atlasListo); await pi.waitForTimeout(300);
+    ok('idiomas: volver a Español deja la página original', await pi.evaluate(() => document.documentElement.lang === 'es' && localStorage.getItem('atlas_idioma') === null && /Panorama/.test(document.querySelector('#nav button').textContent)));
+    ok('idiomas: sin errores de JavaScript', errs.length === 0);
+    await ctx.close();
+  }
   await browser.close();
   const failed = res.checks.filter(c => !c.ok);
   console.log(JSON.stringify({ ...res, passed: res.checks.length - failed.length, failed: failed.length }, null, 1));

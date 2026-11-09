@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-08",
+ "actualizado": "2026-11-09",
  "bloques": [
   {
    "id": "disponible",
@@ -135,6 +135,11 @@
      "t": "Búsqueda en vivo desde el celular",
      "x": "Con ciertas redes privadas, Chrome puede pedir un permiso y la consulta no responde. Falta confirmarlo.",
      "tag": "en evaluación"
+    },
+    {
+     "t": "Español, francés e inglés",
+     "x": "Arriba del menú se elige ES, EN o FR y la página lo recuerda. Están traducidos el menú, los títulos, las explicaciones, los filtros, los botones, las fichas de país y de mandato, los tratados y las fechas, con diccionario propio y sin servicios externos. Los documentos, las noticias y los datos oficiales se muestran en el idioma en que los publica la ONU. Falta que una persona revise las traducciones.",
+     "tag": "en evaluación"
     }
    ]
   },
@@ -186,10 +191,6 @@
     {
      "t": "Mapas y mapas de calor",
      "x": "Un mapa mundial con capas (ratificaciones, observaciones, conflictos…) y clic que lleve a la ficha del país. Con herramientas libres y alojadas en el propio proyecto."
-    },
-    {
-     "t": "Español, francés e inglés",
-     "x": "Selector de idioma con textos propios, sin servicios de traducción externos."
     },
     {
      "t": "Inclusión y más idiomas",
