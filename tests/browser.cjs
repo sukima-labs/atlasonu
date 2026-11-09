@@ -326,6 +326,26 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     ok('texto: con menos de 3 letras no se pide /texto', pedidas.filter(x => x === '/texto').length === 2);
     await ctx.close();
   }
+  { // T26: idiomas de la interfaz (diccionario propio; los datos oficiales no se traducen)
+    const ctx = await browser.newContext({ viewport: { width: 390, height: 844 } }), pi = await ctx.newPage(), errs = [];
+    pi.on('pageerror', e => errs.push(e.message));
+    await pi.goto(URL + '#explorar'); await pi.waitForFunction(() => window.__atlasListo);
+    ok('idiomas: en español no se carga ningún diccionario y hay selector ES/EN/FR', await pi.evaluate(() => !window.ATLAS_IDIOMA_en && !window.ATLAS_IDIOMA_fr && document.querySelectorAll('.appbar .idioma button').length === 3));
+    await pi.click('.appbar .idioma button[lang=en]'); await pi.waitForFunction(() => window.__atlasListo && window.ATLAS_IDIOMA_en);
+    await pi.waitForTimeout(300);
+    const en = await pi.evaluate(() => ({ lang: document.documentElement.lang, nav: document.querySelector('#nav button').textContent, h1: document.querySelector('#explorar h1').textContent, ph: document.getElementById('q').placeholder, vis: document.querySelector('.section.visible')?.id, opt: [...document.querySelectorAll('#modal option')].find(o => o.value === 'Temático')?.textContent, w: document.documentElement.scrollWidth }));
+    ok('idiomas: al elegir English se recarga en la misma pantalla con lang="en"', en.lang === 'en' && en.vis === 'explorar');
+    ok('idiomas: menú, título, placeholder y opciones traducidos', /Overview/.test(en.nav) && en.h1 === 'Mandate explorer' && /^E\.g\. torture/.test(en.ph) && en.opt === 'Thematic');
+    ok('idiomas: en inglés la pantalla cabe en 390 px', en.w <= 390);
+    await pi.selectOption('#modal', 'Temático'); await pi.evaluate(() => filterMandates());
+    ok('idiomas: los filtros siguen funcionando con las opciones traducidas', await pi.evaluate(() => filtered.length > 0 && filtered.every(m => m.alcance === 'Temático')));
+    await pi.click('.appbar .idioma button[lang=fr]'); await pi.waitForFunction(() => window.__atlasListo && window.ATLAS_IDIOMA_fr); await pi.waitForTimeout(300);
+    ok('idiomas: Français se recuerda y traduce', await pi.evaluate(() => document.documentElement.lang === 'fr' && localStorage.getItem('atlas_idioma') === 'fr' && /Explorer les mandats/.test(document.getElementById('nav').textContent)));
+    await pi.click('.appbar .idioma button[lang=es]'); await pi.waitForFunction(() => window.__atlasListo); await pi.waitForTimeout(300);
+    ok('idiomas: volver a Español deja la página original', await pi.evaluate(() => document.documentElement.lang === 'es' && localStorage.getItem('atlas_idioma') === null && /Panorama/.test(document.querySelector('#nav button').textContent)));
+    ok('idiomas: sin errores de JavaScript', errs.length === 0);
+    await ctx.close();
+  }
   await browser.close();
   const failed = res.checks.filter(c => !c.ok);
   console.log(JSON.stringify({ ...res, passed: res.checks.length - failed.length, failed: failed.length }, null, 1));
