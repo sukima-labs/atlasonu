@@ -1,8 +1,32 @@
 window.NOTICIAS={
  "fuente": "Noticias ONU (news.un.org)",
- "actualizado": "2026-11-09T02:47:59Z",
+ "actualizado": "2026-11-09T21:35:25Z",
  "temas": {
   "todas": [
+   {
+    "titulo": "La COP31 abre en Antalya: ¿pueden por fin las promesas climáticas dar resultados?",
+    "fecha": "2026-11-09",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542157",
+    "resumen": "Casi 200 países han llegado a la costa mediterránea de Turquía para una cumbre climática con una ambición diferente: menos declaraciones y más decisiones. Con un poderoso fenómeno de El Niño que amenaza con empeorar los eventos meteorológicos extremos, los…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/9-11-26_COP31surrounds2_UNFCCC.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
+   {
+    "titulo": "COP31, Ucrania, Gaza, Papa y sarampión… las noticias del lunes",
+    "fecha": "2026-11-09",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542155",
+    "resumen": "La COP31 arranca en Antalya con una advertencia: El Niño podría costar 11 billones de dólares a la economía mundial, mientras la financiación climática sigue sin llegar a los más vulnerables. En Ucrania, los ataques rusos a la energía dejan a cientos de…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/10/08-10-2026_FAO_Cambodia_El_nino.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
+   {
+    "titulo": "Las temperaturas extremas \"excepcionales\" continuarán el año que viene",
+    "fecha": "2026-11-09",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542152",
+    "resumen": "Los últimos 12 años han sido los más cálidos registrados y la temperatura media global entre enero y septiembre de 2026 fue de 1,47 °C por encima de la era preindustrial. Un fenómeno de el Niño que será el más fuerte registrado en diciembre seguirá desatando…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/30-01-2025-UNICEF-Thailand-01.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
    {
     "titulo": "La joven ingeniera nuclear que salió de la periferia de Brasil para conquistar el mundo",
     "fecha": "2026-11-07",
@@ -138,30 +162,6 @@ window.NOTICIAS={
     "resumen": "La misión de paz de Naciones Unidas en el Sáhara Occidental concluyó sus operaciones después de que el Consejo de Seguridad no lograra un acuerdo para renovar su mandato. El Secretario General reafirmó el derecho del pueblo saharaui a la libre determinación,…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/assets/2018/12/06-12-2018-MINURSO-NICA440800.jpg/image560x340cropped.jpg",
     "destacada": false
-   },
-   {
-    "titulo": "Cambio climático: Nueva York se protege elevando un parque para contener la subida del nivel del mar",
-    "fecha": "2026-10-31",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542118",
-    "resumen": "Catorce años después del huracán Sandy, Nueva York eleva hasta tres metros el East River Park y construye muros y compuertas ocultas para proteger a más de 110.000 residentes, con una inversión de 2000 millones de dólares. La ONU advierte de que 770 millones…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/10/08-10-2026-NYC-Gov-East-River-02.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "Gaza, Colombia, VIH, refugiados… Las noticias del viernes",
-    "fecha": "2026-10-30",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542127",
-    "resumen": "Gaza: la expansión de las posiciones israelíes aumenta el temor a una limpieza étnica. El Consejo de Seguridad prorroga un año más la misión de verificación de la ONU en Colombia. Barbados elimina la transmisión del VIH de madre a hijo. Ucrania, Siria,…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/10/15-10-2026_UNNews_Gaza_Winter_Preparation_06.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "Gaza: la expansión de las posiciones israelíes reaviva los temores de una \"limpieza étnica\"",
-    "fecha": "2026-10-30",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542126",
-    "resumen": "Israel pretende ampliar su despliegue militar al 70 % del territorio de Gaza, mientras empuja a los palestinos hacia zonas cada vez más pequeñas y ataca campamentos de desplazados, denuncia ONU Derechos Humanos.",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/16-01-2025-UNRWA-Gaza-22.jpg/image560x340cropped.jpg",
-    "destacada": true
    }
   ],
   "derechos": [
