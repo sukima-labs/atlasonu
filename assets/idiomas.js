@@ -22,6 +22,13 @@
   var ln = /^(en|fr)$/.test(guardado || '') ? guardado : 'es';
   var dic = null, hechos = new WeakSet(), pendientes = Object.create(null);
 
+  var MESES_ES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+  var MESES = {
+    en: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+    fr: ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre']
+  };
+  var FECHA = new RegExp('\\b(\\d{1,2}) de (' + MESES_ES.join('|') + ') de (\\d{4})\\b', 'gi');
+  var fecha = function (x) { return (ln === 'fr' && x[0] === 1 ? '1er' : x[0]) + ' ' + MESES[ln][x[1]] + ' ' + x[2]; };
   var colapsa = function (t) { return t.replace(/\s+/g, ' '); };
   var excluido = function (el) { return SALTAR.test(el.nodeName) || el.getAttribute('translate') === 'no' || el.hasAttribute('data-sin-traducir'); };
   function soloEnLinea(el) {
@@ -41,11 +48,24 @@
     return out;
   }
   var tieneLetras = function (k) { return /[A-Za-zÀ-ÿ]{2}/.test(k.replace(/<[^>]+>/g, '')); };
-  function busca(k) {
+  function busca(k, bloque) { // bloque: si falla no se anota, porque se baja a sus partes
     k = k.trim();
     if (!k || !tieneLetras(k)) return null;
     if (Object.prototype.hasOwnProperty.call(dic, k)) return dic[k];
-    pendientes[k] = 1;
+    // Fechas escritas («17 de marzo de 2003»): la clave lleva {fecha} y se escriben al modo del idioma elegido.
+    var fechas = [], kf = k.replace(FECHA, function (x, d, m, a) { fechas.push([+d, MESES_ES.indexOf(m.toLowerCase()), a]); return '{fecha}'; });
+    if (fechas.length) {
+      var r = busca(kf, true);
+      if (r != null) { var f = 0; return r.replace(/\{fecha\}/g, function () { return fecha(fechas[f++]); }); }
+      k = kf;
+    }
+    // Frases con cifras que cambian («Mostrando 20 de 196»): la clave lleva {n} y las cifras se pasan en orden.
+    var nums = [], kn = k.replace(/\d+(?:[.,]\d+)*/g, function (x) { nums.push(x); return '{n}'; });
+    if (nums.length && Object.prototype.hasOwnProperty.call(dic, kn)) {
+      var i = 0;
+      return dic[kn].replace(/\{n\}/g, function () { return nums[i++]; });
+    }
+    if (!bloque) pendientes[nums.length ? kn : k] = 1;
     return null;
   }
   function atributos(el) {
@@ -80,7 +100,9 @@
     var t = busca(colapsa(n.data));
     if (t == null) return;
     var d = n.data, i = d.search(/\S/), j = d.search(/\s*$/);
-    n.data = d.slice(0, i) + t + d.slice(j);
+    var cola = d.slice(j);
+    if (/['’]$/.test(t)) cola = cola.replace(/^\s+/, ''); // «de l'» + «ONU»: en francés sin espacio tras el apóstrofo
+    n.data = d.slice(0, i) + t + cola;
   }
   function recorre(el) {
     if (el.nodeType === 3) { if (el.parentNode && !hechos.has(el.parentNode)) texto(el); return; }
@@ -89,16 +111,19 @@
     if (el.nodeName === 'OPTION' && !el.hasAttribute('value')) el.setAttribute('value', el.value);
     atributos(el);
     if (SOLO_ATRS.test(el.nodeName)) return;
-    if (!EN_LINEA.test(el.nodeName) && el.firstChild && soloEnLinea(el)) {
+    // Un elemento en línea (span, b…) solo llega aquí si su bloque no estaba entero en el diccionario: se prueba como frase.
+    if (el.firstChild && soloEnLinea(el) && el.nodeName !== 'BR') {
       el.querySelectorAll('*').forEach(atributos);
-      var t = busca(canon(el));
+      var t = busca(canon(el), true);
       if (t != null) { aplica(el, t); hechos.add(el); return; }
     }
     for (var n = el.firstChild; n; n = n.nextSibling) recorre(n);
   }
   function selector() {
     var css = document.createElement('style');
-    css.textContent = '.idioma{display:flex;gap:4px;align-items:center;margin:10px 0 4px}.idioma button{min-width:40px;min-height:32px;padding:2px 8px;border:1px solid #6b5a40;border-radius:6px;background:transparent;color:#eacfa6;font:600 12px/1 system-ui,sans-serif;cursor:pointer}.idioma button[aria-pressed=true]{background:#e1bb81;color:#191714;border-color:#e1bb81}.idioma button:focus-visible{outline:2px solid #f6ead7;outline-offset:2px}.appbar .idioma{margin:0 0 0 auto}.idioma-aviso{font-size:11px;line-height:1.4;color:#c6b69b;margin:2px 0 8px}';
+    css.textContent = '.idioma{display:flex;gap:4px;align-items:center;margin:10px 0 4px}.idioma button{min-width:40px;min-height:32px;padding:2px 8px;border:1px solid #6b5a40;border-radius:6px;background:transparent;color:#eacfa6;font:600 12px/1 system-ui,sans-serif;cursor:pointer}.idioma button[aria-pressed=true]{background:#e1bb81;color:#191714;border-color:#e1bb81}.idioma button:focus-visible{outline:2px solid #f6ead7;outline-offset:2px}.appbar .idioma{margin:0 0 0 auto}.idioma-aviso{font-size:11px;line-height:1.4;color:#c6b69b;margin:2px 0 8px}' +
+      // «Ver más» y «Ocultar» de los recuadros «Para qué sirve esta pantalla» son content de CSS, no texto
+      (ln === 'en' ? '.about summary::after{content:"See more"}.about[open] summary::after{content:"Hide"}' : ln === 'fr' ? '.about summary::after{content:"Voir plus"}.about[open] summary::after{content:"Masquer"}' : '');
     document.head.appendChild(css);
     var hacer = function () {
       var g = document.createElement('div');
@@ -139,7 +164,7 @@
   selector();
   if (ln === 'es') return;
   var s = document.createElement('script');
-  s.src = 'data/idiomas/' + ln + '.js?v=1';
+  s.src = 'data/idiomas/' + ln + '.js?v=2';
   s.onload = function () { dic = window['ATLAS_IDIOMA_' + ln]; if (dic) arranca(); };
   document.head.appendChild(s);
 })();

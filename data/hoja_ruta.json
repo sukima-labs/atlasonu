@@ -138,7 +138,7 @@
     },
     {
      "t": "Español, francés e inglés",
-     "x": "Arriba del menú se elige ES, EN o FR y la página lo recuerda. Ya están traducidos el menú, los títulos, las explicaciones, los filtros y los botones de todas las pantallas, con diccionario propio y sin servicios externos. Falta traducir lo que se dibuja al momento (fichas, resultados, noticias) y que una persona revise las traducciones. Los documentos y los datos oficiales se muestran en el idioma en que los publica la ONU.",
+     "x": "Arriba del menú se elige ES, EN o FR y la página lo recuerda. Están traducidos el menú, los títulos, las explicaciones, los filtros, los botones, las fichas de país y de mandato, los tratados y las fechas, con diccionario propio y sin servicios externos. Los documentos, las noticias y los datos oficiales se muestran en el idioma en que los publica la ONU. Falta que una persona revise las traducciones.",
      "tag": "en evaluación"
     }
    ]

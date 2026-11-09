@@ -10,6 +10,8 @@ También placeholder, aria-label, title y alt, y el <title> de la página.
   python3 -I scripts/idiomas_textos.py --comprobar     # falla si en.js o fr.js no cubren alguna clave o
                                                        # alguna traducción no conserva las etiquetas
   python3 -I scripts/idiomas_textos.py --faltan en     # claves sin traducir en en.js (JSON)
+Además de los textos de index.html, los diccionarios llevan los que dibuja el JavaScript (fichas, resultados…);
+en esos, {n} es una cifra que cambia y {fecha} una fecha escrita («17 de marzo de 2003»). --comprobar exige que en.js y fr.js tengan las mismas claves.
 """
 import html.parser, json, os, re, sys
 
@@ -158,6 +160,14 @@ def main():
                     fallos.append(f"{ln}: traducción vacía de {k!r}")
                 elif etiquetas(k) != etiquetas(v):
                     fallos.append(f"{ln}: la traducción de {k!r} no conserva las etiquetas: {v!r}")
+                elif k.count("{n}") != v.count("{n}") or k.count("{fecha}") != v.count("{fecha}"):
+                    fallos.append(f"{ln}: la traducción de {k!r} no conserva las cifras {{n}}: {v!r}")
+        dics = {ln: set(diccionario(ln)) for ln in IDIOMAS}
+        for a in IDIOMAS:
+            for b in IDIOMAS:
+                solo = sorted(dics[a] - dics[b])
+                if solo:
+                    fallos.append(f"{b}: le faltan {len(solo)} textos que sí tiene {a}, p. ej. {solo[:3]}")
         print("\n".join(fallos) or f"idiomas: {len(ks)} textos, {', '.join(IDIOMAS)} completos")
         sys.exit(1 if fallos else 0)
 
