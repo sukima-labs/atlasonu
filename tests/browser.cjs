@@ -339,6 +339,15 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     ok('idiomas: en inglés la pantalla cabe en 390 px', en.w <= 390);
     await pi.selectOption('#modal', 'Temático'); await pi.evaluate(() => filterMandates());
     ok('idiomas: los filtros siguen funcionando con las opciones traducidas', await pi.evaluate(() => filtered.length > 0 && filtered.every(m => m.alcance === 'Temático')));
+    { // Fase 2: lo que dibuja el JavaScript. Un texto pendiente cuyos trozos están todos escritos en el código de la
+      // página (no en los datos) es interfaz sin traducir: debe estar en data/idiomas/en.js y fr.js.
+      for (const js of ["showPage('inicio')", "showPage('explorar')", "irPais('COL')", "showPage('tratados')", "showPage('relatores')", "showPage('sistema')"]) { await pi.evaluate(js); await pi.waitForTimeout(400); }
+      const fuente = require('fs').readFileSync(path.resolve(__dirname, '..', 'index.html'), 'utf8').match(/<script[^>]*>[\s\S]*?<\/script>/g).join(' ').replace(/&amp;/g, '&').replace(/\s+/g, ' ');
+      const sinTraducir = (await pi.evaluate(() => ATLAS_IDIOMA.pendientes())).filter(k => { const t = k.split(/<[^>]+>|\{n\}|\{fecha\}/).map(x => x.replace(/[\s↗→←·…]+$/, '').trim()).filter(x => /[A-Za-zÀ-ÿ]{2}/.test(x)); return t.length && t.some(x => x.length >= 4) && t.every(x => fuente.includes(x)) && !/^(<a>)?[A-Z]+(\/[A-Z0-9.{}n()XVI]+)+( ↗)?(<\/a>)?$/.test(k); }); // los símbolos de documentos no se traducen
+      const enteros = sinTraducir;
+      if (enteros.length) console.error('idiomas: sin traducir', JSON.stringify(enteros));
+      ok('idiomas: en inglés no queda texto de interfaz sin traducir en Panorama, Mandatos, una ficha de país, Tratados, Relatores y Cómo funciona', enteros.length === 0);
+    }
     await pi.click('.appbar .idioma button[lang=fr]'); await pi.waitForFunction(() => window.__atlasListo && window.ATLAS_IDIOMA_fr); await pi.waitForTimeout(300);
     ok('idiomas: Français se recuerda y traduce', await pi.evaluate(() => document.documentElement.lang === 'fr' && localStorage.getItem('atlas_idioma') === 'fr' && /Explorer les mandats/.test(document.getElementById('nav').textContent)));
     await pi.click('.appbar .idioma button[lang=es]'); await pi.waitForFunction(() => window.__atlasListo); await pi.waitForTimeout(300);
