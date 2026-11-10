@@ -227,6 +227,9 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     const nov = await page.textContent('#novedades');
     if (vp.name === 'escritorio') ok('escritorio: no aparece la barra móvil ni el botón de menú', !(await page.isVisible('#burger')) && !(await page.isVisible('#appbar')));
     ok(vp.name + ': panel de novedades (' + (URL.startsWith('http') ? 'en línea: última revisión' : 'sin conexión: aviso') + ')', URL.startsWith('http') ? /Última revisión/.test(nov) : /sin conexión/.test(nov));
+    ok(vp.name + ': «Novedades detectadas» llega plegada y se abre al tocar', !(await page.locator('#novedadesBox').evaluate(e => e.open)) && !(await page.isVisible('#novedades')) && (await page.click('#novedadesBox>summary'), await page.isVisible('#novedades')));
+    const sinHueco = await page.evaluate(() => { const k = [...document.querySelectorAll('#inicio>.panel')].filter(e => e.offsetHeight); return k.every((e, i) => { if (!i) return true; const p = k[i - 1]; return e.getBoundingClientRect().top - p.getBoundingClientRect().bottom >= 10 || p.nextElementSibling !== e; }); });
+    ok(vp.name + ': las cajas de la portada no van pegadas unas a otras', sinHueco);
     ok(vp.name + ': últimas resoluciones visibles', (await page.locator('#recientes .listline').count()) === 8);
     await page.evaluate(() => showPage('paises')); await page.evaluate(() => window.scrollTo(0, 1500));
     await page.evaluate(() => showPage('seleccion')); await page.waitForTimeout(150);
