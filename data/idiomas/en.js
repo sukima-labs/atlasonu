@@ -951,5 +951,7 @@ window.ATLAS_IDIOMA_en={
 "tu país de visita":"your country of visit",
 "Invitación permanente desde {fecha}":"Standing invitation since {fecha}",
 "América Latina y el Caribe":"Latin American and Caribbean States",
-"Sin grupo":"No group"
+"Sin grupo":"No group",
+"Buscar en las trazas":"Search the document trail",
+"Tipo de traza":"Type of record"
 };

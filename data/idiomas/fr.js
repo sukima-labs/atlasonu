@@ -951,5 +951,7 @@ window.ATLAS_IDIOMA_fr={
 "tu país de visita":"votre pays de visite",
 "Invitación permanente desde {fecha}":"Invitation permanente depuis le {fecha}",
 "América Latina y el Caribe":"États d'Amérique latine et des Caraïbes",
-"Sin grupo":"Sans groupe"
+"Sin grupo":"Sans groupe",
+"Buscar en las trazas":"Chercher dans les traces documentaires",
+"Tipo de traza":"Type de trace"
 };
