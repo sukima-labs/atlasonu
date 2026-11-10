@@ -9,7 +9,7 @@ Lee esto primero si abres una sesión de Claude Code sobre este repositorio, en 
 - Repositorio: `sukima-labs/atlasonu` (se llamaba `onu-arqueologia-documental` hasta el 08-11-2026; GitHub redirige el nombre viejo y la web vieja reenvía a la nueva desde la portada `sukima-labs.github.io`). Flujo habitual: rama de trabajo → PR → fusión en `main`.
 
 ## Cómo está hecho
-Sitio estático: `index.html` + `data/atlas-data.js` (generado) + archivos diferidos `data/paises/<ISO>.js` y `data/tratados/<id>.js`. Datos oficiales con Python (`scripts/`), pruebas con Node y Playwright.
+Sitio estático: `index.html` + `data/atlas-data.js` y `data/atlas-actos.js` (generados; el segundo lleva el índice de actos y se carga aparte) + archivos diferidos `data/paises/<ISO>.js` y `data/tratados/<id>.js`. Datos oficiales con Python (`scripts/`), pruebas con Node y Playwright.
 
 | Qué | Dónde |
 |---|---|
