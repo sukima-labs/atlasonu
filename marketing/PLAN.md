@@ -26,7 +26,7 @@ La meta que manda es la última fila. Las estrellas son un termómetro, no el fi
 ### Fase 0 · Base (semana 1, 11–17 nov) — lo hace el asistente en el repo
 Sin esto, cada enlace compartido sale a medias.
 - [x] Módulo `marketing/` (este) y medición de la línea base.
-- [ ] **T69** Imagen para compartir 1200×630 generada con Playwright desde la marca (`assets/marca/`), `og:image`, `og:image:alt`, `twitter:card=summary_large_image`, `canonical`, `sitemap.xml`, `robots.txt`. Un PR pequeño sobre `index.html` (después de fusionar las ramas de mapas, para no pisarlas).
+- [x] **T69** Imagen para compartir 1200×630 (`marketing/imagen_social.cjs` → `assets/social/atlas-onu-og.png`), `og:image`, `og:image:alt`, `twitter:card=summary_large_image`, `sitemap.xml`, `robots.txt` y prueba en `smoke.cjs` (PR aparte, cambio de solo 3 líneas de `<head>`).
 - [ ] **T70** `README.en.md` de 10–15 líneas (qué es, para quién, enlaces) y enlazarlo en el README. Descripción y *topics* del repo (ya hay 5; añadir `un-human-rights`, `special-rapporteurs`, `open-data`, `spanish`, `human-rights-law`).
 - [ ] **T71** Páginas de aterrizaje indexables (estáticas, una por mandato y por país, o al menos las 57 de mandatos): el sitio usa `#` y Google no indexa cada sección. Es la mayor palanca de tráfico duradero («relator especial sobre la tortura» → ficha). **Decisión de su fundador** (cambia la arquitectura de la web); aquí se deja el diseño y la estimación.
 - [ ] Pedir al fundador: activar **GitHub Discussions**, la integración **Zenodo** (DOI), y fijar la imagen social del repo (ajuste manual, la API no lo permite).
