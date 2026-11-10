@@ -1,5 +1,14 @@
 [
  {
+  "fecha": "2026-11-10",
+  "cambios": [
+   {
+    "tipo": "visita",
+    "texto": "Paraguay: visita ya no figura como programada"
+   }
+  ]
+ },
+ {
   "fecha": "2026-11-07",
   "cambios": [
    {
