@@ -1013,7 +1013,6 @@ window.ATLAS_IDIOMA_ru={
 "+ Acercar":"+ Увеличить",
 "− Alejar":"− Уменьшить",
 "Ver todo el mapa":"Показать всю карту",
-"Mapa del mundo (se desplaza en horizontal y en vertical al acercar)":"Карта мира (при увеличении прокручивается по горизонтали и вертикали)",
 "Mapa del mundo con cada país coloreado según la capa elegida. Los mismos datos están en la lista de debajo.":"Карта мира, где каждая страна окрашена согласно выбранному слою. Те же данные есть в списке ниже.",
 "Las fronteras son esquemáticas y no expresan ninguna opinión de ATLAS ONU sobre el estatus de ningún territorio. Solo se colorean los Estados de las fichas de país; los territorios y las entidades sin ficha salen en gris.":"Границы схематичны и не выражают мнения ATLAS ONU о статусе какой-либо территории. Окрашены только государства, у которых есть карточка страны; территории и образования без карточки показаны серым.",
 "<b>Ver los mismos datos como lista</b>":"<b>Показать те же данные списком</b>",
@@ -1065,5 +1064,11 @@ window.ATLAS_IDIOMA_ru={
 "Recomendaciones recibidas en el ciclo {n} del EPU ({n}): {n}":"Рекомендации, полученные в цикле {n} УПО ({n}): {n}",
 "Menos de {n} ({n})":"Менее {n} ({n})",
 "Sin cifra de este ciclo ({n})":"Нет цифры за этот цикл ({n})",
-"Cada punto numerado de las conclusiones y recomendaciones cuenta una vez, aunque lo formulen varios Estados. Fuente: informes del Grupo de Trabajo del EPU, Biblioteca Digital de la ONU":"Каждый нумерованный пункт выводов и рекомендаций считается один раз, даже если его сформулировали несколько государств. Источник: доклады Рабочей группы по УПО, Цифровая библиотека ООН"
+"Cada punto numerado de las conclusiones y recomendaciones cuenta una vez, aunque lo formulen varios Estados. Fuente: informes del Grupo de Trabajo del EPU, Biblioteca Digital de la ONU":"Каждый нумерованный пункт выводов и рекомендаций считается один раз, даже если его сформулировали несколько государств. Источник: доклады Рабочей группы по УПО, Цифровая библиотека ООН",
+"Mover el mapa":"Сдвинуть карту",
+"Mover a la izquierda":"Сдвинуть влево",
+"Mover hacia arriba":"Сдвинуть вверх",
+"Mover hacia abajo":"Сдвинуть вниз",
+"Mover a la derecha":"Сдвинуть вправо",
+"Mapa del mundo: con el mapa acercado, arrástralo o muévelo con las flechas del teclado":"Карта мира: при увеличении перетащите её или двигайте стрелками клавиатуры"
 };

@@ -1013,7 +1013,6 @@ window.ATLAS_IDIOMA_en={
 "+ Acercar":"+ Zoom in",
 "− Alejar":"− Zoom out",
 "Ver todo el mapa":"See the whole map",
-"Mapa del mundo (se desplaza en horizontal y en vertical al acercar)":"World map (scrolls horizontally and vertically when zoomed in)",
 "Mapa del mundo con cada país coloreado según la capa elegida. Los mismos datos están en la lista de debajo.":"World map with each country coloured according to the chosen layer. The same data are in the list below.",
 "Las fronteras son esquemáticas y no expresan ninguna opinión de ATLAS ONU sobre el estatus de ningún territorio. Solo se colorean los Estados de las fichas de país; los territorios y las entidades sin ficha salen en gris.":"Borders are schematic and express no opinion of ATLAS ONU on the status of any territory. Only the States with a country profile are coloured; territories and entities without a profile appear in grey.",
 "<b>Ver los mismos datos como lista</b>":"<b>See the same data as a list</b>",
@@ -1065,5 +1064,11 @@ window.ATLAS_IDIOMA_en={
 "Recomendaciones recibidas en el ciclo {n} del EPU ({n}): {n}":"Recommendations received in cycle {n} of the UPR ({n}): {n}",
 "Menos de {n} ({n})":"Fewer than {n} ({n})",
 "Sin cifra de este ciclo ({n})":"No figure for this cycle ({n})",
-"Cada punto numerado de las conclusiones y recomendaciones cuenta una vez, aunque lo formulen varios Estados. Fuente: informes del Grupo de Trabajo del EPU, Biblioteca Digital de la ONU":"Each numbered item in the conclusions and recommendations counts once, even if several States made it. Source: UPR Working Group reports, UN Digital Library"
+"Cada punto numerado de las conclusiones y recomendaciones cuenta una vez, aunque lo formulen varios Estados. Fuente: informes del Grupo de Trabajo del EPU, Biblioteca Digital de la ONU":"Each numbered item in the conclusions and recommendations counts once, even if several States made it. Source: UPR Working Group reports, UN Digital Library",
+"Mover el mapa":"Move the map",
+"Mover a la izquierda":"Move left",
+"Mover hacia arriba":"Move up",
+"Mover hacia abajo":"Move down",
+"Mover a la derecha":"Move right",
+"Mapa del mundo: con el mapa acercado, arrástralo o muévelo con las flechas del teclado":"World map: when zoomed in, drag it or move it with the keyboard arrows"
 };

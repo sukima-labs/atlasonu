@@ -1013,7 +1013,6 @@ window.ATLAS_IDIOMA_fr={
 "+ Acercar":"+ Zoom avant",
 "− Alejar":"− Zoom arrière",
 "Ver todo el mapa":"Voir toute la carte",
-"Mapa del mundo (se desplaza en horizontal y en vertical al acercar)":"Carte du monde (défile horizontalement et verticalement en zoom)",
 "Mapa del mundo con cada país coloreado según la capa elegida. Los mismos datos están en la lista de debajo.":"Carte du monde avec chaque pays coloré selon la couche choisie. Les mêmes données figurent dans la liste ci-dessous.",
 "Las fronteras son esquemáticas y no expresan ninguna opinión de ATLAS ONU sobre el estatus de ningún territorio. Solo se colorean los Estados de las fichas de país; los territorios y las entidades sin ficha salen en gris.":"Les frontières sont schématiques et n’expriment aucune opinion d’ATLAS ONU sur le statut d’un territoire. Seuls les États dotés d’une fiche de pays sont colorés ; les territoires et entités sans fiche apparaissent en gris.",
 "<b>Ver los mismos datos como lista</b>":"<b>Voir les mêmes données sous forme de liste</b>",
@@ -1065,5 +1064,11 @@ window.ATLAS_IDIOMA_fr={
 "Recomendaciones recibidas en el ciclo {n} del EPU ({n}): {n}":"Recommandations reçues au cycle {n} de l'EPU ({n}) : {n}",
 "Menos de {n} ({n})":"Moins de {n} ({n})",
 "Sin cifra de este ciclo ({n})":"Pas de chiffre pour ce cycle ({n})",
-"Cada punto numerado de las conclusiones y recomendaciones cuenta una vez, aunque lo formulen varios Estados. Fuente: informes del Grupo de Trabajo del EPU, Biblioteca Digital de la ONU":"Chaque point numéroté des conclusions et recommandations compte une fois, même s'il est formulé par plusieurs États. Source : rapports du Groupe de travail de l'EPU, Bibliothèque numérique de l'ONU"
+"Cada punto numerado de las conclusiones y recomendaciones cuenta una vez, aunque lo formulen varios Estados. Fuente: informes del Grupo de Trabajo del EPU, Biblioteca Digital de la ONU":"Chaque point numéroté des conclusions et recommandations compte une fois, même s'il est formulé par plusieurs États. Source : rapports du Groupe de travail de l'EPU, Bibliothèque numérique de l'ONU",
+"Mover el mapa":"Déplacer la carte",
+"Mover a la izquierda":"Déplacer vers la gauche",
+"Mover hacia arriba":"Déplacer vers le haut",
+"Mover hacia abajo":"Déplacer vers le bas",
+"Mover a la derecha":"Déplacer vers la droite",
+"Mapa del mundo: con el mapa acercado, arrástralo o muévelo con las flechas del teclado":"Carte du monde : une fois zoomée, faites-la glisser ou déplacez-la avec les flèches du clavier"
 };
