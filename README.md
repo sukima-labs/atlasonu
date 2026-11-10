@@ -22,6 +22,7 @@ Dos veces al día (12:17 y 00:17 hora de España en invierno; 13:17 y 01:17 en v
 - **33 mecanismos conexos** verificados: los 10 órganos de tratados (datos de la diapositiva del curso de la UAH), EPU, procedimientos 1235 y 1503, EMRIP, Foro de Minorías, ACNUDH, 8 grupos de trabajo intergubernamentales y 8 comisiones de investigación / misiones.
 - **Búsqueda inteligente** en la portada: entiende sinónimos ES/EN («desaparecidos», «comida», «niños migrantes»), corrige erratas («tortrua») y muestra, mientras escribes, mandatos, resoluciones y mecanismos relacionados con acceso directo a la ficha o al texto.
 - **Ficha de cada país (196):** al elegir un país se ve su perfil completo: grupo regional, invitación permanente y visitas, **estado de ratificación de los 18 instrumentos de derechos humanos** (Colección de Tratados de la ONU), mandato propio, 10 subtemas para ver qué relatores pueden actuar, comisiones y titulares con esa nacionalidad, y enlaces a las bases oficiales de comunicaciones y visitas.
+- **Mapa del mundo con capas:** cada país se colorea según los tratados básicos que ha aceptado, un tratado concreto, su invitación permanente, su mandato propio o su comisión de investigación; al tocarlo se llega a su ficha, y una lista repite los mismos datos. Dibujo propio, sin librerías ni servicios de mapas; contornos de dominio público (Natural Earth). Informe de licencias para las capas siguientes en [`docs/MAPAS.md`](docs/MAPAS.md).
 - **Países (antes):** sección con buscador y listado de 62 países (mandato específico, comisiones/misiones y titulares con esa nacionalidad). Al elegir un país muestra además los 44 mandatos temáticos que pueden dirigirle comunicaciones, filtrables por tema; también se puede indicar el país en la búsqueda guiada. Filtro por país en el explorador y tarjeta de país en la búsqueda inteligente.
 - **Grupos regionales de la ONU** (África, Asia-Pacífico, Europa Oriental, América Latina y el Caribe, Europa Occidental y otros, más «Otro»): botones en Países, filtro en el explorador y etiqueta en cada ficha. La clasificación de cada país procede de la base oficial de comunicaciones de OHCHR (`data/fuentes/regiones_ohchr.json`), no es nuestra.
 - **Búsqueda dentro de los textos:** la búsqueda de la portada también busca palabra por palabra en el texto completo de las resoluciones y de los documentos de cada país —observaciones finales, EPU e informes de visita— (español e inglés, sin importar tildes, y por significado) y muestra el párrafo exacto con el enlace al PDF oficial. Los PDF y el índice viven en el servidor de la búsqueda en vivo, no en el repositorio ([`docs/TEXTO_COMPLETO.md`](docs/TEXTO_COMPLETO.md)).
@@ -41,9 +42,9 @@ Abrir `index.html` en cualquier navegador (también sin conexión: los datos van
 | Ruta | Contenido |
 |---|---|
 | `index.html` | Aplicación |
-| `data/` | `catalogo.json` y `atlas-data.js` (generados), `fuentes/` (descargas oficiales y verificación), `evidencias.json`, Excel del piloto |
+| `data/` | `catalogo.json` y `atlas-data.js` (generados), `fuentes/` (descargas oficiales y verificación), `evidencias.json`, Excel del piloto, `mapa.js` (contornos de países para el mapa, generados por `scripts/generar_mapa.py`) |
 | `scripts/` | Descarga, normalización, verificación y construcción (`actualizar_datos.sh` ejecuta todo) |
-| `tests/` | `smoke.cjs` (139 pruebas de lógica, `invariantes.cjs`: 12) y `browser.cjs` (Chromium real, 246 comprobaciones, escritorio y móvil desde 320 px); `movil_real.cjs` emula tres teléfonos contra la web publicada y la búsqueda real (Actions → «Celular», cada lunes) |
+| `tests/` | `smoke.cjs` (139 pruebas de lógica, `invariantes.cjs`: 12) y `browser.cjs` (Chromium real, 280 comprobaciones, escritorio y móvil desde 320 px); `movil_real.cjs` emula tres teléfonos contra la web publicada y la búsqueda real (Actions → «Celular», cada lunes) |
 | `audit/` | Auditoría contra los 13 requisitos, discrepancias respecto a v0.6, inventario, manifiesto de integridad |
 | `docs/` | Traspaso original |
 
@@ -65,7 +66,7 @@ Cuando una búsqueda no da resultado, la plataforma ofrece **Solicitar verificac
 Ver en la plataforma «Fuentes y alcance → Qué es dato oficial y qué es elaboración propia». Resumen: mandatos, símbolos y titulares vienen de OHCHR; títulos, fechas y PDF, de la Biblioteca Digital ONU; el diccionario de sinónimos, los nombres de países en español y los avisos son elaboración propia y no sustituyen la fuente.
 
 ## Límites (ver `audit/AUDITORIA.md`)
-Solo mandatos **vigentes**: faltan los extinguidos. Las comisiones de investigación listadas son una selección verificada, no el universo. No hay mapas. Las explicaciones en lenguaje claro de cada resolución no están redactadas. «Localizado» significa que existe un registro con ese símbolo exacto; no sustituye leer el texto.
+Solo mandatos **vigentes**: faltan los extinguidos. Las comisiones de investigación listadas son una selección verificada, no el universo. Hay un mapa del mundo con cinco capas (ver `docs/MAPAS.md`); faltan las capas de conflictos, comunicaciones y EPU. Las explicaciones en lenguaje claro de cada resolución no están redactadas. «Localizado» significa que existe un registro con ese símbolo exacto; no sustituye leer el texto.
 
 
 ## Documentos oficiales por país

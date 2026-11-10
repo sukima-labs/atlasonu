@@ -113,6 +113,10 @@
     {
      "t": "Relatores y relatoras",
      "x": "En el menú, «Relatores y relatoras» reúne a las personas que hoy ejercen los mandatos: nombre tal como lo publica la ONU, tipo de mandato, nacionalidad y, cuando consta, desde cuándo. Se busca por nombre, tema o país y se filtra por tipo, alcance, tema y grupo regional. Cada tarjeta lleva a su mandato y a las fichas de país; desde cada ficha de país se llega a las personas de esa nacionalidad. Solo información pública de su función."
+    },
+    {
+     "t": "Mapa del mundo con capas",
+     "x": "Una pantalla con un mapa donde cada país se colorea según elijas: cuántos tratados básicos de derechos humanos ha aceptado, un tratado concreto, si tiene invitación permanente para los relatores, si tiene un relator propio o una comisión de investigación. Tocas un país y llegas a su ficha. Hay una lista con los mismos datos para quien no pueda usar el mapa. Sin servicios externos: los contornos son de dominio público y van dentro del proyecto."
     }
    ]
   },
@@ -148,6 +152,10 @@
    "titulo": "Pendiente",
    "intro": "En la cola de trabajo, por orden aproximado. Una tarea cada vez.",
    "items": [
+    {
+     "t": "Más capas en el mapa",
+     "x": "Añadir al mapa los conflictos armados (con datos abiertos de la Universidad de Uppsala), las comunicaciones de los relatores y las recomendaciones del Examen Periódico Universal por país."
+    },
     {
      "t": "Revisión de uso de todas las pantallas",
      "x": "Sobre todo en el celular: tablas que pasan a tarjetas, buscador a mano, botones más grandes, contraste y accesibilidad. Ya está hecho el informe con lo medido en las 17 pantallas; falta aplicarlo, las tablas anchas ya pasan a tarjetas en el celular; Países, Mandatos, Arqueología y Auditoría ya se muestran de 20 en 20 y hay botón para volver arriba; siguen los botones más grandes y la letra mínima."
@@ -187,10 +195,6 @@
     {
      "t": "Explicaciones en lenguaje claro de cada resolución",
      "x": "Hasta ahora solo una resolución está explicada así, tras leer su texto."
-    },
-    {
-     "t": "Mapas y mapas de calor",
-     "x": "Un mapa mundial con capas (ratificaciones, observaciones, conflictos…) y clic que lleve a la ficha del país. Con herramientas libres y alojadas en el propio proyecto."
     },
     {
      "t": "Inclusión y más idiomas",
