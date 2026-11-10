@@ -3,12 +3,14 @@
 Pantalla «Mapa del mundo» (`#mapa`): cada país se colorea según una **capa** y al tocarlo se llega a su ficha. Primera versión: 10-11-2026.
 
 ## Capas de hoy
-Todas salen de los datos que ya tienen las fichas de país (`data/atlas-data.js`), sin pedir nada nuevo a nadie:
+Las cinco primeras salen de los datos que ya tienen las fichas de país (`data/atlas-data.js`), sin pedir nada nuevo a nadie; las dos últimas cargan su fichero al elegirlas (`data/conflictos.js`, `data/comunicaciones.js`):
 1. **Tratados básicos de los que es parte** (0 a 9).
 2. **Un tratado concreto** (parte / firmó sin ratificar / no es parte), a elegir entre los 18 del catálogo.
 3. **Invitación permanente** a los mandatos temáticos.
 4. **Mandato de relator para el país**.
 5. **Comisión o misión de investigación**.
+6. **Conflictos armados (UCDP), por año** (T68, 10-11-2026): conflictos armados estatales con combates en el país ese año, de 1946 a 2025, con selector de año. Dos colores: «guerra» (1000 o más muertes en combate en el año) y «conflicto menor» (de 25 a 999). Fuente: UCDP/PRIO Armed Conflict Dataset v26.1 (CC BY 4.0), que se cita en la leyenda con su versión. Cuenta solo conflictos entre un Estado y otro Estado o un grupo armado: no incluye la violencia contra civiles (otro conjunto de UCDP, no usado). Se regenera con `python3 -I scripts/fetch_ucdp.py` (UCDP publica una versión al año; no entra en la revisión diaria). Cuatro nombres de UCDP sin ficha (Hyderabad, Vietnam del Sur, Yemen del Sur, Taiwán) no se dibujan.
+7. **Comunicaciones de los relatores recibidas**: suma de las comunicaciones enviadas a cada país en los informes conjuntos de los procedimientos especiales (junio de 2019 a noviembre de 2022, `data/comunicaciones.js`); cinco tramos (ninguna, 1–4, 5–14, 15–39, 40 o más). Es la cifra oficial, no el texto de las cartas. Ninguna de las dos capas valora a ningún Estado.
 
 Cada capa tiene leyenda con las cuentas, la lista de debajo repite los mismos datos (para quien no use el mapa) y la prueba `tests/browser.cjs` comprueba que la leyenda suma los 196 países.
 
@@ -28,7 +30,5 @@ Cada capa tiene leyenda con las cuentas, la lista de debajo repite los mismos da
 | **MapLibre GL JS** / **Leaflet** (librerías) | BSD-3-Clause / BSD-2-Clause: libres. | No hacen falta por ahora; se valorarán si algún día se necesitan teselas o un mapa de calor real. |
 
 ## Lo que falta (en la cola)
-- **Capa de conflictos armados** con UCDP (descargar el conjunto, agregar por país y año, citar versión).
-- Capas de **comunicaciones de relatores** por país (cifras de `data/comunicaciones.js`) y de **recomendaciones del EPU** (hoy solo se cargan país a país).
-- Un control de **año** para las capas que cambian con el tiempo.
+- Capa de **recomendaciones del EPU** por país: hoy ATLAS solo tiene la lista de documentos del EPU de cada país, no el número de recomendaciones; habría que leer los informes.
 - Impresión del mapa (junto con T58).

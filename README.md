@@ -42,7 +42,7 @@ Abrir `index.html` en cualquier navegador (también sin conexión: los datos van
 | Ruta | Contenido |
 |---|---|
 | `index.html` | Aplicación |
-| `data/` | `catalogo.json`, `atlas-data.js` y `atlas-actos.js` (generados), `fuentes/` (descargas oficiales y verificación), `evidencias.json`, Excel del piloto, `mapa.js` (contornos de países para el mapa, generados por `scripts/generar_mapa.py`) |
+| `data/` | `catalogo.json`, `atlas-data.js` y `atlas-actos.js` (generados), `fuentes/` (descargas oficiales y verificación), `evidencias.json`, Excel del piloto, `conflictos.js` (capa del mapa, de UCDP), `mapa.js` (contornos de países para el mapa, generados por `scripts/generar_mapa.py`) |
 | `scripts/` | Descarga, normalización, verificación y construcción (`actualizar_datos.sh` ejecuta todo) |
 | `tests/` | `smoke.cjs` (139 pruebas de lógica, `invariantes.cjs`: 12) y `browser.cjs` (Chromium real, 280 comprobaciones, escritorio y móvil desde 320 px); `movil_real.cjs` emula tres teléfonos contra la web publicada y la búsqueda real (Actions → «Celular», cada lunes) |
 | `audit/` | Auditoría contra los 13 requisitos, discrepancias respecto a v0.6, inventario, manifiesto de integridad |

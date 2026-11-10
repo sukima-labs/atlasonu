@@ -122,6 +122,19 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     ok(vp.name + ': Mapa: tocar un país muestra su dato y lo marca', /España/.test(await page.textContent('#mpInfo')) && /Es parte/.test(await page.textContent('#mpInfo')) && (await page.locator('#mpSvg path.sel').count()) === 1 && (await page.inputValue('#mpPais')) === 'ESP');
     await page.selectOption('#mpCapa', 'invitacion');
     ok(vp.name + ': Mapa: al cambiar de capa se conserva el país y cambia su dato', /invitación permanente/.test(await page.textContent('#mpInfo')) && !(await page.isVisible('#mpTrat')));
+    // T68: capas de conflictos armados (UCDP) y de comunicaciones de los relatores
+    await page.selectOption('#mpCapa', 'conflictos'); await page.waitForFunction(() => /Fuente: UCDP/.test(document.getElementById('mpLeyenda').textContent));
+    const sumaLey = async () => (await page.textContent('#mpLeyenda')).match(/\((\d+)\)/g).map(x => +x.slice(1, -1)).reduce((a, b) => a + b, 0);
+    ok(vp.name + ': Mapa: capa «Conflictos armados» muestra el selector de año, la fuente y la leyenda cuenta los 196 países', await page.isVisible('#mpAnio') && (await page.locator('#mpAnio option').count()) > 70 && /CC BY 4.0/.test(await page.textContent('#mpLeyenda')) && (await sumaLey()) === 196);
+    await page.evaluate(() => mpElegir('UKR')); await page.selectOption('#mpAnio', '2023');
+    ok(vp.name + ': Mapa: conflictos 2023: Ucrania tiene un conflicto armado estatal con 1000 o más muertes en combate', /Conflictos armados estatales en 2023: 1/.test(await page.textContent('#mpInfo')) && /1000 o más/.test(await page.textContent('#mpInfo')));
+    await page.selectOption('#mpAnio', '1950'); await page.evaluate(() => mpElegir('ESP'));
+    ok(vp.name + ': Mapa: conflictos: al cambiar de año cambian los colores y España en 1950 sale sin conflicto', /UCDP no registra en 1950/.test(await page.textContent('#mpInfo')) && (await sumaLey()) === 196);
+    await page.selectOption('#mpCapa', 'comunicaciones'); await page.waitForFunction(() => !/Cargando/.test(document.getElementById('mpLeyenda').textContent));
+    ok(vp.name + ': Mapa: capa «Comunicaciones» oculta el año, y la leyenda cuenta los 196 países', !(await page.isVisible('#mpAnio')) && (await sumaLey()) === 196);
+    await page.evaluate(() => mpElegir('COL'));
+    ok(vp.name + ': Mapa: comunicaciones: el dato de un país es la suma de sus informes', await page.evaluate(() => { const n = window.COMUNICACIONES.paises.COL.reduce((a, x) => a + x[1], 0); return document.getElementById('mpInfo').textContent.includes(': ' + n); }));
+    await page.evaluate(() => mpElegir('ESP'));
     const zAntes = await page.$eval('#mpSvg', e => e.getBoundingClientRect().width); await page.click('#mapa .mp-zoom button:has-text("Acercar")');
     ok(vp.name + ': Mapa: «Acercar» agranda el dibujo dentro de su marco, sin desbordar la página', (await page.$eval('#mpSvg', e => e.getBoundingClientRect().width)) > zAntes && !(await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1)));
     await page.click('#mpInfo button'); await page.waitForTimeout(300);
