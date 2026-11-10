@@ -1,6 +1,6 @@
 # 07 · Reddit (cuenta personal de quien lleva el proyecto, decisión del 11-11-2026)
 
-La extensión del navegador del asistente tiene `reddit.com` bloqueado: **estas piezas las pega una persona** desde su cuenta. Se publican con la voz de quien las firma en Reddit, sin poner su nombre real en el texto (el proyecto sigue firmando «Sukima-Labs»). No se publica nada sin aprobación.
+La extensión del navegador del asistente bloqueó `old.reddit.com` («not allowed due to safety restrictions»; no se esquiva): **estas piezas las pega una persona** desde su cuenta. Se publican con la voz de quien las firma en Reddit, sin poner su nombre real en el texto (el proyecto sigue firmando «Sukima-Labs»). No se publica nada sin aprobación.
 
 ## Antes de publicar en cada comunidad
 1. Leer su barra lateral y reglas (cada una limita la autopromoción; muchas piden que la mayor parte de tu actividad no sea promocionar lo tuyo).
