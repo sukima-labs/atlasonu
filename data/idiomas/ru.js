@@ -1070,5 +1070,16 @@ window.ATLAS_IDIOMA_ru={
 "Mover hacia arriba":"Сдвинуть вверх",
 "Mover hacia abajo":"Сдвинуть вниз",
 "Mover a la derecha":"Сдвинуть вправо",
-"Mapa del mundo: con el mapa acercado, arrástralo o muévelo con las flechas del teclado":"Карта мира: при увеличении перетащите её или двигайте стрелками клавиатуры"
+"Mapa del mundo: con el mapa acercado, arrástralo o muévelo con las flechas del teclado":"Карта мира: при увеличении перетащите её или двигайте стрелками клавиатуры",
+"<b>Línea de tiempo y «tiempo real»:</b> las capas de tratados, de invitaciones, de conflictos y del EPU tienen un deslizador de años (y un botón «Animar» que los recorre solo) para ver cómo cambia el mapa hacia atrás. Las fuentes oficiales de la ONU no publican datos en directo: cambian por días o por años. Lo más cercano y honesto es que ATLAS revisa las fuentes cada día y cada capa dice, en su leyenda, la fecha de sus datos.":"<b>Шкала времени и «реальное время»:</b> у слоёв договоров, приглашений, конфликтов и УПО есть ползунок лет (и кнопка «Анимация», которая проходит по ним сама), чтобы увидеть, как карта менялась в прошлом. Официальные источники ООН не публикуют данные в реальном времени: они меняются по дням или по годам. Самое близкое и честное: ATLAS проверяет источники каждый день, а каждый слой указывает в легенде дату своих данных.",
+"▶ Animar":"▶ Анимация",
+"⏸ Pausar":"⏸ Пауза",
+"Datos al {n}-{n}-{n}":"Данные на {n}-{n}-{n}",
+"Último informe incluido: A/HRC/{n}/{n}":"Последний включённый доклад: A/HRC/{n}/{n}",
+"En {n} era parte en {n} de {n} tratados básicos":"В {n} году была участником {n} из {n} основных договоров",
+"En {n} ya era parte":"В {n} году уже была участником",
+"En {n} había firmado, sin ratificar":"В {n} году подписала, но не ратифицировала",
+"En {n} no era parte":"В {n} году не была участником",
+"En {n} ya había cursado una invitación permanente":"В {n} году уже направила постоянное приглашение",
+"En {n} no había cursado una invitación permanente":"В {n} году ещё не направила постоянное приглашение"
 };

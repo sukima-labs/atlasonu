@@ -1070,5 +1070,16 @@ window.ATLAS_IDIOMA_zh={
 "Mover hacia arriba":"向上移动",
 "Mover hacia abajo":"向下移动",
 "Mover a la derecha":"向右移动",
-"Mapa del mundo: con el mapa acercado, arrástralo o muévelo con las flechas del teclado":"世界地图：放大后可拖动，或用键盘方向键移动"
+"Mapa del mundo: con el mapa acercado, arrástralo o muévelo con las flechas del teclado":"世界地图：放大后可拖动，或用键盘方向键移动",
+"<b>Línea de tiempo y «tiempo real»:</b> las capas de tratados, de invitaciones, de conflictos y del EPU tienen un deslizador de años (y un botón «Animar» que los recorre solo) para ver cómo cambia el mapa hacia atrás. Las fuentes oficiales de la ONU no publican datos en directo: cambian por días o por años. Lo más cercano y honesto es que ATLAS revisa las fuentes cada día y cada capa dice, en su leyenda, la fecha de sus datos.":"<b>时间轴与“实时”：</b>条约、邀请、冲突和普遍定期审议图层都有年份滑块（以及可自动播放的“播放”按钮），可以回看地图随时间的变化。联合国官方来源不发布实时数据：它们按天或按年更新。最接近且诚实的做法是：ATLAS 每天检查这些来源，每个图层都在图例中注明数据日期。",
+"▶ Animar":"▶ 播放",
+"⏸ Pausar":"⏸ 暂停",
+"Datos al {n}-{n}-{n}":"数据截至 {n}-{n}-{n}",
+"Último informe incluido: A/HRC/{n}/{n}":"最新收录报告：A/HRC/{n}/{n}",
+"En {n} era parte en {n} de {n} tratados básicos":"{n} 年时是 {n} 项（共 {n} 项）核心条约的缔约国",
+"En {n} ya era parte":"{n} 年时已是缔约国",
+"En {n} había firmado, sin ratificar":"{n} 年时已签署但未批准",
+"En {n} no era parte":"{n} 年时不是缔约国",
+"En {n} ya había cursado una invitación permanente":"{n} 年时已发出常设邀请",
+"En {n} no había cursado una invitación permanente":"{n} 年时尚未发出常设邀请"
 };

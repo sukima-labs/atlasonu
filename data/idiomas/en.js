@@ -1070,5 +1070,16 @@ window.ATLAS_IDIOMA_en={
 "Mover hacia arriba":"Move up",
 "Mover hacia abajo":"Move down",
 "Mover a la derecha":"Move right",
-"Mapa del mundo: con el mapa acercado, arrástralo o muévelo con las flechas del teclado":"World map: when zoomed in, drag it or move it with the keyboard arrows"
+"Mapa del mundo: con el mapa acercado, arrástralo o muévelo con las flechas del teclado":"World map: when zoomed in, drag it or move it with the keyboard arrows",
+"<b>Línea de tiempo y «tiempo real»:</b> las capas de tratados, de invitaciones, de conflictos y del EPU tienen un deslizador de años (y un botón «Animar» que los recorre solo) para ver cómo cambia el mapa hacia atrás. Las fuentes oficiales de la ONU no publican datos en directo: cambian por días o por años. Lo más cercano y honesto es que ATLAS revisa las fuentes cada día y cada capa dice, en su leyenda, la fecha de sus datos.":"<b>Timeline and «real time»:</b> the treaty, invitation, conflict and UPR layers have a year slider (and an «Animate» button that plays it for you) to see how the map changes going back in time. Official UN sources do not publish live data: they change by days or by years. The closest honest thing is that ATLAS checks the sources every day and each layer states, in its legend, the date of its data.",
+"▶ Animar":"▶ Animate",
+"⏸ Pausar":"⏸ Pause",
+"Datos al {n}-{n}-{n}":"Data as of {n}-{n}-{n}",
+"Último informe incluido: A/HRC/{n}/{n}":"Latest report included: A/HRC/{n}/{n}",
+"En {n} era parte en {n} de {n} tratados básicos":"In {n} it was a party to {n} of {n} core treaties",
+"En {n} ya era parte":"In {n} it was already a party",
+"En {n} había firmado, sin ratificar":"In {n} it had signed, without ratifying",
+"En {n} no era parte":"In {n} it was not a party",
+"En {n} ya había cursado una invitación permanente":"In {n} it had already issued a standing invitation",
+"En {n} no había cursado una invitación permanente":"In {n} it had not issued a standing invitation"
 };
