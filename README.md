@@ -47,6 +47,7 @@ Abrir `index.html` en cualquier navegador (también sin conexión: los datos van
 | `tests/` | `smoke.cjs` (139 pruebas de lógica, `invariantes.cjs`: 12) y `browser.cjs` (Chromium real, 280 comprobaciones, escritorio y móvil desde 320 px); `movil_real.cjs` emula tres teléfonos contra la web publicada y la búsqueda real (Actions → «Celular», cada lunes) |
 | `audit/` | Auditoría contra los 13 requisitos, discrepancias respecto a v0.6, inventario, manifiesto de integridad |
 | `docs/` | Traspaso original |
+| `marketing/` | Módulo de marketing y promoción: análisis, plan, mensajes, canales, kit de prensa, borradores y medición ([`marketing/README.md`](marketing/README.md)) |
 
 ## Reproducir
 ```
