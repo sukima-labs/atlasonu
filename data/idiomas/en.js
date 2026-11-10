@@ -1081,5 +1081,7 @@ window.ATLAS_IDIOMA_en={
 "En {n} había firmado, sin ratificar":"In {n} it had signed, without ratifying",
 "En {n} no era parte":"In {n} it was not a party",
 "En {n} ya había cursado una invitación permanente":"In {n} it had already issued a standing invitation",
-"En {n} no había cursado una invitación permanente":"In {n} it had not issued a standing invitation"
+"En {n} no había cursado una invitación permanente":"In {n} it had not issued a standing invitation",
+"<a>Ver en ancho completo</a>":"<a>View full width</a>",
+"<a>Ver como en celular</a>":"<a>View as on a phone</a>"
 };

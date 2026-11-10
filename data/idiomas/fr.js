@@ -1081,5 +1081,7 @@ window.ATLAS_IDIOMA_fr={
 "En {n} había firmado, sin ratificar":"En {n}, il avait signé, sans ratifier",
 "En {n} no era parte":"En {n}, il n'était pas partie",
 "En {n} ya había cursado una invitación permanente":"En {n}, il avait déjà adressé une invitation permanente",
-"En {n} no había cursado una invitación permanente":"En {n}, il n'avait pas adressé d'invitation permanente"
+"En {n} no había cursado una invitación permanente":"En {n}, il n'avait pas adressé d'invitation permanente",
+"<a>Ver en ancho completo</a>":"<a>Voir en pleine largeur</a>",
+"<a>Ver como en celular</a>":"<a>Voir comme sur un téléphone</a>"
 };

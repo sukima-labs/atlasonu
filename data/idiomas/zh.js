@@ -1081,5 +1081,7 @@ window.ATLAS_IDIOMA_zh={
 "En {n} había firmado, sin ratificar":"{n} 年时已签署但未批准",
 "En {n} no era parte":"{n} 年时不是缔约国",
 "En {n} ya había cursado una invitación permanente":"{n} 年时已发出常设邀请",
-"En {n} no había cursado una invitación permanente":"{n} 年时尚未发出常设邀请"
+"En {n} no había cursado una invitación permanente":"{n} 年时尚未发出常设邀请",
+"<a>Ver en ancho completo</a>":"<a>查看完整宽度</a>",
+"<a>Ver como en celular</a>":"<a>以手机版查看</a>"
 };

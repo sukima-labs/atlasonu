@@ -1081,5 +1081,7 @@ window.ATLAS_IDIOMA_ru={
 "En {n} había firmado, sin ratificar":"В {n} году подписала, но не ратифицировала",
 "En {n} no era parte":"В {n} году не была участником",
 "En {n} ya había cursado una invitación permanente":"В {n} году уже направила постоянное приглашение",
-"En {n} no había cursado una invitación permanente":"В {n} году ещё не направила постоянное приглашение"
+"En {n} no había cursado una invitación permanente":"В {n} году ещё не направила постоянное приглашение",
+"<a>Ver en ancho completo</a>":"<a>Показать в полную ширину</a>",
+"<a>Ver como en celular</a>":"<a>Показать как на телефоне</a>"
 };

@@ -1081,5 +1081,7 @@ window.ATLAS_IDIOMA_ar={
 "En {n} había firmado, sin ratificar":"في عام {n} كانت قد وقّعت دون تصديق",
 "En {n} no era parte":"في عام {n} لم تكن طرفًا",
 "En {n} ya había cursado una invitación permanente":"في عام {n} كانت قد وجّهت دعوة دائمة",
-"En {n} no había cursado una invitación permanente":"في عام {n} لم تكن قد وجّهت دعوة دائمة"
+"En {n} no había cursado una invitación permanente":"في عام {n} لم تكن قد وجّهت دعوة دائمة",
+"<a>Ver en ancho completo</a>":"<a>عرض بالعرض الكامل</a>",
+"<a>Ver como en celular</a>":"<a>عرض كما في الهاتف</a>"
 };
