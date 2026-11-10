@@ -22,7 +22,7 @@ Es un producto grande y cuidado (CI en verde, pruebas de navegador y de celular,
 | `sitemap.xml` / `robots.txt` | no / no (añadidos en T69) | la web publicada devolvía 404 |
 | Salud del repo en GitHub | 75 % | `community/profile` (tiene README, licencia, código de conducta, guía de contribución y plantillas; Discussions está desactivado) |
 
-Las 91 visitas al repo se concentran en cuatro días de octubre y noviembre (27, 33, 15 y 16 visitas) y las hacen 3 personas: es casi seguro el propio equipo. Los 5.768 clones de 14 días son automatización (la CI y la revisión diaria clonan el repo), no audiencia. Tratamos la audiencia externa real como **cero**.
+Las 91 visitas al repo se concentran en cuatro días de octubre y noviembre (27, 33, 15 y 16 visitas) y las hacen 3 personas: es casi seguro el propio equipo. Los 5.768 clones de 14 días probablemente son automatización (la CI, la revisión diaria y las sesiones de trabajo clonan el repo; no se ha podido desglosar), no audiencia. Tratamos la audiencia externa real como **cero**.
 
 ## 4. Para quién es (por orden de prioridad)
 1. **Estudiantes y docentes de derecho internacional, derechos humanos y relaciones internacionales en español** (España y América Latina). Necesitan citar documentos de la ONU sin perderse en su catalogación. El producto trae cita APA, descargas y «lectura fácil».
