@@ -21,6 +21,6 @@ actual (`aria-current`), se respeta «reducir movimiento», el zoom no está blo
 
 ## Lo que axe no puede medir (queda en la cola)
 - **Lector de pantalla real** (NVDA, TalkBack, VoiceOver): axe comprueba nombres y estructura, no la experiencia de uso.
-- **Lectura fácil** de los textos clave: es redacción, no código (T65).
+- **Lectura fácil**: hecha en cuatro pantallas (T65); falta la revisión de una persona.
 - **Árabe, chino y ruso**: el árabe necesita además la página de derecha a izquierda (T66).
 - **Conexión lenta y celulares modestos**: medido en T49, ver `docs/RENDIMIENTO.md`.

@@ -29,7 +29,7 @@ const CASOS = [
     await p.addScriptTag({ content: AXE });
     const pantallas = await p.evaluate(() => [...document.querySelectorAll('.nav button[data-page]')].map(x => x.dataset.page));
     for (const id of pantallas) {
-      await p.evaluate(i => showPage(i, true), id);
+      await p.evaluate(i => { showPage(i, true); document.querySelectorAll('details.lf').forEach(d => { d.open = true; }); }, id); // T65: la lectura fácil se mide abierta
       await p.waitForTimeout(400);
       const v = await p.evaluate(async r => (await axe.run(document, { runOnly: r })).violations
         .map(x => ({ id: x.id, n: x.nodes.length, ej: x.nodes[0].target.join(' ') })), REGLAS);

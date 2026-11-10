@@ -17,6 +17,7 @@ Versión actual. Cambios desde la auditoría de seguridad y mantenimiento (ver `
 - **Glosario de siglas al tocar:** las siglas del texto salen subrayadas y al tocarlas muestran su significado en español e inglés (T63).
 - **Relatores y relatoras:** pantalla nueva con quién ejerce hoy cada mandato, su nacionalidad y enlaces al mandato y a las fichas de país; buscador y filtros (T40).
 - **Accesibilidad WCAG 2.2 AA:** cada control tiene nombre, los enlaces del texto van subrayados y los enlaces miden al menos 24 px para el dedo; una prueba con axe-core revisa las 19 pantallas en cada cambio (T27, `docs/ACCESIBILIDAD.md`).
+- **Lectura fácil** en Inicio, Mandatos, Cómo funciona la ONU y Países: un bloque desplegable con frases cortas, en español, inglés y francés (T65).
 
 ## Anteriores
 - Versiones previas a 0.7 están en el historial de git.
