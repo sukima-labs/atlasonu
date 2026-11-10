@@ -19,6 +19,7 @@ Versión actual. Cambios desde la auditoría de seguridad y mantenimiento (ver `
 - **Accesibilidad WCAG 2.2 AA:** cada control tiene nombre, los enlaces del texto van subrayados y los enlaces miden al menos 24 px para el dedo; una prueba con axe-core revisa las 19 pantallas en cada cambio (T27, `docs/ACCESIBILIDAD.md`).
 - **Lectura fácil** en Inicio, Mandatos, Cómo funciona la ONU y Países: un bloque desplegable con frases cortas, en español, inglés y francés (T65).
 - **Árabe, chino y ruso** en la interfaz: ya están los seis idiomas oficiales de la ONU; el árabe se lee de derecha a izquierda (T66).
+- **Traducciones más completas:** las frases de la ficha de país con su nombre dentro y las explicaciones con la fecha de los datos se traducen enteras, y las fechas de ratificación se escriben al modo de cada idioma (T67).
 
 ## Anteriores
 - Versiones previas a 0.7 están en el historial de git.

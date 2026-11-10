@@ -349,6 +349,12 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
       const enteros = sinTraducir;
       if (enteros.length) console.error('idiomas: sin traducir', JSON.stringify(enteros));
       ok('idiomas: en inglés no queda texto de interfaz sin traducir en Panorama, Mandatos, una ficha de país, Tratados, Relatores y Cómo funciona', enteros.length === 0);
+      // T67: frases con el nombre del país o la fecha de los datos dentro, y fechas cortas de la ficha, traducidas enteras
+      await pi.evaluate("irPais('COL')"); await pi.waitForTimeout(1500);
+      const f67 = await pi.evaluate(() => document.querySelector('#paises').innerText);
+      ok('idiomas: en la ficha de país las frases con su nombre y las fechas cortas salen en inglés (T67)', /The history of Colombia/.test(f67) && /send to Colombia/.test(f67) && /Ratification \d{1,2} [A-Z][a-z]{2} \d{4}/.test(f67) && !/Son las cartas|Ratificación \d/.test(f67));
+      await pi.evaluate("showPage('explorar')"); await pi.waitForTimeout(400);
+      ok('idiomas: «Datos del …» con su fecha no parte la explicación de la pantalla (T67)', await pi.evaluate(() => /Data as of/.test(document.querySelector('#explorar .about').textContent) && !/Datos del/.test(document.querySelector('#explorar .about').textContent)));
     }
     await pi.selectOption('.appbar .idioma select', 'fr'); await pi.waitForFunction(() => window.__atlasListo && window.ATLAS_IDIOMA_fr); await pi.waitForTimeout(300);
     ok('idiomas: Français se recuerda y traduce', await pi.evaluate(() => document.documentElement.lang === 'fr' && localStorage.getItem('atlas_idioma') === 'fr' && /Explorer les mandats/.test(document.getElementById('nav').textContent)));
