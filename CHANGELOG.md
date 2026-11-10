@@ -13,6 +13,7 @@ Versión actual. Cambios desde la auditoría de seguridad y mantenimiento (ver `
 
 ## Sin versión aún · desde el 08-11-2026
 - **Mapa del mundo con capas** (pantalla nueva): cada país se colorea por tratados básicos aceptados, un tratado concreto, invitación permanente, mandato propio o comisión de investigación; al tocarlo se llega a su ficha. SVG propio con contornos de dominio público (Natural Earth), sin servicios externos; lista con los mismos datos, zoom y traducciones a los cinco idiomas (T11/T24, `docs/MAPAS.md`).
+- **Mapa: dos capas más** (T68): conflictos armados por año (UCDP/PRIO, CC BY 4.0, 1946–2025) y comunicaciones de los relatores recibidas por cada país (cifras oficiales de 2019 a 2022). Sin cambios de servicios; `data/conflictos.js` se carga solo al elegir la capa (`docs/MAPAS.md`).
 - **Abrir una pantalla por su enlace** (`#relatores`, `#noticias`, `#mapa`): antes, `#relatores` caía en Panorama.
 - **Comparador de dos países** en la pantalla Países: 28 aspectos lado a lado y «Solo lo que cambia» (T61).
 - **Línea de tiempo por país** en cada ficha: tratados, invitación, mandato o comisiones, observaciones finales, EPU y visitas por años, con filtros y orden (T62).

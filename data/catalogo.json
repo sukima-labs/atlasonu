@@ -5309,7 +5309,7 @@
      },
      {
       "t": "Mapa del mundo con capas",
-      "x": "Una pantalla con un mapa donde cada país se colorea según elijas: cuántos tratados básicos de derechos humanos ha aceptado, un tratado concreto, si tiene invitación permanente para los relatores, si tiene un relator propio o una comisión de investigación. Tocas un país y llegas a su ficha. Hay una lista con los mismos datos para quien no pueda usar el mapa. Sin servicios externos: los contornos son de dominio público y van dentro del proyecto."
+      "x": "Una pantalla con un mapa donde cada país se colorea según elijas: cuántos tratados básicos de derechos humanos ha aceptado, un tratado concreto, si tiene invitación permanente para los relatores, si tiene un relator propio o una comisión de investigación, qué países tienen un conflicto armado en cada año desde 1946 (datos abiertos del programa de la Universidad de Uppsala) y cuántas comunicaciones han recibido de los relatores. Tocas un país y llegas a su ficha. Hay una lista con los mismos datos para quien no pueda usar el mapa. Sin servicios externos: los contornos son de dominio público y van dentro del proyecto."
      }
     ]
    },
@@ -5346,8 +5346,8 @@
     "intro": "En la cola de trabajo, por orden aproximado. Una tarea cada vez.",
     "items": [
      {
-      "t": "Más capas en el mapa",
-      "x": "Añadir al mapa los conflictos armados (con datos abiertos de la Universidad de Uppsala), las comunicaciones de los relatores y las recomendaciones del Examen Periódico Universal por país."
+      "t": "Recomendaciones del EPU en el mapa",
+      "x": "Añadir al mapa una capa con las recomendaciones del Examen Periódico Universal por país. Hoy solo se tiene la lista de documentos de cada país, no el número de recomendaciones, así que habría que leerlos. También queda poder imprimir el mapa."
      },
      {
       "t": "Revisión de uso de todas las pantallas",
