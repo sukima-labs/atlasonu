@@ -1083,5 +1083,17 @@ window.ATLAS_IDIOMA_zh={
 "En {n} ya había cursado una invitación permanente":"{n} 年时已发出常设邀请",
 "En {n} no había cursado una invitación permanente":"{n} 年时尚未发出常设邀请",
 "<a>Ver en ancho completo</a>":"<a>查看完整宽度</a>",
-"<a>Ver como en celular</a>":"<a>以手机版查看</a>"
+"<a>Ver como en celular</a>":"<a>以手机版查看</a>",
+"Ucrania":"乌克兰",
+"Tipo de gráfico":"图表类型",
+"Con quién vota más":"与谁投票最一致",
+"Posición en el tiempo":"随时间的立场",
+"Cómo se lee:":"如何阅读：",
+"cada grupo de barras es una década. Barra alta:":"每组柱子代表一个十年。柱子高：",
+"votó casi igual que ese país; barra baja: votó muy distinto. No dice si un voto es bueno o malo.":"与该国投票几乎相同；柱子低：投票差别很大。这并不说明投票好坏。",
+"Estados Unidos":"美国",
+"Rusia (URSS hasta {n})":"俄罗斯（{n}年前为苏联）",
+"Ver los mismos datos como tabla":"以表格查看相同数据",
+"Década":"年代",
+"URSS":"苏联"
 };

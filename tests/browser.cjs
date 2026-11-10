@@ -71,6 +71,12 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     const box = await page.locator('#pOut .detail h2').boundingBox();
     ok(vp.name + ': al buscar India su ficha queda a la vista (sin tener que desplazarse a ciegas)', box && box.y < (vp.height * 0.9) && /Adhesión 10 abr 1979/.test(await page.textContent('#pOut')) && /Firmó 14 oct 1997/.test(await page.textContent('#pOut')));
     await page.fill('#pQ', 'India'); await page.getByRole('button', { name: 'Buscar' }).first().click(); await page.waitForFunction(() => /CCPR\/C\/IND\/CO\/4/.test(document.getElementById('pDocs').textContent), null, { timeout: 8000 }).catch(() => {});
+    await page.waitForFunction(() => document.querySelector('#pVotos svg'), null, { timeout: 8000 }).catch(() => {});
+    const vb = await page.evaluate(() => { const b = document.getElementById('pVotos'); return b.querySelectorAll('svg rect').length > 4 && /cada grupo de barras/.test(b.textContent) && !!b.querySelector('details.datos table'); });
+    await page.evaluate(() => votosCambia('linea')); await page.waitForFunction(() => !/cada grupo de barras/.test(document.getElementById('pVotos').textContent) && document.querySelector('#pVotos svg'), null, { timeout: 8000 }).catch(() => {});
+    const vl = await page.evaluate(() => !/cada grupo de barras/.test(document.getElementById('pVotos').textContent) && !!document.querySelector('#pVotos svg'));
+    await page.evaluate(() => votosCambia('barras')); await page.waitForFunction(() => document.querySelectorAll('#pVotos svg rect').length > 4, null, { timeout: 8000 }).catch(() => {});
+    ok(vp.name + ': votos en la Asamblea: por defecto barras por década con su tabla, y se puede volver a la línea (#186)', vb && vl && (await page.evaluate(() => document.querySelectorAll('#pVotos svg rect').length > 4)));
     const dd = await page.textContent('#pDocs');
     ok(vp.name + ': la ficha tiene el menú «Qué quieres ver» con 9 saltos y el botón de comparar', (await page.locator('#pNav button[onclick^="irSeccion"]').count()) === 9 && (await page.locator('#pNav button[onclick^="compararCon"]').count()) === 1);
     await page.locator('#pNav button', { hasText: 'EPU' }).click(); await esperaReposo(page);

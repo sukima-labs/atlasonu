@@ -16,4 +16,4 @@ imprime la pieza con las cifras de hoy (y se detiene si queda una marca desconoc
 | `04_show_hn.md` | Hacker News | en |
 | `05_nota_prensa.md` | Medios (solo con noticia) | es |
 | `06_correo_academia_ginebra.md` | Directorio de herramientas | en |
-| `07_reddit.md` | Reddit (la pega una persona: el navegador del asistente lo tiene bloqueado) | en / es |
+| `07_reddit.md` | Reddit (la pega una persona: el navegador del asistente bloqueó Reddit) | en / es |
