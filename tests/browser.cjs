@@ -111,6 +111,22 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     await page.locator('#rOut .rel-card').first().getByRole('button', { name: 'Ver el mandato' }).click(); await page.waitForTimeout(300);
     ok(vp.name + ': desde una tarjeta, «Ver el mandato» abre su ficha en Explorar', await page.isVisible('#explorar'));
     await page.evaluate(() => showPage('paises'));
+    // T11/T24: Mapa del mundo con capas
+    await page.evaluate(() => showPage('mapa')); await page.waitForSelector('#mpSvg path.mp-p');
+    const mpDesborda = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);
+    ok(vp.name + ': «Mapa del mundo» dibuja los 196 países y no desborda la pantalla', (await page.locator('#mpSvg path.mp-p').count()) === 196 && !mpDesborda);
+    await page.selectOption('#mpCapa', 'tratado'); await page.selectOption('#mpTrat', 'IV-2');
+    const mpLey = (await page.textContent('#mpLeyenda')).match(/\((\d+)\)/g).map(x => +x.slice(1, -1)).reduce((a, b) => a + b, 0);
+    ok(vp.name + ': Mapa: con «Un tratado concreto» aparece su selector y la leyenda cuenta los 196 países', await page.isVisible('#mpTrat') && mpLey === 196);
+    await page.locator('#mpSvg path[data-id="ESP"]').dispatchEvent('click');
+    ok(vp.name + ': Mapa: tocar un país muestra su dato y lo marca', /España/.test(await page.textContent('#mpInfo')) && /Es parte/.test(await page.textContent('#mpInfo')) && (await page.locator('#mpSvg path.sel').count()) === 1 && (await page.inputValue('#mpPais')) === 'ESP');
+    await page.selectOption('#mpCapa', 'invitacion');
+    ok(vp.name + ': Mapa: al cambiar de capa se conserva el país y cambia su dato', /invitación permanente/.test(await page.textContent('#mpInfo')) && !(await page.isVisible('#mpTrat')));
+    const zAntes = await page.$eval('#mpSvg', e => e.getBoundingClientRect().width); await page.click('#mapa .mp-zoom button:has-text("Acercar")');
+    ok(vp.name + ': Mapa: «Acercar» agranda el dibujo dentro de su marco, sin desbordar la página', (await page.$eval('#mpSvg', e => e.getBoundingClientRect().width)) > zAntes && !(await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1)));
+    await page.click('#mpInfo button'); await page.waitForTimeout(300);
+    ok(vp.name + ': Mapa: «Ver ficha del país» abre la ficha del país tocado', await page.isVisible('#paises') && (await page.inputValue('#pSel')) === 'ESP');
+    await page.evaluate(() => showPage('paises'));
     await page.evaluate(() => showPage('sistema')); await page.click('.org-node:has-text("Examen Periódico")');
     ok(vp.name + ': Cómo funciona la ONU: al pulsar un recuadro aparece su detalle y de quién depende', /Examen Periódico Universal/.test(await page.textContent('#sisDetalle')) && /Depende de/.test(await page.textContent('#sisDetalle')));
     await page.click('#sisT3'); await page.fill('#sisSim', 'CCPR/C/IND/CO/4');
@@ -341,14 +357,14 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     ok('idiomas: los filtros siguen funcionando con las opciones traducidas', await pi.evaluate(() => filtered.length > 0 && filtered.every(m => m.alcance === 'Temático')));
     { // Fase 2: lo que dibuja el JavaScript. Un texto pendiente cuyos trozos están todos escritos en el código de la
       // página (no en los datos) es interfaz sin traducir: debe estar en data/idiomas/en.js, fr.js, ar.js, zh.js y ru.js.
-      for (const js of ["showPage('inicio')", "showPage('explorar')", "irPais('COL')", "showPage('tratados')", "showPage('relatores')", "showPage('sistema')"]) { await pi.evaluate(js); await pi.waitForTimeout(400); }
+      for (const js of ["showPage('inicio')", "showPage('explorar')", "irPais('COL')", "showPage('tratados')", "showPage('relatores')", "showPage('sistema')", "showPage('mapa')", "mpElegir('ESP')", "mpCapaCambia()"]) { await pi.evaluate(js); await pi.waitForTimeout(400); }
       const fuente = require('fs').readFileSync(path.resolve(__dirname, '..', 'index.html'), 'utf8').match(/<script[^>]*>[\s\S]*?<\/script>/g).join(' ').replace(/&amp;/g, '&').replace(/\s+/g, ' ');
       // Palabra entera: «Spain» de un dato oficial no cuenta como interfaz por estar dentro de «America/Port_of_Spain».
       const enCodigo = x => new RegExp('(^|[^A-Za-zÀ-ÿ0-9_])' + x.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '($|[^A-Za-zÀ-ÿ0-9_])').test(fuente);
       const sinTraducir = (await pi.evaluate(() => ATLAS_IDIOMA.pendientes())).filter(k => { const t = k.split(/<[^>]+>|\{n\}|\{fecha\}/).map(x => x.replace(/[\s↗→←·…]+$/, '').trim()).filter(x => /[A-Za-zÀ-ÿ]{2}/.test(x)); return t.length && t.some(x => x.length >= 4) && t.every(x => enCodigo(x)) && !/^(<a>)?[A-Z]+(\/[A-Z0-9.{}n()XVI]+)+( ↗)?(<\/a>)?$/.test(k); }); // los símbolos de documentos no se traducen
       const enteros = sinTraducir;
       if (enteros.length) console.error('idiomas: sin traducir', JSON.stringify(enteros));
-      ok('idiomas: en inglés no queda texto de interfaz sin traducir en Panorama, Mandatos, una ficha de país, Tratados, Relatores y Cómo funciona', enteros.length === 0);
+      ok('idiomas: en inglés no queda texto de interfaz sin traducir en Panorama, Mandatos, una ficha de país, Tratados, Relatores, Mapa y Cómo funciona', enteros.length === 0);
       // T67: frases con el nombre del país o la fecha de los datos dentro, y fechas cortas de la ficha, traducidas enteras
       await pi.evaluate("irPais('COL')"); await pi.waitForTimeout(1500);
       const f67 = await pi.evaluate(() => document.querySelector('#paises').innerText);

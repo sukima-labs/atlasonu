@@ -1,6 +1,6 @@
 # Accesibilidad e inclusión (T27)
 
-Medido el 10-11-2026 sobre las 19 pantallas del menú, con herramientas libres y sin servicios externos.
+Medido el 10-11-2026 sobre las 20 pantallas del menú, con herramientas libres y sin servicios externos.
 
 ## Cómo se mide
 - **`tests/accesibilidad.cjs`** pasa [axe-core](https://github.com/dequelabs/axe-core) (reglas WCAG 2.0, 2.1 y 2.2,
