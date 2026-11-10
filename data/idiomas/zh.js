@@ -95,6 +95,7 @@ window.ATLAS_IDIOMA_zh={
 "Ver mandatos":"查看任务",
 "Si lo que buscas es un <b>documento</b> (por ejemplo una resolución antigua), ve a <a>Recuperar documentos</a>. Si buscas el comité al que acudir por un tratado, ve a <a>Otros mecanismos</a>.":"如果您要找的是某份<b>文件</b>（例如一项旧决议），请前往<a>查找文件</a>。如果您要找的是某项条约对应的委员会，请前往<a>其他机制</a>。",
 "Novedades detectadas en las fuentes oficiales":"官方来源中发现的新动态",
+"<b>Novedades detectadas en las fuentes oficiales</b>":"<b>官方来源中发现的新动态</b>",
 "<b>Panel de datos del catálogo</b> <small>(para investigadores: cifras, calidad documental, últimas resoluciones)</small>":"<b>目录数据面板</b> <small>（供研究人员使用：数字、文件质量、最新决议）</small>",
 "<b>Alcance:</b> los 57 mandatos vigentes de procedimientos especiales (índice OHCHR) con cada acto jurídico contrastado en la Biblioteca Digital ONU, más 33 mecanismos conexos (órganos de tratados, EPU, comisiones de investigación). <b>No incluye aún</b> mandatos extinguidos ni mapas. <a>Qué falta y qué viene</a>. Los datos son una instantánea y se regeneran con <code>scripts/actualizar_datos.sh</code>; no se consultan en vivo.":"<b>范围：</b>特别程序的 57 项现行任务（依据联合国人权事务高级专员办事处索引），每项法律文书均已与联合国数字图书馆核对；另有 33 个相关机制（条约机构、普遍定期审议、调查委员会）。<b>目前尚未包括</b>已终止的任务和地图。<a>待办与计划</a>。数据为快照，通过 <code>scripts/actualizar_datos.sh</code> 重新生成，并非实时查询。",
 "Estado de actualización y calidad documental":"更新状态与文件质量",
