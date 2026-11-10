@@ -7,11 +7,11 @@ atributos: «Pulsa <b>Ver ficha</b> para…»); si no, se baja a sus hijos y cad
 También placeholder, aria-label, title y alt, y el <title> de la página.
 
   python3 -I scripts/idiomas_textos.py                 # lista las claves (JSON)
-  python3 -I scripts/idiomas_textos.py --comprobar     # falla si en.js o fr.js no cubren alguna clave o
+  python3 -I scripts/idiomas_textos.py --comprobar     # falla si algún diccionario (en, fr, ar, zh, ru) no cubre alguna clave o
                                                        # alguna traducción no conserva las etiquetas
   python3 -I scripts/idiomas_textos.py --faltan en     # claves sin traducir en en.js (JSON)
 Además de los textos de index.html, los diccionarios llevan los que dibuja el JavaScript (fichas, resultados…);
-en esos, {n} es una cifra que cambia y {fecha} una fecha escrita («17 de marzo de 2003»). --comprobar exige que en.js y fr.js tengan las mismas claves.
+en esos, {n} es una cifra que cambia y {fecha} una fecha escrita («17 de marzo de 2003»). --comprobar exige que los cinco diccionarios tengan las mismas claves.
 """
 import html.parser, json, os, re, sys
 
@@ -23,7 +23,7 @@ SALTAR = {"script", "style", "svg", "noscript", "template"}
 SOLO_ATRS = {"input", "textarea"}  # de un campo se traducen los atributos, nunca lo escrito
 ATRIBUTOS = ("placeholder", "aria-label", "title", "alt")
 LETRA = re.compile(r"[A-Za-zÀ-ÿ]{2}")
-IDIOMAS = ("en", "fr")
+IDIOMAS = ("en", "fr", "ar", "zh", "ru")
 
 
 class Nodo:

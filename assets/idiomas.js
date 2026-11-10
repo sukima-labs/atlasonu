@@ -1,4 +1,4 @@
-/* ATLAS ONU · idiomas de la interfaz (T26). Sin servicios externos: diccionarios propios en data/idiomas/<ln>.js.
+/* ATLAS ONU · idiomas de la interfaz (T26; árabe, chino y ruso en T66, el árabe de derecha a izquierda). Sin servicios externos: diccionarios propios en data/idiomas/<ln>.js.
    Traduce solo los textos de la interfaz que están en el diccionario, por coincidencia exacta. Los datos oficiales
    (títulos de documentos, resoluciones, nombres de mandatos que vienen de la ONU) no están en el diccionario, así que
    se quedan en el idioma en que los publica la ONU: no se traducen ni se inventan.
@@ -9,17 +9,21 @@
    El idioma elegido se guarda en localStorage («atlas_idioma»); cambiarlo recarga la página en la misma pantalla. */
 (function () {
   'use strict';
-  var IDIOMAS = [['es', 'ES', 'Español'], ['en', 'EN', 'English'], ['fr', 'FR', 'Français']];
+  var IDIOMAS = [['es', 'ES', 'Español'], ['en', 'EN', 'English'], ['fr', 'FR', 'Français'], ['ar', 'AR', 'العربية'], ['zh', 'ZH', '中文'], ['ru', 'RU', 'Русский']];
+  var RTL = { ar: true }; // T66: el árabe se lee de derecha a izquierda
   var EN_LINEA = /^(A|ABBR|B|BR|CITE|CODE|EM|I|KBD|MARK|Q|S|SMALL|SPAN|STRONG|SUB|SUP|U)$/;
   var SALTAR = /^(SCRIPT|STYLE|SVG|NOSCRIPT|TEMPLATE)$/, SOLO_ATRS = /^(INPUT|TEXTAREA)$/; // de un campo, nunca lo escrito
   var ATRS = ['placeholder', 'aria-label', 'title', 'alt'];
   var AVISO = {
     en: 'Interface translated by ATLAS. Documents and official data keep the language in which the UN publishes them.',
-    fr: 'Interface traduite par ATLAS. Les documents et les données officielles restent dans la langue où l’ONU les publie.'
+    fr: 'Interface traduite par ATLAS. Les documents et les données officielles restent dans la langue où l’ONU les publie.',
+    ar: 'واجهة مترجمة من ATLAS. تبقى الوثائق والبيانات الرسمية باللغة التي تنشرها بها الأمم المتحدة.',
+    zh: '界面由 ATLAS 翻译。文件和官方数据保留联合国发布时所用的语言。',
+    ru: 'Интерфейс переведён ATLAS. Документы и официальные данные остаются на том языке, на котором их публикует ООН.'
   };
   var guardado = null;
   try { guardado = localStorage.getItem('atlas_idioma'); } catch (e) {}
-  var ln = /^(en|fr)$/.test(guardado || '') ? guardado : 'es';
+  var ln = /^(en|fr|ar|zh|ru)$/.test(guardado || '') ? guardado : 'es';
   var dic = null, hechos = new WeakSet(), pendientes = Object.create(null);
 
   var MESES_ES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
@@ -28,7 +32,10 @@
     fr: ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre']
   };
   var FECHA = new RegExp('\\b(\\d{1,2}) de (' + MESES_ES.join('|') + ') de (\\d{4})\\b', 'gi');
-  var fecha = function (x) { return (ln === 'fr' && x[0] === 1 ? '1er' : x[0]) + ' ' + MESES[ln][x[1]] + ' ' + x[2]; };
+  var fecha = function (x) {
+    if (!MESES[ln]) { try { return new Intl.DateTimeFormat(ln, { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(Date.UTC(x[2], x[1], x[0]))); } catch (e) { return x[0] + '.' + (x[1] + 1) + '.' + x[2]; } } // ar, zh, ru: el propio navegador
+    return (ln === 'fr' && x[0] === 1 ? '1er' : x[0]) + ' ' + MESES[ln][x[1]] + ' ' + x[2];
+  };
   var colapsa = function (t) { return t.replace(/\s+/g, ' '); };
   var excluido = function (el) { return SALTAR.test(el.nodeName) || el.getAttribute('translate') === 'no' || el.hasAttribute('data-sin-traducir'); };
   function soloEnLinea(el) {
@@ -123,12 +130,15 @@
     var css = document.createElement('style');
     css.textContent = '.idioma{display:flex;gap:4px;align-items:center;margin:10px 0 4px}.idioma button{min-width:40px;min-height:32px;padding:2px 8px;border:1px solid #6b5a40;border-radius:6px;background:transparent;color:#eacfa6;font:600 12px/1 system-ui,sans-serif;cursor:pointer}.idioma button[aria-pressed=true]{background:#e1bb81;color:#191714;border-color:#e1bb81}.idioma button:focus-visible{outline:2px solid #f6ead7;outline-offset:2px}.appbar .idioma{margin:0 0 0 auto}.idioma-aviso{font-size:11px;line-height:1.4;color:#c6b69b;margin:2px 0 8px}' +
       // «Ver más» y «Ocultar» de los recuadros «Para qué sirve esta pantalla» son content de CSS, no texto
-      (ln === 'en' ? '.about summary::after{content:"See more"}.about[open] summary::after{content:"Hide"}' : ln === 'fr' ? '.about summary::after{content:"Voir plus"}.about[open] summary::after{content:"Masquer"}' : '');
+      ({ en: ['See more', 'Hide'], fr: ['Voir plus', 'Masquer'], ar: ['عرض المزيد', 'إخفاء'], zh: ['查看更多', '收起'], ru: ['Подробнее', 'Скрыть'] }[ln] || []).reduce(function (c, t, i) { return c + (i ? '.about[open] summary::after{content:"' + t + '"}' : '.about summary::after{content:"' + t + '"}'); }, '') +
+      '.idioma{flex-wrap:wrap}.idioma select{min-height:32px;max-width:9.5em;padding:2px 6px;border:1px solid #6b5a40;border-radius:6px;background:#1f1c18;color:#eacfa6;font:600 12px/1 system-ui,sans-serif}' +
+      // árabe: el menú lateral del celular sale por la derecha, donde está su botón
+      '@media(max-width:1080px){html[dir=rtl] .side{left:auto;right:0;transform:translateX(104%);border-right:0;border-left:1px solid #38322a;box-shadow:-12px 0 40px rgba(0,0,0,.45)}html[dir=rtl] body.menu-open .side{transform:none}}';
     document.head.appendChild(css);
     var hacer = function () {
       var g = document.createElement('div');
       g.className = 'idioma'; g.setAttribute('role', 'group'); g.setAttribute('translate', 'no');
-      g.setAttribute('aria-label', ln === 'en' ? 'Language' : ln === 'fr' ? 'Langue' : 'Idioma');
+      g.setAttribute('aria-label', { en: 'Language', fr: 'Langue', ar: 'اللغة', zh: '语言', ru: 'Язык' }[ln] || 'Idioma');
       IDIOMAS.forEach(function (x) {
         var b = document.createElement('button');
         b.type = 'button'; b.textContent = x[1]; b.lang = x[0]; b.title = x[2]; b.setAttribute('aria-label', x[2]);
@@ -144,7 +154,14 @@
       if (AVISO[ln]) { var p = document.createElement('p'); p.className = 'idioma-aviso'; p.setAttribute('translate', 'no'); p.textContent = AVISO[ln]; g.parentNode.insertBefore(p, g.nextSibling); }
     }
     var bar = document.querySelector('.appbar');
-    if (bar) bar.appendChild(hacer());
+    if (bar) { // T66: con seis idiomas los botones no caben a 390 px; arriba va un desplegable con el nombre de cada idioma
+      var d = document.createElement('div'), sel = document.createElement('select');
+      d.className = 'idioma'; d.setAttribute('translate', 'no');
+      sel.setAttribute('aria-label', { en: 'Language', fr: 'Langue', ar: 'اللغة', zh: '语言', ru: 'Язык' }[ln] || 'Idioma');
+      IDIOMAS.forEach(function (x) { var o = document.createElement('option'); o.value = x[0]; o.lang = x[0]; o.textContent = x[2]; o.selected = x[0] === ln; sel.appendChild(o); });
+      sel.onchange = function () { cambia(sel.value); };
+      d.appendChild(sel); bar.appendChild(d);
+    }
   }
   function cambia(nuevo) {
     if (nuevo === ln) return;
@@ -153,6 +170,7 @@
   }
   function arranca() {
     document.documentElement.lang = ln;
+    if (RTL[ln]) document.documentElement.dir = 'rtl';
     var t = busca(colapsa(document.title));
     if (t != null) document.title = t;
     recorre(document.body);
@@ -164,7 +182,7 @@
   selector();
   if (ln === 'es') return;
   var s = document.createElement('script');
-  s.src = 'data/idiomas/' + ln + '.js?v=2';
+  s.src = 'data/idiomas/' + ln + '.js?v=3';
   s.onload = function () { dic = window['ATLAS_IDIOMA_' + ln]; if (dic) arranca(); };
   document.head.appendChild(s);
 })();

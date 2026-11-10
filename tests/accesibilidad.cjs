@@ -1,5 +1,5 @@
 // T27 · Accesibilidad: pasa axe-core (reglas WCAG 2.0, 2.1 y 2.2 A y AA) por cada pantalla del menú, a 390 px
-// (celular) y a 1280 px (escritorio), en español y en inglés. Falla si encuentra cualquier incumplimiento.
+// (celular) y a 1280 px (escritorio), en español, en inglés y en árabe (de derecha a izquierda). Falla si encuentra cualquier incumplimiento.
 // Uso: npm i --no-save playwright axe-core && node tests/accesibilidad.cjs
 // Lo que axe no puede medir solo (lector de pantalla real, lenguaje claro, lectura fácil) está en docs/ACCESIBILIDAD.md.
 const { chromium } = require('playwright');
@@ -12,6 +12,7 @@ const CASOS = [
   { ancho: 390, alto: 844, idioma: 'es' },
   { ancho: 1280, alto: 900, idioma: 'es' },
   { ancho: 390, alto: 844, idioma: 'en' },
+  { ancho: 390, alto: 844, idioma: 'ar' }, // T66: de derecha a izquierda
 ];
 
 (async () => {
@@ -27,6 +28,7 @@ const CASOS = [
     await p.goto(INDEX);
     await p.waitForTimeout(500);
     await p.addScriptTag({ content: AXE });
+    if (c.idioma === 'ar' && await p.evaluate(() => document.documentElement.dir) !== 'rtl') { fallos++; console.log('✗ ar: la página no está de derecha a izquierda'); }
     const pantallas = await p.evaluate(() => [...document.querySelectorAll('.nav button[data-page]')].map(x => x.dataset.page));
     for (const id of pantallas) {
       await p.evaluate(i => { showPage(i, true); document.querySelectorAll('details.lf').forEach(d => { d.open = true; }); }, id); // T65: la lectura fácil se mide abierta

@@ -12,7 +12,7 @@ Toda ayuda es bienvenida: correcciones, fuentes oficiales que falten, errores de
 1. Abre una *issue* (hay plantilla para solicitar una verificación) o crea una rama y un *pull request*.
 2. Si cambias datos, reconstruye el catálogo: `python3 -I scripts/build_catalog.py data/fuentes/verificacion_simbolos.json <fecha>`.
 3. Pasa las pruebas: `node tests/smoke.cjs`, `node tests/invariantes.cjs`, `python3 -I tests/texto_completo_test.py` y `node tests/browser.cjs` (Playwright).
-   Si cambias un texto de la interfaz en `index.html`, pon también su traducción en `data/idiomas/en.js` y `fr.js` (la clave es el texto en español; las etiquetas `<b>`, `<a>`… deben ser las mismas). `python3 -I scripts/idiomas_textos.py --faltan en` dice cuáles faltan y `--comprobar` lo verifica (corre en la CI). Los datos oficiales no se traducen.
+   Si cambias un texto de la interfaz en `index.html`, pon también su traducción en `data/idiomas/en.js`, `fr.js`, `ar.js`, `zh.js` y `ru.js` (la clave es el texto en español; las etiquetas `<b>`, `<a>`… deben ser las mismas). `python3 -I scripts/idiomas_textos.py --faltan en` dice cuáles faltan y `--comprobar` lo verifica (corre en la CI). Los datos oficiales no se traducen.
 4. Comprueba la pantalla a 390 px de ancho (celular) y en escritorio. Contra la web publicada y la búsqueda real, `node tests/movil_real.cjs` emula tres teléfonos (toques, deslizar el menú, zoom 2×); corre también en Actions → «Celular», a mano y cada lunes.
 
 ## Licencia de tu aportación
