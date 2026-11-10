@@ -3,8 +3,14 @@
   <title>ATLAS ONU: qué cambió en las fuentes oficiales</title>
   <subtitle>Cambios detectados en el índice de mandatos de OHCHR y en la Biblioteca Digital de la ONU. Catálogo no oficial.</subtitle>
   <id>tag:atlas-onu,2026:cambios</id>
-  <updated>2026-11-07T00:00:00Z</updated>
+  <updated>2026-11-10T00:00:00Z</updated>
   <rights>Código AGPL-3.0; datos de las fuentes oficiales de la ONU. Autoría visible obligatoria.</rights>
+  <entry>
+    <title>2026-11-10: 1 cambio(s)</title>
+    <id>tag:atlas-onu,2026-11-10:cambios</id>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;Paraguay: visita ya no figura como programada&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
   <entry>
     <title>2026-11-07: 4 cambio(s)</title>
     <id>tag:atlas-onu,2026-11-07:cambios</id>
