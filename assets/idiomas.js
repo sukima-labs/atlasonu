@@ -32,16 +32,26 @@
     fr: ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre']
   };
   var FECHA = new RegExp('\\b(\\d{1,2}) de (' + MESES_ES.join('|') + ') de (\\d{4})\\b', 'gi');
-  var fecha = function (x) {
-    if (!MESES[ln]) { try { return new Intl.DateTimeFormat(ln, { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(Date.UTC(x[2], x[1], x[0]))); } catch (e) { return x[0] + '.' + (x[1] + 1) + '.' + x[2]; } } // ar, zh, ru: el propio navegador
-    return (ln === 'fr' && x[0] === 1 ? '1er' : x[0]) + ' ' + MESES[ln][x[1]] + ' ' + x[2];
+  // Fecha corta de las fichas de país («15 sep 2002», T67): también es {fecha}, y cada idioma la escribe a su modo.
+  var CORTOS_ES = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'];
+  var FECHA_CORTA = new RegExp('\\b(\\d{1,2}) (' + CORTOS_ES.join('|') + ') (\\d{4})\\b', 'g');
+  var CORTOS = {
+    en: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+    fr: ['janv.', 'févr.', 'mars', 'avr.', 'mai', 'juin', 'juil.', 'août', 'sept.', 'oct.', 'nov.', 'déc.']
   };
+  var fecha = function (x) { // x = [día, mes 0-11, año, corta]
+    if (!MESES[ln]) { try { return new Intl.DateTimeFormat(ln, { day: 'numeric', month: x[3] ? 'short' : 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(Date.UTC(+x[2], x[1], x[0]))); } catch (e) { return x[0] + '.' + (x[1] + 1) + '.' + x[2]; } } // ar, zh, ru: el propio navegador
+    return (ln === 'fr' && x[0] === 1 ? '1er' : x[0]) + ' ' + (x[3] ? CORTOS : MESES)[ln][x[1]] + ' ' + x[2];
+  };
+
   var colapsa = function (t) { return t.replace(/\s+/g, ' '); };
   var excluido = function (el) { return SALTAR.test(el.nodeName) || el.getAttribute('translate') === 'no' || el.hasAttribute('data-sin-traducir'); };
   function soloEnLinea(el) {
     for (var c = el.firstElementChild; c; c = c.nextElementSibling) if (!EN_LINEA.test(c.nodeName) || !soloEnLinea(c)) return false;
     return true;
   }
+  // Huecos que la página rellena con un valor (fecha de los datos, nombre del país): en la clave van vacíos (T67).
+  var opaco = function (n) { return n.classList && (n.classList.contains('fechaDatos') || n.classList.contains('vh')); };
   function canon(el) {
     var out = '';
     for (var n = el.firstChild; n; n = n.nextSibling) {
@@ -49,7 +59,7 @@
       else if (n.nodeType === 1) {
         var t = n.nodeName.toLowerCase();
         // <abbr> lo pone el glosario de siglas (T63) después de pintar: no cuenta para la clave.
-        out += t === 'br' ? '<br>' : t === 'abbr' ? canon(n) : '<' + t + '>' + canon(n) + '</' + t + '>';
+        out += t === 'br' ? '<br>' : t === 'abbr' ? canon(n) : opaco(n) ? '<' + t + '></' + t + '>' : '<' + t + '>' + canon(n) + '</' + t + '>';
       }
     }
     return out;
@@ -61,6 +71,7 @@
     if (Object.prototype.hasOwnProperty.call(dic, k)) return dic[k];
     // Fechas escritas («17 de marzo de 2003»): la clave lleva {fecha} y se escriben al modo del idioma elegido.
     var fechas = [], kf = k.replace(FECHA, function (x, d, m, a) { fechas.push([+d, MESES_ES.indexOf(m.toLowerCase()), a]); return '{fecha}'; });
+    kf = kf.replace(FECHA_CORTA, function (x, d, m, a) { fechas.push([+d, CORTOS_ES.indexOf(m), a, true]); return '{fecha}'; });
     if (fechas.length) {
       var r = busca(kf, true);
       if (r != null) { var f = 0; return r.replace(/\{fecha\}/g, function () { return fecha(fechas[f++]); }); }
@@ -92,7 +103,7 @@
       var tag = m[2].toUpperCase();
       if (m[1]) { if (pila.length > 1) pila.pop(); continue; }
       var e = (reserva[tag] || []).shift() || document.createElement(tag);
-      while (e.firstChild) e.removeChild(e.firstChild);
+      if (!opaco(e)) while (e.firstChild) e.removeChild(e.firstChild);
       cima.appendChild(e);
       if (tag !== 'BR') pila.push(e);
     }
@@ -111,8 +122,33 @@
     if (/['’]$/.test(t)) cola = cola.replace(/^\s+/, ''); // «de l'» + «ONU»: en francés sin espacio tras el apóstrofo
     n.data = d.slice(0, i) + t + cola;
   }
+  // T67: el glosario (T63) parte el texto en «…Biblioteca Digital de la », <abbr>ONU</abbr>, «, revisados…». Si el bloque
+  // entero no está en el diccionario, se prueba el tramo seguido de texto y siglas como una sola frase antes de bajar a
+  // cada trozo: así el orden de palabras lo decide la traducción («数字图书馆» + «联合国» no se pegan a la fuerza).
+  var esAbbr = function (n) { return n && n.nodeType === 1 && n.nodeName === 'ABBR'; };
+  var esTramo = function (n) { return n && (n.nodeType === 3 || esAbbr(n)); };
+  function tramo(n) {
+    if (!esAbbr(n.previousSibling) && !esAbbr(n.nextSibling)) return false;
+    var a = n; while (esTramo(a.previousSibling)) a = a.previousSibling;
+    var nodos = [], k = '';
+    for (var x = a; esTramo(x); x = x.nextSibling) { nodos.push(x); k += colapsa(x.nodeType === 3 ? x.data : x.textContent); }
+    nodos.forEach(function (x) { if (x.nodeType === 3) hechos.add(x); }); // cada tramo se resuelve una sola vez
+    var t = busca(k, true);
+    if (t == null) { // se anota el tramo entero, no sus trozos, y se traducen los trozos que sí estén (diccionarios viejos)
+      if (tieneLetras(k)) pendientes[k.trim().replace(/\d+(?:[.,]\d+)*/g, '{n}')] = 1;
+      nodos.forEach(function (x) { if (x.nodeType === 3 && busca(colapsa(x.data), true) != null) texto(x); });
+      return true;
+    }
+    // Sin quitar nodos (el bucle de recorre va por los hermanos): el primer texto lleva la frase y el resto se vacía.
+    var lead = /^\s/.test(k) ? ' ' : '', tail = /\s$/.test(k) ? ' ' : '';
+    var primero = nodos.filter(function (x) { return x.nodeType === 3; })[0];
+    if (nodos[0] !== primero) { primero = document.createTextNode(''); hechos.add(primero); a.parentNode.insertBefore(primero, a); }
+    nodos.forEach(function (x) { if (x !== primero) { if (x.nodeType === 3) x.data = ''; else x.textContent = ''; } });
+    primero.data = lead + t + tail;
+    return true;
+  }
   function recorre(el) {
-    if (el.nodeType === 3) { if (el.parentNode && !hechos.has(el.parentNode)) texto(el); return; }
+    if (el.nodeType === 3) { if (!hechos.has(el) && el.parentNode && !hechos.has(el.parentNode) && !tramo(el)) texto(el); return; }
     if (el.nodeType !== 1 || excluido(el) || hechos.has(el)) return;
     // Un <option> sin value usa su texto como valor y los filtros lo comparan: se fija el original antes de traducir.
     if (el.nodeName === 'OPTION' && !el.hasAttribute('value')) el.setAttribute('value', el.value);
