@@ -1,0 +1,1 @@
+window.PAIS_SINO=window.PAIS_SINO||{};window.PAIS_SINO['SSD']=[[2011,15,0,1,48],[2012,35,2,9,28],[2013,17,0,18,29]];

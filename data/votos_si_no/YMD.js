@@ -1,0 +1,1 @@
+window.PAIS_SINO=window.PAIS_SINO||{};window.PAIS_SINO['YMD']=[[1967,5,0,1,8],[1968,25,2,0,0],[1969,27,3,2,1],[1970,29,3,2,5]];
