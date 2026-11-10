@@ -152,7 +152,7 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     const centroEsp = await page.evaluate(() => { const v = document.getElementById('mpSvg').viewBox.baseVal, b = document.querySelector('#mpSvg path[data-id="ESP"]').getBBox(); return Math.abs(v.x + v.width / 2 - (b.x + b.width / 2)) < v.width * 0.06; });
     ok(vp.name + ': Mapa: «Acercar» reduce el recuadro visible, no ensancha la caja ni desborda la página, y se centra en el país elegido', (await vbW()) < vb0 && Math.round(await page.$eval('#mpSvg', e => e.getBoundingClientRect().width)) === caja0 && centroEsp && !(await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1)));
     await page.click('#mapa .mp-zoom button:has-text("Acercar")'); await page.click('#mapa .mp-zoom button:has-text("Acercar")');
-    const x1 = await vbX(), cj = await page.locator('#mpMapa').boundingBox();
+    await page.locator('#mpMapa').scrollIntoViewIfNeeded(); await page.waitForTimeout(200); const x1 = await vbX(), cj = await page.locator('#mpMapa').boundingBox();
     await page.mouse.move(cj.x + cj.width / 2, cj.y + cj.height / 2); await page.mouse.down(); await page.mouse.move(cj.x + cj.width / 2 + 90, cj.y + cj.height / 2 + 10, { steps: 6 }); await page.mouse.up();
     const x2 = await vbX();
     ok(vp.name + ': Mapa: arrastrar con el ratón mueve el mapa acercado y no cambia el país elegido', x2 < x1 && (await page.evaluate(() => mpSel)) === 'ESP');
