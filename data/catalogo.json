@@ -5192,7 +5192,7 @@
   ]
  },
  "hojaruta": {
-  "actualizado": "2026-11-09",
+  "actualizado": "2026-11-10",
   "bloques": [
    {
     "id": "disponible",
@@ -5257,7 +5257,7 @@
      },
      {
       "t": "Accesibilidad básica",
-      "x": "Enlace «Saltar al contenido» para quien navega con teclado, foco visible en todos los controles, el menú indica la pantalla actual, las tablas tienen cabeceras bien marcadas y se respeta el ajuste de «reducir movimiento». Queda por probar con lector de pantalla."
+      "x": "Enlace «Saltar al contenido» para quien navega con teclado, foco visible en todos los controles, el menú indica la pantalla actual, las tablas tienen cabeceras bien marcadas y se respeta el ajuste de «reducir movimiento». Todas las pantallas pasan las reglas WCAG 2.2 AA que se pueden medir con herramientas: cada control tiene nombre, los enlaces del texto van subrayados y los enlaces son fáciles de tocar. Una prueba lo comprueba en cada cambio. Queda por probar con lector de pantalla."
      },
      {
       "t": "Observaciones generales de los comités",
@@ -5387,7 +5387,7 @@
      },
      {
       "t": "Inclusión y más idiomas",
-      "x": "Lector de pantalla, lectura fácil, conexión lenta y, después, árabe, chino y ruso."
+      "x": "Lectura fácil de los textos clave y, después, árabe (de derecha a izquierda), chino y ruso."
      },
      {
       "t": "Vista para niños y niñas",
