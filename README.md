@@ -35,14 +35,14 @@ Dos veces al día (12:17 y 00:17 hora de España en invierno; 13:17 y 01:17 en v
 - **Un caso con texto leído:** la resolución 20 (XXXVI) de 1980 (Grupo de Trabajo sobre Desapariciones) está reproducida en E/1980/13, pp. 180–181; se leyó el PDF (`data/evidencias.json`).
 
 ## Abrir
-Abrir `index.html` en cualquier navegador (también sin conexión: los datos van en `data/atlas-data.js`).
+Abrir `index.html` en cualquier navegador (también sin conexión: los datos van en `data/atlas-data.js` y `data/atlas-actos.js`).
 **Web pública:** https://sukima-labs.github.io/atlasonu/ (si alguna vez se despublica, para volver a publicarla: Settings → Pages → *Build and deployment* → Source: **Deploy from a branch** → Branch: `main`, carpeta `/ (root)` → Save; tarda ~1 minuto).
 
 ## Estructura
 | Ruta | Contenido |
 |---|---|
 | `index.html` | Aplicación |
-| `data/` | `catalogo.json` y `atlas-data.js` (generados), `fuentes/` (descargas oficiales y verificación), `evidencias.json`, Excel del piloto, `mapa.js` (contornos de países para el mapa, generados por `scripts/generar_mapa.py`) |
+| `data/` | `catalogo.json`, `atlas-data.js` y `atlas-actos.js` (generados), `fuentes/` (descargas oficiales y verificación), `evidencias.json`, Excel del piloto, `mapa.js` (contornos de países para el mapa, generados por `scripts/generar_mapa.py`) |
 | `scripts/` | Descarga, normalización, verificación y construcción (`actualizar_datos.sh` ejecuta todo) |
 | `tests/` | `smoke.cjs` (139 pruebas de lógica, `invariantes.cjs`: 12) y `browser.cjs` (Chromium real, 280 comprobaciones, escritorio y móvil desde 320 px); `movil_real.cjs` emula tres teléfonos contra la web publicada y la búsqueda real (Actions → «Celular», cada lunes) |
 | `audit/` | Auditoría contra los 13 requisitos, discrepancias respecto a v0.6, inventario, manifiesto de integridad |

@@ -11,6 +11,7 @@ const document={getElementById(id){if(!els[id])throw Error('Unknown DOM id '+id)
 const window={scrollTo(){}};const URL={createObjectURL(){return 'blob:fake'},revokeObjectURL(){}};const Blob=function(){};
 const context=vm.createContext({document,window,URL,Blob,console,setTimeout:()=>0});
 vm.runInContext(fs.readFileSync(path.join(root,'data','atlas-data.js'),'utf8'),context);
+vm.runInContext(fs.readFileSync(path.join(root,'data','atlas-actos.js'),'utf8'),context);
 for(const iso of ['IND','COL','IRL','GIN','ESP'])vm.runInContext(fs.readFileSync(path.join(root,'data','paises',iso+'.js'),'utf8'),context);
 vm.runInContext(script,context,{timeout:10000});
 const run=fn=>vm.runInContext(fn,context,{timeout:5000});

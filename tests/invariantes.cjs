@@ -8,6 +8,7 @@ const els = Object.fromEntries(ids.map(id => [id, { id, value: '', innerHTML: ''
 const document = { getElementById(id) { if (!els[id]) throw Error('Unknown DOM id ' + id); return els[id]; }, querySelectorAll() { return []; }, createElement() { return { click() {} }; } };
 const ctx = vm.createContext({ document, window: { scrollTo() {} }, URL: { createObjectURL() { return ''; }, revokeObjectURL() {} }, Blob: function () {}, console, setTimeout, clearTimeout, fetch: undefined });
 vm.runInContext(fs.readFileSync(path.join(root, 'data', 'atlas-data.js'), 'utf8'), ctx);
+vm.runInContext(fs.readFileSync(path.join(root, 'data', 'atlas-actos.js'), 'utf8'), ctx);
 vm.runInContext(script, ctx, { timeout: 20000 });
 const run = f => vm.runInContext(f, ctx, { timeout: 10000 });
 let n = 0; const t = (name, fn) => { try { fn(); n++; } catch (e) { console.error('FALLA:', name, '→', e.message); process.exit(1); } };

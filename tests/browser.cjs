@@ -231,6 +231,18 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     // Escenario normal: el aviso no estorba y la app queda marcada como lista
     const pg2 = await ctx2.newPage(); await pg2.goto(URL); await pg2.waitForTimeout(500);
     ok('carga normal: aviso oculto y aplicación lista', !(await pg2.isVisible('#aviso-carga')) && (await pg2.evaluate(() => window.__atlasListo === true)));
+    // T58: el índice de actos llega aparte (atlas-actos.js). Si falla, la página arranca igual y lo dice
+    const pg3 = await ctx2.newPage(); await pg3.route(/atlas-actos\.js/, r => r.abort());
+    await pg3.goto(URL); await pg3.waitForFunction(() => window.__atlasListo, null, { timeout: 5000 });
+    ok('sin atlas-actos.js: la página arranca y avisa en «recientes»', /No se pudo descargar el índice/.test(await pg3.textContent('#recientes')) && await pg3.evaluate(() => DATA.mandatos.length > 0));
+    // Con el índice lento: una búsqueda por símbolo espera y se resuelve al llegar
+    const pg4 = await ctx2.newPage(); await pg4.route(/atlas-actos\.js/, async r => { await new Promise(f => setTimeout(f, 1500)); r.continue(); });
+    await pg4.goto(URL, { waitUntil: 'domcontentloaded' }); await pg4.waitForFunction(() => typeof smartRun === 'function' && window.__actosListo);
+    await pg4.evaluate(() => { document.getElementById('quick').value = 'A/HRC/RES/51/19'; smartRun(); });
+    ok('índice lento: la búsqueda muestra «Cargando el índice»', /Cargando el índice/.test(await pg4.textContent('#smartOut')));
+    await pg4.waitForFunction(() => window.__atlasListo, null, { timeout: 8000 });
+    ok('índice lento: al llegar, la búsqueda pendiente se resuelve sola', /A\/HRC\/RES\/51\/19/.test(await pg4.textContent('#smartOut')) && !/Cargando el índice/.test(await pg4.textContent('#smartOut')));
+    ok('con índice: «recientes» lista resoluciones', (await pg4.locator('#recientes .listline').count()) > 0);
     await ctx2.close();
   }
   // Portada e historia

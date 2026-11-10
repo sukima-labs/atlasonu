@@ -3,7 +3,8 @@
 ## Qué descarga la página al abrirse
 | Archivo | Tamaño | Comprimido (gzip) | Cuándo se carga |
 |---|---|---|---|
-| `data/atlas-data.js` | 1,39 MB | 169 KB | al abrir: contiene el catálogo que usan todas las pantallas |
+| `data/atlas-data.js` | 0,90 MB | 130 KB | al abrir: el catálogo salvo el índice de actos (desde T58, 10-11-2026) |
+| `data/atlas-actos.js` | 0,50 MB | 39 KB | al abrir, en paralelo y sin bloquear el arranque (`async`): índice de actos para la búsqueda de símbolos, «recientes» y calidad de datos |
 | `data/comunicaciones.js` | 10,5 KB | — | al abrir la pantalla que lo necesita |
 | `data/jurisprudencia.js` | 17,6 KB | — | al abrir su pantalla |
 | `data/catalogo.json` | 1,75 MB | 180 KB | **no lo carga la página**: es la fuente que genera `atlas-data.js` y el Excel |
@@ -12,7 +13,8 @@ Las pantallas de países, votaciones y jurisprudencia ya se cargan bajo demanda.
 
 ## Conclusiones
 - **El catálogo ya no es el problema de la tarea original:** la página no carga `catalogo.json` (1,7 MB). El archivo que pesa al abrir es `atlas-data.js`, 169 KB comprimidos, que Pages sirve comprimido.
-- **Diferir `atlas-data.js` no se hace ahora.** Todas las pantallas leen ese objeto global al arrancar; separarlo por pantallas toca el código de todas ellas y no se puede probar aquí (falta Playwright para `tests/browser.cjs`). Se registra como T58.
+- **T58 (10-11-2026): el índice de actos se difiere.** Es el 23 % del peso comprimido y lo usan pocas cosas al arrancar. Si llega tarde, la búsqueda y «recuperar documento» esperan y se resuelven solas; si falla, la página arranca y avisa. El resto del catálogo (mandatos, países, siglas…) lo leen todas las pantallas al arrancar y sigue en `atlas-data.js`. Lo que sigue más abajo es el análisis original de T49, anterior a T58.
+- **Antes de T58: diferir `atlas-data.js` no se hacía.** Todas las pantallas leen ese objeto global al arrancar; separarlo por pantallas toca el código de todas ellas y no se puede probar aquí (falta Playwright para `tests/browser.cjs`). Se registra como T58.
 - **Service worker (PWA): no ahora.** Un *service worker* con caché puede servir datos viejos después de una revisión diaria; la página ya usa un parámetro de versión por cada 5 minutos. Hay que decidir la estrategia antes de añadirlo.
 - **Modo impresión:** la hoja de estilos ya oculta menús y controles al imprimir (`@media print`). No se ha comprobado una impresión completa de cada pantalla; se incluye en T58.
 - **Conexión lenta:** no se ha medido (requiere navegador con red limitada). Pendiente con T55 (Playwright).

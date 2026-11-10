@@ -14,7 +14,7 @@ jobs:
         run: |
           mkdir -p _site/data
           cp index.html _site/
-          cp data/atlas-data.js data/catalogo.json data/atlas-onu-catalogo-v07.xlsx _site/data/
+          cp data/atlas-data.js data/atlas-actos.js data/catalogo.json data/atlas-onu-catalogo-v07.xlsx _site/data/
           touch _site/.nojekyll
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

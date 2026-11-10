@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Genera data/atlas-data.js y data/catalogo.json a partir de las fuentes oficiales descargadas.
+"""Genera data/atlas-data.js, data/atlas-actos.js y data/catalogo.json a partir de las fuentes oficiales descargadas.
 Uso: build_catalog.py <verif.json> <fecha>   (lee data/fuentes/ohchr_{TM,CM}_{en,es}.json y data/contexto_v06.json)"""
 import json, re, sys
 verif_path, fecha = sys.argv[1], sys.argv[2]
@@ -207,6 +207,10 @@ data = {'version': '0.7', 'sistema': SIS, 'siglas': SIG, 'historia': HIS, 'hojar
         'mandatos': recs, 'indice_actos': index,
         'trazas': ctx['trazas'], 'alertas': ctx['alertas'], 'codigos': ctx['codigos'], 'seleccion': ctx['seleccion']}
 json.dump(data, open('data/catalogo.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
-open('data/atlas-data.js', 'w', encoding='utf-8').write('window.ATLAS_DATA=' + json.dumps(data, ensure_ascii=False, separators=(',', ':')) + ';\n')
+# T58: la página carga el catálogo en dos tiempos. atlas-data.js lleva todo salvo el índice de actos (el 23 % del peso
+# comprimido); atlas-actos.js lleva ese índice y se descarga en paralelo, sin frenar el arranque.
+nucleo = {k: v for k, v in data.items() if k != 'indice_actos'}
+open('data/atlas-data.js', 'w', encoding='utf-8').write('window.ATLAS_DATA=' + json.dumps(nucleo, ensure_ascii=False, separators=(',', ':')) + ';\n')
+open('data/atlas-actos.js', 'w', encoding='utf-8').write('window.ATLAS_ACTOS=' + json.dumps(data['indice_actos'], ensure_ascii=False, separators=(',', ':')) + ';window.__actosListo&&window.__actosListo();\n')
 from collections import Counter
 print(len(recs), 'mandatos;', len(index), 'entradas índice;', Counter(a['estado'] for r in recs for a in r['actos']))
