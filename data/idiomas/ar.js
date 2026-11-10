@@ -1081,5 +1081,17 @@ window.ATLAS_IDIOMA_ar={
 "En {n} había firmado, sin ratificar":"في عام {n} كانت قد وقّعت دون تصديق",
 "En {n} no era parte":"في عام {n} لم تكن طرفًا",
 "En {n} ya había cursado una invitación permanente":"في عام {n} كانت قد وجّهت دعوة دائمة",
-"En {n} no había cursado una invitación permanente":"في عام {n} لم تكن قد وجّهت دعوة دائمة"
+"En {n} no había cursado una invitación permanente":"في عام {n} لم تكن قد وجّهت دعوة دائمة",
+"Ucrania":"أوكرانيا",
+"Tipo de gráfico":"نوع الرسم البياني",
+"Con quién vota más":"مع من يصوّت أكثر",
+"Posición en el tiempo":"الموقف عبر الزمن",
+"Cómo se lee:":"كيف تُقرأ:",
+"cada grupo de barras es una década. Barra alta:":"كل مجموعة أعمدة هي عقد. العمود الطويل:",
+"votó casi igual que ese país; barra baja: votó muy distinto. No dice si un voto es bueno o malo.":"صوّت تقريبًا مثل ذلك البلد؛ العمود القصير: صوّت بشكل مختلف جدًا. لا يدل ذلك على أن التصويت جيد أو سيئ.",
+"Estados Unidos":"الولايات المتحدة",
+"Rusia (URSS hasta {n})":"روسيا (الاتحاد السوفياتي حتى {n})",
+"Ver los mismos datos como tabla":"عرض البيانات نفسها كجدول",
+"Década":"العقد",
+"URSS":"الاتحاد السوفياتي"
 };

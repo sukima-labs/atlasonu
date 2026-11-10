@@ -1081,5 +1081,17 @@ window.ATLAS_IDIOMA_ru={
 "En {n} había firmado, sin ratificar":"В {n} году подписала, но не ратифицировала",
 "En {n} no era parte":"В {n} году не была участником",
 "En {n} ya había cursado una invitación permanente":"В {n} году уже направила постоянное приглашение",
-"En {n} no había cursado una invitación permanente":"В {n} году ещё не направила постоянное приглашение"
+"En {n} no había cursado una invitación permanente":"В {n} году ещё не направила постоянное приглашение",
+"Ucrania":"Украина",
+"Tipo de gráfico":"Тип диаграммы",
+"Con quién vota más":"С кем голосует чаще",
+"Posición en el tiempo":"Позиция во времени",
+"Cómo se lee:":"Как читать:",
+"cada grupo de barras es una década. Barra alta:":"каждая группа столбцов — десятилетие. Высокий столбец:",
+"votó casi igual que ese país; barra baja: votó muy distinto. No dice si un voto es bueno o malo.":"голосовал почти так же, как эта страна; низкий столбец: голосовал совсем иначе. Это не говорит, хорош голос или плох.",
+"Estados Unidos":"Соединённые Штаты",
+"Rusia (URSS hasta {n})":"Россия (СССР до {n})",
+"Ver los mismos datos como tabla":"Посмотреть те же данные в виде таблицы",
+"Década":"Десятилетие",
+"URSS":"СССР"
 };

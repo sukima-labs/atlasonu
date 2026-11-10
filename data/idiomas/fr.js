@@ -1081,5 +1081,17 @@ window.ATLAS_IDIOMA_fr={
 "En {n} había firmado, sin ratificar":"En {n}, il avait signé, sans ratifier",
 "En {n} no era parte":"En {n}, il n'était pas partie",
 "En {n} ya había cursado una invitación permanente":"En {n}, il avait déjà adressé une invitation permanente",
-"En {n} no había cursado una invitación permanente":"En {n}, il n'avait pas adressé d'invitation permanente"
+"En {n} no había cursado una invitación permanente":"En {n}, il n'avait pas adressé d'invitation permanente",
+"Ucrania":"Ukraine",
+"Tipo de gráfico":"Type de graphique",
+"Con quién vota más":"Avec qui il vote le plus",
+"Posición en el tiempo":"Position dans le temps",
+"Cómo se lee:":"Comment lire :",
+"cada grupo de barras es una década. Barra alta:":"chaque groupe de barres est une décennie. Barre haute :",
+"votó casi igual que ese país; barra baja: votó muy distinto. No dice si un voto es bueno o malo.":"a voté presque comme ce pays ; barre basse : a voté très différemment. Cela ne dit pas si un vote est bon ou mauvais.",
+"Estados Unidos":"États-Unis",
+"Rusia (URSS hasta {n})":"Russie (URSS jusqu'en {n})",
+"Ver los mismos datos como tabla":"Voir les mêmes données sous forme de tableau",
+"Década":"Décennie",
+"URSS":"URSS"
 };

@@ -1081,5 +1081,17 @@ window.ATLAS_IDIOMA_en={
 "En {n} había firmado, sin ratificar":"In {n} it had signed, without ratifying",
 "En {n} no era parte":"In {n} it was not a party",
 "En {n} ya había cursado una invitación permanente":"In {n} it had already issued a standing invitation",
-"En {n} no había cursado una invitación permanente":"In {n} it had not issued a standing invitation"
+"En {n} no había cursado una invitación permanente":"In {n} it had not issued a standing invitation",
+"Ucrania":"Ukraine",
+"Tipo de gráfico":"Chart type",
+"Con quién vota más":"Who it votes with most",
+"Posición en el tiempo":"Position over time",
+"Cómo se lee:":"How to read it:",
+"cada grupo de barras es una década. Barra alta:":"each group of bars is a decade. Tall bar:",
+"votó casi igual que ese país; barra baja: votó muy distinto. No dice si un voto es bueno o malo.":"voted almost the same as that country; short bar: voted very differently. It does not say whether a vote is good or bad.",
+"Estados Unidos":"United States",
+"Rusia (URSS hasta {n})":"Russia (USSR until {n})",
+"Ver los mismos datos como tabla":"See the same data as a table",
+"Década":"Decade",
+"URSS":"USSR"
 };
