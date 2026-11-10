@@ -1053,5 +1053,16 @@ window.ATLAS_IDIOMA_zh={
 "Ninguna ({n})":"无（{n}）",
 "De {n} a {n} ({n})":"{n} 至 {n}（{n}）",
 "{n} o más ({n})":"{n} 或以上（{n}）",
-"No se han podido cargar los datos de esta capa. Recarga la página.":"无法加载此图层的数据。请重新加载页面。"
+"No se han podido cargar los datos de esta capa. Recarga la página.":"无法加载此图层的数据。请重新加载页面。",
+"Recomendaciones del EPU recibidas (por ciclo)":"收到的普遍定期审议建议（按周期）",
+"Ciclo del EPU":"普遍定期审议周期",
+"<b>Capa del EPU:</b> es el número de recomendaciones que cada país recibió de otros Estados en su Examen Periódico Universal, contado en el informe del Grupo de Trabajo de cada ciclo (el primer ciclo, de 2008 a 2011, numera de otra manera y no se cuenta). Cada punto numerado cuenta una vez, aunque lo formulen varios Estados. La cifra no mide cómo está un país en derechos humanos: depende de cuántos Estados intervienen y de cuántas cosas recomiendan. El ciclo 4 todavía no ha examinado a todos los países.":"<b>普遍定期审议图层：</b>显示各国在普遍定期审议中从其他国家收到的建议数量，依据每个周期工作组报告中的编号统计（第一个周期，即 2008 至 2011 年，编号方式不同，不予统计）。每个编号条目只算一次，即使由多个国家提出。这个数字并不衡量一国的人权状况：它取决于参与的国家数量以及它们提出的建议多少。第四周期尚未审议所有国家。",
+"Ciclo {n} (desde {n})":"第 {n} 周期（自 {n} 年起）",
+"Ciclo {n} ({n}–{n})":"第 {n} 周期（{n}–{n}）",
+"Cargando las recomendaciones del EPU…":"正在加载普遍定期审议建议…",
+"Sin cifra de este ciclo: todavía no ha sido examinado o su informe no se pudo contar":"本周期无数据：该国尚未接受审议，或其报告无法统计",
+"Recomendaciones recibidas en el ciclo {n} del EPU ({n}): {n}":"普遍定期审议第 {n} 周期收到的建议（{n}）：{n}",
+"Menos de {n} ({n})":"少于 {n}（{n}）",
+"Sin cifra de este ciclo ({n})":"本周期无数据（{n}）",
+"Cada punto numerado de las conclusiones y recomendaciones cuenta una vez, aunque lo formulen varios Estados. Fuente: informes del Grupo de Trabajo del EPU, Biblioteca Digital de la ONU":"结论和建议中的每个编号条目只算一次，即使由多个国家提出。来源：普遍定期审议工作组报告，联合国数字图书馆"
 };

@@ -1,0 +1,119 @@
+{
+ "contados": 528,
+ "dudosos": [
+  {
+   "iso": "BEL",
+   "s": "A/HRC/32/8",
+   "motivo": "la numeración salta: 138.92 tras 90, 138.93 tras 90, 138.94 tras 90"
+  },
+  {
+   "iso": "BGD",
+   "s": "A/HRC/24/12",
+   "motivo": "la numeración salta: 129.112 tras 110, 129.113 tras 110, 129.114 tras 110"
+  },
+  {
+   "iso": "BHR",
+   "s": "A/HRC/21/6",
+   "motivo": "la numeración salta: 115.78 tras 76, 115.79 tras 76, 115.80 tras 76"
+  },
+  {
+   "iso": "BRA",
+   "s": "A/HRC/36/11",
+   "motivo": "la numeración salta: 136.119 tras 108, 136.110 tras 108, 136.111 tras 108"
+  },
+  {
+   "iso": "CAF",
+   "s": "A/HRC/25/11",
+   "motivo": "sin numeración NNN.M"
+  },
+  {
+   "iso": "CAF",
+   "s": "A/HRC/40/12",
+   "motivo": "la numeración salta: 121.134 tras 132, 121.135 tras 132, 121.136 tras 132"
+  },
+  {
+   "iso": "DJI",
+   "s": "A/HRC/24/10",
+   "motivo": "sin numeración NNN.M"
+  },
+  {
+   "iso": "DNK",
+   "s": "A/HRC/48/10",
+   "motivo": "la numeración salta: 60.513 tras 152, 60.154 tras 152, 60.155 tras 152"
+  },
+  {
+   "iso": "ECU",
+   "s": "A/HRC/36/4",
+   "motivo": "la numeración salta: 120.17 tras 19"
+  },
+  {
+   "iso": "ETH",
+   "s": "A/HRC/42/14",
+   "motivo": "la numeración salta: 163.146 tras 245, 163.247 tras 245, 163.248 tras 245"
+  },
+  {
+   "iso": "FRA",
+   "s": "A/HRC/38/4",
+   "motivo": "la numeración salta: 145.171 tras 270, 145.272 tras 270, 145.273 tras 270"
+  },
+  {
+   "iso": "GHA",
+   "s": "A/HRC/22/6",
+   "motivo": "la numeración salta: 125.16 tras 14, 125.17 tras 14, 125.18 tras 14"
+  },
+  {
+   "iso": "ISR",
+   "s": "A/HRC/54/16",
+   "motivo": "la numeración salta: 39.227 tras 28, 39.81 tras 84, 39.80 tras 84"
+  },
+  {
+   "iso": "ITA",
+   "s": "A/HRC/43/4",
+   "motivo": "la numeración salta: 145.161 tras 194"
+  },
+  {
+   "iso": "KHM",
+   "s": "A/HRC/26/16",
+   "motivo": "la numeración salta: 118.9 tras 108, 118.110 tras 108, 118.111 tras 108"
+  },
+  {
+   "iso": "KHM",
+   "s": "A/HRC/41/17",
+   "motivo": "sin sección de recomendaciones"
+  },
+  {
+   "iso": "MLI",
+   "s": "A/HRC/23/6",
+   "motivo": "la numeración salta: 111.30 tras 28, 111.31 tras 28, 111.32 tras 28"
+  },
+  {
+   "iso": "PLW",
+   "s": "A/HRC/32/11",
+   "motivo": "la numeración salta: 104.106 tras 104, 104.107 tras 104, 104.108 tras 104"
+  },
+  {
+   "iso": "QAT",
+   "s": "A/HRC/27/15",
+   "motivo": "la numeración salta: 124.61 tras 59, 124.62 tras 59, 124.63 tras 59"
+  },
+  {
+   "iso": "SEN",
+   "s": "A/HRC/25/4",
+   "motivo": "sin numeración NNN.M"
+  },
+  {
+   "iso": "TGO",
+   "s": "A/HRC/34/4",
+   "motivo": "sin numeración NNN.M"
+  },
+  {
+   "iso": "URY",
+   "s": "A/HRC/26/7",
+   "motivo": "sin numeración NNN.M"
+  }
+ ],
+ "ciclo1": 189,
+ "sin_texto": [
+  "A/HRC/41/11"
+ ]
+}

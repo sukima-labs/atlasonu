@@ -39,6 +39,15 @@ const CASOS = [
         fallos += x.n;
         console.log(`✗ ${c.idioma} ${c.ancho}px #${id}: ${x.id} (${x.n}) p. ej. ${x.ej}`);
       }
+      if (id === 'mapa') { // las capas con selector propio (conflictos por año, EPU por ciclo) también se miden
+        for (const capa of ['conflictos', 'epu']) {
+          await p.evaluate(k => { document.getElementById('mpCapa').value = k; mpCapaCambia(); }, capa);
+          await p.waitForTimeout(700);
+          const w = await p.evaluate(async r => (await axe.run(document, { runOnly: r })).violations.map(x => ({ id: x.id, n: x.nodes.length, ej: x.nodes[0].target.join(' ') })), REGLAS);
+          for (const x of w) { fallos += x.n; console.log(`✗ ${c.idioma} ${c.ancho}px #mapa capa ${capa}: ${x.id} (${x.n}) p. ej. ${x.ej}`); }
+        }
+        await p.evaluate(() => { document.getElementById('mpCapa').value = 'basicos'; mpCapaCambia(); });
+      }
     }
     console.log(`${c.idioma} ${c.ancho}px: ${pantallas.length} pantallas revisadas`);
     await ctx.close();

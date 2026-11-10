@@ -8,7 +8,7 @@ donde aparece lo buscado, resaltado, con el símbolo, la lengua y el enlace al P
 1. `scripts/texto_completo.py descargar`: toma las rutas al texto ya verificadas (`data/fuentes/textos.json`, estado
    `TEXTO_DIRECTO`) y los documentos de cada país (`data/paises/<ISO>.js`), y descarga el PDF oficial en español y
    en inglés. Primero las resoluciones y después los documentos de país, de los más recientes a los más antiguos
-   (hoy, unos 4.500 documentos y 7.900 PDF; la primera descarga tarda unas 11 horas). Prefiere la Biblioteca Digital
+   (hoy, unos 4.500 documentos y 7.900 PDF; la primera descarga tarda unas 11 horas). Además, desde T68 (c), los 740 informes del Grupo de Trabajo del EPU (`A/HRC/<sesión>/<n>`) y sus adiciones, de `data/fuentes/epu_informes.json` (unos 1.400 documentos más). Prefiere la Biblioteca Digital
    (`digitallibrary.un.org`) y, si no hay, `documents.un.org`. Respeta el `Crawl-Delay: 5` de su `robots.txt` (5 s entre descargas)
    y no vuelve a bajar lo que ya tiene.
 2. `extraer`: saca el texto con `pdftotext` (poppler, software libre).

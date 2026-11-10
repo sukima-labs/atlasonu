@@ -68,6 +68,28 @@ def _docs_pais():
     return out
 
 
+EPU_INFORMES = os.path.join(RAIZ, "data", "fuentes", "epu_informes.json")
+
+
+def _informes_epu():
+    """Informes del Grupo de Trabajo del EPU (A/HRC/<sesión>/<n>) y sus adiciones, de scripts/fetch_epu_informes.py:
+    ahí están las recomendaciones que recibe cada país (T68 c)."""
+    try:
+        with open(EPU_INFORMES, encoding="utf-8") as f:
+            paises = json.load(f)["paises"]
+    except (OSError, ValueError, KeyError):
+        return []
+    out = []
+    for iso, informes in sorted(paises.items()):
+        for inf in informes:
+            for x in (inf, inf.get("add") or {}):
+                urls = fuentes_por_lengua({"fuentes": [{"lengua": ln, "url": x[ln]} for ln in LENGUAS if x.get(ln)]})
+                if x.get("s") and urls:
+                    out.append((x["s"], {"tipo": "Examen Periódico Universal", "titulo": x.get("t", ""), "pais": iso,
+                                         "fecha": x.get("d", ""), "urls": urls}))
+    return out
+
+
 def catalogo():
     """{símbolo: {tipo, titulo, pais, fecha, urls{lengua: url}}}: resoluciones primero, luego lo más reciente."""
     cat = {}
@@ -80,7 +102,7 @@ def catalogo():
         urls = fuentes_por_lengua(d[s])
         if d[s].get("estado") == "TEXTO_DIRECTO" and urls:
             cat[s] = {"tipo": "Resolución", "titulo": "", "pais": "", "fecha": "", "urls": urls}
-    for s, v in sorted(_docs_pais(), key=lambda x: x[1]["fecha"], reverse=True):
+    for s, v in sorted(_docs_pais() + _informes_epu(), key=lambda x: x[1]["fecha"], reverse=True):
         cat.setdefault(s, v)
     return cat
 

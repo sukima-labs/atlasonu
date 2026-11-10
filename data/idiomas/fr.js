@@ -1053,5 +1053,16 @@ window.ATLAS_IDIOMA_fr={
 "Ninguna ({n})":"Aucune ({n})",
 "De {n} a {n} ({n})":"De {n} à {n} ({n})",
 "{n} o más ({n})":"{n} ou plus ({n})",
-"No se han podido cargar los datos de esta capa. Recarga la página.":"Les données de cette couche n'ont pas pu être chargées. Rechargez la page."
+"No se han podido cargar los datos de esta capa. Recarga la página.":"Les données de cette couche n'ont pas pu être chargées. Rechargez la page.",
+"Recomendaciones del EPU recibidas (por ciclo)":"Recommandations de l'EPU reçues (par cycle)",
+"Ciclo del EPU":"Cycle de l'EPU",
+"<b>Capa del EPU:</b> es el número de recomendaciones que cada país recibió de otros Estados en su Examen Periódico Universal, contado en el informe del Grupo de Trabajo de cada ciclo (el primer ciclo, de 2008 a 2011, numera de otra manera y no se cuenta). Cada punto numerado cuenta una vez, aunque lo formulen varios Estados. La cifra no mide cómo está un país en derechos humanos: depende de cuántos Estados intervienen y de cuántas cosas recomiendan. El ciclo 4 todavía no ha examinado a todos los países.":"<b>Couche EPU :</b> c'est le nombre de recommandations que chaque pays a reçues d'autres États lors de son Examen périodique universel, compté dans le rapport du Groupe de travail de chaque cycle (le premier cycle, de 2008 à 2011, les numérote autrement et n'est pas compté). Chaque point numéroté compte une fois, même s'il est formulé par plusieurs États. Ce chiffre ne mesure pas la situation d'un pays en matière de droits de l'homme : il dépend du nombre d'États qui interviennent et du nombre de choses qu'ils recommandent. Le quatrième cycle n'a pas encore examiné tous les pays.",
+"Ciclo {n} (desde {n})":"Cycle {n} (depuis {n})",
+"Ciclo {n} ({n}–{n})":"Cycle {n} ({n}–{n})",
+"Cargando las recomendaciones del EPU…":"Chargement des recommandations de l'EPU…",
+"Sin cifra de este ciclo: todavía no ha sido examinado o su informe no se pudo contar":"Pas de chiffre pour ce cycle : le pays n'a pas encore été examiné ou son rapport n'a pas pu être compté",
+"Recomendaciones recibidas en el ciclo {n} del EPU ({n}): {n}":"Recommandations reçues au cycle {n} de l'EPU ({n}) : {n}",
+"Menos de {n} ({n})":"Moins de {n} ({n})",
+"Sin cifra de este ciclo ({n})":"Pas de chiffre pour ce cycle ({n})",
+"Cada punto numerado de las conclusiones y recomendaciones cuenta una vez, aunque lo formulen varios Estados. Fuente: informes del Grupo de Trabajo del EPU, Biblioteca Digital de la ONU":"Chaque point numéroté des conclusions et recommandations compte une fois, même s'il est formulé par plusieurs États. Source : rapports du Groupe de travail de l'EPU, Bibliothèque numérique de l'ONU"
 };

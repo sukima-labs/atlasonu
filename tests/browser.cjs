@@ -134,6 +134,16 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     ok(vp.name + ': Mapa: capa «Comunicaciones» oculta el año, y la leyenda cuenta los 196 países', !(await page.isVisible('#mpAnio')) && (await sumaLey()) === 196);
     await page.evaluate(() => mpElegir('COL'));
     ok(vp.name + ': Mapa: comunicaciones: el dato de un país es la suma de sus informes', await page.evaluate(() => { const n = window.COMUNICACIONES.paises.COL.reduce((a, x) => a + x[1], 0); return document.getElementById('mpInfo').textContent.includes(': ' + n); }));
+    // T68 (c): capa de recomendaciones del EPU por ciclo (cifras de data/epu.js, contadas de los informes del Grupo de Trabajo)
+    await page.selectOption('#mpCapa', 'epu'); await page.waitForFunction(() => !/Cargando/.test(document.getElementById('mpLeyenda').textContent));
+    ok(vp.name + ': Mapa: capa «EPU» muestra el selector de ciclo (2, 3 y 4; abre en el último), oculta el año y cita la fuente', await page.isVisible('#mpCiclo') && !(await page.isVisible('#mpAnio')) && (await page.locator('#mpCiclo option').count()) === 3 && (await page.inputValue('#mpCiclo')) === '4' && /Grupo de Trabajo del EPU/.test(await page.textContent('#mpLeyenda')));
+    ok(vp.name + ': Mapa: EPU: la leyenda cuenta los 196 países en cada ciclo', await (async () => { for (const c of ['4', '3', '2']) { await page.selectOption('#mpCiclo', c); if ((await sumaLey()) !== 196) return false; } return true; })());
+    await page.selectOption('#mpCiclo', '3'); await page.evaluate(() => mpElegir('COL'));
+    ok(vp.name + ': Mapa: EPU: el dato de Colombia es la cifra contada del informe del ciclo 3', await page.evaluate(() => { const f = window.EPU.p.COL.find(x => x[0] === 3); return !!f && document.getElementById('mpInfo').textContent.includes('ciclo 3 del EPU (' + f[3] + '): ' + f[1]); }));
+    await page.selectOption('#mpCiclo', '4'); await page.evaluate(() => mpElegir(PAISES.find(p => !(window.EPU.p[p.id] || []).some(x => x[0] === 4)).id));   // el ciclo 4 aún no ha examinado a todos
+    ok(vp.name + ': Mapa: EPU: un país sin informe de ese ciclo sale «sin cifra», no con un cero', /Sin cifra de este ciclo/.test(await page.textContent('#mpInfo')) && !/: 0\b/.test(await page.textContent('#mpInfo')));
+    await page.selectOption('#mpCapa', 'basicos');
+    ok(vp.name + ': Mapa: al dejar la capa del EPU se oculta el ciclo', !(await page.isVisible('#mpCiclo')));
     await page.evaluate(() => mpElegir('ESP'));
     const zAntes = await page.$eval('#mpSvg', e => e.getBoundingClientRect().width); await page.click('#mapa .mp-zoom button:has-text("Acercar")');
     ok(vp.name + ': Mapa: «Acercar» agranda el dibujo dentro de su marco, sin desbordar la página', (await page.$eval('#mpSvg', e => e.getBoundingClientRect().width)) > zAntes && !(await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1)));
@@ -382,7 +392,7 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     ok('idiomas: los filtros siguen funcionando con las opciones traducidas', await pi.evaluate(() => filtered.length > 0 && filtered.every(m => m.alcance === 'Temático')));
     { // Fase 2: lo que dibuja el JavaScript. Un texto pendiente cuyos trozos están todos escritos en el código de la
       // página (no en los datos) es interfaz sin traducir: debe estar en data/idiomas/en.js, fr.js, ar.js, zh.js y ru.js.
-      for (const js of ["showPage('inicio')", "showPage('explorar')", "irPais('COL')", "showPage('tratados')", "showPage('relatores')", "showPage('sistema')", "showPage('mapa')", "mpElegir('ESP')", "mpCapaCambia()"]) { await pi.evaluate(js); await pi.waitForTimeout(400); }
+      for (const js of ["showPage('inicio')", "showPage('explorar')", "irPais('COL')", "showPage('tratados')", "showPage('relatores')", "showPage('sistema')", "showPage('mapa')", "mpElegir('ESP')", "mpCapaCambia()", "document.getElementById('mpCapa').value='epu';mpCapaCambia()", "mpElegir('COL')", "document.getElementById('mpCapa').value='basicos';mpCapaCambia()"]) { await pi.evaluate(js); await pi.waitForTimeout(400); }
       const fuente = require('fs').readFileSync(path.resolve(__dirname, '..', 'index.html'), 'utf8').match(/<script[^>]*>[\s\S]*?<\/script>/g).join(' ').replace(/&amp;/g, '&').replace(/\s+/g, ' ');
       // Palabra entera: «Spain» de un dato oficial no cuenta como interfaz por estar dentro de «America/Port_of_Spain».
       const enCodigo = x => new RegExp('(^|[^A-Za-zÀ-ÿ0-9_])' + x.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '($|[^A-Za-zÀ-ÿ0-9_])').test(fuente);
