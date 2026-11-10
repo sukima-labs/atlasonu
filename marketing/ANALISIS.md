@@ -18,8 +18,8 @@ Es un producto grande y cuidado (CI en verde, pruebas de navegador y de celular,
 | Visitas totales de la web (contador propio) | 57 | `/visitas` del servicio de búsqueda |
 | Resultados web para «ATLAS ONU» + «arqueología documental» + Sukima-Labs | **ninguno** | búsqueda web |
 | Enlaces entrantes conocidos | 0 | búsqueda web (no hay herramienta de backlinks gratuita fiable) |
-| Imagen al compartir un enlace | **no hay** (`twitter:card=summary`, sin `og:image`) | `index.html` |
-| `sitemap.xml` / `robots.txt` | no / no | la web publicada devuelve 404 |
+| Imagen al compartir un enlace | **no había** (`twitter:card=summary`, sin `og:image`); puesta en T69 | `index.html` |
+| `sitemap.xml` / `robots.txt` | no / no (añadidos en T69) | la web publicada devolvía 404 |
 | Salud del repo en GitHub | 75 % | `community/profile` (tiene README, licencia, código de conducta, guía de contribución y plantillas; Discussions está desactivado) |
 
 Las 91 visitas al repo se concentran en cuatro días de octubre y noviembre (27, 33, 15 y 16 visitas) y las hacen 3 personas: es casi seguro el propio equipo. Los 5.768 clones de 14 días son automatización (la CI y la revisión diaria clonan el repo), no audiencia. Tratamos la audiencia externa real como **cero**.
@@ -55,8 +55,8 @@ Hueco claro: **no hay una puerta de entrada en español, gratuita y verificable 
 
 ## 7. Lo que hay que arreglar en el propio producto antes de hacer ruido
 Son cambios de la cola (los decide su fundador); sin ellos, cada enlace compartido pierde fuerza:
-1. **Imagen para compartir (1200×630)** y `twitter:card=summary_large_image` con `og:image`, `og:image:alt`, `canonical`. Hoy un enlace en una red sale casi desnudo.
-2. **`sitemap.xml` y `robots.txt`**, y **enlaces profundos que sobrevivan al compartir** (`#mapa`, `#paises`… ya existen; falta una prueba y documentarlos). El Pages no puede indexar `#`, así que la vía de descubrimiento web son las páginas estáticas de aterrizaje (ver `PLAN.md`, fase 1).
+1. **Imagen para compartir (1200×630)** y `twitter:card=summary_large_image` con `og:image` y `og:image:alt` (el `canonical` ya existe). Hoy un enlace en una red sale casi desnudo. **Hecho en T69 (11-11-2026).**
+2. **`sitemap.xml` y `robots.txt`** (hechos en T69), y **enlaces profundos que sobrevivan al compartir** (`#mapa`, `#paises`… ya existen; falta una prueba y documentarlos). El Pages no puede indexar `#`, así que la vía de descubrimiento web son las páginas estáticas de aterrizaje (ver `PLAN.md`, fase 1).
 3. **README en inglés** (resumen de 10 líneas) para directorios y Hacker News; el producto sí tiene 6 idiomas, el repo no lo dice.
 4. **El contador de visitas** (issue #159 «se rompió el contador») es prueba social: si se muestra con cifras bajas, resta. Decidir con su fundador si se muestra el total o solo «desde tu país».
 5. Activar **GitHub Discussions** y fijar un issue «Qué quieres hacer con ATLAS» para recoger casos de uso reales. Esto es configuración del repo (cambia ajustes), se le pide al fundador.
