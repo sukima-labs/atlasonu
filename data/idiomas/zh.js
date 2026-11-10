@@ -1013,7 +1013,6 @@ window.ATLAS_IDIOMA_zh={
 "+ Acercar":"+ 放大",
 "− Alejar":"− 缩小",
 "Ver todo el mapa":"查看整张地图",
-"Mapa del mundo (se desplaza en horizontal y en vertical al acercar)":"世界地图（放大后可横向和纵向滚动）",
 "Mapa del mundo con cada país coloreado según la capa elegida. Los mismos datos están en la lista de debajo.":"世界地图，每个国家按所选图层着色。同样的数据见下方列表。",
 "Las fronteras son esquemáticas y no expresan ninguna opinión de ATLAS ONU sobre el estatus de ningún territorio. Solo se colorean los Estados de las fichas de país; los territorios y las entidades sin ficha salen en gris.":"边界仅为示意，并不代表 ATLAS ONU 对任何领土地位的看法。只有设有国家条目的国家才会着色；没有条目的领土和实体显示为灰色。",
 "<b>Ver los mismos datos como lista</b>":"<b>以列表查看同样的数据</b>",
@@ -1065,5 +1064,11 @@ window.ATLAS_IDIOMA_zh={
 "Recomendaciones recibidas en el ciclo {n} del EPU ({n}): {n}":"普遍定期审议第 {n} 周期收到的建议（{n}）：{n}",
 "Menos de {n} ({n})":"少于 {n}（{n}）",
 "Sin cifra de este ciclo ({n})":"本周期无数据（{n}）",
-"Cada punto numerado de las conclusiones y recomendaciones cuenta una vez, aunque lo formulen varios Estados. Fuente: informes del Grupo de Trabajo del EPU, Biblioteca Digital de la ONU":"结论和建议中的每个编号条目只算一次，即使由多个国家提出。来源：普遍定期审议工作组报告，联合国数字图书馆"
+"Cada punto numerado de las conclusiones y recomendaciones cuenta una vez, aunque lo formulen varios Estados. Fuente: informes del Grupo de Trabajo del EPU, Biblioteca Digital de la ONU":"结论和建议中的每个编号条目只算一次，即使由多个国家提出。来源：普遍定期审议工作组报告，联合国数字图书馆",
+"Mover el mapa":"移动地图",
+"Mover a la izquierda":"向左移动",
+"Mover hacia arriba":"向上移动",
+"Mover hacia abajo":"向下移动",
+"Mover a la derecha":"向右移动",
+"Mapa del mundo: con el mapa acercado, arrástralo o muévelo con las flechas del teclado":"世界地图：放大后可拖动，或用键盘方向键移动"
 };

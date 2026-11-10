@@ -1013,7 +1013,6 @@ window.ATLAS_IDIOMA_ar={
 "+ Acercar":"+ تكبير",
 "− Alejar":"− تصغير",
 "Ver todo el mapa":"عرض الخريطة كاملة",
-"Mapa del mundo (se desplaza en horizontal y en vertical al acercar)":"خريطة العالم (تُمرَّر أفقيًا وعموديًا عند التكبير)",
 "Mapa del mundo con cada país coloreado según la capa elegida. Los mismos datos están en la lista de debajo.":"خريطة العالم وقد لُوِّن كل بلد فيها بحسب الطبقة المختارة. البيانات نفسها في القائمة أدناه.",
 "Las fronteras son esquemáticas y no expresan ninguna opinión de ATLAS ONU sobre el estatus de ningún territorio. Solo se colorean los Estados de las fichas de país; los territorios y las entidades sin ficha salen en gris.":"الحدود تخطيطية ولا تعبّر عن أي رأي لـ ATLAS ONU في وضع أي إقليم. لا تُلوَّن إلا الدول التي لها بطاقة بلد؛ أما الأقاليم والكيانات التي لا بطاقة لها فتظهر بالرمادي.",
 "<b>Ver los mismos datos como lista</b>":"<b>عرض البيانات نفسها في قائمة</b>",
@@ -1065,5 +1064,11 @@ window.ATLAS_IDIOMA_ar={
 "Recomendaciones recibidas en el ciclo {n} del EPU ({n}): {n}":"التوصيات المتلقاة في الدورة {n} من الاستعراض الدوري الشامل ({n}): {n}",
 "Menos de {n} ({n})":"أقل من {n} ({n})",
 "Sin cifra de este ciclo ({n})":"لا رقم لهذه الدورة ({n})",
-"Cada punto numerado de las conclusiones y recomendaciones cuenta una vez, aunque lo formulen varios Estados. Fuente: informes del Grupo de Trabajo del EPU, Biblioteca Digital de la ONU":"يُحتسب كل بند مرقّم في الاستنتاجات والتوصيات مرة واحدة حتى لو صاغته عدة دول. المصدر: تقارير الفريق العامل المعني بالاستعراض الدوري الشامل، المكتبة الرقمية للأمم المتحدة"
+"Cada punto numerado de las conclusiones y recomendaciones cuenta una vez, aunque lo formulen varios Estados. Fuente: informes del Grupo de Trabajo del EPU, Biblioteca Digital de la ONU":"يُحتسب كل بند مرقّم في الاستنتاجات والتوصيات مرة واحدة حتى لو صاغته عدة دول. المصدر: تقارير الفريق العامل المعني بالاستعراض الدوري الشامل، المكتبة الرقمية للأمم المتحدة",
+"Mover el mapa":"تحريك الخريطة",
+"Mover a la izquierda":"تحريك إلى اليسار",
+"Mover hacia arriba":"تحريك إلى الأعلى",
+"Mover hacia abajo":"تحريك إلى الأسفل",
+"Mover a la derecha":"تحريك إلى اليمين",
+"Mapa del mundo: con el mapa acercado, arrástralo o muévelo con las flechas del teclado":"خريطة العالم: عند التكبير اسحبها أو حرّكها بأسهم لوحة المفاتيح"
 };

@@ -145,8 +145,33 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     await page.selectOption('#mpCapa', 'basicos');
     ok(vp.name + ': Mapa: al dejar la capa del EPU se oculta el ciclo', !(await page.isVisible('#mpCiclo')));
     await page.evaluate(() => mpElegir('ESP'));
-    const zAntes = await page.$eval('#mpSvg', e => e.getBoundingClientRect().width); await page.click('#mapa .mp-zoom button:has-text("Acercar")');
-    ok(vp.name + ': Mapa: «Acercar» agranda el dibujo dentro de su marco, sin desbordar la página', (await page.$eval('#mpSvg', e => e.getBoundingClientRect().width)) > zAntes && !(await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1)));
+    // #184: el zoom cambia el recuadro visible (viewBox), no el ancho de la caja; centra, arrastra y no atrapa el scroll
+    const vbW = () => page.$eval('#mpSvg', e => e.viewBox.baseVal.width), vbX = () => page.$eval('#mpSvg', e => e.viewBox.baseVal.x);
+    const caja0 = await page.$eval('#mpSvg', e => Math.round(e.getBoundingClientRect().width)), vb0 = await vbW();
+    await page.evaluate(() => mpZoomar(0)); await page.evaluate(() => mpElegir('ESP')); await page.click('#mapa .mp-zoom button:has-text("Acercar")');
+    const centroEsp = await page.evaluate(() => { const v = document.getElementById('mpSvg').viewBox.baseVal, b = document.querySelector('#mpSvg path[data-id="ESP"]').getBBox(); return Math.abs(v.x + v.width / 2 - (b.x + b.width / 2)) < v.width * 0.06; });
+    ok(vp.name + ': Mapa: «Acercar» reduce el recuadro visible, no ensancha la caja ni desborda la página, y se centra en el país elegido', (await vbW()) < vb0 && Math.round(await page.$eval('#mpSvg', e => e.getBoundingClientRect().width)) === caja0 && centroEsp && !(await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1)));
+    await page.click('#mapa .mp-zoom button:has-text("Acercar")'); await page.click('#mapa .mp-zoom button:has-text("Acercar")');
+    await page.locator('#mpMapa').scrollIntoViewIfNeeded(); await page.waitForTimeout(200); const x1 = await vbX(), cj = await page.locator('#mpMapa').boundingBox();
+    await page.mouse.move(cj.x + cj.width / 2, cj.y + cj.height / 2); await page.mouse.down(); await page.mouse.move(cj.x + cj.width / 2 + 90, cj.y + cj.height / 2 + 10, { steps: 6 }); await page.mouse.up();
+    const x2 = await vbX();
+    ok(vp.name + ': Mapa: arrastrar con el ratón mueve el mapa acercado y no cambia el país elegido', x2 < x1 && (await page.evaluate(() => mpSel)) === 'ESP');
+    await page.click('#mapa .mp-pan button[aria-label="Mover a la derecha"]');
+    ok(vp.name + ': Mapa: las flechas de «Mover el mapa» lo desplazan', (await vbX()) > x2);
+    await page.click('#mapa .mp-zoom button:has-text("Ver todo")');
+    ok(vp.name + ': Mapa: «Ver todo el mapa» vuelve al recuadro completo y centrado', Math.abs((await vbW()) - vb0) < 1 && await page.evaluate(() => { const v = document.getElementById('mpSvg').viewBox.baseVal, W = window.MAPA.vb[0]; return Math.abs(v.x + v.width / 2 - W / 2) < 2; }));
+    ok(vp.name + ': Mapa: el marco no atrapa el scroll de la página (sin barras internas; un dedo vertical pasa de largo)', await page.evaluate(() => { const w = document.getElementById('mpWrap'), c = getComputedStyle(w); return c.overflow === 'hidden' && /pan-y/.test(c.touchAction) && c.overscrollBehaviorY !== 'contain'; }));
+    // #183: colores propios (no los dorados de la plantilla) y con contraste ≥ 3:1 sobre el fondo del mapa en todas las capas
+    const lum = h => { const c = h.match(/\d+/g).slice(0, 3).map(n => { n /= 255; return n <= .03928 ? n / 12.92 : ((n + .055) / 1.055) ** 2.4; }); return .2126 * c[0] + .7152 * c[1] + .0722 * c[2]; };
+    const bgMapa = await page.$eval('#mpWrap', e => getComputedStyle(e).backgroundColor);
+    const malos = [];
+    for (const capa of ['basicos', 'tratado', 'invitacion', 'mandato', 'comision', 'conflictos', 'comunicaciones', 'epu']) {
+      await page.selectOption('#mpCapa', capa); await page.waitForFunction(() => !/Cargando/.test(document.getElementById('mpLeyenda').textContent));
+      const cols = await page.evaluate(() => [...document.querySelectorAll('#mpLeyenda .mp-sw, #mpLeyenda .mp-esc i')].map(e => getComputedStyle(e).backgroundColor));
+      for (const c of cols) { const [a, b] = [lum(c), lum(bgMapa)].sort((x, y) => y - x); const cr = (a + .05) / (b + .05); const [r, g, bl] = c.match(/\d+/g).map(Number); const dorado = r > 150 && g > 100 && bl < 130 && r > g && g > bl; if (cr < 1.8 && c !== 'rgb(50, 56, 65)') malos.push(capa + ' ' + c + ' contraste ' + cr.toFixed(2)); if (dorado) malos.push(capa + ' ' + c + ' dorado de la plantilla'); }
+    }
+    ok(vp.name + ': Mapa: ningún color de las leyendas se confunde con el fondo del mapa ni con el dorado de la plantilla' + (malos.length ? ' → ' + malos.join('; ') : ''), !malos.length);
+    await page.selectOption('#mpCapa', 'basicos');
     await page.click('#mpInfo button'); await page.waitForTimeout(300);
     ok(vp.name + ': Mapa: «Ver ficha del país» abre la ficha del país tocado', await page.isVisible('#paises') && (await page.inputValue('#pSel')) === 'ESP');
     await page.evaluate(() => showPage('paises'));
