@@ -14,6 +14,10 @@ Las cinco primeras salen de los datos que ya tienen las fichas de país (`data/a
 
 8. **Recomendaciones del EPU recibidas, por ciclo** (T68 c, 10-11-2026): cuántas recomendaciones recibió cada país en su Examen Periódico Universal, con selector de ciclo (2.º, 3.º y 4.º; el 1.º numera de otra manera y no se cuenta). Cinco tramos (menos de 150 … 300 o más) y un color aparte para «sin cifra» (el ciclo 4 aún no ha examinado a todos los países, o el informe no se pudo contar). Carga `data/epu.js` al elegirla.
 
+**Línea de tiempo (T68, #185, 11-11-2026):** deslizador de años con botón «Animar» (recorre los años solo y se detiene al cambiar de capa o de pantalla) en las capas de **conflictos** (1946–2025), **EPU** (ciclos 2 a 4), **un tratado concreto** y **tratados básicos de los que es parte** (1948 a hoy, con la fecha de ratificación o adhesión de las fichas) e **invitación permanente** (1999 a hoy). El año `hoy` es el dato actual. Cada leyenda dice «Datos al <fecha>» (la fecha de consulta de la fuente; en comunicaciones, el último informe incluido).
+
+**«Tiempo real»:** las fuentes oficiales de la ONU no publican datos en directo; lo honesto es «actualizado cada día» (la revisión diaria de Actions) y la fecha del dato en cada capa. Pendiente (necesita datos que aún no están): visitas de relatores por año (base de visitas de OHCHR) y más temas de intensidad (ver la cola).
+
 Cada capa tiene leyenda con las cuentas, la lista de debajo repite los mismos datos (para quien no use el mapa) y la prueba `tests/browser.cjs` comprueba que la leyenda suma los 196 países.
 
 ## Cómo está hecho (y por qué sin librería de mapas)

@@ -1070,5 +1070,16 @@ window.ATLAS_IDIOMA_ar={
 "Mover hacia arriba":"تحريك إلى الأعلى",
 "Mover hacia abajo":"تحريك إلى الأسفل",
 "Mover a la derecha":"تحريك إلى اليمين",
-"Mapa del mundo: con el mapa acercado, arrástralo o muévelo con las flechas del teclado":"خريطة العالم: عند التكبير اسحبها أو حرّكها بأسهم لوحة المفاتيح"
+"Mapa del mundo: con el mapa acercado, arrástralo o muévelo con las flechas del teclado":"خريطة العالم: عند التكبير اسحبها أو حرّكها بأسهم لوحة المفاتيح",
+"<b>Línea de tiempo y «tiempo real»:</b> las capas de tratados, de invitaciones, de conflictos y del EPU tienen un deslizador de años (y un botón «Animar» que los recorre solo) para ver cómo cambia el mapa hacia atrás. Las fuentes oficiales de la ONU no publican datos en directo: cambian por días o por años. Lo más cercano y honesto es que ATLAS revisa las fuentes cada día y cada capa dice, en su leyenda, la fecha de sus datos.":"<b>الخط الزمني و«الوقت الفعلي»:</b> تحتوي طبقات المعاهدات والدعوات والنزاعات والاستعراض الدوري الشامل على شريط تمرير للسنوات (وزر «تشغيل» يمرّ عليها تلقائيًا) لرؤية كيف تتغير الخريطة عبر الزمن. لا تنشر مصادر الأمم المتحدة الرسمية بيانات مباشرة: فهي تتغير بالأيام أو بالسنين. أقرب ما يمكن وأصدقه أن ATLAS يراجع المصادر كل يوم وأن كل طبقة تذكر في مفتاحها تاريخ بياناتها.",
+"▶ Animar":"▶ تشغيل",
+"⏸ Pausar":"⏸ إيقاف",
+"Datos al {n}-{n}-{n}":"البيانات حتى {n}-{n}-{n}",
+"Último informe incluido: A/HRC/{n}/{n}":"آخر تقرير مشمول: A/HRC/{n}/{n}",
+"En {n} era parte en {n} de {n} tratados básicos":"في عام {n} كانت طرفًا في {n} من {n} معاهدات أساسية",
+"En {n} ya era parte":"في عام {n} كانت طرفًا بالفعل",
+"En {n} había firmado, sin ratificar":"في عام {n} كانت قد وقّعت دون تصديق",
+"En {n} no era parte":"في عام {n} لم تكن طرفًا",
+"En {n} ya había cursado una invitación permanente":"في عام {n} كانت قد وجّهت دعوة دائمة",
+"En {n} no había cursado una invitación permanente":"في عام {n} لم تكن قد وجّهت دعوة دائمة"
 };

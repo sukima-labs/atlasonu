@@ -142,6 +142,34 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     ok(vp.name + ': Mapa: EPU: el dato de Colombia es la cifra contada del informe del ciclo 3', await page.evaluate(() => { const f = window.EPU.p.COL.find(x => x[0] === 3); return !!f && document.getElementById('mpInfo').textContent.includes('ciclo 3 del EPU (' + f[3] + '): ' + f[1]); }));
     await page.selectOption('#mpCiclo', '4'); await page.evaluate(() => mpElegir(PAISES.find(p => !(window.EPU.p[p.id] || []).some(x => x[0] === 4)).id));   // el ciclo 4 aún no ha examinado a todos
     ok(vp.name + ': Mapa: EPU: un país sin informe de ese ciclo sale «sin cifra», no con un cero', /Sin cifra de este ciclo/.test(await page.textContent('#mpInfo')) && !/: 0\b/.test(await page.textContent('#mpInfo')));
+    // #185: línea de tiempo (deslizador de años + animación) y fecha del dato en cada capa
+    await page.selectOption('#mpCapa', 'tratado'); await page.selectOption('#mpTrat', 'IV-2'); await page.evaluate(() => mpElegir('ESP'));
+    ok(vp.name + ': Mapa: «Un tratado concreto» tiene deslizador de años (1948 a hoy) y cita la fecha del dato', await page.isVisible('#mpDesliza') && (await page.$eval('#mpDesliza', e => e.min + '-' + e.max)).startsWith('1948-') && /Datos al 20\d\d-\d\d-\d\d/.test(await page.textContent('#mpLeyenda')));
+    await page.$eval('#mpDesliza', e => { e.value = 1960; e.dispatchEvent(new Event('input', { bubbles: true })); });
+    ok(vp.name + ': Mapa: tratado a 1960: España aún no era parte, la leyenda sigue sumando 196 y el texto dice el año', /En 1960 no era parte/.test(await page.textContent('#mpInfo')) && (await sumaLey()) === 196);
+    await page.$eval('#mpDesliza', e => { e.value = e.max; e.dispatchEvent(new Event('input', { bubbles: true })); });
+    ok(vp.name + ': Mapa: tratado en el último año vuelve al dato de hoy (España es parte)', /Es parte/.test(await page.textContent('#mpInfo')));
+    await page.selectOption('#mpCapa', 'basicos');
+    const cero = async y => { await page.$eval('#mpDesliza', (e, y) => { e.value = y; e.dispatchEvent(new Event('input', { bubbles: true })); }, y); return page.evaluate(() => PAISES.filter(p => mpValor(p).n === 0).length); };
+    const c1970 = await cero(1970), c2026 = await cero(await page.$eval('#mpDesliza', e => e.max));
+    ok(vp.name + ': Mapa: tratados básicos por año: en 1970 hay muchos más países sin ningún tratado que hoy', c1970 > c2026 + 50 && (await page.evaluate(() => PAISES.length)) === 196);
+    await page.selectOption('#mpCapa', 'invitacion');
+    ok(vp.name + ': Mapa: invitación permanente por año: antes de 1999 nadie la había cursado y hoy sí', await (async () => { await page.$eval('#mpDesliza', e => { e.value = e.min; e.dispatchEvent(new Event('input', { bubbles: true })); }); const a = await page.evaluate(() => PAISES.filter(p => mpValor(p).k === 'si').length); await page.$eval('#mpDesliza', e => { e.value = e.max; e.dispatchEvent(new Event('input', { bubbles: true })); }); const b = await page.evaluate(() => PAISES.filter(p => mpValor(p).k === 'si').length); return a < 10 && b > 100; })());
+    await page.selectOption('#mpCapa', 'mandato');
+    ok(vp.name + ': Mapa: capas sin años ocultan el deslizador', !(await page.isVisible('#mpTiempo')));
+    await page.selectOption('#mpCapa', 'conflictos'); await page.waitForFunction(() => document.getElementById('mpAnio').options.length > 50);
+    ok(vp.name + ': Mapa: conflictos: el deslizador va de 1946 a 2025 y sigue al selector de año', (await page.$eval('#mpDesliza', e => e.min + '-' + e.max)) === '1946-2025' && await (async () => { await page.selectOption('#mpAnio', '1999'); return (await page.$eval('#mpDesliza', e => e.value)) === '1999' })());
+    await page.$eval('#mpDesliza', e => { e.value = 2003; e.dispatchEvent(new Event('input', { bubbles: true })); });
+    ok(vp.name + ': Mapa: mover el deslizador cambia el año del mapa', (await page.$eval('#mpAnio', e => e.value)) === '2003');
+    await page.click('#mpPlay'); await page.waitForTimeout(1500);
+    const anAnim = +(await page.$eval('#mpDesliza', e => e.value));
+    ok(vp.name + ': Mapa: «Animar» recorre los años solo (sigue desde el año del deslizador, queda pulsado y cambia el botón a «Pausar»)', anAnim > 2003 && anAnim <= 2025 && (await page.getAttribute('#mpPlay', 'aria-pressed')) === 'true' && /Pausar/.test(await page.textContent('#mpPlay')));
+    await page.click('#mpPlay'); const anPar = await page.$eval('#mpDesliza', e => e.value); await page.waitForTimeout(1100);
+    ok(vp.name + ': Mapa: «Pausar» detiene la animación en el año en que está', (await page.$eval('#mpDesliza', e => e.value)) === anPar && /Animar/.test(await page.textContent('#mpPlay')));
+    await page.click('#mpPlay'); await page.selectOption('#mpCapa', 'basicos'); const anCap = await page.$eval('#mpDesliza', e => e.value); await page.waitForTimeout(1200);
+    ok(vp.name + ': Mapa: cambiar de capa con la animación en marcha la detiene', (await page.$eval('#mpDesliza', e => e.value)) === anCap && (await page.getAttribute('#mpPlay', 'aria-pressed')) === 'false');
+    await page.selectOption('#mpCapa', 'epu'); await page.waitForFunction(() => !/Cargando/.test(document.getElementById('mpLeyenda').textContent));
+    ok(vp.name + ': Mapa: EPU: el deslizador recorre los ciclos 2 a 4 y sigue al selector', (await page.$eval('#mpDesliza', e => e.min + '-' + e.max)) === '2-4' && await (async () => { await page.$eval('#mpDesliza', e => { e.value = 3; e.dispatchEvent(new Event('input', { bubbles: true })); }); return (await page.$eval('#mpCiclo', e => e.value)) === '3'; })());
     await page.selectOption('#mpCapa', 'basicos');
     ok(vp.name + ': Mapa: al dejar la capa del EPU se oculta el ciclo', !(await page.isVisible('#mpCiclo')));
     await page.evaluate(() => mpElegir('ESP'));

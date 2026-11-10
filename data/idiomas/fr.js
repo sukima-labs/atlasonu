@@ -1070,5 +1070,16 @@ window.ATLAS_IDIOMA_fr={
 "Mover hacia arriba":"Déplacer vers le haut",
 "Mover hacia abajo":"Déplacer vers le bas",
 "Mover a la derecha":"Déplacer vers la droite",
-"Mapa del mundo: con el mapa acercado, arrástralo o muévelo con las flechas del teclado":"Carte du monde : une fois zoomée, faites-la glisser ou déplacez-la avec les flèches du clavier"
+"Mapa del mundo: con el mapa acercado, arrástralo o muévelo con las flechas del teclado":"Carte du monde : une fois zoomée, faites-la glisser ou déplacez-la avec les flèches du clavier",
+"<b>Línea de tiempo y «tiempo real»:</b> las capas de tratados, de invitaciones, de conflictos y del EPU tienen un deslizador de años (y un botón «Animar» que los recorre solo) para ver cómo cambia el mapa hacia atrás. Las fuentes oficiales de la ONU no publican datos en directo: cambian por días o por años. Lo más cercano y honesto es que ATLAS revisa las fuentes cada día y cada capa dice, en su leyenda, la fecha de sus datos.":"<b>Frise chronologique et «temps réel» :</b> les couches des traités, des invitations, des conflits et de l'EPU ont un curseur d'années (et un bouton «Animer» qui les parcourt seul) pour voir comment la carte change dans le passé. Les sources officielles de l'ONU ne publient pas de données en direct : elles changent par jours ou par années. Le plus proche et le plus honnête : ATLAS vérifie les sources chaque jour et chaque couche indique, dans sa légende, la date de ses données.",
+"▶ Animar":"▶ Animer",
+"⏸ Pausar":"⏸ Pause",
+"Datos al {n}-{n}-{n}":"Données au {n}-{n}-{n}",
+"Último informe incluido: A/HRC/{n}/{n}":"Dernier rapport inclus : A/HRC/{n}/{n}",
+"En {n} era parte en {n} de {n} tratados básicos":"En {n}, il était partie à {n} des {n} traités de base",
+"En {n} ya era parte":"En {n}, il était déjà partie",
+"En {n} había firmado, sin ratificar":"En {n}, il avait signé, sans ratifier",
+"En {n} no era parte":"En {n}, il n'était pas partie",
+"En {n} ya había cursado una invitación permanente":"En {n}, il avait déjà adressé une invitation permanente",
+"En {n} no había cursado una invitación permanente":"En {n}, il n'avait pas adressé d'invitation permanente"
 };
