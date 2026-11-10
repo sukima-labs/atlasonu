@@ -1053,5 +1053,16 @@ window.ATLAS_IDIOMA_ru={
 "Ninguna ({n})":"Нет ({n})",
 "De {n} a {n} ({n})":"От {n} до {n} ({n})",
 "{n} o más ({n})":"{n} или более ({n})",
-"No se han podido cargar los datos de esta capa. Recarga la página.":"Не удалось загрузить данные этого слоя. Перезагрузите страницу."
+"No se han podido cargar los datos de esta capa. Recarga la página.":"Не удалось загрузить данные этого слоя. Перезагрузите страницу.",
+"Recomendaciones del EPU recibidas (por ciclo)":"Полученные рекомендации УПО (по циклам)",
+"Ciclo del EPU":"Цикл УПО",
+"<b>Capa del EPU:</b> es el número de recomendaciones que cada país recibió de otros Estados en su Examen Periódico Universal, contado en el informe del Grupo de Trabajo de cada ciclo (el primer ciclo, de 2008 a 2011, numera de otra manera y no se cuenta). Cada punto numerado cuenta una vez, aunque lo formulen varios Estados. La cifra no mide cómo está un país en derechos humanos: depende de cuántos Estados intervienen y de cuántas cosas recomiendan. El ciclo 4 todavía no ha examinado a todos los países.":"<b>Слой УПО:</b> число рекомендаций, которые каждая страна получила от других государств в ходе универсального периодического обзора; считается по докладу Рабочей группы за каждый цикл (первый цикл, 2008–2011 годы, нумерует их иначе и не учитывается). Каждый нумерованный пункт считается один раз, даже если его сформулировали несколько государств. Эта цифра не измеряет положение страны в области прав человека: она зависит от того, сколько государств выступает и сколько вещей они рекомендуют. Четвёртый цикл ещё не охватил все страны.",
+"Ciclo {n} (desde {n})":"Цикл {n} (с {n})",
+"Ciclo {n} ({n}–{n})":"Цикл {n} ({n}–{n})",
+"Cargando las recomendaciones del EPU…":"Загрузка рекомендаций УПО…",
+"Sin cifra de este ciclo: todavía no ha sido examinado o su informe no se pudo contar":"Нет цифры за этот цикл: страна ещё не рассматривалась или её доклад не удалось подсчитать",
+"Recomendaciones recibidas en el ciclo {n} del EPU ({n}): {n}":"Рекомендации, полученные в цикле {n} УПО ({n}): {n}",
+"Menos de {n} ({n})":"Менее {n} ({n})",
+"Sin cifra de este ciclo ({n})":"Нет цифры за этот цикл ({n})",
+"Cada punto numerado de las conclusiones y recomendaciones cuenta una vez, aunque lo formulen varios Estados. Fuente: informes del Grupo de Trabajo del EPU, Biblioteca Digital de la ONU":"Каждый нумерованный пункт выводов и рекомендаций считается один раз, даже если его сформулировали несколько государств. Источник: доклады Рабочей группы по УПО, Цифровая библиотека ООН"
 };

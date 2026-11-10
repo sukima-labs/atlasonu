@@ -1053,5 +1053,16 @@ window.ATLAS_IDIOMA_ar={
 "Ninguna ({n})":"لا شيء ({n})",
 "De {n} a {n} ({n})":"من {n} إلى {n} ({n})",
 "{n} o más ({n})":"{n} أو أكثر ({n})",
-"No se han podido cargar los datos de esta capa. Recarga la página.":"تعذّر تحميل بيانات هذه الطبقة. أعد تحميل الصفحة."
+"No se han podido cargar los datos de esta capa. Recarga la página.":"تعذّر تحميل بيانات هذه الطبقة. أعد تحميل الصفحة.",
+"Recomendaciones del EPU recibidas (por ciclo)":"توصيات الاستعراض الدوري الشامل المتلقاة (حسب الدورة)",
+"Ciclo del EPU":"دورة الاستعراض الدوري الشامل",
+"<b>Capa del EPU:</b> es el número de recomendaciones que cada país recibió de otros Estados en su Examen Periódico Universal, contado en el informe del Grupo de Trabajo de cada ciclo (el primer ciclo, de 2008 a 2011, numera de otra manera y no se cuenta). Cada punto numerado cuenta una vez, aunque lo formulen varios Estados. La cifra no mide cómo está un país en derechos humanos: depende de cuántos Estados intervienen y de cuántas cosas recomiendan. El ciclo 4 todavía no ha examinado a todos los países.":"<b>طبقة الاستعراض الدوري الشامل:</b> هي عدد التوصيات التي تلقّاها كل بلد من الدول الأخرى في استعراضه الدوري الشامل، محسوبةً من تقرير الفريق العامل في كل دورة (الدورة الأولى، من 2008 إلى 2011، تُرقِّم التوصيات بطريقة مختلفة ولذلك لا تُحتسب). يُحتسب كل بند مرقّم مرة واحدة حتى لو صاغته عدة دول. لا يقيس هذا الرقم وضع البلد في مجال حقوق الإنسان: فهو يتوقف على عدد الدول المشاركة وعلى عدد الأمور التي توصي بها. لم تستعرض الدورة الرابعة بعدُ جميع البلدان.",
+"Ciclo {n} (desde {n})":"الدورة {n} (منذ {n})",
+"Ciclo {n} ({n}–{n})":"الدورة {n} ({n}–{n})",
+"Cargando las recomendaciones del EPU…":"جارٍ تحميل توصيات الاستعراض الدوري الشامل…",
+"Sin cifra de este ciclo: todavía no ha sido examinado o su informe no se pudo contar":"لا رقم لهذه الدورة: لم يُستعرض البلد بعد أو تعذّر عدّ تقريره",
+"Recomendaciones recibidas en el ciclo {n} del EPU ({n}): {n}":"التوصيات المتلقاة في الدورة {n} من الاستعراض الدوري الشامل ({n}): {n}",
+"Menos de {n} ({n})":"أقل من {n} ({n})",
+"Sin cifra de este ciclo ({n})":"لا رقم لهذه الدورة ({n})",
+"Cada punto numerado de las conclusiones y recomendaciones cuenta una vez, aunque lo formulen varios Estados. Fuente: informes del Grupo de Trabajo del EPU, Biblioteca Digital de la ONU":"يُحتسب كل بند مرقّم في الاستنتاجات والتوصيات مرة واحدة حتى لو صاغته عدة دول. المصدر: تقارير الفريق العامل المعني بالاستعراض الدوري الشامل، المكتبة الرقمية للأمم المتحدة"
 };

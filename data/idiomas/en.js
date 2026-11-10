@@ -1053,5 +1053,16 @@ window.ATLAS_IDIOMA_en={
 "Ninguna ({n})":"None ({n})",
 "De {n} a {n} ({n})":"From {n} to {n} ({n})",
 "{n} o más ({n})":"{n} or more ({n})",
-"No se han podido cargar los datos de esta capa. Recarga la página.":"The data for this layer could not be loaded. Reload the page."
+"No se han podido cargar los datos de esta capa. Recarga la página.":"The data for this layer could not be loaded. Reload the page.",
+"Recomendaciones del EPU recibidas (por ciclo)":"UPR recommendations received (by cycle)",
+"Ciclo del EPU":"UPR cycle",
+"<b>Capa del EPU:</b> es el número de recomendaciones que cada país recibió de otros Estados en su Examen Periódico Universal, contado en el informe del Grupo de Trabajo de cada ciclo (el primer ciclo, de 2008 a 2011, numera de otra manera y no se cuenta). Cada punto numerado cuenta una vez, aunque lo formulen varios Estados. La cifra no mide cómo está un país en derechos humanos: depende de cuántos Estados intervienen y de cuántas cosas recomiendan. El ciclo 4 todavía no ha examinado a todos los países.":"<b>UPR layer:</b> the number of recommendations each country received from other States in its Universal Periodic Review, counted in the Working Group report of each cycle (the first cycle, 2008 to 2011, numbers them differently and is not counted). Each numbered item counts once, even if several States made it. The figure does not measure how a country is doing on human rights: it depends on how many States take part and how many things they recommend. The fourth cycle has not yet reviewed every country.",
+"Ciclo {n} (desde {n})":"Cycle {n} (from {n})",
+"Ciclo {n} ({n}–{n})":"Cycle {n} ({n}–{n})",
+"Cargando las recomendaciones del EPU…":"Loading the UPR recommendations…",
+"Sin cifra de este ciclo: todavía no ha sido examinado o su informe no se pudo contar":"No figure for this cycle: the country has not been reviewed yet or its report could not be counted",
+"Recomendaciones recibidas en el ciclo {n} del EPU ({n}): {n}":"Recommendations received in cycle {n} of the UPR ({n}): {n}",
+"Menos de {n} ({n})":"Fewer than {n} ({n})",
+"Sin cifra de este ciclo ({n})":"No figure for this cycle ({n})",
+"Cada punto numerado de las conclusiones y recomendaciones cuenta una vez, aunque lo formulen varios Estados. Fuente: informes del Grupo de Trabajo del EPU, Biblioteca Digital de la ONU":"Each numbered item in the conclusions and recommendations counts once, even if several States made it. Source: UPR Working Group reports, UN Digital Library"
 };
