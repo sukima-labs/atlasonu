@@ -1129,5 +1129,10 @@ window.ATLAS_IDIOMA_fr={
 "Sobre el proyecto":"À propos du projet",
 "<b>Instantánea del 27-10-2026, no feed en vivo:</b> cómo investigar sin conocer las siglas y de dónde salen los mandatos":"<b>Instantané du 27-10-2026, pas un flux en direct :</b> comment chercher sans connaître les sigles et d’où viennent les mandats",
 "<b>Importante:</b> no descarga todos los PDF ni marca nada como verificado sin cotejo":"<b>Important :</b> il ne télécharge pas tous les PDF et ne marque rien comme vérifié sans recoupement documentaire",
-"<b>Qué es DIGNITYOS,</b> para quién y qué nos guía":"<b>Ce qu’est DIGNITYOS,</b> pour qui et ce qui nous guide"
+"<b>Qué es DIGNITYOS,</b> para quién y qué nos guía":"<b>Ce qu’est DIGNITYOS,</b> pour qui et ce qui nous guide",
+"Aa Siglas y códigos":"Aa Sigles et cotes",
+"Siglas y códigos: elige una consulta":"Sigles et cotes : choisissez une consultation",
+"Siglas":"Sigles",
+"Cómo leer un código":"Comment lire une cote",
+"Tabla de nomenclatura":"Tableau de nomenclature"
 };

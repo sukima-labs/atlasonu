@@ -1129,5 +1129,10 @@ window.ATLAS_IDIOMA_ru={
 "Sobre el proyecto":"О проекте",
 "<b>Instantánea del 27-10-2026, no feed en vivo:</b> cómo investigar sin conocer las siglas y de dónde salen los mandatos":"<b>Снимок на 27-10-2026, не живая лента:</b> как искать, не зная сокращений, и откуда берутся мандаты",
 "<b>Importante:</b> no descarga todos los PDF ni marca nada como verificado sin cotejo":"<b>Важно:</b> он не скачивает все PDF и ничего не помечает как проверенное без сверки документов",
-"<b>Qué es DIGNITYOS,</b> para quién y qué nos guía":"<b>Что такое DIGNITYOS,</b> для кого он и что нас направляет"
+"<b>Qué es DIGNITYOS,</b> para quién y qué nos guía":"<b>Что такое DIGNITYOS,</b> для кого он и что нас направляет",
+"Aa Siglas y códigos":"Aa Сокращения и индексы",
+"Siglas y códigos: elige una consulta":"Сокращения и индексы: выберите справку",
+"Siglas":"Сокращения",
+"Cómo leer un código":"Как читать индекс",
+"Tabla de nomenclatura":"Таблица обозначений"
 };

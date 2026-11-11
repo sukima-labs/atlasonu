@@ -15,7 +15,7 @@ const MAX_HOJAS = 15;
     headers: { 'access-control-allow-origin': '*' }, body: '{"resultados":[]}' }));
   await p.goto(INDEX);
   await p.waitForTimeout(600);
-  const pantallas = await p.evaluate(() => [...document.querySelectorAll('.nav button[data-page]')].map(x => x.dataset.page));
+  const pantallas = await p.evaluate(() => [...document.querySelectorAll('.main .section')].map(x => x.id));
   let fallos = 0;
   const mal = (id, t) => { fallos++; console.log(`✗ imprimir #${id}: ${t}`); };
   for (const id of pantallas) {

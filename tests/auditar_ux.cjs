@@ -5,7 +5,7 @@ const path=require('path').resolve(__dirname,'..','index.html');
  const b=await chromium.launch(); const p=await b.newPage({viewport:{width:390,height:844}});
  await p.route(/sk-atlas\.pig-mimosa/,r=>r.fulfill({status:200,contentType:'application/json',headers:{'access-control-allow-origin':'*'},body:'{"resultados":[]}'}));
  await p.goto('file://'+path);
- const pages=await p.evaluate(()=>[...document.querySelectorAll('.nav button[data-page]')].map(x=>x.dataset.page));
+ const pages=await p.evaluate(()=>[...document.querySelectorAll('.main .section')].map(x=>x.id));
  for(const id of pages){
   await p.evaluate(i=>showPage(i),id); await p.waitForTimeout(400);
   const r=await p.evaluate(()=>{
