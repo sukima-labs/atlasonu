@@ -1134,5 +1134,8 @@ window.ATLAS_IDIOMA_ru={
 "Siglas y códigos: elige una consulta":"Сокращения и индексы: выберите справку",
 "Siglas":"Сокращения",
 "Cómo leer un código":"Как читать индекс",
-"Tabla de nomenclatura":"Таблица обозначений"
+"Tabla de nomenclatura":"Таблица обозначений",
+"▦ Datos y calidad":"▦ Данные и качество",
+"Datos y calidad":"Данные и качество",
+"Las cifras del catálogo, qué tan completo y verificado está, las últimas resoluciones y las novedades detectadas en las fuentes oficiales. Es la parte para quien investiga; el buscador y los accesos principales están en el Panorama.":"Цифры каталога, его полнота и проверенность, последние резолюции и новости, обнаруженные в официальных источниках. Этот раздел для исследователей; поиск и основные входы находятся в «Обзоре»."
 };

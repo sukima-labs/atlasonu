@@ -311,7 +311,7 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     const nov = await page.textContent('#novedades');
     if (vp.name === 'escritorio') ok('escritorio: no aparece la barra móvil ni el botón de menú', !(await page.isVisible('#burger')) && !(await page.isVisible('#appbar')));
     ok(vp.name + ': panel de novedades (' + (URL.startsWith('http') ? 'en línea: última revisión' : 'sin conexión: aviso') + ')', URL.startsWith('http') ? /Última revisión/.test(nov) : /sin conexión/.test(nov));
-    ok(vp.name + ': «Novedades detectadas» llega plegada y se abre al tocar', !(await page.locator('#novedadesBox').evaluate(e => e.open)) && !(await page.isVisible('#novedades')) && (await page.click('#novedadesBox>summary'), await page.isVisible('#novedades')));
+    await page.evaluate(() => showPage('datoscalidad')); ok(vp.name + ': «Novedades detectadas» llega plegada y se abre al tocar', !(await page.locator('#novedadesBox').evaluate(e => e.open)) && !(await page.isVisible('#novedades')) && (await page.click('#novedadesBox>summary'), await page.isVisible('#novedades')));
     const sinHueco = await page.evaluate(() => { const k = [...document.querySelectorAll('#inicio>.panel')].filter(e => e.offsetHeight); return k.every((e, i) => { if (!i) return true; const p = k[i - 1]; return e.getBoundingClientRect().top - p.getBoundingClientRect().bottom >= 10 || p.nextElementSibling !== e; }); });
     ok(vp.name + ': las cajas de la portada no van pegadas unas a otras', sinHueco);
     // #199: en TODAS las pantallas, dos cajas (borde o fondo) una encima de otra o una junto a otra deben dejar al menos 8 px
@@ -376,7 +376,8 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
   {
     const pg = await browser.newPage({ viewport: { width: 1366, height: 900 } }); await pg.goto(URL); await pg.waitForFunction(() => window.__atlasListo);
     ok('portada: buscador, ocho caminos y «un día como hoy» a la vista', (await pg.isVisible('#quick')) && (await pg.locator('.tile').count()) === 8 && /en la (historia de la )?ONU/.test(await pg.textContent('#hoyHistoria')));
-    ok('portada: el panel de datos (cifras) está plegado por defecto', !(await pg.evaluate(() => document.querySelector('details.datos').open)));
+    ok('portada despejada (T80): sin cifras ni novedades, y DIGNITYOS en una franja al final', await pg.evaluate(() => { const i = document.getElementById('inicio'), f = i.querySelector('.franja-dig'), g = document.getElementById('guiada'); return !i.querySelector('details.datos, #kpis, #novedades') && !!f && !!g && (g.compareDocumentPosition(f) & Node.DOCUMENT_POSITION_FOLLOWING) !== 0 && i.lastElementChild === f; }));
+    ok('«Datos y calidad» (T80): reúne cifras, calidad, últimas resoluciones y modalidades, con las novedades plegadas', await pg.evaluate(() => { showPage('datoscalidad'); const d = document.getElementById('datoscalidad'); const ok = !!d.querySelector('#kpis') && !!d.querySelector('#calidad') && !!d.querySelector('#recientes') && !!d.querySelector('#chartKinds') && !d.querySelector('#novedadesBox').open && !!document.querySelector('#nav button[data-page="datoscalidad"][aria-current]'); showPage('inicio'); return ok; }));
     await pg.click('.tile:has-text("Su historia")'); await pg.waitForSelector('.hi-card');
     ok('historia: se ven las tarjetas de la línea de tiempo y el detalle', (await pg.locator('.hi-card').count()) >= 50 && /Por qué importa/.test(await pg.textContent('#hiDetalle')));
     await pg.click('.hi-card:has-text("Declaración Universal")');
