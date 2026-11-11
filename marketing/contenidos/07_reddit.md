@@ -17,7 +17,7 @@ Hi all, I'm part of the team behind ATLAS ONU. We got tired of not knowing wheth
 
 It is independent (not an official UN product), AGPL-3.0, no tracking or accounts, interface in the six UN languages (the main one is Spanish). Where something is inferred or missing it says so. Known limits: only current mandates, translations still need native review.
 
-Site: https://sukima-labs.github.io/atlasonu/ · Code: https://github.com/sukima-labs/atlasonu
+Site: https://sukimalabs.com/atlasonu/ · Code: https://github.com/sukima-labs/atlasonu
 I'd really like to know what's missing or wrong, especially from people who cite UN documents for work.
 
 ## Pieza B · español (comunidades de derecho, estudiantes o derechos humanos; revisar reglas de cada una)
@@ -26,7 +26,7 @@ I'd really like to know what's missing or wrong, especially from people who cite
 **Texto:**
 Formo parte del equipo de ATLAS ONU. Lo hicimos porque encontrar la resolución que creó un mandato de relator, o saber si un documento es resolución, informe o borrador, suele ser un laberinto. Reúne {{mandatos}} mandatos vigentes, los {{actos}} actos que los crearon o prorrogaron (contrastados con la Biblioteca Digital de la ONU), la ficha de {{paises}} países, tratados y siglas, con cita APA y enlace a la fuente oficial en cada dato. Gratis, sin cuentas ni rastreo, en seis idiomas.
 
-Es una iniciativa independiente, no oficial de la ONU ni de ninguna universidad. https://sukima-labs.github.io/atlasonu/ (código: https://github.com/sukima-labs/atlasonu).
+Es una iniciativa independiente, no oficial de la ONU ni de ninguna universidad. https://sukimalabs.com/atlasonu/ (código: https://github.com/sukima-labs/atlasonu).
 Si lo usáis para un trabajo o un caso, me encantaría saber qué os falta.
 
 ## Respuestas tipo (para hilos donde alguien pregunta algo que ATLAS resuelve)

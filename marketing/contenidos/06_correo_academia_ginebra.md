@@ -10,7 +10,7 @@ We are Sukima-Labs, an independent, non-profit initiative. We have built ATLAS O
 
 We noticed that your directory lists tools such as the Universal Human Rights Index and we believe ATLAS ONU could complement them for Spanish-speaking students and practitioners. If it fits your criteria, we would be grateful if you considered listing it under "Databases".
 
-- Web: https://sukima-labs.github.io/atlasonu/
+- Web: https://sukimalabs.com/atlasonu/
 - Code and licences: https://github.com/sukima-labs/atlasonu
 
 It is an independent project and not an official UN product. Thank you for your time.

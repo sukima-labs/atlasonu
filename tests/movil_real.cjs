@@ -4,7 +4,7 @@
 // Uso: node tests/movil_real.cjs   (ATLAS_URL cambia la dirección; por defecto, la web publicada)
 // No va en la CI de cada PR porque depende de internet; corre a mano o cada semana (.github/workflows/movil.yml).
 const { chromium, devices } = require('playwright');
-const URL = process.env.ATLAS_URL || 'https://sukima-labs.github.io/atlasonu/';
+const URL = process.env.ATLAS_URL || 'https://sukimalabs.com/atlasonu/';
 const res = { url: URL, checks: [], errors: [] };
 const ok = (n, c, extra) => { res.checks.push({ n, ok: !!c, ...(extra ? { extra } : {}) }); };
 const reposo = async pg => { let a = -1; for (let i = 0; i < 40; i++) { await pg.waitForTimeout(150); const y = await pg.evaluate(() => scrollY); if (y === a) return; a = y; } };

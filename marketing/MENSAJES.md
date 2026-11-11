@@ -31,7 +31,7 @@ Claro, sobrio, útil. Sin grandilocuencia («revolucionario»), sin urgencia fab
 ## Nombres y etiquetas
 - Nombre: **ATLAS ONU**; subtítulo «Arqueología documental». En inglés: *ATLAS ONU – UN human rights, with the documents in hand*.
 - Etiquetas: `#DerechosHumanos` `#ONU` `#DatosAbiertos` `#RelatoresEspeciales` `#DIDH`. En inglés: `#HumanRights` `#OpenData` `#SpecialProcedures`.
-- Enlace principal: https://sukima-labs.github.io/atlasonu/ · Código: https://github.com/sukima-labs/atlasonu
+- Enlace principal: https://sukimalabs.com/atlasonu/ · Código: https://github.com/sukima-labs/atlasonu
 
 ## Aviso que va en toda pieza larga
 > Iniciativa académica independiente. No es un producto oficial de Naciones Unidas ni de ninguna universidad.

@@ -12,4 +12,4 @@ Pieza útil (semana 3). Formato: entrada de blog o hilo con capturas. Aportar pr
 
 Caso real para la imagen: la resolución 20 (XXXVI) de 1980 (Grupo de Trabajo sobre Desapariciones), reproducida en E/1980/13, pp. 180–181 (su texto se leyó del PDF; está en `data/evidencias.json`).
 
-Cierre: «Hecho con ATLAS ONU (iniciativa independiente, no oficial de la ONU): https://sukima-labs.github.io/atlasonu/»
+Cierre: «Hecho con ATLAS ONU (iniciativa independiente, no oficial de la ONU): https://sukimalabs.com/atlasonu/»

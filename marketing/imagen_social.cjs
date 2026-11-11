@@ -28,7 +28,7 @@ h1{position:absolute;left:72px;top:160px;width:720px;font-size:46px;line-height:
 <div class="marca">ATLAS <b>ONU</b></div><div class="sub">ARQUEOLOGÍA DOCUMENTAL</div>
 <h1>Entiende cómo la ONU protege los derechos humanos, con los documentos delante</h1>
 <div class="cifras"><div><b>${c.mandatos}</b><span>mandatos de relatores</span></div><div><b>${c.paises}</b><span>fichas de país</span></div><div><b>6</b><span>idiomas</span></div></div>
-<div class="pie"><strong>sukima-labs.github.io/atlasonu</strong> · Gratis · Código abierto · Sin rastreo<small>Iniciativa independiente de Sukima-Labs; no es un producto oficial de Naciones Unidas.</small></div>`;
+<div class="pie"><strong>sukimalabs.com/atlasonu</strong> · Gratis · Código abierto · Sin rastreo<small>Iniciativa independiente de Sukima-Labs; no es un producto oficial de Naciones Unidas.</small></div>`;
 (async () => {
   const b = await chromium.launch();
   const p = await b.newPage({ viewport: { width: 1200, height: 630 } });
