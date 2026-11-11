@@ -186,6 +186,7 @@ window.ATLAS_IDIOMA_en={
 "Familia de la ONU (agencias, fondos…)":"The UN family (agencies, funds…)",
 "¿Ante quién reclamo?":"Whom do I appeal to?",
 "Cómo se decide y se elige":"How decisions and elections work",
+"Los 17 ODS":"The 17 SDGs",
 "Descifrar un símbolo":"Decode a symbol",
 "Pulsa cualquier recuadro: verás qué es, quién lo forma, qué documentos produce, de quién depende y qué cuelga de él.":"Tap any box: you will see what it is, who makes it up, what documents it produces, who it reports to and what hangs from it.",
 "La «familia» de la ONU es mucho más que sus seis órganos principales: fondos y programas, organismos especializados autónomos, comisiones regionales y organizaciones relacionadas. Filtra o busca, y pulsa una para ver qué hace en derechos humanos y con qué tratados se conecta.":"The UN “family” is much more than its six principal organs: funds and programmes, autonomous specialized agencies, regional commissions and related organizations. Filter or search, and tap one to see what it does on human rights and which treaties it connects to.",
@@ -1404,5 +1405,15 @@ window.ATLAS_IDIOMA_en={
 "Documentos de la Mesa (<i>General Committee</i>) de la Asamblea General.":"Documents of the General Committee (<i>General Committee</i>) of the General Assembly.",
 "Del Protocolo Facultativo: en CAT/OP/… es el Subcomité para la Prevención de la Tortura.":"From the Optional Protocol: in CAT/OP/… it is the Subcommittee on Prevention of Torture.",
 "<b>Enmienda</b>: cambios propuestos a un proyecto.":"<b>Amendment</b>: changes proposed to a draft.",
-"Número de la <b>resolución</b> dentro de su serie.":"Number of the <b>resolution</b> within its series."
+"Número de la <b>resolución</b> dentro de su serie.":"Number of the <b>resolution</b> within its series.",
+"Este país en todas las capas":"This country in every layer",
+"Ver en la ficha":"See in the profile",
+"La Colección de Tratados no trae datos de ratificación para esta entidad.":"The Treaty Collection has no ratification data for this entity.",
+"Solo algunos países tienen un mandato de relator propio; los mandatos temáticos sí pueden actuar en este país (ver la ficha).":"Only some countries have a country-specific rapporteur mandate; thematic mandates can act on this country (see the profile).",
+"Solo algunos países tienen una comisión o misión de investigación; no es un juicio sobre el país.":"Only some countries have a commission of inquiry or mission; it is not a judgement on the country.",
+"◍ Ver en el mapa":"◍ See on the map",
+"Qué es":"What it is",
+"Qué hace":"What it does",
+"Nombre oficial en los idiomas de la ONU":"Official name in the UN languages",
+"Más detalle":"More detail"
 };

@@ -186,6 +186,7 @@ window.ATLAS_IDIOMA_ar={
 "Familia de la ONU (agencias, fondos…)":"أسرة الأمم المتحدة (وكالات وصناديق…)",
 "¿Ante quién reclamo?":"إلى من أتقدّم بشكواي؟",
 "Cómo se decide y se elige":"كيف تُتخذ القرارات وتُجرى الانتخابات",
+"Los 17 ODS":"أهداف التنمية المستدامة الـ17",
 "Descifrar un símbolo":"فكّ رمز",
 "Pulsa cualquier recuadro: verás qué es, quién lo forma, qué documentos produce, de quién depende y qué cuelga de él.":"اضغط على أي مربع: سترى ما هو ومن يشكّله وما الوثائق التي يصدرها ومن يتبع له وما يتفرع عنه.",
 "La «familia» de la ONU es mucho más que sus seis órganos principales: fondos y programas, organismos especializados autónomos, comisiones regionales y organizaciones relacionadas. Filtra o busca, y pulsa una para ver qué hace en derechos humanos y con qué tratados se conecta.":"«أسرة» الأمم المتحدة أوسع بكثير من أجهزتها الرئيسية الستة: صناديق وبرامج، ووكالات متخصصة مستقلة، ولجان إقليمية، ومنظمات ذات صلة. رشّح أو ابحث، واضغط على إحداها لترى ما تفعله في مجال حقوق الإنسان وبأي معاهدات ترتبط.",
@@ -1404,5 +1405,15 @@ window.ATLAS_IDIOMA_ar={
 "Documentos de la Mesa (<i>General Committee</i>) de la Asamblea General.":"وثائق المكتب (<i>General Committee</i>) التابع للجمعية العامة.",
 "Del Protocolo Facultativo: en CAT/OP/… es el Subcomité para la Prevención de la Tortura.":"من البروتوكول الاختياري: في CAT/OP/… هي اللجنة الفرعية لمنع التعذيب.",
 "<b>Enmienda</b>: cambios propuestos a un proyecto.":"<b>تعديل</b>: تغييرات مقترحة على مشروع.",
-"Número de la <b>resolución</b> dentro de su serie.":"رقم <b>القرار</b> ضمن سلسلته."
+"Número de la <b>resolución</b> dentro de su serie.":"رقم <b>القرار</b> ضمن سلسلته.",
+"Este país en todas las capas":"هذا البلد في جميع الطبقات",
+"Ver en la ficha":"عرض في الصفحة القُطرية",
+"La Colección de Tratados no trae datos de ratificación para esta entidad.":"لا تتضمن مجموعة المعاهدات بيانات تصديق لهذا الكيان.",
+"Solo algunos países tienen un mandato de relator propio; los mandatos temáticos sí pueden actuar en este país (ver la ficha).":"بعض البلدان فقط لديها ولاية مقرر خاص قُطرية؛ ويمكن للولايات المواضيعية أن تعمل بشأن هذا البلد (انظر الصفحة القُطرية).",
+"Solo algunos países tienen una comisión o misión de investigación; no es un juicio sobre el país.":"بعض البلدان فقط لديها لجنة أو بعثة تحقيق؛ وهذا ليس حكماً على البلد.",
+"◍ Ver en el mapa":"◍ عرض على الخريطة",
+"Qué es":"ما هي",
+"Qué hace":"ماذا تفعل",
+"Nombre oficial en los idiomas de la ONU":"الاسم الرسمي بلغات الأمم المتحدة",
+"Más detalle":"مزيد من التفاصيل"
 };

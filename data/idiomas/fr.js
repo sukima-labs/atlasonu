@@ -186,6 +186,7 @@ window.ATLAS_IDIOMA_fr={
 "Familia de la ONU (agencias, fondos…)":"La famille de l'ONU (agences, fonds…)",
 "¿Ante quién reclamo?":"Auprès de qui réclamer ?",
 "Cómo se decide y se elige":"Comment on décide et on élit",
+"Los 17 ODS":"Les 17 ODD",
 "Descifrar un símbolo":"Déchiffrer un symbole",
 "Pulsa cualquier recuadro: verás qué es, quién lo forma, qué documentos produce, de quién depende y qué cuelga de él.":"Cliquez sur n'importe quel encadré : vous verrez ce que c'est, qui le compose, quels documents il produit, de qui il dépend et ce qui en dépend.",
 "La «familia» de la ONU es mucho más que sus seis órganos principales: fondos y programas, organismos especializados autónomos, comisiones regionales y organizaciones relacionadas. Filtra o busca, y pulsa una para ver qué hace en derechos humanos y con qué tratados se conecta.":"La « famille » de l'ONU est bien plus que ses six organes principaux : fonds et programmes, institutions spécialisées autonomes, commissions régionales et organisations apparentées. Filtrez ou cherchez, puis cliquez sur l'une d'elles pour voir ce qu'elle fait en matière de droits de l'homme et avec quels traités elle est liée.",
@@ -1404,5 +1405,15 @@ window.ATLAS_IDIOMA_fr={
 "Documentos de la Mesa (<i>General Committee</i>) de la Asamblea General.":"Documents du Bureau (<i>General Committee</i>) de l'Assemblée générale.",
 "Del Protocolo Facultativo: en CAT/OP/… es el Subcomité para la Prevención de la Tortura.":"Du Protocole facultatif : dans CAT/OP/…, il s'agit du Sous-Comité pour la prévention de la torture.",
 "<b>Enmienda</b>: cambios propuestos a un proyecto.":"<b>Amendement</b> : modifications proposées à un projet.",
-"Número de la <b>resolución</b> dentro de su serie.":"Numéro de la <b>résolution</b> au sein de sa série."
+"Número de la <b>resolución</b> dentro de su serie.":"Numéro de la <b>résolution</b> au sein de sa série.",
+"Este país en todas las capas":"Ce pays dans toutes les couches",
+"Ver en la ficha":"Voir dans la fiche",
+"La Colección de Tratados no trae datos de ratificación para esta entidad.":"La Collection des traités n’a pas de données de ratification pour cette entité.",
+"Solo algunos países tienen un mandato de relator propio; los mandatos temáticos sí pueden actuar en este país (ver la ficha).":"Seuls certains pays ont un mandat de rapporteur propre ; les mandats thématiques peuvent agir sur ce pays (voir la fiche).",
+"Solo algunos países tienen una comisión o misión de investigación; no es un juicio sobre el país.":"Seuls certains pays ont une commission ou une mission d’enquête ; ce n’est pas un jugement sur le pays.",
+"◍ Ver en el mapa":"◍ Voir sur la carte",
+"Qué es":"De quoi s'agit-il",
+"Qué hace":"Son action",
+"Nombre oficial en los idiomas de la ONU":"Nom officiel dans les langues de l'ONU",
+"Más detalle":"Plus de détails"
 };
