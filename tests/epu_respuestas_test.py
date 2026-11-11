@@ -238,9 +238,13 @@ class Verificacion2026(unittest.TestCase):
         # A/HRC/49/17/Add.1 (Tailandia): el informe la daba por apoyada y el adendo dice lo contrario
         self.assertEqual(self.r('22.\nAt the same time, Thailand is not in a position to support recommendation 136.1, as the\n'
                                 'recommendation requests the removal of the law.', INFORME_C2)[:2], [None, A])
-        # A/HRC/37/12/Add.1: «initially supported, is now noted»; A/HRC/22/16/Add.1: «With regard to 128.54, … able to support»
+        # A/HRC/37/12/Add.1: «initially supported, is now noted»; A/HRC/22/16/Add.1: «Upon reconsideration …, the following enjoy
+        # the support of Sri Lanka: 3.1 With regard to 128.54, … able to support»: el cambio es explícito y dice la posición final
         self.assertEqual(self.r('As a result of the consultation process, recommendation 136.2, which was initially supported, is now noted.',
-                                INFORME_C2)[:2], [A, None])
+                                INFORME_C2)[:2], [A, N])
+        self.assertEqual(self.r('3.\nUpon reconsideration of the recommendations received, the following enjoy the\nsupport of Afghanistan:\n'
+                                '3.1\nWith regard to 138.1, given that X, Afghanistan is able to support this\nrecommendation;', INFORME_C2)[-1], A)
+        # sin decir que cambia, una frase que contradice al informe solo lo pone en duda
         self.assertIsNone(self.r('3.1\nWith regard to 138.1, given that X, Afghanistan is able to support this\nrecommendation;', INFORME_C2)[-1])
 
     def test_explicacion_detras_del_numero_contradice_al_informe(self):
@@ -339,7 +343,223 @@ class Verificacion2026(unittest.TestCase):
         self.assertEqual(self.r('Recommendations\nAccepted\n125.1, 125.2, 125.3, 125.4.\n\nNoted\n125.5, 125.6.\n'), [A, A, A, A, N, N])
 
 
+class Cobertura2026(unittest.TestCase):
+    """Segunda revisión (noviembre de 2026): respuestas que el documento da con claridad y salían null. Un caso por causa, con un
+    trozo real y corto; y, junto a cada uno, la salvaguarda que no se afloja."""
+    def r(self, a, informe=INFORME_C4):
+        res = P.respuestas(informe, a, E.numeros(informe))
+        return [res[n]['r'] for n in E.numeros(informe)]
+
+    # (1) el informe ya lo dice y el adendo solo comenta, o habla de otras
+    def test_adendo_que_solo_comenta_no_anula_el_informe(self):
+        # A/HRC/56/13/Add.1 (Mónaco): comenta las apoyadas; el título del apartado siguiente («examined and noted») no es de ellas
+        a = ('Comments by the Principality of Monaco on the recommendations which enjoyed its support\n'
+             'Recommendations 136.1 to 136.2 on the prohibition of corporal\npunishment of children\n37.\n'
+             'While corporal punishment is already expressly prohibited in Monegasque law, the penalties were increased.\n\n'
+             'Comments by the Principality of Monaco on the\nrecommendations formulated during the interactive dialogue,\n'
+             'examined and noted by Monaco (A/HRC/56/13, para. 98)\nRecommendation 138.1 on improving conditions inside prisons\n')
+        self.assertEqual(self.r(a, INFORME_C2), [A, A, None, None, None, N])
+        # A/HRC/24/13/Add.1 (Azerbaiyán): «… all recommendations except 110.1» habla de las demás; luego «rejects the recommendations»
+        a = ('The Government of Azerbaijan accepts totally and partially all recommendations\nexcept 138.1. The accepted '
+             'recommendations will be implemented.\n2.\nAzerbaijan rejects the recommendations\n138.1 presented by the Republic of Armenia.\n')
+        self.assertEqual(self.r(a, INFORME_C2)[-1], N)
+        # A/HRC/63/9/Add.1 (Bélgica): «… makes them impossible to accept» no es «accept»
+        self.assertEqual(self.r('The absence of such a distinction in recommendations 138.1 makes them impossible to accept.', INFORME_C2)[-1], N)
+
+    def test_la_parte_es_de_otro_numero(self):
+        # A/HRC/30/15/Add.1 (Jamaica): «Recommendations 119.18, 119.19 and the first part of 120.20»: la parte es de la 120.20
+        a = 'Jamaica accepts, as having already been implemented:\n• Recommendations 136.1, 136.2 and the first part of 138.1 regarding discrimination\n'
+        self.assertEqual(self.r(a, INFORME_C2), [A, A, None, None, None, None])
+        self.assertNotEqual(P.clase('126.35 (in part of Article 400 and 403 of the Criminal Code)'), 'parcial')   # A/HRC/28/10/Add.1
+
+    def test_adendo_que_numera_mal_no_cuenta(self):
+        # A/HRC/25/4/Add.1 (Senegal): su «124.13 Eliminate the caste system … (Romania)» es la 125.13 del informe; la 124.13 sigue
+        # con la respuesta del informe. Si el texto copiado no es el de otra recomendación, la duda sigue en pie (null)
+        inf = INFORME_C2.replace('137.3. Strengthen (Norway);', '137.3. Eliminate the caste system, which leads to stigmatization and\n'
+                                 'ostracism of certain groups of the Senegalese society (Romania);')
+        a = ('136.2 Eliminate the caste system, which leads to stigmatization and ostracism\nof certain groups of the Senegalese society (Romania)\n'
+             '18.\nIn Senegal, discrimination is not tolerated. This recommendation is rejected.\n')
+        self.assertEqual(self.r(a, inf)[:2], [A, A])
+        self.assertEqual(self.r(a.replace('Eliminate the caste system, which leads to stigmatization and ostracism\nof certain groups of '
+                                          'the Senegalese society', 'Abolish castes'), inf)[:2], [A, None])
+
+    # (2) tablas: el salto de página, la etiqueta de otra fila, la última fila, la columna de comentarios suelta
+    def test_tabla_partida_por_el_salto_de_pagina(self):
+        # A/HRC/58/7/Add.1 (Côte d’Ivoire): encima de «135.66 / Accepted» queda el trozo «Noted: …» de la fila partida de antes
+        a = ''.join(f'125.{k}\n\nAccepted\n\n' for k in (1, 2, 3)) + (
+            'Recommendation\nnumber\n\nPosition of Côte d’Ivoire\n\nComments\n\nNoted: and transitional justice\nmechanisms\n\n\n\n'
+            '125.4\n\nAccepted\n\n125.5\n\nNoted\n\n125.6\n\nAccepted\n\nComments\n\n5.\nIn total, of the 6 recommendations received, '
+            '4 were accepted by Côte d’Ivoire,\n1 was noted and 1 was partially accepted.\n')
+        self.assertEqual(self.r(a), [A, A, A, A, N, A])   # la última fila no se lleva el recuento de debajo
+        # A/HRC/58/15/Add.1 (Etiopía): «58.33. Noted – …» es la etiqueta de la fila de antes, no un comentario de «58.34. Supported.»
+        a = ('125.1.\n\nSupported.\n\n125.2.\nNoted – Access to international and local human rights monitors should be allowed.\n'
+             '125.3.\n\nSupported.\n\n125.4.\n\nSupported.\n\n125.5.\n\nSupported.\n\n125.6.\n\nNoted – See the response to Rec. 125.2.\n')
+        self.assertEqual(self.r(a), [A, N, A, A, A, N])
+
+    def test_columna_de_comentarios_suelta(self):
+        # A/HRC/59/16/Add.1 (Egipto): los comentarios de varias filas salen juntos detrás de la última: manda la etiqueta
+        a = ''.join(f'125.{k}\n\nAccepted\n\n' for k in (1, 2, 3, 4)) + (
+            '125.5\n\nAccepted\n\nAlready implemented.\n\nAlready implemented.\n\nEgypt rejects the erroneous references in this\n'
+            'recommendation.\n\nAlready implemented.\n\n125.6\n\nNoted\n\n')
+        self.assertEqual(self.r(a), [A, A, A, A, A, N])
+        # pero un solo comentario que dice otra cosa sigue anulando la fila (A/HRC/29/7/Add.1, Laos)
+        a = ''.join(f'125.{k}\n\nAccepted\n\n' for k in range(1, 6)) + '125.6\n\nNoted\n\nThe Lao PDR accepts this recommendation in part.\n'
+        self.assertIsNone(self.r(a)[-1])
+
+    def test_etiqueta_de_la_fila_siguiente_encima_de_su_numero(self):
+        # A/HRC/44/13/Add.1 (Granada): la fila 94.105 lleva su «Noted» encima del número; no es de la 94.104
+        a = ('125.1\n\nAccepted\n\nGrenada accepts this recommendation.\n\n125.2, 125.3\n\nNoted\n\nGrenada notes these recommendations.\n\n'
+             '125.4\n\nAccepted\n\nGrenada supports this recommendation.\n\nNoted\n\nGrenada notes this recommendation.\n\n'
+             'Decriminalize abortion\n125.5\n\nThematic area 17: Right to education\n125.6\n\nAccepted\n\nGrenada supports this recommendation.\n')
+        self.assertEqual(self.r(a), [A, N, N, A, None, A])
+
+    def test_comentario_que_se_alinea_con_una_parte_no_es_parcial(self):
+        # A/HRC/22/11/Add.1 (Suiza): «Rejected» y «aligns itself with the first part of the recommendation. However, … rejects the
+        # recommendation»: la posición es la de la etiqueta. En cambio «notes the first part of the recommendation» sí es en parte
+        a = ''.join(f'125.{k}.\n\nAccepted\n\n' for k in range(1, 6)) + (
+            '125.6.\n\nRejected\n\nSwitzerland aligns itself with the first part of the recommendation. However, Switzerland sees no\n'
+            'need for a specific law and therefore rejects the recommendation.\n')
+        self.assertEqual(self.r(a)[-1], N)
+        self.assertEqual(P._frases_sobre('The Philippines accepts recommendation 131.32. The Philippines notes the first part of the recommendation.'),
+                         {'parcial'})
+
+    # (3) erratas de separador
+    def test_dos_puntos_por_punto_y_coma_y_listas_que_siguen_en_otra_linea(self):
+        # A/HRC/57/6/Add.1 (Chile): «24.305; 24.306:\n24.307: 24.308; 24.309»
+        self.assertEqual(self.r('Accepted:\n125.1; 125.2; 125.3:\n125.4: 125.5; 125.6.\n'), [A] * 6)
+        # A/HRC/59/4/Add.1 (Italia): «No. 34.6, 7, 8, …, 31,\n32, 33, …»; A/HRC/30/10/Add.1 (Bulgaria): «Rec.123.86–123.90»
+        self.assertEqual(self.r('Recommendations accepted\nNo. 125.1, 2,\n3, 4.\n\nRecommendations noted\nRec.125.5–125.6\n'), [A, A, A, A, N, N])
+        # un número de párrafo tras la coma no es parte de la lista: «125.3,\n4.\nThe Government …»
+        self.assertEqual(self.r('Accepted: 125.1, 125.2, 125.3,\n4.\nThe Government will report.\n')[3], None)
+
+    def test_recuento_no_es_cabecera_parcial(self):
+        # A/HRC/60/16/Add.1 (Guyana): «Of the following 60 recommendations …, 58 have been noted and 2 partially noted …» y «103.01 / Noted»
+        a = ('9.\nOf the following 6 recommendations formulated during the interactive dialogue and\non which a position had not been '
+             'taken yet, 5 have been noted and 1 partially noted and\npartially supported by the State.\nPara. # of Rec.\n\nState position\n\n' +
+             ''.join(f'125.0{k}\n\nNoted\n\n' for k in range(1, 6)) + '125.06\n\nSupported/Noted\n\n')
+        self.assertEqual(self.r(a), [N, N, N, N, N, None])
+
+    # (4) apartados con etiqueta, frases «X notes this recommendation», «Rejected.», el número que abre su apartado
+    def test_apartados_support_note(self):
+        # A/HRC/55/10/Add.1 (Alemania): «A. Support» … «B. Note»; una fila sin comentario va en su apartado
+        a = ('Responses to the recommendations\nA.\n\nSupport\n125.1\nGermany supports this recommendation.\n125.2\n125.3\n'
+             'Germany supports this recommendation.\n\nB.\n\nNote\n125.4\nRefer to 125.3.\n125.5\nGermany notes the recommendation.\n'
+             '125.6\nGermany takes note of the recommendation.\n')
+        self.assertEqual(self.r(a), [A, A, A, N, N, N])
+        # dos títulos de columna seguidos (A/HRC/58/14/Add.1): no se hereda ninguno
+        a = ('Accepted recommendations\n\nNoted recommendations\n\n' + ''.join(f'Recommendation 125.{k}, made by Togo, is noted.\n\n' for k in range(1, 6)) +
+             'Accepted recommendations\n\nNoted recommendations\n\n125.6\n')
+        self.assertIsNone(self.r(a)[-1])
+
+    def test_frases_por_numero(self):
+        # A/HRC/31/10/Add.1 (Santa Lucía), A/HRC/52/15/Add.1 (Polonia), A/HRC/29/11/Add.1 (Armenia)
+        a = ('125.1. Saint Lucia accepts this recommendation.\n125.2. Saint Lucia notes this recommendation and reiterates its stance.\n'
+             '125.3: Rejected. As for the amendment of Article 152(2), there are no grounds to support the Recommendation.\n'
+             '125.4. – Supported, under implementation.\n125.5. Saint Lucia accepts this recommendation.\n'
+             '125.6. Saint Lucia notes this recommendation.\n')
+        self.assertEqual(self.r(a), [A, N, N, A, A, N])
+        # la frase sin cerrar que abre la lista siguiente no es de la fila de antes («120.179. – Supported, under implementation.\n\n3.\n
+        # Armenia rejects the recommendations» 120.180, …)
+        self.assertEqual(P._frases_sobre('. – Supported, under implementation.\n\n3.\nArmenia rejects the recommendations\n'), set())
+        self.assertEqual(P.clase('Bhutan is currently not in the position to accept this recommendation'), N)   # A/HRC/27/8/Add.1
+
+    def test_el_numero_abre_su_apartado(self):
+        # A/HRC/34/13/Add.1 (Sudán del Sur): «128.33: The recommendation is in conflict with … as such cannot be supported.»;
+        # A/HRC/33/6/Add.1 (Samoa): «Recommendation 96.26» y, párrafos abajo, «Samoa notes this recommendation»
+        a = ('125.3: The recommendation is in conflict with South Sudan customs and beliefs as such\ncannot be supported.\n'
+             'Recommendation 125.5\n11.\nSamoa recently enacted the Crimes Act 2013.\n12.\nSamoa notes this recommendation on the grounds that '
+             'the Government will continue its assessment.\n')
+        self.assertEqual(self.r(a), [None, None, N, None, N, None])
+        # no vale una etiqueta que no se entiende (A/HRC/30/9/Add.1: «84.57 / Taken into consideration»), ni lo que se dice de otra
+        # recomendación más abajo (A/HRC/33/4/Add.1: «The recommendation on the Convention against Torture … enjoys support.»)
+        self.assertIsNone(self.r('125.1\n\nTaken into consideration\n\nAndorra is negotiating. The recommendation enjoys support.\n')[0])
+        self.assertIsNone(self.r('125.1.\nSuriname supports the recommendation related to legislation. In addition, Suriname supports the part '
+                                 'of the recommendation related to disability.\n')[0])
+
+    # (5) cambio de posición explícito
+    def test_cambio_de_posicion_explicito(self):
+        # A/HRC/46/9/Add.1 (Mongolia): «decided to move the recommendation 117.18 into the category of supported recommendations»
+        a = ('Mongolia observed that there had occurred a misplacement of 2 recommendations, namely, 136.2 and 138.1 and decided to move '
+             'the recommendation 138.1 into the category of supported recommendations and the recommendation 136.2 to the category of noted '
+             'recommendations accordingly.\n3.\nTo be precise, the supported recommendations are 136.1 and 138.1 as most of them are in the '
+             'process of implementation. And the recommendations that are noted are 136.2.\n')
+        self.assertEqual(self.r(a, INFORME_C2)[-1], A)   # (la 136.2 sale también en la frase de las dos: queda null, sin forzar)
+        # A/HRC/49/17/Add.1 (Tailandia): «not in a position to support recommendation 51.1» y, en la nota, «had to change its position
+        # on this recommendation from immediately accepting to note the recommendation»
+        a = ('At the same time, Thailand is not in a position to support recommendation 136.1, as the\nrecommendation requests the '
+             'removal of the law.\n\nInitially Thailand had immediately supported 194 recommendations. However, Thailand was later on\n'
+             'drawn to the attention regarding the clarification for recommendation 136.1 with explicit reference to the Penal Code. '
+             'Thailand, therefore, had to change\nits position on this recommendation from immediately accepting to note the recommendation.\n')
+        self.assertEqual(self.r(a, INFORME_C2)[0], N)
+
+    def test_salvaguardas_que_siguen(self):
+        # «cannot be accepted in its entirety» (A/HRC/62/12/Add.1) y «The aspect of the Recommendation … is Rejected» (A/HRC/33/12/Add.1)
+        self.assertEqual(P.clase('Therefore, the recommendation cannot be accepted in its entirety.'), 'parcial')
+        self.assertIsNone(self.r('136.1. Accelerates moves to end child marriage (UK)\n\nThe aspect of the Recommendation on the Law of\n'
+                                 'Marriage Act, 1971 is Rejected pending outcome of the Court of Appeal decision.\n', INFORME_C2.replace(
+                                     '136.1. Ratify the Optional Protocol (Denmark);', '136.1. Accelerates moves to end child marriage (UK);'))[0])
+        # «Following the ratification of ILO Conventions…, Italy has accepted to be reviewed…» no es la cabecera de la fila siguiente
+        a = ('Recommendations noted\n125.1, 125.2\n7.\nFollowing the ratification of ILO Conventions C 143 and C189,\nItaly has accepted to be '
+             'periodically reviewed.\n125.3\n8.\nItaly does not believe that new treaties are needed.\n125.4\n9.\nNo comment.\n125.5\n10.\nNo comment.\n'
+             '125.6\n11.\nNo comment.\n')
+        self.assertNotEqual(self.r(a)[2], A)
+        # «All the recommendations enjoy support of Montenegro,\nexcept recommendations number: 119.2, …» (A/HRC/23/12/Add.1)
+        a = 'I. All the recommendations enjoy support of Montenegro,\nexcept recommendations number: 125.2, 125.4.\nReasons are as follows:\n125.2 – Not in accordance with the law.\n'
+        self.assertNotEqual(self.r(a)[1], A)
+        # «With regard to the recommendations noted above in 123.28» = mencionadas (A/HRC/31/9/Add.1): no es «tomó nota»
+        self.assertEqual(P._frases_sobre('With regard to the recommendations noted above in 125.1, the GoN pursues a policy.'), set())
+
+
+    # Tercera revisión: valores falsos que encontró la verificación adversarial; cada uno con la regla que lo producía
+    def test_falsos_de_la_verificacion(self):
+        # A/HRC/23/5/Add.1 (Rumanía): «109.8. Not accepted with respect to ICRMW (see recommendation 2); accepted\nconcerning CPED.»:
+        # la etiqueta de la fila no acaba en el «;», la frase sigue y dice lo contrario
+        a = ('125.1. Accepted.\n125.2. Not accepted with respect to ICRMW (see recommendation 1); accepted\nconcerning CPED.\n'
+             '125.3. Accepted.\n125.4. Not accepted.\n125.5. Accepted.\n125.6. Accepted.\n')
+        self.assertEqual(self.r(a), [A, None, A, N, A, A])
+        # A/HRC/33/11/Add.1 (Tayikistán): «welcomes the technical support offered in fulfilling this recommendation» no es «support»
+        # como respuesta (y acepta un tratado y no el otro); «accepts this recommendation only with regard to CRPD» es en parte
+        a = ('125.1\n\nTajikistan accepts this recommendation.\n\n125.2\n\nAt present, Tajikistan considers it feasible to accede to '
+             'CRPD and welcomes the\ntechnical support offered in fulfilling this recommendation.\nTajikistan is not ready at this stage '
+             'to accede to ICPPED.\n\n125.3\n\nTajikistan accepts this recommendation only with regard to CRPD\nand ICCPR-OP2.\n\n'
+             '125.4\n\nTajikistan does not accept this recommendation.\n\n125.5\n\nAnswered in 125.4.\n\n125.6\n\nTajikistan accepts this '
+             'recommendation.\n')
+        self.assertEqual(self.r(a)[1:3], [None, None])
+        self.assertEqual(P.clase('welcomes the technical support offered in fulfilling this recommendation', estricto=True), None)
+        self.assertEqual(P.clase('Sri Lanka is able to support this recommendation', estricto=True), A)
+        # A/HRC/33/6/Add.1 (Samoa): «Recommendation 96.2 / … Samoa accepts this recommendation» y, más abajo, «Recommendations 96.1,
+        # 96.2, 96.3 … / … Samoa notes this recommendation»: el número que abre su apartado solo vale si no sale en otro sitio
+        a = ('Recommendation 125.2\n10.\nSamoa will ratify CRPD by December 2016. Therefore Samoa accepts this recommendation.\n\n'
+             'Recommendations 125.1, 125.2, 125.3\n13.\nWith respect to the accession to ICESCR, the Government will continue its '
+             'assessment. Thus far, Samoa notes this recommendation.\n')
+        self.assertIsNone(self.r(a)[1])
+        # A/HRC/41/6/Add.1 (Chile): «has decided not to consider recommendations 125.86, …» en una «Additional note» que va debajo
+        # de «Recommendations not accepted»: no toma posición, y la fila no hereda el apartado
+        self.assertTrue(P._SIN_POSICION.search('The Government of Chile has decided not to consider recommendations 125.86'))
+        a = ('Recommendations not accepted by the Government\n125.5\n30.\nThe recommendation is not accepted.\n\nAdditional note\n41.\n'
+             'The Government has decided not to consider recommendations 125.1,\n125.2 and 125.3, which were issued by the representatives '
+             'of a regime whose\nlegitimacy it does not recognize.\n')
+        ap = P._paginas(a)
+        i = ap.find('125.1,')
+        self.assertFalse(P._hereda_fila(ap, i, i + 5, N))
+        self.assertEqual(self.r(a)[:3], [None, None, None])
+
 DIR = os.environ.get('ATLAS_TEXTOS_DIR', '/var/lib/atlas/textos')
+
+
+class Condicionadas(unittest.TestCase):
+    """T75 r3: una aceptación con condiciones no es «apoyada» (A/HRC/30/10/Add.1, A/HRC/55/10/Add.1, A/HRC/25/7/Add.1)."""
+    def test_aceptacion_condicionada_no_es_apoyada(self):
+        for s in ('Rec.123.46 – accepted under the stipulation that “prohibiting” is an incorrect term;',
+                  'Rec.123.76 – accepted with the reservation that the word “increase” represents a',
+                  'The recommendation is supported on the understanding that training and service in',
+                  'Mexico accepts the recommendation on the understanding that',
+                  'accepted subject to the clarification that'):
+            self.assertNotEqual(P.clase(s), 'apoyada', s)
+
+    def test_aceptacion_sin_condiciones_sigue_apoyada(self):
+        for s in ('Accepted', 'Rec.123.31 – accepted.', 'enjoy the support of Bulgaria'):
+            self.assertEqual(P.clase(s), 'apoyada', s)
 
 
 @unittest.skipUnless(os.path.exists(os.path.join(DIR, 'txt', 'A_HRC_29_8_Add_1-en.txt')), 'sin los textos de la ONU en este equipo')
@@ -355,6 +575,22 @@ class TextosReales(unittest.TestCase):
     def test_espana_2015(self): self.assertEqual(self.lee('A_HRC_29_8'), [138, 15, 36])     # 36 «in part»
     def test_dinamarca_2026(self): self.assertEqual(self.lee('A_HRC_63_10'), [174, 91, 0])  # «accepts 174 … and notes 91»
     def test_kuwait_2020(self): self.assertEqual(self.lee('A_HRC_44_17'), [230, 66, 6])     # 6 «Partially supported»
+
+    def uno(self, s, *nums):
+        with open(os.path.join(DIR, 'txt', s + '-en.txt'), encoding='utf-8', errors='ignore') as f: t = f.read()
+        with open(os.path.join(DIR, 'txt', s + '_Add_1-en.txt'), encoding='utf-8', errors='ignore') as f: a = f.read()
+        r = P.respuestas(t, a, E.numeros(t))
+        return [r[n]['r'] for n in nums]
+
+    def test_falsos_de_la_verificacion(self):
+        # comprobados en el texto: «decided not to consider» (Chile), respuesta mixta en la fila (Rumanía), prosa mixta y «only with
+        # regard to» (Tayikistán), el mismo número con dos respuestas en dos apartados (Samoa)
+        self.assertEqual(self.uno('A_HRC_41_6', '125.86', '125.123', '125.190', '125.215'), [None] * 4)
+        self.assertEqual(self.uno('A_HRC_23_5', '109.8', '109.7', '109.1'), [None, N, A])
+        self.assertEqual(self.uno('A_HRC_33_11', '118.7', '118.8', '118.15'), [None, None, N])
+        self.assertEqual(self.uno('A_HRC_33_6', '96.2', '96.20', '96.26'), [None, None, N])
+        # y lo que sigue valiendo junto a ellos: «Malaysia is unable to support this recommendation» (146.126)
+        self.assertEqual(self.uno('A_HRC_25_10', '146.126'), [N])
 
 
 if __name__ == '__main__':
