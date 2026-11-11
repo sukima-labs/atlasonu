@@ -480,6 +480,26 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     ok('idiomas: sin errores de JavaScript', errs.length === 0);
     await ctx.close();
   }
+  // #188: celular con el navegador en «sitio de computador» (ancho de página ~980 px, pantalla de 412): la página se abre en vista móvil
+  {
+    const UA = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36';
+    const abre = async (opt, pre) => { const c = await browser.newContext(opt); const pg = await c.newPage(); const er = []; pg.on('pageerror', e => er.push(e.message)); if (pre) await pg.addInitScript(pre); await pg.goto(URL + '#paises'); await pg.waitForTimeout(1500); return { c, pg, er }; };
+    const a = await abre({ viewport: { width: 980, height: 1740 }, screen: { width: 412, height: 915 }, hasTouch: true, isMobile: false, userAgent: UA });
+    const fr = a.pg.frames().find(f => f !== a.pg.mainFrame());
+    const info = fr ? await fr.evaluate(() => ({ w: innerWidth, menu: getComputedStyle(document.getElementById('menuBtn') || document.body).display, opc: !document.getElementById('vistaOpc').hidden, pais: !!document.getElementById('paises') })) : null;
+    ok('vista móvil forzada (#188): en un celular con «sitio de computador» la página se abre en un marco de 412 px con el diseño de celular', !!info && info.w === 412 && info.menu !== 'none' && info.opc && info.pais && a.er.length === 0);
+    ok('vista móvil forzada (#188): el marco llena el ancho de la pantalla (sin franjas ni desplazamiento lateral)', await a.pg.evaluate(() => { const f = document.getElementById('marcoMovil'); const r = f && f.getBoundingClientRect(); return !!r && Math.abs(r.width - innerWidth) < 2 && document.documentElement.scrollWidth <= innerWidth; }));
+    await a.c.close();
+    const b = await abre({ viewport: { width: 980, height: 1740 }, screen: { width: 412, height: 915 }, hasTouch: true, isMobile: false, userAgent: UA }, () => { try { localStorage.setItem('atlas-vista', 'ancho'); } catch (e) {} });
+    ok('vista móvil forzada (#188): si la persona eligió «ver en ancho completo», se respeta (y se ofrece volver)', (await b.pg.locator('#marcoMovil').count()) === 0 && (await b.pg.evaluate(() => !document.getElementById('vistaOpc').hidden && !document.getElementById('vistaMovil').hidden && document.getElementById('vistaAncho').hidden)));
+    await b.c.close();
+    const d = await abre({ viewport: { width: 1280, height: 800 }, userAgent: UA });
+    ok('vista móvil forzada (#188): en un computador no cambia nada', (await d.pg.locator('#marcoMovil').count()) === 0 && (await d.pg.evaluate(() => document.getElementById('vistaOpc').hidden)));
+    await d.c.close();
+    const e = await abre({ viewport: { width: 412, height: 915 }, screen: { width: 412, height: 915 }, hasTouch: true, isMobile: true, userAgent: UA });
+    ok('vista móvil forzada (#188): un celular en modo normal tampoco cambia (sin marco ni enlaces de vista)', (await e.pg.locator('#marcoMovil').count()) === 0 && (await e.pg.evaluate(() => document.getElementById('vistaOpc').hidden)));
+    await e.c.close();
+  }
   await browser.close();
   const failed = res.checks.filter(c => !c.ok);
   console.log(JSON.stringify({ ...res, passed: res.checks.length - failed.length, failed: failed.length }, null, 1));

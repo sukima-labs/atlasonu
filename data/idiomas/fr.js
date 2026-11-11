@@ -1082,6 +1082,8 @@ window.ATLAS_IDIOMA_fr={
 "En {n} no era parte":"En {n}, il n'était pas partie",
 "En {n} ya había cursado una invitación permanente":"En {n}, il avait déjà adressé une invitation permanente",
 "En {n} no había cursado una invitación permanente":"En {n}, il n'avait pas adressé d'invitation permanente",
+"<a>Ver en ancho completo</a>":"<a>Voir en pleine largeur</a>",
+"<a>Ver como en celular</a>":"<a>Voir comme sur un téléphone</a>",
 "Ucrania":"Ukraine",
 "Tipo de gráfico":"Type de graphique",
 "Con quién vota más":"Avec qui il vote le plus",
