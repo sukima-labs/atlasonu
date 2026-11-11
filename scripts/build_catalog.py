@@ -201,7 +201,8 @@ for t in TR['tratados']:
 SIG = json.load(open('data/siglas.json', encoding='utf-8'))
 HIS = json.load(open('data/historia.json', encoding='utf-8'))
 HOJ = json.load(open('data/hoja_ruta.json', encoding='utf-8'))
-data = {'version': '0.7', 'sistema': SIS, 'siglas': SIG, 'historia': HIS, 'hojaruta': HOJ, 'paises': paises, 'regiones': regiones, 'regiones_fuente': {'url': REG['fuente'], 'consultado': REG['consultado']}, 'paises_fuente': {'url': OH['fuente'], 'consultado': OH['consultado']}, 'tratados': [{k: v for k, v in t.items()} for t in TR['tratados']], 'tratados_fuente': {'url': TR['fuente'], 'consultado': TR['consultado']}, 'mecanismos': mec, 'consultado': fecha,
+AGE = json.load(open('data/agencias.json', encoding='utf-8'))  # T87: ficha explicativa de cada agencia, en los 6 idiomas
+data = {'version': '0.7', 'sistema': SIS, 'siglas': SIG, 'agencias': AGE['agencias'], 'historia': HIS, 'hojaruta': HOJ, 'paises': paises, 'regiones': regiones, 'regiones_fuente': {'url': REG['fuente'], 'consultado': REG['consultado']}, 'paises_fuente': {'url': OH['fuente'], 'consultado': OH['consultado']}, 'tratados': [{k: v for k, v in t.items()} for t in TR['tratados']], 'tratados_fuente': {'url': TR['fuente'], 'consultado': TR['consultado']}, 'mecanismos': mec, 'consultado': fecha,
         'fuentes': ['https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM', 'https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM',
                     'https://digitallibrary.un.org/'],
         'mandatos': recs, 'indice_actos': index,

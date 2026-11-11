@@ -4132,6 +4132,2390 @@
    }
   ]
  },
+ "agencias": [
+  {
+   "id": "ACNUDH",
+   "ent": "ACNUDH",
+   "siglas": [
+    "ohchr-organo-de-la-onu"
+   ],
+   "sigla": "ACNUDH / OHCHR",
+   "es": {
+    "n": "Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos",
+    "que": "La oficina de la ONU dedicada a los derechos humanos.",
+    "hace": "Apoya a los relatores, a los comités de tratados y al Consejo de Derechos Humanos; documenta violaciones y tiene oficinas en muchos países. Lo dirige el Alto Comisionado."
+   },
+   "en": {
+    "n": "Office of the United Nations High Commissioner for Human Rights",
+    "que": "The UN office devoted to human rights.",
+    "hace": "It supports special rapporteurs, treaty committees and the Human Rights Council, documents violations and has offices in many countries. It is led by the High Commissioner."
+   },
+   "fr": {
+    "n": "Haut-Commissariat des Nations Unies aux droits de l'homme",
+    "que": "Le bureau de l'ONU consacré aux droits de l'homme.",
+    "hace": "Il appuie les rapporteurs spéciaux, les comités des traités et le Conseil des droits de l'homme, documente les violations et dispose de bureaux dans de nombreux pays. Il est dirigé par le Haut-Commissaire."
+   },
+   "ar": {
+    "n": "مفوضية الأمم المتحدة السامية لحقوق الإنسان",
+    "que": "مكتب الأمم المتحدة المعني بحقوق الإنسان.",
+    "hace": "تدعم المقرّرين الخاصين ولجان المعاهدات ومجلس حقوق الإنسان، وتوثّق الانتهاكات، ولها مكاتب في بلدان كثيرة. ويرأسها المفوض السامي."
+   },
+   "zh": {
+    "n": "联合国人权事务高级专员办事处",
+    "que": "联合国专门负责人权的办事处。",
+    "hace": "支持特别报告员、条约机构和人权理事会,记录侵犯人权行为,在许多国家设有办事处。由高级专员领导。"
+   },
+   "ru": {
+    "n": "Управление Верховного комиссара Организации Объединённых Наций по правам человека",
+    "que": "Подразделение ООН, занимающееся правами человека.",
+    "hace": "Поддерживает специальных докладчиков, договорные комитеты и Совет по правам человека, документирует нарушения и имеет представительства во многих странах. Его возглавляет Верховный комиссар."
+   }
+  },
+  {
+   "id": "OCHA",
+   "ent": "OCHA",
+   "siglas": [
+    "ocha-entidad"
+   ],
+   "sigla": "OCHA",
+   "es": {
+    "n": "Oficina de Coordinación de Asuntos Humanitarios",
+    "que": "La parte de la ONU que coordina la ayuda humanitaria en las emergencias.",
+    "hace": "Reúne a agencias y organizaciones para responder a guerras, desastres y hambrunas; pide fondos a los donantes y publica información sobre cada crisis."
+   },
+   "en": {
+    "n": "United Nations Office for the Coordination of Humanitarian Affairs",
+    "que": "The part of the UN that coordinates humanitarian aid in emergencies.",
+    "hace": "It brings agencies and organisations together to respond to wars, disasters and famines; it asks donors for funds and publishes information on each crisis."
+   },
+   "fr": {
+    "n": "Bureau de la coordination des affaires humanitaires",
+    "que": "La partie de l'ONU qui coordonne l'aide humanitaire en cas d'urgence.",
+    "hace": "Il réunit des agences et des organisations pour répondre aux guerres, aux catastrophes et aux famines ; il demande des fonds aux donateurs et publie des informations sur chaque crise."
+   },
+   "ar": {
+    "n": "مكتب الأمم المتحدة لتنسيق الشؤون الإنسانية",
+    "que": "الجهة في الأمم المتحدة التي تنسّق المساعدات الإنسانية في حالات الطوارئ.",
+    "hace": "يجمع الوكالات والمنظمات للاستجابة للحروب والكوارث والمجاعات، ويطلب التمويل من الجهات المانحة، وينشر معلومات عن كل أزمة."
+   },
+   "zh": {
+    "n": "联合国人道主义事务协调厅",
+    "que": "联合国中负责协调紧急情况下人道主义援助的部门。",
+    "hace": "召集各机构和组织,共同应对战争、灾害和饥荒;向捐助方募集资金,并发布每场危机的相关信息。"
+   },
+   "ru": {
+    "n": "Управление Организации Объединённых Наций по координации гуманитарных вопросов",
+    "que": "Подразделение ООН, которое координирует гуманитарную помощь в чрезвычайных ситуациях.",
+    "hace": "Объединяет учреждения и организации для реагирования на войны, бедствия и голод; обращается к донорам за средствами и публикует информацию о каждом кризисе."
+   }
+  },
+  {
+   "id": "UNODC",
+   "ent": "UNODC",
+   "siglas": [
+    "unodc-entidad"
+   ],
+   "sigla": "UNODC",
+   "es": {
+    "n": "Oficina de las Naciones Unidas contra la Droga y el Delito",
+    "que": "La oficina de la ONU que se ocupa de las drogas, el crimen y la corrupción.",
+    "hace": "Ayuda a los países a combatir la trata de personas, el tráfico de drogas y de migrantes y la corrupción, y a tener una justicia penal justa."
+   },
+   "en": {
+    "n": "United Nations Office on Drugs and Crime",
+    "que": "The UN office that deals with drugs, crime and corruption.",
+    "hace": "It helps countries fight human trafficking, drug and migrant smuggling and corruption, and build fair criminal justice systems."
+   },
+   "fr": {
+    "n": "Office des Nations Unies contre la drogue et le crime",
+    "que": "Le bureau de l'ONU qui s'occupe des drogues, de la criminalité et de la corruption.",
+    "hace": "Il aide les pays à lutter contre la traite des personnes, le trafic de drogues et de migrants et la corruption, et à disposer d'une justice pénale équitable."
+   },
+   "ar": {
+    "n": "مكتب الأمم المتحدة المعني بالمخدرات والجريمة",
+    "que": "مكتب الأمم المتحدة الذي يتناول المخدرات والجريمة والفساد.",
+    "hace": "يساعد البلدان على مكافحة الاتجار بالأشخاص والاتجار بالمخدرات وتهريب المهاجرين والفساد، وعلى إقامة عدالة جنائية منصفة."
+   },
+   "zh": {
+    "n": "联合国毒品和犯罪问题办公室",
+    "que": "联合国负责处理毒品、犯罪和腐败问题的办公室。",
+    "hace": "帮助各国打击人口贩运、毒品和移民走私以及腐败,并建立公正的刑事司法制度。"
+   },
+   "ru": {
+    "n": "Управление Организации Объединённых Наций по наркотикам и преступности",
+    "que": "Управление ООН, которое занимается наркотиками, преступностью и коррупцией.",
+    "hace": "Помогает странам бороться с торговлей людьми, незаконным оборотом наркотиков, контрабандой мигрантов и коррупцией, а также создавать справедливую систему уголовного правосудия."
+   }
+  },
+  {
+   "id": "UNICEF",
+   "ent": "UNICEF",
+   "siglas": [
+    "unicef-entidad"
+   ],
+   "sigla": "UNICEF",
+   "es": {
+    "n": "Fondo de las Naciones Unidas para la Infancia",
+    "que": "El fondo de la ONU para la infancia: se ocupa de los derechos de niñas y niños.",
+    "hace": "Lleva vacunas, agua, educación y protección a la niñez en cada país, sobre todo en emergencias, y defiende la Convención sobre los Derechos del Niño."
+   },
+   "en": {
+    "n": "United Nations Children's Fund",
+    "que": "The UN children's fund: it works for the rights of girls and boys.",
+    "hace": "It brings vaccines, water, education and protection to children in every country, especially in emergencies, and promotes the Convention on the Rights of the Child."
+   },
+   "fr": {
+    "n": "Fonds des Nations Unies pour l'enfance",
+    "que": "Le fonds de l'ONU pour l'enfance : il s'occupe des droits des filles et des garçons.",
+    "hace": "Il apporte vaccins, eau, éducation et protection aux enfants dans chaque pays, surtout en situation d'urgence, et défend la Convention relative aux droits de l'enfant."
+   },
+   "ar": {
+    "n": "منظمة الأمم المتحدة للطفولة (اليونيسف)",
+    "que": "صندوق الأمم المتحدة المعني بالطفولة: يهتم بحقوق الفتيات والفتيان.",
+    "hace": "يوفّر اللقاحات والمياه والتعليم والحماية للأطفال في كل بلد، ولا سيما في حالات الطوارئ، ويدافع عن اتفاقية حقوق الطفل."
+   },
+   "zh": {
+    "n": "联合国儿童基金会",
+    "que": "联合国儿童基金:致力于维护女童和男童的权利。",
+    "hace": "向各国儿童提供疫苗、水、教育和保护,在紧急情况下尤其如此,并倡导落实《儿童权利公约》。"
+   },
+   "ru": {
+    "n": "Детский фонд Организации Объединённых Наций",
+    "que": "Детский фонд ООН: занимается правами девочек и мальчиков.",
+    "hace": "Обеспечивает детей в каждой стране вакцинами, водой, образованием и защитой, особенно в чрезвычайных ситуациях, и отстаивает Конвенцию о правах ребёнка."
+   }
+  },
+  {
+   "id": "PNUD",
+   "ent": "PNUD",
+   "siglas": [
+    "undp-entidad"
+   ],
+   "sigla": "PNUD / UNDP",
+   "es": {
+    "n": "Programa de las Naciones Unidas para el Desarrollo",
+    "que": "El programa de la ONU para el desarrollo: ayuda a los países a salir de la pobreza.",
+    "hace": "Trabaja con los gobiernos en gobernanza, acceso a la justicia, reducción de la pobreza, clima y energía, y mide el desarrollo humano de cada país."
+   },
+   "en": {
+    "n": "United Nations Development Programme",
+    "que": "The UN development programme: it helps countries move out of poverty.",
+    "hace": "It works with governments on governance, access to justice, poverty reduction, climate and energy, and measures each country's human development."
+   },
+   "fr": {
+    "n": "Programme des Nations Unies pour le développement",
+    "que": "Le programme de l'ONU pour le développement : il aide les pays à sortir de la pauvreté.",
+    "hace": "Il travaille avec les gouvernements sur la gouvernance, l'accès à la justice, la réduction de la pauvreté, le climat et l'énergie, et mesure le développement humain de chaque pays."
+   },
+   "ar": {
+    "n": "برنامج الأمم المتحدة الإنمائي",
+    "que": "برنامج الأمم المتحدة للتنمية: يساعد البلدان على الخروج من الفقر.",
+    "hace": "يعمل مع الحكومات في مجالات الحوكمة والوصول إلى العدالة والحد من الفقر والمناخ والطاقة، ويقيس التنمية البشرية في كل بلد."
+   },
+   "zh": {
+    "n": "联合国开发计划署",
+    "que": "联合国发展方案:帮助各国摆脱贫困。",
+    "hace": "与各国政府合作,涉及治理、司法公正、减贫、气候和能源等领域,并衡量各国的人类发展水平。"
+   },
+   "ru": {
+    "n": "Программа развития Организации Объединённых Наций",
+    "que": "Программа ООН по развитию: помогает странам выбраться из бедности.",
+    "hace": "Работает с правительствами в областях управления, доступа к правосудию, сокращения бедности, климата и энергетики, а также измеряет человеческое развитие каждой страны."
+   }
+  },
+  {
+   "id": "UNFPA",
+   "ent": "UNFPA",
+   "siglas": [
+    "unfpa-entidad"
+   ],
+   "sigla": "UNFPA",
+   "es": {
+    "n": "Fondo de Población de las Naciones Unidas",
+    "que": "El fondo de la ONU para la población, la salud sexual y reproductiva.",
+    "hace": "Apoya el acceso a la planificación familiar y a una maternidad segura, y trabaja contra la violencia de género y los matrimonios infantiles."
+   },
+   "en": {
+    "n": "United Nations Population Fund",
+    "que": "The UN population fund, for sexual and reproductive health.",
+    "hace": "It supports access to family planning and safe motherhood, and works against gender-based violence and child marriage."
+   },
+   "fr": {
+    "n": "Fonds des Nations Unies pour la population",
+    "que": "Le fonds de l'ONU pour la population et la santé sexuelle et reproductive.",
+    "hace": "Il soutient l'accès à la planification familiale et à une maternité sans risque, et lutte contre les violences basées sur le genre et les mariages d'enfants."
+   },
+   "ar": {
+    "n": "صندوق الأمم المتحدة للسكان",
+    "que": "صندوق الأمم المتحدة المعني بالسكان والصحة الجنسية والإنجابية.",
+    "hace": "يدعم الحصول على خدمات تنظيم الأسرة والأمومة الآمنة، ويعمل على مكافحة العنف القائم على النوع الاجتماعي وزواج الأطفال."
+   },
+   "zh": {
+    "n": "联合国人口基金",
+    "que": "联合国人口基金,关注性健康和生殖健康。",
+    "hace": "支持人们获得计划生育服务和安全孕产,并致力于消除基于性别的暴力和童婚。"
+   },
+   "ru": {
+    "n": "Фонд Организации Объединённых Наций в области народонаселения",
+    "que": "Фонд ООН в области народонаселения, сексуального и репродуктивного здоровья.",
+    "hace": "Поддерживает доступ к планированию семьи и безопасному материнству, а также борется с гендерным насилием и детскими браками."
+   }
+  },
+  {
+   "id": "PMA",
+   "ent": "PMA",
+   "siglas": [
+    "wfp-entidad"
+   ],
+   "sigla": "PMA / WFP",
+   "es": {
+    "n": "Programa Mundial de Alimentos",
+    "que": "El programa de la ONU que lleva comida a quienes pasan hambre.",
+    "hace": "Reparte alimentos en guerras, desastres y crisis de hambre, apoya comedores escolares y ayuda a las comunidades a producir su comida. Recibió el Nobel de la Paz en 2020."
+   },
+   "en": {
+    "n": "World Food Programme",
+    "que": "The UN programme that brings food to people who go hungry.",
+    "hace": "It delivers food in wars, disasters and hunger crises, supports school meals and helps communities grow their own food. It won the Nobel Peace Prize in 2020."
+   },
+   "fr": {
+    "n": "Programme alimentaire mondial",
+    "que": "Le programme de l'ONU qui apporte de la nourriture aux personnes qui souffrent de la faim.",
+    "hace": "Il distribue des vivres pendant les guerres, les catastrophes et les crises de faim, soutient les cantines scolaires et aide les communautés à produire leur propre nourriture. Il a reçu le prix Nobel de la paix en 2020."
+   },
+   "ar": {
+    "n": "برنامج الأغذية العالمي",
+    "que": "برنامج الأمم المتحدة الذي يوصل الغذاء إلى الذين يعانون من الجوع.",
+    "hace": "يوزّع الغذاء في أوقات الحروب والكوارث وأزمات الجوع، ويدعم برامج التغذية المدرسية، ويساعد المجتمعات على إنتاج غذائها. حصل على جائزة نوبل للسلام عام 2020."
+   },
+   "zh": {
+    "n": "世界粮食计划署",
+    "que": "联合国向挨饿者提供食物的计划。",
+    "hace": "在战争、灾害和饥饿危机中分发粮食,支持学校供餐,并帮助社区自己生产粮食。2020年荣获诺贝尔和平奖。"
+   },
+   "ru": {
+    "n": "Всемирная продовольственная программа",
+    "que": "Программа ООН, которая доставляет еду тем, кто голодает.",
+    "hace": "Раздаёт продовольствие во время войн, бедствий и кризисов голода, поддерживает школьное питание и помогает общинам самим производить еду. В 2020 году получила Нобелевскую премию мира."
+   }
+  },
+  {
+   "id": "PNUMA",
+   "ent": "PNUMA",
+   "siglas": [
+    "unep-entidad"
+   ],
+   "sigla": "PNUMA / UNEP",
+   "es": {
+    "n": "Programa de las Naciones Unidas para el Medio Ambiente",
+    "que": "El programa de la ONU para el medio ambiente.",
+    "hace": "Vigila el estado del planeta, ayuda a los países con leyes y políticas ambientales (clima, contaminación, biodiversidad) y promueve el derecho a un medio ambiente sano."
+   },
+   "en": {
+    "n": "United Nations Environment Programme",
+    "que": "The UN environment programme.",
+    "hace": "It monitors the state of the planet, helps countries with environmental laws and policies (climate, pollution, biodiversity) and promotes the right to a healthy environment."
+   },
+   "fr": {
+    "n": "Programme des Nations Unies pour l'environnement",
+    "que": "Le programme de l'ONU pour l'environnement.",
+    "hace": "Il surveille l'état de la planète, aide les pays à adopter des lois et des politiques environnementales (climat, pollution, biodiversité) et promeut le droit à un environnement sain."
+   },
+   "ar": {
+    "n": "برنامج الأمم المتحدة للبيئة",
+    "que": "برنامج الأمم المتحدة المعني بالبيئة.",
+    "hace": "يرصد حالة كوكب الأرض، ويساعد البلدان في وضع القوانين والسياسات البيئية (المناخ والتلوث والتنوع البيولوجي)، ويعزّز الحق في بيئة سليمة."
+   },
+   "zh": {
+    "n": "联合国环境规划署",
+    "que": "联合国环境规划署。",
+    "hace": "监测地球状况,帮助各国制定环境法律和政策(气候、污染、生物多样性),并倡导享有健康环境的权利。"
+   },
+   "ru": {
+    "n": "Программа Организации Объединённых Наций по окружающей среде",
+    "que": "Программа ООН по окружающей среде.",
+    "hace": "Следит за состоянием планеты, помогает странам с экологическими законами и политикой (климат, загрязнение, биоразнообразие) и продвигает право на здоровую окружающую среду."
+   }
+  },
+  {
+   "id": "ACNUR",
+   "ent": "ACNUR",
+   "siglas": [
+    "unhcr-entidad"
+   ],
+   "sigla": "ACNUR / UNHCR",
+   "es": {
+    "n": "Alto Comisionado de las Naciones Unidas para los Refugiados",
+    "que": "La agencia de la ONU para los refugiados.",
+    "hace": "Protege a las personas que huyen de la guerra o la persecución, a los desplazados y a los apátridas: les da refugio, documentos y ayuda para volver o instalarse."
+   },
+   "en": {
+    "n": "Office of the United Nations High Commissioner for Refugees",
+    "que": "The UN refugee agency.",
+    "hace": "It protects people fleeing war or persecution, displaced people and stateless people: it provides shelter, documents and help to return home or resettle."
+   },
+   "fr": {
+    "n": "Haut-Commissariat des Nations Unies pour les réfugiés",
+    "que": "L'agence de l'ONU pour les réfugiés.",
+    "hace": "Il protège les personnes qui fuient la guerre ou la persécution, les personnes déplacées et les apatrides : il leur offre un abri, des documents et une aide pour rentrer chez elles ou s'installer."
+   },
+   "ar": {
+    "n": "مفوضية الأمم المتحدة السامية لشؤون اللاجئين",
+    "que": "وكالة الأمم المتحدة المعنية باللاجئين.",
+    "hace": "تحمي الأشخاص الفارّين من الحرب أو الاضطهاد، والنازحين، وعديمي الجنسية: توفّر لهم المأوى والوثائق والمساعدة على العودة أو الاستقرار."
+   },
+   "zh": {
+    "n": "联合国难民事务高级专员办事处",
+    "que": "联合国难民署。",
+    "hace": "保护逃离战争或迫害的人、流离失所者和无国籍者:为他们提供庇护所、证件,并帮助他们返回家园或重新安置。"
+   },
+   "ru": {
+    "n": "Управление Верховного комиссара Организации Объединённых Наций по делам беженцев",
+    "que": "Учреждение ООН по делам беженцев.",
+    "hace": "Защищает людей, бегущих от войны или преследований, вынужденных переселенцев и лиц без гражданства: даёт им убежище, документы и помощь в возвращении домой или в переселении."
+   }
+  },
+  {
+   "id": "ONUHABITAT",
+   "ent": "ONUHABITAT",
+   "siglas": [
+    "un-habitat-entidad"
+   ],
+   "sigla": "ONU-Hábitat",
+   "es": {
+    "n": "Programa de las Naciones Unidas para los Asentamientos Humanos",
+    "que": "El programa de la ONU para las ciudades y la vivienda.",
+    "hace": "Ayuda a que las ciudades sean más justas y seguras, con vivienda adecuada, barrios dignos y servicios básicos."
+   },
+   "en": {
+    "n": "UN-Habitat (United Nations Human Settlements Programme)",
+    "que": "The UN programme for cities and housing.",
+    "hace": "It helps cities become fairer and safer, with adequate housing, decent neighbourhoods and basic services."
+   },
+   "fr": {
+    "n": "Programme des Nations Unies pour les établissements humains",
+    "que": "Le programme de l'ONU pour les villes et le logement.",
+    "hace": "Il aide les villes à être plus justes et plus sûres, avec des logements adéquats, des quartiers dignes et des services de base."
+   },
+   "ar": {
+    "n": "برنامج الأمم المتحدة للمستوطنات البشرية (موئل الأمم المتحدة)",
+    "que": "برنامج الأمم المتحدة المعني بالمدن والسكن.",
+    "hace": "يساعد المدن على أن تكون أكثر عدلًا وأمانًا، بما يشمل السكن اللائق والأحياء الكريمة والخدمات الأساسية."
+   },
+   "zh": {
+    "n": "联合国人类住区规划署(联合国人居署)",
+    "que": "联合国负责城市和住房的方案。",
+    "hace": "帮助城市变得更公平、更安全,让人们有适足的住房、体面的社区和基本服务。"
+   },
+   "ru": {
+    "n": "Программа Организации Объединённых Наций по населённым пунктам (ООН-Хабитат)",
+    "que": "Программа ООН по городам и жилью.",
+    "hace": "Помогает сделать города более справедливыми и безопасными: с достойным жильём, благоустроенными районами и базовыми услугами."
+   }
+  },
+  {
+   "id": "UNRWA",
+   "ent": "UNRWA",
+   "siglas": [
+    "unrwa-entidad"
+   ],
+   "sigla": "UNRWA",
+   "es": {
+    "n": "Organismo de Obras Públicas y Socorro de las Naciones Unidas para los Refugiados de Palestina en el Cercano Oriente",
+    "que": "La agencia de la ONU para los refugiados de Palestina.",
+    "hace": "Da escuelas, salud y ayuda de emergencia a millones de refugiados palestinos en Gaza, Cisjordania, Jordania, Líbano y Siria."
+   },
+   "en": {
+    "n": "United Nations Relief and Works Agency for Palestine Refugees in the Near East",
+    "que": "The UN agency for Palestine refugees.",
+    "hace": "It provides schools, health care and emergency aid to millions of Palestine refugees in Gaza, the West Bank, Jordan, Lebanon and Syria."
+   },
+   "fr": {
+    "n": "Office de secours et de travaux des Nations Unies pour les réfugiés de Palestine dans le Proche-Orient",
+    "que": "L'agence de l'ONU pour les réfugiés de Palestine.",
+    "hace": "Elle fournit des écoles, des soins de santé et une aide d'urgence à des millions de réfugiés palestiniens à Gaza, en Cisjordanie, en Jordanie, au Liban et en Syrie."
+   },
+   "ar": {
+    "n": "وكالة الأمم المتحدة لإغاثة وتشغيل اللاجئين الفلسطينيين في الشرق الأدنى",
+    "que": "وكالة الأمم المتحدة المعنية باللاجئين الفلسطينيين.",
+    "hace": "توفّر المدارس والرعاية الصحية والمساعدة الطارئة لملايين اللاجئين الفلسطينيين في غزة والضفة الغربية والأردن ولبنان وسوريا."
+   },
+   "zh": {
+    "n": "联合国近东巴勒斯坦难民救济和工程处",
+    "que": "联合国巴勒斯坦难民机构。",
+    "hace": "向加沙、约旦河西岸、约旦、黎巴嫩和叙利亚的数百万巴勒斯坦难民提供学校、医疗和紧急援助。"
+   },
+   "ru": {
+    "n": "Ближневосточное агентство Организации Объединённых Наций для помощи палестинским беженцам и организации работ",
+    "que": "Учреждение ООН для палестинских беженцев.",
+    "hace": "Предоставляет школы, медицинскую помощь и экстренную помощь миллионам палестинских беженцев в Газе, на Западном берегу, в Иордании, Ливане и Сирии."
+   }
+  },
+  {
+   "id": "ONUSIDA",
+   "ent": "ONUSIDA",
+   "siglas": [
+    "unaids-entidad"
+   ],
+   "sigla": "ONUSIDA / UNAIDS",
+   "es": {
+    "n": "Programa Conjunto de las Naciones Unidas sobre el VIH/Sida",
+    "que": "El programa de la ONU contra el VIH y el sida.",
+    "hace": "Coordina a varias agencias de la ONU para que haya prevención, pruebas y tratamiento del VIH sin discriminación."
+   },
+   "en": {
+    "n": "Joint United Nations Programme on HIV/AIDS",
+    "que": "The UN programme against HIV and AIDS.",
+    "hace": "It coordinates several UN agencies so that HIV prevention, testing and treatment reach everyone without discrimination."
+   },
+   "fr": {
+    "n": "Programme commun des Nations Unies sur le VIH/sida",
+    "que": "Le programme de l'ONU contre le VIH et le sida.",
+    "hace": "Il coordonne plusieurs agences de l'ONU afin que la prévention, le dépistage et le traitement du VIH soient assurés sans discrimination."
+   },
+   "ar": {
+    "n": "برنامج الأمم المتحدة المشترك المعني بفيروس نقص المناعة البشرية/الإيدز",
+    "que": "برنامج الأمم المتحدة لمكافحة فيروس نقص المناعة البشرية والإيدز.",
+    "hace": "ينسّق بين عدة وكالات تابعة للأمم المتحدة لتوفير الوقاية والفحص والعلاج من فيروس نقص المناعة البشرية دون تمييز."
+   },
+   "zh": {
+    "n": "联合国艾滋病联合规划署",
+    "que": "联合国防治艾滋病毒和艾滋病的规划署。",
+    "hace": "协调联合国多个机构,使人们能够不受歧视地获得艾滋病毒的预防、检测和治疗。"
+   },
+   "ru": {
+    "n": "Объединённая программа Организации Объединённых Наций по ВИЧ/СПИДу",
+    "que": "Программа ООН по борьбе с ВИЧ и СПИДом.",
+    "hace": "Координирует работу нескольких учреждений ООН, чтобы профилактика, тестирование и лечение ВИЧ были доступны всем без дискриминации."
+   }
+  },
+  {
+   "id": "ONUMUJERES",
+   "ent": "ONUMUJERES",
+   "siglas": [
+    "un-women-entidad"
+   ],
+   "sigla": "ONU Mujeres / UN Women",
+   "es": {
+    "n": "Entidad de las Naciones Unidas para la Igualdad de Género y el Empoderamiento de las Mujeres",
+    "que": "La entidad de la ONU para la igualdad de género.",
+    "hace": "Apoya a los países para que las mujeres y las niñas tengan los mismos derechos y oportunidades, y trabaja contra la violencia hacia ellas."
+   },
+   "en": {
+    "n": "United Nations Entity for Gender Equality and the Empowerment of Women",
+    "que": "The UN entity for gender equality.",
+    "hace": "It supports countries so that women and girls have the same rights and opportunities, and works against violence towards them."
+   },
+   "fr": {
+    "n": "Entité des Nations Unies pour l'égalité des sexes et l'autonomisation des femmes",
+    "que": "L'entité de l'ONU pour l'égalité des sexes.",
+    "hace": "Elle soutient les pays pour que les femmes et les filles aient les mêmes droits et les mêmes possibilités, et lutte contre les violences faites aux femmes."
+   },
+   "ar": {
+    "n": "هيئة الأمم المتحدة للمساواة بين الجنسين وتمكين المرأة (هيئة الأمم المتحدة للمرأة)",
+    "que": "هيئة الأمم المتحدة المعنية بالمساواة بين الجنسين.",
+    "hace": "تدعم البلدان كي تحصل النساء والفتيات على الحقوق والفرص نفسها، وتعمل على مكافحة العنف ضدهن."
+   },
+   "zh": {
+    "n": "联合国促进性别平等和增强妇女权能署(联合国妇女署)",
+    "que": "联合国促进性别平等的实体。",
+    "hace": "支持各国使妇女和女童享有平等的权利和机会,并致力于消除针对她们的暴力。"
+   },
+   "ru": {
+    "n": "Структура Организации Объединённых Наций по вопросам гендерного равенства и расширения прав и возможностей женщин («ООН-женщины»)",
+    "que": "Структура ООН по гендерному равенству.",
+    "hace": "Помогает странам обеспечить женщинам и девочкам равные права и возможности и борется с насилием в отношении них."
+   }
+  },
+  {
+   "id": "OIT",
+   "ent": "OIT",
+   "siglas": [
+    "ilo-entidad"
+   ],
+   "sigla": "OIT / ILO",
+   "es": {
+    "n": "Organización Internacional del Trabajo",
+    "que": "La organización de la ONU para el trabajo.",
+    "hace": "Fija normas internacionales sobre salarios justos, seguridad en el trabajo, sindicatos y contra el trabajo forzoso y el trabajo infantil. Reúne a gobiernos, empresas y sindicatos."
+   },
+   "en": {
+    "n": "International Labour Organization",
+    "que": "The UN organization for work and workers.",
+    "hace": "It sets international standards on fair wages, workplace safety and trade unions, and against forced and child labour. It brings together governments, employers and workers."
+   },
+   "fr": {
+    "n": "Organisation internationale du Travail",
+    "que": "L'organisation de l'ONU pour le travail.",
+    "hace": "Elle fixe des normes internationales sur les salaires équitables, la sécurité au travail, les syndicats, et contre le travail forcé et le travail des enfants. Elle réunit gouvernements, entreprises et syndicats."
+   },
+   "ar": {
+    "n": "منظمة العمل الدولية",
+    "que": "منظمة الأمم المتحدة المعنية بالعمل.",
+    "hace": "تضع معايير دولية بشأن الأجور العادلة والسلامة في العمل والنقابات، ولمكافحة العمل القسري وعمل الأطفال. وتجمع الحكومات وأصحاب العمل والنقابات."
+   },
+   "zh": {
+    "n": "国际劳工组织",
+    "que": "联合国负责劳动和劳动者事务的组织。",
+    "hace": "制定关于公平工资、工作安全、工会以及反对强迫劳动和童工的国际标准。它汇集政府、雇主和工人三方。"
+   },
+   "ru": {
+    "n": "Международная организация труда",
+    "que": "Организация ООН по вопросам труда.",
+    "hace": "Устанавливает международные нормы о справедливой оплате труда, безопасности на работе, профсоюзах и против принудительного и детского труда. Объединяет правительства, работодателей и работников."
+   }
+  },
+  {
+   "id": "FAO",
+   "ent": "FAO",
+   "siglas": [
+    "fao-entidad"
+   ],
+   "sigla": "FAO",
+   "es": {
+    "n": "Organización de las Naciones Unidas para la Alimentación y la Agricultura",
+    "que": "La organización de la ONU para la alimentación y la agricultura: se ocupa de que todas las personas tengan comida suficiente.",
+    "hace": "Ayuda a los países a producir alimentos de forma sostenible, reduce el hambre, cuida la pesca, los bosques y los suelos, y vigila los precios y las cosechas del mundo. Está en Roma."
+   },
+   "en": {
+    "n": "Food and Agriculture Organization of the United Nations",
+    "que": "The UN organization for food and agriculture: it works so that everyone has enough to eat.",
+    "hace": "It helps countries produce food sustainably, reduces hunger, looks after fisheries, forests and soils, and monitors world food prices and harvests. It is based in Rome."
+   },
+   "fr": {
+    "n": "Organisation des Nations Unies pour l'alimentation et l'agriculture",
+    "que": "L'organisation de l'ONU pour l'alimentation et l'agriculture : elle veille à ce que chacun ait assez à manger.",
+    "hace": "Elle aide les pays à produire des aliments de manière durable, réduit la faim, protège la pêche, les forêts et les sols, et surveille les prix et les récoltes dans le monde. Son siège est à Rome."
+   },
+   "ar": {
+    "n": "منظمة الأغذية والزراعة للأمم المتحدة",
+    "que": "منظمة الأمم المتحدة المعنية بالأغذية والزراعة: تعمل على أن يحصل الجميع على غذاء كافٍ.",
+    "hace": "تساعد البلدان على إنتاج الغذاء بصورة مستدامة، وتحد من الجوع، وتحمي مصايد الأسماك والغابات والتربة، وترصد الأسعار والمحاصيل في العالم. ومقرها في روما."
+   },
+   "zh": {
+    "n": "联合国粮食及农业组织",
+    "que": "联合国粮食及农业组织:致力于让所有人都有足够的食物。",
+    "hace": "帮助各国以可持续方式生产粮食,减少饥饿,保护渔业、森林和土壤,并监测全球粮食价格和收成。总部设在罗马。"
+   },
+   "ru": {
+    "n": "Продовольственная и сельскохозяйственная организация Объединённых Наций",
+    "que": "Организация ООН по продовольствию и сельскому хозяйству: заботится о том, чтобы у всех людей было достаточно еды.",
+    "hace": "Помогает странам устойчиво производить продовольствие, сокращает голод, заботится о рыболовстве, лесах и почвах и следит за мировыми ценами и урожаями. Находится в Риме."
+   }
+  },
+  {
+   "id": "UNESCO",
+   "ent": "UNESCO",
+   "siglas": [
+    "unesco-entidad"
+   ],
+   "sigla": "UNESCO",
+   "es": {
+    "n": "Organización de las Naciones Unidas para la Educación, la Ciencia y la Cultura",
+    "que": "La organización de la ONU para la educación, la ciencia y la cultura.",
+    "hace": "Promueve la educación para todos, la libertad de expresión, la ciencia abierta y protege el patrimonio mundial (como Machu Picchu o las Pirámides)."
+   },
+   "en": {
+    "n": "United Nations Educational, Scientific and Cultural Organization",
+    "que": "The UN organization for education, science and culture.",
+    "hace": "It promotes education for all, freedom of expression and open science, and protects World Heritage sites (such as Machu Picchu or the Pyramids)."
+   },
+   "fr": {
+    "n": "Organisation des Nations Unies pour l'éducation, la science et la culture",
+    "que": "L'organisation de l'ONU pour l'éducation, la science et la culture.",
+    "hace": "Elle promeut l'éducation pour tous, la liberté d'expression, la science ouverte et protège le patrimoine mondial (comme le Machu Picchu ou les pyramides)."
+   },
+   "ar": {
+    "n": "منظمة الأمم المتحدة للتربية والعلم والثقافة (اليونسكو)",
+    "que": "منظمة الأمم المتحدة المعنية بالتربية والعلم والثقافة.",
+    "hace": "تعزّز التعليم للجميع وحرية التعبير والعلم المفتوح، وتحمي التراث العالمي (مثل ماتشو بيتشو والأهرامات)."
+   },
+   "zh": {
+    "n": "联合国教育、科学及文化组织",
+    "que": "联合国教育、科学及文化组织。",
+    "hace": "倡导全民教育、表达自由和开放科学,并保护世界遗产(如马丘比丘或金字塔)。"
+   },
+   "ru": {
+    "n": "Организация Объединённых Наций по вопросам образования, науки и культуры",
+    "que": "Организация ООН по вопросам образования, науки и культуры.",
+    "hace": "Продвигает образование для всех, свободу выражения мнений и открытую науку и охраняет объекты всемирного наследия (например, Мачу-Пикчу или пирамиды)."
+   }
+  },
+  {
+   "id": "OMS",
+   "ent": "OMS",
+   "siglas": [
+    "who-entidad"
+   ],
+   "sigla": "OMS / WHO",
+   "es": {
+    "n": "Organización Mundial de la Salud",
+    "que": "La organización de la ONU para la salud.",
+    "hace": "Coordina la respuesta a epidemias, fija normas sanitarias, publica guías médicas y ayuda a los países a lograr que toda la población tenga acceso a la salud."
+   },
+   "en": {
+    "n": "World Health Organization",
+    "que": "The UN organization for health.",
+    "hace": "It coordinates the response to epidemics, sets health standards, publishes medical guidance and helps countries give their whole population access to health care."
+   },
+   "fr": {
+    "n": "Organisation mondiale de la Santé",
+    "que": "L'organisation de l'ONU pour la santé.",
+    "hace": "Elle coordonne la riposte aux épidémies, fixe des normes sanitaires, publie des guides médicaux et aide les pays à garantir à toute la population l'accès à la santé."
+   },
+   "ar": {
+    "n": "منظمة الصحة العالمية",
+    "que": "منظمة الأمم المتحدة المعنية بالصحة.",
+    "hace": "تنسّق التصدي للأوبئة، وتضع المعايير الصحية، وتنشر الإرشادات الطبية، وتساعد البلدان على ضمان حصول جميع السكان على الرعاية الصحية."
+   },
+   "zh": {
+    "n": "世界卫生组织",
+    "que": "联合国卫生组织。",
+    "hace": "协调应对流行病,制定卫生标准,发布医疗指南,并帮助各国让全体人民都能获得医疗卫生服务。"
+   },
+   "ru": {
+    "n": "Всемирная организация здравоохранения",
+    "que": "Организация ООН по вопросам здоровья.",
+    "hace": "Координирует борьбу с эпидемиями, устанавливает санитарные нормы, публикует медицинские рекомендации и помогает странам обеспечить всему населению доступ к здравоохранению."
+   }
+  },
+  {
+   "id": "BM",
+   "ent": "BM",
+   "siglas": [
+    "wb-entidad"
+   ],
+   "sigla": "BM / WB",
+   "es": {
+    "n": "Banco Mundial",
+    "que": "El banco internacional que presta dinero a los países para su desarrollo.",
+    "hace": "Financia proyectos de escuelas, salud, carreteras y agua, y da asesoría para reducir la pobreza. Pertenece al sistema de la ONU, pero decide con sus propias reglas."
+   },
+   "en": {
+    "n": "World Bank",
+    "que": "The international bank that lends money to countries for development.",
+    "hace": "It funds school, health, road and water projects and gives advice to reduce poverty. It is part of the UN system but decides under its own rules."
+   },
+   "fr": {
+    "n": "Banque mondiale",
+    "que": "La banque internationale qui prête de l'argent aux pays pour leur développement.",
+    "hace": "Elle finance des projets d'écoles, de santé, de routes et d'eau, et donne des conseils pour réduire la pauvreté. Elle fait partie du système des Nations Unies, mais décide selon ses propres règles."
+   },
+   "ar": {
+    "n": "البنك الدولي",
+    "que": "المصرف الدولي الذي يقرض البلدان المال من أجل تنميتها.",
+    "hace": "يموّل مشاريع المدارس والصحة والطرق والمياه، ويقدّم المشورة للحد من الفقر. وهو جزء من منظومة الأمم المتحدة، لكنه يقرّر وفق قواعده الخاصة."
+   },
+   "zh": {
+    "n": "世界银行",
+    "que": "向各国提供发展资金的国际银行。",
+    "hace": "为学校、卫生、公路和供水等项目提供资金,并提供减贫方面的咨询。它属于联合国系统,但按自己的规则作出决定。"
+   },
+   "ru": {
+    "n": "Всемирный банк",
+    "que": "Международный банк, который выдаёт странам деньги в долг на развитие.",
+    "hace": "Финансирует проекты в сфере школ, здравоохранения, дорог и водоснабжения и консультирует по вопросам сокращения бедности. Входит в систему ООН, но принимает решения по собственным правилам."
+   }
+  },
+  {
+   "id": "FMI",
+   "ent": "FMI",
+   "siglas": [
+    "imf-entidad"
+   ],
+   "sigla": "FMI / IMF",
+   "es": {
+    "n": "Fondo Monetario Internacional",
+    "que": "La organización que vigila la economía mundial y presta a los países en apuros.",
+    "hace": "Ofrece préstamos de emergencia a países con crisis de pagos, aconseja sobre política económica y publica análisis de la economía de cada país."
+   },
+   "en": {
+    "n": "International Monetary Fund",
+    "que": "The organization that watches the world economy and lends to countries in trouble.",
+    "hace": "It gives emergency loans to countries with payment crises, advises on economic policy and publishes analyses of each country's economy."
+   },
+   "fr": {
+    "n": "Fonds monétaire international",
+    "que": "L'organisation qui surveille l'économie mondiale et prête aux pays en difficulté.",
+    "hace": "Il accorde des prêts d'urgence aux pays en crise de paiements, donne des conseils de politique économique et publie des analyses de l'économie de chaque pays."
+   },
+   "ar": {
+    "n": "صندوق النقد الدولي",
+    "que": "المنظمة التي ترصد الاقتصاد العالمي وتقرض البلدان التي تمر بضائقة.",
+    "hace": "يقدّم قروضًا طارئة للبلدان التي تواجه أزمات في المدفوعات، ويسدي المشورة بشأن السياسة الاقتصادية، وينشر تحليلات لاقتصاد كل بلد."
+   },
+   "zh": {
+    "n": "国际货币基金组织",
+    "que": "监督世界经济并向陷入困境的国家提供贷款的组织。",
+    "hace": "向出现支付危机的国家提供紧急贷款,就经济政策提供建议,并发布各国经济分析报告。"
+   },
+   "ru": {
+    "n": "Международный валютный фонд",
+    "que": "Организация, которая следит за мировой экономикой и кредитует страны, попавшие в трудное положение.",
+    "hace": "Предоставляет экстренные кредиты странам с платёжными кризисами, консультирует по экономической политике и публикует анализ экономики каждой страны."
+   }
+  },
+  {
+   "id": "OACI",
+   "ent": "OACI",
+   "siglas": [
+    "icao-entidad"
+   ],
+   "sigla": "OACI / ICAO",
+   "es": {
+    "n": "Organización de Aviación Civil Internacional",
+    "que": "La organización de la ONU para la aviación civil.",
+    "hace": "Fija las normas mundiales de seguridad aérea para que un vuelo sea igual de seguro en cualquier país."
+   },
+   "en": {
+    "n": "International Civil Aviation Organization",
+    "que": "The UN organization for civil aviation.",
+    "hace": "It sets the global air-safety rules so that a flight is equally safe in any country."
+   },
+   "fr": {
+    "n": "Organisation de l'aviation civile internationale",
+    "que": "L'organisation de l'ONU pour l'aviation civile.",
+    "hace": "Elle fixe les normes mondiales de sécurité aérienne afin qu'un vol soit tout aussi sûr dans n'importe quel pays."
+   },
+   "ar": {
+    "n": "منظمة الطيران المدني الدولي",
+    "que": "منظمة الأمم المتحدة المعنية بالطيران المدني.",
+    "hace": "تضع المعايير العالمية للسلامة الجوية حتى تكون الرحلة آمنة بالقدر نفسه في أي بلد."
+   },
+   "zh": {
+    "n": "国际民用航空组织",
+    "que": "联合国负责民用航空的组织。",
+    "hace": "制定全球航空安全规则,使航班在任何国家都同样安全。"
+   },
+   "ru": {
+    "n": "Международная организация гражданской авиации",
+    "que": "Организация ООН по вопросам гражданской авиации.",
+    "hace": "Устанавливает мировые нормы авиационной безопасности, чтобы полёт был одинаково безопасным в любой стране."
+   }
+  },
+  {
+   "id": "OMI",
+   "ent": "OMI",
+   "siglas": [
+    "imo-entidad"
+   ],
+   "sigla": "OMI / IMO",
+   "es": {
+    "n": "Organización Marítima Internacional",
+    "que": "La organización de la ONU para el transporte marítimo.",
+    "hace": "Dicta las normas de seguridad en el mar y contra la contaminación de los barcos."
+   },
+   "en": {
+    "n": "International Maritime Organization",
+    "que": "The UN organization for shipping.",
+    "hace": "It sets safety rules at sea and rules against pollution from ships."
+   },
+   "fr": {
+    "n": "Organisation maritime internationale",
+    "que": "L'organisation de l'ONU pour le transport maritime.",
+    "hace": "Elle établit les règles de sécurité en mer et de lutte contre la pollution causée par les navires."
+   },
+   "ar": {
+    "n": "المنظمة البحرية الدولية",
+    "que": "منظمة الأمم المتحدة المعنية بالنقل البحري.",
+    "hace": "تضع قواعد السلامة في البحر ومكافحة التلوث الناجم عن السفن."
+   },
+   "zh": {
+    "n": "国际海事组织",
+    "que": "联合国负责海运的组织。",
+    "hace": "制定海上安全规则和防止船舶污染的规则。"
+   },
+   "ru": {
+    "n": "Международная морская организация",
+    "que": "Организация ООН по вопросам морского транспорта.",
+    "hace": "Устанавливает правила безопасности на море и правила против загрязнения со стороны судов."
+   }
+  },
+  {
+   "id": "UIT",
+   "ent": "UIT",
+   "siglas": [
+    "itu-entidad"
+   ],
+   "sigla": "UIT / ITU",
+   "es": {
+    "n": "Unión Internacional de Telecomunicaciones",
+    "que": "La organización de la ONU para las telecomunicaciones.",
+    "hace": "Reparte las frecuencias de radio y los satélites, fija normas técnicas y trabaja para que todo el mundo tenga acceso a internet y telefonía."
+   },
+   "en": {
+    "n": "International Telecommunication Union",
+    "que": "The UN organization for telecommunications.",
+    "hace": "It allocates radio frequencies and satellite orbits, sets technical standards and works so that everyone can access the internet and telephony."
+   },
+   "fr": {
+    "n": "Union internationale des télécommunications",
+    "que": "L'organisation de l'ONU pour les télécommunications.",
+    "hace": "Elle attribue les fréquences radio et les satellites, fixe des normes techniques et œuvre pour que tout le monde ait accès à internet et à la téléphonie."
+   },
+   "ar": {
+    "n": "الاتحاد الدولي للاتصالات",
+    "que": "منظمة الأمم المتحدة المعنية بالاتصالات.",
+    "hace": "توزّع الترددات الإذاعية والسواتل، وتضع المعايير التقنية، وتعمل على أن يحصل الجميع على الإنترنت والهاتف."
+   },
+   "zh": {
+    "n": "国际电信联盟",
+    "que": "联合国负责电信的组织。",
+    "hace": "分配无线电频率和卫星,制定技术标准,并努力让所有人都能使用互联网和电话。"
+   },
+   "ru": {
+    "n": "Международный союз электросвязи",
+    "que": "Организация ООН по вопросам электросвязи.",
+    "hace": "Распределяет радиочастоты и спутники, устанавливает технические стандарты и работает над тем, чтобы у всех был доступ к интернету и телефонной связи."
+   }
+  },
+  {
+   "id": "UPU",
+   "ent": "UPU",
+   "siglas": [
+    "upu-entidad"
+   ],
+   "sigla": "UPU",
+   "es": {
+    "n": "Unión Postal Universal",
+    "que": "La organización de la ONU para el correo internacional.",
+    "hace": "Hace que una carta enviada a otro país llegue: fija reglas y tarifas comunes entre los servicios postales."
+   },
+   "en": {
+    "n": "Universal Postal Union",
+    "que": "The UN organization for international mail.",
+    "hace": "It makes sure a letter sent abroad arrives: it sets common rules and rates among postal services."
+   },
+   "fr": {
+    "n": "Union postale universelle",
+    "que": "L'organisation de l'ONU pour le courrier international.",
+    "hace": "Elle fait en sorte qu'une lettre envoyée dans un autre pays arrive à destination : elle fixe des règles et des tarifs communs entre les services postaux."
+   },
+   "ar": {
+    "n": "الاتحاد البريدي العالمي",
+    "que": "منظمة الأمم المتحدة المعنية بالبريد الدولي.",
+    "hace": "تجعل الرسالة المرسلة إلى بلد آخر تصل إلى وجهتها: تضع قواعد وتعريفات مشتركة بين الخدمات البريدية."
+   },
+   "zh": {
+    "n": "万国邮政联盟",
+    "que": "联合国负责国际邮政的组织。",
+    "hace": "确保寄往国外的信件能够送达:在各国邮政服务之间制定共同的规则和资费。"
+   },
+   "ru": {
+    "n": "Всемирный почтовый союз",
+    "que": "Организация ООН по вопросам международной почты.",
+    "hace": "Делает так, чтобы письмо, отправленное в другую страну, дошло: устанавливает общие правила и тарифы для почтовых служб."
+   }
+  },
+  {
+   "id": "OMM",
+   "ent": "OMM",
+   "siglas": [
+    "wmo-entidad"
+   ],
+   "sigla": "OMM / WMO",
+   "es": {
+    "n": "Organización Meteorológica Mundial",
+    "que": "La organización de la ONU para el tiempo y el clima.",
+    "hace": "Coordina la información meteorológica y climática del mundo y emite alertas por fenómenos extremos."
+   },
+   "en": {
+    "n": "World Meteorological Organization",
+    "que": "The UN organization for weather and climate.",
+    "hace": "It coordinates the world's weather and climate information and issues warnings about extreme events."
+   },
+   "fr": {
+    "n": "Organisation météorologique mondiale",
+    "que": "L'organisation de l'ONU pour le temps et le climat.",
+    "hace": "Elle coordonne l'information météorologique et climatique dans le monde et émet des alertes en cas de phénomènes extrêmes."
+   },
+   "ar": {
+    "n": "المنظمة العالمية للأرصاد الجوية",
+    "que": "منظمة الأمم المتحدة المعنية بالطقس والمناخ.",
+    "hace": "تنسّق المعلومات المتعلقة بالطقس والمناخ في العالم وتصدر الإنذارات عند وقوع ظواهر متطرفة."
+   },
+   "zh": {
+    "n": "世界气象组织",
+    "que": "联合国负责天气和气候的组织。",
+    "hace": "协调全球的气象和气候信息,并就极端天气现象发布预警。"
+   },
+   "ru": {
+    "n": "Всемирная метеорологическая организация",
+    "que": "Организация ООН по вопросам погоды и климата.",
+    "hace": "Координирует метеорологическую и климатическую информацию в мире и выпускает предупреждения об экстремальных явлениях."
+   }
+  },
+  {
+   "id": "OMPI",
+   "ent": "OMPI",
+   "siglas": [
+    "wipo-entidad"
+   ],
+   "sigla": "OMPI / WIPO",
+   "es": {
+    "n": "Organización Mundial de la Propiedad Intelectual",
+    "que": "La organización de la ONU para la propiedad intelectual.",
+    "hace": "Gestiona los acuerdos internacionales sobre patentes, marcas y derechos de autor, y ayuda a proteger la creación y la innovación."
+   },
+   "en": {
+    "n": "World Intellectual Property Organization",
+    "que": "The UN organization for intellectual property.",
+    "hace": "It manages international agreements on patents, trademarks and copyright, and helps protect creativity and innovation."
+   },
+   "fr": {
+    "n": "Organisation mondiale de la propriété intellectuelle",
+    "que": "L'organisation de l'ONU pour la propriété intellectuelle.",
+    "hace": "Elle gère les accords internationaux sur les brevets, les marques et le droit d'auteur, et aide à protéger la création et l'innovation."
+   },
+   "ar": {
+    "n": "المنظمة العالمية للملكية الفكرية (الويبو)",
+    "que": "منظمة الأمم المتحدة المعنية بالملكية الفكرية.",
+    "hace": "تدير الاتفاقات الدولية بشأن براءات الاختراع والعلامات التجارية وحقوق المؤلف، وتساعد على حماية الإبداع والابتكار."
+   },
+   "zh": {
+    "n": "世界知识产权组织",
+    "que": "联合国负责知识产权的组织。",
+    "hace": "管理有关专利、商标和版权的国际协定,并帮助保护创作和创新。"
+   },
+   "ru": {
+    "n": "Всемирная организация интеллектуальной собственности",
+    "que": "Организация ООН по вопросам интеллектуальной собственности.",
+    "hace": "Управляет международными соглашениями о патентах, товарных знаках и авторском праве и помогает защищать творчество и инновации."
+   }
+  },
+  {
+   "id": "FIDA",
+   "ent": "FIDA",
+   "siglas": [
+    "ifad-entidad"
+   ],
+   "sigla": "FIDA / IFAD",
+   "es": {
+    "n": "Fondo Internacional de Desarrollo Agrícola",
+    "que": "El fondo de la ONU para la agricultura de familias campesinas.",
+    "hace": "Financia proyectos que ayudan a pequeños agricultores de zonas rurales pobres a producir más y a vender mejor."
+   },
+   "en": {
+    "n": "International Fund for Agricultural Development",
+    "que": "The UN fund for family farming.",
+    "hace": "It funds projects that help small farmers in poor rural areas to produce more and sell better."
+   },
+   "fr": {
+    "n": "Fonds international de développement agricole",
+    "que": "Le fonds de l'ONU pour l'agriculture des familles paysannes.",
+    "hace": "Il finance des projets qui aident les petits agriculteurs des zones rurales pauvres à produire davantage et à mieux vendre."
+   },
+   "ar": {
+    "n": "الصندوق الدولي للتنمية الزراعية",
+    "que": "صندوق الأمم المتحدة المعني بزراعة الأسر الريفية.",
+    "hace": "يموّل مشاريع تساعد صغار المزارعين في المناطق الريفية الفقيرة على زيادة الإنتاج وتحسين البيع."
+   },
+   "zh": {
+    "n": "国际农业发展基金",
+    "que": "联合国支持农民家庭农业的基金。",
+    "hace": "资助各类项目,帮助贫困农村地区的小农户提高产量、更好地销售。"
+   },
+   "ru": {
+    "n": "Международный фонд сельскохозяйственного развития",
+    "que": "Фонд ООН для семейного сельского хозяйства крестьян.",
+    "hace": "Финансирует проекты, которые помогают мелким фермерам в бедных сельских районах производить больше и лучше продавать."
+   }
+  },
+  {
+   "id": "ONUDI",
+   "ent": "ONUDI",
+   "siglas": [
+    "unido-entidad"
+   ],
+   "sigla": "ONUDI / UNIDO",
+   "es": {
+    "n": "Organización de las Naciones Unidas para el Desarrollo Industrial",
+    "que": "La organización de la ONU para el desarrollo industrial.",
+    "hace": "Ayuda a los países en desarrollo a crear industrias y empleo de forma sostenible y menos contaminante."
+   },
+   "en": {
+    "n": "United Nations Industrial Development Organization",
+    "que": "The UN organization for industrial development.",
+    "hace": "It helps developing countries build industries and jobs in a sustainable, cleaner way."
+   },
+   "fr": {
+    "n": "Organisation des Nations Unies pour le développement industriel",
+    "que": "L'organisation de l'ONU pour le développement industriel.",
+    "hace": "Elle aide les pays en développement à créer des industries et des emplois de manière durable et moins polluante."
+   },
+   "ar": {
+    "n": "منظمة الأمم المتحدة للتنمية الصناعية (اليونيدو)",
+    "que": "منظمة الأمم المتحدة المعنية بالتنمية الصناعية.",
+    "hace": "تساعد البلدان النامية على إقامة الصناعات وتوفير فرص العمل بصورة مستدامة وأقل تلويثًا للبيئة."
+   },
+   "zh": {
+    "n": "联合国工业发展组织",
+    "que": "联合国负责工业发展的组织。",
+    "hace": "帮助发展中国家以可持续、更清洁的方式发展工业并创造就业。"
+   },
+   "ru": {
+    "n": "Организация Объединённых Наций по промышленному развитию",
+    "que": "Организация ООН по промышленному развитию.",
+    "hace": "Помогает развивающимся странам создавать промышленность и рабочие места устойчивым и менее загрязняющим способом."
+   }
+  },
+  {
+   "id": "ONUTURISMO",
+   "ent": "ONUTURISMO",
+   "siglas": [
+    "unwto-entidad"
+   ],
+   "sigla": "ONU Turismo / UN Tourism",
+   "es": {
+    "n": "Organización Mundial del Turismo",
+    "que": "La organización de la ONU para el turismo.",
+    "hace": "Promueve un turismo responsable que respete a las comunidades y al medio ambiente, y reúne las cifras del turismo mundial. Antes se llamaba Organización Mundial del Turismo."
+   },
+   "en": {
+    "n": "UN Tourism (formerly World Tourism Organization)",
+    "que": "The UN organization for tourism.",
+    "hace": "It promotes responsible tourism that respects communities and the environment, and collects world tourism figures. It used to be called the World Tourism Organization."
+   },
+   "fr": {
+    "n": "Organisation mondiale du tourisme (ONU Tourisme)",
+    "que": "L'organisation de l'ONU pour le tourisme.",
+    "hace": "Elle promeut un tourisme responsable, qui respecte les communautés et l'environnement, et rassemble les chiffres du tourisme mondial. Elle s'appelait auparavant Organisation mondiale du tourisme."
+   },
+   "ar": {
+    "n": "منظمة السياحة العالمية (الأمم المتحدة للسياحة)",
+    "que": "منظمة الأمم المتحدة المعنية بالسياحة.",
+    "hace": "تروّج لسياحة مسؤولة تحترم المجتمعات والبيئة، وتجمع أرقام السياحة في العالم. وكانت تُسمّى سابقًا منظمة السياحة العالمية."
+   },
+   "zh": {
+    "n": "联合国旅游组织(原世界旅游组织)",
+    "que": "联合国负责旅游业的组织。",
+    "hace": "倡导尊重社区和环境的负责任旅游,并收集全球旅游业数据。它以前叫世界旅游组织。"
+   },
+   "ru": {
+    "n": "ООН-Туризм (бывшая Всемирная туристская организация)",
+    "que": "Организация ООН по вопросам туризма.",
+    "hace": "Продвигает ответственный туризм, уважающий местные общины и окружающую среду, и собирает данные о мировом туризме. Раньше называлась Всемирной туристской организацией."
+   }
+  },
+  {
+   "id": "CSW",
+   "ent": "CSW",
+   "siglas": [
+    "csw-organo-de-la-onu"
+   ],
+   "sigla": "CSW",
+   "es": {
+    "n": "Comisión de la Condición Jurídica y Social de la Mujer",
+    "que": "El foro de la ONU donde los países acuerdan avances para los derechos de las mujeres.",
+    "hace": "Se reúne cada año en Nueva York, aprueba conclusiones y normas sobre la igualdad de género y vigila cómo se cumplen. Depende del ECOSOC."
+   },
+   "en": {
+    "n": "Commission on the Status of Women",
+    "que": "The UN forum where countries agree on progress for women's rights.",
+    "hace": "It meets every year in New York, adopts conclusions and standards on gender equality and monitors their application. It reports to ECOSOC."
+   },
+   "fr": {
+    "n": "Commission de la condition de la femme",
+    "que": "Le forum de l'ONU où les pays s'accordent sur des progrès pour les droits des femmes.",
+    "hace": "Elle se réunit chaque année à New York, adopte des conclusions et des normes sur l'égalité des sexes et surveille leur application. Elle relève du Conseil économique et social (ECOSOC)."
+   },
+   "ar": {
+    "n": "لجنة وضع المرأة",
+    "que": "المنتدى في الأمم المتحدة الذي تتفق فيه البلدان على تحقيق تقدم في حقوق المرأة.",
+    "hace": "تجتمع كل عام في نيويورك، وتعتمد استنتاجات ومعايير بشأن المساواة بين الجنسين، وترصد مدى تنفيذها. وتتبع المجلس الاقتصادي والاجتماعي."
+   },
+   "zh": {
+    "n": "妇女地位委员会",
+    "que": "联合国论坛,各国在此就妇女权利方面的进展达成一致。",
+    "hace": "每年在纽约举行会议,通过关于性别平等的结论和标准,并监督其落实情况。隶属于经济及社会理事会。"
+   },
+   "ru": {
+    "n": "Комиссия по положению женщин",
+    "que": "Форум ООН, на котором страны договариваются о прогрессе в области прав женщин.",
+    "hace": "Ежегодно собирается в Нью-Йорке, принимает выводы и нормы о гендерном равенстве и следит за их выполнением. Подчиняется ЭКОСОС."
+   }
+  },
+  {
+   "id": "FPCI",
+   "ent": "FPCI",
+   "siglas": [
+    "unpfii-organo-de-la-onu"
+   ],
+   "sigla": "FPCI / UNPFII",
+   "es": {
+    "n": "Foro Permanente para las Cuestiones Indígenas",
+    "que": "El foro de la ONU donde los pueblos indígenas dan su voz.",
+    "hace": "Asesora al ECOSOC sobre derechos, cultura, medio ambiente y desarrollo de los pueblos indígenas. La mitad de sus miembros son indígenas."
+   },
+   "en": {
+    "n": "Permanent Forum on Indigenous Issues",
+    "que": "The UN forum where Indigenous peoples have a voice.",
+    "hace": "It advises ECOSOC on the rights, culture, environment and development of Indigenous peoples. Half of its members are Indigenous."
+   },
+   "fr": {
+    "n": "Instance permanente sur les questions autochtones",
+    "que": "Le forum de l'ONU où les peuples autochtones font entendre leur voix.",
+    "hace": "Elle conseille l'ECOSOC sur les droits, la culture, l'environnement et le développement des peuples autochtones. La moitié de ses membres sont autochtones."
+   },
+   "ar": {
+    "n": "المنتدى الدائم المعني بقضايا السكان الأصليين",
+    "que": "المنتدى في الأمم المتحدة الذي يُسمع فيه صوت الشعوب الأصلية.",
+    "hace": "يقدّم المشورة إلى المجلس الاقتصادي والاجتماعي بشأن حقوق الشعوب الأصلية وثقافتها وبيئتها وتنميتها. ونصف أعضائه من السكان الأصليين."
+   },
+   "zh": {
+    "n": "联合国土著问题常设论坛",
+    "que": "联合国论坛,土著人民在此发声。",
+    "hace": "就土著人民的权利、文化、环境和发展问题向经济及社会理事会提供咨询。其一半成员是土著人。"
+   },
+   "ru": {
+    "n": "Постоянный форум по вопросам коренных народов",
+    "que": "Форум ООН, на котором звучит голос коренных народов.",
+    "hace": "Консультирует ЭКОСОС по вопросам прав, культуры, окружающей среды и развития коренных народов. Половина его членов — представители коренных народов."
+   }
+  },
+  {
+   "id": "CEPA",
+   "ent": "CEPA",
+   "siglas": [],
+   "sigla": "CEPA / ECA",
+   "es": {
+    "n": "Comisión Económica para África",
+    "que": "La comisión regional de la ONU para África.",
+    "hace": "Estudia la economía africana y apoya la integración y el desarrollo del continente. Tiene sede en Adís Abeba."
+   },
+   "en": {
+    "n": "Economic Commission for Africa",
+    "que": "The UN regional commission for Africa.",
+    "hace": "It studies the African economy and supports the integration and development of the continent. It is based in Addis Ababa."
+   },
+   "fr": {
+    "n": "Commission économique pour l'Afrique",
+    "que": "La commission régionale de l'ONU pour l'Afrique.",
+    "hace": "Elle étudie l'économie africaine et soutient l'intégration et le développement du continent. Son siège est à Addis-Abeba."
+   },
+   "ar": {
+    "n": "اللجنة الاقتصادية لأفريقيا",
+    "que": "اللجنة الإقليمية للأمم المتحدة الخاصة بأفريقيا.",
+    "hace": "تدرس الاقتصاد الأفريقي وتدعم التكامل والتنمية في القارة. ومقرها في أديس أبابا."
+   },
+   "zh": {
+    "n": "非洲经济委员会",
+    "que": "联合国非洲区域委员会。",
+    "hace": "研究非洲经济,支持非洲大陆的一体化和发展。总部设在亚的斯亚贝巴。"
+   },
+   "ru": {
+    "n": "Экономическая комиссия для Африки",
+    "que": "Региональная комиссия ООН для Африки.",
+    "hace": "Изучает экономику Африки и поддерживает интеграцию и развитие континента. Находится в Аддис-Абебе."
+   }
+  },
+  {
+   "id": "CEPE",
+   "ent": "CEPE",
+   "siglas": [],
+   "sigla": "CEPE / ECE",
+   "es": {
+    "n": "Comisión Económica para Europa",
+    "que": "La comisión regional de la ONU para Europa, el Cáucaso y Asia Central.",
+    "hace": "Reúne a sus países miembros para acordar normas de transporte, medio ambiente y comercio, como el Convenio de Aarhus sobre información ambiental."
+   },
+   "en": {
+    "n": "Economic Commission for Europe",
+    "que": "The UN regional commission for Europe, the Caucasus and Central Asia.",
+    "hace": "It brings its member countries together to agree rules on transport, environment and trade, such as the Aarhus Convention on environmental information."
+   },
+   "fr": {
+    "n": "Commission économique pour l'Europe",
+    "que": "La commission régionale de l'ONU pour l'Europe, le Caucase et l'Asie centrale.",
+    "hace": "Elle réunit ses pays membres pour s'accorder sur des normes de transport, d'environnement et de commerce, comme la Convention d'Aarhus sur l'information en matière d'environnement."
+   },
+   "ar": {
+    "n": "اللجنة الاقتصادية لأوروبا",
+    "que": "اللجنة الإقليمية للأمم المتحدة الخاصة بأوروبا والقوقاز وآسيا الوسطى.",
+    "hace": "تجمع الدول الأعضاء فيها للاتفاق على معايير النقل والبيئة والتجارة، مثل اتفاقية آرهوس بشأن المعلومات البيئية."
+   },
+   "zh": {
+    "n": "欧洲经济委员会",
+    "que": "联合国欧洲、高加索和中亚区域委员会。",
+    "hace": "召集成员国就交通、环境和贸易方面的规则达成一致,例如关于环境信息的《奥胡斯公约》。"
+   },
+   "ru": {
+    "n": "Европейская экономическая комиссия",
+    "que": "Региональная комиссия ООН для Европы, Кавказа и Центральной Азии.",
+    "hace": "Объединяет страны-члены, чтобы договариваться о нормах в области транспорта, окружающей среды и торговли, например об Орхусской конвенции об экологической информации."
+   }
+  },
+  {
+   "id": "CEPAL",
+   "ent": "CEPAL",
+   "siglas": [
+    "eclac-entidad"
+   ],
+   "sigla": "CEPAL / ECLAC",
+   "es": {
+    "n": "Comisión Económica para América Latina y el Caribe",
+    "que": "La comisión regional de la ONU para América Latina y el Caribe.",
+    "hace": "Estudia la economía y la desigualdad de la región y propone políticas de desarrollo. Tiene sede en Santiago de Chile. Su Observatorio de Igualdad de Género es muy consultado."
+   },
+   "en": {
+    "n": "Economic Commission for Latin America and the Caribbean",
+    "que": "The UN regional commission for Latin America and the Caribbean.",
+    "hace": "It studies the region's economy and inequality and proposes development policies. It is based in Santiago, Chile."
+   },
+   "fr": {
+    "n": "Commission économique pour l'Amérique latine et les Caraïbes",
+    "que": "La commission régionale de l'ONU pour l'Amérique latine et les Caraïbes.",
+    "hace": "Elle étudie l'économie et les inégalités de la région et propose des politiques de développement. Son siège est à Santiago du Chili. Son Observatoire de l'égalité de genre est très consulté."
+   },
+   "ar": {
+    "n": "اللجنة الاقتصادية لأمريكا اللاتينية والكاريبي",
+    "que": "اللجنة الإقليمية للأمم المتحدة الخاصة بأمريكا اللاتينية ومنطقة البحر الكاريبي.",
+    "hace": "تدرس اقتصاد المنطقة وما فيها من تفاوت، وتقترح سياسات للتنمية. ومقرها في سانتياغو بشيلي. ويُرجَع كثيرًا إلى مرصدها للمساواة بين الجنسين."
+   },
+   "zh": {
+    "n": "拉丁美洲和加勒比经济委员会",
+    "que": "联合国拉丁美洲和加勒比区域委员会。",
+    "hace": "研究该地区的经济和不平等问题,并提出发展政策建议。总部设在智利圣地亚哥。其性别平等观察站被广泛参考。"
+   },
+   "ru": {
+    "n": "Экономическая комиссия для Латинской Америки и Карибского бассейна",
+    "que": "Региональная комиссия ООН для Латинской Америки и Карибского бассейна.",
+    "hace": "Изучает экономику и неравенство в регионе и предлагает политику развития. Находится в Сантьяго, Чили. Её Обсерваторию гендерного равенства очень часто используют."
+   }
+  },
+  {
+   "id": "CESPAP",
+   "ent": "CESPAP",
+   "siglas": [],
+   "sigla": "CESPAP / ESCAP",
+   "es": {
+    "n": "Comisión Económica y Social para Asia y el Pacífico",
+    "que": "La comisión regional de la ONU para Asia y el Pacífico.",
+    "hace": "Apoya la cooperación entre los países asiáticos y del Pacífico en comercio, transporte, energía y reducción de desastres. Tiene sede en Bangkok."
+   },
+   "en": {
+    "n": "Economic and Social Commission for Asia and the Pacific",
+    "que": "The UN regional commission for Asia and the Pacific.",
+    "hace": "It supports cooperation among Asian and Pacific countries on trade, transport, energy and disaster reduction. It is based in Bangkok."
+   },
+   "fr": {
+    "n": "Commission économique et sociale pour l'Asie et le Pacifique",
+    "que": "La commission régionale de l'ONU pour l'Asie et le Pacifique.",
+    "hace": "Elle soutient la coopération entre les pays d'Asie et du Pacifique dans les domaines du commerce, des transports, de l'énergie et de la réduction des risques de catastrophe. Son siège est à Bangkok."
+   },
+   "ar": {
+    "n": "اللجنة الاقتصادية والاجتماعية لآسيا والمحيط الهادئ",
+    "que": "اللجنة الإقليمية للأمم المتحدة الخاصة بآسيا والمحيط الهادئ.",
+    "hace": "تدعم التعاون بين بلدان آسيا والمحيط الهادئ في التجارة والنقل والطاقة والحد من مخاطر الكوارث. ومقرها في بانكوك."
+   },
+   "zh": {
+    "n": "亚洲及太平洋经济社会委员会",
+    "que": "联合国亚洲及太平洋区域委员会。",
+    "hace": "支持亚洲和太平洋国家在贸易、交通、能源和减少灾害方面开展合作。总部设在曼谷。"
+   },
+   "ru": {
+    "n": "Экономическая и социальная комиссия для Азии и Тихого океана",
+    "que": "Региональная комиссия ООН для Азии и Тихого океана.",
+    "hace": "Поддерживает сотрудничество стран Азии и Тихого океана в области торговли, транспорта, энергетики и снижения риска бедствий. Находится в Бангкоке."
+   }
+  },
+  {
+   "id": "CESPAO",
+   "ent": "CESPAO",
+   "siglas": [],
+   "sigla": "CESPAO / ESCWA",
+   "es": {
+    "n": "Comisión Económica y Social para Asia Occidental",
+    "que": "La comisión regional de la ONU para los países árabes de Asia Occidental.",
+    "hace": "Apoya el desarrollo económico y social de la región, con estudios sobre desigualdad, agua y conflictos. Tiene sede en Beirut."
+   },
+   "en": {
+    "n": "Economic and Social Commission for Western Asia",
+    "que": "The UN regional commission for the Arab countries of Western Asia.",
+    "hace": "It supports the region's economic and social development, with studies on inequality, water and conflict. It is based in Beirut."
+   },
+   "fr": {
+    "n": "Commission économique et sociale pour l'Asie occidentale",
+    "que": "La commission régionale de l'ONU pour les pays arabes d'Asie occidentale.",
+    "hace": "Elle soutient le développement économique et social de la région, avec des études sur les inégalités, l'eau et les conflits. Son siège est à Beyrouth."
+   },
+   "ar": {
+    "n": "اللجنة الاقتصادية والاجتماعية لغربي آسيا",
+    "que": "اللجنة الإقليمية للأمم المتحدة الخاصة بالبلدان العربية في غربي آسيا.",
+    "hace": "تدعم التنمية الاقتصادية والاجتماعية في المنطقة، بدراسات عن التفاوت والمياه والنزاعات. ومقرها في بيروت."
+   },
+   "zh": {
+    "n": "西亚经济社会委员会",
+    "que": "联合国西亚阿拉伯国家区域委员会。",
+    "hace": "支持该地区的经济和社会发展,开展关于不平等、水和冲突的研究。总部设在贝鲁特。"
+   },
+   "ru": {
+    "n": "Экономическая и социальная комиссия для Западной Азии",
+    "que": "Региональная комиссия ООН для арабских стран Западной Азии.",
+    "hace": "Поддерживает экономическое и социальное развитие региона, проводя исследования о неравенстве, воде и конфликтах. Находится в Бейруте."
+   }
+  },
+  {
+   "id": "OIM",
+   "ent": "OIM",
+   "siglas": [
+    "iom-entidad"
+   ],
+   "sigla": "OIM / IOM",
+   "es": {
+    "n": "Organización Internacional para las Migraciones",
+    "que": "La organización de la ONU para las migraciones.",
+    "hace": "Ayuda a las personas migrantes y a los gobiernos: retorno voluntario, traslados, protección de víctimas de trata y datos sobre migración."
+   },
+   "en": {
+    "n": "International Organization for Migration",
+    "que": "The UN migration organization.",
+    "hace": "It helps migrants and governments: voluntary return, transfers, protection of trafficking victims and data on migration."
+   },
+   "fr": {
+    "n": "Organisation internationale pour les migrations",
+    "que": "L'organisation de l'ONU pour les migrations.",
+    "hace": "Elle aide les personnes migrantes et les gouvernements : retour volontaire, transferts, protection des victimes de la traite et données sur les migrations."
+   },
+   "ar": {
+    "n": "المنظمة الدولية للهجرة",
+    "que": "منظمة الأمم المتحدة المعنية بالهجرة.",
+    "hace": "تساعد المهاجرين والحكومات: العودة الطوعية والنقل وحماية ضحايا الاتجار بالبشر وتوفير البيانات عن الهجرة."
+   },
+   "zh": {
+    "n": "国际移民组织",
+    "que": "联合国负责移民事务的组织。",
+    "hace": "帮助移民和各国政府:自愿返回、转移安置、保护人口贩运受害者以及提供移民数据。"
+   },
+   "ru": {
+    "n": "Международная организация по миграции",
+    "que": "Организация ООН по вопросам миграции.",
+    "hace": "Помогает мигрантам и правительствам: добровольное возвращение, перевозки, защита жертв торговли людьми и данные о миграции."
+   }
+  },
+  {
+   "id": "OIEA",
+   "ent": "OIEA",
+   "siglas": [
+    "iaea-entidad"
+   ],
+   "sigla": "OIEA / IAEA",
+   "es": {
+    "n": "Organismo Internacional de Energía Atómica",
+    "que": "El organismo internacional de la energía atómica.",
+    "hace": "Promueve el uso pacífico de la energía nuclear e inspecciona que los países no la desvíen hacia armas."
+   },
+   "en": {
+    "n": "International Atomic Energy Agency",
+    "que": "The international atomic energy agency.",
+    "hace": "It promotes the peaceful use of nuclear energy and inspects that countries do not divert it to weapons."
+   },
+   "fr": {
+    "n": "Agence internationale de l'énergie atomique",
+    "que": "L'organisme international de l'énergie atomique.",
+    "hace": "Elle promeut l'utilisation pacifique de l'énergie nucléaire et vérifie que les pays ne la détournent pas vers des armes."
+   },
+   "ar": {
+    "n": "الوكالة الدولية للطاقة الذرية",
+    "que": "الوكالة الدولية المعنية بالطاقة الذرية.",
+    "hace": "تعزّز الاستخدام السلمي للطاقة النووية وتتحقق من أن البلدان لا تحوّلها إلى أسلحة."
+   },
+   "zh": {
+    "n": "国际原子能机构",
+    "que": "国际原子能机构。",
+    "hace": "促进和平利用核能,并核查各国没有将核能转用于武器。"
+   },
+   "ru": {
+    "n": "Международное агентство по атомной энергии",
+    "que": "Международное агентство по атомной энергии.",
+    "hace": "Продвигает мирное использование ядерной энергии и проверяет, что страны не направляют её на создание оружия."
+   }
+  },
+  {
+   "id": "OMC",
+   "ent": "OMC",
+   "siglas": [
+    "wto-entidad"
+   ],
+   "sigla": "OMC / WTO",
+   "es": {
+    "n": "Organización Mundial del Comercio",
+    "que": "La organización que fija las reglas del comercio entre países.",
+    "hace": "Negocia acuerdos comerciales y resuelve las disputas entre países sobre aranceles y comercio. Es independiente de la ONU, aunque colabora con ella."
+   },
+   "en": {
+    "n": "World Trade Organization",
+    "que": "The organization that sets the rules of trade between countries.",
+    "hace": "It negotiates trade agreements and settles disputes between countries over tariffs and trade. It is independent of the UN, although it works with it."
+   },
+   "fr": {
+    "n": "Organisation mondiale du commerce",
+    "que": "L'organisation qui fixe les règles du commerce entre les pays.",
+    "hace": "Elle négocie des accords commerciaux et règle les différends entre pays sur les droits de douane et le commerce. Elle est indépendante de l'ONU, bien qu'elle collabore avec elle."
+   },
+   "ar": {
+    "n": "منظمة التجارة العالمية",
+    "que": "المنظمة التي تضع قواعد التجارة بين البلدان.",
+    "hace": "تتفاوض على الاتفاقات التجارية وتسوّي المنازعات بين البلدان بشأن التعريفات الجمركية والتجارة. وهي مستقلة عن الأمم المتحدة وإن كانت تتعاون معها."
+   },
+   "zh": {
+    "n": "世界贸易组织",
+    "que": "制定各国之间贸易规则的组织。",
+    "hace": "谈判贸易协定,并解决各国之间在关税和贸易方面的争端。它独立于联合国,但与联合国开展合作。"
+   },
+   "ru": {
+    "n": "Всемирная торговая организация",
+    "que": "Организация, которая устанавливает правила торговли между странами.",
+    "hace": "Ведёт переговоры о торговых соглашениях и разрешает споры между странами о пошлинах и торговле. Не зависит от ООН, хотя сотрудничает с ней."
+   }
+  },
+  {
+   "id": "OPAQ",
+   "ent": "OPAQ",
+   "siglas": [],
+   "sigla": "OPAQ / OPCW",
+   "es": {
+    "n": "Organización para la Prohibición de las Armas Químicas",
+    "que": "El organismo que vigila que no existan armas químicas.",
+    "hace": "Inspecciona y destruye arsenales químicos y verifica el cumplimiento de la Convención sobre las Armas Químicas. Ganó el Nobel de la Paz en 2013."
+   },
+   "en": {
+    "n": "Organisation for the Prohibition of Chemical Weapons",
+    "que": "The body that makes sure chemical weapons do not exist.",
+    "hace": "It inspects and destroys chemical stockpiles and verifies compliance with the Chemical Weapons Convention. It won the Nobel Peace Prize in 2013."
+   },
+   "fr": {
+    "n": "Organisation pour l'interdiction des armes chimiques",
+    "que": "L'organisme qui veille à ce qu'il n'existe plus d'armes chimiques.",
+    "hace": "Elle inspecte et détruit les arsenaux chimiques et vérifie le respect de la Convention sur l'interdiction des armes chimiques. Elle a reçu le prix Nobel de la paix en 2013."
+   },
+   "ar": {
+    "n": "منظمة حظر الأسلحة الكيميائية",
+    "que": "الهيئة التي تراقب كي لا توجد أسلحة كيميائية.",
+    "hace": "تفتّش الترسانات الكيميائية وتدمّرها وتتحقق من الامتثال لاتفاقية الأسلحة الكيميائية. وقد نالت جائزة نوبل للسلام عام 2013."
+   },
+   "zh": {
+    "n": "禁止化学武器组织",
+    "que": "确保化学武器不复存在的机构。",
+    "hace": "视察并销毁化学武器库存,核查《化学武器公约》的遵守情况。2013年荣获诺贝尔和平奖。"
+   },
+   "ru": {
+    "n": "Организация по запрещению химического оружия",
+    "que": "Организация, которая следит за тем, чтобы химического оружия не существовало.",
+    "hace": "Инспектирует и уничтожает химические арсеналы и проверяет соблюдение Конвенции о химическом оружии. В 2013 году получила Нобелевскую премию мира."
+   }
+  },
+  {
+   "id": "OTPCE",
+   "ent": "OTPCE",
+   "siglas": [],
+   "sigla": "OTPCE / CTBTO",
+   "es": {
+    "n": "Organización del Tratado de Prohibición Completa de los Ensayos Nucleares",
+    "que": "El organismo que vigila que nadie haga pruebas con bombas nucleares.",
+    "hace": "Mantiene una red mundial de sensores que detecta explosiones nucleares, para cuando el tratado entre en vigor."
+   },
+   "en": {
+    "n": "Comprehensive Nuclear-Test-Ban Treaty Organization",
+    "que": "The body that watches that no one tests nuclear bombs.",
+    "hace": "It runs a worldwide network of sensors that detects nuclear explosions, ready for when the treaty enters into force."
+   },
+   "fr": {
+    "n": "Organisation du Traité d'interdiction complète des essais nucléaires",
+    "que": "L'organisme qui veille à ce que personne ne réalise d'essais de bombes nucléaires.",
+    "hace": "Elle gère un réseau mondial de capteurs qui détecte les explosions nucléaires, en attendant l'entrée en vigueur du traité."
+   },
+   "ar": {
+    "n": "منظمة معاهدة الحظر الشامل للتجارب النووية",
+    "que": "الهيئة التي تراقب كي لا يجري أحد تجارب بالقنابل النووية.",
+    "hace": "تشغّل شبكة عالمية من أجهزة الاستشعار تكشف التفجيرات النووية، إلى حين دخول المعاهدة حيز النفاذ."
+   },
+   "zh": {
+    "n": "全面禁止核试验条约组织",
+    "que": "监督任何人都不得试验核弹的机构。",
+    "hace": "运行一个探测核爆炸的全球传感器网络,为条约生效做好准备。"
+   },
+   "ru": {
+    "n": "Организация по Договору о всеобъемлющем запрещении ядерных испытаний",
+    "que": "Организация, которая следит за тем, чтобы никто не испытывал ядерные бомбы.",
+    "hace": "Поддерживает всемирную сеть датчиков, обнаруживающих ядерные взрывы, на то время, когда договор вступит в силу."
+   }
+  },
+  {
+   "id": "CPI",
+   "ent": "CPI",
+   "siglas": [
+    "icc-entidad"
+   ],
+   "sigla": "CPI / ICC",
+   "es": {
+    "n": "Corte Penal Internacional",
+    "que": "El tribunal permanente que juzga genocidio, crímenes de guerra y de lesa humanidad.",
+    "hace": "Juzga a personas (no a países) cuando los tribunales nacionales no pueden o no quieren hacerlo. Tiene sede en La Haya y no es un órgano de la ONU."
+   },
+   "en": {
+    "n": "International Criminal Court",
+    "que": "The permanent court that tries genocide, war crimes and crimes against humanity.",
+    "hace": "It tries individuals (not countries) when national courts cannot or will not do so. It is based in The Hague and is not a UN body."
+   },
+   "fr": {
+    "n": "Cour pénale internationale",
+    "que": "Le tribunal permanent qui juge le génocide, les crimes de guerre et les crimes contre l'humanité.",
+    "hace": "Elle juge des personnes (et non des États) lorsque les tribunaux nationaux ne peuvent pas ou ne veulent pas le faire. Son siège est à La Haye et elle n'est pas un organe de l'ONU."
+   },
+   "ar": {
+    "n": "المحكمة الجنائية الدولية",
+    "que": "المحكمة الدائمة التي تحاكم على الإبادة الجماعية وجرائم الحرب والجرائم ضد الإنسانية.",
+    "hace": "تحاكم الأشخاص (لا الدول) عندما لا تستطيع المحاكم الوطنية ذلك أو لا ترغب فيه. ومقرها في لاهاي، وهي ليست جهازًا من أجهزة الأمم المتحدة."
+   },
+   "zh": {
+    "n": "国际刑事法院",
+    "que": "审判种族灭绝、战争罪和危害人类罪的常设法院。",
+    "hace": "当国家法院无法或不愿审判时,审判个人(而不是国家)。总部设在海牙,不是联合国机构。"
+   },
+   "ru": {
+    "n": "Международный уголовный суд",
+    "que": "Постоянный суд, который судит за геноцид, военные преступления и преступления против человечности.",
+    "hace": "Судит отдельных людей (а не страны), когда национальные суды не могут или не хотят этого делать. Находится в Гааге и не является органом ООН."
+   }
+  },
+  {
+   "id": "DPO",
+   "ent": null,
+   "siglas": [
+    "dpo-entidad"
+   ],
+   "sigla": "DPO",
+   "es": {
+    "n": "Departamento de Operaciones de Paz",
+    "que": "El departamento de la ONU que dirige las misiones de paz («cascos azules»).",
+    "hace": "Organiza y apoya las operaciones de mantenimiento de la paz en zonas de conflicto, por ejemplo en Mali o en la República Democrática del Congo."
+   },
+   "en": {
+    "n": "Department of Peace Operations",
+    "que": "The UN department that runs peacekeeping missions («blue helmets»).",
+    "hace": "It organises and supports peacekeeping operations in conflict zones."
+   },
+   "fr": {
+    "n": "Département des opérations de paix",
+    "que": "Le département de l'ONU qui dirige les missions de paix (les « casques bleus »).",
+    "hace": "Il organise et soutient les opérations de maintien de la paix dans les zones de conflit, par exemple au Mali ou en République démocratique du Congo."
+   },
+   "ar": {
+    "n": "إدارة عمليات السلام",
+    "que": "إدارة الأمم المتحدة التي تقود بعثات السلام («القبعات الزرق»).",
+    "hace": "تنظّم عمليات حفظ السلام في مناطق النزاع وتدعمها، مثل مالي وجمهورية الكونغو الديمقراطية."
+   },
+   "zh": {
+    "n": "联合国维持和平行动部",
+    "que": "管理维和任务(“蓝盔”)的联合国部门。",
+    "hace": "组织并支持冲突地区的维持和平行动,例如在马里或刚果民主共和国。"
+   },
+   "ru": {
+    "n": "Департамент операций по поддержанию мира",
+    "que": "Департамент ООН, который руководит миротворческими миссиями («голубые каски»).",
+    "hace": "Организует и поддерживает операции по поддержанию мира в зонах конфликтов, например в Мали или в Демократической Республике Конго."
+   }
+  },
+  {
+   "id": "DPPA",
+   "ent": null,
+   "siglas": [
+    "dppa-entidad"
+   ],
+   "sigla": "DPPA",
+   "es": {
+    "n": "Departamento de Asuntos Políticos y de Consolidación de la Paz",
+    "que": "El departamento de la ONU para prevenir conflictos y mediar entre las partes.",
+    "hace": "Apoya la mediación, las elecciones y las misiones políticas que ayudan a evitar o terminar guerras."
+   },
+   "en": {
+    "n": "Department of Political and Peacebuilding Affairs",
+    "que": "The UN department for preventing conflicts and mediating between parties.",
+    "hace": "It supports mediation, elections and political missions that help prevent or end wars."
+   },
+   "fr": {
+    "n": "Département des affaires politiques et de la consolidation de la paix",
+    "que": "Le département de l'ONU qui prévient les conflits et assure la médiation entre les parties.",
+    "hace": "Il soutient la médiation, les élections et les missions politiques qui aident à éviter ou à terminer les guerres."
+   },
+   "ar": {
+    "n": "إدارة الشؤون السياسية وبناء السلام",
+    "que": "إدارة الأمم المتحدة المعنية بمنع النزاعات والوساطة بين الأطراف.",
+    "hace": "تدعم الوساطة والانتخابات والبعثات السياسية التي تساعد على تجنّب الحروب أو إنهائها."
+   },
+   "zh": {
+    "n": "联合国政治和建设和平事务部",
+    "que": "负责预防冲突和在各方之间进行调解的联合国部门。",
+    "hace": "支持调解、选举和政治特派团,帮助避免或结束战争。"
+   },
+   "ru": {
+    "n": "Департамент по политическим вопросам и вопросам миростроительства",
+    "que": "Департамент ООН по предотвращению конфликтов и посредничеству между сторонами.",
+    "hace": "Поддерживает посредничество, выборы и политические миссии, которые помогают предотвращать или прекращать войны."
+   }
+  },
+  {
+   "id": "ECCC",
+   "ent": null,
+   "siglas": [
+    "eccc-entidad"
+   ],
+   "sigla": "ECCC",
+   "es": {
+    "n": "Salas Extraordinarias de los Tribunales de Camboya",
+    "que": "El tribunal de Camboya que juzgó los crímenes de los Jemeres Rojos.",
+    "hace": "Es un tribunal mixto, con jueces camboyanos e internacionales, que condenó a altos dirigentes por genocidio y crímenes de lesa humanidad."
+   },
+   "en": {
+    "n": "Extraordinary Chambers in the Courts of Cambodia",
+    "que": "The Cambodian court that tried the crimes of the Khmer Rouge.",
+    "hace": "A hybrid court, with Cambodian and international judges, that convicted senior leaders of genocide and crimes against humanity."
+   },
+   "fr": {
+    "n": "Chambres extraordinaires au sein des tribunaux cambodgiens",
+    "que": "Le tribunal du Cambodge qui a jugé les crimes des Khmers rouges.",
+    "hace": "C'est un tribunal mixte, composé de juges cambodgiens et internationaux, qui a condamné de hauts dirigeants pour génocide et crimes contre l'humanité."
+   },
+   "ar": {
+    "n": "الدوائر الاستثنائية في محاكم كمبوديا",
+    "que": "محكمة كمبوديا التي حاكمت جرائم الخمير الحمر.",
+    "hace": "هي محكمة مختلطة تضم قضاة كمبوديين ودوليين، أدانت كبار القادة بتهمة الإبادة الجماعية والجرائم ضد الإنسانية."
+   },
+   "zh": {
+    "n": "柬埔寨法院特别法庭",
+    "que": "审判红色高棉罪行的柬埔寨法庭。",
+    "hace": "这是一个由柬埔寨法官和国际法官组成的混合法庭,以种族灭绝罪和危害人类罪判处了高级领导人有罪。"
+   },
+   "ru": {
+    "n": "Чрезвычайные палаты в судах Камбоджи",
+    "que": "Суд в Камбодже, который рассматривал преступления «красных кхмеров».",
+    "hace": "Это смешанный суд с камбоджийскими и международными судьями, который осудил высших руководителей за геноцид и преступления против человечности."
+   }
+  },
+  {
+   "id": "ICRC",
+   "ent": null,
+   "siglas": [
+    "icrc-entidad"
+   ],
+   "sigla": "ICRC / CICR",
+   "es": {
+    "n": "Comité Internacional de la Cruz Roja",
+    "que": "La Cruz Roja Internacional: protege a las víctimas de la guerra.",
+    "hace": "Visita a prisioneros, ayuda a las víctimas de conflictos y vela por el derecho internacional humanitario (las leyes de la guerra). No es un órgano de la ONU."
+   },
+   "en": {
+    "n": "International Committee of the Red Cross",
+    "que": "The International Committee of the Red Cross: it protects victims of war.",
+    "hace": "It visits prisoners, helps conflict victims and upholds international humanitarian law (the laws of war). It is not a UN body."
+   },
+   "fr": {
+    "n": "Comité international de la Croix-Rouge",
+    "que": "La Croix-Rouge internationale : elle protège les victimes de la guerre.",
+    "hace": "Il rend visite aux prisonniers, aide les victimes des conflits et veille au respect du droit international humanitaire (les lois de la guerre). Il n'est pas un organe de l'ONU."
+   },
+   "ar": {
+    "n": "اللجنة الدولية للصليب الأحمر",
+    "que": "الصليب الأحمر الدولي: يحمي ضحايا الحرب.",
+    "hace": "تزور السجناء وتساعد ضحايا النزاعات وتسهر على احترام القانون الدولي الإنساني (قوانين الحرب). وهي ليست جهازًا من أجهزة الأمم المتحدة."
+   },
+   "zh": {
+    "n": "红十字国际委员会",
+    "que": "国际红十字:保护战争受害者。",
+    "hace": "探视战俘,援助冲突受害者,并维护国际人道法(战争法)。它不是联合国机构。"
+   },
+   "ru": {
+    "n": "Международный комитет Красного Креста",
+    "que": "Международный Красный Крест: защищает жертв войны.",
+    "hace": "Посещает заключённых, помогает жертвам конфликтов и следит за соблюдением международного гуманитарного права (законов войны). Не является органом ООН."
+   }
+  },
+  {
+   "id": "ICTR",
+   "ent": null,
+   "siglas": [
+    "ictr-entidad"
+   ],
+   "sigla": "ICTR / TPIR",
+   "es": {
+    "n": "Tribunal Penal Internacional para Rwanda",
+    "que": "El tribunal que juzgó el genocidio de Rwanda en 1994.",
+    "hace": "Creado por el Consejo de Seguridad, juzgó a los principales responsables del genocidio. Cerró en 2015."
+   },
+   "en": {
+    "n": "International Criminal Tribunal for Rwanda",
+    "que": "The tribunal that tried the 1994 Rwandan genocide.",
+    "hace": "Created by the Security Council, it tried those most responsible for the genocide. It closed in 2015."
+   },
+   "fr": {
+    "n": "Tribunal pénal international pour le Rwanda",
+    "que": "Le tribunal qui a jugé le génocide du Rwanda en 1994.",
+    "hace": "Créé par le Conseil de sécurité, il a jugé les principaux responsables du génocide. Il a fermé en 2015."
+   },
+   "ar": {
+    "n": "المحكمة الجنائية الدولية لرواندا",
+    "que": "المحكمة التي حاكمت الإبادة الجماعية في رواندا عام 1994.",
+    "hace": "أنشأها مجلس الأمن، وحاكمت أبرز المسؤولين عن الإبادة الجماعية. وأغلقت أبوابها عام 2015."
+   },
+   "zh": {
+    "n": "卢旺达问题国际刑事法庭",
+    "que": "审判1994年卢旺达种族灭绝的法庭。",
+    "hace": "由安全理事会设立,审判了对这场种族灭绝负有主要责任的人。2015年关闭。"
+   },
+   "ru": {
+    "n": "Международный уголовный трибунал по Руанде",
+    "que": "Трибунал, который судил за геноцид в Руанде в 1994 году.",
+    "hace": "Создан Советом Безопасности, судил главных виновных в геноциде. Закрыт в 2015 году."
+   }
+  },
+  {
+   "id": "ICTY",
+   "ent": null,
+   "siglas": [
+    "icty-entidad"
+   ],
+   "sigla": "ICTY / TPIY",
+   "es": {
+    "n": "Tribunal Penal Internacional para la ex Yugoslavia",
+    "que": "El tribunal que juzgó los crímenes de las guerras de la antigua Yugoslavia.",
+    "hace": "Creado por el Consejo de Seguridad en 1993, juzgó genocidio, crímenes de guerra y de lesa humanidad. Cerró en 2017."
+   },
+   "en": {
+    "n": "International Criminal Tribunal for the former Yugoslavia",
+    "que": "The tribunal that tried the crimes of the wars in the former Yugoslavia.",
+    "hace": "Created by the Security Council in 1993, it tried genocide, war crimes and crimes against humanity. It closed in 2017."
+   },
+   "fr": {
+    "n": "Tribunal pénal international pour l'ex-Yougoslavie",
+    "que": "Le tribunal qui a jugé les crimes commis lors des guerres de l'ex-Yougoslavie.",
+    "hace": "Créé par le Conseil de sécurité en 1993, il a jugé le génocide, les crimes de guerre et les crimes contre l'humanité. Il a fermé en 2017."
+   },
+   "ar": {
+    "n": "المحكمة الجنائية الدولية ليوغوسلافيا السابقة",
+    "que": "المحكمة التي حاكمت الجرائم المرتكبة في حروب يوغوسلافيا السابقة.",
+    "hace": "أنشأها مجلس الأمن عام 1993، وحاكمت الإبادة الجماعية وجرائم الحرب والجرائم ضد الإنسانية. وأغلقت أبوابها عام 2017."
+   },
+   "zh": {
+    "n": "前南斯拉夫问题国际刑事法庭",
+    "que": "审判前南斯拉夫战争罪行的法庭。",
+    "hace": "由安全理事会于1993年设立,审判种族灭绝、战争罪和危害人类罪。2017年关闭。"
+   },
+   "ru": {
+    "n": "Международный трибунал по бывшей Югославии",
+    "que": "Трибунал, который судил за преступления в войнах на территории бывшей Югославии.",
+    "hace": "Создан Советом Безопасности в 1993 году, судил за геноцид, военные преступления и преступления против человечности. Закрыт в 2017 году."
+   }
+  },
+  {
+   "id": "IFRC",
+   "ent": null,
+   "siglas": [
+    "ifrc-entidad"
+   ],
+   "sigla": "IFRC / FICR",
+   "es": {
+    "n": "Federación Internacional de Sociedades de la Cruz Roja y de la Media Luna Roja",
+    "que": "La federación mundial de la Cruz Roja y la Media Luna Roja.",
+    "hace": "Agrupa a las sociedades nacionales de la Cruz Roja y la Media Luna Roja, que ayudan a la población en desastres y emergencias. No es un órgano de la ONU."
+   },
+   "en": {
+    "n": "International Federation of Red Cross and Red Crescent Societies",
+    "que": "The worldwide federation of the Red Cross and Red Crescent.",
+    "hace": "It brings together the national Red Cross and Red Crescent societies, which help people in disasters and emergencies. It is not a UN body."
+   },
+   "fr": {
+    "n": "Fédération internationale des Sociétés de la Croix-Rouge et du Croissant-Rouge",
+    "que": "La fédération mondiale de la Croix-Rouge et du Croissant-Rouge.",
+    "hace": "Elle regroupe les sociétés nationales de la Croix-Rouge et du Croissant-Rouge, qui aident la population lors de catastrophes et d'urgences. Elle n'est pas un organe de l'ONU."
+   },
+   "ar": {
+    "n": "الاتحاد الدولي لجمعيات الصليب الأحمر والهلال الأحمر",
+    "que": "الاتحاد العالمي للصليب الأحمر والهلال الأحمر.",
+    "hace": "يضم الجمعيات الوطنية للصليب الأحمر والهلال الأحمر التي تساعد السكان في الكوارث وحالات الطوارئ. وهو ليس جهازًا من أجهزة الأمم المتحدة."
+   },
+   "zh": {
+    "n": "红十字会与红新月会国际联合会",
+    "que": "红十字会和红新月会的全球联合会。",
+    "hace": "汇集各国红十字会和红新月会,它们在灾害和紧急情况中帮助民众。它不是联合国机构。"
+   },
+   "ru": {
+    "n": "Международная федерация обществ Красного Креста и Красного Полумесяца",
+    "que": "Всемирная федерация Красного Креста и Красного Полумесяца.",
+    "hace": "Объединяет национальные общества Красного Креста и Красного Полумесяца, которые помогают людям при бедствиях и чрезвычайных ситуациях. Не является органом ООН."
+   }
+  },
+  {
+   "id": "IRMCT",
+   "ent": null,
+   "siglas": [
+    "irmct-entidad"
+   ],
+   "sigla": "IRMCT / MRITP",
+   "es": {
+    "n": "Mecanismo Residual Internacional de los Tribunales Penales",
+    "que": "El mecanismo que sigue el trabajo de los tribunales de Rwanda y Yugoslavia.",
+    "hace": "Se encarga de los casos pendientes, de los archivos y de proteger a los testigos tras el cierre de los dos tribunales."
+   },
+   "en": {
+    "n": "International Residual Mechanism for Criminal Tribunals",
+    "que": "The mechanism that continues the work of the Rwanda and Yugoslavia tribunals.",
+    "hace": "It handles pending cases, the archives and witness protection after the two tribunals closed."
+   },
+   "fr": {
+    "n": "Mécanisme international appelé à exercer les fonctions résiduelles des Tribunaux pénaux",
+    "que": "Le mécanisme qui poursuit le travail des tribunaux pour le Rwanda et l'ex-Yougoslavie.",
+    "hace": "Il s'occupe des affaires en cours, des archives et de la protection des témoins après la fermeture des deux tribunaux."
+   },
+   "ar": {
+    "n": "الآلية الدولية لتصريف الأعمال المتبقية للمحكمتين الجنائيتين",
+    "que": "الآلية التي تواصل عمل محكمتي رواندا ويوغوسلافيا.",
+    "hace": "تتولى القضايا المعلقة والأرشيفات وحماية الشهود بعد إغلاق المحكمتين."
+   },
+   "zh": {
+    "n": "国际刑事法庭余留事项国际机制",
+    "que": "延续卢旺达和南斯拉夫问题法庭工作的机制。",
+    "hace": "在这两个法庭关闭后,负责尚未审结的案件、档案和证人保护。"
+   },
+   "ru": {
+    "n": "Международный остаточный механизм для уголовных трибуналов",
+    "que": "Механизм, который продолжает работу трибуналов по Руанде и Югославии.",
+    "hace": "Занимается нерассмотренными делами, архивами и защитой свидетелей после закрытия этих двух трибуналов."
+   }
+  },
+  {
+   "id": "ITLOS",
+   "ent": null,
+   "siglas": [
+    "itlos-entidad"
+   ],
+   "sigla": "ITLOS / TIDM",
+   "es": {
+    "n": "Tribunal Internacional del Derecho del Mar",
+    "que": "El tribunal internacional del derecho del mar.",
+    "hace": "Resuelve conflictos entre países sobre el uso del mar: fronteras marítimas, pesca, barcos detenidos o contaminación."
+   },
+   "en": {
+    "n": "International Tribunal for the Law of the Sea",
+    "que": "The international tribunal for the law of the sea.",
+    "hace": "It settles disputes between countries about the use of the sea: maritime borders, fishing, detained ships or pollution."
+   },
+   "fr": {
+    "n": "Tribunal international du droit de la mer",
+    "que": "Le tribunal international du droit de la mer.",
+    "hace": "Il règle les différends entre pays sur l'utilisation de la mer : frontières maritimes, pêche, navires immobilisés ou pollution."
+   },
+   "ar": {
+    "n": "المحكمة الدولية لقانون البحار",
+    "que": "المحكمة الدولية المعنية بقانون البحار.",
+    "hace": "تسوّي النزاعات بين البلدان بشأن استخدام البحر: الحدود البحرية والصيد والسفن المحتجزة أو التلوث."
+   },
+   "zh": {
+    "n": "国际海洋法法庭",
+    "que": "国际海洋法法庭。",
+    "hace": "解决各国之间关于海洋使用的争端:海洋边界、渔业、被扣押的船只或污染。"
+   },
+   "ru": {
+    "n": "Международный трибунал по морскому праву",
+    "que": "Международный трибунал по морскому праву.",
+    "hace": "Разрешает споры между странами об использовании моря: морские границы, рыболовство, задержанные суда или загрязнение."
+   }
+  },
+  {
+   "id": "PCA",
+   "ent": null,
+   "siglas": [
+    "pca-entidad"
+   ],
+   "sigla": "PCA / CPA",
+   "es": {
+    "n": "Corte Permanente de Arbitraje",
+    "que": "La corte de La Haya para el arbitraje entre países, empresas y organizaciones.",
+    "hace": "Organiza arbitrajes y mediaciones cuando dos partes aceptan resolver su disputa fuera de un tribunal ordinario. No es un órgano de la ONU."
+   },
+   "en": {
+    "n": "Permanent Court of Arbitration",
+    "que": "The Hague court for arbitration between countries, companies and organisations.",
+    "hace": "It organises arbitration and mediation when two parties agree to settle a dispute outside an ordinary court. It is not a UN body."
+   },
+   "fr": {
+    "n": "Cour permanente d'arbitrage",
+    "que": "La cour de La Haye pour l'arbitrage entre pays, entreprises et organisations.",
+    "hace": "Elle organise des arbitrages et des médiations lorsque deux parties acceptent de régler leur différend en dehors d'un tribunal ordinaire. Elle n'est pas un organe de l'ONU."
+   },
+   "ar": {
+    "n": "محكمة التحكيم الدائمة",
+    "que": "المحكمة في لاهاي للتحكيم بين البلدان والشركات والمنظمات.",
+    "hace": "تنظّم عمليات التحكيم والوساطة حين يقبل طرفان تسوية نزاعهما خارج المحكمة العادية. وهي ليست جهازًا من أجهزة الأمم المتحدة."
+   },
+   "zh": {
+    "n": "常设仲裁法院",
+    "que": "海牙的仲裁法院,为国家、企业和组织之间的仲裁服务。",
+    "hace": "当双方同意在普通法院之外解决争端时,组织仲裁和调解。它不是联合国机构。"
+   },
+   "ru": {
+    "n": "Постоянная палата третейского суда",
+    "que": "Суд в Гааге для арбитража между странами, компаниями и организациями.",
+    "hace": "Организует арбитраж и посредничество, когда две стороны соглашаются разрешить спор вне обычного суда. Не является органом ООН."
+   }
+  },
+  {
+   "id": "SCSL",
+   "ent": null,
+   "siglas": [
+    "scsl-entidad"
+   ],
+   "sigla": "SCSL / TESL",
+   "es": {
+    "n": "Tribunal Especial para Sierra Leona",
+    "que": "El tribunal creado por la ONU y Sierra Leona para juzgar los crímenes de su guerra civil.",
+    "hace": "Funcionó entre 2002 y 2013; condenó, entre otros, al expresidente de Liberia Charles Taylor."
+   },
+   "en": {
+    "n": "Special Court for Sierra Leone",
+    "que": "The court created by the UN and Sierra Leone to try crimes of its civil war.",
+    "hace": "It worked from 2002 to 2013 and convicted, among others, former Liberian president Charles Taylor."
+   },
+   "fr": {
+    "n": "Tribunal spécial pour la Sierra Leone",
+    "que": "Le tribunal créé par l'ONU et la Sierra Leone pour juger les crimes de sa guerre civile.",
+    "hace": "Il a fonctionné de 2002 à 2013 ; il a condamné, entre autres, l'ancien président du Libéria Charles Taylor."
+   },
+   "ar": {
+    "n": "المحكمة الخاصة لسيراليون",
+    "que": "المحكمة التي أنشأتها الأمم المتحدة وسيراليون لمحاكمة جرائم حربها الأهلية.",
+    "hace": "عملت بين عامي 2002 و2013؛ وأدانت، من بين آخرين، الرئيس الليبيري السابق تشارلز تايلور."
+   },
+   "zh": {
+    "n": "塞拉利昂问题特别法庭",
+    "que": "联合国和塞拉利昂设立的法庭,审判其内战期间的罪行。",
+    "hace": "于2002年至2013年运作;判处包括利比里亚前总统查尔斯·泰勒在内的多人有罪。"
+   },
+   "ru": {
+    "n": "Специальный суд по Сьерра-Леоне",
+    "que": "Суд, созданный ООН и Сьерра-Леоне для рассмотрения преступлений их гражданской войны.",
+    "hace": "Действовал с 2002 по 2013 год; осудил, среди прочих, бывшего президента Либерии Чарльза Тейлора."
+   }
+  },
+  {
+   "id": "UNAMA",
+   "ent": null,
+   "siglas": [
+    "unama-entidad"
+   ],
+   "sigla": "UNAMA",
+   "es": {
+    "n": "Misión de Asistencia de las Naciones Unidas en el Afganistán",
+    "que": "La misión de la ONU en Afganistán.",
+    "hace": "Apoya la paz, la ayuda humanitaria y los derechos humanos en el país, e informa sobre las víctimas civiles."
+   },
+   "en": {
+    "n": "United Nations Assistance Mission in Afghanistan",
+    "que": "The UN mission in Afghanistan.",
+    "hace": "It supports peace, humanitarian aid and human rights in the country, and reports on civilian casualties."
+   },
+   "fr": {
+    "n": "Mission d'assistance des Nations Unies en Afghanistan",
+    "que": "La mission de l'ONU en Afghanistan.",
+    "hace": "Elle soutient la paix, l'aide humanitaire et les droits de l'homme dans le pays, et rend compte des victimes civiles."
+   },
+   "ar": {
+    "n": "بعثة الأمم المتحدة لتقديم المساعدة إلى أفغانستان",
+    "que": "بعثة الأمم المتحدة في أفغانستان.",
+    "hace": "تدعم السلام والمساعدة الإنسانية وحقوق الإنسان في البلد، وتُعدّ التقارير عن الضحايا المدنيين."
+   },
+   "zh": {
+    "n": "联合国阿富汗援助团",
+    "que": "联合国驻阿富汗特派团。",
+    "hace": "支持该国的和平、人道主义援助和人权,并报告平民伤亡情况。"
+   },
+   "ru": {
+    "n": "Миссия Организации Объединённых Наций по содействию Афганистану",
+    "que": "Миссия ООН в Афганистане.",
+    "hace": "Поддерживает мир, гуманитарную помощь и права человека в стране и сообщает о жертвах среди гражданского населения."
+   }
+  },
+  {
+   "id": "UNCTAD",
+   "ent": null,
+   "siglas": [
+    "unctad-entidad"
+   ],
+   "sigla": "UNCTAD / CNUCYD",
+   "es": {
+    "n": "Conferencia de las Naciones Unidas sobre Comercio y Desarrollo",
+    "que": "La conferencia de la ONU sobre comercio y desarrollo.",
+    "hace": "Ayuda a los países en desarrollo a beneficiarse del comercio y la inversión, y publica informes sobre economía mundial y deuda."
+   },
+   "en": {
+    "n": "United Nations Conference on Trade and Development",
+    "que": "The UN conference on trade and development.",
+    "hace": "It helps developing countries benefit from trade and investment, and publishes reports on the world economy and debt."
+   },
+   "fr": {
+    "n": "Conférence des Nations Unies sur le commerce et le développement",
+    "que": "La conférence de l'ONU sur le commerce et le développement.",
+    "hace": "Elle aide les pays en développement à tirer profit du commerce et de l'investissement, et publie des rapports sur l'économie mondiale et la dette."
+   },
+   "ar": {
+    "n": "مؤتمر الأمم المتحدة للتجارة والتنمية (الأونكتاد)",
+    "que": "مؤتمر الأمم المتحدة المعني بالتجارة والتنمية.",
+    "hace": "يساعد البلدان النامية على الاستفادة من التجارة والاستثمار، وينشر تقارير عن الاقتصاد العالمي والديون."
+   },
+   "zh": {
+    "n": "联合国贸易和发展会议",
+    "que": "联合国贸易和发展会议。",
+    "hace": "帮助发展中国家从贸易和投资中受益,并发布关于世界经济和债务的报告。"
+   },
+   "ru": {
+    "n": "Конференция Организации Объединённых Наций по торговле и развитию",
+    "que": "Конференция ООН по торговле и развитию.",
+    "hace": "Помогает развивающимся странам извлекать выгоду из торговли и инвестиций и публикует доклады о мировой экономике и задолженности."
+   }
+  },
+  {
+   "id": "UNDESA",
+   "ent": null,
+   "siglas": [
+    "undesa-entidad"
+   ],
+   "sigla": "UNDESA / DAES",
+   "es": {
+    "n": "Departamento de Asuntos Económicos y Sociales de las Naciones Unidas",
+    "que": "El departamento de la ONU para asuntos económicos y sociales.",
+    "hace": "Reúne datos y análisis sobre población y desarrollo sostenible, y apoya al ECOSOC y a los Objetivos de Desarrollo Sostenible."
+   },
+   "en": {
+    "n": "United Nations Department of Economic and Social Affairs",
+    "que": "The UN department for economic and social affairs.",
+    "hace": "It gathers data and analysis on population and sustainable development, and supports ECOSOC and the Sustainable Development Goals."
+   },
+   "fr": {
+    "n": "Département des affaires économiques et sociales de l'ONU",
+    "que": "Le département de l'ONU pour les affaires économiques et sociales.",
+    "hace": "Il rassemble des données et des analyses sur la population et le développement durable, et soutient l'ECOSOC et les objectifs de développement durable."
+   },
+   "ar": {
+    "n": "إدارة الشؤون الاقتصادية والاجتماعية بالأمم المتحدة",
+    "que": "إدارة الأمم المتحدة المعنية بالشؤون الاقتصادية والاجتماعية.",
+    "hace": "تجمع البيانات والتحليلات عن السكان والتنمية المستدامة، وتدعم المجلس الاقتصادي والاجتماعي وأهداف التنمية المستدامة."
+   },
+   "zh": {
+    "n": "联合国经济和社会事务部",
+    "que": "联合国负责经济和社会事务的部门。",
+    "hace": "收集关于人口和可持续发展的数据与分析,并支持经济及社会理事会和可持续发展目标。"
+   },
+   "ru": {
+    "n": "Департамент по экономическим и социальным вопросам Организации Объединённых Наций",
+    "que": "Департамент ООН по экономическим и социальным вопросам.",
+    "hace": "Собирает данные и анализ о населении и устойчивом развитии и поддерживает ЭКОСОС и Цели в области устойчивого развития."
+   }
+  },
+  {
+   "id": "UNDRR",
+   "ent": null,
+   "siglas": [
+    "undrr-entidad"
+   ],
+   "sigla": "UNDRR",
+   "es": {
+    "n": "Oficina de las Naciones Unidas para la Reducción del Riesgo de Desastres",
+    "que": "La oficina de la ONU para reducir el riesgo de desastres.",
+    "hace": "Ayuda a los países a prepararse ante terremotos, inundaciones y otros desastres; coordina el Marco de Sendai."
+   },
+   "en": {
+    "n": "United Nations Office for Disaster Risk Reduction",
+    "que": "The UN office for disaster risk reduction.",
+    "hace": "It helps countries prepare for earthquakes, floods and other disasters; it coordinates the Sendai Framework."
+   },
+   "fr": {
+    "n": "Bureau des Nations Unies pour la réduction des risques de catastrophe",
+    "que": "Le bureau de l'ONU pour réduire les risques de catastrophe.",
+    "hace": "Il aide les pays à se préparer aux tremblements de terre, aux inondations et à d'autres catastrophes ; il coordonne le Cadre de Sendai."
+   },
+   "ar": {
+    "n": "مكتب الأمم المتحدة للحد من مخاطر الكوارث",
+    "que": "مكتب الأمم المتحدة المعني بالحد من مخاطر الكوارث.",
+    "hace": "يساعد البلدان على الاستعداد للزلازل والفيضانات وغيرها من الكوارث؛ وينسّق إطار سنداي."
+   },
+   "zh": {
+    "n": "联合国减少灾害风险办公室",
+    "que": "联合国减少灾害风险办公室。",
+    "hace": "帮助各国为地震、洪水和其他灾害做好准备;协调《仙台框架》。"
+   },
+   "ru": {
+    "n": "Управление Организации Объединённых Наций по снижению риска бедствий",
+    "que": "Управление ООН по снижению риска бедствий.",
+    "hace": "Помогает странам готовиться к землетрясениям, наводнениям и другим бедствиям; координирует Сендайскую рамочную программу."
+   }
+  },
+  {
+   "id": "UNITAR",
+   "ent": null,
+   "siglas": [
+    "unitar-entidad"
+   ],
+   "sigla": "UNITAR",
+   "es": {
+    "n": "Instituto de las Naciones Unidas para Formación Profesional e Investigaciones",
+    "que": "El instituto de la ONU para la capacitación.",
+    "hace": "Forma a funcionarios y a personas de los países en temas como diplomacia, medio ambiente y gobernanza."
+   },
+   "en": {
+    "n": "United Nations Institute for Training and Research",
+    "que": "The UN training institute.",
+    "hace": "It trains officials and people in countries on topics such as diplomacy, environment and governance."
+   },
+   "fr": {
+    "n": "Institut des Nations Unies pour la formation et la recherche",
+    "que": "L'institut de l'ONU pour la formation.",
+    "hace": "Il forme des fonctionnaires et des personnes de différents pays à des sujets comme la diplomatie, l'environnement et la gouvernance."
+   },
+   "ar": {
+    "n": "معهد الأمم المتحدة للتدريب والبحث",
+    "que": "معهد الأمم المتحدة المعني بالتدريب.",
+    "hace": "يدرّب الموظفين والأشخاص من البلدان على موضوعات مثل الدبلوماسية والبيئة والحوكمة."
+   },
+   "zh": {
+    "n": "联合国训练研究所",
+    "que": "联合国培训研究所。",
+    "hace": "就外交、环境和治理等主题,为各国官员和民众提供培训。"
+   },
+   "ru": {
+    "n": "Учебный и научно-исследовательский институт Организации Объединённых Наций",
+    "que": "Институт ООН по подготовке кадров.",
+    "hace": "Обучает должностных лиц и жителей стран по таким темам, как дипломатия, окружающая среда и управление."
+   }
+  },
+  {
+   "id": "UNMAS",
+   "ent": null,
+   "siglas": [
+    "unmas-entidad"
+   ],
+   "sigla": "UNMAS",
+   "es": {
+    "n": "Servicio de las Naciones Unidas de Actividades relativas a las Minas",
+    "que": "El servicio de la ONU contra las minas antipersonal.",
+    "hace": "Retira minas y restos de explosivos de guerra, enseña a la población a evitarlos y ayuda a las víctimas."
+   },
+   "en": {
+    "n": "United Nations Mine Action Service",
+    "que": "The UN service against landmines.",
+    "hace": "It clears mines and explosive remnants of war, teaches people how to avoid them and helps victims."
+   },
+   "fr": {
+    "n": "Service de la lutte antimines de l'ONU",
+    "que": "Le service de l'ONU contre les mines antipersonnel.",
+    "hace": "Il retire les mines et les restes explosifs de guerre, apprend à la population à les éviter et aide les victimes."
+   },
+   "ar": {
+    "n": "دائرة الأمم المتحدة للإجراءات المتعلقة بالألغام",
+    "que": "دائرة الأمم المتحدة لمكافحة الألغام المضادة للأفراد.",
+    "hace": "تزيل الألغام ومخلفات الحرب من المتفجرات، وتعلّم السكان كيفية تجنّبها، وتساعد الضحايا."
+   },
+   "zh": {
+    "n": "联合国地雷行动处",
+    "que": "联合国反地雷服务处。",
+    "hace": "清除地雷和战争遗留爆炸物,教导民众如何避开它们,并帮助受害者。"
+   },
+   "ru": {
+    "n": "Служба Организации Объединённых Наций по противоминной деятельности",
+    "que": "Служба ООН по борьбе с противопехотными минами.",
+    "hace": "Удаляет мины и неразорвавшиеся боеприпасы, учит людей, как их избегать, и помогает пострадавшим."
+   }
+  },
+  {
+   "id": "UNODA",
+   "ent": null,
+   "siglas": [
+    "unoda-entidad"
+   ],
+   "sigla": "UNODA / ODA",
+   "es": {
+    "n": "Oficina de Asuntos de Desarme de las Naciones Unidas",
+    "que": "La oficina de la ONU para el desarme.",
+    "hace": "Apoya los tratados y las negociaciones para reducir armas nucleares, químicas, convencionales y su comercio."
+   },
+   "en": {
+    "n": "United Nations Office for Disarmament Affairs",
+    "que": "The UN office for disarmament affairs.",
+    "hace": "It supports the treaties and negotiations to reduce nuclear, chemical and conventional weapons and the arms trade."
+   },
+   "fr": {
+    "n": "Bureau des affaires de désarmement des Nations Unies",
+    "que": "Le bureau de l'ONU pour le désarmement.",
+    "hace": "Il soutient les traités et les négociations visant à réduire les armes nucléaires, chimiques et conventionnelles, ainsi que leur commerce."
+   },
+   "ar": {
+    "n": "مكتب الأمم المتحدة لشؤون نزع السلاح",
+    "que": "مكتب الأمم المتحدة المعني بنزع السلاح.",
+    "hace": "يدعم المعاهدات والمفاوضات الرامية إلى الحد من الأسلحة النووية والكيميائية والتقليدية ومن تجارتها."
+   },
+   "zh": {
+    "n": "联合国裁军事务厅",
+    "que": "联合国裁军事务办公室。",
+    "hace": "支持旨在削减核武器、化学武器、常规武器及军火贸易的条约和谈判。"
+   },
+   "ru": {
+    "n": "Управление Организации Объединённых Наций по вопросам разоружения",
+    "que": "Управление ООН по вопросам разоружения.",
+    "hace": "Поддерживает договоры и переговоры по сокращению ядерного, химического и обычного оружия и торговли им."
+   }
+  },
+  {
+   "id": "UNOOSA",
+   "ent": null,
+   "siglas": [
+    "unoosa-entidad"
+   ],
+   "sigla": "UNOOSA",
+   "es": {
+    "n": "Oficina de Asuntos del Espacio Ultraterrestre de las Naciones Unidas",
+    "que": "La oficina de la ONU para el espacio ultraterrestre.",
+    "hace": "Promueve el uso pacífico del espacio, lleva el registro de objetos lanzados y ayuda a los países a usar la tecnología espacial."
+   },
+   "en": {
+    "n": "United Nations Office for Outer Space Affairs",
+    "que": "The UN office for outer space affairs.",
+    "hace": "It promotes the peaceful use of outer space, keeps the register of launched objects and helps countries use space technology."
+   },
+   "fr": {
+    "n": "Bureau des affaires spatiales de l'ONU",
+    "que": "Le bureau de l'ONU pour l'espace extra-atmosphérique.",
+    "hace": "Il promeut l'utilisation pacifique de l'espace, tient le registre des objets lancés et aide les pays à utiliser la technologie spatiale."
+   },
+   "ar": {
+    "n": "مكتب الأمم المتحدة لشؤون الفضاء الخارجي",
+    "que": "مكتب الأمم المتحدة المعني بالفضاء الخارجي.",
+    "hace": "يعزّز الاستخدام السلمي للفضاء، ويحتفظ بسجل الأجسام المطلقة، ويساعد البلدان على استخدام تكنولوجيا الفضاء."
+   },
+   "zh": {
+    "n": "联合国外层空间事务厅",
+    "que": "联合国外层空间事务办公室。",
+    "hace": "促进和平利用外层空间,保管已发射物体的登记册,并帮助各国利用空间技术。"
+   },
+   "ru": {
+    "n": "Управление Организации Объединённых Наций по вопросам космического пространства",
+    "que": "Управление ООН по вопросам космического пространства.",
+    "hace": "Продвигает мирное использование космоса, ведёт реестр запущенных объектов и помогает странам использовать космические технологии."
+   }
+  },
+  {
+   "id": "UNOPS",
+   "ent": null,
+   "siglas": [
+    "unops-entidad"
+   ],
+   "sigla": "UNOPS",
+   "es": {
+    "n": "Oficina de las Naciones Unidas de Servicios para Proyectos",
+    "que": "La oficina de la ONU que ejecuta proyectos para otros.",
+    "hace": "Construye infraestructura, compra suministros y gestiona proyectos de otras agencias y gobiernos."
+   },
+   "en": {
+    "n": "United Nations Office for Project Services",
+    "que": "The UN office that carries out projects for others.",
+    "hace": "It builds infrastructure, buys supplies and manages projects for other agencies and governments."
+   },
+   "fr": {
+    "n": "Bureau des Nations Unies pour les services d'appui aux projets",
+    "que": "Le bureau de l'ONU qui exécute des projets pour d'autres.",
+    "hace": "Il construit des infrastructures, achète des fournitures et gère des projets d'autres agences et de gouvernements."
+   },
+   "ar": {
+    "n": "مكتب الأمم المتحدة لخدمات المشاريع",
+    "que": "مكتب الأمم المتحدة الذي ينفّذ مشاريع لحساب جهات أخرى.",
+    "hace": "يبني البنى التحتية ويشتري الإمدادات ويدير مشاريع وكالات أخرى وحكومات."
+   },
+   "zh": {
+    "n": "联合国项目事务厅",
+    "que": "为他人执行项目的联合国办公室。",
+    "hace": "修建基础设施,采购物资,并管理其他机构和政府的项目。"
+   },
+   "ru": {
+    "n": "Управление Организации Объединённых Наций по обслуживанию проектов",
+    "que": "Управление ООН, которое осуществляет проекты для других.",
+    "hace": "Строит инфраструктуру, закупает материалы и управляет проектами других учреждений и правительств."
+   }
+  },
+  {
+   "id": "UNRIC",
+   "ent": null,
+   "siglas": [
+    "unric-entidad"
+   ],
+   "sigla": "UNRIC / CINU",
+   "es": {
+    "n": "Centro Regional de Información de las Naciones Unidas",
+    "que": "Los centros de información de la ONU en cada región.",
+    "hace": "Explican la ONU al público en su propio idioma y organizan actividades y campañas de información."
+   },
+   "en": {
+    "n": "United Nations Regional Information Centre",
+    "que": "The UN information centres in each region.",
+    "hace": "They explain the UN to the public in their own language and run information activities and campaigns."
+   },
+   "fr": {
+    "n": "Centre régional d'information des Nations Unies",
+    "que": "Les centres d'information de l'ONU dans chaque région.",
+    "hace": "Ils expliquent l'ONU au public dans sa propre langue et organisent des activités et des campagnes d'information."
+   },
+   "ar": {
+    "n": "مركز الأمم المتحدة الإقليمي للإعلام",
+    "que": "مراكز الأمم المتحدة للإعلام في كل منطقة.",
+    "hace": "تشرح الأمم المتحدة للجمهور بلغته، وتنظّم أنشطة وحملات إعلامية."
+   },
+   "zh": {
+    "n": "联合国区域新闻中心",
+    "que": "联合国在各区域的新闻中心。",
+    "hace": "用当地语言向公众介绍联合国,并组织宣传活动和信息活动。"
+   },
+   "ru": {
+    "n": "Региональный информационный центр Организации Объединённых Наций",
+    "que": "Информационные центры ООН в каждом регионе.",
+    "hace": "Рассказывают о работе ООН населению на его родном языке и организуют информационные мероприятия и кампании."
+   }
+  },
+  {
+   "id": "UNU",
+   "ent": null,
+   "siglas": [
+    "unu-entidad"
+   ],
+   "sigla": "UNU",
+   "es": {
+    "n": "Universidad de las Naciones Unidas",
+    "que": "La universidad de la ONU.",
+    "hace": "Es una red de investigación y posgrados que estudia los problemas globales: paz, desarrollo, medio ambiente."
+   },
+   "en": {
+    "n": "United Nations University",
+    "que": "The UN university.",
+    "hace": "A research and postgraduate network that studies global problems: peace, development, environment."
+   },
+   "fr": {
+    "n": "Université des Nations Unies",
+    "que": "L'université de l'ONU.",
+    "hace": "C'est un réseau de recherche et d'études supérieures qui étudie les problèmes mondiaux : paix, développement, environnement."
+   },
+   "ar": {
+    "n": "جامعة الأمم المتحدة",
+    "que": "جامعة الأمم المتحدة.",
+    "hace": "شبكة للبحث والدراسات العليا تدرس المشكلات العالمية: السلام والتنمية والبيئة."
+   },
+   "zh": {
+    "n": "联合国大学",
+    "que": "联合国的大学。",
+    "hace": "这是一个研究和研究生教育网络,研究和平、发展、环境等全球性问题。"
+   },
+   "ru": {
+    "n": "Университет Организации Объединённых Наций",
+    "que": "Университет ООН.",
+    "hace": "Это сеть научных исследований и магистратуры, изучающая глобальные проблемы: мир, развитие, окружающую среду."
+   }
+  }
+ ],
  "historia": {
   "nota": "Elaboración propia a partir de la Carta de la ONU, las resoluciones citadas y los sitios oficiales de las Naciones Unidas. Las fechas con solo año o mes indican que el día exacto no se consigna aquí. Para citar, use el documento oficial. Los hechos anteriores a 1945 son contexto histórico general y se resumen aquí sin pretender agotar el tema: para citar, use la fuente primaria (p. ej. los archivos de la Sociedad de las Naciones conservados por la ONU en Ginebra).",
   "temas": {

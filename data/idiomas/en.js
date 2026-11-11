@@ -1138,5 +1138,9 @@ window.ATLAS_IDIOMA_en={
 "Tabla de nomenclatura":"Nomenclature table",
 "▦ Datos y calidad":"▦ Data and quality",
 "Datos y calidad":"Data and quality",
-"Las cifras del catálogo, qué tan completo y verificado está, las últimas resoluciones y las novedades detectadas en las fuentes oficiales. Es la parte para quien investiga; el buscador y los accesos principales están en el Panorama.":"Catalogue figures, how complete and verified it is, the latest resolutions and the changes detected in the official sources. This is the part for researchers; the search box and the main entry points are on the Overview."
+"Las cifras del catálogo, qué tan completo y verificado está, las últimas resoluciones y las novedades detectadas en las fuentes oficiales. Es la parte para quien investiga; el buscador y los accesos principales están en el Panorama.":"Catalogue figures, how complete and verified it is, the latest resolutions and the changes detected in the official sources. This is the part for researchers; the search box and the main entry points are on the Overview.",
+"Qué es":"What it is",
+"Qué hace":"What it does",
+"Nombre oficial en los idiomas de la ONU":"Official name in the UN languages",
+"Más detalle":"More detail"
 };

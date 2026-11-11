@@ -16,7 +16,7 @@ Sitio estático: `index.html` + `data/atlas-data.js` y `data/atlas-actos.js` (ge
 | Actualización completa de datos | `bash scripts/actualizar_datos.sh` (solo en GitHub Actions, a las 12:17 y 00:17 hora de España en invierno; el temporizador del mini PC se retiró el 06-11-2026) |
 | Reconstruir el catálogo | `python3 -I scripts/build_catalog.py data/fuentes/verificacion_simbolos.json <fecha>` |
 | Pruebas | `node tests/smoke.cjs` · `node tests/invariantes.cjs` · `node tests/browser.cjs` (Playwright; `ATLAS_URL=<https>` para probar la web publicada) |
-| Contenido propio (CC BY 4.0) | `data/siglas.json`, `data/sistema_onu.json`, `data/historia.json` |
+| Contenido propio (CC BY 4.0) | `data/siglas.json`, `data/agencias.json`, `data/sistema_onu.json`, `data/historia.json` |
 | Textos literales de tratados | `scripts/fetch_tratados_texto.py` → `data/fuentes/tratados_texto.json` |
 
 ## Método y tareas pendientes

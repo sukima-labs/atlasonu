@@ -1138,5 +1138,9 @@ window.ATLAS_IDIOMA_ru={
 "Tabla de nomenclatura":"Таблица обозначений",
 "▦ Datos y calidad":"▦ Данные и качество",
 "Datos y calidad":"Данные и качество",
-"Las cifras del catálogo, qué tan completo y verificado está, las últimas resoluciones y las novedades detectadas en las fuentes oficiales. Es la parte para quien investiga; el buscador y los accesos principales están en el Panorama.":"Цифры каталога, его полнота и проверенность, последние резолюции и новости, обнаруженные в официальных источниках. Этот раздел для исследователей; поиск и основные входы находятся в «Обзоре»."
+"Las cifras del catálogo, qué tan completo y verificado está, las últimas resoluciones y las novedades detectadas en las fuentes oficiales. Es la parte para quien investiga; el buscador y los accesos principales están en el Panorama.":"Цифры каталога, его полнота и проверенность, последние резолюции и новости, обнаруженные в официальных источниках. Этот раздел для исследователей; поиск и основные входы находятся в «Обзоре».",
+"Qué es":"Что это",
+"Qué hace":"Чем занимается",
+"Nombre oficial en los idiomas de la ONU":"Официальное название на языках ООН",
+"Más detalle":"Подробнее"
 };
