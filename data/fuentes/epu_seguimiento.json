@@ -1,0 +1,170 @@
+{
+ "generado": "2026-09-17",
+ "fuente": "2026-11-10",
+ "paises": 193,
+ "total": {
+  "informes": 551,
+  "con_lista": 533,
+  "sin_lista": 18,
+  "recomendaciones": 117681,
+  "con_es": 98309,
+  "desde_informe": 28075,
+  "desde_adendo": 50825,
+  "null": 38781,
+  "apoyada": 61489,
+  "tomo_nota": 17411,
+  "revisar": 797
+ },
+ "ciclos": {
+  "2": {
+   "informes": 193,
+   "con_lista": 185,
+   "sin_lista": 8,
+   "recomendaciones": 32573,
+   "con_es": 17954,
+   "desde_informe": 14020,
+   "desde_adendo": 8744,
+   "null": 9809,
+   "apoyada": 18476,
+   "tomo_nota": 4288,
+   "revisar": 302
+  },
+  "3": {
+   "informes": 193,
+   "con_lista": 184,
+   "sin_lista": 9,
+   "recomendaciones": 41615,
+   "con_es": 36872,
+   "desde_informe": 9824,
+   "desde_adendo": 16625,
+   "null": 15166,
+   "apoyada": 20223,
+   "tomo_nota": 6226,
+   "revisar": 270
+  },
+  "4": {
+   "informes": 165,
+   "con_lista": 164,
+   "sin_lista": 1,
+   "recomendaciones": 43493,
+   "con_es": 43483,
+   "desde_informe": 4231,
+   "desde_adendo": 25456,
+   "null": 13806,
+   "apoyada": 22790,
+   "tomo_nota": 6897,
+   "revisar": 225
+  }
+ },
+ "distintas_de_epu_js": [],
+ "sin_lista": [
+  {
+   "iso": "BEL",
+   "s": "A/HRC/32/8",
+   "ciclo": 2,
+   "motivo": "la numeración salta: 138.92 tras 90, 138.93 tras 90, 138.94 tras 90"
+  },
+  {
+   "iso": "BGD",
+   "s": "A/HRC/24/12",
+   "ciclo": 2,
+   "motivo": "la numeración salta: 129.112 tras 110, 129.113 tras 110, 129.114 tras 110"
+  },
+  {
+   "iso": "BHR",
+   "s": "A/HRC/21/6",
+   "ciclo": 2,
+   "motivo": "la numeración salta: 115.78 tras 76, 115.79 tras 76, 115.80 tras 76"
+  },
+  {
+   "iso": "BRA",
+   "s": "A/HRC/36/11",
+   "ciclo": 3,
+   "motivo": "la numeración salta: 136.119 tras 108, 136.110 tras 108, 136.111 tras 108"
+  },
+  {
+   "iso": "CAF",
+   "s": "A/HRC/40/12",
+   "ciclo": 3,
+   "motivo": "la numeración salta: 121.134 tras 132, 121.135 tras 132, 121.136 tras 132"
+  },
+  {
+   "iso": "DNK",
+   "s": "A/HRC/48/10",
+   "ciclo": 3,
+   "motivo": "la numeración salta: 60.513 tras 152, 60.154 tras 152, 60.155 tras 152"
+  },
+  {
+   "iso": "ECU",
+   "s": "A/HRC/36/4",
+   "ciclo": 3,
+   "motivo": "la numeración salta: 120.17 tras 19"
+  },
+  {
+   "iso": "ETH",
+   "s": "A/HRC/42/14",
+   "ciclo": 3,
+   "motivo": "la numeración salta: 163.146 tras 245, 163.247 tras 245, 163.248 tras 245"
+  },
+  {
+   "iso": "FRA",
+   "s": "A/HRC/38/4",
+   "ciclo": 3,
+   "motivo": "la numeración salta: 145.171 tras 270, 145.272 tras 270, 145.273 tras 270"
+  },
+  {
+   "iso": "GHA",
+   "s": "A/HRC/22/6",
+   "ciclo": 2,
+   "motivo": "la numeración salta: 125.16 tras 14, 125.17 tras 14, 125.18 tras 14"
+  },
+  {
+   "iso": "ISR",
+   "s": "A/HRC/54/16",
+   "ciclo": 4,
+   "motivo": "la numeración salta: 39.227 tras 28, 39.81 tras 84, 39.80 tras 84"
+  },
+  {
+   "iso": "ITA",
+   "s": "A/HRC/43/4",
+   "ciclo": 3,
+   "motivo": "la numeración salta: 145.161 tras 194"
+  },
+  {
+   "iso": "KHM",
+   "s": "A/HRC/26/16",
+   "ciclo": 2,
+   "motivo": "la numeración salta: 118.9 tras 108, 118.110 tras 108, 118.111 tras 108"
+  },
+  {
+   "iso": "KHM",
+   "s": "A/HRC/41/17",
+   "ciclo": 3,
+   "motivo": "sin sección de recomendaciones"
+  },
+  {
+   "iso": "MKD",
+   "s": "A/HRC/41/11",
+   "ciclo": 3,
+   "motivo": "sin texto en inglés todavía"
+  },
+  {
+   "iso": "MLI",
+   "s": "A/HRC/23/6",
+   "ciclo": 2,
+   "motivo": "la numeración salta: 111.30 tras 28, 111.31 tras 28, 111.32 tras 28"
+  },
+  {
+   "iso": "PLW",
+   "s": "A/HRC/32/11",
+   "ciclo": 2,
+   "motivo": "la numeración salta: 104.106 tras 104, 104.107 tras 104, 104.108 tras 104"
+  },
+  {
+   "iso": "QAT",
+   "s": "A/HRC/27/15",
+   "ciclo": 2,
+   "motivo": "la numeración salta: 124.61 tras 59, 124.62 tras 59, 124.63 tras 59"
+  }
+ ]
+}
