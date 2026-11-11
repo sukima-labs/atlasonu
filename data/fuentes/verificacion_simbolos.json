@@ -32,30 +32,28 @@
   {
    "mandato": "Working Group of Experts on People of African Descent",
    "acto": "prorrogado",
-   "original": "A/HRC/RES/54/26",
-   "limpio": "A/HRC/RES/54/26",
+   "original": "A/HRC/RES/63/26",
+   "limpio": "A/HRC/RES/63/26",
    "estado": "VERIFICADO",
-   "consultado": "A/HRC/RES/54/26",
+   "consultado": "A/HRC/RES/63/26",
    "registro": {
-    "id": "4025248",
-    "simbolo": "A/HRC/RES/54/26",
+    "id": "4131529",
+    "simbolo": "A/HRC/RES/63/26",
     "simbolos": [
-     "A/HRC/RES/54/26"
+     "A/HRC/RES/63/26"
     ],
     "titulo": "Mandate of the Working Group of Experts on People of African Descent",
-    "fecha": "2023-10-16",
-    "adoptada": "2023-10-12",
+    "fecha": "2026-10-08",
+    "adoptada": "2026-10-06",
     "borradores": [
-     "A/HRC/54/L.14/Rev.1",
-     "A/HRC/54/SR.48"
+     "A/HRC/63/L.29",
+     "A/HRC/63/SR.42"
     ],
-    "votacion": "Adopted without vote, 48th meeting",
+    "votacion": "Adopted without vote, 42nd meeting",
     "pdf": {
-     "en": "https://digitallibrary.un.org/record/4025248/files/A_HRC_RES_54_26-EN.pdf",
-     "fr": "https://digitallibrary.un.org/record/4025248/files/A_HRC_RES_54_26-FR.pdf",
-     "es": "https://digitallibrary.un.org/record/4025248/files/A_HRC_RES_54_26-ES.pdf"
+     "en": "https://digitallibrary.un.org/record/4131529/files/A_HRC_RES_63_26-FR.pdf"
     },
-    "url": "https://digitallibrary.un.org/record/4025248",
+    "url": "https://digitallibrary.un.org/record/4131529",
     "sesion_nota": "",
     "ubicacion": [],
     "padres": []
@@ -277,6 +275,38 @@
      "fr": "https://digitallibrary.un.org/record/3888348/files/A_HRC_RES_45_24-FR.pdf"
     },
     "url": "https://digitallibrary.un.org/record/3888348",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
+   }
+  },
+  {
+   "mandato": "Working Group of Experts on People of African Descent",
+   "acto": "intermedia:2023",
+   "original": "A/HRC/RES/54/26",
+   "limpio": "A/HRC/RES/54/26",
+   "estado": "VERIFICADO",
+   "consultado": "A/HRC/RES/54/26",
+   "registro": {
+    "id": "4025248",
+    "simbolo": "A/HRC/RES/54/26",
+    "simbolos": [
+     "A/HRC/RES/54/26"
+    ],
+    "titulo": "Mandate of the Working Group of Experts on People of African Descent",
+    "fecha": "2023-10-16",
+    "adoptada": "2023-10-12",
+    "borradores": [
+     "A/HRC/54/L.14/Rev.1",
+     "A/HRC/54/SR.48"
+    ],
+    "votacion": "Adopted without vote, 48th meeting",
+    "pdf": {
+     "en": "https://digitallibrary.un.org/record/4025248/files/A_HRC_RES_54_26-EN.pdf",
+     "fr": "https://digitallibrary.un.org/record/4025248/files/A_HRC_RES_54_26-FR.pdf",
+     "es": "https://digitallibrary.un.org/record/4025248/files/A_HRC_RES_54_26-ES.pdf"
+    },
+    "url": "https://digitallibrary.un.org/record/4025248",
     "sesion_nota": "",
     "ubicacion": [],
     "padres": []
@@ -7075,8 +7105,32 @@
   {
    "mandato": "Working Group on the rights of peasants and other people working in rural areas",
    "acto": "prorrogado",
-   "original": "",
-   "estado": "SIN_SIMBOLO"
+   "original": "A/HRC/RES/63/11",
+   "limpio": "A/HRC/RES/63/11",
+   "estado": "VERIFICADO",
+   "consultado": "A/HRC/RES/63/11",
+   "registro": {
+    "id": "4130581",
+    "simbolo": "A/HRC/RES/63/11",
+    "simbolos": [
+     "A/HRC/RES/63/11"
+    ],
+    "titulo": "Working Group on the Rights of Peasants and Other People Working in Rural Areas",
+    "fecha": "2026-10-06",
+    "adoptada": "2026-10-05",
+    "borradores": [
+     "A/HRC/63/L.22",
+     "A/HRC/63/SR.40"
+    ],
+    "votacion": "Adopted 33-0-14, 40th meeting",
+    "pdf": {
+     "en": "https://digitallibrary.un.org/record/4130581/files/A_HRC_RES_63_11-FR.pdf"
+    },
+    "url": "https://digitallibrary.un.org/record/4130581",
+    "sesion_nota": "",
+    "ubicacion": [],
+    "padres": []
+   }
   },
   {
    "mandato": "Special Rapporteur on extreme poverty and human rights",

@@ -10,7 +10,7 @@ Le escribimos desde Sukima-Labs. Hemos publicado ATLAS ONU, un atlas gratuito y 
 
 Pensamos que podría ahorrar a su alumnado el rato de «¿esto es una resolución o un informe?»: de una pregunta en lenguaje normal se llega al documento y a su cita APA.
 
-Si le parece útil, le ofrecemos una sesión de 15 minutos para enseñárselo con un ejemplo de su materia, o simplemente que lo pruebe aquí: https://sukima-labs.github.io/atlasonu/ . Y si echa algo en falta, le agradeceríamos mucho que nos lo dijera: lo corregimos.
+Si le parece útil, le ofrecemos una sesión de 15 minutos para enseñárselo con un ejemplo de su materia, o simplemente que lo pruebe aquí: https://sukimalabs.com/atlasonu/ . Y si echa algo en falta, le agradeceríamos mucho que nos lo dijera: lo corregimos.
 
 Un saludo,
 Sukima-Labs

@@ -7742,6 +7742,13 @@
     "intro": "En la cola de trabajo, por orden aproximado. Una tarea cada vez.",
     "items": [
      {
+      "t": "Orden, copias de seguridad y velocidad",
+      "x": "Tareas internas: limpiar ramas y archivos antiguos, tener copias de seguridad, poner la documentación al día y hacer que la página cargue más rápido en celulares modestos.",
+      "issues": [
+       261
+      ]
+     },
+     {
       "t": "Comunicaciones de los relatores",
       "x": "Se muestran las cifras por país, pero cada comunicación individual y su respuesta solo se pueden consultar en la base original. Se busca una vía permitida para enlazarlas.",
       "issues": [
@@ -7903,13 +7910,6 @@
       "x": "Sus informes, visitas y comunicaciones, persona a persona, con enlace al original. Hoy las bases oficiales no permiten consulta automática; se enlazan desde la pantalla.",
       "issues": [
        260
-      ]
-     },
-     {
-      "t": "Orden, copias de seguridad y velocidad",
-      "x": "Tareas internas: limpiar ramas y archivos antiguos, tener copias de seguridad, poner la documentación al día y hacer que la página cargue más rápido en celulares modestos.",
-      "issues": [
-       261
       ]
      },
      {
@@ -11185,7 +11185,12 @@
    "en": "Cameroon",
    "claves": [],
    "mandato": null,
-   "titulares_de": [],
+   "titulares_de": [
+    {
+     "idx": 50,
+     "titular": "Sihaka TSEMO"
+    }
+   ],
    "comisiones": [],
    "region": "AFR",
    "region_origen": "oficial (base de comunicaciones de OHCHR)",
@@ -27354,11 +27359,11 @@
  ],
  "regiones_fuente": {
   "url": "https://spcommreports.ohchr.org/Tmsearch/TMDocuments",
-  "consultado": "2026-11-10"
+  "consultado": "2026-11-11"
  },
  "paises_fuente": {
   "url": "https://spinternet.ohchr.org/ViewCountryVisits.aspx?visitType=all",
-  "consultado": "2026-11-10"
+  "consultado": "2026-11-11"
  },
  "tratados": [
   {
@@ -27620,7 +27625,7 @@
  ],
  "tratados_fuente": {
   "url": "https://treaties.un.org/Pages/Treaties.aspx?id=4&subid=A&clang=_en",
-  "consultado": "2026-11-10"
+  "consultado": "2026-11-11"
  },
  "mecanismos": [
   {
@@ -29119,8 +29124,8 @@
    "anio": 2002,
    "organo": "Consejo de Derechos Humanos",
    "creacion": "E/CN.4/2002/WP.2",
-   "renovacion": "A/HRC/RES/54/26",
-   "renovacion_anio": "2023",
+   "renovacion": "A/HRC/RES/63/26",
+   "renovacion_anio": "2026",
    "metodos": "",
    "revision": "Acto de creación con reservas: cotejar texto (ver nota)",
    "nota": "«E/CN.4/2002/WP.2» existe, pero es «Report of the High Commissioner submitted pursuant to Commission resolution 2000/34», no el texto de una resolución. No tomarlo como acto creador sin cotejo. «E/CN.4/RES/2003/30» existe, pero el título del registro («World Conference against Racism, Racial Discrimination, Xenophobia and Related Intolerance and the comprehensive implementation of and follow-up to the Durban Declaration and Programme of Action») no menciona el mandato; en resoluciones antiguas suele ser el punto del orden del día. Cotejar el texto antes de citar. La fuente OHCHR cita «A/HRC/36/L.16»; el documento oficial es «A/HRC/RES/36/23» (equivalencia inferida por símbolo y título; no se ha leído el texto).",
@@ -29295,7 +29300,7 @@
      "via_borrador": false
     },
     {
-     "rol": "prórroga vigente",
+     "rol": "prórroga intermedia",
      "anio": "2023",
      "organo": "Consejo de Derechos Humanos",
      "simbolo_fuente": "A/HRC/RES/54/26",
@@ -29318,10 +29323,33 @@
       "es": "https://digitallibrary.un.org/record/4025248/files/A_HRC_RES_54_26-ES.pdf"
      },
      "via_borrador": false
+    },
+    {
+     "rol": "prórroga vigente",
+     "anio": "2026",
+     "organo": "Consejo de Derechos Humanos",
+     "simbolo_fuente": "A/HRC/RES/63/26",
+     "estado": "VERIFICADO",
+     "simbolo": "A/HRC/RES/63/26",
+     "titulo_oficial": "Mandate of the Working Group of Experts on People of African Descent",
+     "adoptada": "2026-10-06",
+     "sesion_nota": "",
+     "ubicacion": [],
+     "padres": [],
+     "borradores": [
+      "A/HRC/63/L.29",
+      "A/HRC/63/SR.42"
+     ],
+     "votacion": "Adopted without vote, 42nd meeting",
+     "registro": "https://digitallibrary.un.org/record/4131529",
+     "pdf": {
+      "en": "https://digitallibrary.un.org/record/4131529/files/A_HRC_RES_63_26-FR.pdf"
+     },
+     "via_borrador": false
     }
    ],
-   "actos_verificados": 6,
-   "actos_total": 8,
+   "actos_verificados": 7,
+   "actos_total": 9,
    "titulares": [
     {
      "tratamiento": "Ms.",
@@ -34715,8 +34743,8 @@
    "anio": 2023,
    "organo": "Consejo de Derechos Humanos",
    "creacion": "A/HRC/RES/54/9",
-   "renovacion": "",
-   "renovacion_anio": "",
+   "renovacion": "A/HRC/RES/63/11",
+   "renovacion_anio": "2026",
    "metodos": "",
    "revision": "Acto de creación localizado en la Biblioteca Digital ONU",
    "nota": "",
@@ -34745,10 +34773,33 @@
       "es": "https://digitallibrary.un.org/record/4025108/files/A_HRC_RES_54_9-ES.pdf"
      },
      "via_borrador": false
+    },
+    {
+     "rol": "prórroga vigente",
+     "anio": "2026",
+     "organo": "Consejo de Derechos Humanos",
+     "simbolo_fuente": "A/HRC/RES/63/11",
+     "estado": "VERIFICADO",
+     "simbolo": "A/HRC/RES/63/11",
+     "titulo_oficial": "Working Group on the Rights of Peasants and Other People Working in Rural Areas",
+     "adoptada": "2026-10-05",
+     "sesion_nota": "",
+     "ubicacion": [],
+     "padres": [],
+     "borradores": [
+      "A/HRC/63/L.22",
+      "A/HRC/63/SR.40"
+     ],
+     "votacion": "Adopted 33-0-14, 40th meeting",
+     "registro": "https://digitallibrary.un.org/record/4130581",
+     "pdf": {
+      "en": "https://digitallibrary.un.org/record/4130581/files/A_HRC_RES_63_11-FR.pdf"
+     },
+     "via_borrador": false
     }
    ],
-   "actos_verificados": 1,
-   "actos_total": 1,
+   "actos_verificados": 2,
+   "actos_total": 2,
    "titulares": [
     {
      "tratamiento": "Ms.",
@@ -39819,8 +39870,15 @@
    ],
    "actos_verificados": 13,
    "actos_total": 13,
-   "titulares": [],
-   "titulares_texto": "",
+   "titulares": [
+    {
+     "tratamiento": "Ms.",
+     "nombre": "Sihaka TSEMO",
+     "pais": "Cameroon",
+     "pais_id": "CMR"
+    }
+   ],
+   "titulares_texto": "Ms. Sihaka TSEMO (Cameroon)",
    "observaciones": "",
    "indiceES": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM&lang=es",
    "indiceEN": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=CM&lang=en",
@@ -41399,6 +41457,51 @@
   },
   "~A/HRC/54/SR.48": {
    "ref": "A/HRC/RES/54/26"
+  },
+  "A/HRC/RES/63/26": {
+   "simbolo": "A/HRC/RES/63/26",
+   "titulo": "Mandate of the Working Group of Experts on People of African Descent",
+   "adoptada": "2026-10-06",
+   "borradores": [
+    "A/HRC/63/L.29",
+    "A/HRC/63/SR.42"
+   ],
+   "votacion": "Adopted without vote, 42nd meeting",
+   "registro": "https://digitallibrary.un.org/record/4131529",
+   "pdf": {
+    "en": "https://digitallibrary.un.org/record/4131529/files/A_HRC_RES_63_26-FR.pdf"
+   },
+   "sesion_nota": "",
+   "ubicacion": [],
+   "padres": [],
+   "mandatos": [
+    "Working Group of Experts on People of African Descent"
+   ],
+   "texto": {
+    "descartadas_por_no_coincidir": [],
+    "estado": "TEXTO_DIRECTO",
+    "fuentes": [
+     {
+      "lengua": "en",
+      "tipo": "registro",
+      "url": "https://digitallibrary.un.org/record/4131529/files/A_HRC_RES_63_26-FR.pdf",
+      "validado": null
+     },
+     {
+      "lengua": "es",
+      "tipo": "ods",
+      "url": "https://documents.un.org/api/symbol/access?s=A/HRC/RES/63/26&l=es&t=pdf",
+      "validado": true
+     }
+    ],
+    "informe_sesion": []
+   }
+  },
+  "~A/HRC/63/L.29": {
+   "ref": "A/HRC/RES/63/26"
+  },
+  "~A/HRC/63/SR.42": {
+   "ref": "A/HRC/RES/63/26"
   },
   "A/HRC/RES/28/6": {
    "simbolo": "A/HRC/RES/28/6",
@@ -50330,6 +50433,51 @@
   "~A/HRC/54/L.11": {
    "ref": "A/HRC/RES/54/9"
   },
+  "A/HRC/RES/63/11": {
+   "simbolo": "A/HRC/RES/63/11",
+   "titulo": "Working Group on the Rights of Peasants and Other People Working in Rural Areas",
+   "adoptada": "2026-10-05",
+   "borradores": [
+    "A/HRC/63/L.22",
+    "A/HRC/63/SR.40"
+   ],
+   "votacion": "Adopted 33-0-14, 40th meeting",
+   "registro": "https://digitallibrary.un.org/record/4130581",
+   "pdf": {
+    "en": "https://digitallibrary.un.org/record/4130581/files/A_HRC_RES_63_11-FR.pdf"
+   },
+   "sesion_nota": "",
+   "ubicacion": [],
+   "padres": [],
+   "mandatos": [
+    "Working Group on the rights of peasants and other people working in rural areas"
+   ],
+   "texto": {
+    "descartadas_por_no_coincidir": [],
+    "estado": "TEXTO_DIRECTO",
+    "fuentes": [
+     {
+      "lengua": "en",
+      "tipo": "registro",
+      "url": "https://digitallibrary.un.org/record/4130581/files/A_HRC_RES_63_11-FR.pdf",
+      "validado": null
+     },
+     {
+      "lengua": "es",
+      "tipo": "ods",
+      "url": "https://documents.un.org/api/symbol/access?s=A/HRC/RES/63/11&l=es&t=pdf",
+      "validado": true
+     }
+    ],
+    "informe_sesion": []
+   }
+  },
+  "~A/HRC/63/L.22": {
+   "ref": "A/HRC/RES/63/11"
+  },
+  "~A/HRC/63/SR.40": {
+   "ref": "A/HRC/RES/63/11"
+  },
   "E/CN.4/RES/1998/25": {
    "simbolo": "E/CN.4/RES/1998/25",
    "titulo": "Human rights and extreme poverty",
@@ -53708,9 +53856,6 @@
    }
   },
   "~A/HRC/63/L.6": {
-   "ref": "A/HRC/RES/63/7"
-  },
-  "~A/HRC/63/SR.40": {
    "ref": "A/HRC/RES/63/7"
   },
   "A/HRC/RES/27/21": {

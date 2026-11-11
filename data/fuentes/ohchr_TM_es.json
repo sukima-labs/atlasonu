@@ -1,6 +1,6 @@
 {
  "fuente": "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=TM&lang=es",
- "consultado": "2026-11-10",
+ "consultado": "2026-11-11",
  "n": 44,
  "mandatos": [
   {
@@ -56,9 +56,9 @@
    "creado_anio": "2002",
    "creado_por": "Resolución del Consejo de Derechos Humanos",
    "creado_simbolo": "E/CN.4/2002/WP.2",
-   "prorrogado_anio": "2023",
+   "prorrogado_anio": "2026",
    "prorrogado_por": "Resolución del Consejo de Derechos Humanos",
-   "prorrogado_simbolo": "A/HRC/RES/54/26",
+   "prorrogado_simbolo": "A/HRC/RES/63/26",
    "titulares_texto": "Ms. Barbara REYNOLDS (Guyana) Ms. Isabelle MAMADOU (Spain) Ms. Catherine NAMAKULA (Uganda) Ms. Miriam EKIUDOKO (Hungary) Mr. Phillip BINONDO (Philippines)",
    "observaciones": "",
    "prorrogas_intermedias": [
@@ -96,6 +96,11 @@
      "anio": "2020",
      "por": "Resolución del Consejo de Derechos Humanos",
      "simbolo": "A/HRC/RES/45/24 Mandate of the Working Group of Experts on People of African Descent"
+    },
+    {
+     "anio": "2023",
+     "por": "Resolución del Consejo de Derechos Humanos",
+     "simbolo": "A/HRC/RES/54/26"
     }
    ],
    "idioma": "es"
@@ -275,9 +280,9 @@
    "creado_anio": "2023",
    "creado_por": "Resolución del Consejo de Derechos Humanos",
    "creado_simbolo": "A/HRC/RES/54/9",
-   "prorrogado_anio": "",
-   "prorrogado_por": "",
-   "prorrogado_simbolo": "",
+   "prorrogado_anio": "2026",
+   "prorrogado_por": "Resolución del Consejo de Derechos Humanos",
+   "prorrogado_simbolo": "A/HRC/RES/63/11",
    "titulares_texto": "Ms. Geneviève SAVIGNY (France) Mr. Carlos Arturo DUARTE TORRES (Colombia) Ms. Uche Ewelukwa OFODILE (Nigeria) Ms. Shalmali GUTTAL (India) Mr. Davit HAKOBYAN (Armenia)",
    "observaciones": "",
    "prorrogas_intermedias": [],

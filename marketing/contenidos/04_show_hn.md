@@ -4,7 +4,7 @@ Antes de publicar: probar la web en un navegador limpio y por el camino público
 
 **Título:** Show HN: ATLAS ONU – UN human rights mandates and documents, linked to the source
 
-**URL:** https://sukima-labs.github.io/atlasonu/
+**URL:** https://sukimalabs.com/atlasonu/
 
 **Primer comentario (del autor):**
 Hi HN. This is a free, open-source (AGPL-3.0) static site that maps the UN human rights system for people who don't know it: {{mandatos}} special-procedure mandates, the {{actos}} legal acts that created or renewed them, {{paises}} country profiles, {{tratados}} treaties, an acronym glossary and a timeline. It is Spanish-first (the interface is in all six UN languages; official data is shown as the UN publishes it).

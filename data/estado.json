@@ -1,12 +1,12 @@
 {
- "revisado_el": "2026-11-11T02:54:47+00:00",
- "datos_del": "2026-11-10",
- "hubo_cambios_en_esta_revision": false,
- "ultimo_cambio_el": "2026-11-10T18:49:25+00:00",
+ "revisado_el": "2026-11-11T18:51:37+00:00",
+ "datos_del": "2026-11-11",
+ "hubo_cambios_en_esta_revision": true,
+ "ultimo_cambio_el": "2026-11-11T18:51:37+00:00",
  "contadores": {
   "mandatos": 57,
-  "actos": 422,
-  "localizados": 403,
+  "actos": 424,
+  "localizados": 405,
   "paises": 196,
   "mecanismos": 33
  },
@@ -33,6 +33,15 @@
   }
  ],
  "ultimos_cambios": [
+  {
+   "fecha": "2026-11-11",
+   "n": 6,
+   "ejemplos": [
+    "Relator Especial sobre la situación de los derechos humanos en Eritrea: titulares sin titular → Sihaka TSEMO",
+    "Grupo de Trabajo sobre los derechos de los campesinos y de otras personas que trabajan en las zonas rurales: prórroga vigente — (—) → A/HRC/RES/63/11 (2026)",
+    "Grupo de Trabajo sobre los derechos de los campesinos y de otras personas que trabajan en las zonas rurales: 1 → 2 actos jurídicos registrados"
+   ]
+  },
   {
    "fecha": "2026-11-10",
    "n": 1,
@@ -84,13 +93,6 @@
    "ejemplos": [
     "Chile: visita programada",
     "Kuwait: visita ya no figura como programada",
-    "1 resolución(es) nueva(s) localizada(s): A/HRC/RES/63/34"
-   ]
-  },
-  {
-   "fecha": "2026-11-03",
-   "n": 1,
-   "ejemplos": [
     "1 resolución(es) nueva(s) localizada(s): A/HRC/RES/63/34"
    ]
   }
