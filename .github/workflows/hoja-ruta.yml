@@ -1,0 +1,43 @@
+name: «Qué falta y qué viene» al día con los issues
+# T90: cuando un issue se abre, se cierra, se reabre, cambia de etiqueta o se edita, la pantalla «Qué falta y qué viene»
+# se recoloca sola según su estado (scripts/hoja_ruta_github.py) y se publica en main. Una vez al día, por si se perdió un evento.
+on:
+  issues: { types: [opened, edited, closed, reopened, labeled, unlabeled, deleted] }
+  schedule:
+    - cron: '41 5 * * *'
+  workflow_dispatch: {}
+permissions: { contents: write, issues: read, pages: write }
+# El mismo grupo que la revisión diaria de datos: los dos publican en main y no deben empujar a la vez.
+concurrency: { group: actualizar-datos, cancel-in-progress: false }
+jobs:
+  sincronizar:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with: { python-version: '3.12' }
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - name: Recolocar la pantalla según los issues
+        env: { GITHUB_TOKEN: '${{ github.token }}' }
+        run: python3 -I scripts/hoja_ruta_github.py | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Reconstruir el catálogo y probar (solo si algo cambió)
+        run: |
+          if git diff --quiet data/hoja_ruta.json; then echo "Nada que cambiar"; exit 0; fi
+          python3 -I scripts/build_catalog.py data/fuentes/verificacion_simbolos.json "$(python3 -c "import json;print(json.load(open('data/catalogo.json'))['consultado'])")"
+          python3 -I tests/hoja_ruta_github_test.py
+          cd tests && node smoke.cjs
+      - name: Publicar en main
+        run: |
+          git config user.name "atlas-onu-bot"
+          git config user.email "atlas-onu-bot@users.noreply.github.com"
+          git add data/hoja_ruta.json data/catalogo.json data/atlas-data.js
+          if git diff --cached --quiet; then echo "Nada que publicar"; exit 0; fi
+          git commit -m "«Qué falta y qué viene» al día con los issues ($(date -u +%F))"
+          git pull --rebase origin main
+          git push
+      - name: Pedir a GitHub Pages que reconstruya el sitio
+        if: success()
+        env: { GH_TOKEN: '${{ github.token }}' }
+        run: gh api -X POST "repos/${{ github.repository }}/pages/builds" || echo "Pages se reconstruirá con el siguiente cambio"
