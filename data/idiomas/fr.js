@@ -1137,5 +1137,9 @@ window.ATLAS_IDIOMA_fr={
 "Tabla de nomenclatura":"Tableau de nomenclature",
 "▦ Datos y calidad":"▦ Données et qualité",
 "Datos y calidad":"Données et qualité",
-"Las cifras del catálogo, qué tan completo y verificado está, las últimas resoluciones y las novedades detectadas en las fuentes oficiales. Es la parte para quien investiga; el buscador y los accesos principales están en el Panorama.":"Les chiffres du catalogue, son degré de complétude et de vérification, les dernières résolutions et les nouveautés détectées dans les sources officielles. C’est la partie pour les chercheurs ; le moteur de recherche et les accès principaux sont dans le Panorama."
+"Las cifras del catálogo, qué tan completo y verificado está, las últimas resoluciones y las novedades detectadas en las fuentes oficiales. Es la parte para quien investiga; el buscador y los accesos principales están en el Panorama.":"Les chiffres du catalogue, son degré de complétude et de vérification, les dernières résolutions et les nouveautés détectées dans les sources officielles. C’est la partie pour les chercheurs ; le moteur de recherche et les accès principaux sont dans le Panorama.",
+"Qué es":"De quoi s'agit-il",
+"Qué hace":"Son action",
+"Nombre oficial en los idiomas de la ONU":"Nom officiel dans les langues de l'ONU",
+"Más detalle":"Plus de détails"
 };
