@@ -5192,7 +5192,7 @@
   ]
  },
  "hojaruta": {
-  "actualizado": "2026-11-10",
+  "actualizado": "2026-11-11",
   "bloques": [
    {
     "id": "disponible",
@@ -5340,6 +5340,11 @@
      {
       "t": "Seis idiomas: español, inglés, francés, árabe, chino y ruso",
       "x": "Arriba se elige el idioma y la página lo recuerda; en árabe la página se lee de derecha a izquierda. Están traducidos el menú, los títulos, las explicaciones, los filtros, los botones, las fichas de país y de mandato, los tratados y las fechas, con diccionario propio y sin servicios externos. Los documentos, las noticias y los datos oficiales se muestran en el idioma en que los publica la ONU. Falta que una persona revise las traducciones.",
+      "tag": "en evaluación"
+     },
+     {
+      "t": "Colores y diseño de la página",
+      "x": "Se está evaluando si la página debe mantener su paleta dorada y crema o acercarse a los colores de la marca de Sukima-Labs (grafito, cian, violeta y marfil). Ya se midió el contraste de ambas: la actual se lee bien; el violeta de la marca no sirve para texto sobre fondo oscuro. La propuesta es un punto medio: conservar la base y usar el cian de la marca como acento. Falta la decisión.",
       "tag": "en evaluación"
      }
     ]
