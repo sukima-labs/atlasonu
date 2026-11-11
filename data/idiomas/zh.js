@@ -1121,5 +1121,10 @@ window.ATLAS_IDIOMA_zh={
 "Pega un código: A/HRC/RES/5/2, S/RES/1325 (2000)…":"粘贴文号：A/HRC/RES/5/2、S/RES/1325 (2000)…",
 "Código de un documento":"文件文号",
 "Filtra: HRC, resolución, acta, adición…":"筛选：HRC、决议、记录、增编…",
-"Filtrar la tabla":"筛选表格"
+"Filtrar la tabla":"筛选表格",
+"Inicio":"首页",
+"Explorar datos":"浏览数据",
+"Entender la ONU":"了解联合国",
+"Herramientas de consulta":"查询工具",
+"Sobre el proyecto":"关于项目"
 };
