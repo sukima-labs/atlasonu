@@ -1126,5 +1126,8 @@ window.ATLAS_IDIOMA_ar={
 "Explorar datos":"استكشاف البيانات",
 "Entender la ONU":"فهم الأمم المتحدة",
 "Herramientas de consulta":"أدوات الاستعلام",
-"Sobre el proyecto":"عن المشروع"
+"Sobre el proyecto":"عن المشروع",
+"<b>Instantánea del 27-10-2026, no feed en vivo:</b> cómo investigar sin conocer las siglas y de dónde salen los mandatos":"<b>لقطة بتاريخ 27-10-2026، وليست بثًّا مباشرًا:</b> كيف تبحث دون معرفة الاختصارات ومن أين تأتي الولايات",
+"<b>Importante:</b> no descarga todos los PDF ni marca nada como verificado sin cotejo":"<b>مهم:</b> لا يحمّل كل ملفات PDF ولا يضع علامة «موثّق» دون مطابقة الوثائق",
+"<b>Qué es DIGNITYOS,</b> para quién y qué nos guía":"<b>ما هو DIGNITYOS،</b> ولمن هو وما الذي يوجّهنا"
 };
