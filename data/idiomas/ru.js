@@ -1093,5 +1093,14 @@ window.ATLAS_IDIOMA_ru={
 "Rusia (URSS hasta {n})":"Россия (СССР до {n})",
 "Ver los mismos datos como tabla":"Посмотреть те же данные в виде таблицы",
 "Década":"Десятилетие",
-"URSS":"СССР"
+"URSS":"СССР",
+"Sí, no y abstención":"«За», «против» и воздержался",
+"Votó sí":"Голосовал «за»",
+"Votó no":"Голосовал «против»",
+"Se abstuvo":"Воздержался",
+"No votó o ausente":"Не голосовал или отсутствовал",
+"cada barra es un año y su altura completa son todas las votaciones nominales de ese año en las que el país podía votar. Azul-verdoso: votó sí; naranja: votó no; amarillo: se abstuvo; gris: no votó o no estuvo. No dice si un voto es bueno o malo.":"каждый столбец — один год, а его полная высота — все поименные голосования этого года, в которых страна могла участвовать. Сине-зелёный: «за»; оранжевый: «против»; жёлтый: воздержался; серый: не голосовал или отсутствовал. Это не говорит, хорош голос или плох.",
+"Una votación nominal es aquella en la que se registra el voto de cada Estado. Esta vista solo llega hasta {n}, el último año de su fuente.":"Поименное голосование — такое, в котором фиксируется голос каждого государства. Этот вид доходит только до {n} года — последнего года источника.",
+"Fuente:":"Источник:",
+"(Harvard Dataverse, CC{n}). Recuento de ATLAS con el voto de cada Estado en cada votación nominal.":"(Harvard Dataverse, CC{n}). Подсчёт ATLAS голоса каждого государства в каждом поимённом голосовании."
 };

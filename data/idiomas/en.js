@@ -1093,5 +1093,14 @@ window.ATLAS_IDIOMA_en={
 "Rusia (URSS hasta {n})":"Russia (USSR until {n})",
 "Ver los mismos datos como tabla":"See the same data as a table",
 "Década":"Decade",
-"URSS":"USSR"
+"URSS":"USSR",
+"Sí, no y abstención":"Yes, no and abstention",
+"Votó sí":"Voted yes",
+"Votó no":"Voted no",
+"Se abstuvo":"Abstained",
+"No votó o ausente":"Did not vote or absent",
+"cada barra es un año y su altura completa son todas las votaciones nominales de ese año en las que el país podía votar. Azul-verdoso: votó sí; naranja: votó no; amarillo: se abstuvo; gris: no votó o no estuvo. No dice si un voto es bueno o malo.":"each bar is one year and its full height is all the roll-call votes that year in which the country could vote. Teal: voted yes; orange: voted no; yellow: abstained; grey: did not vote or was absent. It does not say whether a vote is good or bad.",
+"Una votación nominal es aquella en la que se registra el voto de cada Estado. Esta vista solo llega hasta {n}, el último año de su fuente.":"A roll-call vote is one in which each State's vote is recorded. This view only goes up to {n}, the last year of its source.",
+"Fuente:":"Source:",
+"(Harvard Dataverse, CC{n}). Recuento de ATLAS con el voto de cada Estado en cada votación nominal.":"(Harvard Dataverse, CC{n}). ATLAS count of each State's vote in every roll-call vote."
 };

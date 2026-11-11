@@ -1093,5 +1093,14 @@ window.ATLAS_IDIOMA_fr={
 "Rusia (URSS hasta {n})":"Russie (URSS jusqu'en {n})",
 "Ver los mismos datos como tabla":"Voir les mêmes données sous forme de tableau",
 "Década":"Décennie",
-"URSS":"URSS"
+"URSS":"URSS",
+"Sí, no y abstención":"Oui, non et abstention",
+"Votó sí":"A voté oui",
+"Votó no":"A voté non",
+"Se abstuvo":"S'est abstenu",
+"No votó o ausente":"N'a pas voté ou absent",
+"cada barra es un año y su altura completa son todas las votaciones nominales de ese año en las que el país podía votar. Azul-verdoso: votó sí; naranja: votó no; amarillo: se abstuvo; gris: no votó o no estuvo. No dice si un voto es bueno o malo.":"chaque barre est une année et sa hauteur totale représente tous les votes par appel nominal de cette année auxquels le pays pouvait participer. Bleu-vert : a voté oui ; orange : a voté non ; jaune : s'est abstenu ; gris : n'a pas voté ou était absent. Elle ne dit pas si un vote est bon ou mauvais.",
+"Una votación nominal es aquella en la que se registra el voto de cada Estado. Esta vista solo llega hasta {n}, el último año de su fuente.":"Un vote par appel nominal est un vote où la position de chaque État est enregistrée. Cette vue ne va que jusqu'à {n}, dernière année de sa source.",
+"Fuente:":"Source :",
+"(Harvard Dataverse, CC{n}). Recuento de ATLAS con el voto de cada Estado en cada votación nominal.":"(Harvard Dataverse, CC{n}). Décompte d'ATLAS du vote de chaque État à chaque vote par appel nominal."
 };
