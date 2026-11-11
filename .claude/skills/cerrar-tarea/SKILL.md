@@ -9,6 +9,7 @@ description: Cierre de cada tarea de ATLAS ONU antes de pedir /clear. Sincroniza
 
 ## Pasos
 1. **Cola:** marca la tarea como **hecha** con fecha y una línea de qué se hizo; actualiza «Siguiente tarea». Añade como tarea nueva (T30, T31…) toda idea, error o pedido del fundador que haya surgido en la sesión, aunque no se vaya a hacer ya.
+1b. **Issues (T89, 11-11-2026):** cada tarea abierta de la cola tiene un issue con su T-número en el título, y el estado lo da el issue: se cierra cuando la tarea está hecha, no antes. Un PR que solo valora o deja algo en cola usa `Refs #n`, **nunca** `Closes #n` (si no, GitHub cierra el issue solo). Tarea nueva sin issue: se crea en el momento. El tablero de GitHub Projects se alimenta de esos issues; no se copia a mano en ningún sitio.
 2. **Pantalla `#hojaruta`:** se edita `data/hoja_ruta.json` (bloques `disponible`, `evaluacion`, `pendiente`, `ideas`; en los textos, `{siglas}`, `{hechos}` y `{previos}` se rellenan solos) y se reconstruye con `python3 -I scripts/build_catalog.py data/fuentes/verificacion_simbolos.json <fecha de data/catalogo.json>`. En lenguaje claro, sin jerga de tareas ni nombres de personas, reparte todo en estos bloques:
    - **Ya disponible** (lo hecho; lo recién terminado entra aquí).
    - **En evaluación** (hecho a medias o a la espera de confirmación del fundador o de una prueba en celular real).

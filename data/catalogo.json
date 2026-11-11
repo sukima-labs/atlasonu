@@ -7702,6 +7702,22 @@
      {
       "t": "Mapa: todas las capas de un país a la vez",
       "x": "Al tocar un país del mapa, el panel muestra a la vez sus siete capas (tratados, invitación permanente, mandato de relator, comisión o misión, conflictos armados, comunicaciones y EPU), igual para los 196 países; donde no hay dato dice por qué. Cada fila lleva a su sección de la ficha, y la ficha tiene un botón para volver al mapa. Salió de un reporte de Jeisson sobre Colombia."
+     },
+     {
+      "t": "Menú del celular",
+      "x": "El menú baja hasta su último elemento, se desliza con el dedo sin mover la página de atrás y, con zoom, se puede ver entero. El zoom de dos dedos funciona también con el menú abierto. Se comprueba cada semana, de forma automática, en tres modelos de celular."
+     },
+     {
+      "t": "Búsqueda en vivo desde el celular",
+      "x": "La búsqueda en vivo contesta desde el celular: se comprueba cada semana, escribiendo y tocando «Buscar», en tres modelos de celular contra la página publicada."
+     },
+     {
+      "t": "Agencias y organismos de la ONU explicados",
+      "x": "Al buscar o tocar una agencia (por ejemplo, la FAO) se abre una ficha que explica qué es, qué hace y su relación con los derechos humanos, en los seis idiomas. Falta que una persona revise las traducciones."
+     },
+     {
+      "t": "Cómo leer un código de la ONU",
+      "x": "Una pantalla que enseña a leer las signaturas de los documentos (por ejemplo, A/HRC/RES/…), en cinco idiomas y con lectura fácil, junto a las siglas."
      }
     ]
    },
@@ -7711,28 +7727,8 @@
     "intro": "Hecho, a la espera de confirmarlo en un celular real.",
     "items": [
      {
-      "t": "Menú del celular",
-      "x": "El menú baja hasta su último elemento, se desliza con el dedo sin mover la página de atrás y, con zoom, se puede ver entero. El zoom de dos dedos funciona también con el menú abierto.",
-      "tag": "en evaluación"
-     },
-     {
-      "t": "Comunicaciones de los relatores",
-      "x": "Se muestran las cifras por país, pero cada comunicación individual y su respuesta solo se pueden consultar en la base original. Se busca una vía permitida para enlazarlas.",
-      "tag": "parcial"
-     },
-     {
-      "t": "Búsqueda en vivo desde el celular",
-      "x": "Con ciertas redes privadas, Chrome puede pedir un permiso y la consulta no responde. Falta confirmarlo.",
-      "tag": "en evaluación"
-     },
-     {
       "t": "Seis idiomas: español, inglés, francés, árabe, chino y ruso",
       "x": "Arriba se elige el idioma y la página lo recuerda; en árabe la página se lee de derecha a izquierda. Están traducidos el menú, los títulos, las explicaciones, los filtros, los botones, las fichas de país y de mandato, los tratados y las fechas, con diccionario propio y sin servicios externos. Los documentos, las noticias y los datos oficiales se muestran en el idioma en que los publica la ONU. Falta que una persona revise las traducciones.",
-      "tag": "en evaluación"
-     },
-     {
-      "t": "Colores, modo oscuro, letras y diseño de la página",
-      "x": "Se está evaluando si la página debe mantener su paleta dorada y crema y su letra actual o acercarse a la marca de Sukima-Labs: sus colores (grafito, cian, violeta y marfil) y su letra (DejaVu Sans). Ya se midió el contraste: la paleta actual se lee bien; el violeta de la marca no sirve para texto sobre fondo oscuro. Jeisson también pidió colores más amables (el tono tierra cansa) y un modo oscuro: hoy la página es solo oscura, sin modo claro ni interruptor. La propuesta es una página con colores de la marca en dos modos, oscuro (grafito) y claro (marfil), con un selector «Automático, Claro u Oscuro» que se guarda solo en el navegador; el cian de la marca como acento, el dorado reservado para datos y destacados, y la letra de la marca para que se vea igual en todos los aparatos. Falta la decisión.",
       "tag": "en evaluación"
      }
     ]
@@ -7743,8 +7739,32 @@
     "intro": "En la cola de trabajo, por orden aproximado. Una tarea cada vez.",
     "items": [
      {
+      "t": "Comunicaciones de los relatores",
+      "x": "Se muestran las cifras por país, pero cada comunicación individual y su respuesta solo se pueden consultar en la base original. Se busca una vía permitida para enlazarlas."
+     },
+     {
+      "t": "Seguimiento de recomendaciones",
+      "x": "Un tablero que muestre, por cada recomendación de la ONU a un país, qué se ha cumplido, qué sigue pendiente y qué avances hay, con la fuente de cada dato y la posibilidad de comparar varios países."
+     },
+     {
+      "t": "De la información a la acción",
+      "x": "Un asistente paso a paso que, ante un caso concreto, explica a qué comité o procedimiento de la ONU se puede acudir, con sus requisitos y plazos."
+     },
+     {
+      "t": "Guías para presentar quejas a la ONU",
+      "x": "Pasar de manuales estáticos a una guía viva y al día, unida al asistente «De la información a la acción»."
+     },
+     {
+      "t": "Colores de la marca, modo claro y modo oscuro",
+      "x": "La página pasará a los colores y la letra de la marca de Sukima-Labs, con dos modos, oscuro (grafito) y claro (marfil), y un selector «Automático, Claro u Oscuro» que se guarda solo en el navegador. El cian de la marca será el acento y el dorado quedará para datos y destacados. Ya se midió el contraste; falta aplicarlo."
+     },
+     {
+      "t": "Herramienta para clases: crea tu ONU o tu EPU",
+      "x": "Una actividad para colegios, universidades y organizaciones: cada estudiante representa a un país, debate un tema y vota, como en un Modelo de Naciones Unidas. Usaría datos reales de ATLAS: cómo votó cada país en la Asamblea y qué recomendaciones recibió en el EPU. Iría dentro de «Entender la ONU». No guardaría nombres ni cuentas. Ya está valorada; empieza después del seguimiento de recomendaciones."
+     },
+     {
       "t": "Mapa y fichas: presencia de la ONU en cada país",
-      "x": "Falta una capa con las oficinas de derechos humanos de la ONU y las misiones de paz o políticas en cada país (por ejemplo, la Misión de Verificación en Colombia). Se busca antes una fuente abierta, con licencia y fecha. También falta mostrar en la ficha el conflicto armado y la cifra del EPU, para que ficha y mapa cuenten lo mismo."
+      "x": "Falta una capa con las oficinas de derechos humanos de la ONU y las misiones de paz o políticas en cada país (por ejemplo, la Misión de Verificación en Colombia). Se busca antes una fuente abierta, con licencia y fecha."
      },
      {
       "t": "Revisión de uso de todas las pantallas",
@@ -7833,11 +7853,6 @@
      {
       "t": "Datos del sistema",
       "x": "Tratados depositados, presupuesto y cuotas por país, votaciones y calendario de días internacionales.",
-      "tag": "propuesto"
-     },
-     {
-      "t": "Herramienta para clases: crea tu ONU o tu EPU",
-      "x": "Una actividad para colegios, universidades y organizaciones: cada estudiante representa a un país, debate un tema y vota, como en un Modelo de Naciones Unidas. Usaría datos reales de ATLAS: cómo votó cada país en la Asamblea y qué recomendaciones recibió en el EPU. Iría dentro de «Entender la ONU». No guardaría nombres ni cuentas. Ya está valorada; empieza después del seguimiento de recomendaciones.",
       "tag": "propuesto"
      }
     ]
