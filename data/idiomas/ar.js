@@ -1095,5 +1095,14 @@ window.ATLAS_IDIOMA_ar={
 "Rusia (URSS hasta {n})":"روسيا (الاتحاد السوفياتي حتى {n})",
 "Ver los mismos datos como tabla":"عرض البيانات نفسها كجدول",
 "Década":"العقد",
-"URSS":"الاتحاد السوفياتي"
+"URSS":"الاتحاد السوفياتي",
+"Sí, no y abstención":"نعم ولا وامتناع",
+"Votó sí":"صوّتت بنعم",
+"Votó no":"صوّتت بلا",
+"Se abstuvo":"امتنعت عن التصويت",
+"No votó o ausente":"لم تصوّت أو غائبة",
+"cada barra es un año y su altura completa son todas las votaciones nominales de ese año en las que el país podía votar. Azul-verdoso: votó sí; naranja: votó no; amarillo: se abstuvo; gris: no votó o no estuvo. No dice si un voto es bueno o malo.":"كل عمود يمثل سنة، وارتفاعه الكامل هو جميع عمليات التصويت بالنداء بالاسم في تلك السنة التي كان بإمكان البلد المشاركة فيها. أزرق مخضر: نعم؛ برتقالي: لا؛ أصفر: امتناع؛ رمادي: لم تصوّت أو غائبة. لا يبيّن ما إذا كان التصويت جيدًا أو سيئًا.",
+"Una votación nominal es aquella en la que se registra el voto de cada Estado. Esta vista solo llega hasta {n}, el último año de su fuente.":"التصويت بالنداء بالاسم هو التصويت الذي يُسجَّل فيه صوت كل دولة. يصل هذا العرض فقط إلى {n}، آخر سنة في مصدره.",
+"Fuente:":"المصدر:",
+"(Harvard Dataverse, CC{n}). Recuento de ATLAS con el voto de cada Estado en cada votación nominal.":"(Harvard Dataverse, CC{n}). إحصاء ATLAS لصوت كل دولة في كل تصويت بالنداء بالاسم."
 };

@@ -77,6 +77,10 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     const vl = await page.evaluate(() => !/cada grupo de barras/.test(document.getElementById('pVotos').textContent) && !!document.querySelector('#pVotos svg'));
     await page.evaluate(() => votosCambia('barras')); await page.waitForFunction(() => document.querySelectorAll('#pVotos svg rect').length > 4, null, { timeout: 8000 }).catch(() => {});
     ok(vp.name + ': votos en la Asamblea: por defecto barras por década con su tabla, y se puede volver a la línea (#186)', vb && vl && (await page.evaluate(() => document.querySelectorAll('#pVotos svg rect').length > 4)));
+    await page.evaluate(() => votosCambia('sino')); await page.waitForFunction(() => /cada barra es un año/.test(document.getElementById('pVotos').textContent), null, { timeout: 8000 }).catch(() => {});
+    const vs = await page.evaluate(() => { const b = document.getElementById('pVotos'); return b.querySelectorAll('svg rect').length > 20 && !!b.querySelector('details.datos table') && b.querySelectorAll('.toolbar button').length === 3; });
+    ok(vp.name + ': votos en la Asamblea: tercera vista sí/no/abstención con su tabla y tres botones (#186, opción B)', vs);
+    await page.evaluate(() => votosCambia('barras'));
     const dd = await page.textContent('#pDocs');
     ok(vp.name + ': la ficha tiene el menú «Qué quieres ver» con 9 saltos y el botón de comparar', (await page.locator('#pNav button[onclick^="irSeccion"]').count()) === 9 && (await page.locator('#pNav button[onclick^="compararCon"]').count()) === 1);
     await page.locator('#pNav button', { hasText: 'EPU' }).click(); await esperaReposo(page);

@@ -1095,5 +1095,14 @@ window.ATLAS_IDIOMA_zh={
 "Rusia (URSS hasta {n})":"俄罗斯（{n}年前为苏联）",
 "Ver los mismos datos como tabla":"以表格查看相同数据",
 "Década":"年代",
-"URSS":"苏联"
+"URSS":"苏联",
+"Sí, no y abstención":"赞成、反对和弃权",
+"Votó sí":"投了赞成票",
+"Votó no":"投了反对票",
+"Se abstuvo":"弃权",
+"No votó o ausente":"未投票或缺席",
+"cada barra es un año y su altura completa son todas las votaciones nominales de ese año en las que el país podía votar. Azul-verdoso: votó sí; naranja: votó no; amarillo: se abstuvo; gris: no votó o no estuvo. No dice si un voto es bueno o malo.":"每根柱代表一年，其总高度是该年该国可以参加的所有记名投票。蓝绿色：赞成；橙色：反对；黄色：弃权；灰色：未投票或缺席。它不表明一票是好是坏。",
+"Una votación nominal es aquella en la que se registra el voto de cada Estado. Esta vista solo llega hasta {n}, el último año de su fuente.":"记名投票是记录每个国家投票情况的表决。此视图只到{n}年，即其数据来源的最后一年。",
+"Fuente:":"来源：",
+"(Harvard Dataverse, CC{n}). Recuento de ATLAS con el voto de cada Estado en cada votación nominal.":"(Harvard Dataverse, CC{n})。ATLAS对每个国家在每次记名投票中的投票统计。"
 };
