@@ -186,6 +186,7 @@ window.ATLAS_IDIOMA_en={
 "Familia de la ONU (agencias, fondos…)":"The UN family (agencies, funds…)",
 "¿Ante quién reclamo?":"Whom do I appeal to?",
 "Cómo se decide y se elige":"How decisions and elections work",
+"Los 17 ODS":"The 17 SDGs",
 "Descifrar un símbolo":"Decode a symbol",
 "Pulsa cualquier recuadro: verás qué es, quién lo forma, qué documentos produce, de quién depende y qué cuelga de él.":"Tap any box: you will see what it is, who makes it up, what documents it produces, who it reports to and what hangs from it.",
 "La «familia» de la ONU es mucho más que sus seis órganos principales: fondos y programas, organismos especializados autónomos, comisiones regionales y organizaciones relacionadas. Filtra o busca, y pulsa una para ver qué hace en derechos humanos y con qué tratados se conecta.":"The UN “family” is much more than its six principal organs: funds and programmes, autonomous specialized agencies, regional commissions and related organizations. Filter or search, and tap one to see what it does on human rights and which treaties it connects to.",
@@ -1137,5 +1138,15 @@ window.ATLAS_IDIOMA_en={
 "Tabla de nomenclatura":"Nomenclature table",
 "▦ Datos y calidad":"▦ Data and quality",
 "Datos y calidad":"Data and quality",
-"Las cifras del catálogo, qué tan completo y verificado está, las últimas resoluciones y las novedades detectadas en las fuentes oficiales. Es la parte para quien investiga; el buscador y los accesos principales están en el Panorama.":"Catalogue figures, how complete and verified it is, the latest resolutions and the changes detected in the official sources. This is the part for researchers; the search box and the main entry points are on the Overview."
+"Las cifras del catálogo, qué tan completo y verificado está, las últimas resoluciones y las novedades detectadas en las fuentes oficiales. Es la parte para quien investiga; el buscador y los accesos principales están en el Panorama.":"Catalogue figures, how complete and verified it is, the latest resolutions and the changes detected in the official sources. This is the part for researchers; the search box and the main entry points are on the Overview.",
+"Este país en todas las capas":"This country in every layer",
+"Ver en la ficha":"See in the profile",
+"La Colección de Tratados no trae datos de ratificación para esta entidad.":"The Treaty Collection has no ratification data for this entity.",
+"Solo algunos países tienen un mandato de relator propio; los mandatos temáticos sí pueden actuar en este país (ver la ficha).":"Only some countries have a country-specific rapporteur mandate; thematic mandates can act on this country (see the profile).",
+"Solo algunos países tienen una comisión o misión de investigación; no es un juicio sobre el país.":"Only some countries have a commission of inquiry or mission; it is not a judgement on the country.",
+"◍ Ver en el mapa":"◍ See on the map",
+"Qué es":"What it is",
+"Qué hace":"What it does",
+"Nombre oficial en los idiomas de la ONU":"Official name in the UN languages",
+"Más detalle":"More detail"
 };
