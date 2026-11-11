@@ -186,6 +186,7 @@ window.ATLAS_IDIOMA_ar={
 "Familia de la ONU (agencias, fondos…)":"أسرة الأمم المتحدة (وكالات وصناديق…)",
 "¿Ante quién reclamo?":"إلى من أتقدّم بشكواي؟",
 "Cómo se decide y se elige":"كيف تُتخذ القرارات وتُجرى الانتخابات",
+"Los 17 ODS":"أهداف التنمية المستدامة الـ17",
 "Descifrar un símbolo":"فكّ رمز",
 "Pulsa cualquier recuadro: verás qué es, quién lo forma, qué documentos produce, de quién depende y qué cuelga de él.":"اضغط على أي مربع: سترى ما هو ومن يشكّله وما الوثائق التي يصدرها ومن يتبع له وما يتفرع عنه.",
 "La «familia» de la ONU es mucho más que sus seis órganos principales: fondos y programas, organismos especializados autónomos, comisiones regionales y organizaciones relacionadas. Filtra o busca, y pulsa una para ver qué hace en derechos humanos y con qué tratados se conecta.":"«أسرة» الأمم المتحدة أوسع بكثير من أجهزتها الرئيسية الستة: صناديق وبرامج، ووكالات متخصصة مستقلة، ولجان إقليمية، ومنظمات ذات صلة. رشّح أو ابحث، واضغط على إحداها لترى ما تفعله في مجال حقوق الإنسان وبأي معاهدات ترتبط.",
