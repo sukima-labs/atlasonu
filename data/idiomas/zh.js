@@ -1134,5 +1134,8 @@ window.ATLAS_IDIOMA_zh={
 "Siglas y códigos: elige una consulta":"简称与文号：选择查询方式",
 "Siglas":"简称",
 "Cómo leer un código":"如何解读文号",
-"Tabla de nomenclatura":"编码规则表"
+"Tabla de nomenclatura":"编码规则表",
+"▦ Datos y calidad":"▦ 数据与质量",
+"Datos y calidad":"数据与质量",
+"Las cifras del catálogo, qué tan completo y verificado está, las últimas resoluciones y las novedades detectadas en las fuentes oficiales. Es la parte para quien investiga; el buscador y los accesos principales están en el Panorama.":"目录的各项数字、完整与核实程度、最新决议，以及在官方来源中发现的更新。这一部分供研究者使用；搜索框和主要入口在“总览”中。"
 };

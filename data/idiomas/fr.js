@@ -1134,5 +1134,8 @@ window.ATLAS_IDIOMA_fr={
 "Siglas y códigos: elige una consulta":"Sigles et cotes : choisissez une consultation",
 "Siglas":"Sigles",
 "Cómo leer un código":"Comment lire une cote",
-"Tabla de nomenclatura":"Tableau de nomenclature"
+"Tabla de nomenclatura":"Tableau de nomenclature",
+"▦ Datos y calidad":"▦ Données et qualité",
+"Datos y calidad":"Données et qualité",
+"Las cifras del catálogo, qué tan completo y verificado está, las últimas resoluciones y las novedades detectadas en las fuentes oficiales. Es la parte para quien investiga; el buscador y los accesos principales están en el Panorama.":"Les chiffres du catalogue, son degré de complétude et de vérification, les dernières résolutions et les nouveautés détectées dans les sources officielles. C’est la partie pour les chercheurs ; le moteur de recherche et les accès principaux sont dans le Panorama."
 };

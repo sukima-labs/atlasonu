@@ -32,7 +32,7 @@ Ver `docs/COLA_DE_TAREAS.md`: una tarea por sesión, commit y push al terminar, 
 7. **Pruebas antes de publicar**, y las cifras del README y de `audit/AUDITORIA.md` se mantienen al día.
 
 ## Estado
-Pantallas: Panorama (portada), Explorar mandatos, Cómo funciona la ONU (mapa, familia de 41 entidades, ¿ante quién reclamo?, descifrador de símbolos), Su historia (línea de tiempo), Países (196 fichas con documentos oficiales), Tratados y comités (texto literal de 8 instrumentos), Siglas y acrónimos (145), Arqueología, Recuperar documentos, Otros mecanismos, Códigos, Selección de titulares, Alertas de verificación (con panel de exactitud de números), Fuentes y alcance.
+Pantallas: Panorama (portada), Explorar mandatos, Cómo funciona la ONU (mapa, familia de 41 entidades, ¿ante quién reclamo?, descifrador de símbolos), Su historia (línea de tiempo), Países (196 fichas con documentos oficiales), Tratados y comités (texto literal de 8 instrumentos), Siglas y códigos (una entrada con tres pestañas: siglas (145), Cómo leer un código y tabla de nomenclatura), Arqueología, Recuperar documentos, Otros mecanismos, Selección de titulares, Datos y calidad (cifras del catálogo y novedades; salieron de la portada, T80), Alertas de verificación (con panel de exactitud de números), Fuentes y alcance. El menú va en 5 bloques con título fijo (T78); DIGNITYOS está en su pantalla y como franja al final de la portada.
 
 ## Pendiente (por orden de interés)
 1. Jurisprudencia: ya están las observaciones/recomendaciones generales con símbolo `…/GC/n` (T35); faltan las anteriores (HRI/GEN/1/Rev.), títulos en español y los dictámenes.

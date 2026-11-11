@@ -1134,5 +1134,8 @@ window.ATLAS_IDIOMA_ar={
 "Siglas y códigos: elige una consulta":"الاختصارات والرموز: اختر استعلامًا",
 "Siglas":"الاختصارات",
 "Cómo leer un código":"كيف تقرأ رمزًا",
-"Tabla de nomenclatura":"جدول التسميات"
+"Tabla de nomenclatura":"جدول التسميات",
+"▦ Datos y calidad":"▦ البيانات والجودة",
+"Datos y calidad":"البيانات والجودة",
+"Las cifras del catálogo, qué tan completo y verificado está, las últimas resoluciones y las novedades detectadas en las fuentes oficiales. Es la parte para quien investiga; el buscador y los accesos principales están en el Panorama.":"أرقام الفهرس، ومدى اكتماله والتحقق منه، وأحدث القرارات، والمستجدات المرصودة في المصادر الرسمية. هذا القسم للباحثين؛ أما مربع البحث والمداخل الرئيسية فهي في النظرة العامة."
 };
