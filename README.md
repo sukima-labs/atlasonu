@@ -86,7 +86,7 @@ Diccionario con 145 entradas (`data/siglas.json`, elaboración propia sobre fuen
 
 ## Cómo leer un código de la ONU
 
-Pantalla `codigos` (T73, #198): tutorial general de las signaturas de los documentos de la ONU, no de un caso puntual. Cuatro vistas del mismo contenido: tutorial de 9 pasos, **despiezador** (`codDespiezar` en `index.html`, lee cualquier código: órgano, comisión o comité, tipo, sesión o año, números romanos antiguos y sufijos `/Add`, `/Rev`, `/Corr`), tabla de referencia filtrable y repaso. Fuente: guía «Símbolos de documentos» de la Biblioteca Dag Hammarskjöld. Las explicaciones están solo en español (T74).
+Pantalla `codigos` (T73, #198): tutorial general de las signaturas de los documentos de la ONU, no de un caso puntual. Cuatro vistas del mismo contenido: tutorial de 9 pasos, **despiezador** (`codDespiezar` en `index.html`, lee cualquier código: órgano, comisión o comité, tipo, sesión o año, números romanos antiguos y sufijos `/Add`, `/Rev`, `/Corr`), tabla de referencia filtrable y repaso. Fuente: guía «Símbolos de documentos» de la Biblioteca Dag Hammarskjöld. Traducida a EN/FR/AR/ZH/RU (T74): el despiezador compone cada frase con trozos sueltos (`<bdi>`) para que cada idioma ponga el orden de las palabras; incluye un bloque «Lectura fácil». `tests/browser.cjs` comprueba en inglés que no quede texto sin traducir. Falta la revisión humana (T53).
 
 ## Créditos y uso
 
