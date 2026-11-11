@@ -78,6 +78,8 @@ reduce el riesgo: primero los arreglos sin decisión, después la base (variable
 - **DejaVu Sans dentro del repositorio** (woff2 recortado a latín, cirílico y árabe, con `font-display: swap`); para el chino, la letra del sistema. La jerarquía la dan el peso y el tamaño, porque la serifa desaparece.
 - Escala de letra: el cuerpo pasa de 14 a **16 px** en el celular y a 15 px en escritorio; el texto secundario no baja de 13 px.
 - Botón principal en violeta con letra blanca (5,3:1) y secundario con borde cian. El foco, un anillo cian visible.
+- **Hecho (12-11-2026).** El `:root` pasa a la marca y se funden los tonos casi iguales de la fase 1 (de 274 variables a 175). La letra va en `assets/fonts/` (4 woff2 recortados, 146 KB en total; en español se cargan 2, unos 116 KB, y los de árabe solo con texto árabe), con `font-display: swap` y sin peticiones externas. Los textos de menos de 13 px pasan de unos 2.900 nodos a 0 (medido en las 22 pantallas a 390 y a 1440 px). El menú lateral pasa de 260 a 276 px para que las entradas no se partan. El `theme-color`, el marco del celular y las pantallas de carga y sin JavaScript van en grafito. axe sigue en 0.
+  - Queda para otras fases: las cifras de los ejes de las gráficas de votos (texto SVG de 11 unidades, que en el celular se ve pequeño) y los iconos Unicode del menú (fase 4).
 
 ### Fase 3 · Modo claro y selector (T85 fase 3)
 - Claro sobre marfil `#F5F4F0` con texto grafito. El cian para texto pasa a `#0A6E78` (5,4:1), el violeta a `#5B35D6` y el ocre para datos a `#7A4E0E`.

@@ -9,11 +9,22 @@ en el repositorio de la marca de Sukima Labs; lo que hay aquí es una copia.
 | `apple_touch_icon_180.png` | `03_DIGITAL/Avatares/` | icono al guardar la web en el móvil |
 | `isotipo_white.svg` | `01_LOGO/SVG/` | isotipo del pie del menú lateral (en línea en `index.html`) |
 | `isotipo_color.svg` | `01_LOGO/SVG/` (vector maestro) | referencia; sobre el fondo oscuro de ATLAS no se ve, por eso se usa el blanco |
-| `brand_tokens.css`, `brand_tokens.json` | `03_DIGITAL/Web/` | variables `--sukima-*` en el `:root` de `index.html` |
+| `brand_tokens.css`, `brand_tokens.json` | `03_DIGITAL/Web/` | variables `--sukima-*` en el `:root` de `index.html`, de las que salen el fondo, el texto, el acento y la letra |
 
-**Qué no cambia.** ATLAS conserva su propia identidad de producto (título «ATLAS ONU», paleta ocre sobre fondo oscuro y
-tipografías). La marca de Sukima Labs identifica a quien lo publica, no sustituye la del producto. La autoría sigue
-escrita «Sukima-Labs», como pide el proyecto.
+**ATLAS sigue la marca (desde la fase 2 del plan de diseño, `docs/PLAN_DISENO_UX.md`).** La paleta piedra y dorado de
+antes se retiró (issue #228, opción D). El modo oscuro usa ahora los colores de la marca: fondo grafito `#10131C`,
+superficies en escalones de grafito, texto marfil `#F5F4F0`, cian `#14C6D4` para enlaces, menú activo y anillo de foco,
+y violeta `#7148F5` **solo** como relleno del botón principal, con letra blanca (5,3:1). El violeta no se usa como texto
+sobre grafito (3,5:1). El ocre y el dorado quedan solo como colores de datos (mapas, gráficas y temas de la historia).
+El título «ATLAS ONU» se mantiene; la palabra «ONU» va en cian. El modo claro (marfil) llega en la fase 3.
+
+**Letra.** `DejaVu Sans`, la de la marca, va incluida en el repositorio (`assets/fonts/`, normal y negrita en woff2, con
+su licencia en `assets/fonts/LICENSE-DejaVu.txt`). Está recortada a latín, griego, cirílico, árabe y los símbolos de la
+interfaz: quien lee en español carga unos 116 KB y el árabe se descarga aparte solo cuando hace falta. No hay peticiones
+a servicios de letras de terceros. El chino usa la letra del sistema. Se quitaron los títulos con serifa: la jerarquía la
+dan el peso y el tamaño.
+
+La autoría sigue escrita «Sukima-Labs», como pide el proyecto.
 
 **Eslóganes de la marca** (no se muestran en la web; queda a decisión del proyecto):
 - Institucional: «El espacio donde nacen nuevas posibilidades.»
