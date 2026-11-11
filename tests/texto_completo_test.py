@@ -160,6 +160,13 @@ class Pruebas(unittest.TestCase):
             if clave:
                 os.environ["OPENCODE_GO_API_KEY"] = clave
 
+    def test_origenes_de_la_web(self):
+        # 11-11-2026: la web vive en sukimalabs.com/atlasonu/; la dirección antigua sigue valiendo (redirige con 301)
+        for o in ("https://sukimalabs.com", "https://sukima-labs.github.io"):
+            req = urllib.request.Request(self.base + "/visitas?pais=ES", headers={"Origin": o})
+            with urllib.request.urlopen(req, timeout=5) as r:
+                self.assertEqual(r.headers.get("Access-Control-Allow-Origin"), o)
+
     def test_sin_indice_da_503(self):
         viejo = tc.DIR
         tc.DIR = tempfile.mkdtemp()
