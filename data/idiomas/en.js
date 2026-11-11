@@ -1121,5 +1121,10 @@ window.ATLAS_IDIOMA_en={
 "Pega un código: A/HRC/RES/5/2, S/RES/1325 (2000)…":"Paste a code: A/HRC/RES/5/2, S/RES/1325 (2000)…",
 "Código de un documento":"Document code",
 "Filtra: HRC, resolución, acta, adición…":"Filter: HRC, resolution, record, addendum…",
-"Filtrar la tabla":"Filter the table"
+"Filtrar la tabla":"Filter the table",
+"Inicio":"Home",
+"Explorar datos":"Explore data",
+"Entender la ONU":"Understand the UN",
+"Herramientas de consulta":"Lookup tools",
+"Sobre el proyecto":"About the project"
 };

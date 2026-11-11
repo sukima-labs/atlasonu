@@ -1121,5 +1121,10 @@ window.ATLAS_IDIOMA_ru={
 "Pega un código: A/HRC/RES/5/2, S/RES/1325 (2000)…":"Вставьте индекс: A/HRC/RES/5/2, S/RES/1325 (2000)…",
 "Código de un documento":"Индекс документа",
 "Filtra: HRC, resolución, acta, adición…":"Фильтр: HRC, резолюция, отчёт, добавление…",
-"Filtrar la tabla":"Фильтр таблицы"
+"Filtrar la tabla":"Фильтр таблицы",
+"Inicio":"Главная",
+"Explorar datos":"Изучать данные",
+"Entender la ONU":"Понять ООН",
+"Herramientas de consulta":"Инструменты справки",
+"Sobre el proyecto":"О проекте"
 };
