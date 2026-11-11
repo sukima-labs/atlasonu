@@ -1126,5 +1126,8 @@ window.ATLAS_IDIOMA_en={
 "Explorar datos":"Explore data",
 "Entender la ONU":"Understand the UN",
 "Herramientas de consulta":"Lookup tools",
-"Sobre el proyecto":"About the project"
+"Sobre el proyecto":"About the project",
+"<b>Instantánea del 27-10-2026, no feed en vivo:</b> cómo investigar sin conocer las siglas y de dónde salen los mandatos":"<b>Snapshot of 27-10-2026, not a live feed:</b> how to research without knowing the acronyms and where the mandates come from",
+"<b>Importante:</b> no descarga todos los PDF ni marca nada como verificado sin cotejo":"<b>Important:</b> it does not download every PDF or mark anything as verified without a document check",
+"<b>Qué es DIGNITYOS,</b> para quién y qué nos guía":"<b>What DIGNITYOS is,</b> who it is for and what guides us"
 };

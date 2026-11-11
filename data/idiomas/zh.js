@@ -1126,5 +1126,8 @@ window.ATLAS_IDIOMA_zh={
 "Explorar datos":"浏览数据",
 "Entender la ONU":"了解联合国",
 "Herramientas de consulta":"查询工具",
-"Sobre el proyecto":"关于项目"
+"Sobre el proyecto":"关于项目",
+"<b>Instantánea del 27-10-2026, no feed en vivo:</b> cómo investigar sin conocer las siglas y de dónde salen los mandatos":"<b>2026年10月27日的快照，不是实时信息：</b>不懂缩写时如何查找，以及任务从何而来",
+"<b>Importante:</b> no descarga todos los PDF ni marca nada como verificado sin cotejo":"<b>重要：</b>它不会下载所有PDF，未经文件核对也不会标为“已核实”",
+"<b>Qué es DIGNITYOS,</b> para quién y qué nos guía":"<b>DIGNITYOS是什么，</b>为谁服务，以及我们的原则"
 };
