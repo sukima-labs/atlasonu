@@ -18,7 +18,7 @@ Se revisa dos veces al día contra las fuentes oficiales y no se publica si los 
 **Aviso:** iniciativa académica independiente de Sukima-Labs. No es un producto oficial de Naciones Unidas ni de ninguna universidad.
 
 ## Enlaces
-- Web: https://sukima-labs.github.io/atlasonu/
+- Web: https://sukimalabs.com/atlasonu/
 - Código: https://github.com/sukima-labs/atlasonu
 - Cómo citar: `CITATION.cff` del repositorio
 - Licencias: https://github.com/sukima-labs/atlasonu/blob/main/NOTICE.md

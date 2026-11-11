@@ -1,7 +1,7 @@
 # Aviso de autoría y términos adicionales (AGPL-3.0, sección 7)
 
 **ATLAS ONU – Arqueología documental** · © 2026 Sukima-Labs
-Proyecto original: <https://sukima-labs.github.io/atlasonu/> · Código fuente: <https://github.com/sukima-labs/atlasonu>
+Proyecto original: <https://sukimalabs.com/atlasonu/> · Código fuente: <https://github.com/sukima-labs/atlasonu>
 
 El código se publica bajo la **GNU Affero General Public License v3.0, solo la versión 3** (AGPL-3.0-only; texto oficial, sin cambios, en `LICENSE`). Este programa es software libre: puede redistribuirse y modificarse bajo esa licencia y estos términos, y se distribuye SIN GARANTÍA. Conforme a su sección 7, se añaden estos términos, que rigen toda copia, versión modificada o servicio basado en este código:
 

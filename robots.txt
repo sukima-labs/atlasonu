@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sukima-labs.github.io/atlasonu/sitemap.xml
+Sitemap: https://sukimalabs.com/atlasonu/sitemap.xml

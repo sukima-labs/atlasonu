@@ -9,7 +9,7 @@ donde sea. Antes de empezar, lee también `docs/CONTEXTO_PARA_NUEVAS_SESIONES.md
 - la **búsqueda en vivo** corre en el servidor de sukima-labs, en el contenedor `sk-atlas` (servicio
   `atlas-busqueda`, publicado en `https://sk-atlas.pig-mimosa.ts.net`);
 - la **actualización de datos** corre en GitHub Actions;
-- la **web** está en GitHub Pages: https://sukima-labs.github.io/atlasonu/
+- la **web** está en GitHub Pages: https://sukimalabs.com/atlasonu/
 
 **Infraestructura** es todo lo que se queda corriendo o se expone: servicios y temporizadores de systemd
 (también los de usuario), cron, servidores o puertos abiertos, túneles o Funnel, DNS, la configuración de

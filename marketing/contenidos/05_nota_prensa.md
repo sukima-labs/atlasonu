@@ -16,6 +16,6 @@ La plataforma se revisa dos veces al día contra las fuentes oficiales, no publi
 
 «[Cita de Sukima-Labs, sin nombre de persona: por qué existe y a quién sirve]».
 
-**Dónde verlo:** https://sukima-labs.github.io/atlasonu/ · Código abierto: https://github.com/sukima-labs/atlasonu
+**Dónde verlo:** https://sukimalabs.com/atlasonu/ · Código abierto: https://github.com/sukima-labs/atlasonu
 **Contacto:** mediante el repositorio de GitHub (issues).
 **Aviso:** iniciativa independiente; no es un producto oficial de Naciones Unidas ni de ninguna universidad.

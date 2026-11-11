@@ -10,7 +10,7 @@ Código: `scripts/mini_pc/busqueda_servicio.py` (biblioteca estándar, sin depen
 | `/salud` | GET | Comprobación de estado |
 | `/buscar?q=<texto>[&ln=es\|en]` | GET | Consulta la Biblioteca Digital de la ONU y devuelve JSON con símbolo, título, fecha y enlaces a archivos |
 | `/visitas?pais=XX` | GET | Lee el contador (total y del país) |
-| `/visita?pais=XX` | GET | Suma una visita, **solo** si la cabecera `Origin` es `https://sukima-labs.github.io` |
+| `/visita?pais=XX` | GET | Suma una visita, **solo** si la cabecera `Origin` es la de la web: `https://sukimalabs.com` (desde el 11-11-2026), `https://www.sukimalabs.com` o la antigua `https://sukima-labs.github.io`, que redirige a la nueva |
 
 ## Variables de entorno
 | Variable | Por defecto | Uso |
@@ -20,7 +20,7 @@ Código: `scripts/mini_pc/busqueda_servicio.py` (biblioteca estándar, sin depen
 
 ## Límites incorporados (no hace falta replicarlos en el proxy)
 - Escucha solo en `127.0.0.1`: sin Funnel o proxy, nadie de fuera llega.
-- CORS: solo se acepta el origen `https://sukima-labs.github.io`.
+- CORS: solo se aceptan los orígenes de la web: `https://sukimalabs.com` y `https://www.sukimalabs.com` (desde el 11-11-2026) y el antiguo `https://sukima-labs.github.io` (redirige con 301 a `https://sukimalabs.com/atlasonu/`).
 - Hasta 20 consultas nuevas a la ONU por minuto (todas las visitas juntas); caché en memoria de 1 h y 500 entradas.
 - Hasta 120 visitas sumadas por minuto en total.
 - Escritura del contador atómica (archivo temporal y reemplazo).

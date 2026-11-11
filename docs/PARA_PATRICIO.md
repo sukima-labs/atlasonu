@@ -5,7 +5,7 @@ Documento de traspaso para quien lleva la infraestructura (con `maquina`, el Cla
 ## 1. Qué es
 **ATLAS ONU – Arqueología documental**: plataforma independiente y sin fines de lucro sobre el sistema de derechos humanos de la ONU (mandatos, tratados y comités, países, historia, siglas). La autoría es solo Sukima-Labs. No es oficial de la ONU. Todo lo oficial se atribuye y se enlaza a la ONU.
 
-Repositorio público: `sukima-labs/atlasonu`. Web: https://sukima-labs.github.io/atlasonu/
+Repositorio público: `sukima-labs/atlasonu`. Web: https://sukimalabs.com/atlasonu/
 
 ## 2. Qué corre y dónde (desde el 06-11-2026)
 
