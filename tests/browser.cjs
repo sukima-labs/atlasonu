@@ -494,6 +494,39 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     ok('texto: con menos de 3 letras no se pide /texto', pedidas.filter(x => x === '/texto').length === 2);
     await ctx.close();
   }
+  { // P1 (plan de diseño, fase 0): aviso del menú una sola vez y solo en la portada; un solo selector de idioma en el celular; 44 px
+    const ctx = await browser.newContext({ viewport: { width: 390, height: 844 }, hasTouch: true, isMobile: true }), pg = await ctx.newPage();
+    await pg.goto(URL); await pg.waitForFunction(() => window.__atlasListo);
+    ok('P1 celular: la primera vez se ve el aviso del menú en la portada y queda anotado', (await pg.isVisible('#menuHint')) && (await pg.evaluate(() => localStorage.getItem('atlas_pista_menu'))) === '1');
+    await pg.evaluate(() => showPage('paises')); await pg.waitForTimeout(200);
+    ok('P1 celular: el aviso no sale en otras pantallas', !(await pg.isVisible('#menuHint')));
+    await pg.evaluate(() => showPage('inicio')); await pg.waitForTimeout(200);
+    ok('P1 celular: al volver a la portada el aviso ya no vuelve', !(await pg.isVisible('#menuHint')));
+    await pg.reload(); await pg.waitForFunction(() => window.__atlasListo);
+    ok('P1 celular: tras recargar el aviso no vuelve a salir', !(await pg.isVisible('#menuHint')));
+    ok('P1 celular: la nota de la portada da la instrucción del celular con el número real de secciones', await pg.evaluate(() => { const n = document.querySelectorAll('.nav button').length, c = document.querySelector('.mn-cel'), e = document.querySelector('.mn-esc'); return n >= 15 && !!c.offsetParent && !e.offsetParent && c.textContent.includes(n + ' secciones'); }));
+    ok('P1 celular: «Empieza por aquí» en 2 columnas sin fila suelta', await pg.evaluate(() => { const L = [...document.querySelectorAll('#inicio .tile')], xs = new Set(L.map(t => Math.round(t.getBoundingClientRect().left))), ys = new Set(L.map(t => Math.round(t.getBoundingClientRect().top))); return xs.size === 2 && ys.size === L.length / 2; }));
+    await pg.evaluate(() => menu(true)); await pg.waitForTimeout(350);
+    ok('P1 celular: en el menú no se repiten los botones de idioma; arriba queda el desplegable', !(await pg.isVisible('.side .idioma')) && (await pg.isVisible('.appbar .idioma select')));
+    await pg.evaluate(() => menu(false));
+    ok('P1 celular: «Para qué sirve esta pantalla», el selector de idioma y los enlaces sueltos miden al menos 44 px de alto', await pg.evaluate(() => { showPage('inicio'); const hs = [...document.querySelectorAll('.section.visible .about summary, .section.visible details.lf summary, .section.visible .linkline a, .appbar .idioma select')].filter(e => e.offsetParent).map(e => e.getBoundingClientRect().height); return hs.length >= 3 && hs.every(h => h >= 43.5); }));
+    await ctx.close();
+    const pd = await browser.newPage({ viewport: { width: 1440, height: 900 } }); await pd.goto(URL); await pd.waitForFunction(() => window.__atlasListo);
+    ok('P1 escritorio: «Empieza por aquí» en 4 columnas y 2 filas', await pd.evaluate(() => { const L = [...document.querySelectorAll('#inicio .tile')]; return new Set(L.map(t => Math.round(t.getBoundingClientRect().left))).size === 4 && new Set(L.map(t => Math.round(t.getBoundingClientRect().top))).size === 2; }));
+    ok('P1 escritorio: la nota no da la instrucción del celular y cuenta las secciones', await pd.evaluate(() => { const e = document.querySelector('.mn-esc'); return !!e.offsetParent && !document.querySelector('.mn-cel').offsetParent && e.textContent.includes(document.querySelectorAll('.nav button').length + ' secciones'); }));
+    await pd.click('#nav button[data-page="paises"]'); await pd.waitForTimeout(200);
+    ok('P1 escritorio: al cambiar de pantalla el título recibe el foco pero sin marco', await pd.evaluate(() => { const h = document.querySelector('#paises h1'); return document.activeElement === h && getComputedStyle(h).outlineStyle === 'none'; }));
+    ok('P1 escritorio: el contador muestra el código del país en una pastilla, sin emoji de bandera', await pd.evaluate(() => !/[\u{1F1E6}-\u{1F1FF}]/u.test(document.getElementById('visBar').textContent)));
+    await pd.close();
+  }
+  { // P1: con la interfaz en inglés, las etiquetas del contador van traducidas y lo que solo existe en español lo dice
+    const ctx = await browser.newContext({ viewport: { width: 1440, height: 900 } }); await ctx.addInitScript(() => { try { localStorage.setItem('atlas_idioma', 'en'); } catch (e) {} });
+    const pg = await ctx.newPage(); await pg.goto(URL); await pg.waitForFunction(() => window.__atlasListo && window.ATLAS_IDIOMA_en); await pg.waitForTimeout(500);
+    const r = await pg.evaluate(() => ({ vis: document.getElementById('visBar').textContent, hoy: document.getElementById('hoyHistoria').innerHTML }));
+    ok('P1 inglés: las etiquetas del contador de visitas están en inglés', /total visits/.test(r.vis) && /visits from your country/.test(r.vis) && !/visitas/i.test(r.vis));
+    ok('P1 inglés: el hecho del mes lleva lang="es" y la marca «(in Spanish)»', /lang="es"/.test(r.hoy) && /\(in Spanish\)/.test(r.hoy));
+    await ctx.close();
+  }
   { // T26: idiomas de la interfaz (diccionario propio; los datos oficiales no se traducen)
     const ctx = await browser.newContext({ viewport: { width: 390, height: 844 } }), pi = await ctx.newPage(), errs = [];
     pi.on('pageerror', e => errs.push(e.message));
