@@ -236,6 +236,25 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     ok(vp.name + ': Siglas → tratado: CEDAW abre el módulo de tratados', /Comité para la Eliminación de la Discriminación contra la Mujer/.test(await page.textContent('#trDetalle')));
     await page.evaluate(() => showPage('siglas')); await page.fill('#sigQ', 'A/HRC/RES/54/6');
     ok(vp.name + ': Siglas: un símbolo documental se descifra', /Este parece un símbolo/.test(await page.textContent('#sigOut')));
+    // T73 (#198): «Cómo leer un código de la ONU»: cuatro formas de ver lo mismo
+    await page.evaluate(() => showPage('codigos'));
+    ok(vp.name + ': Códigos: el tutorial trae los 9 pasos', (await page.locator('#codTut .panel').count()) === 9 && /Primer segmento/.test(await page.textContent('#codTut')));
+    await page.click('#codB_despiezador'); await page.fill('#codQ', 'A/HRC/RES/5/2');
+    ok(vp.name + ': Códigos: despieza A/HRC/RES/5/2 (Consejo, resolución, sesión 5)', /Consejo de Derechos Humanos/.test(await page.textContent('#codDespOut')) && /Resolución/.test(await page.textContent('#codDespOut')) && /Sesión n\.º 5/.test(await page.textContent('#codDespOut')));
+    for (const [c, re] of [['S/RES/1325 (2000)', /Consejo de Seguridad[^]*Número de la resolución/], ['A/RES/3314 (XXIX)', /septiembre de 1974/], ['CCPR/C/IND/CO/4', /India[^]*Observaciones finales/], ['CCPR/C/110/D/1234/2003', /comunicación/], ['A/HRC/34/51/Add.1', /visita a un país/], ['A/CONF.157/23', /Viena/], ['E/CN.4/2005/12', /antigua Comisión de Derechos Humanos/]]) {
+      await page.fill('#codQ', c); ok(vp.name + ': Códigos: despieza ' + c, re.test(await page.textContent('#codDespOut'))); }
+    await page.fill('#codQ', 'XYZ/1/2'); ok(vp.name + ': Códigos: un código desconocido no rompe y lo dice', /No lo reconozco/.test(await page.textContent('#codDespOut')));
+    await page.click('#codB_tabla');
+    const filas = await page.locator('#codTabOut tbody tr').count();
+    await page.fill('#codFiltro', 'acta');
+    const filas2 = await page.locator('#codTabOut tbody tr').count();
+    ok(vp.name + ': Códigos: la tabla de referencia (' + filas + ' filas) se filtra (' + filas2 + ')', filas > 40 && filas2 > 1 && filas2 < filas);
+    await page.fill('#codFiltro', ''); await page.locator('#codTabOut button.btn').first().click();
+    ok(vp.name + ': Códigos: un ejemplo de la tabla pasa al despiezador', await page.isVisible('#codP_despiezador') && (await page.inputValue('#codQ')).length > 3);
+    await page.click('#codB_repaso'); await page.click('#codRepOut button:has-text("Ver cómo se lee")');
+    ok(vp.name + ': Códigos: el repaso enseña la lectura', /En una línea/.test(await page.textContent('#codRepOut')));
+    await page.evaluate(() => showPage('siglas')); await page.fill('#sigQ', 'A/HRC/RES/54/6'); await page.click('#sigOut button:has-text("Aprender a leer cualquier código")');
+    ok(vp.name + ': Siglas → Códigos: el descifrador lleva al tutorial con el código puesto', await page.isVisible('#codigos') && (await page.inputValue('#codQ')) === 'A/HRC/RES/54/6');
     await page.evaluate(() => showPage('fuentes'));
     ok(vp.name + ': Créditos visibles: los datos son de la ONU', /Créditos: de quién son los datos/.test(await page.textContent('#fuentes')) && /Naciones Unidas/.test(await page.textContent('#fuentes')));
     await page.evaluate(() => showPage('paises'));
@@ -407,7 +426,7 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
       await pg.evaluate(() => { scrollTo({ top: 0, behavior: 'instant' }); menu(true); }); await pg.waitForTimeout(350); }
     await pg.tap('.nav button[data-page="tratados"]'); await pg.waitForTimeout(350);
     ok(nom + ': al elegir una pantalla se cierra el menú y se muestra', !(await pg.isVisible('#side')) && (await pg.isVisible('#tratados')));
-    const malos = []; for (const id of ['inicio', 'explorar', 'sistema', 'paises', 'tratados', 'siglas', 'arqueologia', 'recuperar', 'mecanismos', 'codificacion', 'seleccion', 'auditoria', 'fuentes']) { await pg.evaluate(x => showPage(x), id); const d = await pg.evaluate(() => [document.documentElement.scrollWidth, innerWidth]); if (d[0] > d[1] + 1) malos.push(id); }
+    const malos = []; for (const id of ['inicio', 'explorar', 'sistema', 'paises', 'tratados', 'siglas', 'codigos', 'arqueologia', 'recuperar', 'mecanismos', 'codificacion', 'seleccion', 'auditoria', 'fuentes']) { await pg.evaluate(x => showPage(x), id); const d = await pg.evaluate(() => [document.documentElement.scrollWidth, innerWidth]); if (d[0] > d[1] + 1) malos.push(id); }
     ok(nom + ': ninguna pantalla se desborda en horizontal ' + malos.join(','), malos.length === 0);
     const peq = await pg.evaluate(() => [...document.querySelectorAll('input.field')].filter(e => e.offsetParent && parseFloat(getComputedStyle(e).fontSize) < 16).length);
     ok(nom + ': los campos de texto usan 16 px (iOS no hace zoom al escribir)', peq === 0);

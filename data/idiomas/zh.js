@@ -1104,5 +1104,22 @@ window.ATLAS_IDIOMA_zh={
 "cada barra es un año y su altura completa son todas las votaciones nominales de ese año en las que el país podía votar. Azul-verdoso: votó sí; naranja: votó no; amarillo: se abstuvo; gris: no votó o no estuvo. No dice si un voto es bueno o malo.":"每根柱代表一年，其总高度是该年该国可以参加的所有记名投票。蓝绿色：赞成；橙色：反对；黄色：弃权；灰色：未投票或缺席。它不表明一票是好是坏。",
 "Una votación nominal es aquella en la que se registra el voto de cada Estado. Esta vista solo llega hasta {n}, el último año de su fuente.":"记名投票是记录每个国家投票情况的表决。此视图只到{n}年，即其数据来源的最后一年。",
 "Fuente:":"来源：",
-"(Harvard Dataverse, CC{n}). Recuento de ATLAS con el voto de cada Estado en cada votación nominal.":"(Harvard Dataverse, CC{n})。ATLAS对每个国家在每次记名投票中的投票统计。"
+"(Harvard Dataverse, CC{n}). Recuento de ATLAS con el voto de cada Estado en cada votación nominal.":"(Harvard Dataverse, CC{n})。ATLAS对每个国家在每次记名投票中的投票统计。",
+"№ Cómo leer un código":"№ 如何解读文号",
+"Guía":"指南",
+"Cómo leer un código de la ONU":"如何解读联合国文件的文号",
+"Cada documento de la ONU lleva un código, como <code>A/HRC/RES/5/2</code> o <code>S/RES/1325 (2000)</code>. Aquí aprendes qué significa cada pieza, para poder leer cualquier código, no solo uno.":"每份联合国文件都有一个文号，例如 <code>A/HRC/RES/5/2</code> 或 <code>S/RES/1325 (2000)</code>。在这里你可以学到每个部分的含义，从而读懂任何文号，而不只是一个。",
+"ℹ <b>Para qué sirve esta pantalla:</b> entender de dónde viene un documento, de qué tipo es y cuál es su número, con solo mirar su código. <u>(cómo usarla y de dónde salen los datos)</u>":"ℹ <b>本页面的用途：</b>只看文号，就能弄清一份文件来自哪里、属于什么类型、编号是多少。<u>（使用方法和数据来源）</u>",
+"<b>Cómo usarla:</b> hay cuatro formas de ver lo mismo. El tutorial explica las piezas paso a paso; el despiezador lee cualquier código que pegues; la tabla reúne todas las piezas; el repaso te deja practicar.":"<b>使用方法：</b>同一内容有四种查看方式。教程逐步讲解各个部分；拆解器可解读你粘贴的任何文号；对照表汇总所有部分；复习可让你练习。",
+"<b>De dónde salen los datos:</b> elaboración propia a partir de la guía «Símbolos de documentos» de la Biblioteca Dag Hammarskjöld y de los propios documentos. <span></span>.":"<b>数据来源：</b>ATLAS 自行整理，依据哈马舍尔德图书馆的《联合国文件编号》指南和文件本身。<span></span>。",
+"Las explicaciones de esta pantalla están, por ahora, solo en español. Los códigos son iguales en todos los idiomas.":"本页面的说明目前仅有西班牙语版本。文号在所有语言中都相同。",
+"Forma de verlo":"查看方式",
+"Tutorial paso a paso":"分步教程",
+"Despiezador":"拆解器",
+"Tabla de referencia":"对照表",
+"Repaso":"复习",
+"Pega un código: A/HRC/RES/5/2, S/RES/1325 (2000)…":"粘贴文号：A/HRC/RES/5/2、S/RES/1325 (2000)…",
+"Código de un documento":"文件文号",
+"Filtra: HRC, resolución, acta, adición…":"筛选：HRC、决议、记录、增编…",
+"Filtrar la tabla":"筛选表格"
 };

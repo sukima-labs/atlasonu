@@ -1104,5 +1104,22 @@ window.ATLAS_IDIOMA_ar={
 "cada barra es un año y su altura completa son todas las votaciones nominales de ese año en las que el país podía votar. Azul-verdoso: votó sí; naranja: votó no; amarillo: se abstuvo; gris: no votó o no estuvo. No dice si un voto es bueno o malo.":"كل عمود يمثل سنة، وارتفاعه الكامل هو جميع عمليات التصويت بالنداء بالاسم في تلك السنة التي كان بإمكان البلد المشاركة فيها. أزرق مخضر: نعم؛ برتقالي: لا؛ أصفر: امتناع؛ رمادي: لم تصوّت أو غائبة. لا يبيّن ما إذا كان التصويت جيدًا أو سيئًا.",
 "Una votación nominal es aquella en la que se registra el voto de cada Estado. Esta vista solo llega hasta {n}, el último año de su fuente.":"التصويت بالنداء بالاسم هو التصويت الذي يُسجَّل فيه صوت كل دولة. يصل هذا العرض فقط إلى {n}، آخر سنة في مصدره.",
 "Fuente:":"المصدر:",
-"(Harvard Dataverse, CC{n}). Recuento de ATLAS con el voto de cada Estado en cada votación nominal.":"(Harvard Dataverse, CC{n}). إحصاء ATLAS لصوت كل دولة في كل تصويت بالنداء بالاسم."
+"(Harvard Dataverse, CC{n}). Recuento de ATLAS con el voto de cada Estado en cada votación nominal.":"(Harvard Dataverse, CC{n}). إحصاء ATLAS لصوت كل دولة في كل تصويت بالنداء بالاسم.",
+"№ Cómo leer un código":"№ كيف تقرأ رمزًا",
+"Guía":"دليل",
+"Cómo leer un código de la ONU":"كيف تقرأ رمز وثيقة من وثائق الأمم المتحدة",
+"Cada documento de la ONU lleva un código, como <code>A/HRC/RES/5/2</code> o <code>S/RES/1325 (2000)</code>. Aquí aprendes qué significa cada pieza, para poder leer cualquier código, no solo uno.":"تحمل كل وثيقة من وثائق الأمم المتحدة رمزًا، مثل <code>A/HRC/RES/5/2</code> أو <code>S/RES/1325 (2000)</code>. هنا تتعلم معنى كل جزء لتتمكن من قراءة أي رمز، وليس رمزًا واحدًا فقط.",
+"ℹ <b>Para qué sirve esta pantalla:</b> entender de dónde viene un documento, de qué tipo es y cuál es su número, con solo mirar su código. <u>(cómo usarla y de dónde salen los datos)</u>":"ℹ <b>ما فائدة هذه الشاشة:</b> فهم مصدر الوثيقة ونوعها ورقمها بمجرد النظر إلى رمزها. <u>(كيفية استخدامها ومصدر البيانات)</u>",
+"<b>Cómo usarla:</b> hay cuatro formas de ver lo mismo. El tutorial explica las piezas paso a paso; el despiezador lee cualquier código que pegues; la tabla reúne todas las piezas; el repaso te deja practicar.":"<b>كيفية استخدامها:</b> هناك أربع طرق لرؤية الشيء نفسه. يشرح الدليل الأجزاء خطوة بخطوة؛ وأداة التفكيك تقرأ أي رمز تلصقه؛ والجدول يجمع كل الأجزاء؛ والمراجعة تتيح لك التدرّب.",
+"<b>De dónde salen los datos:</b> elaboración propia a partir de la guía «Símbolos de documentos» de la Biblioteca Dag Hammarskjöld y de los propios documentos. <span></span>.":"<b>مصدر البيانات:</b> إعداد ATLAS نفسه، استنادًا إلى دليل «رموز الوثائق» الصادر عن مكتبة داغ همرشولد وإلى الوثائق ذاتها. <span></span>.",
+"Las explicaciones de esta pantalla están, por ahora, solo en español. Los códigos son iguales en todos los idiomas.":"الشروح في هذه الشاشة متاحة حاليًا بالإسبانية فقط. الرموز هي نفسها في جميع اللغات.",
+"Forma de verlo":"طريقة العرض",
+"Tutorial paso a paso":"دليل تعليمي خطوة بخطوة",
+"Despiezador":"أداة التفكيك",
+"Tabla de referencia":"جدول مرجعي",
+"Repaso":"مراجعة",
+"Pega un código: A/HRC/RES/5/2, S/RES/1325 (2000)…":"الصق رمزًا: A/HRC/RES/5/2 أو S/RES/1325 (2000)…",
+"Código de un documento":"رمز وثيقة",
+"Filtra: HRC, resolución, acta, adición…":"صفِّ: HRC، قرار، محضر، إضافة…",
+"Filtrar la tabla":"تصفية الجدول"
 };

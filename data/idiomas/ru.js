@@ -1104,5 +1104,22 @@ window.ATLAS_IDIOMA_ru={
 "cada barra es un año y su altura completa son todas las votaciones nominales de ese año en las que el país podía votar. Azul-verdoso: votó sí; naranja: votó no; amarillo: se abstuvo; gris: no votó o no estuvo. No dice si un voto es bueno o malo.":"каждый столбец — один год, а его полная высота — все поименные голосования этого года, в которых страна могла участвовать. Сине-зелёный: «за»; оранжевый: «против»; жёлтый: воздержался; серый: не голосовал или отсутствовал. Это не говорит, хорош голос или плох.",
 "Una votación nominal es aquella en la que se registra el voto de cada Estado. Esta vista solo llega hasta {n}, el último año de su fuente.":"Поименное голосование — такое, в котором фиксируется голос каждого государства. Этот вид доходит только до {n} года — последнего года источника.",
 "Fuente:":"Источник:",
-"(Harvard Dataverse, CC{n}). Recuento de ATLAS con el voto de cada Estado en cada votación nominal.":"(Harvard Dataverse, CC{n}). Подсчёт ATLAS голоса каждого государства в каждом поимённом голосовании."
+"(Harvard Dataverse, CC{n}). Recuento de ATLAS con el voto de cada Estado en cada votación nominal.":"(Harvard Dataverse, CC{n}). Подсчёт ATLAS голоса каждого государства в каждом поимённом голосовании.",
+"№ Cómo leer un código":"№ Как читать индекс",
+"Guía":"Руководство",
+"Cómo leer un código de la ONU":"Как читать индекс документа ООН",
+"Cada documento de la ONU lleva un código, como <code>A/HRC/RES/5/2</code> o <code>S/RES/1325 (2000)</code>. Aquí aprendes qué significa cada pieza, para poder leer cualquier código, no solo uno.":"У каждого документа ООН есть индекс, например <code>A/HRC/RES/5/2</code> или <code>S/RES/1325 (2000)</code>. Здесь вы узнаете, что означает каждая часть, чтобы читать любой индекс, а не только один.",
+"ℹ <b>Para qué sirve esta pantalla:</b> entender de dónde viene un documento, de qué tipo es y cuál es su número, con solo mirar su código. <u>(cómo usarla y de dónde salen los datos)</u>":"ℹ <b>Для чего этот экран:</b> понять, откуда документ, какого он типа и какой у него номер, просто взглянув на его индекс. <u>(как пользоваться и откуда данные)</u>",
+"<b>Cómo usarla:</b> hay cuatro formas de ver lo mismo. El tutorial explica las piezas paso a paso; el despiezador lee cualquier código que pegues; la tabla reúne todas las piezas; el repaso te deja practicar.":"<b>Как пользоваться:</b> одно и то же можно увидеть четырьмя способами. Руководство объясняет части шаг за шагом; разборщик читает любой вставленный индекс; таблица собирает все части; повторение позволяет потренироваться.",
+"<b>De dónde salen los datos:</b> elaboración propia a partir de la guía «Símbolos de documentos» de la Biblioteca Dag Hammarskjöld y de los propios documentos. <span></span>.":"<b>Откуда данные:</b> собственная разработка ATLAS на основе руководства «Условные обозначения документов» библиотеки имени Дага Хаммаршёльда и самих документов. <span></span>.",
+"Las explicaciones de esta pantalla están, por ahora, solo en español. Los códigos son iguales en todos los idiomas.":"Пояснения на этом экране пока только на испанском языке. Индексы одинаковы на всех языках.",
+"Forma de verlo":"Способ просмотра",
+"Tutorial paso a paso":"Пошаговое руководство",
+"Despiezador":"Разборщик",
+"Tabla de referencia":"Справочная таблица",
+"Repaso":"Повторение",
+"Pega un código: A/HRC/RES/5/2, S/RES/1325 (2000)…":"Вставьте индекс: A/HRC/RES/5/2, S/RES/1325 (2000)…",
+"Código de un documento":"Индекс документа",
+"Filtra: HRC, resolución, acta, adición…":"Фильтр: HRC, резолюция, отчёт, добавление…",
+"Filtrar la tabla":"Фильтр таблицы"
 };
