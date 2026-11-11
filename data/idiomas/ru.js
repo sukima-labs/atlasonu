@@ -1144,4 +1144,8 @@ window.ATLAS_IDIOMA_ru={
 "Solo algunos países tienen un mandato de relator propio; los mandatos temáticos sí pueden actuar en este país (ver la ficha).":"Только у некоторых стран есть собственный страновой мандат докладчика; тематические мандаты могут действовать в отношении этой страны (см. карточку).",
 "Solo algunos países tienen una comisión o misión de investigación; no es un juicio sobre el país.":"Только у некоторых стран есть комиссия или миссия по расследованию; это не оценка страны.",
 "◍ Ver en el mapa":"◍ Смотреть на карте"
+"Qué es":"Что это",
+"Qué hace":"Чем занимается",
+"Nombre oficial en los idiomas de la ONU":"Официальное название на языках ООН",
+"Más detalle":"Подробнее"
 };

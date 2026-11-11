@@ -1144,4 +1144,8 @@ window.ATLAS_IDIOMA_zh={
 "Solo algunos países tienen un mandato de relator propio; los mandatos temáticos sí pueden actuar en este país (ver la ficha).":"只有部分国家设有国别特别报告员任务；专题任务可以对该国采取行动（见国家页面）。",
 "Solo algunos países tienen una comisión o misión de investigación; no es un juicio sobre el país.":"只有部分国家设有调查委员会或调查团；这并不是对该国的评判。",
 "◍ Ver en el mapa":"◍ 在地图上查看"
+"Qué es":"是什么",
+"Qué hace":"做什么",
+"Nombre oficial en los idiomas de la ONU":"联合国各语文的正式名称",
+"Más detalle":"更多细节"
 };

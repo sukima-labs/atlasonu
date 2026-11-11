@@ -1144,4 +1144,8 @@ window.ATLAS_IDIOMA_ar={
 "Solo algunos países tienen un mandato de relator propio; los mandatos temáticos sí pueden actuar en este país (ver la ficha).":"بعض البلدان فقط لديها ولاية مقرر خاص قُطرية؛ ويمكن للولايات المواضيعية أن تعمل بشأن هذا البلد (انظر الصفحة القُطرية).",
 "Solo algunos países tienen una comisión o misión de investigación; no es un juicio sobre el país.":"بعض البلدان فقط لديها لجنة أو بعثة تحقيق؛ وهذا ليس حكماً على البلد.",
 "◍ Ver en el mapa":"◍ عرض على الخريطة"
+"Qué es":"ما هي",
+"Qué hace":"ماذا تفعل",
+"Nombre oficial en los idiomas de la ONU":"الاسم الرسمي بلغات الأمم المتحدة",
+"Más detalle":"مزيد من التفاصيل"
 };
