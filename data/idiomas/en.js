@@ -1143,7 +1143,7 @@ window.ATLAS_IDIOMA_en={
 "La Colección de Tratados no trae datos de ratificación para esta entidad.":"The Treaty Collection has no ratification data for this entity.",
 "Solo algunos países tienen un mandato de relator propio; los mandatos temáticos sí pueden actuar en este país (ver la ficha).":"Only some countries have a country-specific rapporteur mandate; thematic mandates can act on this country (see the profile).",
 "Solo algunos países tienen una comisión o misión de investigación; no es un juicio sobre el país.":"Only some countries have a commission of inquiry or mission; it is not a judgement on the country.",
-"◍ Ver en el mapa":"◍ See on the map"
+"◍ Ver en el mapa":"◍ See on the map",
 "Qué es":"What it is",
 "Qué hace":"What it does",
 "Nombre oficial en los idiomas de la ONU":"Official name in the UN languages",

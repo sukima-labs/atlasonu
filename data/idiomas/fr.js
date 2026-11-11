@@ -1143,7 +1143,7 @@ window.ATLAS_IDIOMA_fr={
 "La Colección de Tratados no trae datos de ratificación para esta entidad.":"La Collection des traités n’a pas de données de ratification pour cette entité.",
 "Solo algunos países tienen un mandato de relator propio; los mandatos temáticos sí pueden actuar en este país (ver la ficha).":"Seuls certains pays ont un mandat de rapporteur propre ; les mandats thématiques peuvent agir sur ce pays (voir la fiche).",
 "Solo algunos países tienen una comisión o misión de investigación; no es un juicio sobre el país.":"Seuls certains pays ont une commission ou une mission d’enquête ; ce n’est pas un jugement sur le pays.",
-"◍ Ver en el mapa":"◍ Voir sur la carte"
+"◍ Ver en el mapa":"◍ Voir sur la carte",
 "Qué es":"De quoi s'agit-il",
 "Qué hace":"Son action",
 "Nombre oficial en los idiomas de la ONU":"Nom officiel dans les langues de l'ONU",
