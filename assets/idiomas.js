@@ -164,16 +164,16 @@
   }
   function selector() {
     var css = document.createElement('style');
-    css.textContent = '.idioma{display:flex;gap:4px;align-items:center;margin:10px 0 4px}.idioma button{min-width:40px;min-height:32px;padding:2px 8px;border:1px solid #6b5a40;border-radius:6px;background:transparent;color:#eacfa6;font:600 12px/1 system-ui,sans-serif;cursor:pointer}.idioma button[aria-pressed=true]{background:#e1bb81;color:#191714;border-color:#e1bb81}.idioma button:focus-visible{outline:2px solid #f6ead7;outline-offset:2px}.appbar .idioma{margin:0 0 0 auto}.idioma-aviso{font-size:11px;line-height:1.4;color:#c6b69b;margin:2px 0 8px}' +
+    css.textContent = '.idioma{display:flex;gap:4px;align-items:center;margin:10px 0 4px}.idioma button{min-width:40px;min-height:32px;padding:2px 8px;border:1px solid var(--idioma-borde);border-radius:6px;background:transparent;color:var(--idioma-texto);font:600 12px/1 system-ui,sans-serif;cursor:pointer}.idioma button[aria-pressed=true]{background:var(--idioma-activo-fondo);color:var(--idioma-activo-texto);border-color:var(--idioma-activo-fondo)}.idioma button:focus-visible{outline:2px solid var(--idioma-foco);outline-offset:2px}.appbar .idioma{margin:0 0 0 auto}.idioma-aviso{font-size:11px;line-height:1.4;color:var(--idioma-aviso);margin:2px 0 8px}' +
       // «Ver más» y «Ocultar» de los recuadros «Para qué sirve esta pantalla» son content de CSS, no texto
       ({ en: ['See more', 'Hide'], fr: ['Voir plus', 'Masquer'], ar: ['عرض المزيد', 'إخفاء'], zh: ['查看更多', '收起'], ru: ['Подробнее', 'Скрыть'] }[ln] || []).reduce(function (c, t, i) { return c + (i ? '.about[open] summary::after{content:"' + t + '"}' : '.about summary::after{content:"' + t + '"}'); }, '') +
-      '.idioma{flex-wrap:wrap}.idioma select{min-height:32px;max-width:9.5em;padding:2px 6px;border:1px solid #6b5a40;border-radius:6px;background:#1f1c18;color:#eacfa6;font:600 12px/1 system-ui,sans-serif}' +
+      '.idioma{flex-wrap:wrap}.idioma select{min-height:32px;max-width:9.5em;padding:2px 6px;border:1px solid var(--idioma-borde);border-radius:6px;background:var(--idioma-select-fondo);color:var(--idioma-texto);font:600 12px/1 system-ui,sans-serif}' +
       // árabe: el menú lateral del celular sale por la derecha, donde está su botón
       // P1: en el celular, un solo selector de idioma (el desplegable de la barra superior, con 44 px de alto); los botones del menú quedan para el escritorio
       // en el escritorio los seis botones van en una sola fila (antes «RU» quedaba suelto en una segunda)
       '.side .idioma{display:grid;grid-template-columns:repeat(6,minmax(0,1fr))}.side .idioma button{min-width:0;padding:2px 0}' +
       '@media(max-width:1080px){.side .idioma{display:none}.appbar .idioma select{min-height:44px;font-size:14px}}' +
-      '@media(max-width:1080px){html[dir=rtl] .side{left:auto;right:0;transform:translateX(104%);border-right:0;border-left:1px solid #38322a;box-shadow:-12px 0 40px rgba(0,0,0,.45)}html[dir=rtl] body.menu-open .side{transform:none}}';
+      '@media(max-width:1080px){html[dir=rtl] .side{left:auto;right:0;transform:translateX(104%);border-right:0;border-left:1px solid var(--menu-rtl-borde);box-shadow:-12px 0 40px var(--menu-rtl-sombra)}html[dir=rtl] body.menu-open .side{transform:none}}';
     document.head.appendChild(css);
     var hacer = function () {
       var g = document.createElement('div');
