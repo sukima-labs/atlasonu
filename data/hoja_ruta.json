@@ -121,6 +121,10 @@
     {
      "t": "Imprimir cualquier pantalla",
      "x": "Al imprimir o guardar en PDF sale solo la pantalla que tienes abierta, en claro y sin menús ni botones (de 2 a 11 hojas), y el mapa se imprime con su leyenda de colores."
+    },
+    {
+     "t": "Mapa: todas las capas de un país a la vez",
+     "x": "Al tocar un país del mapa, el panel muestra a la vez sus siete capas (tratados, invitación permanente, mandato de relator, comisión o misión, conflictos armados, comunicaciones y EPU), igual para los 196 países; donde no hay dato dice por qué. Cada fila lleva a su sección de la ficha, y la ficha tiene un botón para volver al mapa. Salió de un reporte de Jeisson sobre Colombia."
     }
    ]
   },
@@ -161,6 +165,10 @@
    "titulo": "Pendiente",
    "intro": "En la cola de trabajo, por orden aproximado. Una tarea cada vez.",
    "items": [
+    {
+     "t": "Mapa y fichas: presencia de la ONU en cada país",
+     "x": "Falta una capa con las oficinas de derechos humanos de la ONU y las misiones de paz o políticas en cada país (por ejemplo, la Misión de Verificación en Colombia). Se busca antes una fuente abierta, con licencia y fecha. También falta mostrar en la ficha el conflicto armado y la cifra del EPU, para que ficha y mapa cuenten lo mismo."
+    },
     {
      "t": "Revisión de uso de todas las pantallas",
      "x": "Sobre todo en el celular: tablas que pasan a tarjetas, buscador a mano, botones más grandes, contraste y accesibilidad. Ya está hecho el informe con lo medido en las 17 pantallas; falta aplicarlo, las tablas anchas ya pasan a tarjetas en el celular; Países, Mandatos, Arqueología y Auditoría ya se muestran de 20 en 20 y hay botón para volver arriba; siguen los botones más grandes y la letra mínima."
