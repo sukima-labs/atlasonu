@@ -29,7 +29,7 @@ const CASOS = [
     await p.waitForTimeout(500);
     await p.addScriptTag({ content: AXE });
     if (c.idioma === 'ar' && await p.evaluate(() => document.documentElement.dir) !== 'rtl') { fallos++; console.log('✗ ar: la página no está de derecha a izquierda'); }
-    const pantallas = await p.evaluate(() => [...document.querySelectorAll('.nav button[data-page]')].map(x => x.dataset.page));
+    const pantallas = await p.evaluate(() => [...document.querySelectorAll('.main .section')].map(x => x.id));
     for (const id of pantallas) {
       await p.evaluate(i => { showPage(i, true); document.querySelectorAll('details.lf').forEach(d => { d.open = true; }); }, id); // T65: la lectura fácil se mide abierta
       await p.waitForTimeout(400);
