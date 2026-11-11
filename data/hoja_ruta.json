@@ -152,7 +152,10 @@
     {
      "t": "Seis idiomas: español, inglés, francés, árabe, chino y ruso",
      "x": "Arriba se elige el idioma y la página lo recuerda; en árabe la página se lee de derecha a izquierda. Están traducidos el menú, los títulos, las explicaciones, los filtros, los botones, las fichas de país y de mandato, los tratados y las fechas, con diccionario propio y sin servicios externos. Los documentos, las noticias y los datos oficiales se muestran en el idioma en que los publica la ONU. Falta que una persona revise las traducciones.",
-     "tag": "en evaluación"
+     "tag": "en evaluación",
+     "issues": [
+      262
+     ]
     }
    ]
   },
@@ -163,108 +166,188 @@
    "items": [
     {
      "t": "Comunicaciones de los relatores",
-     "x": "Se muestran las cifras por país, pero cada comunicación individual y su respuesta solo se pueden consultar en la base original. Se busca una vía permitida para enlazarlas."
+     "x": "Se muestran las cifras por país, pero cada comunicación individual y su respuesta solo se pueden consultar en la base original. Se busca una vía permitida para enlazarlas.",
+     "issues": [
+      252
+     ]
     },
     {
      "t": "Seguimiento de recomendaciones",
-     "x": "Un tablero que muestre, por cada recomendación de la ONU a un país, qué se ha cumplido, qué sigue pendiente y qué avances hay, con la fuente de cada dato y la posibilidad de comparar varios países."
+     "x": "Un tablero que muestre, por cada recomendación de la ONU a un país, qué se ha cumplido, qué sigue pendiente y qué avances hay, con la fuente de cada dato y la posibilidad de comparar varios países.",
+     "issues": [
+      203
+     ]
     },
     {
      "t": "De la información a la acción",
-     "x": "Un asistente paso a paso que, ante un caso concreto, explica a qué comité o procedimiento de la ONU se puede acudir, con sus requisitos y plazos."
+     "x": "Un asistente paso a paso que, ante un caso concreto, explica a qué comité o procedimiento de la ONU se puede acudir, con sus requisitos y plazos.",
+     "issues": [
+      205
+     ]
     },
     {
      "t": "Guías para presentar quejas a la ONU",
-     "x": "Pasar de manuales estáticos a una guía viva y al día, unida al asistente «De la información a la acción»."
+     "x": "Pasar de manuales estáticos a una guía viva y al día, unida al asistente «De la información a la acción».",
+     "issues": [
+      207
+     ]
     },
     {
      "t": "Colores de la marca, modo claro y modo oscuro",
-     "x": "La página pasará a los colores y la letra de la marca de Sukima-Labs, con dos modos, oscuro (grafito) y claro (marfil), y un selector «Automático, Claro u Oscuro» que se guarda solo en el navegador. El cian de la marca será el acento y el dorado quedará para datos y destacados. Ya se midió el contraste; falta aplicarlo."
+     "x": "La página pasará a los colores y la letra de la marca de Sukima-Labs, con dos modos, oscuro (grafito) y claro (marfil), y un selector «Automático, Claro u Oscuro» que se guarda solo en el navegador. El cian de la marca será el acento y el dorado quedará para datos y destacados. Ya se midió el contraste; falta aplicarlo.",
+     "issues": [
+      222,
+      226,
+      228
+     ]
     },
     {
      "t": "Herramienta para clases: crea tu ONU o tu EPU",
-     "x": "Una actividad para colegios, universidades y organizaciones: cada estudiante representa a un país, debate un tema y vota, como en un Modelo de Naciones Unidas. Usaría datos reales de ATLAS: cómo votó cada país en la Asamblea y qué recomendaciones recibió en el EPU. Iría dentro de «Entender la ONU». No guardaría nombres ni cuentas. Ya está valorada; empieza después del seguimiento de recomendaciones."
+     "x": "Una actividad para colegios, universidades y organizaciones: cada estudiante representa a un país, debate un tema y vota, como en un Modelo de Naciones Unidas. Usaría datos reales de ATLAS: cómo votó cada país en la Asamblea y qué recomendaciones recibió en el EPU. Iría dentro de «Entender la ONU». No guardaría nombres ni cuentas. Ya está valorada; empieza después del seguimiento de recomendaciones.",
+     "issues": [
+      224
+     ]
     },
     {
      "t": "Mapa y fichas: presencia de la ONU en cada país",
-     "x": "Falta una capa con las oficinas de derechos humanos de la ONU y las misiones de paz o políticas en cada país (por ejemplo, la Misión de Verificación en Colombia). Se busca antes una fuente abierta, con licencia y fecha."
+     "x": "Falta una capa con las oficinas de derechos humanos de la ONU y las misiones de paz o políticas en cada país (por ejemplo, la Misión de Verificación en Colombia). Se busca antes una fuente abierta, con licencia y fecha.",
+     "issues": [
+      249
+     ]
     },
     {
      "t": "Revisión de uso de todas las pantallas",
-     "x": "Sobre todo en el celular: tablas que pasan a tarjetas, buscador a mano, botones más grandes, contraste y accesibilidad. Ya está hecho el informe con lo medido en las 17 pantallas; falta aplicarlo, las tablas anchas ya pasan a tarjetas en el celular; Países, Mandatos, Arqueología y Auditoría ya se muestran de 20 en 20 y hay botón para volver arriba; siguen los botones más grandes y la letra mínima."
+     "x": "Sobre todo en el celular: tablas que pasan a tarjetas, buscador a mano, botones más grandes, contraste y accesibilidad. Ya está hecho el informe con lo medido en las 17 pantallas; falta aplicarlo, las tablas anchas ya pasan a tarjetas en el celular; Países, Mandatos, Arqueología y Auditoría ya se muestran de 20 en 20 y hay botón para volver arriba; siguen los botones más grandes y la letra mínima.",
+     "issues": [
+      253
+     ]
     },
     {
      "t": "Mandatos y documentos extinguidos",
-     "x": "Hoy solo están los vigentes (44 temáticos y 13 por país). Faltan los que ya terminaron."
+     "x": "Hoy solo están los vigentes (44 temáticos y 13 por país). Faltan los que ya terminaron.",
+     "issues": [
+      237
+     ]
     },
     {
      "t": "Jurisprudencia de los comités: lo que falta",
-     "x": "Faltan las observaciones generales anteriores, sus títulos en español y los dictámenes sobre comunicaciones individuales, que hoy solo se enlazan a la base de OHCHR."
+     "x": "Faltan las observaciones generales anteriores, sus títulos en español y los dictámenes sobre comunicaciones individuales, que hoy solo se enlazan a la base de OHCHR.",
+     "issues": [
+      254
+     ]
     },
     {
      "t": "Recomendaciones del EPU por país",
-     "x": "En el mapa ya se ve cuántas recomendaciones recibió cada país, pero no su texto dentro de ATLAS: hoy se enlaza a UPR Info. Para traerlas haría falta el permiso de UPR Info o extraerlas una a una de los informes oficiales del Grupo de Trabajo del EPU, que ya están descargados."
+     "x": "En el mapa ya se ve cuántas recomendaciones recibió cada país, pero no su texto dentro de ATLAS: hoy se enlaza a UPR Info. Para traerlas haría falta el permiso de UPR Info o extraerlas una a una de los informes oficiales del Grupo de Trabajo del EPU, que ya están descargados.",
+     "issues": [
+      203
+     ]
     },
     {
      "t": "Comisiones de investigación",
-     "x": "Las que aparecen son una selección verificada, no todas las que ha habido."
+     "x": "Las que aparecen son una selección verificada, no todas las que ha habido.",
+     "issues": [
+      238
+     ]
     },
     {
      "t": "Documentos básicos comunes de cada Estado",
-     "x": "Investigar y, si hay fuente oficial, indexarlos por país."
+     "x": "Investigar y, si hay fuente oficial, indexarlos por país.",
+     "issues": [
+      241
+     ]
     },
     {
      "t": "Cómo funciona la ONU, más a fondo",
-     "x": "Ya están las votaciones, las elecciones, la financiación, el ciclo del Consejo de Derechos Humanos, las relaciones entre órganos y las reformas. Falta describir con más detalle los órganos restantes (T10)."
+     "x": "Ya están las votaciones, las elecciones, la financiación, el ciclo del Consejo de Derechos Humanos, las relaciones entre órganos y las reformas. Falta describir con más detalle los órganos restantes (T10).",
+     "issues": [
+      255
+     ]
     },
     {
      "t": "Siglas y acrónimos",
-     "x": "El diccionario tiene {siglas} entradas: es una selección útil, no todas las de la ONU."
+     "x": "El diccionario tiene {siglas} entradas: es una selección útil, no todas las de la ONU.",
+     "issues": [
+      256
+     ]
     },
     {
      "t": "Historia: más hechos",
-     "x": "Falta contrastar con la fuente original los hechos de antes de 1945 y seguir completando la descolonización país por país."
+     "x": "Falta contrastar con la fuente original los hechos de antes de 1945 y seguir completando la descolonización país por país.",
+     "issues": [
+      257
+     ]
     },
     {
      "t": "Explicaciones en lenguaje claro de cada resolución",
-     "x": "Hasta ahora solo una resolución está explicada así, tras leer su texto."
+     "x": "Hasta ahora solo una resolución está explicada así, tras leer su texto.",
+     "issues": [
+      239
+     ]
     },
     {
      "t": "Inclusión y más idiomas",
-     "x": "Ya hay «Lectura fácil» en Inicio, Mandatos, Cómo funciona la ONU y Países, y la interfaz en árabe, chino y ruso. Falta probarlo con lector de pantalla y que personas nativas revisen las traducciones."
+     "x": "Ya hay «Lectura fácil» en Inicio, Mandatos, Cómo funciona la ONU y Países, y la interfaz en árabe, chino y ruso. Falta probarlo con lector de pantalla y que personas nativas revisen las traducciones.",
+     "issues": [
+      258
+     ]
     },
     {
      "t": "Vista para niños y niñas",
-     "x": "Una versión con lenguaje sencillo, dibujos propios y juegos para que niñas y niños conozcan sus derechos y la ONU, sin cuentas ni rastreo. El enfoque ya está escrito; los textos se escribirán y una persona experta los revisará antes de publicarse."
+     "x": "Una versión con lenguaje sencillo, dibujos propios y juegos para que niñas y niños conozcan sus derechos y la ONU, sin cuentas ni rastreo. El enfoque ya está escrito; los textos se escribirán y una persona experta los revisará antes de publicarse.",
+     "issues": [
+      165
+     ]
     },
     {
      "t": "Logo de DIGNITYOS",
      "x": "Logo provisional en el menú y en el apartado de DIGNITYOS.",
-     "tag": "prioridad baja"
+     "tag": "prioridad baja",
+     "issues": [
+      242
+     ]
     },
     {
      "t": "Grupos de trabajo: lo que falta",
-     "x": "Ya están los grupos intergubernamentales del Consejo y de la Asamblea, el del EPU y los del procedimiento de denuncia. Faltan los grupos de los comités de tratados, otros grupos históricos y, para cada uno, su composición detallada."
+     "x": "Ya están los grupos intergubernamentales del Consejo y de la Asamblea, el del EPU y los del procedimiento de denuncia. Faltan los grupos de los comités de tratados, otros grupos históricos y, para cada uno, su composición detallada.",
+     "issues": [
+      259
+     ]
     },
     {
      "t": "Comunicaciones de detención arbitraria y desapariciones forzadas",
-     "x": "En las fichas de país faltan las opiniones del Grupo de Trabajo sobre la Detención Arbitraria y los casos del Grupo de Trabajo sobre las Desapariciones Forzadas. Se investiga qué se puede indexar con enlace al original."
+     "x": "En las fichas de país faltan las opiniones del Grupo de Trabajo sobre la Detención Arbitraria y los casos del Grupo de Trabajo sobre las Desapariciones Forzadas. Se investiga qué se puede indexar con enlace al original.",
+     "issues": [
+      243
+     ]
     },
     {
      "t": "Relatores y relatoras: lo que falta",
-     "x": "Sus informes, visitas y comunicaciones, persona a persona, con enlace al original. Hoy las bases oficiales no permiten consulta automática; se enlazan desde la pantalla."
+     "x": "Sus informes, visitas y comunicaciones, persona a persona, con enlace al original. Hoy las bases oficiales no permiten consulta automática; se enlazan desde la pantalla.",
+     "issues": [
+      260
+     ]
     },
     {
      "t": "Orden, copias de seguridad y velocidad",
-     "x": "Tareas internas: limpiar ramas y archivos antiguos, tener copias de seguridad, poner la documentación al día y hacer que la página cargue más rápido en celulares modestos."
+     "x": "Tareas internas: limpiar ramas y archivos antiguos, tener copias de seguridad, poner la documentación al día y hacer que la página cargue más rápido en celulares modestos.",
+     "issues": [
+      261
+     ]
     },
     {
      "t": "Revisión de expertos y exactitud de los datos",
-     "x": "Que personas expertas revisen traducciones, textos en lenguaje claro y contenido para la infancia, y comprobar cada cierto tiempo, por muestreo, que los datos coinciden con la fuente."
+     "x": "Que personas expertas revisen traducciones, textos en lenguaje claro y contenido para la infancia, y comprobar cada cierto tiempo, por muestreo, que los datos coinciden con la fuente.",
+     "issues": [
+      245
+     ]
     },
     {
      "t": "El reto académico",
-     "x": "Una página sobre qué documentos de la ONU están mal catalogados y que ATLAS sí encuentra. Va al final de todo, sin fecha."
+     "x": "Una página sobre qué documentos de la ONU están mal catalogados y que ATLAS sí encuentra. Va al final de todo, sin fecha.",
+     "issues": [
+      240
+     ]
     }
    ]
   },
