@@ -150,8 +150,8 @@
      "tag": "en evaluación"
     },
     {
-     "t": "Colores y diseño de la página",
-     "x": "Se está evaluando si la página debe mantener su paleta dorada y crema o acercarse a los colores de la marca de Sukima-Labs (grafito, cian, violeta y marfil). Ya se midió el contraste de ambas: la actual se lee bien; el violeta de la marca no sirve para texto sobre fondo oscuro. La propuesta es un punto medio: conservar la base y usar el cian de la marca como acento. Falta la decisión.",
+     "t": "Colores, letras y diseño de la página",
+     "x": "Se está evaluando si la página debe mantener su paleta dorada y crema y su letra actual o acercarse a la marca de Sukima-Labs: sus colores (grafito, cian, violeta y marfil) y su letra (DejaVu Sans). Ya se midió el contraste: la paleta actual se lee bien; el violeta de la marca no sirve para texto sobre fondo oscuro. La propuesta es incluir la letra de la marca en la página, para que se vea igual en todos los aparatos, y usar el cian de la marca como acento, con el dorado para datos y destacados. Falta la decisión.",
      "tag": "en evaluación"
     }
    ]
