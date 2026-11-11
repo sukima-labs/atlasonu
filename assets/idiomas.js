@@ -169,6 +169,8 @@
       ({ en: ['See more', 'Hide'], fr: ['Voir plus', 'Masquer'], ar: ['عرض المزيد', 'إخفاء'], zh: ['查看更多', '收起'], ru: ['Подробнее', 'Скрыть'] }[ln] || []).reduce(function (c, t, i) { return c + (i ? '.about[open] summary::after{content:"' + t + '"}' : '.about summary::after{content:"' + t + '"}'); }, '') +
       '.idioma{flex-wrap:wrap}.idioma select{min-height:32px;max-width:9.5em;padding:2px 6px;border:1px solid #6b5a40;border-radius:6px;background:#1f1c18;color:#eacfa6;font:600 12px/1 system-ui,sans-serif}' +
       // árabe: el menú lateral del celular sale por la derecha, donde está su botón
+      // P1: en el celular, un solo selector de idioma (el desplegable de la barra superior, con 44 px de alto); los botones del menú quedan para el escritorio
+      '@media(max-width:1080px){.side .idioma{display:none}.appbar .idioma select{min-height:44px;font-size:14px}}' +
       '@media(max-width:1080px){html[dir=rtl] .side{left:auto;right:0;transform:translateX(104%);border-right:0;border-left:1px solid #38322a;box-shadow:-12px 0 40px rgba(0,0,0,.45)}html[dir=rtl] body.menu-open .side{transform:none}}';
     document.head.appendChild(css);
     var hacer = function () {
@@ -218,7 +220,7 @@
   selector();
   if (ln === 'es') return;
   var s = document.createElement('script');
-  s.src = 'data/idiomas/' + ln + '.js?v=3';
+  s.src = 'data/idiomas/' + ln + '.js?v=4';
   s.onload = function () { dic = window['ATLAS_IDIOMA_' + ln]; if (dic) arranca(); };
   document.head.appendChild(s);
 })();
