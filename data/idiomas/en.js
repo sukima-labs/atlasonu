@@ -1137,5 +1137,11 @@ window.ATLAS_IDIOMA_en={
 "Tabla de nomenclatura":"Nomenclature table",
 "▦ Datos y calidad":"▦ Data and quality",
 "Datos y calidad":"Data and quality",
-"Las cifras del catálogo, qué tan completo y verificado está, las últimas resoluciones y las novedades detectadas en las fuentes oficiales. Es la parte para quien investiga; el buscador y los accesos principales están en el Panorama.":"Catalogue figures, how complete and verified it is, the latest resolutions and the changes detected in the official sources. This is the part for researchers; the search box and the main entry points are on the Overview."
+"Las cifras del catálogo, qué tan completo y verificado está, las últimas resoluciones y las novedades detectadas en las fuentes oficiales. Es la parte para quien investiga; el buscador y los accesos principales están en el Panorama.":"Catalogue figures, how complete and verified it is, the latest resolutions and the changes detected in the official sources. This is the part for researchers; the search box and the main entry points are on the Overview.",
+"Este país en todas las capas":"This country in every layer",
+"Ver en la ficha":"See in the profile",
+"La Colección de Tratados no trae datos de ratificación para esta entidad.":"The Treaty Collection has no ratification data for this entity.",
+"Solo algunos países tienen un mandato de relator propio; los mandatos temáticos sí pueden actuar en este país (ver la ficha).":"Only some countries have a country-specific rapporteur mandate; thematic mandates can act on this country (see the profile).",
+"Solo algunos países tienen una comisión o misión de investigación; no es un juicio sobre el país.":"Only some countries have a commission of inquiry or mission; it is not a judgement on the country.",
+"◍ Ver en el mapa":"◍ See on the map"
 };

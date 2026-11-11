@@ -1137,5 +1137,11 @@ window.ATLAS_IDIOMA_ru={
 "Tabla de nomenclatura":"Таблица обозначений",
 "▦ Datos y calidad":"▦ Данные и качество",
 "Datos y calidad":"Данные и качество",
-"Las cifras del catálogo, qué tan completo y verificado está, las últimas resoluciones y las novedades detectadas en las fuentes oficiales. Es la parte para quien investiga; el buscador y los accesos principales están en el Panorama.":"Цифры каталога, его полнота и проверенность, последние резолюции и новости, обнаруженные в официальных источниках. Этот раздел для исследователей; поиск и основные входы находятся в «Обзоре»."
+"Las cifras del catálogo, qué tan completo y verificado está, las últimas resoluciones y las novedades detectadas en las fuentes oficiales. Es la parte para quien investiga; el buscador y los accesos principales están en el Panorama.":"Цифры каталога, его полнота и проверенность, последние резолюции и новости, обнаруженные в официальных источниках. Этот раздел для исследователей; поиск и основные входы находятся в «Обзоре».",
+"Este país en todas las capas":"Эта страна во всех слоях",
+"Ver en la ficha":"Смотреть в карточке",
+"La Colección de Tratados no trae datos de ratificación para esta entidad.":"В Сборнике договоров нет данных о ратификации для этого образования.",
+"Solo algunos países tienen un mandato de relator propio; los mandatos temáticos sí pueden actuar en este país (ver la ficha).":"Только у некоторых стран есть собственный страновой мандат докладчика; тематические мандаты могут действовать в отношении этой страны (см. карточку).",
+"Solo algunos países tienen una comisión o misión de investigación; no es un juicio sobre el país.":"Только у некоторых стран есть комиссия или миссия по расследованию; это не оценка страны.",
+"◍ Ver en el mapa":"◍ Смотреть на карте"
 };

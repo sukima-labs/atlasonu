@@ -1137,5 +1137,11 @@ window.ATLAS_IDIOMA_ar={
 "Tabla de nomenclatura":"جدول التسميات",
 "▦ Datos y calidad":"▦ البيانات والجودة",
 "Datos y calidad":"البيانات والجودة",
-"Las cifras del catálogo, qué tan completo y verificado está, las últimas resoluciones y las novedades detectadas en las fuentes oficiales. Es la parte para quien investiga; el buscador y los accesos principales están en el Panorama.":"أرقام الفهرس، ومدى اكتماله والتحقق منه، وأحدث القرارات، والمستجدات المرصودة في المصادر الرسمية. هذا القسم للباحثين؛ أما مربع البحث والمداخل الرئيسية فهي في النظرة العامة."
+"Las cifras del catálogo, qué tan completo y verificado está, las últimas resoluciones y las novedades detectadas en las fuentes oficiales. Es la parte para quien investiga; el buscador y los accesos principales están en el Panorama.":"أرقام الفهرس، ومدى اكتماله والتحقق منه، وأحدث القرارات، والمستجدات المرصودة في المصادر الرسمية. هذا القسم للباحثين؛ أما مربع البحث والمداخل الرئيسية فهي في النظرة العامة.",
+"Este país en todas las capas":"هذا البلد في جميع الطبقات",
+"Ver en la ficha":"عرض في الصفحة القُطرية",
+"La Colección de Tratados no trae datos de ratificación para esta entidad.":"لا تتضمن مجموعة المعاهدات بيانات تصديق لهذا الكيان.",
+"Solo algunos países tienen un mandato de relator propio; los mandatos temáticos sí pueden actuar en este país (ver la ficha).":"بعض البلدان فقط لديها ولاية مقرر خاص قُطرية؛ ويمكن للولايات المواضيعية أن تعمل بشأن هذا البلد (انظر الصفحة القُطرية).",
+"Solo algunos países tienen una comisión o misión de investigación; no es un juicio sobre el país.":"بعض البلدان فقط لديها لجنة أو بعثة تحقيق؛ وهذا ليس حكماً على البلد.",
+"◍ Ver en el mapa":"◍ عرض على الخريطة"
 };
