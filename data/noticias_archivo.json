@@ -1,8 +1,26 @@
 {
 "fuente": "Noticias ONU (news.un.org)",
-"actualizado": "2026-11-10T18:49:25Z",
-"total": 85,
+"actualizado": "2026-11-11T02:54:47Z",
+"total": 87,
 "notas": [
+{
+"titulo": "COP31: la transición energética toma el protagonismo más allá de los combustibles fósiles",
+"fecha": "2026-11-10",
+"enlace": "https://news.un.org/feed/view/es/story/2026/11/1542160",
+"resumen": "La transición energética global tomó el protagonismo en el segundo día de la COP31, donde los países exploraron cómo alejarse de los combustibles fósiles, acelerar la energía limpia y superar las barreras financieras y de infraestructura que se interponen en…",
+"visto": "2026-11-11",
+"derechos": false,
+"americas": false
+},
+{
+"titulo": "Desigualdad en la COP31, Sudán, ébola y Estados Unidos: las noticias del martes",
+"fecha": "2026-11-10",
+"enlace": "https://news.un.org/feed/view/es/story/2026/11/1542159",
+"resumen": "Unos 1500 millones de mujeres y niñas viven ya en zonas de alto riesgo climático, y la crisis podría empujar a 141 millones más a la pobreza extrema. En Sudán, UNICEF alerta de que 825.000 niños sufrirán desnutrición aguda debido a los ataques con drones a…",
+"visto": "2026-11-11",
+"derechos": false,
+"americas": false
+},
 {
 "titulo": "La COP31 abre en Antalya: ¿pueden por fin las promesas climáticas dar resultados?",
 "fecha": "2026-11-09",

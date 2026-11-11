@@ -1,8 +1,24 @@
 window.NOTICIAS={
  "fuente": "Noticias ONU (news.un.org)",
- "actualizado": "2026-11-10T18:49:25Z",
+ "actualizado": "2026-11-11T02:54:47Z",
  "temas": {
   "todas": [
+   {
+    "titulo": "COP31: la transición energética toma el protagonismo más allá de los combustibles fósiles",
+    "fecha": "2026-11-10",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542160",
+    "resumen": "La transición energética global tomó el protagonismo en el segundo día de la COP31, donde los países exploraron cómo alejarse de los combustibles fósiles, acelerar la energía limpia y superar las barreras financieras y de infraestructura que se interponen en…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/11/03-11-2026-Adobe-Stock-renewable-energy-01.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
+   {
+    "titulo": "Desigualdad en la COP31, Sudán, ébola y Estados Unidos: las noticias del martes",
+    "fecha": "2026-11-10",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542159",
+    "resumen": "Unos 1500 millones de mujeres y niñas viven ya en zonas de alto riesgo climático, y la crisis podría empujar a 141 millones más a la pobreza extrema. En Sudán, UNICEF alerta de que 825.000 niños sufrirán desnutrición aguda debido a los ataques con drones a…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/10/05-10-2026-UNICEF-Pakistan.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
    {
     "titulo": "La COP31 abre en Antalya: ¿pueden por fin las promesas climáticas dar resultados?",
     "fecha": "2026-11-09",
@@ -145,22 +161,6 @@ window.NOTICIAS={
     "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542129",
     "resumen": "Es muy tentador ahorrarle al cerebro el pensar del todo\". Solo entre el cinco y el diez por ciento de los trabajadores usa la IA para liberar capacidad mental; la mayoría externaliza también el análisis y la decisión. \"Mantén tu cerebro en el juego\", pide un…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/06/29-06-2026-AdobeStock_AI_01.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "Desconectarse para conectar: la juventud argentina debate los retos de la era digital",
-    "fecha": "2026-11-01",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542125",
-    "resumen": "En Buenos Aires, jóvenes debatieron sobre entornos digitales en el marco de la iniciativa Círculos de la Paz de Naciones Unidas. Desinformación, el impacto de las redes sociales en la salud mental y crecer en la era de la inteligencia artificial fueron los…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/10/29-10-2026_UN_Argentina_1.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "Sáhara Occidental: La ONU reafirma su compromiso con una solución pacífica tras el fin de la misión de paz MINURSO",
-    "fecha": "2026-11-01",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542130",
-    "resumen": "La misión de paz de Naciones Unidas en el Sáhara Occidental concluyó sus operaciones después de que el Consejo de Seguridad no lograra un acuerdo para renovar su mandato. El Secretario General reafirmó el derecho del pueblo saharaui a la libre determinación,…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/assets/2018/12/06-12-2018-MINURSO-NICA440800.jpg/image560x340cropped.jpg",
     "destacada": false
    }
   ],
