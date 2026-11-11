@@ -156,13 +156,6 @@
      "issues": [
       262
      ]
-    },
-    {
-     "t": "Orden, copias de seguridad y velocidad",
-     "x": "Tareas internas: limpiar ramas y archivos antiguos, tener copias de seguridad, poner la documentación al día y hacer que la página cargue más rápido en celulares modestos.",
-     "issues": [
-      261
-     ]
     }
    ]
   },
@@ -171,6 +164,13 @@
    "titulo": "Pendiente",
    "intro": "En la cola de trabajo, por orden aproximado. Una tarea cada vez.",
    "items": [
+    {
+     "t": "Orden, copias de seguridad y velocidad",
+     "x": "Tareas internas: limpiar ramas y archivos antiguos, tener copias de seguridad, poner la documentación al día y hacer que la página cargue más rápido en celulares modestos.",
+     "issues": [
+      261
+     ]
+    },
     {
      "t": "Comunicaciones de los relatores",
      "x": "Se muestran las cifras por país, pero cada comunicación individual y su respuesta solo se pueden consultar en la base original. Se busca una vía permitida para enlazarlas.",
