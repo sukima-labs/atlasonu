@@ -186,6 +186,7 @@ window.ATLAS_IDIOMA_zh={
 "Familia de la ONU (agencias, fondos…)":"联合国大家庭（机构、基金……）",
 "¿Ante quién reclamo?":"我该向谁申诉？",
 "Cómo se decide y se elige":"如何决策与选举",
+"Los 17 ODS":"17项可持续发展目标",
 "Descifrar un símbolo":"解读文号",
 "Pulsa cualquier recuadro: verás qué es, quién lo forma, qué documentos produce, de quién depende y qué cuelga de él.":"点按任意方框：您将看到它是什么、由谁组成、产生哪些文件、隶属于谁，以及下设哪些部分。",
 "La «familia» de la ONU es mucho más que sus seis órganos principales: fondos y programas, organismos especializados autónomos, comisiones regionales y organizaciones relacionadas. Filtra o busca, y pulsa una para ver qué hace en derechos humanos y con qué tratados se conecta.":"联合国的“大家庭”远不止六个主要机关：还有基金和方案、自主的专门机构、区域委员会及相关组织。可以筛选或搜索，点按其中一个，查看它在人权方面做什么以及与哪些条约相关。",

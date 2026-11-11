@@ -186,6 +186,7 @@ window.ATLAS_IDIOMA_en={
 "Familia de la ONU (agencias, fondos…)":"The UN family (agencies, funds…)",
 "¿Ante quién reclamo?":"Whom do I appeal to?",
 "Cómo se decide y se elige":"How decisions and elections work",
+"Los 17 ODS":"The 17 SDGs",
 "Descifrar un símbolo":"Decode a symbol",
 "Pulsa cualquier recuadro: verás qué es, quién lo forma, qué documentos produce, de quién depende y qué cuelga de él.":"Tap any box: you will see what it is, who makes it up, what documents it produces, who it reports to and what hangs from it.",
 "La «familia» de la ONU es mucho más que sus seis órganos principales: fondos y programas, organismos especializados autónomos, comisiones regionales y organizaciones relacionadas. Filtra o busca, y pulsa una para ver qué hace en derechos humanos y con qué tratados se conecta.":"The UN “family” is much more than its six principal organs: funds and programmes, autonomous specialized agencies, regional commissions and related organizations. Filter or search, and tap one to see what it does on human rights and which treaties it connects to.",

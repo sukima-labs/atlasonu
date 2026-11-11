@@ -186,6 +186,7 @@ window.ATLAS_IDIOMA_ru={
 "Familia de la ONU (agencias, fondos…)":"Семья ООН (учреждения, фонды…)",
 "¿Ante quién reclamo?":"К кому обратиться?",
 "Cómo se decide y se elige":"Как принимаются решения и проводятся выборы",
+"Los 17 ODS":"17 ЦУР",
 "Descifrar un símbolo":"Расшифровать условное обозначение",
 "Pulsa cualquier recuadro: verás qué es, quién lo forma, qué documentos produce, de quién depende y qué cuelga de él.":"Нажмите на любой прямоугольник: вы увидите, что это такое, из кого состоит, какие документы выпускает, кому подчиняется и что от него зависит.",
 "La «familia» de la ONU es mucho más que sus seis órganos principales: fondos y programas, organismos especializados autónomos, comisiones regionales y organizaciones relacionadas. Filtra o busca, y pulsa una para ver qué hace en derechos humanos y con qué tratados se conecta.":"«Семья» ООН — это гораздо больше, чем её шесть главных органов: фонды и программы, автономные специализированные учреждения, региональные комиссии и связанные организации. Отфильтруйте или найдите и нажмите на одну из них, чтобы увидеть, что она делает в области прав человека и с какими договорами связана.",
