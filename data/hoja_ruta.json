@@ -156,6 +156,13 @@
      "issues": [
       262
      ]
+    },
+    {
+     "t": "Orden, copias de seguridad y velocidad",
+     "x": "Tareas internas: limpiar ramas y archivos antiguos, tener copias de seguridad, poner la documentación al día y hacer que la página cargue más rápido en celulares modestos.",
+     "issues": [
+      261
+     ]
     }
    ]
   },
@@ -326,13 +333,6 @@
      "x": "Sus informes, visitas y comunicaciones, persona a persona, con enlace al original. Hoy las bases oficiales no permiten consulta automática; se enlazan desde la pantalla.",
      "issues": [
       260
-     ]
-    },
-    {
-     "t": "Orden, copias de seguridad y velocidad",
-     "x": "Tareas internas: limpiar ramas y archivos antiguos, tener copias de seguridad, poner la documentación al día y hacer que la página cargue más rápido en celulares modestos.",
-     "issues": [
-      261
      ]
     },
     {
