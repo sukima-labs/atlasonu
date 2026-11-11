@@ -10,6 +10,9 @@ Se lee de dos sitios, y solo lo que está escrito de forma inequívoca para ESE 
 «Accepted»/«Supported»/«enjoy the support» -> apoyada; «Noted»/«takes note»/«Not supported»/«Rejected»/«did not enjoy» -> tomó nota.
 «Partially supported»/«accepted in part» -> null (no se fuerza). Un número con dos respuestas distintas -> null. Texto libre sin
 números, números sin prefijo («1, 2, 3») o una frase que no dice cuál es la respuesta -> null. Nada se deduce por el tema.
+Si el informe y el adendo no dicen lo mismo, null; salvo que el adendo cambie la posición de forma explícita y diga cuál es la
+final («… which was initially supported, is now noted»): entonces vale esa. Lo que el adendo dice de un número cuyo texto copiado es
+el de otra recomendación (adendo que numera mal) no cuenta.
 Mejor null que un dato falso: el que lo muestre enlaza el documento donde está la respuesta.
 Uso: epu_respuestas.py [--dir DIR_TEXTOS] [--auditoria FICHERO.json]   (mide la cobertura sobre los ciclos 2 a 4; no escribe datos)"""
 import json, os, re, sys
@@ -17,28 +20,41 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import epu_recomendaciones as R  # noqa: E402
 
 APOYADA, NOTA = 'apoyada', 'tomó nota'
-_PARCIAL = re.compile(r'\bpartial\w*|\bin part\b|\bpartly\b|\bAIP\b|\b(?:first|second|third|fourth|other|one|some|certain)\s+parts?\b|\bin principle\b'
-                      r'|\b(?:accept|support)\w*,?\s+in\s+respect\s+of\b|\bonly\s+in\s+respect\s+of\b|\bto\s+the\s+extent\b|\binsofar\b'
-                      r'|\bthe\s+notion\b', re.I)   # «noted only in respect of the phrase…», «cannot accept …, to the extent that…»   # «138.32 is accepted in respect of the continuation of…»
+_PARCIAL = re.compile(r'\bpartial\w*|(?:\b(?:not|cannot)\b|n[’\x27]t\b)[^.;:]{0,60}\bin\s+(?:its|their)\s+entirety\b|\bin part\b(?!\s+of\s+(?:the\s+)?(?:Articles?|art\.))|\bpartly\b|\bAIP\b|\b(?:first|second|third|fourth|other|one|some|certain)\s+parts?\b|\b(?:the|that|this)\s+(?:parts?|aspects?|elements?)\s+of\s+(?:the|this|that)\s+recommendation|\bin principle\b'
+                      r'|\b(?:accept|support)\w*,?\s+in\s+respect\s+of\b|\bonly\s+(?:in\s+respect\s+of|with\s+(?:regard|respect)\s+to|as\s+regards|regarding|concerning)\b|\bto\s+the\s+extent\b|\binsofar\b'
+                      r'|\bthe\s+notion\b'
+                      r'|\bunder\s+the\s+(?:stipulation|condition|proviso)\b|\b(?:with|on)\s+the\s+(?:understanding|reservation|caveat|proviso)\b|\bsubject\s+to\s+(?:the\s+)?(?:clarification|reservation|condition|understanding)'
+                      r'|\bprovided\s+that\b|\bon\s+condition\s+that\b', re.I)   # T75 r3: aceptación condicionada = sin dato («accepted under the stipulation that…», «with the understanding…»)   # «noted only in respect of the phrase…», «cannot accept …, to the extent that…»   # «138.32 is accepted in respect of the continuation of…»
 # lo negativo va primero y se come su frase entera: «did not enjoy the support» no debe dejar suelto «the support»
 _NEG = re.compile(r'''(?ix)
     (?:\b(?:not|cannot|can\s?not|unable\s+to|fail(?:s|ed)?\s+to)|n[’']t)\s+(?:\w+\s+){0,3}?(?:accept\w*|support\w*|approv\w*|enjoy\w*(?:\s+\S+){0,2}?\s+support\b|enjoy\w*)
-  | \bnot\s+in\s+a\s+position\s+to\s+(?:accept|support)\w*
+  | \bnot\s+in\s+(?:a|the)\s+position\s+to\s+(?:accept|support)\w*
+  | \b(?:impossible|difficult)\s+to\s+(?:\w+\s+){0,2}?(?:accept|support)\w*
+  | \bno\s+(?:grounds|reason|basis|plans?)\s+to\s+(?:\w+\s+){0,2}?(?:accept|support)\w*
   | \breject\w*
   | \bt(?:ake|akes|aken|aking|ook)\s+(?:\w+\s+){0,2}?note\b
   | \bnote\s+(?:has|have)\s+been\s+taken\b
   | \b(?:we|I)\s+(?:\w+\s+)?note\s+(?=(?:the\s+)?(?:following|recommendations?|\d))
-  | \bnoted\b | \bnotes\s+(?:the\s+)?(?=following|\d|recommendation|remaining)
+  | \bto\s+note\s+(?:the\s+|this\s+|these\s+)?(?=recommendation|following|\d)
+  | \bnoted\b | \bnotes\s+(?:the\s+|this\s+|these\s+|that\s+)?(?=following|\d|recommendation|remaining)
   | \bwill\s+not\s+be\s+considered\b''')
 _POS = re.compile(r'(?i)\baccept\w*|\bsupport\w*|\benjoy\w*\s+(?:the|its)\s+support|\bapproved\b')
 _PEND = re.compile(r'(?i)will\s+(?:be\s+(?:further\s+)?examined|examine|provide\s+(?:its\s+)?respon|respond|be\s+included)|respon\w+\s+will\s+be\s+provided')
 
 
-def clase(x):
-    """'apoyada', 'tomó nota', 'parcial', 'mixta' (dice las dos cosas) o None (no dice qué)."""
+# para sacar una respuesta de una frase en prosa (no de una etiqueta ni de una cabecera), «support» tiene que ser el verbo de la
+# respuesta: «accepts», «supported», «able to support», no el sustantivo («welcomes the technical support offered in fulfilling this
+# recommendation», A/HRC/33/11/Add.1, 118.7, que además acepta un tratado y no el otro)
+_POS_RESP = re.compile(r'(?i)\b(?:accepts|accepted|supports|supported|approved)\b|\benjoy\w*\s+(?:the|its)\s+support'
+                       r'|\b(?:to|will|shall|can|could|would|does|do|hereby)\s+(?:\w+\s+)?(?:accept|support)\b')
+
+
+def clase(x, estricto=False):
+    """'apoyada', 'tomó nota', 'parcial', 'mixta' (dice las dos cosas) o None (no dice qué). `estricto`: lo positivo solo con el
+    verbo de la respuesta (_POS_RESP); lo negativo y lo parcial, igual."""
     if _PARCIAL.search(x): return 'parcial'
     neg = bool(_NEG.search(x))
-    pos = bool(_POS.search(_NEG.sub(' ', x)))
+    pos = bool((_POS_RESP if estricto else _POS).search(_NEG.sub(' ', x)))
     if neg and pos: return 'mixta'
     return NOTA if neg else APOYADA if pos else None
 
@@ -82,8 +98,9 @@ def del_informe(texto):
 
 
 # --- adendo -------------------------------------------------------------------------------------------------------------
-_NUM = re.compile(r'(?<![\d.,/])(\d{2,3})\.(\d{1,3})(?![\d]|\.\d)')
-_CONT = re.compile(r'[ \t]*(?:(,)|[-–—‑]|\bto\b)[ \t]*(\d{1,3})(?![\d]|\.\d)')                # 117.84, 85, 86 · 80.15–16
+_NUM = re.compile(r'(?<![\d,/])(?<!\d\.)(\d{2,3})\.(\d{1,3})(?![\d]|\.\d)')   # «Rec.123.86» también
+# 117.84, 85, 86 · 80.15–16 · «No. 34.6, 7, …, 31,\n32, 33, …» (la lista sigue en la línea siguiente si allí sigue con «,»)
+_CONT = re.compile(r'[ \t]*(?:(,)|[-–—‑]|\bto\b)[ \t]*(?:(?<=,)[ \t]*\n[ \t]*(?=\d{1,3}[ \t]*,))?(\d{1,3})(?![\d]|\.\d)')
 # entre números de una misma lista; el salto de línea a secas solo une si el número va solo en su línea (en una tabla,
 # «140.230–140.261\n140.262 The recommendation is supported» son dos celdas distintas)
 _SEP = re.compile(r'^\s*(?:(?:[,;&]|\band\b|\bor\b|\([^()\n]{0,60}\))\s*)+$', re.I)
@@ -130,11 +147,13 @@ def _corridas(a, validos):
                 if p0 == p1 and k0 < k1 and all(f'{p0}.{k}' in validos for k in range(k0, k1 + 1)):
                     out[-1] = (i0, fin, ns0 + [f'{p0}.{k}' for k in range(k0 + 1, k1)] + nums); continue
                 out[-1] = (i0, f0, None)   # rango raro: la corrida no vale
-            elif _SEP.match(gap) or (not gap.strip() and ('\n' not in gap or (
+            elif _SEP.match(gap) or (re.fullmatch(r'[ \t]*:[ \t]*\n?[ \t]*', gap) and expl[-1] and re.match(r'[ \t]*[;:,]', a[fin:fin + 3])) \
+                    or (not gap.strip() and ('\n' not in gap or (
                     _solo_en_linea(a, ini, fin) and not expl[-1]
                     and (gap.count('\n') == 1 or not a[a.rfind('\n', 0, ult) + 1:ult].strip())))):
                 # una lista que separa con «;» y acaba la línea sin él («134.104; 134.105\n134.106»): lo de abajo es otra fila;
-                # tras una línea en blanco solo sigue una columna de números sueltos, no «See 186.1\n\n186.14.»
+                # tras una línea en blanco solo sigue una columna de números sueltos, no «See 186.1\n\n186.14.»; un «:» por «;» en
+                # medio de una lista que separa con «;» («24.305; 24.306:\n24.307: 24.308; 24.309», A/HRC/57/6/Add.1) es una errata
                 out[-1] = (i0, fin, ns0 + nums if ns0 is not None else None); expl[-1] = expl[-1] or bool(gap.strip()); ult = ini
                 continue
         out.append((ini, fin, nums)); expl.append(False); ult = ini
@@ -160,11 +179,13 @@ def _cabecera(cl, cierre, fuerte=False):
     («The recommendation is therefore irrelevant and is rejected.» y, en la línea siguiente, la recomendación 124.3)."""
     if re.search(r'(?i)\b(?:this|that|said|the)\s+recommendation\b(?!s)', cl) and not re.search(r'(?i)\bfollowing\b|recommendations?$', cl):
         return False
-    if cierre == '.' and re.search(r'(?i)\b(?:this|that|said|the)\s+recommendation$', cl):
+    if cierre == '.' and re.search(r'(?i)\b(?:(?:this|that|said|the)\s+recommendation|these\s+recommendations)$', cl):
         return False   # «108.8 / Seychelles accepts the recommendation.»: es la respuesta de la fila de antes, no la cabecera de la siguiente
     cl = re.sub(r'\s*\(\d+\)$', '', cl)   # «Recommendations accepted by the Government (22)»: el recuento no cuenta
     if re.match(r'(?:(?:[IVX]+|[A-Z]|\d+)\.\s*)?(?:Recommendations?|RECOMMENDATIONS?)\b', cl) and len(cl) <= 120: return True
-    return cierre == ':' or (len(cl) <= 40 and not fuerte) or bool(re.search(r'(?i)recommendations?(?: nos?\.?| numbers?)?$|\bfollowing\b', cl))
+    # («Following the ratification of ILO Conventions…, Italy has accepted to be reviewed…» no presenta ninguna lista)
+    return cierre == ':' or (len(cl) <= 40 and not fuerte) or bool(re.search(r'(?i)recommendations?(?: nos?\.?| numbers?)?$|\bfollowing\b', cl)
+                                                                      and not re.match(r'(?i)following\s+(?!(?:\w+\s+){0,2}?recommendations?\b)', cl))
 
 
 def _antes(a, desde, ini, fuerte=False):
@@ -173,6 +194,8 @@ def _antes(a, desde, ini, fuerte=False):
     for j in range(len(cls) - 1, max(-1, len(cls) - 4), -1):
         cl, cierre = cls[j]
         if _PASADO.search(cl): return None
+        if re.search(r'(?i)\bexcept\b|\bother\s+than\b|\bwith\s+the\s+exception\b', cl): return None   # «All … enjoy support of
+        # Montenegro, except recommendations number:» presenta las que NO (A/HRC/23/12/Add.1)
         c = clase_cabecera(cl) if _cabecera(cl, cierre, fuerte) else None
         if c:
             if j == 0 and desde and ini - desde <= 600 and not _cabecera(cl, cierre, True):
@@ -249,7 +272,13 @@ def _despues_etiqueta(a, fin, hasta):
     antes = cl[:prim]
     if len(antes) > 300 or re.search(r'\d|\(\w{1,3}\)', antes): return None
     if neg and pos: return 'mixta'
-    return NOTA if neg else APOYADA
+    r = NOTA if neg else APOYADA
+    if cierre.startswith(';'):   # «109.8. Not accepted with respect to ICRMW (see recommendation 2); accepted\nconcerning CPED.»
+        resto = g[m.end():]       # (A/HRC/23/5/Add.1): la frase sigue tras el «;» y dice otra cosa; se lee entera
+        f = re.search(r'\.(?=\s|$)|\n[ \t]*\n', resto)
+        cr = clase(resto[:f.start()] if f else resto[:300])
+        if cr and cr != r: return 'mixta'
+    return r
 
 
 _ETIQUETAS = re.compile(r'(?i)^(?:not\s+|partially\s+|fully\s+)?(?:support|supports|supported|accept|accepts|accepted|note|notes|noted|'
@@ -268,6 +297,31 @@ def _etiqueta_linea(l):
         return 'mixta'   # «Note/Support», «Supported/noted», «Noted and supported»: respuesta mixta, no se elige
     if re.match(r'(?i)^(?:note|notes|take\s+note|taken\s+note)\b', l) and not re.search(r'(?i)support|accept', l): return NOTA
     return clase(l)
+
+
+_SECCION = re.compile(r'''(?mx)
+    ^[ \t]*[A-H]\.[ \t]*\n(?:[ \t]*\n)*[ \t]*
+      ((?:Partially\s+|Not\s+)?(?:Support|Supported|Accept|Accepted|Note|Noted|Reject|Rejected))(?:[ \t]+recommendations?)?[ \t]*$
+  | ^[ \t]*(?:(?:[A-Z]|[IVX]+)\.[ \t]*)?((?:Partially\s+|Not\s+)?(?:Supported|Accepted|Noted|Rejected))[ \t]+recommendations[ \t]*$''')
+
+
+def _secciones(a):
+    """[(pos, respuesta)] de los apartados con etiqueta («A.\\n\\nSupport» … «B.\\n\\nNote», A/HRC/55/10/Add.1; «Supported
+    recommendations» … «Noted recommendations», A/HRC/47/12/Add.1) y de los títulos de apartado de _titulos(): en una tabla, una
+    fila sin etiqueta propia va en el apartado que la contiene."""
+    out = [(m.end(), _etiqueta_linea(m[1] or m[2]) or clase(m[1] or m[2])) for m in _SECCION.finditer(a)]
+    # cualquier otro título enumerado corta el apartado anterior y, si dice cuál es su respuesta, abre el suyo («ІІІ. Not accepted/
+    # Noted recommendations», con la «І» cirílica, en A/HRC/30/10/Add.1; «II. Accepted recommendations that Bulgaria considers…»)
+    for m in re.finditer(r'(?m)^[ \t]*(?:[IVXІ]{1,5}|[A-H])\.[ \t]+([^\n]{3,90})$', a):
+        if any(abs(m.end() - p) <= 2 for p, _ in out): continue
+        c = clase(m[1]) if re.search(r'(?i)recommendation', m[1]) and not re.search(r'(?i),|\bexcept\b', m[1]) else None
+        out.append((m.start(1), c if c in (APOYADA, NOTA) else None))   # («IX. Recommendations 108.25, 108.51 and 108.62»: los números
+        # del título ya van en su apartado; «I. All the recommendations enjoy support of Montenegro,\nexcept …» no es un título)
+    # y un título suelto que habla de recomendaciones («Explanations on some recommendations already supported on 26 January
+    # 2021», debajo de «Noted recommendations» en A/HRC/47/12/Add.1) corta el apartado sin abrir otro
+    for m in re.finditer(r'(?m)(?<=\n\n)[ \t]*[A-Z][^\n.:;]{0,80}\brecommendations?\b[^\n.:;]{0,50}$', a):
+        if not any(abs(m.end() - p) <= 2 for p, _ in out): out.append((m.end(), None))
+    return sorted(out + [x for x in _titulos(a) if _TITULO.match(a, a.rfind('\n', 0, x[0]) + 1)])
 
 
 def _hereda(a, tit, ini):
@@ -298,10 +352,12 @@ _REMISION = re.compile(r'(?i)\b(?:with\s+(?:regard|reference|respect)\s+to|regar
                        r'[^.;:\n]{0,60}?\b(?:noted|mentioned|contained|listed|referred\s+to|supported|accepted)\s+(?:in|under|at)\s*$')
 
 
-def _listas_adendo(a, validos):
+def _listas_adendo(a, validos, textos=None):
     """(corridas, etiqueta detrás de cada una, ¿documento de filas?) sobre el texto ya limpio de páginas."""
-    cs = [c for c in _corridas(a, validos)   # «paragraphs 146.1–146.232 of the draft report», «see 28.175»: remisiones, no respuestas
-          if not re.search(r'(?i)\b(?:paragraphs?|paras?\.?|contained in|see|refer to|cf\.?)\s*$', a[max(0, c[0] - 30):c[0]])
+    cs = _corridas(a, validos)
+    ajenas = {cs[k][0] for k in _ajenas(a, cs, textos)}   # siguen en la lista (marcan dónde acaba la anterior), pero no votan
+    cs = [c for c in cs   # «paragraphs 146.1–146.232 of the draft report», «see 28.175»: remisiones, no respuestas
+          if not re.search(r'(?i)\b(?:paragraphs?|paras?\.?|contained in|see|refer to|cf\.?|(?:(?:see|refer\s+to)(?:\s+also)?\s+(?:the\s+|our\s+)?(?:explanations?|answers?|responses?|repl(?:y|ies)|comments?)|explanations?)\s+(?:on|to|for|in|under)(?:\s+(?:recommendations?|rec\.))?)\s*$', a[max(0, c[0] - 60):c[0]])
           and not _REMISION.search(a[max(0, c[0] - 90):c[0]])]
     desp = [_despues_etiqueta(a, fin, cs[i + 1][0] if i + 1 < len(cs) else len(a)) for i, (_, fin, _) in enumerate(cs)]
     # de filas: casi todas las corridas llevan su etiqueta detrás y la última también (en una lista con cabeceras, la última lista
@@ -318,7 +374,7 @@ def _listas_adendo(a, validos):
                 if len(lineas) >= 2 and sum(1 for l in lineas if _etiqueta_linea(l)) == 1 and not re.search(r'(?i)recommendation', lineas[-1]):
                     desp[i] = _etiqueta_linea(lineas[-1])   # («Partially supported recommendations» es el título de otro apartado)
         desp = _celdas(a, cs, desp)
-    return cs, desp, filas
+    return cs, desp, filas, ajenas
 
 
 def _celdas(a, cs, desp):
@@ -342,18 +398,73 @@ def _cabecera_parcial(g):
     """¿Hay entre la fila anterior y esta una cabecera de lista que dice «en parte» («… supports the following recommendation in part
     and notes the following part:»)?"""
     for cl, cierre in reversed(_clausulas(g)):   # solo cuenta la cabecera más cercana («(a) Accepted- 124 recommendations:» manda
-        if (cierre == ':' or re.search(r'(?i)\bfollowing\b', cl)) and re.search(r'(?i)recommendation|following', cl):
+        if (cierre == ':' and re.search(r'(?i)recommendation|following', cl)) or \
+                re.search(r'(?i)\bthe\s+following\s+(?:\w+\s+){0,3}?(?:recommendations?|parts?)\b', cl):
             # (sobre «… partially accept 11 … as follows:», que va antes; «• Partly supported and partly noted: 3» es un recuento)
+            # un recuento con varias cifras («Of the following 60 recommendations …, 58 have been noted and 2 partially noted …»)
+            # no es la cabecera de la fila; ni «following verification of …» o «we provide the following information», el
+            # comentario de la fila anterior
+            if len(re.findall(r'(?<![\d.])\d+(?![\d.]\d)', cl)) >= 2: return False
             return bool(_PARCIAL.search(cl))
     return False
+
+
+def _bloques(x):
+    """Párrafos (separados por una línea en blanco) no vacíos de `x`."""
+    return [b.strip() for b in re.split(r'\n[ \t]*\n', x) if b.strip()]
+
+
+def _tramo(a, cs, desp, i):
+    """Lo que va detrás de la fila i y es suyo: hasta la fila siguiente, salvo que (1) sea la última de la tabla («135.273 /
+    Accepted» y, después, «5. In total, of the 273 recommendations received, …», o «III. Conclusion»): acaba en el párrafo
+    numerado o el título que sigue; (2) la fila siguiente no lleve etiqueta detrás de su número porque la lleva encima, alineada
+    con su primera línea («94.104 / Accepted / Grenada supports this recommendation. / Noted / Grenada notes this recommendation. /
+    Decriminalize abortion / 94.105»): lo suyo acaba donde empieza la segunda etiqueta."""
+    fin = cs[i][1]
+    hasta = cs[i + 1][0] if i + 1 < len(cs) else len(a)
+    t = a[fin:min(hasta, fin + 4000)]
+    if i + 1 == len(cs):
+        m = re.search(r'\n[ \t]*(?:\d{1,3}\.|[IVX]+\.[ \t]+[A-Z][^\n]*|Conclusions?|Notes?)[ \t]*\n', t)   # («Notes»: las notas al pie)
+        if m: t = t[:m.start()]
+    elif desp[i + 1] is None:
+        lineas = t.split('\n')
+        ets = [k for k, l in enumerate(lineas) if l.strip() and _etiqueta_linea(l)]
+        if len(ets) >= 2 and not [l for l in lineas[:ets[0]] if l.strip(' \t.:;,')]:
+            t = '\n'.join(lineas[:ets[1]])
+    return t
+
+
+def _suelto(a, cs, desp, i):
+    """¿La columna de comentarios de la tabla va suelta? Detrás de la fila i salen tres párrafos o más y las dos filas de antes no
+    llevaban ninguno (solo su etiqueta): el PDF puso juntos los comentarios de varias filas («42.342 / Accepted / 42.343 /
+    Accepted / Already implemented. / Already implemented. / Egypt rejects the erroneous references in this recommendation. / …»).
+    Entonces no se sabe de qué fila es cada comentario, y manda la etiqueta de la fila."""
+    if i < 2: return False
+    def comentarios(k):
+        hasta = cs[k + 1][0] if k + 1 < len(cs) else len(a)
+        bs = _bloques(a[cs[k][1]:hasta].lstrip(' \t.:;,'))
+        return bs[1:] if bs and _etiqueta_linea(bs[0].split('\n')[0]) and '\n' not in bs[0] else bs
+    return len(comentarios(i)) >= 3 and all(desp[k] and not comentarios(k) for k in (i - 1, i - 2))
 
 
 _COMENTARIO = re.compile(r'(?im)^[ \t]*((?:not\s+)?(?:supported|accepted|noted|rejected))[ \t]*[–—:-][ \t]*\S')
 
 
-def _comentario_contrario(g, c):
+def _comentario_contrario(g, c, post=None):
     """¿Alrededor de la fila hay un comentario que empieza por la respuesta contraria («Noted – See Anti-Violence Bill 2023» junto a
-    «122.187 / Support»)? En una tabla descolocada por el salto de página no se sabe de qué fila es: mejor null."""
+    «122.187 / Support»)? En una tabla descolocada por el salto de página no se sabe de qué fila es: mejor null.
+    Con `post` (lo de después de la fila), `g` es lo de antes y no cuentan: la etiqueta de la fila anterior, que abre ese tramo
+    («58.33.\\nNoted – Access to …» antes de «58.34. Supported.»), ni, si la fila lleva su etiqueta justo detrás del número, los
+    trozos «Noted: …» / «Supported: …» de una respuesta por partes que el salto de página dejó encima («Noted: and transitional
+    justice mechanisms» y, debajo, «135.66 / Accepted»): esos son de otra fila, la que dice «Partially accepted»."""
+    if post is not None:
+        pre = g.lstrip(' \t\n.;,')
+        primera = _COMENTARIO.match(pre)
+        if primera: pre = pre[primera.end():]
+        propia = bool(_etiqueta_linea(post.lstrip(' \t\n.;,:').split('\n')[0]))
+        quitar = [m.span() for m in _COMENTARIO.finditer(pre) if propia and ':' in pre[m.end(1):m.end()]]
+        for i, j in reversed(quitar): pre = pre[:i] + '\n' + pre[j:]
+        g = pre + '\n' + post
     vistos = {clase(m[1]) for m in _COMENTARIO.finditer(g)} - {None}
     if {APOYADA, NOTA} <= vistos: return False   # «Supported: … Noted: …»: es el comentario de una fila mixta, la de al lado
     return bool(vistos - {c})
@@ -364,16 +475,52 @@ def _comentario_contrario(g, c):
 _SIGUE_LISTA = re.compile(r'(?s)^[ \t]*:?[^.:]{0,1500};[ \t\n]*(?:and[ \t\n]+)?(?:[•▪◦·●][ \t]*)?(?:\(?[a-z]{1,3}[.)][ \t\n]*)?(?:Recommendations?(?:[ \t]+(?:No|Nos?)\.?)?[ \t]*)?$')
 
 
-def del_adendo(a, validos):
+# el Estado dice que no toma posición («has decided not to consider recommendations 125.86, …», A/HRC/41/6/Add.1, en una «Additional
+# note» que va detrás de «Recommendations not accepted»): ni «apoyada» ni «tomó nota»
+_SIN_POSICION = re.compile(r'(?i)\b(?:not|never)\s+(?:to\s+)?(?:consider|examine|address|respond\s+to|take\s+(?:a\s+|any\s+)?position)\b'
+                           r'|\bdeclin\w*\s+to\s+(?:consider|examine|respond|take)\b|\bno\s+(?:response|position)\s+(?:to|on)\b')
+
+
+_REMITE = re.compile(r'(?i)\b(?:answered|addressed|response|responses|replied|found|covered|explained)\s+(?:is\s+|are\s+)?(?:in|under|at|by)\s*$')
+
+
+def _parrafo(a, ini, fin):
+    """El párrafo del adendo (entre líneas en blanco, hasta 1500 caracteres a cada lado) en el que va la corrida [ini, fin)."""
+    i = a.rfind('\n\n', max(0, ini - 1500), ini)
+    j = a.find('\n\n', fin, fin + 1500)
+    return _limpia(a[i if i >= 0 else max(0, ini - 1500):j if j >= 0 else fin + 1500])
+
+
+def _frase_de(a, ini, fin):
+    """La frase del adendo en la que va la corrida [ini, fin)."""
+    ms = [m.end() for m in _FIN_FRASE.finditer(a, max(0, ini - 400), ini)]
+    m = _FIN_FRASE.search(a, fin)
+    return _limpia(a[ms[-1] if ms else max(0, ini - 400):m.start() if m else len(a)])
+
+
+def _hereda_fila(a, ini, fin, r):
+    """¿Una fila sin etiqueta puede tomar la respuesta `r` del apartado que la contiene? No si la frase en la que va dice que el
+    Estado no toma posición (_SIN_POSICION), ni si dice otra respuesta o «en parte»."""
+    f = _frase_de(a, ini, fin)
+    if _SIN_POSICION.search(f): return False
+    c = clase(f)
+    return c is None or c == r
+
+
+def del_adendo(a, validos, textos=None, pendientes=None):
     """{número: 'apoyada' | 'tomó nota' | 'parcial' | 'mixta'} para los números (de `validos`) que el adendo nombra con su respuesta.
     Dos maneras de escribirlo: cabecera y lista («Accepted: 125.6, 125.8 …») o filas (número y etiqueta detrás); se decide para
-    todo el documento. Un número que sale con dos respuestas distintas queda «mixta»."""
+    todo el documento. Un número que sale con dos respuestas distintas queda «mixta». Con `pendientes` (los números que el
+    informe deja para el adendo), una fila sin etiqueta solo toma la del apartado que la contiene si es de esos: en A/HRC/47/12/Add.1
+    las «Explanations on some recommendations already supported» van debajo de «Noted recommendations» y no son de ese apartado."""
     if not a: return {}
     a = _paginas(a)
-    cs, desp, filas = _listas_adendo(a, validos)
-    votos, tit, previo = {}, _titulos(a), None
+    cs, desp, filas, ajenas = _listas_adendo(a, validos, textos)
+    votos, tit, previo, secs, sueltas, propia = {}, _titulos(a), None, (_secciones(a) if filas else []), {}, {}
     for i, (ini, fin, nums) in enumerate(cs):
         desde = cs[i - 1][1] if i else 0
+        if ini in ajenas:   # el adendo copia otra recomendación con este número (Senegal, A/HRC/25/4/Add.1): no es esta
+            previo = None; continue
         if filas:   # en un documento de filas, lo de antes es la fila anterior: solo vale una cabecera clara («… the following:»)
             c, cpre = desp[i], _antes(a, desde, ini, fuerte=True)
             if c and cpre and c != cpre: c = 'mixta'
@@ -381,11 +528,18 @@ def del_adendo(a, validos):
             if c is None and previo in (APOYADA, NOTA) and _SIGUE_LISTA.match(a[desde:ini]):
                 c = previo   # lista bajo una cabecera («takes note of the following eight recommendations:»), sin etiqueta por fila
             previo = c if not desp[i] else None   # solo sigue una lista que abrió una cabecera, no la etiqueta de una fila
+            if c is None:   # fila sin etiqueta («140.40–140.43» bajo «A. Support»): la del apartado que la contiene; no si son
+                ant = [(p, r) for p, r in secs if p <= ini]   # dos títulos de columna seguidos («Accepted recommendations» /
+                if ant and ant[-1][1] in (APOYADA, NOTA) and (pendientes is None or set(nums) <= pendientes) and _hereda_fila(a, ini, fin, ant[-1][1]) and not (   # «Noted recommendations», A/HRC/58/14/Add.1)
+                        len(ant) >= 2 and ant[-2][1] in (APOYADA, NOTA) and ant[-2][1] != ant[-1][1] and ant[-1][0] - ant[-2][0] <= 80):
+                    c = ant[-1][1]
             if c in (APOYADA, NOTA):
                 hasta = cs[i + 1][0] if i + 1 < len(cs) else len(a)
                 if _cabecera_parcial(a[desde:ini]): c = 'parcial'   # «Nepal supports the following recommendation in part and notes…:»
-                elif _comentario_contrario(a[desde:ini] + '\n' + a[fin:hasta], c): c = 'mixta'
-                elif len(nums) <= 2 and _frases_sobre(a[fin:min(hasta, fin + 4000)]) - {c}: c = 'mixta'   # «121.13 / Noted / The Lao PDR accepts this
+                elif desp[i] and _suelto(a, cs, desp, i):
+                    pass   # la columna de comentarios va aparte (varios seguidos tras filas sin ninguno): manda la etiqueta de la fila
+                elif _comentario_contrario(a[desde:ini], c, _tramo(a, cs, desp, i)): c = 'mixta'
+                elif len(nums) <= 2 and _frases_sobre(_tramo(a, cs, desp, i)) - {c}: c = 'mixta'   # «121.13 / Noted / The Lao PDR accepts this
                     # recommendation in part.»: la etiqueta y su comentario no dicen lo mismo
         else:
             c, cpost = _antes(a, desde, ini), _despues_verbo(a, fin)
@@ -399,62 +553,206 @@ def del_adendo(a, validos):
             if c is None and previo in (APOYADA, NOTA) and _SIGUE_LISTA.match(a[desde:ini]):
                 c = previo   # «…following recommendations: Recommendation 143.3: Review … (Germany); Recommendation 143.4: …»
             previo = c
+        if c is None and len(nums) == 1 and re.search(r'(?i)(?:\A|\n)[ \t]*(?:•[ \t]*)?(?:recommendations?[ \t]+(?:no\.?[ \t]*)?)?\Z', a[max(0, ini - 40):ini]):
+            # «128.33: The recommendation is in conflict with South Sudan customs … cannot be supported.», «Recommendation 96.26 …
+            # / 11. … / Samoa notes this recommendation on the grounds…»: el número abre su apartado y, hasta el siguiente, todo lo que
+            # se dice de «this recommendation» dice lo mismo
+            hasta = cs[i + 1][0] if i + 1 < len(cs) else len(a)
+            tr = _tramo(a, cs, desp, i) if filas else a[fin:min(hasta, fin + 4000)]
+            # hasta el título del apartado siguiente («II.», «B.», o un subtítulo suelto: «Non-discrimination»)
+            tr = re.split(r'\n[ \t]*(?:[IVX]+|[A-H])\.[ \t]*(?=\n|[A-Z])|(?<=[.\n])[ \t]*\n[ \t]*[A-Z][^\d.:;()\n]{2,60}[ \t]*\n(?=[ \t]*[A-Z\d(])', tr[:2500])[0]
+            fs = _frases_sobre(tr, estricto=True)
+            prim = next((l.strip() for l in tr.split('\n') if l.strip(' \t.:;–—-')), '')
+            if len(prim.split()) <= 4 and not prim.endswith('.'): fs = set()   # «84.57 / Taken into consideration»: una etiqueta que no se entiende
+            if fs and not any(_etiqueta_linea(l) for l in tr.split('\n') if 0 < len(l.split()) <= 3):
+                sueltas.setdefault(nums[0], set()).update(fs)   # (si hay una etiqueta de fila, «Accepted», manda ella y aquí no se lee nada); solo
+                propia.setdefault(nums[0], set()).add(ini)      # vale si el número no sale en ninguna otra lista con respuesta
+            continue
         if c is None: continue
         for n in nums: votos.setdefault(n, set()).add(c)
+    # si el adendo nombra el número en otro sitio (no en una remisión: «Answered in 118.15.»), el párrafo de allí tiene que decir lo
+    # mismo con todas las letras: «Recommendation 96.2 / … Samoa accepts this recommendation» y, más abajo, «Recommendations 96.1,
+    # 96.2, … / … Samoa notes this recommendation» (A/HRC/33/6/Add.1, una recomendación de varios tratados) no se elige; «… did not
+    # enjoy its support and therefore are noted … (128.30, 128.33, …)» y «128.33: … cannot be supported» (A/HRC/34/13/Add.1) sí
+    otras = {}
+    for ini, fin, ns in cs:
+        if _REMITE.search(a[max(0, ini - 40):ini]): continue
+        for n in ns:
+            if n in sueltas and ini not in propia.get(n, ()): otras.setdefault(n, []).append((ini, fin))
+    for n, v in sueltas.items():
+        if n in votos or len(v) != 1 or next(iter(v)) not in (APOYADA, NOTA): continue
+        if all(clase(_parrafo(a, ini, fin), estricto=True) == next(iter(v)) for ini, fin in otras.get(n, [])): votos[n] = v
     return {n: (next(iter(v)) if len(v) == 1 else 'mixta') for n, v in votos.items()}
 
 
-def _frases_sobre(x):
+_VERBO = re.compile(r'(?i)\b(?:accept\w*|support\w*|approv\w*|not(?:e|es|ed)\b|reject\w*|t(?:ake|akes|aken|ook)\s+(?:\w+\s+)?note)')
+_SOBRE = re.compile(r'(?i)\b(?:this|the|these|that|said|both)\s+(?:(\w+)\s+)?recommendations?\b')
+# un recuento («In total, of the 273 recommendations received, 226 were accepted … 10 were partially accepted», «The 17
+# recommendations which are ‘Noted’», «all recommendations which received TGoNU approval») no habla de ninguna en concreto
+_RECUENTO = re.compile(r'(?i)\b(?!(?:19|20)\d\d\b)\d+\s+(?:of\s+the\s+\d+\s+)?(?:recommendations|were|are|have|had)\b|\bthe\s+\d+\s+recommendations\b'
+                       r'|\b(?:all|most|some|many|other)\s+(?:of\s+)?(?:the\s+)?recommendations\b'   # («does not support all the recommendations relating to LGBTQ persons», A/HRC/63/5/Add.1)
+                       r'|\brecommendations\s+(?:formulated|made|received)\s+(?:\w+\s+){0,3}?during\b'   # título de otro apartado
+                       r'|\bthe\s+recommendations\s+(?:that|which)\b'
+                       r'|\b(?:noted|mentioned)\s+(?:above|earlier|before|previously)\b')   # «noted above» = mencionada, no «tomó nota»   # «The recommendations that were “noted”, should not imply…»
+
+
+def _frases_sobre(x, estricto=False):
     """Respuestas que dicen las frases de `x` que hablan de «this/the recommendation» («This recommendation is rejected.», «The Lao
-    PDR accepts this recommendation in part.»), sin las cabeceras de otra lista («… the following recommendations:»)."""
-    return {clase(_limpia(f)) for f in re.split(r'(?<=[.;:])\s+', x)
-            if re.search(r'(?i)\b(?:this|the|these|that|said|both)\s+(?:\w+\s+)?recommendations?\b', f)
-            and not _LISTA_SIGUE.search(f) and not f.rstrip().endswith(':')} - {None, 'mixta'}
+    PDR accepts this recommendation in part.»), sin las cabeceras de otra lista («… the following recommendations:», o la frase sin
+    cerrar que va justo antes de los números siguientes: «Azerbaijan rejects the recommendations» 110.1, …) ni los recuentos. Solo
+    cuenta lo que se dice junto a «the recommendation» (diez palabras antes, catorce después): en «The accepted recommendations will be
+    implemented…» no hay respuesta a esa recomendación. «En parte» solo cuenta si la frase dice también qué hace con ella («accepts
+    this recommendation in part»; no «aligns itself with the first part of the recommendation»). Tampoco las que hablan de otro
+    ciclo («the recommendations posed during the second cycle of review and enjoy the support of Turkey»).
+    `estricto` (para sacar de ahí una respuesta, no solo para ponerla en duda): seis palabras a cada lado («… as well as the
+    recommendations and guidelines of the European Asylum Support Office» no dice nada), salvo que la frase empiece por «The
+    recommendation …» («The recommendation is in conflict with South Sudan customs and beliefs as such cannot be supported.»)."""
+    fr = re.split(r'(?<=[.;:])\s+|\n[ \t]*\n', x)
+    if fr and not re.search(r'[.;:!?]\s*$', x) and re.search(
+            r'(?i)(?:recommendations?(?:\s+(?:nos?\.?|numbers?))?|\b(?:are|is|include|includes|namely|in|under|at|to|of|on))\s*$', fr[-1]):
+        fr = fr[:-1]   # («With regard to the recommendations noted above in» 123.28: lleva al número siguiente)
+    out = set()
+    for f in fr:
+        f = _limpia(_POS_ANTERIOR.sub(' ', f))   # «… from immediately accepting to note the recommendation»: vale la de ahora
+        if not _SOBRE.search(f) or _LISTA_SIGUE.search(f) or f.endswith(':') or _RECUENTO.search(f) or _PASADO.search(f): continue
+        if _PARCIAL.search(f):
+            if _VERBO.search(f): out.add('parcial')
+            continue
+        cf = clase(f, estricto)
+        if cf == 'mixta': continue   # «Noted – Ethiopia needs thorough deliberation … to accept the recommendation»
+        if estricto and re.match(r'(?i)(?:this|the|these)\s+recommendations?\b', f):
+            out.add(cf); continue
+        antes, despues = (6, 6) if estricto else (10, 14)
+        for m in _SOBRE.finditer(f):
+            nucleo = m[0] if not m[1] or not re.fullmatch(r'(?i)accepted|supported|noted|rejected', m[1]) else m[0].replace(m[1] + ' ', '')
+            ventana = ' '.join(f[:m.start()].split()[-antes:] + [nucleo] + f[m.end():].split()[:despues])
+            cv = clase(ventana, estricto)
+            out.add(cv)
+            if cv in (APOYADA, NOTA) and cf in (APOYADA, NOTA) and cf != cv: out.add(cf)   # la ventana cortó una negación: las dos
+    return out - {None, 'mixta'}
 
 
-_CAMBIO = re.compile(r'''(?ix)\bchang\w*\s+(?:its|the|our|their)\s+position | \bno\s+longer\b | \bwithdr[ae]w\w* | \breconsider\w*
+
+# un cambio de posición escrito con todas las letras: si además el adendo dice cuál es la final, vale esa (no «withdrawal of
+# reservation», que es el tema de la recomendación, ni «not in a position to», que solo dice la respuesta)
+_CAMBIO_EXPL = re.compile(r'''(?ix)\bchang\w*\s+(?:its|the|our|their)\s+position | \breconsider\w*
+  | \b(?:initially|previously|originally)\b[^.;]{0,120}\b(?:is|are)\s+now\b | \bmisplace\w*
+  | \bmov(?:e|ed|ing)\s+(?:the\s+)?recommendations?\b[^.;]{0,80}\bcategory\b''')
+# la posición de antes, que se quita de la frase para leer la final: «recommendation 146.67, which was initially supported, is now
+# noted», «change its position on this recommendation from immediately accepting to note»
+_POS_ANTERIOR = re.compile(r'(?i),?\s*which\s+(?:was|were|had\s+been)\s+(?:initially|previously|originally|first)\s+\w+,?'
+                           r'|\bfrom\s+(?:immediately\s+)?(?:accepting|supporting|noting)\s+(?=to\b)')
+_CATEGORIA = re.compile(r'(?i)\brecommendations?\s+(\d{2,3}\.\d{1,3})\s+(?:in)?to\s+the\s+category\s+of\s+(supported|accepted|noted)\b')
+_EXCEPTO = re.compile(r'(?i)\b(?:except|other\s+than|with\s+the\s+exception\s+of|apart\s+from|save\s+for)\s*(?:recommendations?\s*)?$')
+_CAMBIO = re.compile(r'''(?ix)\bchang\w*\s+(?:its|the|our|their)\s+position | \bno\s+longer\b
+  | \bwithdr[ae]w\w*\s+(?:its\s+|our\s+|the\s+)?(?:support|acceptance|position|recommendation) | \breconsider\w*
   | \bafter\s+(?:further\s+|careful\s+)?consideration | \b(?:initially|previously|originally|earlier)\b[^.;]{0,120}\bnow\b
   | \bmisplace\w* | \bmov(?:e|ed|ing)\s+(?:the\s+)?recommendations?\b | \bnot\s+in\s+a\s+position\s+to\b''')
 _FIN_FRASE = re.compile(r'[.;:!?](?=\s)|\n[ \t]*\n')
 
 
-def contradice_informe(a, inf, validos):
-    """Números cuya respuesta del informe el adendo pone en duda: una frase del adendo que los nombra dice la respuesta contraria
-    o «en parte» («Thailand is not in a position to support recommendation 51.1», «With regard to 128.54, … Sri Lanka is able to
-    support this recommendation») o habla de un cambio de posición («initially supported, is now noted», «Upon reconsideration…»).
-    Es solo una red de seguridad: el número pasa a null, no se toma la respuesta nueva."""
-    if not a: return set()
-    a, out = _paginas(a), set()
+def contradice_informe(a, inf, validos, textos=None):
+    """Números cuya respuesta del informe el adendo pone en duda (un conjunto). Ver revisa_informe()."""
+    return set(revisa_informe(a, inf, validos, textos)[0])
+
+
+def revisa_informe(a, inf, validos, textos=None):
+    """(duda, final): `duda`, los números cuya respuesta del informe el adendo pone en duda: una frase del adendo que los nombra
+    dice la respuesta contraria o «en parte» («Thailand is not in a position to support recommendation 51.1», «With regard to
+    128.54, … Sri Lanka is able to support this recommendation»), o habla de un cambio de posición («initially supported, is now
+    noted», «Upon reconsideration…»). `final`: de esos, los que el adendo cambia de forma explícita («… which was initially
+    supported, is now noted», «decided to move the recommendation 117.18 into the category of supported recommendations») y cuya
+    posición final dice con todas las letras, siempre la misma, en todas las frases que los nombran: {número: respuesta}.
+    No es duda que el adendo comente un número sin decir otra cosa («Recommendations 97.76 to 97.81 on the prohibition of corporal
+    punishment of children» y la explicación), ni «accepts … all recommendations except 110.1, 110.2…» (habla de las demás), ni
+    «Recommendations 119.18, 119.19 and the first part of 120.20» (la parte es de la 120.20)."""
+    if not a: return {}, {}
+    a, duda, vistas, expl, malas = _paginas(a), {}, {}, set(), set()
     cs = _corridas(a, validos)
-    for ini, fin, nums in cs:
-        if not any(inf.get(n) in (APOYADA, NOTA) for n in nums): continue
+    ajenas = _ajenas(a, cs, textos)
+    for k, (ini, fin, nums) in enumerate(cs):
+        if k in ajenas or not any(inf.get(n) in (APOYADA, NOTA) for n in nums): continue
         ms = [m.end() for m in _FIN_FRASE.finditer(a, max(0, ini - 400), ini)]
         i0 = ms[-1] if ms else max(0, ini - 400)
         m = _FIN_FRASE.search(a, fin)
         f0 = m.start() if m else len(a)
         sl = re.search(r'\n[ \t]*(?=[A-Z•])', a[fin:f0])   # la frase acaba donde empieza otra línea en mayúscula («91.10\nNoted the…»)
         frase = _limpia(a[i0:fin + sl.start()] if sl else a[i0:f0])
-        c, cambio = clase(frase), bool(_CAMBIO.search(frase))
+        # «… and the first part of 120.20»: esa parte es de otro número
+        frase = re.sub(r'(?i)\b(?:the\s+)?(?:first|second|third|other|one|some)\s+parts?\s+of\s+(?:recommendations?\s+)?(\d{2,3}\.\d{1,3})',
+                       lambda x: x[0] if x[1] in nums else ' ', frase)
+        excepto = bool(_EXCEPTO.search(_limpia(a[i0:ini])))
+        c, cambio = (None if excepto else clase(frase)), bool(_CAMBIO.search(frase))
+        cf = None if excepto else clase(_POS_ANTERIOR.sub(' ', frase))
+        cat = {x[1]: (APOYADA if x[2].lower() in ('supported', 'accepted') else NOTA) for x in _CATEGORIA.finditer(frase)}
+        p0 = a.rfind('\n\n', 0, ini); p1 = a.find('\n\n', fin)
+        if _CAMBIO_EXPL.search(a[max(p0, ini - 1500, 0):min(p1 if p1 >= 0 else len(a), fin + 1500)]): expl.update(nums)
         # lo que el adendo explica detrás del número, hasta el número siguiente: «124.13 Eliminate the caste system … (Romania)
         # / 18. In Senegal, … This recommendation is rejected.»
         sig = next((x[0] for x in cs if x[0] >= fin), len(a))
         detras = _frases_sobre(a[fin:min(sig, fin + 4000)])
+        et = _despues_etiqueta(a, fin, sig)   # «127.6: Not accepted» detrás del número (no la cabecera de la lista siguiente:
+        if et and not re.search(r'(?i)following|recommendations?\b|\bbelow\b', a[fin:sig].strip(' \t\n.:;,').split('\n')[0]) \
+                and not re.fullmatch(r'(?i)[\s,]*(?:and\s+)?(?:the\s+)?(?:first|second|third|other|one|some)\s+parts?\s+of\s*(?:recommendations?\s*)?', a[fin:sig]):
+            detras.add(et)                    # «91.10\nNoted the following recommendations:»)
         for n in nums:
             ri = inf.get(n)
-            if ri in (APOYADA, NOTA) and (cambio or c == 'parcial' or c in (APOYADA, NOTA) and c != ri or detras - {ri}): out.add(n)
+            if ri in (APOYADA, NOTA) and (cambio or c == 'parcial' or c in (APOYADA, NOTA) and c != ri or detras - {ri}): duda[n] = True
+            for x in ({cat.get(n, cf)} | detras) - {None}:
+                if x in (APOYADA, NOTA): vistas.setdefault(n, set()).add(x)
+                else: malas.add(n)   # «en parte» o las dos cosas
+    final = {n: next(iter(v)) for n, v in vistas.items()
+             if n in duda and n in expl and n not in malas and len(v) == 1 and next(iter(v)) != inf.get(n)}
+    return duda, final
+
+
+def textos_informe(t):
+    """{número: texto de la recomendación en el informe} (para ver si el adendo, al copiarla, habla de la misma)."""
+    s = R.seccion(t or '')
+    if s is None: return {}
+    ls, _ = R.listas(s)
+    pos = sorted((p, f'{pre}.{k}') for pre, _, ks in ls for k, p in ks)
+    return {n: s[p:pos[j + 1][0] if j + 1 < len(pos) else p + 800] for j, (p, n) in enumerate(pos)}
+
+
+def _palabras(x): return {w for w in re.findall(r'[a-z]{5,}', x.lower())}
+
+
+def _ajenas(a, cs, textos):
+    """Índices de las corridas en las que el adendo copia, detrás del número, el texto de OTRA recomendación: el adendo de Senegal
+    (A/HRC/25/4/Add.1) numera «124.13 Eliminate the caste system … (Romania)» la que en el informe es la 125.13; su «124.13» no
+    es la 124.13 del informe y lo que diga de ella no vale. Solo cuenta un número suelto seguido de texto de recomendación (no de
+    una etiqueta ni de una respuesta) que no comparte casi ninguna palabra con el texto del informe y sí casi todas con el de otra."""
+    if not textos: return set()
+    out, pal = set(), {n: _palabras(x) for n, x in textos.items()}
+    for k, (ini, fin, nums) in enumerate(cs):
+        if len(nums) != 1 or nums[0] not in textos: continue
+        if a[a.rfind('\n', 0, ini) + 1:ini].strip(' \t•'): continue   # el número abre la línea
+        # el texto copiado acaba en la línea en blanco, en el número de párrafo («9.») o con el Estado que la hizo («(Uruguay)»)
+        q = re.split(r'\n[ \t]*\n|\n[ \t]*\d{1,3}\.[ \t]*\n|\)[ \t]*;?[ \t]*\n', a[fin:fin + 400])[0]
+        q = re.sub(r'^[\s.:–—\-]+', '', q)
+        if not re.match(r'[A-Z][a-z]', q) or _POS_ESTRICTO.search(q[:80]) or _NEG.search(q[:80]) or _etiqueta_linea(q.split('\n')[0]):
+            continue   # «Supported», «Greece cannot accept this recommendation»: es la respuesta, no el texto copiado
+        w = list(dict.fromkeys(re.findall(r'[a-z]{5,}', q.lower())))[:12]
+        if len(w) < 5: continue
+        def parecido(n): return sum(1 for x in w if x in pal[n]) / len(w)
+        if parecido(nums[0]) < 0.25 and max(parecido(n) for n in pal if n != nums[0]) >= 0.75: out.add(k)   # es otra, y se ve cuál
     return out
 
 
 def respuestas(texto_informe_en, texto_adendo_en, numeros):
-    """{número: {'r': 'apoyada'|'tomó nota'|None, 'fuente': 'informe'|'adendo'|None}} para TODOS los `numeros`."""
-    inf = del_informe(texto_informe_en or '')
-    add = del_adendo(texto_adendo_en or '', set(numeros))
-    duda = contradice_informe(texto_adendo_en or '', inf, set(numeros))
+    """{número: {'r': 'apoyada'|'tomó nota'|None, 'fuente': 'informe'|'adendo'|None}} para TODOS los `numeros`.
+    Si el informe y el adendo no dicen lo mismo, null; salvo que el adendo cambie la posición de forma explícita y diga cuál es la
+    final (revisa_informe()): entonces vale esa."""
+    inf, textos = del_informe(texto_informe_en or ''), textos_informe(texto_informe_en)
+    add = del_adendo(texto_adendo_en or '', set(numeros), textos, {n for n in numeros if inf.get(n) not in (APOYADA, NOTA)})
+    duda, final = revisa_informe(texto_adendo_en or '', inf, set(numeros), textos)
     salida = {}
     for n in numeros:
         ri, ra = inf.get(n), add.get(n)
         if ri in (APOYADA, NOTA):
-            if (ra is not None and ra != ri) or n in duda: salida[n] = {'r': None, 'fuente': None}   # el adendo dice otra cosa: no se elige
+            if n in final and ra in (None, final[n]): salida[n] = {'r': final[n], 'fuente': 'adendo'}
+            elif (ra is not None and ra != ri) or n in duda: salida[n] = {'r': None, 'fuente': None}   # el adendo dice otra cosa: no se elige
             else: salida[n] = {'r': ri, 'fuente': 'informe'}
         elif ra in (APOYADA, NOTA): salida[n] = {'r': ra, 'fuente': 'adendo'}
         else: salida[n] = {'r': None, 'fuente': None}
