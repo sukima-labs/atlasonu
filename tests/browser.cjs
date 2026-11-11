@@ -293,6 +293,23 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     ok(vp.name + ': «Novedades detectadas» llega plegada y se abre al tocar', !(await page.locator('#novedadesBox').evaluate(e => e.open)) && !(await page.isVisible('#novedades')) && (await page.click('#novedadesBox>summary'), await page.isVisible('#novedades')));
     const sinHueco = await page.evaluate(() => { const k = [...document.querySelectorAll('#inicio>.panel')].filter(e => e.offsetHeight); return k.every((e, i) => { if (!i) return true; const p = k[i - 1]; return e.getBoundingClientRect().top - p.getBoundingClientRect().bottom >= 10 || p.nextElementSibling !== e; }); });
     ok(vp.name + ': las cajas de la portada no van pegadas unas a otras', sinHueco);
+    // #199: en TODAS las pantallas, dos cajas (borde o fondo) una encima de otra o una junto a otra deben dejar al menos 8 px
+    const secciones = await page.evaluate(() => [...document.querySelectorAll('section.section')].map(s => s.id));
+    const pegadas = [];
+    for (const id of secciones) {
+      await page.evaluate(i => showPage(i), id); await page.waitForTimeout(120);
+      const malas = await page.evaluate(sid => { const out = [], s = document.getElementById(sid); if (!s || s.offsetParent === null) return out;
+        const caja = e => { const c = getComputedStyle(e); return (c.borderTopWidth !== '0px' && c.borderTopStyle !== 'none') || (c.backgroundColor !== 'rgba(0, 0, 0, 0)' && e.getBoundingClientRect().height > 30); };
+        const fila = /^(TH|TD|TR|BUTTON|A|SPAN|OPTION)$/;
+        s.querySelectorAll('*').forEach(e => { const n = e.nextElementSibling; if (!n || fila.test(e.tagName) || fila.test(n.tagName) || /\b(kv|btn|chip|tag)\b/.test(e.className + ' ' + n.className) || !caja(e) || !caja(n)) return;
+          const a = e.getBoundingClientRect(), c = n.getBoundingClientRect(); if (a.height < 20 || c.height < 20 || a.width < 50) return;
+          const dy = c.top - a.bottom, dx = c.left - a.right;
+          if ((Math.abs(a.left - c.left) < 4 && dy < 8 && dy > -1) || (Math.abs(a.top - c.top) < 4 && dx < 8 && dx > -1 && dx < c.width)) out.push(sid + ': ' + e.tagName + '.' + e.className + ' → ' + n.tagName + '.' + n.className); });
+        return out; }, id);
+      pegadas.push(...malas);
+    }
+    ok(vp.name + ': en ninguna pantalla hay cajas pegadas (' + secciones.length + ' revisadas)' + (pegadas.length ? ' — ' + [...new Set(pegadas)].slice(0, 5).join(' | ') : ''), pegadas.length === 0);
+    await page.evaluate(() => showPage('inicio'));
     ok(vp.name + ': últimas resoluciones visibles', (await page.locator('#recientes .listline').count()) === 8);
     await page.evaluate(() => showPage('paises')); await page.evaluate(() => window.scrollTo(0, 1500));
     await page.evaluate(() => showPage('seleccion')); await page.waitForTimeout(150);
