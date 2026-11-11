@@ -505,6 +505,21 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
       const enteros = sinTraducir;
       if (enteros.length) console.error('idiomas: sin traducir', JSON.stringify(enteros));
       ok('idiomas: en inglés no queda texto de interfaz sin traducir en Panorama, Mandatos, una ficha de país, Tratados, Relatores, Mapa y Cómo funciona', enteros.length === 0);
+      // T74: «Cómo leer un código» entera en inglés: tutorial, despiezador (con códigos de todo tipo), tabla y repaso. Se ignoran los
+      // textos que son solo códigos (A/HRC/{n}/{n}, <code>Add.{n}</code>): no hay nada que traducir.
+      { await pi.evaluate("showPage('codigos')"); await pi.waitForTimeout(300);
+        const antes = await pi.evaluate(() => ATLAS_IDIOMA.pendientes());
+        await pi.evaluate(() => { for (const v of ['tutorial', 'tabla', 'repaso']) codVista(v); for (let i = 0; i < COD_QUIZ.length; i++) { codQz = i; codRepaso(true); }
+          for (const g of Object.keys(COD_GRUPOS)) { codVista('tabla'); codGrupo = g; codTabla(); } codGrupo = ''; $('codFiltro').value = 'zzzzqq'; codTabla(); $('codFiltro').value = ''; codTabla();
+          codVista('despiezador'); for (const c of ['A/RES/217 A (III)', 'S/RES/1325 (2000)', 'A/HRC/RES/5/2', 'CCPR/C/GC/36', 'A/HRC/WG.6/41/IND/1', 'A/CONF.157/23', 'E/CN.4/2005/10/Add.1/Rev.1', 'ST/SG/AC.1/2', 'CAT/C/GC/4', 'HRI/GEN/1/Rev.9', 'A/C.3/78/L.12', 'CRC/C/GBR/CO/6', 'S/PV.8000', 'A/78/PV.5', 'XYZ/foo', 'A/HRC/NGO/12', 'A/HRC/RES/54/6/Corr.1', 'A/RES/S-27/2', 'E/2023/45', 'A/AC.109/5', 'UNEP/GC/1', 'A/HRC/52/CRP.3', 'A/HRC/52/INF/2', 'CRPD/C/GC/1', 'CED/C/ARG/Q/1', 'CERD/C/IND/CO/19-21', 'T/RES/1', 'SG/SM/123', 'ST/SGB/2003/13', 'E/CN.4/RES/2005/10', 'A/HRC/DEC/5/101', 'A/RES/3379 (XXX)']) { $('codQ').value = c; codDespiezador(); }
+          $('codQ').value = ''; codDespiezador(); });
+        await pi.waitForTimeout(300);
+        const fuenteCod = require('fs').readFileSync(path.resolve(__dirname, '..', 'index.html'), 'utf8').replace(/&amp;/g, '&').replace(/\s+/g, ' '); // lo que ya salió en inglés al volver a pasar el traductor no cuenta: solo lo que está escrito en español en la página
+        const nuevos = (await pi.evaluate(() => ATLAS_IDIOMA.pendientes())).filter(k => !antes.includes(k)).map(k => k.replace(/<[^>]+>/g, '')).filter(t => /[a-zà-ÿ]{4,}/.test(t.replace(/\{n\}/g, '')) && /\s/.test(t.trim()) || /^[A-ZÁÉÍÓÚa-zà-ÿ]{5,}$/.test(t.trim())).filter(t => t.split('{n}').map(x => x.trim()).filter(x => /[A-Za-zÀ-ÿ]{2}/.test(x)).every(x => fuenteCod.includes(x))).filter(t => !/^(presidential statement|conference room paper|ad hoc committee|information series|General Committee)$/.test(t.trim())); // términos en inglés que la propia explicación cita en cursiva
+        if (nuevos.length) console.error('idiomas: Códigos sin traducir', JSON.stringify(nuevos));
+        ok('idiomas: «Cómo leer un código» no deja texto sin traducir en inglés (T74)', nuevos.length === 0);
+        ok('idiomas: ya no avisa de que la explicación solo está en español (T74)', await pi.evaluate(() => !/solo en español/.test(document.getElementById('codigos').innerText)));
+      }
       // T67: frases con el nombre del país o la fecha de los datos dentro, y fechas cortas de la ficha, traducidas enteras
       await pi.evaluate("irPais('COL')"); await pi.waitForTimeout(1500);
       const f67 = await pi.evaluate(() => document.querySelector('#paises').innerText);
