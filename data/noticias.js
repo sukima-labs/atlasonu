@@ -1,8 +1,16 @@
 window.NOTICIAS={
  "fuente": "Noticias ONU (news.un.org)",
- "actualizado": "2026-11-11T02:54:47Z",
+ "actualizado": "2026-11-11T18:51:37Z",
  "temas": {
   "todas": [
+   {
+    "titulo": "El Corredor Seco: “Cuando no hay agua, ahí termina toda la inteligencia”",
+    "fecha": "2026-11-11",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542151",
+    "resumen": "Con El Niño fortaleciéndose, la sequía vuelve a amenazar el Corredor Seco de Centroamérica. Anastacio y Marta lideran iniciativas que ayudan a sus comunidades a afrontar la sequía y evitar que más familias tengan que marcharse.",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Graphics%20Library/2026/11/Anastacio-WFPHonduras-1.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
    {
     "titulo": "COP31: la transición energética toma el protagonismo más allá de los combustibles fósiles",
     "fecha": "2026-11-10",
@@ -154,14 +162,6 @@ window.NOTICIAS={
     "resumen": "La cumbre de biodiversidad de la ONU concluyó en Armenia con una hoja de ruta para acelerar el cumplimiento de los objetivos mundiales de protección de la naturaleza antes de 2030. Los países anunciaron cerca de 2000 millones de dólares en nueva financiación…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/10/17-10-26-ONUNews_Fungi01.png/image560x340cropped.jpg",
     "destacada": false
-   },
-   {
-    "titulo": "La IA está cambiando cómo pensamos: ¿Nos daremos cuenta a tiempo?",
-    "fecha": "2026-11-01",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542129",
-    "resumen": "Es muy tentador ahorrarle al cerebro el pensar del todo\". Solo entre el cinco y el diez por ciento de los trabajadores usa la IA para liberar capacidad mental; la mayoría externaliza también el análisis y la decisión. \"Mantén tu cerebro en el juego\", pide un…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/06/29-06-2026-AdobeStock_AI_01.jpg/image560x340cropped.jpg",
-    "destacada": false
    }
   ],
   "derechos": [
@@ -308,6 +308,13 @@ window.NOTICIAS={
   ],
   "americas": [
    {
+    "titulo": "El Corredor Seco: “Cuando no hay agua, ahí termina toda la inteligencia”",
+    "fecha": "2026-11-11",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542151",
+    "resumen": "Con El Niño fortaleciéndose, la sequía vuelve a amenazar el Corredor Seco de Centroamérica. Anastacio y Marta lideran iniciativas que ayudan a sus comunidades a afrontar la sequía y evitar que más familias tengan que marcharse.",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Graphics%20Library/2026/11/Anastacio-WFPHonduras-1.jpg/image560x340cropped.jpg"
+   },
+   {
     "titulo": "La joven ingeniera nuclear que salió de la periferia de Brasil para conquistar el mundo",
     "fecha": "2026-11-07",
     "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542146",
@@ -439,13 +446,6 @@ window.NOTICIAS={
     "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542020",
     "resumen": "El fenómeno de El Niño de 2026-2027 podría convertirse en uno de los más intensos de los que se tiene constancia. En América Latina y el Caribe, unos 41 millones de niños y niñas vivirán entre octubre y diciembre en zonas donde se esperan lluvias muy por…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/10/06-10-2026-WFP-Honduras-drought-02.jpg/image560x340cropped.jpg"
-   },
-   {
-    "titulo": "La profesora de robótica que les enseña a los niños de una región de Colombia marcada por la guerra a soñar con la paz",
-    "fecha": "2026-10-03",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542007",
-    "resumen": "Desde una pequeña escuela creada en 2021 en San José del Guaviare, en la amazonía colombiana, Angie Tatiana Muñoz ha convertido la robótica en una herramienta para despertar vocaciones, abrir oportunidades a miles de niños y niñas de una de las regiones más…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/10/02-10-2026_ColombiaRobotics_1.JPG/image560x340cropped.jpg"
    }
   ]
  }

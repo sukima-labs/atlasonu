@@ -8535,6 +8535,25 @@
   ],
   "informe_sesion": []
  },
+ "A/HRC/RES/63/11": {
+  "descartadas_por_no_coincidir": [],
+  "estado": "TEXTO_DIRECTO",
+  "fuentes": [
+   {
+    "lengua": "en",
+    "tipo": "registro",
+    "url": "https://digitallibrary.un.org/record/4130581/files/A_HRC_RES_63_11-FR.pdf",
+    "validado": null
+   },
+   {
+    "lengua": "es",
+    "tipo": "ods",
+    "url": "https://documents.un.org/api/symbol/access?s=A/HRC/RES/63/11&l=es&t=pdf",
+    "validado": true
+   }
+  ],
+  "informe_sesion": []
+ },
  "A/HRC/RES/63/16": {
   "descartadas_por_no_coincidir": [],
   "estado": "TEXTO_DIRECTO",
@@ -8549,6 +8568,25 @@
     "lengua": "es",
     "tipo": "ods",
     "url": "https://documents.un.org/api/symbol/access?s=A/HRC/RES/63/16&l=es&t=pdf",
+    "validado": true
+   }
+  ],
+  "informe_sesion": []
+ },
+ "A/HRC/RES/63/26": {
+  "descartadas_por_no_coincidir": [],
+  "estado": "TEXTO_DIRECTO",
+  "fuentes": [
+   {
+    "lengua": "en",
+    "tipo": "registro",
+    "url": "https://digitallibrary.un.org/record/4131529/files/A_HRC_RES_63_26-FR.pdf",
+    "validado": null
+   },
+   {
+    "lengua": "es",
+    "tipo": "ods",
+    "url": "https://documents.un.org/api/symbol/access?s=A/HRC/RES/63/26&l=es&t=pdf",
     "validado": true
    }
   ],
