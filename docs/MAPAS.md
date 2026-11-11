@@ -20,6 +20,9 @@ Las cinco primeras salen de los datos que ya tienen las fichas de país (`data/a
 
 Cada capa tiene leyenda con las cuentas, la lista de debajo repite los mismos datos (para quien no use el mapa) y la prueba `tests/browser.cjs` comprueba que la leyenda suma los 196 países.
 
+## El panel del país: todas las capas a la vez (T86, 11-11-2026, #230)
+Caso Colombia (reporte de Jeisson): el panel solo mostraba el dato de la capa elegida y, con las capas de mandato propio y comisión de investigación (13 y 8 países), un país con mucha información parecía vacío. Ahora, al tocar un país, el panel muestra **las siete capas a la vez** (tratados básicos, invitación permanente, mandato de relator, comisión o misión, conflictos, comunicaciones y EPU) con el dato de hoy, igual para los 196; donde no hay dato dice **por qué**, y cada fila lleva a su sección de la ficha (`Ver en la ficha`). La ficha tiene «Ver en el mapa». Pendiente: capa de **presencia de la ONU** (oficinas de ACNUDH y misiones de paz; hoy «comisión o misión» solo cuenta las de investigación) y mostrar en la ficha el conflicto UCDP y la cifra del EPU. Prueba: `tests/browser.cjs` (bloque T86).
+
 ## Cómo está hecho (y por qué sin librería de mapas)
 - **SVG propio**, sin MapLibre ni Leaflet: no hay teselas que pedir a nadie, ni cuenta, ni scripts de fuera, no registra a quien lo mira, y pesa 72 KB (`data/mapa.js`) en vez de cientos de KB de librería. Para un mapa de países coloreados no hace falta más.
 - **Contornos:** Natural Earth, «Admin 0 – Countries», 1:50 millones, **dominio público** (<https://www.naturalearthdata.com/about/terms-of-use/>). Se simplifican y se proyectan (Miller) con `scripts/generar_mapa.py`, que se puede volver a ejecutar para regenerar `data/mapa.js`. Se descarga una vez; el sitio no carga nada de fuera.

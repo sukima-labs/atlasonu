@@ -214,6 +214,15 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     await page.selectOption('#mpCapa', 'basicos');
     await page.click('#mpInfo button'); await page.waitForTimeout(300);
     ok(vp.name + ': Mapa: «Ver ficha del país» abre la ficha del país tocado', await page.isVisible('#paises') && (await page.inputValue('#pSel')) === 'ESP');
+    // T86 (caso Colombia, 11-11-2026): el panel del mapa resume el país en TODAS las capas, igual para los 196, y se conecta con la ficha y con la capa de cada cosa
+    await page.evaluate(() => showPage('mapa')); await page.waitForSelector('#mpSvg path.mp-p');
+    const r86 = await page.evaluate(async () => { await Promise.all([cargarCon(), cargarCom(), cargarEpu()]); const malos = []; for (const p of PAISES) { mpElegir(p.id); const li = [...document.querySelectorAll('#mpInfo li[data-capa]')]; if (li.length !== 7 || li.some(x => /Cargando|undefined|NaN/.test(x.textContent))) malos.push(p.id); } mpElegir('COL'); return { malos, col: document.getElementById('mpInfo').innerText }; });
+    ok(vp.name + ': T86 Mapa: el panel de cada país trae las 7 capas, ninguna en blanco ni «Cargando»' + (r86.malos.length ? ' → ' + r86.malos.slice(0, 8).join(' ') : ''), !r86.malos.length);
+    ok(vp.name + ': T86 Mapa: Colombia muestra a la vez conflicto, comunicaciones y EPU, y dice por qué no hay mandato propio', /Conflictos armados estatales en 2025: 1/.test(r86.col) && /: 40/.test(r86.col) && /ciclo 4 del EPU \(2023\): 231/.test(r86.col) && /Solo algunos países tienen un mandato de relator propio/.test(r86.col));
+    await page.click('#mpInfo li[data-capa="epu"] a'); await page.waitForFunction(() => { const h = document.getElementById('ps-epu'); return h && h.getBoundingClientRect().top < innerHeight; }, null, { timeout: 5000 }).catch(() => {});
+    ok(vp.name + ': T86 Mapa: «Ver en la ficha» abre la ficha del país en su sección del EPU', await page.isVisible('#paises') && (await page.inputValue('#pSel')) === 'COL' && await page.evaluate(() => { const h = document.getElementById('ps-epu'); return !!h && h.getBoundingClientRect().top < innerHeight; }));
+    await page.click('#pNav button:has-text("Ver en el mapa")'); await page.waitForTimeout(300);
+    ok(vp.name + ': T86 Mapa: «Ver en el mapa» de la ficha vuelve al mapa con ese país elegido', await page.isVisible('#mapa') && (await page.evaluate(() => mpSel)) === 'COL');
     await page.evaluate(() => showPage('paises'));
     await page.evaluate(() => showPage('sistema')); await page.click('.org-node:has-text("Examen Periódico")');
     ok(vp.name + ': Cómo funciona la ONU: al pulsar un recuadro aparece su detalle y de quién depende', /Examen Periódico Universal/.test(await page.textContent('#sisDetalle')) && /Depende de/.test(await page.textContent('#sisDetalle')));
