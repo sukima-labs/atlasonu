@@ -20,7 +20,7 @@ import xml.etree.ElementTree as ET
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 PUERTO = int(os.environ.get("ATLAS_BUSQUEDA_PUERTO", "8787"))
-ORIGENES = {"https://sukima-labs.github.io"}
+ORIGENES = {"https://sukima-labs.github.io", "https://sukimalabs.com", "https://www.sukimalabs.com"}   # 11-11-2026: la web pasa a sukimalabs.com/atlasonu/ (la antigua redirige con 301)
 FUENTE = "https://digitallibrary.un.org/search"
 TTL = 3600           # segundos que se reutiliza una respuesta
 MAX_CACHE = 500
