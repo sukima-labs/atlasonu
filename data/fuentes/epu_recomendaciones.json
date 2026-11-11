@@ -1,5 +1,5 @@
 {
- "contados": 528,
+ "contados": 533,
  "dudosos": [
   {
    "iso": "BEL",
@@ -23,18 +23,8 @@
   },
   {
    "iso": "CAF",
-   "s": "A/HRC/25/11",
-   "motivo": "sin numeración NNN.M"
-  },
-  {
-   "iso": "CAF",
    "s": "A/HRC/40/12",
    "motivo": "la numeración salta: 121.134 tras 132, 121.135 tras 132, 121.136 tras 132"
-  },
-  {
-   "iso": "DJI",
-   "s": "A/HRC/24/10",
-   "motivo": "sin numeración NNN.M"
   },
   {
    "iso": "DNK",
@@ -95,21 +85,6 @@
    "iso": "QAT",
    "s": "A/HRC/27/15",
    "motivo": "la numeración salta: 124.61 tras 59, 124.62 tras 59, 124.63 tras 59"
-  },
-  {
-   "iso": "SEN",
-   "s": "A/HRC/25/4",
-   "motivo": "sin numeración NNN.M"
-  },
-  {
-   "iso": "TGO",
-   "s": "A/HRC/34/4",
-   "motivo": "sin numeración NNN.M"
-  },
-  {
-   "iso": "URY",
-   "s": "A/HRC/26/7",
-   "motivo": "sin numeración NNN.M"
   }
  ],
  "ciclo1": 189,
