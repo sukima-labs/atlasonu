@@ -1104,5 +1104,22 @@ window.ATLAS_IDIOMA_en={
 "cada barra es un año y su altura completa son todas las votaciones nominales de ese año en las que el país podía votar. Azul-verdoso: votó sí; naranja: votó no; amarillo: se abstuvo; gris: no votó o no estuvo. No dice si un voto es bueno o malo.":"each bar is one year and its full height is all the roll-call votes that year in which the country could vote. Teal: voted yes; orange: voted no; yellow: abstained; grey: did not vote or was absent. It does not say whether a vote is good or bad.",
 "Una votación nominal es aquella en la que se registra el voto de cada Estado. Esta vista solo llega hasta {n}, el último año de su fuente.":"A roll-call vote is one in which each State's vote is recorded. This view only goes up to {n}, the last year of its source.",
 "Fuente:":"Source:",
-"(Harvard Dataverse, CC{n}). Recuento de ATLAS con el voto de cada Estado en cada votación nominal.":"(Harvard Dataverse, CC{n}). ATLAS count of each State's vote in every roll-call vote."
+"(Harvard Dataverse, CC{n}). Recuento de ATLAS con el voto de cada Estado en cada votación nominal.":"(Harvard Dataverse, CC{n}). ATLAS count of each State's vote in every roll-call vote.",
+"№ Cómo leer un código":"№ How to read a code",
+"Guía":"Guide",
+"Cómo leer un código de la ONU":"How to read a UN document code",
+"Cada documento de la ONU lleva un código, como <code>A/HRC/RES/5/2</code> o <code>S/RES/1325 (2000)</code>. Aquí aprendes qué significa cada pieza, para poder leer cualquier código, no solo uno.":"Every UN document carries a code, such as <code>A/HRC/RES/5/2</code> or <code>S/RES/1325 (2000)</code>. Here you learn what each piece means, so you can read any code, not just one.",
+"ℹ <b>Para qué sirve esta pantalla:</b> entender de dónde viene un documento, de qué tipo es y cuál es su número, con solo mirar su código. <u>(cómo usarla y de dónde salen los datos)</u>":"ℹ <b>What this screen is for:</b> to understand where a document comes from, what type it is and what its number is, just by looking at its code. <u>(how to use it and where the data comes from)</u>",
+"<b>Cómo usarla:</b> hay cuatro formas de ver lo mismo. El tutorial explica las piezas paso a paso; el despiezador lee cualquier código que pegues; la tabla reúne todas las piezas; el repaso te deja practicar.":"<b>How to use it:</b> there are four ways to see the same thing. The tutorial explains the pieces step by step; the breakdown tool reads any code you paste; the table gathers all the pieces; the review lets you practise.",
+"<b>De dónde salen los datos:</b> elaboración propia a partir de la guía «Símbolos de documentos» de la Biblioteca Dag Hammarskjöld y de los propios documentos. <span></span>.":"<b>Where the data comes from:</b> ATLAS's own work, based on the Dag Hammarskjöld Library guide «UN Document Symbols» and on the documents themselves. <span></span>.",
+"Las explicaciones de esta pantalla están, por ahora, solo en español. Los códigos son iguales en todos los idiomas.":"The explanations on this screen are, for now, in Spanish only. The codes are the same in every language.",
+"Forma de verlo":"Way of viewing",
+"Tutorial paso a paso":"Step-by-step tutorial",
+"Despiezador":"Breakdown tool",
+"Tabla de referencia":"Reference table",
+"Repaso":"Review",
+"Pega un código: A/HRC/RES/5/2, S/RES/1325 (2000)…":"Paste a code: A/HRC/RES/5/2, S/RES/1325 (2000)…",
+"Código de un documento":"Document code",
+"Filtra: HRC, resolución, acta, adición…":"Filter: HRC, resolution, record, addendum…",
+"Filtrar la tabla":"Filter the table"
 };

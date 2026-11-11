@@ -84,6 +84,10 @@ Cada ficha de país carga, bajo demanda (`data/paises/<ISO>.js`), las observacio
 
 Diccionario con 145 entradas (`data/siglas.json`, elaboración propia sobre fuentes oficiales): cada sigla se da en **inglés y en español**, con qué es, sinónimos y abreviaturas españolas de uso académico, y un botón al lugar del tablero donde se profundiza. El buscador tolera erratas («cedau»), guiones («OP-CEDAW») y palabras del nombre («examen periódico»), y descifra símbolos documentales. También alimenta la búsqueda inteligente del Panorama.
 
+## Cómo leer un código de la ONU
+
+Pantalla `codigos` (T73, #198): tutorial general de las signaturas de los documentos de la ONU, no de un caso puntual. Cuatro vistas del mismo contenido: tutorial de 9 pasos, **despiezador** (`codDespiezar` en `index.html`, lee cualquier código: órgano, comisión o comité, tipo, sesión o año, números romanos antiguos y sufijos `/Add`, `/Rev`, `/Corr`), tabla de referencia filtrable y repaso. Fuente: guía «Símbolos de documentos» de la Biblioteca Dag Hammarskjöld. Las explicaciones están solo en español (T74).
+
 ## Créditos y uso
 
 Los datos oficiales son de las Naciones Unidas y proceden de sus sitios públicos (OHCHR, Biblioteca Digital, Colección de Tratados). Solo se leen metadatos públicos y se citan textos de tratados con su fuente; cada dato enlaza al documento oficial. Proyecto académico, independiente y sin fines de lucro. Lo que es elaboración propia está marcado como tal.

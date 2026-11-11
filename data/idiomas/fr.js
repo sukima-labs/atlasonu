@@ -1104,5 +1104,22 @@ window.ATLAS_IDIOMA_fr={
 "cada barra es un año y su altura completa son todas las votaciones nominales de ese año en las que el país podía votar. Azul-verdoso: votó sí; naranja: votó no; amarillo: se abstuvo; gris: no votó o no estuvo. No dice si un voto es bueno o malo.":"chaque barre est une année et sa hauteur totale représente tous les votes par appel nominal de cette année auxquels le pays pouvait participer. Bleu-vert : a voté oui ; orange : a voté non ; jaune : s'est abstenu ; gris : n'a pas voté ou était absent. Elle ne dit pas si un vote est bon ou mauvais.",
 "Una votación nominal es aquella en la que se registra el voto de cada Estado. Esta vista solo llega hasta {n}, el último año de su fuente.":"Un vote par appel nominal est un vote où la position de chaque État est enregistrée. Cette vue ne va que jusqu'à {n}, dernière année de sa source.",
 "Fuente:":"Source :",
-"(Harvard Dataverse, CC{n}). Recuento de ATLAS con el voto de cada Estado en cada votación nominal.":"(Harvard Dataverse, CC{n}). Décompte d'ATLAS du vote de chaque État à chaque vote par appel nominal."
+"(Harvard Dataverse, CC{n}). Recuento de ATLAS con el voto de cada Estado en cada votación nominal.":"(Harvard Dataverse, CC{n}). Décompte d'ATLAS du vote de chaque État à chaque vote par appel nominal.",
+"№ Cómo leer un código":"№ Comment lire une cote",
+"Guía":"Guide",
+"Cómo leer un código de la ONU":"Comment lire une cote de document de l’ONU",
+"Cada documento de la ONU lleva un código, como <code>A/HRC/RES/5/2</code> o <code>S/RES/1325 (2000)</code>. Aquí aprendes qué significa cada pieza, para poder leer cualquier código, no solo uno.":"Chaque document de l’ONU porte une cote, comme <code>A/HRC/RES/5/2</code> ou <code>S/RES/1325 (2000)</code>. Ici vous apprenez ce que signifie chaque élément, pour pouvoir lire n’importe quelle cote, pas seulement une.",
+"ℹ <b>Para qué sirve esta pantalla:</b> entender de dónde viene un documento, de qué tipo es y cuál es su número, con solo mirar su código. <u>(cómo usarla y de dónde salen los datos)</u>":"ℹ <b>À quoi sert cet écran :</b> comprendre d’où vient un document, de quel type il est et quel est son numéro, rien qu’en regardant sa cote. <u>(comment l’utiliser et d’où viennent les données)</u>",
+"<b>Cómo usarla:</b> hay cuatro formas de ver lo mismo. El tutorial explica las piezas paso a paso; el despiezador lee cualquier código que pegues; la tabla reúne todas las piezas; el repaso te deja practicar.":"<b>Comment l’utiliser :</b> il y a quatre façons de voir la même chose. Le tutoriel explique les éléments pas à pas ; le décomposeur lit toute cote que vous collez ; le tableau réunit tous les éléments ; la révision permet de s’exercer.",
+"<b>De dónde salen los datos:</b> elaboración propia a partir de la guía «Símbolos de documentos» de la Biblioteca Dag Hammarskjöld y de los propios documentos. <span></span>.":"<b>D’où viennent les données :</b> travail propre d’ATLAS, à partir du guide « Symboles des documents » de la Bibliothèque Dag Hammarskjöld et des documents eux-mêmes. <span></span>.",
+"Las explicaciones de esta pantalla están, por ahora, solo en español. Los códigos son iguales en todos los idiomas.":"Les explications de cet écran sont, pour l’instant, uniquement en espagnol. Les cotes sont les mêmes dans toutes les langues.",
+"Forma de verlo":"Façon de voir",
+"Tutorial paso a paso":"Tutoriel pas à pas",
+"Despiezador":"Décomposeur",
+"Tabla de referencia":"Tableau de référence",
+"Repaso":"Révision",
+"Pega un código: A/HRC/RES/5/2, S/RES/1325 (2000)…":"Collez une cote : A/HRC/RES/5/2, S/RES/1325 (2000)…",
+"Código de un documento":"Cote d’un document",
+"Filtra: HRC, resolución, acta, adición…":"Filtrer : HRC, résolution, compte rendu, additif…",
+"Filtrar la tabla":"Filtrer le tableau"
 };
