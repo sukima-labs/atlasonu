@@ -48,10 +48,12 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     await page.fill('#q', 'enforced disappearance'); await page.evaluate(() => filterMandates());
     ok(vp.name + ': búsqueda EN con sinónimos', /desaparici/i.test(await page.textContent('#mandBody')));
     await page.fill('#q', ''); await page.evaluate(() => filterMandates());
-    ok(vp.name + ': 20 mandatos y «Mostrar más»', (await page.locator('#mandBody tr:not(.mas)').count()) === 20 && (await page.locator('#mandBody tr.mas button').count()) === 1);
-    await page.locator('#mandBody tr.mas button').click();
-    await page.locator('#mandBody tr.mas button').click();
+    // P6: de 20 en 20 en escritorio; en el celular (≤650 px) las listas de tarjetas largas van de menos en menos (paso() en index.html)
+    const pMand = await page.evaluate(() => paso('mand'));
+    ok(vp.name + ': ' + pMand + ' mandatos y «Mostrar más»', pMand === (vp.width <= 650 ? 8 : 20) && (await page.locator('#mandBody tr:not(.mas)').count()) === pMand && (await page.locator('#mandBody tr.mas button').count()) === 1);
+    while (await page.locator('#mandBody tr.mas button').count()) await page.locator('#mandBody tr.mas button').click();
     ok(vp.name + ': 57 mandatos tras mostrar más', (await page.locator('#mandBody tr:not(.mas)').count()) === 57);
+    ok(vp.name + ': P6 tras el último «Mostrar más» el foco va al primer mandato nuevo, no al principio de la página', await page.evaluate(() => document.activeElement !== document.body && !!document.activeElement.closest('#mandBody')));
     await page.fill('#q', 'agua'); await page.evaluate(() => filterMandates());
     await page.locator('#mandBody button', { hasText: 'Ver ficha' }).first().click();
     ok(vp.name + ': clic en «Ver ficha» abre cronología', /Cadena de actos jurídicos/.test(await page.textContent('#cardsResults')) && /A\/HRC\/RES\/60\/9/.test(await page.textContent('#cardsResults')));
@@ -68,7 +70,7 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     ok(vp.name + ': desde el resultado se abre la recuperación del texto', await page.isVisible('#recuperar') && /LOCALIZADO/.test(await page.textContent('#recoverResult')));
     if (await page.isVisible('#burger')) { await page.click('#burger'); await page.waitForTimeout(350); }
     await page.getByRole('button', { name: /Países/ }).first().click();
-    ok(vp.name + ': sección Países visible con 196 filas', await page.isVisible('#paises') && (await page.locator('#pBody tr').count()) === 21 && /20 de 196/.test(await page.textContent('#pBody')) && /Mostrar 20 más/.test(await page.textContent('#pBody')) && (await todosLosPaises(page), (await page.locator('#pBody tr').count()) === 196));
+    ok(vp.name + ': sección Países visible con 196 filas', await page.isVisible('#paises') && (await page.locator('#pBody tr').count()) === (await page.evaluate(() => paso('paises'))) + 1 && new RegExp((await page.evaluate(() => paso('paises'))) + ' de 196').test(await page.textContent('#pBody')) && new RegExp('Mostrar ' + (await page.evaluate(() => paso('paises'))) + ' más').test(await page.textContent('#pBody')) && (await todosLosPaises(page), (await page.locator('#pBody tr').count()) === 196));
     await page.getByRole('button', { name: /^América Latina y el Caribe \(\d+\)/ }).click(); await page.waitForTimeout(200);
     ok(vp.name + ': chip «América Latina y el Caribe» → 33 países', (await todosLosPaises(page), (await page.locator('#pBody tr').count()) === 33) && /Colombia/.test(await page.textContent('#pBody')));
     await page.getByRole('button', { name: /^Todos \(\d+\)/ }).click(); await page.waitForTimeout(200);
@@ -118,10 +120,10 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     // T40: Relatores y relatoras
     await page.evaluate(() => showPage('relatores')); await page.waitForTimeout(250);
     // P6: de 20 en 20; «Mostrar 20 más» hasta tenerlos todos
-    const rN0 = await page.locator('#rOut .rel-card').count(), relN = await page.evaluate(() => REL.length);
-    ok(vp.name + ': P6 «Relatores y relatoras» abre con 20 tarjetas, el recuento «20 de N» y «Mostrar 20 más»', rN0 === 20 && relN > 20 && new RegExp('20 de ' + relN).test(await page.textContent('#rOut .mas')) && (await page.locator('#rOut .mas button', { hasText: 'Mostrar 20 más' }).count()) === 1);
+    const rN0 = await page.locator('#rOut .rel-card').count(), relN = await page.evaluate(() => REL.length), pRel = await page.evaluate(() => paso('rel'));
+    ok(vp.name + ': P6 «Relatores y relatoras» abre con ' + pRel + ' tarjetas, el recuento «' + pRel + ' de N» y «Mostrar ' + pRel + ' más»', rN0 === pRel && relN > pRel && new RegExp(pRel + ' de ' + relN).test(await page.textContent('#rOut .mas')) && (await page.locator('#rOut .mas button', { hasText: 'Mostrar ' + pRel + ' más' }).count()) === 1);
     await page.locator('#rOut .mas button').click(); await page.waitForTimeout(100);
-    ok(vp.name + ': P6 al pulsar «Mostrar 20 más» el foco se queda en el botón, que baja con la lista', (await page.locator('#rOut .rel-card').count()) === 40 && await page.evaluate(() => document.activeElement && !!document.activeElement.closest('#rOut .mas')));
+    ok(vp.name + ': P6 al pulsar «Mostrar más» el foco se queda en el botón, que baja con la lista', (await page.locator('#rOut .rel-card').count()) === 2 * pRel && await page.evaluate(() => document.activeElement && !!document.activeElement.closest('#rOut .mas')));
     while (await page.locator('#rOut .mas button').count()) { await page.locator('#rOut .mas button').click(); await page.waitForTimeout(50); }
     const rN = await page.locator('#rOut .rel-card').count();
     ok(vp.name + ': «Relatores y relatoras» muestra una tarjeta por titular, con mandato y nacionalidad, sin desbordar', rN >= 60 && rN === relN && /Nacionalidad:/.test(await page.textContent('#rOut')) && await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
@@ -358,8 +360,9 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     await page.evaluate(() => showPage('seleccion')); await page.waitForTimeout(150);
     ok(vp.name + ': tras ir de Países (lista larga) a Selección, solo se ve Selección y el scroll vuelve arriba', (await page.evaluate(() => [...document.querySelectorAll('.section')].filter(s => getComputedStyle(s).display !== 'none').map(s => s.id).join())) === 'seleccion' && (await page.evaluate(() => window.scrollY)) === 0 && !/Etapa \d: \d/.test(await page.textContent('#selectionList')));
     await page.evaluate(() => showPage('mecanismos'));
-    ok(vp.name + ': otros mecanismos: 20 filas, «20 de 33» y «Mostrar 13 más»', (await page.locator('#mecBody tr:not(.mas)').count()) === 20 && /20 de 33/.test(await page.textContent('#mecBody tr.mas')) && /CERD/.test(await page.textContent('#mecBody')));
-    await page.locator('#mecBody tr.mas button').click();
+    const pMec = await page.evaluate(() => paso('mec'));
+    ok(vp.name + ': otros mecanismos: ' + pMec + ' filas y «' + pMec + ' de 33»', (await page.locator('#mecBody tr:not(.mas)').count()) === pMec && new RegExp(pMec + ' de 33').test(await page.textContent('#mecBody tr.mas')) && /CERD/.test(await page.textContent('#mecBody')));
+    while (await page.locator('#mecBody tr.mas button').count()) await page.locator('#mecBody tr.mas button').click();
     ok(vp.name + ': otros mecanismos (CERD…CED) visibles', (await page.locator('#mecBody tr').count()) === 33 && /CERD/.test(await page.textContent('#mecBody')));
     await page.evaluate(() => showPage('recuperar'));
     await page.getByRole('button', { name: /caso real de 1980/i }).click();

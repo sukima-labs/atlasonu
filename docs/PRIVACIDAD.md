@@ -7,7 +7,7 @@ Criterios del proyecto (31-10-2026). Cambiarlos exige una tarea en la cola y una
 |---|---|---|---|
 | Contador de visitas: dos números agregados (total y por país) | `sk-atlas`, el servidor de sukima-labs (`busqueda_servicio.py`) | el autor | no: ni IP, ni cookies, ni identificadores |
 | País de visita | se deduce en el navegador (zona horaria o idioma) y no se envía con identidad | nadie fuera del navegador | no |
-| Dos marcas en el navegador (`localStorage`): `atlas_visita2` (hora de la última visita contada, para no contar dos veces a la misma persona en 12 h) y `atlas_pista_menu` (ya se vio la pista del menú) | solo en el navegador de quien visita; no se envían a ningún sitio | nadie fuera del navegador | no: ni identificador ni datos de la persona |
+| Marcas en el navegador (`localStorage`): `atlas_visita2` (hora de la última visita contada, para no contar dos veces a la misma persona en 12 h), `atlas_idioma` (idioma elegido), `atlas-tema` (modo de color: automático, claro u oscuro) y `atlas-vista` (ver en ancho completo o como en celular) | solo en el navegador de quien visita; no se envían a ningún sitio | nadie fuera del navegador | no: ni identificador ni datos de la persona |
 | Búsquedas en vivo | el servicio las recibe para consultar la Biblioteca Digital | el servicio, sin registro | en principio no; no se guardan |
 | Datos de personas de los mandatos | solo funciones públicas: titulares, nacionalidad y actos oficiales | público | sí, pero son información pública de la función |
 
