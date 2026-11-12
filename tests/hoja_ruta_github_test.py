@@ -47,6 +47,12 @@ ok('etiqueta idea -> Ideas', d2['F'] == 'ideas')
 ok('issue que no existe: se queda donde está y avisa', d2['G'] == 'pendiente' and any('no existe' in a for a in s2[2]))
 ok('bloque web incompleto no vale', h.texto_web('<!-- web\nt: Solo título\n-->') is None)
 
+s3 = h.sincronizar(hoja(pendiente=[{'t': 'H', 'x': '.', 'issues': [12]}, {'t': 'I', 'x': '.', 'issues': [13], 'estado': 'bloqueado'}]),
+                   h.normalizar([iss(12, etiquetas=['bloqueado']), iss(13)]), '2026-11-12')
+e3 = {it['t']: it.get('estado') for b in s3[0]['bloques'] for it in b['items']}
+ok('etiqueta bloqueado -> estado bloqueado; sin ella se quita', e3 == {'H': 'bloqueado', 'I': None} and len(s3[1]) == 2)
+ok('bloqueo idempotente', h.sincronizar(s3[0], h.normalizar([iss(12, etiquetas=['bloqueado']), iss(13)]), '2026-11-13')[1] == [])
+
 real = json.load(open(os.path.join(RAIZ, 'data', 'hoja_ruta.json'), encoding='utf-8'))
 ok('data/hoja_ruta.json: cuatro bloques y "issues" son listas de números', [b['id'] for b in real['bloques']] == list(h.BLOQUES)
    and all(isinstance(n, int) for b in real['bloques'] for it in b['items'] for n in it.get('issues', [])))
