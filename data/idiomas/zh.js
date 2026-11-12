@@ -1677,5 +1677,18 @@ window.ATLAS_IDIOMA_zh={
 "Ver todos sus requisitos":"查看其全部要求",
 "También están los relatores y grupos de trabajo de la ONU (procedimientos especiales): no piden ir antes a los tribunales ni que el Estado haya aceptado un tratado. Sus requisitos aún están por verificar y por eso no entran en este resumen. <b>No es asesoría legal:</b> busca el apoyo de una organización de derechos humanos.":"还有联合国报告员和工作组（特别程序）：它们不要求先诉诸法院，也不要求国家已接受某项条约。其要求尚待核实，因此未列入本摘要。<b>这不是法律意见：</b>请寻求人权组织的支持。",
 "¿Tienes un caso de derechos humanos? Mira a qué vía de la ONU acudir":"您有人权案件吗？看看可以诉诸联合国的哪条途径",
-"Tengo un caso en este país: ¿adónde acudo?":"我在这个国家有案件：该向哪里求助？"
+"Tengo un caso en este país: ¿adónde acudo?":"我在这个国家有案件：该向哪里求助？",
+"Guías y manuales":"指南和手册",
+"Guías de la ONU y de otras organizaciones para presentar una queja. Sirven para orientarse, pero <b>no son la fuente de ATLAS</b>: cada cifra que dan se compara aquí con el texto oficial, y se dice si ya no vale.":"联合国和其他组织关于如何提交申诉的指南。它们有助于了解方向，但<b>不是 ATLAS 的来源</b>：它们给出的每个数字都在此与正式文本进行比对，并注明是否已不再有效。",
+"Oficial de la ONU":"联合国官方",
+"Oficina del ACNUDH en un país":"人权高专办国家办事处",
+"Otra organización":"其他组织",
+"Coincide":"一致",
+"Ya no vale":"已不再有效",
+"La guía dice:":"指南称：",
+"Hoy:":"现在：",
+"español":"西班牙语",
+"inglés":"英语",
+"{n} páginas":"{n} 页",
+"Las guías y qué cifras ya no valen":"指南及已不再有效的数字"
 };

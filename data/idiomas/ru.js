@@ -1677,5 +1677,18 @@ window.ATLAS_IDIOMA_ru={
 "Ver todos sus requisitos":"Все требования",
 "También están los relatores y grupos de trabajo de la ONU (procedimientos especiales): no piden ir antes a los tribunales ni que el Estado haya aceptado un tratado. Sus requisitos aún están por verificar y por eso no entran en este resumen. <b>No es asesoría legal:</b> busca el apoyo de una organización de derechos humanos.":"Есть также докладчики и рабочие группы ООН (специальные процедуры): они не требуют сначала обращаться в суды или чтобы государство приняло договор. Их требования ещё не проверены, поэтому они не включены в это резюме. <b>Это не юридическая консультация:</b> обратитесь за поддержкой в правозащитную организацию.",
 "¿Tienes un caso de derechos humanos? Mira a qué vía de la ONU acudir":"У вас дело о правах человека? Узнайте, в какой механизм ООН обратиться",
-"Tengo un caso en este país: ¿adónde acudo?":"У меня дело в этой стране: куда обратиться?"
+"Tengo un caso en este país: ¿adónde acudo?":"У меня дело в этой стране: куда обратиться?",
+"Guías y manuales":"Руководства и пособия",
+"Guías de la ONU y de otras organizaciones para presentar una queja. Sirven para orientarse, pero <b>no son la fuente de ATLAS</b>: cada cifra que dan se compara aquí con el texto oficial, y se dice si ya no vale.":"Руководства ООН и других организаций о том, как подать жалобу. Они помогают сориентироваться, но <b>не являются источником ATLAS</b>: каждая приводимая ими цифра сравнивается здесь с официальным текстом, и указывается, если она устарела.",
+"Oficial de la ONU":"Официальный документ ООН",
+"Oficina del ACNUDH en un país":"Страновое отделение УВКПЧ",
+"Otra organización":"Другая организация",
+"Coincide":"Совпадает",
+"Ya no vale":"Устарело",
+"La guía dice:":"В руководстве:",
+"Hoy:":"Сегодня:",
+"español":"испанский",
+"inglés":"английский",
+"{n} páginas":"{n} стр.",
+"Las guías y qué cifras ya no valen":"Руководства и устаревшие цифры"
 };

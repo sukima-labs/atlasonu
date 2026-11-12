@@ -1676,5 +1676,18 @@
   "Ver todos sus requisitos": "See all its requirements",
   "También están los relatores y grupos de trabajo de la ONU (procedimientos especiales): no piden ir antes a los tribunales ni que el Estado haya aceptado un tratado. Sus requisitos aún están por verificar y por eso no entran en este resumen. <b>No es asesoría legal:</b> busca el apoyo de una organización de derechos humanos.": "There are also the UN rapporteurs and working groups (special procedures): they do not require going to the courts first or that the State has accepted a treaty. Their requirements are still to be verified, so they are not included in this summary. <b>This is not legal advice:</b> seek the support of a human rights organization.",
   "¿Tienes un caso de derechos humanos? Mira a qué vía de la ONU acudir": "Do you have a human rights case? See which UN route to use",
-  "Tengo un caso en este país: ¿adónde acudo?": "I have a case in this country: where do I go?"
+  "Tengo un caso en este país: ¿adónde acudo?": "I have a case in this country: where do I go?",
+  "Guías y manuales": "Guides and handbooks",
+  "Guías de la ONU y de otras organizaciones para presentar una queja. Sirven para orientarse, pero <b>no son la fuente de ATLAS</b>: cada cifra que dan se compara aquí con el texto oficial, y se dice si ya no vale.": "Guides by the UN and other organizations on how to submit a complaint. They help you find your way, but <b>they are not ATLAS's source</b>: every figure they give is compared here with the official text, and we say if it is no longer valid.",
+  "Oficial de la ONU": "Official UN",
+  "Oficina del ACNUDH en un país": "OHCHR country office",
+  "Otra organización": "Another organization",
+  "Coincide": "Matches",
+  "Ya no vale": "No longer valid",
+  "La guía dice:": "The guide says:",
+  "Hoy:": "Today:",
+  "español": "Spanish",
+  "inglés": "English",
+  "{n} páginas": "{n} pages",
+  "Las guías y qué cifras ya no valen": "The guides and which figures are no longer valid"
 }
