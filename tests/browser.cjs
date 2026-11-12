@@ -68,7 +68,7 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     ok(vp.name + ': desde el resultado se abre la recuperación del texto', await page.isVisible('#recuperar') && /LOCALIZADO/.test(await page.textContent('#recoverResult')));
     if (await page.isVisible('#burger')) { await page.click('#burger'); await page.waitForTimeout(350); }
     await page.getByRole('button', { name: /Países/ }).first().click();
-    ok(vp.name + ': sección Países visible con 196 filas', await page.isVisible('#paises') && (await page.locator('#pBody tr').count()) === 21 && /quedan 176/.test(await page.textContent('#pBody')) && (await todosLosPaises(page), (await page.locator('#pBody tr').count()) === 196));
+    ok(vp.name + ': sección Países visible con 196 filas', await page.isVisible('#paises') && (await page.locator('#pBody tr').count()) === 21 && /20 de 196/.test(await page.textContent('#pBody')) && /Mostrar 20 más/.test(await page.textContent('#pBody')) && (await todosLosPaises(page), (await page.locator('#pBody tr').count()) === 196));
     await page.getByRole('button', { name: /^América Latina y el Caribe \(\d+\)/ }).click(); await page.waitForTimeout(200);
     ok(vp.name + ': chip «América Latina y el Caribe» → 33 países', (await todosLosPaises(page), (await page.locator('#pBody tr').count()) === 33) && /Colombia/.test(await page.textContent('#pBody')));
     await page.getByRole('button', { name: /^Todos \(\d+\)/ }).click(); await page.waitForTimeout(200);
@@ -117,8 +117,14 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     await page.evaluate(() => showPage('paises'));
     // T40: Relatores y relatoras
     await page.evaluate(() => showPage('relatores')); await page.waitForTimeout(250);
+    // P6: de 20 en 20; «Mostrar 20 más» hasta tenerlos todos
+    const rN0 = await page.locator('#rOut .rel-card').count(), relN = await page.evaluate(() => REL.length);
+    ok(vp.name + ': P6 «Relatores y relatoras» abre con 20 tarjetas, el recuento «20 de N» y «Mostrar 20 más»', rN0 === 20 && relN > 20 && new RegExp('20 de ' + relN).test(await page.textContent('#rOut .mas')) && (await page.locator('#rOut .mas button', { hasText: 'Mostrar 20 más' }).count()) === 1);
+    await page.locator('#rOut .mas button').click(); await page.waitForTimeout(100);
+    ok(vp.name + ': P6 al pulsar «Mostrar 20 más» el foco se queda en el botón, que baja con la lista', (await page.locator('#rOut .rel-card').count()) === 40 && await page.evaluate(() => document.activeElement && !!document.activeElement.closest('#rOut .mas')));
+    while (await page.locator('#rOut .mas button').count()) { await page.locator('#rOut .mas button').click(); await page.waitForTimeout(50); }
     const rN = await page.locator('#rOut .rel-card').count();
-    ok(vp.name + ': «Relatores y relatoras» muestra una tarjeta por titular, con mandato y nacionalidad, sin desbordar', rN >= 60 && rN === (await page.evaluate(() => REL.length)) && /Nacionalidad:/.test(await page.textContent('#rOut')) && await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+    ok(vp.name + ': «Relatores y relatoras» muestra una tarjeta por titular, con mandato y nacionalidad, sin desbordar', rN >= 60 && rN === relN && /Nacionalidad:/.test(await page.textContent('#rOut')) && await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
     await page.selectOption('#rCargo', 'gt'); await page.waitForTimeout(150);
     const rGt = await page.locator('#rOut .rel-card').count(), rGtTag = await page.locator('#rOut .rel-card .tag', { hasText: 'Grupo de trabajo' }).count();
     ok(vp.name + ': filtro «Grupo de trabajo» deja solo miembros de grupos de trabajo', rGt > 0 && rGt < rN && rGtTag === rGt);
@@ -304,13 +310,13 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     await page.evaluate(() => showPage('inicio')); await page.selectOption('#guiadaSel', { index: 4 }); await page.selectOption('#guiadaPais', 'COL'); await page.getByRole('button', { name: 'Ver mandatos' }).click(); await page.waitForTimeout(300);
     ok(vp.name + ': búsqueda guiada con país (Colombia + agua/alimentación…) abre Países con mandatos aplicables', await page.isVisible('#paises') && /Colombia/.test(await page.textContent('#pOut')) && (await page.locator('#pTemasTabla tbody tr').count()) > 0);
     if (vp.name === 'escritorio') { await page.evaluate(() => document.getElementById('pOut').scrollIntoView()); await page.screenshot({ path: path.resolve(__dirname, '..', 'audit', 'captura_pais_temas.png') }); }
-    await page.evaluate(() => showPage('explorar')); await page.selectOption('#modal', 'País'); await page.selectOption('#pais', 'COL'); await page.waitForTimeout(250);
+    await page.evaluate(() => showPage('explorar')); await page.selectOption('#modal', 'País'); if (!(await page.evaluate(() => document.getElementById('masFiltros').open))) await page.click('#masFiltros summary'); await page.selectOption('#pais', 'COL'); await page.waitForTimeout(250);
     ok(vp.name + ': Explorador País+Colombia explica la ausencia (no una pantalla en blanco)', /no tiene mandato por país vigente/.test(await page.textContent('#count')) && /Países/.test(await page.textContent('#count')));
     await page.evaluate(() => clearFilters());
     await page.evaluate(() => showPage('inicio')); await page.fill('#quick', 'xqzvbn'); await page.waitForTimeout(500);
     const href = await page.locator('#smartOut a', { hasText: 'Solicitar verificación' }).getAttribute('href');
     ok(vp.name + ': búsqueda sin resultado ofrece solicitud prellenada en GitHub', /issues\/new\?template=solicitud-verificacion\.yml/.test(href) && /busqueda=xqzvbn/.test(href));
-    await page.evaluate(() => showPage('explorar')); await page.selectOption('#pais', 'BLR'); await page.waitForTimeout(250);
+    await page.evaluate(() => showPage('explorar')); if (!(await page.evaluate(() => document.getElementById('masFiltros').open))) await page.click('#masFiltros summary'); await page.selectOption('#pais', 'BLR'); await page.waitForTimeout(250);
     ok(vp.name + ': filtro de país en el explorador (Belarús → 1 mandato)', (await page.locator('#mandBody tr').count()) === 1);
     await page.evaluate(() => clearFilters());
     await page.evaluate(() => showPage('inicio')); await page.fill('#quick', 'Camboya'); await page.waitForTimeout(500);
@@ -318,7 +324,7 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     ok(vp.name + ': la búsqueda inteligente lleva a la sección del país', await page.isVisible('#paises') && /Camboya/.test(await page.textContent('#pOut')));
     for (const id of ['inicio', 'explorar', 'paises', 'sistema', 'arqueologia', 'recuperar', 'mecanismos', 'codificacion', 'seleccion', 'auditoria', 'fuentes']) {
       await page.evaluate(i => showPage(i), id);
-      ok(vp.name + ': «Para qué sirve» visible en ' + id, await page.isVisible('#' + id + ' .about') && /Para qué sirve esta pantalla/.test(await page.textContent('#' + id + ' .about')));
+      ok(vp.name + ': «Para qué sirve» visible en ' + id, (await page.isVisible('#' + id + ' .about') || await page.isVisible('#' + id + ' .ay-chip.ay-about')) && /Para qué sirve esta pantalla/.test(await page.textContent('#' + id + ' .about')));
     }
     await page.evaluate(() => showPage('arqueologia')); await page.fill('#qt', 'agua'); await page.waitForTimeout(250);
     ok(vp.name + ': Arqueología lista actos reales del agua (A/HRC/RES/60/9)', /A\/HRC\/RES\/60\/9/.test(await page.textContent('#traceBody')));
@@ -352,6 +358,8 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     await page.evaluate(() => showPage('seleccion')); await page.waitForTimeout(150);
     ok(vp.name + ': tras ir de Países (lista larga) a Selección, solo se ve Selección y el scroll vuelve arriba', (await page.evaluate(() => [...document.querySelectorAll('.section')].filter(s => getComputedStyle(s).display !== 'none').map(s => s.id).join())) === 'seleccion' && (await page.evaluate(() => window.scrollY)) === 0 && !/Etapa \d: \d/.test(await page.textContent('#selectionList')));
     await page.evaluate(() => showPage('mecanismos'));
+    ok(vp.name + ': otros mecanismos: 20 filas, «20 de 33» y «Mostrar 13 más»', (await page.locator('#mecBody tr:not(.mas)').count()) === 20 && /20 de 33/.test(await page.textContent('#mecBody tr.mas')) && /CERD/.test(await page.textContent('#mecBody')));
+    await page.locator('#mecBody tr.mas button').click();
     ok(vp.name + ': otros mecanismos (CERD…CED) visibles', (await page.locator('#mecBody tr').count()) === 33 && /CERD/.test(await page.textContent('#mecBody')));
     await page.evaluate(() => showPage('recuperar'));
     await page.getByRole('button', { name: /caso real de 1980/i }).click();
@@ -424,9 +432,10 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
   for (const [nom, w, h] of [['Android 320', 320, 658], ['iPhone SE', 375, 667], ['Android 412', 412, 915], ['tableta 768', 768, 1024]]) {
     const pg = await browser.newPage({ viewport: { width: w, height: h }, hasTouch: true, isMobile: true }); await pg.goto(URL); await pg.waitForFunction(() => window.__atlasListo);
     ok(nom + ': hay barra superior con botón de menú y el menú está cerrado', (await pg.isVisible('#burger')) && !(await pg.isVisible('#side')));
-    ok(nom + ': se ve la pista de las tres líneas y la etiqueta «Menú»', (await pg.isVisible('#menuHint')) && (await pg.isVisible('.burger-t')));
+    ok(nom + ': se ve la etiqueta «Menú» y la barra inferior con sus 5 accesos (ya no hay pista de las tres líneas)', (await pg.isVisible('.burger-t')) && (await pg.isVisible('#bnav')) && (await pg.locator('#bnav button').count()) === 5 && !(await pg.$('#menuHint')));
+    { const bn = await pg.evaluate(() => { const r = document.getElementById('bnav').getBoundingClientRect(), bs = [...document.querySelectorAll('#bnav button')].map(b => b.getBoundingClientRect()); return { alto: r.height, abajo: Math.round(r.bottom), H: innerHeight, minimo: Math.min(...bs.map(b => Math.min(b.width, b.height))), libre: parseFloat(getComputedStyle(document.body).paddingBottom) }; });
+      ok(nom + ': P6 la barra inferior mide 56–64 px, va pegada abajo, sus botones miden 44 px o más y la página deja su alto libre', bn.alto >= 56 && bn.alto <= 64 && bn.abajo === bn.H && bn.minimo >= 44 && bn.libre >= bn.alto, bn); }
     await pg.tap('#burger'); await pg.waitForTimeout(350);
-    ok(nom + ': al abrir el menú la pista se oculta y no vuelve', !(await pg.isVisible('#menuHint')) && (await pg.evaluate(() => localStorage.getItem('atlas_pista_menu'))) === '1');
     ok(nom + ': el botón abre el menú', (await pg.isVisible('#side')) && (await pg.getAttribute('#burger', 'aria-expanded')) === 'true');
     // T28: con el menú abierto, deslizar el dedo mueve el menú (hasta su último elemento) y no la página de atrás; al cerrar, la página vuelve a donde estaba
     { const cdp = await pg.context().newCDPSession(pg);
@@ -501,13 +510,33 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
   { // P1 (plan de diseño, fase 0): aviso del menú una sola vez y solo en la portada; un solo selector de idioma en el celular; 44 px
     const ctx = await browser.newContext({ viewport: { width: 390, height: 844 }, hasTouch: true, isMobile: true }), pg = await ctx.newPage();
     await pg.goto(URL); await pg.waitForFunction(() => window.__atlasListo);
-    ok('P1 celular: la primera vez se ve el aviso del menú en la portada y queda anotado', (await pg.isVisible('#menuHint')) && (await pg.evaluate(() => localStorage.getItem('atlas_pista_menu'))) === '1');
-    await pg.evaluate(() => showPage('paises')); await pg.waitForTimeout(200);
-    ok('P1 celular: el aviso no sale en otras pantallas', !(await pg.isVisible('#menuHint')));
+    // P6 (plan de diseño, fase 5): barra inferior en lugar del aviso del menú
+    ok('P6 celular: «Inicio» de la barra inferior está marcado en la portada', (await pg.getAttribute('#bnav button[data-page="inicio"]', 'aria-current')) === 'page');
+    await pg.tap('#bnav button[data-page="paises"]'); await pg.waitForTimeout(250);
+    ok('P6 celular: «Países» de la barra inferior abre Países y queda marcado (y solo él)', (await pg.isVisible('#paises')) && (await pg.getAttribute('#bnav button[data-page="paises"]', 'aria-current')) === 'page' && (await pg.locator('#bnav [aria-current]').count()) === 1);
+    await pg.tap('#bnav button[data-page="mapa"]'); await pg.waitForTimeout(400);
+    ok('P6 celular: «Mapa» de la barra inferior abre el mapa', await pg.isVisible('#mapa'));
+    await pg.tap('#bnav button[data-busca]'); await pg.waitForTimeout(300);
+    ok('P6 celular: «Buscar» abre la portada con el cursor en la búsqueda inteligente', (await pg.isVisible('#inicio')) && await pg.evaluate(() => document.activeElement && document.activeElement.id === 'quick'));
+    await pg.tap('#bnavMenu'); await pg.waitForTimeout(350);
+    ok('P6 celular: «Menú» de la barra inferior abre el menú lateral y lo dice (aria-expanded)', (await pg.isVisible('#side')) && (await pg.getAttribute('#bnavMenu', 'aria-expanded')) === 'true' && (await pg.getAttribute('#burger', 'aria-expanded')) === 'true');
+    await pg.evaluate(() => menu(false)); await pg.waitForTimeout(250);
+    ok('P6 celular: al cerrar el menú la barra inferior lo refleja', (await pg.getAttribute('#bnavMenu', 'aria-expanded')) === 'false');
+    { const r = await pg.evaluate(() => { showPage('explorar'); const v = document.getElementById('visBar').getBoundingClientRect(), f = document.querySelector('#explorar .ayudas'), ch = [...f.querySelectorAll('.ay-chip')]; return { vis: Math.round(v.height), chips: ch.length, fila: new Set(ch.map(c => Math.round(c.getBoundingClientRect().top))).size, alto: Math.min(...ch.map(c => c.getBoundingClientRect().height)), cerradas: [...f.querySelectorAll('details')].every(d => !d.open && !d.offsetParent) }; });
+      ok('P6 celular: el contador de visitas va en una sola línea (menos de 50 px)', r.vis < 50, r);
+      ok('P6 celular: Explorar junta Lectura fácil, Para qué sirve e Instantánea en una fila de pastillas de 44 px, todas cerradas', r.chips === 3 && r.fila <= 2 && r.alto >= 44 && r.cerradas, r); }
+    await pg.tap('#explorar .ay-chip.ay-about'); await pg.waitForTimeout(150);
+    ok('P6 celular: tocar «Para qué sirve» despliega su explicación debajo y lo dice (aria-expanded)', (await pg.isVisible('#explorar .about p')) && (await pg.getAttribute('#explorar .ay-chip.ay-about', 'aria-expanded')) === 'true');
+    await pg.tap('#explorar .ay-chip.ay-about'); await pg.waitForTimeout(150);
+    ok('P6 celular: tocarla otra vez la pliega', !(await pg.isVisible('#explorar .about p')) && (await pg.getAttribute('#explorar .ay-chip.ay-about', 'aria-expanded')) === 'false');
+    ok('P6 celular: Explorar enseña 3 filtros y guarda 7 en «Más filtros (7)»', await pg.evaluate(() => { const vis = ['q', 'modal', 'figura', 'origin', 'yearfrom', 'yearto', 'order', 'region', 'pais', 'verif'].filter(i => document.getElementById(i).checkVisibility()); return vis.join() === 'q,modal,figura' && /Más filtros \(7\)/.test(document.querySelector('#masFiltros summary').textContent); }));
+    await pg.evaluate(() => { document.getElementById('masFiltros').open = false; document.getElementById('region').value = document.getElementById('region').options[1].value; filterMandates(); });
+    ok('P6 celular: con un filtro de «Más filtros» puesto, el resumen dice «1 en uso» y se abre', await pg.evaluate(() => document.getElementById('masFiltros').open && document.getElementById('mfUso').textContent === '1 en uso'));
+    await pg.evaluate(() => clearFilters());
+    ok('P6 celular: Su historia pone las épocas en una sola fila que se desliza en horizontal', await pg.evaluate(() => { showPage('historia'); const e = document.getElementById('hiEras'), bs = [...e.querySelectorAll('.btn')]; return new Set(bs.map(b => Math.round(b.getBoundingClientRect().top))).size === 1 && e.scrollWidth > e.clientWidth && getComputedStyle(e).overflowX === 'auto' && bs.every(b => b.getBoundingClientRect().height >= 44); }));
+    ok('P6 celular: Tratados y comités en una columna, con barra de ratificación', await pg.evaluate(() => { showPage('tratados'); const L = [...document.querySelectorAll('#trSel .tr-card')]; return L.length === 9 && new Set(L.map(c => Math.round(c.getBoundingClientRect().left))).size === 1 && L.every(c => c.querySelector('.tr-barra i')); }));
+    ok('P6 celular: Otros mecanismos y Arqueología, en tarjetas sin enlaces ni botones de menos de 44 px', await pg.evaluate(() => ['mecanismos', 'arqueologia', 'auditoria'].every(id => { showPage(id); return [...document.querySelectorAll('#' + id + ' .tablewrap a, #' + id + ' .tablewrap button')].filter(e => e.offsetParent).every(e => e.getBoundingClientRect().height >= 44); })));
     await pg.evaluate(() => showPage('inicio')); await pg.waitForTimeout(200);
-    ok('P1 celular: al volver a la portada el aviso ya no vuelve', !(await pg.isVisible('#menuHint')));
-    await pg.reload(); await pg.waitForFunction(() => window.__atlasListo);
-    ok('P1 celular: tras recargar el aviso no vuelve a salir', !(await pg.isVisible('#menuHint')));
     ok('P1 celular: la nota de la portada da la instrucción del celular con el número real de secciones', await pg.evaluate(() => { const n = document.querySelectorAll('.nav button').length, c = document.querySelector('.mn-cel'), e = document.querySelector('.mn-esc'); return n >= 15 && !!c.offsetParent && !e.offsetParent && c.textContent.includes(n + ' secciones'); }));
     ok('P1 celular: «Empieza por aquí» en 2 columnas sin fila suelta', await pg.evaluate(() => { const L = [...document.querySelectorAll('#inicio .tile')], xs = new Set(L.map(t => Math.round(t.getBoundingClientRect().left))), ys = new Set(L.map(t => Math.round(t.getBoundingClientRect().top))); return xs.size === 2 && ys.size === L.length / 2; }));
     await pg.evaluate(() => menu(true)); await pg.waitForTimeout(350);
