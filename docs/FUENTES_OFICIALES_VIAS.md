@@ -50,7 +50,10 @@ especiales. 57 requisitos con sus cuatro campos; **47 leídos en el original**, 
   la CEDAW, la CRPD y la CED; medidas provisionales del Comité de Derechos Humanos y de la CAT) y las tres filas de los
   procedimientos especiales. Llevan `onu` vacío y no entran en el asistente.
 - Qué Estados **aceptan** cada vía: para las que van por protocolo, la ratificación ya está en los datos de cada país; para
-  las que van por **declaración** (CERD art. 14, CAT art. 22, CED art. 31, CMW art. 77) falta la lista de declaraciones.
+  las que van por **declaración** (CERD art. 14, CAT art. 22, CED art. 31, CMW art. 77), la lista sale de la misma Colección de Tratados
+  (12-11-2026: 60, 69, 30 y 6 Estados). `scripts/fetch_tratados.py` lee el apartado de declaraciones de cada tratado; en la CAT y
+  la CED separa la vía individual (arts. 22 y 31) de la vía entre Estados (arts. 21 y 32), y si el texto está en una nota al pie
+  (Ucrania, CAT) lee la nota. Se renueva con la revisión diaria de datos.
 
 En la web (12-11-2026): pantalla «Tengo un caso: ¿adónde acudo?» (menú, junto a «Tratados y comités»), con la tabla de
 las once vías y los requisitos de cada una.
