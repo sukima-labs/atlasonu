@@ -127,7 +127,7 @@ Reglas:
 - En el celular, el resaltado de la fila bajo el puntero solo existe con ratón (`@media (hover:hover)`): con el dedo
   se quedaría pegado a la última fila tocada.
 - Cada fila lleva su aspecto como cabecera de fila (`<th scope="row">`): el lector de pantalla lo lee con cada dato.
-- Ya lo usa **«Comparar con otro país»** en la ficha de país (dos países). T75 y T83 lo usarán con más.
+- Ya lo usan **«Comparar con otro país»** en la ficha de país (dos países) y **«Seguimiento de recomendaciones»** (T75, hasta seis). T83 lo usará con más.
 
 ### 2.3 Asistente paso a paso — `asistente(caja, {pasos, resultado, enPruebas, aviso})`
 

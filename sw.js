@@ -25,7 +25,7 @@ const BASICO = ['./', 'data/atlas-data.js', 'data/atlas-actos.js', 'assets/idiom
   'assets/fonts/dejavu-sans-regular-arabe.woff2', 'assets/fonts/dejavu-sans-bold-arabe.woff2',
   'assets/marca/dignityos_provisional.svg', 'assets/marca/favicon_32.png', 'assets/marca/apple_touch_icon_180.png',
   'data/noticias.js', 'data/mapa.js', 'data/epu.js', 'data/conflictos.js', 'data/jurisprudencia.js', 'data/comunicaciones.js',
-  'data/estado.json'];
+  'data/seguimiento.js', 'data/estado.json'];
 function guarda(c, ruta) {
   const u = new URL(ruta, BASE).href;
   return fetch(u, { cache: 'no-cache' }).then(r => { if (r.ok && r.type === 'basic') return c.put(u === BASE + 'index.html' ? PAGINA : u, r); })

@@ -128,6 +128,7 @@ def main():
           f" {total['sin_lista']} sin lista; distintas de data/epu.js: {len(distintas)}")
     print(f"  con español {total['con_es']}; respuesta desde el informe {total['desde_informe']}, desde el adendo"
           f" {total['desde_adendo']}, null {total['null']}")
+    import seguimiento_indice; seguimiento_indice.main()  # T75: data/seguimiento.js para la pantalla
     if distintas: sys.exit('ERROR: las cifras no cuadran con data/epu.js: ' + json.dumps(distintas[:5], ensure_ascii=False))
 
 
