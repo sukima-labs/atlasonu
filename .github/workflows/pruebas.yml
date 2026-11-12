@@ -22,3 +22,4 @@ jobs:
       - run: node tests/impresion.cjs   # T58: cada pantalla se imprime sola, en claro y en pocas hojas
       - run: node tests/pwa.cjs   # Fase 6 (#228): instalable, sin conexión con aviso y, con red, siempre lo último
       - run: node tests/componentes.cjs   # Fase 7 (P8): componentes de docs/DISENO.md, accesibles y traducidos, en los dos modos
+      - run: node tests/auditar_ux.cjs --comprobar   # P9 (#226): a 390 px, controles ≥ 44 px, texto ≥ 13 px y pantallas de ≤ 9 de alto

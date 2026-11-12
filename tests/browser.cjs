@@ -753,6 +753,25 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     ok('modo de color (#228): al elegir «Oscuro» dentro del marco, el fondo y la barra del navegador también pasan a oscuro', e4.fondo === 'rgb(16, 19, 28)' && e4.tc === '#10131C');
     await c4.close();
   }
+  // P9 (#226, plan de diseño fase 8): las metas medibles del celular, en modo oscuro y en claro, en todas las pantallas del menú:
+  // controles de 44 px o más fuera del texto corrido, texto de 13 px o más, sin desborde lateral y ninguna de más de unas 8 pantallas de alto
+  {
+    const { METAS, medirPantalla, cumple } = require('./metas_ux.cjs');
+    const c5 = await browser.newContext({ viewport: { width: 390, height: 844 }, hasTouch: true, isMobile: true, deviceScaleFactor: 2 });
+    const p5 = await c5.newPage();
+    p5.on('pageerror', e => res.errors.push('metas P9: ' + e.message));
+    await p5.goto(URL + (URL.includes('?') ? '&' : '?') + 'movil=1');
+    await p5.waitForFunction(() => window.__atlasListo, null, { timeout: 20000 }).catch(() => {});
+    const ids = await p5.evaluate(() => [...document.querySelectorAll('.main .section')].map(x => x.id));
+    for (const modo of ['dark', 'light']) {
+      await p5.evaluate(m => atlasTema(m), modo);
+      const malas = [];
+      for (const id of ids) { await p5.evaluate(i => showPage(i), id); await p5.waitForTimeout(150); const m = await p5.evaluate(medirPantalla, METAS); if (!cumple(m)) malas.push(`${id} (largo ${m.largo}, ancho ${m.ancho}, controles ${m.controles} ${m.controlesEj.join(' ')}, texto ${m.textos} ${m.textosEj.join(' ')})`); }
+      ok(`metas P9 (#226), modo ${modo === 'dark' ? 'oscuro' : 'claro'}: las ${ids.length} pantallas a 390 px sin controles < ${METAS.control} px, sin texto < ${METAS.texto} px, sin desborde y ≤ ${METAS.largo} pantallas de alto ${malas.join('; ')}`, ids.length >= 20 && malas.length === 0 && await p5.evaluate(m => document.documentElement.dataset.theme === m, modo));
+    }
+    await p5.evaluate(() => atlasTema('auto'));
+    await c5.close();
+  }
   await browser.close();
   const failed = res.checks.filter(c => !c.ok);
   console.log(JSON.stringify({ ...res, passed: res.checks.length - failed.length, failed: failed.length }, null, 1));
