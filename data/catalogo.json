@@ -7678,6 +7678,10 @@
     "intro": "Lo que ya funciona hoy.",
     "items": [
      {
+      "t": "Seguimiento de recomendaciones",
+      "x": "Pantalla nueva: qué le recomendaron los demás Estados a cada país en el Examen Periódico Universal desde 2012 (117.681 recomendaciones de 193 países) y qué respondió el país, si la apoya o toma nota, con el enlace al documento de la ONU que lo dice. Donde la respuesta no está escrita con claridad pone «Sin información». Se pueden comparar hasta seis países y descargar los datos en CSV o JSON. No dice si el país ha cumplido: la ONU no lo publica."
+     },
+     {
       "t": "Cómo vota cada país en la Asamblea General",
       "x": "En la ficha de cada país hay un gráfico con su posición en las votaciones de la Asamblea General entre 1946 y 2025 (cerca de las democracias occidentales o cerca de la mayoría de países en desarrollo), con su banda de incertidumbre. Son datos académicos de dominio público (Bailey, Strezhnev y Voeten, Harvard Dataverse), una estimación estadística y no un dato oficial de la ONU. Faltan los países que esa fuente no recoge (Palestina, Kosovo, Santa Sede)."
      },
@@ -7829,6 +7833,13 @@
        226,
        228
       ]
+     },
+     {
+      "t": "Ficha de país más corta en el celular",
+      "x": "En el celular, los bloques largos de la ficha de un país (línea de tiempo, comunicaciones, observaciones finales, EPU, visitas y la lista de mandatos) empiezan plegados con su número, y el índice «Qué quieres ver» va en dos columnas: la ficha de Colombia pasa de unas 49 pantallas de alto a menos de 9. En el escritorio y al imprimir se ven abiertos.",
+      "issues": [
+       285
+      ]
      }
     ]
    },
@@ -7867,8 +7878,8 @@
       ]
      },
      {
-      "t": "Seguimiento de recomendaciones",
-      "x": "Un tablero que muestre, por cada recomendación de la ONU a un país, qué se ha cumplido, qué sigue pendiente y qué avances hay, con la fuente de cada dato y la posibilidad de comparar varios países.",
+      "t": "Seguimiento de recomendaciones: comités y avances",
+      "x": "La primera parte ya está (las recomendaciones del EPU y la respuesta de cada Estado). Faltan el seguimiento de los comités de tratados, que califican de la A a la E lo que ha hecho cada Estado, y los avances que cuentan los informes de medio término; cada dato, con quién lo dice y en qué documento.",
       "issues": [
        203
       ]
@@ -7921,13 +7932,6 @@
       "x": "Faltan las observaciones generales anteriores, sus títulos en español y los dictámenes sobre comunicaciones individuales, que hoy solo se enlazan a la base de OHCHR.",
       "issues": [
        254
-      ]
-     },
-     {
-      "t": "Recomendaciones del EPU por país",
-      "x": "En el mapa ya se ve cuántas recomendaciones recibió cada país, pero no su texto dentro de ATLAS: hoy se enlaza a UPR Info. Para traerlas haría falta el permiso de UPR Info o extraerlas una a una de los informes oficiales del Grupo de Trabajo del EPU, que ya están descargados.",
-      "issues": [
-       203
       ]
      },
      {
@@ -8023,13 +8027,6 @@
       "x": "Una página sobre qué documentos de la ONU están mal catalogados y que ATLAS sí encuentra. Va al final de todo, sin fecha.",
       "issues": [
        240
-      ]
-     },
-     {
-      "t": "Ficha de país más corta en el celular",
-      "x": "Plegar las tablas largas de documentos (observaciones finales, EPU y visitas) para que la ficha de un país se lea en el celular sin tanto desplazamiento.",
-      "issues": [
-       285
       ]
      },
      {

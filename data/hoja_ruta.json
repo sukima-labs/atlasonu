@@ -162,6 +162,13 @@
       226,
       228
      ]
+    },
+    {
+     "t": "Ficha de país más corta en el celular",
+     "x": "En el celular, los bloques largos de la ficha de un país (línea de tiempo, comunicaciones, observaciones finales, EPU, visitas y la lista de mandatos) empiezan plegados con su número, y el índice «Qué quieres ver» va en dos columnas: la ficha de Colombia pasa de unas 49 pantallas de alto a menos de 9. En el escritorio y al imprimir se ven abiertos.",
+     "issues": [
+      285
+     ]
     }
    ]
   },
@@ -349,13 +356,6 @@
      "x": "Una página sobre qué documentos de la ONU están mal catalogados y que ATLAS sí encuentra. Va al final de todo, sin fecha.",
      "issues": [
       240
-     ]
-    },
-    {
-     "t": "Ficha de país más corta en el celular",
-     "x": "En el celular, los bloques largos de la ficha de un país (línea de tiempo, comunicaciones, observaciones finales, EPU, visitas y la lista de mandatos) empiezan plegados con su número, y el índice «Qué quieres ver» va en dos columnas: la ficha de Colombia pasa de unas 49 pantallas de alto a menos de 9. En el escritorio y al imprimir se ven abiertos.",
-     "issues": [
-      285
      ]
     },
     {
