@@ -32,9 +32,25 @@ La ficha tiene **13 años**: sirve para el mapa y los plazos de los textos de tr
 | Comité para la Eliminación de la Discriminación Racial (CERD, art. 14) | **6 meses** desde la decisión final de una autoridad nacional | El Estado debe haber reconocido la competencia del comité; admite quejas de grupos; otra vía internacional **no** la bloquea |
 | Comité de Derechos Económicos, Sociales y Culturales (Protocolo Facultativo) | **1 año** desde agotar recursos internos, salvo que fuera imposible | Agotar recursos internos |
 | Comité de los Derechos del Niño (Protocolo 3) | **1 año** desde agotar recursos internos, salvo que fuera imposible | Agotar recursos internos; el mismo asunto no puede estar ya examinado en otra vía |
-| Comité contra la Tortura, CEDAW, Personas con Discapacidad, Desapariciones Forzadas, Trabajadores Migratorios | **Por verificar** (no se extrajo plazo en esta pasada) | Por verificar |
+| Comité contra la Tortura, CEDAW, Personas con Discapacidad, Desapariciones Forzadas, Trabajadores Migratorios | Sus tratados y protocolos **no fijan plazo** (leído el 12-11-2026, ver abajo); falta el reglamento de cada comité | Ver la base de reglas |
 
 Todo lo demás de la ficha (formularios modelo para el Comité de Derechos Humanos, el de Tortura y el de Discriminación contra la Mujer) es la base del **borrador de campos** de la fase 4 opcional de T76.
+
+## Base de reglas del asistente: `data/vias.json` (T76 fase 1, 12-11-2026)
+Once vías: las quejas individuales ante los nueve comités que las reciben (la del CMW, marcada como que **aún no funciona**),
+la **acción urgente** del Comité contra la Desaparición Forzada (art. 30) y las comunicaciones a los procedimientos
+especiales. 57 requisitos con sus cuatro campos; **47 leídos en el original**, todos en el texto del tratado o protocolo:
+- **Textos que ATLAS ya guarda** (`data/tratados/`: protocolos del PIDESC, la CEDAW, la CRC y la CRPD, y la Convención sobre
+  desapariciones): la prueba `tests/vias_test.py` comprueba en la CI que cada cita está letra a letra en ese texto.
+- **Leídos hoy en la Biblioteca Digital**, PDF en español escaneado (sin capa de texto; transcritos de la página):
+  Protocolo Facultativo del PIDCP (`A/RES/2200 (XXI) A`, registro 660187, arts. 2, 3 y 5), CERD (`A/RES/2106 (XX) A`,
+  registro 660429, art. 14), Convención contra la Tortura (`A/RES/39/46`, registro 74216, art. 22) y Convención sobre
+  trabajadores migratorios (`A/RES/45/158`, registro 105636, art. 77). Descarga de uno en uno con 5 s de pausa.
+- **Por verificar (10):** lo que solo está en el **reglamento** de cada comité (plazos del Comité de Derechos Humanos, la CAT,
+  la CEDAW, la CRPD y la CED; medidas provisionales del Comité de Derechos Humanos y de la CAT) y las tres filas de los
+  procedimientos especiales. Llevan `onu` vacío y no entran en el asistente.
+- Qué Estados **aceptan** cada vía: para las que van por protocolo, la ratificación ya está en los datos de cada país; para
+  las que van por **declaración** (CERD art. 14, CAT art. 22, CED art. 31, CMW art. 77) falta la lista de declaraciones.
 
 ## Procedimientos especiales (relatores y grupos de trabajo)
 No son «quejas» con plazo y admisibilidad: se envían **comunicaciones** (alegaciones, acciones urgentes) y el relator decide si actúa. Para el asistente es la vía clave **cuando la víctima no puede agotar los recursos del país o el riesgo es inminente**. Contrastado el 12-11-2026 (pedido del grupo; el material de referencia orienta, la fuente de cada dato es la ONU):
