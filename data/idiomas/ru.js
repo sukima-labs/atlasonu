@@ -1675,5 +1675,7 @@ window.ATLAS_IDIOMA_ru={
 "no es parte del protocolo":"не участвует в протоколе",
 "no es parte del tratado":"не участвует в договоре",
 "Ver todos sus requisitos":"Все требования",
-"También están los relatores y grupos de trabajo de la ONU (procedimientos especiales): no piden ir antes a los tribunales ni que el Estado haya aceptado un tratado. Sus requisitos aún están por verificar y por eso no entran en este resumen. <b>No es asesoría legal:</b> busca el apoyo de una organización de derechos humanos.":"Есть также докладчики и рабочие группы ООН (специальные процедуры): они не требуют сначала обращаться в суды или чтобы государство приняло договор. Их требования ещё не проверены, поэтому они не включены в это резюме. <b>Это не юридическая консультация:</b> обратитесь за поддержкой в правозащитную организацию."
+"También están los relatores y grupos de trabajo de la ONU (procedimientos especiales): no piden ir antes a los tribunales ni que el Estado haya aceptado un tratado. Sus requisitos aún están por verificar y por eso no entran en este resumen. <b>No es asesoría legal:</b> busca el apoyo de una organización de derechos humanos.":"Есть также докладчики и рабочие группы ООН (специальные процедуры): они не требуют сначала обращаться в суды или чтобы государство приняло договор. Их требования ещё не проверены, поэтому они не включены в это резюме. <b>Это не юридическая консультация:</b> обратитесь за поддержкой в правозащитную организацию.",
+"¿Tienes un caso de derechos humanos? Mira a qué vía de la ONU acudir":"У вас дело о правах человека? Узнайте, в какой механизм ООН обратиться",
+"Tengo un caso en este país: ¿adónde acudo?":"У меня дело в этой стране: куда обратиться?"
 };

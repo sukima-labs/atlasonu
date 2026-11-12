@@ -183,6 +183,12 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     await page.selectOption('#viaPais', 'MEX'); await page.waitForTimeout(150);
     ok(vp.name + ': T76 asistente: al cambiar de país, el resumen se rehace', await page.evaluate(() => /México/.test(document.querySelector('#viaAsis .asis-res-final').innerText)));
     await page.selectOption('#viaPais', 'COL'); await page.waitForTimeout(150);
+    // T76 fase 2: enlaces al asistente desde la portada y desde la ficha de un país (abre «Tengo un caso» con ese país elegido)
+    ok(vp.name + ': T76 la portada enlaza «Tengo un caso»', await page.evaluate(() => !!document.querySelector('#inicio .hero-caso button[onclick*="vias"]')));
+    await page.evaluate(() => irPais('ARG')); await page.waitForTimeout(300);
+    await page.evaluate(() => [...document.querySelectorAll('.section.visible button')].find(b => /Tengo un caso en este país/.test(b.textContent)).click()); await page.waitForTimeout(300);
+    ok(vp.name + ': T76 desde la ficha de Argentina se abre «Tengo un caso» con Argentina elegida', await page.evaluate(() => document.querySelector('.section.visible').id === 'vias' && document.getElementById('viaPais').value === 'ARG' && /Argentina/.test(document.querySelector('#viaOut .count').textContent)));
+    await page.selectOption('#viaPais', 'COL'); await page.waitForTimeout(150);
     await page.evaluate(() => viaAbrir('cescr')); await page.waitForTimeout(150);
     ok(vp.name + ': T76 al abrir una vía se ve cada requisito con la cita del tratado y dónde lo dice', await page.evaluate(() => { const d = document.querySelector('details[data-plg="via-cescr"]'); return d.open && d.querySelectorAll('.via-req li').length === 7 && d.querySelectorAll('blockquote').length === 7 && /A\/RES\/63\/117/.test(d.textContent); }));
     // T11/T24: Mapa del mundo con capas
