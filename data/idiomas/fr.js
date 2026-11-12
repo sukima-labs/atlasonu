@@ -1,4 +1,5 @@
 window.ATLAS_IDIOMA_fr={
+"Libia":"Libye",
 "Atlas ONU · Arqueología documental":"Atlas ONU · Archéologie documentaire",
 "Volver arriba":"Retour en haut",
 "↑ Arriba":"↑ Haut de page",
@@ -499,9 +500,9 @@ window.ATLAS_IDIOMA_fr={
 "<b>Órganos de tratados</b><span>{n} comités + Subcomité contra la tortura</span>":"<b>Organes conventionnels</b><span>{n} comités + Sous-Comité pour la prévention de la torture</span>",
 "Sustituyó en {n} a la Comisión de Derechos Humanos ({n}–{n}). Es un órgano <b>político</b> de Estados, no de expertos: vota resoluciones y crea los mandatos de los procedimientos especiales.":"A remplacé en {n} la Commission des droits de l'homme ({n}–{n}). C'est un organe <b>politique</b> d'États, non d'experts : il vote des résolutions et crée les mandats des procédures spéciales.",
 "Quién lo forma":"Qui le compose",
-"{n} Estados elegidos por la Asamblea por tres años, repartidos por grupos regionales ({n} África, {n} Asia-Pacífico, {n} América Latina y Caribe, {n} Europa Occidental y otros, {n} Europa Oriental).":"{n} États élus par l'Assemblée pour trois ans, répartis par groupes régionaux ({n} Afrique, {n} Asie-Pacifique, {n} Amérique latine et Caraïbes, {n} Europe occidentale et autres, {n} Europe orientale).",
+"{n} Estados elegidos por la Asamblea en votación secreta y por mayoría absoluta de sus miembros ({n} votos), por tres años y sin reelección inmediata tras dos mandatos seguidos. Se reparten por grupos regionales ({n} África, {n} Asia-Pacífico, {n} América Latina y Caribe, {n} Europa Occidental y otros, {n} Europa Oriental). La Asamblea puede suspender, por dos tercios, a un miembro que cometa violaciones graves y sistemáticas: lo hizo con Libia ({n}) y con Rusia ({n}).":"{n} États élus par l’Assemblée au scrutin secret et à la majorité absolue de ses membres ({n} voix), pour trois ans, sans réélection immédiate après deux mandats consécutifs. Ils sont répartis par groupes régionaux ({n} Afrique, {n} Asie-Pacifique, {n} Amérique latine et Caraïbes, {n} Europe occidentale et autres, {n} Europe orientale). L’Assemblée peut suspendre, à la majorité des deux tiers, un membre qui commet des violations graves et systématiques : elle l’a fait pour la Libye ({n}) et la Russie ({n}).",
 "Base jurídica":"Base juridique",
-"Resolución {n}/{n} de la Asamblea ({n}); instituciones en la resolución {n}/{n} del propio Consejo ({n}).":"Résolution {n}/{n} de l'Assemblée ({n}) ; institutions dans la résolution {n}/{n} du Conseil lui-même ({n}).",
+"Resolución {n}/{n} de la Asamblea ({n}), párrafos {n} y {n}; instituciones en la resolución {n}/{n} del propio Consejo ({n}): EPU, procedimientos especiales, Comité Asesor y procedimiento de denuncia.":"Résolution {n}/{n} de l’Assemblée ({n}), paragraphes {n} et {n} ; mise en place des institutions dans la résolution {n}/{n} du Conseil lui-même ({n}) : EPU, procédures spéciales, Comité consultatif et procédure de plainte.",
 "Qué produce":"Ce qu'il produit",
 "Resoluciones <code>A/HRC/RES/sesión/n.º</code>. Se reúne al menos tres veces al año.":"Résolutions <code>A/HRC/RES/session/n°</code>. Il se réunit au moins trois fois par an.",
 "Depende de":"Dépend de",

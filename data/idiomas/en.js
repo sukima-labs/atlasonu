@@ -1,4 +1,5 @@
 window.ATLAS_IDIOMA_en={
+"Libia":"Libya",
 "Atlas ONU · Arqueología documental":"Atlas ONU · Documentary archaeology",
 "Volver arriba":"Back to top",
 "↑ Arriba":"↑ Top",
@@ -499,9 +500,9 @@ window.ATLAS_IDIOMA_en={
 "<b>Órganos de tratados</b><span>{n} comités + Subcomité contra la tortura</span>":"<b>Treaty bodies</b><span>{n} committees + Subcommittee on Prevention of Torture</span>",
 "Sustituyó en {n} a la Comisión de Derechos Humanos ({n}–{n}). Es un órgano <b>político</b> de Estados, no de expertos: vota resoluciones y crea los mandatos de los procedimientos especiales.":"Replaced the Commission on Human Rights in {n} ({n}–{n}). It is a <b>political</b> body of States, not of experts: it votes on resolutions and creates the mandates of the special procedures.",
 "Quién lo forma":"Who it is made of",
-"{n} Estados elegidos por la Asamblea por tres años, repartidos por grupos regionales ({n} África, {n} Asia-Pacífico, {n} América Latina y Caribe, {n} Europa Occidental y otros, {n} Europa Oriental).":"{n} States elected by the Assembly for three years, distributed by regional groups ({n} Africa, {n} Asia-Pacific, {n} Latin America and Caribbean, {n} Western European and others, {n} Eastern Europe).",
+"{n} Estados elegidos por la Asamblea en votación secreta y por mayoría absoluta de sus miembros ({n} votos), por tres años y sin reelección inmediata tras dos mandatos seguidos. Se reparten por grupos regionales ({n} África, {n} Asia-Pacífico, {n} América Latina y Caribe, {n} Europa Occidental y otros, {n} Europa Oriental). La Asamblea puede suspender, por dos tercios, a un miembro que cometa violaciones graves y sistemáticas: lo hizo con Libia ({n}) y con Rusia ({n}).":"{n} States elected by the Assembly by secret ballot and by an absolute majority of its members ({n} votes), for three years, with no immediate re-election after two consecutive terms. They are distributed by regional groups ({n} Africa, {n} Asia-Pacific, {n} Latin America and Caribbean, {n} Western European and others, {n} Eastern Europe). The Assembly may suspend, by a two-thirds majority, a member that commits gross and systematic violations: it did so with Libya ({n}) and Russia ({n}).",
 "Base jurídica":"Legal basis",
-"Resolución {n}/{n} de la Asamblea ({n}); instituciones en la resolución {n}/{n} del propio Consejo ({n}).":"Assembly resolution {n}/{n} ({n}); institution-building in the Council’s own resolution {n}/{n} ({n}).",
+"Resolución {n}/{n} de la Asamblea ({n}), párrafos {n} y {n}; instituciones en la resolución {n}/{n} del propio Consejo ({n}): EPU, procedimientos especiales, Comité Asesor y procedimiento de denuncia.":"Assembly resolution {n}/{n} ({n}), paragraphs {n} and {n}; institution-building in the Council’s own resolution {n}/{n} ({n}): UPR, special procedures, Advisory Committee and complaint procedure.",
 "Qué produce":"What it produces",
 "Resoluciones <code>A/HRC/RES/sesión/n.º</code>. Se reúne al menos tres veces al año.":"Resolutions <code>A/HRC/RES/session/no.</code>. It meets at least three times a year.",
 "Depende de":"Reports to",
