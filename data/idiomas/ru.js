@@ -1497,6 +1497,7 @@ window.ATLAS_IDIOMA_ru={
 "Elige una opción para seguir.":"Выберите вариант, чтобы продолжить.",
 "Ficha de delegación":"Карточка делегации",
 "Imprimir la ficha":"Распечатать карточку",
+"Tarea #{n} en GitHub":"Задача № {n} на GitHub",
 "Exacto":"Точно",
 "Solo el proyecto":"Только проект",
 "No encontrado":"Не найдено"

@@ -64,9 +64,9 @@ function monta() {
       // Comparador: cuatro países, primera columna fija, cabe en la página y se desliza dentro de su caja
       const c = await p.evaluate(() => { const e = document.querySelector('#mxCmp .cmpx'), th = e.querySelector('tbody th');
         return { pagina: document.documentElement.scrollWidth, pantalla: innerWidth, dentro: e.scrollWidth > e.clientWidth + 2, desborda: e.hasAttribute('data-desborda'),
-          pista: getComputedStyle(e.nextElementSibling).display, fija: getComputedStyle(th).position, foco: e.tabIndex === 0 && e.getAttribute('role') === 'region' }; });
+          pista: getComputedStyle(e.nextElementSibling).display, fija: getComputedStyle(th).position, foco: e.getAttribute('role') === 'region' && (e.tabIndex === 0) === e.hasAttribute('data-desborda') }; });
       ok(caso + ': nada se sale de la pantalla', c.pagina <= c.pantalla + 1, c);
-      ok(caso + ': comparador con la primera columna fija y región con foco para el teclado', c.fija === 'sticky' && c.foco, c);
+      ok(caso + ': comparador con la primera columna fija; es parada del teclado solo si hay algo que deslizar', c.fija === 'sticky' && c.foco, c);
       if (vn === '390px') ok(caso + ': en el celular el comparador de 4 países se desliza dentro de su caja y dice «Desliza de lado»', c.dentro && c.desborda && c.pista === 'block', c);
       if (vn === '390px') { // al deslizar, la primera columna se queda en su sitio
         const x = await p.evaluate(() => { const e = document.querySelector('#mxCmp .cmpx'), th = e.querySelector('tbody th'), a = th.getBoundingClientRect().left; e.scrollLeft = 200; const d = th.getBoundingClientRect().left; e.scrollLeft = 0; return { a, d }; });
@@ -75,11 +75,17 @@ function monta() {
       // Pastillas: cada estado tiene su palabra, y «Sin información» sale cuando no se da texto
       ok(caso + ': pastillas con su estado y su fuente; sin texto dice «Sin información»', await p.evaluate(() => {
         const L = [...document.querySelectorAll('.pills-muestra .pill')]; return L.length === 6 && L.every(e => e.querySelector('.pill-est').textContent.trim().length > 2) && /Sin información/.test(L[5].textContent) && L[0].querySelector('.pill-fuente a[href]') && /según/.test(L[1].textContent); }));
+      // Línea de tiempo: el ciclo actual lleva aria-current y su punto relleno
+      ok(caso + ': línea de tiempo: el ciclo actual está marcado (aria-current y punto relleno)', await p.evaluate(() => { const L = [...document.querySelectorAll('.ltc-it')], a = L.filter(x => x.hasAttribute('aria-current')), bg = e => getComputedStyle(e, '::after').backgroundColor;
+        return a.length === 1 && /Ciclo 4/.test(a[0].textContent) && bg(a[0]) !== bg(L[0]); }));
       // Asistente con el teclado
       await p.evaluate(() => document.querySelector('#mxAsis .asis-sig').click());
       const e1 = await p.evaluate(() => ({ err: document.querySelector('#mxAsis .asis-error').textContent, foco: document.activeElement.matches('#mxAsis .asis-ops input') }));
       ok(caso + ': asistente: sin elegir, avisa «Elige una opción» y lleva el foco a las opciones', /Elige una opción/.test(e1.err) && e1.foco, e1);
-      await p.check('#mxAsis .asis-ops input[value="b"]'); await p.click('#mxAsis .asis-sig');
+      ok(caso + ': asistente: las opciones quedan marcadas como no válidas y apuntan al aviso', await p.evaluate(() => { const r = document.querySelector('#mxAsis .asis-ops input'), d = r.getAttribute('aria-describedby'); return r.getAttribute('aria-invalid') === 'true' && !!d && /Elige una opción/.test(document.getElementById(d).textContent); }));
+      await p.check('#mxAsis .asis-ops input[value="b"]');
+      ok(caso + ': asistente: al elegir, el aviso y la marca de no válido se quitan', await p.evaluate(() => !document.querySelector('#mxAsis .asis-error').textContent && !document.querySelector('#mxAsis [aria-invalid]')));
+      await p.click('#mxAsis .asis-sig');
       const e2 = await p.evaluate(() => ({ foco: document.activeElement.textContent, paso: document.querySelector('#mxAsis .asis-cuenta').textContent, actual: document.querySelector('#mxAsis [aria-current=step]').textContent, atras: !!document.querySelector('#mxAsis .asis-atras') }));
       ok(caso + ': asistente: «Siguiente» pasa a la pregunta 2 con el foco en ella, «Paso 2 de 3» y «Atrás»', e2.foco === 'Pregunta de muestra 2' && e2.paso === 'Paso 2 de 3' && e2.actual === 'Dos' && e2.atras, e2);
       await p.click('#mxAsis .asis-atras');
@@ -108,6 +114,12 @@ function monta() {
         ok(caso + ': «Imprimir la ficha» saca solo la ficha, en una hoja', im.ficha && !im.cmp && !im.asis && !im.h1 && hojas === 1, { ...im, hojas });
         await p.evaluate(() => window.mxFin()); await p.emulateMedia({ media: 'screen' });
         ok(caso + ': después de imprimir, la pantalla vuelve a estar entera', await p.evaluate(() => !document.querySelector('.imp-camino,.imp-esto') && !document.documentElement.classList.contains('imp-parcial')));
+      }
+      // Alertas › Exactitud de números: la pastilla del estado no se aplasta en su columna (nunca más de dos líneas)
+      if (vn === '1280px') {
+        const al = await p.evaluate(async () => { showPage('auditoria', true); numFiltro = 'todos'; numVista = 'actos'; numRender(); await new Promise(r => setTimeout(r, 50));
+          const L = [...document.querySelectorAll('#numAudit table .pill')].filter(e => e.getClientRects().length); return { n: L.length, alto: Math.max(0, ...L.map(e => e.getBoundingClientRect().height)) }; });
+        ok(caso + ': Alertas: la pastilla del estado en la tabla de actos cabe en dos líneas como mucho', al.n > 0 && al.alto < 56, al);
       }
       ok(caso + ': sin errores de JavaScript', errs.length === 0, errs);
       await ctx.close();

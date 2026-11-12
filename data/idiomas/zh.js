@@ -1497,6 +1497,7 @@ window.ATLAS_IDIOMA_zh={
 "Elige una opción para seguir.":"请选择一个选项以继续。",
 "Ficha de delegación":"代表团卡片",
 "Imprimir la ficha":"打印卡片",
+"Tarea #{n} en GitHub":"GitHub 上的任务 #{n}",
 "Exacto":"准确",
 "Solo el proyecto":"仅有草案",
 "No encontrado":"未找到"

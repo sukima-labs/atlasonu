@@ -1497,6 +1497,7 @@ window.ATLAS_IDIOMA_en={
 "Elige una opción para seguir.":"Choose an option to continue.",
 "Ficha de delegación":"Delegation card",
 "Imprimir la ficha":"Print the card",
+"Tarea #{n} en GitHub":"Task #{n} on GitHub",
 "Exacto":"Exact",
 "Solo el proyecto":"Draft only",
 "No encontrado":"Not found"

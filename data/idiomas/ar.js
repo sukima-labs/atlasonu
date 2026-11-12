@@ -1497,6 +1497,7 @@ window.ATLAS_IDIOMA_ar={
 "Elige una opción para seguir.":"اختر خيارًا للمتابعة.",
 "Ficha de delegación":"بطاقة الوفد",
 "Imprimir la ficha":"طباعة البطاقة",
+"Tarea #{n} en GitHub":"المهمة رقم {n} على GitHub",
 "Exacto":"مطابق",
 "Solo el proyecto":"المشروع فقط",
 "No encontrado":"غير موجود"

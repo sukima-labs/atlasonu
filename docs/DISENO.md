@@ -76,7 +76,7 @@ Dice **en qué estado está algo y quién lo dice**: «Apoyada · según A/HRC/5
 
 ```js
 pastilla('ok', 'Apoyada', { t: 'A/HRC/52/10', url: 'https://digitallibrary.un.org/…' })
-pastilla('neutro', 'Pendiente', { t: '#261', url: 'https://github.com/sukima-labs/atlasonu/issues/261' })
+pastilla('neutro', 'Pendiente', { t: '#261', url: 'https://github.com/sukima-labs/atlasonu/issues/261', etiqueta: 'Tarea #261 en GitHub' })
 pastilla('parcial', 'Corregido', { html: 'según <a href="…">Biblioteca Digital</a>' })  // frase de interfaz: va entera en el diccionario
 pastilla('nd')                                                                        // «Sin información»
 ```
@@ -85,7 +85,7 @@ pastilla('nd')                                                                  
 |---|---|---|
 | `ok` | Hecho, apoyada, exacto | punto lleno |
 | `parcial` | Corregido, en parte | medio punto |
-| `aviso` | En curso, prioridad media, revisar | medio punto |
+| `aviso` | En curso, prioridad media, revisar | triángulo |
 | `mal` | Bloqueado, rechazada, prioridad alta | cuadrado |
 | `neutro` | Pendiente, tomó nota, prioridad baja | punto hueco |
 | `nd` | Sin información (borde de rayas) | raya |
@@ -96,9 +96,14 @@ Reglas:
   (`pastilla('nd')`); **nunca se rellena un estado que no está en la fuente**.
 - La fuente `{t, url}` es un símbolo o un número y no se traduce; `{html}` es una frase de interfaz que sí se traduce
   (hay que añadirla entera a los diccionarios).
-- En el celular, el enlace de la fuente mide 44 px de alto sin mover nada (relleno transparente).
+- `etiqueta` (opcional) es el nombre del enlace para el lector de pantalla cuando el texto visible no basta
+  («#261» → «Tarea #261 en GitHub»). Va en los diccionarios (con `{n}` en lugar de la cifra).
+- En el celular, el enlace de la fuente mide 44 px de alto sin mover nada (relleno transparente que se pinta por
+  encima de lo que sigue, para que todo el área responda al dedo).
+- **La palabra del estado nunca se parte.** En una tabla, la celda del estado lleva `class="td-est"` (ancho mínimo
+  de 9,5em). Si la fila ya tiene un enlace al mismo registro, la pastilla va **sin fuente**: no se repite el enlace.
 - Se usa hoy en **Qué falta y qué viene** (estado de cada tarea y su issue de GitHub) y en **Alertas de cotejo**
-  (prioridad de cada alerta y estado de cada número, según la Biblioteca Digital).
+  (prioridad de cada alerta y estado de cada número; ahí la fuente es el enlace «Registro» de la misma fila).
 
 ### 2.2 Comparador de varios países — `comparador({cols, filas, cab, etiqueta, vacio})`
 
@@ -117,7 +122,10 @@ Reglas:
 - Con **uno o dos países** la tabla cabe entera también en el celular (las columnas se reparten el ancho).
 - Con **tres o más**, en el celular se desliza de lado dentro de su caja (nunca la página entera) y aparece la pista
   «Desliza de lado para ver todas las columnas.». Después de pintarlo, llama a `cmpxDesborda()`.
-- La caja es una región con foco (`tabindex="0"`), así que también se desliza con las flechas del teclado.
+- La caja es una región con nombre. **Solo cuando hay algo que deslizar** `cmpxDesborda()` le da `tabindex="0"`, así
+  que se desliza con las flechas del teclado; si cabe entera, no añade una parada inútil al tabulador.
+- En el celular, el resaltado de la fila bajo el puntero solo existe con ratón (`@media (hover:hover)`): con el dedo
+  se quedaría pegado a la última fila tocada.
 - Cada fila lleva su aspecto como cabecera de fila (`<th scope="row">`): el lector de pantalla lo lee con cada dato.
 - Ya lo usa **«Comparar con otro país»** en la ficha de país (dos países). T75 y T83 lo usarán con más.
 
@@ -139,7 +147,8 @@ a.ir(0); a.respuestas();
 
 Reglas:
 - **Una sola pregunta por vista**, con opciones grandes (48 px) de las que se elige una.
-- Si se pulsa «Siguiente» sin elegir, avisa «Elige una opción para seguir.» y lleva el foco a las opciones.
+- Si se pulsa «Siguiente» sin elegir, avisa «Elige una opción para seguir.» y lleva el foco a las opciones. Las
+  opciones quedan con `aria-invalid="true"` y `aria-describedby` apuntando al aviso; al elegir, se quitan.
 - Al cambiar de paso, **el foco va a la pregunta nueva**, para que el lector de pantalla la lea.
 - «Atrás» recuerda lo que se había elegido. El resumen tiene «Cambiar las respuestas», «Empezar de nuevo» e
   «Imprimir el resumen» (se imprime solo el asistente, con su franja «En pruebas»).
@@ -157,11 +166,14 @@ Una recomendación a lo largo de los ciclos del EPU (T75): cada punto es un cicl
 lineaCompacta([
   { ciclo: 'Ciclo 2', fecha: '2012', est: 'ok', txt: 'Apoyada', fuente: { t: 'A/HRC/…', url: '…' } },
   { ciclo: 'Ciclo 3', fecha: '2017', est: 'nd' },                // sin dato: «Sin información»
+  { ciclo: 'Ciclo 4', fecha: '2022', est: 'nd', actual: true },  // el ciclo en curso
 ], 'La recomendación en cada ciclo')
 ```
 
 En escritorio va en horizontal; en el celular, en vertical. Cada estado sale con su fuente, igual que la pastilla.
-Un ciclo sin dato se pone con `est: 'nd'`, **nunca se deja fuera ni se rellena**.
+Un ciclo sin dato se pone con `est: 'nd'`, **nunca se deja fuera ni se rellena**. `actual: true` marca el ciclo en
+curso: su punto va relleno y lleva `aria-current="step"` para el lector de pantalla (solo uno por línea).
+Dentro de la línea, una pastilla que ocupa dos líneas tiene esquinas de 12 px en vez de cápsula.
 
 ### 2.5 Ficha de delegación imprimible — `fichaDelegacion({pais, codigo, sub, bloques, pie})`
 
@@ -177,7 +189,9 @@ fichaDelegacion({
 
 - `ancho: true` hace que un bloque ocupe las dos columnas. `<span class="fd-linea"></span>` deja una línea para
   escribir a mano.
-- Para imprimir solo la ficha: `imprimirSolo(elemento)`. La página marca el camino hasta ella y la hoja de impresión
+- Para imprimir solo la ficha, un botón debajo de ella:
+  `<button type="button" class="btn" onclick="imprimirSolo(this.previousElementSibling)">Imprimir la ficha</button>`
+  (el texto «Imprimir la ficha» ya está en los diccionarios). Al imprimir, la página marca el camino hasta ella y la hoja de impresión
   oculta todo lo demás; al terminar de imprimir, la pantalla vuelve a estar entera.
 - Los datos de la ficha salen de ATLAS (con su fuente en el pie). Los textos de la simulación son de T83.
 
