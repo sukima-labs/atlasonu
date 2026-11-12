@@ -15,7 +15,11 @@ jobs:
           mkdir -p _site/data
           cp index.html sw.js manifest.webmanifest _site/
           cp -r assets _site/
-          cp data/atlas-data.js data/atlas-actos.js data/catalogo.json data/atlas-onu-catalogo-v07.xlsx _site/data/
+          # Todo lo que la página y el service worker piden de data/: los .js y .json de primer nivel, los idiomas, las fichas por
+          # país, los textos de tratados, las votaciones (también las de sí/no) y el Excel
+          # (no las carpetas de trabajo: fuentes/, seguimiento/…).
+          cp data/*.js data/*.json data/cambios.atom data/atlas-onu-catalogo-v07.xlsx _site/data/
+          cp -r data/idiomas data/paises data/tratados data/votaciones data/votos_si_no _site/data/
           touch _site/.nojekyll
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
