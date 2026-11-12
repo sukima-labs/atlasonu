@@ -1428,5 +1428,17 @@ window.ATLAS_IDIOMA_zh={
 "Automático":"自动",
 "Claro":"浅色",
 "Oscuro":"深色",
-"Logo provisional de DIGNITYOS":"DIGNITYOS 临时标志"
+"Logo provisional de DIGNITYOS":"DIGNITYOS 临时标志",
+"Sudán":"苏丹",
+"{n} miembros · {n} con veto · presidencia mensual":"{n} 个成员 · 其中 {n} 个拥有否决权 · 每月轮值主席",
+"ATLAS no recoge hoy un régimen de sanciones ni una operación del Consejo dedicados a este país. Eso no quiere decir que el Consejo no haya tratado nunca su situación.":"ATLAS 目前没有收录专门针对该国的制裁制度或安理会行动。这并不意味着安理会从未处理过该国局势。",
+"Dónde buscar: resoluciones por año en":"查找位置：按年份查阅决议，见",
+"la página del Consejo ↗":"安理会页面 ↗",
+"; cada sesión pública tiene su acta":"；每次公开会议都有其记录",
+"S/PV.n.º":"S/PV.编号",
+"y los informes del Secretario General y de los grupos de expertos llevan el símbolo":"秘书长和专家小组的报告使用的符号是",
+"S/año/n.º":"S/年份/编号",
+". Las sanciones, en":"。制裁见",
+"la página de sanciones ↗":"制裁页面 ↗",
+"Cómo funciona el Consejo":"安理会如何运作"
 };

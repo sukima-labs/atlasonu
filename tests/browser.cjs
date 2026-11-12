@@ -87,7 +87,7 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     ok(vp.name + ': votos en la Asamblea: tercera vista sí/no/abstención con su tabla y tres botones (#186, opción B)', vs);
     await page.evaluate(() => votosCambia('barras'));
     const dd = await page.textContent('#pDocs');
-    ok(vp.name + ': la ficha tiene el menú «Qué quieres ver» con 9 saltos y el botón de comparar', (await page.locator('#pNav button[onclick^="irSeccion"]').count()) === 9 && (await page.locator('#pNav button[onclick^="compararCon"]').count()) === 1);
+    ok(vp.name + ': la ficha tiene el menú «Qué quieres ver» con 10 saltos y el botón de comparar', (await page.locator('#pNav button[onclick^="irSeccion"]').count()) === 10 && (await page.locator('#pNav button[onclick^="compararCon"]').count()) === 1);
     await page.locator('#pNav button', { hasText: 'EPU' }).click(); await esperaReposo(page);
     const epuY = await page.evaluate(() => document.getElementById('ps-epu').getBoundingClientRect().top);
     ok(vp.name + ': «EPU» lleva a su bloque', epuY >= -5 && epuY < vp.height * 0.5);
