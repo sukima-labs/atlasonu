@@ -1429,5 +1429,9 @@ window.ATLAS_IDIOMA_zh={
 "Qué es":"是什么",
 "Qué hace":"做什么",
 "Nombre oficial en los idiomas de la ONU":"联合国各语文的正式名称",
-"Más detalle":"更多细节"
+"Más detalle":"更多细节",
+"Modo de color":"颜色模式",
+"Automático":"自动",
+"Claro":"浅色",
+"Oscuro":"深色"
 };

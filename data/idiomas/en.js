@@ -1429,5 +1429,9 @@ window.ATLAS_IDIOMA_en={
 "Qué es":"What it is",
 "Qué hace":"What it does",
 "Nombre oficial en los idiomas de la ONU":"Official name in the UN languages",
-"Más detalle":"More detail"
+"Más detalle":"More detail",
+"Modo de color":"Colour mode",
+"Automático":"Automatic",
+"Claro":"Light",
+"Oscuro":"Dark"
 };
