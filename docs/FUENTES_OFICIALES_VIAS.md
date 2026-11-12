@@ -56,7 +56,9 @@ especiales. 57 requisitos con sus cuatro campos; **47 leídos en el original**, 
   (Ucrania, CAT) lee la nota. Se renueva con la revisión diaria de datos.
 
 En la web (12-11-2026): pantalla «Tengo un caso: ¿adónde acudo?» (menú, junto a «Tratados y comités»), con la tabla de
-las once vías y los requisitos de cada una.
+las once vías y los requisitos de cada una, y un **asistente paso a paso** que solo usa requisitos «leído en el original».
+El tema del caso solo orienta (qué derechos protege cada tratado: la tortura lleva a la CAT y al Comité de Derechos Humanos,
+la desaparición a la acción urgente y la queja de la CED…); no es un dato oficial y no sustituye leer el tratado.
 
 ## Procedimientos especiales (relatores y grupos de trabajo)
 No son «quejas» con plazo y admisibilidad: se envían **comunicaciones** (alegaciones, acciones urgentes) y el relator decide si actúa. Para el asistente es la vía clave **cuando la víctima no puede agotar los recursos del país o el riesgo es inminente**. Contrastado el 12-11-2026 (pedido del grupo; el material de referencia orienta, la fuente de cada dato es la ONU):

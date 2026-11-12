@@ -142,7 +142,7 @@ const a = asistente(document.getElementById('miCaja'), {
   resultado: R => '<p>…</p>',   // HTML del final, según las respuestas R
   enPruebas: true               // franja «En pruebas» (por defecto, sí)
 });
-a.ir(0); a.respuestas();
+a.ir(0); a.respuestas(); a.enResumen();   // ¿está en el resumen? (para rehacerlo si cambia algo de fuera)
 ```
 
 Reglas:
@@ -155,8 +155,10 @@ Reglas:
 - **Mientras una herramienta esté en pruebas, lleva la franja.** Su aviso por defecto es «Esta herramienta está en
   pruebas: comprueba siempre la información en la fuente oficial.»
 - Las preguntas, las opciones y el resultado son **contenido**: siguen las reglas de su tarea (T76, T77) y van en los
-  diccionarios de idiomas. Hoy **ninguna pantalla usa el asistente**; se prueba con una muestra en
-  `tests/componentes.cjs`.
+  diccionarios de idiomas. Lo usa «Tengo un caso: ¿adónde acudo?» (T76, `viaAsistente()`); además se prueba con una muestra
+  en `tests/componentes.cjs`.
+- Para la meta de 44 px, el objetivo táctil de cada opción es su `<label>` entera (48 px), no el círculo del botón:
+  `tests/metas_ux.cjs` lo mide así.
 
 ### 2.4 Línea de tiempo compacta — `lineaCompacta(lista, etiqueta)`
 
