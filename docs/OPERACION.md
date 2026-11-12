@@ -8,6 +8,13 @@ Desde el 06-11-2026 una sola automatización actualiza `data/` en `main`: GitHub
 
 No toca el código: solo `data/`.
 
+**Lo que la revisión no consulta (T56, 12-11-2026):** lo que prohíben los `robots.txt`: `digitallibrary.un.org/search`,
+`documents.un.org/api` y todo `ap.ohchr.org`. La verificación de símbolos (`verify_symbols.py`) y la localización de
+textos (`resolve_texts.py`) trabajan sin red sobre su resultado anterior. Un símbolo nuevo queda «Sin cotejar todavía»
+(`SIN_CONSULTAR`), con su aviso en el catálogo, hasta que una persona lo coteje. `BIBLIOTECA_SEARCH=si` vuelve a buscar en
+la Biblioteca Digital, y solo se usa a mano y con permiso. De la Biblioteca Digital se bajan registros concretos
+(`/record/N`) a 5 s como mínimo. Su OAI-PMH solo tiene el conjunto «sanctions» y no sirve para descubrir documentos.
+
 ## Antes (historia, hasta el 06-11-2026)
 Había un segundo publicador, `atlas-onu.timer` en el mini PC (`scripts/mini_pc/actualizar_local.sh`, 00:00 y 12:00), que corría antes que Actions y hacía `push` directo; Actions era el respaldo. Se retiró: no se vuelve a instalar ni se usa como respaldo.
 

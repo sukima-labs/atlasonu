@@ -2,10 +2,15 @@
 """Verifica símbolos ONU contra la Biblioteca Digital de la ONU (MARCXML, búsqueda por 191__a / 993__a).
 Uso: verify_symbols.py <ohchr_TM_en.json> <ohchr_CM_en.json> <salida_cache.json>
 Un símbolo solo se marca VERIFICADO si existe un registro con ese 191$a (o es borrador 993$a de una resolución).
-No se infiere nada: lo no encontrado queda NO_ENCONTRADO."""
+No se infiere nada: lo no encontrado queda NO_ENCONTRADO.
+T56: el robots.txt de la Biblioteca Digital prohíbe /search. Por defecto no se consulta nada: se reutiliza el resultado
+anterior de cada acto si su símbolo no cambió, y un símbolo nuevo queda SIN_CONSULTAR. Solo con BIBLIOTECA_SEARCH=si
+(a mano y con permiso) se vuelve a buscar."""
 import re, sys, json, time, urllib.parse, urllib.request, concurrent.futures as cf, os
 
 DL = 'https://digitallibrary.un.org/search?ln=en&of=xm&rg=100&p='
+BUSCAR = os.environ.get('BIBLIOTECA_SEARCH') == 'si'   # T56
+class SinConsulta(Exception): pass
 TOK = re.compile(r'(?:[AES]/[A-Za-z0-9.()\-]+(?:/[A-Za-z0-9.()\-]+)*|\b\d{4}/\d+\b)')
 
 def clean(sym, por=''):
@@ -73,6 +78,7 @@ def parse(xml):
     return res
 
 def query(field, sym, tries=6):
+    if not BUSCAR: raise SinConsulta(sym)
     url = DL + urllib.parse.quote(f'{field}:"{sym}"')
     for i in range(tries):
         try:
@@ -146,7 +152,7 @@ def main(tm, cm, out):
     uniq = {}
     for _, _, s, por in jobs:
         for c in candidates(clean(s, por), por): uniq[c if isinstance(c, str) else 'D:' + c[1]] = c
-    todo = [(k, c) for k, c in uniq.items() if k not in cache]
+    todo = [(k, c) for k, c in uniq.items() if k not in cache] if BUSCAR else []
     print(len(jobs), 'actos;', len(uniq), 'símbolos únicos;', len(todo), 'por consultar', flush=True)
     def run(kc):
         k, c = kc
@@ -159,18 +165,25 @@ def main(tm, cm, out):
         for kc in fallidas:
             k, r = run(kc); cache[k] = r; time.sleep(1.5)
     json.dump({k: v for k, v in cache.items() if not (isinstance(v, dict) and 'error' in v)}, open(cache_path, 'w'))   # los errores no se guardan: se reintentan la próxima vez
-    prev = {}
+    prev, prev_l = {}, []
     if os.path.exists(out):
-        try: prev = {(r['mandato'], r['acto']): r for r in json.load(open(out, encoding='utf-8'))['resultados']}
-        except Exception: prev = {}
+        try: prev_l = json.load(open(out, encoding='utf-8'))['resultados']; prev = {(r['mandato'], r['acto']): r for r in prev_l}
+        except Exception: prev, prev_l = {}, []
     res, retenidos = [], []
+    sincons = 0
+    previos = {(r['mandato'], r['acto'], r.get('original'), r.get('limpio', '')): r for r in prev_l}
     for t, a, s, por in jobs:
+        p = previos.get((t, a, s, clean(s, por)))   # un mandato puede tener dos actos con la misma etiqueta: se distinguen por el símbolo
+        if not BUSCAR and p: res.append(p); continue
         try: res.append(dict(mandato=t, acto=a, **verify(s, por, cache, t)))
+        except SinConsulta:
+            res.append({'mandato': t, 'acto': a, 'original': s, 'limpio': clean(s, por), 'estado': 'SIN_CONSULTAR'}); sincons += 1
         except RedError as e:
             if (t, a) not in prev: print('ABORTA: error de red en', e, 'y no hay resultado previo de', t, a); sys.exit(2)
             res.append(prev[(t, a)]); retenidos.append([t, a])   # se conserva lo ya verificado; no se degrada nada
     if len(retenidos) > max(5, int(0.03 * len(jobs))):
         print('ABORTA: errores de red en', len(retenidos), 'actos (más del 3 %)'); sys.exit(2)
+    if sincons: print(sincons, 'actos con símbolo nuevo quedan SIN_CONSULTAR (T56: /search no se usa)', flush=True)
     if retenidos: print('Se conservan', len(retenidos), 'resultados anteriores por errores de red:', retenidos[:5], flush=True)
     json.dump({'fuente': DL, 'resultados': res, 'retenidos': retenidos}, open(out, 'w'), ensure_ascii=False, indent=1)
     from collections import Counter
