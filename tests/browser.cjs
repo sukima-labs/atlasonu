@@ -646,7 +646,7 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     await c2.close();
     // Barra superior estrecha: ningún control se encoge ni se sale. «Menú» (si se ve) queda dentro de su botón, y la marca, el selector de modo
     // y el de idioma no se pisan entre sí ni salen de la pantalla (la marca solo puede ocultarse por debajo de 340 px). scrollWidth no basta: overflow-x:hidden y el desborde a la izquierda en árabe lo esconden.
-    for (const ln of ['es', 'ar']) {
+    for (const ln of ['es', 'ar', 'ru']) {
       for (const ancho of [320, 360, 390, 412]) {
         const cb = await browser.newContext({ viewport: { width: ancho, height: 800 }, hasTouch: true, isMobile: true });
         await cb.addInitScript(l => { try { localStorage.setItem('atlas_idioma', l); } catch (e) {} }, ln);
@@ -665,6 +665,10 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
           return err.join(', ');
         });
         ok(`barra superior (#228) a ${ancho} px en ${ln}: menú, marca, modo de color e idioma sin pisarse ni salir de la pantalla${fallo ? ' → ' + fallo : ''}`, !fallo);
+        if (ancho >= 390) { // en los celulares comunes «ATLAS ONU» va en una sola línea aunque esté el botón del modo de color
+          const m = await pb.evaluate(() => { const e = document.querySelector('.appbrand'), cs = getComputedStyle(e); return { alto: e.getBoundingClientRect().height, letra: parseFloat(cs.fontSize), modo: !!document.querySelector('.appbar .tema-cel') && getComputedStyle(document.querySelector('.appbar .tema-cel')).display !== 'none', desborda: e.scrollWidth > e.clientWidth + 1 }; });
+          ok(`barra superior (#228) a ${ancho} px en ${ln}: «ATLAS ONU» en una línea y entero, con el selector de modo presente (alto ${m.alto.toFixed(0)} px, letra ${m.letra} px)`, m.modo && m.alto <= m.letra * 1.3 && !m.desborda);
+        }
         await cb.close();
       }
     }
