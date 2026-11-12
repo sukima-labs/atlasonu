@@ -206,13 +206,17 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     ok(vp.name + ': Mapa: el marco no atrapa el scroll de la página (sin barras internas; un dedo vertical pasa de largo)', await page.evaluate(() => { const w = document.getElementById('mpWrap'), c = getComputedStyle(w); return c.overflow === 'hidden' && /pan-y/.test(c.touchAction) && c.overscrollBehaviorY !== 'contain'; }));
     // #183: colores propios (no los dorados de la plantilla) y con contraste ≥ 3:1 sobre el fondo del mapa en todas las capas
     const lum = h => { const c = h.match(/\d+/g).slice(0, 3).map(n => { n /= 255; return n <= .03928 ? n / 12.92 : ((n + .055) / 1.055) ** 2.4; }); return .2126 * c[0] + .7152 * c[1] + .0722 * c[2]; };
-    const bgMapa = await page.$eval('#mpWrap', e => getComputedStyle(e).backgroundColor);
     const malos = [];
+    for (const modo of ['dark', 'light']) { // #228: la paleta del mapa se mide en los dos modos
+    await page.evaluate(m => atlasTema(m), modo);
+    const bgMapa = await page.$eval('#mpWrap', e => getComputedStyle(e).backgroundColor);
     for (const capa of ['basicos', 'tratado', 'invitacion', 'mandato', 'comision', 'conflictos', 'comunicaciones', 'epu']) {
       await page.selectOption('#mpCapa', capa); await page.waitForFunction(() => !/Cargando/.test(document.getElementById('mpLeyenda').textContent));
       const cols = await page.evaluate(() => [...document.querySelectorAll('#mpLeyenda .mp-sw, #mpLeyenda .mp-esc i')].map(e => getComputedStyle(e).backgroundColor));
-      for (const c of cols) { const [a, b] = [lum(c), lum(bgMapa)].sort((x, y) => y - x); const cr = (a + .05) / (b + .05); const [r, g, bl] = c.match(/\d+/g).map(Number); const dorado = r > 150 && g > 100 && bl < 130 && r > g && g > bl; if (cr < 1.8 && c !== 'rgb(50, 56, 65)') malos.push(capa + ' ' + c + ' contraste ' + cr.toFixed(2)); if (dorado) malos.push(capa + ' ' + c + ' dorado de la plantilla'); }
+      for (const c of cols) { const [a, b] = [lum(c), lum(bgMapa)].sort((x, y) => y - x); const cr = (a + .05) / (b + .05); const [r, g, bl] = c.match(/\d+/g).map(Number); const dorado = r > 150 && g > 100 && bl < 130 && r > g && g > bl; if (cr < 1.8 && c !== 'rgb(50, 56, 65)') malos.push(modo + ' ' + capa + ' ' + c + ' contraste ' + cr.toFixed(2)); if (dorado) malos.push(modo + ' ' + capa + ' ' + c + ' dorado de la plantilla'); }
     }
+    }
+    await page.evaluate(() => atlasTema('auto'));
     ok(vp.name + ': Mapa: ningún color de las leyendas se confunde con el fondo del mapa ni con el dorado de la plantilla' + (malos.length ? ' → ' + malos.join('; ') : ''), !malos.length);
     await page.selectOption('#mpCapa', 'basicos');
     await page.click('#mpInfo button'); await page.waitForTimeout(300);
@@ -598,6 +602,70 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     const e = await abre({ viewport: { width: 412, height: 915 }, screen: { width: 412, height: 915 }, hasTouch: true, isMobile: true, userAgent: UA });
     ok('vista móvil forzada (#188): un celular en modo normal tampoco cambia (sin marco ni enlaces de vista)', (await e.pg.locator('#marcoMovil').count()) === 0 && (await e.pg.evaluate(() => document.getElementById('vistaOpc').hidden)));
     await e.c.close();
+  }
+  // #228 (T85 fase 3): modo claro y oscuro. «Automático» sigue al aparato; «Claro» u «Oscuro» se guardan en el navegador y aguantan la recarga
+  {
+    const tema = pg => pg.evaluate(() => ({ t: document.documentElement.dataset.theme, e: document.documentElement.dataset.temaElegido, tc: [...document.querySelectorAll('meta[name="theme-color"]')].map(m => m.content), cs: getComputedStyle(document.documentElement).colorScheme, fondo: getComputedStyle(document.body).backgroundColor, guardado: (() => { try { return localStorage.getItem('atlas-tema'); } catch (e) { return 'sin-almacenamiento'; } })() }));
+    const c1 = await browser.newContext({ viewport: { width: 1366, height: 800 }, colorScheme: 'light' });
+    const p1 = await c1.newPage(); const er1 = []; p1.on('pageerror', e => er1.push(e.message));
+    await p1.goto(URL); await p1.waitForTimeout(400);
+    let t = await tema(p1);
+    ok('modo de color (#228): sin elegir nada sigue al aparato (claro) con fondo marfil y theme-color marfil', t.t === 'light' && t.e === 'auto' && t.cs === 'light' && t.fondo === 'rgb(245, 244, 240)' && t.tc.includes('#F5F4F0'));
+    await p1.emulateMedia({ colorScheme: 'dark' }); await p1.waitForTimeout(150);
+    t = await tema(p1);
+    ok('modo de color (#228): en «Automático», si el aparato pasa a oscuro la página también (sin recargar)', t.t === 'dark' && t.cs === 'dark' && t.fondo === 'rgb(16, 19, 28)');
+    const botones = await p1.locator('.side .tema-sel button').allTextContents();
+    ok('modo de color (#228): el menú lateral tiene el selector Automático / Claro / Oscuro, con su nombre accesible', botones.join('|') === 'Automático|Claro|Oscuro' && await p1.isVisible('.side .tema-sel') && await p1.evaluate(() => document.getElementById(document.querySelector('.tema-sel').getAttribute('aria-labelledby')).textContent === 'Modo de color'));
+    await p1.click('.side .tema-sel button[data-tema="light"]'); await p1.waitForTimeout(100);
+    t = await tema(p1);
+    ok('modo de color (#228): elegir «Claro» con el aparato en oscuro cambia data-theme, theme-color y el botón pulsado, y se guarda', t.t === 'light' && t.e === 'light' && t.guardado === 'light' && t.tc.every(x => x === '#F5F4F0') && await p1.evaluate(() => document.querySelector('.tema-sel button[data-tema="light"]').getAttribute('aria-pressed') === 'true' && document.querySelectorAll('.tema-sel button[aria-pressed="true"]').length === 1));
+    await p1.reload(); await p1.waitForTimeout(400);
+    t = await tema(p1);
+    ok('modo de color (#228): «Claro» sigue después de recargar', t.t === 'light' && t.e === 'light' && await p1.evaluate(() => document.querySelector('.tema-sel button[data-tema="light"]').getAttribute('aria-pressed') === 'true'));
+    await p1.evaluate(() => showPage('mapa')); await p1.waitForTimeout(1200);
+    const antes = await p1.evaluate(() => [...document.querySelectorAll('#mpSvg .mp-p')].slice(0, 40).map(x => x.style.fill).join());
+    await p1.click('.side .tema-sel button[data-tema="dark"]'); await p1.waitForTimeout(200);
+    const despues = await p1.evaluate(() => [...document.querySelectorAll('#mpSvg .mp-p')].slice(0, 40).map(x => x.style.fill).join());
+    t = await tema(p1);
+    ok('modo de color (#228): «Oscuro» se aplica y el mapa se repinta con la escala de su modo', t.t === 'dark' && t.guardado === 'dark' && antes.length > 0 && antes !== despues);
+    await p1.click('.side .tema-sel button[data-tema="auto"]'); await p1.waitForTimeout(100);
+    t = await tema(p1);
+    ok('modo de color (#228): volver a «Automático» borra lo guardado y sigue al aparato', t.e === 'auto' && t.guardado === null && t.t === 'dark' && t.tc.includes('#F5F4F0') && t.tc.includes('#10131C'));
+    ok('modo de color (#228): sin errores de JavaScript', er1.length === 0);
+    await c1.close();
+    // celular: el desplegable de la barra superior
+    const c2 = await browser.newContext({ viewport: { width: 390, height: 844 }, colorScheme: 'dark', hasTouch: true });
+    const p2 = await c2.newPage();
+    await p2.goto(URL); await p2.waitForTimeout(400);
+    const caja = await p2.locator('.appbar .tema-cel').boundingBox();
+    ok('modo de color (#228): en el celular el selector está en la barra superior, con 44 px y sin desbordar', !!caja && caja.width >= 44 && caja.height >= 44 && await p2.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1 && document.getElementById('temaCel').getAttribute('aria-label') === 'Modo de color'));
+    await p2.selectOption('#temaCel', 'light'); await p2.waitForTimeout(100);
+    await p2.reload(); await p2.waitForTimeout(400);
+    t = await tema(p2);
+    ok('modo de color (#228): en el celular, «Claro» se elige arriba y sigue después de recargar', t.t === 'light' && t.e === 'light' && await p2.evaluate(() => document.getElementById('temaCel').value === 'light'));
+    await c2.close();
+    // sin almacenamiento (navegador que lo bloquea): funciona igual, sin errores
+    const c3 = await browser.newContext({ viewport: { width: 1366, height: 800 }, colorScheme: 'light' });
+    await c3.addInitScript(() => { Object.defineProperty(window, 'localStorage', { get() { throw new Error('bloqueado'); } }); });
+    const p3 = await c3.newPage(); const er3 = []; p3.on('pageerror', e => er3.push(e.message));
+    await p3.goto(URL); await p3.waitForTimeout(400);
+    await p3.click('.side .tema-sel button[data-tema="dark"]'); await p3.waitForTimeout(100);
+    t = await tema(p3);
+    ok('modo de color (#228): con el almacenamiento bloqueado el selector funciona y no hay errores', t.t === 'dark' && t.guardado === 'sin-almacenamiento' && er3.length === 0);
+    await c3.close();
+    // #188 + #228: el marco del celular con «sitio de computador» toma el color del modo antes de pintar y lo sigue
+    const UA = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36';
+    const c4 = await browser.newContext({ viewport: { width: 980, height: 1740 }, screen: { width: 412, height: 915 }, hasTouch: true, isMobile: false, userAgent: UA, colorScheme: 'light' });
+    const p4 = await c4.newPage();
+    await p4.goto(URL); await p4.waitForTimeout(1500);
+    const fr4 = p4.frames().find(f => f !== p4.mainFrame());
+    const ext = () => p4.evaluate(() => ({ fondo: getComputedStyle(document.body).backgroundColor, tc: (document.querySelector('meta[name="theme-color"]') || {}).content }));
+    let e4 = await ext();
+    ok('modo de color (#228): el marco del celular nace en claro si el aparato está en claro', !!fr4 && e4.fondo === 'rgb(245, 244, 240)' && e4.tc === '#F5F4F0' && await fr4.evaluate(() => document.documentElement.dataset.theme === 'light'));
+    if (fr4) { await fr4.evaluate(() => atlasTema('dark')); await p4.waitForTimeout(200); }
+    e4 = await ext();
+    ok('modo de color (#228): al elegir «Oscuro» dentro del marco, el fondo y la barra del navegador también pasan a oscuro', e4.fondo === 'rgb(16, 19, 28)' && e4.tc === '#10131C');
+    await c4.close();
   }
   await browser.close();
   const failed = res.checks.filter(c => !c.ok);

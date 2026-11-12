@@ -1,5 +1,6 @@
 // T27 · Accesibilidad: pasa axe-core (reglas WCAG 2.0, 2.1 y 2.2 A y AA) por cada pantalla del menú, a 390 px
 // (celular) y a 1280 px (escritorio), en español, en inglés y en árabe (de derecha a izquierda). Falla si encuentra cualquier incumplimiento.
+// #228 (T85 fase 3): cada pantalla se mide en los DOS modos, oscuro y claro (se cambia con atlasTema sin recargar).
 // Uso: npm i --no-save playwright axe-core && node tests/accesibilidad.cjs
 // Lo que axe no puede medir solo (lector de pantalla real, lenguaje claro, lectura fácil) está en docs/ACCESIBILIDAD.md.
 const { chromium } = require('playwright');
@@ -8,6 +9,7 @@ const path = require('path');
 const AXE = fs.readFileSync(require.resolve('axe-core/axe.min.js'), 'utf8');
 const INDEX = 'file://' + path.resolve(__dirname, '..', 'index.html');
 const REGLAS = ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'];
+const MODOS = ['dark', 'light'];
 const CASOS = [
   { ancho: 390, alto: 844, idioma: 'es' },
   { ancho: 1280, alto: 900, idioma: 'es' },
@@ -33,26 +35,31 @@ const CASOS = [
     for (const id of pantallas) {
       await p.evaluate(i => { showPage(i, true); document.querySelectorAll('details.lf').forEach(d => { d.open = true; }); }, id); // T65: la lectura fácil se mide abierta
       await p.waitForTimeout(400);
-      const v = await p.evaluate(async r => (await axe.run(document, { runOnly: r })).violations
-        .map(x => ({ id: x.id, n: x.nodes.length, ej: x.nodes[0].target.join(' ') })), REGLAS);
-      for (const x of v) {
-        fallos += x.n;
-        console.log(`✗ ${c.idioma} ${c.ancho}px #${id}: ${x.id} (${x.n}) p. ej. ${x.ej}`);
-      }
-      if (id === 'mapa') { // las capas con selector propio (conflictos por año, EPU por ciclo) también se miden
-        for (const capa of ['conflictos', 'epu']) {
-          await p.evaluate(k => { document.getElementById('mpCapa').value = k; mpCapaCambia(); }, capa);
-          await p.waitForTimeout(700);
-          const w = await p.evaluate(async r => (await axe.run(document, { runOnly: r })).violations.map(x => ({ id: x.id, n: x.nodes.length, ej: x.nodes[0].target.join(' ') })), REGLAS);
-          for (const x of w) { fallos += x.n; console.log(`✗ ${c.idioma} ${c.ancho}px #mapa capa ${capa}: ${x.id} (${x.n}) p. ej. ${x.ej}`); }
+      for (const modo of MODOS) {
+        await p.evaluate(m => { atlasTema(m); }, modo);
+        if (await p.evaluate(() => document.documentElement.dataset.theme) !== modo) { fallos++; console.log(`✗ ${c.idioma} ${c.ancho}px #${id}: no se pudo poner el modo ${modo}`); }
+        await p.waitForTimeout(80);
+        const v = await p.evaluate(async r => (await axe.run(document, { runOnly: r })).violations
+          .map(x => ({ id: x.id, n: x.nodes.length, ej: x.nodes[0].target.join(' ') })), REGLAS);
+        for (const x of v) {
+          fallos += x.n;
+          console.log(`✗ ${c.idioma} ${c.ancho}px ${modo} #${id}: ${x.id} (${x.n}) p. ej. ${x.ej}`);
         }
-        await p.evaluate(() => { document.getElementById('mpCapa').value = 'basicos'; mpCapaCambia(); });
+        if (id === 'mapa') { // las capas con selector propio (conflictos por año, EPU por ciclo) también se miden
+          for (const capa of ['conflictos', 'epu']) {
+            await p.evaluate(k => { document.getElementById('mpCapa').value = k; mpCapaCambia(); }, capa);
+            await p.waitForTimeout(700);
+            const w = await p.evaluate(async r => (await axe.run(document, { runOnly: r })).violations.map(x => ({ id: x.id, n: x.nodes.length, ej: x.nodes[0].target.join(' ') })), REGLAS);
+            for (const x of w) { fallos += x.n; console.log(`✗ ${c.idioma} ${c.ancho}px ${modo} #mapa capa ${capa}: ${x.id} (${x.n}) p. ej. ${x.ej}`); }
+          }
+          await p.evaluate(() => { document.getElementById('mpCapa').value = 'basicos'; mpCapaCambia(); });
+        }
       }
     }
-    console.log(`${c.idioma} ${c.ancho}px: ${pantallas.length} pantallas revisadas`);
+    console.log(`${c.idioma} ${c.ancho}px: ${pantallas.length} pantallas revisadas en modo oscuro y claro`);
     await ctx.close();
   }
   await b.close();
   if (fallos) { console.log(`accesibilidad: ${fallos} incumplimientos`); process.exit(1); }
-  console.log('accesibilidad: 0 incumplimientos WCAG A/AA detectables por axe');
+  console.log('accesibilidad: 0 incumplimientos WCAG A/AA detectables por axe, en modo oscuro y en claro');
 })().catch(e => { console.error(e); process.exit(1); });
