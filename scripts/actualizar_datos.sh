@@ -9,8 +9,14 @@ PREV=$(mktemp); cp data/catalogo.json "$PREV"
 FP=$(python3 -I -c "import json;print(json.load(open('data/catalogo.json',encoding='utf-8'))['consultado'])")
 TMP=$(mktemp -d)
 VER=data/fuentes/verificacion_simbolos.json
-python3 -I scripts/fetch_regiones.py "$FP"
-python3 -I scripts/fetch_paises.py "$FP"
+# T56 (#313, decidido por Patricio el 12-11-2026): spinternet.ohchr.org y spcommreports.ohchr.org dicen «Disallow: /» en su
+# robots.txt. No se leen solos: se conservan los datos anteriores (con su fecha) hasta tener permiso por escrito del
+# ACNUDH. OHCHR_SP=si los vuelve a leer, solo a mano y con ese permiso.
+OHCHR_SP="${OHCHR_SP:-no}"
+if [ "$OHCHR_SP" = si ]; then
+  python3 -I scripts/fetch_regiones.py "$FP"
+  python3 -I scripts/fetch_paises.py "$FP"
+else echo "Comunicaciones por región y visitas por país: omitido (T56, #313: el robots.txt del ACNUDH lo prohíbe)."; fi
 python3 -I scripts/fetch_tratados.py "$FP"
 python3 -I scripts/fetch_tratados_texto.py
 # T56: la Biblioteca Digital prohíbe /search en robots.txt. Desactivado por defecto; solo se usa con BIBLIOTECA_SEARCH=si.
@@ -21,10 +27,10 @@ if [ "$BIBLIOTECA_SEARCH" = si ]; then MARCO=ok; python3 -I scripts/fetch_docume
 COMUNICACIONES=ok
 python3 -I scripts/fetch_comunicaciones_cifras.py || { COMUNICACIONES=conservado; echo "Cifras de comunicaciones: no se pudieron actualizar; se conservan las anteriores."; }
 echo "pausa de 60 s para no saturar la Biblioteca Digital"; sleep 60
-for t in TM CM; do for l in en es; do
+if [ "$OHCHR_SP" = si ]; then for t in TM CM; do for l in en es; do
   curl -fsS -m 90 -L "https://spinternet.ohchr.org/ViewAllCountryMandates.aspx?Type=$t&lang=$l" -o "$TMP/spin_${t}_$l.html"
   python3 -I scripts/parse_ohchr_mandates.py "$TMP/spin_${t}_$l.html" $t $l "data/fuentes/ohchr_${t}_$l.json" "$FP"
-done; done
+done; done; else echo "Lista de mandatos: omitida (T56, #313); se conserva la de la última lectura."; fi
 python3 -I scripts/verify_symbols.py data/fuentes/ohchr_TM_en.json data/fuentes/ohchr_CM_en.json "$VER"
 python3 -I scripts/build_mecanismos.py > /dev/null
 python3 -I scripts/build_catalog.py "$VER" "$FP" > /dev/null

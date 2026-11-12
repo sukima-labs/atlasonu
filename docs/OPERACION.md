@@ -15,6 +15,11 @@ textos (`resolve_texts.py`) trabajan sin red sobre su resultado anterior. Un sí
 la Biblioteca Digital, y solo se usa a mano y con permiso. De la Biblioteca Digital se bajan registros concretos
 (`/record/N`) a 5 s como mínimo. Su OAI-PMH solo tiene el conjunto «sanctions» y no sirve para descubrir documentos.
 
+**El ACNUDH (#313, decidido por Patricio el 12-11-2026):** `spinternet.ohchr.org` (lista de mandatos y visitas) y
+`spcommreports.ohchr.org` (comunicaciones) dicen `Disallow: /` en su `robots.txt`. La revisión diaria ya no los lee:
+se conservan los datos de la última lectura, con su fecha. Se pide permiso por escrito al ACNUDH; hasta tenerlo,
+`OHCHR_SP=si` (que vuelve a leerlos) no se usa.
+
 ## Antes (historia, hasta el 06-11-2026)
 Había un segundo publicador, `atlas-onu.timer` en el mini PC (`scripts/mini_pc/actualizar_local.sh`, 00:00 y 12:00), que corría antes que Actions y hacía `push` directo; Actions era el respaldo. Se retiró: no se vuelve a instalar ni se usa como respaldo.
 
