@@ -36,7 +36,7 @@ La ficha tiene **13 años**: sirve para el mapa y los plazos de los textos de tr
 
 Todo lo demás de la ficha (formularios modelo para el Comité de Derechos Humanos, el de Tortura y el de Discriminación contra la Mujer) es la base del **borrador de campos** de la fase 4 opcional de T76.
 
-## Base de reglas del asistente: `data/vias.json` (T76 fase 1, 12-11-2026)
+## Base de reglas del asistente: `data/vias.js` (T76 fase 1, 12-11-2026)
 Once vías: las quejas individuales ante los nueve comités que las reciben (la del CMW, marcada como que **aún no funciona**),
 la **acción urgente** del Comité contra la Desaparición Forzada (art. 30) y las comunicaciones a los procedimientos
 especiales. 57 requisitos con sus cuatro campos; **47 leídos en el original**, todos en el texto del tratado o protocolo:
@@ -51,6 +51,9 @@ especiales. 57 requisitos con sus cuatro campos; **47 leídos en el original**, 
   procedimientos especiales. Llevan `onu` vacío y no entran en el asistente.
 - Qué Estados **aceptan** cada vía: para las que van por protocolo, la ratificación ya está en los datos de cada país; para
   las que van por **declaración** (CERD art. 14, CAT art. 22, CED art. 31, CMW art. 77) falta la lista de declaraciones.
+
+En la web (12-11-2026): pantalla «Tengo un caso: ¿adónde acudo?» (menú, junto a «Tratados y comités»), con la tabla de
+las once vías y los requisitos de cada una.
 
 ## Procedimientos especiales (relatores y grupos de trabajo)
 No son «quejas» con plazo y admisibilidad: se envían **comunicaciones** (alegaciones, acciones urgentes) y el relator decide si actúa. Para el asistente es la vía clave **cuando la víctima no puede agotar los recursos del país o el riesgo es inminente**. Contrastado el 12-11-2026 (pedido del grupo; el material de referencia orienta, la fuente de cada dato es la ONU):

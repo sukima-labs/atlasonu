@@ -170,6 +170,14 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     await sp.selectOption('#segCmpSel', 'MEX'); await sp.selectOption('#segCmpSel', 'ARG');
     ok(vp.name + ': T75 comparador con 3 países (columna fija + 3) y 15 filas', await sp.evaluate(() => document.querySelectorAll('#segCmp thead th').length === 4 && document.querySelectorAll('#segCmp tbody tr').length === 15));
     if (sp !== page) await sp.close();
+    // T76 fase 1: «Tengo un caso: ¿adónde acudo?». data/vias.js se carga con <script>: funciona también desde file://.
+    await page.evaluate(() => showPage('vias')); await page.waitForFunction(() => document.querySelectorAll('#viaOut .cmpx tbody tr').length >= 11 && document.querySelectorAll('#viaPais option').length > 150);
+    ok(vp.name + ': T76 la tabla de vías trae 11 vías con su franja «En pruebas» y los requisitos plegados', await page.evaluate(() => document.querySelectorAll('#viaOut .cmpx tbody tr').length === 11 && !!document.querySelector('#vias .asis-franja') && document.querySelectorAll('#viaOut details[data-plg^="via-"]').length === 11));
+    await page.selectOption('#viaPais', 'COL'); await page.waitForTimeout(150);
+    const via = await page.evaluate(() => { const fila = t => [...document.querySelectorAll('#viaOut .cmpx tbody tr')].find(r => r.querySelector('th').textContent.includes(t)); const c = t => fila(t).querySelector('td').textContent; return { ccpr: c('Derechos Humanos'), cerd: c('Discriminación Racial'), cmw: c('Trabajadores Migratorios'), plazoCerd: fila('Discriminación Racial').querySelectorAll('td')[1].textContent, desborda: document.documentElement.scrollWidth > window.innerWidth + 1 }; });
+    ok(vp.name + ': T76 para Colombia: Comité de Derechos Humanos «Sí», CERD «Depende de su declaración» con 6 meses leídos en el original, trabajadores migratorios «Aún no funciona», sin desbordar', /^Sí/.test(via.ccpr) && /Depende de su declaración/.test(via.cerd) && /6 meses/.test(via.plazoCerd) && /Leído en el original/.test(via.plazoCerd) && /Aún no funciona/.test(via.cmw) && !via.desborda, via);
+    await page.evaluate(() => viaAbrir('cescr')); await page.waitForTimeout(150);
+    ok(vp.name + ': T76 al abrir una vía se ve cada requisito con la cita del tratado y dónde lo dice', await page.evaluate(() => { const d = document.querySelector('details[data-plg="via-cescr"]'); return d.open && d.querySelectorAll('.via-req li').length === 7 && d.querySelectorAll('blockquote').length === 7 && /A\/RES\/63\/117/.test(d.textContent); }));
     // T11/T24: Mapa del mundo con capas
     await page.evaluate(() => showPage('mapa')); await page.waitForSelector('#mpSvg path.mp-p');
     const mpDesborda = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);

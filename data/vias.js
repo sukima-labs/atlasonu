@@ -1,4 +1,5 @@
-{
+/* T76: base de reglas de «Tengo un caso: ¿adónde acudo?». Regla de fuentes: docs/FUENTES_OFICIALES_VIAS.md; prueba: tests/vias_test.py. */
+window.ATLAS_VIAS={
  "version": "2026-11-12",
  "aviso": "En pruebas. No es asesoría legal. Lo «por verificar» no se usa en el asistente.",
  "regla": "docs/FUENTES_OFICIALES_VIAS.md",
@@ -24,7 +25,8 @@
       "url": "https://digitallibrary.un.org/record/660187"
      },
      "estado": "leído en el original",
-     "fecha": "2026-11-12"
+     "fecha": "2026-11-12",
+     "corto": "Hay que agotarlos"
     },
     {
      "tema": "otra_via",
@@ -60,7 +62,8 @@
       "url": ""
      },
      "estado": "por verificar",
-     "fecha": "2026-11-12"
+     "fecha": "2026-11-12",
+     "corto": "Sin plazo en el Protocolo; el reglamento pondría 5 años"
     },
     {
      "tema": "urgente",
@@ -72,7 +75,8 @@
       "url": ""
      },
      "estado": "por verificar",
-     "fecha": "2026-11-12"
+     "fecha": "2026-11-12",
+     "corto": "Medidas provisionales"
     }
    ]
   },
@@ -122,7 +126,8 @@
       "url": "https://digitallibrary.un.org/record/660429"
      },
      "estado": "leído en el original",
-     "fecha": "2026-11-12"
+     "fecha": "2026-11-12",
+     "corto": "Hay que agotarlos"
     },
     {
      "tema": "plazo",
@@ -134,7 +139,8 @@
       "url": "https://digitallibrary.un.org/record/660429"
      },
      "estado": "leído en el original",
-     "fecha": "2026-11-12"
+     "fecha": "2026-11-12",
+     "corto": "6 meses"
     },
     {
      "tema": "forma",
@@ -183,7 +189,8 @@
       "url": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=IV-3-a&chapter=4&clang=_en"
      },
      "estado": "leído en el original",
-     "fecha": "2026-11-12"
+     "fecha": "2026-11-12",
+     "corto": "Hay que agotarlos"
     },
     {
      "tema": "plazo",
@@ -195,7 +202,8 @@
       "url": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=IV-3-a&chapter=4&clang=_en"
      },
      "estado": "leído en el original",
-     "fecha": "2026-11-12"
+     "fecha": "2026-11-12",
+     "corto": "1 año"
     },
     {
      "tema": "fechas",
@@ -243,7 +251,8 @@
       "url": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=IV-3-a&chapter=4&clang=_en"
      },
      "estado": "leído en el original",
-     "fecha": "2026-11-12"
+     "fecha": "2026-11-12",
+     "corto": "Medidas provisionales"
     }
    ]
   },
@@ -280,7 +289,8 @@
       "url": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=IV-8-b&chapter=4&clang=_en"
      },
      "estado": "leído en el original",
-     "fecha": "2026-11-12"
+     "fecha": "2026-11-12",
+     "corto": "Hay que agotarlos"
     },
     {
      "tema": "otra_via",
@@ -316,7 +326,8 @@
       "url": ""
      },
      "estado": "por verificar",
-     "fecha": "2026-11-12"
+     "fecha": "2026-11-12",
+     "corto": "Sin plazo en el Protocolo"
     },
     {
      "tema": "urgente",
@@ -328,7 +339,8 @@
       "url": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=IV-8-b&chapter=4&clang=_en"
      },
      "estado": "leído en el original",
-     "fecha": "2026-11-12"
+     "fecha": "2026-11-12",
+     "corto": "Medidas provisionales"
     }
    ]
   },
@@ -366,7 +378,8 @@
       "url": "https://digitallibrary.un.org/record/74216"
      },
      "estado": "leído en el original",
-     "fecha": "2026-11-12"
+     "fecha": "2026-11-12",
+     "corto": "Hay que agotarlos"
     },
     {
      "tema": "otra_via",
@@ -402,7 +415,8 @@
       "url": ""
      },
      "estado": "por verificar",
-     "fecha": "2026-11-12"
+     "fecha": "2026-11-12",
+     "corto": "Sin plazo en la Convención"
     },
     {
      "tema": "urgente",
@@ -414,7 +428,8 @@
       "url": ""
      },
      "estado": "por verificar",
-     "fecha": "2026-11-12"
+     "fecha": "2026-11-12",
+     "corto": "Medidas provisionales"
     }
    ]
   },
@@ -451,7 +466,8 @@
       "url": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=IV-11-d&chapter=4&clang=_en"
      },
      "estado": "leído en el original",
-     "fecha": "2026-11-12"
+     "fecha": "2026-11-12",
+     "corto": "Hay que agotarlos"
     },
     {
      "tema": "plazo",
@@ -463,7 +479,8 @@
       "url": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=IV-11-d&chapter=4&clang=_en"
      },
      "estado": "leído en el original",
-     "fecha": "2026-11-12"
+     "fecha": "2026-11-12",
+     "corto": "1 año"
     },
     {
      "tema": "fechas",
@@ -511,7 +528,8 @@
       "url": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=IV-11-d&chapter=4&clang=_en"
      },
      "estado": "leído en el original",
-     "fecha": "2026-11-12"
+     "fecha": "2026-11-12",
+     "corto": "Medidas provisionales"
     }
    ]
   },
@@ -548,7 +566,8 @@
       "url": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=IV-15-a&chapter=4&clang=_en"
      },
      "estado": "leído en el original",
-     "fecha": "2026-11-12"
+     "fecha": "2026-11-12",
+     "corto": "Hay que agotarlos"
     },
     {
      "tema": "otra_via",
@@ -596,7 +615,8 @@
       "url": ""
      },
      "estado": "por verificar",
-     "fecha": "2026-11-12"
+     "fecha": "2026-11-12",
+     "corto": "Sin plazo en el Protocolo"
     },
     {
      "tema": "urgente",
@@ -608,7 +628,8 @@
       "url": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=IV-15-a&chapter=4&clang=_en"
      },
      "estado": "leído en el original",
-     "fecha": "2026-11-12"
+     "fecha": "2026-11-12",
+     "corto": "Medidas provisionales"
     }
    ]
   },
@@ -646,7 +667,8 @@
       "url": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=IV-16&chapter=4&clang=_en"
      },
      "estado": "leído en el original",
-     "fecha": "2026-11-12"
+     "fecha": "2026-11-12",
+     "corto": "Hay que agotarlos"
     },
     {
      "tema": "otra_via",
@@ -682,7 +704,8 @@
       "url": ""
      },
      "estado": "por verificar",
-     "fecha": "2026-11-12"
+     "fecha": "2026-11-12",
+     "corto": "Sin plazo en la Convención"
     }
    ]
   },
@@ -731,7 +754,8 @@
       "url": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=IV-16&chapter=4&clang=_en"
      },
      "estado": "leído en el original",
-     "fecha": "2026-11-12"
+     "fecha": "2026-11-12",
+     "corto": "Basta con haber avisado a las autoridades"
     },
     {
      "tema": "otra_via",
@@ -818,7 +842,8 @@
       "url": "https://www.ohchr.org/es/special-procedures-human-rights-council/communications"
      },
      "estado": "por verificar",
-     "fecha": "2026-11-12"
+     "fecha": "2026-11-12",
+     "corto": "No hace falta"
     },
     {
      "tema": "urgente",
@@ -830,9 +855,10 @@
       "url": "https://www.ohchr.org/es/special-procedures-human-rights-council/communications"
      },
      "estado": "por verificar",
-     "fecha": "2026-11-12"
+     "fecha": "2026-11-12",
+     "corto": "Llamamiento urgente"
     }
    ]
   }
  ]
-}
+};
