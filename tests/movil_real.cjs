@@ -69,9 +69,9 @@ const reposo = async pg => { let a = -1; for (let i = 0; i < 40; i++) { await pg
     const cmpBtn = pg.locator('#pNav button[onclick^="compararCon"]'); await cmpBtn.scrollIntoViewIfNeeded(); await reposo(pg); await cmpBtn.tap(); await reposo(pg);
     await pg.selectOption('#cmpB', 'ESP'); await pg.waitForTimeout(300);
     await pg.locator('#cmpDif').scrollIntoViewIfNeeded(); await pg.tap('#cmpDif'); await pg.waitForTimeout(300);
-    const cmp = await pg.evaluate(() => ({ abierto: document.getElementById('pComp').open, a: document.getElementById('cmpA').value, filas: document.querySelectorAll('#cmpOut tbody tr').length, dif: document.querySelectorAll('#cmpOut tbody tr.cmp-dif').length, etiquetas: document.querySelectorAll('#cmpOut td[data-label="España"]').length, pulsado: document.getElementById('cmpDif').getAttribute('aria-pressed') }));
+    const cmp = await pg.evaluate(() => ({ abierto: document.getElementById('pComp').open, a: document.getElementById('cmpA').value, filas: document.querySelectorAll('#cmpOut tbody tr').length, dif: document.querySelectorAll('#cmpOut tbody tr.cmp-dif').length, filasCab: document.querySelectorAll('#cmpOut tbody th.cmpx-fija').length, cabe: (c => !!c && c.scrollWidth <= c.clientWidth + 2)(document.querySelector('#cmpOut .cmpx')), pulsado: document.getElementById('cmpDif').getAttribute('aria-pressed') }));
     const a2 = await ancho();
-    ok(nom + ': T61 «Comparar con otro país» con el dedo: Colombia frente a España, solo lo que cambia, en tarjetas y sin desbordar', cmp.abierto && cmp.a === 'COL' && cmp.filas > 0 && cmp.filas === cmp.dif && cmp.etiquetas === cmp.filas && cmp.pulsado === 'true' && a2.pagina === a2.pantalla && a2.fuera.length === 0, { ...cmp, ...a2 });
+    ok(nom + ': T61 «Comparar con otro país» con el dedo: Colombia frente a España, solo lo que cambia, en una tabla que cabe (P8) y sin desbordar', cmp.abierto && cmp.a === 'COL' && cmp.filas > 0 && cmp.filas === cmp.dif && cmp.filasCab === cmp.filas && cmp.cabe && cmp.pulsado === 'true' && a2.pagina === a2.pantalla && a2.fuera.length === 0, { ...cmp, ...a2 });
     } catch (e) { ok(nom + ': la prueba llegó al final', false, e.message.split('\n')[0]); }
     await ctx.close();
   }
