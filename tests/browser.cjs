@@ -305,7 +305,9 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     const nDif = await page.locator('#cmpOut tbody tr.cmp-dif').count();
     await page.click('#cmpDif'); await page.waitForTimeout(200);
     ok(vp.name + ': «Solo lo que cambia» deja solo las filas distintas y lo marca pulsado', nDif > 0 && nDif < cmpN && (await page.locator('#cmpOut tbody tr').count()) === nDif && (await page.getAttribute('#cmpDif', 'aria-pressed')) === 'true' && new RegExp(nDif + ' de 28 aspectos cambian').test(await page.textContent('#cmpOut')));
-    ok(vp.name + ': el comparador no desborda la pantalla y en celular cada fila es una tarjeta con etiquetas', await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1) && (vp.name !== 'movil' || (await page.locator('#cmpOut td[data-label="España"]').count()) === nDif));
+    // P8: el comparador usa el componente de varios países (docs/DISENO.md): cada fila lleva su aspecto como cabecera fija
+    // y, con dos países, la tabla cabe entera también en el celular (antes cada fila era una tarjeta de tres casillas).
+    ok(vp.name + ': el comparador no desborda la pantalla; el aspecto es la cabecera fija de cada fila y con dos países cabe sin deslizar', await page.evaluate(n => { const c = document.querySelector('#cmpOut .cmpx'); return document.documentElement.scrollWidth <= innerWidth + 1 && c && c.classList.contains('cmpx-pocas') && c.scrollWidth <= c.clientWidth + 2 && document.querySelectorAll('#cmpOut tbody th.cmpx-fija[scope=row]').length === n && getComputedStyle(document.querySelector('#cmpOut tbody th')).position === 'sticky'; }, nDif));
     await page.click('#cmpDif'); await page.selectOption('#cmpB', 'COL'); await page.waitForTimeout(150);
     ok(vp.name + ': elegir el mismo país dos veces pide dos distintos', /dos países distintos/.test(await page.textContent('#cmpOut')));
     await page.evaluate(() => { $('pComp').open = false; });

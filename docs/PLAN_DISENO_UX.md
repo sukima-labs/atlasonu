@@ -131,6 +131,10 @@ Se construyen ya sobre las variables nuevas, para que esas pantallas nazcan con 
 
 Los datos y contenidos de cada una de esas tareas siguen su propio orden en la cola. Lo que cambia es que su interfaz ya
 sale con estos componentes. **T33 (infancia)** no entra hasta que Jeisson conteste #165.
+- **Hecho (12-11-2026).** Los cinco componentes están en `index.html` (estilos en `<style id="estilo-componentes">`, funciones `pastilla`, `comparador`, `asistente`, `lineaCompacta`, `fichaDelegacion` e `imprimirSolo`) y documentados en **`docs/DISENO.md`**, el sistema de diseño: variables, escala de letra y de espacios, iconos, cada componente con sus reglas, la tabla de contraste medida en los dos modos, sí y no, y cómo se añade una pantalla.
+  - **Ya en uso:** la pastilla en «Qué falta y qué viene» (estado y el issue de GitHub que lo sigue: «Pendiente · según #261») y en «Alertas de cotejo» (prioridad de cada alerta y estado de cada número «según la Biblioteca Digital»; «Sin número en la fuente» sale como «sin información»). El comparador de «Comparar con otro país» usa el componente de varios países: el aspecto es la cabecera fija de cada fila y, con dos países, la tabla cabe entera en el celular. **Cambia su aspecto en el celular:** antes cada fila era una tarjeta de tres casillas (28 tarjetas para dos países); ahora es una tabla de tres columnas, mucho más corta. Se ajustaron `tests/browser.cjs` y `tests/movil_real.cjs`, que comprobaban las tarjetas.
+  - **Sin contenido nuevo:** el asistente, la línea de tiempo y la ficha no salen en ninguna pantalla; sus textos y datos son de T75, T76, T77 y T83. Se prueban con una muestra que solo existe dentro de `tests/componentes.cjs` (axe 0 en los dos modos, teclado, impresión de una sola parte y traducción al inglés), que también va en el CI.
+  - Los textos de los componentes («En pruebas», «Paso 1 de 3», «Atrás», «según …», «Sin información», «Ficha de delegación»…) están en los cinco diccionarios.
 
 ### Fase 8 · Medir y cerrar
 - `tests/browser.cjs` y `tests/accesibilidad.cjs` corren en **los dos modos**; `impresion.cjs`, `movil_real.cjs` y `auditar_ux.cjs` también.
