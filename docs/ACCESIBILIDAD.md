@@ -19,6 +19,15 @@ Medido el 10-11-2026 sobre las pantallas del menú (20 entonces; desde el 11-11-
 Ya estaba hecho y se comprobó: enlace «Saltar al contenido», foco visible (`:focus-visible`), el menú marca la pantalla
 actual (`aria-current`), se respeta «reducir movimiento», el zoom no está bloqueado y `lang` cambia con el idioma elegido.
 
+## Modo claro y oscuro (#228)
+- `tests/accesibilidad.cjs` mide cada pantalla en los dos modos y, además, la gráfica de votos de un país (barras y línea): las letras de los
+  hitos (A, B, C…) deben tener 4,5:1 y el logotipo de Sukima 3:1 con su fondo. axe no mira dentro de los dibujos SVG, por eso se comprueba aparte.
+- **Mapa del mundo en claro**: los colores de los países se separan del mar (#DCE7EB) con 2,7:1 como mínimo (el primer escalón de la escala y «sin datos»), no con el 3:1 que pide WCAG 1.4.11 para
+  objetos gráficos. Se acepta porque el mapa nunca es la única vía: cada muestra de la leyenda lleva borde oscuro, al tocar un país sale su ficha
+  en texto y, debajo del mapa, «Ver los mismos datos como lista» da el dato de la capa elegida para cada país. Subirlo a 3:1 obligaría a oscurecer el mar o a perder escalones de
+  la escala; queda como mejora posible, no como fallo. «Sin ficha» (gris oscuro, #3F4552) y «sin conflicto» (violeta) se distinguen también
+  por claridad, no solo por tono, y «guerra» (#A82A18) y «conflicto menor» (rosa) se separan con 1,9:1, como en oscuro.
+
 ## Lo que axe no puede medir (queda en la cola)
 - **Lector de pantalla real** (NVDA, TalkBack, VoiceOver): axe comprueba nombres y estructura, no la experiencia de uso.
 - **Lectura fácil**: hecha en cuatro pantallas (T65); falta la revisión de una persona.

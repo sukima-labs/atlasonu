@@ -1429,5 +1429,9 @@ window.ATLAS_IDIOMA_ru={
 "Qué es":"Что это",
 "Qué hace":"Чем занимается",
 "Nombre oficial en los idiomas de la ONU":"Официальное название на языках ООН",
-"Más detalle":"Подробнее"
+"Más detalle":"Подробнее",
+"Modo de color":"Цветовая схема",
+"Automático":"Авто",
+"Claro":"Светлая",
+"Oscuro":"Тёмная"
 };

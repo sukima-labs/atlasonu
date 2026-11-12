@@ -1429,5 +1429,9 @@ window.ATLAS_IDIOMA_ar={
 "Qué es":"ما هي",
 "Qué hace":"ماذا تفعل",
 "Nombre oficial en los idiomas de la ONU":"الاسم الرسمي بلغات الأمم المتحدة",
-"Más detalle":"مزيد من التفاصيل"
+"Más detalle":"مزيد من التفاصيل",
+"Modo de color":"وضع الألوان",
+"Automático":"تلقائي",
+"Claro":"فاتح",
+"Oscuro":"داكن"
 };
