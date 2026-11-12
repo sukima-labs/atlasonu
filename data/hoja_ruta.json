@@ -236,7 +236,7 @@
     },
     {
      "t": "Herramienta para clases: crea tu ONU o tu EPU",
-     "x": "Una actividad para colegios, universidades y organizaciones: cada estudiante representa a un país, debate un tema y vota, como en un Modelo de Naciones Unidas. Usaría datos reales de ATLAS: cómo votó cada país en la Asamblea y qué recomendaciones recibió en el EPU. Iría dentro de «Entender la ONU». No guardaría nombres ni cuentas. Ya está valorada; empieza después del seguimiento de recomendaciones.",
+     "x": "Una actividad para colegios, universidades y organizaciones: cada estudiante representa a un país, debate un tema y vota, como en un Modelo de Naciones Unidas. Usaría datos reales de ATLAS: cómo votó cada país en la Asamblea y qué recomendaciones recibió en el EPU. Iría dentro de «Entender la ONU». No guardaría nombres ni cuentas. Ya está la primera parte, en pruebas: «Simula una asamblea», con la ficha de cada delegación. Falta el kit del profesor.",
      "issues": [
       224
      ]

@@ -198,6 +198,13 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
       document.querySelector('details[data-plg="via-cescr"] .via-imp').click(); window.print = pr;
       return { n, marcado, items, req: ATLAS_VIAS.vias.find(v => v.id === 'cescr').requisitos.length, pais, oculta, limpio: !document.documentElement.classList.contains('imp-parcial') && !document.getElementById('viaLista') }; });
     ok(vp.name + ': T77 la lista de comprobación de una vía se imprime sola, con todos sus requisitos y el país elegido, no se ve en pantalla y se borra al terminar', lista.n === 1 && lista.marcado && lista.items === lista.req && lista.items > 0 && lista.pais && lista.oculta && lista.limpio, JSON.stringify(lista));
+    // T83 fase 1: «Simula una asamblea»: ficha de delegación con datos reales, dos niveles, sin desbordar y con su botón de imprimir.
+    await page.evaluate(() => showPage('aula')); await page.waitForFunction(() => document.querySelectorAll('#aulaPais option').length > 150);
+    await page.selectOption('#aulaPais', 'COL'); await page.waitForFunction(() => document.querySelector('#aulaOut .ficha-del'));
+    const aula = await page.evaluate(async () => { const f = () => document.querySelector('#aulaOut .ficha-del'), col = f().innerText; aulaNivel('universidad'); await new Promise(r => { const t = setInterval(() => { if (f() && /Es parte/.test(f().innerText)) { clearInterval(t); r(); } }, 50); });
+      return { bloques: f().querySelectorAll('.fd-bloque').length, col: /Colombia/.test(col) && /recomendaciones/.test(col) && /votó sí/.test(col) && !/Es parte:/.test(col), uni: /Parecido de su voto/.test(f().innerText), lineas: f().querySelectorAll('.fd-linea').length, imp: !!document.querySelector('#aulaOut button.primary'), nav: !!document.querySelector('#nav button[data-page="aula"][aria-current]'), desborda: document.documentElement.scrollWidth > window.innerWidth }; });
+    ok(vp.name + ': T83 «Simula una asamblea»: ficha de Colombia con tratados, votos, EPU y documento de posición; «universidad» añade cifras', aula.bloques === 5 && aula.col && aula.uni && aula.lineas >= 7 && aula.imp && aula.nav && !aula.desborda);
+    await page.evaluate(() => aulaNivel('colegio'));
     // T11/T24: Mapa del mundo con capas
     await page.evaluate(() => showPage('mapa')); await page.waitForSelector('#mpSvg path.mp-p');
     const mpDesborda = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);
@@ -417,7 +424,7 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
       const malas = await page.evaluate(sid => { const out = [], s = document.getElementById(sid); if (!s || s.offsetParent === null) return out;
         const caja = e => { const c = getComputedStyle(e); return (c.borderTopWidth !== '0px' && c.borderTopStyle !== 'none') || (c.backgroundColor !== 'rgba(0, 0, 0, 0)' && e.getBoundingClientRect().height > 30); };
         const fila = /^(TH|TD|TR|BUTTON|A|SPAN|OPTION)$/;
-        s.querySelectorAll('*').forEach(e => { const n = e.nextElementSibling; if (!n || fila.test(e.tagName) || fila.test(n.tagName) || /\b(kv|btn|chip|tag)\b/.test(e.className + ' ' + n.className) || !caja(e) || !caja(n)) return;
+        s.querySelectorAll('*').forEach(e => { const n = e.nextElementSibling; if (!n || fila.test(e.tagName) || fila.test(n.tagName) || /\b(kv|btn|chip|tag|fd-bloque)\b/.test(e.className + ' ' + n.className) || !caja(e) || !caja(n)) return;
           const a = e.getBoundingClientRect(), c = n.getBoundingClientRect(); if (a.height < 20 || c.height < 20 || a.width < 50) return;
           const dy = c.top - a.bottom, dx = c.left - a.right;
           if ((Math.abs(a.left - c.left) < 4 && dy < 8 && dy > -1) || (Math.abs(a.top - c.top) < 4 && dx < 8 && dx > -1 && dx < c.width)) out.push(sid + ': ' + e.tagName + '.' + e.className + ' → ' + n.tagName + '.' + n.className); });

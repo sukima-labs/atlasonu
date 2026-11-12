@@ -1693,5 +1693,19 @@
   "Imprimir la lista de comprobación": "Imprimir la lista de comprobación",
   "Lista de comprobación": "Lista de comprobación",
   "Sacada de la base de reglas de ATLAS ONU, comprobada contra el texto oficial. Lo marcado «Por verificar» todavía no se ha leído en el original. No es asesoría legal: comprueba cada punto en la fuente antes de presentar la queja.": "Sacada de la base de reglas de ATLAS ONU, comprobada contra el texto oficial. Lo marcado «Por verificar» todavía no se ha leído en el original. No es asesoría legal: comprueba cada punto en la fuente antes de presentar la queja.",
-  "Fecha de la base de reglas:": "Fecha de la base de reglas:"
+  "Fecha de la base de reglas:": "Fecha de la base de reglas:",
+  "Simula una asamblea": "Simula una asamblea",
+  "Entender la ONU · para clase": "Entender la ONU · para clase",
+  "<b>En pruebas</b> <span>Esta herramienta está en pruebas: comprueba siempre los datos en la fuente oficial.</span>": "<b>En pruebas</b> <span>Esta herramienta está en pruebas: comprueba siempre los datos en la fuente oficial.</span>",
+  "Para un ejercicio en clase, como un Modelo de Naciones Unidas: cada estudiante o grupo representa a un país. Elige un país y verás su <b>ficha de delegación</b> con datos reales: qué tratados de derechos humanos ha aceptado, cómo vota en la Asamblea General y qué le recomendaron los demás Estados en el Examen Periódico Universal (EPU). Debajo hay espacio para escribir a mano la postura del país. <b>No se guarda nada</b> y no hace falta cuenta.": "Para un ejercicio en clase, como un Modelo de Naciones Unidas: cada estudiante o grupo representa a un país. Elige un país y verás su <b>ficha de delegación</b> con datos reales: qué tratados de derechos humanos ha aceptado, cómo vota en la Asamblea General y qué le recomendaron los demás Estados en el Examen Periódico Universal (EPU). Debajo hay espacio para escribir a mano la postura del país. <b>No se guarda nada</b> y no hace falta cuenta.",
+  "<b>Para qué sirve esta pantalla:</b> preparar a cada delegación con datos reales antes del debate. <u>(cómo usarla y de dónde salen los datos)</u>": "<b>Para qué sirve esta pantalla:</b> preparar a cada delegación con datos reales antes del debate. <u>(cómo usarla y de dónde salen los datos)</u>",
+  "<b>Cómo usarla:</b> elige el país de cada delegación (o uno al azar) y el nivel. «Colegio» usa frases sencillas; «Universidad» añade más cifras. Imprime la ficha: cabe en media hoja.": "<b>Cómo usarla:</b> elige el país de cada delegación (o uno al azar) y el nivel. «Colegio» usa frases sencillas; «Universidad» añade más cifras. Imprime la ficha: cabe en media hoja.",
+  "<b>De dónde salen los datos:</b> de los mismos datos de ATLAS: la Colección de Tratados de la ONU, las votaciones nominales de la Asamblea General y los informes del EPU. La ficha no es la postura oficial del país: es un punto de partida para el ejercicio.": "<b>De dónde salen los datos:</b> de los mismos datos de ATLAS: la Colección de Tratados de la ONU, las votaciones nominales de la Asamblea General y los informes del EPU. La ficha no es la postura oficial del país: es un punto de partida para el ejercicio.",
+  "País de la delegación": "País de la delegación",
+  "Nivel": "Nivel",
+  "Colegio": "Colegio",
+  "Universidad": "Universidad",
+  "Un país al azar": "Un país al azar",
+  "Elige un país para ver su ficha.": "Elige un país para ver su ficha.",
+  "No se guarda nada": "No se guarda nada"
 }
