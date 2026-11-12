@@ -644,13 +644,15 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     await pi.selectOption('#modal', 'Temático'); await pi.evaluate(() => filterMandates());
     ok('idiomas: los filtros siguen funcionando con las opciones traducidas', await pi.evaluate(() => filtered.length > 0 && filtered.every(m => m.alcance === 'Temático')));
     { // Fase 2: lo que dibuja el JavaScript. Un texto pendiente cuyos trozos están todos escritos en el código de la
-      // página (no en los datos) es interfaz sin traducir: debe estar en data/idiomas/en.js, fr.js, ar.js, zh.js y ru.js.
+      // página (no en los datos) es interfaz sin traducir: debe estar en idiomas/es.json (T94) y, traducido, en idiomas/en.json…
       for (const js of ["showPage('inicio')", "showPage('explorar')", "irPais('COL')", "showPage('tratados')", "showPage('relatores')", "showPage('sistema')", "showPage('mapa')", "mpElegir('ESP')", "mpCapaCambia()", "document.getElementById('mpCapa').value='epu';mpCapaCambia()", "mpElegir('COL')", "document.getElementById('mpCapa').value='basicos';mpCapaCambia()"]) { await pi.evaluate(js); await pi.waitForTimeout(400); }
       const fuente = require('fs').readFileSync(path.resolve(__dirname, '..', 'index.html'), 'utf8').match(/<script[^>]*>[\s\S]*?<\/script>/g).join(' ').replace(/&amp;/g, '&').replace(/\s+/g, ' ');
       // Palabra entera: «Spain» de un dato oficial no cuenta como interfaz por estar dentro de «America/Port_of_Spain».
       const enCodigo = x => new RegExp('(^|[^A-Za-zÀ-ÿ0-9_])' + x.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '($|[^A-Za-zÀ-ÿ0-9_])').test(fuente);
       const sinTraducir = (await pi.evaluate(() => ATLAS_IDIOMA.pendientes())).filter(k => { const t = k.split(/<[^>]+>|\{n\}|\{fecha\}/).map(x => x.replace(/[\s↗→←·…]+$/, '').trim()).filter(x => /[A-Za-zÀ-ÿ]{2}/.test(x)); return t.length && t.some(x => x.length >= 4) && t.every(x => enCodigo(x)) && !/^(<a>)?[A-Z]+(\/[A-Z0-9.{}n()XVI]+)+( ↗)?(<\/a>)?$/.test(k); }); // los símbolos de documentos no se traducen
-      const enteros = sinTraducir;
+      // T94: un texto que ya está en la plantilla idiomas/es.json y espera su traducción en Weblate sale en español a propósito.
+      const esPlant = JSON.parse(require('fs').readFileSync(path.resolve(__dirname, '..', 'idiomas', 'es.json'), 'utf8')), enDic = JSON.parse(require('fs').readFileSync(path.resolve(__dirname, '..', 'idiomas', 'en.json'), 'utf8'));
+      const enteros = sinTraducir.filter(k => !(k in esPlant && !(enDic[k] || '').trim()));
       if (enteros.length) console.error('idiomas: sin traducir', JSON.stringify(enteros));
       ok('idiomas: en inglés no queda texto de interfaz sin traducir en Panorama, Mandatos, una ficha de país, Tratados, Relatores, Mapa y Cómo funciona', enteros.length === 0);
       // T74: «Cómo leer un código» entera en inglés: tutorial, despiezador (con códigos de todo tipo), tabla y repaso. Se ignoran los

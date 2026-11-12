@@ -1,3 +1,4 @@
+/* Generado por scripts/idiomas.py desde idiomas/zh.json: no se edita a mano (T94). */
 window.ATLAS_IDIOMA_zh={
 "Libia":"利比亚",
 "Atlas ONU · Arqueología documental":"Atlas ONU · 文献考古",
@@ -356,7 +357,7 @@ window.ATLAS_IDIOMA_zh={
 "En desarrollo y evaluación · aún sin lanzar":"开发与评估中 · 尚未发布",
 "DIGNITYOS · tecnología al servicio de la dignidad humana":"DIGNITYOS · 以科技服务于人的尊严",
 "Imagina que pedir ayuda cuando tus derechos están en riesgo fuera más claro, más rápido y más seguro. DIGNITYOS es un proyecto que lo está explorando; todavía lo estamos construyendo y poniendo a prueba.":"试想，当您的权利面临风险时，求助能变得更清晰、更快捷、更安全。DIGNITYOS 是一个正在探索这一目标的项目；我们仍在构建并测试之中。",
-"Qué es":"它是什么",
+"Qué es":"是什么",
 "Una plataforma pensada para acompañar la protección de la dignidad humana de <b>cualquier persona</b>, con la tecnología como apoyo y nunca como sustituto de la decisión humana.":"一个旨在支持保护<b>任何人</b>人格尊严的平台，科技只是辅助，绝不取代人的决定。",
 "Para quién, en tres canales":"为谁服务，分三类渠道",
 "Las <b>personas en riesgo</b>.":"<b>处于风险中的人</b>。",
@@ -1431,7 +1432,6 @@ window.ATLAS_IDIOMA_zh={
 "Solo algunos países tienen un mandato de relator propio; los mandatos temáticos sí pueden actuar en este país (ver la ficha).":"只有部分国家设有国别特别报告员任务；专题任务可以对该国采取行动（见国家页面）。",
 "Solo algunos países tienen una comisión o misión de investigación; no es un juicio sobre el país.":"只有部分国家设有调查委员会或调查团；这并不是对该国的评判。",
 "Ver en el mapa":"在地图上查看",
-"Qué es":"是什么",
 "Qué hace":"做什么",
 "Nombre oficial en los idiomas de la ONU":"联合国各语文的正式名称",
 "Más detalle":"更多细节",

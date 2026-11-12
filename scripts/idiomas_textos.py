@@ -7,11 +7,11 @@ atributos: «Pulsa <b>Ver ficha</b> para…»); si no, se baja a sus hijos y cad
 También placeholder, aria-label, title y alt, y el <title> de la página.
 
   python3 -I scripts/idiomas_textos.py                 # lista las claves (JSON)
-  python3 -I scripts/idiomas_textos.py --comprobar     # falla si algún diccionario (en, fr, ar, zh, ru) no cubre alguna clave o
-                                                       # alguna traducción no conserva las etiquetas
-  python3 -I scripts/idiomas_textos.py --faltan en     # claves sin traducir en en.js (JSON)
+  python3 -I scripts/idiomas_textos.py --comprobar     # falla si un texto de la página no está en idiomas/es.json o alguna
+                                                       # traducción no conserva las etiquetas; las que faltan, solo avisa (T94)
+  python3 -I scripts/idiomas_textos.py --faltan en     # claves sin traducir en idiomas/en.json (JSON)
 Además de los textos de index.html, los diccionarios llevan los que dibuja el JavaScript (fichas, resultados…);
-en esos, {n} es una cifra que cambia y {fecha} una fecha escrita («17 de marzo de 2003»). --comprobar exige que los cinco diccionarios tengan las mismas claves.
+en esos, {n} es una cifra que cambia y {fecha} una fecha escrita («17 de marzo de 2003»). Los diccionarios están en idiomas/<ln>.json (T94).
 """
 import html.parser, json, os, re, sys
 
@@ -132,10 +132,9 @@ def etiquetas(t):
 
 
 def diccionario(ln):
-    f = os.path.join(RAIZ, "data", "idiomas", ln + ".js")
-    s = open(f, encoding="utf-8").read()
-    i = s.index("{")
-    return json.loads(s[i:s.rindex("}") + 1])
+    """Las traducciones que se editan (idiomas/<ln>.json, T94), sin las vacías: esas Weblate aún no las tiene."""
+    with open(os.path.join(RAIZ, "idiomas", ln + ".json"), encoding="utf-8") as f:
+        return {k: v for k, v in json.load(f).items() if not (isinstance(v, str) and not v.strip())}
 
 
 def main():
@@ -146,31 +145,41 @@ def main():
         return
     if args[0] == "--faltan":
         d = diccionario(args[1])
-        json.dump([k for k in ks if k not in d], sys.stdout, ensure_ascii=False, indent=0)
+        json.dump([k for k in diccionario("es") if k not in d], sys.stdout, ensure_ascii=False, indent=0)
         return
     if args[0] == "--comprobar":
-        fallos = []
+        # T94: falla solo lo que rompería la web (un texto de la página que no está en la plantilla idiomas/es.json,
+        # una traducción que cambia las etiquetas o las cifras); una traducción que falta es un aviso: mientras
+        # tanto ese texto sale en español y se traduce en Weblate.
+        fallos, avisos = [], []
+        es = diccionario("es")
+        if any(k != v for k, v in es.items()):
+            fallos.append("es: en idiomas/es.json cada valor debe ser igual a su clave")
+        falta_es = [k for k in ks if k not in es]
+        if falta_es:
+            fallos.append(f"es: {len(falta_es)} textos de index.html no están en idiomas/es.json, p. ej. {falta_es[:3]}"
+                          " (python3 -I scripts/idiomas.py --nuevos los añade)")
         for ln in IDIOMAS:
             d = diccionario(ln)
-            falta = [k for k in ks if k not in d]
+            falta = [k for k in es if k not in d]
             if falta:
-                fallos.append(f"{ln}: {len(falta)} textos sin traducir, p. ej. {falta[:3]}")
+                avisos.append(f"{ln}: {len(falta)} textos sin traducir (se ven en español), p. ej. {falta[:3]}")
+            sobra = [k for k in d if k not in es]
+            if sobra:
+                avisos.append(f"{ln}: {len(sobra)} traducciones de textos que ya no están en idiomas/es.json, p. ej. {sobra[:3]}")
             for k, v in d.items():
-                if not isinstance(v, str) or not v.strip():
-                    fallos.append(f"{ln}: traducción vacía de {k!r}")
+                if not isinstance(v, str):
+                    fallos.append(f"{ln}: la traducción de {k!r} no es un texto")
                 elif etiquetas(k) != etiquetas(v):
                     fallos.append(f"{ln}: la traducción de {k!r} no conserva las etiquetas: {v!r}")
                 elif k.count("{n}") != v.count("{n}") or k.count("{fecha}") != v.count("{fecha}"):
                     fallos.append(f"{ln}: la traducción de {k!r} no conserva las cifras {{n}}: {v!r}")
-        dics = {ln: set(diccionario(ln)) for ln in IDIOMAS}
-        for a in IDIOMAS:
-            for b in IDIOMAS:
-                solo = sorted(dics[a] - dics[b])
-                if solo:
-                    fallos.append(f"{b}: le faltan {len(solo)} textos que sí tiene {a}, p. ej. {solo[:3]}")
-        print("\n".join(fallos) or f"idiomas: {len(ks)} textos, {', '.join(IDIOMAS)} completos")
+        pre = "::warning title=Idiomas::" if os.environ.get("GITHUB_ACTIONS") else "aviso: "
+        for a in avisos:
+            print(pre + a)
+        print("\n".join(fallos) or f"idiomas: {len(ks)} textos de la página en idiomas/es.json ({len(es)} en total); "
+              + ("todas las traducciones al día" if not avisos else f"{len(avisos)} avisos"))
         sys.exit(1 if fallos else 0)
-
 
 if __name__ == "__main__":
     main()

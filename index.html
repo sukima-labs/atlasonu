@@ -1170,7 +1170,7 @@ renderSistema();renderSiglas();renderHistoria();renderHojaRuta();numRender();vis
 window.__actosListo=iniciarActos;if(window.ATLAS_ACTOS||window.__actosFallo)iniciarActos();
 
 /* ===== P8 · plan de diseño, fase 7: componentes reutilizables (docs/DISENO.md). Devuelven HTML con los textos de la interfaz en español;
-   assets/idiomas.js los traduce con sus diccionarios (cada texto nuevo va también en data/idiomas/*.js). Los datos (símbolos, nombres) no se traducen. ===== */
+   assets/idiomas.js los traduce con sus diccionarios (cada texto nuevo va también en idiomas/es.json; data/idiomas/*.js se generan con scripts/idiomas.py, T94). Los datos (símbolos, nombres) no se traducen. ===== */
 // 1 · Pastilla de estado con su fuente. est: ok · parcial · aviso · mal · neutro · nd (sin información). fuente: {t,url} para un símbolo o un número
 // (no se traduce: «según A/HRC/52/10») o {html} con la frase entera de interfaz («según <a …>Biblioteca Digital</a>», que sí se traduce).
 function pastilla(est,txt,fuente,clase){est=/^(ok|parcial|aviso|mal|neutro|nd)$/.test(est)?est:'neutro';if(!txt)txt='Sin información';let f='';

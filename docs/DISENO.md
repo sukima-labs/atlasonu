@@ -259,8 +259,8 @@ los componentes: **0 incumplimientos** es la regla.
    en fila (`.toolbar`), listas de 20 en 20 con «Mostrar 20 más», y los componentes de este documento.
 4. **Colores.** Solo variables. Si hace falta un color nuevo, se añade como variable en `:root` **y** en
    `html[data-theme=light]`, y se mide su contraste.
-5. **Textos.** Todo texto visible nuevo, en `data/idiomas/en.js`, `fr.js`, `ar.js`, `zh.js` y `ru.js`.
-   `python3 -I scripts/idiomas_textos.py --comprobar` dice si falta alguno.
+5. **Textos.** Todo texto visible nuevo, en la plantilla `idiomas/es.json`; sus traducciones, en `idiomas/<ln>.json`
+   (o en Weblate) y `python3 -I scripts/idiomas.py` regenera `data/idiomas/*.js` (ver `docs/TRADUCCIONES.md`).
 6. **Datos.** Cada cifra o estado, con su fuente. Lo que no se sabe se dice («Sin información»).
 7. **Pruebas.** `tests/browser.cjs`, `tests/accesibilidad.cjs` (axe en los dos modos), `tests/impresion.cjs` (la
    pantalla se imprime sola y en pocas hojas) y `tests/componentes.cjs`. Capturas de antes y después, en escritorio y
