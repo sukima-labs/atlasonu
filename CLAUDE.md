@@ -35,3 +35,9 @@ lo que corre hoy en `sk-atlas`. No lo muevas ni le cambies el nombre sin hablarl
   ni `Co-Authored-By` ni nada parecido.
 - El repositorio es público: ni secretos, ni datos personales, ni el correo de nadie.
 - **Autoría: solo Sukima-Labs** (06-11-2026). Ningún nombre de persona figura como autor de ATLAS ONU: ni en la web, ni en `NOTICE.md`, `CITATION.cff`, README, datos ni documentos. Las pruebas lo comprueban.
+- **Cómo trabaja Claude aquí** (decisión de Sukima-Labs, 12-11-2026, #291), para gastar menos:
+  - **Traducciones:** solo se escribe el español (`idiomas/es.json`). No se traduce a mano en cada PR; lo que falta va
+    a una tanda periódica o a Weblate (`docs/TRADUCCIONES.md`).
+  - **`index.html` es muy grande:** se lee por trozos (`grep -n` y luego el rango), nunca entero.
+  - **Pruebas en local:** solo las que toca el cambio; la batería completa la corre la CI.
+  - **Orden de la cola:** primero datos y contenido; la interfaz, después.

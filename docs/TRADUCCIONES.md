@@ -18,7 +18,9 @@ como fichero, sin servidor. `assets/idiomas.js` (el motor) no cambia.
 1. Escribe el texto en español en `index.html`.
 2. `python3 -I scripts/idiomas.py --nuevos` añade a `idiomas/es.json` los textos nuevos de la página. Los que dibuja el
    JavaScript (con `{n}` para una cifra y `{fecha}` para una fecha) se añaden a mano, con la clave igual al valor.
-3. Si sabes la traducción, ponla en `idiomas/<ln>.json`; si no, déjala para Weblate.
+3. **No traduzcas a mano al cambiar un texto** (decisión del 12-11-2026, #291): el PR lleva solo el español. Lo que
+   falta se traduce en una **tanda periódica** (un PR solo de traducciones, hecho con un modelo barato y revisado por
+   la CI) o en Weblate cuando esté dado de alta. Mientras tanto ese texto se ve en español, que es lo previsto.
 4. `python3 -I scripts/idiomas.py` regenera `data/idiomas/*.js`.
 5. `python3 -I scripts/idiomas_textos.py --comprobar`: **falla** si un texto de la página no está en la plantilla o si una
    traducción cambia las etiquetas (`<b>`, `<a>`…) o las cifras (`{n}`, `{fecha}`); **avisa** de lo que falta traducir.
