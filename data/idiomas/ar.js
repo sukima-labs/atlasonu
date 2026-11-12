@@ -1,3 +1,4 @@
+/* Generado por scripts/idiomas.py desde idiomas/ar.json: no se edita a mano (T94). */
 window.ATLAS_IDIOMA_ar={
 "Libia":"ليبيا",
 "Atlas ONU · Arqueología documental":"أطلس الأمم المتحدة · علم الآثار الوثائقي",
@@ -356,7 +357,7 @@ window.ATLAS_IDIOMA_ar={
 "En desarrollo y evaluación · aún sin lanzar":"قيد التطوير والتقييم · لم يُطلق بعد",
 "DIGNITYOS · tecnología al servicio de la dignidad humana":"DIGNITYOS · تكنولوجيا في خدمة الكرامة الإنسانية",
 "Imagina que pedir ayuda cuando tus derechos están en riesgo fuera más claro, más rápido y más seguro. DIGNITYOS es un proyecto que lo está explorando; todavía lo estamos construyendo y poniendo a prueba.":"تخيّل أن طلب المساعدة حين تكون حقوقك في خطر أصبح أوضح وأسرع وأكثر أمانًا. DIGNITYOS مشروع يستكشف ذلك؛ ولا نزال نبنيه ونختبره.",
-"Qué es":"ما هو",
+"Qué es":"ما هي",
 "Una plataforma pensada para acompañar la protección de la dignidad humana de <b>cualquier persona</b>, con la tecnología como apoyo y nunca como sustituto de la decisión humana.":"منصة مصمَّمة لمواكبة حماية الكرامة الإنسانية <b>لأي شخص</b>، تكون فيها التكنولوجيا عونًا ولا تكون بديلًا عن القرار البشري.",
 "Para quién, en tres canales":"لمن هو، عبر ثلاث قنوات",
 "Las <b>personas en riesgo</b>.":"<b>الأشخاص المعرّضون للخطر</b>.",
@@ -1431,7 +1432,6 @@ window.ATLAS_IDIOMA_ar={
 "Solo algunos países tienen un mandato de relator propio; los mandatos temáticos sí pueden actuar en este país (ver la ficha).":"بعض البلدان فقط لديها ولاية مقرر خاص قُطرية؛ ويمكن للولايات المواضيعية أن تعمل بشأن هذا البلد (انظر الصفحة القُطرية).",
 "Solo algunos países tienen una comisión o misión de investigación; no es un juicio sobre el país.":"بعض البلدان فقط لديها لجنة أو بعثة تحقيق؛ وهذا ليس حكماً على البلد.",
 "Ver en el mapa":"عرض على الخريطة",
-"Qué es":"ما هي",
 "Qué hace":"ماذا تفعل",
 "Nombre oficial en los idiomas de la ONU":"الاسم الرسمي بلغات الأمم المتحدة",
 "Más detalle":"مزيد من التفاصيل",

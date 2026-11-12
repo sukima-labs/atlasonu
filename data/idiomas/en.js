@@ -1,3 +1,4 @@
+/* Generado por scripts/idiomas.py desde idiomas/en.json: no se edita a mano (T94). */
 window.ATLAS_IDIOMA_en={
 "Libia":"Libya",
 "Atlas ONU · Arqueología documental":"Atlas ONU · Documentary archaeology",
@@ -1431,7 +1432,6 @@ window.ATLAS_IDIOMA_en={
 "Solo algunos países tienen un mandato de relator propio; los mandatos temáticos sí pueden actuar en este país (ver la ficha).":"Only some countries have a country-specific rapporteur mandate; thematic mandates can act on this country (see the profile).",
 "Solo algunos países tienen una comisión o misión de investigación; no es un juicio sobre el país.":"Only some countries have a commission of inquiry or mission; it is not a judgement on the country.",
 "Ver en el mapa":"See on the map",
-"Qué es":"What it is",
 "Qué hace":"What it does",
 "Nombre oficial en los idiomas de la ONU":"Official name in the UN languages",
 "Más detalle":"More detail",

@@ -1,3 +1,4 @@
+/* Generado por scripts/idiomas.py desde idiomas/fr.json: no se edita a mano (T94). */
 window.ATLAS_IDIOMA_fr={
 "Libia":"Libye",
 "Atlas ONU · Arqueología documental":"Atlas ONU · Archéologie documentaire",
@@ -356,7 +357,7 @@ window.ATLAS_IDIOMA_fr={
 "En desarrollo y evaluación · aún sin lanzar":"En développement et en évaluation · pas encore lancé",
 "DIGNITYOS · tecnología al servicio de la dignidad humana":"DIGNITYOS · la technologie au service de la dignité humaine",
 "Imagina que pedir ayuda cuando tus derechos están en riesgo fuera más claro, más rápido y más seguro. DIGNITYOS es un proyecto que lo está explorando; todavía lo estamos construyendo y poniendo a prueba.":"Imaginez que demander de l'aide quand vos droits sont menacés soit plus clair, plus rapide et plus sûr. DIGNITYOS est un projet qui explore cette idée ; nous sommes encore en train de le construire et de le mettre à l'épreuve.",
-"Qué es":"Ce que c'est",
+"Qué es":"De quoi s'agit-il",
 "Una plataforma pensada para acompañar la protección de la dignidad humana de <b>cualquier persona</b>, con la tecnología como apoyo y nunca como sustituto de la decisión humana.":"Une plateforme conçue pour accompagner la protection de la dignité humaine de <b>toute personne</b>, avec la technologie comme soutien et jamais comme substitut à la décision humaine.",
 "Para quién, en tres canales":"Pour qui, en trois volets",
 "Las <b>personas en riesgo</b>.":"Les <b>personnes en danger</b>.",
@@ -1431,7 +1432,6 @@ window.ATLAS_IDIOMA_fr={
 "Solo algunos países tienen un mandato de relator propio; los mandatos temáticos sí pueden actuar en este país (ver la ficha).":"Seuls certains pays ont un mandat de rapporteur propre ; les mandats thématiques peuvent agir sur ce pays (voir la fiche).",
 "Solo algunos países tienen una comisión o misión de investigación; no es un juicio sobre el país.":"Seuls certains pays ont une commission ou une mission d’enquête ; ce n’est pas un jugement sur le pays.",
 "Ver en el mapa":"Voir sur la carte",
-"Qué es":"De quoi s'agit-il",
 "Qué hace":"Son action",
 "Nombre oficial en los idiomas de la ONU":"Nom officiel dans les langues de l'ONU",
 "Más detalle":"Plus de détails",
