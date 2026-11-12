@@ -1428,5 +1428,17 @@ window.ATLAS_IDIOMA_ru={
 "Automático":"Авто",
 "Claro":"Светлая",
 "Oscuro":"Тёмная",
-"Logo provisional de DIGNITYOS":"Временный логотип DIGNITYOS"
+"Logo provisional de DIGNITYOS":"Временный логотип DIGNITYOS",
+"Sudán":"Судан",
+"{n} miembros · {n} con veto · presidencia mensual":"{n} членов · {n} с правом вето · ежемесячное председательство",
+"ATLAS no recoge hoy un régimen de sanciones ni una operación del Consejo dedicados a este país. Eso no quiere decir que el Consejo no haya tratado nunca su situación.":"ATLAS сейчас не фиксирует ни режима санкций, ни операции Совета, посвящённых этой стране. Это не значит, что Совет никогда не рассматривал её ситуацию.",
+"Dónde buscar: resoluciones por año en":"Где искать: резолюции по годам на",
+"la página del Consejo ↗":"странице Совета ↗",
+"; cada sesión pública tiene su acta":"; у каждого открытого заседания есть своя стенограмма",
+"S/PV.n.º":"S/PV.№",
+"y los informes del Secretario General y de los grupos de expertos llevan el símbolo":"а доклады Генерального секретаря и групп экспертов имеют условное обозначение",
+"S/año/n.º":"S/год/№",
+". Las sanciones, en":". Санкции — на",
+"la página de sanciones ↗":"странице санкций ↗",
+"Cómo funciona el Consejo":"Как работает Совет"
 };
