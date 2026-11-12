@@ -478,7 +478,6 @@ window.ATLAS_IDIOMA_ru={
 "<code>E/CN.{n}/RES/{n}(XXXVI)</code><br><span>Localizado con símbolo corregido</span>":"<code>E/CN.{n}/RES/{n}(XXXVI)</code><br><span>Найдено с исправленным условным обозначением</span>",
 "{n}<br><small>Consejo Económico y Social</small>":"{n}<br><small>Экономический и Социальный Совет</small>",
 "<code>E/RES/{n}/{n}</code><br><span>Localizado con símbolo corregido</span>":"<code>E/RES/{n}/{n}</code><br><span>Найдено с исправленным условным обозначением</span>",
-"Mostrar {n} más (quedan {n})":"Показать ещё {n} (осталось {n})",
 "no representan a su Estado":"не представляют своё государство",
 "Órganos principales de la Carta (art. {n})":"Главные органы по Уставу (ст. {n})",
 "<b>Asamblea General</b><span>{n} Estados · un voto cada uno</span>":"<b>Генеральная Ассамблея</b><span>{n} государств · по одному голосу у каждого</span>",

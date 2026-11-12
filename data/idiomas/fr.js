@@ -478,7 +478,6 @@ window.ATLAS_IDIOMA_fr={
 "<code>E/CN.{n}/RES/{n}(XXXVI)</code><br><span>Localizado con símbolo corregido</span>":"<code>E/CN.{n}/RES/{n}(XXXVI)</code><br><span>Localisé avec symbole corrigé</span>",
 "{n}<br><small>Consejo Económico y Social</small>":"{n}<br><small>Conseil économique et social</small>",
 "<code>E/RES/{n}/{n}</code><br><span>Localizado con símbolo corregido</span>":"<code>E/RES/{n}/{n}</code><br><span>Localisé avec symbole corrigé</span>",
-"Mostrar {n} más (quedan {n})":"Afficher {n} de plus ({n} restants)",
 "no representan a su Estado":"ne représentent pas leur État",
 "Órganos principales de la Carta (art. {n})":"Organes principaux de la Charte (art. {n})",
 "<b>Asamblea General</b><span>{n} Estados · un voto cada uno</span>":"<b>Assemblée générale</b><span>{n} États · une voix chacun</span>",

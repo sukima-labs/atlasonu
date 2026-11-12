@@ -478,7 +478,6 @@ window.ATLAS_IDIOMA_en={
 "<code>E/CN.{n}/RES/{n}(XXXVI)</code><br><span>Localizado con símbolo corregido</span>":"<code>E/CN.{n}/RES/{n}(XXXVI)</code><br><span>Located with corrected symbol</span>",
 "{n}<br><small>Consejo Económico y Social</small>":"{n}<br><small>Economic and Social Council</small>",
 "<code>E/RES/{n}/{n}</code><br><span>Localizado con símbolo corregido</span>":"<code>E/RES/{n}/{n}</code><br><span>Located with corrected symbol</span>",
-"Mostrar {n} más (quedan {n})":"Show {n} more ({n} left)",
 "no representan a su Estado":"do not represent their State",
 "Órganos principales de la Carta (art. {n})":"Principal organs of the Charter (art. {n})",
 "<b>Asamblea General</b><span>{n} Estados · un voto cada uno</span>":"<b>General Assembly</b><span>{n} States · one vote each</span>",

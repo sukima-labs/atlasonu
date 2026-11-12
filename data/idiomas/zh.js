@@ -478,7 +478,6 @@ window.ATLAS_IDIOMA_zh={
 "<code>E/CN.{n}/RES/{n}(XXXVI)</code><br><span>Localizado con símbolo corregido</span>":"<code>E/CN.{n}/RES/{n}(XXXVI)</code><br><span>已找到（文号已更正）</span>",
 "{n}<br><small>Consejo Económico y Social</small>":"{n}<br><small>经济及社会理事会</small>",
 "<code>E/RES/{n}/{n}</code><br><span>Localizado con símbolo corregido</span>":"<code>E/RES/{n}/{n}</code><br><span>已找到（文号已更正）</span>",
-"Mostrar {n} más (quedan {n})":"再显示 {n} 项（还剩 {n} 项）",
 "no representan a su Estado":"不代表其本国政府",
 "Órganos principales de la Carta (art. {n})":"《宪章》规定的主要机关（第 {n} 条）",
 "<b>Asamblea General</b><span>{n} Estados · un voto cada uno</span>":"<b>大会</b><span>{n} 个国家 · 每国一票</span>",

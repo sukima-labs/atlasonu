@@ -525,11 +525,17 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     ok('P6 celular: «Menú» de la barra inferior abre el menú lateral y lo dice (aria-expanded)', (await pg.isVisible('#side')) && (await pg.getAttribute('#bnavMenu', 'aria-expanded')) === 'true' && (await pg.getAttribute('#burger', 'aria-expanded')) === 'true');
     await pg.evaluate(() => menu(false)); await pg.waitForTimeout(250);
     ok('P6 celular: al cerrar el menú la barra inferior lo refleja', (await pg.getAttribute('#bnavMenu', 'aria-expanded')) === 'false');
+    await pg.focus('#bnavMenu'); await pg.keyboard.press('Enter'); await pg.waitForTimeout(350);
+    { const dentro = await pg.evaluate(() => document.getElementById('side').contains(document.activeElement)); await pg.keyboard.press('Escape'); await pg.waitForTimeout(250);
+      const foco = await pg.evaluate(() => document.activeElement && document.activeElement.id);
+      ok('P6 celular: con teclado, «Menú» de la barra lleva el foco al menú y Escape lo devuelve a «Menú»', dentro && foco === 'bnavMenu', { dentro, foco }); }
     { const r = await pg.evaluate(() => { showPage('explorar'); const v = document.getElementById('visBar').getBoundingClientRect(), f = document.querySelector('#explorar .ayudas'), ch = [...f.querySelectorAll('.ay-chip')]; return { vis: Math.round(v.height), chips: ch.length, fila: new Set(ch.map(c => Math.round(c.getBoundingClientRect().top))).size, alto: Math.min(...ch.map(c => c.getBoundingClientRect().height)), cerradas: [...f.querySelectorAll('details')].every(d => !d.open && !d.offsetParent) }; });
       ok('P6 celular: el contador de visitas va en una sola línea (menos de 50 px)', r.vis < 50, r);
       ok('P6 celular: Explorar junta Lectura fácil, Para qué sirve e Instantánea en una fila de pastillas de 44 px, todas cerradas', r.chips === 3 && r.fila <= 2 && r.alto >= 44 && r.cerradas, r); }
     await pg.tap('#explorar .ay-chip.ay-about'); await pg.waitForTimeout(150);
     ok('P6 celular: tocar «Para qué sirve» despliega su explicación debajo y lo dice (aria-expanded)', (await pg.isVisible('#explorar .about p')) && (await pg.getAttribute('#explorar .ay-chip.ay-about', 'aria-expanded')) === 'true');
+    { const r = await pg.evaluate(() => { const su = document.querySelector('#explorar .ayudas .about>summary'); return { tras: getComputedStyle(su, '::after').display, letra: getComputedStyle(su, '::first-letter').textTransform }; });
+      ok('P6 celular: abierta desde la pastilla, la ayuda no pinta «Ocultar» encima del texto y empieza en mayúscula', r.tras === 'none' && r.letra === 'uppercase', r); }
     await pg.tap('#explorar .ay-chip.ay-about'); await pg.waitForTimeout(150);
     ok('P6 celular: tocarla otra vez la pliega', !(await pg.isVisible('#explorar .about p')) && (await pg.getAttribute('#explorar .ay-chip.ay-about', 'aria-expanded')) === 'false');
     ok('P6 celular: Explorar enseña 3 filtros y guarda 7 en «Más filtros (7)»', await pg.evaluate(() => { const vis = ['q', 'modal', 'figura', 'origin', 'yearfrom', 'yearto', 'order', 'region', 'pais', 'verif'].filter(i => document.getElementById(i).checkVisibility()); return vis.join() === 'q,modal,figura' && /Más filtros \(7\)/.test(document.querySelector('#masFiltros summary').textContent); }));

@@ -478,7 +478,6 @@ window.ATLAS_IDIOMA_ar={
 "<code>E/CN.{n}/RES/{n}(XXXVI)</code><br><span>Localizado con símbolo corregido</span>":"<code>E/CN.{n}/RES/{n}(XXXVI)</code><br><span>عُثر عليه برمز مصحَّح</span>",
 "{n}<br><small>Consejo Económico y Social</small>":"{n}<br><small>المجلس الاقتصادي والاجتماعي</small>",
 "<code>E/RES/{n}/{n}</code><br><span>Localizado con símbolo corregido</span>":"<code>E/RES/{n}/{n}</code><br><span>عُثر عليه برمز مصحَّح</span>",
-"Mostrar {n} más (quedan {n})":"عرض {n} أخرى (بقي {n})",
 "no representan a su Estado":"لا يمثلون دولهم",
 "Órganos principales de la Carta (art. {n})":"الأجهزة الرئيسية في الميثاق (المادة {n})",
 "<b>Asamblea General</b><span>{n} Estados · un voto cada uno</span>":"<b>الجمعية العامة</b><span>{n} دولة · لكل منها صوت واحد</span>",
