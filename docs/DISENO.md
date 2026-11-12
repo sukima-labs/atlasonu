@@ -189,6 +189,7 @@ fichaDelegacion({
 })
 ```
 
+- `rol` (opcional) cambia el rótulo de arriba, que por defecto es «Ficha de delegación» (el kit del profesor lo usa para «Hoja de trabajo»).
 - `ancho: true` hace que un bloque ocupe las dos columnas. `<span class="fd-linea"></span>` deja una línea para
   escribir a mano.
 - Para imprimir solo la ficha, un botón debajo de ella:
