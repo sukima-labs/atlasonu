@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
-"""T76 fase 1: la base de reglas de «Tengo un caso: ¿adónde acudo?» (data/vias.json) cumple la regla de fuentes
+"""T76 fase 1: la base de reglas de «Tengo un caso: ¿adónde acudo?» (data/vias.js) cumple la regla de fuentes
 de docs/FUENTES_OFICIALES_VIAS.md: cada requisito trae sus cuatro campos (en palabras simples, lo que dice la ONU,
 dónde lo dice y estado); lo «leído en el original» lleva cita y enlace; y las citas de los tratados cuyo texto
 guarda ATLAS (data/tratados/) están, letra a letra, en ese texto."""
 import json, os, re, unittest
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-VIAS = json.load(open(os.path.join(RAIZ, "data", "vias.json"), encoding="utf-8"))["vias"]
+_S = open(os.path.join(RAIZ, "data", "vias.js"), encoding="utf-8").read()
+VIAS = json.loads(_S[_S.index("={") + 1:].rstrip().rstrip(";"))["vias"]
 TRATADOS = {t["mtdsg"] for t in json.load(open(os.path.join(RAIZ, "data", "fuentes", "tratados_untc.json"), encoding="utf-8"))["tratados"]}
 ESTADOS = {"leído en el original", "por verificar"}
 TEMAS = {"quien", "acepta", "recursos", "plazo", "fechas", "otra_via", "forma", "urgente", "funciona"}
@@ -45,6 +46,7 @@ class Vias(unittest.TestCase):
                 self.assertTrue(q["donde"]["documento"].strip(), ctx)
                 self.assertIn("articulo", q["donde"], ctx)
                 self.assertIn("onu", q, ctx)
+                self.assertLessEqual(len(q.get("corto", "")), 60, ctx + ": el resumen corto va en una celda")
                 if q["estado"] == "leído en el original":
                     self.assertTrue(q["onu"].strip(), ctx + ": lo leído lleva la cita")
                     self.assertTrue(q["donde"]["articulo"].strip(), ctx)
