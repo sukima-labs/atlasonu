@@ -122,10 +122,11 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     await page.click('#lnOrden'); await page.waitForTimeout(150);
     ok(vp.name + ': «Más antiguos primero» empieza en 1967 (firma de la CERD) y la línea no desborda', (await page.locator('#pLinea .tl li.tl-y').first().textContent()) === '1967' && /Firma: CERD/.test(await page.locator('#pLinea .tl li.tl-e').first().textContent()) && await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1));
     await page.click('#lnOrden'); await page.locator('#pLinea button', { hasText: /^Todo \(\d+\)/ }).click();
-    // T63: glosario de siglas al tocar (en la ficha de India, sin salir de la página)
+    // T63: glosario de siglas al tocar (en la ficha de India, sin salir de la página). T91: el título del EPU va en un <summary> plegable,
+    //      donde no se marcan siglas (tocarla abriría o cerraría el bloque): se usa el «EPU» del texto de la ficha
     await page.waitForTimeout(250);
-    ok(vp.name + ': las siglas del texto de la ficha quedan marcadas y las de botones y enlaces no', (await page.locator('#pDocs abbr.sg[data-k="EPU"]').count()) > 0 && (await page.locator('#pNav abbr.sg, #pDocs a abbr.sg, #paises button abbr.sg').count()) === 0);
-    const sgA = page.locator('#pDocs abbr.sg[data-k="EPU"]').first(); await sgA.scrollIntoViewIfNeeded(); await sgA.click(); await page.waitForTimeout(150);
+    ok(vp.name + ': las siglas del texto de la ficha quedan marcadas y las de botones y enlaces no', (await page.locator('#pOut abbr.sg[data-k="EPU"]').count()) > 0 && (await page.locator('#pNav abbr.sg, #pDocs a abbr.sg, #paises button abbr.sg').count()) === 0);
+    const sgA = page.locator('#pOut abbr.sg[data-k="EPU"]').first(); await sgA.scrollIntoViewIfNeeded(); await sgA.click(); await page.waitForTimeout(150);
     const sgBox = await page.locator('#sgPop').boundingBox();
     ok(vp.name + ': tocar «EPU» abre su significado junto a la sigla, dentro de la pantalla', await page.isVisible('#sgPop') && /Examen Peri[oó]dico Universal/.test(await page.textContent('#sgPop')) && /Universal Periodic Review/.test(await page.textContent('#sgPop')) && sgBox && sgBox.x >= 0 && sgBox.x + sgBox.width <= vp.width + 1 && sgBox.y >= 0 && sgBox.y + sgBox.height <= vp.height + 1 && await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
     await page.keyboard.press('Escape'); await page.waitForTimeout(100);
@@ -325,7 +326,12 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     await page.fill('#pQ', ''); await page.selectOption('#pSel', 'COL'); await page.waitForTimeout(250);
     ok(vp.name + ': elegir Colombia lista 6 titulares y el aviso de independencia', (await page.locator('#pExtra .kv a').count()) === 6 && /no representan a su Estado/.test(await page.textContent('#pExtra')));
     if (vp.name === 'escritorio') await page.screenshot({ path: path.resolve(__dirname, '..', 'audit', 'captura_paises.png') });
+    // T91: en el celular la lista de mandatos (con sus subtemas) empieza plegada; se abre con un toque y sigue abierta al filtrar
+    const plgTemas = page.locator('details[data-plg="ps-temas"]');
+    ok(vp.name + ': T91 la lista de mandatos empieza ' + (vp.width <= 650 ? 'plegada' : 'abierta'), (await plgTemas.evaluate(d => d.open)) === (vp.width > 650));
+    if (vp.width <= 650) { await page.click('details[data-plg="ps-temas"] > summary'); await page.waitForTimeout(150); }
     await page.getByRole('button', { name: /^Tortura, malos tratos y detención \(\d+\)/ }).click(); await page.waitForTimeout(250);
+    ok(vp.name + ': T91 al filtrar por subtema la lista sigue abierta', await page.locator('details[data-plg="ps-temas"]').evaluate(d => d.open));
     ok(vp.name + ': subtema «Tortura…» → lista corta de mandatos temáticos aplicables', (await page.locator('#pTemasTabla tbody tr').count()) < 10 && /tortura/i.test(await page.textContent('#pTemasTabla')));
     await page.locator('#pTema').click(); await page.keyboard.type('agua', { delay: 40 }); await page.waitForTimeout(250);
     ok(vp.name + ': escribir un tema libre mantiene el foco del campo y filtra', (await page.evaluate(() => document.activeElement.id)) === 'pTema' && /agua/i.test(await page.textContent('#pTemasTabla')));
@@ -664,7 +670,7 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
       }
       // T67: frases con el nombre del país o la fecha de los datos dentro, y fechas cortas de la ficha, traducidas enteras
       await pi.evaluate("irPais('COL')"); await pi.waitForTimeout(1500);
-      const f67 = await pi.evaluate(() => document.querySelector('#paises').innerText);
+      const f67 = await pi.evaluate(() => { document.querySelectorAll('#paises details.pf-pleg').forEach(d => { d.open = true }); return document.querySelector('#paises').innerText }); // T91: en el celular los bloques largos empiezan plegados
       ok('idiomas: en la ficha de país las frases con su nombre y las fechas cortas salen en inglés (T67)', /The history of Colombia/.test(f67) && /send to Colombia/.test(f67) && /Ratification \d{1,2} [A-Z][a-z]{2} \d{4}/.test(f67) && !/Son las cartas|Ratificación \d/.test(f67));
       await pi.evaluate("showPage('explorar')"); await pi.waitForTimeout(400);
       ok('idiomas: «Datos del …» con su fecha no parte la explicación de la pantalla (T67)', await pi.evaluate(() => /Data as of/.test(document.querySelector('#explorar .about').textContent) && !/Datos del/.test(document.querySelector('#explorar .about').textContent)));

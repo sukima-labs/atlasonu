@@ -6,7 +6,7 @@ const { chromium } = require('playwright');
 const { METAS, medirPantalla, cumple } = require('./metas_ux.cjs');
 const ruta = require('path').resolve(__dirname, '..', 'index.html');
 const comprobar = process.argv.includes('--comprobar');
-const LARGO_FICHA = 50; // ficha de país de Colombia, medida el 12-11-2026: 48,9 pantallas. Bajará a 9 con #285 (T91)
+const LARGO_FICHA = 9; // ficha de país de Colombia en el celular: 48,9 pantallas el 12-11-2026; 8,8 con los bloques largos plegados (#285, T91)
 (async () => {
   const b = await chromium.launch();
   const ctx = await b.newContext({ viewport: { width: 390, height: 844 }, hasTouch: true, isMobile: true, deviceScaleFactor: 2 });
@@ -23,8 +23,8 @@ const LARGO_FICHA = 50; // ficha de país de Colombia, medida el 12-11-2026: 48,
     if (!bien) malas++;
     console.log(`${bien ? '✓' : '✗'} ${id.padEnd(13)} largo ${String(m.largo).padStart(4)} pantallas · ancho ${m.ancho}/${m.W} · controles < ${METAS.control} px: ${m.controles}${m.controles ? ' ' + m.controlesEj.join(' | ') : ''} · texto < ${METAS.texto} px: ${m.textos}${m.textos ? ' ' + m.textosEj.join(' | ') : ''}`);
   }
-  // La ficha de un país (Colombia) aún no cumple: es la pantalla más larga y tiene enlaces «ES ↗ / EN ↗» y una gráfica con letra
-  // pequeña. Se informa y se pone un tope de largo para que no crezca mientras se arregla (#285, T91, y #286, T92).
+  // La ficha de un país (Colombia): el largo ya cumple (bloques plegados en el celular, #285, T91). Los enlaces «ES ↗ / EN ↗»
+  // pequeños y la gráfica con letra diminuta se informan sin hacer fallar hasta #286 (T92).
   await p.evaluate(() => irPais('COL')); await p.waitForTimeout(1500);
   const f = await p.evaluate(medirPantalla, METAS);
   const fichaMal = f.largo > LARGO_FICHA || f.ancho > f.W + 1;

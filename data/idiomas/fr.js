@@ -1554,5 +1554,6 @@ window.ATLAS_IDIOMA_fr={
 "No se han podido cargar las recomendaciones de este país. Si abriste ATLAS desde una copia descargada, ábrelo en la web publicada.":"Les recommandations de ce pays n’ont pas pu être chargées. Si vous avez ouvert ATLAS depuis une copie téléchargée, ouvrez-le sur le site publié.",
 "2.º ciclo (2012–2016)":"2e cycle (2012–2016)",
 "3.er ciclo (2017–2022)":"3e cycle (2017–2022)",
-"4.º ciclo (desde 2022)":"4e cycle (depuis 2022)"
+"4.º ciclo (desde 2022)":"4e cycle (depuis 2022)",
+"Lista de mandatos que pueden actuar":"Liste des mandats qui peuvent agir"
 };
