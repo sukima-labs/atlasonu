@@ -1675,5 +1675,7 @@ window.ATLAS_IDIOMA_zh={
 "no es parte del protocolo":"不是议定书缔约国",
 "no es parte del tratado":"不是条约缔约国",
 "Ver todos sus requisitos":"查看其全部要求",
-"También están los relatores y grupos de trabajo de la ONU (procedimientos especiales): no piden ir antes a los tribunales ni que el Estado haya aceptado un tratado. Sus requisitos aún están por verificar y por eso no entran en este resumen. <b>No es asesoría legal:</b> busca el apoyo de una organización de derechos humanos.":"还有联合国报告员和工作组（特别程序）：它们不要求先诉诸法院，也不要求国家已接受某项条约。其要求尚待核实，因此未列入本摘要。<b>这不是法律意见：</b>请寻求人权组织的支持。"
+"También están los relatores y grupos de trabajo de la ONU (procedimientos especiales): no piden ir antes a los tribunales ni que el Estado haya aceptado un tratado. Sus requisitos aún están por verificar y por eso no entran en este resumen. <b>No es asesoría legal:</b> busca el apoyo de una organización de derechos humanos.":"还有联合国报告员和工作组（特别程序）：它们不要求先诉诸法院，也不要求国家已接受某项条约。其要求尚待核实，因此未列入本摘要。<b>这不是法律意见：</b>请寻求人权组织的支持。",
+"¿Tienes un caso de derechos humanos? Mira a qué vía de la ONU acudir":"您有人权案件吗？看看可以诉诸联合国的哪条途径",
+"Tengo un caso en este país: ¿adónde acudo?":"我在这个国家有案件：该向哪里求助？"
 };
