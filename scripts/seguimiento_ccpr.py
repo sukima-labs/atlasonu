@@ -8,7 +8,7 @@ luego cada párrafo con su tema. Se guarda lo que el informe dice, sin interpret
 observaciones finales), párrafo, tema y notas. La leyenda de las notas se copia del propio documento principal.
 
   python3 -I scripts/seguimiento_ccpr.py --cache /var/tmp/t75fu   # baja lo que falta (5 s entre peticiones) y escribe
-                                                                  # data/seguimiento_comites/ccpr.json
+                                                                  # data/seguimiento_comites/ccpr.json y ccpr.js (la web)
 Robots.txt de la Biblioteca Digital: Crawl-delay 5. Nunca a la vez que otro cliente (texto_completo.py, 03:30).
 """
 import json, os, re, subprocess, sys, time, urllib.parse, urllib.request
@@ -113,6 +113,11 @@ def main():
     out = {'comite': 'CCPR', 'fuente': 'Biblioteca Digital de la ONU: ' + CONSULTA, 'consultado': time.strftime('%Y-%m-%d'),
            'informes': len(regs), 'leyenda': ley, 'evaluaciones': paises, 'no_incluidas': fuera, 'fallos': fallos}
     json.dump(out, open(os.path.join(RAIZ, 'data', 'seguimiento_comites', 'ccpr.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+    # La web lo carga como .js (con <script>) para que la copia descargada funcione abierta como fichero, sin servidor.
+    web = {k: out[k] for k in ('comite', 'consultado', 'leyenda')}
+    web['evaluaciones'] = [{k: e[k] for k in ('pais', 'observaciones', 'observaciones_fecha', 'informe', 'informe_fecha', 'url', 'parrafos')} for e in paises]
+    open(os.path.join(RAIZ, 'data', 'seguimiento_comites', 'ccpr.js'), 'w', encoding='utf-8').write(
+        '/* T75 fase 2: generado por scripts/seguimiento_ccpr.py; no se edita a mano. */\nwindow.SEG_CCPR=' + json.dumps(web, ensure_ascii=False, separators=(',', ':')) + ';\n')
     print(f"{len(regs)} informes, {len(paises)} evaluaciones de país, {sum(len(p['parrafos']) for p in paises)} párrafos, leyenda {sorted(ley)}, no incluidas {len(fuera)}, fallos {len(fallos)}")
 
 
