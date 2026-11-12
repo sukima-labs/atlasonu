@@ -1,8 +1,24 @@
 window.NOTICIAS={
  "fuente": "Noticias ONU (news.un.org)",
- "actualizado": "2026-11-11T18:51:37Z",
+ "actualizado": "2026-11-12T03:57:18Z",
  "temas": {
   "todas": [
+   {
+    "titulo": "Guterres: Es el momento de la verdad: o actuamos o nos asamos",
+    "fecha": "2026-11-11",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542164",
+    "resumen": "\"Los combustibles fósiles deben seguir el camino de los dinosaurios (la extinción). (Pero) los dinosaurios no tenían un lobby. Los combustibles fósiles, sí\", advierte el titular de la ONU. Además, contrasta los 95.000 millones que ganaron las nueve mayores…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/11-11-2026_COP31.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
+   {
+    "titulo": "COP31, sequía en Centroamérica, Gaza, ébola… las noticias del miércoles",
+    "fecha": "2026-11-11",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542163",
+    "resumen": "En la COP31, el Secretario General advierte de que \"los combustibles fósiles deben seguir el camino de los dinosaurios\", la extinción. En nuestro podcast \"Sin la ONU\", viajamos al Corredor Seco de Centroamérica para conocer cómo la sequía está cambiando la…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/29-06-2206_Adobe_heatwave.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
    {
     "titulo": "El Corredor Seco: “Cuando no hay agua, ahí termina toda la inteligencia”",
     "fecha": "2026-11-11",
@@ -145,22 +161,6 @@ window.NOTICIAS={
     "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542134",
     "resumen": "Los territorios palestinos ocupados por Israel registraron el mayor número de asesinatos en el bienio 2024-2025, con 62 muertes, dentro de la región de los Estados Árabes, que sumó 97 casos, seguida de América Latina y el Caribe (37), Asia y el Pacífico…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/10/29-10-2026-Adobe-Stock-journalist.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "Periodistas asesinados, desinformación sobre migrantes, Ucrania, Sáhara Occidental… las noticias del lunes",
-    "fecha": "2026-11-02",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542133",
-    "resumen": "En 2024-2025, fueron asesinados 189 periodistas. La desinformación amplificada por la inteligencia artificial está convirtiendo a los migrantes en \"objetivos\" de odio y violencia. Más de 400 evacuados de Oleshky, en Ucrania, tras un breve alto el fuego,…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/16-04-2026-UN-News-Haiti-01.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "COP17: Los países acuerdan una hoja de ruta para acelerar la protección de la biodiversidad",
-    "fecha": "2026-11-01",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542131",
-    "resumen": "La cumbre de biodiversidad de la ONU concluyó en Armenia con una hoja de ruta para acelerar el cumplimiento de los objetivos mundiales de protección de la naturaleza antes de 2030. Los países anunciaron cerca de 2000 millones de dólares en nueva financiación…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/10/17-10-26-ONUNews_Fungi01.png/image560x340cropped.jpg",
     "destacada": false
    }
   ],

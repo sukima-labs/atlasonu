@@ -1,4 +1,5 @@
 window.ATLAS_IDIOMA_zh={
+"Libia":"利比亚",
 "Atlas ONU · Arqueología documental":"Atlas ONU · 文献考古",
 "Volver arriba":"返回顶部",
 "↑ Arriba":"↑ 顶部",
@@ -499,9 +500,9 @@ window.ATLAS_IDIOMA_zh={
 "<b>Órganos de tratados</b><span>{n} comités + Subcomité contra la tortura</span>":"<b>条约机构</b><span>{n} 个委员会 + 防止酷刑小组委员会</span>",
 "Sustituyó en {n} a la Comisión de Derechos Humanos ({n}–{n}). Es un órgano <b>político</b> de Estados, no de expertos: vota resoluciones y crea los mandatos de los procedimientos especiales.":"{n} 年取代了人权委员会（{n}–{n} 年）。它是由各国组成的<b>政治</b>机关，而非专家机构：它表决决议并设立特别程序的任务。",
 "Quién lo forma":"由谁组成",
-"{n} Estados elegidos por la Asamblea por tres años, repartidos por grupos regionales ({n} África, {n} Asia-Pacífico, {n} América Latina y Caribe, {n} Europa Occidental y otros, {n} Europa Oriental).":"{n} 个国家，由大会选举产生，任期三年，按区域组别分配（非洲 {n} 个、亚太 {n} 个、拉丁美洲和加勒比 {n} 个、西欧及其他 {n} 个、东欧 {n} 个）。",
+"{n} Estados elegidos por la Asamblea en votación secreta y por mayoría absoluta de sus miembros ({n} votos), por tres años y sin reelección inmediata tras dos mandatos seguidos. Se reparten por grupos regionales ({n} África, {n} Asia-Pacífico, {n} América Latina y Caribe, {n} Europa Occidental y otros, {n} Europa Oriental). La Asamblea puede suspender, por dos tercios, a un miembro que cometa violaciones graves y sistemáticas: lo hizo con Libia ({n}) y con Rusia ({n}).":"{n}个国家，由大会以无记名投票、经大会成员过半数（{n}票）选出，任期三年，连任两届后不得立即连选。按区域组分配（非洲{n}个、亚太{n}个、拉丁美洲和加勒比{n}个、西欧和其他国家{n}个、东欧{n}个）。对严重、系统侵犯人权的成员，大会可以三分之二多数中止其成员资格：利比亚（{n}年）和俄罗斯（{n}年）即为先例。",
 "Base jurídica":"法律依据",
-"Resolución {n}/{n} de la Asamblea ({n}); instituciones en la resolución {n}/{n} del propio Consejo ({n}).":"大会第 {n}/{n} 号决议（{n}）；理事会自身第 {n}/{n} 号决议确立了各项制度（{n}）。",
+"Resolución {n}/{n} de la Asamblea ({n}), párrafos {n} y {n}; instituciones en la resolución {n}/{n} del propio Consejo ({n}): EPU, procedimientos especiales, Comité Asesor y procedimiento de denuncia.":"大会第{n}/{n}号决议（{n}年）第{n}段和第{n}段；机构建设见理事会本身的第{n}/{n}号决议（{n}年）：普遍定期审议、特别程序、咨询委员会和申诉程序。",
 "Qué produce":"产出什么",
 "Resoluciones <code>A/HRC/RES/sesión/n.º</code>. Se reúne al menos tres veces al año.":"<code>A/HRC/RES/届会/编号</code> 决议。每年至少举行三次会议。",
 "Depende de":"隶属于",

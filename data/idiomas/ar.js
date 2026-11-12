@@ -1,4 +1,5 @@
 window.ATLAS_IDIOMA_ar={
+"Libia":"ليبيا",
 "Atlas ONU · Arqueología documental":"أطلس الأمم المتحدة · علم الآثار الوثائقي",
 "Volver arriba":"العودة إلى الأعلى",
 "↑ Arriba":"↑ الأعلى",
@@ -499,9 +500,9 @@ window.ATLAS_IDIOMA_ar={
 "<b>Órganos de tratados</b><span>{n} comités + Subcomité contra la tortura</span>":"<b>هيئات المعاهدات</b><span>{n} لجنة + اللجنة الفرعية لمنع التعذيب</span>",
 "Sustituyó en {n} a la Comisión de Derechos Humanos ({n}–{n}). Es un órgano <b>político</b> de Estados, no de expertos: vota resoluciones y crea los mandatos de los procedimientos especiales.":"حلّ في {n} محل لجنة حقوق الإنسان ({n}–{n}). وهو جهاز <b>سياسي</b> من الدول لا من الخبراء: يصوّت على القرارات وينشئ ولايات الإجراءات الخاصة.",
 "Quién lo forma":"من يشكّله",
-"{n} Estados elegidos por la Asamblea por tres años, repartidos por grupos regionales ({n} África, {n} Asia-Pacífico, {n} América Latina y Caribe, {n} Europa Occidental y otros, {n} Europa Oriental).":"{n} دولة تنتخبها الجمعية لمدة ثلاث سنوات، موزعة بحسب المجموعات الإقليمية ({n} لأفريقيا و{n} لآسيا والمحيط الهادئ و{n} لأمريكا اللاتينية والكاريبي و{n} لأوروبا الغربية ودول أخرى و{n} لأوروبا الشرقية).",
+"{n} Estados elegidos por la Asamblea en votación secreta y por mayoría absoluta de sus miembros ({n} votos), por tres años y sin reelección inmediata tras dos mandatos seguidos. Se reparten por grupos regionales ({n} África, {n} Asia-Pacífico, {n} América Latina y Caribe, {n} Europa Occidental y otros, {n} Europa Oriental). La Asamblea puede suspender, por dos tercios, a un miembro que cometa violaciones graves y sistemáticas: lo hizo con Libia ({n}) y con Rusia ({n}).":"{n} دولة تنتخبها الجمعية العامة بالاقتراع السري وبالأغلبية المطلقة لأعضائها ({n} صوتًا)، لمدة ثلاث سنوات، ولا يجوز إعادة انتخابها فورًا بعد ولايتين متتاليتين. وتتوزع حسب المجموعات الإقليمية ({n} أفريقيا، {n} آسيا والمحيط الهادئ، {n} أمريكا اللاتينية والكاريبي، {n} أوروبا الغربية ودول أخرى، {n} أوروبا الشرقية). ويجوز للجمعية، بأغلبية الثلثين، تعليق عضوية عضو يرتكب انتهاكات جسيمة ومنهجية: وقد فعلت ذلك مع ليبيا ({n}) وروسيا ({n}).",
 "Base jurídica":"الأساس القانوني",
-"Resolución {n}/{n} de la Asamblea ({n}); instituciones en la resolución {n}/{n} del propio Consejo ({n}).":"قرار الجمعية {n}/{n} ({n})؛ وبناء المؤسسات في قرار المجلس نفسه {n}/{n} ({n}).",
+"Resolución {n}/{n} de la Asamblea ({n}), párrafos {n} y {n}; instituciones en la resolución {n}/{n} del propio Consejo ({n}): EPU, procedimientos especiales, Comité Asesor y procedimiento de denuncia.":"قرار الجمعية العامة {n}/{n} ({n})، الفقرتان {n} و{n}؛ وبناء المؤسسات في قرار المجلس نفسه {n}/{n} ({n}): الاستعراض الدوري الشامل، والإجراءات الخاصة، واللجنة الاستشارية، وإجراء الشكاوى.",
 "Qué produce":"ما ينتجه",
 "Resoluciones <code>A/HRC/RES/sesión/n.º</code>. Se reúne al menos tres veces al año.":"قرارات <code>A/HRC/RES/الدورة/الرقم</code>. ويجتمع ثلاث مرات في السنة على الأقل.",
 "Depende de":"يتبع",
