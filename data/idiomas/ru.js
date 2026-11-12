@@ -1554,5 +1554,6 @@ window.ATLAS_IDIOMA_ru={
 "No se han podido cargar las recomendaciones de este país. Si abriste ATLAS desde una copia descargada, ábrelo en la web publicada.":"Не удалось загрузить рекомендации этой страны. Если вы открыли ATLAS из скачанной копии, откройте опубликованный сайт.",
 "2.º ciclo (2012–2016)":"2-й цикл (2012–2016)",
 "3.er ciclo (2017–2022)":"3-й цикл (2017–2022)",
-"4.º ciclo (desde 2022)":"4-й цикл (с 2022)"
+"4.º ciclo (desde 2022)":"4-й цикл (с 2022)",
+"Lista de mandatos que pueden actuar":"Список мандатов, которые могут действовать"
 };

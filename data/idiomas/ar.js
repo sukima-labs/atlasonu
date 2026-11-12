@@ -1554,5 +1554,6 @@ window.ATLAS_IDIOMA_ar={
 "No se han podido cargar las recomendaciones de este país. Si abriste ATLAS desde una copia descargada, ábrelo en la web publicada.":"تعذّر تحميل توصيات هذا البلد. إذا فتحت ATLAS من نسخة منزّلة، فافتحه على الموقع المنشور.",
 "2.º ciclo (2012–2016)":"الجولة 2 (2012–2016)",
 "3.er ciclo (2017–2022)":"الجولة 3 (2017–2022)",
-"4.º ciclo (desde 2022)":"الجولة 4 (منذ 2022)"
+"4.º ciclo (desde 2022)":"الجولة 4 (منذ 2022)",
+"Lista de mandatos que pueden actuar":"قائمة الولايات التي يمكنها التحرك"
 };

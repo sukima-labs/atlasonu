@@ -1554,5 +1554,6 @@ window.ATLAS_IDIOMA_zh={
 "No se han podido cargar las recomendaciones de este país. Si abriste ATLAS desde una copia descargada, ábrelo en la web publicada.":"无法加载该国的建议。如果你是从下载的副本打开 ATLAS，请在已发布的网站上打开。",
 "2.º ciclo (2012–2016)":"第2周期（2012–2016）",
 "3.er ciclo (2017–2022)":"第3周期（2017–2022）",
-"4.º ciclo (desde 2022)":"第4周期（自2022年起）"
+"4.º ciclo (desde 2022)":"第4周期（自2022年起）",
+"Lista de mandatos que pueden actuar":"可采取行动的任务清单"
 };

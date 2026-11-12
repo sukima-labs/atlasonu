@@ -353,7 +353,7 @@
     },
     {
      "t": "Ficha de país más corta en el celular",
-     "x": "Plegar las tablas largas de documentos (observaciones finales, EPU y visitas) para que la ficha de un país se lea en el celular sin tanto desplazamiento.",
+     "x": "En el celular, los bloques largos de la ficha de un país (línea de tiempo, comunicaciones, observaciones finales, EPU, visitas y la lista de mandatos) empiezan plegados con su número, y el índice «Qué quieres ver» va en dos columnas: la ficha de Colombia pasa de unas 49 pantallas de alto a menos de 9. En el escritorio y al imprimir se ven abiertos.",
      "issues": [
       285
      ]
