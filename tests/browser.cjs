@@ -169,10 +169,11 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     ok(vp.name + ': T75 filtro «Sin información» del 4.º ciclo: solo pastillas «Sin información», nunca un estado inventado', segNd[0] === 40 && segNd[1] === 40 && segNd[2] === 0, segNd);
     await sp.selectOption('#segCmpSel', 'MEX'); await sp.selectOption('#segCmpSel', 'ARG');
     ok(vp.name + ': T75 comparador con 3 países (columna fija + 3) y 15 filas', await sp.evaluate(() => document.querySelectorAll('#segCmp thead th').length === 4 && document.querySelectorAll('#segCmp tbody tr').length === 15));
-    // T75 fase 2b: notas A–E del Comité de Derechos Humanos (Armenia, CCPR/C/144/2/Add.1: 16 [B], 40 [C][B], 42 [B]).
-    await sp.selectOption('#segPais', 'ARM'); await sp.waitForFunction(() => document.querySelector('#segCom .seg-com-l li'));
+    // T75 fase 2b y 2c: notas A–E del Comité de Derechos Humanos (Armenia, CCPR/C/144/2/Add.1: 16 [B], 40 [C][B], 42 [B])
+    // y del Comité contra la Desaparición Forzada (CED/C/11/2: 12 [B], 19 [B], 27 [B]), un panel por comité.
+    await sp.selectOption('#segPais', 'ARM'); await sp.waitForFunction(() => document.querySelectorAll('#segCom .seg-com-l li').length >= 6);
     const com = await sp.evaluate(() => { const b = document.getElementById('segCom'); return { filas: b.querySelectorAll('.seg-com-l li').length, notas: [...b.querySelectorAll('.seg-com-l .pill')].map(x => x.textContent.trim()[0]).join(''), enlace: !!b.querySelector('a[href*="digitallibrary.un.org/record/"]'), ley: b.querySelectorAll('.seg-com-ley dt').length, desborda: document.documentElement.scrollWidth > window.innerWidth + 1 }; });
-    ok(vp.name + ': T75 Armenia: notas del Comité de Derechos Humanos 16 [B], 40 [C][B], 42 [B], con su informe y la leyenda oficial A–E', com.filas >= 3 && com.notas.includes('BCBB') && com.enlace && com.ley === 5 && !com.desborda, com);
+    ok(vp.name + ': T75 Armenia: notas del Comité de Derechos Humanos 16 [B], 40 [C][B], 42 [B] y del CED 12, 19 y 27 [B], con su informe y la leyenda oficial A–E de cada comité', com.filas >= 6 && com.notas.includes('BCBBBBB') && com.enlace && com.ley === 10 && !com.desborda, com);
     if (sp !== page) await sp.close();
     // T76 fase 1: «Tengo un caso: ¿adónde acudo?». data/vias.js se carga con <script>: funciona también desde file://.
     await page.evaluate(() => showPage('vias')); await page.waitForFunction(() => document.querySelectorAll('#viaOut .cmpx tbody tr').length >= 11 && document.querySelectorAll('#viaPais option').length > 150);
