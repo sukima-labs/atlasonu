@@ -16,21 +16,24 @@ const PAGINA = BASE; // clave de la copia de index.html
 const desdeCopia = new Set(); // ids de las pestañas a las que se sirvió algo de la copia
 
 // Al instalarse guarda lo necesario para abrir sin red la portada y las pantallas de datos que se cargan aparte (mapa,
-// noticias, EPU, conflictos, jurisprudencia, comunicaciones), en los seis idiomas: el diccionario del idioma elegido se
-// baja en la primera visita ANTES de que exista el service worker, así que sin esto la copia quedaría en español.
-// Son unos 2,7 MB en total. Lo demás se guarda la primera vez que se abre. Si algo falla, la instalación sigue igual.
+// noticias, EPU, conflictos, jurisprudencia, comunicaciones), con las imágenes y letras que pide la primera visita: todo
+// eso se baja ANTES de que exista el service worker, así que sin esta lista la copia quedaría coja (logo roto, árabe con
+// otra letra). Unos 2 MB sin comprimir. El diccionario de otro idioma NO va aquí: la página dice cuál usa (mensaje
+// «sw-guarda») y solo se guarda ese, para no gastar datos del móvil en idiomas que nadie lee. Si algo falla, sigue igual.
 const BASICO = ['./', 'data/atlas-data.js', 'data/atlas-actos.js', 'assets/idiomas.js', 'manifest.webmanifest',
   'assets/fonts/dejavu-sans-regular.woff2', 'assets/fonts/dejavu-sans-bold.woff2',
-  'data/idiomas/en.js', 'data/idiomas/fr.js', 'data/idiomas/ar.js', 'data/idiomas/zh.js', 'data/idiomas/ru.js',
-  'data/noticias.js', 'data/mapa.js', 'data/epu.js', 'data/conflictos.js', 'data/jurisprudencia.js', 'data/comunicaciones.js'];
-const ESPERA_PAGINA = 8000; // con red lentísima, a los 8 s se abre la copia (si la hay) y la red sigue actualizándola detrás
+  'assets/fonts/dejavu-sans-regular-arabe.woff2', 'assets/fonts/dejavu-sans-bold-arabe.woff2',
+  'assets/marca/dignityos_provisional.svg', 'assets/marca/favicon_32.png', 'assets/marca/apple_touch_icon_180.png',
+  'data/noticias.js', 'data/mapa.js', 'data/epu.js', 'data/conflictos.js', 'data/jurisprudencia.js', 'data/comunicaciones.js',
+  'data/estado.json'];
+function guarda(c, ruta) {
+  const u = new URL(ruta, BASE).href;
+  return fetch(u, { cache: 'no-cache' }).then(r => { if (r.ok && r.type === 'basic') return c.put(u === BASE + 'index.html' ? PAGINA : u, r); })
+    .catch(() => {});
+}
 self.addEventListener('install', e => {
   self.skipWaiting();
-  e.waitUntil(caches.open(CACHE).then(c => Promise.all(BASICO.map(ruta => {
-    const u = new URL(ruta, BASE).href;
-    return fetch(u, { cache: 'no-cache' }).then(r => { if (r.ok && r.type === 'basic') return c.put(u === BASE + 'index.html' ? PAGINA : u, r); })
-      .catch(() => {});
-  }))).catch(() => {}));
+  e.waitUntil(caches.open(CACHE).then(c => Promise.all(BASICO.map(ruta => guarda(c, ruta)))).catch(() => {}));
 });
 self.addEventListener('activate', e => {
   e.waitUntil((async () => {
@@ -69,9 +72,9 @@ async function avisa(id) {
 }
 
 async function primeroLaRed(e) {
-  const req = e.request, k = clave(req), navega = req.mode === 'navigate';
-  const idPestana = navega ? (e.resultingClientId || e.clientId) : e.clientId;
-  // La red, siempre. Lo que llega se guarda como copia aunque la página ya se haya servido de la copia (tiempo agotado).
+  const req = e.request, k = clave(req);
+  const idPestana = req.mode === 'navigate' ? (e.resultingClientId || e.clientId) : e.clientId;
+  // La red, siempre. Lo que llega se guarda como copia.
   let guardado = Promise.resolve();
   const red = fetch(req).then(r => {
     if (r && r.ok && r.type === 'basic') {
@@ -88,19 +91,9 @@ async function primeroLaRed(e) {
     e.waitUntil(avisa(idPestana).catch(() => {}));
     return guardada;
   };
-  if (!navega) { try { return await red; } catch (err) { return deLaCopia(err); } }
-  return new Promise((resolve, reject) => {
-    let hecho = false;
-    const reloj = setTimeout(() => {
-      caches.match(k, { cacheName: CACHE }).then(g => {
-        if (!g || hecho) return;
-        hecho = true;
-        resolve(deLaCopia(new Error('sin copia')));
-      }).catch(() => {});
-    }, ESPERA_PAGINA);
-    red.then(r => { clearTimeout(reloj); if (!hecho) { hecho = true; resolve(r); } },
-      err => { clearTimeout(reloj); if (!hecho) { hecho = true; deLaCopia(err).then(resolve, reject); } });
-  });
+  // Primero la red, sin plazo: la copia solo se usa cuando la red falla de verdad (sin conexión). Una red lenta espera
+  // a la red, para no decir «Sin conexión» a quien sí la tiene.
+  try { return await red; } catch (err) { return deLaCopia(err); }
 }
 
 self.addEventListener('fetch', e => {
@@ -109,7 +102,12 @@ self.addEventListener('fetch', e => {
 });
 
 // La página pregunta al arrancar si su HTML salió de la copia (la navegación llega antes de que exista la pestaña).
+// También dice qué diccionario de idioma usa, para guardarlo aunque se bajara antes de existir el service worker.
 self.addEventListener('message', e => {
+  if (e.data && e.data.atlas === 'sw-guarda' && /^data\/idiomas\/[a-z]{2}\.js$/.test(e.data.ruta || '')) {
+    e.waitUntil(caches.open(CACHE).then(c => guarda(c, e.data.ruta)).catch(() => {}));
+    return;
+  }
   if (!e.data || e.data.atlas !== 'sw-estado' || !e.source) return;
   const id = e.source.id;
   e.source.postMessage({ atlas: desdeCopia.has(id) ? 'sw-copia' : 'sw-red' });

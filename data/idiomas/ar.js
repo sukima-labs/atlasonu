@@ -6,6 +6,7 @@ window.ATLAS_IDIOMA_ar={
 "Saltar al contenido":"تخطّي إلى المحتوى",
 "<b>Sin conexión:</b> datos del <span></span>. Ves la copia guardada en este aparato.":"<b>لا يوجد اتصال:</b> بيانات بتاريخ <span></span>. أنت ترى النسخة المحفوظة على هذا الجهاز.",
 "<b>Sin conexión.</b> La búsqueda en vivo y las noticias vuelven cuando vuelva la red.":"<b>لا يوجد اتصال.</b> سيعود البحث المباشر والأخبار عند عودة الاتصال.",
+"Cerrar aviso":"إغلاق التنبيه",
 "ATLAS ONU no ha podido cargar":"تعذّر تحميل ATLAS ONU",
 "La plataforma tarda demasiado o algo falló al abrirla. No se ha perdido nada: prueba, por orden:":"المنصة تستغرق وقتًا طويلًا أو حدث خلل عند فتحها. لم يضِع شيء. جرّب ما يلي بالترتيب:",
 "<b>Recarga sin caché:</b> Ctrl + F5 (en Mac: Cmd + Mayús + R; en celular, cierra y vuelve a abrir la pestaña).":"<b>أعد التحميل دون ذاكرة التخزين المؤقت:</b> Ctrl + F5 (على نظام Mac: Cmd + Shift + R؛ وعلى الهاتف، أغلق علامة التبويب ثم افتحها من جديد).",

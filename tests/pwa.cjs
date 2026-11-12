@@ -5,7 +5,9 @@
 //  3. sin red, al recargar se ve la portada con el aviso «Sin conexión: datos del …»;
 //  4. con red otra vez, al recargar llega lo NUEVO del servidor (la página y los datos), no la copia: primero la red;
 //  5. un idioma guardado (árabe) también funciona sin red desde la primera visita; no se guarda la búsqueda en vivo ni nada de otro dominio, y la copia no se multiplica por el «?v=…»;
-//  6. el arranque del celular en «sitio de computador» (marco de la línea 5 de index.html) sigue funcionando, también sin red.
+//     con el logo de DIGNITYOS y las letras árabes, y sin bajar los diccionarios de los otros idiomas;
+//  6. el arranque del celular en «sitio de computador» (marco de la línea 5 de index.html) sigue funcionando, también sin red;
+//  7. en el celular, el aviso flotante «Sin conexión.» ocupa el ancho, se cierra (× y Esc) y no tapa el control con el foco.
 // Uso: npm i --no-save playwright && node tests/pwa.cjs
 const { chromium } = require('playwright');
 const http = require('http');
@@ -112,9 +114,10 @@ const controlada = pg => pg.waitForFunction(() => !!(navigator.serviceWorker && 
       aviso: !document.getElementById('sinRedCopia').hidden, solo: !document.getElementById('sinRedSolo').hidden, txt: document.getElementById('sinRedCopia').textContent,
       arriba: document.getElementById('sinRedCopia').getBoundingClientRect().top, y: scrollY, inicio: document.getElementById('inicio')?.classList.contains('visible') }));
     ok('sin red, la portada se abre desde la copia', sinRed.inicio && sinRed.v === 'v1' && sinRed.d === 'v1', JSON.stringify(sinRed));
-    ok('sin red, aviso «Sin conexión: datos del <fecha>»', sinRed.aviso && /Sin conexión: datos del \d{4}-\d\d-\d\d\./.test(sinRed.txt), sinRed.txt);
+    ok('sin red, aviso «Sin conexión: datos del <fecha>»', sinRed.aviso && /Sin conexión: datos del \d{1,2} de [a-z]+ de \d{4}\./.test(sinRed.txt), sinRed.txt);
     ok('sin red, el aviso se ve entero arriba (sin anclaje que lo saque de la pantalla)', sinRed.arriba >= 0 && sinRed.y === 0, JSON.stringify({ top: sinRed.arriba, y: sinRed.y }));
     ok('sin red y con la copia, no sale además el aviso flotante', !sinRed.solo);
+    ok('sin red, el punto «en vivo» del contador se apaga', await pg.evaluate(() => document.getElementById('visBar').classList.contains('sin-red-activo')));
     await pg.screenshot({ path: process.env.PWA_CAPTURA || path.join(require('os').tmpdir(), 'atlas-pwa-sin-red.png') }).catch(() => {});
 
     // 4 · Con red otra vez y una versión nueva publicada: debe llegar la nueva, no la copia
@@ -125,6 +128,7 @@ const controlada = pg => pg.waitForFunction(() => !!(navigator.serviceWorker && 
     ok('con red, llega la página nueva (primero la red)', conRed.v === 'v2', JSON.stringify(conRed));
     ok('con red, llegan los datos nuevos', conRed.d === 'v2', JSON.stringify(conRed));
     ok('con red, sin aviso', !conRed.aviso);
+    ok('con red, el punto «en vivo» vuelve', await pg.evaluate(() => !document.getElementById('visBar').classList.contains('sin-red-activo')));
     // Y la copia queda al día para la próxima vez sin red.
     await ctx.setOffline(true);
     await pg.reload(); await lista(pg);
@@ -162,6 +166,20 @@ const controlada = pg => pg.waitForFunction(() => !!(navigator.serviceWorker && 
       top: document.getElementById('sinRedCopia').getBoundingClientRect().top, visible: !document.getElementById('sinRedCopia').hidden }));
     ok('árabe en la primera visita, sin red: de derecha a izquierda y aviso en árabe', ar.dir === 'rtl' && ar.visible && /لا يوجد اتصال/.test(ar.txt), JSON.stringify(ar));
     ok('árabe sin red: el aviso se ve entero', ar.top >= 0, String(ar.top));
+    ok('árabe sin red: la fecha va escrita entera, no en ISO', /2\d{3}/.test(ar.txt) && !/\d{4}-\d\d-\d\d/.test(ar.txt), ar.txt);
+    // Lo que pide la primera visita antes de que exista el service worker (logo de DIGNITYOS, letras árabes) está en la copia.
+    await pa.evaluate(() => showPage('defensores'));
+    await pa.waitForTimeout(500);
+    const imgs = await pa.evaluate(() => [...document.querySelectorAll('#defensores img, .side img, .franja-dig img')]
+      .map(i => ({ src: i.getAttribute('src'), w: i.complete ? i.naturalWidth : 0 })));
+    ok('sin red, DIGNITYOS y el menú muestran el logo (ninguna imagen rota)', imgs.length > 0 && imgs.every(i => i.w > 0), JSON.stringify(imgs.filter(i => !i.w)));
+    const letras = await pa.evaluate(async () => { await document.fonts.ready;
+      return [...document.fonts].filter(f => f.family.replace(/"/g, '') === 'DejaVu Sans' && f.unicodeRange.includes('U+600')).map(f => f.status); });
+    ok('sin red, las letras árabes salen de la copia', letras.length > 0 && !letras.includes('error'), JSON.stringify(letras));
+    const otros = await pa.evaluate(async () => { const c = await caches.open('atlas-onu-v1'); const f = [];
+      for (const l of ['en', 'fr', 'zh', 'ru']) if (await c.match(new URL(`data/idiomas/${l}.js`, location.href).href)) f.push(l);
+      return f; });
+    ok('solo se guarda el diccionario del idioma que se usa (ahorra datos)', otros.length === 0, otros.join(' '));
     // Las pantallas de datos que se cargan aparte (mapa, noticias…) están en la copia aunque no se hayan abierto con red.
     const aparte = await pa.evaluate(async () => { const c = await caches.open('atlas-onu-v1'); const f = [];
       for (const r of ['data/mapa.js', 'data/noticias.js', 'data/epu.js', 'data/conflictos.js', 'data/jurisprudencia.js', 'data/comunicaciones.js'])
@@ -184,6 +202,36 @@ const controlada = pg => pg.waitForFunction(() => !!(navigator.serviceWorker && 
     await pc.reload(); f = await marco();
     ok('celular en modo computador, sin red: marco y aviso', await f.evaluate(() => !document.getElementById('sinRedCopia').hidden && document.getElementById('inicio').classList.contains('visible')));
     await cel.close();
+
+    // 7 · Celular (Pixel 7): se va la red con la página abierta
+    const { devices } = require('playwright');
+    const px = await b.newContext({ ...devices['Pixel 7'] });
+    await preparar(px);
+    const pp = await px.newPage();
+    await pp.goto(URL0); await lista(pp);
+    await px.setOffline(true);
+    await pp.waitForFunction(() => !document.getElementById('sinRedSolo').hidden, null, { timeout: 5000 }).catch(() => {});
+    const caja = await pp.evaluate(() => { const r = document.getElementById('sinRedSolo').getBoundingClientRect(); return { l: r.left, r: innerWidth - r.right, h: r.height }; });
+    ok('celular: el aviso flotante ocupa el ancho (16 px a cada lado)', Math.abs(caja.l - 16) < 2 && Math.abs(caja.r - 16) < 2, JSON.stringify(caja));
+    let tapados = [];
+    for (let i = 0; i < 100; i++) {
+      await pp.keyboard.press('Tab');
+      const t = await pp.evaluate(() => { const a = document.activeElement, s = document.getElementById('sinRedSolo');
+        if (!a || a === document.body || s.hidden || s.contains(a)) return null;
+        const r = a.getBoundingClientRect(), b = s.getBoundingClientRect();
+        return r.width && r.top >= b.top && r.bottom <= b.bottom && r.left >= b.left && r.right <= b.right ? (a.textContent || a.id).trim().slice(0, 30) : null; });
+      if (t) tapados.push(t);
+    }
+    ok('celular: el aviso no tapa el control con el foco (WCAG 2.4.11)', tapados.length === 0, tapados.join(' | '));
+    await pp.click('#sinRedSolo .sin-red-x');
+    ok('celular: el aviso se cierra con ×', await pp.evaluate(() => document.getElementById('sinRedSolo').hidden));
+    await px.setOffline(false); await pp.waitForTimeout(200);
+    await px.setOffline(true);
+    await pp.waitForFunction(() => !document.getElementById('sinRedSolo').hidden, null, { timeout: 5000 }).catch(() => {});
+    ok('celular: en el siguiente corte vuelve a salir', await pp.evaluate(() => !document.getElementById('sinRedSolo').hidden));
+    await pp.keyboard.press('Escape');
+    ok('celular: también se cierra con Esc', await pp.evaluate(() => document.getElementById('sinRedSolo').hidden));
+    await px.close();
   } catch (e) {
     ok('la prueba terminó sin excepciones', false, e && e.stack || String(e));
   } finally {
