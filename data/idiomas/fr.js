@@ -1459,5 +1459,17 @@ window.ATLAS_IDIOMA_fr={
 "Pendiente ({n})":"En attente ({n})",
 "Bloqueado ({n})":"Bloqué ({n})",
 "Filtrar por estado":"Filtrer par état",
-"{n} % de los {n} países de ATLAS":"{n} % des {n} pays d’ATLAS"
+"{n} % de los {n} países de ATLAS":"{n} % des {n} pays d’ATLAS",
+"Sudán":"Soudan",
+"{n} miembros · {n} con veto · presidencia mensual":"{n} membres · {n} avec droit de veto · présidence mensuelle",
+"ATLAS no recoge hoy un régimen de sanciones ni una operación del Consejo dedicados a este país. Eso no quiere decir que el Consejo no haya tratado nunca su situación.":"ATLAS n'enregistre actuellement ni régime de sanctions ni opération du Conseil consacrés à ce pays. Cela ne signifie pas que le Conseil n'a jamais traité sa situation.",
+"Dónde buscar: resoluciones por año en":"Où chercher : les résolutions par année sur",
+"la página del Consejo ↗":"la page du Conseil ↗",
+"; cada sesión pública tiene su acta":"; chaque séance publique a son procès-verbal",
+"S/PV.n.º":"S/PV.n°",
+"y los informes del Secretario General y de los grupos de expertos llevan el símbolo":"et les rapports du Secrétaire général et des groupes d'experts portent le symbole",
+"S/año/n.º":"S/année/n°",
+". Las sanciones, en":". Les sanctions, sur",
+"la página de sanciones ↗":"la page des sanctions ↗",
+"Cómo funciona el Consejo":"Comment fonctionne le Conseil"
 };

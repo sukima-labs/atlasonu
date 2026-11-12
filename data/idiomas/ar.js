@@ -1459,5 +1459,17 @@ window.ATLAS_IDIOMA_ar={
 "Pendiente ({n})":"معلّق ({n})",
 "Bloqueado ({n})":"متوقف ({n})",
 "Filtrar por estado":"التصفية حسب الحالة",
-"{n} % de los {n} países de ATLAS":"{n}٪ من البلدان الـ{n} في ATLAS"
+"{n} % de los {n} países de ATLAS":"{n}٪ من البلدان الـ{n} في ATLAS",
+"Sudán":"السودان",
+"{n} miembros · {n} con veto · presidencia mensual":"{n} عضوًا · منهم {n} يملكون حق النقض · رئاسة شهرية",
+"ATLAS no recoge hoy un régimen de sanciones ni una operación del Consejo dedicados a este país. Eso no quiere decir que el Consejo no haya tratado nunca su situación.":"لا يسجّل أطلس حاليًا نظام عقوبات ولا عملية لمجلس الأمن مخصّصين لهذا البلد. وهذا لا يعني أن المجلس لم يتناول وضعه قط.",
+"Dónde buscar: resoluciones por año en":"أين تبحث: القرارات بحسب السنة في",
+"la página del Consejo ↗":"صفحة المجلس ↗",
+"; cada sesión pública tiene su acta":"؛ ولكل جلسة علنية محضرها",
+"S/PV.n.º":"S/PV.رقم",
+"y los informes del Secretario General y de los grupos de expertos llevan el símbolo":"وتحمل تقارير الأمين العام وأفرقة الخبراء الرمز",
+"S/año/n.º":"S/السنة/رقم",
+". Las sanciones, en":"، والعقوبات في",
+"la página de sanciones ↗":"صفحة العقوبات ↗",
+"Cómo funciona el Consejo":"كيف يعمل المجلس"
 };

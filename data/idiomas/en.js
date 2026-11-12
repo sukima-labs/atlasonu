@@ -1459,5 +1459,17 @@ window.ATLAS_IDIOMA_en={
 "Pendiente ({n})":"Pending ({n})",
 "Bloqueado ({n})":"Blocked ({n})",
 "Filtrar por estado":"Filter by status",
-"{n} % de los {n} países de ATLAS":"{n}% of the {n} countries in ATLAS"
+"{n} % de los {n} países de ATLAS":"{n}% of the {n} countries in ATLAS",
+"Sudán":"Sudan",
+"{n} miembros · {n} con veto · presidencia mensual":"{n} members · {n} with veto · monthly presidency",
+"ATLAS no recoge hoy un régimen de sanciones ni una operación del Consejo dedicados a este país. Eso no quiere decir que el Consejo no haya tratado nunca su situación.":"ATLAS does not currently record a sanctions regime or a Council operation dedicated to this country. That does not mean the Council has never dealt with its situation.",
+"Dónde buscar: resoluciones por año en":"Where to look: resolutions by year at",
+"la página del Consejo ↗":"the Council's page ↗",
+"; cada sesión pública tiene su acta":"; each public meeting has its record",
+"S/PV.n.º":"S/PV.no.",
+"y los informes del Secretario General y de los grupos de expertos llevan el símbolo":"and the reports of the Secretary-General and of the expert panels carry the symbol",
+"S/año/n.º":"S/year/no.",
+". Las sanciones, en":". Sanctions are at",
+"la página de sanciones ↗":"the sanctions page ↗",
+"Cómo funciona el Consejo":"How the Council works"
 };
