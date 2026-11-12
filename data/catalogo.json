@@ -7576,7 +7576,7 @@
   ]
  },
  "hojaruta": {
-  "actualizado": "2026-11-11",
+  "actualizado": "2026-11-12",
   "bloques": [
    {
     "id": "disponible",
@@ -7718,6 +7718,14 @@
      {
       "t": "Cómo leer un código de la ONU",
       "x": "Una pantalla que enseña a leer las signaturas de los documentos (por ejemplo, A/HRC/RES/…), en cinco idiomas y con lectura fácil, junto a las siglas."
+     },
+     {
+      "t": "Logo de DIGNITYOS",
+      "x": "Logo provisional en el menú y en el apartado de DIGNITYOS.",
+      "tag": "prioridad baja",
+      "issues": [
+       242
+      ]
      }
     ]
    },
@@ -7881,14 +7889,6 @@
       "x": "Una versión con lenguaje sencillo, dibujos propios y juegos para que niñas y niños conozcan sus derechos y la ONU, sin cuentas ni rastreo. El enfoque ya está escrito; los textos se escribirán y una persona experta los revisará antes de publicarse.",
       "issues": [
        165
-      ]
-     },
-     {
-      "t": "Logo de DIGNITYOS",
-      "x": "Logo provisional en el menú y en el apartado de DIGNITYOS.",
-      "tag": "prioridad baja",
-      "issues": [
-       242
       ]
      },
      {
