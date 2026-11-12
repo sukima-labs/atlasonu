@@ -1,0 +1,6 @@
+{
+ "_": "T56: la Biblioteca Digital de la ONU prohíbe /search en su robots.txt, así que ATLAS no busca documentos nuevos ahí. Lo que ya está en los datos se conserva; para añadir un documento se anota aquí su número de registro (el N de digitallibrary.un.org/record/N), bajo el script que lo clasifica, y se corre ese script: baja solo los registros nuevos. Con --refrescar vuelve a bajar todos los que ya conoce (5 s por registro).",
+ "fetch_docs_pais": [],
+ "fetch_epu_informes": [],
+ "fetch_jurisprudencia": []
+}
