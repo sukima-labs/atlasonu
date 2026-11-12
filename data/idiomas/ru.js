@@ -4,6 +4,7 @@ window.ATLAS_IDIOMA_ru={
 "Volver arriba":"Наверх",
 "↑ Arriba":"↑ Наверх",
 "Saltar al contenido":"Перейти к содержимому",
+"<b>Sin conexión:</b> datos del <span></span>. Ves la copia guardada en este aparato.":"<b>Нет подключения:</b> данные на <span></span>. Вы видите копию, сохранённую на этом устройстве.",
 "ATLAS ONU no ha podido cargar":"ATLAS ONU не удалось загрузить",
 "La plataforma tarda demasiado o algo falló al abrirla. No se ha perdido nada: prueba, por orden:":"Платформа загружается слишком долго или при открытии что-то пошло не так. Ничего не потеряно. Попробуйте по порядку:",
 "<b>Recarga sin caché:</b> Ctrl + F5 (en Mac: Cmd + Mayús + R; en celular, cierra y vuelve a abrir la pestaña).":"<b>Перезагрузите без кеша:</b> Ctrl + F5 (на Mac: Cmd + Shift + R; на телефоне закройте вкладку и откройте её снова).",

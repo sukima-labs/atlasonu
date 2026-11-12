@@ -4,6 +4,7 @@ window.ATLAS_IDIOMA_zh={
 "Volver arriba":"返回顶部",
 "↑ Arriba":"↑ 顶部",
 "Saltar al contenido":"跳到正文",
+"<b>Sin conexión:</b> datos del <span></span>. Ves la copia guardada en este aparato.":"<b>无网络连接：</b>数据截至 <span></span>。你看到的是保存在本设备上的副本。",
 "ATLAS ONU no ha podido cargar":"ATLAS ONU 无法加载",
 "La plataforma tarda demasiado o algo falló al abrirla. No se ha perdido nada: prueba, por orden:":"平台加载时间过长，或打开时出了问题。没有任何内容丢失，请按顺序尝试：",
 "<b>Recarga sin caché:</b> Ctrl + F5 (en Mac: Cmd + Mayús + R; en celular, cierra y vuelve a abrir la pestaña).":"<b>清除缓存后重新加载：</b>Ctrl + F5（Mac 上为 Cmd + Shift + R；手机上请关闭标签页后重新打开）。",

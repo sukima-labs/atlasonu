@@ -4,6 +4,7 @@ window.ATLAS_IDIOMA_fr={
 "Volver arriba":"Retour en haut",
 "↑ Arriba":"↑ Haut de page",
 "Saltar al contenido":"Aller au contenu",
+"<b>Sin conexión:</b> datos del <span></span>. Ves la copia guardada en este aparato.":"<b>Hors connexion :</b> données du <span></span>. Vous voyez la copie enregistrée sur cet appareil.",
 "ATLAS ONU no ha podido cargar":"ATLAS ONU n'a pas pu se charger",
 "La plataforma tarda demasiado o algo falló al abrirla. No se ha perdido nada: prueba, por orden:":"La plateforme met trop de temps à s'ouvrir ou quelque chose a échoué. Rien n'est perdu : essayez, dans l'ordre :",
 "<b>Recarga sin caché:</b> Ctrl + F5 (en Mac: Cmd + Mayús + R; en celular, cierra y vuelve a abrir la pestaña).":"<b>Rechargez sans cache :</b> Ctrl + F5 (sur Mac : Cmd + Maj + R ; sur téléphone, fermez puis rouvrez l'onglet).",
