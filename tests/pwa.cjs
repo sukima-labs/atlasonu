@@ -4,7 +4,7 @@
 //  2. el service worker se registra y controla la página;
 //  3. sin red, al recargar se ve la portada con el aviso «Sin conexión: datos del …»;
 //  4. con red otra vez, al recargar llega lo NUEVO del servidor (la página y los datos), no la copia: primero la red;
-//  5. no se guarda la búsqueda en vivo ni nada de otro dominio, y la copia no se multiplica por el «?v=…»;
+//  5. un idioma guardado (árabe) también funciona sin red desde la primera visita; no se guarda la búsqueda en vivo ni nada de otro dominio, y la copia no se multiplica por el «?v=…»;
 //  6. el arranque del celular en «sitio de computador» (marco de la línea 5 de index.html) sigue funcionando, también sin red.
 // Uso: npm i --no-save playwright && node tests/pwa.cjs
 const { chromium } = require('playwright');
@@ -53,7 +53,7 @@ const controlada = pg => pg.waitForFunction(() => !!(navigator.serviceWorker && 
   const b = await chromium.launch();
   try {
     // 1 · Manifest e iconos
-    const ctx = await b.newContext({ viewport: { width: 1280, height: 900 } });
+    const ctx = await b.newContext({ viewport: { width: 1440, height: 900 } });
     await preparar(ctx);
     const pg = await ctx.newPage();
     const errores = [];
@@ -87,7 +87,7 @@ const controlada = pg => pg.waitForFunction(() => !!(navigator.serviceWorker && 
     await controlada(pg);
     const sw = await pg.evaluate(async () => { const r = await navigator.serviceWorker.ready; return { scope: r.scope, url: r.active && r.active.scriptURL }; });
     ok('el service worker se registra con el alcance de la web', sw.scope === URL0 && sw.url === URL0 + 'sw.js', JSON.stringify(sw));
-    ok('con red no hay aviso de «sin conexión»', await pg.isHidden('#sinRed'));
+    ok('con red no hay aviso de «sin conexión»', await pg.evaluate(() => document.getElementById('sinRedCopia').hidden && document.getElementById('sinRedSolo').hidden));
     // Visita normal ya controlada (guarda la copia de lo que usa la portada) y una búsqueda (no debe guardarse).
     await pg.reload(); await lista(pg);
     await pg.evaluate(() => fetch('https://sk-atlas.pig-mimosa.ts.net/buscar?q=agua').catch(() => {}));
@@ -107,17 +107,21 @@ const controlada = pg => pg.waitForFunction(() => !!(navigator.serviceWorker && 
     // 3 · Sin red
     await ctx.setOffline(true);
     await pg.reload(); await lista(pg);
+    await pg.waitForTimeout(3000); // el navegador puede recolocar el desplazamiento al terminar de cargar: se mira después
     const sinRed = await pg.evaluate(() => ({ v: document.querySelector('meta[name="atlas-prueba"]')?.content, d: window.__pruebaDatos,
-      aviso: !document.getElementById('sinRed').hidden, txt: document.getElementById('sinRed').textContent, inicio: document.getElementById('inicio')?.classList.contains('visible') }));
+      aviso: !document.getElementById('sinRedCopia').hidden, solo: !document.getElementById('sinRedSolo').hidden, txt: document.getElementById('sinRedCopia').textContent,
+      arriba: document.getElementById('sinRedCopia').getBoundingClientRect().top, y: scrollY, inicio: document.getElementById('inicio')?.classList.contains('visible') }));
     ok('sin red, la portada se abre desde la copia', sinRed.inicio && sinRed.v === 'v1' && sinRed.d === 'v1', JSON.stringify(sinRed));
     ok('sin red, aviso «Sin conexión: datos del <fecha>»', sinRed.aviso && /Sin conexión: datos del \d{4}-\d\d-\d\d\./.test(sinRed.txt), sinRed.txt);
+    ok('sin red, el aviso se ve entero arriba (sin anclaje que lo saque de la pantalla)', sinRed.arriba >= 0 && sinRed.y === 0, JSON.stringify({ top: sinRed.arriba, y: sinRed.y }));
+    ok('sin red y con la copia, no sale además el aviso flotante', !sinRed.solo);
     await pg.screenshot({ path: process.env.PWA_CAPTURA || path.join(require('os').tmpdir(), 'atlas-pwa-sin-red.png') }).catch(() => {});
 
     // 4 · Con red otra vez y una versión nueva publicada: debe llegar la nueva, no la copia
     version = 'v2';
     await ctx.setOffline(false);
     await pg.reload(); await lista(pg);
-    const conRed = await pg.evaluate(() => ({ v: document.querySelector('meta[name="atlas-prueba"]')?.content, d: window.__pruebaDatos, aviso: !document.getElementById('sinRed').hidden }));
+    const conRed = await pg.evaluate(() => ({ v: document.querySelector('meta[name="atlas-prueba"]')?.content, d: window.__pruebaDatos, aviso: !document.getElementById('sinRedCopia').hidden || !document.getElementById('sinRedSolo').hidden }));
     ok('con red, llega la página nueva (primero la red)', conRed.v === 'v2', JSON.stringify(conRed));
     ok('con red, llegan los datos nuevos', conRed.d === 'v2', JSON.stringify(conRed));
     ok('con red, sin aviso', !conRed.aviso);
@@ -126,8 +130,45 @@ const controlada = pg => pg.waitForFunction(() => !!(navigator.serviceWorker && 
     await pg.reload(); await lista(pg);
     ok('la copia se actualizó con lo nuevo', (await pg.evaluate(() => window.__pruebaDatos)) === 'v2');
     await ctx.setOffline(false);
+    // Se va la red con la página ya abierta desde la red: no es la copia, así que sale el aviso flotante y no «la copia guardada».
+    await pg.reload(); await lista(pg);
+    await ctx.setOffline(true);
+    await pg.waitForFunction(() => !document.getElementById('sinRedSolo').hidden, null, { timeout: 5000 }).catch(() => {});
+    const aMedias = await pg.evaluate(() => ({ solo: !document.getElementById('sinRedSolo').hidden, copia: !document.getElementById('sinRedCopia').hidden,
+      fijo: getComputedStyle(document.getElementById('sinRedSolo')).position, vivo: document.getElementById('sinRed').getAttribute('role') }));
+    ok('se va la red con la página abierta: aviso flotante y no «copia guardada»', aMedias.solo && !aMedias.copia && aMedias.fijo === 'fixed', JSON.stringify(aMedias));
+    ok('el aviso está dentro de una región «status» que siempre existe', aMedias.vivo === 'status');
+    await ctx.setOffline(false);
+    await pg.waitForFunction(() => document.getElementById('sinRedSolo').hidden, null, { timeout: 5000 }).catch(() => {});
+    ok('vuelve la red: se quita el aviso flotante', await pg.evaluate(() => document.getElementById('sinRedSolo').hidden));
     ok('sin errores de JavaScript', errores.length === 0, errores.slice(0, 3).join(' | '));
     await ctx.close();
+
+    // 5 · Idioma guardado (árabe) en la PRIMERA visita: su diccionario se baja antes de que exista el service worker; la copia
+    // tiene que tenerlo igual, o sin red la web saldría en español y de izquierda a derecha.
+    const ca = await b.newContext({ viewport: { width: 1440, height: 900 } });
+    await preparar(ca);
+    await ca.addInitScript(() => { try { localStorage.setItem('atlas_idioma', 'ar'); } catch (e) {} });
+    const pa = await ca.newPage();
+    await pa.goto(URL0); await lista(pa);
+    await controlada(pa);
+    await pa.evaluate(async () => { const r = await navigator.serviceWorker.ready; if (r.installing || r.waiting) await new Promise(ok => setTimeout(ok, 1500)); });
+    await pa.waitForFunction(async () => !!(await (await caches.open('atlas-onu-v1')).match(new URL('data/idiomas/ar.js', location.href).href)), null, { timeout: 15000 }).catch(() => {});
+    await ca.setOffline(true);
+    await pa.reload(); await lista(pa);
+    await pa.waitForFunction(() => !document.getElementById('sinRedCopia').hidden, null, { timeout: 5000 }).catch(() => {});
+    await pa.waitForTimeout(3000); // el navegador puede recolocar el desplazamiento al terminar de cargar: se mira después
+    const ar = await pa.evaluate(() => ({ y: scrollY, dir: document.documentElement.dir, txt: document.getElementById('sinRedCopia').textContent,
+      top: document.getElementById('sinRedCopia').getBoundingClientRect().top, visible: !document.getElementById('sinRedCopia').hidden }));
+    ok('árabe en la primera visita, sin red: de derecha a izquierda y aviso en árabe', ar.dir === 'rtl' && ar.visible && /لا يوجد اتصال/.test(ar.txt), JSON.stringify(ar));
+    ok('árabe sin red: el aviso se ve entero', ar.top >= 0, String(ar.top));
+    // Las pantallas de datos que se cargan aparte (mapa, noticias…) están en la copia aunque no se hayan abierto con red.
+    const aparte = await pa.evaluate(async () => { const c = await caches.open('atlas-onu-v1'); const f = [];
+      for (const r of ['data/mapa.js', 'data/noticias.js', 'data/epu.js', 'data/conflictos.js', 'data/jurisprudencia.js', 'data/comunicaciones.js'])
+        if (!(await c.match(new URL(r, location.href).href))) f.push(r);
+      return f; });
+    ok('la copia trae ya el mapa, las noticias y los otros datos que se cargan aparte', aparte.length === 0, aparte.join(' '));
+    await ca.close();
 
     // 6 · Celular en «sitio de computador»: la página se abre dentro del marco (#188) y el service worker no lo rompe
     const cel = await b.newContext({ viewport: { width: 980, height: 1800 }, screen: { width: 412, height: 915 }, hasTouch: true, isMobile: false });
@@ -141,7 +182,7 @@ const controlada = pg => pg.waitForFunction(() => !!(navigator.serviceWorker && 
     await pc.reload(); f = await marco();
     await cel.setOffline(true);
     await pc.reload(); f = await marco();
-    ok('celular en modo computador, sin red: marco y aviso', await f.evaluate(() => !document.getElementById('sinRed').hidden && document.getElementById('inicio').classList.contains('visible')));
+    ok('celular en modo computador, sin red: marco y aviso', await f.evaluate(() => !document.getElementById('sinRedCopia').hidden && document.getElementById('inicio').classList.contains('visible')));
     await cel.close();
   } catch (e) {
     ok('la prueba terminó sin excepciones', false, e && e.stack || String(e));
