@@ -22,4 +22,13 @@ ant = {'fuentes': [{'tipo': 'ods', 'lengua': 'es', 'url': 'u', 'validado': True}
 s = r.sin_red('X', e, ant)
 ok('resolve_texts sin red: el registro, más lo localizado antes que siga valiendo', s['estado'] == 'TEXTO_DIRECTO' and [f['tipo'] for f in s['fuentes']] == ['registro', 'ods'] and s['informe_sesion'] == [{'simbolo': 'A/1'}])
 ok('resolve_texts sin red: un acto nuevo sin copia en su registro queda SIN_COPIA_LOCALIZADA', r.sin_red('Y', {'pdf': {}}, {})['estado'] == 'SIN_COPIA_LOCALIZADA')
+os.chdir(RAIZ)
+import build_mecanismos as m, fetch_tratados_texto as t
+sem = m.SEM[0]; ant = {(sem[1], sem[4]): {'estado': 'VERIFICADO', 'simbolo': 'X', 'miembros': 99}}
+a, b = m.sin_red(sem, ant), m.sin_red(m.SEM[1], {})
+ok('build_mecanismos sin red: copia la verificación anterior, los datos curados salen de SEM y lo nuevo queda sin cotejar',
+   a['estado'] == 'VERIFICADO' and a['simbolo'] == 'X' and a['miembros'] == sem[8] and b['estado'] == 'NO_VERIFICADO' and b['motivo'] == 'SIN_CONSULTAR')
+try: t.pdf_texto('A/RES/1'); nored = False
+except RuntimeError as e: nored = 'T56' in str(e)
+ok('fetch_tratados_texto no consulta documents.un.org/api', nored)
 sys.exit(1 if fallos else 0)
