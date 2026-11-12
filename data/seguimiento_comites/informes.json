@@ -1,0 +1,612 @@
+{
+ "_": "T56/T75: informes de seguimiento que leen scripts/seguimiento_ccpr.py y seguimiento_ced.py. La Biblioteca Digital prohíbe /search en su robots.txt, así que los scripts no buscan: bajan estos registros (/record/N). Un informe nuevo se añade a mano (símbolo, número de registro y fecha). «registro»: null = número no anotado; el texto se lee de la caché.",
+ "informes": [
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/109/2",
+   "registro": null,
+   "fecha": "2013-11-19"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/110/2",
+   "registro": null,
+   "fecha": "2014-04-25"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/112/2",
+   "registro": null,
+   "fecha": "2014-12-08"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/113/2",
+   "registro": null,
+   "fecha": "2015-05-27"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/114/2",
+   "registro": null,
+   "fecha": "2015-08-24"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/115/2",
+   "registro": null,
+   "fecha": "2015-12-21"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/116/2",
+   "registro": null,
+   "fecha": "2016-05-09"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/118/2",
+   "registro": null,
+   "fecha": "2017-03-13"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/119/2",
+   "registro": "1312090",
+   "fecha": "2017-05-18"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/120/2",
+   "registro": "1312091",
+   "fecha": "2017-09-08"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/117/2",
+   "registro": null,
+   "fecha": "2017-11-29"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/121/2",
+   "registro": "3921744",
+   "fecha": "2018-02-08"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/122/2",
+   "registro": "3921747",
+   "fecha": "2018-05-08"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/123/2",
+   "registro": "3921749",
+   "fecha": "2018-12-11"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/125/2/Add.1",
+   "registro": "3922017",
+   "fecha": "2019-05-06"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/125/2/Add.3",
+   "registro": "3922019",
+   "fecha": "2019-05-06"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/126/2",
+   "registro": null,
+   "fecha": "2019-08-29"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/126/2/Add.3",
+   "registro": "3922037",
+   "fecha": "2019-08-29"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/127/2",
+   "registro": null,
+   "fecha": "2020-01-29"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/127/2/Add.4",
+   "registro": "3922318",
+   "fecha": "2020-01-29"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/128/3",
+   "registro": null,
+   "fecha": "2020-09-01"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/128/3/Add.4",
+   "registro": "3922310",
+   "fecha": "2020-09-01"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/129/2",
+   "registro": null,
+   "fecha": "2020-09-04"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/129/2/Add.1",
+   "registro": "3922311",
+   "fecha": "2020-09-08"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/129/2/Add.2",
+   "registro": "3922312",
+   "fecha": "2020-09-08"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/129/2/Add.3",
+   "registro": "3922313",
+   "fecha": "2020-09-08"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/129/2/Add.4",
+   "registro": "3922302",
+   "fecha": "2020-09-08"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/128/3/Add.1",
+   "registro": "3922319",
+   "fecha": "2020-09-22"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/128/3/Add.2",
+   "registro": "3922308",
+   "fecha": "2020-09-22"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/128/3/Add.3",
+   "registro": "3922309",
+   "fecha": "2020-09-22"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/130/2",
+   "registro": null,
+   "fecha": "2021-02-16"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/130/2/Add.1",
+   "registro": "3922303",
+   "fecha": "2021-02-22"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/130/2/Add.2",
+   "registro": "3922304",
+   "fecha": "2021-02-22"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/130/2/Add.3",
+   "registro": null,
+   "fecha": "2021-02-22"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/130/2/Add.4",
+   "registro": "3922307",
+   "fecha": "2021-02-22"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/131/2/Add.3",
+   "registro": "3926952",
+   "fecha": "2021-04-28"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/131/2",
+   "registro": null,
+   "fecha": "2021-04-29"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/131/2/Add.1",
+   "registro": "3924415",
+   "fecha": "2021-04-29"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/131/2/Add.2",
+   "registro": "3924412",
+   "fecha": "2021-04-29"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/131/2/Add.4",
+   "registro": "3924417",
+   "fecha": "2021-04-29"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/132/2",
+   "registro": null,
+   "fecha": "2021-09-06"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/132/2/Add.1",
+   "registro": "3946890",
+   "fecha": "2021-09-06"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/132/2/Add.2",
+   "registro": "3938468",
+   "fecha": "2021-09-06"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/132/2/Add.3",
+   "registro": "3938469",
+   "fecha": "2021-09-06"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/132/2/Add.4",
+   "registro": "3938470",
+   "fecha": "2021-09-06"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/133/3",
+   "registro": null,
+   "fecha": "2021-12-17"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/133/3/Add.1",
+   "registro": "3953963",
+   "fecha": "2021-12-17"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/133/3/Add.2",
+   "registro": "3953964",
+   "fecha": "2021-12-17"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/133/3/Add.3",
+   "registro": "3953965",
+   "fecha": "2021-12-17"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/133/3/Add.4",
+   "registro": "3953966",
+   "fecha": "2021-12-17"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/134/3",
+   "registro": null,
+   "fecha": "2022-05-20"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/134/3/Add.1",
+   "registro": "3974299",
+   "fecha": "2022-05-20"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/134/3/Add.2",
+   "registro": "3974298",
+   "fecha": "2022-05-20"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/134/3/Add.3",
+   "registro": "3974301",
+   "fecha": "2022-05-20"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/134/3/Add.4",
+   "registro": "3974302",
+   "fecha": "2022-05-20"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/135/2",
+   "registro": null,
+   "fecha": "2022-09-20"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/135/2/Add.1",
+   "registro": "3987828",
+   "fecha": "2022-09-20"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/135/2/Add.2",
+   "registro": "3988179",
+   "fecha": "2022-09-20"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/135/2/Add.3",
+   "registro": "3987829",
+   "fecha": "2022-09-20"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/135/2/Add.4",
+   "registro": "3987830",
+   "fecha": "2022-09-20"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/136/2",
+   "registro": null,
+   "fecha": "2022-12-05"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/136/2/Add.1",
+   "registro": "3996428",
+   "fecha": "2022-12-05"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/136/2/Add.2",
+   "registro": "3996432",
+   "fecha": "2022-12-05"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/136/2/Add.3",
+   "registro": "3996433",
+   "fecha": "2022-12-05"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/136/2/Add.4",
+   "registro": "3996435",
+   "fecha": "2022-12-05"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/137/2",
+   "registro": null,
+   "fecha": "2023-04-28"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/137/2/Add.1",
+   "registro": "4009861",
+   "fecha": "2023-05-01"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/137/2/Add.2",
+   "registro": "4009862",
+   "fecha": "2023-05-01"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/137/2/Add.3",
+   "registro": "4009922",
+   "fecha": "2023-05-01"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/137/2/Add.4",
+   "registro": "4009923",
+   "fecha": "2023-05-01"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/138/2",
+   "registro": null,
+   "fecha": "2023-08-28"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/138/2/Add.1",
+   "registro": "4019710",
+   "fecha": "2023-08-28"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/138/2/Add.2",
+   "registro": "4019711",
+   "fecha": "2023-08-28"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/138/2/Add.3",
+   "registro": "4019712",
+   "fecha": "2023-08-28"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/138/2/Add.4",
+   "registro": "4019713",
+   "fecha": "2023-08-28"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/139/2",
+   "registro": null,
+   "fecha": "2023-11-21"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/139/2/Add.1",
+   "registro": "4027775",
+   "fecha": "2023-11-21"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/139/2/Add.2",
+   "registro": "4027929",
+   "fecha": "2023-11-21"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/139/2/Add.3",
+   "registro": "4027930",
+   "fecha": "2023-11-21"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/139/2/Add.4",
+   "registro": "4027931",
+   "fecha": "2023-11-21"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/140/2",
+   "registro": null,
+   "fecha": "2024-04-16"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/140/2/Add.1",
+   "registro": "4044240",
+   "fecha": "2024-04-16"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/140/2/Add.2",
+   "registro": "4044246",
+   "fecha": "2024-04-16"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/141/2",
+   "registro": null,
+   "fecha": "2024-08-29"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/141/2/Add.1",
+   "registro": "4060063",
+   "fecha": "2024-08-29"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/141/2/Add.2",
+   "registro": "4060064",
+   "fecha": "2024-08-29"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/141/2/Add.3",
+   "registro": "4060065",
+   "fecha": "2024-08-29"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/141/2/Add.4",
+   "registro": "4060066",
+   "fecha": "2024-08-29"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/144/2",
+   "registro": null,
+   "fecha": "2025-07-24"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/144/2/Add.1",
+   "registro": "4086646",
+   "fecha": "2025-07-24"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/144/2/Add.2",
+   "registro": "4086647",
+   "fecha": "2025-07-24"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/145/2",
+   "registro": null,
+   "fecha": "2026-05-11"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/145/2/Add.1",
+   "registro": "4113134",
+   "fecha": "2026-05-11"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/145/2/Add.2",
+   "registro": "4113135",
+   "fecha": "2026-05-11"
+  },
+  {
+   "comite": "CCPR",
+   "simbolo": "CCPR/C/145/2/Add.3",
+   "registro": "4113136",
+   "fecha": "2026-05-11"
+  },
+  {
+   "comite": "CED",
+   "simbolo": "CED/C/7/2",
+   "registro": "782565",
+   "fecha": "2014-10-28"
+  },
+  {
+   "comite": "CED",
+   "simbolo": "CED/C/9/2",
+   "registro": "830397",
+   "fecha": "2015-10-16"
+  },
+  {
+   "comite": "CED",
+   "simbolo": "CED/C/11/2",
+   "registro": "863659",
+   "fecha": "2016-11-23"
+  },
+  {
+   "comite": "CED",
+   "simbolo": "CED/C/15/2",
+   "registro": "3925092",
+   "fecha": "2018-12-06",
+   "nota": "solo en árabe en la Biblioteca Digital"
+  },
+  {
+   "comite": "CED",
+   "simbolo": "CED/C/24/2",
+   "registro": "4026862",
+   "fecha": "2023-04-27"
+  },
+  {
+   "comite": "CED",
+   "simbolo": "CED/C/28/2",
+   "registro": "4089313",
+   "fecha": "2025-05-20"
+  }
+ ]
+}

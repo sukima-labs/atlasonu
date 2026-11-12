@@ -1,6 +1,6 @@
 {
  "comite": "CED",
- "fuente": "Biblioteca Digital de la ONU: \"Report on follow-up to the concluding observations of the Committee on Enforced Disappearances\" / \"Report on follow-up to concluding observations of the Committee on Enforced Disappearances\"",
+ "fuente": "Biblioteca Digital de la ONU: \"Report on follow-up to the concluding observations of the Committee on Enforced Disappearances\" / \"Report on follow-up to concluding observations of the Committee on Enforced Disappearances\" (lista en informes.json)",
  "consultado": "2026-11-12",
  "informes": 5,
  "leyenda": {
@@ -448,7 +448,7 @@
   }
  ],
  "no_incluidas": [
-  "CED/C/15/2: la Biblioteca Digital no tiene la versión en inglés"
+  "CED/C/15/2: solo en árabe en la Biblioteca Digital"
  ],
  "fallos": []
 }

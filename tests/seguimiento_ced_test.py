@@ -74,4 +74,7 @@ ok('los datos traen la leyenda oficial A–E y su informe', sorted(k for k in d[
 ok('cada nota es A–E y cada evaluación cita su informe y sus observaciones finales',
    all(x in 'ABCDE' and len(x) == 1 for e in d['evaluaciones'] for p in e['parrafos'] for x in p['notas'])
    and all(e['informe'].startswith('CED/C/') and e['observaciones'].startswith('CED/C/' + e['pais'] + '/CO/') and e['url'].startswith('https://digitallibrary.un.org/record/') for e in d['evaluaciones']))
+ok('T56: los scripts de seguimiento no usan /search (prohibido en el robots.txt de la Biblioteca Digital); leen informes.json',
+   all('digitallibrary.un.org/search' not in open(os.path.join(RAIZ, 'scripts', f), encoding='utf-8').read() for f in ('seguimiento_ccpr.py', 'seguimiento_ced.py'))
+   and {r['comite'] for r in json.load(open(os.path.join(RAIZ, 'data', 'seguimiento_comites', 'informes.json'), encoding='utf-8'))['informes']} == {'CCPR', 'CED'})
 sys.exit(1 if fallos else 0)

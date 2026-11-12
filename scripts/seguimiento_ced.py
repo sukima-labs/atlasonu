@@ -13,33 +13,27 @@ respuestas de los Estados (…/FCO/…), y sus valoraciones van en cartas.
 
   python3 -I scripts/seguimiento_ced.py --cache /var/tmp/t75fu   # baja lo que falta (5 s entre peticiones) y escribe
                                                                  # data/seguimiento_comites/ced.json y ced.js (la web)
-Robots.txt de la Biblioteca Digital: Crawl-delay 5. Nunca a la vez que otro cliente (texto_completo.py, 03:30).
+La lista de informes está en data/seguimiento_comites/informes.json (el robots.txt prohíbe /search). Crawl-delay 5. Nunca a la vez que otro cliente (texto_completo.py, 03:30).
 """
-import json, os, re, sys, time, urllib.parse
+import json, os, re, sys, time
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from seguimiento_ccpr import RAIZ, BUSCA, pide, texto
+import seguimiento_ccpr as S
+from seguimiento_ccpr import RAIZ, texto
 
 CONSULTAS = ['"Report on follow-up to the concluding observations of the Committee on Enforced Disappearances"',
              '"Report on follow-up to concluding observations of the Committee on Enforced Disappearances"']
-SIMBOLO = re.compile(r'^CED/C/\d+/2$')
 CABECERA = re.compile(r'Concluding observations:\s*(CED/C/([A-Z]{3})/CO/[\w/.-]+),?\s*(?:adopted\s*)?(\d{1,2}\s+[A-Z][a-z]+\s+\d{4})')
 NOTAS = re.compile(r'Committee.s evaluation\s*\n\s*(?:\d+\.\s*)?((?:\[[A-E]\]\s*)+):')
 
 
 def registros(fuera):
-    out = {}
-    for q in CONSULTAS:
-        xml = pide(BUSCA % (1, urllib.parse.quote_plus(q))).decode('utf-8')
-        for r in xml.split('<record>')[1:]:
-            sim = re.findall(r'tag="191".*?code="a">([^<]+)', r, re.S)
-            if not sim or not SIMBOLO.match(sim[0]) or sim[0] in out: continue
-            if 'individual communications' in r: continue  # CED/C/13/2 es el de las quejas individuales
-            pdf = [u for u in re.findall(r'code="u">([^<]+)', r) if u.endswith('-EN.pdf')]
-            if not pdf: fuera.append(f'{sim[0]}: la Biblioteca Digital no tiene la versión en inglés'); continue
-            fecha = re.findall(r'tag="269".*?code="a">([^<]+)', r, re.S)
-            out[sim[0]] = {'simbolo': sim[0], 'registro': re.findall(r'tag="001">(\d+)', r)[0], 'fecha': fecha[0] if fecha else '', 'pdf': pdf[0]}
-    return list(out.values())
+    """Los informes de data/seguimiento_comites/informes.json (no se busca: /search está prohibido en el robots.txt)."""
+    out = []
+    for r in S.registros('CED'):
+        if r.get('nota'): fuera.append(f"{r['simbolo']}: {r['nota']}")
+        else: out.append(r)
+    return out
 
 
 def temas(bloque):
@@ -91,7 +85,7 @@ def main():
         paises += evaluaciones(t, r, fuera)
     paises.sort(key=lambda e: (e['pais'], e['informe_fecha']))
     os.makedirs(os.path.join(RAIZ, 'data', 'seguimiento_comites'), exist_ok=True)
-    out = {'comite': 'CED', 'fuente': 'Biblioteca Digital de la ONU: ' + ' / '.join(CONSULTAS), 'consultado': time.strftime('%Y-%m-%d'),
+    out = {'comite': 'CED', 'fuente': 'Biblioteca Digital de la ONU: ' + ' / '.join(CONSULTAS) + ' (lista en informes.json)', 'consultado': time.strftime('%Y-%m-%d'),
            'informes': len(regs), 'leyenda': ley, 'evaluaciones': paises, 'no_incluidas': fuera, 'fallos': fallos}
     json.dump(out, open(os.path.join(RAIZ, 'data', 'seguimiento_comites', 'ced.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     web = {k: out[k] for k in ('comite', 'consultado', 'leyenda', 'evaluaciones')}
