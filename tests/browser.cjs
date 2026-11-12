@@ -289,7 +289,7 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     await page.fill('#pTema', ''); await page.getByRole('button', { name: /^Todos \(44\)/ }).click(); await page.waitForTimeout(200);
     ok(vp.name + ': sin tema → los 44 mandatos temáticos aplicables', (await page.locator('#pTemasTabla tbody tr').count()) === 44);
     // T61: comparador de dos países (desde la ficha de Colombia)
-    await page.getByRole('button', { name: '⇄ Comparar con otro país' }).click(); await page.waitForTimeout(400);
+    await page.getByRole('button', { name: 'Comparar con otro país' }).click(); await page.waitForTimeout(400);
     ok(vp.name + ': «Comparar con otro país» abre el comparador con Colombia y el foco en el segundo país', await page.evaluate(() => $('pComp').open && $('cmpA').value === 'COL' && document.activeElement.id === 'cmpB') && /Elige dos países/.test(await page.textContent('#cmpOut')));
     await page.selectOption('#cmpB', 'ESP'); await page.waitForTimeout(250);
     const cmpN = await page.locator('#cmpOut tbody tr').count(), cmpT = await page.textContent('#cmpOut');

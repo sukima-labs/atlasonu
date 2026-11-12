@@ -12,7 +12,7 @@ condiciones que el workflow «Celular»). También se pasaron las pruebas del re
 | **T85 · #228** (Jeisson: «ese color tierra cansa», «no veo el modo oscuro») | Marca Sukima en **modo claro y oscuro**, selector Automático/Claro/Oscuro | **Decidido: opción D.** Sin empezar: la web sigue con la paleta piedra y dorado |
 | **T84 · #226** (Jeisson: «no se ve el manual de marca») | Letra de la marca (`DejaVu Sans`) incluida en el repositorio | Decidido junto con D. Sin empezar |
 | **T82 · #222** | Paleta | La cierra la D: se cierra cuando T85 esté publicada |
-| **T31 · #242** | Logo provisional de DIGNITYOS en el menú y en su apartado | Pendiente. Falta el archivo limpio |
+| **T31 · #242** | Logo provisional de DIGNITYOS en el menú y en su apartado | Hecho (provisional: se cambia un solo archivo) |
 | **T75 · #203** | Menú «Seguimiento de recomendaciones»: tablero, tabla, comparador de varios países, línea de tiempo, mapa | En cola. Datos de la fase 1 medidos |
 | **T76 · #205** | Asistente «Tengo un caso: ¿adónde acudo?», paso a paso, con un resumen que se puede imprimir | En cola. Jeisson quiere las tres partes |
 | **T77 · #207** | Guías de quejas como «guía viva», junto al asistente | En cola |
@@ -90,6 +90,7 @@ reduce el riesgo: primero los arreglos sin decisión, después la base (variable
 ### Fase 4 · Iconos y logo
 - Un **juego de iconos SVG propio** en línea (trazo de 2 px, el mismo estilo que el botón «Menú») para las 20 entradas del menú, las tarjetas y los botones. Así se ven igual en Windows, Android e iOS. Ninguno se repite.
 - **T31:** logo provisional de DIGNITYOS en SVG dentro del repositorio (cuadrado redondeado con degradado azul a verde, una «D» y un escudo con visto), en el menú, en la franja de la portada y en su apartado. Se sustituye con un solo archivo cuando llegue el definitivo.
+- **Hecho (12-11-2026).** 21 iconos SVG propios más el logo, dibujados para ATLAS (ninguno copiado de otra colección). Se definen una sola vez al principio de la página y cada sitio los reutiliza, así que la página apenas pesa más. Todos son decorativos: el lector de pantalla lee solo el texto. En el menú miden 18 px y ninguno se repite. El círculo «i» de los cuadros «Para qué sirve esta pantalla» se dibuja con CSS y sigue viéndose en el modo de alto contraste de Windows. En árabe, el hueco entre el icono y el texto queda en el lado correcto. El logo de DIGNITYOS está en `assets/marca/dignityos_provisional.svg`, en el menú, en la franja de la portada y en la cabecera de su apartado, con el texto alternativo «Logo provisional de DIGNITYOS». Para cambiarlo por el definitivo basta con sustituir ese archivo. Los textos de ayuda ya no dibujan «☰»: dicen «Menú», como el botón. Quedan para más adelante los símbolos ▶ de «Animar» y «Recorrido guiado» y la ✕ de cerrar.
 
 ### Fase 5 · Distribución en el celular y pantallas largas
 - **Contador de visitas** en una sola línea compacta (o al pie de la página en el celular): deja libres unos 100 px arriba.

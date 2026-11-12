@@ -35,3 +35,22 @@ marca registrada y estos ficheros no sirven para producción impresa. Los signos
 quien reutilice ATLAS no debe usarlos para dar a entender que Sukima Labs respalda su versión.
 
 Si la marca publica una versión nueva, se actualizan estos ficheros desde la nueva versión; aquí no se editan a mano.
+
+## Iconos de la interfaz (fase 4 del plan de diseño)
+
+Los iconos del menú, de las tarjetas de la portada, de los recuadros «Para qué sirve esta pantalla» y de algunos botones
+son dibujos propios de ATLAS ONU: trazos de 2 px con los extremos redondeados, en una cuadrícula de 24 × 24, del mismo
+estilo que el botón «Menú». Están una sola vez al principio de `index.html` (un `<svg>` con un `<symbol id="i-…">` por
+icono) y cada sitio los usa con `<use href="#i-…">`. Toman el color del texto, así que sirven en claro y en oscuro, y se
+ven igual en Windows, Android e iOS (antes eran símbolos de texto que cada sistema dibujaba a su manera). Son
+decorativos: los lectores de pantalla no los leen, porque el nombre ya va escrito al lado. En el menú no se repite
+ninguno.
+
+## Logo provisional de DIGNITYOS (T31)
+
+`dignityos_provisional.svg` es un logo **provisional** hecho para ATLAS: un cuadrado redondeado con un degradado de azul
+a verde, una «D» blanca y un pequeño escudo con una marca de visto. Sale en la entrada «DIGNITYOS» del menú, en la franja
+de la portada y en la cabecera de su apartado, con el texto alternativo «Logo provisional de DIGNITYOS».
+
+**No es el logo definitivo.** Cuando llegue el definitivo, basta con sustituir este archivo por el nuevo (un SVG cuadrado
+con el mismo nombre); no hay que tocar nada más.

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-labelledby="dig-t">
+  <title id="dig-t">Logo provisional de DIGNITYOS</title>
+  <!-- PROVISIONAL (T31). Dibujo original de Sukima-Labs para ATLAS ONU, bajo la licencia del contenido del repositorio.
+       Para cambiarlo por el definitivo basta con sustituir este archivo (mismo nombre, cuadrado). -->
+  <defs>
+    <linearGradient id="dig-g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1F5FD1"/>
+      <stop offset="1" stop-color="#139A6A"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#dig-g)"/>
+  <path fill="#fff" fill-rule="evenodd" d="M11 12h13c11.6 0 19 7.8 19 20s-7.4 20-19 20H11zM18.5 19.5v25H24c7 0 11.5-4.8 11.5-12.5S31 19.5 24 19.5z"/>
+  <path fill="#fff" stroke="url(#dig-g)" stroke-width="2.5" stroke-linejoin="round" d="M46 30l10 3.6v7.6c0 6.6-4.2 11.4-10 13.8-5.8-2.4-10-7.2-10-13.8v-7.6z"/>
+  <path fill="none" stroke="#139A6A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" d="M41.2 42l3.4 3.4 6.2-6.6"/>
+</svg>
