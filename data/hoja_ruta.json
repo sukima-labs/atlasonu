@@ -169,6 +169,13 @@
      "issues": [
       285
      ]
+    },
+    {
+     "t": "Ficha de país en el celular: botones y gráfica",
+     "x": "En el celular, los enlaces a cada documento de la ficha de un país («ES ↗», «EN ↗», «Registro ↗») y sus desplegables se tocan con el dedo sin acertar al de al lado (44 px), y las cifras y años de las gráficas de votos se leen a 13 px o más.",
+     "issues": [
+      286
+     ]
     }
    ]
   },
@@ -356,13 +363,6 @@
      "x": "Una página sobre qué documentos de la ONU están mal catalogados y que ATLAS sí encuentra. Va al final de todo, sin fecha.",
      "issues": [
       240
-     ]
-    },
-    {
-     "t": "Ficha de país en el celular: botones y gráfica",
-     "x": "En el celular, los enlaces a cada documento de la ficha de un país («ES ↗», «EN ↗», «Registro ↗») y sus desplegables se tocan con el dedo sin acertar al de al lado (44 px), y las cifras y años de las gráficas de votos se leen a 13 px o más.",
-     "issues": [
-      286
      ]
     }
    ]
