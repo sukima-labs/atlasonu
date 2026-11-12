@@ -743,6 +743,15 @@
    "ir": "M:desaparici|disappear"
   },
   {
+   "f": "1993",
+   "tema": "mecanismos",
+   "hito": false,
+   "t": "Alerta temprana del Comité contra la Discriminación Racial",
+   "x": "El CERD crea, sin que su Convención lo prevea, un procedimiento de alerta temprana y acción urgente para prevenir violaciones graves.",
+   "p": "Sigue siendo el único comité de tratado con este procedimiento: puede actuar por iniciativa propia y avisar al Secretario General y al Consejo de Derechos Humanos.",
+   "ir": "T:IV-2"
+  },
+  {
    "f": "1993-06-25",
    "tema": "normas",
    "hito": true,
@@ -1056,6 +1065,15 @@
    "p": "Fija los compromisos sobre ciudades y vivienda para las próximas décadas."
   },
   {
+   "f": "2018-03-08",
+   "tema": "mecanismos",
+   "hito": false,
+   "t": "Primeras quejas entre Estados ante un comité de tratado",
+   "x": "Qatar presenta comunicaciones contra Arabia Saudí y contra los Emiratos Árabes Unidos ante el Comité para la Eliminación de la Discriminación Racial (arts. 11 a 13); el 23 de abril de 2018 el Estado de Palestina presenta otra contra Israel.",
+   "p": "Es la primera vez que se usa la vía entre Estados en el sistema de tratados, abierta desde 1969.",
+   "ir": "T:IV-2"
+  },
+  {
    "f": "2018-12",
    "tema": "desarrollo",
    "hito": false,
@@ -1108,6 +1126,15 @@
    "x": "El Secretario General lanza la iniciativa UN80 de reforma y ahorro ante la crisis de liquidez de la organización.",
    "p": "La financiación de los derechos humanos depende sobre todo de contribuciones voluntarias; los recortes retrasan informes y sesiones.",
    "ir": "S:sec"
+  },
+  {
+   "f": "2025-10",
+   "tema": "mecanismos",
+   "hito": false,
+   "t": "Investigación del Comité de los Derechos del Niño sobre Francia",
+   "x": "El comité publica su investigación sobre los niños migrantes no acompañados en Francia (CRC/C/FRA/IR/1), abierta con el art. 13 del Tercer Protocolo, y concluye que hubo violaciones graves o sistemáticas.",
+   "p": "Ejemplo de investigación confidencial de un comité: se hace con dos de sus miembros y solo se publica al final.",
+   "ir": "T:IV-11"
   },
   {
    "f": "2025-10-24",
