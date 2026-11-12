@@ -62,7 +62,7 @@ const reposo = async pg => { let a = -1; for (let i = 0; i < 40; i++) { await pg
     res.checks.push({ n: nom + ': (diagnóstico del salto a EPU)', ok: true, extra: bajo });
     const epu = await pg.evaluate(() => Math.round(document.getElementById('ps-epu').getBoundingClientRect().top));
     const vuelve = (await pg.isVisible('#pTop')) && (await pg.tap('#pTop'), await reposo(pg), await pg.evaluate(() => Math.abs(document.getElementById('pNav').getBoundingClientRect().top) < 90));
-    ok(nom + ': T19 la ficha de Colombia tiene 9 saltos, «EPU» lleva a su bloque y «↑ Qué quieres ver» vuelve', saltos === 9 && epu >= -5 && epu < h * 0.5 && vuelve, { saltos, epu });
+    ok(nom + ': T19 la ficha de Colombia tiene 10 saltos, «EPU» lleva a su bloque y «↑ Qué quieres ver» vuelve', saltos === 10 && epu >= -5 && epu < h * 0.5 && vuelve, { saltos, epu });
     const a1 = await ancho();
     ok(nom + ': con la ficha abierta la página sigue midiendo lo que la pantalla', a1.pagina === a1.pantalla && a1.fuera.length === 0, a1);
     // T61: comparador tocado con el dedo desde la ficha de Colombia
