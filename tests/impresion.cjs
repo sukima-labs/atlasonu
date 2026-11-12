@@ -26,7 +26,7 @@ const MAX_HOJAS = 15;
     const m = await p.evaluate(() => {
       const visible = e => e && getComputedStyle(e).display !== 'none';
       const secciones = [...document.querySelectorAll('.section')].filter(visible).map(s => s.id);
-      const oculto = ['.side', '.appbar', '#arriba', '.menu-hint', '.visbar', '#sgPop'].filter(s => visible(document.querySelector(s)));
+      const oculto = ['.side', '.appbar', '#arriba', '#bnav', '.visbar', '#sgPop'].filter(s => visible(document.querySelector(s)));
       const luz = c => { const m = c.match(/\d+(\.\d+)?/g).map(Number); return m.length > 3 && m[3] === 0 ? 255 : (m[0] + m[1] + m[2]) / 3; };
       return { secciones, oculto, bg: luz(getComputedStyle(document.body).backgroundColor), txt: luz(getComputedStyle(document.querySelector('.main h1')).color),
         panel: [...document.querySelectorAll('.section.visible .panel, .section.visible .detail')].some(e => luz(getComputedStyle(e).backgroundColor) < 200),
