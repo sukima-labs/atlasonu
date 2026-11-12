@@ -527,6 +527,12 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
   for (const [nom, vp, extra] of [['escritorio', { width: 1440, height: 900 }, {}], ['celular', { width: 390, height: 844 }, { hasTouch: true, isMobile: true }]]) {
     const pg = await browser.newPage({ viewport: vp, ...extra }); await pg.goto(URL); await pg.waitForFunction(() => window.__atlasListo);
     await pg.evaluate(() => showPage('hojaruta'));
+    const def = await pg.evaluate(() => { const o = document.getElementById('hojaOut'), pres = [...o.querySelectorAll('.hr-fil button[aria-pressed="true"]')].map(b => b.textContent.replace(/ \(.*/, '')); return { pres, est: [...new Set([...o.querySelectorAll('.hr-est')].map(e => e.textContent.replace(/#.*/, '').trim()))] }; });
+    ok('P6 ' + nom + ': «Qué falta» abre con «Pendiente» y «En curso» marcados (no «Todos») y solo enseña esos estados', def.pres.join('|') === 'En curso|Pendiente' && def.est.every(e => /^(Pendiente|En curso)/.test(e)), def);
+    await pg.evaluate(() => [...document.querySelectorAll('#hojaOut .hr-fil button')].find(b => /^Hecho/.test(b.textContent)).click());
+    const tres = await pg.evaluate(() => document.querySelectorAll('#hojaOut .hr-fil button[aria-pressed="true"]').length);
+    ok('P6 ' + nom + ': en «Qué falta» se pueden marcar varios estados a la vez (+ Hecho = 3 marcados)', tres === 3, tres);
+    await pg.evaluate(() => [...document.querySelectorAll('#hojaOut .hr-fil button')].find(b => /^Todos/.test(b.textContent)).click());
     const hr = await pg.evaluate(() => { const o = document.getElementById('hojaOut'); return { h3: [...o.querySelectorAll('h3')].filter(h => h.offsetParent).length, pend: [...o.querySelectorAll('.hr-est')].filter(e => /Pendiente/.test(e.textContent)).length, botones: o.querySelectorAll('.mas button').length }; });
     ok('P6 ' + nom + ': «Qué falta» con «Todos» enseña los 4 bloques y ya hay pendientes a la vista, cada bloque con su «Mostrar más»', hr.h3 === 4 && hr.pend > 0 && hr.botones >= 1, hr);
     await pg.close();
