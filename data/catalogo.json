@@ -7678,6 +7678,10 @@
     "intro": "Lo que ya funciona hoy.",
     "items": [
      {
+      "t": "ATLAS en el celular, como una aplicación",
+      "x": "En la portada, un aviso pequeño explica que ATLAS se puede instalar en el celular como una aplicación, gratis y sin tienda, con los pasos para Android y para iPhone en lenguaje sencillo."
+     },
+     {
       "t": "Seguimiento de recomendaciones",
       "x": "Pantalla nueva: qué le recomendaron los demás Estados a cada país en el Examen Periódico Universal desde 2012 (117.681 recomendaciones de 193 países) y qué respondió el país, si la apoya o toma nota, con el enlace al documento de la ONU que lo dice. Donde la respuesta no está escrita con claridad pone «Sin información». Se pueden comparar hasta seis países y descargar los datos en CSV o JSON. No dice si el país ha cumplido: la ONU no lo publica."
      },
@@ -8037,10 +8041,10 @@
       ]
      },
      {
-      "t": "Traducciones más fáciles de mantener",
-      "x": "Los textos de la página se escriben en español y se traducen a los otros cinco idiomas desde una web de traducción abierta, donde también podrán ayudar voluntarios.",
+      "t": "Traducciones hechas en casa",
+      "x": "Los textos de la página se escriben en español y un traductor automático abierto, que funciona en el servidor del proyecto, prepara los otros cinco idiomas. Después, personas nativas los revisan.",
       "issues": [
-       291
+       321
       ]
      }
     ]
