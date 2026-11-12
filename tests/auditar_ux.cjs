@@ -23,12 +23,15 @@ const LARGO_FICHA = 9; // ficha de país de Colombia en el celular: 48,9 pantall
     if (!bien) malas++;
     console.log(`${bien ? '✓' : '✗'} ${id.padEnd(13)} largo ${String(m.largo).padStart(4)} pantallas · ancho ${m.ancho}/${m.W} · controles < ${METAS.control} px: ${m.controles}${m.controles ? ' ' + m.controlesEj.join(' | ') : ''} · texto < ${METAS.texto} px: ${m.textos}${m.textos ? ' ' + m.textosEj.join(' | ') : ''}`);
   }
-  // La ficha de un país (Colombia): el largo ya cumple (bloques plegados en el celular, #285, T91). Los enlaces «ES ↗ / EN ↗»
-  // pequeños y la gráfica con letra diminuta se informan sin hacer fallar hasta #286 (T92).
+  // La ficha de un país (Colombia) cumple como las demás (#285, T91: bloques plegados; #286, T92: enlaces y desplegables de 44 px,
+  // letra de las gráficas de votos a 13,5 px en pantalla). Se mide plegada (largo) y otra vez con todos los bloques abiertos.
   await p.evaluate(() => irPais('COL')); await p.waitForTimeout(1500);
   const f = await p.evaluate(medirPantalla, METAS);
-  const fichaMal = f.largo > LARGO_FICHA || f.ancho > f.W + 1;
-  console.log(`${fichaMal ? '✗' : '·'} ficha COL     largo ${String(f.largo).padStart(4)} pantallas (tope ${LARGO_FICHA}) · ancho ${f.ancho}/${f.W} · controles < ${METAS.control} px: ${f.controles} · texto < ${METAS.texto} px: ${f.textos} (pendiente, no hace fallar)`);
+  await p.evaluate(() => document.querySelectorAll('#paises details.pf-pleg').forEach(d => { d.open = true })); await p.waitForTimeout(300);
+  const fa = await p.evaluate(medirPantalla, METAS);
+  const fichaMal = f.largo > LARGO_FICHA || f.ancho > f.W + 1 || f.controles || f.textos || fa.controles || fa.textos || fa.ancho > fa.W + 1;
+  const ej = x => (x.controles ? ' ' + x.controlesEj.join(' | ') : '') + (x.textos ? ' ' + x.textosEj.join(' | ') : '');
+  console.log(`${fichaMal ? '✗' : '✓'} ficha COL     largo ${String(f.largo).padStart(4)} pantallas (tope ${LARGO_FICHA}) · ancho ${f.ancho}/${f.W} · controles < ${METAS.control} px: ${f.controles} (con los bloques abiertos: ${fa.controles}) · texto < ${METAS.texto} px: ${f.textos} (abiertos: ${fa.textos})${ej(f)}${ej(fa)}`);
   if (fichaMal) malas++;
   await b.close();
   console.log(`${pantallas.length} pantallas medidas a 390 px; ${malas ? malas + ' no cumplen' : 'todas cumplen'} las metas (controles ≥ ${METAS.control} px, texto ≥ ${METAS.texto} px, ≤ ${METAS.largo} pantallas de alto, sin desborde lateral)`);
