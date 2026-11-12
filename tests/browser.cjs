@@ -205,6 +205,15 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
       return { bloques: f().querySelectorAll('.fd-bloque').length, col: /Colombia/.test(col) && /recomendaciones/.test(col) && /votó sí/.test(col) && !/Es parte:/.test(col), uni: /Parecido de su voto/.test(f().innerText), lineas: f().querySelectorAll('.fd-linea').length, imp: !!document.querySelector('#aulaOut button.primary'), nav: !!document.querySelector('#nav button[data-page="aula"][aria-current]'), desborda: document.documentElement.scrollWidth > window.innerWidth }; });
     ok(vp.name + ': T83 «Simula una asamblea»: ficha de Colombia con tratados, votos, EPU y documento de posición; «universidad» añade cifras', aula.bloques === 5 && aula.col && aula.uni && aula.lineas >= 7 && aula.imp && aula.nav && !aula.desborda);
     await page.evaluate(() => aulaNivel('colegio'));
+    // T83 fase 2: kit del profesor. Reparto sin repetir, recuento en pantalla (aprobada/rechazada) y modo EPU sin el Estado examinado en el recuento.
+    await page.fill('#aulaN', '6'); await page.click('button[onclick="aulaRepartir()"]');
+    const kit = await page.evaluate(() => { const rep = aulaRep.slice(), uni = new Set(rep).size === 6 && rep.includes('COL'), guia = document.querySelectorAll('#aulaKit .aula-guia li').length;
+      const pulsa = (id, v) => document.querySelector(`#aulaRecuento [data-av="${id}"][data-v="${v}"]`).click();
+      rep.forEach((id, i) => pulsa(id, i < 4 ? 'si' : 'no')); const asam = document.querySelector('#aulaRecuento .aula-total').textContent;
+      aulaModo('epu'); const ex = aulaExaminado(), filas = document.querySelectorAll('#aulaRecuento .aula-votos li').length;
+      const pr = window.print; let hoja = ''; window.print = () => { hoja = document.getElementById('aulaHoja').innerText; dispatchEvent(new Event('afterprint')); }; aulaImprimirHoja(); window.print = pr;
+      aulaModo('asamblea'); return { uni, guia, aprobada: /Sí: 4 · No: 2 · Abstención: 0/.test(asam) && /aprobada/.test(asam), ex: ex === 'COL', filas, hoja: /Hoja de trabajo/i.test(hoja) && /Toma nota/.test(hoja), limpio: !document.getElementById('aulaHoja'), desborda: document.documentElement.scrollWidth > window.innerWidth }; });
+    ok(vp.name + ': T83 kit del profesor: reparto sin repetir, recuento «aprobada», modo EPU sin el Estado examinado y hoja imprimible', kit.uni && kit.guia === 6 && kit.aprobada && kit.ex && kit.filas === 5 && kit.hoja && kit.limpio && !kit.desborda);
     // T11/T24: Mapa del mundo con capas
     await page.evaluate(() => showPage('mapa')); await page.waitForSelector('#mpSvg path.mp-p');
     const mpDesborda = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);
