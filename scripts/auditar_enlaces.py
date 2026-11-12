@@ -22,6 +22,20 @@ for c in d.get('sistema', {}).get('comites', []): add('https://www.ohchr.org/es/
 for t in d['tratados']:
     add(t.get('url'), 'tratado ' + t['siglas'])
     if t.get('texto'): add(t['texto']['fuente'], 'texto literal ' + t['siglas'])
+# T77 fase C: guías de «Tengo un caso» y enlaces del ACNUDH de las vías (formularios, portal de envío). Las páginas de la
+# Colección de Tratados y de la Biblioteca Digital no se repiten aquí: las lee fetch_tratados.py respetando su Crawl-delay.
+_v = open('data/vias.js', encoding='utf-8').read()
+vias = json.loads(_v[_v.index('{'):_v.rindex('}') + 1])
+for g in vias['guias']: add(g.get('url'), 'guía ' + g['id'])
+def _urls(x):
+    if isinstance(x, dict):
+        for k, y in x.items():
+            if k == 'url' and isinstance(y, str): yield y
+            else: yield from _urls(y)
+    elif isinstance(x, list):
+        for y in x: yield from _urls(y)
+for u in _urls(vias['vias']):
+    if 'ohchr.org' in u: add(u, 'vía (ACNUDH)')
 def chk(u):
     req = urllib.request.Request(u, headers={'User-Agent': 'Mozilla/5.0 (ATLAS-ONU link audit)', 'Range': 'bytes=0-2048'})
     try:
@@ -41,4 +55,11 @@ for cl in ('ROTO', 'ANTIRROBOT'):
     if rows:
         md.append(f"\n## {cl} ({len(rows)})\n")
         for o in sorted(rows, key=lambda x: x['origen'])[:60]: md.append(f"- `{o['estado']}` {o['url']} — {o['origen']}")
+# Solo 404/410 son definitivos; un tiempo agotado (la guía de México no responde a la descarga automática) queda en el informe sin fallar.
+rotas = [o for o in out if o['estado'] in (404, 410) and o['origen'].startswith(('guía ', 'vía '))]
+if rotas:
+    md.append("\n## Enlaces de «Tengo un caso» rotos (hay que corregir `data/vias.js`)\n")
+    md += [f"- `{o['estado']}` {o['url']} — {o['origen']}" for o in rotas]
 open('audit/ENLACES.md', 'w').write('\n'.join(md) + '\n'); print(dict(c))
+# Un enlace roto de una guía o de una vía hace fallar el workflow: GitHub avisa y no se queda en un artefacto sin leer.
+if rotas: print('ROTOS en «Tengo un caso»:', *[o['url'] for o in rotas], sep='\n  '); sys.exit(1)
