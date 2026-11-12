@@ -6963,6 +6963,15 @@
     "ir": "T:IV-4"
    },
    {
+    "f": "1967-03-06",
+    "tema": "mecanismos",
+    "hito": false,
+    "t": "Primer mandato por país: el África meridional",
+    "x": "La Comisión de Derechos Humanos crea el Grupo Especial de Expertos sobre el África meridional para investigar el trato a los presos y detenidos bajo el apartheid (E/CN.4/RES/2 (XXIII)).",
+    "p": "Es el primer mandato dedicado a una situación concreta. Hasta entonces la Comisión se declaraba sin competencia para actuar sobre quejas (art. 2.7 de la Carta).",
+    "ir": "S:pe"
+   },
+   {
     "f": "1967-06-06",
     "tema": "mecanismos",
     "hito": true,
@@ -7029,7 +7038,7 @@
     "hito": false,
     "t": "Grupo de Trabajo sobre Chile",
     "x": "Tras el golpe de 1973, la Comisión de Derechos Humanos crea un grupo de trabajo ad hoc para investigar la situación de derechos humanos en Chile.",
-    "p": "Sienta el precedente de los mandatos por país: un órgano político puede examinar un asunto interno de un Estado.",
+    "p": "Es el primer mandato por país fuera del apartheid y del África meridional: muestra que un órgano político puede examinar lo que un Estado llama un asunto interno.",
     "ir": "S:pe"
    },
    {
@@ -7155,6 +7164,15 @@
     "ir": "M:tortura|torture"
    },
    {
+    "f": "1986",
+    "tema": "mecanismos",
+    "hito": false,
+    "t": "Relator especial sobre la intolerancia religiosa",
+    "x": "La Comisión de Derechos Humanos nombra un relator especial sobre la intolerancia religiosa (E/CN.4/RES/1986/20), hoy relator sobre la libertad de religión o de creencias.",
+    "p": "Amplía los mandatos temáticos a la libertad de pensamiento, conciencia y religión.",
+    "ir": "M:religi|religion"
+   },
+   {
     "f": "1986-12-04",
     "tema": "normas",
     "hito": false,
@@ -7171,6 +7189,15 @@
     "x": "La Asamblea General adopta la CDN (resolución 44/25); entra en vigor el 2 de septiembre de 1990.",
     "p": "Es el tratado más ratificado de la historia: casi todos los Estados son parte.",
     "ir": "T:IV-11"
+   },
+   {
+    "f": "1990",
+    "tema": "mecanismos",
+    "hito": false,
+    "t": "Relator especial sobre la venta de niños",
+    "x": "La Comisión de Derechos Humanos crea el mandato sobre la venta de niños, la prostitución infantil y la utilización de niños en la pornografía (E/CN.4/RES/1990/68).",
+    "p": "Llega el mismo año en que entra en vigor la Convención sobre los Derechos del Niño.",
+    "ir": "M:venta de ni|sale of children"
    },
    {
     "f": "1990-03-05",
@@ -7197,6 +7224,15 @@
     "x": "La Asamblea General adopta la Convención Internacional sobre los trabajadores migratorios y sus familiares (resolución 45/158).",
     "p": "Es el tratado básico con menos ratificaciones: muchos Estados de destino no la han firmado.",
     "ir": "T:IV-13"
+   },
+   {
+    "f": "1991",
+    "tema": "mecanismos",
+    "hito": false,
+    "t": "Grupo de Trabajo sobre la Detención Arbitraria",
+    "x": "La Comisión de Derechos Humanos crea el Grupo de Trabajo sobre la Detención Arbitraria (E/CN.4/RES/1991/42).",
+    "p": "Es el único mandato que adopta «opiniones» sobre casos concretos, y puede hacerlo aunque el Estado no haya ratificado ningún tratado.",
+    "ir": "M:detenci|detention"
    },
    {
     "f": "1991-09-17",
@@ -7461,6 +7497,15 @@
     "ir": "M:agua|water"
    },
    {
+    "f": "2011-03-01",
+    "tema": "mecanismos",
+    "hito": false,
+    "t": "La Asamblea suspende a Libia del Consejo",
+    "x": "Por primera vez, la Asamblea General suspende los derechos de un miembro del Consejo de Derechos Humanos (resolución 65/265), por la represión de las protestas. Se los devuelve el 18 de noviembre de 2011 (resolución 66/11).",
+    "p": "Aplica el párrafo 8 de la resolución 60/251: la Asamblea puede suspender, por dos tercios de los presentes y votantes, a un miembro que cometa violaciones graves y sistemáticas.",
+    "ir": "S:cdh"
+   },
+   {
     "f": "2011-07-14",
     "tema": "paz",
     "hito": false,
@@ -7538,6 +7583,15 @@
     "ir": "E:ACNUR"
    },
    {
+    "f": "2022-04-07",
+    "tema": "mecanismos",
+    "hito": false,
+    "t": "La Asamblea suspende a Rusia del Consejo",
+    "x": "Tras la invasión de Ucrania, la Asamblea General suspende los derechos de la Federación de Rusia en el Consejo de Derechos Humanos (resolución ES-11/3). Rusia anunció ese mismo día que dejaba el Consejo.",
+    "p": "Es la segunda suspensión, y la primera de un miembro permanente del Consejo de Seguridad. No fue una retirada voluntaria: la decidió la Asamblea.",
+    "ir": "S:cdh"
+   },
+   {
     "f": "2022-07-28",
     "tema": "normas",
     "hito": true,
@@ -7545,6 +7599,15 @@
     "x": "La Asamblea General reconoce el derecho humano a un medio ambiente limpio, saludable y sostenible (resolución 76/300).",
     "p": "Refuerza los litigios climáticos ante comités y tribunales.",
     "ir": "M:medio ambiente|environment"
+   },
+   {
+    "f": "2023-10-10",
+    "tema": "mecanismos",
+    "hito": false,
+    "t": "Rusia no consigue volver al Consejo",
+    "x": "En la elección para el periodo 2024–2026, Rusia se presenta a uno de los dos puestos de Europa Oriental y no alcanza la mayoría absoluta de la Asamblea (97 votos). Salen elegidas Bulgaria y Albania.",
+    "p": "Muestra que la elección por mayoría absoluta y en votación secreta puede dejar fuera a un candidato poderoso.",
+    "ir": "S:cdh"
    },
    {
     "f": "2024-09-22",
