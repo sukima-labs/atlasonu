@@ -31,4 +31,23 @@ ok('build_mecanismos sin red: copia la verificación anterior, los datos curados
 try: t.pdf_texto('A/RES/1'); nored = False
 except RuntimeError as e: nored = 'T56' in str(e)
 ok('fetch_tratados_texto no consulta documents.un.org/api', nored)
+import re, glob
+URL = re.compile(r'digitallibrary\.un\.org/(search|rss|record/[^/\s]+/export)')
+cuatro = ['fetch_docs_pais', 'fetch_epu_informes', 'fetch_jurisprudencia', 'fetch_documentos_marco', 'biblioteca']
+ok('T56: los scripts de datos por registro no tocan /search, /rss ni /export',
+   not [n for n in cuatro if URL.search(open('scripts/%s.py' % n, encoding='utf-8').read())])
+import biblioteca as B, urllib.request
+pedidas = []
+class R:
+    def __init__(s, u): pedidas.append(u)
+    def __enter__(s): return s
+    def __exit__(s, *a): pass
+    def read(s): return b'<collection><record></record></collection>'
+orig, B.CADA = urllib.request.urlopen, 0
+urllib.request.urlopen = lambda req, timeout=0: R(req.full_url)
+try: B.marc('571575'); malo = False
+finally: urllib.request.urlopen = orig
+try: B.marc('1 OR x'); malo = True
+except ValueError: pass
+ok('biblioteca.marc solo pide /record/N?of=xm y rechaza lo que no es un número', pedidas == ['https://digitallibrary.un.org/record/571575?of=xm'] and not malo)
 sys.exit(1 if fallos else 0)

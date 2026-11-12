@@ -13,7 +13,11 @@ No toca el código: solo `data/`.
 textos (`resolve_texts.py`) trabajan sin red sobre su resultado anterior. Un símbolo nuevo queda «Sin cotejar todavía»
 (`SIN_CONSULTAR`), con su aviso en el catálogo, hasta que una persona lo coteje. `BIBLIOTECA_SEARCH=si` vuelve a buscar en
 la Biblioteca Digital, y solo se usa a mano y con permiso. De la Biblioteca Digital se bajan registros concretos
-(`/record/N`) a 5 s como mínimo. Su OAI-PMH solo tiene el conjunto «sanctions» y no sirve para descubrir documentos.
+(`/record/N`) a 5 s como mínimo. Los cuatro scripts que antes buscaban (`fetch_docs_pais.py`, `fetch_epu_informes.py`,
+`fetch_jurisprudencia.py` y `fetch_documentos_marco.py`) ya no lo hacen: conservan lo anotado en los datos y solo bajan
+los registros que se añaden a mano a `data/fuentes/registros_biblioteca.json` (con `--refrescar`, todos los conocidos).
+El acceso común está en `scripts/biblioteca.py`. Para añadir un documento nuevo se busca su registro con un navegador,
+como una persona, y se anota el número. Su OAI-PMH solo tiene el conjunto «sanctions» y no sirve para descubrir documentos.
 
 **El ACNUDH (#313, decidido por Patricio el 12-11-2026):** `spinternet.ohchr.org` (lista de mandatos y visitas) y
 `spcommreports.ohchr.org` (comunicaciones) dicen `Disallow: /` en su `robots.txt`. La revisión diaria ya no los lee:
