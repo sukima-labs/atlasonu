@@ -53,6 +53,24 @@ No son «quejas» con plazo y admisibilidad: se envían **comunicaciones** (aleg
 
 En la web (12-11-2026): fichas «Consejo de Derechos Humanos» y «Procedimientos especiales» de la pantalla del sistema ONU, la guía «¿Qué quieres conseguir?» y la línea de tiempo (primer mandato por país en 1967, mandatos de 1986, 1990 y 1991, suspensiones de Libia y Rusia, elección de 2023). Lo `por verificar` está dicho en la web solo de forma general y con el aviso de confirmar en el sitio oficial; **no entra en el asistente T76** hasta leerse en el original.
 
+## Órganos de tratados: contraste del 12-11-2026 (segundo material de referencia)
+El material del curso solo orientó; cada dato se leyó en la ONU. Fuente principal: **Folleto informativo n.º 30 (Rev.1), ACNUDH, 2012**, PDF en español de la Biblioteca de la ONU en Ginebra (`conf.unog.ch/ls-fts/…/FactSheet30 Rev1_S.pdf`), leído entero.
+
+| Dato | En palabras simples | Dónde lo dice | Estado |
+|---|---|---|---|
+| Informe inicial y periódicos | Primer informe a más tardar 1 o 2 años después de la entrada en vigor; luego, por lo general, cada 4 o 5 años (no en la Convención sobre desapariciones) | Folleto 30, cap. II.A | `leído en el original` |
+| Procedimiento simplificado | Lista de cuestiones previa (CAT, 2007): la respuesta del Estado es su informe periódico; no vale para el inicial | Folleto 30, cap. II.A.4 | `leído en el original` |
+| Alerta temprana | Solo el CERD la tiene (desde 1993, sin que la Convención la prevea) | Folleto 30, cap. II.G | `leído en el original` |
+| Controversias ante la Corte Internacional de Justicia | CEDAW art. 29, CED art. 42, CAT art. 30, CERD art. 22, CMW art. 92; se puede excluir al ratificar | Folleto 30, cap. II.I; texto de la CED (art. 42) en `data/tratados/IV-16.js` | `leído en el original` |
+| Quejas individuales del CMW | No funcionan hasta que 10 Estados hagan la declaración del art. 77 | Folleto 30, nota 9; Colección de Tratados, IV-13 (12-11-2026: menos de 10) | `leído en el original` |
+| Primeras quejas entre Estados | Qatar contra Arabia Saudí y contra los Emiratos (8-3-2018) y Palestina contra Israel (23-4-2018), ante el CERD. El Folleto de 2012 aún decía «nunca se ha utilizado» | Comunicados de la Oficina de la ONU en Ginebra (sesiones 99 y 100 del CERD, 2019); decisiones `CERD/C/99/3`, `CERD/C/99/5`, `CERD/C/100/5` | `por verificar` en las decisiones (vistas en resúmenes) |
+| Investigación del CRC sobre Francia | Niños migrantes no acompañados: violaciones graves o sistemáticas | `CRC/C/FRA/IR/1` (3-10-2025, publicada el 16-10-2025) | `por verificar` en el original |
+| Depositario | El Secretario General; la Colección de Tratados (cap. IV) guarda textos, reservas y objeciones | Folleto 30, glosario; cláusulas finales de cada tratado | `leído en el original` |
+
+**Precisión al material:** las quejas individuales del CMW no fallan por falta de *ratificaciones* sino de *declaraciones* del art. 77 (hacen falta 10).
+
+En la web: pestaña «Cómo supervisa» de cada comité (ciclo de informes, alerta temprana, controversias, CMW, ejemplo del CRC), ficha del tratado (depositario y recursos en español: Folleto 30, Índice Universal, panel de ratificaciones y base de datos de órganos de tratados) y línea de tiempo (1993, 2018 y 2025).
+
 ## Pasos pendientes
 1. Leer los **reglamentos vigentes** de los comités con vía de queja y rellenar las cinco filas `por verificar` de arriba (hace falta una vía legítima al texto: a mano o con la persona revisora).
 2. Verificar a mano, en la página oficial del ACNUDH, los datos que se vieron en un buscador y no en el original: el **portal en línea** de envío a órganos de tratados y el **límite de 10.000 palabras** que citan resúmenes (aún sin comprobar en el original).
