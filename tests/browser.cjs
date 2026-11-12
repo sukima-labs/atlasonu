@@ -2,6 +2,22 @@
 const { chromium } = require('playwright');
 const path = require('path'), assert = require('assert');
 const URL = process.env.ATLAS_URL || 'file://' + path.resolve(__dirname, '..', 'index.html');
+// T75: algunas pantallas leen JSON con fetch, que file:// no permite. Servidor estático del repositorio, solo en 127.0.0.1 y solo mientras corre la prueba.
+let _srv = null;
+function servidorEstatico() {
+  if (_srv) return _srv;
+  const http = require('http'), fs = require('fs'), raiz = path.resolve(__dirname, '..');
+  const tipos = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.json': 'application/json', '.css': 'text/css', '.svg': 'image/svg+xml', '.png': 'image/png', '.woff2': 'font/woff2', '.webmanifest': 'application/manifest+json' };
+  _srv = new Promise(res => {
+    const s = http.createServer((q, r) => {
+      const f = path.join(raiz, decodeURIComponent(q.url.split('?')[0]));
+      if (!f.startsWith(raiz + path.sep)) { r.writeHead(403); r.end(); return; }
+      fs.readFile(f, (e, d) => { if (e) { r.writeHead(404); r.end(); return; } r.writeHead(200, { 'content-type': tipos[path.extname(f)] || 'application/octet-stream' }); r.end(d); });
+    });
+    s.listen(0, '127.0.0.1', () => { s.unref(); res('http://127.0.0.1:' + s.address().port); });
+  });
+  return _srv;
+}
 const esperaReposo = async page => { let a = -1; for (let i = 0; i < 40; i++) { await page.waitForTimeout(150); const y = await page.evaluate(() => scrollY); if (y === a) return; a = y; } }; // espera a que acabe el desplazamiento suave
 const todosLosPaises = async page => { while (await page.locator('#pBody .mas button').count()) await page.locator('#pBody .mas button').click(); }; // pulsa «Mostrar más» hasta ver la lista entera
 (async () => {
@@ -134,6 +150,25 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     await page.locator('#rOut .rel-card').first().getByRole('button', { name: 'Ver el mandato' }).click(); await page.waitForTimeout(300);
     ok(vp.name + ': desde una tarjeta, «Ver el mandato» abre su ficha en Explorar', await page.isVisible('#explorar'));
     await page.evaluate(() => showPage('paises'));
+    // T75: Seguimiento de recomendaciones (EPU). Colombia, 3 exámenes y 602 recomendaciones (160 + 211 + 231) en data/seguimiento/COL.json.
+    //      Con file:// el navegador no deja leer el JSON del país: la pantalla avisa. El resto se prueba en otra pestaña servida por HTTP.
+    await page.evaluate(() => showPage('seguimiento')); await page.waitForFunction(() => document.querySelectorAll('#segPais option').length > 150);
+    let sp = page;
+    if (URL.startsWith('file:')) {
+      await page.selectOption('#segPais', 'COL'); await page.waitForSelector('#segOut .notice');
+      ok(vp.name + ': T75 desde una copia en el disco (file://) avisa de que se abra la web publicada', /web publicada/.test(await page.textContent('#segOut')));
+      sp = await browser.newPage({ viewport: vp }); await sp.goto(await servidorEstatico() + '/index.html#seguimiento');
+      await sp.waitForFunction(() => document.querySelectorAll('#segPais option').length > 150);
+    }
+    await sp.selectOption('#segPais', 'COL'); await sp.waitForSelector('.seg-recs li');
+    const seg = await sp.evaluate(() => ({ ex: document.querySelectorAll('.seg-ex').length, li: document.querySelectorAll('.seg-recs li').length, desborda: document.documentElement.scrollWidth > window.innerWidth + 1, fuente: [...document.querySelectorAll('.seg-recs .pill-ok a')].every(a => /^https:\/\/digitallibrary\.un\.org\//.test(a.href)) }));
+    ok(vp.name + ': T75 «Seguimiento» de Colombia: 3 exámenes, 40 recomendaciones a la vista, cada «Apoyada» enlaza a la Biblioteca Digital y no desborda', seg.ex === 3 && seg.li === 40 && seg.fuente && !seg.desborda, seg);
+    await sp.selectOption('#segCiclo', '4'); await sp.selectOption('#segResp', 'nd');
+    const segNd = await sp.evaluate(() => [document.querySelectorAll('.seg-recs li').length, document.querySelectorAll('.seg-recs .pill-nd').length, document.querySelectorAll('.seg-recs .pill-ok,.seg-recs .pill-neutro').length]);
+    ok(vp.name + ': T75 filtro «Sin información» del 4.º ciclo: solo pastillas «Sin información», nunca un estado inventado', segNd[0] === 40 && segNd[1] === 40 && segNd[2] === 0, segNd);
+    await sp.selectOption('#segCmpSel', 'MEX'); await sp.selectOption('#segCmpSel', 'ARG');
+    ok(vp.name + ': T75 comparador con 3 países (columna fija + 3) y 15 filas', await sp.evaluate(() => document.querySelectorAll('#segCmp thead th').length === 4 && document.querySelectorAll('#segCmp tbody tr').length === 15));
+    if (sp !== page) await sp.close();
     // T11/T24: Mapa del mundo con capas
     await page.evaluate(() => showPage('mapa')); await page.waitForSelector('#mpSvg path.mp-p');
     const mpDesborda = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);
