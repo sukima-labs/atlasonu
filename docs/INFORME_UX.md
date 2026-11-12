@@ -75,6 +75,12 @@ Arreglos de esta última fase para llegar a cero: la barra inferior a 13 px (est
 contenido» con 44 px de alto, y los enlaces que van solos en su línea (el de sukimalabs.com en el pie y las fuentes de
 «Cómo leer un código») con 44 px de alto.
 
+**Lo que queda: la ficha de un país.** Las metas se miden en las pantallas del menú. La ficha de un país, que se abre
+dentro de «Países», todavía no cumple: la de Colombia mide **48,9 pantallas** de alto, tiene **49** enlaces pequeños
+(«ES ↗ / EN ↗» junto a cada símbolo y algunos desplegables) y **11** textos diminutos (los ejes de la gráfica de votos).
+Van en #285 (T91, el largo) y #286 (T92, enlaces y gráfica). `auditar_ux.cjs` ya la mide y le pone un tope de 50 pantallas
+para que no crezca mientras tanto.
+
 **Quién lo vigila desde ahora.** Las metas están en un solo fichero, `tests/metas_ux.cjs`, y las comprueban:
 - `node tests/auditar_ux.cjs --comprobar`, que imprime la tabla pantalla por pantalla y va en la CI;
 - `node tests/browser.cjs`, que repite la medición en modo oscuro y en claro;
