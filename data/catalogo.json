@@ -7820,6 +7820,15 @@
       "issues": [
        242
       ]
+     },
+     {
+      "t": "Colores de la marca, modo claro y modo oscuro",
+      "x": "La página pasará a los colores y la letra de la marca de Sukima-Labs, con dos modos, oscuro (grafito) y claro (marfil), y un selector «Automático, Claro u Oscuro» que se guarda solo en el navegador. El cian de la marca será el acento y el dorado quedará para datos y destacados. Ya se midió el contraste; falta aplicarlo.",
+      "issues": [
+       222,
+       226,
+       228
+      ]
      }
     ]
    },
@@ -7876,15 +7885,6 @@
       "x": "Pasar de manuales estáticos a una guía viva y al día, unida al asistente «De la información a la acción».",
       "issues": [
        207
-      ]
-     },
-     {
-      "t": "Colores de la marca, modo claro y modo oscuro",
-      "x": "La página pasará a los colores y la letra de la marca de Sukima-Labs, con dos modos, oscuro (grafito) y claro (marfil), y un selector «Automático, Claro u Oscuro» que se guarda solo en el navegador. El cian de la marca será el acento y el dorado quedará para datos y destacados. Ya se midió el contraste; falta aplicarlo.",
-      "issues": [
-       222,
-       226,
-       228
       ]
      },
      {
