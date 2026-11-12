@@ -234,6 +234,19 @@ los componentes: **0 incumplimientos** es la regla.
 
 ---
 
+## 3b. Idioma de los textos (español)
+
+- **Español neutro de Latinoamérica, tuteando** («Escribe lo que buscas», «Puedes…»). El público principal es
+  latinoamericano (Colombia y la región). Nada de «vosotros» ni de giros de España.
+- Palabras: **celular** (no «móvil»), **computador** (no «ordenador»), **agregar** (no «añadir») cuando se nombra un botón
+  del teléfono.
+- **Botones y menús de un celular o de un navegador:** se escribe lo que la persona ve en su pantalla con el teléfono en
+  español de Latinoamérica; si el nombre cambia según la versión, se dan las dos formas o se avisa («según el celular, el
+  nombre cambia un poco»).
+- **Texto literal de la ONU** (tratados, resoluciones, observaciones): la versión oficial en español de la ONU, nunca una
+  traducción propia. Si solo existe en inglés, se cita en inglés y se dice que no hay versión oficial en español.
+- Para todo público y cualquier edad: frases cortas, primero lo que se hace y luego el detalle.
+
 ## 4. Sí y no
 
 | Sí | No |
