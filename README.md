@@ -36,6 +36,7 @@ Dos veces al día (12:17 y 00:17 hora de España en invierno; 13:17 y 01:17 en v
 
 ## Abrir
 Abrir `index.html` en cualquier navegador (también sin conexión: los datos van en `data/atlas-data.js` y `data/atlas-actos.js`).
+La web publicada también se puede **instalar** en el celular o el computador («Añadir a la pantalla de inicio» o «Instalar») y abrir sin conexión con los datos de la última visita: un *service worker* «primero la red» (`sw.js`) siempre trae lo último cuando hay red y solo usa la copia guardada cuando no la hay, con el aviso «Sin conexión: datos del …» (ver [`docs/RENDIMIENTO.md`](docs/RENDIMIENTO.md)).
 **Web pública:** https://sukimalabs.com/atlasonu/ (si alguna vez se despublica, para volver a publicarla: Settings → Pages → *Build and deployment* → Source: **Deploy from a branch** → Branch: `main`, carpeta `/ (root)` → Save; tarda ~1 minuto).
 
 ## Estructura
@@ -44,7 +45,7 @@ Abrir `index.html` en cualquier navegador (también sin conexión: los datos van
 | `index.html` | Aplicación |
 | `data/` | `catalogo.json`, `atlas-data.js` y `atlas-actos.js` (generados), `fuentes/` (descargas oficiales y verificación), `evidencias.json`, Excel del piloto, `conflictos.js` (capa del mapa, de UCDP), `mapa.js` (contornos de países para el mapa, generados por `scripts/generar_mapa.py`) |
 | `scripts/` | Descarga, normalización, verificación y construcción (`actualizar_datos.sh` ejecuta todo) |
-| `tests/` | `smoke.cjs` (139 pruebas de lógica, `invariantes.cjs`: 12) y `browser.cjs` (Chromium real, 280 comprobaciones, escritorio y móvil desde 320 px); `movil_real.cjs` emula tres teléfonos contra la web publicada y la búsqueda real (Actions → «Celular», cada lunes) |
+| `tests/` | `smoke.cjs` (139 pruebas de lógica, `invariantes.cjs`: 12) y `browser.cjs` (Chromium real, 280 comprobaciones, escritorio y móvil desde 320 px); `pwa.cjs` comprueba la web instalable y el uso sin conexión; `movil_real.cjs` emula tres teléfonos contra la web publicada y la búsqueda real (Actions → «Celular», cada lunes) |
 | `audit/` | Auditoría contra los 13 requisitos, discrepancias respecto a v0.6, inventario, manifiesto de integridad |
 | `docs/` | Traspaso original |
 | `marketing/` | Módulo de marketing y promoción: análisis, plan, mensajes, canales, kit de prensa, borradores y medición ([`marketing/README.md`](marketing/README.md)) |
