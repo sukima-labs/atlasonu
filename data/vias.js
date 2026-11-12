@@ -860,5 +860,162 @@ window.ATLAS_VIAS={
     }
    ]
   }
+ ],
+ "guias": [
+  {
+   "id": "fs7",
+   "titulo": "Folleto informativo n.º 7 Rev.2: Procedimientos para presentar denuncias individuales en virtud de tratados de derechos humanos de las Naciones Unidas",
+   "autor": "ACNUDH (Naciones Unidas)",
+   "tipo": "oficial",
+   "anio": "2013",
+   "idioma": "es",
+   "paginas": 54,
+   "url": "https://digitallibrary.un.org/record/750621",
+   "leida": "2026-11-12",
+   "nota": "La ficha oficial de la ONU. Trae un formulario modelo de denuncia. Es de 2013: los reglamentos de los comités pueden haber cambiado desde entonces.",
+   "contraste": [
+    {
+     "dato": "Plazo de la Discriminación Racial",
+     "guia": "6 meses desde el fallo definitivo",
+     "hoy": "6 meses (art. 14.5 de la Convención)",
+     "estado": "coincide"
+    },
+    {
+     "dato": "Plazo de Derechos Económicos, Sociales y Culturales y de Derechos del Niño",
+     "guia": "1 año desde el agotamiento de los recursos internos",
+     "hoy": "1 año (sus protocolos)",
+     "estado": "coincide"
+    },
+    {
+     "dato": "Quejas ante el Comité de Trabajadores Migratorios",
+     "guia": "Todavía no ha entrado en vigor",
+     "hoy": "Sigue sin funcionar: 6 de las 10 declaraciones necesarias",
+     "estado": "coincide"
+    }
+   ]
+  },
+  {
+   "id": "flac",
+   "titulo": "A guide for taking individual complaints to UN Human Rights Treaty Bodies",
+   "autor": "FLAC (Free Legal Advice Centres, Irlanda)",
+   "tipo": "tercero",
+   "anio": "2016",
+   "idioma": "en",
+   "paginas": 8,
+   "url": "https://www.flac.ie/download/pdf/guide_for_taking_individual_complaints_to_un_treaty_bodies.pdf",
+   "leida": "2026-11-12",
+   "nota": "Guía breve pensada para Irlanda.",
+   "contraste": [
+    {
+     "dato": "Comités que reciben quejas individuales",
+     "guia": "Ocho",
+     "hoy": "Ocho (el de Trabajadores Migratorios aún no funciona)",
+     "estado": "coincide"
+    },
+    {
+     "dato": "Plazo de la Discriminación Racial",
+     "guia": "6 meses desde la decisión final nacional",
+     "hoy": "6 meses (art. 14.5)",
+     "estado": "coincide"
+    },
+    {
+     "dato": "Declaraciones que faltan para que funcione la queja ante el Comité de Trabajadores Migratorios",
+     "guia": "Faltan 6 (había 4)",
+     "hoy": "Faltan 4 (hay 6)",
+     "estado": "cambió"
+    }
+   ]
+  },
+  {
+   "id": "idhc",
+   "titulo": "Guía para la presentación de denuncias ante los comités de Naciones Unidas",
+   "autor": "IDHC (Institut de Drets Humans de Catalunya)",
+   "tipo": "tercero",
+   "anio": "2021",
+   "idioma": "es",
+   "paginas": 49,
+   "url": "https://idhc.org/wp-content/uploads/GuiaDenunciasONU.pdf",
+   "leida": "2026-11-12",
+   "nota": "El año es el del fichero PDF; la guía no lo dice en sus primeras páginas.",
+   "contraste": [
+    {
+     "dato": "Comités que reciben quejas individuales",
+     "guia": "Ocho",
+     "hoy": "Ocho",
+     "estado": "coincide"
+    },
+    {
+     "dato": "Plazo de la Discriminación Racial",
+     "guia": "6 meses desde el agotamiento de los recursos internos",
+     "hoy": "6 meses (art. 14.5)",
+     "estado": "coincide"
+    }
+   ]
+  },
+  {
+   "id": "paraguay",
+   "titulo": "¿Cómo presentar una queja ante la ONU? Guía práctica para presentar comunicaciones ante los mecanismos de protección de la ONU",
+   "autor": "Oficina del ACNUDH en Paraguay",
+   "tipo": "oficina",
+   "anio": "2012",
+   "idioma": "es",
+   "paginas": 67,
+   "url": "https://acnudh.org/wp-content/uploads/2019/07/013-Gu%C3%ADa-Pr%C3%A1ctica-para-Presentar-Comunicaciones-ante-los-Mecanismos-de-Protecci%C3%B3n-de-la-ONU.pdf",
+   "leida": "2026-11-12",
+   "nota": "Incluye los relatores (procedimientos especiales). El año es el del fichero PDF.",
+   "contraste": [
+    {
+     "dato": "Quejas ante el Comité de Trabajadores Migratorios",
+     "guia": "Aún no ha entrado en vigor",
+     "hoy": "Sigue sin funcionar: 6 de las 10 declaraciones necesarias",
+     "estado": "coincide"
+    }
+   ]
+  },
+  {
+   "id": "ishr",
+   "titulo": "Guía para la intervención de terceras partes ante los órganos de tratados de la ONU",
+   "autor": "ISHR (International Service for Human Rights)",
+   "tipo": "tercero",
+   "anio": "2022",
+   "idioma": "es",
+   "paginas": 71,
+   "url": "https://ishr.ch/wp-content/uploads/2022/03/ISHR_TPIguide_esp_A5_online.pdf",
+   "leida": "2026-11-12",
+   "nota": "Trata de las intervenciones de terceros (por ejemplo, una ONG que aporta un escrito), pero su primer capítulo explica las quejas individuales.",
+   "contraste": [
+    {
+     "dato": "Comités que reciben quejas individuales",
+     "guia": "Ocho; el de Trabajadores Migratorios aún no",
+     "hoy": "Igual",
+     "estado": "coincide"
+    },
+    {
+     "dato": "Plazos",
+     "guia": "Discriminación Racial 6 meses; Derechos Económicos, Sociales y Culturales y Derechos del Niño 1 año",
+     "hoy": "Igual",
+     "estado": "coincide"
+    },
+    {
+     "dato": "Plazo del Comité de Derechos Humanos",
+     "guia": "5 años (lo dice su reglamento)",
+     "hoy": "ATLAS aún no ha leído el reglamento",
+     "estado": "por verificar"
+    }
+   ]
+  },
+  {
+   "id": "mexico",
+   "titulo": "¿Cómo presentar una queja ante la ONU? (2.ª edición)",
+   "autor": "Oficina del ACNUDH en México",
+   "tipo": "oficina",
+   "anio": "",
+   "idioma": "es",
+   "paginas": 0,
+   "url": "https://hchr.org.mx/wp/wp-content/themes/hchr/images/doc_pub/ComoPresentarQueja_ONU_2daedicion.pdf",
+   "leida": "",
+   "nota": "Sin leer: su web no respondió a la descarga automática (12-11-2026).",
+   "contraste": []
+  }
  ]
 };

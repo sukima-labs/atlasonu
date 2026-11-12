@@ -1677,5 +1677,18 @@ window.ATLAS_IDIOMA_fr={
 "Ver todos sus requisitos":"Voir toutes ses conditions",
 "También están los relatores y grupos de trabajo de la ONU (procedimientos especiales): no piden ir antes a los tribunales ni que el Estado haya aceptado un tratado. Sus requisitos aún están por verificar y por eso no entran en este resumen. <b>No es asesoría legal:</b> busca el apoyo de una organización de derechos humanos.":"Il y a aussi les rapporteurs et groupes de travail de l'ONU (procédures spéciales) : ils n'exigent ni d'avoir saisi les tribunaux ni que l'État ait accepté un traité. Leurs conditions restent à vérifier et ne figurent donc pas dans ce résumé. <b>Ce n'est pas un conseil juridique :</b> cherchez l'appui d'une organisation de défense des droits humains.",
 "¿Tienes un caso de derechos humanos? Mira a qué vía de la ONU acudir":"Vous avez un cas de droits humains ? Voyez à quelle voie de l'ONU vous adresser",
-"Tengo un caso en este país: ¿adónde acudo?":"J'ai un cas dans ce pays : où m'adresser ?"
+"Tengo un caso en este país: ¿adónde acudo?":"J'ai un cas dans ce pays : où m'adresser ?",
+"Guías y manuales":"Guides et manuels",
+"Guías de la ONU y de otras organizaciones para presentar una queja. Sirven para orientarse, pero <b>no son la fuente de ATLAS</b>: cada cifra que dan se compara aquí con el texto oficial, y se dice si ya no vale.":"Guides de l'ONU et d'autres organisations pour présenter une plainte. Ils aident à s'orienter, mais <b>ne sont pas la source d'ATLAS</b> : chaque chiffre qu'ils donnent est comparé ici au texte officiel, et l'on indique s'il n'est plus valable.",
+"Oficial de la ONU":"Officiel de l'ONU",
+"Oficina del ACNUDH en un país":"Bureau du HCDH dans un pays",
+"Otra organización":"Autre organisation",
+"Coincide":"Concorde",
+"Ya no vale":"N'est plus valable",
+"La guía dice:":"Le guide dit :",
+"Hoy:":"Aujourd'hui :",
+"español":"espagnol",
+"inglés":"anglais",
+"{n} páginas":"{n} pages",
+"Las guías y qué cifras ya no valen":"Les guides et les chiffres qui ne sont plus valables"
 };

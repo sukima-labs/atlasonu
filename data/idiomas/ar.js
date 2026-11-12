@@ -1677,5 +1677,18 @@ window.ATLAS_IDIOMA_ar={
 "Ver todos sus requisitos":"عرض جميع شروطه",
 "También están los relatores y grupos de trabajo de la ONU (procedimientos especiales): no piden ir antes a los tribunales ni que el Estado haya aceptado un tratado. Sus requisitos aún están por verificar y por eso no entran en este resumen. <b>No es asesoría legal:</b> busca el apoyo de una organización de derechos humanos.":"هناك أيضًا المقررون والأفرقة العاملة التابعة للأمم المتحدة (الإجراءات الخاصة): لا يشترطون اللجوء إلى المحاكم أولاً ولا أن تكون الدولة قد قبلت معاهدة. شروطهم لا تزال قيد التحقق ولذلك لا ترد في هذا الملخص. <b>هذه ليست استشارة قانونية:</b> اطلب دعم منظمة لحقوق الإنسان.",
 "¿Tienes un caso de derechos humanos? Mira a qué vía de la ONU acudir":"هل لديك حالة تتعلق بحقوق الإنسان؟ اعرف إلى أي سبيل في الأمم المتحدة تلجأ",
-"Tengo un caso en este país: ¿adónde acudo?":"لدي حالة في هذا البلد: إلى أين ألجأ؟"
+"Tengo un caso en este país: ¿adónde acudo?":"لدي حالة في هذا البلد: إلى أين ألجأ؟",
+"Guías y manuales":"الأدلة والكتيبات",
+"Guías de la ONU y de otras organizaciones para presentar una queja. Sirven para orientarse, pero <b>no son la fuente de ATLAS</b>: cada cifra que dan se compara aquí con el texto oficial, y se dice si ya no vale.":"أدلة من الأمم المتحدة ومنظمات أخرى لتقديم شكوى. تساعد على التوجيه، لكنها <b>ليست مصدر ATLAS</b>: كل رقم تذكره يُقارن هنا بالنص الرسمي، ويُذكر إن لم يعد صالحًا.",
+"Oficial de la ONU":"رسمي من الأمم المتحدة",
+"Oficina del ACNUDH en un país":"مكتب قطري للمفوضية",
+"Otra organización":"منظمة أخرى",
+"Coincide":"مطابق",
+"Ya no vale":"لم يعد صالحًا",
+"La guía dice:":"يقول الدليل:",
+"Hoy:":"اليوم:",
+"español":"الإسبانية",
+"inglés":"الإنجليزية",
+"{n} páginas":"{n} صفحة",
+"Las guías y qué cifras ya no valen":"الأدلة والأرقام التي لم تعد صالحة"
 };
