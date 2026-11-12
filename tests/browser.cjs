@@ -638,12 +638,36 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     const p2 = await c2.newPage();
     await p2.goto(URL); await p2.waitForTimeout(400);
     const caja = await p2.locator('.appbar .tema-cel').boundingBox();
-    ok('modo de color (#228): en el celular el selector está en la barra superior, con 44 px y sin desbordar', !!caja && caja.width >= 44 && caja.height >= 44 && await p2.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1 && document.getElementById('temaCel').getAttribute('aria-label') === 'Modo de color'));
+    ok('modo de color (#228): en el celular el selector está en la barra superior, con 44 px', !!caja && caja.width >= 44 && caja.height >= 44 && await p2.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1 && document.getElementById('temaCel').getAttribute('aria-label') === 'Modo de color'));
     await p2.selectOption('#temaCel', 'light'); await p2.waitForTimeout(100);
     await p2.reload(); await p2.waitForTimeout(400);
     t = await tema(p2);
     ok('modo de color (#228): en el celular, «Claro» se elige arriba y sigue después de recargar', t.t === 'light' && t.e === 'light' && await p2.evaluate(() => document.getElementById('temaCel').value === 'light'));
     await c2.close();
+    // Barra superior estrecha: ningún control se encoge ni se sale. «Menú» (si se ve) queda dentro de su botón, y la marca, el selector de modo
+    // y el de idioma no se pisan entre sí ni salen de la pantalla (la marca solo puede ocultarse por debajo de 340 px). scrollWidth no basta: overflow-x:hidden y el desborde a la izquierda en árabe lo esconden.
+    for (const ln of ['es', 'ar']) {
+      for (const ancho of [320, 360, 390, 412]) {
+        const cb = await browser.newContext({ viewport: { width: ancho, height: 800 }, hasTouch: true, isMobile: true });
+        await cb.addInitScript(l => { try { localStorage.setItem('atlas_idioma', l); } catch (e) {} }, ln);
+        const pb = await cb.newPage();
+        await pb.goto(URL); await pb.waitForTimeout(400);
+        const fallo = await pb.evaluate(() => {
+          const rc = e => { const r = document.createRange(); r.selectNodeContents(e); return r.getBoundingClientRect(); };
+          const caja = s => { const e = document.querySelector(s); return e && e.getClientRects().length ? e.getBoundingClientRect() : null; };
+          const cruza = (a, b) => a.left < b.right - 0.5 && b.left < a.right - 0.5;
+          const bt = document.querySelector('.burger-t'), burger = caja('.burger');
+          const ab = document.querySelector('.appbrand'); const partes = { marca: getComputedStyle(ab).display === 'none' ? (innerWidth <= 340 ? undefined : null) : rc(ab), modo: caja('.appbar .tema-cel'), idioma: caja('.appbar .idioma'), menu: burger };
+          const err = [];
+          if (bt && getComputedStyle(bt).display !== 'none') { const t = rc(bt); if (t.left < burger.left || t.right > burger.right) err.push('«Menú» fuera de su botón'); if (partes.marca && cruza(t, partes.marca)) err.push('«Menú» pisa la marca'); }
+          for (const [k, r] of Object.entries(partes)) { if (r === undefined) continue; if (!r) { err.push('falta ' + k); continue; } if (r.left < -0.5 || r.right > innerWidth + 0.5) err.push(k + ' sale de la pantalla'); }
+          const ks = Object.keys(partes); for (let i = 0; i < ks.length; i++) for (let j = i + 1; j < ks.length; j++) if (partes[ks[i]] && partes[ks[j]] && cruza(partes[ks[i]], partes[ks[j]])) err.push(ks[i] + ' pisa ' + ks[j]);
+          return err.join(', ');
+        });
+        ok(`barra superior (#228) a ${ancho} px en ${ln}: menú, marca, modo de color e idioma sin pisarse ni salir de la pantalla${fallo ? ' → ' + fallo : ''}`, !fallo);
+        await cb.close();
+      }
+    }
     // sin almacenamiento (navegador que lo bloquea): funciona igual, sin errores
     const c3 = await browser.newContext({ viewport: { width: 1366, height: 800 }, colorScheme: 'light' });
     await c3.addInitScript(() => { Object.defineProperty(window, 'localStorage', { get() { throw new Error('bloqueado'); } }); });

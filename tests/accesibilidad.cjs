@@ -38,7 +38,8 @@ const CASOS = [
       for (const modo of MODOS) {
         await p.evaluate(m => { atlasTema(m); }, modo);
         if (await p.evaluate(() => document.documentElement.dataset.theme) !== modo) { fallos++; console.log(`✗ ${c.idioma} ${c.ancho}px #${id}: no se pudo poner el modo ${modo}`); }
-        await p.waitForTimeout(80);
+        // Dos fotogramas tras el cambio de modo. Ningún color ni fondo lleva transición (solo transform, borde y sombra): si se añadiera una, axe podría medir a medias.
+        await p.evaluate(() => new Promise(r => requestAnimationFrame(() => requestAnimationFrame(r))));
         const v = await p.evaluate(async r => (await axe.run(document, { runOnly: r })).violations
           .map(x => ({ id: x.id, n: x.nodes.length, ej: x.nodes[0].target.join(' ') })), REGLAS);
         for (const x of v) {
@@ -56,7 +57,33 @@ const CASOS = [
         }
       }
     }
-    console.log(`${c.idioma} ${c.ancho}px: ${pantallas.length} pantallas revisadas en modo oscuro y claro`);
+    // Gráfica de votos de un país (barras y marcas de hitos) y logotipo de Sukima: axe no mide el SVG, así que se comprueba aparte.
+    await p.evaluate(() => irPais('COL'));
+    await p.waitForFunction(() => document.querySelector('#pVotos svg'), null, { timeout: 8000 }).catch(() => { fallos++; console.log(`✗ ${c.idioma} ${c.ancho}px: no apareció la gráfica de votos de Colombia`); });
+    for (const vista of ['barras', 'linea']) {
+    await p.evaluate(v => votosCambia(v), vista);
+    await p.waitForTimeout(500);
+    for (const modo of MODOS) {
+      await p.evaluate(m => { atlasTema(m); }, modo);
+      await p.evaluate(() => new Promise(r => requestAnimationFrame(() => requestAnimationFrame(r))));
+      const v = await p.evaluate(async r => (await axe.run(document, { runOnly: r })).violations.map(x => ({ id: x.id, n: x.nodes.length, ej: x.nodes[0].target.join(' ') })), REGLAS);
+      for (const x of v) { fallos += x.n; console.log(`✗ ${c.idioma} ${c.ancho}px ${modo} país COL votos ${vista}: ${x.id} (${x.n}) p. ej. ${x.ej}`); }
+      const malos = await p.evaluate(() => {
+        const rgb = t => { const m = t.match(/[\d.]+/g); return m ? m.slice(0, 4).map(Number) : null; };
+        const lum = c => { const f = v => { v /= 255; return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4); }; return 0.2126 * f(c[0]) + 0.7152 * f(c[1]) + 0.0722 * f(c[2]); };
+        const ratio = (a, b) => { const x = lum(a), y = lum(b); return (Math.max(x, y) + 0.05) / (Math.min(x, y) + 0.05); };
+        const fondo = e => { for (let n = e.parentElement; n; n = n.parentElement) { const c = rgb(getComputedStyle(n).backgroundColor); if (c && (c.length < 4 || c[3] > 0.5)) return c; } return rgb(getComputedStyle(document.body).backgroundColor); };
+        const out = [];
+        // Logotipo de Sukima (menú lateral y pie): objeto gráfico que es todo el contenido de un enlace, 3:1 como mínimo
+        document.querySelectorAll('.isotipo-sk').forEach(e => { const r = ratio(rgb(getComputedStyle(e).fill), fondo(e)); if (r < 3) out.push('logotipo ' + r.toFixed(2)); });
+        // Texto de las marcas de hitos (A, B, C) de la gráfica de votos: 4,5:1
+        document.querySelectorAll('#pVotos svg text').forEach(e => { if (!/grafica-marca/.test(e.getAttribute('style') || '')) return; const r = ratio(rgb(getComputedStyle(e).fill), fondo(e)); if (r < 4.5) out.push('hito ' + e.textContent + ' ' + r.toFixed(2)); });
+        return out;
+      });
+      for (const x of malos) { fallos++; console.log(`✗ ${c.idioma} ${c.ancho}px ${modo} votos ${vista}: contraste bajo, ${x}`); }
+    }
+    }
+    console.log(`${c.idioma} ${c.ancho}px: ${pantallas.length} pantallas y la gráfica de votos revisadas en modo oscuro y claro`);
     await ctx.close();
   }
   await b.close();
