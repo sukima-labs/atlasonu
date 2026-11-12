@@ -13,7 +13,8 @@ jobs:
       - name: Armar el sitio (solo lo necesario)
         run: |
           mkdir -p _site/data
-          cp index.html _site/
+          cp index.html sw.js manifest.webmanifest _site/
+          cp -r assets _site/
           cp data/atlas-data.js data/atlas-actos.js data/catalogo.json data/atlas-onu-catalogo-v07.xlsx _site/data/
           touch _site/.nojekyll
       - uses: actions/configure-pages@v5
