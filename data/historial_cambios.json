@@ -1,5 +1,14 @@
 [
  {
+  "fecha": "2026-11-12",
+  "cambios": [
+   {
+    "tipo": "visita",
+    "texto": "Australia: visita ya no figura como programada"
+   }
+  ]
+ },
+ {
   "fecha": "2026-11-11",
   "cambios": [
    {
