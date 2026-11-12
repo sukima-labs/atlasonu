@@ -1,0 +1,154 @@
+// Fase 6 del plan de diseño (#228) · Web instalable (PWA) con service worker «primero la red».
+// Sirve el repositorio por http://localhost bajo /atlasonu/ (como GitHub Pages) con un servidor mínimo y comprueba:
+//  1. el manifest es válido y sus iconos cargan con el tamaño que declaran;
+//  2. el service worker se registra y controla la página;
+//  3. sin red, al recargar se ve la portada con el aviso «Sin conexión: datos del …»;
+//  4. con red otra vez, al recargar llega lo NUEVO del servidor (la página y los datos), no la copia: primero la red;
+//  5. no se guarda la búsqueda en vivo ni nada de otro dominio, y la copia no se multiplica por el «?v=…»;
+//  6. el arranque del celular en «sitio de computador» (marco de la línea 5 de index.html) sigue funcionando, también sin red.
+// Uso: npm i --no-save playwright && node tests/pwa.cjs
+const { chromium } = require('playwright');
+const http = require('http');
+const fs = require('fs');
+const path = require('path');
+
+const RAIZ = path.resolve(__dirname, '..');
+const BASE = '/atlasonu/';
+const TIPOS = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.json': 'application/json',
+  '.webmanifest': 'application/manifest+json', '.png': 'image/png', '.svg': 'image/svg+xml', '.ico': 'image/x-icon',
+  '.woff2': 'font/woff2', '.css': 'text/css', '.txt': 'text/plain; charset=utf-8', '.atom': 'application/atom+xml' };
+let version = 'v1'; // lo que «publica» el servidor; la prueba lo cambia para ver si llega lo nuevo
+
+const servidor = http.createServer((req, res) => {
+  const u = new URL(req.url, 'http://localhost');
+  if (!u.pathname.startsWith(BASE)) { res.writeHead(302, { location: BASE }); return res.end(); }
+  let rel = decodeURIComponent(u.pathname.slice(BASE.length)) || 'index.html';
+  const f = path.resolve(RAIZ, rel);
+  if (!f.startsWith(RAIZ + path.sep) || f.includes(`${path.sep}node_modules${path.sep}`) || !fs.existsSync(f) || !fs.statSync(f).isFile()) {
+    res.writeHead(404); return res.end('no');
+  }
+  let cuerpo = fs.readFileSync(f);
+  if (rel === 'index.html') cuerpo = Buffer.from(cuerpo.toString().replace('<meta charset="UTF-8">', `<meta charset="UTF-8"><meta name="atlas-prueba" content="${version}">`));
+  if (rel === 'data/atlas-data.js') cuerpo = Buffer.concat([cuerpo, Buffer.from(`\n;window.__pruebaDatos=${JSON.stringify(version)};`)]);
+  res.writeHead(200, { 'content-type': TIPOS[path.extname(f)] || 'application/octet-stream', 'cache-control': 'no-cache' });
+  res.end(cuerpo);
+});
+
+let fallos = 0;
+const ok = (n, c, extra) => { console.log(`${c ? '✓' : '✗'} ${n}${!c && extra ? ' · ' + extra : ''}`); if (!c) fallos++; };
+const pngTam = b => b.length > 24 && b.readUInt32BE(0) === 0x89504e47 ? [b.readUInt32BE(16), b.readUInt32BE(20)] : null;
+
+async function preparar(ctx) {
+  // La búsqueda en vivo nunca se llama de verdad en las pruebas.
+  await ctx.route(/sk-atlas\.pig-mimosa/, r => r.fulfill({ status: 200, contentType: 'application/json',
+    headers: { 'access-control-allow-origin': '*' }, body: '{"resultados":[]}' }));
+}
+const lista = (pg, t = 15000) => pg.waitForFunction(() => window.__atlasListo === true, null, { timeout: t });
+const controlada = pg => pg.waitForFunction(() => !!(navigator.serviceWorker && navigator.serviceWorker.controller), null, { timeout: 15000 });
+
+(async () => {
+  await new Promise(r => servidor.listen(0, '127.0.0.1', r));
+  const ORIGEN = `http://localhost:${servidor.address().port}`;
+  const URL0 = ORIGEN + BASE;
+  const b = await chromium.launch();
+  try {
+    // 1 · Manifest e iconos
+    const ctx = await b.newContext({ viewport: { width: 1280, height: 900 } });
+    await preparar(ctx);
+    const pg = await ctx.newPage();
+    const errores = [];
+    pg.on('pageerror', e => errores.push(String(e)));
+    await pg.goto(URL0);
+    await lista(pg);
+    const href = await pg.evaluate(() => { const l = document.querySelector('link[rel="manifest"]'); return l && l.href; });
+    ok('la página enlaza el manifest con una ruta relativa', !!href && href === URL0 + 'manifest.webmanifest', href);
+    const rm = await ctx.request.get(href);
+    let m = {};
+    try { m = await rm.json(); } catch (e) { /* lo marca la siguiente comprobación */ }
+    ok('el manifest se sirve y es JSON válido', rm.ok() && !!m.name);
+    ok('manifest: nombre, idioma y modo', m.name === 'ATLAS ONU' && m.short_name === 'ATLAS ONU' && m.lang === 'es' && m.display === 'standalone',
+      JSON.stringify({ n: m.name, s: m.short_name, l: m.lang, d: m.display }));
+    ok('manifest: start_url y scope relativos (funcionan bajo /atlasonu/)', m.start_url === './' && m.scope === './');
+    ok('manifest: colores grafito de la marca', /^#10131c$/i.test(m.background_color || '') && /^#10131c$/i.test(m.theme_color || ''));
+    const iconos = m.icons || [];
+    const quiere = [['192x192', 'any'], ['512x512', 'any'], ['512x512', 'maskable']];
+    for (const [tam, uso] of quiere) {
+      const i = iconos.find(x => x.sizes === tam && (x.purpose || 'any').split(' ').includes(uso));
+      if (!i) { ok(`icono ${tam} ${uso} declarado`, false); continue; }
+      const r = await ctx.request.get(new URL(i.src, href).href);
+      const t = r.ok() ? pngTam(await r.body()) : null;
+      ok(`icono ${tam} ${uso} carga y mide lo que dice`, !!t && `${t[0]}x${t[1]}` === tam && i.type === 'image/png', `${i.src} → ${t}`);
+    }
+    ok('meta para iOS: apple-touch-icon y apple-mobile-web-app-*', await pg.evaluate(() => !!document.querySelector('link[rel="apple-touch-icon"]') &&
+      document.querySelector('meta[name="apple-mobile-web-app-capable"]')?.content === 'yes' &&
+      document.querySelector('meta[name="apple-mobile-web-app-title"]')?.content === 'ATLAS ONU'));
+
+    // 2 · Service worker
+    await controlada(pg);
+    const sw = await pg.evaluate(async () => { const r = await navigator.serviceWorker.ready; return { scope: r.scope, url: r.active && r.active.scriptURL }; });
+    ok('el service worker se registra con el alcance de la web', sw.scope === URL0 && sw.url === URL0 + 'sw.js', JSON.stringify(sw));
+    ok('con red no hay aviso de «sin conexión»', await pg.isHidden('#sinRed'));
+    // Visita normal ya controlada (guarda la copia de lo que usa la portada) y una búsqueda (no debe guardarse).
+    await pg.reload(); await lista(pg);
+    await pg.evaluate(() => fetch('https://sk-atlas.pig-mimosa.ts.net/buscar?q=agua').catch(() => {}));
+    await pg.waitForTimeout(500);
+    const claves = await pg.evaluate(async () => { const c = await caches.open('atlas-onu-v1'); return (await c.keys()).map(r => r.url); });
+    ok('la copia guarda la página y los datos', claves.includes(URL0) && claves.includes(URL0 + 'data/atlas-data.js'), claves.slice(0, 8).join(' '));
+    ok('nada de otro dominio en la copia (ni la búsqueda en vivo)', claves.every(u => u.startsWith(ORIGEN)), claves.filter(u => !u.startsWith(ORIGEN)).join(' '));
+    ok('la copia no se multiplica por el «?v=…» de los datos', claves.every(u => !u.includes('?')), claves.filter(u => u.includes('?')).join(' '));
+
+    // Abrir un archivo de descarga (navegación a un JSON) no puede pisar la copia de la página ni guardarse.
+    await pg.goto(URL0 + 'data/catalogo.json');
+    await pg.goto(URL0); await lista(pg);
+    const tras = await pg.evaluate(async () => { const c = await caches.open('atlas-onu-v1'); const r = await c.match(new URL('./', location.href).href);
+      return { html: !!r && /^<!DOCTYPE html>/i.test((await r.text()).trim()), json: !!(await c.match(new URL('data/catalogo.json', location.href).href)) }; });
+    ok('abrir una descarga no pisa la copia de la página ni se guarda', tras.html && !tras.json, JSON.stringify(tras));
+
+    // 3 · Sin red
+    await ctx.setOffline(true);
+    await pg.reload(); await lista(pg);
+    const sinRed = await pg.evaluate(() => ({ v: document.querySelector('meta[name="atlas-prueba"]')?.content, d: window.__pruebaDatos,
+      aviso: !document.getElementById('sinRed').hidden, txt: document.getElementById('sinRed').textContent, inicio: document.getElementById('inicio')?.classList.contains('visible') }));
+    ok('sin red, la portada se abre desde la copia', sinRed.inicio && sinRed.v === 'v1' && sinRed.d === 'v1', JSON.stringify(sinRed));
+    ok('sin red, aviso «Sin conexión: datos del <fecha>»', sinRed.aviso && /Sin conexión: datos del \d{4}-\d\d-\d\d\./.test(sinRed.txt), sinRed.txt);
+    await pg.screenshot({ path: process.env.PWA_CAPTURA || path.join(require('os').tmpdir(), 'atlas-pwa-sin-red.png') }).catch(() => {});
+
+    // 4 · Con red otra vez y una versión nueva publicada: debe llegar la nueva, no la copia
+    version = 'v2';
+    await ctx.setOffline(false);
+    await pg.reload(); await lista(pg);
+    const conRed = await pg.evaluate(() => ({ v: document.querySelector('meta[name="atlas-prueba"]')?.content, d: window.__pruebaDatos, aviso: !document.getElementById('sinRed').hidden }));
+    ok('con red, llega la página nueva (primero la red)', conRed.v === 'v2', JSON.stringify(conRed));
+    ok('con red, llegan los datos nuevos', conRed.d === 'v2', JSON.stringify(conRed));
+    ok('con red, sin aviso', !conRed.aviso);
+    // Y la copia queda al día para la próxima vez sin red.
+    await ctx.setOffline(true);
+    await pg.reload(); await lista(pg);
+    ok('la copia se actualizó con lo nuevo', (await pg.evaluate(() => window.__pruebaDatos)) === 'v2');
+    await ctx.setOffline(false);
+    ok('sin errores de JavaScript', errores.length === 0, errores.slice(0, 3).join(' | '));
+    await ctx.close();
+
+    // 6 · Celular en «sitio de computador»: la página se abre dentro del marco (#188) y el service worker no lo rompe
+    const cel = await b.newContext({ viewport: { width: 980, height: 1800 }, screen: { width: 412, height: 915 }, hasTouch: true, isMobile: false });
+    await preparar(cel);
+    const pc = await cel.newPage();
+    await pc.goto(URL0);
+    const marco = async () => { await pc.waitForSelector('#marcoMovil', { timeout: 10000 }); const f = await (await pc.$('#marcoMovil')).contentFrame(); await lista(f); return f; };
+    let f = await marco();
+    ok('celular en modo computador: la web se abre en el marco', /[?&]movil=1/.test(f.url()), f.url());
+    await f.waitForFunction(() => !!navigator.serviceWorker.controller, null, { timeout: 15000 });
+    await pc.reload(); f = await marco();
+    await cel.setOffline(true);
+    await pc.reload(); f = await marco();
+    ok('celular en modo computador, sin red: marco y aviso', await f.evaluate(() => !document.getElementById('sinRed').hidden && document.getElementById('inicio').classList.contains('visible')));
+    await cel.close();
+  } catch (e) {
+    ok('la prueba terminó sin excepciones', false, e && e.stack || String(e));
+  } finally {
+    await b.close();
+    servidor.close();
+  }
+  console.log(fallos ? `\n${fallos} fallo(s)` : '\nPWA: todo bien');
+  process.exit(fallos ? 1 : 0);
+})();
