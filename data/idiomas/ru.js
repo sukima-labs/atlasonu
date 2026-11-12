@@ -1,4 +1,5 @@
 window.ATLAS_IDIOMA_ru={
+"Libia":"Ливия",
 "Atlas ONU · Arqueología documental":"Atlas ONU · Документальная археология",
 "Volver arriba":"Наверх",
 "↑ Arriba":"↑ Наверх",
@@ -499,9 +500,9 @@ window.ATLAS_IDIOMA_ru={
 "<b>Órganos de tratados</b><span>{n} comités + Subcomité contra la tortura</span>":"<b>Договорные органы</b><span>{n} комитетов + Подкомитет по предупреждению пыток</span>",
 "Sustituyó en {n} a la Comisión de Derechos Humanos ({n}–{n}). Es un órgano <b>político</b> de Estados, no de expertos: vota resoluciones y crea los mandatos de los procedimientos especiales.":"В {n} году заменил Комиссию по правам человека ({n}–{n}). Это <b>политический</b> орган государств, а не экспертов: он голосует по резолюциям и учреждает мандаты специальных процедур.",
 "Quién lo forma":"Из кого состоит",
-"{n} Estados elegidos por la Asamblea por tres años, repartidos por grupos regionales ({n} África, {n} Asia-Pacífico, {n} América Latina y Caribe, {n} Europa Occidental y otros, {n} Europa Oriental).":"{n} государств, избираемых Ассамблеей на три года и распределяемых по региональным группам ({n} от Африки, {n} от Азии и Тихого океана, {n} от Латинской Америки и Карибского бассейна, {n} от Западной Европы и других государств, {n} от Восточной Европы).",
+"{n} Estados elegidos por la Asamblea en votación secreta y por mayoría absoluta de sus miembros ({n} votos), por tres años y sin reelección inmediata tras dos mandatos seguidos. Se reparten por grupos regionales ({n} África, {n} Asia-Pacífico, {n} América Latina y Caribe, {n} Europa Occidental y otros, {n} Europa Oriental). La Asamblea puede suspender, por dos tercios, a un miembro que cometa violaciones graves y sistemáticas: lo hizo con Libia ({n}) y con Rusia ({n}).":"{n} государств, избираемых Ассамблеей тайным голосованием абсолютным большинством её членов ({n} голосов), на три года, без права немедленного переизбрания после двух сроков подряд. Распределяются по региональным группам ({n} Африка, {n} Азиатско-Тихоокеанский регион, {n} Латинская Америка и Карибский бассейн, {n} Западная Европа и другие, {n} Восточная Европа). Ассамблея может большинством в две трети приостановить членство государства, совершающего грубые и систематические нарушения: так было с Ливией ({n}) и Россией ({n}).",
 "Base jurídica":"Правовая основа",
-"Resolución {n}/{n} de la Asamblea ({n}); instituciones en la resolución {n}/{n} del propio Consejo ({n}).":"Резолюция Ассамблеи {n}/{n} ({n}); институциональное строительство — в резолюции {n}/{n} самого Совета ({n}).",
+"Resolución {n}/{n} de la Asamblea ({n}), párrafos {n} y {n}; instituciones en la resolución {n}/{n} del propio Consejo ({n}): EPU, procedimientos especiales, Comité Asesor y procedimiento de denuncia.":"Резолюция Ассамблеи {n}/{n} ({n}), пункты {n} и {n}; институциональное строительство — в собственной резолюции Совета {n}/{n} ({n}): УПО, специальные процедуры, Консультативный комитет и процедура подачи жалоб.",
 "Qué produce":"Что он выпускает",
 "Resoluciones <code>A/HRC/RES/sesión/n.º</code>. Se reúne al menos tres veces al año.":"Резолюции <code>A/HRC/RES/сессия/№</code>. Собирается не менее трёх раз в год.",
 "Depende de":"Подчиняется",
