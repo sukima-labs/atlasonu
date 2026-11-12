@@ -71,6 +71,29 @@ El material del curso solo orientó; cada dato se leyó en la ONU. Fuente princi
 
 En la web: pestaña «Cómo supervisa» de cada comité (ciclo de informes, alerta temprana, controversias, CMW, ejemplo del CRC), ficha del tratado (depositario y recursos en español: Folleto 30, Índice Universal, panel de ratificaciones y base de datos de órganos de tratados) y línea de tiempo (1993, 2018 y 2025).
 
+## Consejo de Seguridad: contraste del 12-11-2026 (pedido de Jeisson: «muy flojo»)
+Solo fuentes de la ONU; nada del material del curso. La Carta se leyó en `un.org/es/about-us/un-charter` (capítulos V y VII). Las páginas `main.un.org/securitycouncil`, `press.un.org` y `docs.un.org` no se dejaron leer desde el servidor (devuelven una página vacía o solo JavaScript): lo que viene de ellas queda `por verificar` en el original.
+
+| Dato | En palabras simples | Dónde lo dice | Estado |
+|---|---|---|---|
+| 15 miembros, 10 elegidos por 2 años, sin reelección inmediata | | Carta, art. 23 | `leído en el original` |
+| Obligatoriedad | Los Estados miembros aceptan y cumplen sus decisiones | Carta, art. 25 | `leído en el original` |
+| Votación y veto | 9 votos; en lo que no es de procedimiento, con el de los 5 permanentes | Carta, art. 27 | `leído en el original` |
+| Participación de no miembros | Sin voto, si el asunto les afecta o son parte en la controversia | Carta, arts. 31 y 32 | `leído en el original` |
+| Amenaza a la paz, sanciones y fuerza | | Carta, arts. 39, 41 y 42 | `leído en el original` |
+| Reparto regional de los 10 elegidos | 5 África y Asia, 1 Europa Oriental, 2 América Latina y el Caribe, 2 Europa Occidental y otros | `A/RES/1991 (XVIII)` A | `por verificar` en el original |
+| Presidencia mensual por orden alfabético inglés | | Reglamento provisional `S/96/Rev.7`, art. 18 | `por verificar` |
+| Art. 2.7 no impide las medidas del Capítulo VII; art. 103 | | Carta, arts. 2.7 y 103 | `por verificar` en esta lectura (texto conocido de la Carta) |
+| Remisiones a la Corte Penal Internacional | Darfur y Libia | `S/RES/1593 (2005)`, `S/RES/1970 (2011)`; Estatuto de Roma, art. 13 b | `por verificar` |
+| Ombudsperson y Punto Focal | Vías para salir de una lista | `S/RES/1904 (2009)`, `S/RES/1730 (2006)` | `por verificar` |
+| Excepción humanitaria en todas las sanciones | | `S/RES/2664 (2022)` | `por verificar` |
+| Casos Kadi (fuera de la ONU) | El Tribunal de Justicia de la UE anuló la aplicación europea de una lista | Asuntos C-402/05 P y C-415/05 P (2008); C-584/10 P (2013) | `por verificar` en curia.europa.eu |
+| Situaciones por país (12 fichas) | Comités 1718, 1591, 1970, 1533, 2206, 2653, 2713, 2140, 2127 y 1988; Malí (2374, terminado en 2023) y Siria (sin régimen) | Resoluciones citadas en cada ficha | `por verificar` una a una |
+
+**Dos precisiones al pedido:** el Consejo de Seguridad **no remite situaciones al Consejo de Derechos Humanos** (son órganos separados; sí remite a la Corte Penal y crea comisiones de investigación). Y ante el Consejo **no hay *amicus curiae***: ese escrito existe ante la Corte Penal, una vez remitida la situación.
+
+En la web: ficha «Consejo de Seguridad» de la pantalla del sistema ONU, apartado «Consejo de Seguridad» en la ficha de cada país y la opción «¿Y el Consejo de Seguridad?» de la guía «¿Qué quieres conseguir?». Lo `por verificar` no entra en el asistente T76 hasta leerse en el original.
+
 ## Pasos pendientes
 1. Leer los **reglamentos vigentes** de los comités con vía de queja y rellenar las cinco filas `por verificar` de arriba (hace falta una vía legítima al texto: a mano o con la persona revisora).
 2. Verificar a mano, en la página oficial del ACNUDH, los datos que se vieron en un buscador y no en el original: el **portal en línea** de envío a órganos de tratados y el **límite de 10.000 palabras** que citan resúmenes (aún sin comprobar en el original).
