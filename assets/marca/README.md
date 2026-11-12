@@ -16,7 +16,16 @@ antes se retiró (issue #228, opción D). El modo oscuro usa ahora los colores d
 superficies en escalones de grafito, texto marfil `#F5F4F0`, cian `#14C6D4` para enlaces, menú activo y anillo de foco,
 y violeta `#7148F5` **solo** como relleno del botón principal, con letra blanca (5,3:1). El violeta no se usa como texto
 sobre grafito (3,5:1). El ocre y el dorado quedan solo como colores de datos (mapas, gráficas y temas de la historia).
-El título «ATLAS ONU» se mantiene; la palabra «ONU» va en cian. El modo claro (marfil) llega en la fase 3.
+El título «ATLAS ONU» se mantiene; la palabra «ONU» va en cian.
+
+**Modo claro (fase 3) y selector.** Sobre marfil `#F5F4F0` con texto grafito. El cian puro no se usa como texto sobre
+marfil (1,9:1): los enlaces y el acento van en cian oscuro `#0A6E78`, el texto violeta en `#5B35D6` y el ocre de los datos
+en `#7A4E0E`. El botón principal sigue en violeta `#7148F5` con letra blanca. En el menú lateral hay un selector
+**Automático / Claro / Oscuro**: «Automático» sigue al aparato y las otras dos opciones se recuerdan en el navegador.
+
+**Medido al cerrar el plan (fase 8, 12-11-2026).** En los dos modos: 0 incumplimientos de axe-core (WCAG 2.2 A/AA), ningún
+texto de menos de 13 px y ningún control de menos de 44 px fuera del texto corrido en el celular (390 px). La tabla de
+antes y después está en `docs/INFORME_UX.md`; el sistema de componentes, en `docs/DISENO.md`.
 
 **Letra.** `DejaVu Sans`, la de la marca, va incluida en el repositorio (`assets/fonts/`, normal y negrita en woff2, con
 su licencia en `assets/fonts/LICENSE-DejaVu.txt`). Está recortada a latín, griego, cirílico, árabe y los símbolos de la

@@ -48,3 +48,41 @@ Medido con navegador de escritorio emulando 390 px; falta confirmarlo en un Andr
 - **Paso 1 hecho (28-10-2026):** en pantallas de hasta 650 px las seis tablas pasan a tarjetas (`etiquetarTablas()` copia la cabecera en cada celda; el CSS las muestra como «etiqueta: valor»). Ninguna tabla se desplaza ya de lado (366 px en 366). Efecto secundario: las pantallas son más largas (Países 51 → 93, Arqueología 41 → 88, Explorar 22 → 43, Auditoría 47 → 105), así que el **paso 4 (paginar y «↑ Arriba» global) sube a siguiente prioridad**.
 - Para repetir la medición: `node tests/auditar_ux.cjs` o la skill `revisar-ux`.
 - **Paso 4 hecho a medias (28-10-2026):** la lista de Países muestra 20 y «Mostrar 20 más (quedan N)»: pasa de 93 a 11 pantallas de alto; botón global «↑ Arriba» (abajo a la izquierda) en todas las pantallas tras 1,5 pantallas de desplazamiento. **Hecho también (28-10-2026):** Explorar, Arqueología y Auditoría de 20 en 20 (43→17, 88→18 y 105→29 pantallas).
+
+## Cierre del plan de diseño (P9, 12-11-2026, #226)
+
+El plan de `docs/PLAN_DISENO_UX.md` se hizo en nueve PR (fases 0 a 8: #266, #269, #271, #274, #275, #281, #283, #284 y
+el de cierre). Al final se volvió a medir todo con las mismas reglas antes y después, en un celular táctil de 390 × 844 px
+y en las **22 pantallas** del menú. «Antes» es la web publicada justo antes de la fase 0 (11-11-2026, solo modo oscuro);
+«después» es la de hoy, en modo oscuro y en claro.
+
+| Medida (390 px, 22 pantallas) | Antes | Después (oscuro) | Después (claro) | Meta |
+|---|---|---|---|---|
+| Controles de menos de 44 px fuera del texto corrido | 328 | **0** | **0** | 0 |
+| Textos visibles de menos de 13 px | 2.209 | **0** | **0** | 0 |
+| Pantalla más larga (en alturas de pantalla) | 29,9 (Auditoría) | **8,3** (Explorar) | **8,3** | unas 8 |
+| Pantallas de más de 9 alturas | 8 | **0** | **0** | 0 |
+| Desborde lateral | 0 | 0 | 0 | 0 |
+| Incumplimientos de axe-core (WCAG 2.2 A/AA) | 0 | **0** | **0** | 0 |
+| Modo claro | no había | — | sí, con selector | — |
+
+Cómo se cuenta: un control es un botón, enlace, campo, desplegable o pestaña visible; no cuentan los enlaces que van
+dentro de una frase (WCAG 2.5.8 los exime) ni «Saltar al contenido» mientras está escondido. Un texto cuenta si el
+elemento tiene letras propias y su letra mide menos de 13 px. La única excepción a los 13 px está en celulares de menos
+de 341 px de ancho (p. ej. 320 px): la barra inferior baja a 12 px para que «Countries» o «Chercher» quepan.
+
+Arreglos de esta última fase para llegar a cero: la barra inferior a 13 px (estaba en 12,2 px a 390), «Saltar al
+contenido» con 44 px de alto, y los enlaces que van solos en su línea (el de sukimalabs.com en el pie y las fuentes de
+«Cómo leer un código») con 44 px de alto.
+
+**Quién lo vigila desde ahora.** Las metas están en un solo fichero, `tests/metas_ux.cjs`, y las comprueban:
+- `node tests/auditar_ux.cjs --comprobar`, que imprime la tabla pantalla por pantalla y va en la CI;
+- `node tests/browser.cjs`, que repite la medición en modo oscuro y en claro;
+- `node tests/accesibilidad.cjs` (axe 0 en los dos modos), `node tests/impresion.cjs` (cada pantalla se imprime sola, en
+  claro y en ≤ 15 hojas), `node tests/pwa.cjs` y `node tests/componentes.cjs`.
+
+**En celular emulado contra esta versión** (`tests/movil_real.cjs`, Pixel 7, Galaxy S9+ e iPhone 13, abriendo el fichero
+local): 27 de 30 comprobaciones bien. Las 3 que fallan son la búsqueda en vivo, que desde un fichero local no puede llamar
+al servicio; contra la web publicada la prueba se repite en el workflow «Celular».
+
+Capturas de antes y después (escritorio 1440 × 900 y Pixel 7; Inicio, Países y Explorar; oscuro y claro) en el PR de cierre.
