@@ -1,0 +1,454 @@
+{
+ "comite": "CED",
+ "fuente": "Biblioteca Digital de la ONU: \"Report on follow-up to the concluding observations of the Committee on Enforced Disappearances\" / \"Report on follow-up to concluding observations of the Committee on Enforced Disappearances\"",
+ "consultado": "2026-11-12",
+ "informes": 5,
+ "leyenda": {
+  "A": "Reply/action satisfactory: The State Party has provided evidence of significant action taken towards implementing the Committee’s recommendation.",
+  "B": "Reply/action partially satisfactory: The State Party has taken steps towards implementing the recommendation, but additional information or action is necessary.",
+  "C": "Reply/action not satisfactory: The State Party has sent a reply, but the action taken or information provided is not relevant or does not implement the recommendation.",
+  "D": "No reply regarding a recommendation: The State Party has provided no information on implementation of the recommendation.",
+  "E": "Information or measures taken are contrary to or reflect rejection of the Committee’s recommendation: The reply reveals that the measures taken are contrary to or have results or consequences that are contrary to the recommendation of the Committee or reflect rejection of the recommendation.",
+  "informe": "CED/C/28/2"
+ },
+ "evaluaciones": [
+  {
+   "pais": "ARG",
+   "observaciones": "CED/C/ARG/CO/1",
+   "observaciones_fecha": "13 November 2013",
+   "informe": "CED/C/9/2",
+   "informe_fecha": "2015-10-16",
+   "url": "https://digitallibrary.un.org/record/830397",
+   "parrafos": [
+    {
+     "n": 15,
+     "tema": "",
+     "notas": [
+      "B"
+     ]
+    },
+    {
+     "n": 25,
+     "tema": "",
+     "notas": [
+      "C"
+     ]
+    },
+    {
+     "n": 27,
+     "tema": "",
+     "notas": [
+      "B"
+     ]
+    }
+   ]
+  },
+  {
+   "pais": "ARM",
+   "observaciones": "CED/C/ARM/CO/1",
+   "observaciones_fecha": "11 February 2015",
+   "informe": "CED/C/11/2",
+   "informe_fecha": "2016-11-23",
+   "url": "https://digitallibrary.un.org/record/863659",
+   "parrafos": [
+    {
+     "n": 12,
+     "tema": "",
+     "notas": [
+      "B"
+     ]
+    },
+    {
+     "n": 19,
+     "tema": "",
+     "notas": [
+      "B"
+     ]
+    },
+    {
+     "n": 27,
+     "tema": "",
+     "notas": [
+      "B"
+     ]
+    }
+   ]
+  },
+  {
+   "pais": "BEL",
+   "observaciones": "CED/C/BEL/CO/1",
+   "observaciones_fecha": "24 September 2014",
+   "informe": "CED/C/11/2",
+   "informe_fecha": "2016-11-23",
+   "url": "https://digitallibrary.un.org/record/863659",
+   "parrafos": [
+    {
+     "n": 8,
+     "tema": "",
+     "notas": [
+      "B"
+     ]
+    },
+    {
+     "n": 12,
+     "tema": "",
+     "notas": [
+      "B"
+     ]
+    },
+    {
+     "n": 30,
+     "tema": "",
+     "notas": [
+      "B"
+     ]
+    }
+   ]
+  },
+  {
+   "pais": "BRA",
+   "observaciones": "CED/C/BRA/CO/1",
+   "observaciones_fecha": "23 September 2021",
+   "informe": "CED/C/24/2",
+   "informe_fecha": "2023-04-27",
+   "url": "https://digitallibrary.un.org/record/4026862",
+   "parrafos": [
+    {
+     "n": 13,
+     "tema": "statistical information",
+     "notas": [
+      "C"
+     ]
+    },
+    {
+     "n": 15,
+     "tema": "offence of enforced disappearance",
+     "notas": [
+      "C"
+     ]
+    },
+    {
+     "n": 19,
+     "tema": "military jurisdiction",
+     "notas": [
+      "C"
+     ]
+    }
+   ]
+  },
+  {
+   "pais": "DEU",
+   "observaciones": "CED/C/DEU/CO/1",
+   "observaciones_fecha": "27 March 2014",
+   "informe": "CED/C/9/2",
+   "informe_fecha": "2015-10-16",
+   "url": "https://digitallibrary.un.org/record/830397",
+   "parrafos": [
+    {
+     "n": 8,
+     "tema": "",
+     "notas": [
+      "B"
+     ]
+    },
+    {
+     "n": 9,
+     "tema": "",
+     "notas": [
+      "B"
+     ]
+    },
+    {
+     "n": 29,
+     "tema": "",
+     "notas": [
+      "B"
+     ]
+    }
+   ]
+  },
+  {
+   "pais": "ESP",
+   "observaciones": "CED/C/ESP/CO/1",
+   "observaciones_fecha": "13 November 2013",
+   "informe": "CED/C/9/2",
+   "informe_fecha": "2015-10-16",
+   "url": "https://digitallibrary.un.org/record/830397",
+   "parrafos": [
+    {
+     "n": 12,
+     "tema": "",
+     "notas": [
+      "C"
+     ]
+    },
+    {
+     "n": 24,
+     "tema": "",
+     "notas": [
+      "B"
+     ]
+    },
+    {
+     "n": 32,
+     "tema": "",
+     "notas": [
+      "C"
+     ]
+    }
+   ]
+  },
+  {
+   "pais": "FRA",
+   "observaciones": "CED/C/FRA/CO/1",
+   "observaciones_fecha": "19 April 2013",
+   "informe": "CED/C/7/2",
+   "informe_fecha": "2014-10-28",
+   "url": "https://digitallibrary.un.org/record/782565",
+   "parrafos": [
+    {
+     "n": 23,
+     "tema": "",
+     "notas": [
+      "A"
+     ]
+    },
+    {
+     "n": 31,
+     "tema": "",
+     "notas": [
+      "B"
+     ]
+    },
+    {
+     "n": 35,
+     "tema": "",
+     "notas": [
+      "C"
+     ]
+    }
+   ]
+  },
+  {
+   "pais": "MEX",
+   "observaciones": "CED/C/MEX/CO/1",
+   "observaciones_fecha": "11 February 2015",
+   "informe": "CED/C/11/2",
+   "informe_fecha": "2016-11-23",
+   "url": "https://digitallibrary.un.org/record/863659",
+   "parrafos": [
+    {
+     "n": 18,
+     "tema": "",
+     "notas": [
+      "B"
+     ]
+    },
+    {
+     "n": 24,
+     "tema": "",
+     "notas": [
+      "B"
+     ]
+    },
+    {
+     "n": 41,
+     "tema": "",
+     "notas": [
+      "B"
+     ]
+    }
+   ]
+  },
+  {
+   "pais": "MNG",
+   "observaciones": "CED/C/MNG/CO/1",
+   "observaciones_fecha": "6 May 2021",
+   "informe": "CED/C/24/2",
+   "informe_fecha": "2023-04-27",
+   "url": "https://digitallibrary.un.org/record/4026862",
+   "parrafos": [
+    {
+     "n": 17,
+     "tema": "offence of enforced disappearance",
+     "notas": [
+      "C"
+     ]
+    },
+    {
+     "n": 35,
+     "tema": "training",
+     "notas": [
+      "B"
+     ]
+    },
+    {
+     "n": 39,
+     "tema": "legal situation of disappeared persons whose fate has not been clarified and that of their relatives",
+     "notas": [
+      "C"
+     ]
+    }
+   ]
+  },
+  {
+   "pais": "NLD",
+   "observaciones": "CED/C/NLD/CO/1",
+   "observaciones_fecha": "26 March 2014",
+   "informe": "CED/C/11/2",
+   "informe_fecha": "2016-11-23",
+   "url": "https://digitallibrary.un.org/record/863659",
+   "parrafos": [
+    {
+     "n": 25,
+     "tema": "",
+     "notas": [
+      "C"
+     ]
+    },
+    {
+     "n": 33,
+     "tema": "",
+     "notas": [
+      "C"
+     ]
+    },
+    {
+     "n": 35,
+     "tema": "",
+     "notas": [
+      "C"
+     ]
+    }
+   ]
+  },
+  {
+   "pais": "PAN",
+   "observaciones": "CED/C/PAN/CO/1",
+   "observaciones_fecha": "24 September 2021",
+   "informe": "CED/C/28/2",
+   "informe_fecha": "2025-05-20",
+   "url": "https://digitallibrary.un.org/record/4089313",
+   "parrafos": [
+    {
+     "n": 11,
+     "tema": "compilation of the centralized register of missing and disappeared persons",
+     "notas": [
+      "C"
+     ]
+    },
+    {
+     "n": 27,
+     "tema": "communication by persons deprived of liberty",
+     "notas": [
+      "B"
+     ]
+    },
+    {
+     "n": 37,
+     "tema": "search for disappeared persons and return of their remains",
+     "notas": [
+      "B"
+     ]
+    }
+   ]
+  },
+  {
+   "pais": "PRY",
+   "observaciones": "CED/C/PRY/CO/1",
+   "observaciones_fecha": "24 September 2014",
+   "informe": "CED/C/11/2",
+   "informe_fecha": "2016-11-23",
+   "url": "https://digitallibrary.un.org/record/863659",
+   "parrafos": [
+    {
+     "n": 12,
+     "tema": "",
+     "notas": [
+      "B"
+     ]
+    },
+    {
+     "n": 20,
+     "tema": "",
+     "notas": [
+      "B"
+     ]
+    },
+    {
+     "n": 26,
+     "tema": "",
+     "notas": [
+      "C"
+     ]
+    }
+   ]
+  },
+  {
+   "pais": "SRB",
+   "observaciones": "CED/C/SRB/CO/1",
+   "observaciones_fecha": "12 February 2015",
+   "informe": "CED/C/11/2",
+   "informe_fecha": "2016-11-23",
+   "url": "https://digitallibrary.un.org/record/863659",
+   "parrafos": [
+    {
+     "n": 11,
+     "tema": "",
+     "notas": [
+      "C"
+     ]
+    },
+    {
+     "n": 14,
+     "tema": "",
+     "notas": [
+      "B"
+     ]
+    },
+    {
+     "n": 28,
+     "tema": "",
+     "notas": [
+      "B"
+     ]
+    }
+   ]
+  },
+  {
+   "pais": "URY",
+   "observaciones": "CED/C/URY/CO/1",
+   "observaciones_fecha": "19 April 2013",
+   "informe": "CED/C/7/2",
+   "informe_fecha": "2014-10-28",
+   "url": "https://digitallibrary.un.org/record/782565",
+   "parrafos": [
+    {
+     "n": 14,
+     "tema": "",
+     "notas": [
+      "B"
+     ]
+    },
+    {
+     "n": 22,
+     "tema": "",
+     "notas": [
+      "B"
+     ]
+    },
+    {
+     "n": 36,
+     "tema": "",
+     "notas": [
+      "B"
+     ]
+    }
+   ]
+  }
+ ],
+ "no_incluidas": [
+  "CED/C/15/2: la Biblioteca Digital no tiene la versión en inglés"
+ ],
+ "fallos": []
+}
