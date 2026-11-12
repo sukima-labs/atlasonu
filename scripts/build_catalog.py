@@ -44,6 +44,8 @@ def acto_from(r, rol, anio, por_en, por_es, sym_src):
         a['aviso'] = f"«{sym_src}» no tiene registro exacto en la Biblioteca Digital ONU a {fecha}; puede ser un texto aún no publicado, un error de la fuente o un acto incorporado a un informe de sesión."
     elif r['estado'] == 'SIN_SIMBOLO':
         a['aviso'] = 'La fuente no indica símbolo para este acto.'
+    elif r['estado'] == 'SIN_CONSULTAR':
+        a['aviso'] = f"«{sym_src}» todavía no se ha cotejado en la Biblioteca Digital ONU: su búsqueda automática está suspendida porque el robots.txt del sitio la prohíbe (T56)."
     return a
 
 recs, index = [], {}
@@ -85,6 +87,8 @@ for kind in ('TM', 'CM'):
             rev = 'Acto de creación con reservas: cotejar texto (ver nota)'
         elif False:
             rev = 'Acto de creación verificado en la Biblioteca Digital ONU'
+        elif cre and cre['estado'] == 'SIN_CONSULTAR':
+            rev = 'Acto de creación sin cotejar todavía en la Biblioteca Digital ONU'
         elif cre and cre['estado'] == 'NO_ENCONTRADO':
             rev = 'Acto de creación SIN registro exacto: cotejar en informe de sesión'
         else:
@@ -123,7 +127,8 @@ for r in recs:
                   'REVISAR_TITULO': 'Leer el texto del documento antes de citarlo como acto del mandato.',
                   'DOCUMENTO_NO_RESOLUCION': 'No citar como resolución; localizar el acto creador real.',
                   'SOLO_BORRADOR': 'Localizar la resolución adoptada; el borrador no tiene efectos.',
-                  'NO_ENCONTRADO': 'Reintentar más adelante o buscar en el informe de sesión.'}.get(st, '')
+                  'NO_ENCONTRADO': 'Reintentar más adelante o buscar en el informe de sesión.',
+                  'SIN_CONSULTAR': 'Cotejar a mano en la Biblioteca Digital y anotarlo en la verificación.'}.get(st, '')
         alertas.append({'id': f'V-{len(alertas)+1:03d}', 'simbolo': a['simbolo_fuente'] or '—', 'tema': f"{r['nombre']} ({a['anio']}, {a['rol']})",
                         'problema': a.get('aviso', st), 'nivel': nivel, 'accion': accion, 'url': a.get('registro') or 'https://digitallibrary.un.org/'})
 alertas.sort(key=lambda x: {'ALTA': 0, 'MEDIA': 1, 'BAJA': 2}[x['nivel']])

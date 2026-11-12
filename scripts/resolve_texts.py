@@ -2,7 +2,9 @@
 """Localiza el TEXTO de cada resolución del catálogo y comprueba que el PDF sea el documento citado.
 Rutas, en orden: (1) PDF del registro de la Biblioteca Digital; (2) API de documentos de la ONU (ODS) por símbolo;
 (3) archivo de OHCHR (ap.ohchr.org); (4) informe de sesión que contiene la resolución, con páginas.
-Un PDF solo se marca validado si su primera página contiene el símbolo. Uso: resolve_texts.py <catalogo.json> <salida.json>"""
+Un PDF solo se marca validado si su primera página contiene el símbolo.
+T56: las rutas 2 y 3 y la búsqueda de la 4 están prohibidas en los robots.txt de esos sitios. Por defecto el script
+no usa la red (función sin_red); con BIBLIOTECA_SEARCH=si vuelve a buscar en la Biblioteca Digital, nunca en ODS ni OHCHR. Uso: resolve_texts.py <catalogo.json> <salida.json>"""
 import json, re, sys, subprocess, tempfile, os, time, urllib.request, urllib.parse, concurrent.futures as cf
 UA = {'User-Agent': 'ATLAS-ONU-verifier/1.0 (academic)'}
 DL = 'https://digitallibrary.un.org/search?ln=en&of=xm&rg=100&p='
@@ -25,6 +27,7 @@ def pdf_has_symbol(data, sym):
     return bool(m and re.search(r'(?:Resolution|Resoluci[oó]n|R[ée]solution)\s+' + re.escape(m[1]) + r'(?!\d)', t, re.I))
 
 def ods(sym, lang):
+    return None   # T56: documents.un.org prohíbe /api en su robots.txt; no se consulta (el código queda como historia)
     if '(' in sym: return None
     u = f'https://documents.un.org/api/symbol/access?s={urllib.parse.quote(sym, safe="/")}&l={lang}&t=pdf'
     class NoRedir(urllib.request.HTTPRedirectHandler):
@@ -41,6 +44,7 @@ def ods(sym, lang):
     return None
 
 def ohchr(sym):
+    return None   # T56: ap.ohchr.org prohíbe todo en su robots.txt (Disallow: /); no se consulta
     m = re.fullmatch(r'A/HRC/RES/(S-)?(\d+)/(\d+)', sym)
     if m: u, kind = f"https://ap.ohchr.org/documents/E/HRC/resolutions/A_HRC_RES_{(m[1] or '')}{m[2]}_{m[3]}.pdf", 'pdf'
     else:
@@ -98,12 +102,28 @@ def resolve(sym, e, cache):
     else: est = 'SIN_COPIA_LOCALIZADA'
     return {'estado': est, 'fuentes': [f for f in fuentes if f['validado'] is not False], 'descartadas_por_no_coincidir': fals, 'informe_sesion': informe}
 
+def sin_red(sym, e, ant):
+    """T56: documents.un.org/api (Disallow: /api), ap.ohchr.org (Disallow: /) y digitallibrary.un.org/search (Disallow:
+    /search) están prohibidos en sus robots.txt. Sin red: las copias del propio registro (e['pdf']) y lo que ya se había
+    localizado antes; un acto nuevo sin copia en su registro queda SIN_COPIA_LOCALIZADA."""
+    fuentes = [{'tipo': 'registro', 'lengua': l, 'url': u, 'validado': None} for l, u in e['pdf'].items()]
+    if not ({'es', 'en'} <= set(e['pdf'])):
+        fuentes += [f for f in ant.get('fuentes', []) if f['tipo'] != 'registro' and f['lengua'] not in e['pdf']]
+    informe = [i for i in ant.get('informe_sesion', []) if i['simbolo'] in e.get('padres', [])]
+    directo = any(f['validado'] is True or f['tipo'] == 'registro' for f in fuentes)
+    est = 'TEXTO_DIRECTO' if directo else 'TEXTO_EN_INFORME' if informe else 'ARCHIVO_OHCHR_SIN_VALIDAR' if any(f['tipo'] == 'ohchr' for f in fuentes) else 'SIN_COPIA_LOCALIZADA'
+    return {'estado': est, 'fuentes': fuentes, 'descartadas_por_no_coincidir': ant.get('descartadas_por_no_coincidir', []), 'informe_sesion': informe}
+
 def main(cat, out):
     idx = {k: v for k, v in json.load(open(cat, encoding='utf-8'))['indice_actos'].items() if not k.startswith('~')}
     cache, res = {}, {}
-    with cf.ThreadPoolExecutor(6) as ex:
-        futs = {ex.submit(resolve, k, v, cache): k for k, v in idx.items()}
-        for f in cf.as_completed(futs): res[futs[f]] = f.result()
+    if os.environ.get('BIBLIOTECA_SEARCH') != 'si':   # T56: por defecto, sin red
+        ant = json.load(open(out, encoding='utf-8')) if os.path.exists(out) else {}
+        res = {k: sin_red(k, v, ant.get(k, {})) for k, v in idx.items()}
+    else:
+        with cf.ThreadPoolExecutor(6) as ex:
+            futs = {ex.submit(resolve, k, v, cache): k for k, v in idx.items()}
+            for f in cf.as_completed(futs): res[futs[f]] = f.result()
     json.dump(res, open(out, 'w', encoding='utf-8'), ensure_ascii=False, indent=1, sort_keys=True)
     from collections import Counter
     print(len(res), 'resoluciones;', Counter(r['estado'] for r in res.values()), '; descartadas:', sum(len(r['descartadas_por_no_coincidir']) for r in res.values()))

@@ -19,6 +19,7 @@ jobs:
       - run: python3 -I tests/vias_test.py   # T76: base de reglas de «Tengo un caso», cuatro campos y citas literales
       - run: python3 -I tests/seguimiento_ccpr_test.py   # T75 fase 2a: notas A–E del Comité de Derechos Humanos en su seguimiento
       - run: python3 -I tests/seguimiento_ced_test.py    # T75 fase 2c: notas A–E del Comité contra la Desaparición Forzada
+      - run: python3 -I tests/robots_test.py   # T56: la revisión diaria no consulta lo que prohíben los robots.txt
       - run: python3 -I scripts/seguimiento_indice.py --comprobar   # T75: el índice de la pantalla cuadra con data/seguimiento       # T75: data/seguimiento cuadra con data/epu.js y no arrastra cabeceras
       - run: python3 -I scripts/idiomas_textos.py --comprobar   # T26/T94: la página está en idiomas/es.json y ninguna traducción rompe etiquetas; lo que falta, aviso
       # T94: los .js se generan desde idiomas/*.json. Si un PR (p. ej. de Weblate) solo cambia el JSON, aquí se regeneran para
