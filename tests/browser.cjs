@@ -431,6 +431,24 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     ok('recuperar: un número equivocado propone el parecido con su título', /¿Quisiste decir…\?/.test(await pg.textContent('#recoverResult')) && /A\/HRC\/RES\/36\/23/.test(await pg.textContent('#recoverResult')));
     await pg.close();
   }
+  // P6: «Qué falta y qué viene» pagina cada bloque por su cuenta (los 4 títulos salen siempre); el menú abierto no deja la página inerte al pasar de 1080 px
+  for (const [nom, vp, extra] of [['escritorio', { width: 1440, height: 900 }, {}], ['celular', { width: 390, height: 844 }, { hasTouch: true, isMobile: true }]]) {
+    const pg = await browser.newPage({ viewport: vp, ...extra }); await pg.goto(URL); await pg.waitForFunction(() => window.__atlasListo);
+    await pg.evaluate(() => showPage('hojaruta'));
+    const hr = await pg.evaluate(() => { const o = document.getElementById('hojaOut'); return { h3: [...o.querySelectorAll('h3')].filter(h => h.offsetParent).length, pend: [...o.querySelectorAll('.hr-est')].filter(e => /Pendiente/.test(e.textContent)).length, botones: o.querySelectorAll('.mas button').length }; });
+    ok('P6 ' + nom + ': «Qué falta» con «Todos» enseña los 4 bloques y ya hay pendientes a la vista, cada bloque con su «Mostrar más»', hr.h3 === 4 && hr.pend > 0 && hr.botones >= 1, hr);
+    await pg.close();
+  }
+  {
+    const pg = await browser.newPage({ viewport: { width: 820, height: 1180 }, hasTouch: true }); await pg.goto(URL); await pg.waitForFunction(() => window.__atlasListo);
+    await pg.click('#burger'); await pg.waitForTimeout(300);
+    const antes = await pg.evaluate(() => document.getElementById('contenido').inert);
+    await pg.setViewportSize({ width: 1180, height: 820 }); await pg.waitForTimeout(300);
+    const r = await pg.evaluate(() => ({ cont: document.getElementById('contenido').inert, barra: document.getElementById('bnav').inert }));
+    let clic = true; try { await pg.click('#quick', { timeout: 3000 }); } catch (e) { clic = false; }
+    ok('P6 tableta: con el menú abierto y la pantalla girada a más de 1080 px, el contenido deja de estar inerte y se puede tocar', antes === true && !r.cont && !r.barra && clic, { antes, ...r, clic });
+    await pg.close();
+  }
   // Navegación móvil: menú lateral con botón, se cierra al navegar; sin desbordes en ningún tamaño de teléfono/tableta
   for (const [nom, w, h] of [['Android 320', 320, 658], ['iPhone SE', 375, 667], ['Android 412', 412, 915], ['tableta 768', 768, 1024]]) {
     const pg = await browser.newPage({ viewport: { width: w, height: h }, hasTouch: true, isMobile: true }); await pg.goto(URL); await pg.waitForFunction(() => window.__atlasListo);

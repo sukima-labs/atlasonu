@@ -98,7 +98,7 @@ Código: **AGPL-3.0** (`LICENSE`), con autoría visible obligatoria (`NOTICE.md`
 
 ## Portada y línea de tiempo
 
-- **Portada:** pensada para quien llega sin saber por dónde empezar. Un buscador grande («escribe como hablas»), ocho caminos («Empieza por aquí»), una nota que explica dónde está el menú (en el celular, las tres líneas «☰ Menú», y además una barra abajo con Inicio, Buscar, Países, Mapa y Menú), un hecho de la historia de la ONU «un día como hoy», la búsqueda guiada y las novedades de las fuentes. Las cifras del catálogo (mandatos, calidad documental, últimas resoluciones) pasaron a un panel plegable «para investigadores».
+- **Portada:** pensada para quien llega sin saber por dónde empezar. Un buscador grande («escribe como hablas»), ocho caminos («Empieza por aquí»), una línea que dice dónde está el menú (en el ordenador, a la izquierda; en el celular, el botón «Menú» de la barra de abajo, que lleva también Inicio, Buscar, Países y Mapa, o el de arriba), un hecho de la historia de la ONU «un día como hoy», la búsqueda guiada y las novedades de las fuentes. Las cifras del catálogo (mandatos, calidad documental, últimas resoluciones) pasaron a un panel plegable «para investigadores».
 - **Su historia** (`data/historia.json`, elaboración propia con resolución citada en cada hecho): 56 hechos de 1945 a 2025 en una línea de tiempo interactiva, con filtros por época y tema, buscador, control de año, **recorrido guiado** por los 26 hitos (★) y enlaces al tratado, entidad o mandatos relacionados; cada hecho muestra además qué mandatos vigentes del catálogo se crearon ese año.
 
 ## Exactitud de los números
