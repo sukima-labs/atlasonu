@@ -5,6 +5,7 @@ window.ATLAS_IDIOMA_en={
 "↑ Arriba":"↑ Top",
 "Saltar al contenido":"Skip to content",
 "<b>Sin conexión:</b> datos del <span></span>. Ves la copia guardada en este aparato.":"<b>Offline:</b> data as of <span></span>. You are seeing the copy saved on this device.",
+"<b>Sin conexión.</b> La búsqueda en vivo y las noticias vuelven cuando vuelva la red.":"<b>Offline.</b> Live search and the news will come back when the connection returns.",
 "ATLAS ONU no ha podido cargar":"ATLAS ONU could not load",
 "La plataforma tarda demasiado o algo falló al abrirla. No se ha perdido nada: prueba, por orden:":"The platform is taking too long or something went wrong while opening it. Nothing has been lost. Try these steps, in order:",
 "<b>Recarga sin caché:</b> Ctrl + F5 (en Mac: Cmd + Mayús + R; en celular, cierra y vuelve a abrir la pestaña).":"<b>Reload without cache:</b> Ctrl + F5 (on Mac: Cmd + Shift + R; on a phone, close the tab and open it again).",

@@ -15,15 +15,20 @@ const BASE = new URL('./', self.location).href; // p. ej. https://sukima-labs.gi
 const PAGINA = BASE; // clave de la copia de index.html
 const desdeCopia = new Set(); // ids de las pestañas a las que se sirvió algo de la copia
 
-// Al instalarse guarda lo imprescindible para abrir la portada sin red (la página, los datos y la letra). El resto de
-// pantallas (mapa, EPU, noticias…) se guardan la primera vez que se abren. Si algo falla, la instalación sigue igual.
+// Al instalarse guarda lo necesario para abrir sin red la portada y las pantallas de datos que se cargan aparte (mapa,
+// noticias, EPU, conflictos, jurisprudencia, comunicaciones), en los seis idiomas: el diccionario del idioma elegido se
+// baja en la primera visita ANTES de que exista el service worker, así que sin esto la copia quedaría en español.
+// Son unos 2,7 MB en total. Lo demás se guarda la primera vez que se abre. Si algo falla, la instalación sigue igual.
 const BASICO = ['./', 'data/atlas-data.js', 'data/atlas-actos.js', 'assets/idiomas.js', 'manifest.webmanifest',
-  'assets/fonts/dejavu-sans-regular.woff2', 'assets/fonts/dejavu-sans-bold.woff2'];
+  'assets/fonts/dejavu-sans-regular.woff2', 'assets/fonts/dejavu-sans-bold.woff2',
+  'data/idiomas/en.js', 'data/idiomas/fr.js', 'data/idiomas/ar.js', 'data/idiomas/zh.js', 'data/idiomas/ru.js',
+  'data/noticias.js', 'data/mapa.js', 'data/epu.js', 'data/conflictos.js', 'data/jurisprudencia.js', 'data/comunicaciones.js'];
+const ESPERA_PAGINA = 8000; // con red lentísima, a los 8 s se abre la copia (si la hay) y la red sigue actualizándola detrás
 self.addEventListener('install', e => {
   self.skipWaiting();
   e.waitUntil(caches.open(CACHE).then(c => Promise.all(BASICO.map(ruta => {
     const u = new URL(ruta, BASE).href;
-    return fetch(u).then(r => { if (r.ok && r.type === 'basic') return c.put(u === BASE + 'index.html' ? PAGINA : u, r); })
+    return fetch(u, { cache: 'no-cache' }).then(r => { if (r.ok && r.type === 'basic') return c.put(u === BASE + 'index.html' ? PAGINA : u, r); })
       .catch(() => {});
   }))).catch(() => {}));
 });
@@ -64,20 +69,38 @@ async function avisa(id) {
 }
 
 async function primeroLaRed(e) {
-  const req = e.request, k = clave(req);
-  try {
-    const r = await fetch(req);
+  const req = e.request, k = clave(req), navega = req.mode === 'navigate';
+  const idPestana = navega ? (e.resultingClientId || e.clientId) : e.clientId;
+  // La red, siempre. Lo que llega se guarda como copia aunque la página ya se haya servido de la copia (tiempo agotado).
+  let guardado = Promise.resolve();
+  const red = fetch(req).then(r => {
     if (r && r.ok && r.type === 'basic') {
       const copia = r.clone();
-      e.waitUntil(caches.open(CACHE).then(c => c.put(k, copia)).catch(() => {}));
+      guardado = caches.open(CACHE).then(c => c.put(k, copia)).catch(() => {});
     }
     return r;
-  } catch (err) {
+  });
+  e.waitUntil(red.then(() => guardado, () => {}));
+  const deLaCopia = async err => {
     const guardada = await caches.match(k, { cacheName: CACHE });
     if (!guardada) throw err;
-    e.waitUntil(avisa(req.mode === 'navigate' ? (e.resultingClientId || e.clientId) : e.clientId));
+    // Sin «await»: la pestaña de una navegación no existe hasta que reciba esta respuesta (esperarla bloquearía la carga).
+    e.waitUntil(avisa(idPestana).catch(() => {}));
     return guardada;
-  }
+  };
+  if (!navega) { try { return await red; } catch (err) { return deLaCopia(err); } }
+  return new Promise((resolve, reject) => {
+    let hecho = false;
+    const reloj = setTimeout(() => {
+      caches.match(k, { cacheName: CACHE }).then(g => {
+        if (!g || hecho) return;
+        hecho = true;
+        resolve(deLaCopia(new Error('sin copia')));
+      }).catch(() => {});
+    }, ESPERA_PAGINA);
+    red.then(r => { clearTimeout(reloj); if (!hecho) { hecho = true; resolve(r); } },
+      err => { clearTimeout(reloj); if (!hecho) { hecho = true; deLaCopia(err).then(resolve, reject); } });
+  });
 }
 
 self.addEventListener('fetch', e => {
