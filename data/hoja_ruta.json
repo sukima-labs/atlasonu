@@ -242,7 +242,8 @@
      "x": "Hoy solo están los vigentes (44 temáticos y 13 por país). Faltan los que ya terminaron.",
      "issues": [
       237
-     ]
+     ],
+     "estado": "bloqueado"
     },
     {
      "t": "Jurisprudencia de los comités: lo que falta",
@@ -270,7 +271,8 @@
      "x": "Investigar y, si hay fuente oficial, indexarlos por país.",
      "issues": [
       241
-     ]
+     ],
+     "estado": "bloqueado"
     },
     {
      "t": "Cómo funciona la ONU, más a fondo",
@@ -298,7 +300,8 @@
      "x": "Hasta ahora solo una resolución está explicada así, tras leer su texto.",
      "issues": [
       239
-     ]
+     ],
+     "estado": "bloqueado"
     },
     {
      "t": "Inclusión y más idiomas",
@@ -312,7 +315,8 @@
      "x": "Una versión con lenguaje sencillo, dibujos propios y juegos para que niñas y niños conozcan sus derechos y la ONU, sin cuentas ni rastreo. El enfoque ya está escrito; los textos se escribirán y una persona experta los revisará antes de publicarse.",
      "issues": [
       165
-     ]
+     ],
+     "estado": "bloqueado"
     },
     {
      "t": "Grupos de trabajo: lo que falta",
@@ -326,7 +330,8 @@
      "x": "En las fichas de país faltan las opiniones del Grupo de Trabajo sobre la Detención Arbitraria y los casos del Grupo de Trabajo sobre las Desapariciones Forzadas. Se investiga qué se puede indexar con enlace al original.",
      "issues": [
       243
-     ]
+     ],
+     "estado": "bloqueado"
     },
     {
      "t": "Relatores y relatoras: lo que falta",
@@ -347,6 +352,20 @@
      "x": "Una página sobre qué documentos de la ONU están mal catalogados y que ATLAS sí encuentra. Va al final de todo, sin fecha.",
      "issues": [
       240
+     ]
+    },
+    {
+     "t": "Ficha de país más corta en el celular",
+     "x": "Plegar las tablas largas de documentos (observaciones finales, EPU y visitas) para que la ficha de un país se lea en el celular sin tanto desplazamiento.",
+     "issues": [
+      285
+     ]
+    },
+    {
+     "t": "Ficha de país en el celular: botones y gráfica",
+     "x": "Que los enlaces a cada documento de la ficha de un país se toquen bien con el dedo y que la gráfica de votos se lea en pantallas pequeñas.",
+     "issues": [
+      286
      ]
     }
    ]

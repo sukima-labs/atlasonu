@@ -7,6 +7,7 @@ Cada elemento de data/hoja_ruta.json puede llevar "issues": [n, …]. Con ellos 
   - alguno abierto con la etiqueta «en-evaluacion»                -> «En evaluación»;
   - alguno abierto                                               -> «Pendiente» (o «Ideas» si TODOS los abiertos llevan «idea»);
   - todos cerrados como hechos                                   -> «Ya disponible».
+Además, si alguno de sus issues abiertos lleva la etiqueta «bloqueado», el elemento lleva "estado": "bloqueado" (pastilla «Bloqueado»).
 Un elemento sin "issues" no se mueve (lo ya hecho de antes de T90 y las ideas sin issue).
 
 Un issue que no está en ningún elemento entra solo si su cuerpo trae el texto para la web en un bloque oculto:
@@ -88,6 +89,20 @@ def bloque_de(nums, issues):
     return 'pendiente'
 
 
+def marcar_bloqueo(it, nums, issues):
+    """«estado»: «bloqueado» si alguno de sus issues abiertos lleva la etiqueta «bloqueado» (la web pone la pastilla roja).
+    Devuelve el mismo objeto si no cambia nada."""
+    bloq = any(issues[n]['abierto'] and 'bloqueado' in issues[n]['etiquetas'] for n in nums if n in issues)
+    if bloq == (it.get('estado') == 'bloqueado'):
+        return it
+    it = dict(it)
+    if bloq:
+        it['estado'] = 'bloqueado'
+    else:
+        it.pop('estado', None)
+    return it
+
+
 def sincronizar(hoja, issues, hoy):
     """Devuelve (hoja_nueva, cambios, avisos). No toca el texto de ningún elemento."""
     bloques = {b['id']: b for b in hoja['bloques']}
@@ -108,8 +123,12 @@ def sincronizar(hoja, issues, hoy):
             elif destino is None:
                 cambios.append(f"«{it['t']}»: {b} -> fuera (cerrado como «no se hará»)")
             elif destino == b:
-                nuevos[b].append(it)
+                it2 = marcar_bloqueo(it, nums, issues)
+                if it2 is not it:
+                    cambios.append(f"«{it['t']}»: {'bloqueado' if it2.get('estado') else 'desbloqueado'}")
+                nuevos[b].append(it2)
             else:
+                it = marcar_bloqueo(it, nums, issues)
                 it = dict(it)
                 if it.get('tag') in ('en evaluación', 'propuesto', 'parcial'):
                     del it['tag']           # la etiqueta del bloque viejo ya no dice la verdad
