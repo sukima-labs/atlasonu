@@ -9,13 +9,14 @@ observaciones finales), párrafo, tema y notas. La leyenda de las notas se copia
 
   python3 -I scripts/seguimiento_ccpr.py --cache /var/tmp/t75fu   # baja lo que falta (5 s entre peticiones) y escribe
                                                                   # data/seguimiento_comites/ccpr.json y ccpr.js (la web)
-Robots.txt de la Biblioteca Digital: Crawl-delay 5. Nunca a la vez que otro cliente (texto_completo.py, 03:30).
+La lista de informes está en data/seguimiento_comites/informes.json: el robots.txt de la Biblioteca Digital prohíbe
+/search (T56), así que no se busca; se bajan los registros anotados (/record/N). Crawl-delay 5. Nunca a la vez que otro cliente (texto_completo.py, 03:30).
 """
 import json, os, re, subprocess, sys, time, urllib.parse, urllib.request
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 UA = {'User-Agent': 'ATLAS-ONU/1.0 (academic)'}
-BUSCA = 'https://digitallibrary.un.org/search?ln=en&of=xm&rg=100&jrec=%d&p=%s'
+PDF = 'https://digitallibrary.un.org/record/%s/files/%s-EN.pdf'
 CONSULTA = '"Report on follow-up to the concluding observations of the Human Rights Committee"'
 SIMBOLO = re.compile(r'^CCPR/C/(\d+)/[23](/Add\.\d+)?$')
 _ult = [0.0]
@@ -28,24 +29,17 @@ def pide(url):
     with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=120) as r: return r.read()
 
 
-def registros():
-    out, jrec = [], 1
-    while True:
-        xml = pide(BUSCA % (jrec, urllib.parse.quote_plus(CONSULTA))).decode('utf-8')
-        recs = xml.split('<record>')[1:]
-        for r in recs:
-            sim = re.findall(r'tag="191".*?code="a">([^<]+)', r, re.S)
-            if not sim or not SIMBOLO.match(sim[0]) or 'draft' in r: continue
-            pdf = [u for u in re.findall(r'code="u">([^<]+)', r) if u.endswith('-EN.pdf')]
-            fecha = re.findall(r'tag="269".*?code="a">([^<]+)', r, re.S)
-            if pdf: out.append({'simbolo': sim[0], 'registro': re.findall(r'tag="001">(\d+)', r)[0], 'fecha': fecha[0] if fecha else '', 'pdf': pdf[0]})
-        if len(recs) < 100: return out
-        jrec += 100
+def registros(comite='CCPR'):
+    """Los informes de data/seguimiento_comites/informes.json. No se busca: /search está prohibido en el robots.txt de
+    la Biblioteca Digital (T56). Un informe nuevo se añade a esa lista a mano."""
+    L = json.load(open(os.path.join(RAIZ, 'data', 'seguimiento_comites', 'informes.json'), encoding='utf-8'))['informes']
+    return [dict(r, pdf=PDF % (r['registro'], r['simbolo'].replace('/', '_')) if r['registro'] else None) for r in L if r['comite'] == comite]
 
 
 def texto(reg, cache):
     base = os.path.join(cache, reg['simbolo'].replace('/', '_'))
     if not os.path.exists(base + '.txt'):
+        if not reg.get('pdf'): raise RuntimeError('sin número de registro en informes.json y sin copia en la caché')
         url = reg['pdf'].replace('digitallibrary.un.org/record/', 'digitallibrary.un.org/nanna/record/') + '?withWatermark=0&withMetadata=0&version=1'
         datos = pide(url)
         if not datos.startswith(b'%PDF'): raise RuntimeError('no es un PDF: ' + reg['pdf'])
@@ -110,7 +104,7 @@ def main():
         paises += evaluaciones(t, r, fuera)
     paises.sort(key=lambda e: (e['pais'], e['informe_fecha']))
     os.makedirs(os.path.join(RAIZ, 'data', 'seguimiento_comites'), exist_ok=True)
-    out = {'comite': 'CCPR', 'fuente': 'Biblioteca Digital de la ONU: ' + CONSULTA, 'consultado': time.strftime('%Y-%m-%d'),
+    out = {'comite': 'CCPR', 'fuente': 'Biblioteca Digital de la ONU: ' + CONSULTA + ' (lista en informes.json)', 'consultado': time.strftime('%Y-%m-%d'),
            'informes': len(regs), 'leyenda': ley, 'evaluaciones': paises, 'no_incluidas': fuera, 'fallos': fallos}
     json.dump(out, open(os.path.join(RAIZ, 'data', 'seguimiento_comites', 'ccpr.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     # La web lo carga como .js (con <script>) para que la copia descargada funcione abierta como fichero, sin servidor.
