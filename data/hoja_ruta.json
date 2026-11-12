@@ -360,7 +360,7 @@
     },
     {
      "t": "Ficha de país en el celular: botones y gráfica",
-     "x": "Que los enlaces a cada documento de la ficha de un país se toquen bien con el dedo y que la gráfica de votos se lea en pantallas pequeñas.",
+     "x": "En el celular, los enlaces a cada documento de la ficha de un país («ES ↗», «EN ↗», «Registro ↗») y sus desplegables se tocan con el dedo sin acertar al de al lado (44 px), y las cifras y años de las gráficas de votos se leen a 13 px o más.",
      "issues": [
       286
      ]
