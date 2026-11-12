@@ -56,9 +56,22 @@ def one(s, cache):
     else:
         out.update(estado='NO_VERIFICADO', motivo=r['estado'])
     return out
+def sin_red(s, ant):
+    """T56: sin BIBLIOTECA_SEARCH=si no se busca en la Biblioteca Digital (su robots.txt prohíbe /search). Los datos
+    curados salen de SEM; la verificación se copia del resultado anterior, y una semilla nueva queda sin cotejar."""
+    cat, sig, es, en, sym, que, ad, ev, mi, kws = s
+    out = dict(categoria=cat, siglas=sig, nombre=es, nameEN=en, simbolo_semilla=sym, acto=que, adopcion=ad, entrada_vigor=ev, miembros=mi)
+    p = ant.get((sig, sym))
+    if not p: return dict(out, estado='NO_VERIFICADO', motivo='SIN_CONSULTAR')
+    return dict(out, **{k: p[k] for k in ('estado', 'motivo', 'simbolo', 'titulo_oficial', 'adoptada', 'registro', 'coincidencia_titulo', 'texto') if k in p})
 if __name__ == '__main__':
     cache = {}
-    with cf.ThreadPoolExecutor(4) as ex: res = list(ex.map(lambda s: one(s, cache), SEM))
+    if not V.BUSCAR:
+        try: ant = {(r['siglas'], r['simbolo_semilla']): r for r in json.load(open('data/fuentes/mecanismos.json', encoding='utf-8'))}
+        except Exception: ant = {}
+        res = [sin_red(s, ant) for s in SEM]
+    else:
+        with cf.ThreadPoolExecutor(4) as ex: res = list(ex.map(lambda s: one(s, cache), SEM))
     json.dump(res, open('data/fuentes/mecanismos.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     from collections import Counter
     print(Counter(r['estado'] for r in res))

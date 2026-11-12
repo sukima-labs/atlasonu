@@ -17,6 +17,7 @@ def get(url, n=40_000_000):
         return r.read(n)
 
 def pdf_texto(sym):
+    raise RuntimeError('T56: documents.un.org prohíbe /api en su robots.txt; incorporar a mano desde /record/N de la Biblioteca Digital')
     u = f'https://documents.un.org/api/symbol/access?s={urllib.parse.quote(sym, safe="/")}&l=es&t=pdf'
     data = get(u)
     if data[:4] != b'%PDF': raise RuntimeError('no es PDF: ' + sym)
@@ -121,12 +122,14 @@ def cedaw():
 def main(out='data/fuentes/tratados_texto.json'):
     res = json.load(open(out, encoding='utf-8')) if os.path.exists(out) else {}  # un fallo de red no borra lo ya validado
     try:
+        if 'IV-8' in res: raise RuntimeError('ya incorporado; el texto de un tratado no cambia')   # T56: sin pedirlo otra vez
         arts, pre, hechas = cedaw()
         res['IV-8'] = {'fuente': CEDAW_URL, 'calidad': 'texto web de la ONU (sin OCR)', 'articulos': arts, 'preambulo': pre,
                        'erratas_corregidas': hechas, 'nota': 'Transcripción de la página de la ONU sobre la Convención, con ' + str(len(hechas)) + ' erratas evidentes corregidas contrastando con la copia depositaria (lista abajo). Cite siempre el texto auténtico depositado.'}
     except Exception as e: print('CEDAW:', e)
     cache = {}
     for mt, (sym, idx, n) in RES.items():
+        if mt in res: continue   # T56: ya incorporado; el texto adoptado no cambia
         try:
             if sym not in cache: cache[sym] = pdf_texto(sym)
             u, t = cache[sym]
