@@ -41,3 +41,10 @@ lo que corre hoy en `sk-atlas`. No lo muevas ni le cambies el nombre sin hablarl
   - **`index.html` es muy grande:** se lee por trozos (`grep -n` y luego el rango), nunca entero.
   - **Pruebas en local:** solo las que toca el cambio; la batería completa la corre la CI.
   - **Orden de la cola:** primero datos y contenido; la interfaz, después.
+  - **Navegador en local:** nunca la batería completa (`tests/browser.cjs`); solo una comprobación pequeña de la pantalla
+    tocada. La batería completa la corre la CI.
+  - **Una tarea de la cola por sesión.** Si aparece algo grande, va a la cola. Excepción: lo que hace daño ahora (por
+    ejemplo, incumplir un `robots.txt`) se para con el arreglo mínimo, y lo demás va a la cola.
+  - **Al fusionar la tarea, se cierra la sesión**, en vez de seguir con la siguiente: una sesión nueva sale más barata
+    que una conversación larga.
+  - **Antes de escribir un script que lea un sitio, leer su `robots.txt`** (`docs/OPERACION.md`, T56).
