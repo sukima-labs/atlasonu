@@ -451,6 +451,10 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     await page.evaluate(() => showPage('paises')); await page.evaluate(() => window.scrollTo(0, 1500));
     await page.evaluate(() => showPage('seleccion')); await page.waitForTimeout(150);
     ok(vp.name + ': tras ir de Países (lista larga) a Selección, solo se ve Selección y el scroll vuelve arriba', (await page.evaluate(() => [...document.querySelectorAll('.section')].filter(s => getComputedStyle(s).display !== 'none').map(s => s.id).join())) === 'seleccion' && (await page.evaluate(() => window.scrollY)) === 0 && !/Etapa \d: \d/.test(await page.textContent('#selectionList')));
+    await page.evaluate(() => showPage('paises')); await page.evaluate(() => window.scrollTo(0, 3000)); await page.waitForTimeout(150);
+    ok(vp.name + ': «Arriba» y «Qué quieres ver» no se tapan (#315)', await page.evaluate(() => { const a = document.getElementById('arriba').getBoundingClientRect(), t = document.getElementById('pTop'); if (!t || getComputedStyle(t).display === 'none') return true; const b = t.getBoundingClientRect(); return a.right <= b.left || b.right <= a.left || a.bottom <= b.top || b.bottom <= a.top; }));
+    if (await page.isVisible('#arriba')) { await page.click('#arriba'); ok(vp.name + ': el botón «Arriba» sube al principio de la página (#315)', await page.waitForFunction(() => scrollY === 0, null, { timeout: 4000 }).then(() => true, () => false)); }
+    else ok(vp.name + ': el botón «Arriba» aparece al bajar en Países (#315)', false);
     await page.evaluate(() => showPage('mecanismos'));
     const pMec = await page.evaluate(() => paso('mec'));
     ok(vp.name + ': otros mecanismos: ' + pMec + ' filas y «' + pMec + ' de 33»', (await page.locator('#mecBody tr:not(.mas)').count()) === pMec && new RegExp(pMec + ' de 33').test(await page.textContent('#mecBody tr.mas')) && /CERD/.test(await page.textContent('#mecBody')));
