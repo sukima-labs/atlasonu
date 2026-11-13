@@ -530,6 +530,10 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     ok('exactitud: la vista por mandato lista los mandatos con dudas', (await pg.locator('#numAudit tbody tr').count()) >= 30);
     await pg.evaluate(() => showPage('recuperar')); await pg.fill('#recoverQuery', 'A/HRC/RES/36/24'); await pg.evaluate(() => recoverDocument());
     ok('recuperar: un número equivocado propone el parecido con su título', /¿Quisiste decir…\?/.test(await pg.textContent('#recoverResult')) && /A\/HRC\/RES\/36\/23/.test(await pg.textContent('#recoverResult')));
+    // T98 (#328): un símbolo con código de país se busca también en los documentos de ese país
+    await pg.fill('#recoverQuery', 'CCPR/C/COL/CO/8'); await pg.evaluate(() => recoverDocument());
+    await pg.waitForFunction(() => /LOCALIZADO EN LOS DOCUMENTOS DE COLOMBIA/.test(document.getElementById('recoverResult').textContent), null, { timeout: 10000 }).catch(() => {});
+    ok('T98 recuperar: CCPR/C/COL/CO/8 sale localizado en los documentos de Colombia, con su registro', /LOCALIZADO EN LOS DOCUMENTOS DE COLOMBIA/.test(await pg.textContent('#recoverResult')) && (await pg.locator('#recoverResult a[href*="digitallibrary.un.org/record/"]').count()) > 0);
     await pg.close();
   }
   // P6: «Qué falta y qué viene» pagina cada bloque por su cuenta (los 4 títulos salen siempre); el menú abierto no deja la página inerte al pasar de 1080 px
