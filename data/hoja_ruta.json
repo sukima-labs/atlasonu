@@ -242,15 +242,9 @@
   },
   {
    "id": "ideas",
-   "titulo": "Ideas que están entrando",
-   "intro": "Sin compromiso ni fecha: es el orden en que tendría sentido ampliar el proyecto.",
-   "items": [
-    {
-     "t": "Datos del sistema",
-     "x": "Tratados depositados, presupuesto y cuotas por país, votaciones y calendario de días internacionales.",
-     "tag": "propuesto"
-    }
-   ]
+   "titulo": "Ideas nuevas",
+   "intro": "ATLAS ONU ya no se amplía: desde el 13 de noviembre de 2026, Sukima-Labs se dedica a mantener y mejorar lo que ya existe. Por eso aquí no entran ideas nuevas.",
+   "items": []
   }
  ]
 }
