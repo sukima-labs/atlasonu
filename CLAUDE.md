@@ -30,6 +30,12 @@ instala y no cambia infraestructura**, tampoco «para probar». Si algo necesita
 `scripts/mini_pc/` y `docs/MINI_PC.md` son historia, con una excepción: `scripts/mini_pc/busqueda_servicio.py` es
 lo que corre hoy en `sk-atlas`. No lo muevas ni le cambies el nombre sin hablarlo antes con Patricio.
 
+## Alcance cerrado (13-11-2026, #337)
+ATLAS ONU ya no crece: no se añaden pantallas, menús, conjuntos de datos ni contenido nuevo. Se hace solo mantenimiento
+(pruebas, datos automáticos, búsqueda, traducciones, copias), calidad de lo que ya existe (errores, accesibilidad, celular,
+revisión de datos y traducciones, privacidad), riesgos (`robots.txt`, #246) y promoción. Una idea que amplíe el producto no
+entra en la cola: se anota en #337 y la decide Sukima-Labs.
+
 ## Lo demás
 - Todo cambio va por PR. Los commits salen con la cuenta de la persona, y Claude nunca figura como contribuidor:
   ni `Co-Authored-By` ni nada parecido.
