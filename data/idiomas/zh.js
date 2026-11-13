@@ -650,7 +650,6 @@ window.ATLAS_IDIOMA_zh={
 "<b>CED</b><span>Ratificación {n} jul {n}</span>":"<b>CED</b><span>批准 {n} 7月 {n}</span>",
 "Relatores y grupos de trabajo que pueden actuar":"可采取行动的特别报告员和工作组",
 "No hay un mandato de procedimientos especiales sobre este país en el índice vigente. Eso no significa que no esté bajo examen en otros mecanismos (EPU, órganos de tratados).":"现行索引中没有针对该国的特别程序任务。这并不意味着它没有在其他机制（普遍定期审议、条约机构）下受到审查。",
-"Los <b>mandatos temáticos</b> pueden enviar comunicaciones (cartas de alegaciones y llamamientos urgentes) a <b>cualquier Estado</b>, <b>hayan o no ratificado</b> los tratados. Elige un subtema:":"<b>专题任务</b>可以向<b>任何国家</b>发送来文（指称信函和紧急呼吁），<b>无论该国是否批准</b>了相关条约。请选择一个子主题：",
 "Qué hechos ver":"查看哪些事件",
 "Todo ({n})":"全部（{n}）",
 "↑ Más antiguos primero":"↑ 最早的在前",

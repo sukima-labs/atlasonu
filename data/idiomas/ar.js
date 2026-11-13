@@ -650,7 +650,6 @@ window.ATLAS_IDIOMA_ar={
 "<b>CED</b><span>Ratificación {n} jul {n}</span>":"<b>CED</b><span>تصديق {n} تموز/يوليو {n}</span>",
 "Relatores y grupos de trabajo que pueden actuar":"المقررون والأفرقة العاملة التي يمكنها التحرك",
 "No hay un mandato de procedimientos especiales sobre este país en el índice vigente. Eso no significa que no esté bajo examen en otros mecanismos (EPU, órganos de tratados).":"لا توجد ولاية إجراءات خاصة بشأن هذا البلد في الفهرس الساري. وهذا لا يعني أنه ليس قيد الاستعراض في آليات أخرى (الاستعراض الدوري الشامل وهيئات المعاهدات).",
-"Los <b>mandatos temáticos</b> pueden enviar comunicaciones (cartas de alegaciones y llamamientos urgentes) a <b>cualquier Estado</b>, <b>hayan o no ratificado</b> los tratados. Elige un subtema:":"يمكن <b>للولايات الموضوعية</b> أن توجّه رسائل (رسائل ادعاء ونداءات عاجلة) إلى <b>أي دولة</b>، <b>سواء صدّقت أم لم تصدّق</b> على المعاهدات. اختر موضوعًا فرعيًا:",
 "Qué hechos ver":"أي الأحداث تريد أن ترى",
 "Todo ({n})":"الكل ({n})",
 "↑ Más antiguos primero":"↑ الأقدم أولًا",

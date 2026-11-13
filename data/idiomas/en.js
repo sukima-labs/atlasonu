@@ -650,7 +650,7 @@ window.ATLAS_IDIOMA_en={
 "<b>CED</b><span>Ratificación {n} jul {n}</span>":"<b>CED</b><span>Ratification {n} Jul {n}</span>",
 "Relatores y grupos de trabajo que pueden actuar":"Rapporteurs and working groups that can act",
 "No hay un mandato de procedimientos especiales sobre este país en el índice vigente. Eso no significa que no esté bajo examen en otros mecanismos (EPU, órganos de tratados).":"There is no special procedures mandate on this country in the current index. That does not mean it is not under review in other mechanisms (UPR, treaty bodies).",
-"Los <b>mandatos temáticos</b> pueden enviar comunicaciones (cartas de alegaciones y llamamientos urgentes) a <b>cualquier Estado</b>, <b>hayan o no ratificado</b> los tratados. Elige un subtema:":"The <b>thematic mandates</b> can send communications (allegation letters and urgent appeals) to <b>any State</b>, <b>whether or not it has ratified</b> the treaties. Choose a subtopic:",
+"Los <b>mandatos temáticos</b> pueden enviar comunicaciones (cartas de alegaciones y llamamientos urgentes) a <b>cualquier Estado</b>, <b>hayan o no ratificado</b> los tratados. <a>Elige un subtema en la lista de mandatos ↓</a>":"The <b>thematic mandates</b> can send communications (allegation letters and urgent appeals) to <b>any State</b>, <b>whether or not it has ratified</b> the treaties. <a>Pick a subtopic in the list of mandates ↓</a>",
 "Qué hechos ver":"Which events to see",
 "Todo ({n})":"All ({n})",
 "↑ Más antiguos primero":"↑ Oldest first",

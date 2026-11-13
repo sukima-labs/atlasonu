@@ -650,7 +650,6 @@ window.ATLAS_IDIOMA_ru={
 "<b>CED</b><span>Ratificación {n} jul {n}</span>":"<b>CED</b><span>Ратификация {n} июл. {n}</span>",
 "Relatores y grupos de trabajo que pueden actuar":"Докладчики и рабочие группы, которые могут действовать",
 "No hay un mandato de procedimientos especiales sobre este país en el índice vigente. Eso no significa que no esté bajo examen en otros mecanismos (EPU, órganos de tratados).":"В действующем указателе нет мандата специальных процедур по этой стране. Это не означает, что она не рассматривается в рамках других механизмов (УПО, договорные органы).",
-"Los <b>mandatos temáticos</b> pueden enviar comunicaciones (cartas de alegaciones y llamamientos urgentes) a <b>cualquier Estado</b>, <b>hayan o no ratificado</b> los tratados. Elige un subtema:":"<b>Тематические мандаты</b> могут направлять сообщения (письма с утверждениями о нарушениях и призывы к незамедлительным действиям) <b>любому государству</b>, <b>независимо от того, ратифицировало ли оно</b> договоры. Выберите подтему:",
 "Qué hechos ver":"Какие события показать",
 "Todo ({n})":"Все ({n})",
 "↑ Más antiguos primero":"↑ Сначала самые старые",

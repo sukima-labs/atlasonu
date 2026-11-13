@@ -650,7 +650,6 @@ window.ATLAS_IDIOMA_fr={
 "<b>CED</b><span>Ratificación {n} jul {n}</span>":"<b>CED</b><span>Ratification {n} juil. {n}</span>",
 "Relatores y grupos de trabajo que pueden actuar":"Rapporteurs et groupes de travail qui peuvent intervenir",
 "No hay un mandato de procedimientos especiales sobre este país en el índice vigente. Eso no significa que no esté bajo examen en otros mecanismos (EPU, órganos de tratados).":"Il n'existe pas de mandat de procédures spéciales sur ce pays dans l'index en vigueur. Cela ne signifie pas qu'il ne fasse pas l'objet d'un examen dans d'autres mécanismes (EPU, organes conventionnels).",
-"Los <b>mandatos temáticos</b> pueden enviar comunicaciones (cartas de alegaciones y llamamientos urgentes) a <b>cualquier Estado</b>, <b>hayan o no ratificado</b> los tratados. Elige un subtema:":"Les <b>mandats thématiques</b> peuvent envoyer des communications (lettres d'allégations et appels urgents) à <b>n'importe quel État</b>, qu'il ait <b>ratifié ou non</b> les traités. Choisissez un sous-thème :",
 "Qué hechos ver":"Quels faits voir",
 "Todo ({n})":"Tout ({n})",
 "↑ Más antiguos primero":"↑ Les plus anciens d'abord",
