@@ -1,8 +1,44 @@
 {
 "fuente": "Noticias ONU (news.un.org)",
-"actualizado": "2026-11-13T03:32:05Z",
-"total": 90,
+"actualizado": "2026-11-13T18:41:02Z",
+"total": 94,
 "notas": [
+{
+"titulo": "COP31: las ciudades están en la primera línea del cambio climático",
+"fecha": "2026-11-12",
+"enlace": "https://news.un.org/feed/view/es/story/2026/11/1542169",
+"resumen": "Los activistas y países vulnerables exigieron una respuesta urgente e inmediata para proteger a las comunidades en primera línea frente a los crecientes desastres climáticos poniendo así presión a los líderes para que financien y adopten medidas, entre…",
+"visto": "2026-11-13",
+"derechos": false,
+"americas": false
+},
+{
+"titulo": "Gaza: la ONU denuncia los bloqueos mortales de Israel frente a las inclemencias del tiempo",
+"fecha": "2026-11-12",
+"enlace": "https://news.un.org/feed/view/es/story/2026/11/1542168",
+"resumen": "En Gaza, hasta la lluvia mata. El responsable humanitario de la ONU resume un invierno que ya se cobra vidas entre tiendas inundadas y bebés muertos de frío, mientras 150.000 tiendas y medio millón de mantas permanecen bloqueadas a las puertas del enclave.…",
+"visto": "2026-11-13",
+"derechos": false,
+"americas": false
+},
+{
+"titulo": "Haití: más de mil asesinatos entre julio y septiembre",
+"fecha": "2026-11-12",
+"enlace": "https://news.un.org/feed/view/es/story/2026/11/1542167",
+"resumen": "En Haití 1167 personas fueron asesinadas y 459 resultaron heridas en el trimestre de julio a septiembre. Las pandillas son responsables del 45 % de estos hechos, mientras que alrededor del 5 % se atribuyó a grupos de autodefensa que atacaron a miembros de…",
+"visto": "2026-11-13",
+"derechos": false,
+"americas": true
+},
+{
+"titulo": "COP31, plaguicidas, pena de muerte en California, Honduras, neumonía… las noticias del jueves",
+"fecha": "2026-11-12",
+"enlace": "https://news.un.org/feed/view/es/story/2026/11/1542166",
+"resumen": "Lanzan una plataforma para financiar la respuesta a desastres antes de que ocurran, con el objetivo de proteger a 75 millones de personas. Bangladesh e India prohíben el paraquat, un herbicida vinculado a uno de cada cinco suicidios por plaguicidas en el…",
+"visto": "2026-11-13",
+"derechos": true,
+"americas": false
+},
 {
 "titulo": "Guterres: Es el momento de la verdad: o actuamos o nos asamos",
 "fecha": "2026-11-11",

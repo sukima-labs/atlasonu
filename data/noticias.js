@@ -1,8 +1,40 @@
 window.NOTICIAS={
  "fuente": "Noticias ONU (news.un.org)",
- "actualizado": "2026-11-13T03:32:05Z",
+ "actualizado": "2026-11-13T18:41:02Z",
  "temas": {
   "todas": [
+   {
+    "titulo": "COP31: las ciudades están en la primera línea del cambio climático",
+    "fecha": "2026-11-12",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542169",
+    "resumen": "Los activistas y países vulnerables exigieron una respuesta urgente e inmediata para proteger a las comunidades en primera línea frente a los crecientes desastres climáticos poniendo así presión a los líderes para que financien y adopten medidas, entre…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/11/02-11-2026-UNEP-Italy-ecosystem.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
+   {
+    "titulo": "Gaza: la ONU denuncia los bloqueos mortales de Israel frente a las inclemencias del tiempo",
+    "fecha": "2026-11-12",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542168",
+    "resumen": "En Gaza, hasta la lluvia mata. El responsable humanitario de la ONU resume un invierno que ya se cobra vidas entre tiendas inundadas y bebés muertos de frío, mientras 150.000 tiendas y medio millón de mantas permanecen bloqueadas a las puertas del enclave.…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/07-11-2026-UNNews-Gaza-Winer-Sewage-2.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
+   {
+    "titulo": "Haití: más de mil asesinatos entre julio y septiembre",
+    "fecha": "2026-11-12",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542167",
+    "resumen": "En Haití 1167 personas fueron asesinadas y 459 resultaron heridas en el trimestre de julio a septiembre. Las pandillas son responsables del 45 % de estos hechos, mientras que alrededor del 5 % se atribuyó a grupos de autodefensa que atacaron a miembros de…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/11/03-11-2026-UNOCHA-Haiti-03.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
+   {
+    "titulo": "COP31, plaguicidas, pena de muerte en California, Honduras, neumonía… las noticias del jueves",
+    "fecha": "2026-11-12",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542166",
+    "resumen": "Lanzan una plataforma para financiar la respuesta a desastres antes de que ocurran, con el objetivo de proteger a 75 millones de personas. Bangladesh e India prohíben el paraquat, un herbicida vinculado a uno de cada cinco suicidios por plaguicidas en el…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/27-02-2026-IOM-Mozambique-02.jpg/image560x340cropped.jpg",
+    "destacada": true
+   },
    {
     "titulo": "Guterres: Es el momento de la verdad: o actuamos o nos asamos",
     "fecha": "2026-11-11",
@@ -130,41 +162,16 @@ window.NOTICIAS={
     "resumen": "El mundo \"no está preparado\" para adaptarse al cambio climático: los países en desarrollo necesitarán 305.000 millones de dólares anuales para 2035, pero la financiación pública internacional solo alcanzó entre 28.200 y 31.700 millones en 2024. La OMS…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/10/06-10-2026_UNICEF_Vietnam_El_Nino_Children.jpg/image560x340cropped.jpg",
     "destacada": false
-   },
-   {
-    "titulo": "El mundo no está preparado para la adaptación climática: la financiación se queda muy corta",
-    "fecha": "2026-11-04",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542139",
-    "resumen": "Los países en desarrollo necesitarán unos 305.000 millones de dólares anuales para 2035 para adaptarse al cambio climático, pero la financiación pública internacional solo alcanzó entre 28.200 y 31.700 millones en 2024 y, aunque se triplique, cubrirá como…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/11/03-11-2026-WMO-Bangladesh.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "La igualdad de género beneficia a las empresas: ¿por qué algunas dan marcha atrás?",
-    "fecha": "2026-11-03",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542138",
-    "resumen": "La igualdad de género y la diversidad no son solo cuestiones sociales: también constituyen un activo económico para las empresas. Si bien las mujeres acceden cada vez más a puestos de alta responsabilidad, este progreso sigue siendo frágil y requiere nuevos…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/03-11-2026-Adobe-Stock-gender-based.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "Ébola, brecha de género, brecha digital… las noticias del martes",
-    "fecha": "2026-11-03",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542136",
-    "resumen": "Con más de 10.000 casos confirmados y las 5000 muertes, la respuesta al brote de ébola en la República Democrática del Congo sigue yendo por detrás de la transmisión. Las mujeres solo ocupan el 30 % de los puestos directivos en el mundo. El 76 % de la…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/10/23-10-2026-WHO-DRC-ebola.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "Seis de cada siete asesinatos de periodistas quedan impunes",
-    "fecha": "2026-11-02",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542134",
-    "resumen": "Los territorios palestinos ocupados por Israel registraron el mayor número de asesinatos en el bienio 2024-2025, con 62 muertes, dentro de la región de los Estados Árabes, que sumó 97 casos, seguida de América Latina y el Caribe (37), Asia y el Pacífico…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/10/29-10-2026-Adobe-Stock-journalist.jpg/image560x340cropped.jpg",
-    "destacada": false
    }
   ],
   "derechos": [
+   {
+    "titulo": "COP31, plaguicidas, pena de muerte en California, Honduras, neumonía… las noticias del jueves",
+    "fecha": "2026-11-12",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542166",
+    "resumen": "Lanzan una plataforma para financiar la respuesta a desastres antes de que ocurran, con el objetivo de proteger a 75 millones de personas. Bangladesh e India prohíben el paraquat, un herbicida vinculado a uno de cada cinco suicidios por plaguicidas en el…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/27-02-2026-IOM-Mozambique-02.jpg/image560x340cropped.jpg"
+   },
    {
     "titulo": "Gaza: la expansión de las posiciones israelíes reaviva los temores de una \"limpieza étnica\"",
     "fecha": "2026-10-30",
@@ -297,16 +304,16 @@ window.NOTICIAS={
     "enlace": "https://news.un.org/feed/view/es/story/2026/09/1541985",
     "resumen": "A 25 años de la adopción de la Declaración y el Programa de Acción de Durban, el Secretario General advierte que el racismo sigue profundizando desigualdades y negando derechos. António Guterres pide reforzar las leyes contra la discriminación, combatir los…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/03-06-2022_UNDP_Senegal.jpg/image560x340cropped.jpg"
-   },
-   {
-    "titulo": "La política de Estados Unidos de enviar migrantes a terceros países los expone a tortura y graves abusos, advierten expertos",
-    "fecha": "2026-09-28",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/09/1541983",
-    "resumen": "Expertos independientes de derechos humanos advierten que los acuerdos utilizados por Estados Unidos para trasladar migrantes y solicitantes de asilo a terceros países pueden exponerlos a tortura, persecución y otras graves violaciones. Según los expertos,…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/01-02-2024_UNICEF_Mexico_detention.jpg/image560x340cropped.jpg"
    }
   ],
   "americas": [
+   {
+    "titulo": "Haití: más de mil asesinatos entre julio y septiembre",
+    "fecha": "2026-11-12",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542167",
+    "resumen": "En Haití 1167 personas fueron asesinadas y 459 resultaron heridas en el trimestre de julio a septiembre. Las pandillas son responsables del 45 % de estos hechos, mientras que alrededor del 5 % se atribuyó a grupos de autodefensa que atacaron a miembros de…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/11/03-11-2026-UNOCHA-Haiti-03.jpg/image560x340cropped.jpg"
+   },
    {
     "titulo": "El Corredor Seco: “Cuando no hay agua, ahí termina toda la inteligencia”",
     "fecha": "2026-11-11",
@@ -439,13 +446,6 @@ window.NOTICIAS={
     "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542029",
     "resumen": "La Comisión Económica para América Latina y el Caribe (CEPAL) advierte que el nuevo escenario geopolítico global es un \"cambio de juego\" en las condiciones externas y que, para navegarlo con éxito, América Latina y el Caribe necesita estrategias claras,…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/09-06-2022_UNSPLASH_Arturo_Rivera_Guatemala.jpg/image560x340cropped.jpg"
-   },
-   {
-    "titulo": "El Niño gana fuerza en América Latina: sequía, hambre y riesgo de inundaciones marcan los próximos meses",
-    "fecha": "2026-10-06",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542020",
-    "resumen": "El fenómeno de El Niño de 2026-2027 podría convertirse en uno de los más intensos de los que se tiene constancia. En América Latina y el Caribe, unos 41 millones de niños y niñas vivirán entre octubre y diciembre en zonas donde se esperan lluvias muy por…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/10/06-10-2026-WFP-Honduras-drought-02.jpg/image560x340cropped.jpg"
    }
   ]
  }
