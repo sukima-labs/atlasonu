@@ -187,18 +187,10 @@
      "issues": [
       321
      ]
-    }
-   ]
-  },
-  {
-   "id": "evaluacion",
-   "titulo": "En evaluación",
-   "intro": "Hecho, a la espera de confirmarlo en un celular real.",
-   "items": [
+    },
     {
      "t": "Seis idiomas: español, inglés, francés, árabe, chino y ruso",
      "x": "Arriba se elige el idioma y la página lo recuerda; en árabe la página se lee de derecha a izquierda. Están traducidos el menú, los títulos, las explicaciones, los filtros, los botones, las fichas de país y de mandato, los tratados y las fechas, con diccionario propio y sin servicios externos. Los documentos, las noticias y los datos oficiales se muestran en el idioma en que los publica la ONU. Falta que una persona revise las traducciones.",
-     "tag": "en evaluación",
      "issues": [
       262
      ]
@@ -206,36 +198,21 @@
    ]
   },
   {
+   "id": "evaluacion",
+   "titulo": "En evaluación",
+   "intro": "Hecho, a la espera de confirmarlo en un celular real.",
+   "items": []
+  },
+  {
    "id": "pendiente",
    "titulo": "Pendiente",
    "intro": "En la cola de trabajo, por orden aproximado. Una tarea cada vez.",
    "items": [
     {
-     "t": "Orden, copias de seguridad y velocidad",
-     "x": "Tareas internas: limpiar ramas y archivos antiguos, tener copias de seguridad, poner la documentación al día y hacer que la página cargue más rápido en celulares modestos.",
+     "t": "Títulos completos en la línea de tiempo de los países",
+     "x": "Algunos títulos de documentos llegan cortados desde la Biblioteca Digital de la ONU, y un nombre de mandato trae una errata de la fuente. Se completan o se marcan como incompletos en la fuente.",
      "issues": [
-      261
-     ]
-    },
-    {
-     "t": "Revisión de uso de todas las pantallas",
-     "x": "Sobre todo en el celular: tablas que pasan a tarjetas, buscador a mano, botones más grandes, contraste y accesibilidad. Ya está hecho el informe con lo medido en las 17 pantallas; falta aplicarlo, las tablas anchas ya pasan a tarjetas en el celular; Países, Mandatos, Arqueología y Auditoría ya se muestran de 20 en 20 y hay botón para volver arriba; siguen los botones más grandes y la letra mínima.",
-     "issues": [
-      253
-     ]
-    },
-    {
-     "t": "Inclusión y más idiomas",
-     "x": "Ya hay «Lectura fácil» en Inicio, Mandatos, Cómo funciona la ONU y Países, y la interfaz en árabe, chino y ruso. Falta probarlo con lector de pantalla y que personas nativas revisen las traducciones.",
-     "issues": [
-      258
-     ]
-    },
-    {
-     "t": "Revisión de expertos y exactitud de los datos",
-     "x": "Que personas expertas revisen traducciones, textos en lenguaje claro y contenido para la infancia, y comprobar cada cierto tiempo, por muestreo, que los datos coinciden con la fuente.",
-     "issues": [
-      245
+      331
      ]
     }
    ]

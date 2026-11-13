@@ -539,18 +539,18 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     ok('T98 recuperar: CCPR/C/COL/CO/8 sale localizado en los documentos de Colombia, con su registro', /LOCALIZADO EN LOS DOCUMENTOS DE COLOMBIA/.test(await pg.textContent('#recoverResult')) && (await pg.locator('#recoverResult a[href*="digitallibrary.un.org/record/"]').count()) > 0);
     await pg.close();
   }
-  // P6: «Qué falta y qué viene» pagina cada bloque por su cuenta (los 4 títulos salen siempre); el menú abierto no deja la página inerte al pasar de 1080 px
+  // P6: «Qué falta y qué viene» pagina cada bloque por su cuenta (sale el título de cada bloque con algo); el menú abierto no deja la página inerte al pasar de 1080 px
   for (const [nom, vp, extra] of [['escritorio', { width: 1440, height: 900 }, {}], ['celular', { width: 390, height: 844 }, { hasTouch: true, isMobile: true }]]) {
     const pg = await browser.newPage({ viewport: vp, ...extra }); await pg.goto(URL); await pg.waitForFunction(() => window.__atlasListo);
     await pg.evaluate(() => showPage('hojaruta'));
     const def = await pg.evaluate(() => { const o = document.getElementById('hojaOut'), pres = [...o.querySelectorAll('.hr-fil button[aria-pressed="true"]')].map(b => b.textContent.replace(/ \(.*/, '')); return { pres, est: [...new Set([...o.querySelectorAll('.hr-est')].map(e => e.textContent.replace(/#.*/, '').trim()))] }; });
-    ok('P6 ' + nom + ': «Qué falta» abre con «Pendiente» y «En curso» marcados (no «Todos») y solo enseña esos estados', def.pres.join('|') === 'En curso|Pendiente' && def.est.every(e => /^(Pendiente|En curso)/.test(e)), def);
+    ok('P6 ' + nom + ': «Qué falta» abre con «Pendiente» y «En curso» (los que haya) marcados (no «Todos») y solo enseña esos estados', def.pres.length > 0 && def.pres.every(e => /^(En curso|Pendiente)$/.test(e)) && def.est.every(e => /^(Pendiente|En curso)/.test(e)), def);
     await pg.evaluate(() => [...document.querySelectorAll('#hojaOut .hr-fil button')].find(b => /^Hecho/.test(b.textContent)).click());
     const tres = await pg.evaluate(() => document.querySelectorAll('#hojaOut .hr-fil button[aria-pressed="true"]').length);
-    ok('P6 ' + nom + ': en «Qué falta» se pueden marcar varios estados a la vez (+ Hecho = 3 marcados)', tres === 3, tres);
+    ok('P6 ' + nom + ': en «Qué falta» se pueden marcar varios estados a la vez (+ Hecho = uno más)', tres === def.pres.length + 1, tres);
     await pg.evaluate(() => [...document.querySelectorAll('#hojaOut .hr-fil button')].find(b => /^Todos/.test(b.textContent)).click());
-    const hr = await pg.evaluate(() => { const o = document.getElementById('hojaOut'); return { h3: [...o.querySelectorAll('h3')].filter(h => h.offsetParent).length, pend: [...o.querySelectorAll('.hr-est')].filter(e => /Pendiente/.test(e.textContent)).length, botones: o.querySelectorAll('.mas button').length }; });
-    ok('P6 ' + nom + ': «Qué falta» con «Todos» enseña los 4 bloques y ya hay pendientes a la vista, cada bloque con su «Mostrar más»', hr.h3 === 4 && hr.pend > 0 && hr.botones >= 1, hr);
+    const hr = await pg.evaluate(() => { const o = document.getElementById('hojaOut'); return { h3: [...o.querySelectorAll('h3')].filter(h => h.offsetParent).length, pend: [...o.querySelectorAll('.hr-est')].filter(e => /Pendiente/.test(e.textContent)).length, botones: o.querySelectorAll('.mas button').length, llenos: DATA.hojaruta.bloques.filter(b => b.items.length).length }; });
+    ok('P6 ' + nom + ': «Qué falta» con «Todos» enseña todos los bloques con algo (uno vacío no sale) y ya hay pendientes a la vista, cada bloque con su «Mostrar más»', hr.h3 === hr.llenos && hr.pend > 0 && hr.botones >= 1, hr);
     await pg.close();
   }
   {
