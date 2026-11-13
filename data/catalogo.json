@@ -7914,8 +7914,13 @@
    {
     "id": "ideas",
     "titulo": "Ideas nuevas",
-    "intro": "ATLAS ONU ya no se amplía: desde el 13 de noviembre de 2026, Sukima-Labs se dedica a mantener y mejorar lo que ya existe. Por eso aquí no entran ideas nuevas.",
-    "items": []
+    "intro": "Lo que haría crecer ATLAS ONU con pantallas, datos o contenido nuevos.",
+    "items": [
+     {
+      "t": "ATLAS ONU ya no se amplía",
+      "x": "Desde el 13 de noviembre de 2026, Sukima-Labs se dedica a mantener y mejorar lo que ya existe: corregir errores, mantener los datos al día, la accesibilidad y las traducciones. Por eso aquí no entran ideas nuevas."
+     }
+    ]
    }
   ]
  },
