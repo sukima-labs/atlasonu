@@ -31,7 +31,23 @@ Reglas:
 - No uses nada que no esté en los extractos: ni memoria, ni suposiciones, ni otros documentos.
 - Si los extractos no bastan para responder, dilo en una frase y no inventes.
 - Si un extracto está en inglés, tradúcelo al citarlo.
-- No des consejos jurídicos personales; describe lo que dicen los documentos."""
+- No des consejos jurídicos personales; describe lo que dicen los documentos.
+- No hagas preguntas ni ofrezcas seguir la conversación: quien lee no puede contestarte."""
+MAX_TEXTO = 1200                               # caracteres de cada párrafo que recibe la IA
+
+# Párrafos sin contenido: líneas del índice (con puntos de relleno) y la portada de los informes
+# (los primeros párrafos, con «Adición», «Nota de la Secretaría» o solo el título y la autora).
+_INDICE = re.compile(r"(\.\s?){6,}|…{3,}")
+_PORTADA = re.compile(r"\b(Adición|Addendum|Nota de la Secretaría|Note by the Secretariat|Distr\.|Original:)", re.I)
+_TITULO = re.compile(r"^\s*(Informe|Report)\b", re.I)
+
+
+def es_relleno(texto, n):
+    """True si el párrafo no dice nada por sí mismo: índice, encabezado suelto o portada."""
+    t = re.sub(r"\s+", " ", texto).strip()
+    if _INDICE.search(t) or len(t) < 60 or (len(t) < 100 and t[-1] not in ".;:"):
+        return True   # índice o encabezado suelto («Acceso al agua potable», «Relatora Especial … (solicitada en 2009)»)
+    return int(n or 0) <= 3 and (bool(_PORTADA.search(t)) or (_TITULO.match(t) and len(t) < 200))
 
 
 class NoDisponible(Exception):
@@ -45,7 +61,7 @@ def disponible():
 def _llamar(mensajes):
     if not disponible():
         raise NoDisponible("sin clave")
-    body = {"model": MODELO, "messages": mensajes, "temperature": 0.1, "max_tokens": 600}
+    body = {"model": MODELO, "messages": mensajes, "temperature": 0.1, "max_tokens": 1000}
     req = urllib.request.Request(API, data=json.dumps(body).encode(), headers={
         "Authorization": "Bearer " + os.environ["OPENCODE_GO_API_KEY"], "Content-Type": "application/json",
         "x-opencode-session": SESION, "User-Agent": "ATLAS-ONU/1.0 (+https://github.com/sukima-labs/atlasonu)"})
@@ -71,6 +87,11 @@ def _sin_marcas(t):
     return t.replace(tc.INI, "").replace(tc.FIN, "")
 
 
+def _recortar(t):
+    t = re.sub(r"\s+", " ", t).strip()
+    return t if len(t) <= MAX_TEXTO else t[:MAX_TEXTO].rsplit(" ", 1)[0] + " …"
+
+
 def responder(con, pregunta, clave=None):
     pregunta = re.sub(r"\s+", " ", pregunta).strip()
     ck = pregunta.lower()
@@ -80,10 +101,17 @@ def responder(con, pregunta, clave=None):
         if hit and ahora - hit[0] < TTL:
             return hit[1]
     parrafos, vistos = [], set()   # un extracto por documento: el mismo párrafo en es y en gastaría dos citas
-    for p in tc.buscar_hibrido(con, pregunta, limite=N_PARRAFOS * 3, por_doc=1, clave=clave):
-        if p["simbolo"] not in vistos and len(parrafos) < N_PARRAFOS:
-            vistos.add(p["simbolo"])
-            parrafos.append(p)
+    for p in tc.buscar_hibrido(con, pregunta, limite=N_PARRAFOS * 6, por_doc=3, clave=clave):
+        if p["simbolo"] in vistos or len(parrafos) >= N_PARRAFOS:
+            continue
+        fila = con.execute("SELECT texto FROM parrafos WHERE simbolo = ? AND lengua = ? AND n = ?",
+                           (p["simbolo"], p["lengua"], p["parrafo"])).fetchone()
+        texto = fila[0] if fila else _sin_marcas(p["fragmento"])
+        if es_relleno(texto, p["parrafo"]):
+            continue
+        vistos.add(p["simbolo"])
+        parrafos.append(p)
+        p["_texto"] = texto
     if not parrafos:
         return {"pregunta": pregunta, "respuesta": "", "citas": [], "parrafos": [], "motivo": "sin_parrafos"}
     with _lock:
@@ -92,7 +120,7 @@ def responder(con, pregunta, clave=None):
             raise RuntimeError("limite")
         _veces.append(ahora)
     extractos = "\n\n".join(f"[{i}] {p['simbolo']} ({p.get('tipo') or 'Resolución'}, {p['lengua']}, párrafo {p['parrafo']}): "
-                            f"{_sin_marcas(p['fragmento'])}" for i, p in enumerate(parrafos, 1))
+                            f"{_recortar(p.pop('_texto'))}" for i, p in enumerate(parrafos, 1))
     texto = _llamar([{"role": "system", "content": SISTEMA},
                      {"role": "user", "content": f"Extractos:\n{extractos}\n\nPregunta: {pregunta}"}])
     texto, usadas = limpiar_citas(texto, len(parrafos))
