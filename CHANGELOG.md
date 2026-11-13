@@ -3,6 +3,7 @@
 ## 0.7 · 31-10-2026
 Versión actual. Cambios desde la auditoría de seguridad y mantenimiento (ver `docs/COLA_DE_TAREAS.md` para el detalle de cada tarea):
 
+- **Arreglos menores del chequeo visual** (T100, #330): el logo ya no se corta en celulares estrechos; la tabla «Todas las vías» cabe entera desde 1280 px; el asistente cuenta «Pregunta 1 de 5»; la búsqueda guiada muestra en el buscador el nombre de la situación, no la consulta interna; el menú dice «Cómo se nombra a los expertos» y «Alertas de verificación» (como el título de su pantalla).
 - **«Preguntar a los documentos» responde con contenido** (T96, #326): la IA ya no recibe portadas ni líneas del índice de los informes, sino párrafos enteros con contenido.
 - **ATLAS como aplicación en el celular:** aviso discreto en la portada («Puedes tener ATLAS en tu celular como una aplicación, gratis») que lleva a los pasos para Android y iPhone, en lenguaje sencillo; donde el navegador lo permite, botón «Instalar ahora». No se ve si ya está instalada.
 - **Fichas de agencias y organismos** (T87, #232): qué es y qué hace cada una (FAO, UNESCO, PMA, ACNUR…) y su nombre oficial, en los 6 idiomas del sitio, en «Cómo funciona la ONU», Siglas y la búsqueda.
