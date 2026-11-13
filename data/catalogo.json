@@ -7975,20 +7975,6 @@
       ]
      },
      {
-      "t": "Siglas y acrónimos",
-      "x": "El diccionario tiene {siglas} entradas: es una selección útil, no todas las de la ONU.",
-      "issues": [
-       256
-      ]
-     },
-     {
-      "t": "Historia: más hechos",
-      "x": "Falta contrastar con la fuente original los hechos de antes de 1945 y seguir completando la descolonización país por país.",
-      "issues": [
-       257
-      ]
-     },
-     {
       "t": "Explicaciones en lenguaje claro de cada resolución",
       "x": "Hasta ahora solo una resolución está explicada así, tras leer su texto.",
       "issues": [
@@ -8012,26 +7998,12 @@
       "estado": "bloqueado"
      },
      {
-      "t": "Grupos de trabajo: lo que falta",
-      "x": "Ya están los grupos intergubernamentales del Consejo y de la Asamblea, el del EPU y los del procedimiento de denuncia. Faltan los grupos de los comités de tratados, otros grupos históricos y, para cada uno, su composición detallada.",
-      "issues": [
-       259
-      ]
-     },
-     {
       "t": "Comunicaciones de detención arbitraria y desapariciones forzadas",
       "x": "En las fichas de país faltan las opiniones del Grupo de Trabajo sobre la Detención Arbitraria y los casos del Grupo de Trabajo sobre las Desapariciones Forzadas. Se investiga qué se puede indexar con enlace al original.",
       "issues": [
        243
       ],
       "estado": "bloqueado"
-     },
-     {
-      "t": "Relatores y relatoras: lo que falta",
-      "x": "Sus informes, visitas y comunicaciones, persona a persona, con enlace al original. Hoy las bases oficiales no permiten consulta automática; se enlazan desde la pantalla.",
-      "issues": [
-       260
-      ]
      },
      {
       "t": "Revisión de expertos y exactitud de los datos",
