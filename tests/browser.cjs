@@ -167,7 +167,12 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     await sp.selectOption('#segCiclo', '4'); await sp.selectOption('#segResp', 'nd');
     const segNd = await sp.evaluate(() => [document.querySelectorAll('.seg-recs li').length, document.querySelectorAll('.seg-recs .pill-nd').length, document.querySelectorAll('.seg-recs .pill-ok,.seg-recs .pill-neutro').length]);
     ok(vp.name + ': T75 filtro «Sin información» del 4.º ciclo: solo pastillas «Sin información», nunca un estado inventado', segNd[0] === 40 && segNd[1] === 40 && segNd[2] === 0, segNd);
-    await sp.selectOption('#segCmpSel', 'MEX'); await sp.selectOption('#segCmpSel', 'ARG');
+    // T97 (#327): elegir en el desplegable no agrega nada (ni con el teclado); se agrega con el botón o con Enter
+    const nCmp = () => sp.evaluate(() => document.querySelectorAll('#segCmp thead th').length);
+    const cmp0 = await nCmp(); await sp.focus('#segCmpSel'); await sp.keyboard.type('Chile'); await sp.selectOption('#segCmpSel', 'MEX');
+    const cmp1 = await nCmp(); await sp.keyboard.press('Enter'); const cmp2 = await nCmp();
+    await sp.selectOption('#segCmpSel', 'ARG'); await sp.click('#segCmpBtn');
+    ok(vp.name + ': T97 comparador: escribir o elegir no agrega; Enter y el botón agregan uno cada vez', cmp1 === cmp0 && cmp2 === cmp0 + 1, [cmp0, cmp1, cmp2]);
     ok(vp.name + ': T75 comparador con 3 países (columna fija + 3) y 15 filas', await sp.evaluate(() => document.querySelectorAll('#segCmp thead th').length === 4 && document.querySelectorAll('#segCmp tbody tr').length === 15));
     // T75 fase 2b y 2c: notas A–E del Comité de Derechos Humanos (Armenia, CCPR/C/144/2/Add.1: 16 [B], 40 [C][B], 42 [B])
     // y del Comité contra la Desaparición Forzada (CED/C/11/2: 12 [B], 19 [B], 27 [B]), un panel por comité.
