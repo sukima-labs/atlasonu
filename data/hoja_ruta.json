@@ -218,13 +218,6 @@
      ]
     },
     {
-     "t": "Comunicaciones de los relatores",
-     "x": "Se muestran las cifras por país, pero cada comunicación individual y su respuesta solo se pueden consultar en la base original. Se busca una vía permitida para enlazarlas.",
-     "issues": [
-      252
-     ]
-    },
-    {
      "t": "Seguimiento de recomendaciones: comités y avances",
      "x": "Ya están las recomendaciones del EPU con la respuesta de cada Estado y las notas de la A a la E del Comité de Derechos Humanos (78 países) y del Comité contra la Desaparición Forzada (14 países). Los demás comités no publican esas notas en la Biblioteca Digital de la ONU: las mandan por carta, y falta una vía legítima para leerlas. Faltan también los avances que cuentan los informes de medio término; cada dato, con quién lo dice y en qué documento.",
      "issues": [
@@ -239,77 +232,11 @@
      ]
     },
     {
-     "t": "Guías para presentar quejas a la ONU",
-     "x": "Pasar de manuales estáticos a una guía viva y al día, unida al asistente «De la información a la acción».",
-     "issues": [
-      207
-     ]
-    },
-    {
-     "t": "Herramienta para clases: crea tu ONU o tu EPU",
-     "x": "Una actividad para colegios, universidades y organizaciones: cada estudiante representa a un país, debate un tema y vota, como en un Modelo de Naciones Unidas. Usaría datos reales de ATLAS: cómo votó cada país en la Asamblea y qué recomendaciones recibió en el EPU. Iría dentro de «Entender la ONU». No guardaría nombres ni cuentas. Ya está, en pruebas: «Simula una asamblea», con la ficha de cada delegación y el kit del profesor (dos actividades, reparto, hojas imprimibles y recuento). Faltan los idiomas y la revisión por docentes.",
-     "issues": [
-      224
-     ]
-    },
-    {
-     "t": "Mapa y fichas: presencia de la ONU en cada país",
-     "x": "Falta una capa con las oficinas de derechos humanos de la ONU y las misiones de paz o políticas en cada país (por ejemplo, la Misión de Verificación en Colombia). Se busca antes una fuente abierta, con licencia y fecha.",
-     "issues": [
-      249
-     ]
-    },
-    {
      "t": "Revisión de uso de todas las pantallas",
      "x": "Sobre todo en el celular: tablas que pasan a tarjetas, buscador a mano, botones más grandes, contraste y accesibilidad. Ya está hecho el informe con lo medido en las 17 pantallas; falta aplicarlo, las tablas anchas ya pasan a tarjetas en el celular; Países, Mandatos, Arqueología y Auditoría ya se muestran de 20 en 20 y hay botón para volver arriba; siguen los botones más grandes y la letra mínima.",
      "issues": [
       253
      ]
-    },
-    {
-     "t": "Mandatos y documentos extinguidos",
-     "x": "Hoy solo están los vigentes (44 temáticos y 13 por país). Faltan los que ya terminaron.",
-     "issues": [
-      237
-     ],
-     "estado": "bloqueado"
-    },
-    {
-     "t": "Jurisprudencia de los comités: lo que falta",
-     "x": "Faltan las observaciones generales anteriores, sus títulos en español y los dictámenes sobre comunicaciones individuales, que hoy solo se enlazan a la base de OHCHR.",
-     "issues": [
-      254
-     ]
-    },
-    {
-     "t": "Comisiones de investigación",
-     "x": "Las que aparecen son una selección verificada, no todas las que ha habido.",
-     "issues": [
-      238
-     ]
-    },
-    {
-     "t": "Documentos básicos comunes de cada Estado",
-     "x": "Investigar y, si hay fuente oficial, indexarlos por país.",
-     "issues": [
-      241
-     ],
-     "estado": "bloqueado"
-    },
-    {
-     "t": "Cómo funciona la ONU, más a fondo",
-     "x": "Ya están las votaciones, las elecciones, la financiación, el ciclo del Consejo de Derechos Humanos, las relaciones entre órganos y las reformas. Falta describir con más detalle los órganos restantes (T10).",
-     "issues": [
-      255
-     ]
-    },
-    {
-     "t": "Explicaciones en lenguaje claro de cada resolución",
-     "x": "Hasta ahora solo una resolución está explicada así, tras leer su texto.",
-     "issues": [
-      239
-     ],
-     "estado": "bloqueado"
     },
     {
      "t": "Inclusión y más idiomas",
@@ -327,25 +254,10 @@
      "estado": "bloqueado"
     },
     {
-     "t": "Comunicaciones de detención arbitraria y desapariciones forzadas",
-     "x": "En las fichas de país faltan las opiniones del Grupo de Trabajo sobre la Detención Arbitraria y los casos del Grupo de Trabajo sobre las Desapariciones Forzadas. Se investiga qué se puede indexar con enlace al original.",
-     "issues": [
-      243
-     ],
-     "estado": "bloqueado"
-    },
-    {
      "t": "Revisión de expertos y exactitud de los datos",
      "x": "Que personas expertas revisen traducciones, textos en lenguaje claro y contenido para la infancia, y comprobar cada cierto tiempo, por muestreo, que los datos coinciden con la fuente.",
      "issues": [
       245
-     ]
-    },
-    {
-     "t": "El reto académico",
-     "x": "Una página sobre qué documentos de la ONU están mal catalogados y que ATLAS sí encuentra. Va al final de todo, sin fecha.",
-     "issues": [
-      240
      ]
     }
    ]
