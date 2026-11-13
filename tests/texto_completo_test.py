@@ -122,6 +122,17 @@ class Pruebas(unittest.TestCase):
         self.assertNotIn("[7]", t)
         self.assertNotIn("[0]", t)
 
+    def test_preguntar_salta_portadas_e_indices(self):
+        # T96 (#326): a la IA no le llegan portadas, líneas de índice ni encabezados sueltos.
+        rel = pg.es_relleno
+        self.assertTrue(rel("Informe de la Relatora Especial sobre el derecho humano al agua potable y el saneamiento, Catarina de Albuquerque Adición", 3))
+        self.assertTrue(rel("Derecho al agua potable y saneamiento ..........................................", 15))
+        self.assertTrue(rel("Acceso al agua potable", 40))
+        self.assertTrue(rel("Relatora Especial sobre el derecho humano al agua potable y el saneamiento (solicitada en 2009)", 46))
+        self.assertFalse(rel("13. The human right to water entitles everyone to sufficient, safe, acceptable, physically accessible and affordable water.", 35))
+        self.assertFalse(rel("Realice visitas a los países y responda con prontitud a las invitaciones.", 1))
+        self.assertIn("No hagas preguntas", pg.SISTEMA)
+
     def test_preguntar_usa_solo_parrafos_y_descarta_sin_citas(self):
         import sqlite3
         con = sqlite3.connect(tc.ruta_db())
