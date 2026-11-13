@@ -218,20 +218,6 @@
      ]
     },
     {
-     "t": "Seguimiento de recomendaciones: comités y avances",
-     "x": "Ya están las recomendaciones del EPU con la respuesta de cada Estado y las notas de la A a la E del Comité de Derechos Humanos (78 países) y del Comité contra la Desaparición Forzada (14 países). Los demás comités no publican esas notas en la Biblioteca Digital de la ONU: las mandan por carta, y falta una vía legítima para leerlas. Faltan también los avances que cuentan los informes de medio término; cada dato, con quién lo dice y en qué documento.",
-     "issues": [
-      203
-     ]
-    },
-    {
-     "t": "De la información a la acción",
-     "x": "Un asistente paso a paso que, ante un caso concreto, explica a qué comité o procedimiento de la ONU se puede acudir, con sus requisitos y plazos.",
-     "issues": [
-      205
-     ]
-    },
-    {
      "t": "Revisión de uso de todas las pantallas",
      "x": "Sobre todo en el celular: tablas que pasan a tarjetas, buscador a mano, botones más grandes, contraste y accesibilidad. Ya está hecho el informe con lo medido en las 17 pantallas; falta aplicarlo, las tablas anchas ya pasan a tarjetas en el celular; Países, Mandatos, Arqueología y Auditoría ya se muestran de 20 en 20 y hay botón para volver arriba; siguen los botones más grandes y la letra mínima.",
      "issues": [
@@ -244,14 +230,6 @@
      "issues": [
       258
      ]
-    },
-    {
-     "t": "Vista para niños y niñas",
-     "x": "Una versión con lenguaje sencillo, dibujos propios y juegos para que niñas y niños conozcan sus derechos y la ONU, sin cuentas ni rastreo. El enfoque ya está escrito; los textos se escribirán y una persona experta los revisará antes de publicarse.",
-     "issues": [
-      165
-     ],
-     "estado": "bloqueado"
     },
     {
      "t": "Revisión de expertos y exactitud de los datos",
