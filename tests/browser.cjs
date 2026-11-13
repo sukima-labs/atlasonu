@@ -328,6 +328,7 @@ const todosLosPaises = async page => { while (await page.locator('#pBody .mas bu
     ok(vp.name + ': T86 Mapa: «Ver en la ficha» abre la ficha del país en su sección del EPU', await page.isVisible('#paises') && (await page.inputValue('#pSel')) === 'COL' && await page.evaluate(() => { const h = document.getElementById('ps-epu'); return !!h && h.getBoundingClientRect().top < innerHeight; }));
     await page.click('#pOut button:has-text("Elegir un subtema en la lista de mandatos")'); await page.waitForTimeout(600);
     ok(vp.name + ': T99 Ficha: «Elegir un subtema» abre la lista de mandatos y deja los subtemas a la vista', await page.evaluate(() => { const d = document.querySelector('#pTemasTabla details'), s = document.getElementById('pTemasSub'); if (!d || !s || !d.open) return false; const t = s.getBoundingClientRect().top; return t >= 0 && t < innerHeight && s.contains(document.activeElement); }));
+    if (vp.width <= 650) await page.click('details[data-plg="ps-temas"] > summary'); await page.waitForTimeout(150); // T99: deja la lista como estaba (T91 la abre a mano en el celular)
     await page.click('#pNav button:has-text("Ver en el mapa")'); await page.waitForTimeout(300);
     ok(vp.name + ': T86 Mapa: «Ver en el mapa» de la ficha vuelve al mapa con ese país elegido', await page.isVisible('#mapa') && (await page.evaluate(() => mpSel)) === 'COL');
     await page.evaluate(() => showPage('paises'));
