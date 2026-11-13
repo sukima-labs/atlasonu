@@ -19,4 +19,10 @@ ok('falla si copia una nota entre corchetes', T.valida('Lista de comprobación',
 ok('falla si repite el español', T.valida('Lista de comprobación', 'Lista de comprobación', 'fr') is not None)
 ok('una marca (Chrome) puede quedarse igual en inglés y en ruso', T.valida('Chrome', 'Chrome', 'en') is None and T.valida('Chrome', 'Chrome', 'ru') is None)
 ok('falla si está vacía', T.valida('Lista', ' ', 'en') is not None)
+import subprocess
+tanda = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'scripts', 'traducir_tanda.sh')
+txt = open(tanda, encoding='utf-8').read()
+ok('traducir_tanda.sh: sintaxis de bash correcta', subprocess.run(['bash', '-n', tanda]).returncode == 0)
+ok('traducir_tanda.sh: el token nunca va en una URL ni en la línea de órdenes', '@github.com' not in txt and 'x-access-token:$' not in txt and 'x-access-token:${' not in txt)
+ok('traducir_tanda.sh: autoría pública Sukima-Labs y sin -c user.email', 'GIT_AUTHOR_NAME="Sukima-Labs"' in txt and '-c user.' not in txt)
 sys.exit(1 if fallos else 0)

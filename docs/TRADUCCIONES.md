@@ -42,6 +42,12 @@ como fichero, sin servidor. `assets/idiomas.js` (el motor) no cambia.
   Prueba sin modelo: `tests/traducir_local_test.py`.
 - Se corre como `atlas`, dentro de `atlas-trad.slice` y nunca a la vez que `atlas-textos` (la tarea programada la monta
   `maquina`). `--probar` enseña lo que haría sin escribir; `--max N` y `--idiomas en,fr` acotan.
+- **Tanda semanal** (`scripts/traducir_tanda.sh`): en sk-atlas, un temporizador de `maquina` la lanza como `atlas` los
+  domingos a las 14:00 (se salta si `atlas-textos` está en marcha). Usa su propio clon (`/var/lib/atlas/trad/atlasonu`),
+  lo pone igual que `main`, traduce lo nuevo y, si hay algo, sube la rama `trad-AAAA-MM-DD` y abre un PR como
+  Sukima-Labs. No abre otro si el anterior sigue sin fusionar. El token (`/etc/atlas/github-trad.env`) es de grano fino y
+  solo sirve para este repositorio (contenidos y PR); `main` solo acepta cambios por PR. El PR lo fusiona `atlas` con la
+  CI en verde.
 - Lo traducido queda en `idiomas/automaticas.json` hasta que lo revise una persona nativa (#262). El árabe y el chino
   son lo más flojo del modelo.
 
