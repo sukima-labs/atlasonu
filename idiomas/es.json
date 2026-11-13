@@ -331,7 +331,6 @@
   "<b>Cómo usarla:</b> lee los siete pasos; para ver quién ocupa hoy cada mandato, abre su ficha en «Explorar mandatos».": "<b>Cómo usarla:</b> lee los siete pasos; para ver quién ocupa hoy cada mandato, abre su ficha en «Explorar mandatos».",
   "<b>De dónde salen los datos:</b> resolución A/HRC/RES/5/1 y páginas de OHCHR; los titulares actuales se actualizan a diario. Datos del <span></span>.": "<b>De dónde salen los datos:</b> resolución A/HRC/RES/5/1 y páginas de OHCHR; los titulares actuales se actualizan a diario. Datos del <span></span>.",
   "Control de calidad jurídica": "Control de calidad jurídica",
-  "Alertas de cotejo": "Alertas de cotejo",
   "Señales para detectar atribuciones institucionales inconsistentes, símbolos parciales o vínculos que conducen a informes en vez de resoluciones. Una alerta <b>no prueba</b> por sí sola que el registro oficial esté equivocado.": "Señales para detectar atribuciones institucionales inconsistentes, símbolos parciales o vínculos que conducen a informes en vez de resoluciones. Una alerta <b>no prueba</b> por sí sola que el registro oficial esté equivocado.",
   "<b>Para qué sirve esta pantalla:</b> ver dónde la fuente oficial es inconsistente o dudosa (símbolos sin «RES», borradores citados como resoluciones, documentos que no son resolución) y qué acción se propone. <u>(cómo usarla y de dónde salen los datos)</u>": "<b>Para qué sirve esta pantalla:</b> ver dónde la fuente oficial es inconsistente o dudosa (símbolos sin «RES», borradores citados como resoluciones, documentos que no son resolución) y qué acción se propone. <u>(cómo usarla y de dónde salen los datos)</u>",
   "<b>Cómo usarla:</b> empieza por las de prioridad alta; cada alerta enlaza el registro oficial para comprobarlo.": "<b>Cómo usarla:</b> empieza por las de prioridad alta; cada alerta enlaza el registro oficial para comprobarlo.",
@@ -1795,5 +1794,7 @@
   "Chrome": "Chrome",
   "Toca": "Toca",
   "Agregar un país": "Agregar un país",
-  "Agregar a la comparación": "Agregar a la comparación"
+  "Agregar a la comparación": "Agregar a la comparación",
+  "Pregunta {n} de {n}": "Pregunta {n} de {n}",
+  "Cómo se nombra a los expertos": "Cómo se nombra a los expertos"
 }

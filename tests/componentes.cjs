@@ -87,7 +87,7 @@ function monta() {
       ok(caso + ': asistente: al elegir, el aviso y la marca de no válido se quitan', await p.evaluate(() => !document.querySelector('#mxAsis .asis-error').textContent && !document.querySelector('#mxAsis [aria-invalid]')));
       await p.click('#mxAsis .asis-sig');
       const e2 = await p.evaluate(() => ({ foco: document.activeElement.textContent, paso: document.querySelector('#mxAsis .asis-cuenta').textContent, actual: document.querySelector('#mxAsis [aria-current=step]').textContent, atras: !!document.querySelector('#mxAsis .asis-atras') }));
-      ok(caso + ': asistente: «Siguiente» pasa a la pregunta 2 con el foco en ella, «Paso 2 de 3» y «Atrás»', e2.foco === 'Pregunta de muestra 2' && e2.paso === 'Paso 2 de 3' && e2.actual === 'Dos' && e2.atras, e2);
+      ok(caso + ': asistente: «Siguiente» pasa a la pregunta 2 con el foco en ella, «Pregunta 2 de 2» y «Atrás»', e2.foco === 'Pregunta de muestra 2' && e2.paso === 'Pregunta 2 de 2' && e2.actual === 'Dos' && e2.atras, e2);
       await p.click('#mxAsis .asis-atras');
       ok(caso + ': asistente: «Atrás» vuelve a la pregunta 1 y recuerda lo elegido', await p.evaluate(() => document.activeElement.textContent === 'Pregunta de muestra 1' && document.querySelector('#mxAsis input[value="b"]').checked));
       await p.click('#mxAsis .asis-sig'); await p.check('#mxAsis .asis-ops input[value="c"]'); await p.click('#mxAsis .asis-sig');
@@ -135,7 +135,7 @@ function monta() {
     const t0 = await p.evaluate(() => document.getElementById('muestra-componentes').innerText);
     await p.evaluate(() => window.mxA.ir(2)); await p.waitForTimeout(300);
     const t = t0 + await p.evaluate(() => document.getElementById('mxAsis').innerText);
-    ok('en inglés: pastillas, comparador, asistente y ficha traducidos', /No information/.test(t) && /\bper\b/.test(t) && /Digital Library/.test(t) && /In testing/.test(t) && /Step 1 of 3/.test(t) && /Step 3 of 3/.test(t) && /Print the summary/.test(t) && /Change the answers/.test(t) && /Delegation card/.test(t) && /Swipe sideways/.test(t) && /Aspect/.test(t), t.slice(0, 400));
+    ok('en inglés: pastillas, comparador, asistente y ficha traducidos', /No information/.test(t) && /\bper\b/.test(t) && /Digital Library/.test(t) && /In testing/.test(t) && /Question 1 of 2/.test(t) && !/Question 3/.test(t) && /Print the summary/.test(t) && /Change the answers/.test(t) && /Delegation card/.test(t) && /Swipe sideways/.test(t) && /Aspect/.test(t), t.slice(0, 400));
     const comp = ['según', 'Sin información', 'En pruebas', 'Paso', 'Atrás', 'Siguiente', 'Resumen', 'Imprimir', 'Cambiar las respuestas', 'Empezar de nuevo', 'Ficha de delegación', 'Desliza de lado', 'Aspecto', 'Elige una opción'];
     await p.evaluate(() => { window.mxA.ir(0); document.querySelector('#mxAsis .asis-sig').click(); }); await p.waitForTimeout(200);
     const pend = (await p.evaluate(() => ATLAS_IDIOMA.pendientes())).filter(k => comp.some(c => k.startsWith(c) || k.includes('>' + c)));

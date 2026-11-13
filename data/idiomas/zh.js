@@ -332,7 +332,6 @@ window.ATLAS_IDIOMA_zh={
 "<b>Cómo usarla:</b> lee los siete pasos; para ver quién ocupa hoy cada mandato, abre su ficha en «Explorar mandatos».":"<b>使用方法：</b>阅读这七个步骤；要查看目前由谁担任各项任务，请在“浏览任务”中打开相应条目。",
 "<b>De dónde salen los datos:</b> resolución A/HRC/RES/5/1 y páginas de OHCHR; los titulares actuales se actualizan a diario. Datos del <span></span>.":"<b>数据来源：</b>决议 A/HRC/RES/5/1 以及联合国人权事务高级专员办事处的页面；现任人员每日更新。数据截至 <span></span>。",
 "Control de calidad jurídica":"法律质量控制",
-"Alertas de cotejo":"核对提示",
 "Señales para detectar atribuciones institucionales inconsistentes, símbolos parciales o vínculos que conducen a informes en vez de resoluciones. Una alerta <b>no prueba</b> por sí sola que el registro oficial esté equivocado.":"用于发现机构归属不一致、文号不完整，或链接指向的是报告而非决议等情况的信号。一条提示本身<b>并不能证明</b>官方记录有误。",
 "<b>Para qué sirve esta pantalla:</b> ver dónde la fuente oficial es inconsistente o dudosa (símbolos sin «RES», borradores citados como resoluciones, documentos que no son resolución) y qué acción se propone. <u>(cómo usarla y de dónde salen los datos)</u>":"<b>本页用途：</b>查看官方来源在哪些地方不一致或存疑（缺少“RES”的文号、被当作决议引用的草案、并非决议的文件），以及建议采取的措施。<u>（使用方法与数据来源）</u>",
 "<b>Cómo usarla:</b> empieza por las de prioridad alta; cada alerta enlaza el registro oficial para comprobarlo.":"<b>使用方法：</b>从高优先级的提示开始；每条提示都链接到官方记录以便核实。",

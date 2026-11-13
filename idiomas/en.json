@@ -331,7 +331,6 @@
   "<b>Cómo usarla:</b> lee los siete pasos; para ver quién ocupa hoy cada mandato, abre su ficha en «Explorar mandatos».": "<b>How to use it:</b> read the seven steps; to see who holds each mandate today, open its card in “Explore mandates”.",
   "<b>De dónde salen los datos:</b> resolución A/HRC/RES/5/1 y páginas de OHCHR; los titulares actuales se actualizan a diario. Datos del <span></span>.": "<b>Where the data come from:</b> resolution A/HRC/RES/5/1 and OHCHR pages; current holders are updated daily. Data as of <span></span>.",
   "Control de calidad jurídica": "Legal quality control",
-  "Alertas de cotejo": "Cross-check alerts",
   "Señales para detectar atribuciones institucionales inconsistentes, símbolos parciales o vínculos que conducen a informes en vez de resoluciones. Una alerta <b>no prueba</b> por sí sola que el registro oficial esté equivocado.": "Signs for detecting inconsistent institutional attributions, partial symbols or links that lead to reports instead of resolutions. An alert <b>does not prove</b> by itself that the official record is wrong.",
   "<b>Para qué sirve esta pantalla:</b> ver dónde la fuente oficial es inconsistente o dudosa (símbolos sin «RES», borradores citados como resoluciones, documentos que no son resolución) y qué acción se propone. <u>(cómo usarla y de dónde salen los datos)</u>": "<b>What this screen is for:</b> seeing where the official source is inconsistent or doubtful (symbols without “RES”, drafts cited as resolutions, documents that are not resolutions) and what action is proposed. <u>(how to use it and where the data come from)</u>",
   "<b>Cómo usarla:</b> empieza por las de prioridad alta; cada alerta enlaza el registro oficial para comprobarlo.": "<b>How to use it:</b> start with the high-priority ones; each alert links to the official record so you can check it.",
@@ -1793,5 +1792,7 @@
   "Puedes tener ATLAS en tu celular <b>como una aplicación</b>, gratis. <a>Cómo hacerlo</a>": "You can have ATLAS on your mobile <b>as an app</b>, free. <a>How to do it</a>",
   "Cómo hacerlo": "How to do it",
   "Toca": "Tap",
-  "Chrome": "Chrome"
+  "Chrome": "Chrome",
+  "Pregunta {n} de {n}": "Question {n} of {n}",
+  "Cómo se nombra a los expertos": "How experts are appointed"
 }
