@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-12",
+ "actualizado": "2026-11-13",
  "bloques": [
   {
    "id": "disponible",
@@ -179,6 +179,13 @@
      "x": "En el celular, los enlaces a cada documento de la ficha de un país («ES ↗», «EN ↗», «Registro ↗») y sus desplegables se tocan con el dedo sin acertar al de al lado (44 px), y las cifras y años de las gráficas de votos se leen a 13 px o más.",
      "issues": [
       286
+     ]
+    },
+    {
+     "t": "Traducciones hechas en casa",
+     "x": "Los textos de la página se escriben en español y un traductor automático abierto, que funciona en el servidor del proyecto, prepara los otros cinco idiomas. Después, personas nativas los revisan.",
+     "issues": [
+      321
      ]
     }
    ]
@@ -367,13 +374,6 @@
      "x": "Una página sobre qué documentos de la ONU están mal catalogados y que ATLAS sí encuentra. Va al final de todo, sin fecha.",
      "issues": [
       240
-     ]
-    },
-    {
-     "t": "Traducciones hechas en casa",
-     "x": "Los textos de la página se escriben en español y un traductor automático abierto, que funciona en el servidor del proyecto, prepara los otros cinco idiomas. Después, personas nativas los revisan.",
-     "issues": [
-      321
      ]
     }
    ]
