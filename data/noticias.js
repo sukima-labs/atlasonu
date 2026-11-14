@@ -1,8 +1,32 @@
 window.NOTICIAS={
  "fuente": "Noticias ONU (news.un.org)",
- "actualizado": "2026-11-13T18:41:02Z",
+ "actualizado": "2026-11-14T03:21:40Z",
  "temas": {
   "todas": [
+   {
+    "titulo": "COP31: Sin dinero suficiente, crecen las voces para que paguen más los que más contaminan",
+    "fecha": "2026-11-13",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542174",
+    "resumen": "Entre peticiones emotivas de justicia climática y negociaciones de alto nivel sobre miles de millones de dólares, el dinero dominó las discusiones de la COP31 el viernes. El Secretario General advirtió de que incluso si se triplican los recursos para que los…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/13-11-2026_COP-31-03.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
+   {
+    "titulo": "El impacto devastador de la última tormenta en Gaza se podría haber evitado",
+    "fecha": "2026-11-13",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542173",
+    "resumen": "Se trata de decisiones políticas israelíes que podían haber salvado la vida de niños y adultos. La obligación de Israel, como potencia ocupante, es la de garantizar las necesidades básicas de la población de Gaza, incluidos los suministros esenciales para la…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/07-11-2026-UNNews-Gaza-Winer-Children.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
+   {
+    "titulo": "COP31, ébola, robots asesinos, Gaza… las noticias del viernes",
+    "fecha": "2026-11-13",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542172",
+    "resumen": "El Secretario General de la ONU despide su última cumbre del clima en Antalya advirtiendo de que el sobrecalentamiento de 1,5 grados ya es inevitable. El Congo suma 5400 muertos por ébola a los seis meses del brote. La ONU pide un tratado que prohíba las…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/08/28-08-2026-UNICEF-Nepal-floods-06.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
    {
     "titulo": "COP31: las ciudades están en la primera línea del cambio climático",
     "fecha": "2026-11-12",
@@ -111,7 +135,7 @@ window.NOTICIAS={
     "titulo": "Frente a la desinformación, hay que reconquistar la confianza en la ciencia",
     "fecha": "2026-11-06",
     "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542150",
-    "resumen": "La agencia de la saludo lanza el movimiento \"Juntos por la ciencia y la salud\", después de que la encuesta global más amplia hasta la fecha, con 140.000 personas en 140 países, revele que, aunque más del 70 % sigue creyendo en la ciencia, la confianza ha…",
+    "resumen": "La agencia de la salud lanza el movimiento \"Juntos por la ciencia y la salud\", después de que la encuesta global más amplia hasta la fecha, con 140.000 personas en 140 países, revele que, aunque más del 70 % sigue creyendo en la ciencia, la confianza ha…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/31-03-2021_UNICEF-400295_COVAX_India.jpg/image560x340cropped.jpg",
     "destacada": false
    },
@@ -137,30 +161,6 @@ window.NOTICIAS={
     "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542145",
     "resumen": "Los ataques contra los sistemas de agua en las guerras se han triplicado en cinco años y dejan a millones de personas sin acceso a agua potable, según UNICEF. La Cumbre Iberoamericana arranca en Madrid con la recomendación de la CEPAL a América Latina de…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/11/05-11-2026-UNICEF-Yemen.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "COP31: ¿Qué está en juego este año en la cumbre climática de la ONU?",
-    "fecha": "2026-11-05",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542143",
-    "resumen": "Las energías renovables avanzan a un ritmo sin precedentes, pero gran parte del mundo sigue sin tener los recursos necesarios para aprovecharlas. La financiación y el cumplimiento de los compromisos climáticos estarán en el centro de una cumbre que deberá…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/11/03-11-2026-UNICEF-Bangladesh-02.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "Un 25% de los adolescentes no hace suficiente ejercicio",
-    "fecha": "2026-11-04",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542142",
-    "resumen": "Uno de cada cuatro adolescentes, unos 240 millones, no realiza 60 minutos de actividad física ningún día de la semana, y las niñas se quedan más atrás: el 28 % no tiene ningún día activo, frente al 22 % de los niños. Durante 15 años, el mundo no ha logrado…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/07-05-2025-IOM-Yemen-football-02.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "Clima y salud, clima y adaptación, el precio del petróleo… las noticias del miércoles",
-    "fecha": "2026-11-04",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542141",
-    "resumen": "El mundo \"no está preparado\" para adaptarse al cambio climático: los países en desarrollo necesitarán 305.000 millones de dólares anuales para 2035, pero la financiación pública internacional solo alcanzó entre 28.200 y 31.700 millones en 2024. La OMS…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/10/06-10-2026_UNICEF_Vietnam_El_Nino_Children.jpg/image560x340cropped.jpg",
     "destacada": false
    }
   ],
