@@ -21,7 +21,7 @@ jobs:
           cp data/*.js data/*.json data/cambios.atom data/atlas-onu-catalogo-v07.xlsx _site/data/
           cp -r data/idiomas data/paises data/tratados data/votaciones data/votos_si_no data/seguimiento _site/data/
           touch _site/.nojekyll
-      - uses: actions/configure-pages@v5
+      - uses: actions/configure-pages@v6
       - uses: actions/upload-pages-artifact@v3
         with: { path: _site }
       - id: deploy
