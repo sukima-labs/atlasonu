@@ -1794,6 +1794,8 @@ window.ATLAS_IDIOMA_en={
 "Cómo hacerlo":"How to do it",
 "Chrome":"Chrome",
 "Toca":"Tap",
+"Agregar un país":"Add a country",
+"Agregar a la comparación":"Add to comparison",
 "Pregunta {n} de {n}":"Question {n} of {n}",
 "Cómo se nombra a los expertos":"How experts are appointed"
 };

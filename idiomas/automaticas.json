@@ -104,7 +104,9 @@
     "Puedes tener ATLAS en tu celular <b>como una aplicación</b>, gratis. <a>Cómo hacerlo</a>",
     "Cómo hacerlo",
     "Toca",
-    "Chrome"
+    "Chrome",
+    "Agregar un país",
+    "Agregar a la comparación"
   ],
   "fr": [
     "Imprimir la lista de comprobación",
@@ -210,7 +212,12 @@
     "Puedes tener ATLAS en tu celular <b>como una aplicación</b>, gratis. <a>Cómo hacerlo</a>",
     "Cómo hacerlo",
     "Toca",
-    "Chrome"
+    "Chrome",
+    "Los <b>mandatos temáticos</b> pueden enviar comunicaciones (cartas de alegaciones y llamamientos urgentes) a <b>cualquier Estado</b>, <b>hayan o no ratificado</b> los tratados. <a>Elige un subtema en la lista de mandatos ↓</a>",
+    "Agregar un país",
+    "Agregar a la comparación",
+    "Pregunta {n} de {n}",
+    "Cómo se nombra a los expertos"
   ],
   "ar": [
     "Imprimir la lista de comprobación",
@@ -316,7 +323,12 @@
     "Puedes tener ATLAS en tu celular <b>como una aplicación</b>, gratis. <a>Cómo hacerlo</a>",
     "Cómo hacerlo",
     "Toca",
-    "Chrome"
+    "Chrome",
+    "Los <b>mandatos temáticos</b> pueden enviar comunicaciones (cartas de alegaciones y llamamientos urgentes) a <b>cualquier Estado</b>, <b>hayan o no ratificado</b> los tratados. <a>Elige un subtema en la lista de mandatos ↓</a>",
+    "Agregar un país",
+    "Agregar a la comparación",
+    "Pregunta {n} de {n}",
+    "Cómo se nombra a los expertos"
   ],
   "zh": [
     "Imprimir la lista de comprobación",
@@ -422,7 +434,11 @@
     "Puedes tener ATLAS en tu celular <b>como una aplicación</b>, gratis. <a>Cómo hacerlo</a>",
     "Cómo hacerlo",
     "Toca",
-    "Chrome"
+    "Chrome",
+    "Agregar un país",
+    "Agregar a la comparación",
+    "Pregunta {n} de {n}",
+    "Cómo se nombra a los expertos"
   ],
   "ru": [
     "Imprimir la lista de comprobación",
@@ -528,6 +544,10 @@
     "Puedes tener ATLAS en tu celular <b>como una aplicación</b>, gratis. <a>Cómo hacerlo</a>",
     "Cómo hacerlo",
     "Toca",
-    "Chrome"
+    "Chrome",
+    "Agregar un país",
+    "Agregar a la comparación",
+    "Pregunta {n} de {n}",
+    "Cómo se nombra a los expertos"
   ]
 }
