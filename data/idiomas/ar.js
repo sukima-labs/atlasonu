@@ -649,6 +649,7 @@ window.ATLAS_IDIOMA_ar={
 "<b>CED</b><span>Ratificación {n} jul {n}</span>":"<b>CED</b><span>تصديق {n} تموز/يوليو {n}</span>",
 "Relatores y grupos de trabajo que pueden actuar":"المقررون والأفرقة العاملة التي يمكنها التحرك",
 "No hay un mandato de procedimientos especiales sobre este país en el índice vigente. Eso no significa que no esté bajo examen en otros mecanismos (EPU, órganos de tratados).":"لا توجد ولاية إجراءات خاصة بشأن هذا البلد في الفهرس الساري. وهذا لا يعني أنه ليس قيد الاستعراض في آليات أخرى (الاستعراض الدوري الشامل وهيئات المعاهدات).",
+"Los <b>mandatos temáticos</b> pueden enviar comunicaciones (cartas de alegaciones y llamamientos urgentes) a <b>cualquier Estado</b>, <b>hayan o no ratificado</b> los tratados. <a>Elige un subtema en la lista de mandatos ↓</a>":"يمكن للـ <b>المهام الموضوعية</b> إرسال تواصل (رسائل ادعاء وطلبات طارئة) إلى <b>أي دولة</b>، <b>مُرَتِّبَة أو غير مُرَتِّبَة</b> للاتفاقيات. <a>اختر موضوعًا فرعيًا من قائمة المهام ↓</a>",
 "Qué hechos ver":"أي الأحداث تريد أن ترى",
 "Todo ({n})":"الكل ({n})",
 "↑ Más antiguos primero":"↑ الأقدم أولًا",
@@ -1792,5 +1793,9 @@ window.ATLAS_IDIOMA_ar={
 "Puedes tener ATLAS en tu celular <b>como una aplicación</b>, gratis. <a>Cómo hacerlo</a>":"يمكنك أن تمتلك ATLAS على هاتفك <b>كتطبيق</b>، مجانًا. <a>كيفية القيام بذلك</a>",
 "Cómo hacerlo":"كيف تفعل ذلك",
 "Chrome":"Chrome",
-"Toca":"انقر"
+"Toca":"انقر",
+"Agregar un país":"إضافة بلد",
+"Agregar a la comparación":"إضافة إلى المقارنة",
+"Pregunta {n} de {n}":"السؤال {n} من {n}",
+"Cómo se nombra a los expertos":"كيف يُسمّى الخبراء"
 };

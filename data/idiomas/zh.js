@@ -1792,5 +1792,9 @@ window.ATLAS_IDIOMA_zh={
 "Puedes tener ATLAS en tu celular <b>como una aplicación</b>, gratis. <a>Cómo hacerlo</a>":"你可以将 ATLAS 安装到你的手机 <b>作为应用程序</b>，免费。 <a>如何操作</a>",
 "Cómo hacerlo":"如何操作",
 "Chrome":"Chrome",
-"Toca":"点击"
+"Toca":"点击",
+"Agregar un país":"添加一个国家",
+"Agregar a la comparación":"添加到比较中",
+"Pregunta {n} de {n}":"第{n}题共{n}题",
+"Cómo se nombra a los expertos":"如何任命专家"
 };

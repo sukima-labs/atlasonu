@@ -649,6 +649,7 @@ window.ATLAS_IDIOMA_fr={
 "<b>CED</b><span>Ratificación {n} jul {n}</span>":"<b>CED</b><span>Ratification {n} juil. {n}</span>",
 "Relatores y grupos de trabajo que pueden actuar":"Rapporteurs et groupes de travail qui peuvent intervenir",
 "No hay un mandato de procedimientos especiales sobre este país en el índice vigente. Eso no significa que no esté bajo examen en otros mecanismos (EPU, órganos de tratados).":"Il n'existe pas de mandat de procédures spéciales sur ce pays dans l'index en vigueur. Cela ne signifie pas qu'il ne fasse pas l'objet d'un examen dans d'autres mécanismes (EPU, organes conventionnels).",
+"Los <b>mandatos temáticos</b> pueden enviar comunicaciones (cartas de alegaciones y llamamientos urgentes) a <b>cualquier Estado</b>, <b>hayan o no ratificado</b> los tratados. <a>Elige un subtema en la lista de mandatos ↓</a>":"Les <b>mandats thématiques</b> peuvent envoyer des communications (lettres d'objection et appels d'urgence) à <b>tout État</b>, <b>quels que soient ses statuts de ratification</b>. <a>Choisissez un sous-thème dans la liste des mandats ↓</a>",
 "Qué hechos ver":"Quels faits voir",
 "Todo ({n})":"Tout ({n})",
 "↑ Más antiguos primero":"↑ Les plus anciens d'abord",
@@ -1792,5 +1793,9 @@ window.ATLAS_IDIOMA_fr={
 "Puedes tener ATLAS en tu celular <b>como una aplicación</b>, gratis. <a>Cómo hacerlo</a>":"Tu peux avoir ATLAS sur ton téléphone <b>comme une application</b>, gratuitement. <a>Comment le faire</a>",
 "Cómo hacerlo":"Comment le faire",
 "Chrome":"Chrome",
-"Toca":"Clique"
+"Toca":"Clique",
+"Agregar un país":"Ajouter un pays",
+"Agregar a la comparación":"Ajouter à la comparaison",
+"Pregunta {n} de {n}":"Question {n} sur {n}",
+"Cómo se nombra a los expertos":"Comment on nomme-t-on les experts"
 };
