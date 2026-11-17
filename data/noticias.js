@@ -1,8 +1,32 @@
 window.NOTICIAS={
  "fuente": "Noticias ONU (news.un.org)",
- "actualizado": "2026-11-16T21:08:23Z",
+ "actualizado": "2026-11-17T05:11:15Z",
  "temas": {
   "todas": [
+   {
+    "titulo": "La IA responde con la ciencia a la primera pregunta sobre el cambio climático, a la segunda… ya es otro tema",
+    "fecha": "2026-11-16",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542179",
+    "resumen": "Entre la ciencia y la complacencia, los grandes modelos de lenguaje eligen la primera cuando se les pregunta y la segunda en cuanto el usuario objeta o niega la evidencia.",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/31-05-2023-UNDP-Cambodia-weather.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
+   {
+    "titulo": "COP31 bloqueada, IA climática, cáncer de cérvix y refugiados… las noticias del martes",
+    "fecha": "2026-11-16",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542178",
+    "resumen": "La cumbre del clima entra en su semana final con las negociaciones atascadas y los ministros en camino. UNESCO alerta de que los chatbots ceden ante la presión del usuario y abandonan ciencia cuando se les pregunta por el cambio climático. Un estudio con más…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/16-11-2026_COP-31_03.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
+   {
+    "titulo": "La COP31 entra en su semana decisiva: las negociaciones siguen bloqueadas mientras se alarga la sombra de la IA",
+    "fecha": "2026-11-16",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542176",
+    "resumen": "Las nuevas iniciativas internacionales sobre inteligencia artificial e industrialización verde pusieron de manifiesto el papel creciente de la tecnología en la cuestión climática, al tiempo que las conversaciones diplomáticas siguen bloqueadas en materia de…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/16-11-2026_COP-31_01.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
    {
     "titulo": "En la Cumbre de los países del sudeste asiático, Guterres pide más representación internacional para esa región",
     "fecha": "2026-11-16",
@@ -137,30 +161,6 @@ window.NOTICIAS={
     "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542146",
     "resumen": "Pero para llegar a trabajar en el Organismo Internacional de la Energía Atómica tuvo que superar el racismo, la discriminación social y jornadas de más de 12 horas para estudiar Ingeniería. \"Nuestros héroes están en la vida cotidiana. Solo hay que reconocer…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/10/30-10-2026-Dandara-IAEA.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "Frente a la desinformación, hay que reconquistar la confianza en la ciencia",
-    "fecha": "2026-11-06",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542150",
-    "resumen": "La agencia de la salud lanza el movimiento \"Juntos por la ciencia y la salud\", después de que la encuesta global más amplia hasta la fecha, con 140.000 personas en 140 países, revele que, aunque más del 70 % sigue creyendo en la ciencia, la confianza ha…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/31-03-2021_UNICEF-400295_COVAX_India.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "COP31, Sudán, Ucrania y precios de los alimentos… las noticias del viernes",
-    "fecha": "2026-11-06",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542149",
-    "resumen": "La Conferencia sobre el Clima, la COP31, arranca la próxima semana en Turquía con una advertencia: las ciudades necesitan 4,5 billones de dólares al año para adaptarse al clima, pero solo reciben una quinta parte. Baja el precio de los alimentos, pero el…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/09/03-09-2026-Climate-Visuals-Poland-01.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "En el Ártico y a la deriva, una expedición científica lanza un llamado a los líderes mundiales: Escuchen a la ciencia",
-    "fecha": "2026-11-06",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542147",
-    "resumen": "Atrapados voluntariamente en el hielo del Ártico, un grupo de científicos observa cómo se transforma una de las regiones más frágiles del planeta. Mientras el hielo retrocede y los petroleros ganan terreno, sus hallazgos llegan hasta el Secretario General de…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/11/05-11-2026-Tara-Polar-Station-02.jpg/image560x340cropped.jpg",
     "destacada": false
    }
   ],

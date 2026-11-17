@@ -1,8 +1,35 @@
 {
 "fuente": "Noticias ONU (news.un.org)",
-"actualizado": "2026-11-16T21:08:23Z",
-"total": 98,
+"actualizado": "2026-11-17T05:11:15Z",
+"total": 101,
 "notas": [
+{
+"titulo": "La IA responde con la ciencia a la primera pregunta sobre el cambio climático, a la segunda… ya es otro tema",
+"fecha": "2026-11-16",
+"enlace": "https://news.un.org/feed/view/es/story/2026/11/1542179",
+"resumen": "Entre la ciencia y la complacencia, los grandes modelos de lenguaje eligen la primera cuando se les pregunta y la segunda en cuanto el usuario objeta o niega la evidencia.",
+"visto": "2026-11-17",
+"derechos": false,
+"americas": false
+},
+{
+"titulo": "COP31 bloqueada, IA climática, cáncer de cérvix y refugiados… las noticias del martes",
+"fecha": "2026-11-16",
+"enlace": "https://news.un.org/feed/view/es/story/2026/11/1542178",
+"resumen": "La cumbre del clima entra en su semana final con las negociaciones atascadas y los ministros en camino. UNESCO alerta de que los chatbots ceden ante la presión del usuario y abandonan ciencia cuando se les pregunta por el cambio climático. Un estudio con más…",
+"visto": "2026-11-17",
+"derechos": false,
+"americas": false
+},
+{
+"titulo": "La COP31 entra en su semana decisiva: las negociaciones siguen bloqueadas mientras se alarga la sombra de la IA",
+"fecha": "2026-11-16",
+"enlace": "https://news.un.org/feed/view/es/story/2026/11/1542176",
+"resumen": "Las nuevas iniciativas internacionales sobre inteligencia artificial e industrialización verde pusieron de manifiesto el papel creciente de la tecnología en la cuestión climática, al tiempo que las conversaciones diplomáticas siguen bloqueadas en materia de…",
+"visto": "2026-11-17",
+"derechos": false,
+"americas": false
+},
 {
 "titulo": "En la Cumbre de los países del sudeste asiático, Guterres pide más representación internacional para esa región",
 "fecha": "2026-11-16",
