@@ -1,8 +1,44 @@
 {
 "fuente": "Noticias ONU (news.un.org)",
-"actualizado": "2026-11-18T04:27:46Z",
-"total": 101,
+"actualizado": "2026-11-18T19:32:33Z",
+"total": 105,
 "notas": [
+{
+"titulo": "Bolivia, Estados Unidos y México pierden su estatus de países libres del sarampión",
+"fecha": "2026-11-17",
+"enlace": "https://news.un.org/feed/view/es/story/2026/11/1542184",
+"resumen": "La agencia de la ONU para la salud en las Américas alerta de que la transmisión endémica se ha restablecido en los tres países, en un año que multiplica por cuatro los casos en las Américas: 58.213 contagios y 82 muertes. El descenso de las tasas de…",
+"visto": "2026-11-18",
+"derechos": false,
+"americas": false
+},
+{
+"titulo": "COP31: La protección de los océanos llega a la mesa de negociaciones",
+"fecha": "2026-11-17",
+"enlace": "https://news.un.org/feed/view/es/story/2026/11/1542183",
+"resumen": "Desde identificar la vida marina en una simple taza de agua marina hasta recurrir a los conocimientos indígenas para prevenir incendios forestales, científicos y comunidades indígenas mostraron el martes en la COP31 propuestas para proteger la naturaleza,…",
+"visto": "2026-11-18",
+"derechos": false,
+"americas": false
+},
+{
+"titulo": "Gaza, el fracaso de la comunidad internacional",
+"fecha": "2026-11-17",
+"enlace": "https://news.un.org/feed/view/es/story/2026/11/1542182",
+"resumen": "Las primeras lluvias del invierno han devastado decenas de miles de refugios improvisados, mientras 1,4 millones de personas están pasando hambre y más de 100.000 tiendas de campaña están bloqueadas fuera de la Franja. Israel, la potencia ocupante, solo…",
+"visto": "2026-11-18",
+"derechos": false,
+"americas": false
+},
+{
+"titulo": "Hambre en Gaza, COP31, obesidad y químicos de la discordia... las noticias del martes",
+"fecha": "2026-11-17",
+"enlace": "https://news.un.org/feed/view/es/story/2026/11/1542181",
+"resumen": "Casi 1,5 millones de palestinos padece hambre aguda, mientras Israel mantiene los obstáculos al paso de la ayuda humanitaria. La inversión climática en América Latina debe ser vista como una inversión, no como un gasto. España lidera un llamado mundial…",
+"visto": "2026-11-18",
+"derechos": true,
+"americas": false
+},
 {
 "titulo": "La IA responde con la ciencia a la primera pregunta sobre el cambio climático, a la segunda… ya es otro tema",
 "fecha": "2026-11-16",

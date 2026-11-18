@@ -1,8 +1,40 @@
 window.NOTICIAS={
  "fuente": "Noticias ONU (news.un.org)",
- "actualizado": "2026-11-18T04:27:46Z",
+ "actualizado": "2026-11-18T19:32:33Z",
  "temas": {
   "todas": [
+   {
+    "titulo": "Bolivia, Estados Unidos y México pierden su estatus de países libres del sarampión",
+    "fecha": "2026-11-17",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542184",
+    "resumen": "La agencia de la ONU para la salud en las Américas alerta de que la transmisión endémica se ha restablecido en los tres países, en un año que multiplica por cuatro los casos en las Américas: 58.213 contagios y 82 muertes. El descenso de las tasas de…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/15-06-26_WHO_India_School_Immunization.jpeg/image560x340cropped.jpg",
+    "destacada": false
+   },
+   {
+    "titulo": "COP31: La protección de los océanos llega a la mesa de negociaciones",
+    "fecha": "2026-11-17",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542183",
+    "resumen": "Desde identificar la vida marina en una simple taza de agua marina hasta recurrir a los conocimientos indígenas para prevenir incendios forestales, científicos y comunidades indígenas mostraron el martes en la COP31 propuestas para proteger la naturaleza,…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/17-11-2026_COP31_02.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
+   {
+    "titulo": "Gaza, el fracaso de la comunidad internacional",
+    "fecha": "2026-11-17",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542182",
+    "resumen": "Las primeras lluvias del invierno han devastado decenas de miles de refugios improvisados, mientras 1,4 millones de personas están pasando hambre y más de 100.000 tiendas de campaña están bloqueadas fuera de la Franja. Israel, la potencia ocupante, solo…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/17-11-2026-UNICEF-Gaza.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
+   {
+    "titulo": "Hambre en Gaza, COP31, obesidad y químicos de la discordia... las noticias del martes",
+    "fecha": "2026-11-17",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542181",
+    "resumen": "Casi 1,5 millones de palestinos padece hambre aguda, mientras Israel mantiene los obstáculos al paso de la ayuda humanitaria. La inversión climática en América Latina debe ser vista como una inversión, no como un gasto. España lidera un llamado mundial…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/13-11-2026_IOM_Gaza.jpg/image560x340cropped.jpg",
+    "destacada": true
+   },
    {
     "titulo": "La IA responde con la ciencia a la primera pregunta sobre el cambio climático, a la segunda… ya es otro tema",
     "fecha": "2026-11-16",
@@ -130,41 +162,16 @@ window.NOTICIAS={
     "resumen": "Unos 1500 millones de mujeres y niñas viven ya en zonas de alto riesgo climático, y la crisis podría empujar a 141 millones más a la pobreza extrema. En Sudán, UNICEF alerta de que 825.000 niños sufrirán desnutrición aguda debido a los ataques con drones a…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/10/05-10-2026-UNICEF-Pakistan.jpg/image560x340cropped.jpg",
     "destacada": false
-   },
-   {
-    "titulo": "La COP31 abre en Antalya: ¿pueden por fin las promesas climáticas dar resultados?",
-    "fecha": "2026-11-09",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542157",
-    "resumen": "Casi 200 países han llegado a la costa mediterránea de Turquía para una cumbre climática con una ambición diferente: menos declaraciones y más decisiones. Con un poderoso fenómeno de El Niño que amenaza con empeorar los eventos meteorológicos extremos, los…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/9-11-26_COP31surrounds2_UNFCCC.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "COP31, Ucrania, Gaza, Papa y sarampión… las noticias del lunes",
-    "fecha": "2026-11-09",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542155",
-    "resumen": "La COP31 arranca en Antalya con una advertencia: El Niño podría costar 11 billones de dólares a la economía mundial, mientras la financiación climática sigue sin llegar a los más vulnerables. En Ucrania, los ataques rusos a la energía dejan a cientos de…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/10/08-10-2026_FAO_Cambodia_El_nino.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "Las temperaturas extremas \"excepcionales\" continuarán el año que viene",
-    "fecha": "2026-11-09",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542152",
-    "resumen": "Los últimos 12 años han sido los más cálidos registrados y la temperatura media global entre enero y septiembre de 2026 fue de 1,47 °C por encima de la era preindustrial. Un fenómeno de el Niño que será el más fuerte registrado en diciembre seguirá desatando…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/30-01-2025-UNICEF-Thailand-01.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "La joven ingeniera nuclear que salió de la periferia de Brasil para conquistar el mundo",
-    "fecha": "2026-11-07",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542146",
-    "resumen": "Pero para llegar a trabajar en el Organismo Internacional de la Energía Atómica tuvo que superar el racismo, la discriminación social y jornadas de más de 12 horas para estudiar Ingeniería. \"Nuestros héroes están en la vida cotidiana. Solo hay que reconocer…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/10/30-10-2026-Dandara-IAEA.jpg/image560x340cropped.jpg",
-    "destacada": false
    }
   ],
   "derechos": [
+   {
+    "titulo": "Hambre en Gaza, COP31, obesidad y químicos de la discordia... las noticias del martes",
+    "fecha": "2026-11-17",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542181",
+    "resumen": "Casi 1,5 millones de palestinos padece hambre aguda, mientras Israel mantiene los obstáculos al paso de la ayuda humanitaria. La inversión climática en América Latina debe ser vista como una inversión, no como un gasto. España lidera un llamado mundial…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/13-11-2026_IOM_Gaza.jpg/image560x340cropped.jpg"
+   },
    {
     "titulo": "COP31, plaguicidas, pena de muerte en California, Honduras, neumonía… las noticias del jueves",
     "fecha": "2026-11-12",
@@ -297,13 +304,6 @@ window.NOTICIAS={
     "enlace": "https://news.un.org/feed/view/es/story/2026/09/1541986",
     "resumen": "Guterres denuncia que el racismo sigue envenenando las sociedades 25 años después de la Declaración de Durban. Türk celebra la búsqueda conjunta de desaparecidos en Colombia y pide más financiación. La ONU alerta de niveles \"sin precedentes\" de violencia de…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/09/28-09-2026-UN-Photo-Guterres.jpg/image560x340cropped.jpg"
-   },
-   {
-    "titulo": "Guterres pide renovar la acción mundial para combatir el “veneno” del racismo",
-    "fecha": "2026-09-28",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/09/1541985",
-    "resumen": "A 25 años de la adopción de la Declaración y el Programa de Acción de Durban, el Secretario General advierte que el racismo sigue profundizando desigualdades y negando derechos. António Guterres pide reforzar las leyes contra la discriminación, combatir los…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/03-06-2022_UNDP_Senegal.jpg/image560x340cropped.jpg"
    }
   ],
   "americas": [
