@@ -1,8 +1,53 @@
 {
 "fuente": "Noticias ONU (news.un.org)",
-"actualizado": "2026-11-18T19:32:33Z",
-"total": 105,
+"actualizado": "2026-11-19T04:20:16Z",
+"total": 110,
 "notas": [
+{
+"titulo": "COP31: 21 asuntos sin resolver a tres días del final",
+"fecha": "2026-11-18",
+"enlace": "https://news.un.org/feed/view/es/story/2026/11/1542190",
+"resumen": "La cumbre del clima de Antalya acumula asuntos entre corchetes, lo que significa “sin acuerdo” en jerga diplomática. No son temas menores, sino capítulos como financiación, el abandono de los combustibles fósiles y adaptación al cambio climático. Todo ello…",
+"visto": "2026-11-19",
+"derechos": false,
+"americas": false
+},
+{
+"titulo": "Impulsados por China, los registros de patentes alcanzan un récord",
+"fecha": "2026-11-18",
+"enlace": "https://news.un.org/feed/view/es/story/2026/11/1542189",
+"resumen": "De las aproximadamente 224.000 solicitudes adicionales presentadas en el mundo en 2025, 113.693 lo fueron en China. Con cerca de 1,9 millones de solicitudes, el país se mantiene ampliamente a la cabeza del ranking mundial, por delante de Estados Unidos…",
+"visto": "2026-11-19",
+"derechos": false,
+"americas": false
+},
+{
+"titulo": "El Darién se vacía: los cruces caen un 90 %, mientras nace una gran ruta migratoria hacia el sur de América",
+"fecha": "2026-11-18",
+"enlace": "https://news.un.org/feed/view/es/story/2026/11/1542188",
+"resumen": "Muchos venezolanos están regresando a casa y muchos cubanos se están instalando en Brasil y Uruguay. \"La migración no ha parado: la gente busca nuevas rutas y otras direcciones\", señala la agencia de la ONU para las migraciones.",
+"visto": "2026-11-19",
+"derechos": false,
+"americas": true
+},
+{
+"titulo": "Alerta: Los antibióticos están dejando de funcionar contra infecciones comunes",
+"fecha": "2026-11-18",
+"enlace": "https://news.un.org/feed/view/es/story/2026/11/1542187",
+"resumen": "La agencia de la salud señala que hay tres líneas de defensa de antibióticos, pero cada vez que cae una, los pacientes se acercan más a no tener buenas opciones en absoluto. Además, en los hospitales donde se toman pocas muestras de sangre para identificar…",
+"visto": "2026-11-19",
+"derechos": false,
+"americas": false
+},
+{
+"titulo": "Manila, Yemen, pensiones y alpacas… las noticias del miércoles",
+"fecha": "2026-11-18",
+"enlace": "https://news.un.org/feed/view/es/story/2026/11/1542185",
+"resumen": "Líderes mundiales se reúnen en Manila para erradicar la violencia contra los niños, mientras UNICEF cuenta 64 menores muertos en Yemen en tres meses de escalada. La CEPAL publica su Panorama Social con un mensaje: las pensiones evitan que los mayores caigan…",
+"visto": "2026-11-19",
+"derechos": true,
+"americas": false
+},
 {
 "titulo": "Bolivia, Estados Unidos y México pierden su estatus de países libres del sarampión",
 "fecha": "2026-11-17",

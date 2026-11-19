@@ -1,8 +1,48 @@
 window.NOTICIAS={
  "fuente": "Noticias ONU (news.un.org)",
- "actualizado": "2026-11-18T19:32:33Z",
+ "actualizado": "2026-11-19T04:20:16Z",
  "temas": {
   "todas": [
+   {
+    "titulo": "COP31: 21 asuntos sin resolver a tres días del final",
+    "fecha": "2026-11-18",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542190",
+    "resumen": "La cumbre del clima de Antalya acumula asuntos entre corchetes, lo que significa “sin acuerdo” en jerga diplomática. No son temas menores, sino capítulos como financiación, el abandono de los combustibles fósiles y adaptación al cambio climático. Todo ello…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/18-11-2026_COP31.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
+   {
+    "titulo": "Impulsados por China, los registros de patentes alcanzan un récord",
+    "fecha": "2026-11-18",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542189",
+    "resumen": "De las aproximadamente 224.000 solicitudes adicionales presentadas en el mundo en 2025, 113.693 lo fueron en China. Con cerca de 1,9 millones de solicitudes, el país se mantiene ampliamente a la cabeza del ranking mundial, por delante de Estados Unidos…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/02-05-24_UNDP_Make_Break_Create-1.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
+   {
+    "titulo": "El Darién se vacía: los cruces caen un 90 %, mientras nace una gran ruta migratoria hacia el sur de América",
+    "fecha": "2026-11-18",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542188",
+    "resumen": "Muchos venezolanos están regresando a casa y muchos cubanos se están instalando en Brasil y Uruguay. \"La migración no ha parado: la gente busca nuevas rutas y otras direcciones\", señala la agencia de la ONU para las migraciones.",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/20-11-2025_UNODC_trafficking3.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
+   {
+    "titulo": "Alerta: Los antibióticos están dejando de funcionar contra infecciones comunes",
+    "fecha": "2026-11-18",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542187",
+    "resumen": "La agencia de la salud señala que hay tres líneas de defensa de antibióticos, pero cada vez que cae una, los pacientes se acercan más a no tener buenas opciones en absoluto. Además, en los hospitales donde se toman pocas muestras de sangre para identificar…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/24-03-2023-WHO-antimicrobial.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
+   {
+    "titulo": "Manila, Yemen, pensiones y alpacas… las noticias del miércoles",
+    "fecha": "2026-11-18",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542185",
+    "resumen": "Líderes mundiales se reúnen en Manila para erradicar la violencia contra los niños, mientras UNICEF cuenta 64 menores muertos en Yemen en tres meses de escalada. La CEPAL publica su Panorama Social con un mensaje: las pensiones evitan que los mayores caigan…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/10/08-10-2026-UNICEF-violence-against-children.jpg/image560x340cropped.jpg",
+    "destacada": true
+   },
    {
     "titulo": "Bolivia, Estados Unidos y México pierden su estatus de países libres del sarampión",
     "fecha": "2026-11-17",
@@ -122,49 +162,16 @@ window.NOTICIAS={
     "resumen": "Lanzan una plataforma para financiar la respuesta a desastres antes de que ocurran, con el objetivo de proteger a 75 millones de personas. Bangladesh e India prohíben el paraquat, un herbicida vinculado a uno de cada cinco suicidios por plaguicidas en el…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/27-02-2026-IOM-Mozambique-02.jpg/image560x340cropped.jpg",
     "destacada": true
-   },
-   {
-    "titulo": "Guterres: Es el momento de la verdad: o actuamos o nos asamos",
-    "fecha": "2026-11-11",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542164",
-    "resumen": "\"Los combustibles fósiles deben seguir el camino de los dinosaurios (la extinción). (Pero) los dinosaurios no tenían un lobby. Los combustibles fósiles, sí\", advierte el titular de la ONU. Además, contrasta los 95.000 millones que ganaron las nueve mayores…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/11-11-2026_COP31.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "COP31, sequía en Centroamérica, Gaza, ébola… las noticias del miércoles",
-    "fecha": "2026-11-11",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542163",
-    "resumen": "En la COP31, el Secretario General advierte de que \"los combustibles fósiles deben seguir el camino de los dinosaurios\", la extinción. En nuestro podcast \"Sin la ONU\", viajamos al Corredor Seco de Centroamérica para conocer cómo la sequía está cambiando la…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/29-06-2206_Adobe_heatwave.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "El Corredor Seco: “Cuando no hay agua, ahí termina toda la inteligencia”",
-    "fecha": "2026-11-11",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542151",
-    "resumen": "Con El Niño fortaleciéndose, la sequía vuelve a amenazar el Corredor Seco de Centroamérica. Anastacio y Marta lideran iniciativas que ayudan a sus comunidades a afrontar la sequía y evitar que más familias tengan que marcharse.",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Graphics%20Library/2026/11/Anastacio-WFPHonduras-1.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "COP31: la transición energética toma el protagonismo más allá de los combustibles fósiles",
-    "fecha": "2026-11-10",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542160",
-    "resumen": "La transición energética global tomó el protagonismo en el segundo día de la COP31, donde los países exploraron cómo alejarse de los combustibles fósiles, acelerar la energía limpia y superar las barreras financieras y de infraestructura que se interponen en…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/11/03-11-2026-Adobe-Stock-renewable-energy-01.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "Desigualdad en la COP31, Sudán, ébola y Estados Unidos: las noticias del martes",
-    "fecha": "2026-11-10",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542159",
-    "resumen": "Unos 1500 millones de mujeres y niñas viven ya en zonas de alto riesgo climático, y la crisis podría empujar a 141 millones más a la pobreza extrema. En Sudán, UNICEF alerta de que 825.000 niños sufrirán desnutrición aguda debido a los ataques con drones a…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/10/05-10-2026-UNICEF-Pakistan.jpg/image560x340cropped.jpg",
-    "destacada": false
    }
   ],
   "derechos": [
+   {
+    "titulo": "Manila, Yemen, pensiones y alpacas… las noticias del miércoles",
+    "fecha": "2026-11-18",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542185",
+    "resumen": "Líderes mundiales se reúnen en Manila para erradicar la violencia contra los niños, mientras UNICEF cuenta 64 menores muertos en Yemen en tres meses de escalada. La CEPAL publica su Panorama Social con un mensaje: las pensiones evitan que los mayores caigan…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/10/08-10-2026-UNICEF-violence-against-children.jpg/image560x340cropped.jpg"
+   },
    {
     "titulo": "Hambre en Gaza, COP31, obesidad y químicos de la discordia... las noticias del martes",
     "fecha": "2026-11-17",
@@ -297,16 +304,16 @@ window.NOTICIAS={
     "enlace": "https://news.un.org/feed/view/es/story/2026/09/1541987",
     "resumen": "A diez años de la firma del Acuerdo de Paz, el Alto Comisionado de la ONU para los Derechos Humanos pidió garantizar recursos suficientes y continuidad a los mecanismos de justicia transicional de Colombia, incluida la Jurisdicción Especial para la Paz.…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/09/28-09-26_ColombiaVictims_UNVerificationMission.jpg/image560x340cropped.jpg"
-   },
-   {
-    "titulo": "Racismo, Colombia, Palestina, Estados Unidos… Las noticias del lunes",
-    "fecha": "2026-09-28",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/09/1541986",
-    "resumen": "Guterres denuncia que el racismo sigue envenenando las sociedades 25 años después de la Declaración de Durban. Türk celebra la búsqueda conjunta de desaparecidos en Colombia y pide más financiación. La ONU alerta de niveles \"sin precedentes\" de violencia de…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/09/28-09-2026-UN-Photo-Guterres.jpg/image560x340cropped.jpg"
    }
   ],
   "americas": [
+   {
+    "titulo": "El Darién se vacía: los cruces caen un 90 %, mientras nace una gran ruta migratoria hacia el sur de América",
+    "fecha": "2026-11-18",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542188",
+    "resumen": "Muchos venezolanos están regresando a casa y muchos cubanos se están instalando en Brasil y Uruguay. \"La migración no ha parado: la gente busca nuevas rutas y otras direcciones\", señala la agencia de la ONU para las migraciones.",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/20-11-2025_UNODC_trafficking3.jpg/image560x340cropped.jpg"
+   },
    {
     "titulo": "Haití: más de mil asesinatos entre julio y septiembre",
     "fecha": "2026-11-12",
@@ -439,13 +446,6 @@ window.NOTICIAS={
     "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542035",
     "resumen": "La enfermedad ha dejado 77 muertos en lo que va de año. La Organización Panamericana de la Salud alerta de que las grandes celebraciones religiosas previstas en Sudamérica podrían acelerar los contagios, mientras millones de personas siguen sin protección.",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production+Library/14-07-2021_PAHO_Venezuela.jpg/image560x340cropped.jpg"
-   },
-   {
-    "titulo": "La ONU llama a América Latina a integrarse y fortalecer sus instituciones ante la nueva era geopolítica",
-    "fecha": "2026-10-08",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542029",
-    "resumen": "La Comisión Económica para América Latina y el Caribe (CEPAL) advierte que el nuevo escenario geopolítico global es un \"cambio de juego\" en las condiciones externas y que, para navegarlo con éxito, América Latina y el Caribe necesita estrategias claras,…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/09-06-2022_UNSPLASH_Arturo_Rivera_Guatemala.jpg/image560x340cropped.jpg"
    }
   ]
  }
