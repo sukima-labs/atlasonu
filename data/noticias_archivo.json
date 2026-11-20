@@ -1,15 +1,24 @@
 {
 "fuente": "Noticias ONU (news.un.org)",
-"actualizado": "2026-11-20T04:04:54Z",
-"total": 114,
+"actualizado": "2026-11-20T19:12:32Z",
+"total": 115,
 "notas": [
+{
+"titulo": "COP31: Sin mención a los combustibles fósiles, no habrá acuerdo, aseguran varios países",
+"fecha": "2026-11-20",
+"enlace": "https://news.un.org/feed/view/es/story/2026/11/1542196",
+"resumen": "Los países definieron seis prioridades que deseaban ver reflejadas en el acuerdo: la necesidad de una transición, decidir con la ciencia en la mano, obligar a pagar a quienes contaminan, electrificar los países con base en las energías limpias, reducir las…",
+"visto": "2026-11-20",
+"derechos": false,
+"americas": false
+},
 {
 "titulo": "No se necesita aprobación del gobierno para formar una asociación",
 "fecha": "2026-11-19",
 "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542195",
 "resumen": "Ante la reducción del espacio público por parte de los Gobiernos, un Comité de la ONU emite un observación general sobre el Pacto Internacional de Derechos Civiles y Políticos: la libertad de asociación, reconocida en las leyes internacionales, permite a las…",
 "visto": "2026-11-20",
-"derechos": false,
+"derechos": true,
 "americas": false
 },
 {

@@ -1,15 +1,23 @@
 window.NOTICIAS={
  "fuente": "Noticias ONU (news.un.org)",
- "actualizado": "2026-11-20T04:04:54Z",
+ "actualizado": "2026-11-20T19:12:32Z",
  "temas": {
   "todas": [
+   {
+    "titulo": "COP31: Sin mención a los combustibles fósiles, no habrá acuerdo, aseguran varios países",
+    "fecha": "2026-11-20",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542196",
+    "resumen": "Los países definieron seis prioridades que deseaban ver reflejadas en el acuerdo: la necesidad de una transición, decidir con la ciencia en la mano, obligar a pagar a quienes contaminan, electrificar los países con base en las energías limpias, reducir las…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/55662349225_208649f008_k.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
    {
     "titulo": "No se necesita aprobación del gobierno para formar una asociación",
     "fecha": "2026-11-19",
     "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542195",
     "resumen": "Ante la reducción del espacio público por parte de los Gobiernos, un Comité de la ONU emite un observación general sobre el Pacto Internacional de Derechos Civiles y Políticos: la libertad de asociación, reconocida en las leyes internacionales, permite a las…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/23-07-2025-UN-Photo-ICJ-advisory-opinion-03.jpg/image560x340cropped.jpg",
-    "destacada": false
+    "destacada": true
    },
    {
     "titulo": "COP31: Los combustibles fósiles quedan fuera del borrador del acuerdo",
@@ -154,17 +162,16 @@ window.NOTICIAS={
     "resumen": "Se trata de decisiones políticas israelíes que podían haber salvado la vida de niños y adultos. La obligación de Israel, como potencia ocupante, es la de garantizar las necesidades básicas de la población de Gaza, incluidos los suministros esenciales para la…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/07-11-2026-UNNews-Gaza-Winer-Children.jpg/image560x340cropped.jpg",
     "destacada": false
-   },
-   {
-    "titulo": "COP31, ébola, robots asesinos, Gaza… las noticias del viernes",
-    "fecha": "2026-11-13",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542172",
-    "resumen": "El Secretario General de la ONU despide su última cumbre del clima en Antalya advirtiendo de que el sobrecalentamiento de 1,5 grados ya es inevitable. El Congo suma 5400 muertos por ébola a los seis meses del brote. La ONU pide un tratado que prohíba las…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/08/28-08-2026-UNICEF-Nepal-floods-06.jpg/image560x340cropped.jpg",
-    "destacada": false
    }
   ],
   "derechos": [
+   {
+    "titulo": "No se necesita aprobación del gobierno para formar una asociación",
+    "fecha": "2026-11-19",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542195",
+    "resumen": "Ante la reducción del espacio público por parte de los Gobiernos, un Comité de la ONU emite un observación general sobre el Pacto Internacional de Derechos Civiles y Políticos: la libertad de asociación, reconocida en las leyes internacionales, permite a las…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/23-07-2025-UN-Photo-ICJ-advisory-opinion-03.jpg/image560x340cropped.jpg"
+   },
    {
     "titulo": "Manila, Yemen, pensiones y alpacas… las noticias del miércoles",
     "fecha": "2026-11-18",
@@ -297,13 +304,6 @@ window.NOTICIAS={
     "enlace": "https://news.un.org/feed/view/es/story/2026/09/1541997",
     "resumen": "Las mujeres que buscan a familiares y otras personas desaparecidas en México están expuestas a desapariciones, asesinatos y ataques, en un contexto de impunidad casi total, advierten expertos independientes. Los especialistas recordaron que la búsqueda es…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/28-07-2023-CEE-Mexico-disappearances-01.jpg/image560x340cropped.jpg"
-   },
-   {
-    "titulo": "Colombia: La justicia transicional bajo el Acuerdo De Paz debe seguir contando con financiación y apoyo",
-    "fecha": "2026-09-28",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/09/1541987",
-    "resumen": "A diez años de la firma del Acuerdo de Paz, el Alto Comisionado de la ONU para los Derechos Humanos pidió garantizar recursos suficientes y continuidad a los mecanismos de justicia transicional de Colombia, incluida la Jurisdicción Especial para la Paz.…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/09/28-09-26_ColombiaVictims_UNVerificationMission.jpg/image560x340cropped.jpg"
    }
   ],
   "americas": [
