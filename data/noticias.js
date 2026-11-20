@@ -1,8 +1,32 @@
 window.NOTICIAS={
  "fuente": "Noticias ONU (news.un.org)",
- "actualizado": "2026-11-19T19:37:09Z",
+ "actualizado": "2026-11-20T04:04:54Z",
  "temas": {
   "todas": [
+   {
+    "titulo": "No se necesita aprobación del gobierno para formar una asociación",
+    "fecha": "2026-11-19",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542195",
+    "resumen": "Ante la reducción del espacio público por parte de los Gobiernos, un Comité de la ONU emite un observación general sobre el Pacto Internacional de Derechos Civiles y Políticos: la libertad de asociación, reconocida en las leyes internacionales, permite a las…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/23-07-2025-UN-Photo-ICJ-advisory-opinion-03.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
+   {
+    "titulo": "COP31: Los combustibles fósiles quedan fuera del borrador del acuerdo",
+    "fecha": "2026-11-19",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542194",
+    "resumen": "La decisión preocupa a los activistas presentes en la Conferencia y exigen un plan significativo que proteja a todo el mundo. Actualmente, el borrador sí respalda la meta de Turquía de aumentar al 35% la proporción de electricidad en el consumo final de…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/19-11-2026_COP31.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
+   {
+    "titulo": "Myanmar, COP31 y El Niño en Guatemala… las noticias del jueves",
+    "fecha": "2026-11-19",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542193",
+    "resumen": "La Corte Internacional de Justicia declara a Myanmar responsable de genocidio contra los rohinyá. En la COP31 desaparece del borrador final la salida de los combustibles fósiles. El Niño deja a más de tres millones de guatemaltecos en riesgo de hambre.",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/19-11-2026_ICJ_Myanmar.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
    {
     "titulo": "La Corte Internacional de Justicia declara a Myanmar culpable de genocidio contra los rohinyás",
     "fecha": "2026-11-19",
@@ -137,30 +161,6 @@ window.NOTICIAS={
     "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542172",
     "resumen": "El Secretario General de la ONU despide su última cumbre del clima en Antalya advirtiendo de que el sobrecalentamiento de 1,5 grados ya es inevitable. El Congo suma 5400 muertos por ébola a los seis meses del brote. La ONU pide un tratado que prohíba las…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/08/28-08-2026-UNICEF-Nepal-floods-06.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "COP31: las ciudades están en la primera línea del cambio climático",
-    "fecha": "2026-11-12",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542169",
-    "resumen": "Los activistas y países vulnerables exigieron una respuesta urgente e inmediata para proteger a las comunidades en primera línea frente a los crecientes desastres climáticos poniendo así presión a los líderes para que financien y adopten medidas, entre…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/11/02-11-2026-UNEP-Italy-ecosystem.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "Gaza: la ONU denuncia los bloqueos mortales de Israel frente a las inclemencias del tiempo",
-    "fecha": "2026-11-12",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542168",
-    "resumen": "En Gaza, hasta la lluvia mata. El responsable humanitario de la ONU resume un invierno que ya se cobra vidas entre tiendas inundadas y bebés muertos de frío, mientras 150.000 tiendas y medio millón de mantas permanecen bloqueadas a las puertas del enclave.…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/07-11-2026-UNNews-Gaza-Winer-Sewage-2.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "Haití: más de mil asesinatos entre julio y septiembre",
-    "fecha": "2026-11-12",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542167",
-    "resumen": "En Haití 1167 personas fueron asesinadas y 459 resultaron heridas en el trimestre de julio a septiembre. Las pandillas son responsables del 45 % de estos hechos, mientras que alrededor del 5 % se atribuyó a grupos de autodefensa que atacaron a miembros de…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/11/03-11-2026-UNOCHA-Haiti-03.jpg/image560x340cropped.jpg",
     "destacada": false
    }
   ],

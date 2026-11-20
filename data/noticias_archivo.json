@@ -1,8 +1,35 @@
 {
 "fuente": "Noticias ONU (news.un.org)",
-"actualizado": "2026-11-19T19:37:09Z",
-"total": 111,
+"actualizado": "2026-11-20T04:04:54Z",
+"total": 114,
 "notas": [
+{
+"titulo": "No se necesita aprobación del gobierno para formar una asociación",
+"fecha": "2026-11-19",
+"enlace": "https://news.un.org/feed/view/es/story/2026/11/1542195",
+"resumen": "Ante la reducción del espacio público por parte de los Gobiernos, un Comité de la ONU emite un observación general sobre el Pacto Internacional de Derechos Civiles y Políticos: la libertad de asociación, reconocida en las leyes internacionales, permite a las…",
+"visto": "2026-11-20",
+"derechos": false,
+"americas": false
+},
+{
+"titulo": "COP31: Los combustibles fósiles quedan fuera del borrador del acuerdo",
+"fecha": "2026-11-19",
+"enlace": "https://news.un.org/feed/view/es/story/2026/11/1542194",
+"resumen": "La decisión preocupa a los activistas presentes en la Conferencia y exigen un plan significativo que proteja a todo el mundo. Actualmente, el borrador sí respalda la meta de Turquía de aumentar al 35% la proporción de electricidad en el consumo final de…",
+"visto": "2026-11-20",
+"derechos": false,
+"americas": false
+},
+{
+"titulo": "Myanmar, COP31 y El Niño en Guatemala… las noticias del jueves",
+"fecha": "2026-11-19",
+"enlace": "https://news.un.org/feed/view/es/story/2026/11/1542193",
+"resumen": "La Corte Internacional de Justicia declara a Myanmar responsable de genocidio contra los rohinyá. En la COP31 desaparece del borrador final la salida de los combustibles fósiles. El Niño deja a más de tres millones de guatemaltecos en riesgo de hambre.",
+"visto": "2026-11-20",
+"derechos": false,
+"americas": false
+},
 {
 "titulo": "La Corte Internacional de Justicia declara a Myanmar culpable de genocidio contra los rohinyás",
 "fecha": "2026-11-19",
