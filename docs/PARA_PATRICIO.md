@@ -51,7 +51,7 @@ Los Claude que trabajan en clones (incluido el del mini PC) **solo tocan git y G
 ## 8. Dónde está cada cosa
 | Tema | Documento |
 |---|---|
-| Visión general y reglas | `docs/CONTEXTO_PARA_NUEVAS_SESIONES.md`, `CLAUDE.md` |
+| Visión general y reglas | `docs/CONTEXTO_PARA_NUEVAS_SESIONES.md`, `AGENTS.md` |
 | Quién publica los datos y cuándo | `docs/OPERACION.md` |
 | Copias y restauración | `docs/RECUPERACION.md` |
 | Privacidad | `docs/PRIVACIDAD.md` |

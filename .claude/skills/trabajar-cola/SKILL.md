@@ -1,11 +1,12 @@
 ---
 name: trabajar-cola
-description: Modo continuo de ATLAS ONU. Hace las tareas de docs/COLA_DE_TAREAS.md una tras otra (rama, pruebas, commit, push, PR, fusión con CI en verde, marcar hecha) sin pedir /clear entre tareas, decide por su cuenta lo que haga falta y no para hasta que la cola esté vacía o bloqueada de verdad. Úsala cuando el fundador diga «haz las tareas», «sigue con la cola» o «en automático».
+description: Modo continuo de ATLAS ONU. Hace las tareas de docs/COLA_DE_TAREAS.md una tras otra (rama, pruebas, commit, push, PR, fusión con CI en verde, marcar hecha) sin cerrar la sesión entre tareas, decide por su cuenta lo que haga falta y no para hasta que la cola esté vacía o bloqueada de verdad. Úsala cuando el fundador diga «haz las tareas», «sigue con la cola» o «en automático».
+compatibility: Requiere git, gh autenticado en GitHub, Node.js y Python 3, en un clon de sukima-labs/atlasonu.
 ---
 
 # Trabajar la cola (ATLAS ONU)
 
-Autorización permanente del fundador (31-10-2026): decidir por tu cuenta lo necesario, fusionar PRs con CI en verde, crear ramas y commits, y no parar hasta terminar la cola. No hace falta pedir `/clear` entre tareas en este modo. Respeta las reglas fijas de `docs/COLA_DE_TAREAS.md` (gratis, abierto, privado; lista de comprobación de interfaz; lo bloqueado por fuentes oficiales no se toca).
+Autorización permanente del fundador (31-10-2026): decidir por tu cuenta lo necesario, fusionar PRs con CI en verde, crear ramas y commits, y no parar hasta terminar la cola. No hace falta cerrar la sesión (`/clear`) entre tareas en este modo. Respeta las reglas fijas de `docs/COLA_DE_TAREAS.md` (gratis, abierto, privado; lista de comprobación de interfaz; lo bloqueado por fuentes oficiales no se toca).
 
 ## Punto de partida
 - Trabaja siempre desde `main` actualizado (`git checkout main && git pull --ff-only origin main`). No dependas de ramas sin fusionar: si una PR anterior sigue abierta, no la uses como base; anótala y sigue.
@@ -20,7 +21,7 @@ Autorización permanente del fundador (31-10-2026): decidir por tu cuenta lo nec
    - `browser.cjs` solo si Playwright está instalado (`node -e "require('playwright')"`). Si no, dilo en el cierre y añade una tarea a la cola para instalarlo.
 5. **Cola:** marca la tarea **hecha** con fecha y una línea. Recalcula «Siguiente tarea» a partir del orden decidido; no la escribas a mano.
 6. **Cambios visibles:** si cambia lo que se ve o la versión, actualizar `data/hoja_ruta.json` (ver `cerrar-tarea`) y `CHANGELOG.md`.
-7. **Commit y subida:** commit con identidad `Sukima-Labs <atlas@sukima-labs.invalid>`, fijada en el clon con `git config user.name` y `git config user.email` (el historial es público: no debe llevar el nombre, el correo ni la cuenta personal de nadie; ATLAS figura solo como de Sukima-Labs) y **sin** líneas de atribución (ni `Co-Authored-By` ni «Generated with Claude Code»: Claude no figura como contribuidor en sukima-labs); `git push -u`; `gh pr create`. Esperar el CI con `gh pr checks <n> --watch --interval 20 > <scratchpad>/ci.txt` (no uses `sleep`: está bloqueado).
+7. **Commit y subida:** commit con identidad `Sukima-Labs <atlas@sukima-labs.invalid>`, fijada en el clon con `git config user.name` y `git config user.email` (el historial es público: no debe llevar el nombre, el correo ni la cuenta personal de nadie; ATLAS figura solo como de Sukima-Labs) y **sin** líneas de atribución (ni `Co-Authored-By` ni «Generated with…»: el agente no figura como contribuidor en sukima-labs); `git push -u`; `gh pr create`. Esperar el CI con `gh pr checks <n> --watch --interval 20 > <scratchpad>/ci.txt` (no uses `sleep`: está bloqueado).
 8. **Fusionar:** si el CI está en verde, `gh pr merge <n> --squash` **en una llamada sola**, sin encadenarlo con otros comandos (si el clasificador lo bloquea, toda la cadena se pierde). Nunca borres ramas en el mismo comando.
 9. Volver al paso 1.
 

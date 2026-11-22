@@ -1,11 +1,12 @@
 ---
 name: cerrar-tarea
-description: Cierre de cada tarea de ATLAS ONU antes de pedir /clear. Sincroniza la cola de tareas y la pantalla «Qué falta y qué viene» con lo hecho, lo que está en evaluación, lo pendiente y las ideas nuevas.
+description: Cierre de cada tarea de ATLAS ONU antes de cerrar la sesión. Sincroniza la cola de tareas y la pantalla «Qué falta y qué viene» con lo hecho, lo que está en evaluación, lo pendiente y las ideas nuevas.
+compatibility: Requiere git, gh autenticado en GitHub, Node.js y Python 3, en un clon de sukima-labs/atlasonu.
 ---
 
 # Cerrar tarea (ATLAS ONU)
 
-Úsala al terminar cada tarea, **antes** de decirle al fundador que escriba `/clear`. La pantalla «Qué falta y qué viene» (`#hojaruta` en `index.html`) y `docs/COLA_DE_TAREAS.md` tienen que contar lo mismo y estar al día.
+Úsala al terminar cada tarea, **antes** de cerrar la sesión (en Claude Code, `/clear`). La pantalla «Qué falta y qué viene» (`#hojaruta` en `index.html`) y `docs/COLA_DE_TAREAS.md` tienen que contar lo mismo y estar al día.
 
 ## Pasos
 1. **Cola:** marca la tarea como **hecha** con fecha y una línea de qué se hizo; actualiza «Siguiente tarea». Añade como tarea nueva (T30, T31…) toda idea, error o pedido del fundador que haya surgido en la sesión, aunque no se vaya a hacer ya.
@@ -20,4 +21,4 @@ description: Cierre de cada tarea de ATLAS ONU antes de pedir /clear. Sincroniza
 3. **Reservas del fundador:** no publicar lo que pidió mantener en reserva (por ejemplo, el origen académico de DIGNITYOS y el detalle de cómo funciona). Dudas, preguntar.
 4. **Pruebas:** `cd tests && node smoke.cjs`, `node tests/invariantes.cjs` y `node tests/browser.cjs`. Revisar la pantalla a 390 px y en escritorio.
 5. **Subir:** rama → commit → PR → fusión con el CI en verde. Dejar la carpeta limpia.
-6. **Cerrar:** resumen corto y pedir `/clear`.
+6. **Cerrar:** resumen corto y cerrar la sesión.
