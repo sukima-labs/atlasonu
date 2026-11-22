@@ -1,8 +1,16 @@
 window.NOTICIAS={
  "fuente": "Noticias ONU (news.un.org)",
- "actualizado": "2026-11-21T18:04:12Z",
+ "actualizado": "2026-11-22T03:16:49Z",
  "temas": {
   "todas": [
+   {
+    "titulo": "Discordia en la COP31, Ucrania, Afganistán y hambre global: las noticias del viernes",
+    "fecha": "2026-11-20",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542198",
+    "resumen": "Discordia en el último día de la cumbre del clima contra el borrador del acuerdo. Ucrania registra el máximo de niños muertos en casi cuatro años. En Afganistán, la mitad de las organizaciones de mujeres anuncia que tendrá que cerrar sus servicios por falta…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/20-11-2026_COP31.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
    {
     "titulo": "COP31: Sin mención a los combustibles fósiles, no habrá acuerdo, aseguran varios países",
     "fecha": "2026-11-20",
@@ -153,14 +161,6 @@ window.NOTICIAS={
     "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542174",
     "resumen": "Entre peticiones emotivas de justicia climática y negociaciones de alto nivel sobre miles de millones de dólares, el dinero dominó las discusiones de la COP31 el viernes. El Secretario General advirtió de que incluso si se triplican los recursos para que los…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/13-11-2026_COP-31-03.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "El impacto devastador de la última tormenta en Gaza se podría haber evitado",
-    "fecha": "2026-11-13",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542173",
-    "resumen": "Se trata de decisiones políticas israelíes que podían haber salvado la vida de niños y adultos. La obligación de Israel, como potencia ocupante, es la de garantizar las necesidades básicas de la población de Gaza, incluidos los suministros esenciales para la…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/07-11-2026-UNNews-Gaza-Winer-Children.jpg/image560x340cropped.jpg",
     "destacada": false
    }
   ],
