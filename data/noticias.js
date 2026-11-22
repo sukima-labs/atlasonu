@@ -1,8 +1,16 @@
 window.NOTICIAS={
  "fuente": "Noticias ONU (news.un.org)",
- "actualizado": "2026-11-22T03:16:49Z",
+ "actualizado": "2026-11-22T18:38:28Z",
  "temas": {
   "todas": [
+   {
+    "titulo": "La COP31 termina sin pacto climático por la división sobre los combustibles fósiles",
+    "fecha": "2026-11-22",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542199",
+    "resumen": "El titular de la ONU califica el fracaso como un revés “profundamente decepcionante” y advierte que \"no hay ambigüedad en la ciencia\". \"No podemos apagar el fuego mientras le echamos combustible\", dijo, acusando a los poderosos intereses de los combustibles…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/22-11-2026_COP31-Close1.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
    {
     "titulo": "Discordia en la COP31, Ucrania, Afganistán y hambre global: las noticias del viernes",
     "fecha": "2026-11-20",
@@ -153,14 +161,6 @@ window.NOTICIAS={
     "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542175",
     "resumen": "La petición llega en un momento de tensión para la asociación, que cumple 15 años. Guterres describió un entorno de «vientos contrarios»: conflictos, cambio climático, crisis del costo de vida, aranceles y costos de la energía, y necesidades humanitarias…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/15-11-2026_SG-ASEANSummit.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "COP31: Sin dinero suficiente, crecen las voces para que paguen más los que más contaminan",
-    "fecha": "2026-11-13",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542174",
-    "resumen": "Entre peticiones emotivas de justicia climática y negociaciones de alto nivel sobre miles de millones de dólares, el dinero dominó las discusiones de la COP31 el viernes. El Secretario General advirtió de que incluso si se triplican los recursos para que los…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/13-11-2026_COP-31-03.jpg/image560x340cropped.jpg",
     "destacada": false
    }
   ],
