@@ -1,8 +1,17 @@
 {
 "fuente": "Noticias ONU (news.un.org)",
-"actualizado": "2026-11-23T03:49:35Z",
-"total": 117,
+"actualizado": "2026-11-23T22:44:56Z",
+"total": 118,
 "notas": [
+{
+"titulo": "La diáspora latinoamericana se triplica 30 años: 48 millones viven fuera de su país de nacimiento",
+"fecha": "2026-11-23",
+"enlace": "https://news.un.org/feed/view/es/story/2026/11/1542204",
+"resumen": "Un informe sobre migración y población mide cómo la migración ha alterado nacimientos, defunciones y edades. El resultado es contundente: si desde 1990 el saldo migratorio hubiera sido cero, América del Norte tendría hoy un 23% menos de habitantes, Oceanía…",
+"visto": "2026-11-23",
+"derechos": false,
+"americas": true
+},
 {
 "titulo": "La COP31 termina sin pacto climático por la división sobre los combustibles fósiles",
 "fecha": "2026-11-22",

@@ -1,6 +1,6 @@
 window.NOTICIAS={
  "fuente": "Noticias ONU (news.un.org)",
- "actualizado": "2026-11-23T03:49:35Z",
+ "actualizado": "2026-11-23T22:44:56Z",
  "temas": {
   "todas": [
    {
@@ -308,6 +308,13 @@ window.NOTICIAS={
   ],
   "americas": [
    {
+    "titulo": "La diáspora latinoamericana se triplica 30 años: 48 millones viven fuera de su país de nacimiento",
+    "fecha": "2026-11-23",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542204",
+    "resumen": "Un informe sobre migración y población mide cómo la migración ha alterado nacimientos, defunciones y edades. El resultado es contundente: si desde 1990 el saldo migratorio hubiera sido cero, América del Norte tendría hoy un 23% menos de habitantes, Oceanía…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/06-03-2026-IOM-Colombia-07.jpg/image560x340cropped.jpg"
+   },
+   {
     "titulo": "El Darién se vacía: los cruces caen un 90 %, mientras nace una gran ruta migratoria hacia el sur de América",
     "fecha": "2026-11-18",
     "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542188",
@@ -439,13 +446,6 @@ window.NOTICIAS={
     "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542036",
     "resumen": "El sismo dejó daños en edificios y carreteras, interrumpió el suministro de agua y provocó más de 40 réplicas. Las Naciones Unidas se mantienen en contacto con el Gobierno de Panamá y atentas a la evolución de la situación, reiterando su disposición de…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/assets/2016/03/24056/image560x340cropped.jpg"
-   },
-   {
-    "titulo": "El sarampión supera los 55.000 casos en las Américas y crece el riesgo de nuevos brotes",
-    "fecha": "2026-10-10",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542035",
-    "resumen": "La enfermedad ha dejado 77 muertos en lo que va de año. La Organización Panamericana de la Salud alerta de que las grandes celebraciones religiosas previstas en Sudamérica podrían acelerar los contagios, mientras millones de personas siguen sin protección.",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production+Library/14-07-2021_PAHO_Venezuela.jpg/image560x340cropped.jpg"
    }
   ]
  }
