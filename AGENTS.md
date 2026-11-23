@@ -81,7 +81,7 @@ corre hoy en `sk-atlas`. No lo muevas ni le cambies el nombre sin hablarlo antes
 ## Skills
 Las skills del proyecto siguen la [especificación Agent Skills](https://agentskills.io/specification) y viven en
 `.claude/skills/<nombre>/SKILL.md`; `.agents/skills` es un enlace a esa carpeta para los agentes que buscan ahí.
-- `trabajar-cola`: hacer las tareas de `docs/COLA_DE_TAREAS.md` una tras otra.
+- `trabajar-cola`: hacer la siguiente tarea de `docs/COLA_DE_TAREAS.md` de principio a fin (una por sesión).
 - `cerrar-tarea`: cierre de cada tarea (cola y `data/hoja_ruta.json` al día).
 - `revisar-ux`: revisión de UX a 390 px, un arreglo por commit.
 
