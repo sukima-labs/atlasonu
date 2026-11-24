@@ -1,5 +1,5 @@
 {
- "consultado": "2026-11-12",
+ "consultado": "2026-11-24",
  "fuente": "https://treaties.un.org/Pages/Treaties.aspx?id=4&subid=A&clang=_en",
  "paises": {
   "AFG": {
@@ -10675,6 +10675,11 @@
     "forma": "ratificación",
     "parte": "17 Sep 2001"
    },
+   "IV-12": {
+    "firma": "",
+    "forma": "a",
+    "parte": "24 Nov 2026"
+   },
    "IV-13": {
     "firma": "15 Sep 2000",
     "forma": "",
@@ -13407,7 +13412,7 @@
    "en_vigor": "11 July 1991",
    "es": "Segundo Protocolo Facultativo del PIDCP (abolición de la pena de muerte)",
    "mtdsg": "IV-12",
-   "participantes": 92,
+   "participantes": 93,
    "siglas": "OP2-PIDCP",
    "url": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=IV-12&chapter=4&clang=_en"
   },

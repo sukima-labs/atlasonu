@@ -1,8 +1,56 @@
 window.NOTICIAS={
  "fuente": "Noticias ONU (news.un.org)",
- "actualizado": "2026-11-24T07:05:10Z",
+ "actualizado": "2026-11-24T21:18:12Z",
  "temas": {
   "todas": [
+   {
+    "titulo": "47.000 feminicidios en 2025: América Latina entre las regiones más golpeadas",
+    "fecha": "2026-11-24",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542207",
+    "resumen": "Cada hora mueren cinco mujeres a manos de parejas o familiares en el mundo. En América Latina 24 al día son víctimas de la violencia. Un dato preocupante muestra la violencia de género de forma reveladora en la región: entre 2010 y 2025, los homicidios en…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/24-11-2026-UN-Women-GBV-03.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
+   {
+    "titulo": "La terquedad de trabajar por la paz: el músico colombiano que convirtió un fusil en guitarra",
+    "fecha": "2026-11-24",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542203",
+    "resumen": "Diez años después de la firma del Acuerdo de Paz en Colombia, el músico César López vuelve a encontrarse con su escopetarra en la sede de las Naciones Unidas. El instrumento, nacido de uno de los episodios más dolorosos de la violencia en Colombia, encierra…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/24-11-26-Cesar_Lopez4_Colombia.jpeg/image560x340cropped.jpg",
+    "destacada": false
+   },
+   {
+    "titulo": "Proceso de paz en Colombia, violencia contra las mujeres, IA y guerras, gripe aviar… Las noticias del martes",
+    "fecha": "2026-11-24",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542206",
+    "resumen": "Guterres pide redoblar los esfuerzos por la paz en Colombia. El brote de ébola agrava la violencia contra las mujeres en la República Democrática del Congo. Cinco mujeres y niñas son asesinadas cada hora por sus parejas o familiares. El Secretario General…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/11-07-2024_UNVMC_peace.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
+   {
+    "titulo": "La diáspora latinoamericana se triplica 30 años: 48 millones viven fuera de su país de nacimiento",
+    "fecha": "2026-11-23",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542204",
+    "resumen": "Un informe sobre migración y población mide cómo la migración ha alterado nacimientos, defunciones y edades. El resultado es contundente: si desde 1990 el saldo migratorio hubiera sido cero, América del Norte tendría hoy un 23% menos de habitantes, Oceanía…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/06-03-2026-IOM-Colombia-07.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
+   {
+    "titulo": "Guterres advierte que la IA traerá un cambio histórico de poder",
+    "fecha": "2026-11-23",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542202",
+    "resumen": "La IA no debería ampliar las desigualdades globales, sino estar moldeada por la humanidad, con la humanidad y para toda la humanidad. Las empresas deben pagar por los daños de sus sistemas y crear un «botón de apagado» para emergencias.",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/06/22-06-2026-Adobe-artificial-intelligence-02.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
+   {
+    "titulo": "Ataques contra civiles en Ucrania, IA, violencia machista… las noticias del lunes",
+    "fecha": "2026-11-23",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542201",
+    "resumen": "La guerra en Ucrania se intensifica: un ataque con drones contra un bloque de viviendas deja once muertos y los apagones se extienden por todo el país. En Barbados, el Secretario General pide un marco multilateral para gestionar los riesgos de la…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/23-11-2026-UNICEF-Ukraine-02.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
    {
     "titulo": "La COP31 termina sin pacto climático por la división sobre los combustibles fósiles",
     "fecha": "2026-11-22",
@@ -113,54 +161,6 @@ window.NOTICIAS={
     "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542183",
     "resumen": "Desde identificar la vida marina en una simple taza de agua marina hasta recurrir a los conocimientos indígenas para prevenir incendios forestales, científicos y comunidades indígenas mostraron el martes en la COP31 propuestas para proteger la naturaleza,…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/17-11-2026_COP31_02.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "Gaza, el fracaso de la comunidad internacional",
-    "fecha": "2026-11-17",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542182",
-    "resumen": "Las primeras lluvias del invierno han devastado decenas de miles de refugios improvisados, mientras 1,4 millones de personas están pasando hambre y más de 100.000 tiendas de campaña están bloqueadas fuera de la Franja. Israel, la potencia ocupante, solo…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/17-11-2026-UNICEF-Gaza.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "Hambre en Gaza, COP31, obesidad y químicos de la discordia... las noticias del martes",
-    "fecha": "2026-11-17",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542181",
-    "resumen": "Casi 1,5 millones de palestinos padece hambre aguda, mientras Israel mantiene los obstáculos al paso de la ayuda humanitaria. La inversión climática en América Latina debe ser vista como una inversión, no como un gasto. España lidera un llamado mundial…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/13-11-2026_IOM_Gaza.jpg/image560x340cropped.jpg",
-    "destacada": true
-   },
-   {
-    "titulo": "La IA responde con la ciencia a la primera pregunta sobre el cambio climático, a la segunda… ya es otro tema",
-    "fecha": "2026-11-16",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542179",
-    "resumen": "Entre la ciencia y la complacencia, los grandes modelos de lenguaje eligen la primera cuando se les pregunta y la segunda en cuanto el usuario objeta o niega la evidencia.",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/31-05-2023-UNDP-Cambodia-weather.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "COP31 bloqueada, IA climática, cáncer de cérvix y refugiados… las noticias del martes",
-    "fecha": "2026-11-16",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542178",
-    "resumen": "La cumbre del clima entra en su semana final con las negociaciones atascadas y los ministros en camino. UNESCO alerta de que los chatbots ceden ante la presión del usuario y abandonan ciencia cuando se les pregunta por el cambio climático. Un estudio con más…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/16-11-2026_COP-31_03.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "La COP31 entra en su semana decisiva: las negociaciones siguen bloqueadas mientras se alarga la sombra de la IA",
-    "fecha": "2026-11-16",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542176",
-    "resumen": "Las nuevas iniciativas internacionales sobre inteligencia artificial e industrialización verde pusieron de manifiesto el papel creciente de la tecnología en la cuestión climática, al tiempo que las conversaciones diplomáticas siguen bloqueadas en materia de…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/16-11-2026_COP-31_01.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "En la Cumbre de los países del sudeste asiático, Guterres pide más representación internacional para esa región",
-    "fecha": "2026-11-16",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542175",
-    "resumen": "La petición llega en un momento de tensión para la asociación, que cumple 15 años. Guterres describió un entorno de «vientos contrarios»: conflictos, cambio climático, crisis del costo de vida, aranceles y costos de la energía, y necesidades humanitarias…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/15-11-2026_SG-ASEANSummit.jpg/image560x340cropped.jpg",
     "destacada": false
    }
   ],
@@ -308,6 +308,20 @@ window.NOTICIAS={
   ],
   "americas": [
    {
+    "titulo": "47.000 feminicidios en 2025: América Latina entre las regiones más golpeadas",
+    "fecha": "2026-11-24",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542207",
+    "resumen": "Cada hora mueren cinco mujeres a manos de parejas o familiares en el mundo. En América Latina 24 al día son víctimas de la violencia. Un dato preocupante muestra la violencia de género de forma reveladora en la región: entre 2010 y 2025, los homicidios en…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/24-11-2026-UN-Women-GBV-03.jpg/image560x340cropped.jpg"
+   },
+   {
+    "titulo": "La terquedad de trabajar por la paz: el músico colombiano que convirtió un fusil en guitarra",
+    "fecha": "2026-11-24",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542203",
+    "resumen": "Diez años después de la firma del Acuerdo de Paz en Colombia, el músico César López vuelve a encontrarse con su escopetarra en la sede de las Naciones Unidas. El instrumento, nacido de uno de los episodios más dolorosos de la violencia en Colombia, encierra…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/24-11-26-Cesar_Lopez4_Colombia.jpeg/image560x340cropped.jpg"
+   },
+   {
     "titulo": "La diáspora latinoamericana se triplica 30 años: 48 millones viven fuera de su país de nacimiento",
     "fecha": "2026-11-23",
     "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542204",
@@ -432,20 +446,6 @@ window.NOTICIAS={
     "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542040",
     "resumen": "A casi diez años de la firma del Acuerdo de Paz, Naciones Unidas destacó los avances alcanzados en Colombia y la importancia de dar continuidad a su implementación en esta nueva etapa política. Entre las prioridades señaló la necesidad de garantizar la…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/10/12-12-2026_Colombia_Peace_VerificationMission.jpg/image560x340cropped.jpg"
-   },
-   {
-    "titulo": "Violencia sexual en el Ejército mexicano: solo un 3% acaba en una condena",
-    "fecha": "2026-10-12",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542038",
-    "resumen": "De más de 520 mujeres que denunciaron delitos sexuales en un período de doce años, solo un 3% de los casos dio lugar a una condena, revela la periodista mexicana Zorayda Gallegos, ganadora del Premio Breach/Valdez de Periodismo y Derechos Humanos 2026.",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/10/12-10-26_UN_Human-Rights_Zorayda_Gallegos.jpg/image560x340cropped.jpg"
-   },
-   {
-    "titulo": "La ONU está preparada para apoyar a Panamá tras un terremoto de magnitud 7,7",
-    "fecha": "2026-10-10",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542036",
-    "resumen": "El sismo dejó daños en edificios y carreteras, interrumpió el suministro de agua y provocó más de 40 réplicas. Las Naciones Unidas se mantienen en contacto con el Gobierno de Panamá y atentas a la evolución de la situación, reiterando su disposición de…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/assets/2016/03/24056/image560x340cropped.jpg"
    }
   ]
  }
