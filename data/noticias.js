@@ -1,8 +1,32 @@
 window.NOTICIAS={
  "fuente": "Noticias ONU (news.un.org)",
- "actualizado": "2026-11-25T05:32:32Z",
+ "actualizado": "2026-11-25T20:35:08Z",
  "temas": {
   "todas": [
+   {
+    "titulo": "Palestina, violencia de género, estrecho de Ormuz, Nepal… Las noticias del miércoles",
+    "fecha": "2026-11-25",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542211",
+    "resumen": "El Alto Comisionado para los Derechos Humanos alerta del creciente riesgo de crímenes atroces contra el pueblo palestino; los recortes de ayuda dejan a las mujeres migrantes sin protección frente a la violencia; un nadador cruza el estrecho de Ormuz para…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/20-11-2026_UNNews_ChildDay_Gaza_04.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
+   {
+    "titulo": "La ONU pide actuar antes de que se comentan nuevos «crímenes atroces» contra los palestinos",
+    "fecha": "2026-11-25",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542209",
+    "resumen": "La continuación de los ataques, las políticas y las violaciones israelíes contra los palestinos hacen temer «un riesgo creciente», advierte ONU Derechos Humanos, que recuerda todos los Estados tienen la obligación de actuar ahora para prevenirlos.",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/25-11-2026_Ziad_Gaza_Widows_1.jpg/image560x340cropped.jpg",
+    "destacada": true
+   },
+   {
+    "titulo": "Violencia sexual: el hijo mayor de Gisèle Pelicot quiere acabar con el silencio de los hombres",
+    "fecha": "2026-11-25",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542208",
+    "resumen": "Si su madre luchó por romper el silencio vergonzoso de las mujeres, él quiere romper el silencio encubridor de los hombres: «Hay muchos hombres que saben, que callan y que nunca han dicho nada», asegura David Pelicot.",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/24-11-2026-UN-David-Pelicot.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
    {
     "titulo": "47.000 feminicidios en 2025: América Latina entre las regiones más golpeadas",
     "fecha": "2026-11-24",
@@ -138,33 +162,16 @@ window.NOTICIAS={
     "resumen": "La agencia de la salud señala que hay tres líneas de defensa de antibióticos, pero cada vez que cae una, los pacientes se acercan más a no tener buenas opciones en absoluto. Además, en los hospitales donde se toman pocas muestras de sangre para identificar…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/24-03-2023-WHO-antimicrobial.jpg/image560x340cropped.jpg",
     "destacada": false
-   },
-   {
-    "titulo": "Manila, Yemen, pensiones y alpacas… las noticias del miércoles",
-    "fecha": "2026-11-18",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542185",
-    "resumen": "Líderes mundiales se reúnen en Manila para erradicar la violencia contra los niños, mientras UNICEF cuenta 64 menores muertos en Yemen en tres meses de escalada. La CEPAL publica su Panorama Social con un mensaje: las pensiones evitan que los mayores caigan…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/10/08-10-2026-UNICEF-violence-against-children.jpg/image560x340cropped.jpg",
-    "destacada": true
-   },
-   {
-    "titulo": "Bolivia, Estados Unidos y México pierden su estatus de países libres del sarampión",
-    "fecha": "2026-11-17",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542184",
-    "resumen": "La agencia de la ONU para la salud en las Américas alerta de que la transmisión endémica se ha restablecido en los tres países, en un año que multiplica por cuatro los casos en las Américas: 58.213 contagios y 82 muertes. El descenso de las tasas de…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/15-06-26_WHO_India_School_Immunization.jpeg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "COP31: La protección de los océanos llega a la mesa de negociaciones",
-    "fecha": "2026-11-17",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542183",
-    "resumen": "Desde identificar la vida marina en una simple taza de agua marina hasta recurrir a los conocimientos indígenas para prevenir incendios forestales, científicos y comunidades indígenas mostraron el martes en la COP31 propuestas para proteger la naturaleza,…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/17-11-2026_COP31_02.jpg/image560x340cropped.jpg",
-    "destacada": false
    }
   ],
   "derechos": [
+   {
+    "titulo": "La ONU pide actuar antes de que se comentan nuevos «crímenes atroces» contra los palestinos",
+    "fecha": "2026-11-25",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542209",
+    "resumen": "La continuación de los ataques, las políticas y las violaciones israelíes contra los palestinos hacen temer «un riesgo creciente», advierte ONU Derechos Humanos, que recuerda todos los Estados tienen la obligación de actuar ahora para prevenirlos.",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/25-11-2026_Ziad_Gaza_Widows_1.jpg/image560x340cropped.jpg"
+   },
    {
     "titulo": "No se necesita aprobación del gobierno para formar una asociación",
     "fecha": "2026-11-19",
@@ -297,13 +304,6 @@ window.NOTICIAS={
     "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542001",
     "resumen": "En Nicaragua, los elementos esenciales de la democracia son inexistentes. el Alto Comisionado pide a Estados Unidos que no ejecute a Christa Pike. Reclaman recursos para las iniciativas de prevención de conflictos lideradas por mujeres.",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/09/22-09-2026_Adobe_Nicaragua.jpg/image560x340cropped.jpg"
-   },
-   {
-    "titulo": "México: Las mujeres que buscan a personas desaparecidas enfrentan violencia extrema",
-    "fecha": "2026-09-30",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/09/1541997",
-    "resumen": "Las mujeres que buscan a familiares y otras personas desaparecidas en México están expuestas a desapariciones, asesinatos y ataques, en un contexto de impunidad casi total, advierten expertos independientes. Los especialistas recordaron que la búsqueda es…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/28-07-2023-CEE-Mexico-disappearances-01.jpg/image560x340cropped.jpg"
    }
   ],
   "americas": [

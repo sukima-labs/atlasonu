@@ -1,8 +1,35 @@
 {
 "fuente": "Noticias ONU (news.un.org)",
-"actualizado": "2026-11-25T05:32:32Z",
-"total": 123,
+"actualizado": "2026-11-25T20:35:08Z",
+"total": 126,
 "notas": [
+{
+"titulo": "Palestina, violencia de género, estrecho de Ormuz, Nepal… Las noticias del miércoles",
+"fecha": "2026-11-25",
+"enlace": "https://news.un.org/feed/view/es/story/2026/11/1542211",
+"resumen": "El Alto Comisionado para los Derechos Humanos alerta del creciente riesgo de crímenes atroces contra el pueblo palestino; los recortes de ayuda dejan a las mujeres migrantes sin protección frente a la violencia; un nadador cruza el estrecho de Ormuz para…",
+"visto": "2026-11-25",
+"derechos": false,
+"americas": false
+},
+{
+"titulo": "La ONU pide actuar antes de que se comentan nuevos «crímenes atroces» contra los palestinos",
+"fecha": "2026-11-25",
+"enlace": "https://news.un.org/feed/view/es/story/2026/11/1542209",
+"resumen": "La continuación de los ataques, las políticas y las violaciones israelíes contra los palestinos hacen temer «un riesgo creciente», advierte ONU Derechos Humanos, que recuerda todos los Estados tienen la obligación de actuar ahora para prevenirlos.",
+"visto": "2026-11-25",
+"derechos": true,
+"americas": false
+},
+{
+"titulo": "Violencia sexual: el hijo mayor de Gisèle Pelicot quiere acabar con el silencio de los hombres",
+"fecha": "2026-11-25",
+"enlace": "https://news.un.org/feed/view/es/story/2026/11/1542208",
+"resumen": "Si su madre luchó por romper el silencio vergonzoso de las mujeres, él quiere romper el silencio encubridor de los hombres: «Hay muchos hombres que saben, que callan y que nunca han dicho nada», asegura David Pelicot.",
+"visto": "2026-11-25",
+"derechos": false,
+"americas": false
+},
 {
 "titulo": "47.000 feminicidios en 2025: América Latina entre las regiones más golpeadas",
 "fecha": "2026-11-24",
