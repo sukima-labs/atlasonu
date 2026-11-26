@@ -1,8 +1,32 @@
 window.NOTICIAS={
  "fuente": "Noticias ONU (news.un.org)",
- "actualizado": "2026-11-26T05:09:32Z",
+ "actualizado": "2026-11-26T20:17:36Z",
  "temas": {
   "todas": [
+   {
+    "titulo": "El comercio marítimo mundial se estanca y amenaza con encarecer el costo de la vida",
+    "fecha": "2026-11-26",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542217",
+    "resumen": "Los conflictos armados, las restricciones provocadas por la sequía y la incertidumbre comercial están frenando el transporte marítimo mundial. Un nuevo informe de las Naciones Unidas advierte de que el encarecimiento del combustible y del transporte podría…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/13-12-2022_Unsplash_Singapore.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
+   {
+    "titulo": "Aumentan los casos de mpox en las Américas y llaman a reforzar la vacunación",
+    "fecha": "2026-11-26",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542216",
+    "resumen": "El aumento de los contagios desde septiembre, principalmente en Brasil, y la creciente detección de una variante del virus han llevado a la Organización Panamericana de la Salud a emitir una alerta epidemiológica. En lo que va de año, la región ha registrado…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/08-06-2022_CDC_monkeypox.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
+   {
+    "titulo": "Mpox en las Américas, comercio marítimo, Haití, conflicto y ébola…Las noticias del jueves",
+    "fecha": "2026-11-26",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542215",
+    "resumen": "La Organización Panamericana de la Salud alerta de un aumento de los casos de mpox en las Américas; el comercio marítimo mundial se estanca en 2026 y el aumento de los costes del transporte amenaza con encarecer los alimentos y la energía; solo uno de cada…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/12-09-2024-WHO-DRC-Mpox-03.jpg/image560x340cropped.jpg",
+    "destacada": false
+   },
    {
     "titulo": "Palestina, violencia de género, estrecho de Ormuz, Nepal… Las noticias del miércoles",
     "fecha": "2026-11-25",
@@ -137,30 +161,6 @@ window.NOTICIAS={
     "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542190",
     "resumen": "La cumbre del clima de Antalya acumula asuntos entre corchetes, lo que significa “sin acuerdo” en jerga diplomática. No son temas menores, sino capítulos como financiación, el abandono de los combustibles fósiles y adaptación al cambio climático. Todo ello…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/18-11-2026_COP31.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "Impulsados por China, los registros de patentes alcanzan un récord",
-    "fecha": "2026-11-18",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542189",
-    "resumen": "De las aproximadamente 224.000 solicitudes adicionales presentadas en el mundo en 2025, 113.693 lo fueron en China. Con cerca de 1,9 millones de solicitudes, el país se mantiene ampliamente a la cabeza del ranking mundial, por delante de Estados Unidos…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/02-05-24_UNDP_Make_Break_Create-1.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "El Darién se vacía: los cruces caen un 90 %, mientras nace una gran ruta migratoria hacia el sur de América",
-    "fecha": "2026-11-18",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542188",
-    "resumen": "Muchos venezolanos están regresando a casa y muchos cubanos se están instalando en Brasil y Uruguay. \"La migración no ha parado: la gente busca nuevas rutas y otras direcciones\", señala la agencia de la ONU para las migraciones.",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/20-11-2025_UNODC_trafficking3.jpg/image560x340cropped.jpg",
-    "destacada": false
-   },
-   {
-    "titulo": "Alerta: Los antibióticos están dejando de funcionar contra infecciones comunes",
-    "fecha": "2026-11-18",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542187",
-    "resumen": "La agencia de la salud señala que hay tres líneas de defensa de antibióticos, pero cada vez que cae una, los pacientes se acercan más a no tener buenas opciones en absoluto. Además, en los hospitales donde se toman pocas muestras de sangre para identificar…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/24-03-2023-WHO-antimicrobial.jpg/image560x340cropped.jpg",
     "destacada": false
    }
   ],
@@ -308,6 +308,13 @@ window.NOTICIAS={
   ],
   "americas": [
    {
+    "titulo": "Aumentan los casos de mpox en las Américas y llaman a reforzar la vacunación",
+    "fecha": "2026-11-26",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542216",
+    "resumen": "El aumento de los contagios desde septiembre, principalmente en Brasil, y la creciente detección de una variante del virus han llevado a la Organización Panamericana de la Salud a emitir una alerta epidemiológica. En lo que va de año, la región ha registrado…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/08-06-2022_CDC_monkeypox.jpg/image560x340cropped.jpg"
+   },
+   {
     "titulo": "47.000 feminicidios en 2025: América Latina entre las regiones más golpeadas",
     "fecha": "2026-11-24",
     "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542207",
@@ -439,13 +446,6 @@ window.NOTICIAS={
     "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542044",
     "resumen": "Naciones Unidas ha movilizado suministros de emergencia y apoya la atención sanitaria mientras cientos de personas permanecen desplazadas, más de 400 escuelas presentan daños y varias comunidades siguen incomunicadas.",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/24-11-2020-UN%20Panama-IMG_5675_3.jpg/image560x340cropped.jpg"
-   },
-   {
-    "titulo": "Colombia debe asegurar la continuidad del Acuerdo de Paz ante el avance de la violencia",
-    "fecha": "2026-10-12",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542040",
-    "resumen": "A casi diez años de la firma del Acuerdo de Paz, Naciones Unidas destacó los avances alcanzados en Colombia y la importancia de dar continuidad a su implementación en esta nueva etapa política. Entre las prioridades señaló la necesidad de garantizar la…",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/10/12-12-2026_Colombia_Peace_VerificationMission.jpg/image560x340cropped.jpg"
    }
   ]
  }

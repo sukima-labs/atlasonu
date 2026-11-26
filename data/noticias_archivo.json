@@ -1,8 +1,35 @@
 {
 "fuente": "Noticias ONU (news.un.org)",
-"actualizado": "2026-11-26T05:09:32Z",
-"total": 126,
+"actualizado": "2026-11-26T20:17:36Z",
+"total": 129,
 "notas": [
+{
+"titulo": "El comercio marítimo mundial se estanca y amenaza con encarecer el costo de la vida",
+"fecha": "2026-11-26",
+"enlace": "https://news.un.org/feed/view/es/story/2026/11/1542217",
+"resumen": "Los conflictos armados, las restricciones provocadas por la sequía y la incertidumbre comercial están frenando el transporte marítimo mundial. Un nuevo informe de las Naciones Unidas advierte de que el encarecimiento del combustible y del transporte podría…",
+"visto": "2026-11-26",
+"derechos": false,
+"americas": false
+},
+{
+"titulo": "Aumentan los casos de mpox en las Américas y llaman a reforzar la vacunación",
+"fecha": "2026-11-26",
+"enlace": "https://news.un.org/feed/view/es/story/2026/11/1542216",
+"resumen": "El aumento de los contagios desde septiembre, principalmente en Brasil, y la creciente detección de una variante del virus han llevado a la Organización Panamericana de la Salud a emitir una alerta epidemiológica. En lo que va de año, la región ha registrado…",
+"visto": "2026-11-26",
+"derechos": false,
+"americas": true
+},
+{
+"titulo": "Mpox en las Américas, comercio marítimo, Haití, conflicto y ébola…Las noticias del jueves",
+"fecha": "2026-11-26",
+"enlace": "https://news.un.org/feed/view/es/story/2026/11/1542215",
+"resumen": "La Organización Panamericana de la Salud alerta de un aumento de los casos de mpox en las Américas; el comercio marítimo mundial se estanca en 2026 y el aumento de los costes del transporte amenaza con encarecer los alimentos y la energía; solo uno de cada…",
+"visto": "2026-11-26",
+"derechos": false,
+"americas": false
+},
 {
 "titulo": "Palestina, violencia de género, estrecho de Ormuz, Nepal… Las noticias del miércoles",
 "fecha": "2026-11-25",
