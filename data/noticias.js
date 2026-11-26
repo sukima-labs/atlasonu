@@ -1,6 +1,6 @@
 window.NOTICIAS={
  "fuente": "Noticias ONU (news.un.org)",
- "actualizado": "2026-11-25T20:35:08Z",
+ "actualizado": "2026-11-26T05:09:32Z",
  "temas": {
   "todas": [
    {
@@ -9,7 +9,7 @@ window.NOTICIAS={
     "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542211",
     "resumen": "El Alto Comisionado para los Derechos Humanos alerta del creciente riesgo de crímenes atroces contra el pueblo palestino; los recortes de ayuda dejan a las mujeres migrantes sin protección frente a la violencia; un nadador cruza el estrecho de Ormuz para…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/20-11-2026_UNNews_ChildDay_Gaza_04.jpg/image560x340cropped.jpg",
-    "destacada": false
+    "destacada": true
    },
    {
     "titulo": "La ONU pide actuar antes de que se comentan nuevos «crímenes atroces» contra los palestinos",
@@ -166,6 +166,13 @@ window.NOTICIAS={
   ],
   "derechos": [
    {
+    "titulo": "Palestina, violencia de género, estrecho de Ormuz, Nepal… Las noticias del miércoles",
+    "fecha": "2026-11-25",
+    "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542211",
+    "resumen": "El Alto Comisionado para los Derechos Humanos alerta del creciente riesgo de crímenes atroces contra el pueblo palestino; los recortes de ayuda dejan a las mujeres migrantes sin protección frente a la violencia; un nadador cruza el estrecho de Ormuz para…",
+    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/20-11-2026_UNNews_ChildDay_Gaza_04.jpg/image560x340cropped.jpg"
+   },
+   {
     "titulo": "La ONU pide actuar antes de que se comentan nuevos «crímenes atroces» contra los palestinos",
     "fecha": "2026-11-25",
     "enlace": "https://news.un.org/feed/view/es/story/2026/11/1542209",
@@ -297,13 +304,6 @@ window.NOTICIAS={
     "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542015",
     "resumen": "Más de 1000 millones de personas viven en asentamientos informales y barrios marginales, y 3000 millones carecen de vivienda adecuada. La ONU reclama reformar la arquitectura financiera internacional para que los países en desarrollo puedan invertir en…",
     "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/10/05-10-2026_UN_Habitat_Somalia_Bosaso_.jpg/image560x340cropped.jpg"
-   },
-   {
-    "titulo": "Nicaragua, Christa Pike, prevención de conflictos… Las noticias del jueves",
-    "fecha": "2026-10-01",
-    "enlace": "https://news.un.org/feed/view/es/story/2026/10/1542001",
-    "resumen": "En Nicaragua, los elementos esenciales de la democracia son inexistentes. el Alto Comisionado pide a Estados Unidos que no ejecute a Christa Pike. Reclaman recursos para las iniciativas de prevención de conflictos lideradas por mujeres.",
-    "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/09/22-09-2026_Adobe_Nicaragua.jpg/image560x340cropped.jpg"
    }
   ],
   "americas": [
