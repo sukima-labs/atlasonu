@@ -1,5 +1,29 @@
 [
  {
+  "inicio": "2026-11-28T04:44:07+00:00",
+  "fin": "2026-11-28T04:50:04+00:00",
+  "duracion_s": 357,
+  "quien": "GitHub Actions",
+  "revisado": [
+   "Índice de mandatos de OHCHR",
+   "Biblioteca Digital de la ONU (símbolos)",
+   "Colección de Tratados (ratificaciones)",
+   "Visitas y comunicaciones de OHCHR (países y regiones)",
+   "Textos literales de tratados",
+   "Documentos oficiales por país"
+  ],
+  "documentos_marco": "conservado",
+  "noticias": "ok",
+  "resultado": "sin cambios",
+  "contadores": {
+   "mandatos": 57,
+   "actos": 424,
+   "localizados": 405,
+   "paises": 196,
+   "mecanismos": 33
+  }
+ },
+ {
   "inicio": "2026-11-27T19:56:58+00:00",
   "fin": "2026-11-27T20:03:05+00:00",
   "duracion_s": 367,

@@ -1,6 +1,6 @@
 window.NOTICIAS={
  "fuente": "Noticias ONU (news.un.org)",
- "actualizado": "2026-11-27T20:03:05Z",
+ "actualizado": "2026-11-28T04:50:04Z",
  "temas": {
   "todas": [
    {
